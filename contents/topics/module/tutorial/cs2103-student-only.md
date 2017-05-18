@@ -1,0 +1,1 @@
+If you do not have confirmed tutorial group yet, attend the slot you chose in the 'Temporary Tutorial Registration' on IVLE.
