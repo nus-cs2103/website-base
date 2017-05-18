@@ -1,0 +1,157 @@
+{
+  "baseUrl": "/cs2103-website",
+  "pages": [
+    {
+      "src": "index.md",
+      "title": "CS2103/T Website - Schedule"
+    },
+    {
+      "src": "handbook.md",
+      "title": "CS2103/T Website - Handbook"
+    },
+    {
+      "src": "handbook-new.md",
+      "title": "CS2103/T Website - Handbook"
+    },
+    {
+      "src": "book/index.md",
+      "title": "CS2103/T Website - Textbook"
+    },
+    {
+      "src": "book/introduction/index.md",
+      "title": "CS2103/T Textbook - Software Engineering Rocks"
+    },
+    {
+      "src": "book/se-pattern/index.md",
+      "title": "CS2103/T Textbook - Design Patterns"
+    },
+    {
+      "src": "book/requirements/index.md",
+      "title": "CS2103/T Textbook - Requirements"
+    },
+    {
+      "src": "book/requirements/brainstorming/index.md",
+      "title": "CS2103/T Textbook - Brainstorming"
+    },
+    {
+      "src": "book/requirements/brainstorming/introduction/index.md",
+      "title": "CS2103/T Textbook - Brainstorming : Introduction"
+    },
+    {
+      "src": "book/requirements/userSurveys/index.md",
+      "title": "CS2103/T Textbook - User Surveys"
+    },
+    {
+      "src": "book/requirements/userSurveys/introduction/index.md",
+      "title": "CS2103/T Textbook - User Surveys : Introduction"
+    },
+    {
+      "src": "book/requirements/observation/index.md",
+      "title": "CS2103/T Textbook - Observation"
+    },
+    {
+      "src": "book/requirements/observation/introduction/index.md",
+      "title": "CS2103/T Textbook - Observation : Introduction"
+    },
+    {
+      "src": "book/requirements/interviews/index.md",
+      "title": "CS2103/T Textbook - Interviews"
+    },
+    {
+      "src": "book/requirements/interviews/introduction/index.md",
+      "title": "CS2103/T Textbook - Interviews : Introduction"
+    },
+    {
+      "src": "book/requirements/focusGroups/index.md",
+      "title": "CS2103/T Textbook - Focus Groups"
+    },
+    {
+      "src": "book/requirements/focusGroups/introduction/index.md",
+      "title": "CS2103/T Textbook - Focus Groups : Introduction"
+    },
+    {
+      "src": "book/requirements/prototyping/index.md",
+      "title": "CS2103/T Textbook - Prototyping"
+    },
+    {
+      "src": "book/requirements/prototyping/introduction/index.md",
+      "title": "CS2103/T Textbook - Prototyping : Introduction"
+    },
+    {
+      "src": "book/requirements/productSurveys/index.md",
+      "title": "CS2103/T Textbook - Product Surveys"
+    },
+    {
+      "src": "book/requirements/productSurveys/introduction/index.md",
+      "title": "CS2103/T Textbook - Product Surveys : Introduction"
+    },
+    {
+      "src": "book/requirements/prose/index.md",
+      "title": "CS2103/T Textbook - Prose"
+    },
+    {
+      "src": "book/requirements/prose/introduction/index.md",
+      "title": "CS2103/T Textbook - Prose : Introduction"
+    },
+    {
+      "src": "book/requirements/featureList/index.md",
+      "title": "CS2103/T Textbook - Feature List"
+    },
+    {
+      "src": "book/requirements/featureList/introduction/index.md",
+      "title": "CS2103/T Textbook - Feature List : Introduction"
+    },
+    {
+      "src": "book/requirements/userStories/index.md",
+      "title": "CS2103/T Textbook - User Stories"
+    },
+    {
+      "src": "book/requirements/userStories/introduction/index.md",
+      "title": "CS2103/T Textbook - User Stories : Introduction"
+    },
+    {
+      "src": "book/requirements/useCases/index.md",
+      "title": "CS2103/T Textbook - Use Cases"
+    },
+    {
+      "src": "book/requirements/useCases/introduction/index.md",
+      "title": "CS2103/T Textbook - Use Cases : Introduction"
+    },
+    {
+      "src": "book/requirements/glossary/index.md",
+      "title": "CS2103/T Textbook - Glossary"
+    },
+    {
+      "src": "book/requirements/glossary/introduction/index.md",
+      "title": "CS2103/T Textbook - Glossary : Introduction"
+    },
+    {
+      "src": "book/requirements/supplementaryRequirements/index.md",
+      "title": "CS2103/T Textbook - Supplementary Requirements"
+    },
+    {
+      "src": "book/requirements/supplementaryRequirements/introduction/index.md",
+      "title": "CS2103/T Textbook - Supplementary Requirements : Introduction"
+    },
+    {
+      "src": "book/se-pattern/singleton/index.md",
+      "title": "CS2103/T Textbook - Singleton Pattern"
+    },
+    {
+      "src": "book/common/definitions.md",
+      "title": "CS2103/T Textbook - Definitions"
+    },
+    {
+      "src": "book/common/references.md",
+      "title": "CS2103/T Textbook - References"
+    }
+  ],
+  "ignore": [
+    "_site/*",
+    ".idea/*",
+    ".gitignore",
+    "README.md",
+    "contents/handbook/*",
+    "*.md"
+  ]
+}
