@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/site-demo-cs2103",
+  "baseUrl": "/cs2103-website",
   "pages": [
     {
       "src": "index.md",
