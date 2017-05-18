@@ -152,6 +152,7 @@
     ".gitignore",
     "README.md",
     "contents/handbook/*",
-    "*.md"
+    "*.md",
+    ".git/*"
   ]
 }
