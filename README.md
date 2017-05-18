@@ -1,10 +1,6 @@
-### CS2103 Demo Site 
+### CS2103 Website + SE-book submodule
 
-Click [here](https://markbind.github.io/site-demo-cs2103/) to see preview.
-
-#### Publish (output folder: `\_site`)
-```
-markbind build
-git add _site/ && git commit -m "Site update"
-git subtree push --prefix _site origin gh-pages
-```
+## Set up
+1. Clone the repo.
+2. Run `git submodule update --init --recursive` to pull the content of the se-book.
+3. `markbind serve`
