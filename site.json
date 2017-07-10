@@ -22,10 +22,6 @@
       "title": "CS2103/T Website - Textbook"
     },
     {
-      "src": "book/print.md",
-      "title": "CS2103/T Website - Textbook [Printable]"
-    },
-    {
       "src": "book/introduction/index.md",
       "title": "CS2103/T Textbook - Software Engineering Rocks"
     },
@@ -880,6 +876,10 @@
     {
       "src": "book/common/definitions.md",
       "title": "CS2103/T Textbook - Definitions"
+    },
+    {
+      "src": "book/common/print.md",
+      "title": "CS2103/T Textbook [Printable]"
     },
     {
       "src": "book/common/references.md",
