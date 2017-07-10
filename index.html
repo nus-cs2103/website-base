@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Schedule</title>
-    <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="markbind/css/github.min.css">
+    <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="markbind\css\github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -167,20 +167,22 @@
             <p>Handbook sections to read around this time:</p>
             <tabs>
               <tab class="item" header="General">
-                <panel src="preliminaries._include_.html" name="Preliminaries" header="Preliminaries" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="textBooks._include_.html" name="Text Books" header="Text Books" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="programming-languages._include_.html" name="Programming Language" header="Programming Language" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="appendixA-principles._include_.html" name="Module Principles" header="Module Principles" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\preliminaries._include_.html" name="Preliminaries" header="Preliminaries" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\textBooks._include_.html" name="Text Books" header="Text Books" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\programming-languages._include_.html" name="Programming Language" header="Programming Language" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\appendixA-principles._include_.html" name="Module Principles" header="Module Principles" isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
               <tab header="Project" class="book">
-                <panel src="project-product._include_.html" name="The Product" header="The Product" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="project-scope._include_.html" name="Project Scope" header="Project Scope" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="project-constraints._include_.html" name="Project Constraints" header="Project Constraints" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\project-product._include_.html" name="The Product" header="The Product" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\project-scope._include_.html" name="Project Scope" header="Project Scope" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\project-constraints._include_.html" name="Project Constraints" header="Project Constraints" isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
               <tab header="FAQ" class="book">
-                <panel src="appendixC-faq._include_.html#handbook-faq-highWorkload" name="Why the workload is so high?" fragment="handbook-faq-highWorkload" header="Why the workload is so high?" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="appendixC-faq._include_.html#handbook-faq-beanCounting" name="Why so much bean counting?" fragment="handbook-faq-beanCounting" header="Why so much bean counting?" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="appendixC-faq._include_.html#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" fragment="handbook-faq-separateWebsite" header="Why you force me to visit a separate website instead of using IVLE?"
+                <panel src="/cs2103-website\contents\handbook-md\appendixC-faq._include_.html#handbook-faq-highWorkload" name="Why the workload is so high?" fragment="handbook-faq-highWorkload" header="Why the workload is so high?" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\appendixC-faq._include_.html#handbook-faq-beanCounting" name="Why so much bean counting?" fragment="handbook-faq-beanCounting" header="Why so much bean counting?" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\appendixC-faq._include_.html#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" fragment="handbook-faq-separateWebsite" header="Why you force me to visit a separate website instead of using IVLE?"
                   isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
             </tabs>
@@ -331,22 +333,308 @@
   </div>
   <div>
     <panel header="Week 2 [Jan 16]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close="">
+      <panel header="Outcomes" expandable="" class="todo" ctrl-lvl="1" no-close="">
+        <div>
+          <panel class="item" header="Can explain coupling :star:" expandable="">
+            <panel src="/cs2103-website\book\designPrinciples\coupling\whatItIs\full._include_.html" header="content" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel class="item" header="Can justify the need for cohesion :star::star:" expandable="">
+            <div>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-it-is-one">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel class="item" header="Can apply coupling :star::star::star:" expandable="">
+            <div>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one-2">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-it-is-one-2">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel class="item" header="Can apply DIP :star::star::star::star:" expandable="">
+            <div>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one-3">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-it-is-one-3">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+        </div>
+      </panel>
+      <panel header="Todo" expandable="" class="todo" ctrl-lvl="1" no-close="">
         <div>
           <panel class="item" header="Handbook sections to read" expandable="">
             <tabs>
               <tab header="Project" class="book">
-                <panel src="teams._include_.html" name="Forming Teams" header="Forming Teams" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="peer-evaluations._include_.html" name="Peer Evaluations" header="Peer Evaluations" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="participation._include_.html" name="Participation marks" header="Participation marks" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="tools._include_.html" name="Tools" header="Tools" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\teams._include_.html" name="Forming Teams" header="Forming Teams" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\peer-evaluations._include_.html" name="Peer Evaluations" header="Peer Evaluations" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\participation._include_.html" name="Participation marks" header="Participation marks" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\tools._include_.html" name="Tools" header="Tools" isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
               <tab header="FAQ" class="book">
-                <panel src="appendixC-faq._include_.html#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?" isOpen="false"
-                  no-close="true" no-switch="true"></panel>
-                <panel src="appendixC-faq._include_.html#handbook-faq-selfStudy" name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="appendixC-faq._include_.html#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?" isOpen="false"
-                  no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\appendixC-faq._include_.html#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\appendixC-faq._include_.html#handbook-faq-selfStudy" name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/cs2103-website\contents\handbook-md\appendixC-faq._include_.html#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
             </tabs>
           </panel>
@@ -355,85 +643,359 @@
           </panel>
         </div>
       </panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close="">
+      <panel header="Tutorial 1" expandable="" class="tutorial" ctrl-lvl="1" no-close="">
         <div>
-          <panel class="item" header="What is a _Pre-Tutorial Learning Activity_? :zero:" expandable="">
-            <p><strong>Pre-Tutorial Learning Activities</strong> are work to be done before coming to the tutorial. These can earn participation marks.</p>
-            <panel name="More about participation marks :zero:" src="participation._include_.html" header="More about participation marks :zero:"
-              isOpen="false" no-close="true" no-switch="true"></panel>
-          </panel>
-          <panel class="item" header="T1A1. User Stories :one:" expandable="">
-            <p>Achieve level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> learning outcomes of
-              <panel header="user stories" src="index._include_.html#main"
-                minimized="" fragment="main"></panel>
-            </p>
-          </panel>
-          <panel class="item" header="T1A2. Debugging in IDEs :star::star:">
+          <panel class="item" header="Can explain coupling :star:" expandable="">
             <div>
-              <p>Complete the exercise for the learning outcome:</p>
-              <p><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#use-a-debugger-lo-debugging">AddressBook-Level1: Use a debugger [LO-Debugging]</a></p>
-              <p>Submission: Demo your debugging skills to the tutor during the tutorial. There's no need to find a bug. Just show how you can insert break points, step through code, inspect variable values, step in to methods, etc.</p>
-            </div>
-          </panel>
-          <panel class="item" header="T1A3. Start using a task management tool :star::star:">
-            <div>
-              <p>If you don't use a scheduling/task tracking tool (also known as
-                <tooltip content="Getting things done"><a href="">GTD</a></tooltip> tools) to manage your schedules/tasks, start using one. There are many available (e.g. Google Calendar + Google Tasks, Todo.txt, Fantastical, Wunderlist, <a href="http://Any.do">Any.do</a>, Remember The Milk,
-                etc. <a href="http://www.priacta.com/Articles/Comparison_of_GTD_Software.php">here's</a> a long list). Not only it will help to keep track of your work, but also it will help you better understand the product domain of the module project.
-                If you feel sceptical about this, check out rule #1 in <a href="http://www.daniel-wong.com/2015/01/14/straight-a-student/">this</a> article.</p>
-              <p>To encourage you to do the above, we resist sending you reminders about module deadlines etc. You are expected to keep track of the them yourself.</p>
-              <p><span class="important">{This learning activity is to experience the user's point of view of the problem you are going to solve in your project later.}</span></p>
-              <p>Submission: Show to the tutor your current schedule as seen on the UI of the software you are using.</p>
-            </div>
-          </panel>
-          <panel class="item" header="T1A4. Regression testing using text input/output :star::star:">
-            <div>
-              <p>Complete the exercise for the learning outcome:</p>
-              <p><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#automate-cli-testing-lo-automatedclitesting">AddressBook-Level1: Automate CLI testing [LO-AutomatedCliTesting]</a></p>
-              <p>Submission: Demo how you run the tests to the tutor.</p>
-            </div>
-          </panel>
-          <panel class="item" header="T1A5. Use Java Collections, Enums, Varargs :star::star:">
-            <div>
-              <p>If you have not used Java Collections classes (<code>ArrayList, HashMap, HashMap, etc.</code>), <code>Enums</code>, or <code>Varargs</code>, complete the exercises for the corresponding learning outcomes below:</p>
-              <ul>
-                <li><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#use-collections-lo-collections">AddressBook-Level1: Use Collections [LO-Collections]</a></li>
-                <li><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#use-enums-lo-enums">AddressBook-Level1: Use Enums [LO-Enums]</a></li>
-                <li><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#use-varargs-lo-varargs">AddressBook-Level1: Use Varargs [LO-Varargs]</a></li>
-              </ul>
-              <p>Submission: Show your code to the tutor during the tutorial.</p>
-            </div>
-          </panel>
-        </div>
-      </panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close="">
-        <div>
-          <panel class="item" header="For CS2103 students only" expandable="">
-            <div>
-              <p>If you do not have confirmed tutorial group yet, attend the slot you chose in the 'Temporary Tutorial Registration' on IVLE.</p>
-            </div>
-          </panel>
-          <panel class="item" header="Forming teams" expandable="">
-            <div>
-              <p><strong>CS2103T</strong>: Sit with members of your your phase A team (formed by CS2101).</p>
-              <p><strong>CS2103</strong>: Form tentative phase A teams for this week. Teams will be finalized next week.</p>
-            </div>
-          </panel>
-          <panel class="item" header="Demo results of pre-tutorial learning activities" expandable="">
-            <div>
-              <p>Demo to the tutor results of your pre-tutorial learning activities.</p>
-            </div>
-          </panel>
-          <panel class="item" header="After the tutorial" expandable="">
-            <div>
-              <p>If you have further questions about the lecture topics that you could not resolve even after the tutorial, your can talk to the lecturer or find more in the handout section below.
-                <panel class="book" name="Finding help" src="appendixD-help._include_.html" header="Finding help" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one-4">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
               </p>
+              <div>
+                <h4 id="what-it-is-one-4">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
             </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel class="item" header="Can justify the need for cohesion :star::star:" expandable="">
+            <div>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one-5">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-it-is-one-5">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel class="item" header="Can apply coupling :star::star::star:" expandable="">
+            <div>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one-6">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-it-is-one-6">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel class="item" header="Can apply DIP :star::star::star::star:" expandable="">
+            <div>
+              <panel header="%%prerequisites%%" expandable="">
+                <div>
+                  <panel header="Design" expandable="">
+                    <div>
+                      <div>
+                        <h4 id="basics-one-7">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                      </div>
+                      <tip-box type="success">
+                        <div>
+                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                        </div>
+                      </tip-box>
+                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                        <div>
+                          <div>
+                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                            <p>Where does it fit in?</p>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-it-is-one-7">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                    a more coupling between the components than design B.</p>
+                  <tip-box>
+                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: exercises" type="info" expandable="">
+                      <div>
+                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs x and y.</p>
+                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
+                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":trophy: evidence" expanded="">
+              <div>
+                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                  <question has-input="true">
+                    <p>Discuss the coupling levels of alternative designs x and y.</p>
+                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
+                      <p></p>
+                    </tip-box>
+                    <div slot="answer">
+                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
+                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
+                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
           </panel>
         </div>
       </panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close="">
+      <panel header="Lecture 2" expandable="" class="lecture" ctrl-lvl="1" no-close="">
         <panel class="item" header="L1 recap" expandable=""></panel>
         <panel class="item" header="Part 1 - Design patterns" expandable=""></panel>
         <panel class="item" header="Part 2 - Refactoring: from Turkey to Peacock in thousand steps" expandable=""></panel>
@@ -516,7 +1078,7 @@
 </div>
 </div>
 </body>
-<script src="markbind/js/vue.min.js"></script>
-<script src="markbind/js/vue-strap.min.js"></script>
-<script src="markbind/js/setup.js"></script>
+<script src="markbind\js\vue.min.js"></script>
+<script src="markbind\js\vue-strap.min.js"></script>
+<script src="markbind\js\setup.js"></script>
 </html>

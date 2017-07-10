@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Textbook - Definitions</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -14,7 +14,7 @@
 <div class="website-content">
   <h1 id="definitions">Definitions</h1>
   <div id="def-actor">
-    **Actor**: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.
+    <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
   </div>
   <div id="def-architecture">
     <p><strong>Software Architecture</strong>: The high level structures of a software system, the discipline of creating such structures, and the documentation of these structures. These structures are needed to reason about the software system. Each structure
@@ -58,21 +58,80 @@
   <div id="def-glossary">
     <p><strong>Glossary</strong>: A glossary serves to ensure that <em>all stakeholders have a common understanding</em> of the noteworthy terms, abbreviation, acronyms etc.</p>
   </div>
+  <div id="def-stakeholder">
+    <p><strong>Stakeholder</strong>: A party that is potentially affected by the software project. e.g. users, sponsors, developers, interest groups, government agencies, etc.</p>
+  </div>
   <div id="def-use-case">
     <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
       <popover effect="fade" placement="top">actor
-        <span slot="content"><span><strong>Actor</strong>: An actor (in a use case) is a role played by a user.  An actor can be a human or another system. Actors are not part of the system; they reside outside the system.
-</span></span>
+        <span slot="content"><span></span></span>
       </popover>
     </p>
+    <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+    <p></p>
     <p><span class="pull-right">[ 📖 : <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
       </popover>]</span>
     </p>
   </div>
+  <div id="def-type-signature">
+    <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant. Here are some
+      examples:</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th style="text-align:center">Method</th>
+          <th style="text-align:center">Type Signature</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center">int add(int X, int Y)</td>
+          <td style="text-align:center">(int, int)</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">void add(int A, int B)</td>
+          <td style="text-align:center">(int, int)</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">void m(int X, double Y)</td>
+          <td style="text-align:center">(int, double)</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">void m(double X, int Y)</td>
+          <td style="text-align:center">(double, int)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="def-polymorphism">
+    <p><strong>Polymorphism</strong>:</p>
+    <blockquote>
+      <p>The ability of different objects to respond, each in its own way, to identical messages is called polymorphism.</p>
+      <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+    </blockquote>
+  </div>
+  <div id="def-abstraction">
+    <p><strong>Abstraction</strong>:</p>
+    <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details that are
+      relevant to the current perspective or the task at hand. For example, within a certain software component, we might deal with a ‘user’ data type, while ignoring the details contained in the user data item. These details have been ‘abstracted away’
+      as they do not affect the task of that software component. This is called <em>data abstraction</em>. On the other hand, <em>control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level. For example,
+      <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+    <p>Abstraction can be applied repeatedly to obtain higher and <em>higher levels of abstractions</em>. For example, a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit. Similarly, <code>execute(Game)</code>      is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+  </div>
+  <div id="def-software-design-pattern">
+    <p><strong>Software Design Pattern</strong>: An <em>elegant reusable solution</em> to a <em>commonly recurring problem</em> within a <em>given context</em> in software design.</p>
+  </div>
+  <div id="def-exception">
+    <p><strong>Exception</strong>:</p>
+    <blockquote>
+      <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.</p>
+      <p>–- Java Tutorial (Oracle Inc.)</p>
+    </blockquote>
+  </div>
 </div>
 </div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
-<script src="../../markbind/js/setup.js"></script>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
 </html>

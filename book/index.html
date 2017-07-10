@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Textbook</title>
-    <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../markbind/css/github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -31,10 +31,24 @@
       </div>
     </popover>
   </div>
+  <div>
+    <ul>
+      <li><a href="./softwareEngineering/">Software Engineering</a>
+        <trigger for="pop:softwareEngineering-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:softwareEngineering-preview" title="Software Engineering :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about software engineering</p>
+        </div>
+      </div>
+    </popover>
+  </div>
   <h3 id="requirements">Requirements</h3>
   <div>
     <ul>
-      <li><a href="./requirements/">Software requirements</a>
+      <li><a href="./requirements/">Requirements</a>
         <trigger for="pop:requirements-preview">🔍</trigger>
       </li>
     </ul>
@@ -53,90 +67,409 @@
   </div>
   <div>
     <ul>
-      <li>__ <a href="./requirements/userStories">User stories</a><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png">
-        <trigger for="pop:user-stories-preview">🔍</trigger>
+      <li><a href="./productDesign/">Product Design</a>
+        <trigger for="pop:productDesign-preview">🔍</trigger>
       </li>
     </ul>
-    <popover id="pop:user-stories-preview" title=":mag: User Stories" placement="right">
+    <popover id="pop:productDesign-preview" title="Product Design :mag:" placement="right">
       <div slot="content">
         <div>
-          <div>
-            <ul>
-              <li><span id="explain-user-story">🏆 Able to explain what is a user story <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></span></li>
-              <li><span id="follow-user-story-format">🏆 Able to write simple user stories in a known format <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></span></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><span id="write-detailed-user-story">🏆 Able to write more detailed user stories <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></span></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><span id="manage-user-stories">🏆 Able to use user stroies to <em>manage</em> requirements of project <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></span></li>
-            </ul>
-          </div>
+          <p>All about product design</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <h3 id="design">Design</h3>
+  <div>
+    <ul>
+      <li><a href="./design/">Design</a>
+        <trigger for="pop:design-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:design-preview" title="Software Design :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about software design</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./designPrinciples/">Design Principles</a>
+        <trigger for="pop:design-principles-preview">🔍</trigger><a href="designPrinciples/print.html">📜</a></li>
+    </ul>
+    <popover id="pop:design-principles-preview" title="Software Design Principles :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about software design principles</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./oop/">Object Oriented Programming</a>
+        <trigger for="pop:oop-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:oop-preview" title="OOP :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>Object Oriented Programming is a widely used programming paradigm.</p>
+          <p>This chapter covers:</p>
+          <ul>
+            <li>Objects</li>
+            <li>Classes</li>
+            <li>Associations</li>
+            <li>Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Conceptualizing OOP Solution</li>
+            <li>FAQ</li>
+            <li>Worked Examples</li>
+          </ul>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./modelling/">Modelling</a>
+        <trigger for="pop:modelling-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:modelling-preview" title="Modelling :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about modelling</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./architecture/">Architecture</a>
+        <trigger for="pop:architecture-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:architecture-preview" title="Architecture :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about software architecture</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./designPatterns/">Design Patterns</a>
+        <trigger for="pop:design-patterns-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:design-patterns-preview" title="Software Design Patterns :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about software design patterns</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <h3 id="implementation">Implementation</h3>
+  <div>
+    <ul>
+      <li><a href="./ides/">IDEs</a>
+        <trigger for="pop:ides-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:ides-preview" title="IDEs :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about IDEs</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./codeQuality/">Code Quality</a>
+        <trigger for="pop:code-quality-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:code-quality-preview" title="Code Quality :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about writing better quality code</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./refactoring/">Refactoring</a>
+        <trigger for="pop:refactoring-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:refactoring-preview" title="Refactoring :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about refactoring</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./documentation/">Documentation</a>
+        <trigger for="pop:documentation-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:documentation-preview" title="Documentation :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about documentation</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./errorHandling/">Error Handling</a>
+        <trigger for="pop:errorHandling-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:errorHandling-preview" title="Error Handling :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about error handling</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./integration/">Integration</a>
+        <trigger for="pop:integration-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:integration-preview" title="Integration :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about integration</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./oopImplementation/">OOP</a>
+        <trigger for="pop:oopImplementation-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:oopImplementation-preview" title="OOP :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about OOP from the implementation perspective</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./reuse/">Reuse</a>
+        <trigger for="pop:reuse-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:reuse-preview" title="Reuse :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about reuse</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <h3 id="quality-assurance">Quality Assurance</h3>
+  <div>
+    <ul>
+      <li><a href="./qualityAssurance/">Quality Assurance</a>
+        <trigger for="pop:qualityAssurance-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:qualityAssurance-preview" title="Quality Assurance :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about quality assurance</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./testing/">Testing</a>
+        <trigger for="pop:testing-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:testing-preview" title="Testing :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about testing</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./testCaseDesign/">Test Case Design</a>
+        <trigger for="pop:testCaseDesign-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:testCaseDesign-preview" title="Test Case Design :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about test case design</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <h3 id="project-management">Project Management</h3>
+  <div>
+    <ul>
+      <li><a href="./revisionControl/">Revision Control</a>
+        <trigger for="pop:revisionControl-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:revisionControl-preview" title="Revision Control :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about revision control</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./projectPlanning/">Project Planning</a>
+        <trigger for="pop:projectPlanning-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:projectPlanning-preview" title="Project Planning :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about project planning</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./teamwork/">Teamwork</a>
+        <trigger for="pop:teamwork-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:teamwork-preview" title="Teamwork :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about teamwork</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <div>
+    <ul>
+      <li><a href="./processModels/">SLDC Process Models</a>
+        <trigger for="pop:processModels-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:processModels-preview" title="SLDC Process Models :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about SLDC process models</p>
+        </div>
+      </div>
+    </popover>
+  </div>
+  <h3 id="tools">Tools</h3>
+  <div>
+    <ul>
+      <li><a href="./uml/">UML</a>
+        <trigger for="pop:uml-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:uml-preview" title="UML :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>UML diagrams are ...</p>
+          <p>This chapter covers:</p>
+          <ul>
+            <li>Class Diagrams</li>
+            <li>Sequence Diagrams</li>
+            <li>Object Diagrams</li>
+            <li>Activity Diagrams</li>
+            <li>Miscellaneous</li>
+          </ul>
         </div>
       </div>
     </popover>
   </div>
   <ul>
-    <li><a href="">Product design</a></li>
-  </ul>
-  <h3 id="design">Design</h3>
-  <ul>
-    <li><a href="">Object Oriented Programming</a></li>
-    <li><a href="">Architecture</a></li>
-    <li><a href="">API design</a></li>
+    <li><a href="">Intellij IDEA</a></li>
   </ul>
   <div>
     <ul>
-      <li><a href="./se-pattern/">Design Patterns</a>
-        <trigger for="pop:pattern-preview">🔍</trigger>
+      <li><a href="./gitAndGithub/">Git and Github</a>
+        <trigger for="pop:gitAndGithub-preview">🔍</trigger>
       </li>
     </ul>
-    <popover id="pop:pattern-preview" title="Software Design Patterns :mag:" placement="right">
+    <popover id="pop:gitAndGithub-preview" title="Git and Github :mag:" placement="right">
       <div slot="content">
-        <p>A software <em>design pattern</em> is a general reusable solution to a commonly occurring problem within a given context in software design.</p>
-        <p>This chapter covers:</p>
-        <ul>
-          <li>
-            <p>An intro to design patterns</p>
-          </li>
-          <li>
-            <p>Some common design patterns</p>
-          </li>
-        </ul>
+        <div>
+          <p>All about Git and Github</p>
+        </div>
       </div>
     </popover>
   </div>
-  <h3 id="implementation">Implementation</h3>
   <ul>
-    <li><a href="">IDEs</a></li>
-    <li><a href="">Code quality</a></li>
-    <li><a href="">Refactoring</a></li>
-    <li><a href="">Defensive programming</a></li>
-  </ul>
-  <h3 id="quality-assurance">Quality assurance</h3>
-  <ul>
-    <li><a href="">Testing</a></li>
-    <li><a href="">Other QA techniques</a></li>
-  </ul>
-  <h3 id="project-management">Project management</h3>
-  <ul>
-    <li><a href="">Revision control</a></li>
-    <li><a href="">Dev ops</a></li>
-    <li><a href="">Software Process Models</a></li>
+    <li><a href="">Java</a></li>
+    <li><a href="">JUnit</a></li>
   </ul>
   <h3 id="supplementary">Supplementary</h3>
+  <div>
+    <ul>
+      <li><a href="./principles/">Principles</a>
+        <trigger for="pop:principles-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:principles-preview" title="Principles :mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>All about principles</p>
+        </div>
+      </div>
+    </popover>
+  </div>
   <ul>
     <li><a href="common/definitions.html">Definitions</a></li>
     <li><a href="common/references.html">References</a></li>
+    <li><a href="common/outcomes.html">Learning Outcomes</a></li>
+    <li><a href="common/print.html">Printable 📜</a></li>
   </ul>
+  <div>
+    <ul>
+      <li><a href="java/style">Java Coding Style Guide</a>
+        <trigger for="pop:java-style-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:java-style-preview" title="Java Code Style Guide:mag:" placement="right">
+      <div slot="content">
+        <div>
+          <p>Style guidelines to follow when writing Java code</p>
+        </div>
+      </div>
+    </popover>
+  </div>
 </div>
 </div>
 </body>
-<script src="../markbind/js/vue.min.js"></script>
-<script src="../markbind/js/vue-strap.min.js"></script>
-<script src="../markbind/js/setup.js"></script>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\setup.js"></script>
 </html>
