@@ -9,7 +9,7 @@
 
 
 <panel class="item" header="Can explain coupling :star:" expandable>
-  <include src="../../book/designPrinciples/coupling/whatItIs/full.md"/>
+  <dynamic-panel src="../../book/designPrinciples/coupling/whatItIs/full.md" header="content" is-open />
   <panel header=":trophy: evidence" expanded>
     <include src="../../book/designPrinciples/coupling/whatItIs/q-essay-coupling-levels.md" />
   </panel>
