@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/handbook.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/handbook.css">
 
-<include src="common/header.md" />
+<include src="../common/header.md" />
 
 <div class="website-content">
 
@@ -65,161 +65,161 @@
 
 # Preliminaries
 <div id="handbook-preliminaries">
-  <include src="handbook/preliminaries.md" />
+  <include src="preliminaries.md" />
 </div>
 
 # Lectures
 <div id="handbook-lectures">
-  <include src="handbook/lectures.md" />
+  <include src="lectures.md" />
 </div>
 
 # Tutorials
 <div id="handbook-tutorials">
-  <include src="handbook/tutorials.md" />
+  <include src="tutorials.md" />
 </div>
 
 # Text Books
 <div id="handbook-textBooks">
-  <include src="handbook/textbooks.md" />
+  <include src="textbooks.md" />
 </div>
 
 # Programming Language
 <div id="handbook-programmingLanguages">
-  <include src="handbook/programming-languages.md" />
+  <include src="programming-languages.md" />
 </div>
 
 # Project
 <div id="handbook-project">
-<include src="handbook/project.md" />
+<include src="project.md" />
 </div>
 
 ## The product
 <div id="handbook-project-product">
-<include src="handbook/project-product.md" />
+<include src="project-product.md" />
 </div>
 
 ## Project Scope
 <div id="handbook-project-scope">
-<include src="handbook/project-scope.md" />
+<include src="project-scope.md" />
 </div>
 
 ## Project Constraints
 <div id="handbook-project-constraints">
-<include src="handbook/project-constraints.md" />
+<include src="project-constraints.md" />
 </div>
 
 ## Project Deliverables
 <div id="handbook-project-deliverables">
-<include src="handbook/project-deliverables.md" />
+<include src="project-deliverables.md" />
 </div>
 
 ## V0.0 : The Concept
 <div id="handbook-project-v00">
-<include src="handbook/project-v00.md" />
+<include src="project-v00.md" />
 </div>
 
 ## V0.1 : The Walking Skeleton
 <div id="handbook-project-v01">
-<include src="handbook/project-v01.md" />
+<include src="project-v01.md" />
 </div>
 
 ## V0.2 : The MVP
 <div id="handbook-project-v02">
-<include src="handbook/project-v02.md" />
+<include src="project-v02.md" />
 </div>
 
 ## V0.3
 <div id="handbook-project-v03">
-<include src="handbook/project-v03.md" />
+<include src="project-v03.md" />
 </div>
 
 ## V0.4
 <div id="handbook-project-v04">
-<include src="handbook/project-v04.md" />
+<include src="project-v04.md" />
 </div>
 
 ## V0.5rc : The Release Candidate
 <div id="handbook-project-v05rc">
-<include src="handbook/project-v05rc.md" />
+<include src="project-v05rc.md" />
 </div>
 
 ## V0.5 : The Production Release
 <div id="handbook-project-v05">
-<include src="handbook/project-v05.md" />
+<include src="project-v05.md" />
 </div>
 
 ## Project retrospective
 <div id="handbook-project-retrospective">
-<include src="handbook/project-retrospective.md" />
+<include src="project-retrospective.md" />
 </div>
 
 ## Individual report
 <div id="handbook-project-individualReport">
-<include src="handbook/project-individual-report.md" />
+<include src="project-individual-report.md" />
 </div>
 
 ## Project Assessment
 <div id="handbook-project-assessment">
-<include src="handbook/project-assessment.md" />
+<include src="project-assessment.md" />
 </div>
 
 ## Project Supervision
 <div id="handbook-project-supervision">
-<include src="handbook/project-supervision.md" />
+<include src="project-supervision.md" />
 </div>
 
 # Forming Teams
 <div id="handbook-teams">
-<include src="handbook/teams.md" />
+<include src="teams.md" />
 </div>
 
 # Peer Evaluations
 <div id="handbook-peerEvaluations">
-<include src="handbook/peer-evaluations.md" />
+<include src="peer-evaluations.md" />
 </div>
 
 # Project Tools
 <div id="handbook-tools">
-<include src="handbook/tools.md" />
+<include src="tools.md" />
 </div>
 
 # Exams
 <div id="handbook-exams">
-<include src="handbook/exams.md" /></div>
+<include src="exams.md" /></div>
 
 # Grade Breakdown
 <div id="handbook-gradeBreakdown">
-<include src="handbook/gradeBreakdown.md" /></div>
+<include src="gradeBreakdown.md" /></div>
 
 # Participation Marks
 <div id="handbook-participation">
-<include src="handbook/participation.md" /></div>
+<include src="participation.md" /></div>
 
 # Appendix A: Module Principles
 <div id="handbook-appendixA-principles">
-<include src="handbook/appendixA-principles.md" /></div>
+<include src="appendixA-principles.md" /></div>
 
 # Appendix B: Module Policies
 <div id="handbook-appendixB-policies">
-<include src="handbook/appendixB-policies.md" /></div>
+<include src="appendixB-policies.md" /></div>
 <div id="handbook-policy"></div>
 
 # Appendix C: Frequently Asked Questions
 <div id="handbook-appendixC-faq">
-<include src="handbook/appendixC-faq.md" /></div>
+<include src="appendixC-faq.md" /></div>
 
 # Appendix D: How to get help in CS2103/T
 <div id="handbook-appendixD-help">
-<include src="handbook/appendixD-help.md" /></div>
+<include src="appendixD-help.md" /></div>
 
 # Appendix E: Using GitHub Project Hosting
 <div id="handbook-appendixE-github">
-<include src="handbook/appendixE-github.md" /></div>
+<include src="appendixE-github.md" /></div>
 
 # Appendix F: What to do if there are teamwork issues
 <div id="handbook-appendixF-teamworkIssues">
-<include src="handbook/appendixF-teamworkIssues.md" /></div>
+<include src="appendixF-teamworkIssues.md" /></div>
 
-<include src="common/disqus.md" />
+<include src="../common/disqus.md" />
 
 </div>
