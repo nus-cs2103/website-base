@@ -2,7 +2,7 @@
 
 **Pre-Tutorial Learning Activities** are work to be done before coming to the tutorial. These can earn participation marks.
 
-  <include name="More about participation marks :zero:" src="../handbook-md/participation.md" dynamic />
+  <include name="More about participation marks :zero:" src="../../handbook/participation.md" dynamic />
 
 </panel>
 

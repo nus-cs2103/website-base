@@ -4,18 +4,18 @@
 
 <tab header="Project" class="book">
 
-  <include src="../handbook-md/teams.md" name="Forming Teams" dynamic />
-  <include src="../handbook-md/peer-evaluations.md" name="Peer Evaluations" dynamic />
-  <include src="../handbook-md/participation.md" name="Participation marks" dynamic />
-  <include src="../handbook-md/tools.md" name="Tools" dynamic />
+  <include src="../../handbook/teams.md" name="Forming Teams" dynamic />
+  <include src="../../handbook/peer-evaluations.md" name="Peer Evaluations" dynamic />
+  <include src="../../handbook/participation.md" name="Participation marks" dynamic />
+  <include src="../../handbook/tools.md" name="Tools" dynamic />
 
 </tab>
 
 <tab header="FAQ" class="book">
 
-  <include src="../handbook-md/appendixC-faq.md#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" dynamic />
-  <include src="../handbook-md/appendixC-faq.md#handbook-faq-selfStudy" name="Why so much self-study?" dynamic />
-  <include src="../handbook-md/appendixC-faq.md#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" dynamic />
+  <include src="../../handbook/appendixC-faq.md#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" dynamic />
+  <include src="../../handbook/appendixC-faq.md#handbook-faq-selfStudy" name="Why so much self-study?" dynamic />
+  <include src="../../handbook/appendixC-faq.md#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" dynamic />
 
 </tab>
 
