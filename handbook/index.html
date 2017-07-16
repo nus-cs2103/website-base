@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Handbook</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/handbook.css">
+<div>
+  <navbar placement="top" type="inverse"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
+    <li><a href="/cs2103-website/index.html">Schedule</a></li>
+    <li><a href="/cs2103-website/book/index.html" target="_blank">Textbook</a></li>
+    <li><a href="/cs2103-website/handbook">Handbook</a></li>
+  </navbar>
+</div>
+<div class="website-content">
+  <ul>
+    <li><a href="#handbook-preliminaries">Preliminaries</a></li>
+    <li><a href="#handbook-lectures">Lectures</a></li>
+    <li><a href="#handbook-tutorials">Tutorials</a></li>
+    <li><a href="#handbook-textBooks">Text Books</a></li>
+    <li><a href="#handbook-programmingLanguages">Programming Language</a></li>
+    <li><a href="#handbook-project">Project</a>
+      <ul>
+        <li><a href="#handbook-project-product">The product</a></li>
+        <li><a href="#handbook-project-scope">Scope</a></li>
+        <li><a href="#handbook-project-constraints">Constraints</a></li>
+        <li><a href="#handbook-project-deliverables">Deliverables</a></li>
+        <li><a href="#handbook-project-v00">V0.0: The Concept</a></li>
+        <li><a href="#handbook-project-v01">V0.1 : The Walking Skeleton</a></li>
+        <li><a href="#handbook-project-v02">V0.2 : The MVP</a></li>
+        <li><a href="#handbook-project-v03">V0.3</a></li>
+        <li><a href="#handbook-project-v04">V0.4</a></li>
+        <li><a href="#handbook-project-v05rc">V0.5rc : The Release Candidate</a></li>
+        <li><a href="#handbook-project-v05">V0.5 : The Production Release</a></li>
+        <li><a href="#handbook-project-retrospective">Retrospective</a></li>
+        <li><a href="#handbook-project-individualReport">Individual report</a></li>
+        <li><a href="#handbook-project-assessment">Assessment</a></li>
+        <li><a href="#handbook-project-supervision">Supervision</a></li>
+      </ul>
+    </li>
+    <li><a href="#handbook-tools">Tools</a></li>
+    <li><a href="#handbook-teams">Forming Teams</a></li>
+    <li><a href="#handbook-peerEvaluations">Peer Evaluations</a></li>
+    <li><a href="#handbook-exams">Exams</a></li>
+    <li><a href="#handbook-gradeBreakdown">Grade Breakdown</a></li>
+    <li><a href="#handbook-participation">Participation Marks</a></li>
+    <li><a href="#handbook-appendixA-principles">Appendix A: Module Principles</a></li>
+    <li><a href="#handbook-appendixB-policies">Appendix B: Module Policies</a>
+      <ul>
+        <li><a href="#policy-followingInstructions">Policy on following instructions</a></li>
+        <li><a href="#policy-teamSize">Policy on grading smaller/larger teams</a></li>
+        <li><a href="#policy-workDistribution">Policy on project work distribution</a></li>
+        <li><a href="#policy-validAbsences">Policy on absence due to valid reasons (e.g. MC, LOA, University events)</a></li>
+        <li><a href="#policy-responseTime">Policy on email response time</a></li>
+        <li><a href="#policy-techHelp">Policy on tech help</a></li>
+        <li><a href="#policy-publishingSubmissions">Policy on publishing submissions</a></li>
+        <li><a href="#policy-plagiarism">Policy on plagiarism</a></li>
+        <li><a href="#policy-reuse">Policy on reuse</a></li>
+        <li><a href="#policy-outsiderHelp">Policy on help from outsiders</a></li>
+        <li><a href="#policy-submissionLength">Policy on suggested length for submissions</a></li>
+      </ul>
+    </li>
+    <li><a href="#handbook-appendixC-faq">Appendix C: Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#handbook-faq-highWorkload">Why the workload is so high?</a></li>
+        <li><a href="#handbook-faq-beanCounting">Why so much bean counting?</a></li>
+        <li><a href="#handbook-faq-separateWebsite">Why you force me to visit a separate website instead of using IVLE?</a></li>
+        <li><a href="#handbook-faq-slideFormat">Why slides are not detailed enough, handouts are wordy?</a></li>
+        <li><a href="#handbook-faq-selfStudy">Why so much self-study?</a></li>
+        <li><a href="#handbook-faq-timelyArrival">Why do I have to come to tutorials on time?</a></li>
+        <li><a href="#handbook-faq-noLaptop">What if I don’t carry around a laptop?</a></li>
+        <li><a href="#handbook-faq-narrowScope">Why very narrow project scope?</a></li>
+        <li><a href="#handbook-faq-vagueRequirements">Why project requirements are so vague?</a></li>
+        <li><a href="#handbook-faq-favoriteTool">Why I’m not allowed to use my favorite OS/IDE/etc?</a></li>
+        <li><a href="#handbook-faq-manySubmissions">Why so many submissions?</a></li>
+        <li><a href="#handbook-faq-intermediateMarks">Why not enough marks for intermediate submissions?</a></li>
+        <li><a href="#handbook-faq-cs2101Differences">Why submission requirements differ between CS2103T and CS2101?</a></li>
+      </ul>
+    </li>
+    <li><a href="#handbook-appendixD-help">Appendix D: How to get help in CS2103/T</a></li>
+    <li><a href="#handbook-appendixE-github">Appendix E: Using GitHub Project Hosting</a></li>
+    <li><a href="#handbook-appendixF-teamworkIssues">Appendix F: What to do if there are teamwork issues</a></li>
+  </ul>
+  <h1 id="preliminaries">Preliminaries</h1>
+  <div id="handbook-preliminaries">
+    <div>
+      <p><strong>Where is everything?</strong> CS2103/T-related information are mainly in one of these two places:</p>
+      <ul>
+        <li>The <strong><a href="index.html">Schedule page</a></strong> (organized chronologically): That is the one page you need to refer weekly.</li>
+        <li><strong>Module handbook</strong> (i.e. this page. organized by topic) This is a reference document supplementary to the schedule page. This page contains a lot of text, probably too much to read in one sitting. Instead, <mark>skim through it quickly to learn what it contains.</mark>          You can come back to read details as-and-when the need arises. The schedule page lists relevant sections of the Handbook you should read at various points.</li>
+      </ul>
+      <p><strong>No reminder emails</strong>: We try to minimize sending module details via announcements. The reason will be explained in lecture 1.</p>
+      <p><strong>CS2103 Vs CS2103T</strong>: Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.</p>
+      <p><strong>What did seniors say about this module?</strong> CS2103/T is <strong>practical</strong> and <strong>useful</strong> module, but also a <strong>heavy</strong> and <strong>intensive</strong> module, as you can see from <a href="">student feedback for a recent offering of the module</a>.</p>
+    </div>
+  </div>
+  <h1 id="lectures">Lectures</h1>
+  <div id="handbook-lectures">
+    <div><img src="images/Lecture photo.png" style="width: 713px;">
+      <p><strong>Timing/venue</strong>: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).</p>
+      <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
+      <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
+      <p><strong>Handouts</strong>: Each lecture consists of 3-5 sections, supported by separate handouts. Links to handouts for a lecture will be <mark>added to the Schedule page on Wednesday</mark> of that week. You are welcome to, but not required to,
+        read through them before attending the lecture.</p>
+      <p><mark><strong>Read before tutorials</strong></mark>: You are required to read the relevant handouts and ponder how to apply those concepts in your project before attending the corresponding tutorial. If you have any followup questions about handouts,
+        please post in IVLE forums or ask during tutorials (if there is spare time).</p>
+      <p><strong>Post-lecture quizzes</strong>: Each lecture will be followed by an IVLE quiz that can earn you participation points. Purpose: for you to self-test how well you understood the handouts and other “required” readings (if any). You can keep
+        taking the quiz until you get full marks. We count the best effort only. IVLE quizzes open on Friday right after the lecture and closes on the following Tuesday 2359. Post-lecture quizzes are <mark>counted for <a href="#participation">participation marks</a></mark>.</p>
+      <p><strong>Slides</strong>: Because we are giving separate handouts, lecture slides do not contain content that you can print and use as a reference during the lecture or the exams. Instead, handouts serve as the main exam reference while slides will
+        play only a supporting role during lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
+    </div>
+  </div>
+  <h1 id="tutorials">Tutorials</h1>
+  <div id="handbook-tutorials">
+    <div>
+      <p><mark>IMPORTANT: Our tutorials start on week 2 (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.</mark></p>
+      <p>The structure of our tutorials is different from traditional tutorials.</p>
+      <ul>
+        <li><strong>50% assessment/feedback</strong>: Up to 50% of our tutorial time is to be spent on interacting with your tutor as directed by the tutor. The purpose of this interaction is for the tutor to assess learning activities you claim to have done
+          and give you feedback.</li>
+        <li><strong>50% discussion</strong>: The remaining 50% of the tutorial time is to be spent on discussing module activities with team members and helping each other w.r.t. those activities.</li>
+      </ul>
+      <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
+      <ul>
+        <li><strong>No direct tech help</strong>: Tutors are prohibited from giving technical help, because we want you to learn the vital survival skill of troubleshooting technical problems.<br><span class="dimmed">[cf Appendix D: How to get tech help]</span></li>
+        <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or handouts. Self-learning is a vital part of the module. But tutors may help you clarify doubts. For example consider these two questions
+          you might want to ask a tutor:
+          <ul>
+            <li><em>This is how I understood/applied dependency injection. Is that correct?</em> - Such questions are welcome.<br><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification
+              from the tutor.</li>
+            <li><em>What is dependency injection?</em> - Such questions are not welcome.<br><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback
+        on how you are doing (or have done) project tasks so that you can improve further.<br><span class="dimmed">[Cf external resource: <a href="">A practitioner article about receiving feedback</a>]</span></p>
+      <p><strong>Timing/venue:</strong></p>
+      <ul>
+        <li>Please refer to the Schedule page for further details on each tutorial.</li>
+        <li>You are expected to arrive on time.
+          <ul>
+            <li>If your tutorial is in <strong>COM1-B103</strong>: If you arrive early, you may enter the tutorial room by the door near the staircase and wait in the empty area of the room until the current class vacates the room.</li>
+            <li>If your tutorial is in <strong>SR5</strong>: If you arrive early, please wait outside the room until you are asked to come in.</li>
+          </ul>
+        </li>
+        <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor before leaving if you leave before the class is dismissed.</li>
+        <li>Please make sure you <mark>vacate the table 5 minutes before the hour</mark> so that the next group can start on time. You may move to the empty area at the back of the room and continue your discussions after the class is over.</li>
+        <li>In the past many students have suggested to increase the tutorial duration because 1 hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. What you can do is
+          to extend the tutorial time by yourselves. e.g. Meet 30 minutes before the tutorial starts and prepare yourselves for the tutorial task. Similarly, you can move your discussion to somewhere else after the tutorial is over and continue for some
+          more time.</li>
+      </ul>
+      <p><strong>Learning activities:</strong></p>
+      <p>Each tutorial has a list of learning activities. They are categorized as,</p>
+      <ul>
+        <li><strong>BASIC</strong> (⭐️) : Cover skills you should have if you want to PASS the module.</li>
+        <li><strong>INTERMEDIATE</strong> (⭐️⭐️) : Cover skills you should have if you are aiming for a GOOD grade from this module, and a good career as a software engineer.</li>
+        <li><strong>ADVANCED</strong> (⭐️⭐️⭐️) : Cover skills beyond the module syllabus. These are for students who want to go the extra mile to strengthen their skills.</li>
+      </ul>
+      <p><strong>Grading:</strong></p>
+      <p>The following aspects of your conduct in tutorials will be considered when awarding participation marks. Grading is based on peer evaluations and tutor observations. Cf handbook section: Participation marks</p>
+      <ul>
+        <li><strong>Punctuality</strong>: Arrived on time. Stayed in the tutorial at least 40 minutes.<br><span class="dimmed">Cf FAQ: <a href="">Why do I have to attend tutorials on time?</a></span></li>
+        <li><strong>Attention</strong>: Paid undivided attention to tutorial proceedings (i.e. no multi tasking). Took part in tutorial activities.<br> Note: When the tutor is discussing something with one team member (e.g., one team member is explaining
+          how he/she used assertions), <strong>the whole team is expected to pay attention</strong> to that discussion, not do your own things. Whatever discussed is relevant to all of you, not just that team member.</li>
+        <li><strong>Effort</strong>: The amount of learning activities done before and during the tutorial.</li>
+      </ul>
+      <p><strong>Other expectations:</strong></p>
+      <ul>
+        <li><strong>Please bring your laptop to tutorials.</strong> You often need it to show your learning activity results. At other times, we ask you to work on project related things with your team members, which too may require the laptop. <span class="dimmed">Cf FAQ: <a href="">What if I don't carry a laptop around?</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <h1 id="text-books">Text Books</h1>
+  <div id="handbook-textBooks">
+    <div>
+      <p>There is <mark>no need to buy a textbook</mark> this semester. Lecture handouts should be enough to give you the required coverage of our topics.</p>
+      <p>Here are some relevant books you can read to supplement module content (optional reading).</p><img src="images/supplementary books.png" style="width: 716px;">
+      <ul>
+        <li><strong>UML Distilled by Martin Fowler</strong></li>
+        <li><strong><a href="http://www.comp.nus.edu.sg/~damithch/guide3e/">Practical Tips for Software-Intensive Student Projects</a></strong> by Damith C. Rajapakse</li>
+        <li><strong>The Pragmatic Programmer</strong> by Andrew Hunt and Dave Thomas</li>
+        <li><strong>Clean Code</strong> by Robert C. Martin</li>
+      </ul>
+    </div>
+  </div>
+  <h1 id="programming-language">Programming Language</h1>
+  <div id="handbook-programmingLanguages">
+    <div>
+      <table class="two-column-content">
+        <tr>
+          <td width="160px"><img src="images/JamesGosling.png" width="150px"></td>
+          <td>
+            <p><mark><strong>The main language</strong> used in this module is Java</mark>. You should use Java for all programming activities, the project, and exam answers.</p>
+            <p>The module doesn’t “teach” Java. We assume you already know Java basics. We expect you to learn on your own any Java constructs not covered in your previous modules.</p>
+            <p>Our <mark>Java coding standard</mark> is <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <h1 id="project">Project</h1>
+  <div id="handbook-project">
+    <div>
+      <p>CS2103 project is structured to resemble the initial stages of a non-trivial real-life software project. In this project you will conceptualize a product and build a scaled-down version of the product, and <mark>have it ready to be continued by someone else</mark>.</p>
+    </div>
+  </div>
+  <h2 id="the-product">The product</h2>
+  <div id="handbook-project-product">
+    <div>
+      <p>In this semester, we build a scaled-down version of ‘a Siri for keyboards’. i.e. a tool that can accept natural language commands via keyboard. This is for folks who can type fast, spend most of the time near a computer, and prefer typing over mouse/voice
+        commands.</p>
+      <p>It is ‘scaled down’ in the following ways:</p>
+      <ol>
+        <li>It handles only commands related to managing the user's schedule and todo tasks.</li>
+        <li>The commands will not be truly ‘natural language’. The command format will be flexible, but still quite structured. NLP (Natural Language Processing) is not required.</li>
+      </ol>
+      <p>Let us use the generic term 'Task Manager' to refer to this product. You should give it a different name yourself.</p>
+      <p><strong>Problem outline</strong>: We are bombarded with ‘things to do’ continuously. Some things need to be done during specific times (e.g., attend meeting), some have deadlines (e.g., submit report), and others are simply ‘to be done someday’
+        (e.g., read ‘Lord of the Rings’). The pile of todo items accumulates and weighs heavily on our mind at times. Sometimes things go out of control and we forget to do certain things on time.</p>
+      <p><strong>Solution outline</strong>: The software should help user to put these todo items into a systematic process that tracks them and helps the user to decide what to do and when to do things so that the user doesn’t have to remember the todo
+        items.</p>
+      <p><strong>Target audience</strong>: There are many similar software that tackles some aspect of this problem (todo lists software, calendar software, GTD software). Because it is a crowded product space, our strategy is to become a niche player by
+        targeting a specific user group. Our target users are people like Jim whose workflow is described below.</p><img src="images/Jim at his computer.png" style="width: 500px;">
+      <p>Most of Jim’s todo items arrive as emails. This is how Jim processes his emails.</p>
+      <ol>
+        <li>
+          <p>Decides what is the follow up action required by that email.</p>
+          <ul>
+            <li>If it can be done immediately, he does it right away (e.g., just reply to the email) and ‘archive’ the email (i.e. move it out of inbox).</li>
+            <li>If it cannot be done immediately, he schedules the follow up action in his calendar and archives the email. If he cannot decide a good time to do the action, he simply schedules it in a relatively free area in his calendar.</li>
+          </ul>
+        </li>
+        <li>
+          <p>When Jim is free to do some work, he looks at his calendar and picks up something that he can do at that time. Once the task is done, he marks it as ‘done’. If there is a further follow up action required, he schedules it in the calendar.</p>
+        </li>
+        <li>
+          <p>Jim periodically reviews the calendar to pick items that could not be completed and need to be rescheduled or discarded as ‘cannot do’.</p>
+        </li>
+        <li>
+          <p>Todo items not arising from email are dealt similarly by entering them in the calendar.</p>
+        </li>
+      </ol>
+      <p>As you can see from the above workflow, Jim’s inbox is almost empty most of time (<span class="dimmed">cf <a href="http://whatis.techtarget.com/definition/inbox-zero">Inbox Zero</a></span>). He no longer worries about an inbox full of emails he
+        has to deal with at any time he login to email. He also does not have to keep any todo items in his mind because everything is recorded somewhere. However, here are some ‘pain points’ in his workflow.</p>
+      <ul>
+        <li>Jim is currently using Google calendar. Because he stores/retrieves/edits todo tasks so frequently, he finds the online calendar too slow to work with. He’d rather have a desktop software he can summon quickly. Even better (but not a must) if
+          he can activate the software by pressing a keyboard shortcut. He is quite impressed by how the <a href="http://www.launchy.net/">Launchy tool can be activated easily by pressing Alt+Space</a>.</li>
+        <li>A calendar is not very good in capturing tasks that need to be done before a specific date/time, or after a specific date/time, and items without specific times.</li>
+        <li>Entering an event in a calendar is a pain because it takes several clicks. He prefers a ‘one shot’ approach. e.g., to be able to type in commands such as &quot;<code>add July 10, 5-6, project meeting</code>&quot; (such as allowed by <a href="http://gappstips.com/google-calendar/use-quick-add-to-speed-up-google-calendar-entries/">GCal’s ‘quick add’ feature</a>).</li>
+        <li>While it is good that all Jim’s todo items are currently online and available to access from any computer, he always uses his own laptop or office PC to access them and sometimes from places where there is no ready Internet connectivity.</li>
+        <li>Jim finds it a pain to do certain things important to his workflow but not so important in a regular calendar. e.g. looking for suitable slot to schedule an item, marking an item as done, deciding what todo item to do next, postponing an item.</li>
+        <li>A calendar does not have an easy way to “block” multiple slots when the exact timing of a task is uncertain, and release the blocked slots when the time is finalized. e.g., Block Mon 2-3pm and Tue 2-3pm for a meeting with boss → the meeting is
+          confirmed for Tue → automatically release Mon slot.</li>
+      </ul>
+      <p>Design your product to solve some of Jim’s problems to make his workflow even more efficient and painless. i.e. to make his life better. You don’t have to solve all problems mentioned above and there may be other problems you could solve but not
+        mentioned above. Good software delights users by solving problems users don’t even realize they have.</p>
+      <p><strong>Important:</strong><mark>Command Line Interface is the primary mode of input.</mark> The GUI is primarily for output. That is, the GUI is used to give visual feedback rather than to collect input. Some minimal use of mouse is OK (e.g. to
+        click the minimize button), but the primary input should be command-driven. Mouse actions should have keyboard alternatives and typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared
+        to mouse or key combinations.</p>
+    </div>
+  </div>
+  <h2 id="project-scope">Project Scope</h2>
+  <div id="handbook-project-scope">
+    <div>
+      <p>The scope of the project will be restricted. This is to reduce your workload and discourage an ‘arms race’ where you try to implement as many features as possible with no time to spend on learning good software engineering principles and practices.</p>
+      <p>Write the software to cater to Jim. He is an office worker who has an office computer (used when at office) and his personal laptop (used when at home or travelling). His computers are not shared by other colleagues or family members. He is not
+        expected to use this software for collaborative work scheduling with others.</p>
+      <p><mark>Narrowing/widening the scope of the project further is discouraged.</mark></p>
+      <p><strong>Must-have features:</strong></p>
+      <ol>
+        <li>Support for events (i.e., has a start time and end time), deadlines (tasks that have to be done before a specific deadline), and floating tasks (tasks without specific times). Note that these category names are temporary names only. You should
+          figure out what are the best names for these categories. Are these names intuitive to end-users? Should they even care about consciously categorizing tasks?</li>
+        <li>CRUD (i.e., Create, Read, Update, Delete) support for tasks.</li>
+        <li>Undo operations (at least for the most recent action)</li>
+        <li>Some flexibility in the command format: Support a few natural variations of the command format.</li>
+        <li>Simple search: A simple text search for finding an item if the user remembers some keywords from the item description.</li>
+        <li>Some way to keep track of which items are done and which are yet to be done.</li>
+        <li>The ability to specify a specific folder and a file for data storage. With this feature, Jim can choose to store the data file in a local folder controlled by a cloud syncing service (e.g. dropbox), allowing him to access task data from multiple
+          computers.</li>
+      </ol>
+      <p><strong>Nice to have features :</strong> (you may implement 0 or more of these features)</p>
+      <p>Difficulty-low</p>
+      <ul>
+        <li>AutomatedTesting : Achieve a very high level of automated testing.</li>
+        <li>RecurringTasks: Support for managing recurring tasks. e.g. CS2103 lectures are a recurring task from week 1 to week 13 except in recess week.</li>
+      </ul>
+      <p>Difficulty-medium</p>
+      <ul>
+        <li>PowerSearch : More powerful and intelligent search. e.g. search for empty slots, near-match search, auto-complete (similar to Google search box), filters for other attributes (e.g. start time).</li>
+        <li>FlexiCommands: High flexibility in command format. e.g., non-strict ordering of keywords, ability to specify aliases for commands, support for more ‘natural’ language input, multiple undo/redo, How flexible should the format be? As flexible, intuitive,
+          and user-friendly as you can make it.</li>
+      </ul>
+      <p>Difficulty-high</p>
+      <ul>
+        <li>GoodGui: A good GUI to give visual feedback to the user e.g., in-built guidance for new users, good visual feedback for actions, feedback while typing commands, hotkey to activate/hide, notifications, etc. conveying more information visually (e.g.
+          more important/urgent tasks stand out from the rest, longer events look different from shorter events, easy to see free slots, etc.)</li>
+        <li>GoogleIntegration: Google Calendar integration. e.g. upload todo items to GCal, two-way sync, Support for GCal quick add command format, etc. You may also use the Google Tasks API for this.</li>
+      </ul>
+      <p>You can also propose your own extra features(subject to approval). Note that <mark>each student must implement at least one feature individually (in addition to features implemented collectively with other team members) and the average amount of code one member is expected to write for the project is 0.5-1.5 KLoC.</mark>        Reason: Each student must learn all parts of the code and write a significant amount of code.</p>
+      <p>Adding more features may not necessarily increase your score as <mark>half-baked features, ill-fitting features, and buggy features will bring your score down</mark>.</p>
+    </div>
+  </div>
+  <h2 id="project-constraints">Project Constraints</h2>
+  <div id="handbook-project-constraints">
+    <div>
+      <p>You should also comply with the following constraints. The purpose of these constraints is to increase comparability among submissions and to maximize applicability of module content in the project.</p>
+      <ul>
+        <li>
+          <p><strong>Constraint-Morph</strong>: The final product should be a result of morphing the given sample code. i.e. enhance and/or evolve the given code to arrive at the new software.<br> Reason: To ensure your code has a decent quality level from
+            the start.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-Desktop</strong>: The software should be a desktop app (i.e. not a Mobile or a Web app). Reason: Desktop apps are more general than other platforms such as mobile/embedded/web and therefore, provides a good starting point
+            before you move to those platforms.<br> You are allowed to integrate with online services such as Google Calendar as long as the app can provide a reasonable level of functionality even when offline.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. If you implement a GUI, it should be primarily for output. That is, the GUI is used to give visual feedback rather than to collect input. Some minimal use
+            of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven. Mouse actions should have keyboard alternatives and typing is preferred over key combinations. Design the app in a way that you can do stuff
+            faster by typing compared to mouse or key combinations.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-Standalone</strong>: The software should work stand-alone. It should not be a plug-in to another software. However, you can build optional extensions that integrate your application with other existing software. Furthermore,
+            you are allowed to build extensions that can plug into your software.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-No-Database</strong>: The software should not use relational databases. Data storage must be done using text files you create yourself.<br> Reason: Using relational databases reduces the scope for applying Object-oriented
+            techniques.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-Human-Editable-File</strong>: The data should be stored locally and should be in a human editable text file. The intention of this constraint is to allow advanced users to manipulate the data by editing the data file.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-OO</strong>: The software should follow the Object-oriented paradigm.<br> Reason: For you to practice OOP that you learned in the course.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-Windows</strong>: The software should work on the Windows 7 or later.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.<br> Reason: We do not
+            want to install all your projects on our testing machines when we test them for grading.</p>
+        </li>
+        <li>
+          <p><strong>Constraint-External-Software</strong>: The use of third-party frameworks/libraries is allowed but only if they,</p>
+          <ul>
+            <li>are free.</li>
+            <li>do not require any installation by the user of your software.</li>
+            <li>do not violate other constraints.</li>
+          </ul>
+          <p>and subject to prior approval by us. We will not allow third-party software that can interfere with the learning objectives of the module. Please post your request for approval in IVLE forum before you start using the library. Reason: The whole
+            class should know which external software are used by others so that they can do the same if they wish to.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <h2 id="project-deliverables">Project Deliverables</h2>
+  <div id="handbook-project-deliverables">
+    <div>
+      <p><a href="images/Deliverables.png"><img src="images/Deliverables.png" width="800px"></a></p>
+      <p>To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as <code>AB-1</code> to <code>AB-4</code> in the diagram above) that you can use as the basis for improving your individual
+        skills during Phases A and as the basis for your project in Phase B.</p>
+      <p>The sub-sections further down explain each project deliverable in detail.</p>
+    </div>
+  </div>
+  <h2 id="v00-the-concept">V0.0 : The Concept</h2>
+  <div id="handbook-project-v00">
+    <div>
+      <p>The objective of this deliverable is for you to analyze requirements, conceptualize the product, and document it.</p>
+      <h3 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h3><img src="images/v00.png" width="250px">
+      <p>Get together with your team members and brainstorm user stories for the product.</p>
+      <ul>
+        <li>e.g.<br><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code><br>          Note how the story covers who (the user), what (the functionality) and why (the value) aspects.</li>
+        <li>It is ok to have more user stories than you can deliver in the project.You should have at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</li>
+        <li>Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.</li>
+        <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</li>
+      </ul>
+      <h3 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h3><img src="images/userstories.png" width="250px">
+      <p>Suggested workflow:</p>
+      <ul>
+        <li>
+          <p>Take one use story at a time and get team member opinions about it.</p>
+        </li>
+        <li>
+          <p>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:</p>
+          <ul>
+            <li><code>Must-Have</code> : The product will be practically useless to Jim without this feature.</li>
+            <li><code>Nice-To-Have</code> : Jim can benefit from this user story significantly but you are not certain if you'll have time to implement it.</li>
+            <li><code>Not-Useful</code> : No significant benefit to Jim.</li>
+          </ul>
+        </li>
+        <li>
+          <p>After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.</p>
+        </li>
+      </ul>
+      <p>Here are some tips to improve the effectiveness of the above activity:</p>
+      <ul>
+        <li><strong>Define Jim:</strong><br> Decide our target user Jim's work patterns. e.g. Does he work in groups or alone? Does he share his computer with others? (answer: no). Having a clear picture of Jim's work patterns will help when deciding the
+          importance of a user story.</li>
+        <li><strong>Don't be biased by the implementation plans:</strong><br> This exercise is for identifying user needs. Clear your mind of ideas you have about what your product will look like. Assume that you do not know yet what product you will build.</li>
+        <li><strong>Don't discuss implementation details or whether you are actually going to implement it:</strong><br> At this point, your decision is whether the user's need is important enough for you to want to fulfil it. Implementation details can be
+          discussed later. If a user story in the Nice-To-Have pile turn out to be too difficult to implement later, you can always not implement it.</li>
+        <li><strong>Don't be too hasty to discard 'unusual' user stories:</strong><br> Those might make your product unique and stand out from the rest, at least for some potential users.</li>
+        <li><strong>Don't go into too much details when sorting user stories:</strong><br> For example, consider this user story:
+          <ul>
+            <li>As a user, I want to see a list of tasks that needs my attention most at the present time, so that I pay attention to them first.*<br> When discussing this user story, you do not need to worry about what tasks should be considered 'needs my
+              attention most at the present time'. Those details can be worked out later.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="step-3-survey-existing-products">Step 3: Survey existing products</h3>
+      <p>See how well existing products meet Jim's needs.</p>
+      <ul>
+        <li>
+          <p>Select a few competing products to study. Each person should study at least one existing product. Identify strengths and weaknesses of the product w.r.t. how well it can cater for Jim’s requirements.</p>
+          <p>Here are some popular 'task manager' type products out there you can consider exploring (you are not limited to these): Google Calendar + Google Tasks | <a href="https://hitask.com">HiTask</a> | <a href="https://www.rememberthemilk.com/">Remember The Milk</a>            | <a href="http://todotxt.com/">Todo.txt</a> | <a href="https://todoist.com/">Todoist</a> | <a href="https://trello.com/">Trello</a> | Microsoft Outlook | <a href="https://www.wunderlist.com/">Wunderlist</a></p>
+        </li>
+        <li>
+          <p><strong>Note</strong>: Don’t get discouraged if an existing product meets Jim’s needs quite well. We are trying to learn SE, not sell a product.</p>
+        </li>
+        <li>
+          <p>After looking at existing products, you may want to go back and revise some of the user stories.</p>
+        </li>
+      </ul>
+      <h3 id="step-4-conceptualize-the-product-as-a-user-guide">Step 4: Conceptualize the product as a user guide</h3>
+      <ul>
+        <li>Based on your user story categorization in step 1 and given project requirements (note that the project requirements specify some must-have features), select which user stories you are likely to include in V0.5.</li>
+        <li>Based on the user stories you selected above, specify the product you are going to build, in the form of a user guide. Yes, strangely enough, in this project we draft the user guide before we build the product. This will help you/us visualize
+          the final product before you start implementing it.</li>
+        <li><mark>Remember to take into account the UI design and the functionalities available in AddressBook Level 4</mark>. As you will be using that software as the starting point of your implementation, it makes sense to align your product with it (within
+          reason) to minimize the implementation effort.</li>
+        <li>Remember to include the exact command format because it is the core part of your UI.</li>
+      </ul>
+      <p>Use the documentation in the sample project as an example. Given below are pages to update.</p>
+      <ul>
+        <li>
+          <p><strong>User guide</strong>:<br> Describe what the product would be like when it is submitted at the end of the semester. Starting from the time user starts using the product for the first time, describe how the user uses the product to accomplish
+            various tasks.<br> Here are some ‘quick start guides’ you can look at for inspiration when writing your user guide:<br><a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate project</a>, <a href="https://support.apple.com/en-sg/HT202033">iPhone :How to get started</a>,
+            <a href="https://teammatesv4.appspot.com/instructorHelp.jsp#gs">TEAMMATES (for instructors)</a><br> Use UI prototypes/sketches if necessary. They can be simple sketches drawn on whiteboard/paper and scanned/photographed or created using a
+            tool such as PowerPoint, HTML, or <a href="https://balsamiq.com/">Balasmiq</a>.<br> State what you honestly believe you can do, based on information you have at this point. You will not be penalized if you cannot deliver what you proposed
+            to deliver. It is OK to tweak the project scope along the way.<br><mark>Specify the command format in detail</mark> as it is an important part of the product functionality.</p>
+        </li>
+        <li>
+          <p><strong>Developer guide</strong>: Update the following appendices.</p>
+          <ul>
+            <li><strong>User Stories</strong>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.</li>
+            <li><strong>Use cases</strong>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. e.g.
+              <ul>
+                <li>Rescheduling a task, which may require two steps: locating the task first and then updating it.</li>
+                <li>Checking a day's schedule at the end of the day: requires filtering the day's tasks, marking complete tasks as done, and rescheduling or deleting remaining tasks.</li>
+                <li>Finding something to do where here is a free time.</li>
+              </ul>
+            </li>
+            <li><strong>Non-functional requirements</strong>:<br> Note: User stories capture functional requirements. What are the non-functional requirements of your project? Many of the project constraints mentioned above are NFRs. You can add more. e.g.
+              performance requirements, usability requirements, scalability requirements, etc.</li>
+            <li><strong>Glossary</strong>: Define terms that are worth defining.</li>
+            <li><strong>Product survey</strong>: Describe a summary of the product survey. i.e. Pros, cons, (from Jim's point of view). Each student should document the product they explored. If multiple students have explored the same product, you may have
+              to explore more products to complete this section.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Suggested length</strong>: Take the sample project as a baseline.</p>
+      <p><strong>Submission</strong>: Update the relevant sections of the relevant markdown documents (i.e. <code>UserGuide.md, DeveloperGuide.md</code>) in your repo. <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">git tag</a> as <code>V0.0</code>.</p>
+      <p><strong>Grading</strong>: Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.<br> To claim this milestone as 'reached', you should at least have a full draft version of
+        the above documents in some format (e.g. GoogleDoc), even if you didn't have time to update the markdown documents in the repo.</p>
+    </div>
+  </div>
+  <h2 id="v01-the-walking-skeleton">V0.1 : The Walking Skeleton</h2>
+  <div id="handbook-project-v01">
+    <div>
+      <h3 id="v01-product">V0.1 Product</h3>
+      <p>This is the sample project morphed to be more like your target product. Functionality can be limited to only those that can be refactored from the sample project. e.g. support for adding and deleting floating tasks.</p>
+      <p><strong>Submission</strong>: Push the code to GitHub and <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">git tag</a> as <code>V0.1</code>. Refer to the Schedule page for further submission instructions.</p>
+      <p><strong>Grading</strong>: To consider this milestone as reached, you should have at least add/delete/find support for floating tasks. You should be able to do that by deleting/renaming the given Address Book code, without having to add too much
+        new code.<br> The most important thing is not to break the code while morphing sample code to your target product.</p>
+      <h3 id="v01-demo">V0.1 Demo</h3>
+      <table class="two-column-content">
+        <tbody>
+          <tr>
+            <td width="130px"><img src="images/v01demo.png" width="125px"></td>
+            <td>Demo the product to your tutor.
+              <p><span class="dimmed">[Picture on left: an early version of the mobile phone]</span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="v01-documentation">V0.1 Documentation</h3>
+      <p>Update the following pages:</p>
+      <ul>
+        <li>
+          <p><strong>About Us page</strong>:<br> This page is used for module admin purposes. <mark>Please follow the format closely to avoid penalties</mark>. For example, use a recent solo photo with your face clearly visible (similar to those in the 'Teaching
+            Team' page).<br> The <mark>photo of a team member should be <code>doc/images/githbubid.png</code></mark> e.g. <code>doc/images/damithc.png</code> where <code>githubid</code> is the team member's GitHub ID <strong>in lower case</strong>. Remove
+            photos of the SE-EDU developers. No need to include a photo of the supervisor.</p>
+          <p>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</p>
+          <panel header="**Roles and responsibilities**" expandable="">
+            Roles imply aspects you are in charge of and responsible for. E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc. Here are some
+            typical roles:
+            <ul>
+              <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+              <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+              <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+              <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+              <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+              <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+              <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+              <li><em>[Tool ABC] expert</em>: e.g. Eclipse expert, Git expert, etc. Helps other team member with matters related to the specific tool.</li>
+              <li><em>In charge of[Component XYZ]</em>: e.g. In charge of Model, GUI, Storage, etc. If you are in charge of a component, you are expected to know that component well, do the initial refactoring of the component (during V0.1 and V0.2) and review
+                changes done to that component in V0.3-V0.5.</li>
+              <li>You may define additional roles.</li>
+            </ul>
+            <p>Please make sure each of the above roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but you should still have one person who is unequivocally the main person playing that role.</p>
+          </panel>
+        </li>
+        <li>
+          <p><strong><a href="http://README.md">README.md</a></strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>doc/images/Ui.png</code></mark>            so that it can be downloaded by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. The sample project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></p>
+        </li>
+      </ul>
+      <p><strong>Grading</strong>: To consider this milestone as reached, you should have all V0.0 deliverables completed and the two documents mentioned above updated.</p>
+    </div>
+  </div>
+  <h2 id="v02-the-mvp">V0.2 : The MVP</h2>
+  <div id="handbook-project-v02">
+    <div>
+      <h3 id="v02-product">V0.2 Product</h3>
+      <p>This is the first MVP (Minimum Viable Product) version of the product.</p>
+      <ul>
+        <li>
+          <p><mark>It should be a viable, possibly minimal product</mark>. This is not a walking skeleton. A user should be able to use it. It may not be user-friendly, but it should not be unusable. Try to include at least the basic CRUD facilities for
+            at least one type of tasks. Here are some examples that are NOT acceptable:</p>
+        </li>
+        <li>
+          <p>example 1. Has a well-developed functionality to add tasks but does not support commands for deleting or editing tasks: This is not usable because the user cannot rectify errors made while creating tasks.</p>
+        </li>
+        <li>
+          <p>example 2. Has all the CRUD functionality implemented but they are not connected to the UI: This too is not usable by the end-user.</p>
+        </li>
+        <li>
+          <p>While this is an internal release (not a production release), <mark>you are expected to maintain a reasonable code quality at all times</mark>. In particular, you should comply with the coding standard all the time.</p>
+        </li>
+      </ul>
+      <p><strong>Submission</strong>: Push the code to GitHub and <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">git tag</a> as <code>V0.2</code>.</p>
+      <p><strong>Grading</strong>: To pass this checkpoint, your product should have reached the MVP stage.</p>
+      <h3 id="v02-documentation">V0.2 Documentation</h3>
+      <p>You are encouraged to update your project documentation to match the product but you are not required to submit them for evaluation. Note that this flexibility is given solely to reduce your workload. In a production environment, the documentation
+        should always be kept in sync with the product.</p>
+      <h3 id="v02-demo">V0.2 Demo</h3>
+      <p>As before, show the demo to the tutor during the tutorial.<br> The demo should use the version tagged as <code>V0.2</code>, not the latest code. No tinkering with code during the tutorial.</p>
+    </div>
+  </div>
+  <h2 id="v03">V0.3</h2>
+  <div id="handbook-project-v03">
+    <div>
+      <h3 id="v03-product">V0.3 Product</h3>
+      <p>This version should be a more functional version than V0.2 and should contain at least a basic version of features you intend to release in the final version.</p>
+      <p>Ideally, V0.3 should be good enough for <a href="http://www.urbandictionary.com/define.php?term=dogfooding%20(to%20dogfood)">dog fooding</a>. Try to reach a dogfooding-ready version of the 'must have' features at least.</p>
+      <p>From V0.3, <mark>you are required to divide work based on features</mark> rather than component. That is, each team member should implement 0 or more features end-to-end, doing required changes in <em>all</em> components. The objective of this switch
+        is to force you to learn all components of the software, instead of limiting yourself to your own components.<br> Note that you will continue to be in charge of your own components although others will be modifying your components' code. Your
+        new role is to help others modify code in your components (you are supposed to be the most knowledgeable about those components) and protect your components from degrading. For example, you can review others' changes to your components and suggest
+        possible changes. This is also a good time to switch to a PR based workflow (if you haven't done that already) as PRs can be reviewed by other team members before merging.</p>
+      <p><strong>Submission</strong>: V0.3 (and future milestones) <mark>should be released using GitHub's release mechanism</mark>. The release should include an executable JAR file. Refer the <a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level4/blob/master/docs/DeveloperGuide.md#making-a-release">'Making a Release' section of the sample developer guide</a>        for more info.</p>
+      <p><strong>Grading</strong>: To pass this checkpoint, your product should be noticeably better than an MVP. It goes without saying that other project management requirements expected at reaching a milestone (mentioned in the <a href="#using-milestones">'Using Milestones' section of Appendix E</a>)
+        are applicable too.</p>
+      <h3 id="v03-documentation">V0.3 Documentation</h3>
+      <p>Follow the documentation in the sample project in terms or organization, level of details, etc.</p>
+      <ul>
+        <li><strong>User Guide</strong>: Update User Guide to match what you plan to deliver at V0.5</li>
+        <li><strong>Developer Guide</strong>: Update Developer Guide to match your current design or the design you plan to have at V0.5.<br> [1] While it is OK for some sections to be written collectively, <mark>each student should have some sections that were written individually</mark>.
+          For example, the section describing the design of Logic component should be written by the person in charge of the Logic component.<br> [2] It is <mark>not enough to simply do minor tweaks to the existing document</mark> to match your project
+          if your design is very similar to the sample given. We need to see a significant amount of content written by each student to judge how well you can document technical details and use relevant models.<br> Here are some things you can add:
+          <ul>
+            <li>Compare the current design with other alternative designs possible.</li>
+            <li>Add more descriptions e.g. show at least one interaction within each component.</li>
+            <li>Use object diagrams to show sample object structures at runtime (if it helps the reader).</li>
+            <li>Explain how you implemented complicated features such as undo/redo.</li>
+            <li>In future (after these topics have been covered):
+              <ul>
+                <li>Use Activity Diagrams and OO Domain Models where applicable.</li>
+                <li>Mention where design patterns/principles are applied.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Submission</strong>: Must be included in the version tagged <code>V0.3</code>.</p>
+      <p><strong>Grading</strong>: To pass this checkpoint, your documentation should have been updated to match your project.</p>
+      <h3 id="v03-demo">V0.3 Demo</h3>
+      <p><strong>Submission</strong>: Demo to the tutor during the tutorial. <strong>Use jar</strong> file for the demo, not the IDE.</p>
+      <p><strong>Grading</strong>: Must use the version tagged <code>V0.3</code> and should be at least very close to a dog-fooding-ready state.</p>
+    </div>
+  </div>
+  <h2 id="v04">V0.4</h2>
+  <div id="handbook-project-v04">
+    <div>
+      <h3 id="v04-product">V0.4 Product</h3>
+      <p>Functionality expectations: This version should have decent implementations of all major features you intend to release, although some finer tweaks may be missing and not completely stable.</p>
+      <p><mark><strong>Dogfood your product</strong> and find ways to improve it.</mark> Remember to keep the dogfooding version of the app (i.e. the jar file) in a separate folder as evidence of dogfooding. i.e. Don't use the IDE for dogfooding (Dogfooding
+        is an acceptance test; it should be done in the user environment)</p>
+      <p><strong>Mark your code</strong> with special tag <code>@@author</code> so that we can extract code written by each of you using the collate tool (for evaluation purposes). After that, Use the collate tool to extract individual code and look through
+        the generated <strong>.md</strong> files to ensure all your code has been extracted correctly. <mark>Push the *.md files created to a folder called /collated</mark> in your repo. More instructions below.</p>
+      <p><strong>Extract your code for code quality grading</strong></p>
+      <ol>
+        <li>
+          <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
+        </li>
+        <li>
+          <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
+          <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
+</code></pre>
+          <p>Here is a sample code file:</p>
+          <pre class="hljs"><code>//@@author A0909865T
+method 1 ...
+method 2 ...
+//@@author A0702345U
+method 3 ...
+//@@author A0909865X
+method 4 ...
+</code></pre>
+        </li>
+        <li>
+          <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>            However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric number
+            to the empty tag later.</p>
+        </li>
+        <li>
+          <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code was
+            done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly
+            50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality,
+            the designated author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
+        </li>
+        <li>
+          <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
+          <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author A0909865T
+  */
+</code></pre>
+          <pre class="hljs"><code>//@@author A0909865T
+/**
+  * Returns true if ...
+  */
+</code></pre>
+        </li>
+        <li>
+          <p>If you wrote a significant amount of code that was not used in the final product,</p>
+          <ul>
+            <li>Create a folder called <code>{project root}/unused</code></li>
+            <li>Move unused files to that folder (those files should contain unused code only)</li>
+            <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
+          </ul>
+          <p>e.g.</p>
+          <pre class="hljs"><code>//@@author A0909865T-unused
+method 1 ...
+method 2 ...
+</code></pre>
+          <p>Please put a comment in the code to explain why it was not used.</p>
+        </li>
+        <li>
+          <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical
+            means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br>            Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let
+            us know.</p>
+          <ul>
+            <li>
+              <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data
+                file with 1000 tasks that was used to test performance.</p>
+            </li>
+            <li>
+              <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
+              <p>e.g.</p>
+              <pre class="hljs"><code>//@@author A0909865T-reused
+method 1 ...
+method 2 ...
+</code></pre>
+            </li>
+            <li>
+              <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
+              <p>e.g.</p>
+              <pre class="hljs"><code>//@@author generated
+method 1 ...
+method 2 ...
+</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>You need to put the,</p>
+          <ul>
+            <li>collated functional code in <code>collated/main</code> folder,</li>
+            <li>collated test code in <code>collated/test</code> folder, and</li>
+            <li>collated unused code in <code>collated/unused</code> folder</li>
+          </ul>
+          <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+          <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/main include java, fxml, css
+
+java -jar Collate-TUI.jar collate from src/test to collated/test include java
+
+java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
+</code></pre>
+          <p>The output should be something like the structure given below.</p>
+          <pre class="hljs"><code>collated/
+    main/
+        A000000.md
+        A111111.md
+        A222222.md
+        A222222reused.md
+    test/
+        A000000.md
+        A111111.md
+        A222222.md
+    unused/
+        A000000.md
+</code></pre>
+        </li>
+      </ol>
+      <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub and tag as <code>V0.4</code>.</p>
+      <p><strong>Grading</strong>: To pass this checkpoint, your product should satisfy the description given above and the code should be collated properly.</p>
+      <h3 id="v04-documentation">V0.4 Documentation</h3>
+      <p>Recommended to update the documentation to match the product, at least w.r.t. major changes since previous version.<br><mark>Update the <a href="http://AboutUs.md">AboutUs.md</a> page</mark> to reflect <a href="https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md">this sample</a>.
+        Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.<br> Note: <a href="http://AboutUs.md">AboutUs.md</a> page is used for module admin purposes. You are advised to follow the format closely to avoid
+        penalties. E.g. those you don't have a suitable photo in that page will be penalized.</p>
+      <p><strong>Submission</strong>: Must be included in the version tagged <code>V0.4</code>.</p>
+      <p><strong>Grading</strong>: Not graded.</p>
+      <h3 id="v04-demo">V0.4 Demo</h3>
+      <p><strong>Submission</strong>: To be done during the tutorial, but note the following:</p>
+      <ul>
+        <li>Duration: 10 minutes (max)</li>
+        <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
+        <li>It should be a full demo: Cover all features you have, not just features you added recently.</li>
+        <li>It is a 'sitting down' demo: As before, you'll be demonstrating the features using the TV while sitting down.</li>
+        <li>Tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
+        <li>It should be done by 2 members (i.e. one person do the first half, the other do the 2nd half).<br> If you are not taking part in this demo, you must take part in V0.5 demo.<br> One or more persons can do the typing for the whole demo. Speaking
+          should be done by the two designated to do the demo.</li>
+        <li>The app should be populated with a significant amount of realistic data at the start. e.g data going back to at least two weeks and up to two weeks in future, about 50 items in total.</li>
+      </ul>
+      <p><strong>Grading</strong>: Similar to V0.3</p>
+    </div>
+  </div>
+  <h2 id="v05rc-the-release-candidate">V0.5rc : The Release Candidate</h2>
+  <div id="handbook-project-v05rc">
+    <div>
+      <h3 id="v05rc-product">V0.5rc Product</h3>
+      <p>Functionality expectations: <strong>Freeze features</strong> after reaching this milestone. As this is a ‘release candidate’ it should have all the features you intend to release. Adding more features after this point is risky. The remaining time
+        should be left aside for fixing problems discovered late.<br> Other suggestions:</p>
+      <ul>
+        <li>Dogfood your product intensively and improve it based on your findings.</li>
+        <li>Bring code coverage near to your target if it is low.</li>
+        <li>After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to the level you target.</li>
+      </ul>
+      <p><strong>Submission</strong>: as before.</p>
+      <p><strong>Grading</strong>: Your product should show significant progress since the previous milestone.</p>
+      <h3 id="v05rc-documentation">V0.5rc Documentation</h3>
+      <p>Recommended to update the documentation to match the product.</p>
+      <p><strong>Submission</strong>: Must be included in the version tagged <code>V0.5rc</code>.</p>
+      <p><strong>Grading</strong>: Not graded.</p>
+      <h3 id="v05rc-demo">V0.5rc Demo</h3>
+      <p><strong>Submission</strong>: as before.</p>
+      <p><strong>Grading</strong>: as before.</p>
+    </div>
+  </div>
+  <h2 id="v05-the-production-release">V0.5 : The Production Release</h2>
+  <div id="handbook-project-v05">
+    <div>
+      <h3 id="v05-product">V0.5 Product</h3>
+      <p>This is as a ‘production release’. It should be at least ‘near production quality’.</p>
+      <p>Please follow submission instructions closely. <mark>Any non-compliance will be penalized</mark>. e.g. wrong file name, team member photos not suitable, product manual page header doesn't have the team ID, etc.</p>
+      <p><mark>Add these two new files</mark> to the repo (these will be used by our testers when testing your final submission):</p>
+      <ul>
+        <li><code>{project root}\src\test\data\ManualTesting\SampleData.xml</code> :<br> Sample data that can be loaded to your app. Should contain 50+ items covering past and present.</li>
+        <li><code>{project root}\src\test\data\ManualTesting\TestScript.md</code> :<br> A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.<br> Should cover all functionality
+          of the product.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
+      </ul>
+      <p><strong>Submission</strong>:</p>
+      <ul>
+        <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated .md files are up to date, you will not be allowed to updated them later)
+          <mark>Note that the quality of the code in these .md files accounts for 15 marks of your final score, graded individually.</mark></li>
+        <li><strong>Executable</strong>: upload to IVLE as an exe or jar or zip file (this should not contain source files). File name: <code>[team][project name].jar</code><span class="dimmed">e.g. [T09-B1][ToDoo Pro].jar</span><br> Warning: When determining
+          the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
+      </ul>
+      <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
+      <p><strong>Grading</strong>: Given in <a href="#handbook-project-assessment">a section below</a>.</p>
+      <h3 id="v05-documentation">V0.5 Documentation</h3>
+      <p><strong>Submission</strong>:</p>
+      <ul>
+        <li>Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.</li>
+        <li>Convert User Guide into a pdf file and name it as <code>[TEAM_ID][Project Name]UserGuide.pdf</code><span class="dimmed">e.g.[T09-B1][ToDoo Pro]UserGuide.pdf</span></li>
+        <li>Similarly, convert the Developer guide into a pdf file, name it as <code>[TEAM_ID][Project Name]DevGuide.pdf</code><span class="dimmed">e.g. [T09-B1][ToDoo Pro]DevGuide.pdf</span></li>
+        <li>Upload both pdf files to IVLE.</li>
+      </ul>
+      <p><strong>Deadline</strong>: Same as V0.5 product.</p>
+      <p><strong>Grading</strong>: Given in <a href="#handbook-project-assessment">a section below</a>.</p>
+      <h3 id="v05-demo">V0.5 Demo</h3><img src="images/v05demo.png" style="width: 250px">
+      <ul>
+        <li><strong>Venue:</strong> Same as the tutorial venue.</li>
+        <li><strong>Duration:</strong> Strictly no more than 12 minutes. Exceeding this limit will be penalized.</li>
+        <li><strong>Schedule:</strong> Your demo timing is same as your tutorial time in week 13.<br> Starting times: <code>Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes</code><br> At least some team members need to arrive 15 minutes
+          ahead of the allocated time to set up your computer.<br> There is an <mark>automatic penalty if you are not ready to start on time.</mark>.</li>
+        <li><strong>Target audience</strong>: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.<br> The scenarios you demonstrate should be chosen judiciously so that you cover
+          the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the product improves the user’s workflow rather than simply describe each feature.<br>          No need to cover design/implementation details as the manager is not interested in those details.</li>
+        <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
+        <li><strong>Testing:</strong> All team member should remain in the holding area during the tutorial slot (when you are not doing the demo) because our testers might need to communicate with you during the testing.<br> Holding area for Active Learning
+          Room: Unused area of the room (enter by the door near the staircase)<br> Holding area for SR5: Tables outside SR5</li>
+        <li><strong>Structure:</strong><br> Demo the product using the same executable you submitted, on your own laptop, using the TV.<br> Every team member should take part in the demo. However, it's ok for one member to do all the typing.</li>
+        <li><strong>Optimizing the time:</strong><br> Try to make the maximum use of the short demo time in the following ways,
+          <ul>
+            <li>
+              <p>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br> Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch
+                or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code><br>                [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br> It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br> Note that CS2101 demo requirements may differ. Different
+                context → Different requirements.</p>
+            </li>
+            <li>
+              <p>Rehearse the steps well and ensure you can do a smooth demo. <mark>Demos that are clearly under-prepared will be penalized.</mark></p>
+            </li>
+            <li>
+              <p>If you are not deft with using the laptop’s touchpad, please bring a mouse.</p>
+            </li>
+            <li>
+              <p>Don’t waste time repeating things the target audience already knows. Assume the target audience knows that the product is a task manager targeting Jim-like users. That means no need to explain those things again.<br> Also assume the target
+                audience knows who you are. That means no need to say things like &quot;We are students from NUS, SoC&quot;.</p>
+            </li>
+            <li>
+              <p>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates
+                a bad impression too.</p>
+            </li>
+            <li>
+              <p>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to enter a task before you show the full command with all the bells and
+                whistles.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Grading</strong>: Given in <a href="#handbook-project-assessment">a section below</a>.</p>
+    </div>
+  </div>
+  <h2 id="project-retrospective">Project retrospective</h2>
+  <div id="handbook-project-retrospective">
+    <div>
+      <p>This is an individual submission.</p>
+      <p>The project Retrospective answers the following question: <mark>If you were to redo this project from the beginning, what would you do differently and why?</mark></p>
+      <ul>
+        <li>Approach this submission from a software engineering perspective. As much as possible, connect your answers to lecture content.</li>
+        <li>State at least three things you would do differently.</li>
+        <li>Justify your answers using concrete details. What didn’t work this time? How do you plan to avoid the problem next time? Why do you think the modification will give you a better outcome.</li>
+      </ul>
+      <p><strong>Suggested length</strong>: about 0.5 page worth of content.</p>
+      <p><strong>Submission</strong>: Via TEAMMATES. More instructions to follow.</p>
+      <p><strong>Deadline</strong>: Reading week Monday 2359</p>
+    </div>
+  </div>
+  <h2 id="individual-report">Individual report</h2>
+  <div id="handbook-project-individualReport">
+    <div>
+      <p>The purpose of this report is to help us in grading students where a student may have done significantly more/less than an equal share. <mark>Submit this only if you were specifically asked to OR if you have a disagreement with the phase B final peer evaluation</mark>.</p>
+      <p>The report should contain an itemized list of your contribution to the project. Be as concrete and precise as possible. For example, you can mention how many lines of code you wrote in which classes, which parts of the documentation were done by
+        you, etc.</p>
+      <p>Note that this report is visible <mark>to your team member and they may be asked to verify its accuracy</mark>.</p>
+      <p><strong>Suggested length</strong>: about 0.5-1 page worth of content.</p>
+      <p><strong>Submission</strong>: Via TEAMMATES. More instructions to follow.</p>
+      <p><strong>Deadline</strong>: End of reading week.</p>
+    </div>
+  </div>
+  <h2 id="project-assessment">Project Assessment</h2>
+  <div id="handbook-project-assessment">
+    <div>
+      <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking
+        scheme.</p>
+      <p><strong>Total</strong>: 50 marks (25 individual marks + 25 team marks)</p>
+      <ol>
+        <li>
+          <p><strong>Product features</strong> [team][10 marks] - How good is your software as a product?</p>
+          <p>Based on the features implemented, how well they fit together to make a good product, and how well they are demonstrated.</p>
+          <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
+        </li>
+        <li>
+          <p><strong>Design</strong> [individual][5 marks] - How good is your internal design?</p>
+          <p>Evaluated <mark>solely based on what we can learn from the developer guide.</mark> Evaluated by lecturer. You will be graded individually on the design of your component and how well you have described it. Collective design decisions such as
+            architecture will affect the grade of all team members.</p>
+          <p>Criteria considered:</p>
+          <ul>
+            <li>Conformance with the multi-level top-down approach (i.e. design at high-level first, and do the lower-level design of each component later)</li>
+            <li>Conformance with the OO paradigm</li>
+            <li>Application of patterns and principles</li>
+            <li>Quality of documentation e.g. using the right diagram at the right place.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Implementation</strong> [individual][15 marks] - How good is your implementation? A measure of the <mark>quality and the quantity</mark> of code you have written yourself. On average, a student is expected to write 0.5-1.5 KLoC. Evaluated
+            based on an inspection of the collated code (submitted in your *.md files) by at least two tutors.<br> Criteria considered:</p>
+          <ul>
+            <li>Following SLAP (IMPORTANT).</li>
+            <li>Following the coding standard given (IMPORTANT).</li>
+            <li>Using at least some assertions.</li>
+            <li>Using at least some logging.</li>
+            <li>Using at least some unit tests.</li>
+            <li>Commenting at the right level.</li>
+            <li>Exception handling.</li>
+            <li>Neatness and human readability.Expectations:</li>
+            <li>Each person is expected to implement one or more features individually in addition to features implemented collectively. Each person is expected to write backend code, frontend code, test code, user documentation, and developer documentation.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>QA</strong> [team: 5 marks], [individual: 5 marks] - How good is your Quality Assurance? Evaluated based on our own testing. A well written user guide and a product that conforms to the user guide (i.e. no bugs) will give you a high
+            mark.</p>
+          <p>Things considered for team grade: Bugs including validation issues (i.e. not meeting project requirements)</p>
+          <p>Things considered for individual grade: Quality and quantity of the test code in your collated code.</p>
+        </li>
+      </ol>
+      <p>Expectations:</p>
+      <ul>
+        <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less.</li>
+        <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what
+          extent you want to automate tests, depending on the benefits and the effort required.</li>
+        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because
+          the code has low testability.</li>
+      </ul>
+      <ol start="7">
+        <li><strong>Documentation</strong> [team][5 marks] - How well does your user guide achieves its objectives? Evaluated by lecturer and TA.<br> Criteria considered:
+          <ul>
+            <li>Explanation should be clear and written to match the audience.</li>
+            <li>Good use of visuals to complement text.Note: Developer Guide is graded under the 'Design' component.</li>
+          </ul>
+        </li>
+        <li><strong>Project management</strong> [team: 5 marks][individual: 5 marks] - How well you worked together as a team to follow a systematic process?<br> For the team component, we look for,
+          <ul>
+            <li>Good version control, based on the repo.</li>
+            <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
+            <li>Good use of buffers (opposite: everything at the last minute)</li>
+            <li>Iterative (opposite: fake iterative, doing most of the work in one iteration).<br> Passed almost all checkpoints from V0.0 to V0.5The individual component is determined by peer evaluation from your project team members.</li>
+          </ul>
+        </li>
+      </ol>
+      <p><strong>Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
+    </div>
+  </div>
+  <h2 id="project-supervision">Project Supervision</h2>
+  <div id="handbook-project-supervision">
+    <div>
+      <p>Your tutor for phase B will also be your project supervisor.</p>
+      <p>Tutorial time is the main avenue for meeting your tutor. In addition, you can meet the tutor before/after the tutorial, or any other time, as many times you need, subject to availability in his/her schedule. However, please note that it is not the
+        tutor’s job to chase you down and give help. It is up to you to get as much feedback from the project tutor as you need.</p>
+      <p>Furthermore, it is not the job of the project supervisor to lead your project to success. His/job is to observe, evaluate, and give feedback. You are free to request more feedback from the tutor as necessary.</p>
+    </div>
+  </div>
+  <h1 id="forming-teams">Forming Teams</h1>
+  <div id="handbook-teams">
+    <div>
+      <table class="two-column-content">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>The two teams</strong>:<br> You will be in two different teams at different times of the semester.</p>
+              <ul>
+                <li>Week 1 - 5: Phase A team</li>
+                <li>Week 6 - 13: Phase B team (i.e. Project team)</li>
+              </ul>
+              <p>Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. By working with different classmates during this period you get to know and learn from more classmates. The project is done in phase B. That means your Phase
+                B team is also your project team.</p>
+            </td>
+            <td width="310px"><img src="images/team.png" width="300px">
+              <p><span class="dimmed">[Picture: The team that was at the top of early Google]</span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><mark>There cannot be any overlap between your 2 teams</mark>. For example, any member from your Phase A team cannot be a member of your Phase B team.</p>
+      <p><strong>When to form teams</strong></p>
+      <ul>
+        <li>CS2103T: Your phase A team will be formed by CS2101 side in week 1. Your phase B team (applicable to CS2101 too) will be formed by CS2103T side on week 5.</li>
+        <li>CS2103: Form tentative Phase A teams in week 2 (during the tutorial). Finalize phase A team in the subsequent tutorial. Form phase B team on week 5.</li>
+      </ul>
+      <p><strong>Team size</strong>: The default <mark>team size is four</mark>. Please do not form teams with five or more.</p>
+      <p><strong>Team ID</strong>: This will be given to you after forming teams in each phase. It has the form <code>TUTORIAL_ID-PHASE+TEAM_NUMBER</code> e.g, <code>W14-A2</code> means you are in tutorial W14 (i.e., Wed 1400-1500), phase A, team 2.</p>
+      <p><strong>Team composition</strong></p>
+      <p>We allow some freedom in choosing team members, subject to these constraints:</p>
+      <ul>
+        <li>
+          <p>Teams of <mark>single nationality are not allowed</mark> (rationale: to train you to work in multicultural teams). However, we allow same nationality teams if the only language common among all team members is English. e.g. an all-Singaporean
+            team that include both Chinese and Malay students.</p>
+        </li>
+        <li>
+          <p>No more than one exchange students per team (rationale: to increase interaction between exchange students and NUS students).</p>
+        </li>
+        <li>
+          <p>All team members should be in the same tutorial. <mark>Delay forming teams until your place in a tutorial is confirmed.</mark> We do not allow changing tutorials to team up with your preferred team mates.</p>
+        </li>
+        <li>
+          <p>Also note that we may modify teams when circumstances call for it. There is no avenue for you to object. Staying with your preferred team is not guaranteed.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <h1 id="peer-evaluations">Peer Evaluations</h1>
+  <div id="handbook-peerEvaluations">
+    <div>
+      <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system to conduct several rounds of peer-evaluations. All peer evaluations will be taken into account when determining your participation marks. The system
+        also allows you to give anonymous feedback to your teammates.</p><span id="extra-requirements"><p><strong>Extra Requirements:</strong> [considered for participation marks]</p><ul><li>Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you forfeit your participation marks.</mark></li><li>TEAMMATES normally allows students to access it without using Google login. In this module, we <mark>require you to login to TEAMMATES using your Google account</mark>. and update your</li><li>After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.</li><li>In the profile, you are encouraged (but not compulsory) to provide your long term contact email (not school email) as the contact email. This contact email is for keeping in touch after graduation.
+<s><a href="mailto:john@comp.nus.edu.sg">john@comp.nus.edu.sg</a></s><a href="mailto:john@gmail.com">john@gmail.com</a></li><li>Please upload a suitable profile photo.</li></ul><panel header="Choosing a profile photo" class="book" expandable=""><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="images/profilephotos.png" style="width: 365.33px"></panel></span>
+      <span
+        id="giving-peer-feedback">
+        <p>Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. <mark>Those who give ineffective feedback will be penalized.</mark></p>
+        <p>Here are some things to keep in mind:</p>
+        <ul>
+          <li>Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.</li>
+          <li>The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. <code>Thanks for all the hard work!</code> and negative ratings (e.g. <code>Equal share - 40%</code>) to the same team member is not being honest.</li>
+          <li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However,
+            this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li>
+        </ul>
+        </span>
+        <p>The final peer evaluation will be used to determine the level of contribution from each member to the project. In that peer-evaluation you will be asked to <mark>estimate the contribution of each team member</mark> (including yourself) to the
+          project so far.</p><img src="images/peer evaluations.png" width="70%">
+        <p><mark>Final peer evaluation affects your grade</mark>in the following way:</p>
+        <ul>
+          <li>If there is a general consensus about how much each one contributed, we award grades based on the contribution levels submitted through the peer evaluation. i.e., if everyone agrees you did more than others, you get more marks.</li>
+          <li>If there are significant discrepancies in the peer evaluations (e.g., you say you did an [equal share + 20%] while your team says you did an [equal share - 10%]), we will investigate further before finalizing project marks. For such teams, we
+            are likely to request some or all members to <mark>submit an additional individual report</mark> to itemize and quantify the contribution to the project. <mark>Overclaimers will be penalized.</mark> Please do not claim high just to ‘see how’.</li>
+        </ul>
+        <p>Peer evaluations are <mark>not visible to undergraduate tutors.</mark></p>
+        <p><mark>If you disagree with the team’s opinion</mark>, i.e., you think the perceived contribution is significantly different from what you actually contributed, you can help us grade you fairly by submitting an individual report (‘individual report’
+          is explained under V0.5 deliverables).</p>
+        <p>Keep in mind the contribution numbers reported by TEAMMATES are based on team member perceptions and may not reflect your real contribution. <mark>We use those numbers primarily to identify cases that need further investigation.</mark></p>
+        <p>You may <mark>ignore minor variations</mark> in the contribution numbers reported by TEAMMATES. For example, the difference between [Equal share] and [Equal share - 2%] is not significant and can very well be due to rounding off within the system.</p>
+        <p>Also keep in mind that it is human nature for one to downplay the value of contributions from others when one’s own contribution is being compared to that of others. As a result, it is common for the ‘perceived contribution’ to be somewhat lower
+          than what you actually did.</p>
+        <p>If you are unhappy about the peer-feedback received and would like to make your views known to the team, please allow at least one day to lapse before you fire off a response email. You are likely to respond more rationally when you had some time
+          to think it over. Also keep in mind that we do take note of how well you handle such a situation. You need to act professionally when facing conflicting views, opposition, and even deliberate sabotage.</p>
+        <table class="two-column-content">
+          <tbody>
+            <tr>
+              <td>
+                <p>A final note on this issue :</p>
+                <p><mark>Please be sincere about how much you can do from the beginning</mark>, rather than let your team members figure it out over the long run. Tell them how much you can do and what kind of work you are willing to do. If you are not open
+                  about it, they will still figure it out at the end; they will still report it (via the peer-evaluations), and your score will be adjusted all the same. Being open about it on the other hand can save everyone a lot of frustrations, unpleasantness,
+                  and bitterness.</p>
+              </td>
+              <td width="410px"><img src="images/png_peer.png" width="400px"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  <h1 id="project-tools">Project Tools</h1>
+  <div id="handbook-tools">
+    <div><img src="images/tools.png" style="width: 700px">
+      <p><strong>Communication</strong>:</p>
+      <p>Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to practice how to communicate technical things
+        in written form.</p>
+      <p><strong>Collaboration platform</strong>: We are going to <mark>use GitHub as the hosting and collaboration platform</mark> of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="#handbook-appendixE-github">Appendix E</a>        for more info on how to setup and use GitHub for your project.</p>
+      <p><strong>IDE</strong>: We <mark>require you to use <a href="http://www.eclipse.org/downloads/">Eclipse</a></mark> (latest stable release) for module related programming work. Because all team members will work on the same code base and project tutors
+        too have to go through the code for testing and evaluation, it is troublesome to use multiple IDEs. Furthermore, when everyone uses the same tool, it creates a bigger collective know-how about the tool which makes troubleshooting easier and the
+        productivity higher.</p>
+      <p><strong>Revision control</strong>:</p>
+      <p>You are required to use Git. Other revision control software are not allowed.<br> The recommended GUI client for Git is <a href="https://www.sourcetreeapp.com/">SourceTree</a> (which comes bundled with Git), but you may use any other, or none.</p>
+    </div>
+  </div>
+  <h1 id="exams">Exams</h1>
+  <div id="handbook-exams">
+    <div>
+      <p>No midterm.<br> Final exam:</p>
+      <ul>
+        <li>2 hours, open book, essay type questions (no MCQ), covers materials from all lectures, handouts, and tutorials.</li>
+        <li>Sample exam papers that are closest to this semester's format (and examiner's comments) can be found <a href="../files/exampapers/">here</a>.</li>
+        <li>Attend the last two lecture to learn more about the exam paper.</li>
+        <li>Exam consultations (consultations near the exam) are discouraged but allowed. We prefer you to learn and clarify along the way, not at the end.</li>
+        <li>Study tips:
+          <ul>
+            <li>Go through the worked examples in handouts.</li>
+            <li>Try past exam papers. Try to answer the questions before looking at answers given.</li>
+            <li>Learn all parts of the project, not just the part you did.</li>
+            <li>Explore how your project can be extended to support more features.</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Note that CS2103 paper measures how well you can apply the theory to a project. Therefore, the exam is strongly connected to the project and how you  applied theory in the project. The exam will be easy for you if you attend lectures, participate
+        in tutorials(tutorials too are focused on application of theory to the project), and do a sincere job in the project. <mark>You will not be able to ace the exams by simply doing past papers just before the exams.</mark></p><img src="images/exam connected to project.png"
+        width="600"></div>
+  </div>
+  <h1 id="grade-breakdown">Grade Breakdown</h1>
+  <div id="handbook-gradeBreakdown">
+    <div><img src="images/grade breakdown.png" width="600">
+      <ul>
+        <li><a>[50%]</a><a href="#handbook-project-assessment">Project</a></li>
+        <li>[40%] <a href="#handbook-exams">Final exam.</a></li>
+        <li>[10%] <a href="#handbook-participation">Participation.</a></li>
+      </ul>
+    </div>
+  </div>
+  <h1 id="participation-marks">Participation Marks</h1>
+  <div id="handbook-participation">
+    <div>
+      <p>To get the full 10 marks allocated for participation you should satisfy the following criteria, evaluated based on peer evaluations and tutor observations. We will also take into account data recorded in other systems e.g. GitHub, IVLE.</p>
+      <ul>
+        <li><strong>Consistent Effort</strong>
+          <ul>
+            <li>Finished at least 7 post-lecture quizzes. You must get all answers correct for a quiz to count for participation. As you know, the quiz allows unlimited attempts and we count the best attempt only.</li>
+            <li>Does some preparatory work before tutorials.</li>
+          </ul>
+        </li>
+        <li><strong>Timeliness</strong>
+          <ul>
+            <li>Not frequently late for meetings/tutorials.<br><span class="text-danger">Arriving more than 5 minutes late for a tutorial is considered late.</span></li>
+            <li>Almost always delivers/submits on time.</li>
+          </ul>
+        </li>
+        <li><strong>Teamwork</strong>
+          <ul>
+            <li>Helps team members when possible and engages team members’ help when needed. This also means the student attends weekly meetings and works with others to complete the learning activities.</li>
+            <li>Communicates sufficiently and professionally. Does not use offensive language in project communications.</li>
+            <li>Responds to communication from team members in a timely manner (e.g. within 24 hours).</li>
+          </ul>
+        </li>
+        <li><strong>Reliability</strong>
+          <ul>
+            <li>Promises what he/she will contribute in advance, and delivers what’s promised.</li>
+            <li>Does not deliver work products that seem to be below the student's competence level i.e. tries his/her best to make the work product as high quality as possible within his/her competency level.</li>
+          </ul>
+        </li>
+        <li><strong>Meticulousness</strong>
+          <ul>
+            <li>Rarely overlooks a submission requirements.</li>
+            <li>Have not missed compulsory module activities such as completing the TEAMMATES profile.</li>
+          </ul>
+        </li>
+      </ul>
+      <p>The scheme tries to,</p>
+      <ul>
+        <li>Make the participation effort independent of the competency level. I.e. If you have the right attitude and put in a consistent effort, you should be able to get full marks for participation.</li>
+        <li>Not demand perfection. You should be able to earn full marks even if you falter occasionally.</li>
+      </ul>
+    </div>
+  </div>
+  <h1 id="appendix-a-module-principles">Appendix A: Module Principles</h1>
+  <div id="handbook-appendixA-principles">
+    <div>
+      <p><strong>[ You . Together . Continuously . Reach ]</strong></p>
+      <p>These are some of the main principles underlying the module structure.</p>
+      <p>The product is you, NOT what you build.</p>
+      <p>The software product you build is a side effect only. You are the product of this module. This means,</p>
+      <ul>
+        <li>We may not take the most efficient route to building the software product. We take the route that allows you to learn the most.</li>
+        <li>Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority.</li>
+      </ul>
+      <p>Following from that, we evaluate you on not just how much you've done, but also, how well you've done those things.</p>
+      <p>Here are some of the aspects in which we try to make you more professional:</p>
+      <table class="table table-bordered" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p><strong>We appreciate ...</strong></p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p><strong>But we value more ...</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Ability to deal with minute details</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ability to abstract over details, generalize, see the big picture</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>A drive to learn latest and greatest technologies</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ability to make the best of given tools</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Ability to find problems that interest you and solve them</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ability to solve the given problem to the best of your ability</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Ability to burn the midnight oil to meet a deadline</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ability to schedule work so that the need for 'last minute heroics' is minimal</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Preference to do things you like or things you are good at</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ability to buckle down and deliver on important things that you don't necessarily like or aren't good at</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1" rowspan="1">
+              <p>Ability to deliver desired end results</p>
+            </td>
+            <td colspan="1" rowspan="1">
+              <p>Ability to deliver in a way that shows how well you delivered (i.e. visibility of your work)</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>We learn together, NOT compete against each other.</strong></p>
+      <p>You are not in a competition. Our grading is not forced on a bell curve.</p>
+      <p>Learn from each other. That is why we publish submissions.</p>
+      <p>Teach each other, even those in other teams. Those who do it well can become tutors next time.</p>
+      <p><strong>Continuously engage, NOT last minute heroics.</strong></p>
+      <p>We want to train you to do software engineering in a steady and repeatable manner that does not require 'last minute heroics'.</p>
+      <p>In this module, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.</p>
+      <p><strong>Where you reach at the end matters, NOT what you knew at the beginning.</strong></p>
+      <p>When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. The full 10% allocated to intermediate deliverables
+        is within the reach of everyone in the class irrespective of their prior knowledge.</p>
+    </div>
+  </div>
+  <h1 id="appendix-b-module-policies">Appendix B: Module Policies</h1>
+  <div id="handbook-appendixB-policies">
+    <div>
+      <h3 id="policy-on-following-instructions">Policy on following instructions</h3>
+      <div id="policy-followingInstructions">
+        <p>When working with others, especially in a large class such as CS2103,  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and sends negative
+          signals about your work attitude. That is why we deduct participation points for not following instructions carefully.</p>
+      </div>
+      <h3 id="policy-on-grading-smallerlarger-teams">Policy on grading smaller/larger teams</h3>
+      <div id="policy-teamSize">
+        <p>We do take team size into account when grading.</p>
+        <p>3 member teams are allowed to do slightly less than 4 member teams (i.e., 10-15% less) and 5 member teams are expected to slightly more than 4 member teams (i.e., 10-15% more). The variation of expected output is less than 25% (although the variation
+          in team size is 25%). This is to account for the fact that extra people adds to the communication overhead.</p>
+      </div>
+      <h3 id="policy-on-project-work-distribution">Policy on project work distribution</h3>
+      <div id="policy-workDistribution">
+        <p>It is OK to do less or more than equal share in your project team. However, be prepared to receive a different grade than your team members if you didn't do an equal share.</p>
+        <p>Everyone is expected to do a write back-end code, frontend code, tests, user documentation, and developer documentation. If you limit yourself to tasks like documentation only, you are likely to fail the project component.</p>
+      </div>
+      <h3 id="policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events">Policy on absence due to valid reasons (e.g. MC, LOA, University events)</h3>
+      <div id="policy-validAbsences">
+        <p>There is no need to inform us. If you miss a lecture/tutorial for a valid reason, just do your best to catch up. We'll be happy to help if required. An occasional absence or two is not expected to affect your participation marks. <br> Only if
+          you fail to earn full marks for participation we will consider giving an alternative avenue to earn marks missed due to the absences.</p>
+      </div>
+      <h3 id="policy-on-email-response-time">Policy on email response time</h3>
+      <div id="policy-responseTime">
+        <p><mark>I will respond to you within 24 hours</mark> if it was an email sent to me or a forum post directed at me. If you don't get a response within that time, <mark>please feel free to remind me</mark>. It is likely that I did not notice your
+          post or the email got stuck somewhere.</p>
+        <p>Similarly I expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.</p>
+        <panel header="**Email etiquette: ALWAYS respond to direct emails**" expandable="">
+          <p>Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met me along the corridor, said 'Hi Damith, good morning' and I walked away without saying anything
+            back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails.  It doesn't take long to type &quot;Noted. Thanks&quot; and hit 'send'.</p>
+          <p>The promptness of a reply is even more important when the email is requesting you for something that you cannot provide. Imagine you wrote to me requesting a reference letter and I did not respond at all because I didn't want to give you one;
+            You'll be quite frustrated because you wouldn't know whether to look for another professor or wait longer for my response. Saying 'No' is fine and in fact a necessary part of professional life; but saying nothing is not acceptable. If you
+            didn't reply, the sender will not even know whether you received the email.</p>
+        </panel>
+      </div>
+      <h3 id="policy-on-tech-help">Policy on tech help</h3>
+      <div id="policy-techHelp">
+        <p><mark>Do not expect your project tutor to code or debug for you</mark>. We strongly discourage tutors from giving technical help directly to their own teams because,we want to train you in troubleshooting tech problems yourselves. Allowing direct
+          tech help from tutors transfers the troubleshooting responsibility to tutors.</p>
+        <p><mark>It is ok to ask for help from classmates even for assignments</mark>, even from other teams, as long as you don't copy from others and submit as your own. It doesn't matter who is helping you as long as you are learning from it.</p>
+        <p><mark>We encourage you to give tech help to each other</mark>, but do it in a way that the other person learns from it.</p>
+        <p>Please refer <a href="#handbook-appendixD-help">Appendix D: How to get Help in CS2103/T</a>.</p>
+      </div>
+      <h3 id="policy-on-publishing-submissions">Policy on publishing submissions</h3>
+      <div id="policy-publishingSubmissions">
+        <p>The source code are publicly available and are available for reuse by others without any restrictions. <br> Is publishing submissions unfair to the team? We don't think so. If you were the first to think of something your peers are willing to
+          adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.</p>
+      </div>
+      <h3 id="policy-on-plagiarism">Policy on plagiarism</h3>
+      <div id="policy-plagiarism">
+        <p>What's allowed:</p>
+        <p>We encourage sharing, but you should share with everyone in the class, not just a selected group. That is,</p>
+        <ul>
+          <li>You are not allowed to share individual assignments with classmates directly.</li>
+          <li>You are not allowed to share project-related things with other teams directly.</li>
+        </ul>
+        <p>However, note that most submissions will be published to the class after the submission deadline, after which they <mark>can be 'reused' by others</mark> subject to the 'reuse policy' given below.</p>
+        <p>If you submit code taken from elsewhere, you need to comply with our reuse policy.</p>
+        <p>Detection:</p>
+        <p>Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables. Besides, all your submissions are published to the class and sooner or later somebody will notice the plagiarism.</p>
+        <p>Penalties:</p>
+        <ul>
+          <li>For activities earning participation marks: We make a record of cases of plagiarism but we do not take further action. Because participation marks are given for effort and all students can earn the full marks easily, such plagiarism does not
+            disadvantage other students. Therefore, we prefer to spend all available resources on helping honest students to do better rather than to chase after dishonest students. If you think you gain something by plagiarizing, go ahead and do it.
+            It's your choice and it's your loss.</li>
+          <li>For the final project/exam: Any case of claiming others' work as yours will be reported to the university for disciplinary action.</li>
+        </ul>
+      </div>
+      <h3 id="policy-on-reuse">Policy on reuse</h3>
+      <div id="policy-reuse">
+        <p>In general, <mark>reuse is encouraged</mark>. However, note that reuse has its own costs (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others.
+          Rather, you will be given credit for using work done by others.</p>
+        <ul>
+          <li>You are allowed to reuse work from your classmates, subject to following conditions:
+            <ul>
+              <li>The work has been published by us or the authors.</li>
+              <li>You clearly give credit to the original author(s).</li>
+            </ul>
+          </li>
+          <li>You are allowed to reuse work from external sources, subject to following conditions:
+            <ul>
+              <li>The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.</li>
+              <li>You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely to get into
+                trouble if you unintentionally reused something copyrighted.</li>
+              <li>You do not violate the license under which the work has been released. Please  <mark>do not use 3rd-party images/audio</mark> in your software unless they have been specifically released to be used freely. Just because you found it in the
+                Internet does not mean it is free for reuse.</li>
+              <li><mark>Always get permission from us before you reuse</mark> things from elsewhere. Please post your 'request to use 3rd party library' in IVLE forum for approval. That way, the whole class get to see what libraries are being used by others.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <h3 id="policy-on-help-from-outsiders">Policy on help from outsiders</h3>
+      <div id="policy-outsiderHelp">
+        <p>In general, you are <mark>not allowed to involve outsiders</mark> in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback. It is also OK
+          to learn from others as long as they don't do your project work themselves.</p>
+      </div>
+      <h3 id="policy-on-suggested-length-for-submissions">Policy on suggested length for submissions</h3>
+      <div id="policy-submissionLength">
+        <p>We don't usually give a page limit for submissions. You need to decide yourself how long the document should be based on the purpose and the intended audience. You can determine the level of details required based on the samples we provide.</p>
+      </div>
+    </div>
+  </div>
+  <div id="handbook-policy"></div>
+  <h1 id="appendix-c-frequently-asked-questions">Appendix C: Frequently Asked Questions</h1>
+  <div id="handbook-appendixC-faq">
+    <div><img src="images/Why you....png" width="300" height="200">
+      <h3 id="why-the-workload-is-so-high">Why the workload is so high?</h3>
+      <div id="handbook-faq-highWorkload"><img src="images/Why workload heavy.png" width="378" height="340">
+        <p>CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2/3/4, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore,
+          we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.</p>
+        <p>Remember, everything you learn here is going to be useful in a SE-related career.</p>
+        <p>Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier :-p</p>
+        <p><mark>How to reduce the workload?</mark> There are many activities worth only bonus points and there are other optional activities that you can omit to reduce workload. Those activities are useful only if you are aiming for a high-end SE career,
+          CS2103 tutorships, recommendation letters from the module lecturer, to enroll in selective modules (e.g. CS3216/7), etc.</p>
+      </div>
+      <h3 id="why-so-much-bean-counting">Why so much bean counting?</h3>
+      <div id="handbook-faq-beanCounting"><img src="images/small things matter.png" width="600" height="300">
+        <p>Sometimes, small things matter in big ways. e.g., all other things being equal, a job may be offered to the candidate who has the neater looking CV although both have the same qualifications. This may be unfair, but that's how the world works.
+          Students forget this harsh reality when they are in the protected environment of the school and tend to get sloppy with their work habits. That is why we reward all positive behavior, even small ones (e.g., following precise submission instructions,
+          arriving on time etc.).</p>
+        <p>But unlike the real world, we are forgiving. That is why you can still earn full 10 marks of the participation marks even if you miss a few things here and there.</p>
+        <p>Related article: <a href="http://www.businessinsider.sg/conscientiousness-predicts-success-2014-4/#.Vewqb_mqpBc">This Is The Personality Trait That Most Often Predicts Success</a> (This is why we reward things like punctuality).</p>
+      </div>
+      <h3 id="why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle">Why you force me to visit a separate website instead of using IVLE?</h3>
+      <div id="handbook-faq-separateWebsite"><img src="images/Forces me to visit a separate website.png" width="655" height="271">
+        <p>We have a separate website because some of the module information does not fit into the structure imposed by IVLE.</p>
+        <p>On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.</p>
+        <p>Furthermore, unlike IVLE, a copy of the module website <mark>will remain online</mark> at <a href="http://www.comp.nus.edu.sg/~cs2103/AY1617S2/">http://www.comp.nus.edu.sg/~cs2103/AY1617S2/</a> for your reference for the next few years.</p>
+      </div>
+      <h3 id="why-slides-are-not-detailed-enough-handouts-are-wordy">Why slides are not detailed enough, handouts are wordy?</h3>
+      <div id="handbook-faq-slideFormat"><img src="images/slides not detailed enough.png" width="733" height="221">
+        <p>Slides are not meant to be documents to print and study for exams. Their purpose is to support the lecture delivery and keep you engaged during the lecture. That's why our slides are less detailed and more visual.</p>
+        <p>Handouts are wordy because they are reference materials for you to study at your own pace and use during the module and later. The format is similar to materials (books, online articles, etc.) you will have to refer to when you work in the industry.
+          They too are not meant to be cheat sheets 'to study for exams with minimal effort'.</p>
+      </div>
+      <h3 id="why-so-much-self-study">Why so much self-study?</h3>
+      <div id="handbook-faq-selfStudy"><img src="images/so much self study.png" width="763" height="307">
+        <p>Self-study is a critical survival skill in SE industry. Lectures will show you the way, but absorbing content is to be done at your own pace, by yourself. In this module, we still tell you what content to study and also pass most of the content
+          to you. After you graduate, you have to decide what to study and find your own content too.</p>
+      </div>
+      <h3 id="why-do-i-have-to-come-to-tutorials-on-time">Why do I have to come to tutorials on time?</h3>
+      <div id="handbook-faq-timelyArrival">
+        <p>Unlike most modules, our tutorials are group work. Arriving on time minimizes the time wasted by others waiting for you to arrive or briefing you on what you missed. Being punctual is expected from a professional.</p>
+      </div>
+      <h3 id="what-if-i-dont-carry-around-a-laptop">What if I don't carry around a laptop?</h3>
+      <div id="handbook-faq-noLaptop">
+        <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort from the tutor or team members.</p>
+        <p>Reason: You enjoy the benefits of not bring the laptop; you should bear the cost too</p>
+      </div>
+      <h3 id="why-very-narrow-project-scope">Why very narrow project scope?</h3>
+      <div id="handbook-faq-narrowScope">
+        <p>Defining your own unique project is more fun.</p>
+        <p>But, wider scope → more diverse projects → harder for us to go deep into your project. The collective know-how we (i.e., students and the teaching team) build up about SE issues related to the project become shallow and stretched too thinly. It
+          also affects fairness of grading.</p><img src="images/limited project scope.png" width="772" height="296">
+        <p>That is why a strictly-defined project is more suitable for a first course in SE that focuses on nuts-and-bolts of SE. After learning those fundamentals, in higher level project modules you can focus more on the creative side of software projects
+          without being dragged down by nuts-and-bolts SE issues (because you already know how to deal with them). However, we would like to allow some room for creativity too. That is why we let you build products that are slight variations of a given
+          theme.</p>
+        <p>Also note: The freedom to do 'anything' is not a necessary condition for creativity. Do not mistake being different for being creative. In fact, the more constrained you are, the more you need creativity to stand out.</p>
+      </div>
+      <h3 id="why-project-requirements-are-so-vague">Why project requirements are so vague?</h3>
+      <div id="handbook-faq-vagueRequirements"><img src="images/vague requirement.png" width="737" height="210">
+        <p>&quot;You tell me exactly what to do - I do that - you pay me (in grades)&quot; is a model for contract work, not for learning. Being able to survive in imprecise, uncertain, volatile problem contexts is precisely what we are trying to teach you.</p>
+        <p>For example, the best way to communicate something often depends on what is being communicated. That is why we don't specify the precise content for project documents. Instead, we aim to refine project documents iteratively. We believe the learning
+          experience will be richer if we let you decide the best way to present your project information rather than just following our instructions blindly. For example, in real-life projects you are rarely told which diagrams to draw; that is a decision
+          you have to make yourself.</p>
+      </div>
+      <h3 id="why-im-not-allowed-to-use-my-favorite-osideetc">Why I'm not allowed to use my favorite OS/IDE/etc?</h3>
+      <div id="handbook-faq-favoriteTool"><img src="images/I'm not allowed to use my favorite tool.png" width="750" height="287">
+        <p>We have chosen a basic set of tools after considering ease of learning, availability, typicalness, popularity, migration path to other tools, etc. There are many reasons for limiting your choices:</p>
+        <p>Pedagogical reasons:</p>
+        <ul>
+          <li>We use 'good enough', not necessarily the best, tools: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our toolset, you will find it easy to upgrade to such high-end tools
+            by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding about a family of tools.</li>
+          <li>Learn to thrive under given conditions: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important
+            work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google uses SVN as their
+            revision control software. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).<br> While programming in school is often a solo sport,
+            programming in the industry is a team sport. As we are training you to become professional software engineers, it is important to get over the psychological hurdle of needing to satisfy individual preferences and get used to making the best
+            of a given environment.</li>
+        </ul>
+        <p>Practical reasons:</p>
+        <ul>
+          <li>Some of the learning activities are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.</li>
+          <li>We provide learning resources for tools. e.g. 'Getting started with Eclipse'. Allowing more tools means we need to produce more resources.</li>
+          <li>When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.</li>
+        </ul>
+        <p>Meanwhile, feel free to share with peers your experience of using other tools.</p>
+      </div>
+      <h3 id="why-so-many-submissions">Why so many submissions?</h3>
+      <div id="handbook-faq-manySubmissions"><img src="images/frequent submissions.png" width="759" height="359">
+        <p>The high number of submissions is not meant to increase workload but to spread it across the semester. Learning theory and applying them should be done in parallel to maximize the learning effect. That can happen only if we spread theory and 'application
+          of theory' (i.e., project work) evenly across the semester.</p>
+      </div>
+      <h3 id="why-not-enough-marks-for-intermediate-submissions">Why not enough marks for intermediate submissions?</h3>
+      <div id="handbook-faq-intermediateMarks"><img src="images/no marks for intermediate submissions.png" width="688" height="102">
+        <p>Intermediate submissions are also incremental submissions. Intermediate submissions are included in the final submission too and will earn marks at that point. They are there to help you do well in the final submission and for us to monitor your
+          progress and guide you accordingly. They are a means to an end. They are not achievements themselves. By right, they shouldn't be given marks at all. 😃</p>
+      </div>
+      <h3 id="why-submission-requirements-differ-between-cs2103t-and-cs2101">Why submission requirements differ between CS2103T and CS2101?</h3>
+      <div id="handbook-faq-cs2101Differences"><img src="images/Submission requirements differ.png" width="300">
+        <p>They do, and they should.</p>
+        <p>CS2103T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some
+          of the stuff across the two modules, submissions are not intended to be exactly the same.</p>
+      </div>
+    </div>
+  </div>
+  <h1 id="appendix-d-how-to-get-help-in-cs2103t">Appendix D: How to get help in CS2103/T</h1>
+  <div id="handbook-appendixD-help">
+    <div>
+      <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
+      <table class="table two-column-content">
+        <tbody>
+          <tr>
+            <td width="130px"><img src="images/how to get help.png" width="125px"></td>
+            <td>
+              <p>Whether it is a technical problem (e.g. error when using Eclipse) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a
+                solution/answer. But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="images/the good reasons to get home early.png" width="300">
+      <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
+      <p>What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.</p>
+      <p>When faced with a technical problem or a doubt about a concept, here are the things you should do:</p>
+      <ul>
+        <li>
+          <p><strong>Check what is given</strong>: Check if the problem/concept has been discussed in the lectures, handouts, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't
+            be your default behavior. We know that sometimes it is difficult to find stuff in handouts/handbook etc. But you should try first.</p>
+        </li>
+        <li>
+          <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't give an
+            opportunity for someone to tell you, 'Have you heard of a thing called Google?'.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a <mark>web search on the error message</mark>
+            is a good starting point.  <br><img src="images/how to google it.png" width="460" height="268"></p>
+        </li>
+        <li>
+          <p><strong>Ask peers</strong>:</p>
+          <p>Ask your team members.</p>
+          <p>Ask classmates using the IVLE forum. Asking questions in IVLE is encouraged. Even if you figured out one way to solve a problem, discussing it on IVLE might lead you to better ways of solving it, and will help other classmates who are facing
+            similar problems too. If you are really shy to ask questions in IVLE, you may use  <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a>  to submit your question anonymously which we
+            will then post in the forum.</p>
+          <panel header="Rubber Duck Debugging" expandable="">
+            <table class="two-column-content">
+              <tbody>
+                <tr>
+                  <td width="230px"><img src="images/Rubber_duck_assisting_with_debugging.jpg" width="220"></td>
+                  <td>
+                    <p>Use Rubber Duck Debugging:</p>
+                    <p>Rubber duck debugging is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber
+                      duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+                    <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </panel>
+        </li>
+        <li>
+          <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
+          <p>Here are some tips for posting help request:</p>
+          <ul>
+            <li>
+              <p>PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.</p>
+            </li>
+            <li>
+              <p>Learn to isolate the problem. &quot;My code doesn't work&quot; isn't going to help even if you post the whole code online. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the
+                bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself. If not, at least it increases the chance of someone else being able to help you.<br><span class="bg-info">
+Tip: How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
+</span></p>
+            </li>
+            <li>
+              <p>Generalize the problem. &quot;How to write tasks to a text file using Java&quot; is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) &quot;How to write to a file using
+                Java&quot;.</p>
+            </li>
+            <li>
+              <p>Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, you chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help
+                you, it will take longer. But this doesn't mean you dump too much information into the thread either.<br><span class="bg-info">Tip: make sure you know what these stand for: RTFM, STFW, GIYF</span></p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Talk to the lecturer</strong> before or after the lecture. The lecturer will be at the lecture venue from 30 minutes before the start of the lecture.</p>
+        </li>
+        <li>
+          <p><strong>Request our help</strong>: Failing all above, you can always request for help by emailing the lecturer.</p>
+        </li>
+      </ul>
+      <p>Resources</p>
+      <ul>
+        <li>[lifehacker article]  <a href="http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671">Google Tips and Tricks Every Student Should Know</a></li>
+        <li>[Article] <a href="http://catb.org/~esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond</li>
+      </ul>
+    </div>
+  </div>
+  <h1 id="appendix-e-using-github-project-hosting">Appendix E: Using GitHub Project Hosting</h1>
+  <div id="handbook-appendixE-github">
+    <div>
+      <h2 id="create-a-github-profile">Create a GitHub profile</h2>
+      <p>Create a personal GitHub account.</p>
+      <ol>
+        <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
+        <li>Strongly recommended: Complete your GitHub profile. In particular,</li>
+      </ol>
+      <ul>
+        <li>Specify your full name.</li>
+        <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+      </ul>
+      <panel header="**Why am I being pushed to complete my GitHub profile?**" expandable="">
+        <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just
+          for the module.</p>
+      </panel>
+      <div id="tutorial-pr-instructions">
+        <h2 id="submitting-pull-requests-for-tutorials">Submitting Pull Requests for tutorials</h2>
+        <ol>
+          <li>Fork the repo to your personal GitHub account, if you haven't done so already.</li>
+          <li>Create a branch named after tutorial activity e.g. <code>T2A2</code><br><mark>Remember to switch to master branch before creating the new branch.</mark></li>
+          <li>Commit your changes to that branch. Push to your fork.</li>
+          <li>Create a Pull Request against the master branch of the repo<br><code>https://github.com/**nus-cs2103-AY1617S2**/{repo_name}</code><br> e.g. <code>https://github.com/nus-cs2103-AY1617S2/addressbook-level1</code><br><mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark><br>
+            <img
+              src="images/PrDetails.png" alt=""><br> PR name should be: <code>[ACTIVITY_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[T3A2][W09-A1]James Yong</code><br> Note that our tutorial IDs are different from those shown in
+              CORS/IVLE. Refer to the 'Tutorial Schedule' in the 'Overview' section of the <a href="schedule.html">Schedule Page</a>.</li>
+          <li>Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br><img src="images/FilesChangedTab.png" alt=""></li>
+          <li>If the content of the PR is not as you expected, you can fix those problems in your local repo, commit, and push those new commits to the fork. The PR content will update automatically to match new commits.<br> Alternatively, you can close that
+            PR and create a new one with the correct content.</li>
+          <li><mark>If your PR adapted/referred code from elsewhere</mark> (e.g. a stackoverflow post or a classmate's PR -- which is allowed, even encouraged), acknowledge the source in your PR description text.<br> e.g. <code>Some code adapted from #2431 (I followed the same technique for parsing user command)</code></li>
+          <li>If the PR is not ready for review yet, add a comment <code>Work in progress</code>. When the PR is ready for review later, add a comment <code>Ready for review</code><br> If there is no comment, we assume the PR is ready for review.</li>
+        </ol>
+      </div>
+      <div id="organization-setup">
+        <h2 id="organization-setup">Organization setup</h2>
+        <p>The instructions below are for setting up a GitHub organization for your team, which you should do at the start of Phase B.</p>
+        <p>You can create your GitHub account after receiving your phase B team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
+        <ul>
+          <li>One team member (e.g. team leader) should create an organization with the following details:</li>
+          <li><mark>Organization name : <code>CS2103AUG2016-TEAM_ID</code></mark>. e.g.  <code>CS2103AUG2016-W09-B3</code></li>
+          <li>Plan:  Open Source ($0/month)</li>
+          <li>After that, the same person can add members to the organization:</li>
+          <li>Create a team called <code>developers</code> to your organization and give that team write permission.</li>
+          <li>Add your team members to the developers team.</li>
+        </ul>
+      </div>
+      <div id="repo-setup">
+        <h2 id="repo-setup">Repo setup</h2>
+        <p>Only one team member:</p>
+        <ol>
+          <li>Fork <a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level4">Address Book Level 4</a> to your team org.</li>
+          <li>Rename the forked repo as <code>main</code>. This repo is to be used as the repo for your project.</li>
+          <li>Clone the repo to your computer.</li>
+          <li>Edit this element <code>&lt;name&gt;addressbook-level4&lt;/name&gt;</code> and the line below that in the <code>.project</code> file to match the <strong>product name</strong> (not repo name) of your project. e.g. <code>SuperToDo</code><br>            Commit the change.</li>
+          <li>Push to the <code>main</code> repo you created above.</li>
+          <li>Ensure your team members have the desired level of access to your team repo</li>
+        </ol>
+        <p>All team members:</p>
+        <ol>
+          <li>Clone to your Computer the <code>main</code> repo your team member created in your team's GitHub org.</li>
+          <li>Set it up as an Eclipse project (follow the instructions carefully).</li>
+        </ol>
+        <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.<br><code>/src/main</code><br><code>/src/test</code><br><code>/doc</code></p>
+      </div>
+      <div id="issue-tracker-setup">
+        <h2 id="issue-tracker-setup">Issue tracker setup</h2>
+        <p>When you create a repo, you get an issue tracker for that repo automatically. Configure it as follows:</p>
+        <ul>
+          <li>
+            <p>Delete existing labels and add the following labels.</p>
+            <ul>
+              <li><code>type.epic</code> : A big feature which can be broken down into smaller stories e.g. search</li>
+              <li><code>type.story</code> : A user story</li>
+              <li><code>type.enhancement</code>: An enhancement to an existing story</li>
+              <li><code>type.task</code> : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)</li>
+              <li><code>type.bug</code> : A bug</li>
+              <li><code>status.ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.</li>
+              <li><code>priority.high</code> : Must do</li>
+              <li><code>priority.medium</code> : Nice to have</li>
+              <li><code>priority.low</code> : Unlikely to do</li>
+            </ul>
+          </li>
+          <li>
+            <p>Create following milestones</p>
+          </li>
+          <li>
+            <p><code>V0.0</code>, <code>V0.1</code>, <code>V0.2</code>, <code>V0.3</code>, <code>V0.4</code>, <code>V0.5rc</code>, <code>V0.5</code></p>
+          </li>
+          <li>
+            <p>You may configure other project settings as you wish. e.g. more labels, more milestones</p>
+          </li>
+        </ul>
+      </div>
+      <div id="project-schedule-tracking">
+        <h2 id="project-schedule-tracking">Project Schedule Tracking</h2>
+        <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current
+          status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+        <h3 id="using-issues">Using Issues:</h3>
+        <ul>
+          <li>Record each of the user stories you plan to deliver as an issue in the issue tracker.<br> e.g. <code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></li>
+          <li>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</li>
+          <li>When you start implementing a story, break it down to tasks. Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. e.g. <br> Good: Update class diagram in the project manual for V0.5<br> Bad (reasons:
+            not a one-person task, not small enough): Write the project manual</li>
+          <li>Write a descriptive title for the issue. <br> e.g. Add support for the 'undo' command to the parser.</li>
+          <li>There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. So the user story <code>Implementing parser</code>  is
+            too big because it cannot be done by a single person in a week. However,<code>Implementing parser support for adding of floating tasks</code> is of appropriate size.</li>
+          <li>Do not track things taken for granted. e.g., 'push code to repo' should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it
+            is ready. Those two need not be tracked as separate tasks.</li>
+          <li>Omit unnecessary details. In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is
+            enough.<br> Similarly, labels such as 'priority' can be omitted if you think they don't help you.</li>
+          <li>Assign tasks to team members using the 'owner' field. At any point, there should be some ongoing tasks and some pending tasks against each team member.</li>
+          <li>Use status labels to indicate which tasks are completed, which are ongoing, and which are to be done by next milestone.</li>
+        </ul>
+        <h3 id="using-milestones">Using Milestones:</h3>
+        <p><a name="using-milestones"></a></p>
+        <ul>
+          <li>Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</li>
+          <li>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</li>
+          <li>Note that you can change the milestone plan along the way as necessary.</li>
+          <li>IMPORTANT: To consider the milestone as 'reached', <mark>you should have the following done <em>before</em> the tutorial begins. 'Missed milestones' will count against the 'project management' component of your final grade</mark>:
+            <ul>
+              <li>A working product tagged with the correct tag (e.g. V0.2) and pushed to the main repo.</li>
+              <li>All tests passing on Travis.</li>
+              <li>Milestone updated to match the product.</li>
+              <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
+              <li>Doing a 'release' on GitHub is optional for V0.1 and V0.2 but compulsory from V0.3.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="workflow">
+        <h2 id="workflow">Workflow</h2>
+        <p>You may use any of the workflows described <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/">here</a> and their variations. You can start with a simpler workflow first and move to more complex ones as necessary.</p>
+        <p>Here are some examples (ordered in increasing complexity):</p>
+        <ul>
+          <li>Members push to the <code>master</code> branch (i.e. centralized workflow).</li>
+          <li>Members push to feature branches of team repo and merge when ready (i.e. feature branch workflow without PRs).</li>
+          <li>Members push to feature branches of team repo and create PRs in team repo (i.e. feature branch workflow with PRs).</li>
+          <li>Members fork the team repo to their own account, push code to their own fork, and then create PRs from their fork to team repo using either the centralized or the feature branch workflow.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h1 id="appendix-f-what-to-do-if-there-are-teamwork-issues">Appendix F: What to do if there are teamwork issues</h1>
+  <div id="handbook-appendixF-teamworkIssues">
+    <div>
+      <p>If your team is facing difficulties due to differences in skill/motivation /availability among team members,</p>
+      <ul>
+        <li>First, <mark>do not expect everyone to have the same skill/motivation level as you</mark>. It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone is entitled to
+          have their own priorities.</li>
+        <li>Second, <mark>don't give up</mark>. It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day 😃</li>
+        <li>Third, if you care about your grade and willing to work for it, you need to take initiative to turn the situation around or else the whole team is going to suffer. Don't hesitate to <mark>take charge</mark> if the situation calls for it. By doing
+          so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you
+          try.</li>
+        <li>Finally, don't feed angry or 'wronged'. Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility
+          to get others to contribute.</li>
+      </ul>
+      <p>Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It
+        is still better than sinking the whole team together.</p>
+      <ul>
+        <li><strong>Redistribute the work</strong>: Stronger programmers in the team should take over the critical parts of the code.</li>
+        <li><strong>Enforce stricter integration workflow</strong>: Appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing product
+          or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator. Note that if the integrator rejected your code unreasonably, you can still earn marks for that code. You are allowed to submit such
+          'rejected' code for grading. They can earn marks based on the quality of the code. Also refer the workflow described in the 'A safer workflow using forks and pull requests' section of the Handbook: Appendix E (Using GitHub Project Hosting)</li>
+      </ul>
+      <p><strong>If you have very unreliable or totally disengaged team members</strong> :</p>
+      <ul>
+        <li>Re-distribute project work so that such team members cannot bring down the entire team.</li>
+        <li>However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute more any time they wish to.</li>
+        <li>Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.</li>
+        <li>Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best
+          too, although their best may be lower than yours.</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div id="disqus_thread"></div>
+    <script>
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        s.src = '//cs2103.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/disqus.md?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\setup.js"></script>
+</html>
