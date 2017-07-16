@@ -22,10 +22,6 @@
       "title": "CS2103/T Website - Textbook"
     },
     {
-      "src": "book/introduction/index.md",
-      "title": "CS2103/T Textbook - Software Engineering Rocks"
-    },
-    {
       "src": "book/integration/index.md",
       "title": "CS2103/T Textbook - Integration"
     },
