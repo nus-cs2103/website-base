@@ -22,6 +22,862 @@
       "title": "CS2103/T Website - Textbook"
     },
     {
+      "src": "book/intellij/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA"
+    },
+    {
+      "src": "book/intellij/projectSetup/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA: Project Setup"
+    },
+    {
+      "src": "book/intellij/codeNavigation/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA: Code Navigation"
+    },
+    {
+      "src": "book/intellij/productivityShortcuts/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA: Productivity Shortcuts"
+    },
+    {
+      "src": "book/intellij/debuggingBasic/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA: Debugging - Basic"
+    },
+    {
+      "src": "book/intellij/debuggingIntermediate/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA: Debugging - Intermediate"
+    },
+    {
+      "src": "book/intellij/refactoring/index.md",
+      "title": "CS2103/T Textbook - Intellij IDEA: Refactoring"
+    },
+    {
+      "src": "book/javaTools/index.md",
+      "title": "CS2103/T Textbook - Java"
+    },
+    {
+      "src": "book/javaTools/collections/index.md",
+      "title": "CS2103/T Textbook - Java: Use Collections"
+    },
+    {
+      "src": "book/javaTools/enums/index.md",
+      "title": "CS2103/T Textbook - Java: Use Enums"
+    },
+    {
+      "src": "book/javaTools/varargs/index.md",
+      "title": "CS2103/T Textbook - Java: Use Varargs"
+    },
+    {
+      "src": "book/javaTools/javaFXBasic/index.md",
+      "title": "CS2103/T Textbook - Java: JavaFX - Basic"
+    },
+    {
+      "src": "book/javaTools/streamsBasic/index.md",
+      "title": "CS2103/T Textbook - Java: Streams - Basic"
+    },
+    {
+      "src": "book/junit/index.md",
+      "title": "CS2103/T Textbook - JUnit"
+    },
+    {
+      "src": "book/junit/basic/index.md",
+      "title": "CS2103/T Textbook - JUnit: Basic"
+    },
+    {
+      "src": "book/junit/intermediate/index.md",
+      "title": "CS2103/T Textbook - JUnit: Intermediate"
+    },
+    {
+      "src": "book/gitAndGithub/index.md",
+      "title": "CS2103/T Textbook - Git and Github"
+    },
+    {
+      "src": "book/gitAndGithub/init/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Init"
+    },
+    {
+      "src": "book/gitAndGithub/commit/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Commit"
+    },
+    {
+      "src": "book/gitAndGithub/ignore/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Ignore"
+    },
+    {
+      "src": "book/gitAndGithub/tag/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Tag"
+    },
+    {
+      "src": "book/gitAndGithub/checkout/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Checkout"
+    },
+    {
+      "src": "book/gitAndGithub/stash/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Stash"
+    },
+    {
+      "src": "book/gitAndGithub/clone/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Clone"
+    },
+    {
+      "src": "book/gitAndGithub/pull/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Pull"
+    },
+    {
+      "src": "book/gitAndGithub/push/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Push"
+    },
+    {
+      "src": "book/gitAndGithub/branch/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Branch"
+    },
+    {
+      "src": "book/gitAndGithub/mergeConflicts/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Merge Conflicts"
+    },
+    {
+      "src": "book/gitAndGithub/createPRs/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Create PRs"
+    },
+    {
+      "src": "book/gitAndGithub/managePRs/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Manage PRs"
+    },
+    {
+      "src": "book/gitAndGithub/forkingWorkflow/index.md",
+      "title": "CS2103/T Textbook - Git and Github: Forking Workflow"
+    },
+    {
+      "src": "book/testing/index.md",
+      "title": "CS2103/T Textbook - Testing"
+    },
+    {
+      "src": "book/testing/introduction/index.md",
+      "title": "CS2103/T Textbook - Testing: Introduction"
+    },
+    {
+      "src": "book/testing/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Testing: Introduction: What"
+    },
+    {
+      "src": "book/testing/introduction/testability/index.md",
+      "title": "CS2103/T Textbook - Testing: Introduction: Testability"
+    },
+    {
+      "src": "book/testing/testingTypes/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types"
+    },
+    {
+      "src": "book/testing/testingTypes/unitTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Unit Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/unitTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Unit Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/unitTesting/stubs/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Unit Testing: Stubs"
+    },
+    {
+      "src": "book/testing/testingTypes/unitTesting/mocks/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Unit Testing: Mocks"
+    },
+    {
+      "src": "book/testing/testingTypes/integrationTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Integration Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/integrationTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Integration Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/systemTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: System Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/systemTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: System Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/alphaBetaTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Alpha and Beta Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/alphaBetaTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Alpha and Beta Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/developerTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Developer Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/developerTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Developer Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/developerTesting/why/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Developer Testing: Why"
+    },
+    {
+      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Exploratory vs Scripted Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Exploratory vs Scripted Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/when/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Exploratory vs Scripted Testing: WWhen"
+    },
+    {
+      "src": "book/testing/testingTypes/acceptanceTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Acceptance Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/acceptanceTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Acceptance Testing: What"
+    },
+    {
+      "src": "book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Acceptance Testing: Acceptance vs System Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/regressionTesting/index.md",
+      "title": "CS2103/T Textbook - Testing: Testing Types: Regression Testing"
+    },
+    {
+      "src": "book/testing/testingTypes/regressionTesting/what/index.md",
+      "title": "CS2103/T Textbook - Testing Types: Regression Testing: What"
+    },
+    {
+      "src": "book/testing/testAutomation/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Automation"
+    },
+    {
+      "src": "book/testing/testAutomation/what/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Automation: What"
+    },
+    {
+      "src": "book/testing/testAutomation/testingTextUis/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Automation: Automated Testing of Text UIs"
+    },
+    {
+      "src": "book/testing/testAutomation/usingTestDrivers/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Automation: Test Automation Using Test Drivers"
+    },
+    {
+      "src": "book/testing/testAutomation/tools/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Automation: Test Automation Tools"
+    },
+    {
+      "src": "book/testing/testAutomation/testingGuis/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Automation: Automated Testing of GUIs"
+    },
+    {
+      "src": "book/testing/testCoverage/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Coverage"
+    },
+    {
+      "src": "book/testing/testCoverage/what/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Coverage: What"
+    },
+    {
+      "src": "book/testing/testCoverage/how/index.md",
+      "title": "CS2103/T Textbook - Testing: Test Coverage: How"
+    },
+    {
+      "src": "book/testing/dependencyInjection/index.md",
+      "title": "CS2103/T Textbook - Testing: Dependency Injection"
+    },
+    {
+      "src": "book/testing/dependencyInjection/what/index.md",
+      "title": "CS2103/T Textbook - Testing: Dependency Injection: What"
+    },
+    {
+      "src": "book/testing/dependencyInjection/how/index.md",
+      "title": "CS2103/T Textbook - Testing: Dependency Injection: How"
+    },
+    {
+      "src": "book/testing/tdd/index.md",
+      "title": "CS2103/T Textbook - Testing: TDD"
+    },
+    {
+      "src": "book/testing/tdd/what/index.md",
+      "title": "CS2103/T Textbook - Testing: TDD: What"
+    },
+    {
+      "src": "book/testing/tdd/how/index.md",
+      "title": "CS2103/T Textbook - Testing: TDD: How"
+    },
+    {
+      "src": "book/softwareEngineering/index.md",
+      "title": "CS2103/T Textbook - Software Engineering"
+    },
+    {
+      "src": "book/softwareEngineering/prosAndCons/index.md",
+      "title": "CS2103/T Textbook - Software Engineering: Pros and Cons"
+    },
+    {
+      "src": "book/qualityAssurance/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance"
+    },
+    {
+      "src": "book/qualityAssurance/introduction/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Introduction"
+    },
+    {
+      "src": "book/qualityAssurance/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Introduction: What"
+    },
+    {
+      "src": "book/qualityAssurance/introduction/validationVsVerification/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Introduction: Validation vs Verification"
+    },
+    {
+      "src": "book/qualityAssurance/codeReviews/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Code Reviews"
+    },
+    {
+      "src": "book/qualityAssurance/codeReviews/what/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Code Reviews: What"
+    },
+    {
+      "src": "book/qualityAssurance/staticAnalysis/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Static Analysis"
+    },
+    {
+      "src": "book/qualityAssurance/staticAnalysis/what/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Static Analysis: What"
+    },
+    {
+      "src": "book/qualityAssurance/formalVerification/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Formal Veerification"
+    },
+    {
+      "src": "book/qualityAssurance/formalVerification/what/index.md",
+      "title": "CS2103/T Textbook - Quality Assurance: Formal Veerification: What"
+    },
+    {
+      "src": "book/testCaseDesign/index.md",
+      "title": "CS2103/T Textbook - Test Case Design"
+    },
+    {
+      "src": "book/testCaseDesign/introduction/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Introduction"
+    },
+    {
+      "src": "book/testCaseDesign/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Introduction: What"
+    },
+    {
+      "src": "book/testCaseDesign/introduction/positiveVsNegative/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Introduction: Positive vs Negative Test Cases"
+    },
+    {
+      "src": "book/testCaseDesign/introduction/blackVsGlass/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Introduction: Black Box vs Glass Box"
+    },
+    {
+      "src": "book/testCaseDesign/equivalencePartitions/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Equivalence Partitions"
+    },
+    {
+      "src": "book/testCaseDesign/equivalencePartitions/what/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Equivalence Partitions: What"
+    },
+    {
+      "src": "book/testCaseDesign/equivalencePartitions/basic/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Equivalence Partitions: Basic"
+    },
+    {
+      "src": "book/testCaseDesign/equivalencePartitions/intermediate/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Equivalence Partitions: Intermediate"
+    },
+    {
+      "src": "book/testCaseDesign/boundaryValueAnalysis/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Boundary Value Analysis"
+    },
+    {
+      "src": "book/testCaseDesign/boundaryValueAnalysis/what/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Boundary Value Analysis: What"
+    },
+    {
+      "src": "book/testCaseDesign/boundaryValueAnalysis/how/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Boundary Value Analysis: How"
+    },
+    {
+      "src": "book/testCaseDesign/combiningTestInputs/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Combining Test Inputs"
+    },
+    {
+      "src": "book/testCaseDesign/combiningTestInputs/why/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Combining Test Inputs: Why"
+    },
+    {
+      "src": "book/testCaseDesign/combiningTestInputs/heuristicValid/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Combining Test Inputs: Heuristic: Each valid input at least once in a positive test case"
+    },
+    {
+      "src": "book/testCaseDesign/combiningTestInputs/heuristicInvalid/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Combining Test Inputs: Heuristic: No more than one invalid input in a test case"
+    },
+    {
+      "src": "book/testCaseDesign/combiningTestInputs/mix/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Combining Test Inputs: Mix"
+    },
+    {
+      "src": "book/testCaseDesign/more/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: More"
+    },
+    {
+      "src": "book/testCaseDesign/more/testingUseCases/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: More: Testing Use Cases"
+    },
+    {
+      "src": "book/testCaseDesign/summary/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Summary"
+    },
+    {
+      "src": "book/testCaseDesign/summary/recap/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Summary: Recap"
+    },
+    {
+      "src": "book/testCaseDesign/summary/exercises/index.md",
+      "title": "CS2103/T Textbook - Test Case Design: Summary: Exercises"
+    },
+    {
+      "src": "book/principles/index.md",
+      "title": "CS2103/T Textbook - Principles"
+    },
+    {
+      "src": "book/principles/what/index.md",
+      "title": "CS2103/T Textbook - Principles: What"
+    },
+    {
+      "src": "book/principles/singleResponsibilityPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: Single Responsibility Principle"
+    },
+    {
+      "src": "book/principles/interfaceSegregationPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: Interface Segregation Principle"
+    },
+    {
+      "src": "book/principles/liskovSubstitutionPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: Liskov Substitution Principle"
+    },
+    {
+      "src": "book/principles/dependencyInversionPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: Dependency Inversion Principle"
+    },
+    {
+      "src": "book/principles/solidPrinciples/index.md",
+      "title": "CS2103/T Textbook - Principles: SOLID Principles"
+    },
+    {
+      "src": "book/principles/separationOfConcernsPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: Separation of Concerns Principle"
+    },
+    {
+      "src": "book/principles/lawOfDemeter/index.md",
+      "title": "CS2103/T Textbook - Principles: Law of Demeter"
+    },
+    {
+      "src": "book/principles/brooksLaw/index.md",
+      "title": "CS2103/T Textbook - Principles: Brooks' Law"
+    },
+    {
+      "src": "book/principles/yagniPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: YAGNI Principle"
+    },
+    {
+      "src": "book/principles/dryPrinciple/index.md",
+      "title": "CS2103/T Textbook - Principles: DRY Principle"
+    },
+    {
+      "src": "book/teamwork/index.md",
+      "title": "CS2103/T Textbook - Teamwork"
+    },
+    {
+      "src": "book/teamwork/teamStructures/index.md",
+      "title": "CS2103/T Textbook - Teamwork: Team Structures"
+    },
+    {
+      "src": "book/revisionControl/index.md",
+      "title": "CS2103/T Textbook - Revision Control"
+    },
+    {
+      "src": "book/revisionControl/what/index.md",
+      "title": "CS2103/T Textbook - Revision Control: What"
+    },
+    {
+      "src": "book/revisionControl/otherNames/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Other Names"
+    },
+    {
+      "src": "book/revisionControl/repositories/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Repositories"
+    },
+    {
+      "src": "book/revisionControl/savingHistory/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Saving History"
+    },
+    {
+      "src": "book/revisionControl/usingHistory/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Using History"
+    },
+    {
+      "src": "book/revisionControl/remoteRepositories/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Remote Repositories"
+    },
+    {
+      "src": "book/revisionControl/branching/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Branching"
+    },
+    {
+      "src": "book/revisionControl/drcsVsCrcs/index.md",
+      "title": "CS2103/T Textbook - Revision Control: DRCS vs CRCS"
+    },
+    {
+      "src": "book/revisionControl/forkingWorkflow/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Forking Workflow"
+    },
+    {
+      "src": "book/revisionControl/featureBranchFlow/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Feature Branch Flow"
+    },
+    {
+      "src": "book/revisionControl/centralizedFlow/index.md",
+      "title": "CS2103/T Textbook - Revision Control: Centralized Flow"
+    },
+    {
+      "src": "book/processModels/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models"
+    },
+    {
+      "src": "book/processModels/introduction/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Introduction"
+    },
+    {
+      "src": "book/processModels/introduction/what/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: What"
+    },
+    {
+      "src": "book/processModels/introduction/sequentialModels/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: Sequential Models"
+    },
+    {
+      "src": "book/processModels/introduction/iterativeModels/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: Iterative Models"
+    },
+    {
+      "src": "book/processModels/introduction/agileModels/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: Agile Models"
+    },
+    {
+      "src": "book/processModels/exampleProcessModels/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models"
+    },
+    {
+      "src": "book/processModels/exampleProcessModels/xp/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models: XP"
+    },
+    {
+      "src": "book/processModels/exampleProcessModels/scrum/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models: SCRUM"
+    },
+    {
+      "src": "book/processModels/exampleProcessModels/unifiedProcess/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models: Unified Process"
+    },
+    {
+      "src": "book/processModels/more/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: More"
+    },
+    {
+      "src": "book/processModels/more/cmmi/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: More: CMMI"
+    },
+    {
+      "src": "book/processModels/summary/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Summary"
+    },
+    {
+      "src": "book/processModels/summary/recap/index.md",
+      "title": "CS2103/T Textbook - SLDC Process Models: Summary: Recap"
+    },
+    {
+      "src": "book/projectPlanning/index.md",
+      "title": "CS2103/T Textbook - Project Planning"
+    },
+    {
+      "src": "book/projectPlanning/workBreakdownStructure/index.md",
+      "title": "CS2103/T Textbook - Project Planning: Work Breakdown Structure"
+    },
+    {
+      "src": "book/projectPlanning/milestones/index.md",
+      "title": "CS2103/T Textbook - Project Planning: Milestones"
+    },
+    {
+      "src": "book/projectPlanning/buffers/index.md",
+      "title": "CS2103/T Textbook - Project Planning: Buffers"
+    },
+    {
+      "src": "book/projectPlanning/issueTrackers/index.md",
+      "title": "CS2103/T Textbook - Project Planning: Issue Trackers"
+    },
+    {
+      "src": "book/projectPlanning/ganttCharts/index.md",
+      "title": "CS2103/T Textbook - Project Planning: GANTT Charts"
+    },
+    {
+      "src": "book/projectPlanning/pertCharts/index.md",
+      "title": "CS2103/T Textbook - Project Planning: PERT Charts"
+    },
+    {
+      "src": "book/reuse/index.md",
+      "title": "CS2103/T Textbook - Reuse"
+    },
+    {
+      "src": "book/reuse/introduction/index.md",
+      "title": "CS2103/T Textbook - Reuse: Introduction"
+    },
+    {
+      "src": "book/reuse/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Reuse: Introduction: What"
+    },
+    {
+      "src": "book/reuse/introduction/when/index.md",
+      "title": "CS2103/T Textbook - Reuse: Introduction: When"
+    },
+    {
+      "src": "book/reuse/apis/index.md",
+      "title": "CS2103/T Textbook - Reuse: APIs"
+    },
+    {
+      "src": "book/reuse/apis/what/index.md",
+      "title": "CS2103/T Textbook - Reuse: APIs: What"
+    },
+    {
+      "src": "book/reuse/apis/designingAPIs/index.md",
+      "title": "CS2103/T Textbook - Reuse: APIs: Designing APIs"
+    },
+    {
+      "src": "book/reuse/libraries/index.md",
+      "title": "CS2103/T Textbook - Reuse: Libraries"
+    },
+    {
+      "src": "book/reuse/libraries/what/index.md",
+      "title": "CS2103/T Textbook - Reuse: Libraries: What"
+    },
+    {
+      "src": "book/reuse/libraries/how/index.md",
+      "title": "CS2103/T Textbook - Reuse: Libraries: How"
+    },
+    {
+      "src": "book/reuse/frameworks/index.md",
+      "title": "CS2103/T Textbook - Reuse: Frameworks"
+    },
+    {
+      "src": "book/reuse/frameworks/what/index.md",
+      "title": "CS2103/T Textbook - Reuse: Frameworks: What"
+    },
+    {
+      "src": "book/reuse/frameworks/frameworksVsLibraries/index.md",
+      "title": "CS2103/T Textbook - Reuse: Frameworks: Frameworks vs Libraries"
+    },
+    {
+      "src": "book/reuse/platforms/index.md",
+      "title": "CS2103/T Textbook - Reuse: Platforms"
+    },
+    {
+      "src": "book/reuse/platforms/what/index.md",
+      "title": "CS2103/T Textbook - Reuse: Platforms: What"
+    },
+    {
+      "src": "book/reuse/cloudComputing/index.md",
+      "title": "CS2103/T Textbook - Reuse: Cloud Computing"
+    },
+    {
+      "src": "book/reuse/cloudComputing/what/index.md",
+      "title": "CS2103/T Textbook - Reuse: Cloud Computing: What"
+    },
+    {
+      "src": "book/reuse/cloudComputing/services/index.md",
+      "title": "CS2103/T Textbook - Reuse: Cloud Computing: IaaS, PaaS and SaaS"
+    },
+    {
+      "src": "book/refactoring/index.md",
+      "title": "CS2103/T Textbook - Refactoring"
+    },
+    {
+      "src": "book/refactoring/what/index.md",
+      "title": "CS2103/T Textbook - Refactoring: What"
+    },
+    {
+      "src": "book/refactoring/how/index.md",
+      "title": "CS2103/T Textbook - Refactoring: How"
+    },
+    {
+      "src": "book/refactoring/when/index.md",
+      "title": "CS2103/T Textbook - Refactoring: When"
+    },
+    {
+      "src": "book/oopImplementation/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming"
+    },
+    {
+      "src": "book/oopImplementation/classes/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Classes"
+    },
+    {
+      "src": "book/oopImplementation/associations/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations"
+    },
+    {
+      "src": "book/oopImplementation/dependencies/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Dependencies"
+    },
+    {
+      "src": "book/oopImplementation/composition/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Composition"
+    },
+    {
+      "src": "book/oopImplementation/aggregation/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Aggregation"
+    },
+    {
+      "src": "book/oopImplementation/associationClasses/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Association Classes"
+    },
+    {
+      "src": "book/oopImplementation/inheritance/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance"
+    },
+    {
+      "src": "book/oopImplementation/overriding/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Overriding"
+    },
+    {
+      "src": "book/oopImplementation/overloading/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Overloading"
+    },
+    {
+      "src": "book/oopImplementation/interfaces/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Interfaces"
+    },
+    {
+      "src": "book/oopImplementation/abstractClasses/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Abstract Classes"
+    },
+    {
+      "src": "book/oopImplementation/polymorphism/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism"
+    },
+    {
+      "src": "book/oopImplementation/substitutability/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Substitutability"
+    },
+    {
+      "src": "book/modeling/index.md",
+      "title": "CS2103/T Textbook - Modeling"
+    },
+    {
+      "src": "book/modeling/introduction/index.md",
+      "title": "CS2103/T Textbook - Modeling: Introduction"
+    },
+    {
+      "src": "book/modeling/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Modeling: Introduction: What"
+    },
+    {
+      "src": "book/modeling/introduction/how/index.md",
+      "title": "CS2103/T Textbook - Modeling: Introduction: How"
+    },
+    {
+      "src": "book/modeling/introduction/umlModels/index.md",
+      "title": "CS2103/T Textbook - Modeling: Introduction: UML Models"
+    },
+    {
+      "src": "book/modeling/modelingStructures/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures"
+    },
+    {
+      "src": "book/modeling/modelingStructures/classDiagramsBasic/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Class Diagrams - Basic"
+    },
+    {
+      "src": "book/modeling/modelingStructures/classDiagramsIntermediate/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Class Diagrams - Intermediate"
+    },
+    {
+      "src": "book/modeling/modelingStructures/classDiagramsAdvanced/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Class Diagrams - Advanced"
+    },
+    {
+      "src": "book/modeling/modelingStructures/objectDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Object Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingStructures/objectOrientedDomainModels/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Object Oriented Domain Models"
+    },
+    {
+      "src": "book/modeling/modelingStructures/deploymentDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Deployment Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingStructures/componentDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Component Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingStructures/packageDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Package Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingStructures/compositeStructureDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Structures: Composite Structure Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/activityDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Activity Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/sequenceDiagramsBasic/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Basic"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Intermediate"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/sequenceDiagramsAdvanced/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Advanced"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/useCaseDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Use Case Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/timingDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Timing Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/interactionOverviewDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Interaction Overview Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/communicationDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: Communication Diagrams"
+    },
+    {
+      "src": "book/modeling/modelingBehaviors/stateMachineDiagrams/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: State Machine Diagrams"
+    },
+    {
       "src": "book/integration/index.md",
       "title": "CS2103/T Textbook - Integration"
     },
@@ -874,8 +1730,12 @@
       "title": "CS2103/T Textbook - Definitions"
     },
     {
+      "src": "book/common/outcomes.md",
+      "title": "CS2103/T Textbook - Learning Outcomes"
+    },
+    {
       "src": "book/common/print.md",
-      "title": "CS2103/T Textbook [Printable]"
+      "title": "CS2103/T Website - Textbook [Printable]"
     },
     {
       "src": "book/common/references.md",
@@ -996,6 +1856,50 @@
     {
       "src": "book/uml/misc/objectVsClassDiagrams/index.md",
       "title": "CS2103/T Textbook - Miscellaneous: Object Diagrams vs Class Diagrams"
+    },
+    {
+      "src": "book/uml/activityDiagrams/introduction/index.md",
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Introduction"
+    },
+    {
+      "src": "book/uml/activityDiagrams/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Introduction: What"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/index.md",
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/linearPaths/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Linear Paths"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/alternatePaths/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Alternate Paths"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/parallelPaths/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Parallel Paths"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/rakes/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Rakes"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/swimlanes/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Swimlanes"
+    },
+    {
+      "src": "book/uml/activityDiagrams/basicNotations/combined/index.md",
+      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Combined"
+    },
+    {
+      "src": "book/uml/notes/notes/index.md",
+      "title": "CS2103/T Textbook - UML: Notes: Notes"
+    },
+    {
+      "src": "book/uml/notes/constraints/index.md",
+      "title": "CS2103/T Textbook - UML: Notes: Constraints"
     },
     {
       "src": "book/oop/index.md",
