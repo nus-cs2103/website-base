@@ -10,7 +10,7 @@
       "title": "CS2103/T Website - Handbook"
     },
     {
-      "src": "contents/week2/outcomes.md",
+      "src": "schedule/week2/outcomes.md",
       "title": "Week 2: Outcomes"
     },
     {
@@ -1035,7 +1035,7 @@
     ".idea/*",
     ".gitignore",
     "README.md",
-    "contents/handbook/*",
+    "schedule/handbook/*",
     "*.md",
     ".git/*"
   ]

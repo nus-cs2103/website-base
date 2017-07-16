@@ -4,16 +4,16 @@
 <include src="common/header.md" />
 
 <div class="website-content">
-<include src="contents/overview/index.html" />
-<include src="contents/week1/index.html" />
-<include src="contents/week2/index.html" />
-<include src="contents/week3/index.html" />
-<include src="contents/week4/index.html" />
-<include src="contents/week5/index.html" />
-<include src="contents/week6/index.html" />
-<include src="contents/week7/index.html" />
-<include src="contents/week8/index.html" />
-<include src="contents/week9/index.html" />
-<include src="contents/week10/index.html" />
-<include src="contents/week11/index.html" />
+<include src="schedule/overview/index.html" />
+<include src="schedule/week1/index.html" />
+<include src="schedule/week2/index.html" />
+<include src="schedule/week3/index.html" />
+<include src="schedule/week4/index.html" />
+<include src="schedule/week5/index.html" />
+<include src="schedule/week6/index.html" />
+<include src="schedule/week7/index.html" />
+<include src="schedule/week8/index.html" />
+<include src="schedule/week9/index.html" />
+<include src="schedule/week10/index.html" />
+<include src="schedule/week11/index.html" />
 </div>

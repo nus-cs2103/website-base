@@ -121,7 +121,7 @@ Functionality expectations: This version should have decent implementations of a
 ### V0.4 Documentation
 
 Recommended to update the documentation to match the product, at least w.r.t. major changes since previous version.  
-==Update the AboutUs.md page== to reflect [this sample](https://github.com/nus-cs2103/website/blob/master/contents/AboutUs.md). Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.  
+==Update the AboutUs.md page== to reflect [this sample](https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md). Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.  
 Note: AboutUs.md page is used for module admin purposes. You are advised to follow the format closely to avoid penalties. E.g. those you don't have a suitable photo in that page will be penalized.
 
 **Submission**: Must be included in the version tagged `V0.4`.
