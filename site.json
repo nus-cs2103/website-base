@@ -3,11 +3,15 @@
   "pages": [
     {
       "src": "index.md",
-      "title": "CS2103/T Website - Schedule"
+      "title": "CS2103/T Website"
     },
     {
       "src": "handbook/index.md",
       "title": "CS2103/T Website - Handbook"
+    },
+    {
+      "src": "schedule/index.md",
+      "title": "CS2103/T Website - Schedule"
     },
     {
       "src": "schedule/week2/outcomes.md",
