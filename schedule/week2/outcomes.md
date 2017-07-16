@@ -8,6 +8,13 @@
 <div id="main">
 
 
+<panel class="item" header="Can explain pros and cons of software engineering :star::star::star::star:" expandable>
+  <dynamic-panel src="../../book/softwareEngineering/prosAndCons/full.md" header=":book: content" is-open />
+  <panel header=":trophy: evidence" expanded>
+    <include src="../../book/softwareEngineering/prosAndCons/q-essay-listProsAndCons.md"/>
+  </panel>
+</panel>
+
 <panel class="item" header="Can explain coupling :star:" expandable>
   <dynamic-panel src="../../book/designPrinciples/coupling/whatItIs/full.md" header="content" is-open />
   <panel header=":trophy: evidence" expanded>
