@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/schedule.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
 
 <include src="../common/header.md" />
 
