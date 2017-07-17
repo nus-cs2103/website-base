@@ -1,11 +1,9 @@
-<Panel class="item" header="Handbook sections to read" expandable>
+**Handbook sections to read**:
 
-Project:
-
-  <include src="../../handbook/teams.md" name="Forming Teams" dynamic />
-  <include src="../../handbook/peer-evaluations.md" name="Peer Evaluations" dynamic />
-  <include src="../../handbook/participation.md" name="Participation marks" dynamic />
-  <include src="../../handbook/tools.md" name="Tools" dynamic />
+  <include type="danger" src="../../handbook/teams.md" name="Forming Teams :star:" dynamic />
+  <include type="warning" src="../../handbook/peer-evaluations.md" name="Peer Evaluations :star::star:" dynamic />
+  <include type="info" src="../../handbook/participation.md" name="Participation marks :star::star::star:" dynamic />
+  <include type="success" src="../../handbook/tools.md" name="Tools :star::star::star::star:" dynamic />
 
 FAQ:
 
@@ -13,7 +11,6 @@ FAQ:
   <include src="../../handbook/appendixC-faq.md#handbook-faq-selfStudy" name="Why so much self-study?" dynamic />
   <include src="../../handbook/appendixC-faq.md#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" dynamic />
 
-</Panel>
 
 <Panel class="item" header="Submit IVLE quiz" expandable>
 
