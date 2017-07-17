@@ -10,8 +10,8 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/schedule.css">
+    <link rel="stylesheet" href="/cs2103-website/css/main.css">
+<link rel="stylesheet" href="/cs2103-website/css/schedule.css">
 <div>
   <navbar placement="top" type="inverse"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
     <li><a href="/cs2103-website/index.html">Schedule</a></li>
@@ -337,9 +337,757 @@
   </div>
   <div>
     <panel header="Week 2 [Jan 16]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
-      <panel header="Outcomes" expandable="" class="todo" ctrl-lvl="1" no-close="">
+      <panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
         <div>
-          <panel class="item" header="Can explain pros and cons of software engineering :star::star::star::star:" expandable="">
+          <div>
+            <panel type="danger" header="Can use Git to save history :star:" expandable="" expanded="" no-close="">
+              <panel type="danger" header="Can explain revision control :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain revision control <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Revision Control ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <blockquote>
+                        <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that
+                          contains a number, each one higher than the number of the preceding version.</p>
+                        <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to
+                          help a single user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best
+                          modern revision control tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+                        <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have
+                          a log of who made it; why they made it; when they made it; and what the change was.</p>
+                        <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software
+                          will help you to identify and resolve those conflicts.</p>
+                        <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even
+                          help you to efficiently figure out exactly when a problem was introduced.</p>
+                        <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
+                          or with a hundred other people.</p>
+                        <p>-- [adapted from
+                          <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+                      </blockquote>
+                      <p>It follows from the explanation above that using an RCS frees us from having to keep copies of all the past versions on our hard disk. If the RCS spans multiple machines, it also <strong>reduces the risk of ‘losing everything’ in case of a hard disk crash</strong>.</p>
+                      <popover
+                        id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
+                        <div slot="content">
+                          <div>
+                            <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieve on 2012/07/11</p>
+                          </div>
+                        </div>
+                        </popover>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="info" header="Can identify other names for revision control :star::star::star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can identify other names for revision control <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Revision Control ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="other-names-three">Other Names <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Revision control is a diverse field, so much so that it is referred to by many names and acronyms. Here are a few of the more common variations you'll encounter:</p>
+                      <ul>
+                        <li>Revision control system (RCS)</li>
+                        <li>Software configuration management (SCM), or configuration management</li>
+                        <li>Source code management</li>
+                        <li>Source code control, or source control</li>
+                        <li>Version control system (VCS)</li>
+                      </ul>
+                      <p>Some people claim that these terms actually have different meanings, but in practice they overlap so much that there's no agreed or even useful way to tease them apart.</p>
+                      <p>-- [adapted from
+                        <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+                      <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
+                        <div slot="content">
+                          <div>
+                            <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieve on 2012/07/11</p>
+                          </div>
+                        </div>
+                      </popover>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="danger" header="Can explain repositories :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain repositories <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Revision Control ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="repositories-one">Repositories <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to
+                        as the <em>working directory</em> of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working directory.</p>
+                      <p>You can have multiple repos in your computer, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="danger" header="Can create a local Git repo :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can create a local Git repo <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Git and Github ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="init-one">Init <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>
+                        <panel src="/cs2103-website\book\revisionControl\repositories\embed._include_.html" header="Revision Control: Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                      </p>
+                      <p></p>
+                      <p>Install <a href="https://www.sourcetreeapp.com/">SourceTree</a> which is Git + a GUI for Git.</p>
+                      <p>Suppose you want to create a repository in an empty directory <code>project1</code></p>
+                      <tabs>
+                        <tab header="SourceTree">
+                          <div>
+                            <p>Click <code>File</code> -&gt; <code>Clone/New…</code></p>
+                            <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/cs2103-website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
+                            <p></p>
+                            <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
+                            <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
+                          </div>
+                        </tab>
+                        <tab header="CLI">
+                          <div>
+                            <p>Open a Git Bash Terminal.</p>
+                            <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p><img src="/cs2103-website/book/gitAndGithub/init/images/cli_1.png" height="100">
+                            <p></p>
+                            <p>Navigate to the <code>things</code> folder.</p>
+                            <p>Use the command <code>git init</code> which should initialize the repo.</p>
+                            <pre class="hljs"><code>$ git init
+Initialized empty Git repository in c:/repos/things/.git/
+</code></pre>
+                            <p>You can use the command <code>ls -a</code> to view all files, which should show the <code>.git</code> directory that was created by the previous command.</p>
+                            <pre class="hljs"><code>$ ls -a
+.  ..  .git
+</code></pre>
+                            <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
+                            <pre class="hljs"><code>git status
+</code></pre>
+                            <p>-&gt;</p>
+                            <pre class="hljs"><code># On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use &quot;git add&quot; to track)
+</code></pre>
+                          </div>
+                        </tab>
+                      </tabs>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="danger" header="Can explain saving history :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain saving history <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Revision Control ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="saving-history-one">Saving History <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>In a repo, we can specify which files to track and which files to ignore. Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
+                      <p><strong><em>Committing</em></strong> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <strong><em>commit</em></strong> (i.e. the noun).</p>
+                      <p>When we are ready to commit, we should first <strong><em>stage</em></strong> the specific changes we want to commit. This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
+                      <p>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated hash e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>. We can tag a specific commit with a more easily
+                        identifiable name e.g. <code>v1.0.2</code></p>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="danger" header="Can commit using Git :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can commit files using Git <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Git and Github ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="commit-one">Commit <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>
+                        <panel src="/cs2103-website\book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                      </p>
+                      <p></p>
+                      <p>Create an empty repo as described <a href="./init/">here</a>.</p>
+                      <p>Create a file named <code>fruits.txt</code> in the folder and add some dummy text to it.</p>
+                      <tip-box type="primary">
+                        <div>
+                          <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
+                        </div>
+                      </tip-box>
+                      <p>Observe how the file is detected by Git.</p>
+                      <tabs>
+                        <tab header="SourceTree">
+                          <div>
+                            <p>The file is shown as ‘unstaged’</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
+                            <p></p>
+                          </div>
+                        </tab>
+                        <tab header="CLI">
+                          <div>
+                            <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
+                            <pre><code class="hljs sh">git status
+</code></pre>
+                            <p>-&gt;</p>
+                            <pre class="hljs"><code># On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+#
+#   a.txt
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre>
+                            <p></p>
+                          </div>
+                        </tab>
+                      </tabs>
+                      <p>Although git has detected the file in the working folder, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
+                      <tip-box type="primary">
+                        <div>
+                          <p><strong>Commit</strong>: Saving the current state of the working folder into the Git revision history.</p>
+                        </div>
+                      </tip-box>
+                      <tip-box type="primary">
+                        <div>
+                          <p><strong>Stage</strong>: Instructing Git to prepare a file for committing.</p>
+                        </div>
+                      </tip-box>
+                      <tabs>
+                        <tab header="SourceTree">
+                          <div>
+                            <p>Select the <code>fruits.txt</code> and click on the <code>Stage Selected</code> button</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_2.png" height="100">
+                            <p></p>
+                            <p><code>fruits.txt</code> should appear in the <code>Staged files</code> panel now.’</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_3.png" height="180">
+                            <p></p>
+                          </div>
+                        </tab>
+                        <tab header="CLI">
+                          <div>
+                            <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
+                            <pre><code class="hljs sh">git add fruits.txt
+git status
+</code></pre>
+                            <p>-&gt;</p>
+                            <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Changes to be committed:</span>
+<span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#       new file:   fruits.txt</span>
+<span class="hljs-comment">#</span>
+</code></pre>
+                            <p></p>
+                          </div>
+                        </tab>
+                      </tabs>
+                      <p>Next, we can commit the staged version of <code>fruits.txt</code></p>
+                      <tabs>
+                        <tab header="SourceTree">
+                          <div>
+                            <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
+                            <p></p>
+                          </div>
+                        </tab>
+                        <tab header="CLI">
+                          <div>
+                            <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
+                            <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
+</code></pre>
+                            <p>You can use the <code>log</code> command to see the commit history</p>
+                            <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
+</code></pre>
+                            <p>-&gt;</p>
+                            <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
+Author: … &lt; … @... &gt;
+Date:   Wed Jul 5 16:06:28 2017 +0800
+<p>Add fruits.txt
+</p></code></pre>
+                            <p></p>
+                          </div>
+                        </tab>
+                      </tabs>
+                      <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which
+                        the commits go on by default.</p>
+                      <p>Do some changes to fruits.txt (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_6.png"
+                        height="180">
+                      <p></p>
+                      <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_7.png"
+                        height="150">
+                      <p></p>
+                    </div>
+                    <div>
+                      <p>null</p>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="warning" header="Can set Git to ignore files :star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can set Git to ignore files <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Git and Github ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="ignore-two">Ignore <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>
+                        <panel src="/cs2103-website\book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                      </p>
+                      <p></p>
+                      <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instructor Git to ignore <code>temp.txt</code></p>
+                      <tabs>
+                        <tab header="SourceTree">
+                          <div>
+                            <p>The file should be currently listed under <code>Unstaged files</code>. Right-click it and choose <code>Ignore…</code>. Choose <code>Ignore exact filename(s)</code> and click <code>OK</code>.</p>
+                            <p>Observe that a file named <code>.gitignore</code> has been created in the working directory root and has the following line in it.</p>
+                            <pre class="hljs"><code>temp.text
+</code></pre>
+                          </div>
+                        </tab>
+                        <tab header="CLI">
+                          <div>
+                            <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
+                            <pre class="hljs"><code>temp.text
+</code></pre>
+                          </div>
+                        </tab>
+                      </tabs>
+                      <p>The <code>.gitignore</code> file tells Git which files to ignore when tracking revision history. That file itself can be either revision controlled or ignored.</p>
+                      <ul>
+                        <li>To version control it (the more common choice – which allows you to track how the <code>.gitignore</code> file changed over time), simply commit it as you would commit any other file.</li>
+                        <li>To ignore it, follow the same steps we followed above when we set Git to ignore the <code>temp.txt</code> file.</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+            </panel>
+          </div>
+          <div>
+            <panel type="danger" header="Can use basic features of an IDE :star:" expandable="" expanded="" no-close="">
+              <panel type="danger" header="Can explain IDEs :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain IDEs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>IDEs ➡️ Introduction ➡️</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Professional software engineers rarely use notepad-like text editors for writing code. Instead, they use more sophisticated tools called <em>Integrated Development Environments (IDEs)</em>. The aim of an IDE is to support all development-related
+                        work within the same tool environment.</p>
+                      <p>An IDE generally consists of:</p>
+                      <ul>
+                        <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
+                        <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
+                        <li>A debugger that allows program errors to be located.</li>
+                        <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, and modeling support.</li>
+                      </ul>
+                      <tip-box>
+                        <p>Examples of popular IDEs:</p>
+                        <ul>
+                          <li>Eclipse</li>
+                          <li>Intellij IDEA</li>
+                          <li>NetBeans</li>
+                          <li>Visual Studio</li>
+                          <li>DevC++</li>
+                          <li>DrJava</li>
+                          <li>XCode</li>
+                        </ul>
+                      </tip-box>
+                      <tip-box type="info">
+                        <p>Note:</p>
+                        <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
+                      </tip-box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>Install <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> on your computer. Either the <em>Community Edition</em> (free) or the <em>Ultimate Edition</em> (free for students) is fine.</p>
+                </panel>
+              </panel>
+              <panel type="danger" header="Can setup a project in an IDE :star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can setup a project in an IDE <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Intellij IDEA ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="project-setup-one">Project Setup <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>...</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p><strong>Set up AddressBook-Level1 in Intellij</strong>:</p>
+                  <ol>
+                    <li>Download/clone <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1">AddressBook-Level1</a> to your computer.</li>
+                    <li>Set it up as a project in your IDE (i.e. Intellij IDEA).</li>
+                    <li>Run the AddressBook using the IDE to ensure the project builds correctly in the IDE.</li>
+                    <li>Do some minor changes to the code and run it again.</li>
+                  </ol>
+                </panel>
+              </panel>
+              <panel type="warning" header="Can navigate code effectively using IDE features :star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can navigate code effectively using IDE features <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Intellij IDEA ➡️ </span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="code-navigation-two">Code Navigation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>...</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p><strong>Use Intellij features to navigate code in a project</strong></p>
+                  <ol>
+                    <li>Load a Java project (e.g. AddressBook-Level1) to the IDE</li>
+                    <li>Demonstrate how to navigate code using the IDE e.g. go to the definition of the method being called and come back to the original location.</li>
+                  </ol>
+                </panel>
+              </panel>
+            </panel>
+          </div>
+          <div>
+            <panel type="warning" header="Can automate simple regression testing of text UIs :star::star:" expandable="" expanded="" no-close="">
+              <panel type="warning" header="Can explain testing :star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Testing ➡️ Introduction ➡️</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <blockquote>
+                        <p>Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component.</p>
+                        <p>–- source: IEEE</p>
+                      </blockquote><img src="/cs2103-website/book/testing/introduction/what/images/diagram.png" height="180">
+                      <p></p>
+                      <p>Testing entails the execution of a set of test cases. A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
+                      <tip-box>
+                        <p>Example: A minimal test case for testing a browser:</p>
+                        <ul>
+                          <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load ‘longfile.html’ located in the ‘test data’ folder.</li>
+                          <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading ‘longfile.html’.</li>
+                        </ul>
+                      </tip-box>
+                      <p>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</p>
+                      <panel header="Other details a test case can contain :two:" type="seamless">
+                        <p>A more elaborate test case can have other details such as those given below.</p>
+                        <ul>
+                          <li>A unique identifier : e.g. TC0034-a</li>
+                          <li>A descriptive name: e.g. vertical scrollbar activation for long web pages</li>
+                          <li>Objectives: e.g. to check whether the vertical scrollbar is correctly activated when a long web page is loaded to the browser</li>
+                          <li>Classification information: e.g. priority - medium, category - UI features</li>
+                          <li>Cleanup, if any: e.g. empty the browser cache.</li>
+                        </ul>
+                      </panel>
+                      <p>For each test case we do the following:</p>
+                      <ol>
+                        <li>Feed the input to the SUT</li>
+                        <li>Observe the actual output</li>
+                        <li>Compare actual output with the expected output</li>
+                      </ol>
+                      <p>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</p>
+                      <tip-box>
+                        <p>Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading ‘longfile.html’. The defect/bug causing that failure could be an uninitialized variable.</p>
+                      </tip-box>
+                      <panel header="A deeper look at the definition of testing :three:" type="seamless">
+                        <p>Here is another definition of testing:</p>
+                        <blockquote>
+                          <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain.</p>
+                          <p>-– source: SWEBOKv3</p>
+                        </blockquote>
+                        <p>Some things to note (indicated by keywords in the above definition):</p>
+                        <ul>
+                          <li><em>Dynamic</em>: Testing involves executing the software. It is not by examining the code statically.</li>
+                          <li><em>Finite</em>: In most non-trivial cases there are potentially infinite test scenarios but resource constraints dictate that we can test only a finite number of scenarios.</li>
+                          <li><em>Selected</em>: In most cases it is not possible to test all scenarios. That means we need to select what scenarios to test.</li>
+                          <li><em>Expected</em>: Testing requires some knowledge of how the software is expected to behave.</li>
+                        </ul>
+                      </panel>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="warning" header="Can explain regression testing :star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain regression testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Testing ➡️ Test Automation ➡️</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>When we modify a system that has been tested, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</p>
+                      <p>To detect and correct regressions, we need to retest all related components. Testing with this intent is called <em>regression testing</em>.</p>
+                      <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, regression testing is more practical when it is automated.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="warning" header="Can explain test automation :star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can explain test automation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Testing ➡️ Test Automation ➡️</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="warning" header="Can semi-automate testing of test UIs :star::star:" expandable="">
+                <div>
+                  <tip-box type="success">
+                    <div>
+                      <p>🏆 Can semi-automate testing of a text UI <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                    </div>
+                  </tip-box>
+                  <p><span class="dimmed"><strong><span>Testing ➡️ Test Automation ➡️</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="automated-testing-of-text-uis-one">Automated Testing of Text UIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>A simple way to test a text UI is using input/output re-direction. Let us assume we are testing a program ‘RouteStore’ which has a text UI. First, we store the test input in the text file ‘input.txt’. Similarly, we store the output
+                        we expect from the SUT to another text file ‘expected.txt’. Now, we run the program as:</p>
+                      <pre class="hljs"><code>java RouteStore &lt; input.txt &gt; output.txt
+// or
+RouteStore.exe &lt; input.txt &gt; output.txt
+</code></pre>
+                      <p>The above redirects the text in ‘input.txt’ as the input to ‘RouteStore’ and similarly, redirects the output of RouteStore to a text file ‘output.txt’. Note that this does not require any code changes to RouteStore.</p>
+                      <panel header="**The ‘>’ operator and the ‘<’ operator. :zero:**"
+                        alt="Alternative Header">
+                        <p>A command line program written in the usual way (i.e., the way you are used to writing them during the first year programming modules) takes input from keyboard and outputs to the console. That is because those two are default
+                          input and output streams, respectively. But you can change that behavior using ‘<code>&lt;</code>’ and ‘<code>&gt;</code>’ operators. For example, if you run <code>TextBuddy</code> in the DOS prompt, the output will be shown
+                          in the console. But if you run it like this</p>
+                        <pre class="hljs"><code>TextBuddy &gt; output.txt (or java TextBuddy &gt; output.txt)
+</code></pre>
+                        <p>the Operating System then creates a file ‘output.txt’ and stores the output in that file instead of displaying it in the console. Program output using <code>System.out.println</code> (in Java) and <code>cout</code> (in C++) is
+                          directed to the console by default. When you add ‘<code>&gt; output.txt</code>’, the OS redirects the output to ‘output.txt’ instead. No file I/O coding is required. Similarly, adding ‘<code>&lt; input.txt</code>’ (or any other
+                          filename) makes the OS redirect the contents of the file as input to the program.</p>
+                        <p>The link below explains how Windows does it:
+                          <a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">http://technet.microsoft.com/en-us/library/bb490982.aspx</a></p>
+                      </panel>
+                      <p></p>
+                      <p>All we have to do now is to compare ‘output.txt’ with ‘expected.txt’. This can be done using a utility such as Windows FC (i.e. File Compare) command or a GUI tool such as Winmerge. For example, we can run the following two commands.</p>
+                      <pre
+                        class="hljs"><code>java RouteStore &lt; input.txt &gt; output.txt
+FC output.txt expected.txt
+</code></pre>
+                        <p>Note that the above technique is only suitable when testing text UIs, and only if the exact output is known.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <panel header=":trophy: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+            </panel>
+          </div>
+          <panel type="warning" header="Can use Java Collections :star::star:" expandable="">
+            <div>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can use Java Collections <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Java ➡️ </span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="use-collections-two">Use Collections <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>...</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":trophy: Evidence" expanded="">
+              <p>...</p>
+            </panel>
+          </panel>
+          <panel type="info" header="Can use Java varargs feature :star::star::star:" expandable="">
+            <div>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can use Java varargs feature <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+                </div>
+              </tip-box>
+              <p><span class="dimmed"><strong><span>Java ➡️ </span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="use-varargs-three">Use Varargs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>...</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":trophy: Evidence" expanded="">
+              <p>...</p>
+            </panel>
+          </panel>
+          <panel type="success" header="Can explain pros and cons of software engineering :star::star::star::star:" expandable="">
             <div>
               <tip-box type="success">
                 <div>
@@ -501,7 +1249,7 @@
                 </div>
               </div>
             </div>
-            <panel header=":trophy: evidence" expanded="">
+            <panel header=":trophy: Evidence" expanded="">
               <div>
                 <panel header=":lock: List pros and cons of SE">
                   <question has-input="true">
@@ -511,461 +1259,54 @@
               </div>
             </panel>
           </panel>
-          <panel header="Can use basic features of an IDE :star:" expandable="" expanded="">
-            <panel class="item" header="Can explain IDEs :star:" expandable="">
-              <div>
-                <tip-box type="success">
-                  <div>
-                    <p>🏆 Can explain IDEs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                  </div>
-                </tip-box>
-                <p><span class="dimmed"><strong><span>IDEs ➡️ Introduction ➡️</span></strong>
-                  </span>
-                </p>
-                <div>
-                  <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>Professional software engineers rarely use notepad-like text editors for writing code. Instead, they use more sophisticated tools called <em>Integrated Development Environments (IDEs)</em>. The aim of an IDE is to support all development-related
-                      work within the same tool environment.</p>
-                    <p>An IDE generally consists of:</p>
-                    <ul>
-                      <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
-                      <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
-                      <li>A debugger that allows program errors to be located.</li>
-                      <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, and modeling support.</li>
-                    </ul>
-                    <tip-box>
-                      <p>Examples of popular IDEs:</p>
-                      <ul>
-                        <li>Eclipse</li>
-                        <li>Intellij IDEA</li>
-                        <li>NetBeans</li>
-                        <li>Visual Studio</li>
-                        <li>DevC++</li>
-                        <li>DrJava</li>
-                        <li>XCode</li>
-                      </ul>
-                    </tip-box>
-                    <tip-box type="info">
-                      <p>Note:</p>
-                      <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
-                    </tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-              <panel header=":trophy: evidence" expanded=""></panel>
-            </panel>
-          </panel>
-          <panel class="item" header="Can explain coupling :star:" expandable="">
-            <panel src="/cs2103-website\book\designPrinciples\coupling\whatItIs\full._include_.html" header="content" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            <panel header=":trophy: evidence" expanded="">
-              <div>
-                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                  <question has-input="true">
-                    <p>Discuss the coupling levels of alternative designs x and y.</p>
-                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                      <p></p>
-                    </tip-box>
-                    <div slot="answer">
-                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
-                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
-                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </panel>
         </div>
       </panel>
-      <panel header="Todo" expandable="" class="todo" ctrl-lvl="1" no-close="">
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
         <div>
-          <panel class="item" header="Handbook sections to read" expandable="">
-            <tabs>
-              <tab header="Project" class="book">
-                <p>
-                  <panel src="/cs2103-website\handbook\teams._include_.html" name="Forming Teams" header="Forming Teams" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/cs2103-website\handbook\peer-evaluations._include_.html" name="Peer Evaluations" header="Peer Evaluations" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/cs2103-website\handbook\participation._include_.html" name="Participation marks" header="Participation marks" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/cs2103-website\handbook\tools._include_.html" name="Tools" header="Tools" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-              </tab>
-              <tab header="FAQ" class="book">
-                <p>
-                  <panel src="/cs2103-website\handbook\appendixC-faq._include_.html#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?"
-                    isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/cs2103-website\handbook\appendixC-faq._include_.html#handbook-faq-selfStudy" name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/cs2103-website\handbook\appendixC-faq._include_.html#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?"
-                    isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-              </tab>
-            </tabs>
-          </panel>
+          <p><strong>Handbook sections to read</strong>:</p>
+          <p>
+            <panel type="danger" src="/cs2103-website\handbook\teams._include_.html" name="Forming Teams :star:" header="Forming Teams :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel type="warning" src="/cs2103-website\handbook\peer-evaluations._include_.html" name="Peer Evaluations :star::star:" header="Peer Evaluations :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel type="info" src="/cs2103-website\handbook\participation._include_.html" name="Participation marks :star::star::star:" header="Participation marks :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel type="success" src="/cs2103-website\handbook\tools._include_.html" name="Tools :star::star::star::star:" header="Tools :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p>FAQ:</p>
+          <p>
+            <panel src="/cs2103-website\handbook\appendixC-faq._include_.html#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?"
+              isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/cs2103-website\handbook\appendixC-faq._include_.html#handbook-faq-selfStudy" name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/cs2103-website\handbook\appendixC-faq._include_.html#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?"
+              isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
           <panel class="item" header="Submit IVLE quiz" expandable="">
             <p>Note that IVLE quizzes open on Fridays just after the lecture and closes on the following Tuesday 2359.</p>
           </panel>
         </div>
       </panel>
-      <panel header="Tutorial 1" expandable="" class="tutorial" ctrl-lvl="1" no-close="">
+      <panel header=":raising_hand: Tutorial 1" expandable="" ctrl-lvl="1" no-close="">
         <div>
-          <panel class="item" header="Can explain coupling :star:" expandable="">
-            <div>
-              <panel header="%%prerequisites%%" expandable="">
-                <div>
-                  <panel header="Design" expandable="">
-                    <div>
-                      <div>
-                        <h4 id="basics-one">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                      </div>
-                      <tip-box type="success">
-                        <div>
-                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                        </div>
-                      </tip-box>
-                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
-                        <div>
-                          <div>
-                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
-                            <p>Where does it fit in?</p>
-                          </div>
-                        </div>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <tip-box type="success">
-                <div>
-                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                </div>
-              </tip-box>
-              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
-                </span>
-              </p>
-              <div>
-                <h4 id="what-it-is-one">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
-                    a more coupling between the components than design B.</p>
-                  <tip-box>
-                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div>
-                  <div>
-                    <panel header=":muscle: exercises" type="info" expandable="">
-                      <div>
-                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                          <question has-input="true">
-                            <p>Discuss the coupling levels of alternative designs x and y.</p>
-                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                              <p></p>
-                            </tip-box>
-                            <div slot="answer">
-                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
-                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
-                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <panel header=":trophy: evidence" expanded="">
-              <div>
-                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                  <question has-input="true">
-                    <p>Discuss the coupling levels of alternative designs x and y.</p>
-                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                      <p></p>
-                    </tip-box>
-                    <div slot="answer">
-                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
-                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
-                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </panel>
-          <panel class="item" header="Can justify the need for cohesion :star::star:" expandable="">
-            <div>
-              <panel header="%%prerequisites%%" expandable="">
-                <div>
-                  <panel header="Design" expandable="">
-                    <div>
-                      <div>
-                        <h4 id="basics-one-2">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                      </div>
-                      <tip-box type="success">
-                        <div>
-                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                        </div>
-                      </tip-box>
-                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
-                        <div>
-                          <div>
-                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
-                            <p>Where does it fit in?</p>
-                          </div>
-                        </div>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <tip-box type="success">
-                <div>
-                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                </div>
-              </tip-box>
-              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
-                </span>
-              </p>
-              <div>
-                <h4 id="what-it-is-one-2">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
-                    a more coupling between the components than design B.</p>
-                  <tip-box>
-                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div>
-                  <div>
-                    <panel header=":muscle: exercises" type="info" expandable="">
-                      <div>
-                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                          <question has-input="true">
-                            <p>Discuss the coupling levels of alternative designs x and y.</p>
-                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                              <p></p>
-                            </tip-box>
-                            <div slot="answer">
-                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
-                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
-                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <panel header=":trophy: evidence" expanded="">
-              <div>
-                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                  <question has-input="true">
-                    <p>Discuss the coupling levels of alternative designs x and y.</p>
-                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                      <p></p>
-                    </tip-box>
-                    <div slot="answer">
-                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
-                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
-                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </panel>
-          <panel class="item" header="Can apply coupling :star::star::star:" expandable="">
-            <div>
-              <panel header="%%prerequisites%%" expandable="">
-                <div>
-                  <panel header="Design" expandable="">
-                    <div>
-                      <div>
-                        <h4 id="basics-one-3">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                      </div>
-                      <tip-box type="success">
-                        <div>
-                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                        </div>
-                      </tip-box>
-                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
-                        <div>
-                          <div>
-                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
-                            <p>Where does it fit in?</p>
-                          </div>
-                        </div>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <tip-box type="success">
-                <div>
-                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                </div>
-              </tip-box>
-              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
-                </span>
-              </p>
-              <div>
-                <h4 id="what-it-is-one-3">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
-                    a more coupling between the components than design B.</p>
-                  <tip-box>
-                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div>
-                  <div>
-                    <panel header=":muscle: exercises" type="info" expandable="">
-                      <div>
-                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                          <question has-input="true">
-                            <p>Discuss the coupling levels of alternative designs x and y.</p>
-                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                              <p></p>
-                            </tip-box>
-                            <div slot="answer">
-                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
-                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
-                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <panel header=":trophy: evidence" expanded="">
-              <div>
-                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                  <question has-input="true">
-                    <p>Discuss the coupling levels of alternative designs x and y.</p>
-                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                      <p></p>
-                    </tip-box>
-                    <div slot="answer">
-                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
-                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
-                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </panel>
-          <panel class="item" header="Can apply DIP :star::star::star::star:" expandable="">
-            <div>
-              <panel header="%%prerequisites%%" expandable="">
-                <div>
-                  <panel header="Design" expandable="">
-                    <div>
-                      <div>
-                        <h4 id="basics-one-4">Basics <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                      </div>
-                      <tip-box type="success">
-                        <div>
-                          <p>🏆 Can explain what is software design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                        </div>
-                      </tip-box>
-                      <panel type="seamless" header=" %%- - - - - - - - - -%%">
-                        <div>
-                          <div>
-                            <p>What is software design? Design can be viewed as a form of problem solving.</p>
-                            <p>Where does it fit in?</p>
-                          </div>
-                        </div>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <tip-box type="success">
-                <div>
-                  <p>🏆 Can explain coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-                </div>
-              </tip-box>
-              <p><span class="dimmed"><strong><span>Software Design Principles ➡️ Coupling ➡️</span></strong>
-                </span>
-              </p>
-              <div>
-                <h4 id="what-it-is-one-4">What it is <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
-                    a more coupling between the components than design B.</p>
-                  <tip-box>
-                    <p>Example:</p><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/playerPuzzleManager.png" height="220">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div>
-                  <div>
-                    <panel header=":muscle: exercises" type="info" expandable="">
-                      <div>
-                        <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                          <question has-input="true">
-                            <p>Discuss the coupling levels of alternative designs x and y.</p>
-                            <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                              <p></p>
-                            </tip-box>
-                            <div slot="answer">
-                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
-                                links may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In
-                                <em>y</em>, no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <panel header=":trophy: evidence" expanded="">
-              <div>
-                <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
-                  <question has-input="true">
-                    <p>Discuss the coupling levels of alternative designs x and y.</p>
-                    <tip-box><img src="/cs2103-website/book/designPrinciples/coupling/whatItIs/images/alternativeDesigns.png" height="180">
-                      <p></p>
-                    </tip-box>
-                    <div slot="answer">
-                      <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may
-                        be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>, no component
-                        is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
+          <panel type="info" header="Show evidence of weekly learning outcomes" expandable="" expanded="" no-close="">
+            <p>Starting with learning outcomes at ⭐️ level, share/discuss/demo evidence of (as directed by the tutor) weekly learning outcomes.</p>
           </panel>
         </div>
       </panel>
-      <panel header="Lecture 2" expandable="" class="lecture" ctrl-lvl="1" no-close="">
-        <panel class="item" header="L1 recap" expandable=""></panel>
-        <panel class="item" header="Part 1 - Design patterns" expandable=""></panel>
-        <panel class="item" header="Part 2 - Refactoring: from Turkey to Peacock in thousand steps" expandable=""></panel>
-        <panel class="item" header="Part 3 - Your own private time machine: Introduction to revision control" expandable=""></panel>
+      <panel header=":mega: Lecture 2" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <p><strong>Questions/activities to discuss</strong>:</p>
+          <div>
+            <panel header=":lock: List pros and cons of SE">
+              <question has-input="true">
+                <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+              </question>
+            </panel>
+          </div>
+          <hr>
+          <p><strong>Slides</strong>:</p>
+          <ul>
+            <li>[<a href="">Discussion of current week LOs</a>]</li>
+            <li>[<a href="">Preview of next week LOs</a>]</li>
+          </ul>
+        </div>
       </panel>
     </panel>
   </div>
