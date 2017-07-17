@@ -1,4 +1,4 @@
-<panel header="Can use Git to save history :star:" expandable expanded>
+<panel class="onestar" header="Can use Git to save history :star:" expandable expanded no-close>
 
 <panel class="item" header="Can explain revision control :star:" expandable>
   <include src="../../book/revisionControl/what/full.md" />
@@ -9,7 +9,7 @@
   </panel>
 </panel>
 
-<panel class="item" header="Can identify other names for revision control :star::star::star::star:" expandable>
+<panel header="Can identify other names for revision control :star::star::star::star:" expandable>
   <include src="../../book/revisionControl/otherNames/full.md" />
   <panel header=":trophy: Evidence" expanded>
     
@@ -54,7 +54,7 @@
   </panel>
 </panel>
 
-<panel class="item" header="Can set Git to ignore files :star::star:" expandable>
+<panel header="Can set Git to ignore files :star::star:" expandable>
   <include src="../../book/gitAndGitHub/ignore/full.md" />
   <panel header=":trophy: Evidence" expanded>
     

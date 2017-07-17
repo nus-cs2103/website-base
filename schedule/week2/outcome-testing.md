@@ -1,4 +1,4 @@
-<panel header="Can automate simple regression testing of text UIs :star::star:" expandable expanded>
+<panel class="twostars" header="Can automate simple regression testing of text UIs :star::star:" expandable expanded no-close>
 
 <panel class="item" header="Can explain testing :star::star:" expandable>
   <include src="../../book/testing/introduction/what/full.md" />
