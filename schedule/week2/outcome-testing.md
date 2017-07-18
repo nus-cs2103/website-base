@@ -32,7 +32,12 @@
   <include src="../../book/testing/testAutomation/testingTextUis/full.md" />
   <panel header=":trophy: Evidence" expanded>
     
-...
+
+**Acceptable**: Any project where you use the I/O redirection method to test a CLI.
+
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-AutomatedCliTesting](https://github.com/nus-cs2103-AY1718S1/addressbook-level1#automate-cli-testing-lo-automatedclitesting) 
+
+**Submission**: Demo the test during the tutorial.
 
   </panel>
 </panel>
