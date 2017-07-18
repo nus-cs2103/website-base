@@ -26,19 +26,19 @@
   <div id="main">
     <div>
       <p>{to add}</p>
-      <panel header=":paperclip: Extras" expandable="" type="seamless" expanded="">
-        <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+    </div>
+    <div>
+      <div>
+        <panel header=":muscle: Exercises" type="info" expandable="">
           <div>
-            <panel type="success" expandable=""><span slot="header"><div><p>null</p></div></span>
-              <div>
-                <panel header="Q: Implement the PassKey system using the Singleton pattern.">
-                  <question has-input="true">
-                    <p>Assume that you are implementing a class called PassKey that can have only three instances at any time. These instances are to be called entryPassKey, exitPassKey and lockPassKey. They are to be created at system startup. All three
-                      instances are immutable (i.e. once created, cannot be changed). As you know, Singleton pattern can limit the number of instances to only one. Explain how you will extend the idea behind the Singleton pattern to implement the Passkey
-                      class. Show code examples where necessary.</p>
-                    <div slot="answer">
-                      <p>There are other acceptable variations.</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PassKey</span> </span>{
+            <panel header="Q: Implement the PassKey system using the Singleton pattern.">
+              <question has-input="true">
+                <p>Assume that you are implementing a class called PassKey that can have only three instances at any time. These instances are to be called entryPassKey, exitPassKey and lockPassKey. They are to be created at system startup. All three instances
+                  are immutable (i.e. once created, cannot be changed). As you know, Singleton pattern can limit the number of instances to only one. Explain how you will extend the idea behind the Singleton pattern to implement the Passkey class. Show
+                  code examples where necessary.</p>
+                <div slot="answer">
+                  <p>There are other acceptable variations.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PassKey</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> PassKey entryPassKey = <span class="hljs-keyword">new</span> PassKey(); <span class="hljs-comment">// this way, the object is created as a system startup</span>
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> PassKey exitPassKey = <span class="hljs-keyword">new</span> PassKey();
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> PassKey lockPassKey = <span class="hljs-keyword">new</span> PassKey();
@@ -52,14 +52,12 @@
     <span class="hljs-comment">// ...</span>
 }
 </code></pre>
-                    </div>
-                  </question>
-                </panel>
-              </div>
+                </div>
+              </question>
             </panel>
           </div>
         </panel>
-      </panel>
+      </div>
     </div>
   </div>
 </div>

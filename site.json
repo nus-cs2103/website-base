@@ -1,5 +1,14 @@
 {
   "baseUrl": "/cs2103-website",
+  "ignore": [
+    "_site/*",
+    ".idea/*",
+    ".gitignore",
+    "README.md",
+    "schedule/handbook/*",
+    "*.md",
+    ".git/*"
+  ],
   "pages": [
     {
       "src": "index.md",
@@ -24,6 +33,10 @@
     {
       "src": "book/intellij/index.md",
       "title": "CS2103/T Textbook - Intellij IDEA"
+    },
+    {
+      "src": "book/intellij/print.md",
+      "title": "CS2103/T Textbook - Intellij IDEA [Printable]"
     },
     {
       "src": "book/intellij/projectSetup/index.md",
@@ -54,6 +67,10 @@
       "title": "CS2103/T Textbook - Java"
     },
     {
+      "src": "book/javaTools/print.md",
+      "title": "CS2103/T Textbook - Java [Printable]"
+    },
+    {
       "src": "book/javaTools/collections/index.md",
       "title": "CS2103/T Textbook - Java: Use Collections"
     },
@@ -78,6 +95,10 @@
       "title": "CS2103/T Textbook - JUnit"
     },
     {
+      "src": "book/junit/print.md",
+      "title": "CS2103/T Textbook - JUnit [Printable]"
+    },
+    {
       "src": "book/junit/basic/index.md",
       "title": "CS2103/T Textbook - JUnit: Basic"
     },
@@ -88,6 +109,10 @@
     {
       "src": "book/gitAndGithub/index.md",
       "title": "CS2103/T Textbook - Git and Github"
+    },
+    {
+      "src": "book/gitAndGithub/print.md",
+      "title": "CS2103/T Textbook - Git and Github [Printable]"
     },
     {
       "src": "book/gitAndGithub/init/index.md",
@@ -148,6 +173,10 @@
     {
       "src": "book/testing/index.md",
       "title": "CS2103/T Textbook - Testing"
+    },
+    {
+      "src": "book/testing/print.md",
+      "title": "CS2103/T Textbook - Testing [Printable]"
     },
     {
       "src": "book/testing/introduction/index.md",
@@ -314,12 +343,20 @@
       "title": "CS2103/T Textbook - Software Engineering"
     },
     {
+      "src": "book/softwareEngineering/print.md",
+      "title": "CS2103/T Textbook - Software Engineering [Printable]"
+    },
+    {
       "src": "book/softwareEngineering/prosAndCons/index.md",
       "title": "CS2103/T Textbook - Software Engineering: Pros and Cons"
     },
     {
       "src": "book/qualityAssurance/index.md",
       "title": "CS2103/T Textbook - Quality Assurance"
+    },
+    {
+      "src": "book/qualityAssurance/print.md",
+      "title": "CS2103/T Textbook - Quality Assurance [Printable]"
     },
     {
       "src": "book/qualityAssurance/introduction/index.md",
@@ -360,6 +397,10 @@
     {
       "src": "book/testCaseDesign/index.md",
       "title": "CS2103/T Textbook - Test Case Design"
+    },
+    {
+      "src": "book/testCaseDesign/print.md",
+      "title": "CS2103/T Textbook - Test Case Design [Printable]"
     },
     {
       "src": "book/testCaseDesign/introduction/index.md",
@@ -450,6 +491,10 @@
       "title": "CS2103/T Textbook - Principles"
     },
     {
+      "src": "book/principles/print.md",
+      "title": "CS2103/T Textbook - Principles [Printable]"
+    },
+    {
       "src": "book/principles/what/index.md",
       "title": "CS2103/T Textbook - Principles: What"
     },
@@ -498,12 +543,20 @@
       "title": "CS2103/T Textbook - Teamwork"
     },
     {
+      "src": "book/teamwork/print.md",
+      "title": "CS2103/T Textbook - Teamwork [Printable]"
+    },
+    {
       "src": "book/teamwork/teamStructures/index.md",
       "title": "CS2103/T Textbook - Teamwork: Team Structures"
     },
     {
       "src": "book/revisionControl/index.md",
       "title": "CS2103/T Textbook - Revision Control"
+    },
+    {
+      "src": "book/revisionControl/print.md",
+      "title": "CS2103/T Textbook - Revision Control [Printable]"
     },
     {
       "src": "book/revisionControl/what/index.md",
@@ -552,6 +605,10 @@
     {
       "src": "book/processModels/index.md",
       "title": "CS2103/T Textbook - SLDC Process Models"
+    },
+    {
+      "src": "book/processModels/print.md",
+      "title": "CS2103/T Textbook - SLDC Process Models [Printable]"
     },
     {
       "src": "book/processModels/introduction/index.md",
@@ -610,6 +667,10 @@
       "title": "CS2103/T Textbook - Project Planning"
     },
     {
+      "src": "book/projectPlanning/print.md",
+      "title": "CS2103/T Textbook - Project Planning [Printable]"
+    },
+    {
       "src": "book/projectPlanning/workBreakdownStructure/index.md",
       "title": "CS2103/T Textbook - Project Planning: Work Breakdown Structure"
     },
@@ -636,6 +697,10 @@
     {
       "src": "book/reuse/index.md",
       "title": "CS2103/T Textbook - Reuse"
+    },
+    {
+      "src": "book/reuse/print.md",
+      "title": "CS2103/T Textbook - Reuse [Printable]"
     },
     {
       "src": "book/reuse/introduction/index.md",
@@ -710,6 +775,10 @@
       "title": "CS2103/T Textbook - Refactoring"
     },
     {
+      "src": "book/refactoring/print.md",
+      "title": "CS2103/T Textbook - Refactoring [Printable]"
+    },
+    {
       "src": "book/refactoring/what/index.md",
       "title": "CS2103/T Textbook - Refactoring: What"
     },
@@ -724,6 +793,10 @@
     {
       "src": "book/oopImplementation/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming"
+    },
+    {
+      "src": "book/oopImplementation/print.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming [Printable]"
     },
     {
       "src": "book/oopImplementation/classes/index.md",
@@ -780,6 +853,10 @@
     {
       "src": "book/modeling/index.md",
       "title": "CS2103/T Textbook - Modeling"
+    },
+    {
+      "src": "book/modeling/print.md",
+      "title": "CS2103/T Textbook - Modeling [Printable]"
     },
     {
       "src": "book/modeling/introduction/index.md",
@@ -882,6 +959,10 @@
       "title": "CS2103/T Textbook - Integration"
     },
     {
+      "src": "book/integration/print.md",
+      "title": "CS2103/T Textbook - Integration [Printable]"
+    },
+    {
       "src": "book/integration/introduction/index.md",
       "title": "CS2103/T Textbook - Integration: Introduction"
     },
@@ -922,6 +1003,10 @@
       "title": "CS2103/T Textbook - IDEs"
     },
     {
+      "src": "book/ides/print.md",
+      "title": "CS2103/T Textbook - IDEs [Printable]"
+    },
+    {
       "src": "book/ides/introduction/index.md",
       "title": "CS2103/T Textbook - IDEs: Introduction"
     },
@@ -940,6 +1025,10 @@
     {
       "src": "book/errorHandling/index.md",
       "title": "CS2103/T Textbook - Error Handling"
+    },
+    {
+      "src": "book/errorHandling/print.md",
+      "title": "CS2103/T Textbook - Error Handling [Printable]"
     },
     {
       "src": "book/errorHandling/introduction/index.md",
@@ -1038,6 +1127,10 @@
       "title": "CS2103/T Textbook - Documentation"
     },
     {
+      "src": "book/documentation/print.md",
+      "title": "CS2103/T Textbook - Documentation [Printable]"
+    },
+    {
       "src": "book/documentation/introduction/index.md",
       "title": "CS2103/T Textbook - Documentation: Introduction"
     },
@@ -1128,6 +1221,10 @@
     {
       "src": "book/architecture/index.md",
       "title": "CS2103/T Textbook - Software Architecture"
+    },
+    {
+      "src": "book/architecture/print.md",
+      "title": "CS2103/T Textbook - Software Architecture [Printable]"
     },
     {
       "src": "book/architecture/introduction/index.md",
@@ -1226,8 +1323,12 @@
       "title": "CS2103/T Textbook - Software Design: Introduction"
     },
     {
-      "src": "book/design/introduction/basics/index.md",
-      "title": "CS2103/T Textbook - Software Design: Introduction: Basics"
+      "src": "book/design/introduction/basic/index.md",
+      "title": "CS2103/T Textbook - Software Design: Introduction: Basic"
+    },
+    {
+      "src": "book/design/introduction/multilevelDesign/index.md",
+      "title": "CS2103/T Textbook - Software Design: Introduction: Multi-Level Design"
     },
     {
       "src": "book/designPrinciples/index.md",
@@ -1242,24 +1343,24 @@
       "title": "CS2103/T Textbook - Software Design Principles: Abstraction"
     },
     {
-      "src": "book/designPrinciples/abstraction/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Abstraction: What it is"
+      "src": "book/designPrinciples/abstraction/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Abstraction: What"
     },
     {
       "src": "book/designPrinciples/coupling/index.md",
       "title": "CS2103/T Textbook - Software Design Principles: Coupling"
     },
     {
-      "src": "book/designPrinciples/coupling/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: What it is"
+      "src": "book/designPrinciples/coupling/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Coupling: What"
     },
     {
-      "src": "book/designPrinciples/coupling/whyWeCare/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: Why we care"
+      "src": "book/designPrinciples/coupling/why/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Coupling: Why"
     },
     {
-      "src": "book/designPrinciples/coupling/howItHappens/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: How it happens"
+      "src": "book/designPrinciples/coupling/how/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Coupling: How"
     },
     {
       "src": "book/designPrinciples/coupling/types/index.md",
@@ -1270,44 +1371,48 @@
       "title": "CS2103/T Textbook - Software Design Principles: Cohesion"
     },
     {
-      "src": "book/designPrinciples/cohesion/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: What it is"
+      "src": "book/designPrinciples/cohesion/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: What"
     },
     {
-      "src": "book/designPrinciples/cohesion/whyWeCare/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: Why we care"
+      "src": "book/designPrinciples/cohesion/why/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: Why"
     },
     {
-      "src": "book/designPrinciples/cohesion/howItHappens/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: How it happens"
+      "src": "book/designPrinciples/cohesion/how/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: How"
     },
     {
       "src": "book/designPrinciples/openClosedPrinciple/index.md",
       "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle"
     },
     {
-      "src": "book/designPrinciples/openClosedPrinciple/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle: What it is"
+      "src": "book/designPrinciples/openClosedPrinciple/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle: What"
     },
     {
       "src": "book/designPrinciples/dependencyInversionPrinciple/index.md",
       "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle"
     },
     {
-      "src": "book/designPrinciples/dependencyInversionPrinciple/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle: What it is"
+      "src": "book/designPrinciples/dependencyInversionPrinciple/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle: What"
     },
     {
       "src": "book/codeQuality/index.md",
       "title": "CS2103/T Textbook - Code Quality"
     },
     {
+      "src": "book/codeQuality/print.md",
+      "title": "CS2103/T Textbook - Code Quality [Printable]"
+    },
+    {
       "src": "book/codeQuality/introduction/index.md",
       "title": "CS2103/T Textbook - Code Quality: Introduction"
     },
     {
-      "src": "book/codeQuality/introduction/basics/index.md",
-      "title": "CS2103/T Textbook - Code Quality: Introduction: Basics"
+      "src": "book/codeQuality/introduction/basic/index.md",
+      "title": "CS2103/T Textbook - Code Quality: Introduction: Basic"
     },
     {
       "src": "book/codeQuality/maximiseReadability/index.md",
@@ -1318,8 +1423,8 @@
       "title": "CS2103/T Textbook - Code Quality: [Guideline] Maximise Readability: Introduction"
     },
     {
-      "src": "book/codeQuality/maximiseReadability/basics/index.md",
-      "title": "CS2103/T Textbook - Code Quality: [Guideline] Maximise Readability: Basics"
+      "src": "book/codeQuality/maximiseReadability/basic/index.md",
+      "title": "CS2103/T Textbook - Code Quality: [Guideline] Maximise Readability: Basic"
     },
     {
       "src": "book/codeQuality/maximiseReadability/intermediate/index.md",
@@ -1338,8 +1443,8 @@
       "title": "CS2103/T Textbook - Code Quality: [Guideline] Follow a Standard: Introduction"
     },
     {
-      "src": "book/codeQuality/followStandard/basics/index.md",
-      "title": "CS2103/T Textbook - Code Quality: [Guideline] Follow a Standard: Basics"
+      "src": "book/codeQuality/followStandard/basic/index.md",
+      "title": "CS2103/T Textbook - Code Quality: [Guideline] Follow a Standard: Basic"
     },
     {
       "src": "book/codeQuality/followStandard/intermediate/index.md",
@@ -1354,8 +1459,8 @@
       "title": "CS2103/T Textbook - Code Quality: [Guideline] Name Well: Introduction"
     },
     {
-      "src": "book/codeQuality/nameWell/basics/index.md",
-      "title": "CS2103/T Textbook - Code Quality: [Guideline] Name Well: Basics"
+      "src": "book/codeQuality/nameWell/basic/index.md",
+      "title": "CS2103/T Textbook - Code Quality: [Guideline] Name Well: Basic"
     },
     {
       "src": "book/codeQuality/nameWell/intermediate/index.md",
@@ -1370,8 +1475,8 @@
       "title": "CS2103/T Textbook - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Introduction"
     },
     {
-      "src": "book/codeQuality/avoidShortcuts/basics/index.md",
-      "title": "CS2103/T Textbook - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basics"
+      "src": "book/codeQuality/avoidShortcuts/basic/index.md",
+      "title": "CS2103/T Textbook - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic"
     },
     {
       "src": "book/codeQuality/avoidShortcuts/intermediate/index.md",
@@ -1386,8 +1491,8 @@
       "title": "CS2103/T Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Introduction"
     },
     {
-      "src": "book/codeQuality/commentMinimally/basics/index.md",
-      "title": "CS2103/T Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basics"
+      "src": "book/codeQuality/commentMinimally/basic/index.md",
+      "title": "CS2103/T Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic"
     },
     {
       "src": "book/codeQuality/commentMinimally/intermediate/index.md",
@@ -1518,12 +1623,16 @@
       "title": "CS2103/T Textbook - Software Design Patterns"
     },
     {
+      "src": "book/designPatterns/print.md",
+      "title": "CS2103/T Textbook - Software Design Patterns [Printable]"
+    },
+    {
       "src": "book/designPatterns/introduction/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: Introduction"
     },
     {
-      "src": "book/designPatterns/introduction/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Introduction: What it is"
+      "src": "book/designPatterns/introduction/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Introduction: What"
     },
     {
       "src": "book/designPatterns/introduction/format/index.md",
@@ -1534,8 +1643,8 @@
       "title": "CS2103/T Textbook - Software Design Patterns: Singleton"
     },
     {
-      "src": "book/designPatterns/singleton/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Singleton: What it is"
+      "src": "book/designPatterns/singleton/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Singleton: What"
     },
     {
       "src": "book/designPatterns/singleton/implementation/index.md",
@@ -1554,40 +1663,40 @@
       "title": "CS2103/T Textbook - Software Design Patterns: Abstraction Occurrence"
     },
     {
-      "src": "book/designPatterns/abstractionOccurrence/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Abstraction Occurrence: What it is"
+      "src": "book/designPatterns/abstractionOccurrence/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Abstraction Occurrence: What"
     },
     {
       "src": "book/designPatterns/facade/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: Facade"
     },
     {
-      "src": "book/designPatterns/facade/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Facade: What it is"
+      "src": "book/designPatterns/facade/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Facade: What"
     },
     {
       "src": "book/designPatterns/command/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: Command"
     },
     {
-      "src": "book/designPatterns/command/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Command: What it is"
+      "src": "book/designPatterns/command/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Command: What"
     },
     {
       "src": "book/designPatterns/modelViewController/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: Model View Controller"
     },
     {
-      "src": "book/designPatterns/modelViewController/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Model View Controller: What it is"
+      "src": "book/designPatterns/modelViewController/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Model View Controller: What"
     },
     {
       "src": "book/designPatterns/observer/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: Observer"
     },
     {
-      "src": "book/designPatterns/observer/whatItIs/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Observer: What it is"
+      "src": "book/designPatterns/observer/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: Observer: What"
     },
     {
       "src": "book/designPatterns/more/index.md",
@@ -1610,120 +1719,140 @@
       "title": "CS2103/T Textbook - Software Design Patterns: More: Other Types of Patterns"
     },
     {
+      "src": "book/gatheringRequirements/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements"
+    },
+    {
+      "src": "book/gatheringRequirements/print.md",
+      "title": "CS2103/T Textbook - Gathering Requirements [Printable]"
+    },
+    {
+      "src": "book/gatheringRequirements/brainstorming/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: Brainstorming"
+    },
+    {
+      "src": "book/gatheringRequirements/userSurveys/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: User Surveys"
+    },
+    {
+      "src": "book/gatheringRequirements/observation/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: Observation"
+    },
+    {
+      "src": "book/gatheringRequirements/interviews/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: Interviews"
+    },
+    {
+      "src": "book/gatheringRequirements/focusGroups/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: Focus Groups"
+    },
+    {
+      "src": "book/gatheringRequirements/prototyping/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: Prototyping"
+    },
+    {
+      "src": "book/gatheringRequirements/productSurveys/index.md",
+      "title": "CS2103/T Textbook - Gathering Requirements: Product Surveys"
+    },
+    {
+      "src": "book/specifyingRequirements/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements"
+    },
+    {
+      "src": "book/specifyingRequirements/print.md",
+      "title": "CS2103/T Textbook - Specifying Requirements [Printable]"
+    },
+    {
+      "src": "book/specifyingRequirements/prose/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Prose"
+    },
+    {
+      "src": "book/specifyingRequirements/prose/what/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Prose: What"
+    },
+    {
+      "src": "book/specifyingRequirements/featureList/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Feature List"
+    },
+    {
+      "src": "book/specifyingRequirements/featureList/what/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Feature List: What"
+    },
+    {
+      "src": "book/specifyingRequirements/userStories/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: User Stories"
+    },
+    {
+      "src": "book/specifyingRequirements/userStories/introduction/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: User Stories: Introduction"
+    },
+    {
+      "src": "book/specifyingRequirements/userStories/details/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: User Stories: More Detailed User Stories"
+    },
+    {
+      "src": "book/specifyingRequirements/userStories/usage/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: User Stories: Putting User Stories to Good Use"
+    },
+    {
+      "src": "book/specifyingRequirements/useCases/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Use Cases"
+    },
+    {
+      "src": "book/specifyingRequirements/useCases/introduction/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Use Cases: Introduction"
+    },
+    {
+      "src": "book/specifyingRequirements/useCases/identifying/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Use Cases: Identifying Use Cases for a System"
+    },
+    {
+      "src": "book/specifyingRequirements/useCases/details/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Use Cases: Writing Detailed Use Cases"
+    },
+    {
+      "src": "book/specifyingRequirements/useCases/usage/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Use Cases: Putting Use Cases into Good Use"
+    },
+    {
+      "src": "book/specifyingRequirements/glossary/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Glossary"
+    },
+    {
+      "src": "book/specifyingRequirements/glossary/what/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Glossary: What"
+    },
+    {
+      "src": "book/specifyingRequirements/supplementaryRequirements/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Supplementary Requirements"
+    },
+    {
+      "src": "book/specifyingRequirements/supplementaryRequirements/what/index.md",
+      "title": "CS2103/T Textbook - Specifying Requirements: Supplementary Requirements: What"
+    },
+    {
       "src": "book/requirements/index.md",
       "title": "CS2103/T Textbook - Requirements"
     },
     {
-      "src": "book/requirements/brainstorming/index.md",
-      "title": "CS2103/T Textbook - Brainstorming"
-    },
-    {
-      "src": "book/requirements/brainstorming/introduction/index.md",
-      "title": "CS2103/T Textbook - Brainstorming : Introduction"
+      "src": "book/requirements/print.md",
+      "title": "CS2103/T Textbook - Requirements [Printable]"
     },
     {
       "src": "book/requirements/introduction/index.md",
-      "title": "CS2103/T Textbook - Requirements : Introduction"
+      "title": "CS2103/T Textbook - Requirements: Introduction"
     },
     {
-      "src": "book/requirements/introduction/basics/index.md",
-      "title": "CS2103/T Textbook - Requirements : Introduction : Basics"
+      "src": "book/requirements/nonFunctionalRequirements/index.md",
+      "title": "CS2103/T Textbook - Requirements: Non-Functional Requirements"
     },
     {
-      "src": "book/requirements/userSurveys/index.md",
-      "title": "CS2103/T Textbook - User Surveys"
+      "src": "book/requirements/prioritizing/index.md",
+      "title": "CS2103/T Textbook - Requirements: Prioritizing Requirements"
     },
     {
-      "src": "book/requirements/userSurveys/introduction/index.md",
-      "title": "CS2103/T Textbook - User Surveys : Introduction"
-    },
-    {
-      "src": "book/requirements/observation/index.md",
-      "title": "CS2103/T Textbook - Observation"
-    },
-    {
-      "src": "book/requirements/observation/introduction/index.md",
-      "title": "CS2103/T Textbook - Observation : Introduction"
-    },
-    {
-      "src": "book/requirements/interviews/index.md",
-      "title": "CS2103/T Textbook - Interviews"
-    },
-    {
-      "src": "book/requirements/interviews/introduction/index.md",
-      "title": "CS2103/T Textbook - Interviews : Introduction"
-    },
-    {
-      "src": "book/requirements/focusGroups/index.md",
-      "title": "CS2103/T Textbook - Focus Groups"
-    },
-    {
-      "src": "book/requirements/focusGroups/introduction/index.md",
-      "title": "CS2103/T Textbook - Focus Groups : Introduction"
-    },
-    {
-      "src": "book/requirements/prototyping/index.md",
-      "title": "CS2103/T Textbook - Prototyping"
-    },
-    {
-      "src": "book/requirements/prototyping/introduction/index.md",
-      "title": "CS2103/T Textbook - Prototyping : Introduction"
-    },
-    {
-      "src": "book/requirements/productSurveys/index.md",
-      "title": "CS2103/T Textbook - Product Surveys"
-    },
-    {
-      "src": "book/requirements/productSurveys/introduction/index.md",
-      "title": "CS2103/T Textbook - Product Surveys : Introduction"
-    },
-    {
-      "src": "book/requirements/prose/index.md",
-      "title": "CS2103/T Textbook - Prose"
-    },
-    {
-      "src": "book/requirements/prose/introduction/index.md",
-      "title": "CS2103/T Textbook - Prose : Introduction"
-    },
-    {
-      "src": "book/requirements/featureList/index.md",
-      "title": "CS2103/T Textbook - Feature List"
-    },
-    {
-      "src": "book/requirements/featureList/introduction/index.md",
-      "title": "CS2103/T Textbook - Feature List : Introduction"
-    },
-    {
-      "src": "book/requirements/userStories/index.md",
-      "title": "CS2103/T Textbook - User Stories"
-    },
-    {
-      "src": "book/requirements/userStories/introduction/index.md",
-      "title": "CS2103/T Textbook - User Stories : Introduction"
-    },
-    {
-      "src": "book/requirements/useCases/index.md",
-      "title": "CS2103/T Textbook - Use Cases"
-    },
-    {
-      "src": "book/requirements/useCases/introduction/index.md",
-      "title": "CS2103/T Textbook - Use Cases : Introduction"
-    },
-    {
-      "src": "book/requirements/glossary/index.md",
-      "title": "CS2103/T Textbook - Glossary"
-    },
-    {
-      "src": "book/requirements/glossary/introduction/index.md",
-      "title": "CS2103/T Textbook - Glossary : Introduction"
-    },
-    {
-      "src": "book/requirements/supplementaryRequirements/index.md",
-      "title": "CS2103/T Textbook - Supplementary Requirements"
-    },
-    {
-      "src": "book/requirements/supplementaryRequirements/introduction/index.md",
-      "title": "CS2103/T Textbook - Supplementary Requirements : Introduction"
+      "src": "book/requirements/quality/index.md",
+      "title": "CS2103/T Textbook - Requirements: Quality of Requirements"
     },
     {
       "src": "book/common/definitions.md",
@@ -1902,49 +2031,148 @@
       "title": "CS2103/T Textbook - UML: Notes: Constraints"
     },
     {
-      "src": "book/oop/index.md",
+      "src": "book/oopDesign/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming"
     },
     {
-      "src": "book/oop/introduction/index.md",
+      "src": "book/oopDesign/print.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming [Printable]"
+    },
+    {
+      "src": "book/oopDesign/introduction/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Introduction"
     },
     {
-      "src": "book/oop/objects/index.md",
+      "src": "book/oopDesign/objects/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Objects"
     },
     {
-      "src": "book/oop/classes/index.md",
+      "src": "book/oopDesign/objects/basic/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Objects: Basic"
+    },
+    {
+      "src": "book/oopDesign/objects/abstraction/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Objects: Abstraction"
+    },
+    {
+      "src": "book/oopDesign/objects/encapsulation/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Objects: Encapsulation"
+    },
+    {
+      "src": "book/oopDesign/classes/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Classes"
     },
     {
-      "src": "book/oop/associations/index.md",
+      "src": "book/oopDesign/classes/basic/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Classes: Basic"
+    },
+    {
+      "src": "book/oopDesign/classes/classLevelMembers/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Classes: Class Level Members"
+    },
+    {
+      "src": "book/oopDesign/classes/enumerations/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Classes: Enumerations"
+    },
+    {
+      "src": "book/oopDesign/associations/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Associations"
     },
     {
-      "src": "book/oop/inheritance/index.md",
+      "src": "book/oopDesign/associations/basic/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Basic"
+    },
+    {
+      "src": "book/oopDesign/associations/navigability/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Navigability"
+    },
+    {
+      "src": "book/oopDesign/associations/multiplicity/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Multiplicity"
+    },
+    {
+      "src": "book/oopDesign/associations/dependencies/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Dependencies"
+    },
+    {
+      "src": "book/oopDesign/associations/composition/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Composition"
+    },
+    {
+      "src": "book/oopDesign/associations/aggregation/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Aggregation"
+    },
+    {
+      "src": "book/oopDesign/associations/associationClasses/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Associations: Association Classes"
+    },
+    {
+      "src": "book/oopDesign/inheritance/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance"
     },
     {
-      "src": "book/oop/polymorphism/index.md",
+      "src": "book/oopDesign/inheritance/basic/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Basic"
+    },
+    {
+      "src": "book/oopDesign/inheritance/overriding/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Overriding"
+    },
+    {
+      "src": "book/oopDesign/inheritance/overloading/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Overloading"
+    },
+    {
+      "src": "book/oopDesign/inheritance/interfaces/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Interfaces"
+    },
+    {
+      "src": "book/oopDesign/inheritance/abstractClasses/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Abstract Classes"
+    },
+    {
+      "src": "book/oopDesign/inheritance/dynamicAndStaticBinding/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Dynamic and Static Binding"
+    },
+    {
+      "src": "book/oopDesign/inheritance/substitutability/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Inheritance: Substitutability"
+    },
+    {
+      "src": "book/oopDesign/polymorphism/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism"
     },
     {
-      "src": "book/oop/conceptualisingSolution/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualising an OOP Solution"
+      "src": "book/oopDesign/polymorphism/introduction/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Introduction"
     },
     {
-      "src": "book/oop/faq/index.md",
+      "src": "book/oopDesign/polymorphism/basic/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Basic"
+    },
+    {
+      "src": "book/oopDesign/polymorphism/mechanism/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Mechanism"
+    },
+    {
+      "src": "book/oopDesign/conceptualizingSolution/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution"
+    },
+    {
+      "src": "book/oopDesign/conceptualizingSolution/introduction/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Introduction"
+    },
+    {
+      "src": "book/oopDesign/conceptualizingSolution/basic/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Basic"
+    },
+    {
+      "src": "book/oopDesign/conceptualizingSolution/intermediate/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Intermediate"
+    },
+    {
+      "src": "book/oopDesign/faq/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: FAQ"
     }
-  ],
-  "ignore": [
-    "_site/*",
-    ".idea/*",
-    ".gitignore",
-    "README.md",
-    "schedule/handbook/*",
-    "*.md",
-    ".git/*"
   ]
 }
