@@ -1,10 +1,10 @@
-<img src="images/Why you....png" width="300" height="200"/>
+<img src="{{baseUrl}}/Why you....png" width="300" height="200"/>
 
 ### Why the workload is so high?
 
 <div id="handbook-faq-highWorkload">
 
-<img src="images/Why workload heavy.png" width="378" height="340"/>
+<img src="{{baseUrl}}/handbook/images/Why workload heavy.png" width="378" height="340"/>
 
 CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2/3/4, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
@@ -20,7 +20,7 @@ Also, consider this a gradual introduction to 'heavy' modules; most project modu
 
 <div id="handbook-faq-beanCounting">
 
-<img src="images/small things matter.png" width="600" height="300"/>
+<img src="{{baseUrl}}/handbook/images/small things matter.png" width="600" height="300"/>
 
 Sometimes, small things matter in big ways. e.g., all other things being equal, a job may be offered to the candidate who has the neater looking CV although both have the same qualifications. This may be unfair, but that's how the world works. Students forget this harsh reality when they are in the protected environment of the school and tend to get sloppy with their work habits. That is why we reward all positive behavior, even small ones (e.g., following precise submission instructions, arriving on time etc.).
 
@@ -34,7 +34,7 @@ Related article: [This Is The Personality Trait That Most Often Predicts Success
 
 <div id="handbook-faq-separateWebsite">
 
-<img src="images/Forces me to visit a separate website.png" width="655" height="271"/>
+<img src="{{baseUrl}}/handbook/images/Forces me to visit a separate website.png" width="655" height="271"/>
 
 We have a separate website because some of the module information does not fit into the structure imposed by IVLE.
 
@@ -48,7 +48,7 @@ Furthermore, unlike IVLE, a copy of the module website ==will remain online== 
 
 <div id="handbook-faq-slideFormat">
 
-<img src="images/slides not detailed enough.png" width="733" height="221"/>
+<img src="{{baseUrl}}/handbook/images/slides not detailed enough.png" width="733" height="221"/>
 
 Slides are not meant to be documents to print and study for exams. Their purpose is to support the lecture delivery and keep you engaged during the lecture. That's why our slides are less detailed and more visual.
 
@@ -60,7 +60,7 @@ Handouts are wordy because they are reference materials for you to study at you
 
 <div id="handbook-faq-selfStudy">
 
-<img src="images/so much self study.png" width="763" height="307"/>
+<img src="{{baseUrl}}/handbook/images/so much self study.png" width="763" height="307"/>
 
 Self-study is a critical survival skill in SE industry. Lectures will show you the way, but absorbing content is to be done at your own pace, by yourself. In this module, we still tell you what content to study and also pass most of the content to you. After you graduate, you have to decide what to study and find your own content too.
 
@@ -92,7 +92,7 @@ Defining your own unique project is more fun.
 
 But, wider scope → more diverse projects → harder for us to go deep into your project. The collective know-how we (i.e., students and the teaching team) build up about SE issues related to the project become shallow and stretched too thinly. It also affects fairness of grading.
 
-<img src="images/limited project scope.png" width="772" height="296"/>
+<img src="{{baseUrl}}/handbook/images/limited project scope.png" width="772" height="296"/>
 
 That is why a strictly-defined project is more suitable for a first course in SE that focuses on nuts-and-bolts of SE. After learning those fundamentals, in higher level project modules you can focus more on the creative side of software projects without being dragged down by nuts-and-bolts SE issues (because you already know how to deal with them). However, we would like to allow some room for creativity too. That is why we let you build products that are slight variations of a given theme.
 
@@ -104,7 +104,7 @@ Also note: The freedom to do 'anything' is not a necessary condition for creativ
 
 <div id="handbook-faq-vagueRequirements">
 
-<img src="images/vague requirement.png" width="737" height="210"/>
+<img src="{{baseUrl}}/handbook/images/vague requirement.png" width="737" height="210"/>
 
 "You tell me exactly what to do - I do that - you pay me (in grades)" is a model for contract work, not for learning. Being able to survive in imprecise, uncertain, volatile problem contexts is precisely what we are trying to teach you.
 
@@ -116,7 +116,7 @@ For example, the best way to communicate something often depends on what is bein
 
 <div id="handbook-faq-favoriteTool">
 
-<img src="images/I'm not allowed to use my favorite tool.png" width="750" height="287"/>
+<img src="{{baseUrl}}/handbook/images/I'm not allowed to use my favorite tool.png" width="750" height="287"/>
 
 We have chosen a basic set of tools after considering ease of learning, availability, typicalness, popularity, migration path to other tools, etc. There are many reasons for limiting your choices:
 
@@ -140,7 +140,7 @@ Meanwhile, feel free to share with peers your experience of using other tools.
 
 <div id="handbook-faq-manySubmissions">
 
-<img src="images/frequent submissions.png" width="759" height="359"/>
+<img src="{{baseUrl}}/handbook/images/frequent submissions.png" width="759" height="359"/>
 
 The high number of submissions is not meant to increase workload but to spread it across the semester. Learning theory and applying them should be done in parallel to maximize the learning effect. That can happen only if we spread theory and 'application of theory' (i.e., project work) evenly across the semester.
 
@@ -150,7 +150,7 @@ The high number of submissions is not meant to increase workload but to spread i
 
 <div id="handbook-faq-intermediateMarks">
 
-<img src="images/no marks for intermediate submissions.png" width="688" height="102"/>
+<img src="{{baseUrl}}/handbook/images/no marks for intermediate submissions.png" width="688" height="102"/>
 
 Intermediate submissions are also incremental submissions. Intermediate submissions are included in the final submission too and will earn marks at that point. They are there to help you do well in the final submission and for us to monitor your progress and guide you accordingly. They are a means to an end. They are not achievements themselves. By right, they shouldn't be given marks at all. :-)
 
@@ -160,7 +160,7 @@ Intermediate submissions are also incremental submissions. Intermediate submissi
 
 <div id="handbook-faq-cs2101Differences">
 
-<img src="images/Submission requirements differ.png" width="300"/>
+<img src="{{baseUrl}}/handbook/images/Submission requirements differ.png" width="300"/>
 
 They do, and they should.
 

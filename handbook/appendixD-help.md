@@ -8,7 +8,7 @@ In this module, we want to move you away from 'hand holding'. We want you to lea
 
 <td width="130px">
 
-<img src="images/how to get help.png" width="125px">
+<img src="{{baseUrl}}/handbook/images/how to get help.png" width="125px">
 
 </td>
 
@@ -26,7 +26,7 @@ Whether it is a technical problem (e.g. error when using Eclipse) or a doubt abo
 
 The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?' 
 
-<img src="images/the good reasons to get home early.png" width="300"/>
+<img src="{{baseUrl}}/handbook/images/the good reasons to get home early.png" width="300"/>
 
 Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _aaa_ and _bbb_?
 
@@ -37,7 +37,7 @@ When faced with a technical problem or a doubt about a concept, here are the thi
 *   **Check what is given**: Check if the problem/concept has been discussed in the lectures, handouts, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in handouts/handbook etc. But you should try first.
 *   **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to tell you, 'Have you heard of a thing called Google?'.  
     Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a ==web search on the error message==  is a good starting point.    
-    <img src="images/how to google it.png" width="460" height="268"/>
+    <img src="{{baseUrl}}/handbook/images/how to google it.png" width="460" height="268"/>
 
 *   **Ask peers**:   
 
@@ -54,7 +54,7 @@ When faced with a technical problem or a doubt about a concept, here are the thi
     <tr>
 
     <td width="230px">
-    <img src="images/Rubber_duck_assisting_with_debugging.jpg" width="220"/>
+    <img src="{{baseUrl}}/handbook/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/>
     </td>
 
     <td>

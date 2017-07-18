@@ -13,7 +13,7 @@ Let us use the generic term 'Task Manager' to refer to this product. You should 
 
 **Target audience**: There are many similar software that tackles some aspect of this problem (todo lists software, calendar software, GTD software). Because it is a crowded product space, our strategy is to become a niche player by targeting a specific user group. Our target users are people like Jim whose workflow is described below.
 
-<img src="images/Jim at his computer.png" style="width: 500px;">
+<img src="{{baseUrl}}/handbook/images/Jim at his computer.png" style="width: 500px;">
 
 Most of Jim’s todo items arrive as emails. This is how Jim processes his emails.
 

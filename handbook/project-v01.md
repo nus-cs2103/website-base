@@ -15,7 +15,7 @@ The most important thing is not to break the code while morphing sample code to 
 
 <tr>
 
-<td width="130px"><img src="images/v01demo.png" width="125px"></td>
+<td width="130px"><img src="{{baseUrl}}/handbook/images/v01demo.png" width="125px"></td>
 
 <td>Demo the product to your tutor.  
 

@@ -16,7 +16,7 @@ All peer evaluations will be taken into account when determining your participat
 
 The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.
 
-<img src="images/profilephotos.png" style="width: 365.33px">
+<img src="{{baseUrl}}/handbook/images/profilephotos.png" style="width: 365.33px">
     
   </Panel>
 
@@ -36,7 +36,7 @@ Giving constructive feedback to others is a valuable skill for software engineer
 
 The final peer evaluation will be used to determine the level of contribution from each member to the project. In that peer-evaluation you will be asked to ==estimate the contribution of each team member== (including yourself) to the project so far.
 
-<img src="images/peer evaluations.png" width="70%">
+<img src="{{baseUrl}}/handbook/images/peer evaluations.png" width="70%">
 
 ==Final peer evaluation affects your grade==in the following way:
 
@@ -67,7 +67,7 @@ A final note on this issue :
 
 ==Please be sincere about how much you can do from the beginning==, rather than let your team members figure it out over the long run. Tell them how much you can do and what kind of work you are willing to do. If you are not open about it, they will still figure it out at the end; they will still report it (via the peer-evaluations), and your score will be adjusted all the same. Being open about it on the other hand can save everyone a lot of frustrations, unpleasantness, and bitterness.</td>
 
-<td width="410px"><img src="images/png_peer.png" width="400px"></td>
+<td width="410px"><img src="{{baseUrl}}/handbook/images/png_peer.png" width="400px"></td>
 
 </tr>
 

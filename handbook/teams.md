@@ -18,7 +18,7 @@ Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. B
 
 <td width="310px">
 
-<img src="images/team.png" width="300px">
+<img src="{{baseUrl}}/handbook/images/team.png" width="300px">
 
 %%[Picture: The team that was at the top of early Google]%%
 

@@ -1,7 +1,7 @@
 <table class="two-column-content">
 <tr>
 <td width="160px">
- <img src="images/JamesGosling.png" width="150px">
+ <img src="{{baseUrl}}/handbook/images/JamesGosling.png" width="150px">
 </td>
 <td>
 

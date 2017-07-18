@@ -1,4 +1,4 @@
-<img src="images/tools.png" style="width: 700px">
+<img src="{{baseUrl}}/handbook/images/tools.png" style="width: 700px">
 
 **Communication**:
 

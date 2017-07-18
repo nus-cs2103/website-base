@@ -39,7 +39,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 ### V0.5 Demo
 
-<img src="images/v05demo.png" style="width: 250px">
+<img src="{{baseUrl}}/handbook/images/v05demo.png" style="width: 250px">
 
 *   **Venue:** Same as the tutorial venue.
 *   **Duration:** Strictly no more than 12 minutes. Exceeding this limit will be penalized.

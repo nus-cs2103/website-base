@@ -13,4 +13,4 @@ Final exam:
 
 Note that CS2103 paper measures how well you can apply the theory to a project. Therefore, the exam is strongly connected to the project and how you  applied theory in the project. The exam will be easy for you if you attend lectures, participate in tutorials(tutorials too are focused on application of theory to the project), and do a sincere job in the project. ==You will not be able to ace the exams by simply doing past papers just before the exams.==
 
-<img src="images/exam connected to project.png" width="600"/>
+<img src="{{baseUrl}}/handbook/images/exam connected to project.png" width="600"/>

@@ -2,7 +2,7 @@ There is ==no need to buy a textbook== this semester. Lecture handouts should be
 
 Here are some relevant books you can read to supplement module content (optional reading).
 
-<img src="images/supplementary books.png" style="width: 716px;">
+<img src="{{baseUrl}}/handbook/images/supplementary books.png" style="width: 716px;">
 
 * **UML Distilled by Martin Fowler**
 * **[Practical Tips for Software-Intensive Student Projects](http://www.comp.nus.edu.sg/~damithch/guide3e/)** by Damith C. Rajapakse

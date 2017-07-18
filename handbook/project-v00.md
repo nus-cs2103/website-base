@@ -2,7 +2,7 @@ The objective of this deliverable is for you to analyze requirements, conceptual
 
 ### Step 1 : Brainstorm user stories
 
-<img src="images/v00.png" width="250px">
+<img src="{{baseUrl}}/handbook/images/v00.png" width="250px">
 
 Get together with your team members and brainstorm user stories for the product.
 
@@ -19,7 +19,7 @@ Get together with your team members and brainstorm user stories for the product.
 
 ### Step 2: Prioritize the user stories
 
-<img src="images/userstories.png" width="250px">
+<img src="{{baseUrl}}/handbook/images/userstories.png" width="250px">
 
 Suggested workflow:
 
