@@ -1,4 +1,4 @@
-The objective of this deliverable is for you to analyze requirements, conceptualize the product, and document it.
+The objective of this deliverable is for you to analyze requirements, conceptualize the enhanced product, and document it.
 
 ### Step 1 : Brainstorm user stories
 

@@ -6,6 +6,7 @@
 <div class="website-content">
 
 *   [Preliminaries](#handbook-preliminaries)
+*   [Learning Outcomes](#handbook-learning-outcomes)
 *   [Lectures](#handbook-lectures)
 *   [Tutorials](#handbook-tutorials)
 *   [Text Books](#handbook-textBooks)
@@ -66,6 +67,11 @@
 # Preliminaries
 <div id="handbook-preliminaries">
   <include src="preliminaries.md" />
+</div>
+
+# Learning Outcomes
+<div id="handbook-learning-outcomes">
+  <include src="learningOutcomes.md" />
 </div>
 
 # Lectures
