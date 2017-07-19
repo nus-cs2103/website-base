@@ -7,6 +7,8 @@
     "README.md",
     "schedule/handbook/*",
     "*.md",
+    "diagrams/*",
+    "book/diagrams/*",
     ".git/*"
   ],
   "pages": [
