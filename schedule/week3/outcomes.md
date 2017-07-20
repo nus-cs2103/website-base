@@ -21,8 +21,8 @@
 * The size of the enhancement does not matter.
 * Remember to update all relevant documentation and tests.
 * Try to follow the coding standard and the procedural (not OOP) style of the code base. 
-* You are allowed to reuse the code write here in your final project, if applicable. <br/><br/>
-* Submission: Create a PR.
+* Note that you are allowed to reuse the code you write here in your final project, if applicable. <br/><br/>
+* Submission: demo during tutorial.
 
   </panel>
 </panel>
