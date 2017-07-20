@@ -4,18 +4,21 @@ The objective of this deliverable is for you to analyze requirements, conceptual
 
 <img src="{{baseUrl}}/handbook/images/v00.png" width="250px">
 
-Get together with your team members and brainstorm user stories for the product.
+Get together with your team members and brainstorm user stories **for the v3.0 of the product**. Note that in the project you will deliver only up to v2.5.
 
-*   e.g.  
-    `As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`  
-    `As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`  
-    `As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.`  
-    `As a new user I can view more information about a particular command, so that I can learn how to use various commands.`  
-    `As an advanced user I can use shorter versions of a command, so that type a command faster.`  
-    Note how the story covers who (the user), what (the functionality) and why (the value) aspects.
-*   It is ok to have more user stories than you can deliver in the project.You should have at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.
-*   Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.
-*   Note that ==you should not 'evaluate' the value of user stories while doing the above==. An important aspect of brainstorming is not judging the ideas generated.  
+<panel header="%%User Story examples (from a different product)%%">
+
+`As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`  
+`As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`  
+`As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.`  
+`As a new user I can view more information about a particular command, so that I can learn how to use various commands.`  
+`As an advanced user I can use shorter versions of a command, so that type a command faster.`  
+
+</panel>
+
+* It is ok to have more user stories than you can deliver in the project.You should have at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.
+* Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.
+* Note that ==you should not 'evaluate' the value of user stories while doing the above==. An important aspect of brainstorming is not judging the ideas generated.  
 
 ### Step 2: Prioritize the user stories
 
@@ -26,16 +29,16 @@ Suggested workflow:
 *   Take one use story at a time and get team member opinions about it.
 *   Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
 
-    *   `Must-Have` : The product will be practically useless to Jim without this feature.
-    *   `Nice-To-Have` : Jim can benefit from this user story significantly but you are not certain if you'll have time to implement it.
-    *   `Not-Useful` : No significant benefit to Jim.
+    *   `Must-Have` : The product will be practically useless without this feature.
+    *   `Nice-To-Have` : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.
+    *   `Not-Useful` : No significant benefit to the target use.
 
 *   After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.
 
 Here are some tips to improve the effectiveness of the above activity:
 
-*   **Define Jim:**  
-    Decide our target user Jim's work patterns. e.g. Does he work in groups or alone? Does he share his computer with others? (answer: no). Having a clear picture of Jim's work patterns will help when deciding the importance of a user story.
+*   **Define the target user:**  
+    Decide our target user's work patterns. e.g. Does he work in groups or alone? Does he share his computer with others? (answer: no). Having a clear picture of the target user's work patterns will help when deciding the importance of a user story.
 *   **Don't be biased by the implementation plans:**  
     This exercise is for identifying user needs. Clear your mind of ideas you have about what your product will look like. Assume that you do not know yet what product you will build.
 *   **Don't discuss implementation details or whether you are actually going to implement it:**  

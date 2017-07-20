@@ -16,13 +16,13 @@
     *   [Scope](#handbook-project-scope)
     *   [Constraints](#handbook-project-constraints)
     *   [Deliverables](#handbook-project-deliverables)
-    *   [V0.0: The Concept](#handbook-project-v00)
-    *   [V0.1 : The Walking Skeleton](#handbook-project-v01)
-    *   [V0.2 : The MVP](#handbook-project-v02)
-    *   [V0.3](#handbook-project-v03)
-    *   [V0.4](#handbook-project-v04)
-    *   [V0.5rc : The Release Candidate](#handbook-project-v05rc)
-    *   [V0.5 : The Production Release](#handbook-project-v05)
+    *   [V2.0](#handbook-project-v20)
+    *   [V2.1](#handbook-project-v21)
+    *   [V2.2](#handbook-project-v22)
+    *   [V2.3](#handbook-project-v23)
+    *   [V2.4](#handbook-project-v24)
+    *   [V2.5rc](#handbook-project-v25rc)
+    *   [V2.5](#handbook-project-v25)
     *   [Retrospective](#handbook-project-retrospective)
     *   [Individual report](#handbook-project-individualReport)
     *   [Assessment](#handbook-project-assessment)
@@ -119,39 +119,39 @@
 <include src="project-deliverables.md" />
 </div>
 
-## V0.0 : The Concept
-<div id="handbook-project-v00">
-<include src="project-v00.md" />
+## V2.0
+<div id="handbook-project-v20">
+<include src="project-v20.md" />
 </div>
 
-## V0.1 : The Walking Skeleton
-<div id="handbook-project-v01">
-<include src="project-v01.md" />
+## V2.1
+<div id="handbook-project-v21">
+<include src="project-v21.md" />
 </div>
 
-## V0.2 : The MVP
-<div id="handbook-project-v02">
-<include src="project-v02.md" />
+## V2.2
+<div id="handbook-project-v22">
+<include src="project-v22.md" />
 </div>
 
-## V0.3
-<div id="handbook-project-v03">
-<include src="project-v03.md" />
+## V2.3
+<div id="handbook-project-v23">
+<include src="project-v23.md" />
 </div>
 
-## V0.4
-<div id="handbook-project-v04">
-<include src="project-v04.md" />
+## V2.4
+<div id="handbook-project-v24">
+<include src="project-v24.md" />
 </div>
 
-## V0.5rc : The Release Candidate
-<div id="handbook-project-v05rc">
-<include src="project-v05rc.md" />
+## V2.5rc
+<div id="handbook-project-v25rc">
+<include src="project-v25rc.md" />
 </div>
 
-## V0.5 : The Production Release
-<div id="handbook-project-v05">
-<include src="project-v05.md" />
+## V2.5
+<div id="handbook-project-v25">
+<include src="project-v25.md" />
 </div>
 
 ## Project retrospective

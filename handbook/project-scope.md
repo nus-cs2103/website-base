@@ -1,6 +1,6 @@
 Here are the allowed options for enhancing AddressBook:
 
-1. [Highly recommended] Rename the product.
+1. [Highly recommended] Rename the product to a more catchy name.
 1. Add more features related to managing contacts. 
 1. Enhance existing features. %%e.g. make the `find` feature more powerful%%
 1. Make the command syntax more user friendly %%e.g. allow more variations of the keywords%%
