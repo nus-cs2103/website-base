@@ -64,7 +64,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="Can use Java8 streams :star::star::star:" expandable>
+<panel type="info" header="Can use Java8 streams :star::star::star:" expandable>
   <include src="../../book/javaTools/streamsBasic/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
