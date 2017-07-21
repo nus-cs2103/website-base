@@ -33,6 +33,9 @@
                   In extreme cases, the application may log the user off or shut down the system. <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></p>
               </blockquote>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -72,6 +75,9 @@
               </tip-box>
               <p>Exceptions are not program bugs. Rather, they are unusual situations that need to be recovered from, if possible.</p>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -102,6 +108,9 @@
                 <li>The separation of code that deals with ‘unusual’ situations from the code that does the ‘usual’ work.</li>
               </ul>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -118,6 +127,9 @@
           <div>
             <div>
               <p>{to add: do not use exceptions for normal workflow}</p>
+            </div>
+            <div>
+              <div></div>
             </div>
           </div>
         </panel>
@@ -152,6 +164,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
                   the presence of a bug in the system.</p>
               </tip-box>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -179,6 +194,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
                 </ol>
               </tip-box>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -195,6 +213,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
           <div>
             <div>
               <p>Refer <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">this document</a> from Oracle to learn where to use assertions and where not to.</p>
+            </div>
+            <div>
+              <div></div>
             </div>
           </div>
         </panel>
@@ -218,6 +239,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
             <div>
               <p>Logging is the deliberate recording of certain information during a program execution.</p>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -236,6 +260,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
               <p><em>Logging</em> can be useful for troubleshooting problems the error handling code could not prevent (due to the failure to cater for certain situations).</p>
               <p>A good logging system records some system information regularly. When bad things happen to a system, their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again. This
                 is the same reason why airplanes have ‘black boxes’.</p>
+            </div>
+            <div>
+              <div></div>
             </div>
           </div>
         </panel>
@@ -278,6 +305,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
 </code></pre>
               </tip-box>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -303,6 +333,9 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
                 <p>Example:</p>
                 <p>{Defensive copying}</p>
               </tip-box>
+            </div>
+            <div>
+              <div></div>
             </div>
           </div>
         </panel>
@@ -519,6 +552,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
 </code></pre>
                 <p>Option 2 is more defensive because the <code>Mine</code> is immediately linked to a <code>MinedCell</code>.</p>
               </tip-box>
+            </div>
+            <div>
+              <div></div>
             </div>
           </div>
         </panel>
@@ -843,6 +879,9 @@ r1.setPlayer(p2);
                 <li>The overhead of being defensive.</li>
               </ul>
             </div>
+            <div>
+              <div></div>
+            </div>
           </div>
         </panel>
       </div>
@@ -868,6 +907,9 @@ r1.setPlayer(p2);
                 will honor the contract only if the preconditions have been met. If any of them have not been met, the behavior of the operation is “unspecified”.</p>
               <p>Languages such as Eiffel have native support for DbC. For example, preconditions of an operation can be specified in Eiffel and the language runtime will check precondition violations without the need to do it explicitly in the code. To
                 follow the DbC approach in languages such as Java and C++ where there is no built-in DbC support, assertions can be used to confirm pre-conditions.</p>
+            </div>
+            <div>
+              <div></div>
             </div>
           </div>
         </panel>

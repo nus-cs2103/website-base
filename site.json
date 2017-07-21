@@ -1873,120 +1873,212 @@
       "title": "CS2103/T Textbook - References"
     },
     {
+      "src": "book/uml/print.md",
+      "title": "CS2103/T Textbook - UML [Printable]"
+    },
+    {
       "src": "book/uml/index.md",
       "title": "CS2103/T Textbook - UML"
     },
     {
+      "src": "book/uml/classDiagrams/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams"
+    },
+    {
       "src": "book/uml/classDiagrams/aggregation/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Aggregation"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Aggregation"
+    },
+    {
+      "src": "book/uml/classDiagrams/aggregation/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Aggregation: What"
     },
     {
       "src": "book/uml/classDiagrams/associationClasses/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Association Classes"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Association Classes"
+    },
+    {
+      "src": "book/uml/classDiagrams/associationClasses/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Association Classes: What"
     },
     {
       "src": "book/uml/classDiagrams/associations/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Associations"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations"
+    },
+    {
+      "src": "book/uml/classDiagrams/associations/basic/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations: Basic"
+    },
+    {
+      "src": "book/uml/classDiagrams/associations/navigability/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations: Navigability"
+    },
+    {
+      "src": "book/uml/classDiagrams/associations/roles/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations: Roles"
+    },
+    {
+      "src": "book/uml/classDiagrams/associations/labels/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations: Labels"
+    },
+    {
+      "src": "book/uml/classDiagrams/associations/multiplicity/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations: Multiplicity"
     },
     {
       "src": "book/uml/classDiagrams/associationsAsAttributes/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Associations as Attributes"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations as Attributes"
+    },
+    {
+      "src": "book/uml/classDiagrams/associationsAsAttributes/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Associations as Attributes: What"
     },
     {
       "src": "book/uml/classDiagrams/classes/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Classes"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Classes"
+    },
+    {
+      "src": "book/uml/classDiagrams/classes/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Classes: What"
     },
     {
       "src": "book/uml/classDiagrams/classInheritance/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Class Inheritance"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Class Inheritance"
+    },
+    {
+      "src": "book/uml/classDiagrams/classInheritance/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Class Inheritance: What"
     },
     {
       "src": "book/uml/classDiagrams/classLevelMembers/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Class Level Members"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Class Level Members"
+    },
+    {
+      "src": "book/uml/classDiagrams/classLevelMembers/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Class Level Members: What"
     },
     {
       "src": "book/uml/classDiagrams/composition/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Composition"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Composition"
+    },
+    {
+      "src": "book/uml/classDiagrams/composition/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Composition: What"
     },
     {
       "src": "book/uml/classDiagrams/dependencies/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Dependencies"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Dependencies"
+    },
+    {
+      "src": "book/uml/classDiagrams/dependencies/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Dependencies: What"
     },
     {
       "src": "book/uml/classDiagrams/enumerations/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Enumerations"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Enumerations"
+    },
+    {
+      "src": "book/uml/classDiagrams/enumerations/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Enumerations: What"
     },
     {
       "src": "book/uml/classDiagrams/interfaces/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Interfaces"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Interfaces"
+    },
+    {
+      "src": "book/uml/classDiagrams/interfaces/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Interfaces: What"
     },
     {
       "src": "book/uml/classDiagrams/abstractClasses/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Abstract Classes"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Abstract Classes"
+    },
+    {
+      "src": "book/uml/classDiagrams/abstractClasses/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Abstract Classes: What"
     },
     {
       "src": "book/uml/classDiagrams/introduction/index.md",
-      "title": "CS2103/T Textbook - Class Diagrams: Introduction"
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Introduction"
+    },
+    {
+      "src": "book/uml/classDiagrams/introduction/what/index.md",
+      "title": "CS2103/T Textbook - UML: Class Diagrams: Introduction: What"
+    },
+    {
+      "src": "book/uml/sequenceDiagrams/index.md",
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams"
     },
     {
       "src": "book/uml/sequenceDiagrams/alternativePaths/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Alternative Paths"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Alternative Paths"
     },
     {
-      "src": "book/uml/sequenceDiagrams/basics/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Basic Notation"
+      "src": "book/uml/sequenceDiagrams/basic/index.md",
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Basic Notation"
     },
     {
       "src": "book/uml/sequenceDiagrams/introduction/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Introduction"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Introduction"
     },
     {
       "src": "book/uml/sequenceDiagrams/loops/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Loops"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Loops"
     },
     {
       "src": "book/uml/sequenceDiagrams/minimalNotation/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Minimal Notation"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Minimal Notation"
     },
     {
       "src": "book/uml/sequenceDiagrams/objectCreation/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Object Creation"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Object Creation"
     },
     {
       "src": "book/uml/sequenceDiagrams/objectDeletion/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Object Deletion"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Object Deletion"
     },
     {
       "src": "book/uml/sequenceDiagrams/optionalPaths/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Optional Paths"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Optional Paths"
     },
     {
       "src": "book/uml/sequenceDiagrams/parallelPaths/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Parallel Paths"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Parallel Paths"
     },
     {
       "src": "book/uml/sequenceDiagrams/referenceFrames/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Reference Frames"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Reference Frames"
     },
     {
       "src": "book/uml/sequenceDiagrams/selfInvocation/index.md",
-      "title": "CS2103/T Textbook - Sequence Diagrams: Self Invocation"
+      "title": "CS2103/T Textbook - UML: Sequence Diagrams: Self Invocation"
+    },
+    {
+      "src": "book/uml/objectDiagrams/index.md",
+      "title": "CS2103/T Textbook - UML: Object Diagrams"
     },
     {
       "src": "book/uml/objectDiagrams/introduction/index.md",
-      "title": "CS2103/T Textbook - Object Diagrams: Introduction"
+      "title": "CS2103/T Textbook - UML: Object Diagrams: Introduction"
     },
     {
       "src": "book/uml/objectDiagrams/objects/index.md",
-      "title": "CS2103/T Textbook - Object Diagrams: Objects"
+      "title": "CS2103/T Textbook - UML: Object Diagrams: Objects"
     },
     {
       "src": "book/uml/objectDiagrams/objectStructures/index.md",
-      "title": "CS2103/T Textbook - Object Diagrams: Object Structures"
+      "title": "CS2103/T Textbook - UML: Object Diagrams: Object Structures"
     },
     {
-      "src": "book/uml/misc/objectVsClassDiagrams/index.md",
-      "title": "CS2103/T Textbook - Miscellaneous: Object Diagrams vs Class Diagrams"
+      "src": "book/uml/miscellaneous/index.md",
+      "title": "CS2103/T Textbook - UML: Miscellaneous"
+    },
+    {
+      "src": "book/uml/miscellaneous/objectVsClassDiagrams/index.md",
+      "title": "CS2103/T Textbook - UML: Miscellaneous: Object Diagrams vs Class Diagrams"
+    },
+    {
+      "src": "book/uml/activityDiagrams/index.md",
+      "title": "CS2103/T Textbook - UML: Activity Diagrams"
     },
     {
       "src": "book/uml/activityDiagrams/introduction/index.md",
@@ -1994,7 +2086,7 @@
     },
     {
       "src": "book/uml/activityDiagrams/introduction/what/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Introduction: What"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Introduction: What"
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/index.md",
@@ -2002,27 +2094,27 @@
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/linearPaths/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Linear Paths"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation: Linear Paths"
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/alternatePaths/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Alternate Paths"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation: Alternate Paths"
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/parallelPaths/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Parallel Paths"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation: Parallel Paths"
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/rakes/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Rakes"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation: Rakes"
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/swimlanes/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Swimlanes"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation: Swimlanes"
     },
     {
       "src": "book/uml/activityDiagrams/basicNotations/combined/index.md",
-      "title": "CS2103/T Textbook - Activity Diagrams: Basic Notation: Combined"
+      "title": "CS2103/T Textbook - UML: Activity Diagrams: Basic Notation: Combined"
     },
     {
       "src": "book/uml/notes/notes/index.md",

@@ -40,6 +40,9 @@
             </ul>
             <p>To answer those questions, we can analyze the how the objects of these classes will interact with each other to produce the behavior we want.</p>
           </div>
+          <div>
+            <div></div>
+          </div>
         </div>
       </panel>
     </div>
@@ -56,12 +59,12 @@
         <div>
           <div>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\introduction\topicPanel._include_.html" header="UML: Sequence Diagrams: Introduction" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\introduction\embed._include_.html" header="UML: Sequence Diagrams: Introduction" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\basics\topicPanel._include_.html" header="UML: Sequence Diagrams: Basics" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\basic\embed._include_.html" header="UML: Sequence Diagrams: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box>
@@ -81,7 +84,7 @@
             </tip-box>
             <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\objectCreation\topicPanel._include_.html" header="UML: Sequence Diagrams: Object Creation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\objectCreation\embed._include_.html" header="UML: Sequence Diagrams: Object Creation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/basic/images/logicMinefield.png" height="100">
@@ -90,16 +93,19 @@
             <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
             <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\loops\topicPanel._include_.html" header="UML: Sequence Diagrams: Loops" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\loops\embed._include_.html" header="UML: Sequence Diagrams: Loops" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/basic/images/playerTextLoop.png" height="300">
               <p></p>
             </tip-box>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\minimalNotation\topicPanel._include_.html" header="UML: Sequence Diagrams: Minimal Notation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\minimalNotation\embed._include_.html" header="UML: Sequence Diagrams: Minimal Notation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
+          </div>
+          <div>
+            <div></div>
           </div>
         </div>
       </panel>
@@ -118,7 +124,7 @@
           <div>
             <p>Next, let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\referenceFrames\topicPanel._include_.html" header="UML: Sequence Diagrams: Reference Frames" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\referenceFrames\embed._include_.html" header="UML: Sequence Diagrams: Reference Frames" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box>
@@ -144,7 +150,7 @@
             </tip-box>
             <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code>              operation. We can model it like this:</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\objectDeletion\topicPanel._include_.html" header="UML: Sequence Diagrams: Object Deletion" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\objectDeletion\embed._include_.html" header="UML: Sequence Diagrams: Object Deletion" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldReset.png" height="100">
@@ -177,7 +183,7 @@
             </tip-box>
             <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\selfInvocation\topicPanel._include_.html" header="UML: Sequence Diagrams: Self-Invocation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\selfInvocation\embed._include_.html" header="UML: Sequence Diagrams: Self-Invocation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldUpdateState.png" height="250">
@@ -185,7 +191,7 @@
             </tip-box>
             <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\alternativePaths\topicPanel._include_.html" header="UML: Sequence Diagrams: Alternative Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\alternativePaths\embed._include_.html" header="UML: Sequence Diagrams: Alternative Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/minefieldCellAlt.png" height="200">
@@ -193,7 +199,7 @@
             </tip-box>
             <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
             <p>
-              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\optionalPaths\topicPanel._include_.html" header="UML: Sequence Diagrams: Optional Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\optionalPaths\embed._include_.html" header="UML: Sequence Diagrams: Optional Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/logicTimerOpt.png" height="130">
@@ -207,6 +213,9 @@
               <p>When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations are required
                 by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
             </tip-box>
+          </div>
+          <div>
+            <div></div>
           </div>
         </div>
       </panel>

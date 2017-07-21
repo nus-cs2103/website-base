@@ -33,13 +33,13 @@
         <li><a href="#handbook-project-scope">Scope</a></li>
         <li><a href="#handbook-project-constraints">Constraints</a></li>
         <li><a href="#handbook-project-deliverables">Deliverables</a></li>
-        <li><a href="#handbook-project-v00">V0.0: The Concept</a></li>
-        <li><a href="#handbook-project-v01">V0.1 : The Walking Skeleton</a></li>
-        <li><a href="#handbook-project-v02">V0.2 : The MVP</a></li>
-        <li><a href="#handbook-project-v03">V0.3</a></li>
-        <li><a href="#handbook-project-v04">V0.4</a></li>
-        <li><a href="#handbook-project-v05rc">V0.5rc : The Release Candidate</a></li>
-        <li><a href="#handbook-project-v05">V0.5 : The Production Release</a></li>
+        <li><a href="#handbook-project-v20">V2.0</a></li>
+        <li><a href="#handbook-project-v21">V2.1</a></li>
+        <li><a href="#handbook-project-v22">V2.2</a></li>
+        <li><a href="#handbook-project-v23">V2.3</a></li>
+        <li><a href="#handbook-project-v24">V2.4</a></li>
+        <li><a href="#handbook-project-v25rc">V2.5rc</a></li>
+        <li><a href="#handbook-project-v25">V2.5</a></li>
         <li><a href="#handbook-project-retrospective">Retrospective</a></li>
         <li><a href="#handbook-project-individualReport">Individual report</a></li>
         <li><a href="#handbook-project-assessment">Assessment</a></li>
@@ -234,7 +234,7 @@
     <div>
       <p>Here are the allowed options for enhancing AddressBook:</p>
       <ol>
-        <li>[Highly recommended] Rename the product.</li>
+        <li>[Highly recommended] Rename the product to a more catchy name.</li>
         <li>Add more features related to managing contacts.</li>
         <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
         <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords</span></li>
@@ -303,14 +303,16 @@
       <p>The sub-sections further down explain each project deliverable in detail.</p>
     </div>
   </div>
-  <h2 id="v00-the-concept">V0.0 : The Concept</h2>
-  <div id="handbook-project-v00">
+  <h2 id="v20">V2.0</h2>
+  <div id="handbook-project-v20">
     <div>
       <p>The objective of this deliverable is for you to analyze requirements, conceptualize the enhanced product, and document it.</p>
       <h3 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h3><img src="/cs2103-website/handbook/images/v00.png" width="250px">
-      <p>Get together with your team members and brainstorm user stories for the product.</p>
+      <p>Get together with your team members and brainstorm user stories <strong>for the v3.0 of the product</strong>. Note that in the project you will deliver only up to v2.5.</p>
+      <panel header="%%User Story examples (from a different product)%%">
+        <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
+      </panel>
       <ul>
-        <li>e.g.<br><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code><br>          Note how the story covers who (the user), what (the functionality) and why (the value) aspects.</li>
         <li>It is ok to have more user stories than you can deliver in the project.You should have at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</li>
         <li>Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.</li>
         <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</li>
@@ -324,9 +326,9 @@
         <li>
           <p>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:</p>
           <ul>
-            <li><code>Must-Have</code> : The product will be practically useless to Jim without this feature.</li>
-            <li><code>Nice-To-Have</code> : Jim can benefit from this user story significantly but you are not certain if you'll have time to implement it.</li>
-            <li><code>Not-Useful</code> : No significant benefit to Jim.</li>
+            <li><code>Must-Have</code> : The product will be practically useless without this feature.</li>
+            <li><code>Nice-To-Have</code> : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.</li>
+            <li><code>Not-Useful</code> : No significant benefit to the target use.</li>
           </ul>
         </li>
         <li>
@@ -335,8 +337,8 @@
       </ul>
       <p>Here are some tips to improve the effectiveness of the above activity:</p>
       <ul>
-        <li><strong>Define Jim:</strong><br> Decide our target user Jim's work patterns. e.g. Does he work in groups or alone? Does he share his computer with others? (answer: no). Having a clear picture of Jim's work patterns will help when deciding the
-          importance of a user story.</li>
+        <li><strong>Define the target user:</strong><br> Decide our target user's work patterns. e.g. Does he work in groups or alone? Does he share his computer with others? (answer: no). Having a clear picture of the target user's work patterns will help
+          when deciding the importance of a user story.</li>
         <li><strong>Don't be biased by the implementation plans:</strong><br> This exercise is for identifying user needs. Clear your mind of ideas you have about what your product will look like. Assume that you do not know yet what product you will build.</li>
         <li><strong>Don't discuss implementation details or whether you are actually going to implement it:</strong><br> At this point, your decision is whether the user's need is important enough for you to want to fulfil it. Implementation details can be
           discussed later. If a user story in the Nice-To-Have pile turn out to be too difficult to implement later, you can always not implement it.</li>
@@ -405,8 +407,8 @@
         the above documents in some format (e.g. GoogleDoc), even if you didn't have time to update the markdown documents in the repo.</p>
     </div>
   </div>
-  <h2 id="v01-the-walking-skeleton">V0.1 : The Walking Skeleton</h2>
-  <div id="handbook-project-v01">
+  <h2 id="v21">V2.1</h2>
+  <div id="handbook-project-v21">
     <div>
       <h3 id="v01-product">V0.1 Product</h3>
       <p>This is the sample project morphed to be more like your target product. Functionality can be limited to only those that can be refactored from the sample project. e.g. support for adding and deleting floating tasks.</p>
@@ -458,8 +460,8 @@
       <p><strong>Grading</strong>: To consider this milestone as reached, you should have all V0.0 deliverables completed and the two documents mentioned above updated.</p>
     </div>
   </div>
-  <h2 id="v02-the-mvp">V0.2 : The MVP</h2>
-  <div id="handbook-project-v02">
+  <h2 id="v22">V2.2</h2>
+  <div id="handbook-project-v22">
     <div>
       <h3 id="v02-product">V0.2 Product</h3>
       <p>This is the first MVP (Minimum Viable Product) version of the product.</p>
@@ -487,8 +489,8 @@
       <p>As before, show the demo to the tutor during the tutorial.<br> The demo should use the version tagged as <code>V0.2</code>, not the latest code. No tinkering with code during the tutorial.</p>
     </div>
   </div>
-  <h2 id="v03">V0.3</h2>
-  <div id="handbook-project-v03">
+  <h2 id="v23">V2.3</h2>
+  <div id="handbook-project-v23">
     <div>
       <h3 id="v03-product">V0.3 Product</h3>
       <p>This version should be a more functional version than V0.2 and should contain at least a basic version of features you intend to release in the final version.</p>
@@ -528,8 +530,8 @@
       <p><strong>Grading</strong>: Must use the version tagged <code>V0.3</code> and should be at least very close to a dog-fooding-ready state.</p>
     </div>
   </div>
-  <h2 id="v04">V0.4</h2>
-  <div id="handbook-project-v04">
+  <h2 id="v24">V2.4</h2>
+  <div id="handbook-project-v24">
     <div>
       <h3 id="v04-product">V0.4 Product</h3>
       <p>Functionality expectations: This version should have decent implementations of all major features you intend to release, although some finer tweaks may be missing and not completely stable.</p>
@@ -673,8 +675,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p><strong>Grading</strong>: Similar to V0.3</p>
     </div>
   </div>
-  <h2 id="v05rc-the-release-candidate">V0.5rc : The Release Candidate</h2>
-  <div id="handbook-project-v05rc">
+  <h2 id="v25rc">V2.5rc</h2>
+  <div id="handbook-project-v25rc">
     <div>
       <h3 id="v05rc-product">V0.5rc Product</h3>
       <p>Functionality expectations: <strong>Freeze features</strong> after reaching this milestone. As this is a ‘release candidate’ it should have all the features you intend to release. Adding more features after this point is risky. The remaining time
@@ -695,8 +697,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p><strong>Grading</strong>: as before.</p>
     </div>
   </div>
-  <h2 id="v05-the-production-release">V0.5 : The Production Release</h2>
-  <div id="handbook-project-v05">
+  <h2 id="v25">V2.5</h2>
+  <div id="handbook-project-v25">
     <div>
       <h3 id="v05-product">V0.5 Product</h3>
       <p>This is as a ‘production release’. It should be at least ‘near production quality’.</p>
