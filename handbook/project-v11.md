@@ -1,4 +1,4 @@
-### V0.1 Product
+### V1.1 Product
 
 This is the sample project morphed to be more like your target product. Functionality can be limited to only those that can be refactored from the sample project. e.g. support for adding and deleting floating tasks.
 

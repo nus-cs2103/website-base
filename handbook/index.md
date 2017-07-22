@@ -16,13 +16,13 @@
     *   [Scope](#handbook-project-scope)
     *   [Constraints](#handbook-project-constraints)
     *   [Deliverables](#handbook-project-deliverables)
-    *   [V2.0](#handbook-project-v20)
-    *   [V2.1](#handbook-project-v21)
-    *   [V2.2](#handbook-project-v22)
-    *   [V2.3](#handbook-project-v23)
-    *   [V2.4](#handbook-project-v24)
-    *   [V2.5rc](#handbook-project-v25rc)
-    *   [V2.5](#handbook-project-v25)
+    *   [V1.0](#handbook-project-v10)
+    *   [V1.1](#handbook-project-v11)
+    *   [V1.2](#handbook-project-v12)
+    *   [V1.3](#handbook-project-v13)
+    *   [V1.4](#handbook-project-v14)
+    *   [V1.5rc](#handbook-project-v15rc)
+    *   [V1.5](#handbook-project-v15)
     *   [Retrospective](#handbook-project-retrospective)
     *   [Individual report](#handbook-project-individualReport)
     *   [Assessment](#handbook-project-assessment)
@@ -119,39 +119,39 @@
 <include src="project-deliverables.md" />
 </div>
 
-## V2.0
-<div id="handbook-project-v20">
-<include src="project-v20.md" />
+## V1.0
+<div id="handbook-project-v10">
+<include src="project-v10.md" />
 </div>
 
-## V2.1
-<div id="handbook-project-v21">
-<include src="project-v21.md" />
+## V1.1
+<div id="handbook-project-v11">
+<include src="project-v11.md" />
 </div>
 
-## V2.2
-<div id="handbook-project-v22">
-<include src="project-v22.md" />
+## V1.2
+<div id="handbook-project-v12">
+<include src="project-v12.md" />
 </div>
 
-## V2.3
-<div id="handbook-project-v23">
-<include src="project-v23.md" />
+## V1.3
+<div id="handbook-project-v13">
+<include src="project-v13.md" />
 </div>
 
-## V2.4
-<div id="handbook-project-v24">
-<include src="project-v24.md" />
+## V1.4
+<div id="handbook-project-v14">
+<include src="project-v14.md" />
 </div>
 
-## V2.5rc
-<div id="handbook-project-v25rc">
-<include src="project-v25rc.md" />
+## V1.5rc
+<div id="handbook-project-v15rc">
+<include src="project-v15rc.md" />
 </div>
 
-## V2.5
-<div id="handbook-project-v25">
-<include src="project-v25.md" />
+## V1.5
+<div id="handbook-project-v15">
+<include src="project-v15.md" />
 </div>
 
 ## Project retrospective
