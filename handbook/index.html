@@ -33,13 +33,13 @@
         <li><a href="#handbook-project-scope">Scope</a></li>
         <li><a href="#handbook-project-constraints">Constraints</a></li>
         <li><a href="#handbook-project-deliverables">Deliverables</a></li>
-        <li><a href="#handbook-project-v20">V2.0</a></li>
-        <li><a href="#handbook-project-v21">V2.1</a></li>
-        <li><a href="#handbook-project-v22">V2.2</a></li>
-        <li><a href="#handbook-project-v23">V2.3</a></li>
-        <li><a href="#handbook-project-v24">V2.4</a></li>
-        <li><a href="#handbook-project-v25rc">V2.5rc</a></li>
-        <li><a href="#handbook-project-v25">V2.5</a></li>
+        <li><a href="#handbook-project-v10">v1.0 [week 7]</a></li>
+        <li><a href="#handbook-project-v11">v1.1 [week 8]</a></li>
+        <li><a href="#handbook-project-v12">v1.2 [week 9]</a></li>
+        <li><a href="#handbook-project-v13">v1.3 [week 10]</a></li>
+        <li><a href="#handbook-project-v14">v1.4 [week 11]</a></li>
+        <li><a href="#handbook-project-v15rc">v1.5rc [week 12]</a></li>
+        <li><a href="#handbook-project-v15">v1.5 [week 13]</a></li>
         <li><a href="#handbook-project-retrospective">Retrospective</a></li>
         <li><a href="#handbook-project-individualReport">Individual report</a></li>
         <li><a href="#handbook-project-assessment">Assessment</a></li>
@@ -303,12 +303,13 @@
       <p>The sub-sections further down explain each project deliverable in detail.</p>
     </div>
   </div>
-  <h2 id="v20">V2.0</h2>
-  <div id="handbook-project-v20">
+  <h2 id="v10-week-7">v1.0 [week 7]</h2>
+  <div id="handbook-project-v10">
     <div>
-      <p>The objective of this deliverable is for you to analyze requirements, conceptualize the enhanced product, and document it.</p>
-      <h3 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h3><img src="/cs2103-website/handbook/images/v00.png" width="250px">
-      <p>Get together with your team members and brainstorm user stories <strong>for the v3.0 of the product</strong>. Note that in the project you will deliver only up to v2.5.</p>
+      <h4 id="v10-documentation">v1.0 Documentation</h4>
+      <p><strong>Objective</strong>: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.</p>
+      <h4 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h4><img src="/cs2103-website/handbook/images/v00.png" width="250px">
+      <p>Get together with your team members and brainstorm user stories <strong>for the v2.0 of the product</strong>. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).</p>
       <panel header="%%User Story examples (from a different product)%%">
         <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
       </panel>
@@ -317,7 +318,7 @@
         <li>Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.</li>
         <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</li>
       </ul>
-      <h3 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h3><img src="/cs2103-website/handbook/images/userstories.png" width="250px">
+      <h4 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h4><img src="/cs2103-website/handbook/images/userstories.png" width="250px">
       <p>Suggested workflow:</p>
       <ul>
         <li>
@@ -337,219 +338,208 @@
       </ul>
       <p>Here are some tips to improve the effectiveness of the above activity:</p>
       <ul>
-        <li><strong>Define the target user:</strong><br> Decide our target user's work patterns. e.g. Does he work in groups or alone? Does he share his computer with others? (answer: no). Having a clear picture of the target user's work patterns will help
-          when deciding the importance of a user story.</li>
-        <li><strong>Don't be biased by the implementation plans:</strong><br> This exercise is for identifying user needs. Clear your mind of ideas you have about what your product will look like. Assume that you do not know yet what product you will build.</li>
+        <li><strong>Define the target user:</strong><br> Decide our target user's profile (e.g. a student, office worker, programmer, sales person) and work patterns (e.g. Does he work in groups or alone? Does he share his computer with others?). A clear
+          understanding of the target user will help when deciding the importance of a user story.</li>
+        <li><strong>Don't be biased by the implementation plans:</strong><br> This exercise is for identifying user needs. Clear your mind of ideas you have about what your end product will look like.</li>
         <li><strong>Don't discuss implementation details or whether you are actually going to implement it:</strong><br> At this point, your decision is whether the user's need is important enough for you to want to fulfil it. Implementation details can be
           discussed later. If a user story in the Nice-To-Have pile turn out to be too difficult to implement later, you can always not implement it.</li>
         <li><strong>Don't be too hasty to discard 'unusual' user stories:</strong><br> Those might make your product unique and stand out from the rest, at least for some potential users.</li>
         <li><strong>Don't go into too much details when sorting user stories:</strong><br> For example, consider this user story:
           <ul>
-            <li>As a user, I want to see a list of tasks that needs my attention most at the present time, so that I pay attention to them first.*<br> When discussing this user story, you do not need to worry about what tasks should be considered 'needs my
-              attention most at the present time'. Those details can be worked out later.</li>
+            <li><code>As a user, I want to see a list of tasks that needs my attention most at the present time, so that I pay attention to them first.</code><br> When discussing this user story, you do not need to worry about what tasks should be considered
+              'needs my attention most at the present time'. Those details can be worked out later.</li>
           </ul>
         </li>
       </ul>
-      <h3 id="step-3-survey-existing-products">Step 3: Survey existing products</h3>
-      <p>See how well existing products meet Jim's needs.</p>
+      <h4 id="step-3-record-v20-requirements-in-the-developer-guide">Step 3: Record v2.0 Requirements in the Developer Guide</h4>
+      <p>Based on your user story categorization in step 1, given project requirements, and the current state of the product, select which user stories you are likely to include in v2.0.</p>
+      <p>Update the following pages of the Developer Guide:</p>
       <ul>
-        <li>
-          <p>Select a few competing products to study. Each person should study at least one existing product. Identify strengths and weaknesses of the product w.r.t. how well it can cater for Jim’s requirements.</p>
-          <p>Here are some popular 'task manager' type products out there you can consider exploring (you are not limited to these): Google Calendar + Google Tasks | <a href="https://hitask.com">HiTask</a> | <a href="https://www.rememberthemilk.com/">Remember The Milk</a>            | <a href="http://todotxt.com/">Todo.txt</a> | <a href="https://todoist.com/">Todoist</a> | <a href="https://trello.com/">Trello</a> | Microsoft Outlook | <a href="https://www.wunderlist.com/">Wunderlist</a></p>
-        </li>
-        <li>
-          <p><strong>Note</strong>: Don’t get discouraged if an existing product meets Jim’s needs quite well. We are trying to learn SE, not sell a product.</p>
-        </li>
-        <li>
-          <p>After looking at existing products, you may want to go back and revise some of the user stories.</p>
-        </li>
-      </ul>
-      <h3 id="step-4-conceptualize-the-product-as-a-user-guide">Step 4: Conceptualize the product as a user guide</h3>
-      <ul>
-        <li>Based on your user story categorization in step 1 and given project requirements (note that the project requirements specify some must-have features), select which user stories you are likely to include in V0.5.</li>
-        <li>Based on the user stories you selected above, specify the product you are going to build, in the form of a user guide. Yes, strangely enough, in this project we draft the user guide before we build the product. This will help you/us visualize
-          the final product before you start implementing it.</li>
-        <li><mark>Remember to take into account the UI design and the functionalities available in AddressBook Level 4</mark>. As you will be using that software as the starting point of your implementation, it makes sense to align your product with it (within
-          reason) to minimize the implementation effort.</li>
-        <li>Remember to include the exact command format because it is the core part of your UI.</li>
-      </ul>
-      <p>Use the documentation in the sample project as an example. Given below are pages to update.</p>
-      <ul>
-        <li>
-          <p><strong>User guide</strong>:<br> Describe what the product would be like when it is submitted at the end of the semester. Starting from the time user starts using the product for the first time, describe how the user uses the product to accomplish
-            various tasks.<br> Here are some ‘quick start guides’ you can look at for inspiration when writing your user guide:<br><a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate project</a>, <a href="https://support.apple.com/en-sg/HT202033">iPhone :How to get started</a>,
-            <a href="https://teammatesv4.appspot.com/instructorHelp.jsp#gs">TEAMMATES (for instructors)</a><br> Use UI prototypes/sketches if necessary. They can be simple sketches drawn on whiteboard/paper and scanned/photographed or created using a
-            tool such as PowerPoint, HTML, or <a href="https://balsamiq.com/">Balasmiq</a>.<br> State what you honestly believe you can do, based on information you have at this point. You will not be penalized if you cannot deliver what you proposed
-            to deliver. It is OK to tweak the project scope along the way.<br><mark>Specify the command format in detail</mark> as it is an important part of the product functionality.</p>
-        </li>
-        <li>
-          <p><strong>Developer guide</strong>: Update the following appendices.</p>
+        <li><strong>User Stories</strong>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.</li>
+        <li><strong>Use cases</strong>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. e.g.
           <ul>
-            <li><strong>User Stories</strong>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.</li>
-            <li><strong>Use cases</strong>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. e.g.
-              <ul>
-                <li>Rescheduling a task, which may require two steps: locating the task first and then updating it.</li>
-                <li>Checking a day's schedule at the end of the day: requires filtering the day's tasks, marking complete tasks as done, and rescheduling or deleting remaining tasks.</li>
-                <li>Finding something to do where here is a free time.</li>
-              </ul>
-            </li>
-            <li><strong>Non-functional requirements</strong>:<br> Note: User stories capture functional requirements. What are the non-functional requirements of your project? Many of the project constraints mentioned above are NFRs. You can add more. e.g.
-              performance requirements, usability requirements, scalability requirements, etc.</li>
-            <li><strong>Glossary</strong>: Define terms that are worth defining.</li>
-            <li><strong>Product survey</strong>: Describe a summary of the product survey. i.e. Pros, cons, (from Jim's point of view). Each student should document the product they explored. If multiple students have explored the same product, you may have
-              to explore more products to complete this section.</li>
+            <li>Adding a tag to a person (assume the user needs to find the person first).</li>
           </ul>
         </li>
+        <li><strong>Non-functional requirements</strong>:<br> Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
+        <li><strong>Glossary</strong>: Define terms that are worth defining.</li>
+        <li><strong>Product survey</strong> [Optional]: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).</li>
       </ul>
-      <p><strong>Suggested length</strong>: Take the sample project as a baseline.</p>
-      <p><strong>Submission</strong>: Update the relevant sections of the relevant markdown documents (i.e. <code>UserGuide.md, DeveloperGuide.md</code>) in your repo. <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">git tag</a> as <code>V0.0</code>.</p>
+      <p><strong>Suggested length</strong>: Follow the existing user guide and developer guides in terms of the level of details.</p>
+      <p><strong>Submission</strong>: Update the relevant sections of the relevant asciidoc documents in your repo.</p>
       <p><strong>Grading</strong>: Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.<br> To claim this milestone as 'reached', you should at least have a full draft version of
-        the above documents in some format (e.g. GoogleDoc), even if you didn't have time to update the markdown documents in the repo.</p>
+        the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the markdown documents in the repo.</p>
+      <h3 id="v10-product">v1.0 Product</h3>
+      <p><strong>Objective</strong>: To familiarize yourself with the code.</p>
+      <p><strong>Description</strong>: Divide the component among yourselves. Each member can do some small enhancements to the component they are in charge of to learn the code of that component. Some suggested enhancements are given in the AddressBook-Level4
+        developer guide.</p>
+      <p><strong>Submission</strong>: Create PRs from your own fork to your team repo.</p>
+      <p><strong>Grading</strong>: This is an individual milestone. Considered reached if you have at least attempted to enhance the code of a component, even if you did not fully succeed.</p>
     </div>
   </div>
-  <h2 id="v21">V2.1</h2>
-  <div id="handbook-project-v21">
+  <h2 id="v11-week-8">v1.1 [week 8]</h2>
+  <div id="handbook-project-v11">
     <div>
-      <h3 id="v01-product">V0.1 Product</h3>
-      <p>This is the sample project morphed to be more like your target product. Functionality can be limited to only those that can be refactored from the sample project. e.g. support for adding and deleting floating tasks.</p>
-      <p><strong>Submission</strong>: Push the code to GitHub and <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">git tag</a> as <code>V0.1</code>. Refer to the Schedule page for further submission instructions.</p>
-      <p><strong>Grading</strong>: To consider this milestone as reached, you should have at least add/delete/find support for floating tasks. You should be able to do that by deleting/renaming the given Address Book code, without having to add too much
-        new code.<br> The most important thing is not to break the code while morphing sample code to your target product.</p>
-      <h3 id="v01-demo">V0.1 Demo</h3>
-      <table class="two-column-content">
-        <tbody>
-          <tr>
-            <td width="130px"><img src="/cs2103-website/handbook/images/v01demo.png" width="125px"></td>
-            <td>Demo the product to your tutor.
-              <p><span class="dimmed">[Picture on left: an early version of the mobile phone]</span></p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h3 id="v01-documentation">V0.1 Documentation</h3>
+      <h3 id="v11-product">v1.1 Product</h3>
+      <p><img src="/cs2103-website/handbook/images/v01demo.png" width="125px"><br></p>
+      <p><span class="dimmed">[An early version of the mobile phone]</span></p>
+      <p><strong>Objective</strong>: Move the product from v1.0 towards v2.0 in a small incremental step.</p>
+      <p><strong>Description</strong>:</p>
+      <ul>
+        <li>Each member should try to add some enhancements that is in line with the vision for v2.0. Create a PR for the enhancement.</li>
+        <li>Note that the enhancement may go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide for suggested features implementing of which can help you learn how to implement a feature end-to-end.</li>
+      </ul>
+      <tip-box type="important">
+        <p><strong>You are required to divide work based on features rather than component</strong></p>
+        <ul>
+          <li>Each team member should implement 1 or more features end-to-end, doing required changes in <em>all</em> components. The objective is to force you to learn all components of the software, instead of limiting yourself to your own components.</li>
+          <li>You will continue to be in charge of your own components although others will be modifying your components' code. Your new role is to help others modify code in your components (you are supposed to be the most knowledgeable about those components)
+            and protect your components from degrading. For example, you can review others' changes to your components and suggest possible changes.</li>
+        </ul>
+      </tip-box>
+      <p><strong>Submission</strong>: If you manage to merge any of the PRs, do a proper release on GitHub. Do a demo of the new functionality during the tutorial.</p>
+      <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
+      <ul>
+        <li>Minimal ⭐️ : At least some ongoing PRs.</li>
+        <li>On track ⭐️⭐️ : At least some PRs merged.</li>
+        <li>Ahead ⭐️⭐️⭐️ : Each member has merged at least one PR.</li>
+      </ul>
+      <h3 id="v11-documentation">v1.1 Documentation</h3>
       <p>Update the following pages:</p>
       <ul>
         <li>
-          <p><strong>About Us page</strong>:<br> This page is used for module admin purposes. <mark>Please follow the format closely to avoid penalties</mark>. For example, use a recent solo photo with your face clearly visible (similar to those in the 'Teaching
-            Team' page).<br> The <mark>photo of a team member should be <code>doc/images/githbubid.png</code></mark> e.g. <code>doc/images/damithc.png</code> where <code>githubid</code> is the team member's GitHub ID <strong>in lower case</strong>. Remove
-            photos of the SE-EDU developers. No need to include a photo of the supervisor.</p>
-          <p>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</p>
-          <panel header="**Roles and responsibilities**" expandable="">
-            Roles imply aspects you are in charge of and responsible for. E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc. Here are some
-            typical roles:
-            <ul>
-              <li><em>Team lead</em>: Responsible for overall project coordination.</li>
-              <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
-              <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
-              <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
-              <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
-              <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
-              <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
-              <li><em>[Tool ABC] expert</em>: e.g. Eclipse expert, Git expert, etc. Helps other team member with matters related to the specific tool.</li>
-              <li><em>In charge of[Component XYZ]</em>: e.g. In charge of Model, GUI, Storage, etc. If you are in charge of a component, you are expected to know that component well, do the initial refactoring of the component (during V0.1 and V0.2) and review
-                changes done to that component in V0.3-V0.5.</li>
-              <li>You may define additional roles.</li>
-            </ul>
-            <p>Please make sure each of the above roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but you should still have one person who is unequivocally the main person playing that role.</p>
-          </panel>
+          <p><strong>User Guide</strong>:<br> Update the user guide to describe what the product would be like when it is at 2.0. Mark features not implemented yet as <code>Coming in v2.0</code>. You may use UI mockups where necessary.</p>
         </li>
         <li>
-          <p><strong><a href="http://README.md">README.md</a></strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>doc/images/Ui.png</code></mark>            so that it can be downloaded by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. The sample project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></p>
-        </li>
-      </ul>
-      <p><strong>Grading</strong>: To consider this milestone as reached, you should have all V0.0 deliverables completed and the two documents mentioned above updated.</p>
-    </div>
-  </div>
-  <h2 id="v22">V2.2</h2>
-  <div id="handbook-project-v22">
-    <div>
-      <h3 id="v02-product">V0.2 Product</h3>
-      <p>This is the first MVP (Minimum Viable Product) version of the product.</p>
-      <ul>
-        <li>
-          <p><mark>It should be a viable, possibly minimal product</mark>. This is not a walking skeleton. A user should be able to use it. It may not be user-friendly, but it should not be unusable. Try to include at least the basic CRUD facilities for
-            at least one type of tasks. Here are some examples that are NOT acceptable:</p>
-        </li>
-        <li>
-          <p>example 1. Has a well-developed functionality to add tasks but does not support commands for deleting or editing tasks: This is not usable because the user cannot rectify errors made while creating tasks.</p>
-        </li>
-        <li>
-          <p>example 2. Has all the CRUD functionality implemented but they are not connected to the UI: This too is not usable by the end-user.</p>
-        </li>
-        <li>
-          <p>While this is an internal release (not a production release), <mark>you are expected to maintain a reasonable code quality at all times</mark>. In particular, you should comply with the coding standard all the time.</p>
-        </li>
-      </ul>
-      <p><strong>Submission</strong>: Push the code to GitHub and <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">git tag</a> as <code>V0.2</code>.</p>
-      <p><strong>Grading</strong>: To pass this checkpoint, your product should have reached the MVP stage.</p>
-      <h3 id="v02-documentation">V0.2 Documentation</h3>
-      <p>You are encouraged to update your project documentation to match the product but you are not required to submit them for evaluation. Note that this flexibility is given solely to reduce your workload. In a production environment, the documentation
-        should always be kept in sync with the product.</p>
-      <h3 id="v02-demo">V0.2 Demo</h3>
-      <p>As before, show the demo to the tutor during the tutorial.<br> The demo should use the version tagged as <code>V0.2</code>, not the latest code. No tinkering with code during the tutorial.</p>
-    </div>
-  </div>
-  <h2 id="v23">V2.3</h2>
-  <div id="handbook-project-v23">
-    <div>
-      <h3 id="v03-product">V0.3 Product</h3>
-      <p>This version should be a more functional version than V0.2 and should contain at least a basic version of features you intend to release in the final version.</p>
-      <p>Ideally, V0.3 should be good enough for <a href="http://www.urbandictionary.com/define.php?term=dogfooding%20(to%20dogfood)">dog fooding</a>. Try to reach a dogfooding-ready version of the 'must have' features at least.</p>
-      <p>From V0.3, <mark>you are required to divide work based on features</mark> rather than component. That is, each team member should implement 0 or more features end-to-end, doing required changes in <em>all</em> components. The objective of this switch
-        is to force you to learn all components of the software, instead of limiting yourself to your own components.<br> Note that you will continue to be in charge of your own components although others will be modifying your components' code. Your
-        new role is to help others modify code in your components (you are supposed to be the most knowledgeable about those components) and protect your components from degrading. For example, you can review others' changes to your components and suggest
-        possible changes. This is also a good time to switch to a PR based workflow (if you haven't done that already) as PRs can be reviewed by other team members before merging.</p>
-      <p><strong>Submission</strong>: V0.3 (and future milestones) <mark>should be released using GitHub's release mechanism</mark>. The release should include an executable JAR file. Refer the <a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level4/blob/master/docs/DeveloperGuide.md#making-a-release">'Making a Release' section of the sample developer guide</a>        for more info.</p>
-      <p><strong>Grading</strong>: To pass this checkpoint, your product should be noticeably better than an MVP. It goes without saying that other project management requirements expected at reaching a milestone (mentioned in the <a href="#using-milestones">'Using Milestones' section of Appendix E</a>)
-        are applicable too.</p>
-      <h3 id="v03-documentation">V0.3 Documentation</h3>
-      <p>Follow the documentation in the sample project in terms or organization, level of details, etc.</p>
-      <ul>
-        <li><strong>User Guide</strong>: Update User Guide to match what you plan to deliver at V0.5</li>
-        <li><strong>Developer Guide</strong>: Update Developer Guide to match your current design or the design you plan to have at V0.5.<br> [1] While it is OK for some sections to be written collectively, <mark>each student should have some sections that were written individually</mark>.
-          For example, the section describing the design of Logic component should be written by the person in charge of the Logic component.<br> [2] It is <mark>not enough to simply do minor tweaks to the existing document</mark> to match your project
-          if your design is very similar to the sample given. We need to see a significant amount of content written by each student to judge how well you can document technical details and use relevant models.<br> Here are some things you can add:
+          <p><strong>About Us page</strong>:<br> This page is used for module admin purposes. <mark>Please follow the format closely to avoid penalties</mark>.</p>
           <ul>
-            <li>Compare the current design with other alternative designs possible.</li>
-            <li>Add more descriptions e.g. show at least one interaction within each component.</li>
-            <li>Use object diagrams to show sample object structures at runtime (if it helps the reader).</li>
-            <li>Explain how you implemented complicated features such as undo/redo.</li>
-            <li>In future (after these topics have been covered):
-              <ul>
-                <li>Use Activity Diagrams and OO Domain Models where applicable.</li>
-                <li>Mention where design patterns/principles are applied.</li>
-              </ul>
-            </li>
+            <li>Remove photos of the SE-EDU developers.</li>
+            <li>Including the name/photo of the supervisor/lecturer is optional.</li>
+            <li>The photo of a team member should be <code>doc/images/githbub_id_in_lower_case.png</code><span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
           </ul>
         </li>
       </ul>
-      <p><strong>Submission</strong>: Must be included in the version tagged <code>V0.3</code>.</p>
-      <p><strong>Grading</strong>: To pass this checkpoint, your documentation should have been updated to match your project.</p>
-      <h3 id="v03-demo">V0.3 Demo</h3>
-      <p><strong>Submission</strong>: Demo to the tutor during the tutorial. <strong>Use jar</strong> file for the demo, not the IDE.</p>
-      <p><strong>Grading</strong>: Must use the version tagged <code>V0.3</code> and should be at least very close to a dog-fooding-ready state.</p>
+      <panel header="==Choosing a profile photo==" expandable="">
+        <div>
+          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+            of good and bad profile photos.</p><img src="/cs2103-website/handbook/images/profilephotos.png" style="width: 365.33px"></div>
+      </panel>
+      <ul>
+        <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
+      </ul>
+      <panel header="Roles and responsibilities" expandable="">
+        <p>Roles imply aspects you are in charge of and responsible for. E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc.<br>          Here are some typical roles:</p>
+        <ul>
+          <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+          <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+          <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+          <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+          <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+          <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+          <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+          <li><em>[Tool ABC] expert</em>: e.g. Eclipse expert, Git expert, etc. Helps other team member with matters related to the specific tool.</li>
+          <li><em>In charge of[Component XYZ]</em>: e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc. If you are in charge of a component, you are expected to know that component well, and review changes done to that component
+            in v1.3-v1.5.</li>
+          <li>You may define additional roles.</li>
+        </ul>
+        <p>Please make sure each of the above roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but you should still have one person who is unequivocally the main person playing that role.</p>
+      </panel>
+      <ul>
+        <li><strong><a href="http://README.md">README.md</a></strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/ui.png</code></mark>          so that it can be downloaded by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
+      </ul>
+      <p><strong>Grading</strong>: To consider this milestone as reached, you should have all v1.0 deliverables completed and the two documents mentioned above updated.</p>
     </div>
   </div>
-  <h2 id="v24">V2.4</h2>
-  <div id="handbook-project-v24">
+  <h2 id="v12-week-9">v1.2 [week 9]</h2>
+  <div id="handbook-project-v12">
     <div>
-      <h3 id="v04-product">V0.4 Product</h3>
-      <p>Functionality expectations: This version should have decent implementations of all major features you intend to release, although some finer tweaks may be missing and not completely stable.</p>
-      <p><mark><strong>Dogfood your product</strong> and find ways to improve it.</mark> Remember to keep the dogfooding version of the app (i.e. the jar file) in a separate folder as evidence of dogfooding. i.e. Don't use the IDE for dogfooding (Dogfooding
-        is an acceptance test; it should be done in the user environment)</p>
-      <p><strong>Mark your code</strong> with special tag <code>@@author</code> so that we can extract code written by each of you using the collate tool (for evaluation purposes). After that, Use the collate tool to extract individual code and look through
-        the generated <strong>.md</strong> files to ensure all your code has been extracted correctly. <mark>Push the *.md files created to a folder called /collated</mark> in your repo. More instructions below.</p>
-      <p><strong>Extract your code for code quality grading</strong></p>
-      <ol>
+      <h3 id="v12-product">v1.2 Product</h3>
+      <p><strong>Submission</strong>: Update code in GitHub.</p>
+      <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
+      <ul>
+        <li>A new version has been released on GitHub.</li>
+        <li>The new version has moved towards v2.0</li>
+        <li>The milestone is wrapped up on the issue tracker. i.e. all unfinished issues in the milestone have been moved to future milestones and the milestone is closed.</li>
+      </ul>
+      <h3 id="v12-documentation">v1.2 Documentation</h3>
+      <ul>
         <li>
-          <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
+          <p><strong>User Guide</strong>: Update as necessary.</p>
+          <ul>
+            <li>If a feature has been released in this version, replace the <code>Coming in v2.0</code> annotation with a <code>Since v1.2</code>. Also replace UI mockups with actual screenshots.</li>
+            <li>If a feature design has changed, update the descriptions accordingly.</li>
+          </ul>
         </li>
         <li>
-          <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
-          <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
+          <p><strong>Developer Guide</strong>:</p>
+          <ul>
+            <li>Each member should describe the implementation of at least one feature she is adding. <br> Expected length: ~1 page per person</li>
+            <li>The description can contain things such as,
+              <ul>
+                <li>How the feature is implemented.</li>
+                <li>Why it is implemented that way.</li>
+                <li>Alternatives considered.</li>
+              </ul>
+            </li>
+            <li>The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply technical matters using prose, examples, diagrams, code snippets, etc. appropriately. To that
+              end, you may also describe features that you plan to implement in the future, even beyond v1.5 (hypothetically).</li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="v12-demo">v1.2 Demo</h3>
+      <p>Do a demo during the tutorial.</p>
+    </div>
+  </div>
+  <h2 id="v13-week-10">v1.3 [week 10]</h2>
+  <div id="handbook-project-v13">
+    <div>
+      <h3 id="v13-product">v1.3 Product</h3>
+      <tip-box type="important">
+        <p>Starting from this version, you are required to,</p>
+        <ul>
+          <li><strong>Use GitHub's milestone mechanism</strong> as per <a href="#using-milestones">'Using Milestones' section of Appendix E</a>) to manage your milestones.</li>
+          <li><strong>Do a proper release</strong> as described in the Developer Guide.</li>
+        </ul>
+      </tip-box>
+      <p><strong>Submission</strong>: Do a release on GitHub</p>
+      <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
+      <ul>
+        <li>The new version has moved towards v2.0 compared to the previous version.</li>
+        <li>The milestone and the release has been done as described in the box above.</li>
+      </ul>
+      <h3 id="v13-documentation">v1.3 Documentation</h3>
+      <p>Follow the documentation in the sample project in terms or organization, level of details, etc.</p>
+      <ul>
+        <li><strong>User Guide</strong>: Update where the document does not match the current product.</li>
+        <li><strong>Developer Guide</strong>: Similar to User Guide.</li>
+      </ul>
+      <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
+      <p><strong>Grading</strong>: To pass this checkpoint, your documentation should not be significantly outdated.</p>
+      <h3 id="v13-demo">v1.3 Demo</h3>
+      <p>Demo during the tutorial.</p>
+      <tip-box type="important">
+        <p>Starting from this version, you should <strong>use the jar file</strong> (downloaded from GitHub release) for the demo, not the code loaded to the IDE.</p>
+      </tip-box>
+    </div>
+  </div>
+  <h2 id="v14-week-11">v1.4 [week 11]</h2>
+  <div id="handbook-project-v14">
+    <div>
+      <h3 id="v14-product">v1.4 Product</h3>
+      <tip-box type="important">
+        <p>From this version, you are required to collate collate (i.e., extract your own code and put in one file) at the end of the milestone. More instructions below.</p>
+      </tip-box>
+      <panel header="**How to collate code for grading**">
+        <ol>
+          <li>
+            <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
+          </li>
+          <li>
+            <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
+            <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
 </code></pre>
-          <p>Here is a sample code file:</p>
-          <pre class="hljs"><code>//@@author A0909865T
+            <p>Here is a sample code file:</p>
+            <pre class="hljs"><code>//@@author A0909865T
 method 1 ...
 method 2 ...
 //@@author A0702345U
@@ -557,87 +547,88 @@ method 3 ...
 //@@author A0909865X
 method 4 ...
 </code></pre>
-        </li>
-        <li>
-          <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>            However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric number
-            to the empty tag later.</p>
-        </li>
-        <li>
-          <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code was
-            done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly
-            50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality,
-            the designated author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
-        </li>
-        <li>
-          <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
-          <pre class="hljs"><code>/**
+          </li>
+          <li>
+            <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>              However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric
+              number to the empty tag later.</p>
+          </li>
+          <li>
+            <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code was
+              done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly
+              50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality,
+              the designated author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
+          </li>
+          <li>
+            <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
+            <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author A0909865T
   */
 </code></pre>
-          <pre class="hljs"><code>//@@author A0909865T
+            <pre class="hljs"><code>//@@author A0909865T
 /**
   * Returns true if ...
   */
 </code></pre>
-        </li>
-        <li>
-          <p>If you wrote a significant amount of code that was not used in the final product,</p>
-          <ul>
-            <li>Create a folder called <code>{project root}/unused</code></li>
-            <li>Move unused files to that folder (those files should contain unused code only)</li>
-            <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
-          </ul>
-          <p>e.g.</p>
-          <pre class="hljs"><code>//@@author A0909865T-unused
+          </li>
+          <li>
+            <p>If you wrote a significant amount of code that was not used in the final product,</p>
+            <ul>
+              <li>Create a folder called <code>{project root}/unused</code></li>
+              <li>Move unused files to that folder (those files should contain unused code only)</li>
+              <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
+            </ul>
+            <p>e.g.</p>
+            <pre class="hljs"><code>//@@author A0909865T-unused
 method 1 ...
 method 2 ...
 </code></pre>
-          <p>Please put a comment in the code to explain why it was not used.</p>
-        </li>
-        <li>
-          <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical
-            means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br>            Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let
-            us know.</p>
-          <ul>
-            <li>
-              <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data
-                file with 1000 tasks that was used to test performance.</p>
-            </li>
-            <li>
-              <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
-              <p>e.g.</p>
-              <pre class="hljs"><code>//@@author A0909865T-reused
+            <p>Please put a comment in the code to explain why it was not used.</p>
+          </li>
+          <li>
+            <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical
+              means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code
+              duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final
+              submission) to let us know.</p>
+            <ul>
+              <li>
+                <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data
+                  file with 1000 tasks that was used to test performance.</p>
+              </li>
+              <li>
+                <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
+                <p>e.g.</p>
+                <pre class="hljs"><code>//@@author A0909865T-reused
 method 1 ...
 method 2 ...
 </code></pre>
-            </li>
-            <li>
-              <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
-              <p>e.g.</p>
-              <pre class="hljs"><code>//@@author generated
+              </li>
+              <li>
+                <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
+                <p>e.g.</p>
+                <pre class="hljs"><code>//@@author generated
 method 1 ...
 method 2 ...
 </code></pre>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <p>You need to put the,</p>
-          <ul>
-            <li>collated functional code in <code>collated/main</code> folder,</li>
-            <li>collated test code in <code>collated/test</code> folder, and</li>
-            <li>collated unused code in <code>collated/unused</code> folder</li>
-          </ul>
-          <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
-          <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/main include java, fxml, css
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>You need to put the,<br> * collated functional code in <code>collated/main</code> folder, * collated test code in <code>collated/test</code> folder, and * collated unused code in <code>collated/unused</code> folder</p>
+            <pre><code>Given below are DOS sample commands you can put in a batch file and run it to collate the code.
+
+```
+java -jar Collate-TUI.jar collate from src/main to collated/main include java, fxml, css
 
 java -jar Collate-TUI.jar collate from src/test to collated/test include java
 
 java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
-</code></pre>
-          <p>The output should be something like the structure given below.</p>
-          <pre class="hljs"><code>collated/
+```
+
+The output should be something like the structure given below.
+
+```
+collated/
     main/
         A000000.md
         A111111.md
@@ -650,33 +641,49 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     unused/
         A000000.md
 </code></pre>
+          </li>
+          <li>
+            <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+          </li>
+          <li>
+            <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo. ```
+            </p>
+          </li>
+        </ol>
+      </panel>
+      <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub.</p>
+      <p><strong>Grading criteria</strong>:</p>
+      <ul>
+        <li>Code collated properly</li>
+        <li>Criteria given in v1.3</li>
+      </ul>
+      <h3 id="v14-documentation">v1.4 Documentation</h3>
+      <ul>
+        <li>
+          <p>User guide, Developer guide: As before, update if necessary.</p>
         </li>
-      </ol>
-      <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub and tag as <code>V0.4</code>.</p>
-      <p><strong>Grading</strong>: To pass this checkpoint, your product should satisfy the description given above and the code should be collated properly.</p>
-      <h3 id="v04-documentation">V0.4 Documentation</h3>
-      <p>Recommended to update the documentation to match the product, at least w.r.t. major changes since previous version.<br><mark>Update the <a href="http://AboutUs.md">AboutUs.md</a> page</mark> to reflect <a href="https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md">this sample</a>.
-        Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.<br> Note: <a href="http://AboutUs.md">AboutUs.md</a> page is used for module admin purposes. You are advised to follow the format closely to avoid
-        penalties. E.g. those you don't have a suitable photo in that page will be penalized.</p>
-      <p><strong>Submission</strong>: Must be included in the version tagged <code>V0.4</code>.</p>
-      <p><strong>Grading</strong>: Not graded.</p>
-      <h3 id="v04-demo">V0.4 Demo</h3>
-      <p><strong>Submission</strong>: To be done during the tutorial, but note the following:</p>
+        <li>
+          <p><mark>AboutUs.adoc page</mark>: Update to reflect <a href="https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md">this sample</a>. Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.</p>
+        </li>
+      </ul>
+      <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.4</code>.</p>
+      <h3 id="v14-demo">v1.4 Demo</h3>
+      <p>To be done during the tutorial, but note the following:</p>
       <ul>
         <li>Duration: 10 minutes (max)</li>
+        <li>Each member should demo the features they added.</li>
         <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
         <li>It should be a full demo: Cover all features you have, not just features you added recently.</li>
         <li>It is a 'sitting down' demo: As before, you'll be demonstrating the features using the TV while sitting down.</li>
         <li>Tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
-        <li>It should be done by 2 members (i.e. one person do the first half, the other do the 2nd half).<br> If you are not taking part in this demo, you must take part in V0.5 demo.<br> One or more persons can do the typing for the whole demo. Speaking
-          should be done by the two designated to do the demo.</li>
+        <li>It should be done by 2 members (i.e. one person do the first half, the other do the 2nd half). If you are not taking part in this demo, you must take part in v1.5 demo. One or more persons can do the typing for the whole demo. Speaking should
+          be done by the two designated to do the demo.</li>
         <li>The app should be populated with a significant amount of realistic data at the start. e.g data going back to at least two weeks and up to two weeks in future, about 50 items in total.</li>
       </ul>
-      <p><strong>Grading</strong>: Similar to V0.3</p>
     </div>
   </div>
-  <h2 id="v25rc">V2.5rc</h2>
-  <div id="handbook-project-v25rc">
+  <h2 id="v15rc-week-12">v1.5rc [week 12]</h2>
+  <div id="handbook-project-v15rc">
     <div>
       <h3 id="v05rc-product">V0.5rc Product</h3>
       <p>Functionality expectations: <strong>Freeze features</strong> after reaching this milestone. As this is a ‘release candidate’ it should have all the features you intend to release. Adding more features after this point is risky. The remaining time
@@ -697,8 +704,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p><strong>Grading</strong>: as before.</p>
     </div>
   </div>
-  <h2 id="v25">V2.5</h2>
-  <div id="handbook-project-v25">
+  <h2 id="v15-week-13">v1.5 [week 13]</h2>
+  <div id="handbook-project-v15">
     <div>
       <h3 id="v05-product">V0.5 Product</h3>
       <p>This is as a ‘production release’. It should be at least ‘near production quality’.</p>
@@ -933,7 +940,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <div>
       <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system to conduct several rounds of peer-evaluations. All peer evaluations will be taken into account when determining your participation marks. The system
         also allows you to give anonymous feedback to your teammates.</p><span id="extra-requirements"><p><strong>Extra Requirements:</strong> [considered for participation marks]</p><ul><li>Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you forfeit your participation marks.</mark></li><li>TEAMMATES normally allows students to access it without using Google login. In this module, we <mark>require you to login to TEAMMATES using your Google account</mark>. and update your</li><li>After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.</li><li>In the profile, you are encouraged (but not compulsory) to provide your long term contact email (not school email) as the contact email. This contact email is for keeping in touch after graduation.
-<s><a href="mailto:john@comp.nus.edu.sg">john@comp.nus.edu.sg</a></s><a href="mailto:john@gmail.com">john@gmail.com</a></li><li>Please upload a suitable profile photo.</li></ul><panel header="Choosing a profile photo" class="book" expandable=""><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="/cs2103-website/handbook/images/profilephotos.png" style="width: 365.33px"></panel></span>
+<s><a href="mailto:john@comp.nus.edu.sg">john@comp.nus.edu.sg</a></s><a href="mailto:john@gmail.com">john@gmail.com</a></li><li>Please upload a suitable profile photo.</li></ul><panel header="Choosing a profile photo" expandable=""><div><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="/cs2103-website/handbook/images/profilephotos.png" style="width: 365.33px"></div></panel></span>
       <span
         id="giving-peer-feedback">
         <p>Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. <mark>Those who give ineffective feedback will be penalized.</mark></p>
