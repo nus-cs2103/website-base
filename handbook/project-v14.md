@@ -1,12 +1,12 @@
-### V0.4 Product
+### v1.4 Product
 
-Functionality expectations: This version should have decent implementations of all major features you intend to release, although some finer tweaks may be missing and not completely stable.
+<tip-box type="important">
 
-==**Dogfood your product** and find ways to improve it.== Remember to keep the dogfooding version of the app (i.e. the jar file) in a separate folder as evidence of dogfooding. i.e. Don't use the IDE for dogfooding (Dogfooding is an acceptance test; it should be done in the user environment)
+From this version, you are required to collate collate (i.e., extract your own code and put in one file) at the end of the milestone. More instructions below.
 
-**Mark your code** with special tag `@@author` so that we can extract code written by each of you using the collate tool (for evaluation purposes). After that, Use the collate tool to extract individual code and look through the generated **.md** files to ensure all your code has been extracted correctly. ==Push the *.md files created to a folder called /collated== in your repo. More instructions below.
+</tip-box>
 
-**Extract your code for code quality grading**
+<panel header="**How to collate code for grading**">
 
 1.  Download `Collate-TUI.jar` from the [Collate Tool project](https://github.com/se-edu/collate).
 2.  Mark your code with a `//@@author matric-number`. Note the double `@`. The comment syntax may vary based on file type e.g. for markdown, fxml, html
@@ -82,7 +82,8 @@ Functionality expectations: This version should have decent implementations of a
         method 2 ...
         ```
     
-17.  You need to put the,   
+
+8.  You need to put the,   
         * collated functional code in `collated/main` folder,
         * collated test code in `collated/test` folder, and
         * collated unused code in `collated/unused` folder
@@ -112,35 +113,38 @@ Functionality expectations: This version should have decent implementations of a
                 A222222.md
             unused/
                 A000000.md
+
+9. After running the collate tool, you are recommended to look through the generated **.md** files to ensure all your code has been extracted correctly. 
+
+10. ==Push the *.md files created to a folder called /collated== in your repo.
         ```
+</panel>
 
-**Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub and tag as `V0.4`.
+**Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub.
 
-**Grading**: To pass this checkpoint, your product should satisfy the description given above and the code should be collated properly.
+**Grading criteria**:
+* Code collated properly
+* Criteria given in v1.3 
 
-### V0.4 Documentation
+### v1.4 Documentation
 
-Recommended to update the documentation to match the product, at least w.r.t. major changes since previous version.  
-==Update the AboutUs.md page== to reflect [this sample](https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md). Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.  
-Note: AboutUs.md page is used for module admin purposes. You are advised to follow the format closely to avoid penalties. E.g. those you don't have a suitable photo in that page will be penalized.
+* User guide, Developer guide: As before, update if necessary.
+  
+* ==AboutUs.adoc page==: Update to reflect [this sample](https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md). Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.  
 
-**Submission**: Must be included in the version tagged `V0.4`.
+**Submission**: Must be included in the version tagged `v1.4`.
 
-**Grading**: Not graded.  
 
-### V0.4 Demo
+### v1.4 Demo
 
-**Submission**: To be done during the tutorial, but note the following:
+To be done during the tutorial, but note the following:
 
-*   Duration: 10 minutes (max)
-*   It ==should be a 'well prepared' demo==. You should know in advance exactly what you'll do in the demo.
-*   It should be a full demo: Cover all features you have, not just features you added recently.
-*   It is a 'sitting down' demo: As before, you'll be demonstrating the features using the TV while sitting down.
-*   Tutor will not interrupt you during the demo. That means you should finish within the given time.
-*   It should be done by 2 members (i.e. one person do the first half, the other do the 2nd half).  
-    If you are not taking part in this demo, you must take part in V0.5 demo.  
-    One or more persons can do the typing for the whole demo. Speaking should be done by the two designated to do the demo.
-*   The app should be populated with a significant amount of realistic data at the start. e.g data going back to at least two weeks and up to two weeks in future, about 50 items in total.
-
-**Grading**: Similar to V0.3
+* Duration: 10 minutes (max)
+* Each member should demo the features they added.
+* It ==should be a 'well prepared' demo==. You should know in advance exactly what you'll do in the demo.
+* It should be a full demo: Cover all features you have, not just features you added recently.
+* It is a 'sitting down' demo: As before, you'll be demonstrating the features using the TV while sitting down.
+* Tutor will not interrupt you during the demo. That means you should finish within the given time.
+* It should be done by 2 members (i.e. one person do the first half, the other do the 2nd half). If you are not taking part in this demo, you must take part in v1.5 demo. One or more persons can do the typing for the whole demo. Speaking should be done by the two designated to do the demo.
+* The app should be populated with a significant amount of realistic data at the start. e.g data going back to at least two weeks and up to two weeks in future, about 50 items in total.
 

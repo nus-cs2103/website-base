@@ -16,13 +16,13 @@
     *   [Scope](#handbook-project-scope)
     *   [Constraints](#handbook-project-constraints)
     *   [Deliverables](#handbook-project-deliverables)
-    *   [V1.0](#handbook-project-v10)
-    *   [V1.1](#handbook-project-v11)
-    *   [V1.2](#handbook-project-v12)
-    *   [V1.3](#handbook-project-v13)
-    *   [V1.4](#handbook-project-v14)
-    *   [V1.5rc](#handbook-project-v15rc)
-    *   [V1.5](#handbook-project-v15)
+    *   [v1.0 [week 7]](#handbook-project-v10)
+    *   [v1.1 [week 8]](#handbook-project-v11)
+    *   [v1.2 [week 9]](#handbook-project-v12)
+    *   [v1.3 [week 10]](#handbook-project-v13)
+    *   [v1.4 [week 11]](#handbook-project-v14)
+    *   [v1.5rc [week 12]](#handbook-project-v15rc)
+    *   [v1.5 [week 13]](#handbook-project-v15)
     *   [Retrospective](#handbook-project-retrospective)
     *   [Individual report](#handbook-project-individualReport)
     *   [Assessment](#handbook-project-assessment)
@@ -119,37 +119,37 @@
 <include src="project-deliverables.md" />
 </div>
 
-## V1.0
+## v1.0 [week 7]
 <div id="handbook-project-v10">
 <include src="project-v10.md" />
 </div>
 
-## V1.1
+## v1.1 [week 8]
 <div id="handbook-project-v11">
 <include src="project-v11.md" />
 </div>
 
-## V1.2
+## v1.2 [week 9]
 <div id="handbook-project-v12">
 <include src="project-v12.md" />
 </div>
 
-## V1.3
+## v1.3 [week 10]
 <div id="handbook-project-v13">
 <include src="project-v13.md" />
 </div>
 
-## V1.4
+## v1.4 [week 11]
 <div id="handbook-project-v14">
 <include src="project-v14.md" />
 </div>
 
-## V1.5rc
+## v1.5rc [week 12]
 <div id="handbook-project-v15rc">
 <include src="project-v15rc.md" />
 </div>
 
-## V1.5
+## v1.5 [week 13]
 <div id="handbook-project-v15">
 <include src="project-v15.md" />
 </div>

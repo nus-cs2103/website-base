@@ -12,13 +12,9 @@ All peer evaluations will be taken into account when determining your participat
   ~~john@comp.nus.edu.sg~~ john@gmail.com
   *   Please upload a suitable profile photo.
 
-  <Panel header="Choosing a profile photo" class="book" expandable>
-
-The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.
-
-<img src="{{baseUrl}}/handbook/images/profilephotos.png" style="width: 365.33px">
-    
-  </Panel>
+<panel header="Choosing a profile photo" expandable>
+  <include src="profilePhoto.md" />
+</panel>
 
 </span>
 
