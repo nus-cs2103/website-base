@@ -41,7 +41,6 @@
         <li><a href="#handbook-project-v15rc">v1.5rc [week 12]</a></li>
         <li><a href="#handbook-project-v15">v1.5 [week 13]</a></li>
         <li><a href="#handbook-project-retrospective">Retrospective</a></li>
-        <li><a href="#handbook-project-individualReport">Individual report</a></li>
         <li><a href="#handbook-project-assessment">Assessment</a></li>
         <li><a href="#handbook-project-supervision">Supervision</a></li>
       </ul>
@@ -244,7 +243,12 @@
         <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
         <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
       </ol>
-      <p>Each student is expected to <mark>contribute one or more enhancements <strong>individually</strong></mark>.</p>
+      <p>Each student is expected to,</p>
+      <ol>
+        <li><mark>contribute one or more enhancements <strong>individually</strong></mark>.</li>
+        <li>to write backend code, frontend code, test code, user documentation, and developer documentation.</li>
+        <li>On average, write ~0.5 KLoC of code.</li>
+      </ol>
       <p>Here is an example contribution, if done by one student, is likely to be earn an <code>A</code> grade for the relevant project components of the project.</p>
       <ul>
         <li>{to be added}</li>
@@ -299,7 +303,7 @@
       <p><a href="images/timeline.png"><img src="/cs2103-website/handbook/images/timeline.png" width="800px"></a></p>
       <p>To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as <code>AB-1</code> to <code>AB-4</code> in the diagram above) that you can use as the basis for improving your individual
         skills during Phases A and as the basis for your project in Phase B.</p>
-      <p><code>AB-4</code> is the verison you will use as the starting point for your final project. Some of the work you do in <code>AB-1</code> to <code>AB-3</code> can be ported over to <code>AB-4</code> and can be used to claim credit in the final project.</p>
+      <p><code>AB-4</code> is the version you will use as the starting point for your final project. Some of the work you do in <code>AB-1</code> to <code>AB-3</code> can be ported over to <code>AB-4</code> and can be used to claim credit in the final project.</p>
       <p>The sub-sections further down explain each project deliverable in detail.</p>
     </div>
   </div>
@@ -670,82 +674,112 @@ collated/
       <h3 id="v14-demo">v1.4 Demo</h3>
       <p>To be done during the tutorial, but note the following:</p>
       <ul>
-        <li>Duration: 10 minutes (max)</li>
-        <li>Each member should demo the features they added.</li>
+        <li>Each member should demo the features they added. Duration: ~3 minutes (max) per person</li>
         <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
-        <li>It should be a full demo: Cover all features you have, not just features you added recently.</li>
-        <li>It is a 'sitting down' demo: As before, you'll be demonstrating the features using the TV while sitting down.</li>
-        <li>Tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
-        <li>It should be done by 2 members (i.e. one person do the first half, the other do the 2nd half). If you are not taking part in this demo, you must take part in v1.5 demo. One or more persons can do the typing for the whole demo. Speaking should
-          be done by the two designated to do the demo.</li>
-        <li>The app should be populated with a significant amount of realistic data at the start. e.g data going back to at least two weeks and up to two weeks in future, about 50 items in total.</li>
+        <li>It is <mark>a full demo</mark>: Cover all features you have, not just features you added recently.</li>
+        <li>It is <mark>a <em>sitting down</em> demo</mark>: You'll be demonstrating the features using the TV while sitting down.</li>
+        <li>It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
+        <li>The app should be populated with a significant amount of realistic data at the start. e.g at least 20 contacts.</li>
       </ul>
     </div>
   </div>
   <h2 id="v15rc-week-12">v1.5rc [week 12]</h2>
   <div id="handbook-project-v15rc">
     <div>
-      <h3 id="v05rc-product">V0.5rc Product</h3>
-      <p>Functionality expectations: <strong>Freeze features</strong> after reaching this milestone. As this is a ‘release candidate’ it should have all the features you intend to release. Adding more features after this point is risky. The remaining time
-        should be left aside for fixing problems discovered late.<br> Other suggestions:</p>
+      <h3 id="v15rc-product">v1.5rc Product</h3>
+      <p><code>rc</code> = Release Candidate</p>
+      <p>Functionality expectations: <strong>Freeze features</strong> after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding more features after this point is risky. The remaining
+        time should be left aside for fixing problems discovered late.<br> Other suggestions:</p>
       <ul>
-        <li>Dogfood your product intensively and improve it based on your findings.</li>
         <li>Bring code coverage near to your target if it is low.</li>
         <li>After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to the level you target.</li>
       </ul>
       <p><strong>Submission</strong>: as before.</p>
       <p><strong>Grading</strong>: Your product should show significant progress since the previous milestone.</p>
-      <h3 id="v05rc-documentation">V0.5rc Documentation</h3>
-      <p>Recommended to update the documentation to match the product.</p>
-      <p><strong>Submission</strong>: Must be included in the version tagged <code>V0.5rc</code>.</p>
-      <p><strong>Grading</strong>: Not graded.</p>
-      <h3 id="v05rc-demo">V0.5rc Demo</h3>
-      <p><strong>Submission</strong>: as before.</p>
-      <p><strong>Grading</strong>: as before.</p>
+      <h3 id="v15rc-documentation">v1.5rc Documentation</h3>
+      <p>Update to match the product.</p>
+      <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.5rc</code>.</p>
+      <h3 id="v15rc-demo">v1.5rc Demo</h3>
+      <p>As before, but this <mark>can be an incremental demo</mark> (i.e. explain only what's new since the previous release).</p>
     </div>
   </div>
   <h2 id="v15-week-13">v1.5 [week 13]</h2>
   <div id="handbook-project-v15">
     <div>
-      <h3 id="v05-product">V0.5 Product</h3>
+      <h3 id="v15-product">v1.5 Product</h3>
       <p>This is as a ‘production release’. It should be at least ‘near production quality’.</p>
       <p>Please follow submission instructions closely. <mark>Any non-compliance will be penalized</mark>. e.g. wrong file name, team member photos not suitable, product manual page header doesn't have the team ID, etc.</p>
       <p><mark>Add these two new files</mark> to the repo (these will be used by our testers when testing your final submission):</p>
       <ul>
         <li><code>{project root}\src\test\data\ManualTesting\SampleData.xml</code> :<br> Sample data that can be loaded to your app. Should contain 50+ items covering past and present.</li>
         <li><code>{project root}\src\test\data\ManualTesting\TestScript.md</code> :<br> A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.<br> Should cover all functionality
-          of the product.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
+          of the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
       </ul>
       <p><strong>Submission</strong>:</p>
       <ul>
         <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated .md files are up to date, you will not be allowed to updated them later)
-          <mark>Note that the quality of the code in these .md files accounts for 15 marks of your final score, graded individually.</mark></li>
-        <li><strong>Executable</strong>: upload to IVLE as an exe or jar or zip file (this should not contain source files). File name: <code>[team][project name].jar</code><span class="dimmed">e.g. [T09-B1][ToDoo Pro].jar</span><br> Warning: When determining
+          <mark>Note that the quality of the code in these .md files accounts for a significant component of your final score, graded individually.</mark></li>
+        <li><strong>Executable</strong>: upload to IVLE as an exe or jar or zip file (this should not contain source files). File name: <code>[team][product name].jar</code><span class="dimmed">e.g. [T09-B1][Contacts+].jar</span><br> Warning: When determining
           the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
       </ul>
       <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
       <p><strong>Grading</strong>: Given in <a href="#handbook-project-assessment">a section below</a>.</p>
-      <h3 id="v05-documentation">V0.5 Documentation</h3>
+      <h3 id="v15-documentation">v1.5 Documentation</h3>
       <p><strong>Submission</strong>:</p>
       <ul>
-        <li>Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.</li>
-        <li>Convert User Guide into a pdf file and name it as <code>[TEAM_ID][Project Name]UserGuide.pdf</code><span class="dimmed">e.g.[T09-B1][ToDoo Pro]UserGuide.pdf</span></li>
-        <li>Similarly, convert the Developer guide into a pdf file, name it as <code>[TEAM_ID][Project Name]DevGuide.pdf</code><span class="dimmed">e.g. [T09-B1][ToDoo Pro]DevGuide.pdf</span></li>
-        <li>Upload both pdf files to IVLE.</li>
+        <li>
+          <p>Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.</p>
+        </li>
+        <li>
+          <p>Each member: <mark>Create a <em>Project Portfolio</em> page</mark> to describe your contribution to the project. Follow the example in the AddressBook-Level4.</p>
+        </li>
+        <li>
+          <p>Convert the following documents to pdf (Use Chrome to <em>save as</em> pdf) and upload to IVLE.</p>
+        </li>
       </ul>
-      <p><strong>Deadline</strong>: Same as V0.5 product.</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Name format</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>User guide</td>
+            <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
+          </tr>
+          <tr>
+            <td>Developer guide</td>
+            <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
+          </tr>
+          <tr>
+            <td>Portfolio</td>
+            <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Deadline</strong>: Same as v1.5 product.</p>
       <p><strong>Grading</strong>: Given in <a href="#handbook-project-assessment">a section below</a>.</p>
-      <h3 id="v05-demo">V0.5 Demo</h3><img src="/cs2103-website/handbook/images/v05demo.png" style="width: 250px">
+      <h3 id="v15-demo">v1.5 Demo</h3><img src="/cs2103-website/handbook/images/v05demo.png" style="width: 250px">
       <ul>
         <li><strong>Venue:</strong> Same as the tutorial venue.</li>
-        <li><strong>Duration:</strong> Strictly no more than 12 minutes. Exceeding this limit will be penalized.</li>
+        <li><strong>Duration:</strong> Strictly no more than 3 minutes per person (i.e. a total of 12 minutes for a 4-person team). Exceeding this limit will be penalized.</li>
         <li><strong>Schedule:</strong> Your demo timing is same as your tutorial time in week 13.<br> Starting times: <code>Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes</code><br> At least some team members need to arrive 15 minutes
           ahead of the allocated time to set up your computer.<br> There is an <mark>automatic penalty if you are not ready to start on time.</mark>.</li>
-        <li><strong>Target audience</strong>: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.<br> The scenarios you demonstrate should be chosen judiciously so that you cover
-          the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the product improves the user’s workflow rather than simply describe each feature.<br>          No need to cover design/implementation details as the manager is not interested in those details.</li>
+        <li><strong>Target audience</strong>: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.</li>
+        <li><strong>Scope</strong>:
+          <ul>
+            <li>Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.4-v1.5rc demos, there is no need for each person to demo their own features.</li>
+            <li>Remember to explain the profile of the target user early in the demo.</li>
+            <li>The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the
+              product improves the user’s life rather than simply describe each feature.</li>
+            <li>No need to cover design/implementation details as the manager is not interested in those details. Remember to</li>
+          </ul>
+        </li>
         <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
         <li><strong>Testing:</strong> All team member should remain in the holding area during the tutorial slot (when you are not doing the demo) because our testers might need to communicate with you during the testing.<br> Holding area for Active Learning
-          Room: Unused area of the room (enter by the door near the staircase)<br> Holding area for SR5: Tables outside SR5</li>
+          Room: Unused area of the room (enter by the door near the staircase)<br> Holding area for SR5 and SR10: corridor outside the venue</li>
         <li><strong>Structure:</strong><br> Demo the product using the same executable you submitted, on your own laptop, using the TV.<br> Every team member should take part in the demo. However, it's ok for one member to do all the typing.</li>
         <li><strong>Optimizing the time:</strong><br> Try to make the maximum use of the short demo time in the following ways,
           <ul>
@@ -761,8 +795,7 @@ collated/
               <p>If you are not deft with using the laptop’s touchpad, please bring a mouse.</p>
             </li>
             <li>
-              <p>Don’t waste time repeating things the target audience already knows. Assume the target audience knows that the product is a task manager targeting Jim-like users. That means no need to explain those things again.<br> Also assume the target
-                audience knows who you are. That means no need to say things like &quot;We are students from NUS, SoC&quot;.</p>
+              <p>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</p>
             </li>
             <li>
               <p>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates
@@ -793,85 +826,52 @@ collated/
       <p><strong>Deadline</strong>: Reading week Monday 2359</p>
     </div>
   </div>
-  <h2 id="individual-report">Individual report</h2>
-  <div id="handbook-project-individualReport">
-    <div>
-      <p>The purpose of this report is to help us in grading students where a student may have done significantly more/less than an equal share. <mark>Submit this only if you were specifically asked to OR if you have a disagreement with the phase B final peer evaluation</mark>.</p>
-      <p>The report should contain an itemized list of your contribution to the project. Be as concrete and precise as possible. For example, you can mention how many lines of code you wrote in which classes, which parts of the documentation were done by
-        you, etc.</p>
-      <p>Note that this report is visible <mark>to your team member and they may be asked to verify its accuracy</mark>.</p>
-      <p><strong>Suggested length</strong>: about 0.5-1 page worth of content.</p>
-      <p><strong>Submission</strong>: Via TEAMMATES. More instructions to follow.</p>
-      <p><strong>Deadline</strong>: End of reading week.</p>
-    </div>
-  </div>
   <h2 id="project-assessment">Project Assessment</h2>
   <div id="handbook-project-assessment">
     <div>
       <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking
         scheme.</p>
-      <p><strong>Total</strong>: 50 marks (25 individual marks + 25 team marks)</p>
+      <p><strong>Total</strong>: 50 marks (40 individual marks + 10 team marks)</p>
       <ol>
         <li>
-          <p><strong>Product features</strong> [team][10 marks] - How good is your software as a product?</p>
+          <p><strong>Product features</strong> [team][5 marks] - How good is your software as a product?</p>
           <p>Based on the features implemented, how well they fit together to make a good product, and how well they are demonstrated.</p>
           <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
         </li>
         <li>
-          <p><strong>Design</strong> [individual][5 marks] - How good is your internal design?</p>
-          <p>Evaluated <mark>solely based on what we can learn from the developer guide.</mark> Evaluated by lecturer. You will be graded individually on the design of your component and how well you have described it. Collective design decisions such as
-            architecture will affect the grade of all team members.</p>
-          <p>Criteria considered:</p>
+          <p><strong>Implementation</strong> [individual][20 marks] - How good is your implementation? A measure of the <mark>quality and the quantity</mark> of code you have written yourself. Evaluated based on an inspection of the collated code (submitted
+            in your <code>/collated/*.md</code> files).</p>
+        </li>
+        <li>
+          <p><strong>QA</strong> [individual][10 marks] - How good is your Quality Assurance? Evaluated based on your test code and our own manual testing.</p>
+          <p>Expectations:</p>
           <ul>
-            <li>Conformance with the multi-level top-down approach (i.e. design at high-level first, and do the lower-level design of each component later)</li>
-            <li>Conformance with the OO paradigm</li>
-            <li>Application of patterns and principles</li>
-            <li>Quality of documentation e.g. using the right diagram at the right place.</li>
+            <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less.</li>
+            <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to
+              what extent you want to automate tests, depending on the benefits and the effort required.</li>
+            <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code
+              because the code has low testability.</li>
           </ul>
         </li>
         <li>
-          <p><strong>Implementation</strong> [individual][15 marks] - How good is your implementation? A measure of the <mark>quality and the quantity</mark> of code you have written yourself. On average, a student is expected to write 0.5-1.5 KLoC. Evaluated
-            based on an inspection of the collated code (submitted in your *.md files) by at least two tutors.<br> Criteria considered:</p>
-          <ul>
-            <li>Following SLAP (IMPORTANT).</li>
-            <li>Following the coding standard given (IMPORTANT).</li>
-            <li>Using at least some assertions.</li>
-            <li>Using at least some logging.</li>
-            <li>Using at least some unit tests.</li>
-            <li>Commenting at the right level.</li>
-            <li>Exception handling.</li>
-            <li>Neatness and human readability.Expectations:</li>
-            <li>Each person is expected to implement one or more features individually in addition to features implemented collectively. Each person is expected to write backend code, frontend code, test code, user documentation, and developer documentation.</li>
-          </ul>
-        </li>
-        <li>
-          <p><strong>QA</strong> [team: 5 marks], [individual: 5 marks] - How good is your Quality Assurance? Evaluated based on our own testing. A well written user guide and a product that conforms to the user guide (i.e. no bugs) will give you a high
-            mark.</p>
-          <p>Things considered for team grade: Bugs including validation issues (i.e. not meeting project requirements)</p>
-          <p>Things considered for individual grade: Quality and quantity of the test code in your collated code.</p>
-        </li>
-      </ol>
-      <p>Expectations:</p>
-      <ul>
-        <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less.</li>
-        <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what
-          extent you want to automate tests, depending on the benefits and the effort required.</li>
-        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because
-          the code has low testability.</li>
-      </ul>
-      <ol start="7">
-        <li><strong>Documentation</strong> [team][5 marks] - How well does your user guide achieves its objectives? Evaluated by lecturer and TA.<br> Criteria considered:
+          <p><strong>Documentation</strong> [individual][10 marks] - How well does your user guide achieves its objectives? Evaluated based on the relevant sections of your project portfolio.<br> Criteria considered:</p>
           <ul>
             <li>Explanation should be clear and written to match the audience.</li>
-            <li>Good use of visuals to complement text.Note: Developer Guide is graded under the 'Design' component.</li>
+            <li>Good use of visuals to complement text.</li>
           </ul>
         </li>
-        <li><strong>Project management</strong> [team: 5 marks][individual: 5 marks] - How well you worked together as a team to follow a systematic process?<br> For the team component, we look for,
+        <li>
+          <p><strong>Project management</strong> [team: 5 marks] - How well you worked together as a team to follow a systematic process? Evaluated based on Github data and supervisor observations.<br> Criteria:
+          </p>
           <ul>
+            <li>Good use of GitHub milestones.</li>
+            <li>Good use of GitHub release mechanism.</li>
             <li>Good version control, based on the repo.</li>
+            <li>Reasonable attempt to use the forking workflow.</li>
             <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
             <li>Good use of buffers (opposite: everything at the last minute)</li>
-            <li>Iterative (opposite: fake iterative, doing most of the work in one iteration).<br> Passed almost all checkpoints from V0.0 to V0.5The individual component is determined by peer evaluation from your project team members.</li>
+            <li>Iterative (opposite: fake iterative, doing most of the work in one iteration).</li>
+            <li>Passed almost all checkpoints from v1.0 to v1.5</li>
           </ul>
         </li>
       </ol>
@@ -890,24 +890,15 @@ collated/
   <h1 id="forming-teams">Forming Teams</h1>
   <div id="handbook-teams">
     <div>
-      <table class="two-column-content">
-        <tbody>
-          <tr>
-            <td>
-              <p><strong>The two teams</strong>:<br> You will be in two different teams at different times of the semester.</p>
-              <ul>
-                <li>Week 1 - 5: Phase A team</li>
-                <li>Week 6 - 13: Phase B team (i.e. Project team)</li>
-              </ul>
-              <p>Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. By working with different classmates during this period you get to know and learn from more classmates. The project is done in phase B. That means your Phase
-                B team is also your project team.</p>
-            </td>
-            <td width="310px"><img src="/cs2103-website/handbook/images/team.png" width="300px">
-              <p><span class="dimmed">[Picture: The team that was at the top of early Google]</span></p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <p><img src="/cs2103-website/handbook/images/team.png" width="300px"><br><span class="dimmed">[Picture: The team that was at the top of early Google]</span></p>
+      <p></p>
+      <p><strong>The two teams</strong>:<br> You will be in two different teams at different times of the semester.</p>
+      <ul>
+        <li>Week 1 - 5: Phase A team</li>
+        <li>Week 6 - 13: Phase B team (i.e. Project team)</li>
+      </ul>
+      <p>Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. By working with different classmates during this period you get to know and learn from more classmates. The project is done in phase B. That means your Phase B team is
+        also your project team.</p>
       <p><mark>There cannot be any overlap between your 2 teams</mark>. For example, any member from your Phase A team cannot be a member of your Phase B team.</p>
       <p><strong>When to form teams</strong></p>
       <ul>
@@ -920,14 +911,14 @@ collated/
       <p>We allow some freedom in choosing team members, subject to these constraints:</p>
       <ul>
         <li>
+          <p>All team members should be in the same tutorial. <mark>Delay forming teams until your place in a tutorial is confirmed.</mark> We do not allow changing tutorials to team up with your preferred team mates.</p>
+        </li>
+        <li>
           <p>Teams of <mark>single nationality are not allowed</mark> (rationale: to train you to work in multicultural teams). However, we allow same nationality teams if the only language common among all team members is English. e.g. an all-Singaporean
             team that include both Chinese and Malay students.</p>
         </li>
         <li>
           <p>No more than one exchange students per team (rationale: to increase interaction between exchange students and NUS students).</p>
-        </li>
-        <li>
-          <p>All team members should be in the same tutorial. <mark>Delay forming teams until your place in a tutorial is confirmed.</mark> We do not allow changing tutorials to team up with your preferred team mates.</p>
         </li>
         <li>
           <p>Also note that we may modify teams when circumstances call for it. There is no avenue for you to object. Staying with your preferred team is not guaranteed.</p>
@@ -939,8 +930,9 @@ collated/
   <div id="handbook-peerEvaluations">
     <div>
       <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system to conduct several rounds of peer-evaluations. All peer evaluations will be taken into account when determining your participation marks. The system
-        also allows you to give anonymous feedback to your teammates.</p><span id="extra-requirements"><p><strong>Extra Requirements:</strong> [considered for participation marks]</p><ul><li>Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you forfeit your participation marks.</mark></li><li>TEAMMATES normally allows students to access it without using Google login. In this module, we <mark>require you to login to TEAMMATES using your Google account</mark>. and update your</li><li>After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.</li><li>In the profile, you are encouraged (but not compulsory) to provide your long term contact email (not school email) as the contact email. This contact email is for keeping in touch after graduation.
-<s><a href="mailto:john@comp.nus.edu.sg">john@comp.nus.edu.sg</a></s><a href="mailto:john@gmail.com">john@gmail.com</a></li><li>Please upload a suitable profile photo.</li></ul><panel header="Choosing a profile photo" expandable=""><div><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="/cs2103-website/handbook/images/profilephotos.png" style="width: 365.33px"></div></panel></span>
+        also allows you to give anonymous feedback to your teammates.</p><span id="extra-requirements"><p><strong>Extra Requirements:</strong> [considered for participation marks]</p><ul><li>Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you forfeit your participation marks.</mark></li><li>TEAMMATES normally allows students to access it without using Google login. In this module, we <mark>require you to login to TEAMMATES using your Google account</mark>.
+<ul><li>After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.</li><li>In the profile, you are encouraged (but not compulsory) to provide your long term contact email (not school email) as the contact email. This contact email is for keeping in touch after graduation.
+<s><a href="mailto:john@comp.nus.edu.sg">john@comp.nus.edu.sg</a></s><a href="mailto:john@gmail.com">john@gmail.com</a></li><li>Please upload a suitable profile photo.</li></ul></li></ul><panel header="Choosing a profile photo" expandable=""><div><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="/cs2103-website/handbook/images/profilephotos.png" style="width: 365.33px"></div></panel></span>
       <span
         id="giving-peer-feedback">
         <p>Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. <mark>Those who give ineffective feedback will be penalized.</mark></p>
