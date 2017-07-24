@@ -24,7 +24,6 @@
     *   [v1.5rc [week 12]](#handbook-project-v15rc)
     *   [v1.5 [week 13]](#handbook-project-v15)
     *   [Retrospective](#handbook-project-retrospective)
-    *   [Individual report](#handbook-project-individualReport)
     *   [Assessment](#handbook-project-assessment)
     *   [Supervision](#handbook-project-supervision)
 *   [Tools](#handbook-tools)
@@ -157,11 +156,6 @@
 ## Project retrospective
 <div id="handbook-project-retrospective">
 <include src="project-retrospective.md" />
-</div>
-
-## Individual report
-<div id="handbook-project-individualReport">
-<include src="project-individual-report.md" />
 </div>
 
 ## Project Assessment

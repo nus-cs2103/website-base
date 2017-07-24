@@ -10,7 +10,10 @@ Here are the allowed options for enhancing AddressBook:
 1. Integrate with online services %%e.g. Google contacts, Facebook, GitHub, etc.%%
 1. Incorporate more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
  
-Each student is expected to ==contribute one or more enhancements **individually**==.
+Each student is expected to,
+1. ==contribute one or more enhancements **individually**==.
+1. to write backend code, frontend code, test code, user documentation, and developer documentation.
+1. On average, write ~0.5 KLoC of code.
 
 Here is an example contribution, if done by one student, is likely to be earn an `A` grade for the relevant project components of the project.
 * {to be added}

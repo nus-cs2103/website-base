@@ -5,12 +5,12 @@ All peer evaluations will be taken into account when determining your participat
 
 **Extra Requirements:** [considered for participation marks]
 
-  *   Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you forfeit your participation marks.==
-  *   TEAMMATES normally allows students to access it without using Google login. In this module, we ==require you to login to TEAMMATES using your Google account==. and update your
-  *   After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.
-  *   In the profile, you are encouraged (but not compulsory) to provide your long term contact email (not school email) as the contact email. This contact email is for keeping in touch after graduation.
+* Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you forfeit your participation marks.==
+* TEAMMATES normally allows students to access it without using Google login. In this module, we ==require you to login to TEAMMATES using your Google account==.
+  * After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.
+  * In the profile, you are encouraged (but not compulsory) to provide your long term contact email (not school email) as the contact email. This contact email is for keeping in touch after graduation.
   ~~john@comp.nus.edu.sg~~ john@gmail.com
-  *   Please upload a suitable profile photo.
+  * Please upload a suitable profile photo.
 
 <panel header="Choosing a profile photo" expandable>
   <include src="profilePhoto.md" />
@@ -24,9 +24,9 @@ Giving constructive feedback to others is a valuable skill for software engineer
 
   Here are some things to keep in mind:
 
-  *   Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.
-  *   The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. `Thanks for all the hard work!` and negative ratings (e.g. `Equal share - 40%`) to the same team member is not being honest.
-  *   State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.
+* Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.
+* The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. `Thanks for all the hard work!` and negative ratings (e.g. `Equal share - 40%`) to the same team member is not being honest.
+* State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.
 
 </span>
 
