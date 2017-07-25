@@ -1,17 +1,15 @@
-**[ You . Together . Continuously . Reach ]**
-
 These are some of the main principles underlying the module structure.
 
+<tip-box type="important">
 The product is you, NOT what you build.
+</tip-box>
 
 The software product you build is a side effect only. You are the product of this module. This means,
 
-*   We may not take the most efficient route to building the software product. We take the route that allows you to learn the most.
-*   Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority.
+* We may not take the most efficient route to building the software product. **We take the route that allows you to learn the most**.
+* Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). **Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority**.
 
-Following from that, we evaluate you on not just how much you've done, but also, how well you've done those things.
-
-Here are some of the aspects in which we try to make you more professional:
+Following from that, we evaluate you on not just how much you've done, but also, how well you've done those things. Here are some of the aspects in which we focus on:
 
 <table class="table table-bordered" cellpadding="0" cellspacing="0">
 
@@ -37,7 +35,7 @@ Here are some of the aspects in which we try to make you more professional:
 
 <td colspan="1" rowspan="1">
 
-Ability to deal with minute details
+Ability to deal with low-level details
 
 </td>
 
@@ -137,7 +135,7 @@ Ability to deliver in a way that shows how well you delivered (i.e. visibility o
 
 You are not in a competition. Our grading is not forced on a bell curve.
 
-Learn from each other. That is why we publish submissions.
+Learn from each other. That is why we open-source your submissions.
 
 Teach each other, even those in other teams. Those who do it well can become tutors next time.
 
@@ -149,4 +147,4 @@ In this module, last minute heroics will not earn you a good project grade, and 
 
 **Where you reach at the end matters, NOT what you knew at the beginning.**
 
-When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. The full 10% allocated to intermediate deliverables is within the reach of everyone in the class irrespective of their prior knowledge.
+When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables are within the reach of everyone in the class irrespective of their prior knowledge.

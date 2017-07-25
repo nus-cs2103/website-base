@@ -1,10 +1,10 @@
-<img src="{{baseUrl}}/Why you....png" width="300" height="200"/>
+<img src="{{baseUrl}}/handbook/images/Why you....png" width="300" height="200"/>
 
 ### Why the workload is so high?
 
 <div id="handbook-faq-highWorkload">
 
-<img src="{{baseUrl}}/handbook/images/Why workload heavy.png" width="378" height="340"/>
+<img src="{{baseUrl}}/handbook/images/Why workload heavy.png" width="250" />
 
 CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2/3/4, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
@@ -12,7 +12,7 @@ Remember, everything you learn here is going to be useful in a SE-related career
 
 Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier :-p  
 
-==How to reduce the workload?== There are many activities worth only bonus points and there are other optional activities that you can omit to reduce workload. Those activities are useful only if you are aiming for a high-end SE career, CS2103 tutorships, recommendation letters from the module lecturer, to enroll in selective modules (e.g. CS3216/7), etc.
+==How to reduce the workload?== You can omit Learning Outcomes rated :star::star::star::star: They are counted for CS2103R and for A+ grades only.
 
 </div>
 

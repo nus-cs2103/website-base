@@ -9,10 +9,13 @@ Here are the allowed options for enhancing AddressBook:
 1. Modify the GUI design
 1. Integrate with online services %%e.g. Google contacts, Facebook, GitHub, etc.%%
 1. Incorporate more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
- 
-Each student is expected to,
+
+<span id="individual-expectations">
+
+**Each student is expected to,**
+
 1. ==contribute one or more enhancements **individually**==.
-1. to write backend code, frontend code, test code, user documentation, and developer documentation.
+1. to write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.
 1. On average, write ~0.5 KLoC of code.
 
 Here is an example contribution, if done by one student, is likely to be earn an `A` grade for the relevant project components of the project.
@@ -21,3 +24,5 @@ Here is an example contribution, if done by one student, is likely to be earn an
 Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.
 
 A student's contribution should be incremental, over at least three releases of the product. It should be be one in one big burst.
+
+</span>

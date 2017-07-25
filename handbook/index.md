@@ -29,8 +29,8 @@
 *   [Tools](#handbook-tools)
 *   [Forming Teams](#handbook-teams)
 *   [Peer Evaluations](#handbook-peerEvaluations)
-*   [Exams](#handbook-exams)
 *   [Grade Breakdown](#handbook-gradeBreakdown)
+*   [Exams](#handbook-exams)
 *   [Participation Marks](#handbook-participation)
 *   [Appendix A: Module Principles](#handbook-appendixA-principles)
 *   [Appendix B: Module Policies](#handbook-appendixB-policies)
@@ -183,13 +183,13 @@
 <include src="tools.md" />
 </div>
 
-# Exams
-<div id="handbook-exams">
-<include src="exams.md" /></div>
-
 # Grade Breakdown
 <div id="handbook-gradeBreakdown">
 <include src="gradeBreakdown.md" /></div>
+
+# Exams
+<div id="handbook-exams">
+<include src="exams.md" /></div>
 
 # Participation Marks
 <div id="handbook-participation">
