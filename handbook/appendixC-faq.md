@@ -44,15 +44,13 @@ Furthermore, unlike IVLE, a copy of the module website ==will remain online== 
 
 </div>
 
-### Why slides are not detailed enough, handouts are wordy?
+### Why slides are not detailed?
 
 <div id="handbook-faq-slideFormat">
 
 <img src="{{baseUrl}}/handbook/images/slides not detailed enough.png" width="733" height="221"/>
 
 Slides are not meant to be documents to print and study for exams. Their purpose is to support the lecture delivery and keep you engaged during the lecture. That's why our slides are less detailed and more visual.
-
-Handouts are wordy because they are reference materials for you to study at your own pace and use during the module and later. The format is similar to materials (books, online articles, etc.) you will have to refer to when you work in the industry. They too are not meant to be cheat sheets 'to study for exams with minimal effort'.
 
 </div>
 
@@ -66,21 +64,13 @@ Self-study is a critical survival skill in SE industry. Lectures will show you t
 
 </div>
 
-### Why do I have to come to tutorials on time?
-
-<div id="handbook-faq-timelyArrival">
-
-Unlike most modules, our tutorials are group work. Arriving on time minimizes the time wasted by others waiting for you to arrive or briefing you on what you missed. Being punctual is expected from a professional.
-
-</div>
-
 ### What if I don't carry around a laptop?
 
 <div id="handbook-faq-noLaptop">
 
 If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), *without* requiring extra time/effort from the tutor or team members.
 
-Reason: You enjoy the benefits of not bring the laptop; you should bear the cost too
+Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.
 
 </div>
 
@@ -90,7 +80,7 @@ Reason: You enjoy the benefits of not bring the laptop; you should bear the cost
 
 Defining your own unique project is more fun.
 
-But, wider scope → more diverse projects → harder for us to go deep into your project. The collective know-how we (i.e., students and the teaching team) build up about SE issues related to the project become shallow and stretched too thinly. It also affects fairness of grading.
+But, wider scope → more diverse projects → harder for us to go deep into your project. The collective know-how we (i.e., students and the teaching team) have built up about SE issues related to the project become shallow and stretched too thinly. It also affects fairness of grading.
 
 <img src="{{baseUrl}}/handbook/images/limited project scope.png" width="772" height="296"/>
 
@@ -112,25 +102,25 @@ For example, the best way to communicate something often depends on what is bein
 
 </div>
 
-### Why I'm not allowed to use my favorite OS/IDE/etc?
+### Why I'm not allowed to use my favorite tool/framework/language etc.?
 
 <div id="handbook-faq-favoriteTool">
 
 <img src="{{baseUrl}}/handbook/images/I'm not allowed to use my favorite tool.png" width="750" height="287"/>
 
-We have chosen a basic set of tools after considering ease of learning, availability, typicalness, popularity, migration path to other tools, etc. There are many reasons for limiting your choices:
+We have chosen a basic set of tools after considering ease of learning, availability, typical-ness, popularity, migration path to other tools, etc. There are many reasons for limiting your choices:
 
 Pedagogical reasons:
 
-*   We use 'good enough', not necessarily the best, tools: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our toolset, you will find it easy to upgrade to such high-end tools by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding about a family of tools.
-*   Learn to thrive under given conditions: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google uses SVN as their revision control software. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).  
-    While programming in school is often a solo sport, programming in the industry is a team sport. As we are training you to become professional software engineers, it is important to get over the psychological hurdle of needing to satisfy individual preferences and get used to making the best of a given environment.
+* We sometimes use 'good enough', not necessarily the best, tools: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our toolset, you will find it easy to upgrade to such high-end tools by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding about a family of tools.
+* Learn to thrive under given conditions: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google used SVN as their revision control software until very recently, long after SVN fell out of popularity among developers. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).  
+ While programming in school is often a solo sport, programming in the industry is a team sport. As we are training you to become professional software engineers, it is important to get over the psychological hurdle of needing to satisfy individual preferences and get used to making the best of a given environment.
 
 Practical reasons:
 
-*   Some of the learning activities are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
-*   We provide learning resources for tools. e.g. 'Getting started with Eclipse'. Allowing more tools means we need to produce more resources.
-*   When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.
+* Some of the learning activities are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
+* We provide learning resources for tools. e.g. 'Git guides'. Allowing more tools means we need to produce more resources.
+* When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.
 
 Meanwhile, feel free to share with peers your experience of using other tools.
 
@@ -152,7 +142,7 @@ The high number of submissions is not meant to increase workload but to spread i
 
 <img src="{{baseUrl}}/handbook/images/no marks for intermediate submissions.png" width="688" height="102"/>
 
-Intermediate submissions are also incremental submissions. Intermediate submissions are included in the final submission too and will earn marks at that point. They are there to help you do well in the final submission and for us to monitor your progress and guide you accordingly. They are a means to an end. They are not achievements themselves. By right, they shouldn't be given marks at all. :-)
+Intermediate submissions are also incremental submissions. Intermediate submissions are included in the final submission too and will earn marks at that point. They are there to help you do well in the final submission and for us to monitor your progress and guide you accordingly. They are a means to an end. They are not achievements themselves. By right, they shouldn't be given marks at all. :stuck_out_tongue_closed_eyes:
 
 </div>
 
