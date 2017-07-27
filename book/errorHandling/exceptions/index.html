@@ -24,33 +24,31 @@
           <p>🏆 Can explain exceptions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>Exceptions are used to deal with ‘unusual’ but not entirely unexpected situations that the program might encounter at run time.</p>
-            <tip-box type="primary">
-              <div>
-                <p><strong>Exception</strong>:</p>
-                <blockquote>
-                  <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.</p>
-                  <p>–- Java Tutorial (Oracle Inc.)</p>
-                </blockquote>
-              </div>
-            </tip-box>
-            <tip-box>
-              <p>Examples:</p>
-              <ul>
-                <li>A network connection encounters a timeout due to a slow server.</li>
-                <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
-              </ul>
-            </tip-box>
-            <p>Exceptions are not program bugs. Rather, they are unusual situations that need to be recovered from, if possible.</p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>Exceptions are used to deal with ‘unusual’ but not entirely unexpected situations that the program might encounter at run time.</p>
+          <tip-box type="primary">
+            <div>
+              <p><strong>Exception</strong>:</p>
+              <blockquote>
+                <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.</p>
+                <p>–- Java Tutorial (Oracle Inc.)</p>
+              </blockquote>
+            </div>
+          </tip-box>
+          <tip-box>
+            <p>Examples:</p>
+            <ul>
+              <li>A network connection encounters a timeout due to a slow server.</li>
+              <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+            </ul>
+          </tip-box>
+          <p>Exceptions are not program bugs. Rather, they are unusual situations that need to be recovered from, if possible.</p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -61,29 +59,26 @@
           <p>🏆 Can do exception handling in code <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>However, the code segment that encountered the unusual situation might not know how to recover from it. That is why most languages allow a method to encapsulate the unusual situation in an Exception object and ‘throw’ that object so that another
-              piece of code can ‘catch’ it and deal with it. Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception it caught, it will throw the Exception object to its
-              own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown to the runtime, thus halting the system. In the Java
-              code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code> block and has
-              a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
-            <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/errorHandling/exceptions/how/images/processInput.png" height="320">
-              <p></p>
-            </tip-box>
-            <p>Advantages of exception handling in this way:</p>
-            <ul>
-              <li>The ability to propagate error information through the call stack.</li>
-              <li>The separation of code that deals with ‘unusual’ situations from the code that does the ‘usual’ work.</li>
-            </ul>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>However, the code segment that encountered the unusual situation might not know how to recover from it. That is why most languages allow a method to encapsulate the unusual situation in an Exception object and ‘throw’ that object so that another
+            piece of code can ‘catch’ it and deal with it. Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception it caught, it will throw the Exception object to its
+            own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown to the runtime, thus halting the system. In the Java code
+            given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code> block and has a <code>catch{ }</code>            block to specify what to do if the exception is actually thrown.</p>
+          <tip-box>
+            <p>Example:</p><img src="/cs2103-website/book/errorHandling/exceptions/how/images/processInput.png" height="320">
+            <p></p>
+          </tip-box>
+          <p>Advantages of exception handling in this way:</p>
+          <ul>
+            <li>The ability to propagate error information through the call stack.</li>
+            <li>The separation of code that deals with ‘unusual’ situations from the code that does the ‘usual’ work.</li>
+          </ul>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -94,16 +89,14 @@
           <p>🏆 Can avoid using exceptions to control normal workflow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>{to add: do not use exceptions for normal workflow}</p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>{to add: do not use exceptions for normal workflow}</p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

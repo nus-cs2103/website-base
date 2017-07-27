@@ -23,26 +23,24 @@
           <p>🏆 Can implement classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\classes\basic\embed._include_.html" header="OOP: Classes: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p>Here are some tutorials you can refer to (from Oracle’s official Java tutorials) to learn how to implement basic OOP constructs. classes in Java, go to and follow the next few steps in there.</p>
-            <p>Other relevant tutorials:</p>
-            <ul>
-              <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables – Start from the linked page and follow the next few steps in the tutorial</a></li>
-              <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Class-level members</a></li>
-              <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">Enumerations</a></li>
-            </ul>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\classes\basic\embed._include_.html" header="OOP: Classes: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p>Here are some tutorials you can refer to (from Oracle’s official Java tutorials) to learn how to implement basic OOP constructs. classes in Java, go to and follow the next few steps in there.</p>
+          <p>Other relevant tutorials:</p>
+          <ul>
+            <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables – Start from the linked page and follow the next few steps in the tutorial</a></li>
+            <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Class-level members</a></li>
+            <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">Enumerations</a></li>
+          </ul>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -53,62 +51,60 @@
           <p>🏆 Can implement associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel src="/cs2103-website/book\book\oopDesign\associations\multiplicity\embed._include_.html" header="OOP: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel src="/cs2103-website/book\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/cs2103-website/book\book\oopDesign\associations\multiplicity\embed._include_.html" header="OOP: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/cs2103-website/book\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p>We use instance level variables to implement associations.</p>
+          <tip-box>
+            <p>Example:</p><img src="/cs2103-website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
             <p></p>
-            <p>We use instance level variables to implement associations.</p>
-            <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
-              <p></p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Minefield minefield;
     ...
 }
 </code></pre>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     ...
 }
 </code></pre>
-              <p>A normal instance-level variable gives us a 0..1 multiplicity (also called <em>optional associations</em>) because a variable can hold a reference to a single object or null.</p><img src="/cs2103-website/book/oopImplementation/associations/images/logicConfigGenerator.png"
-                height="40">
-              <p></p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+            <p>A normal instance-level variable gives us a 0..1 multiplicity (also called <em>optional associations</em>) because a variable can hold a reference to a single object or null.</p><img src="/cs2103-website/book/oopImplementation/associations/images/logicConfigGenerator.png"
+              height="40">
+            <p></p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg;
     ...
 }
 </code></pre>
-              <p>A variable can be used to implement a 1-multiplicity too (also called <em>compulsory associations</em>).</p><img src="/cs2103-website/book/oopImplementation/associations/images/fooBar.png" height="40">
-              <p></p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+            <p>A variable can be used to implement a 1-multiplicity too (also called <em>compulsory associations</em>).</p><img src="/cs2103-website/book/oopImplementation/associations/images/fooBar.png" height="40">
+            <p></p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
     ...
 }
 </code></pre>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
     Foo foo;
     ...
 }
 </code></pre>
-              <p>Bi-directional associations require matching variables in both classes.</p>
-              <p>To implement other multiplicities, choose a suitable data structure such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+            <p>Bi-directional associations require matching variables in both classes.</p>
+            <p>To implement other multiplicities, choose a suitable data structure such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     Cell[][] cell;
     ...
 }
 </code></pre>
-            </tip-box>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          </tip-box>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -119,13 +115,12 @@
           <p>🏆 Can implement dependencies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
-            <tip-box>
-              <p>Example:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaxProcessor</span></span>{
+          <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
+          <tip-box>
+            <p>Example:</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaxProcessor</span></span>{
     <span class="hljs-keyword">double</span> rate;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addTax</span><span class="hljs-params">(Taxable t)</span></span>{
@@ -133,16 +128,15 @@
     }
 }
 </code></pre>
-              <p>The code above results in this dependency.</p><img src="/cs2103-website/book/oopImplementation/dependencies/images/taxProcessorTaxable.png" height="40">
-              <p></p>
-              <p>The code does not indicate an association between the two classes because the <code>TaxProcessor</code> object does not keep the <code>Taxable</code> object (i.e. it’s only a short-term interaction)</p>
-            </tip-box>
-          </div>
-          <div>
-            <div></div>
-          </div>
+            <p>The code above results in this dependency.</p><img src="/cs2103-website/book/oopImplementation/dependencies/images/taxProcessorTaxable.png" height="40">
+            <p></p>
+            <p>The code does not indicate an association between the two classes because the <code>TaxProcessor</code> object does not keep the <code>Taxable</code> object (i.e. it’s only a short-term interaction)</p>
+          </tip-box>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -153,25 +147,23 @@
           <p>🏆 Can implement composition <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>Composition too is implemented using a normal variable. If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the ‘whole’ object.</p>
-            <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopImplementation/composition/images/carEngine.png" height="40">
-              <p></p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+          <p>Composition too is implemented using a normal variable. If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the ‘whole’ object.</p>
+          <tip-box>
+            <p>Example:</p><img src="/cs2103-website/book/oopImplementation/composition/images/carEngine.png" height="40">
+            <p></p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
     Engine engine;
   ...
 }
 </code></pre>
-            </tip-box>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          </tip-box>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -182,14 +174,13 @@
           <p>🏆 Can implement aggregation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>Implementation is similar to that of aggregation except the ‘containee’ object can exist even after the ‘container’ object is deleted.</p>
-            <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopImplementation/aggregation/images/carPerson.png" height="40">
-              <p></p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+          <p>Implementation is similar to that of aggregation except the ‘containee’ object can exist even after the ‘container’ object is deleted.</p>
+          <tip-box>
+            <p>Example:</p><img src="/cs2103-website/book/oopImplementation/aggregation/images/carPerson.png" height="40">
+            <p></p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
     Person driver;
     ...
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(Person p)</span> </span>{
@@ -197,13 +188,12 @@
     }
 }
 </code></pre>
-            </tip-box>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          </tip-box>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -214,26 +204,24 @@
           <p>🏆 Can implement association classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\associations\associationClasses\embed._include_.html" header="OOP: Associations: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\associations\associationClasses\embed._include_.html" header="OOP: Associations: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
+          <tip-box>
+            <p>Example:</p><img src="/cs2103-website/book/oopImplementation/associationClasses/images/manWoman.png" height="120">
             <p></p>
-            <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
-            <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopImplementation/associationClasses/images/manWoman.png" height="120">
-              <p></p>
-              <p>At implementation level, an association class is most likely implemented as follows.</p><img src="/cs2103-website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="120">
-              <p></p>
-            </tip-box>
-          </div>
-          <div>
-            <div></div>
-          </div>
+            <p>At implementation level, an association class is most likely implemented as follows.</p><img src="/cs2103-website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="120">
+            <p></p>
+          </tip-box>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -244,20 +232,18 @@
           <p>🏆 Can implement basic inheritance <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\inheritance\index._include_.html" header="OOP: Inheritance" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a></p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\inheritance\index._include_.html" header="OOP: Inheritance" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a></p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -268,20 +254,18 @@
           <p>🏆 Can implement operation overriding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\inheritance\overriding\embed._include_.html" header="OOP: Inheritance: Overriding" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/override.html">Oracle’s Java Tutorials: Overriding</a></p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\inheritance\overriding\embed._include_.html" header="OOP: Inheritance: Overriding" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/override.html">Oracle’s Java Tutorials: Overriding</a></p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -292,19 +276,17 @@
           <p>🏆 Can implement overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\inheritance\overloading\embed._include_.html" header="OOP: Inheritance: Overloading" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\inheritance\overloading\embed._include_.html" header="OOP: Inheritance: Overloading" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -315,20 +297,18 @@
           <p>🏆 Can implement interfaces <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\inheritance\interfaces\embed._include_.html" header="OOP: Inheritance: Interfaces" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle’s Java Tutorials: Interfaces</a></p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\inheritance\interfaces\embed._include_.html" header="OOP: Inheritance: Interfaces" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle’s Java Tutorials: Interfaces</a></p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -339,20 +319,18 @@
           <p>🏆 Can implement abstract classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\inheritance\abstractClasses\embed._include_.html" header="OOP: Inheritance: Abstract Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\inheritance\abstractClasses\embed._include_.html" header="OOP: Inheritance: Abstract Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -363,20 +341,18 @@
           <p>🏆 Can implement polymorphic behavior <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>
-              <panel src="/cs2103-website/book\book\oopDesign\polymorphism\index._include_.html" header="OOP: Polymorphism" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Oracle’s Java Tutorials: Polymorphism</a></p>
-          </div>
-          <div>
-            <div></div>
-          </div>
+          <p>
+            <panel src="/cs2103-website/book\book\oopDesign\polymorphism\index._include_.html" header="OOP: Polymorphism" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Oracle’s Java Tutorials: Polymorphism</a></p>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div>
       <div>
@@ -387,16 +363,15 @@
           <p>🏆 Can implement substitutability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
         <div>
-          <div>
-            <p>When implementing inheritance, we should take care to preserve substitutability: i.e. the ability of sub-class objects to be substituted where a super class object is expected. In other words, we should follow the Liskov Substitution Principle.
-              In concrete terms it means a subclass must honor the contract set by the super class.</p>
-            <p>A classic example of violating substitutability is given below.</p>
-            <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopImplementation/substitutability/images/rectangleSquare.png" height="120">
-              <p></p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
+          <p>When implementing inheritance, we should take care to preserve substitutability: i.e. the ability of sub-class objects to be substituted where a super class object is expected. In other words, we should follow the Liskov Substitution Principle.
+            In concrete terms it means a subclass must honor the contract set by the super class.</p>
+          <p>A classic example of violating substitutability is given below.</p>
+          <tip-box>
+            <p>Example:</p><img src="/cs2103-website/book/oopImplementation/substitutability/images/rectangleSquare.png" height="120">
+            <p></p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     Rectangle(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width){
         …
     }
@@ -410,16 +385,15 @@
     }
 }
 </code></pre>
-              <p>Explanation: The <code>super</code> class constructor can take any integers for height and width. This contract is violated by <code>Square</code> class because it does not accept a height that is different from the width. This means code
-                that is written to work with <code>Rectangle</code> class might fail in unexpected ways when it is given <code>Square</code> objects instead of <code>Rectangle</code> objects. That is, <code>Square</code> class is not substitutable for
-                the <code>Rectangle</code> class.</p>
-            </tip-box>
-          </div>
-          <div>
-            <div></div>
-          </div>
+            <p>Explanation: The <code>super</code> class constructor can take any integers for height and width. This contract is violated by <code>Square</code> class because it does not accept a height that is different from the width. This means code
+              that is written to work with <code>Rectangle</code> class might fail in unexpected ways when it is given <code>Square</code> objects instead of <code>Rectangle</code> objects. That is, <code>Square</code> class is not substitutable for the
+              <code>Rectangle</code> class.</p>
+          </tip-box>
         </div>
-      </panel>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
