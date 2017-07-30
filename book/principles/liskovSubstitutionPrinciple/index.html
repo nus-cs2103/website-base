@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Principles: Liskov Substitution Principle</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -54,6 +55,29 @@
         </tip-box>
       </div>
       <div>
+        <div>
+          <panel header=":muscle: Exercises" type="info" expandable="">
+            <div>
+              <panel header=":lock::key: True or False?">
+                <question>
+                  <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov substitution principle.</p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                  </ul>
+                  <div slot="answer">
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                    </ul>
+                    <p>Explanation: If the subclass is more restrictive than the parent class, a piece of code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and Liskov substitution principle
+                      is violated.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
         <div></div>
       </div>
     </div>

@@ -14,7 +14,7 @@
   <div>
     <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
     <tip-box>
-      <p>Example:</p><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+      <p>Example:</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
       <p></p>
       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
@@ -51,7 +51,7 @@ jean.setBoyfriend(james);
 …
 james.setGirlfriend(jean);  
 jean.setBoyfriend(yong);  
-</code></pre><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+</code></pre><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
       <p></p>
     </tip-box>
     <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
@@ -102,13 +102,13 @@ jean.setBoyfriend(yong);
     <div>
       <panel header=":muscle: Exercises" type="info" expandable="">
         <div>
-          <panel header="Q: Implement the Player and Region classes using a more defensive approach.">
+          <panel header=":lock::key: Implement the Player and Region classes using a more defensive approach.">
             <question has-input="true">
               <p>Imagine that we now support the following feature in our Minesweeper game.</p>
               <tip-box>
                 <p>Feature ID: multiplayer Description: A minefield is divided into mine regions. Each region is assigned to a single player. Players can swap regions. To win the game, all regions must be cleared.</p>
               </tip-box>
-              <p>Given below is an extract from our class diagram.</p><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
+              <p>Given below is an extract from our class diagram.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
               <p></p>
               <p>Minimally, this can be implemented like this.</p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span></span>{
@@ -200,9 +200,9 @@ r1.setPlayer(p2);
           </panel>
         </div>
         <div>
-          <panel header="Q: Implement the bidirectional association between Bank and Account.">
+          <panel header=":lock::key: Implement the bidirectional association between Bank and Account.">
             <question has-input="true">
-              <p>Implement this bidirectional association. Note that the Bank uses accNumber attribute to uniquely identify an Account object. Assume the Bank class is responsible for maintaining the links between objects.</p><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg"
+              <p>Implement this bidirectional association. Note that the Bank uses accNumber attribute to uniquely identify an Account object. Assume the Bank class is responsible for maintaining the links between objects.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg"
                 height="60">
               <p></p>
               <div slot="answer">
@@ -248,12 +248,12 @@ r1.setPlayer(p2);
           </panel>
         </div>
         <div>
-          <panel header="Q: Is the code given below a defensive translation of the associations shown in the class diagram?">
+          <panel header=":lock::key: Is the code given below a defensive translation of the associations shown in the class diagram?">
             <question has-input="true">
               <p>(a) Is the code given below a defensive translation of the associations shown in the class diagram? Explain your answer.</p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span></span>{
     <span class="hljs-keyword">private</span> Student favStudent;
-    
+
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavStudent</span><span class="hljs-params">(Student s)</span></span>{
         favStudent = s;
     }
@@ -266,13 +266,13 @@ r1.setPlayer(p2);
         favTeacher = t;
     }
 }
-</code></pre><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
+</code></pre><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
               <p></p>
-              <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png"
+              <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png"
                 height="80">
-              <p></p><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
+              <p></p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
               <p></p>
-              <p>(c) Show a defensive implementation of the remove(Member m) of the Club class given below.</p><img src="/cs2103-website/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
+              <p>(c) Show a defensive implementation of the remove(Member m) of the Club class given below.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
               <p></p>
               <div slot="answer">
                 <p>(a) Yes. Each links is mutable and unidirectional. A simple reference variable is suitable to hold the link.</p>
@@ -287,6 +287,24 @@ r1.setPlayer(p2);
     <span class="hljs-keyword">else</span> members.remove(m); <span class="hljs-comment">// members is a data structure such as ArrayList</span>
 }
 </code></pre>
+              </div>
+            </question>
+          </panel>
+        </div>
+        <div>
+          <panel header=":lock::key: True or False?">
+            <question>
+              <p>Bidirectional associations, if not implemented properly, can result in referential integrity violations.</p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                </ul>
+                <p>Explanation: Bidirectional associations require two objects to link to each other. When one of these links is not consistent with the other, we have a RI violation.</p>
               </div>
             </question>
           </panel>

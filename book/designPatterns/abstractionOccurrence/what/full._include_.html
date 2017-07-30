@@ -28,7 +28,7 @@
     <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
     <tip-box>
       <p>Example:</p>
-      <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/cs2103-website/designPatterns/abstractionOccurrence/what/images/book.png"
+      <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/book.png"
         height="200">
       <p></p>
       <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian realized
@@ -38,7 +38,7 @@
     <p><strong>Anti-pattern</strong></p>
     <p>Refer to the same Library example given above.</p>
     <tip-box>
-      <p>Example:</p><img src="/cs2103-website/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+      <p>Example:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
       <p></p>
       <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic because
         each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
@@ -46,13 +46,13 @@
     <p><strong>Solution</strong></p>
     <p>Let a book copy be represented by two objects instead of one, as given below.</p>
     <tip-box>
-      <p>Example:</p><img src="/cs2103-website/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
+      <p>Example:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
       <p></p>
-      <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/cs2103-website/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
+      <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
         height="350">
       <p></p>
     </tip-box>
-    <p>The general idea can be found in the following class diagram:</p><img src="/cs2103-website/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
+    <p>The general idea can be found in the following class diagram:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
     <p></p>
     <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class names,
       but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
@@ -61,7 +61,7 @@
     <div>
       <panel header=":muscle: Exercises" type="info" expandable="">
         <div>
-          <panel header="Q: Which pairs of classes are likely to be the `<< Abstraction >>` and the `<< Occurrence >>` of the abstraction occurrence pattern?">
+          <panel header=":lock::key: Which pairs of classes are likely to be the `<< Abstraction >>` and the `<< Occurrence >>` of the abstraction occurrence pattern?">
             <question has-input="true">
               <p>Which pairs of classes are likely to be the <code>&lt;&lt; Abstraction &gt;&gt;</code> and the <code>&lt;&lt; Occurrence &gt;&gt;</code> of the abstraction occurrence pattern?</p>
               <ol>
@@ -84,6 +84,29 @@
                   <li>TeamLeader, TeamMember: <strong>No. A TeamMember is not an occurrence of a TeamLeader or vice versa.</strong></li>
                   <li>Magazine, MagazineIssue: <strong>Yes.</strong></li>
                 </ol>
+              </div>
+            </question>
+          </panel>
+        </div>
+        <div>
+          <panel header=":lock::key: Which one of these is most suited for an application of the _Abstraction Occurrence_ pattern?">
+            <question>
+              <p>Which one of these is most suited for an application of the Abstraction Occurrence pattern?</p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Stagings of a stage drama at various theatres</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Teachers and their students</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Modules and exams/assignments given by those modules</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Stagings of a stage drama at various theatres</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Teachers and their students</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Modules and exams/assignments given by those modules</li>
+                </ul>
+                <p>Explanation:</p>
+                <p>(a) Stagings of a drama are ‘occurrences’ of the drama. They have many attributes common (e.g., Drama name, producer, cast, etc.) but some attributes are different (e.g., venue, time).</p>
+                <p>(b) Students are not occurrences of a Teacher or vice versa</p>
+                <p>(c) Module, Exam, Assignment are distinct entities with associations among them. But none of them can be considered an occurrence of another.</p>
               </div>
             </question>
           </panel>

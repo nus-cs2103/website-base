@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Project Planning: Work Breakdown Structure</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -154,6 +155,34 @@
         </ul>
       </div>
       <div>
+        <div>
+          <panel header=":muscle: Exercises" type="info" expandable="">
+            <div>
+              <panel header=":lock::key: Which one these is not well-defined task?">
+                <question>
+                  <p>Which one these is not well-defined task? Context: These are tasks to be put in the issue tracker of your project.</p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Do some more testing.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
+                  </ul>
+                  <div slot="answer">
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Do some more testing.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
+                    </ul>
+                    <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
         <div></div>
       </div>
     </div>

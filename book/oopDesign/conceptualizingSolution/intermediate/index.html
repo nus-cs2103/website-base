@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Intermediate</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -29,7 +30,7 @@
       <div>
         <p>Next, let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
         <p>
-          <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\referenceFrames\embed._include_.html" header="UML: Sequence Diagrams: Reference Frames" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\uml\sequenceDiagrams\referenceFrames\embed._include_.html" header="UML: Sequence Diagrams: Reference Frames" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box>
@@ -56,7 +57,7 @@
         <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code> operation.
           We can model it like this:</p>
         <p>
-          <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\objectDeletion\embed._include_.html" header="UML: Sequence Diagrams: Object Deletion" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\uml\sequenceDiagrams\objectDeletion\embed._include_.html" header="UML: Sequence Diagrams: Object Deletion" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldReset.png" height="100">
@@ -89,7 +90,7 @@
         </tip-box>
         <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
         <p>
-          <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\selfInvocation\embed._include_.html" header="UML: Sequence Diagrams: Self-Invocation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\uml\sequenceDiagrams\selfInvocation\embed._include_.html" header="UML: Sequence Diagrams: Self-Invocation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldUpdateState.png" height="250">
@@ -97,7 +98,7 @@
         </tip-box>
         <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
         <p>
-          <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\alternativePaths\embed._include_.html" header="UML: Sequence Diagrams: Alternative Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\uml\sequenceDiagrams\alternativePaths\embed._include_.html" header="UML: Sequence Diagrams: Alternative Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/minefieldCellAlt.png" height="200">
@@ -105,7 +106,7 @@
         </tip-box>
         <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
         <p>
-          <panel src="/cs2103-website/book\book\uml\sequenceDiagrams\optionalPaths\embed._include_.html" header="UML: Sequence Diagrams: Optional Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\uml\sequenceDiagrams\optionalPaths\embed._include_.html" header="UML: Sequence Diagrams: Optional Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box><img src="/cs2103-website/book/oopDesign/conceptualizingSolution/intermediate/images/logicTimerOpt.png" height="130">

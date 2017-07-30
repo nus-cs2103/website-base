@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - UML: Miscellaneous</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -24,27 +25,56 @@
           <p>🏆 Can distinguish between class diagrams and object diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
-          <ul>
-            <li>Instance name may be shown</li>
-            <li>There is a <code>:</code> before the class name</li>
-            <li>Instance and class names are underlined</li>
-            <li>Methods are omitted</li>
-            <li>Multiplicities are omitted</li>
-          </ul>
-          <p>Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
-          <tip-box>
-            <p>Examples:</p><img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
-            <p></p><img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
-            <p></p>
-          </tip-box>
+          <div>
+            <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
+            <ul>
+              <li>Instance name may be shown</li>
+              <li>There is a <code>:</code> before the class name</li>
+              <li>Instance and class names are underlined</li>
+              <li>Methods are omitted</li>
+              <li>Multiplicities are omitted</li>
+            </ul>
+            <p>Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+            <tip-box>
+              <p>Examples:</p><img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+              <p></p><img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Which of these class diagrams match the given object diagram?">
+                    <question>
+                      <p>Which of these class diagrams match the given object diagram?</p><img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                      <p></p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. none</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. (1) only</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. (2) only</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. both match</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. none</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. (1) only</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. (2) only</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. both match</li>
+                        </ul>
+                        <p>Explanation: Both class diagrams allow one Unit object to be linked to one Item object.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
   </div>
 </div>

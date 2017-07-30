@@ -7,6 +7,7 @@
     <title>Week 2: Outcomes</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -61,6 +62,33 @@
                   </popover>
               </div>
               <div>
+                <div>
+                  <panel header=":muscle: Exercises" type="info" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which of these is not an RCS?">
+                        <question>
+                          <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. CVS</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SVN</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Git</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Mercurial</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. All four are RCS software</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. CVS</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SVN</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Git</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Mercurial</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. All four are RCS software</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
                 <div></div>
               </div>
             </div>
@@ -485,7 +513,49 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
                 </tip-box>
               </div>
-              <div></div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" type="info" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which one of these is not a feature available in IDEs?">
+                        <question>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Syntax error highlighting.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Debugging.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code navigation e.g., to navigate from a method call to the method implementation.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Simulation e.g., run a mobile app in a simulator.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Code analysis e.g. to find unreachable code.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Reverse engineering design/documentation e.g. generate diagrams from code</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Visual programming e.g. Write programs using ‘drag and drop’ actions instead of typing code.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. Syntax assistance e.g., show hints as you type.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation e.g., to generate the code required by simply specifying which component/structure you want to implement.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension. i.e. ability add more functionality to the IDE using plugins.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> l. All of the above are present in most IDEs and some have even more features.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Syntax error highlighting.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Debugging.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code navigation e.g., to navigate from a method call to the method implementation.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Simulation e.g., run a mobile app in a simulator.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Code analysis e.g. to find unreachable code.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Reverse engineering design/documentation e.g. generate diagrams from code</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Visual programming e.g. Write programs using ‘drag and drop’ actions instead of typing code.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. Syntax assistance e.g., show hints as you type.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation e.g., to generate the code required by simply specifying which component/structure you want to implement.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension. i.e. ability add more functionality to the IDE using plugins.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> l. All of the above are present in most IDEs and some have even more features.</li>
+                            </ul>
+                            <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
             </div>
           </div>
           <panel header=":trophy: Evidence" expanded="">
@@ -661,7 +731,33 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 <p>To detect and correct regressions, we need to retest all related components. Testing with this intent is called <em>regression testing</em>.</p>
                 <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, regression testing is more practical when it is automated.</p>
               </div>
-              <div></div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" type="info" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Partially true</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Partially true</li>
+                            </ul>
+                            <p>Explanation: Only partially true. Regression testing need not be automated but automation is highly recommended.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
             </div>
           </div>
           <panel header=":trophy: Evidence" expanded="">
@@ -956,6 +1052,30 @@ FC output.txt expected.txt
                   <panel header=":lock: List pros and cons of SE">
                     <question has-input="true">
                       <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+                    </question>
+                  </panel>
+                </div>
+                <div>
+                  <panel header=":lock::key: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
+                    <question>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
+                        </ul>
+                      </div>
                     </question>
                   </panel>
                 </div>

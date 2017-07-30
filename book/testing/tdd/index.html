@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Testing: TDD</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -24,15 +25,51 @@
           <p>🏆 Can explain TDD <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>Typically, tests are written after writing the SUT. However, TDD advocates writing the tests before writing the SUT. In other words, first define the precise behavior of the SUT using test cases, and then write the SUT to match the specified
-            behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects.</p>
+          <div>
+            <p>Typically, tests are written after writing the SUT. However, TDD advocates writing the tests before writing the SUT. In other words, first define the precise behavior of the SUT using test cases, and then write the SUT to match the specified
+              behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects.</p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: True or False?">
+                    <question>
+                      <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                      </ul>
+                      <p>B) Testing tools such as Junit require us to follow TDD.</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                      </ul>
+                      <div slot="answer">
+                        <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                        </ul>
+                        <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
+                        <p>B) Testing tools such as Junit require us to follow TDD.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                        </ul>
+                        <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -43,24 +80,26 @@
           <p>🏆 Can follow TDD <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>Note that TDD does not imply writing all the test cases first before writing functional code. Rather, proceed in small steps:</p>
-          <ol>
-            <li>Decide what behavior to implement.</li>
-            <li>Write test cases to test that behavior.</li>
-            <li>Run those test cases and watch them fail.</li>
-            <li>Implement the behavior.</li>
-            <li>Run the test case.</li>
-            <li>Keep modifying the code and rerunning test cases until they all pass.</li>
-            <li>Refactor code to improve quality.</li>
-            <li>Repeat the cycle for each small unit of behavior that needs to be implemented.</li>
-          </ol>
+          <div>
+            <p>Note that TDD does not imply writing all the test cases first before writing functional code. Rather, proceed in small steps:</p>
+            <ol>
+              <li>Decide what behavior to implement.</li>
+              <li>Write test cases to test that behavior.</li>
+              <li>Run those test cases and watch them fail.</li>
+              <li>Implement the behavior.</li>
+              <li>Run the test case.</li>
+              <li>Keep modifying the code and rerunning test cases until they all pass.</li>
+              <li>Refactor code to improve quality.</li>
+              <li>Repeat the cycle for each small unit of behavior that needs to be implemented.</li>
+            </ol>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
   </div>
 </div>

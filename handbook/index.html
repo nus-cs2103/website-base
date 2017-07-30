@@ -7,6 +7,7 @@
     <title>CS2103/T Website - Handbook</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -69,6 +70,8 @@
     </li>
     <li><a href="#handbook-appendixC-faq">Appendix C: Frequently Asked Questions</a>
       <ul>
+        <li><a href="#handbook-faq-whereIsEverything">Where is everything?</a></li>
+        <li><a href="#handbook-faq-cs2103VsCs2103t">What are the differences between CS2103 and CS2103T?</a></li>
         <li><a href="#handbook-faq-highWorkload">Why the workload is so high?</a></li>
         <li><a href="#handbook-faq-beanCounting">Why so much bean counting?</a></li>
         <li><a href="#handbook-faq-separateWebsite">Why you force me to visit a separate website instead of using IVLE?</a></li>
@@ -90,12 +93,17 @@
   <h1 id="preliminaries">Preliminaries</h1>
   <div id="handbook-preliminaries">
     <div>
-      <p><strong>Where is everything?</strong> CS2103/T-related information are mainly in one of these two places:</p>
-      <ul>
-        <li>The <strong><a href="../schedule/index.html">Schedule page</a></strong> (organized chronologically): That is the one page you need to refer weekly.</li>
-        <li><strong>Module handbook</strong> (i.e. this page. organized by topic) This is a reference document supplementary to the schedule page. This page contains a lot of text, probably too much to read in one sitting. Instead, <mark>skim through it quickly to learn what it contains.</mark>          You can come back to read details as-and-when the need arises. The schedule page lists relevant sections of the Handbook you should read at various points.</li>
-      </ul>
-      <p><strong>CS2103 Vs CS2103T</strong>: Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.</p>
+      <panel header=":recycle: **Admin: FAQ: Where is everything?**" type="seamless" expanded="">
+        <div>
+          <p>The <a href="../schedule/index.html"><strong>Schedule</strong> page</a> is <mark><em>the</em> one page you need to refer weekly</mark>. Although there is a lot of content in the <a href="../handbook/index.html"><strong>Admin</strong> page </a>            and the <a href="../book/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the
+            content chronologically while the other two pages has some of the same content but organized by topic.</p>
+        </div>
+      </panel>
+      <panel header=":recycle: **Admin: FAQ: What are the differences between CS2103 and CS2103T?**" type="seamless" expanded="">
+        <div>
+          <p>Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.</p>
+        </div>
+      </panel>
     </div>
   </div>
   <h1 id="learning-outcomes">Learning Outcomes</h1>
@@ -221,10 +229,10 @@
   <h2 id="the-product">The product</h2>
   <div id="handbook-project-product">
     <div>
-      <p>In this semester, we are going to enhance <a href="https://se-edu.github.io/addressbook-level4/">an AddressBook application</a>.</p><img src="https://github.com/nus-cs2103-AY1718S1/addressbook-level4/raw/master/docs/images/Ui.png" width="900">
-      <p>This product is meant for folks who can type fast, spend most of the time near a computer, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark> The GUI is primarily for output.
-        That is, the GUI is used to give visual feedback rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be CLI-driven. Mouse actions should have keyboard alternatives and
-        typing a command is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.</p>
+      <p>In this semester, we are going to enhance <a href="https://se-edu.github.io/addressbook-level4/">an AddressBook application</a>.</p><img src="https://github.com/nus-cs2103-AY1718S1/addressbook-level4/raw/master/docs/images/Ui.png" width="600">
+      <p>This product is meant for folks who can type fast, spend most of the time near a computer, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark> The GUI is primarily used
+        to give visual feedback rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be CLI-driven. Mouse actions should have keyboard alternatives and typing a command is preferred
+        over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.</p>
     </div>
   </div>
   <h2 id="project-scope">Project Scope</h2>
@@ -1400,6 +1408,15 @@ collated/
   <h1 id="appendix-c-frequently-asked-questions">Appendix C: Frequently Asked Questions</h1>
   <div id="handbook-appendixC-faq">
     <div><img src="/cs2103-website/handbook/images/Why you....png" width="300" height="200">
+      <h3 id="where-is-everything">Where is everything?</h3>
+      <div id="handbook-faq-whereIsEverything">
+        <p>The <a href="../schedule/index.html"><strong>Schedule</strong> page</a> is <mark><em>the</em> one page you need to refer weekly</mark>. Although there is a lot of content in the <a href="../handbook/index.html"><strong>Admin</strong> page </a>          and the <a href="../book/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content
+          chronologically while the other two pages has some of the same content but organized by topic.</p>
+      </div>
+      <h3 id="what-are-the-differences-between-cs2103-and-cs2103t">What are the differences between CS2103 and CS2103T?</h3>
+      <div id="handbook-faq-cs2103VsCs2103t">
+        <p>Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.</p>
+      </div>
       <h3 id="why-the-workload-is-so-high">Why the workload is so high?</h3>
       <div id="handbook-faq-highWorkload"><img src="/cs2103-website/handbook/images/Why workload heavy.png" width="250">
         <p>CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2/3/4, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore,

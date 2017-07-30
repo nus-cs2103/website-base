@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Object Oriented Programming: Association Classes</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -28,7 +29,7 @@
     <div id="main">
       <div>
         <p>
-          <panel src="/cs2103-website/book\book\oopDesign\associations\associationClasses\embed._include_.html" header="OOP: Associations: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\oopDesign\associations\associationClasses\embed._include_.html" header="OOP: Associations: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
@@ -40,6 +41,33 @@
         </tip-box>
       </div>
       <div>
+        <div>
+          <panel header=":muscle: Exercises" type="info" expandable="">
+            <div>
+              <panel header=":lock::key: Which one of these is the least suitable as an Association Class?">
+                <question><img src="/cs2103-website/book/oopImplementation/associationClasses/images/exerciseDiagram.png" height="330">
+                  <p></p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. a</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. b</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. c</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. d</li>
+                  </ul>
+                  <div slot="answer">
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. a</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. b</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. c</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. d</li>
+                    </ul>
+                    <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be suitable
+                      as an association class.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
         <div></div>
       </div>
     </div>

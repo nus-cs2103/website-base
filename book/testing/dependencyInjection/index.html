@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Testing: Dependency Injection</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -24,17 +25,20 @@
           <p>🏆 Can explain dependency injection <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p><em>Dependency injection</em> is the process of ‘injecting’ objects to replace current dependencies with a different object. This is often used to inject stubs to isolate the SUT from other collaborating objects so that it can be tested independently.
-            In the example below, a Foo object normally depends on a Bar object, but we have injected a BarStub object so that the Foo object no longer depends on a Bar object. Now we can test the Foo object in isolation from the Bar object.</p><img src="/cs2103-website/book/testing/dependencyInjection/what/images/diagram.png"
-            height="150">
-          <p></p>
+          <div>
+            <p><em>Dependency injection</em> is the process of ‘injecting’ objects to replace current dependencies with a different object. This is often used to inject stubs to isolate the SUT from other collaborating objects so that it can be tested independently.
+              In the example below, a Foo object normally depends on a Bar object, but we have injected a BarStub object so that the Foo object no longer depends on a Bar object. Now we can test the Foo object in isolation from the Bar object.</p>
+            <img
+              src="/cs2103-website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
+              <p></p>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -45,11 +49,12 @@
           <p>🏆 Can explain how dependency injection works <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>Given next is a sample testing scenario that tests the <code>totalSalary</code> of the <code>Payroll</code> class. The production version of the <code>totalSalary</code> method collaborates with the <code>SalaryManager</code> object to calculate
-            the return value. During testing, the <code>SalaryManager</code> object is substituted with a <code>SalaryManagerStub</code> object which responds with hard-coded return values.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
+          <div>
+            <p>Given next is a sample testing scenario that tests the <code>totalSalary</code> of the <code>Payroll</code> class. The production version of the <code>totalSalary</code> method collaborates with the <code>SalaryManager</code> object to calculate
+              the return value. During testing, the <code>SalaryManager</code> object is substituted with a <code>SalaryManagerStub</code> object which responds with hard-coded return values.</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-comment">//test setup</span>
         Payroll p = <span class="hljs-keyword">new</span> Payroll();
@@ -65,7 +70,7 @@
     }
 }
 </code></pre>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();
     <span class="hljs-keyword">private</span> String[] employees;
 
@@ -88,14 +93,14 @@
     }
 }
 </code></pre>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{
         <span class="hljs-comment">//code to access employee’s salary history</span>
         <span class="hljs-comment">//code to calculate total salary paid and return it</span>
     }
 }
 </code></pre>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{
     <span class="hljs-comment">/* this method returns hard coded values used for testing */</span>
     <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{
         <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {
@@ -108,11 +113,39 @@
     }
 }
 </code></pre>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Choose the INCORRECT statement about dependency injection">
+                    <question>
+                      <p>Choose the INCORRECT statement about dependency injection</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is a technique for increasing dependencies</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub.</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It is a technique for increasing dependencies</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub.</li>
+                        </ul>
+                        <p>Explanation: It is a technique we can use to substitute an existing component with another, without breaking its dependent components. It is useful when we want to test a component in isolation but the SUT (i.e., component under
+                          test) depends on other components. Using dependency injection, we can substitute those other components with test-friendly stubs. This is often done using polymorphism.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
   </div>
 </div>

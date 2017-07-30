@@ -14,7 +14,7 @@
   <div>
     <p>Consider two classes, Account and Guarantor, with an association as shown in the following diagram:</p>
     <tip-box>
-      <p>Example:</p><img src="/cs2103-website/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+      <p>Example:</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
       <p></p>
       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Guarantor guarantor;
@@ -52,13 +52,13 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     <div>
       <panel header=":muscle: Exercises" type="info" expandable="">
         <div>
-          <panel header="Q: For the Manager class, write an addAccount() method.">
+          <panel header=":lock::key: For the Manager class, write an addAccount() method.">
             <question has-input="true">
               <p>For the Manager class shown below, write an addAccount() method that</p>
               <ul>
                 <li>restricts the maximum number of Accounts to 8</li>
                 <li>avoids adding duplicate Accounts</li>
-              </ul><img src="/cs2103-website/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
+              </ul><img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
               <p></p>
               <div slot="answer">
                 <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
@@ -85,9 +85,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           </panel>
         </div>
         <div>
-          <panel header="Q: Implement the classes below using the defensive coding approach.">
+          <panel header=":lock::key: Implement the classes below using the defensive coding approach.">
             <question has-input="true">
-              <p>Implement the classes with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the Marriage class handle setting/removal of reference.</p><img src="/cs2103-website/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg"
+              <p>Implement the classes with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the Marriage class handle setting/removal of reference.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg"
                 height="55">
               <p></p>
               <div slot="answer">
@@ -143,9 +143,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           </panel>
         </div>
         <div>
-          <panel header="Q: Give a suitable defensive implementation to the Account class.">
+          <panel header=":lock::key: Give a suitable defensive implementation to the Account class.">
             <question has-input="true">
-              <p>Give a suitable defensive implementation to the Account class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p><img src="/cs2103-website/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png"
+              <p>Give a suitable defensive implementation to the Account class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png"
                 height="80">
               <p></p>
               <div slot="answer">
@@ -161,6 +161,25 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     <span class="hljs-comment">// there should not be a setGuarantor method</span>
 }
 </code></pre>
+              </div>
+            </question>
+          </panel>
+        </div>
+        <div>
+          <panel header=":lock::key: Defensive Implementation">
+            <question>
+              <p>This is a defensive implementation of the association.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="150">
+              <p></p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                </ul>
+                <p>Explanation: While the design requires a City to be connected to exactly one Country, the code allows it to be connected to zero Country objects (by passing null to the setCountry() method).</p>
               </div>
             </question>
           </panel>

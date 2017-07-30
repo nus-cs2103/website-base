@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Object Oriented Programming: Associations</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -24,35 +25,37 @@
           <p>🏆 Can explain associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
-          <tip-box>
-            <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/basic/images/completeStructure.png" height="120">
+          <div>
+            <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
             <p></p>
-          </tip-box>
-          <p>These object structures can change over time.</p>
-          <tip-box>
-            <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100"><img src="/cs2103-website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100">
+            <tip-box>
+              <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/basic/images/completeStructure.png" height="120">
+              <p></p>
+            </tip-box>
+            <p>These object structures can change over time.</p>
+            <tip-box>
+              <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100"><img src="/cs2103-website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100">
+              <p></p>
+            </tip-box>
+            <p>These associations can be reflected among classes too.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\associations\basic\embed._include_.html" header="UML: Class Diagrams: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website\book\uml\classDiagrams\associations\labels\embed._include_.html" header="UML: Class Diagrams: Associations: Labels" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/cs2103-website\book\uml\classDiagrams\associations\roles\embed._include_.html" header="UML: Class Diagrams: Associations: Roles" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p></p><img src="/cs2103-website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
             <p></p>
-          </tip-box>
-          <p>These associations can be reflected among classes too.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\associations\basic\embed._include_.html" header="UML: Class Diagrams: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\associations\labels\embed._include_.html" header="UML: Class Diagrams: Associations: Labels" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\associations\roles\embed._include_.html" header="UML: Class Diagrams: Associations: Roles" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p><img src="/cs2103-website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
-          <p></p>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -63,18 +66,44 @@
           <p>🏆 Can explain the meaning of navigability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called <em>navigability</em>.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\associations\navigability\embed._include_.html" header="UML: Class Diagrams: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
+          <div>
+            <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called <em>navigability</em>.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\associations\navigability\embed._include_.html" header="UML: Class Diagrams: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p></p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: What does the navigability given by this diagram mean?">
+                    <question><img src="/cs2103-website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
+                      <p></p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                        </ul>
+                        <p>Explanation: The diagram indicates that Unit item should know about the Item object. In the implementation, the Unit object will hold a Unit object in one of its variables.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -85,18 +114,45 @@
           <p>🏆 Can explain the meaning of multiplicity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called <em>multiplicity</em>.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\associations\multiplicity\embed._include_.html" header="UML: Class Diagrams: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
+          <div>
+            <p>Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called <em>multiplicity</em>.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\associations\multiplicity\embed._include_.html" header="UML: Class Diagrams: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p></p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
+                    <question><img src="/cs2103-website/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
+                      <p></p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                        </ul>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -107,18 +163,20 @@
           <p>🏆 Can explain the meaning of dependencies in the context of UML class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>In some cases, objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\dependencies\topicPanel._include_.html" header="UML: Class Diagrams: Dependencies" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
+          <div>
+            <p>In some cases, objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\dependencies\topicPanel._include_.html" header="UML: Class Diagrams: Dependencies" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p></p>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -129,28 +187,30 @@
           <p>🏆 Can explain the meaning of composition <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>A composition is an association that represents a strong “whole-part” relationship. When the “whole” is destroyed, “parts” are destroyed too.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\composition\topicPanel._include_.html" header="UML: Class Diagrams: Composition" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
-          <tip-box>
-            <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+          <div>
+            <p>A composition is an association that represents a strong “whole-part” relationship. When the “whole” is destroyed, “parts” are destroyed too.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\composition\topicPanel._include_.html" header="UML: Class Diagrams: Composition" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
             <p></p>
-          </tip-box>
-          <p>In addition, composition also implies that <strong>there cannot be cyclical links</strong>. In the example below, the notation represents a ‘sub-folder’ relationship between two folders while implying that a Folder cannot be a sub-folder of
-            itself. If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be subfolder of itself.</p>
-          <tip-box>
-            <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/composition/images/folder.png" height="80">
-            <p></p>
-          </tip-box>
+            <tip-box>
+              <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+              <p></p>
+            </tip-box>
+            <p>In addition, composition also implies that <strong>there cannot be cyclical links</strong>. In the example below, the notation represents a ‘sub-folder’ relationship between two folders while implying that a Folder cannot be a sub-folder of
+              itself. If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be subfolder of itself.</p>
+            <tip-box>
+              <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/composition/images/folder.png" height="80">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -161,21 +221,44 @@
           <p>🏆 Can explain the meaning of aggregations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p><em>Aggregation</em> represents a ‘container-contained’ relationship. It is a weaker relationship than composition.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\aggregation\topicPanel._include_.html" header="UML: Class Diagrams: Aggregation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p><img src="/cs2103-website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
-          <p></p>
-          <p><strong>Aggregation vs Composition</strong></p>
-          <p>The distinction between composition and aggregation is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether as using it adds more confusion than clarity.</p>
+          <div>
+            <p><em>Aggregation</em> represents a ‘container-contained’ relationship. It is a weaker relationship than composition.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\aggregation\topicPanel._include_.html" header="UML: Class Diagrams: Aggregation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p></p><img src="/cs2103-website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
+            <p></p>
+            <p><strong>Aggregation vs Composition</strong></p>
+            <p>The distinction between composition and aggregation is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether as using it adds more confusion than clarity.</p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?">
+                    <question>
+                      <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Composition symbol</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Aggregation symbol</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Composition symbol</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. Aggregation symbol</li>
+                        </ul>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -186,24 +269,26 @@
           <p>🏆 Can explain the meaning of association classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>At times, there is a need to store additional information about an association. For example, a <code>Man</code> class and a <code>Woman</code> class linked with a ‘married to’ association might also require the date of marriage to be stored.
-            However, that data is related to the association but not specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional class can be introduced, e.g. a <code>Marriage</code> class,
-            to store such information. These classes are called <em>association classes</em>.</p>
-          <p>
-            <panel src="/cs2103-website/book\book\uml\classDiagrams\associationClasses\topicPanel._include_.html" header="UML: Class Diagrams: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
-          <tip-box>
-            <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120">
+          <div>
+            <p>At times, there is a need to store additional information about an association. For example, a <code>Man</code> class and a <code>Woman</code> class linked with a ‘married to’ association might also require the date of marriage to be stored.
+              However, that data is related to the association but not specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional class can be introduced, e.g. a <code>Marriage</code> class,
+              to store such information. These classes are called <em>association classes</em>.</p>
+            <p>
+              <panel src="/cs2103-website\book\uml\classDiagrams\associationClasses\topicPanel._include_.html" header="UML: Class Diagrams: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
             <p></p>
-          </tip-box>
+            <tip-box>
+              <p>Example:</p><img src="/cs2103-website/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
   </div>
 </div>

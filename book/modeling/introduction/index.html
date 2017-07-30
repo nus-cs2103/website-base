@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Modeling: Introduction</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -21,20 +22,22 @@
       </div>
       <tip-box type="success">
         <div>
-          <p>🏆 Can explain what are models used for <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          <p>🏆 Can explain models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p><strong>A <em>model</em> is anything used in any way to represent anything else.</strong> For example, a class diagram is a model that represents a software design and is drawn using the UML modeling notation.</p>
-          <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> For example, a class diagram captures the class structure of the software design but not the runtime behavior.</p>
-          <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong> For example, in addition to the class diagram, a number of sequence diagrams may need to be created to capture various interesting interaction scenarios the
-            software undergoes.</p>
+          <div>
+            <p><strong>A <em>model</em> is anything used in any way to represent anything else.</strong> For example, a class diagram is a model that represents a software design and is drawn using the UML modeling notation.</p>
+            <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> For example, a class diagram captures the class structure of the software design but not the runtime behavior.</p>
+            <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong> For example, in addition to the class diagram, a number of sequence diagrams may need to be created to capture various interesting interaction scenarios
+              the software undergoes.</p>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -45,40 +48,70 @@
           <p>🏆 Can explain how models are used <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>In software development, models are useful in several ways:</p>
-          <p>a) <strong>To analyze</strong> a complex entity related to software development.</p>
-          <tip-box>
-            <p>Examples:</p>
-            <ol>
-              <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
-              <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
-            </ol>
-          </tip-box>
-          <p>b) <strong>To communicate</strong> information among stakeholders. Models can be used as a visual aid in discussions and documentations.</p>
-          <tip-box>
-            <p>Examples:</p>
-            <ol>
-              <li>An architect can use an architecture diagram to explain the high-level design of the software to developers.</li>
-              <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
-              <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
-            </ol>
-          </tip-box>
-          <p>c) <strong>As a blueprint</strong> for creating software. Models can be used as instructions for building software.</p>
-          <tip-box>
-            <panel header="Model Driven Development :four:" type="seamless">
-              <p><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints. MDD uses models as primary engineering artifacts when developing
-                software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation from model
-                to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and maintain the link between models
-                and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
-            </panel>
-          </tip-box>
+          <div>
+            <p>In software development, models are useful in several ways:</p>
+            <p>a) <strong>To analyze</strong> a complex entity related to software development.</p>
+            <tip-box>
+              <p>Examples:</p>
+              <ol>
+                <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
+                <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
+              </ol>
+            </tip-box>
+            <p>b) <strong>To communicate</strong> information among stakeholders. Models can be used as a visual aid in discussions and documentations.</p>
+            <tip-box>
+              <p>Examples:</p>
+              <ol>
+                <li>An architect can use an architecture diagram to explain the high-level design of the software to developers.</li>
+                <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
+                <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
+              </ol>
+            </tip-box>
+            <p>c) <strong>As a blueprint</strong> for creating software. Models can be used as instructions for building software.</p>
+            <tip-box>
+              <panel header="Model Driven Development :four:" type="seamless">
+                <p><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints. MDD uses models as primary engineering artifacts when developing
+                  software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation from model
+                  to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and maintain the link between
+                  models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
+              </panel>
+            </tip-box>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Choose the incorrect statement about models.">
+                    <question>
+                      <p>Choose the incorrect statement about models.</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Models are abstractions.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Models can be used for communication.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Models can be used for analysis of a problem.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Models are abstractions.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Models can be used for communication.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Models can be used for analysis of a problem.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. Generating models from code is useless.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
+                        </ul>
+                        <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -89,15 +122,17 @@
           <p>🏆 Can identify UML models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p><img src="/cs2103-website/book/modeling/introduction/umlModels/images/modelDiagram.png" height="300">
-          <p></p>
+          <div>
+            <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p><img src="/cs2103-website/book/modeling/introduction/umlModels/images/modelDiagram.png" height="300">
+            <p></p>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
   </div>
 </div>

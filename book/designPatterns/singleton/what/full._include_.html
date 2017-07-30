@@ -20,11 +20,36 @@
     <p>The key insight of the solution is that the <em>constructor</em> of the singleton class cannot be <em>public</em>. Because a <em>public constructor</em> will allow others to instantiate the class at will, a <em>private constructor</em> should be used
       instead. In addition, a public class-level method is provided to access the <em>single instance</em>.</p>
     <tip-box>
-      <p>Example:</p><img src="/cs2103-website/designPatterns/singleton/what/images/singleton.png" height="130">
+      <p>Example:</p><img src="/cs2103-website/book/designPatterns/singleton/what/images/singleton.png" height="130">
       <p></p>
     </tip-box>
   </div>
   <div>
+    <div>
+      <panel header=":muscle: Exercises" type="info" expandable="">
+        <div>
+          <panel header=":lock::key: Choose the correct statement.">
+            <question>
+              <p>We use the Singleton pattern when</p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. we want an a class with a private constructor.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. we want a single class to hold all functionality of the system.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. we want a class with no more than one instance.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. we want to hide internal structure of a component from its clients.</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. we want an a class with a private constructor.</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. we want a single class to hold all functionality of the system.</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. we want a class with no more than one instance.</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. we want to hide internal structure of a component from its clients.</li>
+                </ul>
+              </div>
+            </question>
+          </panel>
+        </div>
+      </panel>
+    </div>
     <div></div>
   </div>
 </div>

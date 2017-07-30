@@ -21,7 +21,7 @@
     <p>As we know, Java already allows substituting objects of sub classes where an object of the super class is expected. However, that does not mean that doing so will not break the functionality of the code. To follow LSP, we should be careful not to
       contradict the behavior specified by the super class.</p>
     <tip-box>
-      <p>Example:</p><img src="/cs2103-website/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+      <p>Example:</p><img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
       <p></p>
       <p>Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will work for all
         positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method. Now consider the following:</p>
@@ -37,6 +37,29 @@
     </tip-box>
   </div>
   <div>
+    <div>
+      <panel header=":muscle: Exercises" type="info" expandable="">
+        <div>
+          <panel header=":lock::key: True or False?">
+            <question>
+              <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov substitution principle.</p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                </ul>
+                <p>Explanation: If the subclass is more restrictive than the parent class, a piece of code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and Liskov substitution principle is
+                  violated.</p>
+              </div>
+            </question>
+          </panel>
+        </div>
+      </panel>
+    </div>
     <div></div>
   </div>
 </div>

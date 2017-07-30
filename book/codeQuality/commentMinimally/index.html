@@ -7,6 +7,7 @@
     <title>CS2103/T Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -24,18 +25,20 @@
           <p>🏆 Can explain the need for commenting minimally but sufficiently <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <blockquote>
-            <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer.</p>
-            <p>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a></p>
-          </blockquote>
-          <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+          <div>
+            <blockquote>
+              <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer.</p>
+              <p>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a></p>
+            </blockquote>
+            <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -46,28 +49,30 @@
           <p>🏆 Can follow basic guidelines for writing code comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <panel header="**Do Not Repeat the Obvious**" type="seamless" alt="indentation">
-            <div>
+          <div>
+            <panel header="**Do Not Repeat the Obvious**" type="seamless" alt="indentation">
               <div>
-                <p>If the parameter name clearly indicates its purpose, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
+                <div>
+                  <p>If the parameter name clearly indicates its purpose, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
+                </div>
               </div>
-            </div>
-          </panel>
-          <panel header="**Write to the Reader**" type="seamless" alt="indentation">
-            <div>
+            </panel>
+            <panel header="**Write to the Reader**" type="seamless" alt="indentation">
               <div>
-                <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a file,
-                  class, or an operation to explain its purpose.</p>
+                <div>
+                  <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a
+                    file, class, or an operation to explain its purpose.</p>
+                </div>
               </div>
-            </div>
-          </panel>
+            </panel>
+          </div>
+          <div>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
     <div>
       <div>
@@ -78,21 +83,47 @@
           <p>🏆 Can follow intermediate guidelines for writing code comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
-      <div>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <panel header="**Explain WHAT and WHY, not HOW**" type="seamless" alt="indentation">
-            <div>
+          <div>
+            <panel header="**Explain WHAT and WHY, not HOW**" type="seamless" alt="indentation">
               <div>
-                <p>When you write comments, use them to explain <em>why</em> and <em>what</em> aspect of the code, rather than the <em>how</em> aspect. The former is usually not apparent in the code and writing it down adds value to the code. The latter
-                  should already be apparent from the code.</p>
+                <div>
+                  <p>When you write comments, use them to explain <em>why</em> and <em>what</em> aspect of the code, rather than the <em>how</em> aspect. The former is usually not apparent in the code and writing it down adds value to the code. The latter
+                    should already be apparent from the code.</p>
+                </div>
               </div>
+            </panel>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Comments">
+                    <question>
+                      <p>In general, comments should NOT be used to describe</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. WHAT the code does</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. WHY the code does something</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. HOW the code does something</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. WHAT the code does</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. WHY the code does something</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. HOW the code does something</li>
+                        </ul>
+                        <p>Explanation: How the code does something should be apparent from the code itself. However, comments can help the reader in describing WHAT and WHY aspects of the code. This was discussed during the lecture.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
             </div>
-          </panel>
+            <div></div>
+          </div>
         </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
+      </panel>
     </div>
   </div>
 </div>
