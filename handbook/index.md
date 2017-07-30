@@ -46,6 +46,8 @@
     *   [Policy on help from outsiders](#policy-outsiderHelp)
     *   [Policy on suggested length for submissions](#policy-submissionLength)
 *   [Appendix C: Frequently Asked Questions](#handbook-appendixC-faq)
+    *   [Where is everything?](#handbook-faq-whereIsEverything)
+    *   [What are the differences between CS2103 and CS2103T?](#handbook-faq-cs2103VsCs2103t)
     *   [Why the workload is so high?](#handbook-faq-highWorkload)
     *   [Why so much bean counting?](#handbook-faq-beanCounting)
     *   [Why you force me to visit a separate website instead of using IVLE?](#handbook-faq-separateWebsite)

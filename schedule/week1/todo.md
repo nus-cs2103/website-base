@@ -1,58 +1,40 @@
-<Panel class="item" header="[CS2103 students only] Forming teams" expandable>
+<Panel type="danger" header="[CS2103 students only] Forming teams :star:" expandable>
 
-==Delay forming teams until your place in a tutorial is confirmed.== Read the Teams section of the handbook before forming teams.
+==Delay forming teams== until your place in a tutorial is confirmed. 
 
-</Panel>
-<Panel class="item" header="Have a look at the 'module handbook'" expandable>
-
-Apart from this Schedule page, there are two other important sources of information.
-* The 'module handout' (available from IVLE files) is a self-contained set of materials that has been compiled as an e-book. The purpose of the handout is to serve as a reference to the materials covered during the lectures. As the handout is meant to be used in any introductory software engineering course, it does not contain course-related details such as assignment deliverables.
-* The 'module handbook' specifies the course requirements of CS2103/T and is very comprehensive. There is no need to read everything; we will point you to the correct sections in due time.
-
-Handbook sections to read around this time:    
-
-<tabs>
-
-<tab class="item" header="General" class="book">
-
-  <include src="../../handbook/preliminaries.md" name="Preliminaries" dynamic />
-  <include src="../../handbook/textBooks.md" name="Text Books" dynamic />
-  <include src="../../handbook/programming-languages.md" name="Programming Language" dynamic />
-  <include src="../../handbook/appendixA-principles.md" name="Module Principles" dynamic />
-
-</tab>
-
-<tab header="Project" class="book">
-
-  <include src="../../handbook/project-product.md" name="The Product" dynamic />
-  <include src="../../handbook/project-scope.md" name="Project Scope" dynamic />
-  <include src="../../handbook/project-constraints.md" name="Project Constraints" dynamic />
-
-</tab>
-
-<tab header="FAQ" class="book">
-
-  <include src="../../handbook/appendixC-faq.md#handbook-faq-highWorkload" name="Why the workload is so high?" dynamic />
-  <include src="../../handbook/appendixC-faq.md#handbook-faq-beanCounting" name="Why so much bean counting?" dynamic />
-  <include src="../../handbook/appendixC-faq.md#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" dynamic />
-
-</tab>
-
-</tabs>
-
-</Panel>
-<Panel class="item" header="Brush up your Java" expandable>
-
-You are going to start programming soon.
-
-Brush up your Java programming skills. This module requires you to write Java code almost every week.
-
-Advanced: Have a look at Java 8 new features.
+<include src="../../handbook/teams.md" name=":recycle: Admin: Team Forming" dynamic />
 
 </Panel>
 
-<Panel class="item" header="Attend Lecture 1 ==(compulsory)== :star: :sheep:" expandable>
+<Panel  header="Admin info to read" expandable expanded>
 
-More about lectures
+Here are some module admin info to read around this time:    
+
+<include type="danger" name=":recycle: Admin: FAQ: Where is everything? :star:" src="../../handbook/appendixC-faq.md#handbook-faq-whereIsEverything"  dynamic />
+<include type="danger" src="../../handbook/project-product.md" name=":recycle: Admin: Project: The Product :star:" dynamic />
+<include type="danger" src="../../handbook/project-scope.md" name=":recycle: Admin: Project: Scope :star:" dynamic />
+<include type="warning" src="../../handbook/textBooks.md" name=":recycle: Admin: Text Books :star::star:" dynamic />
+<include type="warning" src="../../handbook/programming-languages.md" name=":recycle: Admin: Programming Language :star::star:" dynamic />
+<include type="warning" src="../../handbook/project-constraints.md" name=":recycle: Admin: Project: Project Constraints :star::star:"  dynamic />
+<include type="info" src="../../handbook/appendixA-principles.md" name=":recycle: Admin: Module Principles :star::star::star:" dynamic />
+<include type="success" name=":recycle: Admin: FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../handbook/appendixC-faq.md#handbook-faq-cs2103VsCs2103t"  dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-highWorkload" name=":recycle: Admin: FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-beanCounting" name=":recycle: Admin: FAQ: Why so much bean counting? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-separateWebsite" name=":recycle: Admin: FAQ: Why a separate website instead of using IVLE? :star::star::star::star:" dynamic />
+
+</Panel>
+
+<Panel type="warning" header="Brush up your Java :star::star:" expandable>
+
+This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 
+
+In particular, you may want to have a look at the new Java 8 features that may not have been covered in previous Java modules.
+
+</Panel>
+
+
+<Panel type="danger" header="Attend Lecture 1 ==(compulsory)== :star:" expandable>
+
+  <include src="../../handbook/lectures.md" name=":recycle: Admin: Lectures" dynamic />
 
 </Panel>

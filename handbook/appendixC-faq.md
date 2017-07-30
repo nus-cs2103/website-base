@@ -1,5 +1,21 @@
 <img src="{{baseUrl}}/handbook/images/Why you....png" width="300" height="200"/>
 
+### Where is everything? 
+
+<div id="handbook-faq-whereIsEverything">
+
+The [**Schedule** page](../schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ](../handbook/index.html) and the [**Textbook** page](../book/index.html) -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content chronologically while the other two pages has some of the same content but organized by topic.
+
+</div>
+
+### What are the differences between CS2103 and CS2103T?
+
+<div id="handbook-faq-cs2103VsCs2103t">
+ 
+Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
+
+</div>
+
 ### Why the workload is so high?
 
 <div id="handbook-faq-highWorkload">
