@@ -1,4 +1,6 @@
-| Module  | Tutorial ID | Time     | Venue     | Tutors ([contact details](https://docs.google.com/document/d/1O3HF7qsh6KVeLesPmcQ0nPxSqhrkJxvS-OA_g-k-two/pub?embedded=true)) |
+**Outdated; To be updated soon...**
+
+| Module  | Tutorial ID | Time     | Venue     | Tutors ([contact details](https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true)) |
 |---------|-------------|----------|-----------|---------------------------|
 | CS2103T | W09         | Wed 0900 | COM1-B103 | TBD                       |
 | CS2103  | W10         | Wed 1900 | COM1-B103 | TBD                       |
