@@ -1,19 +1,13 @@
-**Handbook sections to read**:
+<panel  header="Admin info to read" expandable expanded>
 
-  <include type="danger" src="../../handbook/teams.md" name="Forming Teams :star:" dynamic />
-  <include type="warning" src="../../handbook/peer-evaluations.md" name="Peer Evaluations :star::star:" dynamic />
-  <include type="info" src="../../handbook/participation.md" name="Participation marks :star::star::star:" dynamic />
-  <include type="success" src="../../handbook/tools.md" name="Tools :star::star::star::star:" dynamic />
+<include type="warning" src="../../handbook/appendixB-policies.md#policy-techHelp" name="%%Admin &raquo;%% Policy on Tech Help :star::star:" dynamic />
 
-FAQ:
+<include type="info" src="../../handbook/tools.md" name="%%Admin &raquo;%% Module Tools :star::star::star:" dynamic />
 
-  <include src="../../handbook/appendixC-faq.md#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" dynamic />
-  <include src="../../handbook/appendixC-faq.md#handbook-faq-selfStudy" name="Why so much self-study?" dynamic />
-  <include src="../../handbook/appendixC-faq.md#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" dynamic />
+<include type="success" name="%%Admin &raquo;%% Module Principles :star::star::star::star:" src="../../handbook/appendixA-principles.md"  dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-separateWebsite" name="%%Admin &raquo;%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-slideFormat" name="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-selfStudy" name="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:" dynamic />
 
-
-<Panel class="item" header="Submit IVLE quiz" expandable>
-
-Note that IVLE quizzes open on Fridays just after the lecture and closes on the following Tuesday 2359.
-
-</Panel>
+</panel>

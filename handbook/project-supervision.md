@@ -1,5 +1,0 @@
-Your tutor for phase B will also be your project supervisor.  
-
-Tutorial time is the main avenue for meeting your tutor. In addition, you can meet the tutor before/after the tutorial, or any other time, as many times you need, subject to availability in his/her schedule. However, please note that it is not the tutor’s job to chase you down and give help. It is up to you to get as much feedback from the project tutor as you need.
-
-Furthermore, it is not the job of the project supervisor to lead your project to success. His/job is to observe, evaluate, and give feedback. You are free to request more feedback from the tutor as necessary.

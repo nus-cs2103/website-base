@@ -26,10 +26,10 @@
     *   [v1.5 [week 13]](#handbook-project-v15)
     *   [Retrospective](#handbook-project-retrospective)
     *   [Assessment](#handbook-project-assessment)
-    *   [Supervision](#handbook-project-supervision)
-*   [Tools](#handbook-tools)
+*   [Supervision](#handbook-supervision)
 *   [Forming Teams](#handbook-teams)
 *   [Peer Evaluations](#handbook-peerEvaluations)
+*   [Tools](#handbook-tools)
 *   [Grade Breakdown](#handbook-gradeBreakdown)
 *   [Exams](#handbook-exams)
 *   [Participation Marks](#handbook-participation)
@@ -167,9 +167,9 @@
 <include src="project-assessment.md" />
 </div>
 
-## Project Supervision
+# Supervision
 <div id="handbook-project-supervision">
-<include src="project-supervision.md" />
+<include src="supervision.md" />
 </div>
 
 # Forming Teams
@@ -182,7 +182,7 @@
 <include src="peer-evaluations.md" />
 </div>
 
-# Project Tools
+# Tools
 <div id="handbook-tools">
 <include src="tools.md" />
 </div>

@@ -27,7 +27,8 @@ Here are some things to keep in mind:
 *  State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.
 
 </span>
-sThe final peer evaluation will be used to determine the level of contribution from each member to the project. In that peer-evaluation you will be asked to ==estimate the contribution of each team member== (including yourself) to the project so far.
+
+The final peer evaluation will be used to determine the level of contribution from each member to the project. In that peer-evaluation you will be asked to ==estimate the contribution of each team member== (including yourself) to the project so far.
 
 <img src="{{baseUrl}}/handbook/images/peer evaluations.png" width="600px">
 
