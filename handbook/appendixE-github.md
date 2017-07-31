@@ -150,6 +150,6 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 We recommend using the _Forking Workflow_.
 
-<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/embed.md" header=":recycle: TextBook:Git and GitHub: Forking Workflow" />
+<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/embed.md" header="%%Textbook &raquo;%%Git and GitHub: Forking Workflow" />
 
 </div>

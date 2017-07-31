@@ -2,7 +2,7 @@
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
-<include src="../../handbook/teams.md" name=":recycle: Admin: Team Forming" dynamic />
+<include src="../../handbook/teams.md" name="%%Admin &raquo;%% Team Forming" dynamic />
 
 </Panel>
 
@@ -10,18 +10,18 @@
 
 Here are some module admin info to read around this time:    
 
-<include type="danger" name=":recycle: Admin: FAQ: Where is everything? :star:" src="../../handbook/appendixC-faq.md#handbook-faq-whereIsEverything"  dynamic />
-<include type="danger" name=":recycle: Admin: Project: Overview :star:" src="../../handbook/project.md"  dynamic />
-<include type="danger" name=":recycle: Admin: Project: The Product :star:" src="../../handbook/project-product.md"  dynamic />
-<include type="danger" src="../../handbook/project-scope.md" name=":recycle: Admin: Project: Scope :star:" dynamic />
-<include type="warning" src="../../handbook/textBooks.md" name=":recycle: Admin: Text Books :star::star:" dynamic />
-<include type="warning" src="../../handbook/programming-languages.md" name=":recycle: Admin: Programming Language :star::star:" dynamic />
-<include type="warning" src="../../handbook/project-constraints.md" name=":recycle: Admin: Project: Project Constraints :star::star:"  dynamic />
-<include type="info" src="../../handbook/appendixA-principles.md" name=":recycle: Admin: Module Principles :star::star::star:" dynamic />
-<include type="success" name=":recycle: Admin: FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../handbook/appendixC-faq.md#handbook-faq-cs2103VsCs2103t"  dynamic />
-<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-highWorkload" name=":recycle: Admin: FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
-<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-beanCounting" name=":recycle: Admin: FAQ: Why so much bean counting? :star::star::star::star:" dynamic />
-<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-separateWebsite" name=":recycle: Admin: FAQ: Why a separate website instead of using IVLE? :star::star::star::star:" dynamic />
+<include type="danger" name="%%Admin &raquo;%% FAQ: Where is everything? :star:" src="../../handbook/appendixC-faq.md#handbook-faq-whereIsEverything"  dynamic />
+<include type="danger" name="%%Admin &raquo;%% Project: Overview :star:" src="../../handbook/project.md"  dynamic />
+<include type="danger" name="%%Admin &raquo;%% Project: The Product :star:" src="../../handbook/project-product.md"  dynamic />
+<include type="danger" src="../../handbook/project-scope.md" name="%%Admin &raquo;%% Project: Scope :star:" dynamic />
+<include type="warning" src="../../handbook/textBooks.md" name="%%Admin &raquo;%% Text Books :star::star:" dynamic />
+<include type="warning" src="../../handbook/programming-languages.md" name="%%Admin &raquo;%% Programming Language :star::star:" dynamic />
+<include type="warning" src="../../handbook/project-constraints.md" name="%%Admin &raquo;%% Project: Project Constraints :star::star:"  dynamic />
+<include type="info" src="../../handbook/appendixA-principles.md" name="%%Admin &raquo;%% Module Principles :star::star::star:" dynamic />
+<include type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../handbook/appendixC-faq.md#handbook-faq-cs2103VsCs2103t"  dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-beanCounting" name="%%Admin &raquo;%% FAQ: Why so much bean counting? :star::star::star::star:" dynamic />
+<include type="success" src="../../handbook/appendixC-faq.md#handbook-faq-separateWebsite" name="%%Admin &raquo;%% FAQ: Why a separate website instead of using IVLE? :star::star::star::star:" dynamic />
 
 </Panel>
 
@@ -36,6 +36,6 @@ In particular, you may want to have a look at the new Java 8 features that may n
 
 <Panel type="danger" header="Attend Lecture 1 ==(compulsory)== :star:" expandable>
 
-  <include src="../../handbook/lectures.md" name=":recycle: Admin: Lectures" dynamic />
+  <include src="../../handbook/lectures.md" name="%%Admin &raquo;%% Lectures" dynamic />
 
 </Panel>
