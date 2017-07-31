@@ -11,7 +11,8 @@
 Here are some module admin info to read around this time:    
 
 <include type="danger" name=":recycle: Admin: FAQ: Where is everything? :star:" src="../../handbook/appendixC-faq.md#handbook-faq-whereIsEverything"  dynamic />
-<include type="danger" src="../../handbook/project-product.md" name=":recycle: Admin: Project: The Product :star:" dynamic />
+<include type="danger" name=":recycle: Admin: Project: Overview :star:" src="../../handbook/project.md"  dynamic />
+<include type="danger" name=":recycle: Admin: Project: The Product :star:" src="../../handbook/project-product.md"  dynamic />
 <include type="danger" src="../../handbook/project-scope.md" name=":recycle: Admin: Project: Scope :star:" dynamic />
 <include type="warning" src="../../handbook/textBooks.md" name=":recycle: Admin: Text Books :star::star:" dynamic />
 <include type="warning" src="../../handbook/programming-languages.md" name=":recycle: Admin: Programming Language :star::star:" dynamic />

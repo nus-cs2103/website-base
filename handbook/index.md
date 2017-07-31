@@ -12,6 +12,7 @@
 *   [Text Books](#handbook-textBooks)
 *   [Programming Language](#handbook-programmingLanguages)
 *   [Project](#handbook-project)
+    *   [Overview](#handbook-project)
     *   [The product](#handbook-project-product)
     *   [Scope](#handbook-project-scope)
     *   [Constraints](#handbook-project-constraints)
@@ -95,11 +96,13 @@
 </div>
 
 # Project
+
+## Overview
 <div id="handbook-project">
 <include src="project.md" />
 </div>
 
-## The product
+## The Product
 <div id="handbook-project-product">
 <include src="project-product.md" />
 </div>
