@@ -3,7 +3,7 @@
 2. Use the relevant learning resources to achieve the LOs. Self-test your knowledge using exercises given in the learning resources. If you don't have time to achieve all LOs assigned to the week, use the star rating system to decide which ones to do first.
 
 <panel header=":recycle: Star rating system">
-  <include src="../../../handbook/ratingSystem.md" />
+  <include src="../../handbook/ratingSystem.md" />
 </panel> 
 
 <p/>
