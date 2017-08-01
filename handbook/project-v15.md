@@ -29,7 +29,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 **Submission**:
 
 * Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.
-* Each member: ==Create a _Project Portfolio_ page== to describe your contribution to the project. Follow the example in the AddressBook-Level4. 
+* Each member: ==Create a _Project Portfolio_ page== to describe your contribution to the project. Follow the [example in the AddressBook-Level4](https://se-edu.github.io/addressbook-level4/team/johndoe.html). 
 
 * Convert the following documents to pdf (Use Chrome to _save as_ pdf) and upload to IVLE.
 

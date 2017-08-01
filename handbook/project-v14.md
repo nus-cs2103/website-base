@@ -141,7 +141,6 @@ To be done during the tutorial, but note the following:
 
 * Each member should demo the features they added. Duration: ~3 minutes (max) per person
 * It ==should be a 'well prepared' demo==. You should know in advance exactly what you'll do in the demo.
-* It is ==a full demo==: Cover all features you have, not just features you added recently.
 * It is ==a _sitting down_ demo==: You'll be demonstrating the features using the TV while sitting down.
 * It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.
 * The app should be populated with a significant amount of realistic data at the start. e.g at least 20 contacts.

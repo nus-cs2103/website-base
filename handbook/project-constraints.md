@@ -1,10 +1,14 @@
 Your project should comply with the following constraints.
 %%**Reason**%%: to increase comparability among submissions and to maximize applicability of module content in the project.
 
-* **Constraint-Morph**: The final product should be a result of morphing the given sample code. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
+* **Constraint-Morph**: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
   %%**Reason:** To ensure your code has a decent quality level from the start.%%
 
+<span id="constraint-cli">
+
 * **Constraint-CLI**: Command Line Interface is the primary mode of input. If you implement a GUI, it should be primarily for output. That is, the GUI is used to give visual feedback rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven. Mouse actions should have keyboard alternatives and typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.  
+
+</span>
 
 * **Constraint-Human-Editable-File**: The data should be stored locally and should be in a human editable text file. Use of relational or No-SQL databases are not allowed.<br/> 
   %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%

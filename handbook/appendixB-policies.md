@@ -63,7 +63,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 ==We encourage you to give tech help to each other==, but do it in a way that the other person learns from it.
 
-<panel header="%%%%Admin &raquo;%% Appendix D: How to get Help in CS2103/T%%">
+<panel header="%%Admin &raquo; Appendix D: How to get Help in CS2103/T%%">
 <include src="appendixD-help.md" />
 </panel>
 
