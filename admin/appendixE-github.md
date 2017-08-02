@@ -131,6 +131,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 ### Using Milestones:
 
 <a name="using-milestones"></a>
+<span id="usingMilestones">
 
 * Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
 * Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.
@@ -142,6 +143,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
   * Milestone closed. All issues assigned to that milestone should be closed too.
   * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.
 
+</span>
+
 </div>
 
 <div id="workflow">
@@ -150,6 +153,6 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 We recommend using the _Forking Workflow_.
 
-<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/embed.md" header="%%Textbook &raquo;%%Git and GitHub: Forking Workflow" />
+<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/embed.md" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" />
 
 </div>

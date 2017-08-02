@@ -72,7 +72,7 @@ Update the following pages of the Developer Guide:
 **Submission**: Update the relevant sections of the relevant asciidoc documents in your repo. 
 
 **Grading**: Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.  
-To claim this milestone as 'reached', you should at least have a full draft version of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the markdown documents in the repo.
+To claim this milestone as 'reached', you should at least have a full draft version of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.
 
 ### v1.0 Product
 

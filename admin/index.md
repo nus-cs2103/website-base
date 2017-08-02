@@ -63,7 +63,7 @@
     *   [Why submission requirements differ between CS2103T and CS2101?](#admin-faq-cs2101Differences)
 *   [Appendix D: How to get help in CS2103/T](#admin-appendixD-help)
 *   [Appendix E: Using GitHub Project Hosting](#admin-appendixE-github)
-*   [Appendix F: What to do if there are teamwork issues](#admin-appendixF-teamworkIssues)
+*   [Appendix F: Handling teamwork issues](#admin-appendixF-teamworkIssues)
 
 # Preliminaries
 <div id="admin-preliminaries">
@@ -220,7 +220,7 @@
 <div id="admin-appendixE-github">
 <include src="appendixE-github.md" /></div>
 
-# Appendix F: What to do if there are teamwork issues
+# Appendix F: Handling teamwork issues
 <div id="admin-appendixF-teamworkIssues">
 <include src="appendixF-teamworkIssues.md" /></div>
 

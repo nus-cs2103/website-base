@@ -8,7 +8,7 @@
 
 **Description**: 
 * Each member should try to add some enhancements that is in line with the vision for v2.0. Create a PR for the enhancement. 
-* Note that the enhancement may go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide for suggested features implementing of which can help you learn how to implement a feature end-to-end.
+* Note that the enhancement may go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has some guidance on how to implement a new feature end-to-end.
 
 <tip-box type="important">
 
@@ -46,7 +46,7 @@ Update the following pages:
 
 * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
-<Panel header="Roles and responsibilities" expandable>
+<panel header="Roles and responsibilities" expandable>
 
   Roles imply aspects you are in charge of and responsible for. E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc.  
   Here are some typical roles:
@@ -64,10 +64,10 @@ Update the following pages:
 
 Please make sure each of the above roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but you should still have one person who is unequivocally the main person playing that role.
     
-</Panel>
+</panel><p/>
 
 * **README.md** page: Update it to match your project. In particular, add a UI mockup of your intended final product.  
-    Note that the ==image of the UI should be `docs/images/ui.png`== so that it can be downloaded by our scripts.  
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
     Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
 
 **Grading**: To consider this milestone as reached, you should have all v1.0 deliverables completed and the two documents mentioned above updated.

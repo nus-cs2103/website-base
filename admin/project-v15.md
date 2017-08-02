@@ -7,7 +7,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 ==Add these two new files== to the repo (these will be used by our testers when testing your final submission):
 
 * `{project root}\src\test\data\ManualTesting\SampleData.xml` :  
-    Sample data that can be loaded to your app. Should contain 50+ items covering past and present.
+    Sample data that can be loaded to your app. Should contain 20+ items.
 * `{project root}\src\test\data\ManualTesting\TestScript.md` :  
   A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.  
   Should cover all functionality of the product. Should be grouped by functionality.  
@@ -22,7 +22,9 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Deadline**: Week 13 Monday 23.59.
 
-**Grading**: Given in [a section below](#admin-project-assessment).
+**Grading**: 
+
+<include src="project-assessment.md" name="%%Admin &raquo;%% Project: Assessment" dynamic />
 
 ### v1.5 Documentation
 
@@ -31,13 +33,13 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 * Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.
 * Each member: ==Create a _Project Portfolio_ page== to describe your contribution to the project. Follow the [example in the AddressBook-Level4](https://se-edu.github.io/addressbook-level4/team/johndoe.html). 
 
-* Convert the following documents to pdf (Use Chrome to _save as_ pdf) and upload to IVLE.
+* Convert the following documents to pdf (AB-L4 dev guide has some instructions on converting a Web doc to pdf) and upload to IVLE.
 
 Document | Name format 
 ---------|-------------
-User guide | `[TEAM_ID][Project Name]UserGuide.pdf`  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%%
-Developer guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf` %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%%
-Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf` %%e.g.[T09-B1][John Doe]Portfolio.pdf%%
+User guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%%
+Developer guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%%
+Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%%
 
 **Deadline**: Same as v1.5 product.
 
@@ -59,7 +61,6 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf` %%e.g.[T09-B1][John Doe]Portfoli
   * Remember to explain the profile of the target user early in the demo.
   * The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the product improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
-  Remember to 
 * **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
 * **Testing:** All team member should remain in the holding area during the tutorial slot (when you are not doing the demo) because our testers might need to communicate with you during the testing.  
     Holding area for Active Learning Room: Unused area of the room (enter by the door near the staircase)  

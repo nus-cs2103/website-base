@@ -3,10 +3,12 @@
 <tip-box type="important">
 
 Starting from this version, you are required to,
-* **Use GitHub's milestone mechanism** as per ['Using Milestones' section of Appendix E](#using-milestones)) to manage your milestones.
+* **Use GitHub's milestone mechanism** to manage your milestones.
 * **Do a proper release** as described in the Developer Guide.
 
 </tip-box>
+
+<include src="appendixE-gitHub.md#usingMilestones" name="%%Admin &raquo;%% Appendix F: Github: Using Milestones" dynamic />
 
 **Submission**: Do a release on GitHub
 
@@ -24,15 +26,15 @@ Follow the documentation in the sample project in terms or organization, level o
 
 **Submission**: Must be included in the version tagged `v1.3`.
 
-**Grading**: To pass this checkpoint, your documentation should not be significantly outdated.  
+**Grading**: To consider this milestone as reached, your documentation should not be significantly out of date.  
 
 ### v1.3 Demo
 
-Demo during the tutorial. 
+Do an informal demo of the new features during the tutorial. 
 
 <tip-box type="important">
 
-Starting from this version, you should **use the jar file** (downloaded from GitHub release) for the demo, not the code loaded to the IDE.
+Starting from this version, you should **use the jar file** (downloaded from GitHub release) for the demo, not the code loaded into the IDE.
 
 </tip-box>
 

@@ -5,7 +5,6 @@
 **Grading**: Criteria to consider this milestone as reached
 * A new version has been released on GitHub.
 * The new version has moved towards v2.0
-* The milestone is wrapped up on the issue tracker. i.e. all unfinished issues in the milestone have been moved to future milestones and the milestone is closed.   
 
 ### v1.2 Documentation
 
@@ -21,8 +20,9 @@
     * Why it is implemented that way.
     * Alternatives considered.
   * The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply technical matters using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.5 (hypothetically).
+  * For an example, see the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide.
   
 
 ### v1.2 Demo
 
-Do a demo during the tutorial.
+Do an informal demo of the new feature during the tutorial.
