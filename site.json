@@ -37,6 +37,14 @@
       "title": "CS2103/T Textbook - Intellij IDEA"
     },
     {
+      "src": "book/about/acknowledgements.md",
+      "title": "SEforSDL - About: Acknowledgements"
+    },
+    {
+      "src": "book/about/usage.md",
+      "title": "SEforSDL - About: Usage"
+    },
+    {
       "src": "book/intellij/print.md",
       "title": "CS2103/T Textbook - Intellij IDEA [Printable]"
     },

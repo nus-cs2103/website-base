@@ -18,6 +18,19 @@
     <li><a href="/cs2103-website/index.html">Schedule</a></li>
     <li><a href="/cs2103-website/book/index.html" target="_blank">Textbook</a></li>
     <li><a href="/cs2103-website/admin/index.html">Admin</a></li>
+    <li><a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">Instructors</a></li>
+    <dropdown text="IVLE">
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/Default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Submissions</a></li>
+    </dropdown>
+    <dropdown text="GitHub">
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank">Forum</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/rcs" target="_blank">RCS</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank">Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank">Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level3" target="_blank">Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level4" target="_blank">Addressbook-level4</a></li>
+    </dropdown>
   </navbar>
 </div>
 <div class="website-content">
@@ -34,7 +47,7 @@
       </panel>
       <panel type="danger" header="**A typical CS2103/T week** :star:" expandable="" expanded="">
         <div>
-          <p>[Friday (previous week)] Attend the lecture for a recap on the preceding week's Learning Outcomes (LOs), as well as an introduction to the current week's LOs.</p>
+          <p><strong>[Friday (previous week)]</strong><br> Attend the lecture for a recap on the preceding week's Learning Outcomes (LOs), as well as an introduction to the current week's LOs.</p>
           <panel type="info" header="%%Admin &raquo;%% Lectures :star::star::star:">
             <div><img src="/cs2103-website/admin/images/Lecture photo.png" style="width: 713px;">
               <p><strong>Timing/venue</strong>: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).</p>
@@ -51,8 +64,8 @@
             </div>
           </panel>
           <p></p>
-          <p>[Saturday (previous week) - Tuesday] Use the relevant learning resources to achieve the LOs. Self-test your knowledge using exercises given in the learning resources. If you don't have time to achieve all LOs assigned to the week, use the star
-            rating system to decide which ones to do first.</p>
+          <p><strong>[Saturday (previous week) - Tuesday]</strong><br> Use the relevant learning resources to achieve the LOs. Self-test your knowledge using exercises given in the learning resources. If you don't have time to achieve all LOs assigned to
+            the week, use the star rating system to decide which ones to do first.</p>
           <panel type="warning" header="%%Admin &raquo;%% Learning Outcomes :star::star:">
             <div>
               <p>This module is organized primarily around a list of Learning Outcomes.</p>
@@ -76,7 +89,7 @@
             </div>
           </panel>
           <p></p>
-          <p>[Wednesday - Friday] Attend the tutorial and demonstrate evidence of your achieving weekly LOs to the tutor.</p>
+          <p><strong>[Wednesday - Friday]</strong><br> Attend the tutorial and demonstrate evidence of your achieving weekly LOs to the tutor.</p>
           <panel type="info" header="%%Admin &raquo;%% Tutorials :star::star::star:">
             <div>
               <p><mark>IMPORTANT: Our tutorials start on week 2 (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.</mark></p>
@@ -5151,7 +5164,31 @@ git pull origin master
           </div>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-plagiarism" name="%%Admin &raquo;%% Policy on plagiarism :star:" fragment="policy-plagiarism" header="%%Admin &raquo;%% Policy on plagiarism :star:" isOpen="false"
+                no-close="true" no-switch="true"></panel>
+              <panel type="danger" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-reuse" name="%%Admin &raquo;%% Policy on reuse :star:" fragment="policy-reuse" header="%%Admin &raquo;%% Policy on reuse :star:" isOpen="false"
+                no-close="true" no-switch="true"></panel>
+              <panel type="danger" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-outsiderHelp" name="%%Admin &raquo;%% Policy on help from outsiders :star:" fragment="policy-outsiderHelp" header="%%Admin &raquo;%% Policy on help from outsiders :star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="info" src="/cs2103-website\admin\exams._include_.html" name="%%Admin &raquo;%% Exams :star::star::star:" header="%%Admin &raquo;%% Exams :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-noLaptop" name="%%Admin &raquo;%% FAQ: What if I don't carry around a laptop :star::star::star::star:" fragment="admin-faq-noLaptop" header="%%Admin &raquo;%% FAQ: What if I don't carry around a laptop :star::star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="success" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-publishingSubmissions" name="%%Admin &raquo;%% Policy on publishing submissions :star::star::star::star:" fragment="policy-publishingSubmissions" header="%%Admin &raquo;%% Policy on publishing submissions :star::star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 3" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 4" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -6134,7 +6171,26 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="warning" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-workDistribution" name="%%Admin &raquo;%% Policy on project work distribution :star::star:" fragment="policy-workDistribution" header="%%Admin &raquo;%% Policy on project work distribution :star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="info" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-responseTime" name="%%Admin &raquo;%% Policy on email response time :star::star::star:" fragment="policy-responseTime" header="%%Admin &raquo;%% Policy on email response time :star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="success" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-teamSize" name="%%Admin &raquo;%% Policy on grading smaller/larger teams :star::star::star::star:" fragment="policy-teamSize" header="%%Admin &raquo;%% Policy on grading smaller/larger teams :star::star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-beanCounting" name="%%Admin &raquo;%% FAQ: Why so much bean counting? :star::star::star::star:" fragment="admin-faq-beanCounting" header="%%Admin &raquo;%% FAQ: Why so much bean counting? :star::star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 4" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 5" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -8957,7 +9013,25 @@ controller.setMainApp(<span class="hljs-keyword">this</span>);</p>
           </div>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v11._include_.html" name="%%Admin &raquo;%% Project: v1.0 :star:" header="%%Admin &raquo;%% Project: v1.0 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="info" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-submissionLength" name="%%Admin &raquo;%% Policy on suggested length for submissions :star::star::star:" fragment="policy-submissionLength" header="%%Admin &raquo;%% Policy on suggested length for submissions :star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-narrowScope" name="%%Admin &raquo;%% FAQ: Why very narrow project scope? :star::star::star::star:" fragment="admin-faq-narrowScope" header="%%Admin &raquo;%% FAQ: Why very narrow project scope? :star::star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-vagueRequirements" name="%%Admin &raquo;%% FAQ: Why project requirements are so vague? :star::star::star::star:" fragment="admin-faq-vagueRequirements"
+                header="%%Admin &raquo;%% FAQ: Why project requirements are so vague? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 5" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 6" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -9983,7 +10057,23 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
           </panel>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v12._include_.html" name="%%Admin &raquo;%% Project: v1.2 :star:" header="%%Admin &raquo;%% Project: v1.2 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="info" src="/cs2103-website\admin\appendixF-teamworkIssues._include_.html" name="%%Admin &raquo;%% Appedix F: Handling Teamwork Issues :star::star::star:" header="%%Admin &raquo;%% Appedix F: Handling Teamwork Issues :star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-favoriteTool" name="%%Admin &raquo;%% FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.? :star::star::star::star:" fragment="admin-faq-favoriteTool"
+                header="%%Admin &raquo;%% FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 6" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 7" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -11702,7 +11792,23 @@ r1.setPlayer(p2);
           </panel>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v12._include_.html" name="%%Admin &raquo;%% Project: v1.2 :star:" header="%%Admin &raquo;%% Project: v1.2 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-manySubmissions" name="%%Admin &raquo;%% FAQ: Why so many submissions? :star::star::star::star:" fragment="admin-faq-manySubmissions" header="%%Admin &raquo;%% FAQ: Why so many submissions? :star::star::star::star:"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-intermediateMarks" name="%%Admin &raquo;%% FAQ: Why not enough marks for intermediate submissions? :star::star::star::star:" fragment="admin-faq-intermediateMarks"
+                header="%%Admin &raquo;%% FAQ: Why not enough marks for intermediate submissions? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-cs2101Differences" name="%%Admin &raquo;%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" fragment="admin-faq-cs2101Differences"
+                header="%%Admin &raquo;%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 7" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 8" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -14882,7 +14988,15 @@ with a stub used for testing */&lt;/span&gt;
           </div>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v13._include_.html" name="%%Admin &raquo;%% Project: v1.3 :star:" header="%%Admin &raquo;%% Project: v1.3 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 8" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 9" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -16704,7 +16818,15 @@ studentList.addUi(statusUi);
           </div>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v14._include_.html" name="%%Admin &raquo;%% Project: v1.4 :star:" header="%%Admin &raquo;%% Project: v1.4 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 9" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 10" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
@@ -18538,9 +18660,51 @@ studentList.addUi(statusUi);
           </div>
         </div>
       </panel>
-      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v15rc._include_.html" name="%%Admin &raquo;%% Project: v1.5rc :star:" header="%%Admin &raquo;%% Project: v1.5rc :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
       <panel header=":raising_hand: Tutorial 10" expandable="" ctrl-lvl="1" no-close=""></panel>
       <panel header=":mega: Lecture 11" expandable="" ctrl-lvl="1" no-close=""></panel>
+    </panel>
+  </div>
+  <div>
+    <panel header="Week 12 [Nov 06]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+        <div></div>
+      </panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded="">
+            <p>
+              <panel type="danger" src="/cs2103-website\admin\project-v15._include_.html" name="%%Admin &raquo;%% Project: v1.5 :star:" header="%%Admin &raquo;%% Project: v1.5 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="danger" src="/cs2103-website\admin\project-retrospective._include_.html" name="%%Admin &raquo;%% Project: Retrospective :star:" header="%%Admin &raquo;%% Project: Retrospective :star:" isOpen="false" no-close="true"
+                no-switch="true"></panel>
+            </p>
+          </panel>
+        </div>
+      </panel>
+      <panel header=":raising_hand: Tutorial 10" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":mega: Lecture 12" expandable="" ctrl-lvl="1" no-close=""></panel>
+    </panel>
+  </div>
+  <div>
+    <panel header="Week 13 [Nov 13]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+        <div></div>
+      </panel>
+      <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+        <div>
+          <panel header="Admin info to read" expandable="" expanded=""></panel>
+        </div>
+      </panel>
+      <panel header=":raising_hand: Tutorial 12" expandable="" ctrl-lvl="1" no-close=""></panel>
+      <panel header=":mega: Lecture 13" expandable="" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
 </div>

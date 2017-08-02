@@ -18,6 +18,19 @@
     <li><a href="/cs2103-website/index.html">Schedule</a></li>
     <li><a href="/cs2103-website/book/index.html" target="_blank">Textbook</a></li>
     <li><a href="/cs2103-website/admin/index.html">Admin</a></li>
+    <li><a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">Instructors</a></li>
+    <dropdown text="IVLE">
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/Default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Submissions</a></li>
+    </dropdown>
+    <dropdown text="GitHub">
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank">Forum</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/rcs" target="_blank">RCS</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank">Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank">Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level3" target="_blank">Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level4" target="_blank">Addressbook-level4</a></li>
+    </dropdown>
   </navbar>
 </div>
 <div class="website-content">
@@ -89,7 +102,7 @@
     </li>
     <li><a href="#admin-appendixD-help">Appendix D: How to get help in CS2103/T</a></li>
     <li><a href="#admin-appendixE-github">Appendix E: Using GitHub Project Hosting</a></li>
-    <li><a href="#admin-appendixF-teamworkIssues">Appendix F: What to do if there are teamwork issues</a></li>
+    <li><a href="#admin-appendixF-teamworkIssues">Appendix F: Handling teamwork issues</a></li>
   </ul>
   <h1 id="preliminaries">Preliminaries</h1>
   <div id="admin-preliminaries">
@@ -461,7 +474,7 @@
       <p><strong>Suggested length</strong>: Follow the existing user guide and developer guides in terms of the level of details.</p>
       <p><strong>Submission</strong>: Update the relevant sections of the relevant asciidoc documents in your repo.</p>
       <p><strong>Grading</strong>: Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.<br> To claim this milestone as 'reached', you should at least have a full draft version of
-        the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the markdown documents in the repo.</p>
+        the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.</p>
       <h3 id="v10-product">v1.0 Product</h3>
       <p><strong>Objective</strong>: To familiarize yourself with the code.</p>
       <p><strong>Description</strong>: Divide the component among yourselves. Each member can do some small enhancements to the component they are in charge of to learn the code of that component. Some suggested enhancements are given in the AddressBook-Level4
@@ -480,7 +493,7 @@
       <p><strong>Description</strong>:</p>
       <ul>
         <li>Each member should try to add some enhancements that is in line with the vision for v2.0. Create a PR for the enhancement.</li>
-        <li>Note that the enhancement may go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide for suggested features implementing of which can help you learn how to implement a feature end-to-end.</li>
+        <li>Note that the enhancement may go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has some guidance on how to implement a new feature end-to-end.</li>
       </ul>
       <tip-box type="important">
         <p><strong>You are required to divide work based on features rather than component</strong></p>
@@ -536,9 +549,11 @@
           <li>You may define additional roles.</li>
         </ul>
         <p>Please make sure each of the above roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but you should still have one person who is unequivocally the main person playing that role.</p>
+        <p></p>
       </panel>
+      <p></p>
       <ul>
-        <li><strong><a href="http://README.md">README.md</a></strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/ui.png</code></mark>          so that it can be downloaded by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
+        <li><strong><a href="http://README.md">README.md</a></strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark>          so that it can be downloaded by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
       </ul>
       <p><strong>Grading</strong>: To consider this milestone as reached, you should have all v1.0 deliverables completed and the two documents mentioned above updated.</p>
     </div>
@@ -552,7 +567,6 @@
       <ul>
         <li>A new version has been released on GitHub.</li>
         <li>The new version has moved towards v2.0</li>
-        <li>The milestone is wrapped up on the issue tracker. i.e. all unfinished issues in the milestone have been moved to future milestones and the milestone is closed.</li>
       </ul>
       <h3 id="v12-documentation">v1.2 Documentation</h3>
       <ul>
@@ -576,11 +590,12 @@
             </li>
             <li>The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply technical matters using prose, examples, diagrams, code snippets, etc. appropriately. To that
               end, you may also describe features that you plan to implement in the future, even beyond v1.5 (hypothetically).</li>
+            <li>For an example, see the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide.</li>
           </ul>
         </li>
       </ul>
       <h3 id="v12-demo">v1.2 Demo</h3>
-      <p>Do a demo during the tutorial.</p>
+      <p>Do an informal demo of the new feature during the tutorial.</p>
     </div>
   </div>
   <h2 id="v13-week-10">v1.3 [week 10]</h2>
@@ -590,10 +605,14 @@
       <tip-box type="important">
         <p>Starting from this version, you are required to,</p>
         <ul>
-          <li><strong>Use GitHub's milestone mechanism</strong> as per <a href="#using-milestones">'Using Milestones' section of Appendix E</a>) to manage your milestones.</li>
+          <li><strong>Use GitHub's milestone mechanism</strong> to manage your milestones.</li>
           <li><strong>Do a proper release</strong> as described in the Developer Guide.</li>
         </ul>
       </tip-box>
+      <p>
+        <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#using-milestones" name="%%Admin &raquo;%% Appendix F: Github: Using Milestones" fragment="using-milestones" header="%%Admin &raquo;%% Appendix F: Github: Using Milestones" isOpen="false"
+          no-close="true" no-switch="true"></panel>
+      </p>
       <p><strong>Submission</strong>: Do a release on GitHub</p>
       <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
       <ul>
@@ -607,11 +626,11 @@
         <li><strong>Developer Guide</strong>: Similar to User Guide.</li>
       </ul>
       <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
-      <p><strong>Grading</strong>: To pass this checkpoint, your documentation should not be significantly outdated.</p>
+      <p><strong>Grading</strong>: To consider this milestone as reached, your documentation should not be significantly out of date.</p>
       <h3 id="v13-demo">v1.3 Demo</h3>
-      <p>Demo during the tutorial.</p>
+      <p>Do an informal demo of the new features during the tutorial.</p>
       <tip-box type="important">
-        <p>Starting from this version, you should <strong>use the jar file</strong> (downloaded from GitHub release) for the demo, not the code loaded to the IDE.</p>
+        <p>Starting from this version, you should <strong>use the jar file</strong> (downloaded from GitHub release) for the demo, not the code loaded into the IDE.</p>
       </tip-box>
     </div>
   </div>
@@ -620,19 +639,20 @@
     <div>
       <h3 id="v14-product">v1.4 Product</h3>
       <tip-box type="important">
-        <p>From this version, you are required to collate collate (i.e., extract your own code and put in one file) at the end of the milestone. More instructions below.</p>
+        <p>From this version, you are required to collate (i.e., extract your own code and put in one file) at the end of the milestone. More instructions below.</p>
       </tip-box>
       <panel header="**How to collate code for grading**">
-        <ol>
-          <li>
-            <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
-          </li>
-          <li>
-            <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
-            <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
+        <div>
+          <ol>
+            <li>
+              <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
+            </li>
+            <li>
+              <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
+              <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
 </code></pre>
-            <p>Here is a sample code file:</p>
-            <pre class="hljs"><code>//@@author A0909865T
+              <p>Here is a sample code file:</p>
+              <pre class="hljs"><code>//@@author A0909865T
 method 1 ...
 method 2 ...
 //@@author A0702345U
@@ -640,88 +660,91 @@ method 3 ...
 //@@author A0909865X
 method 4 ...
 </code></pre>
-          </li>
-          <li>
-            <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>              However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric
-              number to the empty tag later.</p>
-          </li>
-          <li>
-            <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code was
-              done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly
-              50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality,
-              the designated author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
-          </li>
-          <li>
-            <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
-            <pre class="hljs"><code>/**
+            </li>
+            <li>
+              <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that
+                author.<br> However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can
+                add the matric number to the empty tag later.</p>
+            </li>
+            <li>
+              <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code
+                was done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves
+                roughly 50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of
+                high quality, the designated author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
+            </li>
+            <li>
+              <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
+              <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author A0909865T
   */
 </code></pre>
-            <pre class="hljs"><code>//@@author A0909865T
+              <pre class="hljs"><code>//@@author A0909865T
 /**
   * Returns true if ...
   */
 </code></pre>
-          </li>
-          <li>
-            <p>If you wrote a significant amount of code that was not used in the final product,</p>
-            <ul>
-              <li>Create a folder called <code>{project root}/unused</code></li>
-              <li>Move unused files to that folder (those files should contain unused code only)</li>
-              <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
-            </ul>
-            <p>e.g.</p>
-            <pre class="hljs"><code>//@@author A0909865T-unused
+            </li>
+            <li>
+              <p>If you wrote a significant amount of code that was not used in the final product,</p>
+              <ul>
+                <li>Create a folder called <code>{project root}/unused</code></li>
+                <li>Move unused files to that folder (those files should contain unused code only)</li>
+                <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
+              </ul>
+              <p>e.g.</p>
+              <pre class="hljs"><code>//@@author A0909865T-unused
 method 1 ...
 method 2 ...
 </code></pre>
-            <p>Please put a comment in the code to explain why it was not used.</p>
-          </li>
-          <li>
-            <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical
-              means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code
-              duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final
-              submission) to let us know.</p>
-            <ul>
-              <li>
-                <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data
-                  file with 1000 tasks that was used to test performance.</p>
-              </li>
-              <li>
-                <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
-                <p>e.g.</p>
-                <pre class="hljs"><code>//@@author A0909865T-reused
+              <p>Please put a comment in the code to explain why it was not used.</p>
+            </li>
+            <li>
+              <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical
+                means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code
+                duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final
+                submission) to let us know.</p>
+            </li>
+          </ol>
+          <ul>
+            <li>
+              <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data
+                file with 1000 tasks that was used to test performance.</p>
+            </li>
+            <li>
+              <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
+              <p>e.g.</p>
+              <pre class="hljs"><code>//@@author A0909865T-reused
 method 1 ...
 method 2 ...
 </code></pre>
-              </li>
-              <li>
-                <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
-                <p>e.g.</p>
-                <pre class="hljs"><code>//@@author generated
+            </li>
+            <li>
+              <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
+              <p>e.g.</p>
+              <pre class="hljs"><code>//@@author generated
 method 1 ...
 method 2 ...
 </code></pre>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>You need to put the,<br> * collated functional code in <code>collated/main</code> folder, * collated test code in <code>collated/test</code> folder, and * collated unused code in <code>collated/unused</code> folder</p>
-            <pre><code>Given below are DOS sample commands you can put in a batch file and run it to collate the code.
-
-```
-java -jar Collate-TUI.jar collate from src/main to collated/main include java, fxml, css
+            </li>
+          </ul>
+          <ol start="8">
+            <li>
+              <p>You need to put the,</p>
+              <ul>
+                <li>collated functional code in <code>collated/main</code> folder,</li>
+                <li>collated test code in <code>collated/test</code> folder, and</li>
+                <li>collated unused code in <code>collated/unused</code> folder</li>
+              </ul>
+              <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+              <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/main include java, fxml, css
 
 java -jar Collate-TUI.jar collate from src/test to collated/test include java
 
 java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
-```
-
-The output should be something like the structure given below.
-
-```
-collated/
+</code></pre>
+              <p>The output should be something like the structure given below.</p>
+              <pre class="hljs"><code>collated/
     main/
         A000000.md
         A111111.md
@@ -734,16 +757,17 @@ collated/
     unused/
         A000000.md
 </code></pre>
-          </li>
-          <li>
-            <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
-          </li>
-          <li>
-            <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo. ```
-            </p>
-          </li>
-        </ol>
+            </li>
+            <li>
+              <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+            </li>
+            <li>
+              <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
+            </li>
+          </ol>
+        </div>
       </panel>
+      <p></p>
       <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub.</p>
       <p><strong>Grading criteria</strong>:</p>
       <ul>
@@ -799,7 +823,7 @@ collated/
       <p>Please follow submission instructions closely. <mark>Any non-compliance will be penalized</mark>. e.g. wrong file name, team member photos not suitable, product manual page header doesn't have the team ID, etc.</p>
       <p><mark>Add these two new files</mark> to the repo (these will be used by our testers when testing your final submission):</p>
       <ul>
-        <li><code>{project root}\src\test\data\ManualTesting\SampleData.xml</code> :<br> Sample data that can be loaded to your app. Should contain 50+ items covering past and present.</li>
+        <li><code>{project root}\src\test\data\ManualTesting\SampleData.xml</code> :<br> Sample data that can be loaded to your app. Should contain 20+ items.</li>
         <li><code>{project root}\src\test\data\ManualTesting\TestScript.md</code> :<br> A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.<br> Should cover all functionality
           of the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
       </ul>
@@ -811,7 +835,10 @@ collated/
           the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
       </ul>
       <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
-      <p><strong>Grading</strong>: Given in <a href="#admin-project-assessment">a section below</a>.</p>
+      <p><strong>Grading</strong>:</p>
+      <p>
+        <panel src="/cs2103-website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
       <h3 id="v15-documentation">v1.5 Documentation</h3>
       <p><strong>Submission</strong>:</p>
       <ul>
@@ -822,7 +849,7 @@ collated/
           <p>Each member: <mark>Create a <em>Project Portfolio</em> page</mark> to describe your contribution to the project. Follow the <a href="https://se-edu.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</p>
         </li>
         <li>
-          <p>Convert the following documents to pdf (Use Chrome to <em>save as</em> pdf) and upload to IVLE.</p>
+          <p>Convert the following documents to pdf (AB-L4 dev guide has some instructions on converting a Web doc to pdf) and upload to IVLE.</p>
         </li>
       </ul>
       <table class="markbind-table table">
@@ -835,15 +862,15 @@ collated/
         <tbody>
           <tr>
             <td>User guide</td>
-            <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
+            <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br><span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
           </tr>
           <tr>
             <td>Developer guide</td>
-            <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
+            <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br><span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
           </tr>
           <tr>
             <td>Portfolio</td>
-            <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
+            <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br><span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
           </tr>
         </tbody>
       </table>
@@ -862,7 +889,7 @@ collated/
             <li>Remember to explain the profile of the target user early in the demo.</li>
             <li>The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the
               product improves the user’s life rather than simply describe each feature.</li>
-            <li>No need to cover design/implementation details as the manager is not interested in those details. Remember to</li>
+            <li>No need to cover design/implementation details as the manager is not interested in those details.</li>
           </ul>
         </li>
         <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
@@ -1794,33 +1821,34 @@ collated/
           <li>Assign tasks to team members using the 'owner' field. At any point, there should be some ongoing tasks and some pending tasks against each team member.</li>
           <li>Use status labels to indicate which tasks are completed, which are ongoing, and which are to be done by next milestone.</li>
         </ul>
-        <h3 id="using-milestones">Using Milestones:</h3>
-        <p><a name="using-milestones"></a></p>
-        <ul>
-          <li>Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</li>
-          <li>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</li>
-          <li>Note that you can change the milestone plan along the way as necessary.</li>
-          <li>IMPORTANT: To consider the milestone as 'reached', <mark>you should have the following done <em>before</em> the tutorial begins. 'Missed milestones' will count against the 'project management' component of your final grade</mark>:
-            <ul>
-              <li>A working product tagged with the correct tag (e.g. v1.2) and pushed to the main repo.</li>
-              <li>All tests passing on Travis.</li>
-              <li>Milestone updated to match the product.</li>
-              <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
-              <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
-            </ul>
-          </li>
-        </ul>
+        <div id="using-milestones">
+          <h3 id="using-milestones">Using Milestones:</h3>
+          <ul>
+            <li>Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</li>
+            <li>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</li>
+            <li>Note that you can change the milestone plan along the way as necessary.</li>
+            <li>IMPORTANT: To consider the milestone as 'reached', <mark>you should have the following done <em>before</em> the tutorial begins. 'Missed milestones' will count against the 'project management' component of your final grade</mark>:
+              <ul>
+                <li>A working product tagged with the correct tag (e.g. v1.2) and pushed to the main repo.</li>
+                <li>All tests passing on Travis.</li>
+                <li>Milestone updated to match the product.</li>
+                <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
+                <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
       <div id="workflow">
         <h2 id="workflow">Workflow</h2>
         <p>We recommend using the <em>Forking Workflow</em>.</p>
         <p>
-          <panel src="/cs2103-website\book\gitAndGithub\forkingWorkflow\embed._include_.html" header="%%Textbook &raquo;%%Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\gitAndGithub\forkingWorkflow\embed._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
       </div>
     </div>
   </div>
-  <h1 id="appendix-f-what-to-do-if-there-are-teamwork-issues">Appendix F: What to do if there are teamwork issues</h1>
+  <h1 id="appendix-f-handling-teamwork-issues">Appendix F: Handling teamwork issues</h1>
   <div id="admin-appendixF-teamworkIssues">
     <div>
       <p>If your team is facing difficulties due to differences in skill/motivation /availability among team members,</p>

@@ -1,0 +1,154 @@
+<h3 id="v14-product">v1.4 Product</h3>
+<tip-box type="important">
+  <p>From this version, you are required to collate (i.e., extract your own code and put in one file) at the end of the milestone. More instructions below.</p>
+</tip-box>
+<panel header="**How to collate code for grading**">
+  <div>
+    <ol>
+      <li>
+        <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
+      </li>
+      <li>
+        <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
+        <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
+</code></pre>
+        <p>Here is a sample code file:</p>
+        <pre class="hljs"><code>//@@author A0909865T
+method 1 ...
+method 2 ...
+//@@author A0702345U
+method 3 ...
+//@@author A0909865X
+method 4 ...
+</code></pre>
+      </li>
+      <li>
+        <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>          However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric number
+          to the empty tag later.</p>
+      </li>
+      <li>
+        <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code was done
+          collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly 50 lines
+          to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality, the designated
+          author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
+      </li>
+      <li>
+        <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
+        <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author A0909865T
+  */
+</code></pre>
+        <pre class="hljs"><code>//@@author A0909865T
+/**
+  * Returns true if ...
+  */
+</code></pre>
+      </li>
+      <li>
+        <p>If you wrote a significant amount of code that was not used in the final product,</p>
+        <ul>
+          <li>Create a folder called <code>{project root}/unused</code></li>
+          <li>Move unused files to that folder (those files should contain unused code only)</li>
+          <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
+        </ul>
+        <p>e.g.</p>
+        <pre class="hljs"><code>//@@author A0909865T-unused
+method 1 ...
+method 2 ...
+</code></pre>
+        <p>Please put a comment in the code to explain why it was not used.</p>
+      </li>
+      <li>
+        <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical means
+          such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br>          Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let
+          us know.</p>
+      </li>
+    </ol>
+    <ul>
+      <li>
+        <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file with
+          1000 tasks that was used to test performance.</p>
+      </li>
+      <li>
+        <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
+        <p>e.g.</p>
+        <pre class="hljs"><code>//@@author A0909865T-reused
+method 1 ...
+method 2 ...
+</code></pre>
+      </li>
+      <li>
+        <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
+        <p>e.g.</p>
+        <pre class="hljs"><code>//@@author generated
+method 1 ...
+method 2 ...
+</code></pre>
+      </li>
+    </ul>
+    <ol start="8">
+      <li>
+        <p>You need to put the,</p>
+        <ul>
+          <li>collated functional code in <code>collated/main</code> folder,</li>
+          <li>collated test code in <code>collated/test</code> folder, and</li>
+          <li>collated unused code in <code>collated/unused</code> folder</li>
+        </ul>
+        <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+        <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/main include java, fxml, css
+
+java -jar Collate-TUI.jar collate from src/test to collated/test include java
+
+java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
+</code></pre>
+        <p>The output should be something like the structure given below.</p>
+        <pre class="hljs"><code>collated/
+    main/
+        A000000.md
+        A111111.md
+        A222222.md
+        A222222reused.md
+    test/
+        A000000.md
+        A111111.md
+        A222222.md
+    unused/
+        A000000.md
+</code></pre>
+      </li>
+      <li>
+        <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+      </li>
+      <li>
+        <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
+      </li>
+    </ol>
+  </div>
+</panel>
+<p></p>
+<p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub.</p>
+<p><strong>Grading criteria</strong>:</p>
+<ul>
+  <li>Code collated properly</li>
+  <li>Criteria given in v1.3</li>
+</ul>
+<h3 id="v14-documentation">v1.4 Documentation</h3>
+<ul>
+  <li>
+    <p>User guide, Developer guide: As before, update if necessary.</p>
+  </li>
+  <li>
+    <p><mark>AboutUs.adoc page</mark>: Update to reflect <a href="https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md">this sample</a>. Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.</p>
+  </li>
+</ul>
+<p><strong>Submission</strong>: Must be included in the version tagged <code>v1.4</code>.</p>
+<h3 id="v14-demo">v1.4 Demo</h3>
+<p>To be done during the tutorial, but note the following:</p>
+<ul>
+  <li>Each member should demo the features they added. Duration: ~3 minutes (max) per person</li>
+  <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
+  <li>It is <mark>a <em>sitting down</em> demo</mark>: You'll be demonstrating the features using the TV while sitting down.</li>
+  <li>It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
+  <li>The app should be populated with a significant amount of realistic data at the start. e.g at least 20 contacts.</li>
+</ul>
