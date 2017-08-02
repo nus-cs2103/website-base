@@ -4,7 +4,7 @@
 
 #### Step 1 : Brainstorm user stories
 
-<img src="{{baseUrl}}/handbook/images/v00.png" width="250px">
+<img src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
 Get together with your team members and brainstorm user stories **for the v2.0 of the product**. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).
 
@@ -24,7 +24,7 @@ Get together with your team members and brainstorm user stories **for the v2.0 o
 
 #### Step 2: Prioritize the user stories
 
-<img src="{{baseUrl}}/handbook/images/userstories.png" width="250px">
+<img src="{{baseUrl}}/admin/images/userstories.png" width="250px">
 
 Suggested workflow:
 

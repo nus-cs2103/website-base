@@ -22,7 +22,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Deadline**: Week 13 Monday 23.59.
 
-**Grading**: Given in [a section below](#handbook-project-assessment).
+**Grading**: Given in [a section below](#admin-project-assessment).
 
 ### v1.5 Documentation
 
@@ -41,11 +41,11 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf` %%e.g.[T09-B1][John Doe]Portfoli
 
 **Deadline**: Same as v1.5 product.
 
-**Grading**: Given in [a section below](#handbook-project-assessment).
+**Grading**: Given in [a section below](#admin-project-assessment).
 
 ### v1.5 Demo
 
-<img src="{{baseUrl}}/handbook/images/v05demo.png" style="width: 250px">
+<img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
 * **Venue:** Same as the tutorial venue.
 * **Duration:** Strictly no more than 3 minutes per person (i.e. a total of 12 minutes for a 4-person team). Exceeding this limit will be penalized.
@@ -81,4 +81,4 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf` %%e.g.[T09-B1][John Doe]Portfoli
   * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates a bad impression too.
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to enter a task before you show the full command with all the bells and whistles.
 
-**Grading**: Given in [a section below](#handbook-project-assessment).
+**Grading**: Given in [a section below](#admin-project-assessment).

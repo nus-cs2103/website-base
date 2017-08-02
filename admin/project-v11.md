@@ -1,6 +1,6 @@
 ### v1.1 Product
 
-<img src="{{baseUrl}}/handbook/images/v01demo.png" width="125px"><br/>
+<img src="{{baseUrl}}/admin/images/v01demo.png" width="125px"><br/>
 
 %%[An early version of the mobile phone]%%
 

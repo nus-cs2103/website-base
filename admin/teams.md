@@ -1,4 +1,4 @@
-<img src="{{baseUrl}}/handbook/images/team.png" width="300px"><br>
+<img src="{{baseUrl}}/admin/images/team.png" width="300px"><br>
 %%[Picture: The team that was at the top of early Google]%%
 <p/>
 

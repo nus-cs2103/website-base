@@ -30,6 +30,6 @@ Here are some things to keep in mind:
 
 The final peer evaluation will be used to determine the level of contribution from each member to the project. In that peer-evaluation you will be asked to ==estimate the contribution of each team member== (including yourself) to the project so far.
 
-<img src="{{baseUrl}}/handbook/images/peer evaluations.png" width="600px">
+<img src="{{baseUrl}}/admin/images/peer evaluations.png" width="600px">
 
 

@@ -1,4 +1,4 @@
-<img src="{{baseUrl}}/handbook/images/how to get help.png" width="200px"><br/>
+<img src="{{baseUrl}}/admin/images/how to get help.png" width="200px"><br/>
 
 
 In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.
@@ -7,7 +7,7 @@ Whether it is a technical problem (e.g. error when using Eclipse) or a doubt abo
 
 The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?' 
 
-<img src="{{baseUrl}}/handbook/images/the good reasons to get home early.png" width="300"/>
+<img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/>
 
 Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _aaa_ and _bbb_?
 
@@ -15,11 +15,11 @@ What not to do: Email lecturer/tutor immediately after you encounter a problem o
 
 When faced with a technical problem or a doubt about a concept, here are the things you should do:
 
-* **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in handouts/handbook etc. But you should try first.
+* **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).  
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a ==web search on the error message==  is a good starting point.    
-  <img src="{{baseUrl}}/handbook/images/how to google it.png" width="460" height="268"/>
+  <img src="{{baseUrl}}/admin/images/how to google it.png" width="460" height="268"/>
 
 * **Ask peers**:   
 
@@ -29,7 +29,7 @@ When faced with a technical problem or a doubt about a concept, here are the thi
 
   <Panel header="Rubber Duck Debugging" expandable>
 
-  <img src="{{baseUrl}}/handbook/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
+  <img src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
 
   Use Rubber Duck Debugging:  
 

@@ -5,7 +5,7 @@
     ".idea/*",
     ".gitignore",
     "README.md",
-    "schedule/handbook/*",
+    "schedule/admin/*",
     "*.md",
     "diagrams/*",
     "book/diagrams/*",
@@ -17,8 +17,8 @@
       "title": "CS2103/T Website"
     },
     {
-      "src": "handbook/index.md",
-      "title": "CS2103/T Website - Handbook"
+      "src": "admin/index.md",
+      "title": "CS2103/T Website - Admin"
     },
     {
       "src": "schedule/index.md",

@@ -11,4 +11,4 @@ Final exam:
 
 Note that a large part of CS2103 exam paper measures how well you can apply SE theory to a project. Therefore, the exam is strongly connected to the project and how you  applied theory in the project. The exam will be easy for you if you attend lectures, participate in tutorials(tutorials too are focused on application of theory to the project), and do a sincere job in the project. ==You will not be able to ace the exams by simply doing past papers just before the exams.==
 
-<img src="{{baseUrl}}/handbook/images/exam.png" width="600"/>
+<img src="{{baseUrl}}/admin/images/exam.png" width="600"/>
