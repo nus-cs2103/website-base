@@ -16,4 +16,6 @@
 <include src="week9/index.html" />
 <include src="week10/index.html" />
 <include src="week11/index.html" />
+<include src="week12/index.html" />
+<include src="week13/index.html" />
 </div>
