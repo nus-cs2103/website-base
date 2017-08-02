@@ -8,7 +8,7 @@ Starting from this version, you are required to,
 
 </tip-box>
 
-<include src="appendixE-gitHub.md#usingMilestones" name="%%Admin &raquo;%% Appendix F: Github: Using Milestones" dynamic />
+<include src="appendixE-gitHub.md#using-milestones" name="%%Admin &raquo;%% Appendix F: Github: Using Milestones" dynamic />
 
 **Submission**: Do a release on GitHub
 

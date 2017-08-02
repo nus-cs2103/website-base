@@ -2,9 +2,9 @@ Note that project grading is ==not competitive (not bell curved)==. ==CS2103T pr
 
 **Total**: 50 marks (40 individual marks + 10 team marks)
 
-1. **Product features** [team][5 marks] - How good is your software as a product?
+1. **Product features** [team][5 marks] - How well do your features fit together
 
-    Based on the features implemented, how well they fit together to make a good product, and how well they are demonstrated.
+    Based on how well the features implemented fit together to make a good product (not how many features or how big the features are), and how well they are demonstrated.
 
     ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.
 

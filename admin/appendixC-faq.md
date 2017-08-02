@@ -56,8 +56,6 @@ We have a separate website because some of the module information does not fit 
 
 On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.
 
-Furthermore, unlike IVLE, a copy of the module website ==will remain online== at [http://www.comp.nus.edu.sg/~cs2103/AY1617S2/](http://www.comp.nus.edu.sg/~cs2103/AY1617S2/) for your reference for the next few years.
-
 </div>
 
 ### Why slides are not detailed?

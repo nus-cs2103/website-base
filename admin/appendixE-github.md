@@ -128,10 +128,9 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 * Assign tasks to team members using the 'owner' field. At any point, there should be some ongoing tasks and some pending tasks against each team member.
 * Use status labels to indicate which tasks are completed, which are ongoing, and which are to be done by next milestone.
 
-### Using Milestones:
+<div id="using-milestones">
 
-<a name="using-milestones"></a>
-<span id="usingMilestones">
+### Using Milestones:
 
 * Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
 * Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.
@@ -143,7 +142,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
   * Milestone closed. All issues assigned to that milestone should be closed too.
   * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.
 
-</span>
+</div>
 
 </div>
 

@@ -43,7 +43,9 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Deadline**: Same as v1.5 product.
 
-**Grading**: Given in [a section below](#admin-project-assessment).
+**Grading**: 
+
+<include src="project-assessment.md" name="%%Admin &raquo;%% Project: Assessment" dynamic />
 
 ### v1.5 Demo
 
@@ -77,9 +79,10 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
 
   * Rehearse the steps well and ensure you can do a smooth demo. ==Demos that are clearly under-prepared will be penalized.==
-  * If you are not deft with using the laptop’s touchpad, please bring a mouse.
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC".
   * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates a bad impression too.
-  * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to enter a task before you show the full command with all the bells and whistles.
+  * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
 
-**Grading**: Given in [a section below](#admin-project-assessment).
+**Grading**: 
+
+<include src="project-assessment.md" name="%%Admin &raquo;%% Project: Assessment" dynamic />

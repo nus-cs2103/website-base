@@ -93,7 +93,8 @@ If you submit code (or adopt ideas) taken from elsewhere, you need to comply wit
 
 Detection: 
 
-Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables. Besides, all your submissions are published to the class and sooner or later somebody will notice the plagiarism.
+* Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables. 
+* As ll your submissions are published to the class, sooner or later somebody will notice the plagiarism.
 
 Penalties:
 

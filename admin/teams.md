@@ -19,7 +19,7 @@ Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. B
 * CS2103T: Your phase A team will be formed by CS2101 side in week 1\. Your phase B team (applicable to CS2101 too) will be formed by CS2103T side on week 5.
 * CS2103: Form tentative Phase A teams in week 2 (during the tutorial). Finalize phase A team in the subsequent tutorial. Form phase B team on week 5.
 
-**Team size**: The default ==team size is four==. Please do not form teams with five or more.
+**Team size**: The default ==team size is four==. 
 
 **Team ID**: This will be given to you after forming teams in each phase. It has the form `TUTORIAL_ID-PHASE+TEAM_NUMBER` e.g, `W14-A2` means you are in tutorial W14 (i.e., Wed 1400-1500), phase A, team 2.
 

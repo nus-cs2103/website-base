@@ -3,7 +3,7 @@
 
 In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.
 
-Whether it is a technical problem (e.g. error when using Eclipse) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer. But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.
+Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer. But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.
 
 The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?' 
 
@@ -27,17 +27,15 @@ When faced with a technical problem or a doubt about a concept, here are the thi
 
   Ask classmates using the IVLE forum. Asking questions in IVLE is encouraged. Even if you figured out one way to solve a problem, discussing it on IVLE might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in IVLE, you may use  [this form](https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform)  to submit your question anonymously which we will then post in the forum.
 
-  <Panel header="Rubber Duck Debugging" expandable>
+  <panel header="Rubber Duck Debugging" expandable>
 
   <img src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
 
-  Use Rubber Duck Debugging:  
-
-  Rubber duck debugging is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
+  _Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
 
   [for more, see [wikipedia entry](https://en.wikipedia.org/wiki/Rubber_duck_debugging)]  
 
-    </Panel>
+    </panel><p/>
 
 * **Ask the world** using programming forums such as stackoverflow.   
 
