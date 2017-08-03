@@ -8,11 +8,12 @@ If your team is facing difficulties due to differences in skill/motivation /avai
 Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It is still better than sinking the whole team together.
 
 * **Redistribute the work**: Stronger programmers in the team should take over the critical parts of the code.
-* **Enforce stricter integration workflow**: Appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing product or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator. Note that if the integrator rejected your code unreasonably, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading. They can earn marks based on the quality of the code. Also refer the workflow described in the 'A safer workflow using forks and pull requests' section of the Admin: Appendix E (Using GitHub Project Hosting)
+
+* **Enforce stricter integration workflow**: Appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing product or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator. Note that if the integrator rejected your code unreasonably, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading. They can earn marks based on the quality of the code.
 
 **If you have very unreliable or totally disengaged team members** :
 
 * Re-distribute project work so that such team members cannot bring down the entire team.
-* However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute more any time they wish to.
+* However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute any time they wish to.
 * Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.
 * Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
