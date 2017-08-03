@@ -3,18 +3,7 @@
 <panel type="danger" header="Can explain revision control :star:" expandable>
   <include src="../../book/revisionControl/what/full.md" />
   <panel header=":trophy: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<panel type="success" header="Can identify other names for revision control :star::star::star::star:" expandable>
-  <include src="../../book/revisionControl/otherNames/full.md" />
-  <panel header=":trophy: Evidence" expanded>
-
-...
-
+    <include src="../../book/revisionControl/what/q-essay-rcs-explain.md" />
   </panel>
 </panel>
 
