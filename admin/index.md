@@ -224,6 +224,4 @@
 <div id="admin-appendixF-teamworkIssues">
 <include src="appendixF-teamworkIssues.md" /></div>
 
-<include src="../common/disqus.md" />
-
 </div>
