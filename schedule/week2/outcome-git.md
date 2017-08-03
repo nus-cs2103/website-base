@@ -10,9 +10,7 @@
 <panel type="danger" header="Can explain repositories :star:" expandable>
   <include src="../../book/revisionControl/repositories/full.md" />
   <panel header=":trophy: Evidence" expanded>
-
-...
-
+    <include src="../../book/revisionControl/repositories/q-essay-repo-definition.md" />
   </panel>
 </panel>
 
@@ -29,7 +27,7 @@ Have a local repo that you created.
   <include src="../../book/revisionControl/savingHistory/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
-...
+Not required.
 
   </panel>
 </panel>
@@ -47,7 +45,7 @@ Have a local repo that has commits you created.
   <include src="../../book/gitAndGitHub/ignore/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
-...
+Have a local repo that has git-ignored files.
 
   </panel>
 </panel>
