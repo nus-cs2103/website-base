@@ -30,7 +30,7 @@
 <panel header="Enhancements vs Grade: Examples" expanded> 
 
 Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.
-* Example 1 (Expected grade: `A`) : [Add support for undo/redo](https://github.com/se-edu/addressbook-level4/pull/547/files)
+* Example 1 (Expected grade: `A`) : [Add support for undo/redo](https://github.com/se-edu/addressbook-level4/pull/610/files)
 * Example 2 (Expected grade: `B`) : [Add support for viewing history](https://github.com/se-edu/addressbook-level4/pull/440/files)
 * Example 3 (Expected grade: `B+` to `A-`) : Example 2 + [Add some missing tests](https://github.com/se-edu/addressbook-level4/pull/513/files)
 
