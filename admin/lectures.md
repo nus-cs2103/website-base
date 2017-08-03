@@ -11,7 +11,7 @@ Each lecture consists of two sections:
 
 **Webcast**: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.
 
-**Handouts**: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the [Textbook](../book/index.html) section and are also hyperlinked from the [Schedule Page](../schedule/index.html).  
+**Handouts**: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the [Textbook]({{baseUrl}}/book/index.html) section and are also hyperlinked from the [Schedule Page]({{baseUrl}}/schedule/index.html).  
 
 **Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. Tey are only an aid for lecture delivery. Slides will be uploaded *after* the lecture.
 
