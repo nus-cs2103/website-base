@@ -544,15 +544,16 @@
           <tip-box type="primary">
             <div>
               <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-                <popover effect="fade" placement="top">actor
-                  <span slot="content"><span></span></span>
-                </popover>
-              </p>
-              <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-              <p></p>
-              <p><span class="pull-right">[ 📖 : <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
-                </popover>]</span>
-              </p>
+                <trigger for="pop:actor">actor</trigger>.[ 📖 :
+                <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                </popover>]</p>
+              <popover id="pop:actor" title=":mag:" placement="top">
+                <div slot="content">
+                  <div>
+                    <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+                  </div>
+                </div>
+              </popover>
             </div>
           </tip-box>
           <p>A <strong>use case</strong> describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</p>
@@ -1312,7 +1313,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               <li>Use an object called Main to represent your role in the scenario.</li>
               <li>As there is no physical writing involved, we can replace the Pen and Paper with an object called AgeList that is able to keep a list of ages.</li>
             </ul>
-            <p>{visual: optimizations: You -&gt; Main; Pen + Paper -&gt; AgeList}</p>
+            <p>{visual: optimizations: You → Main; Pen + Paper → AgeList}</p>
           </tip-box>
           <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
           <table class="markbind-table table">
@@ -1804,34 +1805,36 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
           <p>Method overloading arises when there are multiple operations with the <strong>same name but different type signatures.</strong></p>
           <tip-box type="primary">
             <div>
-              <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant. Here
-                are some examples:</p>
-              <table class="markbind-table table">
-                <thead>
-                  <tr>
-                    <th style="text-align:center">Method</th>
-                    <th style="text-align:center">Type Signature</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="text-align:center">int add(int X, int Y)</td>
-                    <td style="text-align:center">(int, int)</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center">void add(int A, int B)</td>
-                    <td style="text-align:center">(int, int)</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center">void m(int X, double Y)</td>
-                    <td style="text-align:center">(int, double)</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center">void m(double X, int Y)</td>
-                    <td style="text-align:center">(double, int)</td>
-                  </tr>
-                </tbody>
-              </table>
+              <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+              <panel
+                type="seamless" header="%%Examples%%">
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Method</th>
+                      <th style="text-align:center">Type Signature</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">int add(int X, int Y)</td>
+                      <td style="text-align:center">(int, int)</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">void add(int A, int B)</td>
+                      <td style="text-align:center">(int, int)</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">void m(int X, double Y)</td>
+                      <td style="text-align:center">(int, double)</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">void m(double X, int Y)</td>
+                      <td style="text-align:center">(double, int)</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </panel>
             </div>
           </tip-box>
           <tip-box>
@@ -2982,7 +2985,7 @@ class Academic extends Staff {
           <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>            by the so-called “Gang of Four” (GoF) Eric Gamma, Richard Helm, Ralph Johnson and John Vlissides.</p>
           <tip-box type="primary">
             <div>
-              <p><strong>Software Design Pattern</strong>: An <em>elegant reusable solution</em> to a <em>commonly recurring problem</em> within a <em>given context</em> in software design.</p>
+              <p>null</p>
             </div>
           </tip-box>
         </div>
@@ -4614,8 +4617,7 @@ send();
             <div>
               <p><strong>Exception</strong>:</p>
               <blockquote>
-                <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.</p>
-                <p>–- Java Tutorial (Oracle Inc.)</p>
+                <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
               </blockquote>
             </div>
           </tip-box>
@@ -5084,8 +5086,7 @@ jean.setBoyfriend(yong);
           <p>In terms of timing and frequency, there are two general approaches to integration:</p>
           <ol>
             <li><em>Late and one-time</em>: In an extreme case of this approach, developers wait till all components are completed and integrate all finished components just before the release. This approach is not recommended because integration often causes
-              many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays: Late integration -&gt; incompatibilities found -&gt; major rework required -&gt; cannot meet the delivery
-              date.</li>
+              many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays: Late integration → incompatibilities found → major rework required → cannot meet the delivery date.</li>
             <li><em>Early and frequent</em>: The other approach is to integrate early and evolve in parallel in small steps, re-integrating frequently. For example, a working skeleton can be written first (i.e. it compiles and runs but does not produce any
               useful output). This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the
               new code to the main system.</li>
@@ -7996,59 +7997,36 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <blockquote>
-            <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains a number,
-              each one higher than the number of the preceding version.</p>
-            <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
-              user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control tools
-              have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
-            <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of who
-              made it; why they made it; when they made it; and what the change was.</p>
-            <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help you
-              to identify and resolve those conflicts.</p>
-            <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help you
-              to efficiently figure out exactly when a problem was introduced.</p>
-            <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself, or
-              with a hundred other people.</p>
-            <p>-- [adapted from
-              <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
-          </blockquote>
-          <p>It follows from the explanation above that using an RCS frees us from having to keep copies of all the past versions on our hard disk. If the RCS spans multiple machines, it also <strong>reduces the risk of ‘losing everything’ in case of a hard disk crash</strong>.</p>
-          <popover
-            id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
-            <div slot="content">
-              <div>
-                <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieve on 2012/07/11</p>
-              </div>
-            </div>
-            </popover>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h4 id="other-names-three">Other Names <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-        </div>
-        <tip-box type="success">
-          <div>
-            <p>🏆 Can identify other names for revision control <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-          </div>
-        </tip-box>
-        <div>
-          <p>Revision control is a diverse field, so much so that it is referred to by many names and acronyms. Here are a few of the more common variations you'll encounter:</p>
-          <ul>
-            <li>Revision control system (RCS)</li>
-            <li>Software configuration management (SCM), or configuration management</li>
-            <li>Source code management</li>
-            <li>Source code control, or source control</li>
-            <li>Version control system (VCS)</li>
-          </ul>
-          <p>Some people claim that these terms actually have different meanings, but in practice they overlap so much that there's no agreed or even useful way to tease them apart.</p>
-          <p>-- [adapted from
-            <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+          <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
+          <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
+          <tabs>
+            <tab header=":abc:">
+              <blockquote>
+                <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains
+                  a number, each one higher than the number of the preceding version.</p>
+                <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
+                  user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control
+                  tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+                <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of
+                  who made it; why they made it; when they made it; and what the change was.</p>
+                <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help
+                  you to identify and resolve those conflicts.</p>
+                <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help
+                  you to efficiently figure out exactly when a problem was introduced.</p>
+                <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
+                  or with a hundred other people.</p>
+                <p>-- [adapted from
+                  <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+              </blockquote>
+            </tab>
+            <tab header=":tv:">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            </tab>
+          </tabs>
           <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
             <div slot="content">
               <div>
-                <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieve on 2012/07/11</p>
+                <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
               </div>
             </div>
           </popover>
@@ -8064,8 +8042,20 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to as the <em>working directory</em>            of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working directory.</p>
-          <p>You can have multiple repos in your computer, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
+          <tip-box type="definition">
+            <div>
+              <p><strong>Repository</strong> (<em>repo</em> for short): The database of the history of a directory being tracked by an RCS software (e.g. Git).</p>
+            </div>
+          </tip-box>
+          <tabs>
+            <tab header=":abc:">
+              <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to as the <em>working directory</em>                of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working directory.</p>
+              <p>You can have multiple repos in your computer, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
+            </tab>
+            <tab header=":tv:">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            </tab>
+          </tabs>
         </div>
       </div>
       <div>
@@ -8078,11 +8068,23 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>In a repo, we can specify which files to track and which files to ignore. Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
-          <p><strong><em>Committing</em></strong> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <strong><em>commit</em></strong> (i.e. the noun).</p>
-          <p>When we are ready to commit, we should first <strong><em>stage</em></strong> the specific changes we want to commit. This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
-          <p>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated hash e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>. We can tag a specific commit with a more easily identifiable
-            name e.g. <code>v1.0.2</code></p>
+          <h5 id="tracking-and-ignoring">Tracking and Ignoring</h5>
+          <p><strong>In a repo, we can specify which files to track and which files to ignore.</strong> Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
+          <h5 id="staging-and-committing">Staging and Committing</h5>
+          <tabs>
+            <tab header=":abc:">
+              <p><strong><em>Committing</em> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
+              <p><strong>When we are ready to commit, we should first <em>stage</em> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
+              <p></p>
+            </tab>
+            <tab header=":tv:">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <p></p>
+            </tab>
+          </tabs>
+          <h5 id="identifying-points-in-history">Identifying Points in History</h5>
+          <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated hash</strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
+          <p><strong>We can tag a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
         </div>
       </div>
       <div>
@@ -9652,7 +9654,7 @@ A negative test case: i = null;
           <tabs>
             <tab header="SourceTree">
               <div>
-                <p>Click <code>File</code> -&gt; <code>Clone/New…</code></p>
+                <p>Click <code>File</code> → <code>Clone/New…</code></p>
                 <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/cs2103-website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
                 <p></p>
                 <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
@@ -9676,7 +9678,7 @@ Initialized empty Git repository in c:/repos/things/.git/
                 <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
                 <pre class="hljs"><code>git status
 </code></pre>
-                <p>-&gt;</p>
+                <p>⤵️</p>
                 <pre class="hljs"><code># On branch master
 #
 # Initial commit
@@ -9698,13 +9700,12 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
           </div>
         </tip-box>
         <div>
+          <p>Create an empty repo as described in the panel below.</p>
           <p>
-            <panel src="/cs2103-website\book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/cs2103-website\book\gitAndGithub\init\embed._include_.html" name="Git and GitHub: Init" header="Git and GitHub: Init" isOpen="false" no-close="true" no-switch="true"></panel>
           </p>
-          <p></p>
-          <p>Create an empty repo as described <a href="./init/">here</a>.</p>
-          <p>Create a file named <code>fruits.txt</code> in the folder and add some dummy text to it.</p>
-          <tip-box type="primary">
+          <p>Create a file named <code>fruits.txt</code> in the working directory and add some dummy text to it.</p>
+          <tip-box type="definition">
             <div>
               <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
             </div>
@@ -9722,28 +9723,28 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                 <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
                 <pre><code class="hljs sh">git status
 </code></pre>
-                <p>-&gt;</p>
-                <pre class="hljs"><code># On branch master
-#
-# Initial commit
-#
-# Untracked files:
-#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-#
-#   a.txt
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+                <p>⤵️</p>
+                <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Untracked files:</span>
+<span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#   a.txt</span>
+nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
 </code></pre>
                 <p></p>
               </div>
             </tab>
           </tabs>
-          <p>Although git has detected the file in the working folder, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
-          <tip-box type="primary">
+          <p>Although git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
+          <tip-box type="definition">
             <div>
               <p><strong>Commit</strong>: Saving the current state of the working folder into the Git revision history.</p>
             </div>
           </tip-box>
-          <tip-box type="primary">
+          <tip-box type="definition">
             <div>
               <p><strong>Stage</strong>: Instructing Git to prepare a file for committing.</p>
             </div>
@@ -9763,7 +9764,7 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
                 <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-                <p>-&gt;</p>
+                <p>⤵️</p>
                 <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
@@ -9794,7 +9795,7 @@ git status
                 <p>You can use the <code>log</code> command to see the commit history</p>
                 <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-                <p>-&gt;</p>
+                <p>⤵️</p>
                 <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
 Author: … &lt; … @... &gt;
 Date:   Wed Jul 5 16:06:28 2017 +0800
@@ -9824,11 +9825,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           </div>
         </tip-box>
         <div>
-          <p>
-            <panel src="/cs2103-website\book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
-          <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instructor Git to ignore <code>temp.txt</code></p>
+          <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code>temp.txt</code></p>
           <tabs>
             <tab header="SourceTree">
               <div>
@@ -9919,7 +9916,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 <p>Example:</p>
                 <pre class="hljs"><code>git show 251b4cf
 </code></pre>
-                <p>-&gt;</p>
+                <p>⤵️</p>
                 <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
 Author: … &lt; … &gt;
 Date:   Sat Jul 8 16:50:27 2017 +0800
@@ -10032,7 +10029,7 @@ index 15b57f7..17f4528 100644
           <tabs>
             <tab header="SourceTree">
               <div>
-                <p>File -&gt; <code>Clone / New…</code> and provide the URL and the destination directory.</p>
+                <p>File → <code>Clone / New…</code> and provide the URL and the destination directory.</p>
                 <p>You can use the <code>clone</code> command to clone a repo.</p>
                 <p>Follow instructions in <a href="https://help.github.com/articles/cloning-a-repository/">this</a> page</p>
               </div>
@@ -10080,7 +10077,7 @@ index 15b57f7..17f4528 100644
                     <tabs>
                       <tab header="SourceTree">
                         <div>
-                          <p>File -&gt; <code>Clone / New…</code> and provide the URL and the destination directory.</p>
+                          <p>File → <code>Clone / New…</code> and provide the URL and the destination directory.</p>
                           <p>You can use the <code>clone</code> command to clone a repo.</p>
                           <p>Follow instructions in <a href="https://help.github.com/articles/cloning-a-repository/">this</a> page</p>
                         </div>

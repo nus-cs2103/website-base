@@ -78,7 +78,7 @@
             <li>Use an object called Main to represent your role in the scenario.</li>
             <li>As there is no physical writing involved, we can replace the Pen and Paper with an object called AgeList that is able to keep a list of ages.</li>
           </ul>
-          <p>{visual: optimizations: You -&gt; Main; Pen + Paper -&gt; AgeList}</p>
+          <p>{visual: optimizations: You → Main; Pen + Paper → AgeList}</p>
         </tip-box>
         <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
         <table class="markbind-table table">
@@ -570,34 +570,36 @@
         <p>Method overloading arises when there are multiple operations with the <strong>same name but different type signatures.</strong></p>
         <tip-box type="primary">
           <div>
-            <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant. Here
-              are some examples:</p>
-            <table class="markbind-table table">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Method</th>
-                  <th style="text-align:center">Type Signature</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">int add(int X, int Y)</td>
-                  <td style="text-align:center">(int, int)</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">void add(int A, int B)</td>
-                  <td style="text-align:center">(int, int)</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">void m(int X, double Y)</td>
-                  <td style="text-align:center">(int, double)</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">void m(double X, int Y)</td>
-                  <td style="text-align:center">(double, int)</td>
-                </tr>
-              </tbody>
-            </table>
+            <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+            <panel
+              type="seamless" header="%%Examples%%">
+              <table class="markbind-table table">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Method</th>
+                    <th style="text-align:center">Type Signature</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">int add(int X, int Y)</td>
+                    <td style="text-align:center">(int, int)</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">void add(int A, int B)</td>
+                    <td style="text-align:center">(int, int)</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">void m(int X, double Y)</td>
+                    <td style="text-align:center">(int, double)</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">void m(double X, int Y)</td>
+                    <td style="text-align:center">(double, int)</td>
+                  </tr>
+                </tbody>
+              </table>
+              </panel>
           </div>
         </tip-box>
         <tip-box>

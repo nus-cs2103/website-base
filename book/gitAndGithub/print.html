@@ -30,7 +30,7 @@
         <tabs>
           <tab header="SourceTree">
             <div>
-              <p>Click <code>File</code> -&gt; <code>Clone/New…</code></p>
+              <p>Click <code>File</code> → <code>Clone/New…</code></p>
               <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/cs2103-website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
               <p></p>
               <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
@@ -54,7 +54,7 @@ Initialized empty Git repository in c:/repos/things/.git/
               <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
               <pre class="hljs"><code>git status
 </code></pre>
-              <p>-&gt;</p>
+              <p>⤵️</p>
               <pre class="hljs"><code># On branch master
 #
 # Initial commit
@@ -76,13 +76,12 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
         </div>
       </tip-box>
       <div>
+        <p>Create an empty repo as described in the panel below.</p>
         <p>
-          <panel src="/cs2103-website\book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/cs2103-website\book\gitAndGithub\init\embed._include_.html" name="Git and GitHub: Init" header="Git and GitHub: Init" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
-        <p></p>
-        <p>Create an empty repo as described <a href="./init/">here</a>.</p>
-        <p>Create a file named <code>fruits.txt</code> in the folder and add some dummy text to it.</p>
-        <tip-box type="primary">
+        <p>Create a file named <code>fruits.txt</code> in the working directory and add some dummy text to it.</p>
+        <tip-box type="definition">
           <div>
             <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
           </div>
@@ -100,28 +99,28 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
               <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
               <pre><code class="hljs sh">git status
 </code></pre>
-              <p>-&gt;</p>
-              <pre class="hljs"><code># On branch master
-#
-# Initial commit
-#
-# Untracked files:
-#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-#
-#   a.txt
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+              <p>⤵️</p>
+              <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Untracked files:</span>
+<span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#   a.txt</span>
+nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
 </code></pre>
               <p></p>
             </div>
           </tab>
         </tabs>
-        <p>Although git has detected the file in the working folder, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
-        <tip-box type="primary">
+        <p>Although git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
+        <tip-box type="definition">
           <div>
             <p><strong>Commit</strong>: Saving the current state of the working folder into the Git revision history.</p>
           </div>
         </tip-box>
-        <tip-box type="primary">
+        <tip-box type="definition">
           <div>
             <p><strong>Stage</strong>: Instructing Git to prepare a file for committing.</p>
           </div>
@@ -141,7 +140,7 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
               <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-              <p>-&gt;</p>
+              <p>⤵️</p>
               <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
@@ -172,7 +171,7 @@ git status
               <p>You can use the <code>log</code> command to see the commit history</p>
               <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-              <p>-&gt;</p>
+              <p>⤵️</p>
               <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
 Author: … &lt; … @... &gt;
 Date:   Wed Jul 5 16:06:28 2017 +0800
@@ -202,11 +201,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         </div>
       </tip-box>
       <div>
-        <p>
-          <panel src="/cs2103-website\book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
-        <p></p>
-        <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instructor Git to ignore <code>temp.txt</code></p>
+        <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code>temp.txt</code></p>
         <tabs>
           <tab header="SourceTree">
             <div>
@@ -297,7 +292,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
               <p>Example:</p>
               <pre class="hljs"><code>git show 251b4cf
 </code></pre>
-              <p>-&gt;</p>
+              <p>⤵️</p>
               <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
 Author: … &lt; … &gt;
 Date:   Sat Jul 8 16:50:27 2017 +0800
@@ -410,7 +405,7 @@ index 15b57f7..17f4528 100644
         <tabs>
           <tab header="SourceTree">
             <div>
-              <p>File -&gt; <code>Clone / New…</code> and provide the URL and the destination directory.</p>
+              <p>File → <code>Clone / New…</code> and provide the URL and the destination directory.</p>
               <p>You can use the <code>clone</code> command to clone a repo.</p>
               <p>Follow instructions in <a href="https://help.github.com/articles/cloning-a-repository/">this</a> page</p>
             </div>
@@ -458,7 +453,7 @@ index 15b57f7..17f4528 100644
                   <tabs>
                     <tab header="SourceTree">
                       <div>
-                        <p>File -&gt; <code>Clone / New…</code> and provide the URL and the destination directory.</p>
+                        <p>File → <code>Clone / New…</code> and provide the URL and the destination directory.</p>
                         <p>You can use the <code>clone</code> command to clone a repo.</p>
                         <p>Follow instructions in <a href="https://help.github.com/articles/cloning-a-repository/">this</a> page</p>
                       </div>
