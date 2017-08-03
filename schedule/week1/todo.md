@@ -18,7 +18,7 @@ Here are some module admin info to read around this time:
 <include type="warning" src="../../admin/textBooks.md" name="%%Admin &raquo;%% Text Books :star::star:" dynamic />
 <include type="warning" src="../../admin/programming-languages.md" name="%%Admin &raquo;%% Programming Language :star::star:" dynamic />
 <include type="warning" src="../../admin/project-constraints.md" name="%%Admin &raquo;%% Project: Constraints :star::star:"  dynamic />
-<include type="warning" src="../../admin/project-constraints.md" name="%%Admin &raquo;%% Project: Deliverables :star::star:"  dynamic />
+<include type="warning" src="../../admin/project-deliverables.md" name="%%Admin &raquo;%% Project: Deliverables :star::star:"  dynamic />
 
 <include type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../admin/appendixC-faq.md#admin-faq-cs2103VsCs2103t"  dynamic />
 <include type="success" src="../../admin/appendixC-faq.md#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
