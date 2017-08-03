@@ -12,18 +12,48 @@
   <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
   <panel header="%%Admin &raquo; Project scope: Expectations from each student%%" expandable="">
     <div>
-      <p><strong>Each student is expected to,</strong></p>
+      <p><strong>Individually</strong>, each student is expected to,</p>
       <ol>
-        <li><mark>contribute one or more enhancements <strong>individually</strong></mark>.</li>
-        <li>to write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.</li>
-        <li>On average, write ~0.5 KLoC of code.</li>
+        <li>
+          <p><strong>Contribute one or more enhancements</strong><br> Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p>
+          <panel header="Allowed enhancements" expanded="">
+            <p>Here are the allowed options for enhancing AddressBook:</p>
+            <ol>
+              <li>[Highly recommended] Rename the product to a more catchy name.</li>
+              <li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
+              <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
+              <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
+              <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
+              <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
+              <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
+              <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
+              <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+            </ol>
+            <p></p>
+          </panel>
+          <p></p>
+        </li>
+        <li>
+          <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the
+            aspects you did not do.</p>
+        </li>
+        <li>
+          <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.</p>
+        </li>
+        <li>
+          <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+        </li>
       </ol>
-      <p>Here is an example contribution, if done by one student, is likely to be earn an <code>A</code> grade for the relevant project components of the project.</p>
-      <ul>
-        <li>{to be added}</li>
-      </ul>
-      <p>Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p>
-      <p>A student's contribution <mark>should be incremental</mark>, over at least three releases of the product. It should not be done in one big burst.</p>
+      <panel header="Enhancements vs Grade: Examples" expanded="">
+        <p>Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.</p>
+        <ul>
+          <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+          <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+          <li>Example 3 (Expected grade: <code>B+</code> to <code>A-</code>) : Example 2 + <a href="https://github.com/se-edu/addressbook-level4/pull/513/files">Add some missing tests</a></li>
+        </ul>
+        <p></p>
+      </panel>
+      <p></p>
     </div>
   </panel>
 </div>
@@ -55,7 +85,7 @@
     <div>
       <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
       <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
-      <p>Whether it is a technical problem (e.g. error when using Eclipse) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
+      <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
         But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
       <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
       <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
@@ -79,11 +109,12 @@
             will then post in the forum.</p>
           <panel header="Rubber Duck Debugging" expandable="">
             <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
-            <p>Use Rubber Duck Debugging:</p>
-            <p>Rubber duck debugging is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and
-              debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+            <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber
+              duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
             <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+            <p></p>
           </panel>
+          <p></p>
         </li>
         <li>
           <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
@@ -142,7 +173,10 @@
   <p>However, note that most submissions will be published to the class which <mark>can be 'reused' by others</mark> subject to the 'reuse policy' given below.</p>
   <p>If you submit code (or adopt ideas) taken from elsewhere, you need to comply with our reuse policy.</p>
   <p>Detection:</p>
-  <p>Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables. Besides, all your submissions are published to the class and sooner or later somebody will notice the plagiarism.</p>
+  <ul>
+    <li>Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables.</li>
+    <li>As ll your submissions are published to the class, sooner or later somebody will notice the plagiarism.</li>
+  </ul>
   <p>Penalties:</p>
   <ul>
     <li>For activities earning participation marks: We make a record of cases of plagiarism but we do not take further action. Because participation marks are given for effort and all students can earn the full marks easily, such plagiarism does not disadvantage

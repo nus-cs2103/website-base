@@ -179,7 +179,7 @@
         <div>
           <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
           <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
-          <p>Whether it is a technical problem (e.g. error when using Eclipse) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
+          <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
             But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
           <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
           <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
@@ -203,11 +203,12 @@
                 we will then post in the forum.</p>
               <panel header="Rubber Duck Debugging" expandable="">
                 <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
-                <p>Use Rubber Duck Debugging:</p>
-                <p>Rubber duck debugging is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck
-                  and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+                <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a
+                  rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                 <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+                <p></p>
               </panel>
+              <p></p>
             </li>
             <li>
               <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
@@ -297,7 +298,7 @@
   <h1 id="text-books">Text Books</h1>
   <div id="admin-textBooks">
     <div>
-      <p>The main text book is <a href="../book/index.html">here</a>. While it is in a dynamic Web page format, you should be able to save the main text as pdf files.</p>
+      <p>The main text book is <a href="/cs2103-website/book/index.html">here</a>. While it is in a dynamic Web page format, you should be able to save the main text as pdf files.</p>
     </div>
   </div>
   <h1 id="programming-language">Programming Language</h1>
@@ -309,7 +310,7 @@
           <td>
             <p><mark><strong>The main language</strong> used in this module is Java</mark>. You should use Java for all programming activities, the project, and exam answers.</p>
             <p>The module doesn’t “teach” Java. We assume you already know Java basics. We expect you to learn on your own any Java constructs not covered in your previous modules.</p>
-            <p>Our <mark>Java coding standard</mark> is <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">here</a>.</p>
+            <p>Our <mark>Java coding standard</mark> is <a href="https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md">here</a>.</p>
           </td>
         </tr>
       </table>
@@ -350,19 +351,45 @@
   </div>
   <h2 id="project-scope">Project Scope</h2>
   <div id="admin-project-scope">
-    <div>
-      <p>Here are the allowed options for enhancing AddressBook:</p>
-      <ol>
-        <li>[Highly recommended] Rename the product to a more catchy name.</li>
-        <li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
-        <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
-        <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
-        <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
-        <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
-        <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
-        <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
-        <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-      </ol><span id="individual-expectations"><p><strong>Each student is expected to,</strong></p><ol><li><mark>contribute one or more enhancements <strong>individually</strong></mark>.</li><li>to write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.</li><li>On average, write ~0.5 KLoC of code.</li></ol><p>Here is an example contribution, if done by one student, is likely to be earn an <code>A</code> grade for the relevant project components of the project.</p><ul><li>{to be added}</li></ul><p>Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p><p>A student's contribution <mark>should be incremental</mark>, over at least three releases of the product. It should not be done in one big burst.</p></span></div>
+    <div><span id="individual-expectations"><p><strong>Individually</strong>, each student is expected to,</p><ol><li><p><strong>Contribute one or more enhancements</strong><br>
+Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>[Highly recommended] Rename the product to a more catchy name.</li><li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
+      <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
+      <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
+      <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
+      <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
+      <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
+      <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
+      <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+      </ol>
+      <p></p>
+      </panel>
+      <p></p>
+      </li>
+      <li>
+        <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the
+          aspects you did not do.</p>
+      </li>
+      <li>
+        <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.</p>
+      </li>
+      <li>
+        <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+      </li>
+      </ol>
+      <panel header="Enhancements vs Grade: Examples" expanded="">
+        <p>Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.</p>
+        <ul>
+          <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+          <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+          <li>Example 3 (Expected grade: <code>B+</code> to <code>A-</code>) : Example 2 + <a href="https://github.com/se-edu/addressbook-level4/pull/513/files">Add some missing tests</a></li>
+        </ul>
+        <p></p>
+      </panel>
+      <p></p>
+      </span><span id="team-expectations"><p><strong>As a team</strong>, you are expected to work together to,</p><ol><li><strong>Maintain product integrity</strong>:
+a. Enhancements added fit together to form a cohesive product.
+b. Documentation follow a consistent style and presents a cohesive picture to the reader.
+c. Final project demo presents a cohesive picture to the audience.</li><li><strong>Preserve product quality</strong>: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a PR breaks the entire product, the whole team will have to share the penalty.</li><li><strong>Manage the project smoothly</strong>: ensure i.e. PR workflow, repo maintenance, integration, releases, etc. are done smoothly.</li></ol></span></div>
   </div>
   <h2 id="project-constraints">Project Constraints</h2>
   <div id="admin-project-constraints">
@@ -875,7 +902,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         </tbody>
       </table>
       <p><strong>Deadline</strong>: Same as v1.5 product.</p>
-      <p><strong>Grading</strong>: Given in <a href="#admin-project-assessment">a section below</a>.</p>
+      <p><strong>Grading</strong>:</p>
+      <p>
+        <panel src="/cs2103-website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
       <h3 id="v15-demo">v1.5 Demo</h3><img src="/cs2103-website/admin/images/v05demo.png" style="width: 250px">
       <ul>
         <li><strong>Venue:</strong> Same as the tutorial venue.</li>
@@ -907,9 +937,6 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
               <p>Rehearse the steps well and ensure you can do a smooth demo. <mark>Demos that are clearly under-prepared will be penalized.</mark></p>
             </li>
             <li>
-              <p>If you are not deft with using the laptop’s touchpad, please bring a mouse.</p>
-            </li>
-            <li>
               <p>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</p>
             </li>
             <li>
@@ -917,13 +944,16 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                 a bad impression too.</p>
             </li>
             <li>
-              <p>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to enter a task before you show the full command with all the bells and
+              <p>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and
                 whistles.</p>
             </li>
           </ul>
         </li>
       </ul>
-      <p><strong>Grading</strong>: Given in <a href="#admin-project-assessment">a section below</a>.</p>
+      <p><strong>Grading</strong>:</p>
+      <p>
+        <panel src="/cs2103-website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
     </div>
   </div>
   <h2 id="project-retrospective">Project retrospective</h2>
@@ -949,8 +979,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p><strong>Total</strong>: 50 marks (40 individual marks + 10 team marks)</p>
       <ol>
         <li>
-          <p><strong>Product features</strong> [team][5 marks] - How good is your software as a product?</p>
-          <p>Based on the features implemented, how well they fit together to make a good product, and how well they are demonstrated.</p>
+          <p><strong>Product features</strong> [team][5 marks] - How well do your features fit together</p>
+          <p>Based on how well the features implemented fit together to make a good product (not how many features or how big the features are), and how well they are demonstrated.</p>
           <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
         </li>
         <li>
@@ -996,9 +1026,9 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <h1 id="supervision">Supervision</h1>
   <div id="admin-project-supervision">
     <div>
-      <p>The tutor's main job is His/job is to observe, facilitate self/peer learning, evaluate, and give feedback.</p>
-      <p>Tutorial time is the main avenue for meeting your tutor. In addition, you can meet the tutor before/after the tutorial, or any other time, as many times you need, subject to availability in his/her schedule. However, please note that it is not the
-        tutor’s job to chase you down and give help. It is up to you to get as much feedback from the as you need. You are free to request more feedback from the tutor as necessary.</p>
+      <p>The tutor's main job is to observe, facilitate self/peer learning, evaluate, and give feedback.</p>
+      <p>Tutorial time is the main avenue for meeting your tutor. In addition, you can meet the tutor before/after the tutorial, or any other time, as many times you need, subject to availability in his/her schedule.</p>
+      <p>Note that it is not the tutor’s job to chase you down and give help. It is up to you to get as much feedback from the as you need. You are free to request more feedback from the tutor as necessary.</p>
       <p>Your phase B tutor will also be your <em>project supervisor</em>. Note that it is not the job of the project supervisor to lead your project to success.</p>
     </div>
   </div>
@@ -1020,7 +1050,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <li>CS2103T: Your phase A team will be formed by CS2101 side in week 1. Your phase B team (applicable to CS2101 too) will be formed by CS2103T side on week 5.</li>
         <li>CS2103: Form tentative Phase A teams in week 2 (during the tutorial). Finalize phase A team in the subsequent tutorial. Form phase B team on week 5.</li>
       </ul>
-      <p><strong>Team size</strong>: The default <mark>team size is four</mark>. Please do not form teams with five or more.</p>
+      <p><strong>Team size</strong>: The default <mark>team size is four</mark>.</p>
       <p><strong>Team ID</strong>: This will be given to you after forming teams in each phase. It has the form <code>TUTORIAL_ID-PHASE+TEAM_NUMBER</code> e.g, <code>W14-A2</code> means you are in tutorial W14 (i.e., Wed 1400-1500), phase A, team 2.</p>
       <p><strong>Team composition</strong></p>
       <p>We allow some freedom in choosing team members, subject to these constraints:</p>
@@ -1142,8 +1172,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <p><strong>Total</strong>: 50 marks (40 individual marks + 10 team marks)</p>
           <ol>
             <li>
-              <p><strong>Product features</strong> [team][5 marks] - How good is your software as a product?</p>
-              <p>Based on the features implemented, how well they fit together to make a good product, and how well they are demonstrated.</p>
+              <p><strong>Product features</strong> [team][5 marks] - How well do your features fit together</p>
+              <p>Based on how well the features implemented fit together to make a good product (not how many features or how big the features are), and how well they are demonstrated.</p>
               <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
             </li>
             <li>
@@ -1351,18 +1381,48 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
         <panel header="%%Admin &raquo; Project scope: Expectations from each student%%" expandable="">
           <div>
-            <p><strong>Each student is expected to,</strong></p>
+            <p><strong>Individually</strong>, each student is expected to,</p>
             <ol>
-              <li><mark>contribute one or more enhancements <strong>individually</strong></mark>.</li>
-              <li>to write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.</li>
-              <li>On average, write ~0.5 KLoC of code.</li>
+              <li>
+                <p><strong>Contribute one or more enhancements</strong><br> Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p>
+                <panel header="Allowed enhancements" expanded="">
+                  <p>Here are the allowed options for enhancing AddressBook:</p>
+                  <ol>
+                    <li>[Highly recommended] Rename the product to a more catchy name.</li>
+                    <li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
+                    <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
+                    <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
+                    <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
+                    <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
+                    <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
+                    <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
+                    <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                  </ol>
+                  <p></p>
+                </panel>
+                <p></p>
+              </li>
+              <li>
+                <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated
+                  for the aspects you did not do.</p>
+              </li>
+              <li>
+                <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.</p>
+              </li>
+              <li>
+                <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+              </li>
             </ol>
-            <p>Here is an example contribution, if done by one student, is likely to be earn an <code>A</code> grade for the relevant project components of the project.</p>
-            <ul>
-              <li>{to be added}</li>
-            </ul>
-            <p>Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p>
-            <p>A student's contribution <mark>should be incremental</mark>, over at least three releases of the product. It should not be done in one big burst.</p>
+            <panel header="Enhancements vs Grade: Examples" expanded="">
+              <p>Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.</p>
+              <ul>
+                <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+                <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+                <li>Example 3 (Expected grade: <code>B+</code> to <code>A-</code>) : Example 2 + <a href="https://github.com/se-edu/addressbook-level4/pull/513/files">Add some missing tests</a></li>
+              </ul>
+              <p></p>
+            </panel>
+            <p></p>
           </div>
         </panel>
       </div>
@@ -1394,7 +1454,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <div>
             <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
             <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
-            <p>Whether it is a technical problem (e.g. error when using Eclipse) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
+            <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
               But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
             <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
             <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
@@ -1418,11 +1478,12 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                   which we will then post in the forum.</p>
                 <panel header="Rubber Duck Debugging" expandable="">
                   <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
-                  <p>Use Rubber Duck Debugging:</p>
-                  <p>Rubber duck debugging is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber
-                    duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+                  <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around
+                    a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                   <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+                  <p></p>
                 </panel>
+                <p></p>
               </li>
               <li>
                 <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
@@ -1481,7 +1542,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>However, note that most submissions will be published to the class which <mark>can be 'reused' by others</mark> subject to the 'reuse policy' given below.</p>
         <p>If you submit code (or adopt ideas) taken from elsewhere, you need to comply with our reuse policy.</p>
         <p>Detection:</p>
-        <p>Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables. Besides, all your submissions are published to the class and sooner or later somebody will notice the plagiarism.</p>
+        <ul>
+          <li>Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables.</li>
+          <li>As ll your submissions are published to the class, sooner or later somebody will notice the plagiarism.</li>
+        </ul>
         <p>Penalties:</p>
         <ul>
           <li>For activities earning participation marks: We make a record of cases of plagiarism but we do not take further action. Because participation marks are given for effort and all students can earn the full marks easily, such plagiarism does not
@@ -1560,7 +1624,6 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <div id="admin-faq-separateWebsite"><img src="/cs2103-website/admin/images/Forces me to visit a separate website.png" width="655" height="271">
         <p>We have a separate website because some of the module information does not fit into the structure imposed by IVLE.</p>
         <p>On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.</p>
-        <p>Furthermore, unlike IVLE, a copy of the module website <mark>will remain online</mark> at <a href="http://www.comp.nus.edu.sg/~cs2103/AY1617S2/">http://www.comp.nus.edu.sg/~cs2103/AY1617S2/</a> for your reference for the next few years.</p>
       </div>
       <h3 id="why-slides-are-not-detailed">Why slides are not detailed?</h3>
       <div id="admin-faq-slideFormat"><img src="/cs2103-website/admin/images/slides not detailed enough.png" width="733" height="221">
@@ -1637,7 +1700,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <div>
       <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
       <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
-      <p>Whether it is a technical problem (e.g. error when using Eclipse) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
+      <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
         But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
       <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
       <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
@@ -1661,11 +1724,12 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             will then post in the forum.</p>
           <panel header="Rubber Duck Debugging" expandable="">
             <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
-            <p>Use Rubber Duck Debugging:</p>
-            <p>Rubber duck debugging is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and
-              debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+            <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber
+              duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
             <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+            <p></p>
           </panel>
+          <p></p>
         </li>
         <li>
           <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
@@ -1865,15 +1929,19 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p>Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It
         is still better than sinking the whole team together.</p>
       <ul>
-        <li><strong>Redistribute the work</strong>: Stronger programmers in the team should take over the critical parts of the code.</li>
-        <li><strong>Enforce stricter integration workflow</strong>: Appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing product
-          or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator. Note that if the integrator rejected your code unreasonably, you can still earn marks for that code. You are allowed to submit such
-          'rejected' code for grading. They can earn marks based on the quality of the code. Also refer the workflow described in the 'A safer workflow using forks and pull requests' section of the Admin: Appendix E (Using GitHub Project Hosting)</li>
+        <li>
+          <p><strong>Redistribute the work</strong>: Stronger programmers in the team should take over the critical parts of the code.</p>
+        </li>
+        <li>
+          <p><strong>Enforce stricter integration workflow</strong>: Appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing product
+            or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator. Note that if the integrator rejected your code unreasonably, you can still earn marks for that code. You are allowed to submit
+            such 'rejected' code for grading. They can earn marks based on the quality of the code.</p>
+        </li>
       </ul>
       <p><strong>If you have very unreliable or totally disengaged team members</strong> :</p>
       <ul>
         <li>Re-distribute project work so that such team members cannot bring down the entire team.</li>
-        <li>However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute more any time they wish to.</li>
+        <li>However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute any time they wish to.</li>
         <li>Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.</li>
         <li>Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best
           too, although their best may be lower than yours.</li>
