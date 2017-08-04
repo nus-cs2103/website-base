@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain dynamic and static binding :star:" expandable>
   <include src="../../book/oopDesign/inheritance/dynamicAndStaticBinding/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can explain OOP polymorphism :star:" expandable>
   <include src="../../book/oopDesign/polymorphism/introduction/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="danger" header=":trophy: Can explain OOP polymorphism :star:" expandable>
   <include src="../../book/oopDesign/polymorphism/basic/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -29,7 +29,7 @@
 
 <panel type="danger" header=":trophy: Can explain method overriding :star:" expandable>
   <include src="../../book/oopDesign/inheritance/overriding/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -38,7 +38,7 @@
 
 <panel type="danger" header=":trophy: Can implement overriding :star:" expandable>
   <include src="../../book/oopImplementation/overriding/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

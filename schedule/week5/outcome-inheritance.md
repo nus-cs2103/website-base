@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain the meaning of inheritance :star:" expandable>
   <include src="../../book/oopImplementation/inheritance/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can interpret class inheritance in class diagrams :star:" expandable>
   <include src="../../book/uml/classDiagrams/classInheritance/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

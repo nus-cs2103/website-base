@@ -2,7 +2,7 @@
 
 <panel type="success" header=":trophy: Can interpret sequence diagrams with parallel paths :star::star::star::star:" expandable>
   <include src="../../book/uml/sequenceDiagrams/parallelPaths/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

@@ -2,7 +2,7 @@
 
 <panel type="info" header=":trophy: Can specify constraints in UML diagrams :star::star::star:" expandable>
   <include src="../../book/uml/notes/constraints/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain IDEs :star:" expandable>
   <include src="../../book/ides/introduction/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
     
 Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Either the _Community Edition_ (free) or the _Ultimate Edition_ (free for students) is fine.
 
@@ -10,7 +10,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 </panel>
 <panel type="danger" header=":trophy: Can setup a project in an IDE :star:" expandable>
   <include src="../../book/intellij/projectSetup/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 **Set up AddressBook-Level1 in Intellij**:
 
@@ -23,7 +23,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 </panel>
 <panel type="warning" header=":trophy: Can navigate code effectively using IDE features :star::star:" expandable>
   <include src="../../book/intellij/codeNavigation/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 **Use Intellij features to navigate code in a project**
 

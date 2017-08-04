@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain logging :star::star:" expandable>
   <include src="../../book/errorHandling/logging/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="warning" header=":trophy: Can explain the motivation for logging :star::star:" expandable>
   <include src="../../book/errorHandling/logging/why/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain coupling :star:" expandable>
   <include src="../../book/designPrinciples/coupling/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can justify the need to reduce coupling :star:" expandable>
   <include src="../../book/designPrinciples/coupling/why/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="success" header=":trophy: Can identify types of coupling :star::star::star::star:" expandable>
   <include src="../../book/designPrinciples/coupling/types/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

@@ -2,7 +2,7 @@
 
 <panel type="success" header=":trophy: Can distinguish between IaaS, PaaS, and SaaS :star::star::star::star:" expandable>
   <include src="../../book/reuse/cloudComputing/services/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

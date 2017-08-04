@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can clone a remote repo :star:" expandable>
   <include src="../../book/gitAndGithub/clone/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can explain remote repositories :star:" expandable>
   <include src="../../book/revisionControl/remoteRepositories/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="danger" header=":trophy: Can pull changes from a repo :star:" expandable>
   <include src="../../book/gitAndGithub/pull/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -29,7 +29,7 @@
 
 <panel type="danger" header=":trophy: Can push to a remote repo :star:" expandable>
   <include src="../../book/gitAndGithub/push/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

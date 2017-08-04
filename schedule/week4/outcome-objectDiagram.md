@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain the purpose of UML object diagrams :star::star:" expandable>
   <include src="../../book/uml/objectDiagrams/introduction/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="warning" header=":trophy: Can explain object diagrams :star::star:" expandable>
   <include src="../../book/modeling/modelingStructures/objectDiagrams/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="warning" header=":trophy: Can distinguish between class diagrams and object diagrams :star::star:" expandable>
   <include src="../../book/uml/miscellaneous/objectVsClassDiagrams/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

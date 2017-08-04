@@ -2,7 +2,7 @@
 
 <panel type="info" header=":trophy: Can interpret interfaces in class diagrams :star::star::star:" expandable>
   <include src="../../book/uml/classDiagrams/interfaces/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="info" header=":trophy: Can explain the interfaces concept and relate it to Java interfaces :star::star::star:" expandable>
   <include src="../../book/oopDesign/inheritance/interfaces/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

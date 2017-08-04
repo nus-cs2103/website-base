@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain the importance of readability :star::star:" expandable>
   <include src="../../book/codeQuality/maximiseReadability/introduction/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="warning" header=":trophy: Can follow basic guidelines for improving readability :star::star:" expandable>
   <include src="../../book/codeQuality/maximiseReadability/basic/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="info" header=":trophy: Can follow intermediate guidelines for improving readability :star::star::star:" expandable>
   <include src="../../book/codeQuality/maximiseReadability/intermediate/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -29,7 +29,7 @@
 
 <panel type="success" header=":trophy: Can follow advanced guidelines for improving readability :star::star::star::star:" expandable>
   <include src="../../book/codeQuality/maximiseReadability/advanced/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

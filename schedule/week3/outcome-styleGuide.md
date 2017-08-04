@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain the importance of code quality :star::star:" expandable>
   <include src="../../book/codeQuality/introduction/basic/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="warning" header=":trophy: Can explain the need for following a standard :star::star:" expandable>
   <include src="../../book/codeQuality/followStandard/introduction/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="warning" header=":trophy: Can follow simple mechanical style rules :star::star:" expandable>
   <include src="../../book/codeQuality/followStandard/basic/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -29,7 +29,7 @@
 
 <panel type="info" header=":trophy: Can follow intermediate style rules :star::star::star:" expandable>
   <include src="../../book/codeQuality/followStandard/intermediate/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

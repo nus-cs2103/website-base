@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain the Facade design pattern :star::star:" expandable>
   <include src="../../book/designPatterns/facade/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="info" header=":trophy: Can explain the Command design pattern :star::star::star:" expandable>
   <include src="../../book/designPatterns/command/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="warning" header=":trophy: Can explain the Model View Controller (MVC) design pattern :star::star:" expandable>
   <include src="../../book/designPatterns/modelViewController/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -29,7 +29,7 @@
 
 <panel type="info" header=":trophy: Can explain the Observer design pattern :star::star::star:" expandable>
   <include src="../../book/designPatterns/observer/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -38,7 +38,7 @@
 
 <panel type="success" header=":trophy: Can explain the Abstraction Occurrence design pattern :star::star::star::star:" expandable>
   <include src="../../book/designPatterns/abstractionOccurrence/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -47,7 +47,7 @@
 
 <panel type="success" header=":trophy: Can recognize some of the GoF design patterns :star::star::star::star:" expandable>
   <include src="../../book/designPatterns/more/otherDesignPatterns/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

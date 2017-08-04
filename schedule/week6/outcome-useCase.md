@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain use cases :star::star:" expandable>
   <include src="../../book/specifyingRequirements/useCases/introduction/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="info" header=":trophy: Can specify details of a use case in a structured format :star::star::star:" expandable>
   <include src="../../book/specifyingRequirements/useCases/details/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="success" header=":trophy: Can optimize the use of use cases :star::star::star::star:" expandable>
   <include src="../../book/specifyingRequirements/useCases/usage/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

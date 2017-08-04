@@ -2,21 +2,21 @@
 
 <panel type="warning" header=":trophy: Can explain testing :star::star:" expandable>
   <include src="../../book/testing/introduction/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
     <include src="../../book/testing/introduction/what/q-essay-relateConcepts.md" />
   </panel>
 </panel>
 
 <panel type="warning" header=":trophy: Can explain regression testing :star::star:" expandable>
   <include src="../../book/testing/testingTypes/regressionTesting/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
     <include src="../../book/testing/testingTypes/regressionTesting/what/q-essay-explain.md" />
   </panel>
 </panel>
 
 <panel type="warning" header=":trophy: Can explain test automation :star::star:" expandable>
   <include src="../../book/testing/testAutomation/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
     
 ...
 
@@ -26,7 +26,7 @@
 
 <panel type="warning" header=":trophy: Can semi-automate testing of test UIs :star::star:" expandable>
   <include src="../../book/testing/testAutomation/testingTextUis/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
     
 
 **Acceptable**: Any project where you use the I/O redirection method to test a CLI.

@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain error handling :star::star:" expandable>
   <include src="../../book/errorHandling/introduction/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="warning" header=":trophy: Can explain exceptions :star::star:" expandable>
   <include src="../../book/errorHandling/exceptions/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="info" header=":trophy: Can avoid using exceptions to control normal workflow :star::star::star:" expandable>
   <include src="../../book/errorHandling/exceptions/when/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

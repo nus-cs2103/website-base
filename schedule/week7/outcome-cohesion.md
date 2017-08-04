@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain cohesion :star:" expandable>
   <include src="../../book/designPrinciples/cohesion/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can justify the need to increase cohesion :star:" expandable>
   <include src="../../book/designPrinciples/cohesion/why/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

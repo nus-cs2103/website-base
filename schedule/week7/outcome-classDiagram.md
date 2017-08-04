@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain the use how design modelling can be used before implementation :star::star:" expandable>
   <include src="../../book/oopDesign/conceptualizingSolution/introduction/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="info" header=":trophy: Can use intermediate class diagram and sequence diagram concepts to model an OO design :star::star::star:" expandable>
   <include src="../../book/oopDesign/conceptualizingSolution/intermediate/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

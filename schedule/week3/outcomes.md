@@ -18,7 +18,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header=":trophy: Can work with a 1KLoC code base :star:" expandable>
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 
 **Acceptable**: Evidence that you have worked with a code base larger than 1KLoC. %%e.g. a project in a previous module or a pet project%%
@@ -66,7 +66,7 @@
 
 <panel type="info" header=":trophy: Can use Java8 streams :star::star::star:" expandable>
   <include src="../../book/javaTools/streamsBasic/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

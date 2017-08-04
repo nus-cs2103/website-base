@@ -2,7 +2,7 @@
 
 <panel type="info" header=":trophy: Can explain models :star::star::star:" expandable>
   <include src="../../book/modeling/introduction/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="info" header=":trophy: Can identify UML models :star::star::star:" expandable>
   <include src="../../book/modeling/introduction/umlModels/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

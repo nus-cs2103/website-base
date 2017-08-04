@@ -2,7 +2,7 @@
 
 <panel type="info" header=":trophy: Can explain object oriented domain models :star::star::star:" expandable>
   <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

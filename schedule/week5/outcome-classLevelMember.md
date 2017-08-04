@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can interpret class-level members in class diagrams :star::star:" expandable>
   <include src="../../book/uml/classDiagrams/classLevelMembers/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="warning" header=":trophy: Can explain class-level members :star::star:" expandable>
   <include src="../../book/oopDesign/classes/classLevelMembers/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

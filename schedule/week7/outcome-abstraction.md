@@ -2,7 +2,7 @@
 
 <panel type="warning" header=":trophy: Can explain what is software design :star::star:" expandable>
   <include src="../../book/design/introduction/basic/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

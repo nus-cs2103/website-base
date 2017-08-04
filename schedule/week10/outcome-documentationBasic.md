@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain the two types of developer docs :star:" expandable>
   <include src="../../book/documentation/introduction/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can explain the need for comprehensibility in documents :star:" expandable>
   <include src="../../book/documentation/guidelines/aimForComprehensibility/what/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="danger" header=":trophy: Can write reasonably comprehensible developer documents :star:" expandable>
   <include src="../../book/documentation/guidelines/aimForComprehensibility/how/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

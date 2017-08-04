@@ -2,7 +2,7 @@
 
 <panel type="info" header=":trophy: Can explain test case design techniques at a higher level :star::star::star:" expandable>
   <include src="../../book/testCaseDesign/summary/recap/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

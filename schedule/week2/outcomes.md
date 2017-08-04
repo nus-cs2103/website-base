@@ -19,7 +19,7 @@
 
 <panel type="warning" header=":trophy: Can use Java Collections :star::star:" expandable>
   <include src="../../book/javaTools/collections/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 **Acceptable**: Some code that you have written that uses some Java Collection classes.
 
@@ -34,7 +34,7 @@
 
 <panel type="info" header=":trophy: Can use Java varargs feature :star::star::star:" expandable>
   <include src="../../book/javaTools/varargs/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 **Acceptable**: Some code that you have written that uses the varargs feature.
 
@@ -49,7 +49,7 @@
 
 <panel type="success" header=":trophy: Can explain pros and cons of software engineering :star::star::star::star:" expandable>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
   
 To be able answer questions such as these:
 

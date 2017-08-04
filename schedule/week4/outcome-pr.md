@@ -2,7 +2,7 @@
 
 <panel type="danger" header=":trophy: Can explain branching :star:" expandable>
   <include src="../../book/revisionControl/branching/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -11,7 +11,7 @@
 
 <panel type="danger" header=":trophy: Can use Git branching :star:" expandable>
   <include src="../../book/gitAndGithub/branch/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -20,7 +20,7 @@
 
 <panel type="info" header=":trophy: Can use Git to resolve merge conflicts :star::star::star:" expandable>
   <include src="../../book/gitAndGithub/mergeConflicts/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
@@ -29,7 +29,7 @@
 
 <panel type="info" header=":trophy: Can review and merge PRs on GitHub :star::star::star:" expandable>
   <include src="../../book/gitAndGithub/managePRs/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 

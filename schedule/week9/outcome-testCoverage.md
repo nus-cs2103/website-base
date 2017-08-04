@@ -2,7 +2,7 @@
 
 <panel type="info" header=":trophy: Can explain how test coverage works :star::star::star:" expandable>
   <include src="../../book/testing/testCoverage/how/full.md" />
-  <panel header=":trophy: Evidence" expanded>
+  <panel header=":dart: Evidence" expanded>
 
 ...
 
