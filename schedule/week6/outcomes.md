@@ -29,7 +29,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="Can draw basic sequence diagrams :star::star:" expandable>
+<panel type="warning" header=":trophy: Can draw basic sequence diagrams :star::star:" expandable>
   <panel header=":trophy: Evidence" expanded>
 
 ...
@@ -39,7 +39,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can use JavaFX to build a simple GUI :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can use JavaFX to build a simple GUI :star::star::star:" expandable>
   <include src="../../book/javaTools/javaFXBasic/full.md" />
   <panel header=":trophy: Evidence" expanded>
 

@@ -17,7 +17,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="Can use Java Collections :star::star:" expandable>
+<panel type="warning" header=":trophy: Can use Java Collections :star::star:" expandable>
   <include src="../../book/javaTools/collections/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -32,7 +32,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can use Java varargs feature :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can use Java varargs feature :star::star::star:" expandable>
   <include src="../../book/javaTools/varargs/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -47,7 +47,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="Can explain pros and cons of software engineering :star::star::star::star:" expandable>
+<panel type="success" header=":trophy: Can explain pros and cons of software engineering :star::star::star::star:" expandable>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" />
   <panel header=":trophy: Evidence" expanded>
   

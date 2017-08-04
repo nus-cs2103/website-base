@@ -17,7 +17,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="Can explain a product from the user's perspective :star:" expandable>
+<panel type="danger" header=":trophy: Can explain a product from the user's perspective :star:" expandable>
   <panel header=":trophy: Evidence" expanded>
 
 ...
@@ -39,7 +39,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can draw intermediate level sequence diagrams :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can draw intermediate level sequence diagrams :star::star::star:" expandable>
   <panel header=":trophy: Evidence" expanded>
 
 ...
@@ -49,7 +49,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can explain open-closed principle (OCP) :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain open-closed principle (OCP) :star::star::star:" expandable>
   <include src="../../book/designPrinciples/openClosedPrinciple/what/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -68,7 +68,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can use advanced class diagrams :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can use advanced class diagrams :star::star::star:" expandable>
   <include src="../../book/modeling/modelingStructures/classDiagramsAdvanced/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -83,7 +83,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
+<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
   <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -94,7 +94,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="Can explain interface segregation principle :star::star::star::star:" expandable>
+<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable>
   <include src="../../book/principles/interfaceSegregationPrinciple/full.md" />
   <panel header=":trophy: Evidence" expanded>
 

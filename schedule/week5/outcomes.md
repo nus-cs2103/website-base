@@ -21,7 +21,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="Can work with a 2KLoC code base :star:" expandable>
+<panel type="danger" header=":trophy: Can work with a 2KLoC code base :star:" expandable>
   <panel header=":trophy: Evidence" expanded>
 
 ...
@@ -43,7 +43,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can explain single responsibility principle :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain single responsibility principle :star::star::star:" expandable>
   <include src="../../book/principles/singleResponsibilityPrinciple/full.md" />
   <panel header=":trophy: Evidence" expanded>
 

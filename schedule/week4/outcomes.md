@@ -33,7 +33,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can explain the abstraction aspect of OOP :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain the abstraction aspect of OOP :star::star::star:" expandable>
   <include src="../../book/oopDesign/objects/abstraction/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -44,7 +44,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can explain the encapsulation aspect of OOP :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain the encapsulation aspect of OOP :star::star::star:" expandable>
   <include src="../../book/oopDesign/objects/encapsulation/full.md" />
   <panel header=":trophy: Evidence" expanded>
 

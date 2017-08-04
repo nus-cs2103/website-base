@@ -41,7 +41,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can use intermediate features of JUnit :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable>
   <include src="../../book/junit/intermediate/full.md" />
   <panel header=":trophy: Evidence" expanded>
 
@@ -56,7 +56,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="Can explain testability :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain testability :star::star::star:" expandable>
   <include src="../../book/testing/introduction/testability/full.md" />
   <panel header=":trophy: Evidence" expanded>
 

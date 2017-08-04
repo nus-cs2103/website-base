@@ -17,7 +17,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="Can evolve a product iteratively :star:" expandable>
+<panel type="danger" header=":trophy: Can evolve a product iteratively :star:" expandable>
   <panel header=":trophy: Evidence" expanded>
 
 ...
