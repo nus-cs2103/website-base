@@ -18,13 +18,13 @@
   <include src="../../book/testing/testAutomation/what/full.md" />
   <panel header=":dart: Evidence" expanded>
     
-...
+Not required.
 
   </panel>
 </panel>
 
 
-<panel type="warning" header=":trophy: Can semi-automate testing of test UIs :star::star:" expandable>
+<panel type="warning" header=":trophy: Can semi-automate testing of CLIs :star::star:" expandable>
   <include src="../../book/testing/testAutomation/testingTextUis/full.md" />
   <panel header=":dart: Evidence" expanded>
     
