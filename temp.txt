@@ -1,2 +1,0 @@
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-beanCounting" name="%%Admin &raquo;%% FAQ: Why so much bean counting? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-separateWebsite" name="%%Admin &raquo;%% FAQ: Why a separate website instead of using IVLE? :star::star::star::star:" dynamic />
