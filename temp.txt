@@ -1,2 +1,0 @@
-https://nus-cs2103.github.io/cs2103-website/book/gitAndGitHub/init/
-https://nus-cs2103.github.io/cs2103-website/book/gitAndGithub/init/
