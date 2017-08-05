@@ -1,3 +1,3 @@
 [submodule "book"]
 	path = book
-	url = https://github.com/MarkBind/se-book.git
+url=https://github.com/se-edu/se-book.git
