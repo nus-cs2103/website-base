@@ -36,16 +36,129 @@
 <div class="website-content">
   <div>
     <panel header="Overview" expandable="" class="overview" ctrl-lvl="-1" no-close="">
-      <panel type="info" header="**About this document** :star::star::star:" expandable="" expanded="">
+      <panel type="danger" header="**Important info about using this website** :star:" expandable="">
         <div><img src="images/growingPlant.png" width="400">
-          <ul>
-            <li>This is your main source of information for CS2103/T. You will need to refer to it weekly.</li>
-            <li>Important bits of information are <mark>highlighted</mark>. <span class="dimmed">Less important additional information are dimmed out</span>.</li>
-            <li>More details for the upcoming weeks will be added as the weeks progress.</li>
-          </ul>
+          <tip-box type="important">
+            <p>This Schedule Page is your main source of information for CS2103/T. You will need to refer to it weekly. More details for the upcoming weeks will be added as the weeks progress.</p>
+          </tip-box>
+          <panel header="Using the textbook" expanded="">
+            <div>
+              <h2 id="browser-compatibility">Browser Compatibility</h2>
+              <p>This book is best viewed using the Chrome browser.</p>
+            </div>
+            <div>
+              <h2 id="information-layers">Information Layers</h2>
+              <p>The book tries to 'layer' information so that readers can decide to omit less important layers if they wish to.</p>
+              <p>More important information are <strong>in bold</strong> or <mark>highlighted</mark> while less important information are <span class="dimmed">dimmed</span> or in collapsed panels such as the below.</p>
+              <panel header="%%Some more less important info in a panel%%">
+                <p>Less important info</p>
+                <p></p>
+              </panel>
+              <p></p>
+              <panel header="%%Some less important info in a boarder-less panel%%" type="seamless">
+                <p>Less important info</p>
+                <p></p>
+              </panel>
+              <p></p>
+              <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
+              <tip-box>
+                <tabs>
+                  <tab header=":abc:">
+                    Some textual description of X
+                    <p></p>
+                  </tab>
+                  <tab header=":tv:">
+                    <p>Video describing X</p>
+                    <p></p>
+                  </tab>
+                </tabs>
+              </tip-box>
+              <p><strong>Sections tagged as <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> can be ignored because they are tangential info</strong>                that are strictly not within the scope of the topic.</p>
+            </div>
+          </panel>
         </div>
       </panel>
-      <panel type="danger" header="**A typical CS2103/T week** :star:" expandable="" expanded="">
+      <panel type="info" header="**More info about using this website** :star::star::star:" expandable="">
+        <div>
+          <panel header="More info about using the textbook" expanded="">
+            <div>
+              <h2 id="conventions-used">Conventions Used</h2>
+              <p>Boxed-text styles:</p>
+              <tip-box type="info">
+                additional info
+              </tip-box>
+              <tip-box type="warning">
+                warning
+              </tip-box>
+              <tip-box type="success">
+                positive message
+              </tip-box>
+              <tip-box type="important">
+                important message
+              </tip-box>
+              <tip-box type="wrong">
+                an error to avoid
+              </tip-box>
+              <tip-box type="tip">
+                tip
+              </tip-box>
+              <tip-box type="definition">
+                definition
+              </tip-box>
+              <p>Meaning of icons:</p>
+              <ul>
+                <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+                    src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png">
+                  <img
+                    style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"> : indication of the depth of the topic, in order of increasing depth (<img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> is
+                    the least depth)</li>
+                <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> tangential info, can be ignored if not interested</li>
+                <li>🏆 : learning outcomes</li>
+                <li>📦 : examples</li>
+                <li>📎 : resources</li>
+                <li>💪 : exercises</li>
+                <li>📜 : printable version</li>
+                <li>🔍 : preview/more info</li>
+                <li>📺 : video</li>
+                <li>🔤 : textual description</li>
+                <li>📊 : slides</li>
+                <li>⤵️ : output produced by running code</li>
+                <li>🔒 question without answer</li>
+                <li>🔒🔑 question with answer</li>
+              </ul>
+            </div>
+            <div>
+              <h2 id="saving-as-pdf-files">Saving as PDF Files</h2>
+              <ol>
+                <li>
+                  <p>Use Chrome to load the page you want to save as pdf.</p>
+                </li>
+                <li>
+                  <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                </li>
+                <li>
+                  <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br><img src="/cs2103-website/book/about/images/chromeSaveAsPdf.png"></p>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <h2 id="printing">Printing</h2>
+              <p>The 📜 icon indicates printer-friendly versions of each chapter. A printer-friendly version of the entire book can be found <a href="../common/print.html">here</a></p>
+            </div>
+          </panel>
+          <panel header="Additional conventions used in the website" expanded="">
+            <p>In addition to following the conventions used in the textbook, the remainder of the website follows these conventions.</p>
+            <p>Icons:</p>
+            <ul>
+              <li>📋 tasks to do</li>
+              <li>📣 lecture</li>
+              <li>🙋 tutorial</li>
+              <li>🎯 : evidence you can use to prove you have achieved a learning outcome</li>
+            </ul>
+          </panel>
+        </div>
+      </panel>
+      <panel type="danger" header="**A typical CS2103/T week** :star:" expandable="">
         <div>
           <p><strong>[Friday (previous week)]</strong><br> Attend the lecture for a recap on the preceding week's Learning Outcomes (LOs), as well as an introduction to the current week's LOs.</p>
           <panel type="info" header="%%Admin &raquo;%% Lectures :star::star::star:">
@@ -232,7 +345,7 @@
           </panel>
         </div>
       </panel>
-      <panel type="info" header="**Tutorial Schedule** :star::star::star:" expandable="" expanded="">
+      <panel type="info" header="**Tutorial Schedule** :star::star::star:" expandable="">
         <div>
           <p><strong>Outdated; To be updated soon...</strong></p>
           <table class="markbind-table table">
@@ -1104,10 +1217,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <panel header=":lock::key: Regression Testing defintion T/F?">
                               <question>
                                 <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                                <ul radio-group="mco4u" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mco4u" type="radio"> a. True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mco4u" type="radio"> b. False</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mco4u" type="radio"> c. Partially true</label></li>
+                                <ul radio-group="5f72m" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5f72m" type="radio"> a. True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5f72m" type="radio"> b. False</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5f72m" type="radio"> c. Partially true</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c.</p>
