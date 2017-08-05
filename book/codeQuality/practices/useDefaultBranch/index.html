@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <p><span class="dimmed"><strong><span>Coding Best Practices →</span></strong>
     </span>
@@ -26,11 +26,11 @@
         also applies to the final 'else' of an if-else construct. That is, the final 'else' should mean 'everything else', and not the final option. Do not use 'else' when an 'if' condition can be explicitly specified, unless there is absolutely no other
         possibility.</p>
       <tip-box>
-        <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
         <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
 </code></pre>
-        <p><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></p>
+        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
         <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
 <span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);

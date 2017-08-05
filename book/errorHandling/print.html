@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <div id="main">
     <h1 id="error-handling">Error Handling</h1>
@@ -77,7 +77,7 @@
           caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown to the runtime, thus halting the system. In the Java code given
           below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code> block and has a <code>catch{ }</code>          block to specify what to do if the exception is actually thrown.</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/errorHandling/exceptions/how/images/processInput.png" height="320">
+          <p>Example:</p><img src="/website/book/errorHandling/exceptions/how/images/processInput.png" height="320">
           <p></p>
         </tip-box>
         <p>Advantages of exception handling in this way:</p>
@@ -275,7 +275,7 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
       <div>
         <p>Consider two classes, Account and Guarantor, with an association as shown in the following diagram:</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+          <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Guarantor guarantor;
@@ -323,7 +323,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
         <p>Consider the association given below. Here, a MinedCell cannot exist without a Mine and vice versa. The only way to enforce this is by simultaneous object creation. However, in Java and C++, only one object can be created at a time. Given below
           are two alternatives. Both options violate the multiplicity for a short period of time.</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
+          <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
           <p></p>
           <p>Option 1:</p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
@@ -363,7 +363,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
       <div>
         <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+          <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
@@ -400,7 +400,7 @@ jean.setBoyfriend(james);
 …
 james.setGirlfriend(jean);  
 jean.setBoyfriend(yong);  
-</code></pre><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+</code></pre><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
           <p></p>
         </tip-box>
         <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>

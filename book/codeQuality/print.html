@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <div id="main">
     <h1 id="code-quality">Code Quality</h1>
@@ -50,7 +50,7 @@
         <p>{give more versions of the code, ask to find bug}</p>
         <tip-box>
           <p>Example:</p>
-          <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
           <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
@@ -69,7 +69,7 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-          <p><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></p>
+          <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
           <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
@@ -116,7 +116,7 @@
               <p>According to the Linux 1.3.53 CodingStyle documentation, <em>&quot;if you need more than 3 levels of indentation, you're screwed anyway, and should fix your program&quot;.</em></p>
               <p>In particular, avoid <em>arrowhead</em> style code.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                <p>Example:</p><img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
                 <p></p>
               </tip-box>
             </div>
@@ -139,8 +139,8 @@
                 <table class="markbind-table table">
                   <thead>
                     <tr>
-                      <th><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></th>
-                      <th><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></th>
+                      <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
+                      <th><img src="/website/book/images/Good.png" alt="" title="Good"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -157,7 +157,7 @@
               </tip-box>
               <p>As you can see, using a named constant makes the code easier to understand because the name tells us more about the meaning of the number. Similarly, we can have ‘magic’ values of other data types.</p>
               <tip-box>
-                <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
                 <pre><code class="hljs java"><span class="hljs-keyword">return</span> “Error <span class="hljs-number">1432</span>”;  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
               </tip-box>
@@ -240,13 +240,13 @@
               <p>Avoid varying the level of abstraction within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
               <tip-box>
                 <p>Example:</p>
-                <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
                 <pre><code class="hljs java">readData();
 salary = basic*rise+<span class="hljs-number">1000</span>;
 tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);
 displayResult();
 </code></pre>
-                <p><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></p>
+                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
                 <pre><code class="hljs java">readData();
 processData();
 displayResult();
@@ -285,7 +285,7 @@ displayResult();
                 the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
               <tip-box>
                 <p>Example:</p>
-                <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
                 <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {
     <span class="hljs-keyword">if</span> (!isErrorCase) {
         start();
@@ -303,7 +303,7 @@ displayResult();
                   <li>Alternative conditions are separated from their handling.</li>
                   <li>Main path is nested deeply.</li>
                 </ul>
-                <p><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></p>
+                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
                 <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
     <span class="hljs-keyword">return</span>;
@@ -427,8 +427,8 @@ exit();
                   <thead>
                     <tr>
                       <th>Name for a</th>
-                      <th><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></th>
-                      <th><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></th>
+                      <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
+                      <th><img src="/website/book/images/Good.png" alt="" title="Good"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -480,9 +480,9 @@ exit();
                 <table class="markbind-table table">
                   <thead>
                     <tr>
-                      <th><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></th>
-                      <th><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></th>
-                      <th><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></th>
+                      <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
+                      <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
+                      <th><img src="/website/book/images/Good.png" alt="" title="Good"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -547,11 +547,11 @@ exit();
                 This also applies to the final 'else' of an if-else construct. That is, the final 'else' should mean 'everything else', and not the final option. Do not use 'else' when an 'if' condition can be explicitly specified, unless there is absolutely
                 no other possibility.</p>
               <tip-box>
-                <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
                 <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
 </code></pre>
-                <p><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></p>
+                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
                 <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
 <span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);
@@ -568,14 +568,14 @@ exit();
                 <li>Do not reuse formal parameters as local variables inside the method.</li>
               </ul>
               <tip-box>
-                <p><img src="/cs2103-website/book/images/Bad.png" alt="" title="Bad"></p>
+                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
     <span class="hljs-keyword">return</span> length;
 }
 
 </code></pre>
-                <p><img src="/cs2103-website/book/images/Good.png" alt="" title="Good"></p>
+                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
     area = length * width;

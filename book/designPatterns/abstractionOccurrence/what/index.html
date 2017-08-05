@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <tip-box>
     <div>
@@ -44,7 +44,7 @@
         <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
         <tip-box>
           <p>Example:</p>
-          <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/book.png"
+          <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png"
             height="200">
           <p></p>
           <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian realized
@@ -54,7 +54,7 @@
         <p><strong>Anti-pattern</strong></p>
         <p>Refer to the same Library example given above.</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+          <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
           <p></p>
           <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic
             because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
@@ -62,13 +62,13 @@
         <p><strong>Solution</strong></p>
         <p>Let a book copy be represented by two objects instead of one, as given below.</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
+          <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
           <p></p>
-          <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
+          <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
             height="350">
           <p></p>
         </tip-box>
-        <p>The general idea can be found in the following class diagram:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
+        <p>The general idea can be found in the following class diagram:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
         <p></p>
         <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class names,
           but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>

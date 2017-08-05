@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <tip-box>
     <div>
@@ -32,7 +32,7 @@
           any changes to the software system. In 1988, Bertrand Meyer proposed a guiding principle to alleviate this problem. The principle, known as the <em>open-closed principle</em>, states: “A module should be <em>open</em> for extension but <em>closed</em>          for modification”. That is, modules should be written so that they can be extended, without requiring them to be modified. In other words, changing what the modules do without changing the source code of the modules.</p>
         <p>In object-oriented programming, these two seemingly opposing requirements can be achieved in various ways. This often requires separating the <em>specification (interface)</em> of a module from its <em>implementation</em>.</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
+          <p>Example:</p><img src="/website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
           <p></p>
           <p>The behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>,
             the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. Indeed, its behavior was extended without having to open up and modify its code. Hence, it was open to extensions, but closed to modification.</p>

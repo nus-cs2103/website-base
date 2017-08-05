@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <h1 id="software-design-patterns">Software Design Patterns</h1>
   <h2 id="introduction">Introduction</h2>
@@ -165,7 +165,7 @@
               <p>The key insight of the solution is that the <em>constructor</em> of the singleton class cannot be <em>public</em>. Because a <em>public constructor</em> will allow others to instantiate the class at will, a <em>private constructor</em> should
                 be used instead. In addition, a public class-level method is provided to access the <em>single instance</em>.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/singleton/what/images/singleton.png" height="130">
+                <p>Example:</p><img src="/website/book/designPatterns/singleton/what/images/singleton.png" height="130">
                 <p></p>
               </tip-box>
             </div>
@@ -349,7 +349,7 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
               <tip-box>
                 <p>Example:</p>
-                <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/book.png"
+                <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png"
                   height="200">
                 <p></p>
                 <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian
@@ -359,7 +359,7 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p><strong>Anti-pattern</strong></p>
               <p>Refer to the same Library example given above.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+                <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
                 <p></p>
                 <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic
                   because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
@@ -367,13 +367,13 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p><strong>Solution</strong></p>
               <p>Let a book copy be represented by two objects instead of one, as given below.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
+                <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
                 <p></p>
-                <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
+                <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
                   height="350">
                 <p></p>
               </tip-box>
-              <p>The general idea can be found in the following class diagram:</p><img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
+              <p>The general idea can be found in the following class diagram:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
               <p></p>
               <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class
                 names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
@@ -458,7 +458,7 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p><strong>Context</strong></p>
               <p>Components need to access functionality deep inside other components. For example, the <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code>                component.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/facade/what/images/textBook.png" height="120">
+                <p>Example:</p><img src="/website/book/designPatterns/facade/what/images/textBook.png" height="120">
                 <p></p>
               </tip-box>
               <p><strong>Problem</strong></p>
@@ -467,7 +467,7 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p>Include a Façade class that sits between the component internals and users of the component such that all access to the component happens through the Façade class. The following class diagram shows the application of the Façade pattern to
                 the <code>Library System</code> example. In this example, the <code>LibraryLogic</code> class acts as the Façade class.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+                <p>Example:</p><img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
                 <p></p>
               </tip-box>
             </div>
@@ -477,7 +477,7 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
                   <div>
                     <panel header=":lock::key: Choose the correct statement.">
                       <question>
-                        <p>In the diagram given below, which pattern is most likely to be in use.</p><img src="/cs2103-website/book/designPatterns/facade/what/images/textStorage.png" height="150">
+                        <p>In the diagram given below, which pattern is most likely to be in use.</p><img src="/website/book/designPatterns/facade/what/images/textStorage.png" height="150">
                         <p></p>
                         <ul class="task-list">
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Singleton pattern</li>
@@ -528,10 +528,10 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p>In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The <code>CommandQueue</code> object
                 treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code> object will access the <code>DataStore</code>                object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/command/what/images/commandCreator.png" height="150">
+                <p>Example:</p><img src="/website/book/designPatterns/command/what/images/commandCreator.png" height="150">
                 <p></p>
               </tip-box>
-              <p>The general form of the solution is as follows.</p><img src="/cs2103-website/book/designPatterns/command/what/images/clientInvoker.png" height="200">
+              <p>The general form of the solution is as follows.</p><img src="/website/book/designPatterns/command/what/images/clientInvoker.png" height="200">
               <p></p>
               <p>The <code>&lt;&lt; Client &gt;&gt;</code> creates a <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object, and passes it to the <code>&lt;&lt; Invoker &gt;&gt;</code>. The <code>&lt;&lt; Invoker &gt;&gt;</code> object treats all commands
                 as a general <code>&lt;&lt; Command &gt;&gt;</code> type. <code>&lt;&lt; Invoker &gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt; ConcreteCommand &gt;&gt;</code>                will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code> of the command
@@ -573,9 +573,9 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               </ul>
               <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/modelViewController/what/images/classDiagram.png" height="150">
+                <p>Example:</p><img src="/website/book/designPatterns/modelViewController/what/images/classDiagram.png" height="150">
                 <p></p>
-                <p>Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p><img src="/cs2103-website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png"
+                <p>Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p><img src="/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png"
                   height="220">
                 <p></p>
                 <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
@@ -608,14 +608,14 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
             <div>
               <p>Here is another scenario from the same student management system where the user is adding a new student to the system.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="300">
+                <p>Example:</p><img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="300">
                 <p></p>
                 <p>Now, assume the system has two additional views used in parallel by different users:</p>
                 <ul>
                   <li><code>StudentListUi</code>: that accesses a list of students and</li>
                   <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
                 </ul>
-                <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p><img src="/cs2103-website/book/designPatterns/observer/what/images/studentListUI.png"
+                <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p><img src="/website/book/designPatterns/observer/what/images/studentListUI.png"
                   height="150">
                 <p></p>
                 <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type
@@ -629,7 +629,7 @@ Logic m = <span class="hljs-keyword">new</span> Logic();
               <p>The Observer pattern shows us how an object can communicate with other objects while avoiding a direct coupling with them. The solution is to force the communication through an interface known to both parties. A concrete example is given
                 below.</p>
               <tip-box>
-                <p>Example:</p><img src="/cs2103-website/book/designPatterns/observer/what/images/studentListObserver.png" height="130">
+                <p>Example:</p><img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="130">
                 <p></p>
                 <p>Here is the Observer pattern applied to the student management system.</p>
                 <p>During initialization of the system,</p>
@@ -667,7 +667,7 @@ studentList.addUi(statusUi);
 </code></pre>
                 <p>Note that StudentList is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
               </tip-box>
-              <p>Here is the generic description of the observer pattern:</p><img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="80">
+              <p>Here is the generic description of the observer pattern:</p><img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="80">
               <p></p>
               <ul>
                 <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes
@@ -685,12 +685,12 @@ studentList.addUi(statusUi);
                     <panel header=":lock::key: Explain how polymorphism is used in the Observer pattern.">
                       <question has-input="true">
                         <p>Explain how polymorphism is used in the Observer pattern.</p>
-                        <div slot="answer"><img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="80">
+                        <div slot="answer"><img src="/website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="80">
                           <p></p>
                           <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called
                             <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual
                             type. That is, <code>update()</code> method shows polymorphic behavior.</p>
-                          <p>In the example give below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p><img src="/cs2103-website/book/designPatterns/observer/what/images/studentListStudentListObserver.png"
+                          <p>In the example give below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p><img src="/website/book/designPatterns/observer/what/images/studentListStudentListObserver.png"
                             height="160">
                           <p></p>
                         </div>
@@ -755,25 +755,25 @@ studentList.addUi(statusUi);
               <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
               <tip-box>
                 <p>Example:</p>
-                <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
+                <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
                 <p></p>
-                <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png"
+                <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png"
                   height="120">
                 <p></p>
                 <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p>
                 <img
-                  src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
+                  src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
                   <p></p>
-                  <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png"
+                  <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png"
                     height="100">
                   <p></p>
-                  <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
+                  <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
                   <p></p>
-                  <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
+                  <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
                   <p></p>
-                  <p>As UI consists of multiple views, the MVC pattern is applied here.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
+                  <p>As UI consists of multiple views, the MVC pattern is applied here.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
                   <p></p>
-                  <p>Some views need to be updated when the data change; apply the Observer pattern here.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
+                  <p>Some views need to be updated when the data change; apply the Observer pattern here.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
                   <p></p>
                   <p>In addition, the Singleton pattern can be applied to the façade class.</p>
               </tip-box>

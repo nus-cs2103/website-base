@@ -11,20 +11,25 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/css/main.css">
-<link rel="stylesheet" href="/cs2103-website/css/schedule.css">
+    <link rel="stylesheet" href="/website/css/main.css">
+<link rel="stylesheet" href="/website/css/schedule.css">
 <div>
   <navbar placement="top" type="inverse"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-    <li><a href="/cs2103-website/index.html">Schedule</a></li>
-    <li><a href="/cs2103-website/book/index.html" target="_blank">Textbook</a></li>
-    <li><a href="/cs2103-website/admin/index.html">Admin</a></li>
+    <li><a href="/website/index.html">Schedule</a></li>
+    <li><a href="/website/book/index.html" target="_blank">Textbook</a></li>
+    <li><a href="/website/admin/index.html">Admin</a></li>
     <li><a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">Instructors</a></li>
     <dropdown text="IVLE">
-      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Announcements</a></li>
-      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/Default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Submissions</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/Default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+    </dropdown>
+    <dropdown text="Discuss">
+      <li><a href="https://nus-cs2103.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
     </dropdown>
     <dropdown text="GitHub">
-      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank">Forum</a></li>
+      <li><a href="https://github.com/nus-cs2103/website/issues" target="_blank"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/rcs" target="_blank">RCS</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank">Addressbook-level1</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank">Addressbook-level2</a></li>
@@ -137,7 +142,7 @@
                   <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
                 </li>
                 <li>
-                  <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br><img src="/cs2103-website/book/about/images/chromeSaveAsPdf.png"></p>
+                  <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br><img src="/website/book/about/images/chromeSaveAsPdf.png"></p>
                 </li>
               </ol>
             </div>
@@ -162,7 +167,7 @@
         <div>
           <p><strong>[Friday (previous week)]</strong><br> Attend the lecture for a recap on the preceding week's Learning Outcomes (LOs), as well as an introduction to the current week's LOs.</p>
           <panel type="info" header="%%Admin &raquo;%% Lectures :star::star::star:">
-            <div><img src="/cs2103-website/admin/images/Lecture photo.png" style="width: 713px;">
+            <div><img src="/website/admin/images/Lecture photo.png" style="width: 713px;">
               <p><strong>Timing/venue</strong>: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).</p>
               <p>Each lecture consists of two sections:</p>
               <ul>
@@ -171,8 +176,8 @@
               </ul>
               <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
               <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
-              <p><strong>Handouts</strong>: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/cs2103-website/book/index.html">Textbook</a> section and are also hyperlinked
-                from the <a href="/cs2103-website/schedule/index.html">Schedule Page</a>.</p>
+              <p><strong>Handouts</strong>: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website/book/index.html">Textbook</a> section and are also hyperlinked
+                from the <a href="/website/schedule/index.html">Schedule Page</a>.</p>
               <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. Tey are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
             </div>
           </panel>
@@ -219,11 +224,11 @@
               </ul>
               <panel header="%%Admin &raquo; Appendix D: How to get Help in CS2103/T%%">
                 <div>
-                  <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
+                  <p><img src="/website/admin/images/how to get help.png" width="200px"><br></p>
                   <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
                   <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for
                     a solution/answer. But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
-                  <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
+                  <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/website/admin/images/the good reasons to get home early.png" width="300">
                   <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
                   <p>What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.</p>
                   <p>When faced with a technical problem or a doubt about a concept, here are the things you should do:</p>
@@ -235,7 +240,7 @@
                     <li>
                       <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't
                         give an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a <mark>web search on the error message</mark>
-                        is a good starting point.  <br><img src="/cs2103-website/admin/images/how to google it.png" width="460" height="268"></p>
+                        is a good starting point.  <br><img src="/website/admin/images/how to google it.png" width="460" height="268"></p>
                     </li>
                     <li>
                       <p><strong>Ask peers</strong>:</p>
@@ -244,7 +249,7 @@
                         are facing similar problems too. If you are really shy to ask questions in IVLE, you may use  <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a>  to submit your question
                         anonymously which we will then post in the forum.</p>
                       <panel header="Rubber Duck Debugging" expandable="">
-                        <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
+                        <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
                         <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around
                           a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                         <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
@@ -449,31 +454,31 @@
           <panel type="danger" header="[CS2103 students only] Forming teams :star:" expandable="">
             <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
             <p>
-              <panel type="danger" src="/cs2103-website\admin\teams._include_.html" name="%%Admin &raquo;%% Team Forming :star:" header="%%Admin &raquo;%% Team Forming :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="danger" src="/website\admin\teams._include_.html" name="%%Admin &raquo;%% Team Forming :star:" header="%%Admin &raquo;%% Team Forming :star:" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
           </panel>
           <panel header="Admin info to read" expandable="" expanded="">
             <p>Here are some module admin info to read around this time:</p>
             <p>
-              <panel type="danger" name="%%Admin &raquo;%% FAQ: Where is everything? :star:" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" fragment="admin-faq-whereIsEverything" header="%%Admin &raquo;%% FAQ: Where is everything? :star:"
+              <panel type="danger" name="%%Admin &raquo;%% FAQ: Where is everything? :star:" src="/website\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" fragment="admin-faq-whereIsEverything" header="%%Admin &raquo;%% FAQ: Where is everything? :star:"
                 isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="danger" name="%%Admin &raquo;%% Project: Overview :star:" src="/cs2103-website\admin\project._include_.html" header="%%Admin &raquo;%% Project: Overview :star:" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="danger" name="%%Admin &raquo;%% Project: The Product :star:" src="/cs2103-website\admin\project-product._include_.html" header="%%Admin &raquo;%% Project: The Product :star:" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="danger" src="/cs2103-website\admin\project-scope._include_.html" name="%%Admin &raquo;%% Project: Scope :star:" header="%%Admin &raquo;%% Project: Scope :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="danger" name="%%Admin &raquo;%% Project: Overview :star:" src="/website\admin\project._include_.html" header="%%Admin &raquo;%% Project: Overview :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="danger" name="%%Admin &raquo;%% Project: The Product :star:" src="/website\admin\project-product._include_.html" header="%%Admin &raquo;%% Project: The Product :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="danger" src="/website\admin\project-scope._include_.html" name="%%Admin &raquo;%% Project: Scope :star:" header="%%Admin &raquo;%% Project: Scope :star:" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p>
-              <panel type="warning" src="/cs2103-website\admin\textBooks._include_.html" name="%%Admin &raquo;%% Text Books :star::star:" header="%%Admin &raquo;%% Text Books :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="warning" src="/cs2103-website\admin\programming-languages._include_.html" name="%%Admin &raquo;%% Programming Language :star::star:" header="%%Admin &raquo;%% Programming Language :star::star:" isOpen="false" no-close="true"
+              <panel type="warning" src="/website\admin\textBooks._include_.html" name="%%Admin &raquo;%% Text Books :star::star:" header="%%Admin &raquo;%% Text Books :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="warning" src="/website\admin\programming-languages._include_.html" name="%%Admin &raquo;%% Programming Language :star::star:" header="%%Admin &raquo;%% Programming Language :star::star:" isOpen="false" no-close="true"
                 no-switch="true"></panel>
-              <panel type="warning" src="/cs2103-website\admin\project-constraints._include_.html" name="%%Admin &raquo;%% Project: Constraints :star::star:" header="%%Admin &raquo;%% Project: Constraints :star::star:" isOpen="false" no-close="true"
+              <panel type="warning" src="/website\admin\project-constraints._include_.html" name="%%Admin &raquo;%% Project: Constraints :star::star:" header="%%Admin &raquo;%% Project: Constraints :star::star:" isOpen="false" no-close="true"
                 no-switch="true"></panel>
-              <panel type="warning" src="/cs2103-website\admin\project-deliverables._include_.html" name="%%Admin &raquo;%% Project: Deliverables :star::star:" header="%%Admin &raquo;%% Project: Deliverables :star::star:" isOpen="false" no-close="true"
+              <panel type="warning" src="/website\admin\project-deliverables._include_.html" name="%%Admin &raquo;%% Project: Deliverables :star::star:" header="%%Admin &raquo;%% Project: Deliverables :star::star:" isOpen="false" no-close="true"
                 no-switch="true"></panel>
             </p>
             <p>
-              <panel type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-cs2103VsCs2103t" fragment="admin-faq-cs2103VsCs2103t"
+              <panel type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="/website\admin\appendixC-faq._include_.html#admin-faq-cs2103VsCs2103t" fragment="admin-faq-cs2103VsCs2103t"
                 header="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" fragment="admin-faq-highWorkload" header="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:"
+              <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" fragment="admin-faq-highWorkload" header="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:"
                 isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
           </panel>
@@ -483,7 +488,7 @@
           </panel>
           <panel type="danger" header="Attend Lecture 1 ==(compulsory)== :star:" expandable="">
             <p>
-              <panel type="info" src="/cs2103-website\admin\lectures._include_.html" name="%%Admin &raquo;%% Lectures :star::star::star:" header="%%Admin &raquo;%% Lectures :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="info" src="/website\admin\lectures._include_.html" name="%%Admin &raquo;%% Lectures :star::star::star:" header="%%Admin &raquo;%% Lectures :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
           </panel>
         </div>
@@ -662,7 +667,7 @@
                 <div>
                   <div>
                     <panel header="%%Prerequisites%%" expandable="" expanded="">
-                      <panel src="/cs2103-website\book\revisionControl\repositories\full._include_.html" header="Revision Control: Repositories" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\revisionControl\repositories\full._include_.html" header="Revision Control: Repositories" isOpen="false" no-close="true" no-switch="true"></panel>
                     </panel>
                     <p></p>
                   </div>
@@ -682,7 +687,7 @@
                         <tab header="SourceTree">
                           <div>
                             <p>Click <code>File</code> → <code>Clone/New…</code></p>
-                            <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/cs2103-website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
+                            <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
                             <p></p>
                             <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
                             <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
@@ -691,7 +696,7 @@
                         <tab header="CLI">
                           <div>
                             <p>Open a Git Bash Terminal.</p>
-                            <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p><img src="/cs2103-website/book/gitAndGithub/init/images/cli_1.png" height="100">
+                            <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p><img src="/website/book/gitAndGithub/init/images/cli_1.png" height="100">
                             <p></p>
                             <p>Navigate to the <code>things</code> directory.</p>
                             <p>Use the command <code>git init</code> which should initialize the repo.</p>
@@ -767,7 +772,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                 <div>
                   <div>
                     <panel header="%%Prerequisites%%" expandable="" expanded="">
-                      <panel src="/cs2103-website\book\revisionControl\savingHistory\full._include_.html" header="Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\revisionControl\savingHistory\full._include_.html" header="Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
                     </panel>
                   </div>
                   <p></p>
@@ -782,7 +787,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                     <div>
                       <p>Create an empty repo as described in the panel below.</p>
                       <p>
-                        <panel src="/cs2103-website\book\gitAndGithub\init\embed._include_.html" name="Git and GitHub: Init" header="Git and GitHub: Init" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website\book\gitAndGithub\init\embed._include_.html" name="Git and GitHub: Init" header="Git and GitHub: Init" isOpen="false" no-close="true" no-switch="true"></panel>
                       </p>
                       <p>Create a file named <code>fruits.txt</code> in the working directory and add some dummy text to it.</p>
                       <tip-box type="definition">
@@ -794,7 +799,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                       <tabs>
                         <tab header="SourceTree">
                           <div>
-                            <p>The file is shown as ‘unstaged’</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
+                            <p>The file is shown as ‘unstaged’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
                             <p></p>
                           </div>
                         </tab>
@@ -832,9 +837,9 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                       <tabs>
                         <tab header="SourceTree">
                           <div>
-                            <p>Select the <code>fruits.txt</code> and click on the <code>Stage Selected</code> button</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_2.png" height="100">
+                            <p>Select the <code>fruits.txt</code> and click on the <code>Stage Selected</code> button</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_2.png" height="100">
                             <p></p>
-                            <p><code>fruits.txt</code> should appear in the <code>Staged files</code> panel now.’</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_3.png" height="180">
+                            <p><code>fruits.txt</code> should appear in the <code>Staged files</code> panel now.’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_3.png" height="180">
                             <p></p>
                           </div>
                         </tab>
@@ -863,7 +868,7 @@ git status
                       <tabs>
                         <tab header="SourceTree">
                           <div>
-                            <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
+                            <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p><img src="/website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
                             <p></p>
                           </div>
                         </tab>
@@ -887,10 +892,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                       </tabs>
                       <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which
                         the commits go on by default.</p>
-                      <p>Do some changes to fruits.txt (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_6.png"
+                      <p>Do some changes to fruits.txt (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_6.png"
                         height="180">
                       <p></p>
-                      <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p><img src="/cs2103-website/book/gitAndGithub/commit/images/sourcetree_7.png"
+                      <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_7.png"
                         height="150">
                       <p></p>
                     </div>
@@ -905,7 +910,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 <div>
                   <div>
                     <panel header="%%Prerequisites%%" expandable="" expanded="">
-                      <panel src="/cs2103-website\book\revisionControl\savingHistory\full._include_.html" header="Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\revisionControl\savingHistory\full._include_.html" header="Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
                     </panel>
                   </div>
                   <p></p>
@@ -1111,7 +1116,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                         <div>
                           <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
                         </div>
-                      </tip-box><img src="/cs2103-website/book/testing/introduction/what/images/diagram.png" height="180">
+                      </tip-box><img src="/website/book/testing/introduction/what/images/diagram.png" height="180">
                       <p></p>
                       <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
                       <tip-box>
@@ -1217,10 +1222,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <panel header=":lock::key: Regression Testing defintion T/F?">
                               <question>
                                 <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                                <ul radio-group="5f72m" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5f72m" type="radio"> a. True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5f72m" type="radio"> b. False</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5f72m" type="radio"> c. Partially true</label></li>
+                                <ul radio-group="7ee5y" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7ee5y" type="radio"> a. True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7ee5y" type="radio"> b. False</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7ee5y" type="radio"> c. Partially true</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c.</p>
@@ -1613,22 +1618,22 @@ Invalid command format: add
         <div>
           <panel header="Admin info to read" expandable="" expanded="">
             <p>
-              <panel type="warning" src="/cs2103-website\admin\appendixB-policies._include_.html#policy-techHelp" name="%%Admin &raquo;%% Policy on Tech Help :star::star:" fragment="policy-techHelp" header="%%Admin &raquo;%% Policy on Tech Help :star::star:"
+              <panel type="warning" src="/website\admin\appendixB-policies._include_.html#policy-techHelp" name="%%Admin &raquo;%% Policy on Tech Help :star::star:" fragment="policy-techHelp" header="%%Admin &raquo;%% Policy on Tech Help :star::star:"
                 isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p>
-              <panel type="info" src="/cs2103-website\admin\tools._include_.html" name="%%Admin &raquo;%% Module Tools :star::star::star:" header="%%Admin &raquo;%% Module Tools :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel type="info" src="/website\admin\tools._include_.html" name="%%Admin &raquo;%% Module Tools :star::star::star:" header="%%Admin &raquo;%% Module Tools :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p>
-              <panel type="success" name="%%Admin &raquo;%% Module Principles :star::star::star::star:" src="/cs2103-website\admin\appendixA-principles._include_.html" header="%%Admin &raquo;%% Module Principles :star::star::star::star:" isOpen="false"
+              <panel type="success" name="%%Admin &raquo;%% Module Principles :star::star::star::star:" src="/website\admin\appendixA-principles._include_.html" header="%%Admin &raquo;%% Module Principles :star::star::star::star:" isOpen="false"
                 no-close="true" no-switch="true"></panel>
-              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" fragment="admin-faq-highWorkload" header="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:"
+              <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" fragment="admin-faq-highWorkload" header="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:"
                 isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" name="%%Admin &raquo;%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" fragment="admin-faq-separateWebsite"
+              <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" name="%%Admin &raquo;%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" fragment="admin-faq-separateWebsite"
                 header="%%Admin &raquo;%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-slideFormat" name="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:" fragment="admin-faq-slideFormat" header="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:"
+              <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-slideFormat" name="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:" fragment="admin-faq-slideFormat" header="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:"
                 isOpen="false" no-close="true" no-switch="true"></panel>
-              <panel type="success" src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-selfStudy" name="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:" fragment="admin-faq-selfStudy" header="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:"
+              <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-selfStudy" name="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:" fragment="admin-faq-selfStudy" header="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:"
                 isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
           </panel>
@@ -1667,7 +1672,7 @@ Invalid command format: add
     </panel>
   </div>
   <p></p>
-  <p><a href="/cs2103-website/schedule/index.html">See all weeks ...</a></p>
+  <p><a href="/website/schedule/index.html">See all weeks ...</a></p>
 </div>
 </div>
 </body>

@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/cs2103-website",
+  "baseUrl": "/website",
   "ignore": [
     "_site/*",
     ".idea/*",

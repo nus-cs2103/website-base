@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <p><span class="dimmed"><strong>Object Oriented Programming →</strong></span></p>
   <h2 id="inheritance">Inheritance</h2>
@@ -31,11 +31,11 @@
             <p>Sometimes, it helps to be able to define a new class based on another class. For example, to be able to define an <code>EvaluationReport</code> class based on a <code>Report</code> class so that the <code>EvaluationReport</code> class does
               not have to duplicate code that is already implemented in the <code>Report</code> class. This can be achieved using the object-oriented concept of <em>inheritance</em>.</p>
             <p>
-              <panel src="/cs2103-website\book\uml\classDiagrams\classInheritance\topicPanel._include_.html" header="UML: Class Diagrams: Inheritance" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/website\book\uml\classDiagrams\classInheritance\topicPanel._include_.html" header="UML: Class Diagrams: Inheritance" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/basic/images/report.png" height="120">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/report.png" height="120">
               <p></p>
             </tip-box>
             <p>In the example above, The <code>EvaluationReport</code> inherits the wordCount attribute and the print() method from the base class <code>Report</code>.</p>
@@ -47,7 +47,7 @@
               money’ association. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish between <code>Man</code> and <code>Woman</code> for the ‘marriage’ association. A solution
               is to add the <code>Person</code> class as a super class and let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code>.</p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/basic/images/manWoman.png" height="250">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/manWoman.png" height="250">
               <p></p>
             </tip-box>
             <p>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an ‘is a’ relationship ; for example, in the class diagrams of
@@ -60,13 +60,13 @@
               <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
             </tip-box>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/basic/images/boardSquare.png" height="250">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/boardSquare.png" height="250">
               <p></p>
             </tip-box>
             <p>{explain inheritance hierarchies}</p>
             <p>In the example below, the <code>TA</code> class inherits from <code>Staff</code> as well as <code>Student</code>. Such multiple inheritance is allowed among C++ classes but not among Java classes.</p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/basic/images/studentStaff.png" height="200">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/studentStaff.png" height="200">
               <p></p>
             </tip-box>
           </div>
@@ -90,7 +90,7 @@
           <div>
             <p>A sub-class can change the behavior inherited from the parent class by simply re-implementing it. This is called <em>overriding</em>. Overridden methods have the same name, same type signature, and same return type.</p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/overriding/images/report.png" height="150">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/overriding/images/report.png" height="150">
               <p></p>
             </tip-box>
           </div>
@@ -187,18 +187,18 @@ void calculateCAP (int[] averages) { ... }
           <div>
             <p>In OO, an <em>interface</em> is a behavior specification.</p>
             <p>
-              <panel src="/cs2103-website\book\uml\classDiagrams\interfaces\topicPanel._include_.html" header="UML: Class Diagrams: Interface" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/website\book\uml\classDiagrams\interfaces\topicPanel._include_.html" header="UML: Class Diagrams: Interface" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/interfaces/images/staff.png" height="250">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/interfaces/images/staff.png" height="250">
               <p></p>
             </tip-box>
             <p>If a class implements all operations specified in an interface, it is said that the class ‘implements’ the interface. Another term for this is <em>interface inheritance</em>. E.g. <code>AcademicStaff</code><em>implements</em> the <code>SalariedStaff</code>              interface.</p>
             <p>Similar to the class inheritance, a class implementing an interface too results in an <em>is-a</em> relationship. E.g. <code>AcademicStaff</code><em>is a</em><code>SalariedStaff</code>.</p>
             <p>Java allows multiple inheritance among interfaces. It also allows a class to implement multiple interfaces. The design given below is allowed in Java.</p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
               <p></p>
             </tip-box>
           </div>
@@ -223,11 +223,11 @@ void calculateCAP (int[] averages) { ... }
             <p>An abstract class is a class that is declared abstract. Abstract classes cannot be instantiated, but they can be subclassed.</p>
             <p>An abstract class can include abstract methods. An abstract method is simply the method interface without the implementation.</p>
             <p>
-              <panel src="/cs2103-website\book\uml\classDiagrams\abstractClasses\topicPanel._include_.html" header="UML: Class Diagrams: Abstract Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/website\book\uml\classDiagrams\abstractClasses\topicPanel._include_.html" header="UML: Class Diagrams: Abstract Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
               <p></p>
             </tip-box>
           </div>
@@ -255,7 +255,7 @@ void calculateCAP (int[] averages) { ... }
               <p>There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document.</p>
             </tip-box>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
               <p></p>
               <pre class="hljs"><code>void adjustSalary(int byPercent) {
     for (Staff s: staff) {
@@ -305,7 +305,7 @@ void calculateCAP (int[] averages) { ... }
         <div>
           <div>
             <tip-box>
-              <p>Example:</p><img src="/cs2103-website/book/oopDesign/inheritance/substitutability/images/staff.png" height="50">
+              <p>Example:</p><img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="50">
               <p></p>
             </tip-box>
             <p>Every instance of a subclass is an instance of the superclass, but not vice-versa. For example, an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.

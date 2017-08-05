@@ -15,16 +15,21 @@
 <link rel="stylesheet" href="../css/admin.css">
 <div>
   <navbar placement="top" type="inverse"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-    <li><a href="/cs2103-website/index.html">Schedule</a></li>
-    <li><a href="/cs2103-website/book/index.html" target="_blank">Textbook</a></li>
-    <li><a href="/cs2103-website/admin/index.html">Admin</a></li>
+    <li><a href="/website/index.html">Schedule</a></li>
+    <li><a href="/website/book/index.html" target="_blank">Textbook</a></li>
+    <li><a href="/website/admin/index.html">Admin</a></li>
     <li><a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">Instructors</a></li>
     <dropdown text="IVLE">
-      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Announcements</a></li>
-      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/Default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank">Submissions</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/Default.aspx?CourseID=08e0672a-67d5-433f-a66c-6a187939a79a" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+    </dropdown>
+    <dropdown text="Discuss">
+      <li><a href="https://nus-cs2103.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
     </dropdown>
     <dropdown text="GitHub">
-      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank">Forum</a></li>
+      <li><a href="https://github.com/nus-cs2103/website/issues" target="_blank"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/rcs" target="_blank">RCS</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank">Addressbook-level1</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank">Addressbook-level2</a></li>
@@ -110,7 +115,7 @@
       <panel header="%%Admin &raquo;%% **FAQ: Where is everything?**" type="seamless" expanded="">
         <div>
           <p>The <a href="../schedule/index.html"><strong>Schedule</strong> page</a> is <mark><em>the</em> one page you need to refer weekly</mark>. Although there is a lot of content in the <a href="/index.html"><strong>Admin</strong> page </a> and the
-            <a href="/cs2103-website/book/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the
+            <a href="/website/book/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the
             content chronologically while the other two pages has some of the same content but organized by topic.</p>
         </div>
       </panel>
@@ -146,7 +151,7 @@
   </div>
   <h1 id="lectures">Lectures</h1>
   <div id="admin-lectures">
-    <div><img src="/cs2103-website/admin/images/Lecture photo.png" style="width: 713px;">
+    <div><img src="/website/admin/images/Lecture photo.png" style="width: 713px;">
       <p><strong>Timing/venue</strong>: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).</p>
       <p>Each lecture consists of two sections:</p>
       <ul>
@@ -155,8 +160,8 @@
       </ul>
       <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
       <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
-      <p><strong>Handouts</strong>: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/cs2103-website/book/index.html">Textbook</a> section and are also hyperlinked
-        from the <a href="/cs2103-website/schedule/index.html">Schedule Page</a>.</p>
+      <p><strong>Handouts</strong>: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website/book/index.html">Textbook</a> section and are also hyperlinked
+        from the <a href="/website/schedule/index.html">Schedule Page</a>.</p>
       <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. Tey are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
     </div>
   </div>
@@ -177,11 +182,11 @@
       </ul>
       <panel header="%%Admin &raquo; Appendix D: How to get Help in CS2103/T%%">
         <div>
-          <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
+          <p><img src="/website/admin/images/how to get help.png" width="200px"><br></p>
           <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
           <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
             But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
-          <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
+          <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/website/admin/images/the good reasons to get home early.png" width="300">
           <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
           <p>What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.</p>
           <p>When faced with a technical problem or a doubt about a concept, here are the things you should do:</p>
@@ -193,7 +198,7 @@
             <li>
               <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't give
                 an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a <mark>web search on the error message</mark>
-                is a good starting point.  <br><img src="/cs2103-website/admin/images/how to google it.png" width="460" height="268"></p>
+                is a good starting point.  <br><img src="/website/admin/images/how to google it.png" width="460" height="268"></p>
             </li>
             <li>
               <p><strong>Ask peers</strong>:</p>
@@ -202,7 +207,7 @@
                 similar problems too. If you are really shy to ask questions in IVLE, you may use  <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a>  to submit your question anonymously which
                 we will then post in the forum.</p>
               <panel header="Rubber Duck Debugging" expandable="">
-                <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
+                <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
                 <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a
                   rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                 <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
@@ -298,7 +303,7 @@
   <h1 id="text-books">Text Books</h1>
   <div id="admin-textBooks">
     <div>
-      <p>The main text book is <a href="/cs2103-website/book/index.html">here</a>. While it is in a dynamic Web page format, you should be able to save the main text as pdf files.</p>
+      <p>The main text book is <a href="/website/book/index.html">here</a>. While it is in a dynamic Web page format, you should be able to save the main text as pdf files.</p>
     </div>
   </div>
   <h1 id="programming-language">Programming Language</h1>
@@ -306,7 +311,7 @@
     <div>
       <table class="two-column-content">
         <tr>
-          <td width="160px"><img src="/cs2103-website/admin/images/JamesGosling.png" width="150px"></td>
+          <td width="160px"><img src="/website/admin/images/JamesGosling.png" width="150px"></td>
           <td>
             <p><mark><strong>The main language</strong> used in this module is Java</mark>. You should use Java for all programming activities, the project, and exam answers.</p>
             <p>The module doesn’t “teach” Java. We assume you already know Java basics. We expect you to learn on your own any Java constructs not covered in your previous modules.</p>
@@ -429,7 +434,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
   <h2 id="project-deliverables">Project Deliverables</h2>
   <div id="admin-project-deliverables">
     <div>
-      <p><a href="images/timeline.png"><img src="/cs2103-website/admin/images/timeline.png" width="800px"></a></p>
+      <p><a href="images/timeline.png"><img src="/website/admin/images/timeline.png" width="800px"></a></p>
       <p>To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as <code>AB-1</code> to <code>AB-4</code> in the diagram above) that you can use as the basis for improving your individual
         skills during Phases A and as the basis for your project in Phase B.</p>
       <p><code>AB-4</code> is the version you will use as the starting point for your final project. Some of the work you do in <code>AB-1</code> to <code>AB-3</code> can be ported over to <code>AB-4</code> and can be used to claim credit in the final project.</p>
@@ -441,7 +446,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
     <div>
       <h4 id="v10-documentation">v1.0 Documentation</h4>
       <p><strong>Objective</strong>: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.</p>
-      <h4 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h4><img src="/cs2103-website/admin/images/v00.png" width="250px">
+      <h4 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h4><img src="/website/admin/images/v00.png" width="250px">
       <p>Get together with your team members and brainstorm user stories <strong>for the v2.0 of the product</strong>. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).</p>
       <panel header="%%User Story examples (from a different product)%%">
         <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
@@ -451,7 +456,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
         <li>Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.</li>
         <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</li>
       </ul>
-      <h4 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h4><img src="/cs2103-website/admin/images/userstories.png" width="250px">
+      <h4 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h4><img src="/website/admin/images/userstories.png" width="250px">
       <p>Suggested workflow:</p>
       <ul>
         <li>
@@ -514,7 +519,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
   <div id="admin-project-v11">
     <div>
       <h3 id="v11-product">v1.1 Product</h3>
-      <p><img src="/cs2103-website/admin/images/v01demo.png" width="125px"><br></p>
+      <p><img src="/website/admin/images/v01demo.png" width="125px"><br></p>
       <p><span class="dimmed">[An early version of the mobile phone]</span></p>
       <p><strong>Objective</strong>: Move the product from v1.0 towards v2.0 in a small incremental step.</p>
       <p><strong>Description</strong>:</p>
@@ -555,7 +560,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <panel header="==Choosing a profile photo==" expandable="">
         <div>
           <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
-            of good and bad profile photos.</p><img src="/cs2103-website/admin/images/profilephotos.png" style="width: 365.33px"></div>
+            of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
       </panel>
       <ul>
         <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
@@ -637,7 +642,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
         </ul>
       </tip-box>
       <p>
-        <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#using-milestones" name="%%Admin &raquo;%% Appendix F: Github: Using Milestones" fragment="using-milestones" header="%%Admin &raquo;%% Appendix F: Github: Using Milestones" isOpen="false"
+        <panel src="/website\admin\appendixE-gitHub._include_.html#using-milestones" name="%%Admin &raquo;%% Appendix F: Github: Using Milestones" fragment="using-milestones" header="%%Admin &raquo;%% Appendix F: Github: Using Milestones" isOpen="false"
           no-close="true" no-switch="true"></panel>
       </p>
       <p><strong>Submission</strong>: Do a release on GitHub</p>
@@ -864,7 +869,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
       <p><strong>Grading</strong>:</p>
       <p>
-        <panel src="/cs2103-website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
       <h3 id="v15-documentation">v1.5 Documentation</h3>
       <p><strong>Submission</strong>:</p>
@@ -904,9 +909,9 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p><strong>Deadline</strong>: Same as v1.5 product.</p>
       <p><strong>Grading</strong>:</p>
       <p>
-        <panel src="/cs2103-website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
-      <h3 id="v15-demo">v1.5 Demo</h3><img src="/cs2103-website/admin/images/v05demo.png" style="width: 250px">
+      <h3 id="v15-demo">v1.5 Demo</h3><img src="/website/admin/images/v05demo.png" style="width: 250px">
       <ul>
         <li><strong>Venue:</strong> Same as the tutorial venue.</li>
         <li><strong>Duration:</strong> Strictly no more than 3 minutes per person (i.e. a total of 12 minutes for a 4-person team). Exceeding this limit will be penalized.</li>
@@ -952,7 +957,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       </ul>
       <p><strong>Grading</strong>:</p>
       <p>
-        <panel src="/cs2103-website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo;%% Project: Assessment" header="%%Admin &raquo;%% Project: Assessment" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
     </div>
   </div>
@@ -1035,7 +1040,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <h1 id="forming-teams">Forming Teams</h1>
   <div id="admin-teams">
     <div>
-      <p><img src="/cs2103-website/admin/images/team.png" width="300px"><br><span class="dimmed">[Picture: The team that was at the top of early Google]</span></p>
+      <p><img src="/website/admin/images/team.png" width="300px"><br><span class="dimmed">[Picture: The team that was at the top of early Google]</span></p>
       <p></p>
       <p><strong>The two teams</strong>:<br> You will be in two different teams at different times of the semester.</p>
       <ul>
@@ -1075,7 +1080,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <div id="admin-peerEvaluations">
     <div>
       <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system to conduct several rounds of peer-evaluations. All peer evaluations will be taken into account when determining your participation marks. The system
-        also allows you to give anonymous feedback to your teammates.</p><span id="extra-requirements"><p><strong>Extra Requirements:</strong> [considered for participation marks]</p><ul><li>Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you forfeit your participation marks.</mark></li><li>TEAMMATES normally allows students to access it without using Google login. In this module, we <mark>require you to login to TEAMMATES using your Google account</mark>. and update your</li><li>After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.</li><li>Please upload a suitable profile photo.</li></ul><panel header="Choosing a profile photo" expandable=""><div><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="/cs2103-website/admin/images/profilephotos.png" style="width: 365.33px"></div></panel></span>
+        also allows you to give anonymous feedback to your teammates.</p><span id="extra-requirements"><p><strong>Extra Requirements:</strong> [considered for participation marks]</p><ul><li>Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you forfeit your participation marks.</mark></li><li>TEAMMATES normally allows students to access it without using Google login. In this module, we <mark>require you to login to TEAMMATES using your Google account</mark>. and update your</li><li>After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.</li><li>Please upload a suitable profile photo.</li></ul><panel header="Choosing a profile photo" expandable=""><div><p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div></panel></span>
       <span
         id="giving-peer-feedback">
         <p>Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. <mark>Those who give ineffective feedback will be penalized.</mark></p>
@@ -1088,11 +1093,11 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         </ul>
         </span>
         <p>The final peer evaluation will be used to determine the level of contribution from each member to the project. In that peer-evaluation you will be asked to <mark>estimate the contribution of each team member</mark> (including yourself) to the
-          project so far.</p><img src="/cs2103-website/admin/images/peer evaluations.png" width="600px"></div>
+          project so far.</p><img src="/website/admin/images/peer evaluations.png" width="600px"></div>
   </div>
   <h1 id="tools">Tools</h1>
   <div id="admin-tools">
-    <div><img src="/cs2103-website/admin/images/toolsList.png" style="width: 700px">
+    <div><img src="/website/admin/images/toolsList.png" style="width: 700px">
       <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to practice how
         to communicate technical things in written form.</p>
       <p><strong>Collaboration platform</strong>: You are <mark><em>required to</em> use GitHub</mark> as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="#admin-appendixE-github">Appendix E</a>        for more info on how to setup and use GitHub for your project.</p>
@@ -1104,7 +1109,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   </div>
   <h1 id="grade-breakdown">Grade Breakdown</h1>
   <div id="admin-gradeBreakdown">
-    <div><img src="/cs2103-website/admin/images/gradeBreakdown.png" width="600">
+    <div><img src="/website/admin/images/gradeBreakdown.png" width="600">
       <p></p>
       <panel header="[10%] Participation" minmized="">
         <div>
@@ -1163,7 +1168,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <p>Note that a large part of CS2103 exam paper measures how well you can apply SE theory to a project. Therefore, the exam is strongly connected to the project and how you  applied theory in the project. The exam will be easy for you if you attend
             lectures, participate in tutorials(tutorials too are focused on application of theory to the project), and do a sincere job in the project. <mark>You will not be able to ace the exams by simply doing past papers just before the exams.</mark></p>
           <img
-            src="/cs2103-website/admin/images/exam.png" width="600"></div>
+            src="/website/admin/images/exam.png" width="600"></div>
       </panel>
       <panel header="[50%] Project" minmized="">
         <div>
@@ -1237,7 +1242,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <p>Note that a large part of CS2103 exam paper measures how well you can apply SE theory to a project. Therefore, the exam is strongly connected to the project and how you  applied theory in the project. The exam will be easy for you if you attend
         lectures, participate in tutorials(tutorials too are focused on application of theory to the project), and do a sincere job in the project. <mark>You will not be able to ace the exams by simply doing past papers just before the exams.</mark></p>
       <img
-        src="/cs2103-website/admin/images/exam.png" width="600"></div>
+        src="/website/admin/images/exam.png" width="600"></div>
   </div>
   <h1 id="participation-marks">Participation Marks</h1>
   <div id="admin-participation">
@@ -1452,11 +1457,11 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p><mark>We encourage you to give tech help to each other</mark>, but do it in a way that the other person learns from it.</p>
         <panel header="%%Admin &raquo; Appendix D: How to get Help in CS2103/T%%">
           <div>
-            <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
+            <p><img src="/website/admin/images/how to get help.png" width="200px"><br></p>
             <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
             <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
               But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
-            <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
+            <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/website/admin/images/the good reasons to get home early.png" width="300">
             <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
             <p>What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.</p>
             <p>When faced with a technical problem or a doubt about a concept, here are the things you should do:</p>
@@ -1468,7 +1473,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
               <li>
                 <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't give
                   an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a <mark>web search on the error message</mark>
-                  is a good starting point.  <br><img src="/cs2103-website/admin/images/how to google it.png" width="460" height="268"></p>
+                  is a good starting point.  <br><img src="/website/admin/images/how to google it.png" width="460" height="268"></p>
               </li>
               <li>
                 <p><strong>Ask peers</strong>:</p>
@@ -1477,7 +1482,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                   facing similar problems too. If you are really shy to ask questions in IVLE, you may use  <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a>  to submit your question anonymously
                   which we will then post in the forum.</p>
                 <panel header="Rubber Duck Debugging" expandable="">
-                  <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
+                  <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
                   <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around
                     a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                   <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
@@ -1592,12 +1597,12 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <div id="admin-policy"></div>
   <h1 id="appendix-c-frequently-asked-questions">Appendix C: Frequently Asked Questions</h1>
   <div id="admin-appendixC-faq">
-    <div><img src="/cs2103-website/admin/images/Why you....png" width="300" height="200">
+    <div><img src="/website/admin/images/Why you....png" width="300" height="200">
       <h3 id="where-is-everything">Where is everything?</h3>
       <div id="admin-faq-whereIsEverything">
         <p>The <a href="../schedule/index.html"><strong>Schedule</strong> page</a> is <mark><em>the</em> one page you need to refer weekly</mark>. Although there is a lot of content in the <a href="/index.html"><strong>Admin</strong> page </a> and the
           <a
-            href="/cs2103-website/book/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content chronologically while the other
+            href="/website/book/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content chronologically while the other
             two pages has some of the same content but organized by topic.</p>
       </div>
       <h3 id="what-are-the-differences-between-cs2103-and-cs2103t">What are the differences between CS2103 and CS2103T?</h3>
@@ -1605,7 +1610,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.</p>
       </div>
       <h3 id="why-the-workload-is-so-high">Why the workload is so high?</h3>
-      <div id="admin-faq-highWorkload"><img src="/cs2103-website/admin/images/Why workload heavy.png" width="250">
+      <div id="admin-faq-highWorkload"><img src="/website/admin/images/Why workload heavy.png" width="250">
         <p>CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2/3/4, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore,
           we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.</p>
         <p>Remember, everything you learn here is going to be useful in a SE-related career.</p>
@@ -1613,7 +1618,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p><mark>How to reduce the workload?</mark> You can omit Learning Outcomes rated ⭐️⭐️⭐️⭐️ They are counted for CS2103R and for A+ grades only.</p>
       </div>
       <h3 id="why-so-much-bean-counting">Why so much bean counting?</h3>
-      <div id="admin-faq-beanCounting"><img src="/cs2103-website/admin/images/small things matter.png" width="600" height="300">
+      <div id="admin-faq-beanCounting"><img src="/website/admin/images/small things matter.png" width="600" height="300">
         <p>Sometimes, small things matter in big ways. e.g., all other things being equal, a job may be offered to the candidate who has the neater looking CV although both have the same qualifications. This may be unfair, but that's how the world works.
           Students forget this harsh reality when they are in the protected environment of the school and tend to get sloppy with their work habits. That is why we reward all positive behavior, even small ones (e.g., following precise submission instructions,
           arriving on time etc.).</p>
@@ -1621,16 +1626,16 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>Related article: <a href="http://www.businessinsider.sg/conscientiousness-predicts-success-2014-4/#.Vewqb_mqpBc">This Is The Personality Trait That Most Often Predicts Success</a> (This is why we reward things like punctuality).</p>
       </div>
       <h3 id="why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle">Why you force me to visit a separate website instead of using IVLE?</h3>
-      <div id="admin-faq-separateWebsite"><img src="/cs2103-website/admin/images/Forces me to visit a separate website.png" width="655" height="271">
+      <div id="admin-faq-separateWebsite"><img src="/website/admin/images/Forces me to visit a separate website.png" width="655" height="271">
         <p>We have a separate website because some of the module information does not fit into the structure imposed by IVLE.</p>
         <p>On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.</p>
       </div>
       <h3 id="why-slides-are-not-detailed">Why slides are not detailed?</h3>
-      <div id="admin-faq-slideFormat"><img src="/cs2103-website/admin/images/slides not detailed enough.png" width="733" height="221">
+      <div id="admin-faq-slideFormat"><img src="/website/admin/images/slides not detailed enough.png" width="733" height="221">
         <p>Slides are not meant to be documents to print and study for exams. Their purpose is to support the lecture delivery and keep you engaged during the lecture. That's why our slides are less detailed and more visual.</p>
       </div>
       <h3 id="why-so-much-self-study">Why so much self-study?</h3>
-      <div id="admin-faq-selfStudy"><img src="/cs2103-website/admin/images/so much self study.png" width="763" height="307">
+      <div id="admin-faq-selfStudy"><img src="/website/admin/images/so much self study.png" width="763" height="307">
         <p>Self-study is a critical survival skill in SE industry. Lectures will show you the way, but absorbing content is to be done at your own pace, by yourself. In this module, we still tell you what content to study and also pass most of the content
           to you. After you graduate, you have to decide what to study and find your own content too.</p>
       </div>
@@ -1643,21 +1648,21 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <div id="admin-faq-narrowScope">
         <p>Defining your own unique project is more fun.</p>
         <p>But, wider scope → more diverse projects → harder for us to go deep into your project. The collective know-how we (i.e., students and the teaching team) have built up about SE issues related to the project become shallow and stretched too thinly.
-          It also affects fairness of grading.</p><img src="/cs2103-website/admin/images/limited project scope.png" width="772" height="296">
+          It also affects fairness of grading.</p><img src="/website/admin/images/limited project scope.png" width="772" height="296">
         <p>That is why a strictly-defined project is more suitable for a first course in SE that focuses on nuts-and-bolts of SE. After learning those fundamentals, in higher level project modules you can focus more on the creative side of software projects
           without being dragged down by nuts-and-bolts SE issues (because you already know how to deal with them). However, we would like to allow some room for creativity too. That is why we let you build products that are slight variations of a given
           theme.</p>
         <p>Also note: The freedom to do 'anything' is not a necessary condition for creativity. Do not mistake being different for being creative. In fact, the more constrained you are, the more you need creativity to stand out.</p>
       </div>
       <h3 id="why-project-requirements-are-so-vague">Why project requirements are so vague?</h3>
-      <div id="admin-faq-vagueRequirements"><img src="/cs2103-website/admin/images/vague requirement.png" width="737" height="210">
+      <div id="admin-faq-vagueRequirements"><img src="/website/admin/images/vague requirement.png" width="737" height="210">
         <p>&quot;You tell me exactly what to do - I do that - you pay me (in grades)&quot; is a model for contract work, not for learning. Being able to survive in imprecise, uncertain, volatile problem contexts is precisely what we are trying to teach you.</p>
         <p>For example, the best way to communicate something often depends on what is being communicated. That is why we don't specify the precise content for project documents. Instead, we aim to refine project documents iteratively. We believe the learning
           experience will be richer if we let you decide the best way to present your project information rather than just following our instructions blindly. For example, in real-life projects you are rarely told which diagrams to draw; that is a decision
           you have to make yourself.</p>
       </div>
       <h3 id="why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc">Why I'm not allowed to use my favorite tool/framework/language etc.?</h3>
-      <div id="admin-faq-favoriteTool"><img src="/cs2103-website/admin/images/I'm not allowed to use my favorite tool.png" width="750" height="287">
+      <div id="admin-faq-favoriteTool"><img src="/website/admin/images/I'm not allowed to use my favorite tool.png" width="750" height="287">
         <p>We have chosen a basic set of tools after considering ease of learning, availability, typical-ness, popularity, migration path to other tools, etc. There are many reasons for limiting your choices:</p>
         <p>Pedagogical reasons:</p>
         <ul>
@@ -1678,17 +1683,17 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>Meanwhile, feel free to share with peers your experience of using other tools.</p>
       </div>
       <h3 id="why-so-many-submissions">Why so many submissions?</h3>
-      <div id="admin-faq-manySubmissions"><img src="/cs2103-website/admin/images/frequent submissions.png" width="759" height="359">
+      <div id="admin-faq-manySubmissions"><img src="/website/admin/images/frequent submissions.png" width="759" height="359">
         <p>The high number of submissions is not meant to increase workload but to spread it across the semester. Learning theory and applying them should be done in parallel to maximize the learning effect. That can happen only if we spread theory and 'application
           of theory' (i.e., project work) evenly across the semester.</p>
       </div>
       <h3 id="why-not-enough-marks-for-intermediate-submissions">Why not enough marks for intermediate submissions?</h3>
-      <div id="admin-faq-intermediateMarks"><img src="/cs2103-website/admin/images/no marks for intermediate submissions.png" width="688" height="102">
+      <div id="admin-faq-intermediateMarks"><img src="/website/admin/images/no marks for intermediate submissions.png" width="688" height="102">
         <p>Intermediate submissions are also incremental submissions. Intermediate submissions are included in the final submission too and will earn marks at that point. They are there to help you do well in the final submission and for us to monitor your
           progress and guide you accordingly. They are a means to an end. They are not achievements themselves. By right, they shouldn't be given marks at all. 😝</p>
       </div>
       <h3 id="why-submission-requirements-differ-between-cs2103t-and-cs2101">Why submission requirements differ between CS2103T and CS2101?</h3>
-      <div id="admin-faq-cs2101Differences"><img src="/cs2103-website/admin/images/Submission requirements differ.png" width="300">
+      <div id="admin-faq-cs2101Differences"><img src="/website/admin/images/Submission requirements differ.png" width="300">
         <p>They do, and they should.</p>
         <p>CS2103T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some
           of the stuff across the two modules, submissions are not intended to be exactly the same.</p>
@@ -1698,11 +1703,11 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <h1 id="appendix-d-how-to-get-help-in-cs2103t">Appendix D: How to get help in CS2103/T</h1>
   <div id="admin-appendixD-help">
     <div>
-      <p><img src="/cs2103-website/admin/images/how to get help.png" width="200px"><br></p>
+      <p><img src="/website/admin/images/how to get help.png" width="200px"><br></p>
       <p>In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.</p>
       <p>Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer.
         But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.</p>
-      <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/cs2103-website/admin/images/the good reasons to get home early.png" width="300">
+      <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p><img src="/website/admin/images/the good reasons to get home early.png" width="300">
       <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>aaa</em> and <em>bbb</em>?</p>
       <p>What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.</p>
       <p>When faced with a technical problem or a doubt about a concept, here are the things you should do:</p>
@@ -1714,7 +1719,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <li>
           <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't give an
             opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a <mark>web search on the error message</mark>
-            is a good starting point.  <br><img src="/cs2103-website/admin/images/how to google it.png" width="460" height="268"></p>
+            is a good starting point.  <br><img src="/website/admin/images/how to google it.png" width="460" height="268"></p>
         </li>
         <li>
           <p><strong>Ask peers</strong>:</p>
@@ -1723,7 +1728,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             similar problems too. If you are really shy to ask questions in IVLE, you may use  <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a>  to submit your question anonymously which we
             will then post in the forum.</p>
           <panel header="Rubber Duck Debugging" expandable="">
-            <p><img src="/cs2103-website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
+            <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
             <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber
               duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
             <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
@@ -1907,7 +1912,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <h2 id="workflow">Workflow</h2>
         <p>We recommend using the <em>Forking Workflow</em>.</p>
         <p>
-          <panel src="/cs2103-website\book\gitAndGithub\forkingWorkflow\embed._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\gitAndGithub\forkingWorkflow\embed._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
       </div>
     </div>

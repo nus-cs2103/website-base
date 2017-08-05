@@ -24,24 +24,24 @@
     <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
     <tip-box>
       <p>Example:</p>
-      <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
+      <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
       <p></p>
-      <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png"
+      <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png"
         height="120">
       <p></p>
-      <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png"
+      <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png"
         height="100">
       <p></p>
-      <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png"
+      <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png"
         height="100">
       <p></p>
-      <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
+      <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
       <p></p>
-      <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
+      <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
       <p></p>
-      <p>As UI consists of multiple views, the MVC pattern is applied here.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
+      <p>As UI consists of multiple views, the MVC pattern is applied here.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
       <p></p>
-      <p>Some views need to be updated when the data change; apply the Observer pattern here.</p><img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
+      <p>Some views need to be updated when the data change; apply the Observer pattern here.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
       <p></p>
       <p>In addition, the Singleton pattern can be applied to the façade class.</p>
     </tip-box>

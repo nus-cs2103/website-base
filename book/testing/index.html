@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <h1 id="testing">Testing</h1>
   <h2 id="introduction">Introduction</h2>
@@ -33,7 +33,7 @@
                 <div>
                   <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
                 </div>
-              </tip-box><img src="/cs2103-website/book/testing/introduction/what/images/diagram.png" height="180">
+              </tip-box><img src="/website/book/testing/introduction/what/images/diagram.png" height="180">
               <p></p>
               <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
               <tip-box>
@@ -403,7 +403,7 @@
                       <li>Too many bugs found during system testing can lead to delivery delays.</li>
                     </ul>
                     <p>Due to the above reasons, it is better to do early developers testing. In fact, there is a widely accepted rule of thumb that says <em>the earlier a bug is found, the easier and cheaper to have it fixed</em>, as illustrated by the
-                      graph below.</p><img src="/cs2103-website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+                      graph below.</p><img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
                     <p></p>
                   </div>
                   <div>
@@ -780,10 +780,10 @@
                           <panel header=":lock::key: Regression Testing defintion T/F?">
                             <question>
                               <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                              <ul radio-group="ilv6c" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ilv6c" type="radio"> a. True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ilv6c" type="radio"> b. False</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ilv6c" type="radio"> c. Partially true</label></li>
+                              <ul radio-group="i1uws" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="i1uws" type="radio"> a. True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="i1uws" type="radio"> b. False</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="i1uws" type="radio"> c. Partially true</label></li>
                               </ul>
                               <div slot="answer">
                                 <p>c.</p>
@@ -1021,7 +1021,7 @@ Invalid command format: add
     }
 }
 </code></pre>
-              <p>Most modern IDEs come packaged with integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p><img src="/cs2103-website/book/testing/testAutomation/tools/images/junit.png"
+              <p>Most modern IDEs come packaged with integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p><img src="/website/book/testing/testAutomation/tools/images/junit.png"
                 height="190">
               <p></p>
             </div>
@@ -1053,7 +1053,7 @@ Invalid command format: add
                     href="http://seleniumhq.org/">http://seleniumhq.org/</a>) can be used to automate testing of Web application UIs. VisualStudio supports ‘record replay’ type of GUI test automation.</li>
                 <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in a
                   high resolution display or a low resolution display.</li>
-              </ul><img src="/cs2103-website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
+              </ul><img src="/website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
               <p></p>
               <p>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI. Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested manually, the
                 number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
@@ -1219,7 +1219,7 @@ Invalid command format: add
             <div>
               <p><em>Dependency injection</em> is the process of ‘injecting’ objects to replace current dependencies with a different object. This is often used to inject stubs to isolate the SUT from other collaborating objects so that it can be tested
                 independently. In the example below, a Foo object normally depends on a Bar object, but we have injected a BarStub object so that the Foo object no longer depends on a Bar object. Now we can test the Foo object in isolation from the Bar
-                object.</p><img src="/cs2103-website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
+                object.</p><img src="/website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
               <p></p>
             </div>
             <div>

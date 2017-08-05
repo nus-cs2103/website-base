@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <div id="main">
     <h1 id="principles">Principles</h1>
@@ -83,7 +83,7 @@
         <span class="hljs-comment">//...</span>
     }
 }
-</code></pre><img src="/cs2103-website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+</code></pre><img src="/website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
           <p></p>
         </tip-box>
       </div>
@@ -107,7 +107,7 @@
         <p>As we know, Java already allows substituting objects of sub classes where an object of the super class is expected. However, that does not mean that doing so will not break the functionality of the code. To follow LSP, we should be careful not
           to contradict the behavior specified by the super class.</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+          <p>Example:</p><img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
           <p></p>
           <p>Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will work for
             all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method. Now consider the following:</p>
@@ -148,7 +148,7 @@
           <p>Example:</p>
           <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
             (note that inheritance is a dependency). Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes. Here, <code>Payee</code> is the abstraction and
-            is owned by the <code>Payroll</code> class.</p><img src="/cs2103-website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
+            is owned by the <code>Payroll</code> class.</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
           <p></p>
         </tip-box>
       </div>

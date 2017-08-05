@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <h1 id="revision-control">Revision Control</h1>
   <div id="main">
@@ -256,7 +256,7 @@
             <p>Branching is the process of evolving multiple versions of the software in parallel. For example, one team member can create a new branch and add an experimental feature to it while the rest of the team keeps working on another branch. Branches
               can be given names e.g. <code>master</code><code>release</code><code>dev</code>. A branch can be <em>merged</em> to another branch. Merging usually result in a new commit that represents the combination of the changes done in the two branches.</p>
             <pic
-              src="/cs2103-website/book/revisionControl/branching/images/diagram.png" height="180"><strong>Branching and merging</strong></pic>
+              src="/website/book/revisionControl/branching/images/diagram.png" height="180"><strong>Branching and merging</strong></pic>
               <p><strong><em>Merge conflicts</em></strong> happen when you try to merge two branches that had changed the same part of the code and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those conflicts
                 manually.</p>
           </div>
@@ -281,11 +281,11 @@
             <p>There are two models that can be followed when using an RCS in a team setting: the <em>centralized</em> model and the <em>distributed</em> model.</p>
             <p><strong>Centralized RCS</strong> (CRCS for short): In this model, there is a central remote repo shared by the team. Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository.
               Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo. Instead, they force users to do all the versioning with the remote repo.</p>
-            <pic src="/cs2103-website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png"
+            <pic src="/website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png"
               height="180"><strong>The centralized RCS approach without any local repos (e.g., CVS, SVN)</strong></pic>
             <p>Distributed RCS (DRCS for short, also known as Decentralized RCS): In this model, there can be multiple remote repos and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For
               example, every team member can have his/her own remote repository in addition to their own local repository, as shown in below. Git and Mercurial are some prominent RCS tools that support distributed RCS.</p>
-            <pic src="/cs2103-website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png"
+            <pic src="/website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png"
               height="240"><strong>The decentralized RCS approach</strong></pic>
           </div>
           <div>
@@ -305,7 +305,7 @@
       </tip-box>
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <div><img src="/cs2103-website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+          <div><img src="/website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
             <p></p>
             <p>The ‘official’ version of the software is kept in a remote repo designated as the ‘main repo’. All team members fork the main repo and clone it to their local computer.</p>
             <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
@@ -338,7 +338,7 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>This is similar to forking workflow except there are no forks or PRs. Everyone is pushing/pulling from the same remote repo.</p><img src="/cs2103-website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+            <p>This is similar to forking workflow except there are no forks or PRs. Everyone is pushing/pulling from the same remote repo.</p><img src="/website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
             <p></p>
             <p>More info: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow</a></p>
           </div>

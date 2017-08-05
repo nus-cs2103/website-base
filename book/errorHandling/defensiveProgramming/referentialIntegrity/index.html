@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
   <tip-box>
     <div>
@@ -30,7 +30,7 @@
       <div>
         <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
         <tip-box>
-          <p>Example:</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+          <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
@@ -67,7 +67,7 @@ jean.setBoyfriend(james);
 …
 james.setGirlfriend(jean);  
 jean.setBoyfriend(yong);  
-</code></pre><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+</code></pre><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
           <p></p>
         </tip-box>
         <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
@@ -124,7 +124,7 @@ jean.setBoyfriend(yong);
                   <tip-box>
                     <p>Feature ID: multiplayer Description: A minefield is divided into mine regions. Each region is assigned to a single player. Players can swap regions. To win the game, all regions must be cleared.</p>
                   </tip-box>
-                  <p>Given below is an extract from our class diagram.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
+                  <p>Given below is an extract from our class diagram.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
                   <p></p>
                   <p>Minimally, this can be implemented like this.</p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span></span>{
@@ -218,7 +218,7 @@ r1.setPlayer(p2);
             <div>
               <panel header=":lock::key: Implement the bidirectional association between Bank and Account.">
                 <question has-input="true">
-                  <p>Implement this bidirectional association. Note that the Bank uses accNumber attribute to uniquely identify an Account object. Assume the Bank class is responsible for maintaining the links between objects.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg"
+                  <p>Implement this bidirectional association. Note that the Bank uses accNumber attribute to uniquely identify an Account object. Assume the Bank class is responsible for maintaining the links between objects.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg"
                     height="60">
                   <p></p>
                   <div slot="answer">
@@ -282,13 +282,13 @@ r1.setPlayer(p2);
         favTeacher = t;
     }
 }
-</code></pre><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
+</code></pre><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
                   <p></p>
-                  <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png"
+                  <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png"
                     height="80">
-                  <p></p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
+                  <p></p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
                   <p></p>
-                  <p>(c) Show a defensive implementation of the remove(Member m) of the Club class given below.</p><img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
+                  <p>(c) Show a defensive implementation of the remove(Member m) of the Club class given below.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
                   <p></p>
                   <div slot="answer">
                     <p>(a) Yes. Each links is mutable and unidirectional. A simple reference variable is suitable to hold the link.</p>
