@@ -12,12 +12,11 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
   <include src="../../book/intellij/projectSetup/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-**Set up AddressBook-Level1 in Intellij**:
+**Acceptable**: Any Java project set up in Intellij.
 
-1. Download/clone [AddressBook-Level1](https://github.com/nus-cs2103-AY1718S1/addressbook-level1) to your computer. 
-1. Set it up as a project in your IDE (i.e. Intellij IDEA).
-1. Run the AddressBook using the IDE to ensure the project builds correctly in the IDE.
-1. Do some minor changes to the code and run it again.
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-IdeSetup](https://github.com/nus-cs2103-AY1718S1/addressbook-level1#set-up-a-project-in-an-ide-lo-idesetup) 
+
+**Submission**: Demo the test during the tutorial.
 
   </panel>
 </panel>
@@ -25,10 +24,11 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
   <include src="../../book/intellij/codeNavigation/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-**Use Intellij features to navigate code in a project**
+**Acceptable**: Use Intellij basic code navigation features to navigate the code of any java project.
 
-1. Load a Java project (e.g. AddressBook-Level1) to the IDE
-2. Demonstrate how to navigate code using the IDE e.g. go to the definition of the method being called and come back to the original location. 
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-CodeNavigation](https://github.com/nus-cs2103-AY1718S1/addressbook-level1#navigate-code-efficiently-lo-codenavigation) 
+
+**Submission**: Demo the test during the tutorial.
 
   </panel>
 </panel>
