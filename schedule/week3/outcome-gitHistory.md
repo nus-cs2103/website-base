@@ -28,7 +28,7 @@
 </panel>
 
 <panel type="success" header=":trophy: Can use Git to stash files :star::star::star::star:" expandable>
-  <include src="../../book/gitAndGitHub/stash/full.md" />
+  <include src="../../book/gitAndGithub/stash/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 ...

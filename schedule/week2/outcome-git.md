@@ -15,7 +15,7 @@
 </panel>
 
 <panel type="danger" header=":trophy: Can create a local Git repo :star:" expandable>
-  <include src="../../book/gitAndGitHub/init/full.md" />
+  <include src="../../book/gitAndGithub/init/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Have a local repo that you created.
@@ -33,7 +33,7 @@ Not required.
 </panel>
 
 <panel type="danger" header=":trophy: Can commit using Git :star:" expandable>
-  <include src="../../book/gitAndGitHub/commit/full.md" />
+  <include src="../../book/gitAndGithub/commit/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Have a local repo that has commits you created.
@@ -42,7 +42,7 @@ Have a local repo that has commits you created.
 </panel>
 
 <panel type="warning" header=":trophy: Can set Git to ignore files :star::star:" expandable>
-  <include src="../../book/gitAndGitHub/ignore/full.md" />
+  <include src="../../book/gitAndGithub/ignore/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Have a local repo that has git-ignored files.
