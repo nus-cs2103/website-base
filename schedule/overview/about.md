@@ -1,6 +1,6 @@
 <div id="essential">
 
-<img src="images/growingPlant.png" width="400">
+<img src="{{baseUrl}}/images/growingPlant.png" width="400">
 
 <tip-box type="important"> 
 
