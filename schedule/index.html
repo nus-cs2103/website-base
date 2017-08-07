@@ -30,7 +30,7 @@
     <dropdown text="GitHub">
       <li><a href="https://github.com/nus-cs2103/website/issues" target="_blank"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S1/rcs" target="_blank">RCS</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things" target="_blank">samplerepo-things</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank">Addressbook-level1</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank">Addressbook-level2</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level3" target="_blank">Addressbook-level3</a></li>
@@ -1257,10 +1257,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <panel header=":lock::key: Regression Testing defintion T/F?">
                               <question>
                                 <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                                <ul radio-group="2t6qh" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="2t6qh" type="radio"> a. True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="2t6qh" type="radio"> b. False</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="2t6qh" type="radio"> c. Partially true</label></li>
+                                <ul radio-group="i45mo" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="i45mo" type="radio"> a. True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="i45mo" type="radio"> b. False</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="i45mo" type="radio"> c. Partially true</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c.</p>
@@ -1772,7 +1772,7 @@ Invalid command format: add
                   </div>
                 </div>
                 <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
+                  <p>Not required.</p>
                 </panel>
               </panel>
               <panel type="danger" header=":trophy: Can clone a remote repo :star:" expandable="">
@@ -1790,19 +1790,22 @@ Invalid command format: add
                         <panel src="/website\book\revisionControl\remoteRepositories\embed._include_.html" header="Revision Control: Remote Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
                       </p>
                       <p></p>
-                      <p>Clone the sample repo <mark>{give repo}</mark> to your computer.</p>
+                      <p>Clone the sample repo <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a> to your computer.</p>
+                      <tip-box type="error">
+                        <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
+                        </p>
+                        <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things</code><br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things.git</code> (not the <code>.git</code> at the end)</p>
+                      </tip-box>
                       <tabs>
                         <tab header="SourceTree">
                           <div>
-                            <p>File → <code>Clone / New…</code> and provide the URL and the destination directory.</p>
-                            <p>You can use the <code>clone</code> command to clone a repo.</p>
-                            <p>Follow instructions in <a href="https://help.github.com/articles/cloning-a-repository/">this</a> page</p>
+                            <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                           </div>
                         </tab>
                         <tab header="CLI">
                           <div>
-                            <p><code>origin</code></p>
-                            <p>{to do}</p>
+                            <p>You can use the <code>clone</code> command to clone a repo.</p>
+                            <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
                           </div>
                         </tab>
                       </tabs>
@@ -1813,7 +1816,9 @@ Invalid command format: add
                   </div>
                 </div>
                 <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
+                  <p><strong>Acceptable</strong>: Any remote repo cloned to your Computer.</p>
+                  <p><strong>Suggested</strong>: A clone of the <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a> in your Computer.</p>
+                  <p><strong>Submission</strong>: Show the clone to the tutor during the tutorial.</p>
                 </panel>
               </panel>
               <panel type="danger" header=":trophy: Can pull changes from a repo :star:" expandable="">
@@ -1847,19 +1852,22 @@ Invalid command format: add
                                   <panel src="/website\book\revisionControl\remoteRepositories\embed._include_.html" header="Revision Control: Remote Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
                                 </p>
                                 <p></p>
-                                <p>Clone the sample repo <mark>{give repo}</mark> to your computer.</p>
+                                <p>Clone the sample repo <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a> to your computer.</p>
+                                <tip-box type="error">
+                                  <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
+                                  </p>
+                                  <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things</code><br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things.git</code> (not the <code>.git</code> at the end)</p>
+                                </tip-box>
                                 <tabs>
                                   <tab header="SourceTree">
                                     <div>
-                                      <p>File → <code>Clone / New…</code> and provide the URL and the destination directory.</p>
-                                      <p>You can use the <code>clone</code> command to clone a repo.</p>
-                                      <p>Follow instructions in <a href="https://help.github.com/articles/cloning-a-repository/">this</a> page</p>
+                                      <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                                     </div>
                                   </tab>
                                   <tab header="CLI">
                                     <div>
-                                      <p><code>origin</code></p>
-                                      <p>{to do}</p>
+                                      <p>You can use the <code>clone</code> command to clone a repo.</p>
+                                      <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
                                     </div>
                                   </tab>
                                 </tabs>

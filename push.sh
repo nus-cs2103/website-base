@@ -1,3 +1,5 @@
+set -x
+
 cd book
 git push origin master
 cd ..
