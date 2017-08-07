@@ -15,7 +15,7 @@
   <dropdown text="GitHub">
     <li><a href="https://github.com/nus-cs2103/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
     <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S1/rcs" target="_blank">RCS</a></li>
+    <li><a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things" target="_blank">samplerepo-things</a></li>
     <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank">Addressbook-level1</a></li>
     <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank">Addressbook-level2</a></li>
     <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level3" target="_blank">Addressbook-level3</a></li>
