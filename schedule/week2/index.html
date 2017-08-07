@@ -1,19 +1,1223 @@
-<Panel header="Week 2 [Aug 21]" expandable class="overview" ctrl-lvl="-1" no-close>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 2</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <panel header="Week 2 [Aug 21]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+  <panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+    <div>
+      <div>
+        <panel type="danger" header=":trophy: Can use Git to save history :star:" expandable="" expanded="" no-close="">
+          <panel type="danger" header=":trophy: Can explain revision control :star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
+                  <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
+                  <tabs>
+                    <tab header=":abc:">
+                      <blockquote>
+                        <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that
+                          contains a number, each one higher than the number of the preceding version.</p>
+                        <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to
+                          help a single user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best
+                          modern revision control tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+                        <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have
+                          a log of who made it; why they made it; when they made it; and what the change was.</p>
+                        <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software
+                          will help you to identify and resolve those conflicts.</p>
+                        <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even
+                          help you to efficiently figure out exactly when a problem was introduced.</p>
+                        <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
+                          or with a hundred other people.</p>
+                        <p>-- [adapted from
+                          <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+                      </blockquote>
+                    </tab>
+                    <tab header=":tv:">
+                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                    </tab>
+                  </tabs>
+                  <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
+                    <div slot="content">
+                      <div>
+                        <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
+                      </div>
+                    </div>
+                  </popover>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: What does RCS stand for?">
+                          <question has-input="true">
+                            <div slot="answer">
+                              <p>Revision Control Software</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock::key: What is a Revision?">
+                          <question has-input="true">
+                            <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
+                            <div slot="answer">
+                              <p>Versions of a piece of information. For example, take a file containing program code. If you modify the code and save the file, you have a new version of that file.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock::key: Which of these is not considered a benefit of a typical RCS?">
+                          <question>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Help a developer recover from a incorrect modification to a code file</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Makes it easier for a group of developers to collaborate on a project</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Manage the drift between multiple versions of your project</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>f</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock: Explain RCS in a team project context">
+                          <question has-input="true">
+                            <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <div>
+                <panel header=":lock: Explain RCS in a team project context">
+                  <question has-input="true">
+                    <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel type="danger" header=":trophy: Can explain repositories :star:" expandable="">
+            <div>
+              <div></div>
+              <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="repositories-one">Repositories <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Repository</strong> (<em>repo</em> for short): The database of the history of a directory being tracked by an RCS software (e.g. Git).</p>
+                    </div>
+                  </tip-box>
+                  <tabs>
+                    <tab header=":abc:">
+                      <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to
+                        as the <em>working directory</em> of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working directory.</p>
+                      <p>You can have multiple repos in your computer, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
+                    </tab>
+                    <tab header=":tv:">
+                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                    </tab>
+                  </tabs>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock: What is a repo?">
+                          <question has-input="true">
+                            <p>In the context of RCS, what is a <em>repo</em>?</p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <div>
+                <panel header=":lock: What is a repo?">
+                  <question has-input="true">
+                    <p>In the context of RCS, what is a <em>repo</em>?</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel type="danger" header=":trophy: Can create a local Git repo :star:" expandable="">
+            <div>
+              <div>
+                <panel header="%%Prerequisites%%" expandable="" expanded="">
+                  <panel src="/website\book\revisionControl\repositories\full._include_.html" header="Revision Control: Repositories" isOpen="false" no-close="true" no-switch="true"></panel>
+                </panel>
+                <p></p>
+              </div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="init-one">Init <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>Install <a href="https://www.sourcetreeapp.com/">SourceTree</a> which is Git + a GUI for Git.</p>
+                  <p>Suppose you want to create a repository in an empty directory <code>things</code></p>
+                  <tabs>
+                    <tab header="SourceTree">
+                      <div>
+                        <p>Click <code>File</code> → <code>Clone/New…</code></p>
+                        <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
+                        <p></p>
+                        <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
+                        <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
+                      </div>
+                    </tab>
+                    <tab header="CLI">
+                      <div>
+                        <p>Open a Git Bash Terminal.</p>
+                        <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p><img src="/website/book/gitAndGithub/init/images/cli_1.png" height="100">
+                        <p></p>
+                        <p>Navigate to the <code>things</code> directory.</p>
+                        <p>Use the command <code>git init</code> which should initialize the repo.</p>
+                        <pre class="hljs"><code>$ git init
+Initialized empty Git repository in c:/repos/things/.git/
+</code></pre>
+                        <p>You can use the command <code>ls -a</code> to view all files, which should show the <code>.git</code> directory that was created by the previous command.</p>
+                        <pre class="hljs"><code>$ ls -a
+.  ..  .git
+</code></pre>
+                        <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
+                        <pre class="hljs"><code>git status
+</code></pre>
+                        <p>⤵️</p>
+                        <pre class="hljs"><code># On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use &quot;git add&quot; to track)
+</code></pre>
+                      </div>
+                    </tab>
+                  </tabs>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>Have a local repo that you created.</p>
+            </panel>
+          </panel>
+          <panel type="danger" header=":trophy: Can explain saving history :star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="saving-history-one">Saving History <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <h5 id="tracking-and-ignoring">Tracking and Ignoring</h5>
+                  <p><strong>In a repo, we can specify which files to track and which files to ignore.</strong> Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
+                  <h5 id="staging-and-committing">Staging and Committing</h5>
+                  <tabs>
+                    <tab header=":abc:">
+                      <p><strong><em>Committing</em> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
+                      <p><strong>When we are ready to commit, we should first <em>stage</em> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
+                      <p></p>
+                    </tab>
+                    <tab header=":tv:">
+                      <p></p>
+                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                      <p></p>
+                    </tab>
+                  </tabs>
+                  <p></p>
+                  <h5 id="identifying-points-in-history">Identifying Points in History</h5>
+                  <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated hash</strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
+                  <p><strong>We can tag a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>Not required.</p>
+            </panel>
+          </panel>
+          <panel type="danger" header=":trophy: Can commit using Git :star:" expandable="">
+            <div>
+              <div>
+                <panel header="%%Prerequisites%%" expandable="" expanded="">
+                  <panel src="/website\book\revisionControl\savingHistory\full._include_.html" header="Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
+                </panel>
+              </div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="commit-one">Commit <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>Create an empty repo as described in the panel below.</p>
+                  <p>
+                    <panel src="/website\book\gitAndGithub\init\embed._include_.html" name="Git and GitHub: Init" header="Git and GitHub: Init" isOpen="false" no-close="true" no-switch="true"></panel>
+                  </p>
+                  <p>Create a file named <code>fruits.txt</code> in the working directory and add some dummy text to it.</p>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
+                    </div>
+                  </tip-box>
+                  <p>Observe how the file is detected by Git.</p>
+                  <tabs>
+                    <tab header="SourceTree">
+                      <div>
+                        <p>The file is shown as ‘unstaged’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
+                        <p></p>
+                      </div>
+                    </tab>
+                    <tab header="CLI">
+                      <div>
+                        <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
+                        <pre><code class="hljs sh">git status
+</code></pre>
+                        <p>⤵️</p>
+                        <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Untracked files:</span>
+<span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#   a.txt</span>
+nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
+</code></pre>
+                        <p></p>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <p></p>
+                  <p>Although git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Commit</strong>: Saving the current state of the working folder into the Git revision history.</p>
+                    </div>
+                  </tip-box>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Stage</strong>: Instructing Git to prepare a file for committing.</p>
+                    </div>
+                  </tip-box>
+                  <tabs>
+                    <tab header="SourceTree">
+                      <div>
+                        <p>Select the <code>fruits.txt</code> and click on the <code>Stage Selected</code> button</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_2.png" height="100">
+                        <p></p>
+                        <p><code>fruits.txt</code> should appear in the <code>Staged files</code> panel now.’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_3.png" height="180">
+                        <p></p>
+                      </div>
+                    </tab>
+                    <tab header="CLI">
+                      <div>
+                        <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
+                        <pre><code class="hljs sh">git add fruits.txt
+git status
+</code></pre>
+                        <p>⤵️</p>
+                        <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Changes to be committed:</span>
+<span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#       new file:   fruits.txt</span>
+<span class="hljs-comment">#</span>
+</code></pre>
+                        <p></p>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <p></p>
+                  <p>Next, we can commit the staged version of <code>fruits.txt</code></p>
+                  <tabs>
+                    <tab header="SourceTree">
+                      <div>
+                        <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p><img src="/website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
+                        <p></p>
+                      </div>
+                    </tab>
+                    <tab header="CLI">
+                      <div>
+                        <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
+                        <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
+</code></pre>
+                        <p>You can use the <code>log</code> command to see the commit history</p>
+                        <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
+</code></pre>
+                        <p>⤵️</p>
+                        <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
+Author: … &lt; … @... &gt;
+Date:   Wed Jul 5 16:06:28 2017 +0800
 
-  <Panel header=":trophy: Outcomes" expandable ctrl-lvl="1" no-close>
-    <include src="outcomes.md#main" />
-  </Panel>
+  Add fruits.txt
+</code></pre>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which
+                    the commits go on by default.</p>
+                  <p>Do some changes to fruits.txt (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_6.png"
+                    height="180">
+                  <p></p>
+                  <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_7.png"
+                    height="150">
+                  <p></p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>Have a local repo that has commits you created.</p>
+            </panel>
+          </panel>
+          <panel type="warning" header=":trophy: Can set Git to ignore files :star::star:" expandable="">
+            <div>
+              <div>
+                <panel header="%%Prerequisites%%" expandable="" expanded="">
+                  <panel src="/website\book\revisionControl\savingHistory\full._include_.html" header="Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
+                </panel>
+              </div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="ignore-two">Ignore <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code>temp.txt</code></p>
+                  <tabs>
+                    <tab header="SourceTree">
+                      <div>
+                        <p>The file should be currently listed under <code>Unstaged files</code>. Right-click it and choose <code>Ignore…</code>. Choose <code>Ignore exact filename(s)</code> and click <code>OK</code>.</p>
+                        <p>Observe that a file named <code>.gitignore</code> has been created in the working directory root and has the following line in it.</p>
+                        <pre class="hljs"><code>temp.text
+</code></pre>
+                      </div>
+                    </tab>
+                    <tab header="CLI">
+                      <div>
+                        <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
+                        <pre class="hljs"><code>temp.text
+</code></pre>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <p>The <code>.gitignore</code> file tells Git which files to ignore when tracking revision history. That file itself can be either revision controlled or ignored.</p>
+                  <ul>
+                    <li>To version control it (the more common choice – which allows you to track how the <code>.gitignore</code> file changed over time), simply commit it as you would commit any other file.</li>
+                    <li>To ignore it, follow the same steps we followed above when we set Git to ignore the <code>temp.txt</code> file.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>Have a local repo that has git-ignored files.</p>
+            </panel>
+          </panel>
+        </panel>
+      </div>
+      <div>
+        <panel type="danger" header=":trophy: Can use basic features of an IDE :star:" expandable="" expanded="" no-close="">
+          <panel type="danger" header=":trophy: Can explain IDEs :star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>IDEs → Introduction →</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Professional software engineers often write code using sophisticated editors called <em>Integrated Development Environments (IDEs)</em>. IDEs support all development-related work within the same tool.</strong></p>
+                  <p>An IDE generally consists of:</p>
+                  <ul>
+                    <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
+                    <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
+                    <li>A debugger that allows program errors to be located.</li>
+                    <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, simulation of the target runtime platform, and modeling support.</li>
+                  </ul>
+                  <p>Examples of popular IDEs: Eclipse, Intellij IDEA, NetBeans, Visual Studio, DevC++, DrJava, XCode</p>
+                  <tip-box>
+                    <p>Note: Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: Which one of these is not a feature available in IDEs?">
+                          <question>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Syntax error highlighting.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Debugging.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code navigation e.g., to navigate from a method call to the method implementation.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Simulation e.g., run a mobile app in a simulator.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Code analysis e.g. to find unreachable code.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Reverse engineering design/documentation e.g. generate diagrams from code</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Visual programming e.g. Write programs using ‘drag and drop’ actions instead of typing code.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. Syntax assistance e.g., show hints as you type.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation e.g., to generate the code required by simply specifying which component/structure you want to implement.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension. i.e. ability add more functionality to the IDE using plugins.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> l. All of the above are present in most IDEs and some have even more features.</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>l</p>
+                              <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>Install <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> on your computer. Either the <em>Community Edition</em> (free) or the <em>Ultimate Edition</em> (free for students) is fine.</p>
+            </panel>
+          </panel>
+          <panel type="danger" header=":trophy: Can setup a project in an IDE :star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Tools → Intellij IDEA →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="project-setup-one">Project Setup <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
+                  <tabs>
+                    <tab header=":abc:">
+                      <ul>
+                        <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
+                      </ul>
+                      <p></p>
+                    </tab>
+                    <tab header=":tv:">
+                      <p></p>
+                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                      <p></p>
+                    </tab>
+                  </tabs>
+                  <p></p>
+                  <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p><strong>Acceptable</strong>: Any Java project set up in Intellij.</p>
+              <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1#set-up-a-project-in-an-ide-lo-idesetup">AddressBook - Level1 : LO-IdeSetup</a></p>
+              <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
+            </panel>
+          </panel>
+          <panel type="warning" header=":trophy: Can navigate code effectively using IDE features :star::star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Tools → Intellij IDEA →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="code-navigation-two">Code Navigation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>Some useful navigation shortcuts:</p>
+                  <ol>
+                    <li>Quickly locate a file by name.</li>
+                    <li>Go to the definition of a method from where it is used.</li>
+                    <li>Go back to the previous location.</li>
+                    <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
+                    <li>Find where a method/field is being used.</li>
+                  </ol>
+                  <panel header="Intellij IDEA Code Navigation (Basics)" alt="basics" expanded="">
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/f885wy42IcM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </panel>
+                  <panel header="Intellij IDEA Code Navigation (Advanced)" alt="basics">
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/IiHZPvmVICg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p><strong>Acceptable</strong>: Use Intellij basic code navigation features to navigate the code of any java project.</p>
+              <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1#navigate-code-efficiently-lo-codenavigation">AddressBook - Level1 : LO-CodeNavigation</a></p>
+              <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
+            </panel>
+          </panel>
+        </panel>
+      </div>
+      <div>
+        <panel type="warning" header=":trophy: Can automate simple regression testing of text UIs :star::star:" expandable="" expanded="" no-close="">
+          <panel type="warning" header=":trophy: Can explain testing :star::star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
+                    </div>
+                  </tip-box><img src="/website/book/testing/introduction/what/images/diagram.png" height="180">
+                  <p></p>
+                  <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
+                  <tip-box>
+                    <p>📦 Example: A minimal test case for testing a browser:</p>
+                    <ul>
+                      <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load ‘longfile.html’ located in the ‘test data’ folder.</li>
+                      <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading ‘longfile.html’.</li>
+                    </ul>
+                  </tip-box>
+                  <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
+                  <panel header="%%Other details a test case can contain :two:%%" type="seamless">
+                    <p>A more elaborate test case can have other details such as those given below.</p>
+                    <ul>
+                      <li>A unique identifier : <span class="dimmed">e.g. TC0034-a</span></li>
+                      <li>A descriptive name: <span class="dimmed">e.g. vertical scrollbar activation for long web pages</span></li>
+                      <li>Objectives: <span class="dimmed">e.g. to check whether the vertical scrollbar is correctly activated when a long web page is loaded to the browser</span></li>
+                      <li>Classification information: <span class="dimmed">e.g. priority - medium, category - UI features</span></li>
+                      <li>Cleanup, if any: <span class="dimmed">e.g. empty the browser cache.</span></li>
+                    </ul>
+                    <p></p>
+                  </panel>
+                  <p></p>
+                  <p></p>
+                  <p>For each test case we do the following:</p>
+                  <ol>
+                    <li>Feed the input to the SUT</li>
+                    <li>Observe the actual output</li>
+                    <li>Compare actual output with the expected output</li>
+                  </ol>
+                  <p><strong>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</strong></p>
+                  <tip-box>
+                    <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading ‘longfile.html’. The defect/bug causing that failure could be an uninitialized variable.</p>
+                  </tip-box>
+                  <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
+                    <p>Here is another definition of testing:</p>
+                    <blockquote>
+                      <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain.</p>
+                      <p>-– source: SWEBOKv3</p>
+                    </blockquote>
+                    <p>Some things to note (indicated by keywords in the above definition):</p>
+                    <ul>
+                      <li><em>Dynamic</em>: Testing involves executing the software. It is not by examining the code statically.</li>
+                      <li><em>Finite</em>: In most non-trivial cases there are potentially infinite test scenarios but resource constraints dictate that we can test only a finite number of scenarios.</li>
+                      <li><em>Selected</em>: In most cases it is not possible to test all scenarios. That means we need to select what scenarios to test.</li>
+                      <li><em>Expected</em>: Testing requires some knowledge of how the software is expected to behave.</li>
+                    </ul>
+                    <p></p>
+                  </panel>
+                  <p></p>
+                  <p></p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock: Relate testing, test cases, failure, and defect">
+                          <question has-input="">
+                            <p>Explain how the concepts of testing, test case, test failure, and defect are related to each other.</p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <div>
+                <panel header=":lock: Relate testing, test cases, failure, and defect">
+                  <question has-input="">
+                    <p>Explain how the concepts of testing, test case, test failure, and defect are related to each other.</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel type="warning" header=":trophy: Can explain regression testing :star::star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Regression Testing →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
+                  <p><strong><em>Regression testing</em> is re-testing the <trigger for="pop:sut">SUT</trigger> to detect regressions.</strong> Noted that to detect regressions, we need to retest all related components, even if they were tested before.</p>
+                  <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, <strong>regression testing is more practical when it is automated</strong>.</p>
+                  <div>
+                    <popover id="pop:sut" placement="top">
+                      <div slot="content">
+                        <div>
+                          <p><strong>SUT</strong>: Software Under Test</p>
+                        </div>
+                      </div>
+                    </popover>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: Regression Testing defintion T/F?">
+                          <question>
+                            <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
+                            <ul radio-group="a67a2" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="a67a2" type="radio"> a. True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="a67a2" type="radio"> b. False</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="a67a2" type="radio"> c. Partially true</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <p>c.</p>
+                              <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock: Explain regression testing">
+                          <question has-input="">
+                            <p>Explain why and when you would do regression testing in a software project.</p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <div>
+                <panel header=":lock: Explain regression testing">
+                  <question has-input="">
+                    <p>Explain why and when you would do regression testing in a software project.</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </panel>
+          <panel type="warning" header=":trophy: Can explain test automation :star::star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tabs>
+                    <tab header=":abc:">
+                      <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests
+                        repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
+                      <p></p>
+                    </tab>
+                    <tab header=":tv:">
+                      <p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe>
+                      <p></p>
+                    </tab>
+                  </tabs>
+                  <p></p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>Not required.</p>
+            </panel>
+          </panel>
+          <panel type="warning" header=":trophy: Can semi-automate testing of CLIs :star::star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="automated-testing-of-cli-apps-one">Automated Testing of CLI Apps <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>A simple way to semi-automate testing of a <trigger for="pop:cli">CLI</trigger> app is using input/output re-direction.</strong></p>
+                  <ul>
+                    <li><strong>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</strong> e.g., <code>java AddressBook &gt; output.txt</code></li>
+                    <li><strong>Next, we compare the actual output file with another file containing the expected output.</strong> e.g., <code>FC output.txt expected.txt</code></li>
+                  </ul>
+                  <p>Let us assume we are testing a CLI app called <code>AddressBook</code> (Example: <a href="https://github.com/nus-cs2103-AY1617S1/addressbook-level1">se-edu/addressbook-level1</a>). Here are the detailed steps:</p>
+                  <ol>
+                    <li>
+                      <p>Store the test input in the text file <code>input.txt</code>.</p>
+                      <panel header="%%:package: Example `input.txt`%%" type="seamless">
+                        <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
+add Valid Name 12345 e/valid@email.butPhonePrefixMissing
+</code></pre>
+                      </panel>
+                    </li>
+                    <li>
+                      <p>Store the output we expect from the SUT to another text file <code>expected.txt</code>.</p>
+                      <panel header="%%:package: Example `expected.txt`%%" type="seamless">
+                        <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
+Invalid command format: add 
 
-  <Panel header=":clipboard: Todo" expandable ctrl-lvl="1" no-close>
-    <include src="todo.md" />
-  </Panel>
-
-  <Panel header=":raising_hand: Tutorial 1" expandable ctrl-lvl="1" no-close>
-     <include src="tutorial.md#main" />
-  </Panel>
-
-  <Panel header=":mega: Lecture 2" expandable ctrl-lvl="1" no-close>
-    <include src="lecture.md" />
-  </Panel>
-
-</Panel>
+Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
+Invalid command format: add 
+</code></pre>
+                      </panel>
+                    </li>
+                    <li>
+                      <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>.
+                        <span
+                          class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span>
+                      </p>
+                      <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+</code></pre>
+                      <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
+                        <p>A CLI program takes input from keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
+                          For example, if you run <code>AddressBook</code> in the DOS prompt, the output will be shown in the console. But if you run it like this</p>
+                        <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+</code></pre>
+                        <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. Program output using <code>System.out.println</code> is directed to the console by default.
+                          When you add <code>&gt; output.txt</code>, the OS redirects the output to <code>output.txt</code> instead. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename) makes the OS redirect
+                          the contents of the file as input to the program.</p>
+                        <tip-box>
+                          <p>📎 Resources:</p>
+                          <ul>
+                            <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
+                          </ul>
+                        </tip-box>
+                        <p></p>
+                      </panel>
+                      <p></p>
+                      <p></p>
+                    </li>
+                    <li>
+                      <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as Winmerge.</p>
+                      <pre
+                        class="hljs"><code>FC output.txt expected.txt
+</code></pre>
+                    </li>
+                  </ol>
+                  <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output is known.</p>
+                  <div>
+                    <popover id="pop:cli" placement="top">
+                      <div slot="content">
+                        <div>
+                          <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
+                        </div>
+                      </div>
+                    </popover>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p><strong>Acceptable</strong>: Any project where you use the I/O redirection method to test a CLI.</p>
+              <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1#automate-cli-testing-lo-automatedclitesting">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
+              <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
+            </panel>
+          </panel>
+        </panel>
+      </div>
+      <panel type="warning" header=":trophy: Can use Java Collections :star::star:" expandable="">
+        <div>
+          <p><span class="dimmed"><strong><span>Tools → Java →
+</span></strong>
+            </span>
+          </p>
+          <div>
+            <h4 id="use-collections-two">Use Collections <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p>📎 Resources:</p>
+              <ul>
+                <li><a href="http://www.javatpoint.com/ArrayList-in-collection-framework">ArrayList class tutorial (from javaTpoint.com)</a></li>
+                <li><a href="http://beginnersbook.com/2013/12/hashmap-in-java-with-example/">HashMap tutorial (from beginnersbook.com)</a></li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <panel header=":dart: Evidence" expanded="">
+          <p><strong>Acceptable</strong>: Some code that you have written that uses some Java Collection classes.</p>
+          <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1#use-collections-lo-collections">AddressBook - Level1 : LO-Collections</a></p>
+          <p><strong>Submission</strong>: Show your code to the tutor during the tutorial.</p>
+        </panel>
+      </panel>
+      <panel type="info" header=":trophy: Can use Java varargs feature :star::star::star:" expandable="">
+        <div>
+          <p><span class="dimmed"><strong><span>Tools → Java →
+</span></strong>
+            </span>
+          </p>
+          <div>
+            <h4 id="use-varargs-three">Use Varargs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          </div>
+          <div id="main">
+            <div>
+              <p>📎 Resources:</p>
+              <ul>
+                <li><a href="http://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html">Java Varargs feature (from Oracle.com)</a></li>
+                <li><a href="https://www.javatpoint.com/varargs">Java Varargs tutorial (for javaTpoint.com)</a></li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <panel header=":dart: Evidence" expanded="">
+          <p><strong>Acceptable</strong>: Some code that you have written that uses the varargs feature.</p>
+          <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1#use-varargs-lo-varargss">AddressBook - Level1 : LO-Varargs</a></p>
+          <p><strong>Submission</strong>: Show your code to the tutor during the tutorial.</p>
+        </panel>
+      </panel>
+      <panel type="success" header=":trophy: Can explain pros and cons of software engineering :star::star::star::star:" expandable="">
+        <div>
+          <p><span class="dimmed"><strong><span>Software Engineering →
+</span></strong>
+            </span>
+          </p>
+          <div>
+            <h4 id="pros-and-cons-two">Pros and Cons <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+          </div>
+          <div id="main">
+            <div>
+              <tip-box type="definition">
+                <div>
+                  <p><strong>Software Engineering</strong>: Software Engineering is the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software&quot; <sub>-- IEEE Standard Glossary of Software Engineering Terminology</sub></p>
+                </div>
+              </tip-box>
+              <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book
+                <trigger for="modal:mmm" trigger="click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</trigger>.</p>
+              <blockquote>
+                <p><strong>Why is programming fun? What delights may its practitioner expect as his reward?</strong></p>
+                <p>First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things, especially things of his own design. I think this delight must be an image of God's delight in making things, a delight
+                  shown in the distinctness and newness of each leaf and each snowflake.</p>
+                <p>Second is the pleasure of making things that are useful to other people. Deep within, we want others to use our work and to find it helpful. In this respect the programming system is not essentially different from the child's first clay
+                  pencil holder &quot;for Daddy's office.&quot;</p>
+                <p>Third is the fascination of fashioning complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning. The programmed computer has
+                  all the fascination of the pinball machine or the jukebox mechanism, carried to the ultimate.</p>
+                <p>Fourth is the joy of always learning, which springs from the nonrepeating nature of the task. In one way or another the problem is ever new, and its solver learns something: sometimes practical, sometimes theoretical, and sometimes both.</p>
+                <p>Finally, there is the delight of working in such a tractable medium. The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by the exertion of the imagination.
+                  Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures....</p>
+                <p>Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms. The magic of
+                  myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life, showing things that never were nor could be.</p>
+                <p>Programming then is fun because it gratifies creative longings built deep within us and delights sensibilities we have in common with all men.</p>
+                <p><strong>Not all is delight, however, and knowing the inherent woes makes it easier to bear them when they appear.</strong></p>
+                <p>First, one must perform perfectly. The computer resembles the magic of legend in this respect, too. If one character, one pause, of the incantation is not strictly in proper form, the magic doesn't work. Human beings are not accustomed
+                  to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.</p>
+                <p>Next, other people set one's objectives, provide one's resources, and furnish one's information. One rarely controls the circumstances of his work, or even its goal. In management terms, one's authority is not sufficient for his responsibility.
+                  It seems that in all fields, however, the jobs where things get done never have formal authority commensurate with responsibility. In practice, actual (as opposed to formal) authority is acquired from the very momentum of accomplishment.</p>
+                <p>The dependence upon others has a particular case that is especially painful for the system programmer. He depends upon other people's programs. These are often maldesigned, poorly implemented, incompletely delivered (no source code or
+                  test cases), and poorly documented. So he must spend hours studying and fixing things that in an ideal world would be complete, available, and usable.</p>
+                <p>The next woe is that designing grand concepts is fun; finding nitty little bugs is just work. With any creative activity come dreary hours of tedious, painstaking labor, and programming is no exception.</p>
+                <p>Next, one finds that debugging has a linear convergence, or worse, where one somehow expects a quadratic sort of approach to the end. So testing drags on and on, the last difficult bugs taking more time to find than the first.</p>
+                <p>The last woe, and sometimes the last straw, is that the product over which one has labored so long appears to be obsolete upon (or before) completion. Already colleagues and competitors are in hot pursuit of new and better ideas. Already
+                  the displacement of one's thought-child is not only conceived, but scheduled.</p>
+                <p>This always seems worse than it really is. The new and better product is generally not available when one completes his own; it is only talked about. It, too, will require months of development. The real tiger is never a match for the
+                  paper one, unless actual use is wanted. Then the virtues of reality have a satisfaction all their own.</p>
+                <p>Of course the technological base on which one builds is always advancing. As soon as one freezes a design, it becomes obsolete in terms of its concepts. But implementation of real products demands phasing and quantizing. The obsolescence
+                  of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
+                <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
+              </blockquote>
+              <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
+                <table>
+                  <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Mythical_man-month_%28book_cover%29.jpg" height="250"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fred_Brooks.jpg/800px-Fred_Brooks.jpg" height="250"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><sub>[<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Text and book cover source: Wikipedia</a>]</sub></p>
+                    </td>
+                    <td>
+                      <p><sub>[<a href="https://commons.wikimedia.org/wiki/File:Fred_Brooks.jpg">Fred Brooks photo source</a>]</sub></p>
+                    </td>
+                  </tr>
+                </table>
+                <p><em>The Mythical Man-Month: Essays on Software Engineering</em> is a book on software engineering and project management by Fred Brooks, whose central theme is that &quot;adding manpower to a late software project makes it later&quot;.
+                  This idea is known as Brooks's law, and is presented along with the second-system effect and advocacy of prototyping.</p>
+              </modal>
+            </div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: SE vs Civil Engineering">
+                      <question has-input="true">
+                        <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
+                        <div slot="answer">
+                          <table class="markbind-table table">
+                            <thead>
+                              <tr>
+                                <th style="text-align:center">Buildings</th>
+                                <th style="text-align:center">Software</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align:center">Visible, tangible</td>
+                                <td style="text-align:center">Invisible, intangible</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Wears out over time</td>
+                                <td style="text-align:center">Does not wear out</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Change is limited by physical restrictions (e.g. difficult to remove a floor from a high rise building)</td>
+                                <td style="text-align:center">Change is not limited by such restrictions. Just change the code and recompile.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Creating an exact copy of a building is impossible. Creating a near copy is almost as costly as creating the original.</td>
+                                <td style="text-align:center">Any number of exact copies can be made with near zero cost.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Difficult to move.</td>
+                                <td style="text-align:center">Easily delivered from one place to another.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Many low-skilled workers following tried-and-tested procedures.</td>
+                                <td style="text-align:center">No low-skilled workers involved. Workers have more freedom to follow their own procedures.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Easier to assure quality (just follow accepted procedure).</td>
+                                <td style="text-align:center">Not easy to assure quality.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Majority of the work force has to be on location.</td>
+                                <td style="text-align:center">Can be built by people who are not even in the same country.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Raw materials are costly, costly equipment required.</td>
+                                <td style="text-align:center">Almost free raw materials and relatively cheap equipment.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Once construction is started, it is hard to do drastic changes to the design.</td>
+                                <td style="text-align:center">Building process is very flexible. Drastic design changes can be done, although costly</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">A lot of manual and menial labor involved.</td>
+                                <td style="text-align:center">Most work involves highly-skilled labor.</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center">Generally robust. E.g. removing a single brick is unlikely to destroy a building.</td>
+                                <td style="text-align:center">More fragile than buildings. A single misplaced semicolon can render the whole system useless.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock::key: Software vs Bridges">
+                      <question has-input="true">
+                        <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
+                        <div slot="answer">
+                          <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with a just a
+                            PC and a few days of work!</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock::key: Coding as a manufacturing activity">
+                      <question has-input="true">
+                        <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
+                        <div slot="answer">
+                          <p>Arguments to support this statement:</p>
+                          <ul>
+                            <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
+                            <li>If coding is a manufacturing activity, we wouldn’t be changing it so much after we code software. But if the code is in fact a ‘design’, yes, we would fiddle with it until we get it right.</li>
+                            <li>Manufacturing is the process of building a finished product based on the design. Code is the design. Manufacturing is what is done by the compiler (fully automated).</li>
+                          </ul>
+                          <p>However, the type of ‘design’ that occurs during coding is at a much lower level than the ‘design’ that occurs before coding.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock: List pros and cons of SE">
+                      <question has-input="true">
+                        <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock::key: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
+                      <question>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
+                          </ul>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+        <panel header=":dart: Evidence" expanded="">
+          <p>To be able answer questions such as these:</p>
+          <div>
+            <panel header=":lock: List pros and cons of SE">
+              <question has-input="true">
+                <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+              </question>
+            </panel>
+          </div>
+        </panel>
+      </panel>
+    </div>
+  </panel>
+  <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+    <div>
+      <panel header="Admin info to read" expandable="" expanded="">
+        <p>
+          <panel type="warning" src="/website\admin\appendixB-policies._include_.html#policy-techHelp" name="%%Admin &raquo;%% Policy on Tech Help :star::star:" fragment="policy-techHelp" header="%%Admin &raquo;%% Policy on Tech Help :star::star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <p>
+          <panel type="info" src="/website\admin\tools._include_.html" name="%%Admin &raquo;%% Module Tools :star::star::star:" header="%%Admin &raquo;%% Module Tools :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <p>
+          <panel type="success" name="%%Admin &raquo;%% Module Principles :star::star::star::star:" src="/website\admin\appendixA-principles._include_.html" header="%%Admin &raquo;%% Module Principles :star::star::star::star:" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+          <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" fragment="admin-faq-highWorkload" header="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" name="%%Admin &raquo;%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" fragment="admin-faq-separateWebsite"
+            header="%%Admin &raquo;%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-slideFormat" name="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:" fragment="admin-faq-slideFormat" header="%%Admin &raquo;%% FAQ: Why slides are not detailed? :star::star::star::star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-selfStudy" name="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:" fragment="admin-faq-selfStudy" header="%%Admin &raquo;%% FAQ: Why so much self-study? :star::star::star::star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </panel>
+    </div>
+  </panel>
+  <panel header=":raising_hand: Tutorial 1" expandable="" ctrl-lvl="1" no-close="">
+    <div>
+      <panel type="info" header="Tutorial selection and seating arrangement" expandable="" expanded="" no-close="">
+        <p><strong>CS2103</strong> students: As you don't have a confirmed tutorial yet, attend the slot you chose in the 'Temporary Tutorial Registration' on IVLE. Team forming will be done in the following week. You are free to sit with anyone this week.</p>
+        <p><strong>CS2103T</strong> students: Attend the tutorial pre-allocated to you. Sit together with your phase A team members.</p>
+      </panel>
+      <panel type="info" header="Show evidence of weekly learning outcomes" expandable="" expanded="" no-close="">
+        <p>Starting with learning outcomes at ⭐️ level, share/discuss/demo evidence of (as directed by the tutor) weekly learning outcomes.</p>
+      </panel>
+    </div>
+  </panel>
+  <panel header=":mega: Lecture 2" expandable="" ctrl-lvl="1" no-close="">
+    <div>
+      <p><strong>Questions/activities to discuss</strong>:</p>
+      <div>
+        <panel header=":lock: List pros and cons of SE">
+          <question has-input="true">
+            <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+          </question>
+        </panel>
+      </div>
+      <hr>
+      <p><strong>Slides</strong>:</p>
+      <ul>
+        <li>[<a href="">Discussion of current week LOs</a>]</li>
+        <li>[<a href="">Preview of next week LOs</a>]</li>
+      </ul>
+    </div>
+  </panel>
+</panel>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>

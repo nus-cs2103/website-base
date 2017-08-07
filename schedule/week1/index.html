@@ -1,7 +1,66 @@
-<Panel header="Week 1 [Aug 14]" ctrl-lvl="-1" class="overview" no-close>
-  <Panel header=":clipboard: Todo" expandable ctrl-lvl="1" no-close>
-    <include src="todo.md" />
-  </Panel>
-  <Panel header=":mega: Lecture 1" expandable ctrl-lvl="1" no-close>
-  </Panel>
-</Panel>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <panel header="Week 1 [Aug 14]" ctrl-lvl="-1" class="overview" no-close="">
+  <panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+    <div>
+      <panel type="danger" header="[CS2103 students only] Forming teams :star:" expandable="">
+        <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
+        <p>
+          <panel type="danger" src="/website\admin\teams._include_.html" name="%%Admin &raquo;%% Team Forming :star:" header="%%Admin &raquo;%% Team Forming :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </panel>
+      <panel header="Admin info to read" expandable="" expanded="">
+        <p>Here are some module admin info to read around this time:</p>
+        <p>
+          <panel type="danger" name="%%Admin &raquo;%% FAQ: Where is everything? :star:" src="/website\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" fragment="admin-faq-whereIsEverything" header="%%Admin &raquo;%% FAQ: Where is everything? :star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="danger" name="%%Admin &raquo;%% Project: Overview :star:" src="/website\admin\project._include_.html" header="%%Admin &raquo;%% Project: Overview :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="danger" name="%%Admin &raquo;%% Project: The Product :star:" src="/website\admin\project-product._include_.html" header="%%Admin &raquo;%% Project: The Product :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="danger" src="/website\admin\project-scope._include_.html" name="%%Admin &raquo;%% Project: Scope :star:" header="%%Admin &raquo;%% Project: Scope :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <p>
+          <panel type="warning" src="/website\admin\textBooks._include_.html" name="%%Admin &raquo;%% Text Books :star::star:" header="%%Admin &raquo;%% Text Books :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="warning" src="/website\admin\programming-languages._include_.html" name="%%Admin &raquo;%% Programming Language :star::star:" header="%%Admin &raquo;%% Programming Language :star::star:" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+          <panel type="warning" src="/website\admin\project-constraints._include_.html" name="%%Admin &raquo;%% Project: Constraints :star::star:" header="%%Admin &raquo;%% Project: Constraints :star::star:" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+          <panel type="warning" src="/website\admin\project-deliverables._include_.html" name="%%Admin &raquo;%% Project: Deliverables :star::star:" header="%%Admin &raquo;%% Project: Deliverables :star::star:" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+        </p>
+        <p>
+          <panel type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="/website\admin\appendixC-faq._include_.html#admin-faq-cs2103VsCs2103t" fragment="admin-faq-cs2103VsCs2103t" header="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" fragment="admin-faq-highWorkload" header="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:"
+            isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </panel>
+      <panel type="warning" header="Brush up your Java :star::star:" expandable="">
+        <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
+        <p>In particular, you may want to have a look at the new Java 8 features that may not have been covered in previous Java modules.</p>
+      </panel>
+      <panel type="danger" header="Attend Lecture 1 ==(compulsory)== :star:" expandable="">
+        <p>
+          <panel type="info" src="/website\admin\lectures._include_.html" name="%%Admin &raquo;%% Lectures :star::star::star:" header="%%Admin &raquo;%% Lectures :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </panel>
+    </div>
+  </panel>
+  <panel header=":mega: Lecture 1" expandable="" ctrl-lvl="1" no-close=""></panel>
+</panel>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>
