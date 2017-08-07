@@ -1,0 +1,2 @@
+markbind build
+markbind deploy
