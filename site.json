@@ -25,8 +25,16 @@
       "title": "CS2103/T Website - Schedule"
     },
     {
-      "src": "schedule/week2/outcomes.md",
-      "title": "Week 2: Outcomes"
+      "src": "schedule/week1/index.html",
+      "title": "Week 1"
+    },
+    {
+      "src": "schedule/week2/index.html",
+      "title": "Week 2"
+    },
+    {
+      "src": "schedule/week3/index.html",
+      "title": "Week 3"
     },
     {
       "src": "book/index.md",
