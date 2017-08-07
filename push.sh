@@ -1,4 +1,5 @@
 cd book
-push origin master
+git push origin master
 cd ..
-push origin master
+git push origin master
+git status
