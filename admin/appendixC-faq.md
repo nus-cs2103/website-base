@@ -4,7 +4,7 @@
 
 <div id="admin-faq-whereIsEverything">
 
-The [**Schedule** page](../schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ](/index.html) and the [**Textbook** page]({{baseUrl}}/book/index.html) -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content chronologically while the other two pages has some of the same content but organized by topic.
+The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ]({{baseUrl}}/admin/index.html) and the [**Textbook** page]({{baseUrl}}/book/index.html) -- which you are welcome to read on their own -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content chronologically while the other two pages has some of the same content but organized by topic.
 
 </div>
 
