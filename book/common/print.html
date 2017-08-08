@@ -8165,9 +8165,19 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>We can view the history of a project as a series of past commits and also <strong><em>diff</em></strong> (i.e. to see the differences) between two points in the history.</p>
-          <p>We can <strong><em>checkout</em></strong> any commit in the history (i.e. load the state of files as at that commit) to the working directory. Therefore, we can traverse the history of the project simply by checking out the commits we are interested
-            in.</p>
+          <p><strong><trigger for="pop:rcs">RCS</trigger> tools store the history of the working directory as a series of commits.</strong> This means we should commit after each change that we want the RCS to 'remember' for us.</p>
+          <p><strong>To see what changed between two points of the history, you can ask the RCS tool to  <mark><em>diff</em></mark> the two commits in concern.</strong></p>
+          <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., we can traverse the history of the working directory simply by checking out the commits
+            we are interested in.</p>
+          <div>
+            <popover id="pop:rcs" placement="top">
+              <div slot="content">
+                <div>
+                  <p><strong>RCS</strong> : Revision Control Software.</p>
+                </div>
+              </div>
+            </popover>
+          </div>
         </div>
       </div>
       <div>
@@ -9993,10 +10003,6 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           </div>
         </tip-box>
         <div>
-          <p>
-            <panel src="/website\book\revisionControl\usingHistory\embed._include_.html" header="Revision Control: Using History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
           <p>Git can show you what changed in each commit.</p>
           <tabs>
             <tab header="SourceTree">
@@ -10036,7 +10042,7 @@ index 15b57f7..17f4528 100644
           <tabs>
             <tab header="SourceTree">
               <div>
-                <p>Select the two points you want to compare using <code>Ctrl+Click</code></p><img src="/website/book/gitAndGithub/checkout/images/sourcetree_2.png" height="200">
+                <p>Select the two points you want to compare using <code>Ctrl+Click</code>.</p><img src="/website/book/gitAndGithub/checkout/images/sourcetree_2.png" height="200">
                 <p></p>
                 <p>The same method can be used to compare the current state of the working directory (which might have uncommitted changes) to a point in the history.</p><img src="/website/book/gitAndGithub/checkout/images/sourcetree_3.png" height="100">
                 <p></p>
@@ -10050,11 +10056,12 @@ index 15b57f7..17f4528 100644
                   <li><code>git diff 0023cdd..fcd6199</code>: shows the changes between the points indicated by by commit hashes</li>
                   <li><code>git diff v1.0..HEAD</code>: shows changes that happened from the commit tagged as <code>v1.0</code> to the most recent commit.</li>
                 </ul>
-                <p>Resources:</p>
-                <ul>
-                  <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs">Git-Tower Tutorial: Inspecting Changes with Diffs</a></li>
-                  <li><a href="https://stackoverflow.com/questions/8640838/how-do-i-navigate-in-the-results-of-diff">How to view the next page of a <code>git</code> command result</a></li>
-                </ul>
+                <panel header=":paperclip: Resources" expanded="">
+                  <ul>
+                    <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs">Git-Tower Tutorial: Inspecting Changes with Diffs</a></li>
+                    <li><a href="https://stackoverflow.com/questions/8640838/how-do-i-navigate-in-the-results-of-diff">How to view the next page of a <code>git</code> command result</a></li>
+                  </ul>
+                </panel>
               </div>
             </tab>
           </tabs>
@@ -10062,7 +10069,7 @@ index 15b57f7..17f4528 100644
           <tabs>
             <tab header="SourceTree">
               <div>
-                <p>Double-click the commit you want to load to the working directory, or right-click on that commit and choose .</p>
+                <p>Double-click the commit you want to load to the working directory, or right-click on that commit and choose <code>Checkout...</code>.</p>
                 <p>Click <code>OK</code> to the warning about ‘detached HEAD’ (similar to below).</p><img src="/website/book/gitAndGithub/checkout/images/warning.png" height="140">
                 <p></p>
                 <p>The specified version is now loaded to the working folder, as indicated by the <code>HEAD</code> label. <code>HEAD</code> is a reference to the currently checked out commit.</p><img src="/website/book/gitAndGithub/checkout/images/sourcetree_4.png"
@@ -10117,15 +10124,11 @@ index 15b57f7..17f4528 100644
           </div>
         </tip-box>
         <div>
-          <p>
-            <panel src="/website\book\revisionControl\remoteRepositories\embed._include_.html" header="Revision Control: Remote Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
           <p>Clone the sample repo <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a> to your computer.</p>
           <tip-box type="error">
             <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
             </p>
-            <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things</code><br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things.git</code> (not the <code>.git</code> at the end)</p>
+            <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things</code><br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
           </tip-box>
           <tabs>
             <tab header="SourceTree">
@@ -10152,8 +10155,8 @@ index 15b57f7..17f4528 100644
           </div>
         </tip-box>
         <div>
-          <p>Clone the sample repo
-            <trigger for="modal:clone-repository" trigger="click">(instructions)</trigger>.</p>
+          <p>Clone the sample repo as explained in
+            <trigger for="modal:clone-repository" trigger="click">[Textbook » Tools → Git &amp; GitHub → Clone]</trigger>.</p>
           <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
           <modal title="**Clone Repository**" id="modal:clone-repository">
             <div>
@@ -10168,15 +10171,11 @@ index 15b57f7..17f4528 100644
               <panel type="seamless" header=" %%- - - - - - - - - -%%">
                 <div>
                   <div>
-                    <p>
-                      <panel src="/website\book\revisionControl\remoteRepositories\embed._include_.html" header="Revision Control: Remote Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                    </p>
-                    <p></p>
                     <p>Clone the sample repo <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a> to your computer.</p>
                     <tip-box type="error">
                       <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                       </p>
-                      <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things</code><br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things.git</code> (not the <code>.git</code> at the end)</p>
+                      <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things</code><br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S1/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
                     </tip-box>
                     <tabs>
                       <tab header="SourceTree">
@@ -10207,11 +10206,8 @@ index 15b57f7..17f4528 100644
                 <p></p>
                 <p>This is what you will see.</p><img src="/website/book/gitAndGithub/pull/images/sourcetree_2.png" height="150">
                 <p></p>
-                <p>Note the following:</p>
-                <ul>
-                  <li>The local repo is now at this commit, marked by the <code>master</code> label.</li>
-                  <li><code>origin/master</code> shows what is the latest commit in the <code>master</code> branch in the remote repo.</li>
-                </ul>
+                <p>Note the following (cross refer the screenshot above):</p>
+                <p>(a) The local repo is now at this commit, marked by the <code>master</code> label.<br> (b) <code>origin/master</code> shows what is the latest commit in the <code>master</code> branch in the remote repo.</p>
               </div>
             </tab>
             <tab header="CLI">
@@ -10222,8 +10218,8 @@ index 15b57f7..17f4528 100644
               </div>
             </tab>
           </tabs>
-          <p>Now, your local repo state is exactly how it would be if you had cloned the repo 2 commits ago. In other words, it is as if somebody has added two more commits to the remote repo since you cloned it. To get those commits to your local repo (i.e.
-            to sync your local repo with upstream repo) you can do a pull.</p>
+          <p>Now, your local repo state is exactly how it would be if you had cloned the repo 2 commits ago, as if somebody has added two more commits to the remote repo since you cloned it. To get those commits to your local repo (i.e. to sync your local
+            repo with upstream repo) you can do a pull.</p>
           <tabs>
             <tab header="SourceTree">
               <div>
@@ -10235,7 +10231,7 @@ index 15b57f7..17f4528 100644
             </tab>
             <tab header="CLI">
               <div>
-                <p><code>git pull origin master</code></p>
+                <p><code>git pull origin</code></p>
               </div>
             </tab>
           </tabs>
@@ -10252,17 +10248,23 @@ index 15b57f7..17f4528 100644
         </tip-box>
         <div>
           <ol>
-            <li>Fork the sample repo.</li>
-          </ol>
-          <ul>
-            <li>Navigate to the sample repo on GitHub</li>
-            <li>Click on the <code>Fork</code> button on the top-right corner</li>
-            <li><img src="/website/book/gitAndGithub/push/images/fork.png" height="30"></li>
-          </ul>
-          <ol start="2">
-            <li>Clone the frok (not the original) to your computer.</li>
-            <li>Create some commits in your repo.</li>
-            <li>Push the new commits to your fork on GitHub</li>
+            <li>
+              <p>Fork the <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a>:</p>
+              <panel type="seamless" header="%%How to fork a repo?%%">
+                <p>Navigate to the on GitHub and click on the <img src="/website/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
+                <p></p>
+              </panel>
+              <p></p>
+            </li>
+            <li>
+              <p>Clone the fork (not the original) to your computer.</p>
+            </li>
+            <li>
+              <p>Create some commits in your repo.</p>
+            </li>
+            <li>
+              <p>Push the new commits to your fork on GitHub</p>
+            </li>
           </ol>
           <tabs>
             <tab header="SourceTree">
@@ -10273,7 +10275,7 @@ index 15b57f7..17f4528 100644
             </tab>
             <tab header="CLI">
               <div>
-                <p><code>git push origin master</code> enter Github username and password when prompted.</p>
+                <p>Use the command <code>git push origin master</code>. Enter Github username and password when prompted.</p>
               </div>
             </tab>
           </tabs>
