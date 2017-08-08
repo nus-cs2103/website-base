@@ -9,7 +9,7 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
 <img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/>
 
-Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _aaa_ and _bbb_?
+Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _refactoring_ and _rewriting_?
 
 What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
 
@@ -47,7 +47,7 @@ When faced with a technical problem or a doubt about a concept, here are the thi
     </tip-box>
 
   * Generalize the problem. "How to write tasks to a text file using Java" is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) "How to write to a file using Java".
-  * Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, you chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.  
+  * Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.  
     <tip-box type="tip">Know what these stand for: **RTFM**, **STFW**, **GIYF**</tip-box>
 
 * **Talk to the lecturer** before or after the lecture. The lecturer will be at the lecture venue from 30 minutes before the start of the lecture.
