@@ -51,6 +51,6 @@ Tutorials are not graded. However, your conduct will be reviewed by team members
 * **Please bring your laptop to tutorials.** You often need it to show your learning activity results. At other times, we ask you to work on project related things with your team members, which too may require the laptop. %%Cf FAQ: [What if I don't carry a laptop around?]()%%
 
 <panel header="%%Admin &raquo; FAQ: What if I don't carry around a laptop?%%">
-<include src="appendixC-faq.md#handbook-faq-noLaptop" />
+<include src="appendixC-faq.md#admin-faq-noLaptop" />
 </panel>
 <p/>
