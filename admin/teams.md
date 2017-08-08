@@ -6,22 +6,22 @@
 **The two teams**:  
 You will be in two different teams at different times of the semester.
 
-* Week 1 - 5: Phase A team
-* Week 6 - 13: Phase B team (i.e. Project team)
+* Weeks 1 - 5: Phase A team
+* Weeks 6 - 13: Phase B team (i.e. Project team)
 
-Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. By working with different classmates during this period you get to know and learn from more classmates. The project is done in phase B. That means your Phase B team is also your project team.
+Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. By working with different classmates during this period you get to know and learn from more classmates. The project is done in Phase B. That means your Phase B team is also your project team.
 
 
 ==There cannot be any overlap between your 2 teams==. For example, any member from your Phase A team cannot be a member of your Phase B team.
 
 **When to form teams**
 
-* CS2103T: Your phase A team will be formed by CS2101 side in week 1\. Your phase B team (applicable to CS2101 too) will be formed by CS2103T side on week 5.
-* CS2103: Form tentative Phase A teams in week 2 (during the tutorial). Finalize phase A team in the subsequent tutorial. Form phase B team on week 5.
+* CS2103T: Your Phase A team will be formed by CS2101 side in week 1\. Your Phase B team (applicable to CS2101 too) will be formed by CS2103T side on week 5.
+* CS2103: Form tentative Phase A teams in week 2 (during the tutorial). Finalize Phase A team in the subsequent tutorial. Form Phase B team on week 5.
 
 **Team size**: The default ==team size is four==. 
 
-**Team ID**: This will be given to you after forming teams in each phase. It has the form `TUTORIAL_ID-PHASE+TEAM_NUMBER` e.g, `W14-A2` means you are in tutorial W14 (i.e., Wed 1400-1500), phase A, team 2.
+**Team ID**: This will be given to you after forming teams in each Phase . It has the form `TUTORIAL_ID-PHASE+TEAM_NUMBER` e.g, `W14-A2` means you are in tutorial W14 (i.e., Wed 1400-1500), Phase A, team 2.
 
 **Team composition**
 

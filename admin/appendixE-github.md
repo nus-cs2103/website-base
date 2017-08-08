@@ -45,7 +45,7 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 
 The instructions below are for setting up a GitHub organization for your team, which you should do at the start of Phase B.
 
-You can create your GitHub account after receiving your phase B team ID. Here are the instructions (==please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
+You can create your GitHub account after receiving your Phase B team ID. Here are the instructions (==please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
 
 * One team member (e.g. team leader) should create an organization with the following details:
 * ==Organization name : `CS2103AUG2017-TEAM_ID`==. e.g.  `CS2103AUG2017-W09-B3`
