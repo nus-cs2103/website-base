@@ -57,4 +57,4 @@ When faced with a technical problem or a doubt about a concept, here are the thi
 Resources
 
 * [lifehacker article]  [Google Tips and Tricks Every Student Should Know](http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671)
-* [Article] [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html) by Eric Steven Raymond
+* [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond

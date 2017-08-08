@@ -30,7 +30,6 @@ Consider these two questions you might want to ask a tutor:
 <p/>
 
 * **No leading from the front**: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback on how you are doing (or have done) project tasks so that you can improve further.   
-%%[Cf external resource: [A practitioner article about receiving feedback]()]%%
 
 **Timing/venue:**
 
@@ -48,7 +47,7 @@ Tutorials are not graded. However, your conduct will be reviewed by team members
 
 **Other expectations:**
 
-* **Please bring your laptop to tutorials.** You often need it to show your learning activity results. At other times, we ask you to work on project related things with your team members, which too may require the laptop. %%Cf FAQ: [What if I don't carry a laptop around?]()%%
+* **Please bring your laptop to tutorials.** You often need it to show your learning activity results. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
 
 <panel header="%%Admin &raquo; FAQ: What if I don't carry around a laptop?%%">
 <include src="appendixC-faq.md#admin-faq-noLaptop" />
