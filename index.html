@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/website/css/main.css">
 <link rel="stylesheet" href="/website/css/schedule.css">
 <div>
-  <navbar placement="top" type="inverse"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
+  <navbar placement="top" type="inverse"><a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T</a>
     <li><a href="/website/index.html">Schedule</a></li>
     <li><a href="/website/book/index.html" target="_blank">Textbook</a></li>
     <li><a href="/website/admin/index.html">Admin</a></li>
@@ -173,10 +173,7 @@
                 </li>
               </ol>
             </div>
-            <div>
-              <h2 id="printing">Printing</h2>
-              <p>The 📜 icon indicates printer-friendly versions of each chapter. A printer-friendly version of the entire book can be found <a href="../common/print.html">here</a></p>
-            </div>
+            <panel src="/website\book\about\usage._include_.html#printing" name="Printing" fragment="printing" header="Printing" isOpen="false" no-close="true" no-switch="true"></panel>
           </panel>
           <panel header="Additional conventions used in the website" expanded="">
             <p>In addition to following the conventions used in the textbook, the remainder of the website follows these conventions.</p>
@@ -203,8 +200,7 @@
               </ul>
               <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
               <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
-              <p><strong>Handouts</strong>: All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website/book/index.html">Textbook</a> section and are also hyperlinked
-                from the <a href="/website/schedule/index.html">Schedule Page</a>.</p>
+              <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website/book/index.html">Textbook</a>                section and are also hyperlinked from the <a href="/website/schedule/index.html">Schedule Page</a>.</p>
               <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. Tey are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
             </div>
           </panel>
@@ -322,7 +318,7 @@
                   <p>Resources</p>
                   <ul>
                     <li>[lifehacker article]  <a href="http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671">Google Tips and Tricks Every Student Should Know</a></li>
-                    <li>[Article] <a href="http://catb.org/~esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond</li>
+                    <li>[Article] <a href="http://catb.org/esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond</li>
                   </ul>
                 </div>
               </panel>
@@ -341,7 +337,7 @@
               <p></p>
               <ul>
                 <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give
-                  you feedback on how you are doing (or have done) project tasks so that you can improve further.<br><span class="dimmed">[Cf external resource: <a href="">A practitioner article about receiving feedback</a>]</span></li>
+                  you feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
               </ul>
               <p><strong>Timing/venue:</strong></p>
               <ul>
@@ -362,14 +358,13 @@
               <p>Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.</p>
               <p><strong>Other expectations:</strong></p>
               <ul>
-                <li><strong>Please bring your laptop to tutorials.</strong> You often need it to show your learning activity results. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
-                  <span
-                    class="dimmed">Cf FAQ: <a href="">What if I don't carry a laptop around?</a></span>
-                </li>
+                <li><strong>Please bring your laptop to tutorials.</strong> You often need it to show your learning activity results. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
               </ul>
               <panel header="%%Admin &raquo; FAQ: What if I don't carry around a laptop?%%">
                 <div>
-                  <p>null</p>
+                  <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort from the tutor or team
+                    members.</p>
+                  <p>Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.</p>
                 </div>
               </panel>
               <p></p>
@@ -1257,10 +1252,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <panel header=":lock::key: Regression Testing defintion T/F?">
                               <question>
                                 <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                                <ul radio-group="77amm" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="77amm" type="radio"> a. True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="77amm" type="radio"> b. False</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="77amm" type="radio"> c. Partially true</label></li>
+                                <ul radio-group="rdpve" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="rdpve" type="radio"> a. True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="rdpve" type="radio"> b. False</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="rdpve" type="radio"> c. Partially true</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c.</p>
