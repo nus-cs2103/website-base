@@ -270,8 +270,8 @@
         </panel>
       </div>
       <div>
-        <panel type="danger" header=":trophy: Can refactor code at a basic level :star:" expandable="" expanded="" no-close="">
-          <panel type="danger" header=":trophy: Can explain refactoring :star:" expandable="">
+        <panel type="warning" header=":trophy: Can refactor code at a basic level :star::star:" expandable="" expanded="" no-close="">
+          <panel type="warning" header=":trophy: Can explain refactoring :star::star:" expandable="">
             <div>
               <p><span class="dimmed"><strong><span>Implementation → Refactoring →
 </span></strong>
@@ -296,8 +296,13 @@
                     </ul>
                   </tip-box>
                   <p>Given below are two common refactorings (taken from
-                    <trigger for="modal:refactoring-catalog"> refactoring-catalog </trigger>).</p>
-                  <modal title="**Enterprise Applications**" id="modal:refactoring-catalog"><span><p><a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></p></span></modal>
+                    <trigger trigger="click" for="modal:refactoring-catalog-what"> refactoring-catalog </trigger>).</p>
+                  <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-what">
+                    <div>
+                      <p><a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on
+                        refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></p>
+                    </div>
+                  </modal>
                   <tip-box>
                     <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
                     <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
@@ -345,23 +350,28 @@ send();
 }
 </code></pre>
                   </tip-box>
+                  <tip-box type="info">
+                    <p>Tip: Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
+                  </tip-box>
+                  <tip-box type="important">
+                    <p>Important: Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.</p>
+                  </tip-box>
                 </div>
                 <div>
                   <div>
                     <panel header=":muscle: Exercises" expandable="">
                       <div>
-                        <panel header=":lock::key: Refactoring">
+                        <panel header=":lock::key: Results of Refactoring">
                           <question>
-                            <p>Choose the correct statement</p>
+                            <p>Choose the correct statements</p>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Refactoring can improve understandability</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Refactoring can uncover bugs</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Refactoring can do all of the above</li>
                             </ul>
                             <div slot="answer">
-                              <p>e</p>
+                              <p>a, b, c, d</p>
                               <p>Explanation:</p>
                               <ul>
                                 <li>(a, b, c) Although the primary aim of refactoring is to improve internal code structure, there are other secondary benefits.</li>
@@ -372,7 +382,25 @@ send();
                         </panel>
                       </div>
                       <div>
-                        <panel header=":lock: Refactoring">
+                        <panel header=":lock::key: Do you agree with the following statement? Refactoring and regression testing">
+                          <question has-input="true">
+                            <p>Do you agree with the following statement? Justify your answer.</p>
+                            <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
+                            <div slot="hint">
+                              <p>There are two flaws in the given statement.</p>
+                            </div>
+                            <div slot="answer">
+                              <p>DISAGREE.</p>
+                              <ol>
+                                <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
+                                <li>Fixing bugs is technically not refactoring.</li>
+                              </ol>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock: Explain Refactoring">
                           <question has-input="">
                             <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                           </question>
@@ -386,7 +414,7 @@ send();
             </div>
             <panel header=":dart: Evidence" expanded="">
               <div>
-                <panel header=":lock: Refactoring">
+                <panel header=":lock: Explain Refactoring">
                   <question has-input="">
                     <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                   </question>
@@ -394,8 +422,14 @@ send();
               </div>
             </panel>
           </panel>
-          <panel type="danger" header=":trophy: Can use automated refactoring features of the IDE :star:" expandable="">
+          <panel type="warning" header=":trophy: Can use automated refactoring features of the IDE :star::star:" expandable="">
             <div>
+              <div>
+                <p>
+                  <panel src="/website\book\refactoring\what\full._include_.html" header=":mortar_board: %%Implementation &rarr; Refactoring &rarr; What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+              </div>
+              <p></p>
               <p><span class="dimmed"><strong><span>Tools → Intellij IDEA →
 </span></strong>
                 </span>
@@ -405,7 +439,16 @@ send();
               </div>
               <div id="main">
                 <div>
-                  <p>...</p>
+                  <div v-closeable="" alt="Videos: Automated refactoring using IDE">
+                    <p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code>select the code to refactor</code> → <code>find the refactoring in the context menu</code>                      or <code>use the keyboard shortcut</code>.</p>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/fg3Q5pt4E80" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                    <p>Here's another video explaining how to change a method signature as part of refactoring.</p>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/p6Tsw_3cXow" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </div>
+                  <p></p>
+                  <ul>
+                    <li><a href="https://www.jetbrains.com/help/idea/introduction-to-refactoring.html">Introduction to Refactoring (in Intellij IDEA)</a> : An article on refactorings available in Intellij IDEA.</li>
+                  </ul>
                 </div>
                 <div>
                   <div></div>
@@ -413,10 +456,11 @@ send();
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <p><strong>Acceptable</strong>: Ability to do some automated refactoring in the IDE.</p>
+              <p><strong>Submission</strong>: Demo during the tutorial.</p>
             </panel>
           </panel>
-          <panel type="danger" header=":trophy: Can apply some basic refactoring :star:" expandable="">
+          <panel type="info" header=":trophy: Can apply some basic refactoring :star::star::star:" expandable="">
             <div>
               <p><span class="dimmed"><strong><span>Implementation → Refactoring →
 </span></strong>
@@ -428,15 +472,13 @@ send();
               <div id="main">
                 <div>
                   <p>Given below are some more commonly used refactorings. A more comprehensive list is available at
-                    <popover effect="fade" placement="top">
-                      refactoring-catalog <span slot="content"><span></span></span>
-                    </popover>
-                  </p>
-                  <p><a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring:
-                    <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></p>
-                  <p>
-
-                    .</p>
+                    <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
+                  <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how">
+                    <div>
+                      <p><a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on
+                        refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></p>
+                    </div>
+                  </modal>
                   <ol>
                     <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
                     <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>
@@ -449,64 +491,19 @@ send();
                     <li><a href="https://refactoring.com/catalog/splitLoop.html">Split Loop</a></li>
                     <li><a href="https://refactoring.com/catalog/splitTemporaryVariable.html">Split Temporary Variable</a></li>
                   </ol>
-                  <tip-box type="info">
-                    <p>Tip: Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
-                  </tip-box>
-                  <tip-box type="important">
-                    <p>Important: Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.</p>
-                  </tip-box>
                 </div>
                 <div>
-                  <div>
-                    <panel header=":muscle: Exercises" expandable="">
-                      <div>
-                        <panel header=":lock::key: Do you agree with the following statement? Justify your answer.">
-                          <question has-input="true">
-                            <p>Do you agree with the following statement? Justify your answer.</p>
-                            <p>Statement: Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</p>
-                            <div slot="answer">
-                              <p>DISAGREE.</p>
-                              <ol>
-                                <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
-                                <li>Fixing bugs is technically not refactoring.</li>
-                              </ol>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                      <div>
-                        <panel header=":lock::key: Which one of these is not a refactoring listed in the catalog of refactorings given at www.refactoring.com?">
-                          <question>
-                            <p>Which one of these is not a refactoring listed in the catalog of refactorings given at <a href="http://www.refactoring.com">www.refactoring.com</a></p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Rename method</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Decompose conditional</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Remove whitespace</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Replace Magic Number with Symbolic Constant</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Reverse Conditional</li>
-                            </ul>
-                            <div slot="answer">
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Rename method</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Decompose conditional</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Remove whitespace</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Replace Magic Number with Symbolic Constant</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Reverse Conditional</li>
-                              </ul>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
+                  <div></div>
                 </div>
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <p><strong>Acceptable</strong>: Some commits that show some refactorings (not necessarily the ones in the list above) you have done.</p>
+              <p><strong>Suggested</strong>: Do some refactoring to the addressbook-level1 code. Remember to commit after each refactoring. The commit message should mention the refactoring you applied. e.g. <code>AddressBook.java: extrace foo() method</code></p>
+              <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
             </panel>
           </panel>
-          <panel type="info" header=":trophy: Can decide when to apply a given refactoring :star::star::star:" expandable="">
+          <panel type="success" header=":trophy: Can decide when to apply a given refactoring :star::star::star::star:" expandable="">
             <div>
               <p><span class="dimmed"><strong><span>Implementation → Refactoring →
 </span></strong>
@@ -517,9 +514,7 @@ send();
               </div>
               <div id="main">
                 <div>
-                  <p>Whether a refactoring improves or degrades the code depends on the situation. That is why some refactorings are ‘opposites’ of each other (e.g. <em>extract method vs inline method</em>).</p>
-                  <p>It is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control.</p>
-                  <p>How much refactoring is too much refactoring? It is too much refactoring when the benefits no longer justify the cost. The costs and the benefits depend on the context.</p>
+                  <p>We know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong>                    The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <em>extract method vs inline method</em>).</p>
                 </div>
                 <div>
                   <div>
@@ -528,16 +523,12 @@ send();
                         <panel header=":lock::key: ‘Extract method’ and ‘Inline method’ refactorings">
                           <question>
                             <p>‘Extract method’ and ‘Inline method’ refactorings</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. are opposites of each other.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. sounds like opposites but they are not.</li>
+                            <ul radio-group="yow2x" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="yow2x" type="radio"> a. are opposites of each other.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="yow2x" type="radio"> b. sounds like opposites but they are not.</label></li>
                             </ul>
                             <div slot="answer">
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. are opposites of each other.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. sounds like opposites but they are not.</li>
-                              </ul>
-                              <p>Explanation: Yes they are. Mentioned in the handout. Please refer to the handout to find why such opposites exist among recommended refactorings.</p>
+                              <p>a</p>
                             </div>
                           </question>
                         </panel>
@@ -549,13 +540,42 @@ send();
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <p>Give an example from any project (e.g. addressbook-level1) where a refactoring can be applied but you decide against it because it is not worth it.</p>
             </panel>
           </panel>
         </panel>
       </div>
-      <panel type="danger" header=":trophy: Can work with a 1KLoC code base :star:" expandable="">
+      <panel type="danger" header=":trophy: Can work with a 1KLoC code base :star: ==[Compulsory]==" expandable="">
         <panel header=":dart: Evidence" expanded="">
+          <tip-box type="important">
+            This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO (in Week 5):
+            <div>
+              <panel type="danger" header=":trophy: Can work with a 2KLoC code base :star: ==[Compulsory]==" expandable="">
+                <panel header=":dart: Evidence" expanded="">
+                  <p><strong>Acceptable</strong>: Evidence that you have worked with a code base larger than 2KLoC. <span class="dimmed">e.g. a project in a previous module or a pet project</span></p>
+                  <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span></p>
+                  <ul>
+                    <li>
+                      <p>The size of the enhancement does not matter.</p>
+                    </li>
+                    <li>
+                      <p>Remember to update all relevant documentation and tests.</p>
+                    </li>
+                    <li>
+                      <p>Follow the coding standard</p>
+                    </li>
+                    <li>
+                      <p>Write your code in the OOP style.</p>
+                      <tip-box type="tip">
+                        <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+                      </tip-box>
+                    </li>
+                  </ul>
+                  <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>].</p>
+                </panel>
+              </panel>
+            </div>
+          </tip-box>
           <p><strong>Acceptable</strong>: Evidence that you have worked with a code base larger than 1KLoC. <span class="dimmed">e.g. a project in a previous module or a pet project</span></p>
           <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1">AddressBook - Level1</a>] <span class="dimmed">e.g. add a new command</span></p>
           <ul>
@@ -566,15 +586,16 @@ send();
               <p>Remember to update all relevant documentation and tests.</p>
             </li>
             <li>
-              <p>Try to follow the coding standard and the procedural (not OOP) style of the code base.</p>
+              <p>Try to follow the coding standard</p>
             </li>
             <li>
-              <p>Note that you are allowed to reuse the code you write here in your final project, if applicable. <br><br></p>
-            </li>
-            <li>
-              <p>Submission: demo during tutorial.</p>
+              <p>Try to stay within the procedural (not OOP) style of the code base.</p>
+              <tip-box type="tip">
+                <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+              </tip-box>
             </li>
           </ul>
+          <p><strong>Submission</strong>: demo during tutorial.</p>
         </panel>
       </panel>
       <div>
@@ -594,7 +615,13 @@ send();
                     <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.</p>
                     <p>-- Martin Golding</p>
                   </blockquote>
-                  <p>{Explain why code quality is important}</p>
+                  <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. While there are many aspects to code quality such as security, efficiency, performance, etc., <strong>one of the most important aspects of code quality is <em>readability</em></strong>,
+                    i.e. how easy it is to read/understand the code.</p>
+                  <popover id="pop:production-code" title=":mag: Production Code" placement="top">
+                    <div slot="content">
+                      Code being used in an actual product with actual users
+                    </div>
+                  </popover>
                 </div>
                 <div>
                   <div></div>
@@ -602,7 +629,7 @@ send();
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <p>Not required.</p>
             </panel>
           </panel>
           <panel type="warning" header=":trophy: Can explain the need for following a standard :star::star:" expandable="">
@@ -616,9 +643,13 @@ send();
               </div>
               <div id="main">
                 <div>
-                  <p>A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel
-                    casing, etc.). It is important that the whole team/company use the same coding standard and that standard is commonly used in the industry. Doing so will make it easier for others to work with your code, be they members from the same
-                    team or transferred from another team/company. IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+                  <p><strong>One essential way to improve code readability is to follow a consistent style. That is why software engineers are often required to follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+                  <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening
+                    and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally
+                    consistent with typical industry practices. Doing so will make it easier for others to work with your code, be they members from the same team or transferred from another team/company.</p>
+                  <tip-box type="tip">
+                    <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+                  </tip-box>
                 </div>
                 <div>
                   <div>
@@ -627,20 +658,22 @@ send();
                         <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                           <question>
                             <p>What is the recommended approach regarding coding standards?</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Each developer should find a suitable coding standard and follow it in their coding.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A developer should find out the coding standards currently used by the project and follow them.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Coding standards are lame. Real programmers develop their own individual styles.</li>
+                            <ul radio-group="hlsbe" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hlsbe" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hlsbe" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hlsbe" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hlsbe" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                             </ul>
                             <div slot="answer">
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Each developer should find a suitable coding standard and follow it in their coding.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A developer should find out the coding standards currently used by the project and follow them.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Coding standards are lame. Real programmers develop their own individual styles.</li>
-                              </ul>
+                              <p>c</p>
                             </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock: What is the aim? What is the value?">
+                          <question has-input="">
+                            <p>What is the aim of using a coding standard? How does it help?</p>
                           </question>
                         </panel>
                       </div>
@@ -651,7 +684,13 @@ send();
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <div>
+                <panel header=":lock: What is the aim? What is the value?">
+                  <question has-input="">
+                    <p>What is the aim of using a coding standard? How does it help?</p>
+                  </question>
+                </panel>
+              </div>
             </panel>
           </panel>
           <panel type="warning" header=":trophy: Can follow simple mechanical style rules :star::star:" expandable="">
@@ -665,27 +704,7 @@ send();
               </div>
               <div id="main">
                 <div>
-                  <p>{Some simple style rules for Java}</p>
-                  <panel header="Basic Indentation" type="seamless" alt="indentation">
-                    <div>
-                      <div>
-                        <p><strong>Basic indentation should be 4 spaces (not tabs).</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nElements; i++) {
-    a[i] = <span class="hljs-number">0</span>;
-}
-</code></pre>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel header="Line Length" type="seamless" alt="line length">
-                    <div>
-                      <div>
-                        <p><strong>Lines should be no longer than 110 (soft limit) - 120 chars (hard limit).</strong></p>
-                        <p>Place the line breaks to improve readability. It is ok to exceed 110 char limit for a line, but not by too much. You can configure Eclipse to break lines after 110 chars, but sometimes the automatic line break does not give readability.
-                          In such cases, you can decide where to put the line break to have best readability.</p>
-                      </div>
-                    </div>
-                  </panel>
+                  <p>Go through the <a href="https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md">provided Java coding standard</a> and learn the <em>basic</em> style rules.</p>
                 </div>
                 <div>
                   <div></div>
@@ -693,7 +712,10 @@ send();
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
+              <p><strong>Suggested</strong>: Go through the <a href="https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules
+                in local copy of addressbook-level1 code base. Commit after each fix.</p>
+              <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
             </panel>
           </panel>
           <panel type="info" header=":trophy: Can follow intermediate style rules :star::star::star:" expandable="">
@@ -707,30 +729,24 @@ send();
               </div>
               <div id="main">
                 <div>
-                  <p>{Some intermediate style rules for Java}</p>
+                  <p>Go through the <a href="https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
                 </div>
                 <div>
                   <div>
                     <panel header=":muscle: Exercises" expandable="">
                       <div>
-                        <panel header=":lock::key: According to the given Java coding standard, which one of these is not a good name?">
+                        <panel header=":lock::key: Unsuitable variable name">
                           <question>
                             <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. integer variable name: totalPeople</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. boolean variable name: checkWeight</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. method name (returns integer): getPeopleCount</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. method name (returns boolean): isValidAddress</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. String variable name: description</li>
+                            <ul radio-group="fbdaz" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fbdaz" type="radio"> a. integer variable name: totalPeople</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fbdaz" type="radio"> b. boolean variable name: checkWeight</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fbdaz" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fbdaz" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fbdaz" type="radio"> e. String variable name: description</label></li>
                             </ul>
                             <div slot="answer">
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. integer variable name: totalPeople</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. boolean variable name: checkWeight</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. method name (returns integer): getPeopleCount</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. method name (returns boolean): isValidAddress</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. String variable name: description</li>
-                              </ul>
+                              <p>b</p>
                               <p>Explanation: checkWeight is an action. Naming variables as actions makes the code harder to follow. isWeightValid may be a better name.</p>
                             </div>
                           </question>
@@ -743,7 +759,7 @@ send();
               </div>
             </div>
             <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
+              <p>Similar to [🏆 Can follow simple mechanical style rules] above, but also fix violations of <em>intermediate</em> style rules.</p>
             </panel>
           </panel>
         </panel>

@@ -30,7 +30,13 @@
           <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.</p>
           <p>-- Martin Golding</p>
         </blockquote>
-        <p>{Explain why code quality is important}</p>
+        <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. While there are many aspects to code quality such as security, efficiency, performance, etc., <strong>one of the most important aspects of code quality is <em>readability</em></strong>,
+          i.e. how easy it is to read/understand the code.</p>
+        <popover id="pop:production-code" title=":mag: Production Code" placement="top">
+          <div slot="content">
+            Code being used in an actual product with actual users
+          </div>
+        </popover>
       </div>
     </div>
     <h2 id="guideline-maximise-readability">Guideline: Maximise Readability</h2>
@@ -340,9 +346,13 @@ exit();
         </div>
       </tip-box>
       <div>
-        <p>A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing,
-          etc.). It is important that the whole team/company use the same coding standard and that standard is commonly used in the industry. Doing so will make it easier for others to work with your code, be they members from the same team or transferred
-          from another team/company. IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+        <p><strong>One essential way to improve code readability is to follow a consistent style. That is why software engineers are often required to follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+        <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and
+          closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally consistent
+          with typical industry practices. Doing so will make it easier for others to work with your code, be they members from the same team or transferred from another team/company.</p>
+        <tip-box type="tip">
+          <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+        </tip-box>
       </div>
     </div>
     <div>
@@ -355,27 +365,7 @@ exit();
         </div>
       </tip-box>
       <div>
-        <p>{Some simple style rules for Java}</p>
-        <panel header="Basic Indentation" type="seamless" alt="indentation">
-          <div>
-            <div>
-              <p><strong>Basic indentation should be 4 spaces (not tabs).</strong></p>
-              <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nElements; i++) {
-    a[i] = <span class="hljs-number">0</span>;
-}
-</code></pre>
-            </div>
-          </div>
-        </panel>
-        <panel header="Line Length" type="seamless" alt="line length">
-          <div>
-            <div>
-              <p><strong>Lines should be no longer than 110 (soft limit) - 120 chars (hard limit).</strong></p>
-              <p>Place the line breaks to improve readability. It is ok to exceed 110 char limit for a line, but not by too much. You can configure Eclipse to break lines after 110 chars, but sometimes the automatic line break does not give readability.
-                In such cases, you can decide where to put the line break to have best readability.</p>
-            </div>
-          </div>
-        </panel>
+        <p>Go through the <a href="https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md">provided Java coding standard</a> and learn the <em>basic</em> style rules.</p>
       </div>
     </div>
     <div>
@@ -388,7 +378,7 @@ exit();
         </div>
       </tip-box>
       <div>
-        <p>{Some intermediate style rules for Java}</p>
+        <p>Go through the <a href="https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
       </div>
     </div>
     <h2 id="guideline-name-well">Guideline: Name Well</h2>
