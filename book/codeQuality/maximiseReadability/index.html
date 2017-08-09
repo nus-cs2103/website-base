@@ -28,12 +28,11 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability. This is because in any non-trivial team project, team members expect their code to be read, understood,
-              and modified by other developers later on. Here we interpret ‘good quality code’ primarily as code that is easy for developers to work with.</p>
+            <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood,
+              and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
             <p>The two code samples given below achieve the same functionality, but one is easier to read.</p>
-            <p>{give more versions of the code, ask to find bug}</p>
             <tip-box>
-              <p>Example:</p>
+              <p>Example: Same function, different readability</p>
               <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
               <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
@@ -68,13 +67,7 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-              <p>Code comparison: same function, different quality</p>
             </tip-box>
-            <blockquote>
-              <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague.</p>
-              <p>-- Edsger Dijkstra</p>
-            </blockquote>
-            <p>Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
           </div>
           <div>
             <div></div>
@@ -118,6 +111,9 @@
                 <div>
                   <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate
                     the final value).</p>
+                  <blockquote>
+                    <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
+                  </blockquote>
                 </div>
               </div>
             </panel>
@@ -137,11 +133,11 @@
                       <tbody>
                         <tr>
                           <td><code>return 3.14236;</code></td>
-                          <td><code>return 9</code></td>
+                          <td><code>return PI</code></td>
                         </tr>
                         <tr>
-                          <td><code>return PI</code></td>
-                          <td><code>MAX_SIZE-1</code></td>
+                          <td><code>return 9</code></td>
+                          <td><code>return MAX_SIZE-1</code></td>
                         </tr>
                       </tbody>
                     </table>
@@ -250,7 +246,7 @@ processData();
 displayResult();
 </code></pre>
                   </tip-box>
-                  <tip-box type="primary">
+                  <tip-box type="info">
                     <div>
                       <p><strong>Abstraction</strong>:</p>
                       <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only
@@ -351,14 +347,14 @@ displayResult();
             <panel header="**Make the Happy Path Prominent**" type="seamless" alt="indentation">
               <div>
                 <div>
-                  <p>The happy path (i.e. the execution path taken when everything goes well) should be clear and prominent in your code. Restructure the code to make the happy path unintended. It is the ‘unusual’ cases that should be indented. Someone reading
-                    the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
+                  <p>The happy path (i.e. the execution path taken when everything goes well) should be clear and prominent in your code. Restructure the code to make the happy path unintended as much as possible. It is the ‘unusual’ cases that should be
+                    indented. Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
                   <tip-box>
                     <p>Example:</p>
                     <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {
+                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
-        start();
+        start();    <span class="hljs-comment">//main path</span>
         process();
         cleanup();
         exit();
@@ -366,11 +362,12 @@ displayResult();
         handleError();
     }
 } <span class="hljs-keyword">else</span> {
-    handleUnusualCase();
+    handleUnusualCase(); <span class="hljs-comment">//handling that unusual condition</span>
 }
 </code></pre>
+                    <p>In the code above,</p>
                     <ul>
-                      <li>Alternative conditions are separated from their handling.</li>
+                      <li>Unusual condition detection is separated from their handling.</li>
                       <li>Main path is nested deeply.</li>
                     </ul>
                     <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
@@ -389,9 +386,10 @@ process();
 cleanup();
 exit();
 </code></pre>
+                    <p>In the contrast, the above code</p>
                     <ul>
-                      <li>Alternative paths dealt with first so that the reader doesn't have to remember them for long.</li>
-                      <li>The main path is un-indented.</li>
+                      <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>
+                      <li>keeps the main path un-indented.</li>
                     </ul>
                   </tip-box>
                 </div>
