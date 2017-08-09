@@ -4,7 +4,7 @@
   <include src="../../book/codeQuality/maximiseReadability/introduction/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Not required.
 
   </panel>
 </panel>
@@ -13,7 +13,9 @@
   <include src="../../book/codeQuality/maximiseReadability/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Evidence of applying these guidelines to some code (e.g. to addressbook-level1). i.e. for each guideline, have either 
+* a commit showing how the application of the guidelines required a change to the code
+* a piece of code that you identified as clearly following the guideline (and explain how the code would be if the guideline was not followed).
 
   </panel>
 </panel>
@@ -22,7 +24,7 @@
   <include src="../../book/codeQuality/maximiseReadability/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Similar to the above LO [:trophy: Can follow basic guidelines for improving readability]
 
   </panel>
 </panel>
@@ -31,7 +33,7 @@
   <include src="../../book/codeQuality/maximiseReadability/advanced/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Similar to the above LO [:trophy: Can follow basic guidelines for improving readability]
 
   </panel>
 </panel>
