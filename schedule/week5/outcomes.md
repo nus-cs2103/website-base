@@ -21,13 +21,30 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can work with a 2KLoC code base :star:" expandable>
+<div id="lo-2kloc">
+<panel type="danger" header=":trophy: Can work with a 2KLoC code base :star: ==[Compulsory]==" expandable>
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Evidence that you have worked with a code base larger than 2KLoC. %%e.g. a project in a previous module or a pet project%%
+
+**Suggested**: Do an enhancement to [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]  %%e.g. add a new command%%
+
+* The size of the enhancement does not matter.
+* Remember to update all relevant documentation and tests.
+* Follow the coding standard
+* Write your code in the OOP style.
+
+  <tip-box type="tip">
+  
+  Note that you can reuse the code you write here in your final project, if applicable.
+ 
+  </tip-box>
+
+**Submission**: Create a PR against [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)].
 
   </panel>
 </panel>
+</div>
 
 <!-- ==================================================================================================== -->
 
