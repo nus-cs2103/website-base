@@ -4,7 +4,7 @@
   <include src="../../book/refactoring/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="../../book/refactoring/what/q-essay-explain.md" />
 
   </panel>
 </panel>
