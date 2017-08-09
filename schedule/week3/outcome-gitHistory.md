@@ -22,7 +22,11 @@
   <include src="../../book/gitAndGithub/tag/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Any commit you tagged in any repo.
+
+**Suggested**: Follow steps in the LO. 
+
+**Submission**: Show the tagged commit to the tutor during the tutorial.
 
   </panel>
 </panel>
@@ -31,7 +35,7 @@
   <include src="../../book/gitAndGithub/stash/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Submission**: Demo stashing.
 
   </panel>
 </panel>
