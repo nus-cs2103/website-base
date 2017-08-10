@@ -2,18 +2,13 @@
 
 <panel type="warning" header=":trophy: Can explain the need for avoiding error-prone shortcuts :star::star:" expandable>
   <include src="../../book/codeQuality/avoidShortcuts/introduction/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
 </panel>
 
 <panel type="warning" header=":trophy: Can follow basic guidelines for avoiding unsafe shortcuts :star::star:" expandable>
   <include src="../../book/codeQuality/avoidShortcuts/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="outcome-readability.md#common-evidence" />
 
   </panel>
 </panel>
@@ -23,7 +18,7 @@
   <include src="../../book/codeQuality/avoidShortcuts/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Similar to the previous LO.
 
   </panel>
 </panel>
