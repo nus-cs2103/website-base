@@ -13,5 +13,5 @@ Each lecture consists of two sections:
 
 **Handouts**: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the [Textbook]({{baseUrl}}/book/index.html) section and are also hyperlinked from the [Schedule Page]({{baseUrl}}/schedule/index.html).  
 
-**Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. Tey are only an aid for lecture delivery. Slides will be uploaded *after* the lecture.
+**Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded *after* the lecture.
 
