@@ -76,11 +76,15 @@
                 <tabs>
                   <tab header=":abc:">
                     Some textual description of X
-                    <p></p>
+                    <p>
+                      <hr>
+                    </p>
                   </tab>
                   <tab header=":tv:">
                     <p>Video describing X</p>
-                    <p></p>
+                    <p>
+                      <hr>
+                    </p>
                   </tab>
                 </tabs>
               </tip-box>
@@ -568,9 +572,11 @@
                             <p>-- [adapted from
                               <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
                           </blockquote>
+                          <hr>
                         </tab>
                         <tab header=":tv:">
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                          <hr>
                         </tab>
                       </tabs>
                       <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
@@ -665,9 +671,11 @@
                           <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred
                             to as the <em>working directory</em> of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working directory.</p>
                           <p>You can have multiple repos in your computer, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
+                          <hr>
                         </tab>
                         <tab header=":tv:">
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                          <hr>
                         </tab>
                       </tabs>
                     </div>
@@ -731,6 +739,7 @@
                             <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
                             <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
                           </div>
+                          <hr>
                         </tab>
                         <tab header="CLI">
                           <div>
@@ -757,6 +766,7 @@ Initialized empty Git repository in c:/repos/things/.git/
 nothing to commit (create/copy files and use &quot;git add&quot; to track)
 </code></pre>
                           </div>
+                          <hr>
                         </tab>
                       </tabs>
                     </div>
@@ -787,11 +797,15 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                         <tab header=":abc:">
                           <p><strong><em>Committing</em> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                           <p><strong>When we are ready to commit, we should first <em>stage</em> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
-                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
                         </tab>
                         <tab header=":tv:">
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
                         </tab>
                       </tabs>
                       <h5 id="identifying-points-in-history">Identifying Points in History</h5>
@@ -838,6 +852,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                             <p>The file is shown as ‘unstaged’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
                             <p></p>
                           </div>
+                          <hr>
                         </tab>
                         <tab header="CLI">
                           <div>
@@ -857,6 +872,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
 </code></pre>
                             <p></p>
                           </div>
+                          <hr>
                         </tab>
                       </tabs>
                       <p>Although git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
@@ -878,6 +894,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                             <p><code>fruits.txt</code> should appear in the <code>Staged files</code> panel now.’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_3.png" height="180">
                             <p></p>
                           </div>
+                          <hr>
                         </tab>
                         <tab header="CLI">
                           <div>
@@ -898,6 +915,7 @@ git status
 </code></pre>
                             <p></p>
                           </div>
+                          <hr>
                         </tab>
                       </tabs>
                       <p>Next, we can commit the staged version of <code>fruits.txt</code></p>
@@ -907,6 +925,7 @@ git status
                             <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p><img src="/website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
                             <p></p>
                           </div>
+                          <hr>
                         </tab>
                         <tab header="CLI">
                           <div>
@@ -924,6 +943,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
 </p></code></pre>
                             <p></p>
                           </div>
+                          <hr>
                         </tab>
                       </tabs>
                       <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which
@@ -976,6 +996,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <pre class="hljs"><code>temp.text
 </code></pre>
                           </div>
+                          <hr>
                         </tab>
                         <tab header="CLI">
                           <div>
@@ -983,6 +1004,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <pre class="hljs"><code>temp.text
 </code></pre>
                           </div>
+                          <hr>
                         </tab>
                       </tabs>
                       <p>The <code>.gitignore</code> file tells Git which files to ignore when tracking revision history. That file itself can be either revision controlled or ignored.</p>
@@ -1081,13 +1103,17 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                           <ul>
                             <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
                           </ul>
-                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
                         </tab>
                         <tab header=":tv:">
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
                         </tab>
                       </tabs>
                       <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
@@ -1262,10 +1288,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <panel header=":lock::key: Regression Testing defintion T/F?">
                               <question>
                                 <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                                <ul radio-group="agtnv" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="agtnv" type="radio"> a. True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="agtnv" type="radio"> b. False</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="agtnv" type="radio"> c. Partially true</label></li>
+                                <ul radio-group="j8e3i" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="j8e3i" type="radio"> a. True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="j8e3i" type="radio"> b. False</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="j8e3i" type="radio"> c. Partially true</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c.</p>
@@ -1311,10 +1337,14 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                         <tab header=":abc:">
                           <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run
                             tests repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
-                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
                         </tab>
                         <tab header=":tv:"><iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe>
-                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
                         </tab>
                       </tabs>
                     </div>

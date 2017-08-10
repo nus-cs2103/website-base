@@ -40,12 +40,14 @@
                   <div>
                     <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                   </div>
+                  <hr>
                 </tab>
                 <tab header="CLI">
                   <div>
                     <p>You can use the <code>clone</code> command to clone a repo.</p>
                     <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
                   </div>
+                  <hr>
                 </tab>
               </tabs>
             </div>
@@ -67,6 +69,7 @@
           <p>Note the following (cross refer the screenshot above):</p>
           <p>(a) The local repo is now at this commit, marked by the <code>master</code> label.<br> (b) <code>origin/master</code> shows what is the latest commit in the <code>master</code> branch in the remote repo.</p>
         </div>
+        <hr>
       </tab>
       <tab header="CLI">
         <div>
@@ -74,6 +77,7 @@
           <pre class="hljs"><code>git reset --hard HEAD~2
 </code></pre>
         </div>
+        <hr>
       </tab>
     </tabs>
     <p>Now, your local repo state is exactly how it would be if you had cloned the repo 2 commits ago, as if somebody has added two more commits to the remote repo since you cloned it. To get those commits to your local repo (i.e. to sync your local repo
@@ -86,11 +90,13 @@
           <p>Now you should see something like this where <code>master</code> and <code>origin\master</code> are both pointing the same commit.</p><img src="/website/book/gitAndGithub/pull/images/sourcetree_4.png" height="100">
           <p></p>
         </div>
+        <hr>
       </tab>
       <tab header="CLI">
         <div>
           <p><code>git pull origin</code></p>
         </div>
+        <hr>
       </tab>
     </tabs>
   </div>
