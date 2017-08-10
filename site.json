@@ -1597,16 +1597,8 @@
       "title": "CS2103/T Textbook - Coding Best Practices: [Practice] Minimise Scope of Variables"
     },
     {
-      "src": "book/codeQuality/practices/preferStatelessMethods/index.md",
-      "title": "CS2103/T Textbook - Coding Best Practices: [Practice] Prefer Stateless Methods"
-    },
-    {
       "src": "book/codeQuality/practices/minimiseCodeDuplication/index.md",
       "title": "CS2103/T Textbook - Coding Best Practices: [Practice] Minimise Code Duplication"
-    },
-    {
-      "src": "book/codeQuality/practices/deleteTemporaryCode/index.md",
-      "title": "CS2103/T Textbook - Coding Best Practices: [Practice] Delete Temporary Code"
     },
     {
       "src": "book/codeQuality/practices/dontRepeatObvious/index.md",
