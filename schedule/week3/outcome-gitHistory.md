@@ -2,11 +2,6 @@
 
 <panel type="info" header=":trophy: Can explain using history :star::star::star:" expandable>
   <include src="../../book/revisionControl/usingHistory/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-Not required.
-
-  </panel>
 </panel>
 
 <panel type="info" header=":trophy: Can load a specific version of a Git repo :star::star::star:" expandable>

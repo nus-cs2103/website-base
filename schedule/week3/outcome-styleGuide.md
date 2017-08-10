@@ -2,11 +2,6 @@
 
 <panel type="warning" header=":trophy: Can explain the importance of code quality :star::star:" expandable>
   <include src="../../book/codeQuality/introduction/basic/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-Not required.
-
-  </panel>
 </panel>
 
 <panel type="warning" header=":trophy: Can explain the need for following a standard :star::star:" expandable>

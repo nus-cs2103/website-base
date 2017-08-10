@@ -16,11 +16,7 @@
 
 <panel type="warning" header=":trophy: Can explain test automation :star::star:" expandable>
   <include src="../../book/testing/testAutomation/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-    
-Not required.
 
-  </panel>
 </panel>
 
 

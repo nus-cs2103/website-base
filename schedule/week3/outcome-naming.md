@@ -2,18 +2,13 @@
 
 <panel type="warning" header=":trophy: Can explain the need for good names in code :star::star:" expandable>
   <include src="../../book/codeQuality/nameWell/introduction/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
 </panel>
 
 <panel type="warning" header=":trophy: Can follow basic guidelines for naming :star::star:" expandable>
   <include src="../../book/codeQuality/nameWell/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="outcome-readability.md#common-evidence" />
 
   </panel>
 </panel>
@@ -23,7 +18,7 @@
   <include src="../../book/codeQuality/nameWell/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Similar to the previous LO.
 
   </panel>
 </panel>

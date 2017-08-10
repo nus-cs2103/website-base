@@ -2,11 +2,6 @@
 
 <panel type="danger" header=":trophy: Can explain remote repositories :star:" expandable>
   <include src="../../book/revisionControl/remoteRepositories/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-Not required.
-
-  </panel>
 </panel>
 
 <panel type="danger" header=":trophy: Can clone a remote repo :star:" expandable>

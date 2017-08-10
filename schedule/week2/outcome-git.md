@@ -25,11 +25,6 @@ Have a local repo that you created.
 
 <panel type="danger" header=":trophy: Can explain saving history :star:" expandable>
   <include src="../../book/revisionControl/savingHistory/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-Not required.
-
-  </panel>
 </panel>
 
 <panel type="danger" header=":trophy: Can commit using Git :star:" expandable>
