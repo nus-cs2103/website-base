@@ -26,7 +26,11 @@ Not required.
   <include src="../../book/gitAndGithub/pull/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Any evidence of pulling from a remote Git repo.
+
+**Suggested**: Follow the steps in the LO details. 
+
+**Submission**: Demo a pull operation to the tutor.
 
   </panel>
 </panel>
@@ -35,7 +39,11 @@ Not required.
   <include src="../../book/gitAndGithub/push/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Any evidence of pushing to a remote Git repo.
+
+**Suggested**: Follow the steps in the LO details. 
+
+**Submission**: Show pushed commits in the remote repo.
 
   </panel>
 </panel>

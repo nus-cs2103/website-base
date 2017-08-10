@@ -4,7 +4,7 @@
   <include src="../../book/revisionControl/usingHistory/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Not required.
 
   </panel>
 </panel>
@@ -13,7 +13,11 @@
   <include src="../../book/gitAndGithub/checkout/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Show how to traverse history using any local repo.
+
+**Suggested**: Show how to traverse history using the steps given in the LO above.
+
+**Submission**: Demo during the tutorial.
 
   </panel>
 </panel>
