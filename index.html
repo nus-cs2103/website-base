@@ -208,7 +208,7 @@
               <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
               <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
               <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website/book/index.html">Textbook</a>                section and are also hyperlinked from the <a href="/website/schedule/index.html">Schedule Page</a>.</p>
-              <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. Tey are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
+              <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
             </div>
           </panel>
           <p></p>
@@ -217,7 +217,7 @@
           <panel type="warning" header="%%Admin &raquo;%% Learning Outcomes :star::star:">
             <div>
               <p>This module is organized primarily around a list of Learning Outcomes.</p>
-              <p>Each week has a suggested list of LOs. They are categorized using using the following star-rating system:</p>
+              <p>Each week has a suggested list of LOs. They are categorized using the following star-rating system:</p>
               <div>
                 <panel type="danger" header=":star:" expanded="" no-close="" no-switch="">
                   <p>The LOs you need to achieve just to keep up with the module. We recommend you to <mark>achieve these LOs if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).
@@ -926,7 +926,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                       </tabs>
                       <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which
                         the commits go on by default.</p>
-                      <p>Do some changes to fruits.txt (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_6.png"
+                      <p>Do some changes to <code>fruits.txt</code> (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_6.png"
                         height="180">
                       <p></p>
                       <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_7.png"
@@ -1012,12 +1012,12 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   </div>
                   <div id="main">
                     <div>
-                      <p><strong>Professional software engineers often write code using sophisticated editors called <em>Integrated Development Environments (IDEs)</em>. IDEs support all development-related work within the same tool.</strong></p>
+                      <p><strong>Professional software engineers often write code using <em>Integrated Development Environments (IDEs)</em>. IDEs support all development-related work within the same tool.</strong></p>
                       <p>An IDE generally consists of:</p>
                       <ul>
                         <li>A source code editor that includes features such as syntax coloring, auto-completion, easy code navigation, error highlighting, and code-snippet generation.</li>
                         <li>A compiler and/or an interpreter (together with other build automation support) that facilitates the compilation/linking/running/deployment of a program.</li>
-                        <li>A debugger that allows program errors to be located.</li>
+                        <li>A debugger that allows the developer to execute the program one step at a time to observe the run-time behavior in order to locate bugs.</li>
                         <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, simulation of the target runtime platform, and modeling support.</li>
                       </ul>
                       <p>Examples of popular IDEs: Eclipse, Intellij IDEA, NetBeans, Visual Studio, DevC++, DrJava, XCode</p>
@@ -1158,8 +1158,8 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                       <tip-box>
                         <p>📦 Example: A minimal test case for testing a browser:</p>
                         <ul>
-                          <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load ‘longfile.html’ located in the ‘test data’ folder.</li>
-                          <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading ‘longfile.html’.</li>
+                          <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load <code>longfile.html</code> located in the <code>test data</code> folder.</li>
+                          <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading <code>longfile.html</code>.</li>
                         </ul>
                       </tip-box>
                       <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
@@ -1188,8 +1188,8 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                       <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
                         <p>Here is another definition of testing:</p>
                         <blockquote>
-                          <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain.</p>
-                          <p>-– source: SWEBOKv3</p>
+                          <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain.
+                            <sub>-– source: <a href="https://www.computer.org/web/swebok/v3">Software Engineering Book of Knowledge V3</a></sub></p>
                         </blockquote>
                         <p>Some things to note (indicated by keywords in the above definition):</p>
                         <ul>
@@ -1258,10 +1258,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                             <panel header=":lock::key: Regression Testing defintion T/F?">
                               <question>
                                 <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                                <ul radio-group="pbig5" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="pbig5" type="radio"> a. True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="pbig5" type="radio"> b. False</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="pbig5" type="radio"> c. Partially true</label></li>
+                                <ul radio-group="aek5s" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="aek5s" type="radio"> a. True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="aek5s" type="radio"> b. False</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="aek5s" type="radio"> c. Partially true</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c.</p>
