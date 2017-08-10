@@ -73,10 +73,6 @@
       "title": "CS2103/T Textbook - Intellij IDEA: Debugging - Basic"
     },
     {
-      "src": "book/intellij/debuggingIntermediate/index.md",
-      "title": "CS2103/T Textbook - Intellij IDEA: Debugging - Intermediate"
-    },
-    {
       "src": "book/intellij/refactoring/index.md",
       "title": "CS2103/T Textbook - Intellij IDEA: Refactoring"
     },
