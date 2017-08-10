@@ -6,11 +6,14 @@ Create a personal GitHub account.
   * Specify your full name. 
   * Upload a suitable profile photo (i.e. a recent photo of your face). 
 
-<Panel header="**Why am I being pushed to complete my GitHub profile?**" expandable>
+<Panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable>
 
 The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.
 
 </Panel>
+<panel header="%%Admin &raquo; Choosing a profile photo%%" expandable>
+  <include src="profilePhoto.md" />
+</panel>
 
 <div id="tutorial-pr-instructions">
 
