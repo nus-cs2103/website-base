@@ -1098,9 +1098,15 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <h1 id="tools">Tools</h1>
   <div id="admin-tools">
     <div><img src="/website/admin/images/toolsList.png" style="width: 700px">
+      <p><strong>Collaboration platform</strong>: You are <mark><em>required to</em> use GitHub</mark> as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="/website/admin/index.html#admin-appendixE-github">Appendix E</a>        for more info on how to setup and use GitHub for your project.</p>
       <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to practice how
         to communicate technical things in written form.</p>
-      <p><strong>Collaboration platform</strong>: You are <mark><em>required to</em> use GitHub</mark> as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="#admin-appendixE-github">Appendix E</a>        for more info on how to setup and use GitHub for your project.</p>
+      <ul>
+        <li>Instead of IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S1/forum/issues">github/nus-cs2103-AY1718/forum</a></mark>.</li>
+        <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103.slack.com">https://nus-cs2103.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address ending in <code>@nus.edu.sg</code>,
+          <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
+        <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
+      </ul>
       <p><strong>IDE</strong>: You are recommended to use <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> for module-related programming work. You may use the community edition (free) or the ultimate edition (free for students). While the use
         of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk.</p>
       <p><strong>Revision control</strong>: You are <mark><em>required to</em> use Git</mark>. Other revision control software are not allowed.<br> The recommended GUI client for Git is <a href="https://www.sourcetreeapp.com/">SourceTree</a> (which comes
@@ -1788,25 +1794,145 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <li>Specify your full name.</li>
         <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
       </ul>
-      <panel header="**Why am I being pushed to complete my GitHub profile?**" expandable="">
+      <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
         <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just
           for the module.</p>
+      </panel>
+      <panel header="%%Admin &raquo; Choosing a profile photo%%" expandable="">
+        <div>
+          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+            of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
       </panel>
       <div id="tutorial-pr-instructions">
         <h2 id="submitting-pull-requests-for-tutorials">Submitting Pull Requests for tutorials</h2>
         <ol>
-          <li>Fork the repo to your personal GitHub account, if you haven't done so already.</li>
-          <li>Create a branch named after tutorial activity e.g. <code>T2A2</code><br><mark>Remember to switch to master branch before creating the new branch.</mark></li>
-          <li>Commit your changes to that branch. Push to your fork.</li>
-          <li>Create a Pull Request against the master branch of the repo<br><code>https://github.com/**nus-cs2103-AY1718S1**/{repo_name}</code><br> e.g. <code>https://github.com/nus-cs2103-AY1718S1/addressbook-level1</code><br><mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark><br>
-            <img
-              src="images/PrDetails.png" alt=""><br> PR name should be: <code>[ACTIVITY_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[T3A2][W09-A1]James Yong</code><br> Note that our tutorial IDs are different from those shown in
-              CORS/IVLE. Refer to the 'Tutorial Schedule' in the 'Overview' section of the <a href="schedule.html">Schedule Page</a>.</li>
-          <li>Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br><img src="images/FilesChangedTab.png" alt=""></li>
-          <li>If the content of the PR is not as you expected, you can fix those problems in your local repo, commit, and push those new commits to the fork. The PR content will update automatically to match new commits. Alternatively, you can close that
-            PR and create a new one with the correct content.</li>
-          <li><mark>If your PR adapted/referred code from elsewhere</mark> (e.g. a stackoverflow post or a classmate's PR -- which is allowed, even encouraged), acknowledge the source in your PR description text. e.g. <code>Some code adapted from #2431 (I followed the same technique for parsing user command)</code></li>
-          <li>If the PR is not ready for review yet, add a comment <code>Work in progress</code>. When the PR is ready for review later, add a comment <code>Ready for review</code><br> If there is no comment, we assume the PR is ready for review.</li>
+          <li>
+            <p>Fork the repo to your personal GitHub account, if you haven't done so already.</p>
+          </li>
+          <li>
+            <p>Create a branch named after tutorial activity e.g. <code>T2A2</code><br><mark>Remember to switch to master branch before creating the new branch.</mark></p>
+          </li>
+          <li>
+            <p>Commit your changes to that branch. Push to your fork.</p>
+          </li>
+          <li>
+            <p>Create a Pull Request against the master branch of the repo<br><code>https://github.com/**nus-cs2103-AY1718S1**/{repo_name}</code><br> e.g. <code>https://github.com/nus-cs2103-AY1718S1/addressbook-level1</code><br><mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark><br>
+              <img
+                src="/website/admin/images/PrDetails.png" width="700">
+                PR name should be: <code>[ACTIVITY_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[T3A2][W09-A1]James Yong</code><br> Note that our tutorial IDs are different from those shown in
+                CORS/IVLE. Our tutorial IDs are given in the panel below.</p>
+          </li>
+        </ol>
+        <panel header="%%Schedule &raquo; Tutorial Schedule%%">
+          <div>
+            <p><strong>Outdated; To be updated soon...</strong></p>
+            <table class="markbind-table table">
+              <thead>
+                <tr>
+                  <th>Module</th>
+                  <th>Tutorial ID</th>
+                  <th>Time</th>
+                  <th>Venue</th>
+                  <th>Tutors (<a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">contact details</a>)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CS2103T</td>
+                  <td>W09</td>
+                  <td>Wed 0900</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103</td>
+                  <td>W10</td>
+                  <td>Wed 1900</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103T</td>
+                  <td>W13</td>
+                  <td>Wed 1300</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103T</td>
+                  <td>W14</td>
+                  <td>Wed 1400</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103T</td>
+                  <td>W15</td>
+                  <td>Wed 1500</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103T</td>
+                  <td>T09</td>
+                  <td>Thu 0900</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103</td>
+                  <td>T11</td>
+                  <td>Thu 1100</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103</td>
+                  <td>T15</td>
+                  <td>Thu 1500</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103</td>
+                  <td>T16</td>
+                  <td>Thu 1600</td>
+                  <td>COM1-B103</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103</td>
+                  <td>F12</td>
+                  <td>Fri 1200</td>
+                  <td>SR5 (COM1-0201)</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>CS2103T</td>
+                  <td>F14</td>
+                  <td>Fri 1400</td>
+                  <td>SR5 (COM1-0201)</td>
+                  <td>TBD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </panel>
+        <p></p>
+        <ol start="5">
+          <li>
+            <p>Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br><img src="images/FilesChangedTab.png" alt=""></p>
+          </li>
+          <li>
+            <p>If the content of the PR is not as you expected, you can fix those problems in your local repo, commit, and push those new commits to the fork. The PR content will update automatically to match new commits. Alternatively, you can close that
+              PR and create a new one with the correct content.</p>
+          </li>
+          <li>
+            <p><mark>If your PR adapted/referred code from elsewhere</mark> (e.g. a stackoverflow post or a classmate's PR -- which is allowed, even encouraged), acknowledge the source in your PR description text. e.g. <code>Some code adapted from #2431 (I followed the same technique for parsing user command)</code></p>
+          </li>
+          <li>
+            <p>If the PR is not ready for review yet, add a comment <code>Work in progress</code>. When the PR is ready for review later, add a comment <code>Ready for review</code> If there is no comment, we assume the PR is ready for review.</p>
+          </li>
         </ol>
       </div>
       <div id="organization-setup">
@@ -1818,7 +1944,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <li><mark>Organization name : <code>CS2103AUG2017-TEAM_ID</code></mark>. e.g.  <code>CS2103AUG2017-W09-B3</code></li>
           <li>Plan:  Open Source ($0/month)</li>
           <li>After that, the same person can add members to the organization:</li>
-          <li>Create a team called <code>developers</code> to your organization and give that team write permission.</li>
+          <li>Create a team called <code>developers</code> to your organization.</li>
           <li>Add your team members to the developers team.</li>
         </ul>
       </div>
@@ -1874,36 +2000,65 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
         <h3 id="using-issues">Using Issues:</h3>
         <ul>
-          <li>Record each of the user stories you plan to deliver as an issue in the issue tracker. e.g. <code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></li>
-          <li>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</li>
-          <li>When you start implementing a story, break it down to tasks. Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. e.g. <br> Good: Update class diagram in the project manual for v1.5<br> Bad (reasons:
-            not a one-person task, not small enough): Write the project manual</li>
-          <li>Write a descriptive title for the issue. <br> e.g. Add support for the 'undo' command to the parser.</li>
-          <li>There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. So the user story <code>Implementing parser</code>  is
-            too big because it cannot be done by a single person in a week. However,<code>Implementing parser support for adding of floating tasks</code> is of appropriate size.</li>
-          <li>Do not track things taken for granted. e.g., 'push code to repo' should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it
-            is ready. Those two need not be tracked as separate tasks.</li>
-          <li>Omit unnecessary details. In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is
-            enough. Similarly, labels such as 'priority' can be omitted if you think they don't help you.</li>
-          <li>Assign tasks to team members using the 'owner' field. At any point, there should be some ongoing tasks and some pending tasks against each team member.</li>
-          <li>Use status labels to indicate which tasks are completed, which are ongoing, and which are to be done by next milestone.</li>
+          <li>
+            <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong><span class="dimmed">e.g.</span><code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></p>
+          </li>
+          <li>
+            <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
+          </li>
+          <li>
+            <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g. <br> Good: Update class diagram in the project manual
+              for v1.5<br> Bad (reasons: not a one-person task, not small enough): Write the project manual</p>
+          </li>
+          <li>
+            <p><strong>Write a descriptive title for the issue.</strong><span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
+          </li>
+          <li>
+            <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
+          </li>
+          <li>
+            <p><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></p>
+          </li>
+          <li>
+            <p><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></p>
+          </li>
+          <li>
+            <p><strong>Do not track things taken for granted.</strong><span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+          </li>
+          <li>
+            <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal
+              description is enough. Similarly, labels such as 'priority' can be omitted if you think they don't help you.</p>
+          </li>
+          <li>
+            <p><strong>Assign tasks to team members using the 'owner' field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+          </li>
+          <li>
+            <p><strong>Use <code>status</code> labels to indicate the status of the issue.</strong> i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.</p>
+          </li>
         </ul>
         <div id="using-milestones">
           <h3 id="using-milestones">Using Milestones:</h3>
           <ul>
-            <li>Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</li>
-            <li>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</li>
-            <li>Note that you can change the milestone plan along the way as necessary.</li>
-            <li>IMPORTANT: To consider the milestone as 'reached', <mark>you should have the following done <em>before</em> the tutorial begins. 'Missed milestones' will count against the 'project management' component of your final grade</mark>:
-              <ul>
-                <li>A working product tagged with the correct tag (e.g. v1.2) and pushed to the main repo.</li>
-                <li>All tests passing on Travis.</li>
-                <li>Milestone updated to match the product.</li>
-                <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
-                <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
-              </ul>
+            <li>
+              <p>Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
+            </li>
+            <li>
+              <p>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</p>
+            </li>
+            <li>
+              <p>Note that you can change the milestone plan along the way as necessary.</p>
             </li>
           </ul>
+          <tip-box type="important">
+            <p>To consider the milestone as 'reached', <strong>you should have the following done <em>before</em> the tutorial begins. Missed milestones will count against the 'project management' component of your final grade</strong>:</p>
+            <ul>
+              <li>A working product tagged with the correct tag (e.g. v1.2) and pushed to the main repo.</li>
+              <li>All tests passing on Travis.</li>
+              <li>Milestone updated to match the product.</li>
+              <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
+              <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
+            </ul>
+          </tip-box>
         </div>
       </div>
       <div id="workflow">
@@ -1920,14 +2075,22 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <div>
       <p>If your team is facing difficulties due to differences in skill/motivation /availability among team members,</p>
       <ul>
-        <li>First, <mark>do not expect everyone to have the same skill/motivation level as you</mark>. It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone is entitled to
-          have their own priorities.</li>
-        <li>Second, <mark>don't give up</mark>. It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day 😃</li>
-        <li>Third, if you care about your grade and willing to work for it, you need to take initiative to turn the situation around or else the whole team is going to suffer. Don't hesitate to <mark>take charge</mark> if the situation calls for it. By doing
-          so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you
-          try.</li>
-        <li>Finally, don't feed angry or 'wronged'. Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility
-          to get others to contribute.</li>
+        <li>
+          <p><strong>First, do not expect everyone to have the same skill/motivation level as you.</strong> It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone is entitled
+            to have their own priorities.</p>
+        </li>
+        <li>
+          <p><strong>Second, don't give up.</strong> It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day 😃</p>
+        </li>
+        <li>
+          <p><strong>Third, if you care about your grade and willing to work for it, you need to take initiative</strong> to turn the situation around or else the whole team is going to suffer. Don't hesitate to <mark>take charge</mark> if the situation
+            calls for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse.
+            You won't know until you try.</p>
+        </li>
+        <li>
+          <p><strong>Finally, don't feed angry or 'wronged'.</strong> Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did.
+            It's not your responsibility to get others to contribute.</p>
+        </li>
       </ul>
       <p>Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It
         is still better than sinking the whole team together.</p>
