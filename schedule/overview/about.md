@@ -18,6 +18,7 @@ This Schedule Page is your main source of information for CS2103/T. You will nee
 
 <panel header="More info about using the textbook" expanded>
   <include src="../../book/about/usage.md#conventions"/>
+  <include src="../../book/about/usage.md#searching"/>
   <include src="../../book/about/usage.md#saving"/>
   <include src="../../book/about/usage.md#printing" name="Printing" dynamic/>
 </panel>
