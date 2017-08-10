@@ -3521,15 +3521,26 @@ studentList.addUi(statusUi);
           </div>
         </tip-box>
         <div>
-          <p><em>Debugging</em> is the process of discovering defects in the program. Here are some approaches to debugging:</p>
+          <p><strong><em>Debugging</em> is the process of discovering defects in the program.</strong> Here are some approaches to debugging:</p>
           <ul>
-            <li><strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to output variable values, as well as program states. While this approach is simple, it incurs extra
-              effort when inserting and removing the print statements. Moreover, unnecessary program modification increases the risk of introducing errors into the program. These print statements, if not promptly removed, may even appear unexpectedly
-              in the production version. Therefore, this approach is not recommended.</li>
-            <li><strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach has its merits. However, it is a difficult, time consuming, and error-prone technique. Indeed, the effectiveness of manual debugging is
-              highly dependent on one’s programming proficiency.</li>
-            <li><strong>Using a debugger</strong>: A debugger tool allows us to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. This is the recommended
-              approach for debugging.</li>
+            <li>
+              <p><strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
+                This approach is not recommended due to these reasons.</p>
+              <ul>
+                <li>Incurs extra effort when inserting and removing the print statements.</li>
+                <li>Unnecessary program modifications increases the risk of introducing errors into the program.</li>
+                <li>These print statements, if not promptly removed, may even appear unexpectedly in the production version.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than a 'quick try') due to these reasons:</p>
+              <ul>
+                <li>It is difficult, time consuming, and error-prone technique. If you didn't spot the error while writing code, you might not spot the error when reading code too.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -9784,6 +9795,8 @@ A negative test case: i = null;
             </tab>
             <tab header=":tv:">
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
               <p></p>
             </tab>
           </tabs>
@@ -9827,7 +9840,10 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>...</p>
+          <div v-closeable="" alt="video: Intellij shortcuts">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KsVWdGOnHZU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/EvXpgL2iho4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
         </div>
       </div>
       <div>
@@ -9840,20 +9856,13 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>{Simple Break points, Stepping through code }</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h4 id="debugging-intermediate-three">Debugging: Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can use sophisticated breakpoints optimize debugging <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          <div v-closeable="" alt="video: debugging in Intellij">
+            <p>This video (from LaunchCode) gives a pretty good explanation of how to use the Intellij IDEA debugger.</p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
           </div>
-        </tip-box>
-        <div>
-          <p>{Other types of break points}</p>
+          <ul>
+            <li><a href="https://www.jetbrains.com/help/idea/debugger-basics.html">Intellij IDEA Documentation: Debugging Basics</a> - Can be used as a reference document when you want to recall how to use a debugging feature.</li>
+          </ul>
         </div>
       </div>
       <div>
@@ -10250,7 +10259,7 @@ index 15b57f7..17f4528 100644
           </div>
         </tip-box>
         <div>
-          <p><strong>You can use the git's <mark><em>stash</em></mark> temporarily shelve (or stash) changes you've made to your working copy</strong> so you can work on something else, and then come back and re-apply them later on. <sub> -- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a>]</sub></p>
+          <p><strong>You can use the git's <mark><em>stash</em></mark> temporarily shelve (or stash) changes you've made to your working copy</strong> so you can work on something else, and then come back and re-apply them later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
           <tabs>
             <tab header="Source Tree">
               <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
