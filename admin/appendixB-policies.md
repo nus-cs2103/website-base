@@ -43,13 +43,13 @@ Only if you fail to earn full marks for participation we will consider giving an
 
 Similarly we expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.
 
-<Panel header="Email etiquette: ALWAYS respond to direct emails" expanded>
+<panel header="Email etiquette: ALWAYS respond to direct emails" expanded>
 
 Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met the prof along the corridor, said 'Hi prof, good morning' and the prof walked away without saying anything back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails.  It doesn't take long to type "Noted. Thanks" and hit 'send'.
 
 The promptness of a reply is even more important when the email is requesting you for something that you cannot provide. Imagine you wrote to the prof requesting a reference letter and the prof did not respond at all because he/she did not want to give you one; You'll be quite frustrated because you wouldn't know whether to look for another prof or wait longer for a response. Saying 'No' is fine and in fact a necessary part of professional life; but saying nothing is not acceptable. If you didn't reply, the sender will not even know whether you received the email.
 
-</Panel>
+</panel>
 
 </div>
 
