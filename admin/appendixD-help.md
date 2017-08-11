@@ -1,9 +1,9 @@
 <img src="{{baseUrl}}/admin/images/how to get help.png" width="200px"><br/>
 
 
-In this module, we want to move you away from 'hand holding'. We want you to learn how to solve problems on your own. This is a vital survival skill in the industry and it needs practice.
+**We want to move you away from 'hand holding' and make you learn how to solve problems on your own.** This is a vital survival skill in the industry and it needs practice.
 
-Whether it is a technical problem (e.g. error when using the IDE) or a doubt about a concept (e.g. what is the difference between scripted testing and exploratory testing?) the teaching team is happy to work with you when you look for a solution/answer. But we do not do it for you. Do not fire off an ‘SOS’ email to the lecturer/tutor right away. We discourage unconditional direct help because we want you to learn to help yourself. Yes, we believe in ‘tough love’.
+Whether it is a technical problem %%(e.g. error when using the IDE)%% or a doubt about a concept %%(e.g. what is the difference between scripted testing and exploratory testing?)%% **we the teaching team are happy to work _with_ you when you look for a solution/answer, but we do not do it _for_ you.** We discourage unconditional direct help from tutors because we want you to learn to help yourself. Yes, we believe in ‘tough love’:stuck_out_tongue_closed_eyes:.
 
 The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?' 
 
@@ -11,21 +11,22 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
 Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _refactoring_ and _rewriting_?
 
-What not to do: Email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
+What not to do: 
 
-When faced with a technical problem or a doubt about a concept, here are the things you should do:
+When faced with a technical problem or a doubt about a concept, don'f fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
+Instead, here are some things you can do:
 
 * **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).  
-  Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a ==web search on the error message==  is a good starting point.    
+  Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.    
   <img src="{{baseUrl}}/admin/images/how to google it.png" width="460" height="268"/>
 
 * **Ask peers**:   
 
   Ask your team members.   
 
-  Ask classmates using the IVLE forum. Asking questions in IVLE is encouraged. Even if you figured out one way to solve a problem, discussing it on IVLE might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in IVLE, you may use  [this form](https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform)  to submit your question anonymously which we will then post in the forum.
+  Ask classmates using the module forum or the slack channel. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in the forum, you may use [this form](https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform) to submit your question anonymously which we will then post in the forum.
 
   <panel header="Rubber Duck Debugging" expandable>
 

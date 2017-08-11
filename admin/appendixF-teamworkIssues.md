@@ -4,7 +4,7 @@ If your team is facing difficulties due to differences in skill/motivation /avai
 
 * **Second, don't give up.** It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day :-)
 
-* **Third, if you care about your grade and willing to work for it, you need to take initiative** to turn the situation around or else the whole team is going to suffer. Don't hesitate to ==take charge== if the situation calls for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you try.
+* **Third, if you care about your grade and willing to work for it, you need to take initiative** to turn the situation around or else the whole team is going to suffer. Don't hesitate to take charge if the situation calls for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you try.
 
 * **Finally, don't feed angry or 'wronged'.** Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility to get others to contribute.
 
@@ -16,7 +16,7 @@ Given below are some suggestions you can adopt if the project work is not going 
 
 **If you have very unreliable or totally disengaged team members** :
 
-* Re-distribute project work so that such team members cannot bring down the entire team.
+* Re-allocate to others any mission-critical work allocated to that person so that such team members cannot bring down the entire team.
 * However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute any time they wish to.
 * Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.
 * Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.

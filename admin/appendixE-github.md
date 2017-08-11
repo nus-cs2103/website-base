@@ -1,10 +1,10 @@
 ## Create a GitHub profile
 
-Create a personal GitHub account. 
+Create a personal GitHub account if you don't have one yet. 
 1. You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts. 
 2. Strongly recommended: Complete your GitHub profile. In particular,  
-  * Specify your full name. 
-  * Upload a suitable profile photo (i.e. a recent photo of your face). 
+   * Specify your full name. 
+   * Upload a suitable profile photo (i.e. a recent photo of your face). 
 
 <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable>
 
@@ -21,7 +21,7 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 
 1. Fork the repo to your personal GitHub account, if you haven't done so already.
 
-2. Create a branch named after tutorial activity e.g. `T2A2`  
+2. Create a branch named after the LO IDe.g. `W2.2b`  
     ==Remember to switch to master branch before creating the new branch.==
     
 3. Commit your changes to that branch. Push to your fork.
@@ -30,9 +30,9 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
    `https://github.com/**nus-cs2103-AY1718S1**/{repo_name}`  
    e.g. `https://github.com/nus-cs2103-AY1718S1/addressbook-level1`  
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
-   <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /> 
-   PR name should be: `[ACTIVITY_ID][TEAM_ID]Your Name`  
-   e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), `[T3A2][W09-A1]James Yong`  
+   <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
+   PR name should be: `[LO_ID][TEAM_ID]Your Name`  
+   e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), `[W2.2b][W09-A1]James Yong`  
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
    
 <panel header="%%Schedule &raquo; Tutorial Schedule%%">
@@ -84,9 +84,9 @@ All team members:
 1. Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
 
 Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project. 
-`/src/main`  
-`/src/test`  
-`/docs`
+* `/src/main`  
+* `/src/test`  
+* `/docs`
 
 </div>
 
@@ -129,9 +129,9 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
 
-* **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.   
-  Good: Update class diagram in the project manual for v1.5  
-  Bad (reasons: not a one-person task, not small enough): Write the project manual
+* **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.%%   
+  * %%:+1: Good: Update class diagram in the project manual for v1.5%% 
+  * %%:-1: Bad (reasons: not a one-person task, not small enough): Write the project manual%%
 
 * **Write a descriptive title for the issue.** %%e.g. Add support for the 'undo' command to the parser.%%
 
@@ -142,9 +142,9 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
  
 * **Do not track things taken for granted.** %%e.g., `push code to repo` should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.%%
 
-* **Omit redundant details.** In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as 'priority' can be omitted if you think they don't help you.
+* **Omit redundant details.** In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as `priority` can be omitted if you think they don't help you.
 
-* **Assign tasks to team members using the 'owner' field.** At any point, there should be some ongoing tasks and some pending tasks against each team member.
+* **Assign tasks to team members using the `owner` field.** At any point, there should be some ongoing tasks and some pending tasks against each team member.
 
 * **Use `status` labels to indicate the status of the issue.** i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.
 
@@ -152,7 +152,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 ### Using Milestones:
 
-* Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
+* Use [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
 
 * Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.
 
@@ -179,6 +179,6 @@ To consider the milestone as 'reached', **you should have the following done *be
 
 We recommend using the _Forking Workflow_.
 
-<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/embed.md" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" />
+<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/full.md" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" />
 
 </div>

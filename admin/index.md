@@ -59,7 +59,7 @@
     *   [Why project requirements are so vague?](#admin-faq-vagueRequirements)
     *   [Why I’m not allowed to use my favorite tool/framework/language etc.?](#admin-faq-favoriteTool)
     *   [Why so many submissions?](#admin-faq-manySubmissions)
-    *   [Why not enough marks for intermediate submissions?](#admin-faq-intermediateMarks)
+    *   [Why aren't we allowed to build a new product from scratch?](#admin-faq-fromScratch)
     *   [Why submission requirements differ between CS2103T and CS2101?](#admin-faq-cs2101Differences)
 *   [Appendix D: How to get help in CS2103/T](#admin-appendixD-help)
 *   [Appendix E: Using GitHub Project Hosting](#admin-appendixE-github)

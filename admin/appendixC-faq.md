@@ -22,7 +22,7 @@ Same lectures, same exam. Separate tutorials, separate project grading. Unless s
 
 <img src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
 
-CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2/3/4, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
+CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
 Remember, everything you learn here is going to be useful in a SE-related career.
 
@@ -42,7 +42,7 @@ Sometimes, small things matter in big ways. e.g., all other things being equal, 
 
 But unlike the real world, we are forgiving. That is why you can still earn full 10 marks of the participation marks even if you miss a few things here and there.
 
-Related article: [This Is The Personality Trait That Most Often Predicts Success](http://www.businessinsider.sg/conscientiousness-predicts-success-2014-4/#.Vewqb_mqpBc) (This is why we reward things like punctuality).
+Related article: [This Is The Personality Trait That Most Often Predicts Success](http://www.businessinsider.sg/conscientiousness-predicts-success-2014-4/#.Vewqb_mqpBc) (this is why we reward things like punctuality).
 
 </div>
 
@@ -84,7 +84,7 @@ Self-study is a critical survival skill in SE industry. Lectures will show you t
 
 If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), *without* requiring extra time/effort from the tutor or team members.
 
-Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.
+%%Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.%%
 
 </div>
 
@@ -100,7 +100,7 @@ But, wider scope → more diverse projects → harder for us to go deep into you
 
 That is why a strictly-defined project is more suitable for a first course in SE that focuses on nuts-and-bolts of SE. After learning those fundamentals, in higher level project modules you can focus more on the creative side of software projects without being dragged down by nuts-and-bolts SE issues (because you already know how to deal with them). However, we would like to allow some room for creativity too. That is why we let you build products that are slight variations of a given theme.
 
-Also note: The freedom to do 'anything' is not a necessary condition for creativity. Do not mistake being different for being creative. In fact, the more constrained you are, the more you need creativity to stand out.
+Also note: **The freedom to do 'anything' is not a necessary condition for creativity**. Do not mistake being different for being creative. In fact, the more constrained you are, the more you need creativity to stand out.
 
 </div>
 
@@ -126,13 +126,13 @@ We have chosen a basic set of tools after considering ease of learning, availabi
 
 Pedagogical reasons:
 
-* We sometimes use 'good enough', not necessarily the best, tools: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our toolset, you will find it easy to upgrade to such high-end tools by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding about a family of tools.
-* Learn to thrive under given conditions: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google used SVN as their revision control software until very recently, long after SVN fell out of popularity among developers. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).  
+* **Sometimes 'good enough', not necessarily the best, tools are a better fit for beginners**: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our toolset, you will find it easy to upgrade to such high-end tools by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding about a family of tools.
+* **We want you to learn to thrive under given conditions**: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google used SVN as their revision control software until very recently, long after SVN fell out of popularity among developers. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).  
  While programming in school is often a solo sport, programming in the industry is a team sport. As we are training you to become professional software engineers, it is important to get over the psychological hurdle of needing to satisfy individual preferences and get used to making the best of a given environment.
 
 Practical reasons:
 
-* Some of the learning activities are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
+* Some of the LOs are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
 * We provide learning resources for tools. e.g. 'Git guides'. Allowing more tools means we need to produce more resources.
 * When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.
 
@@ -150,13 +150,11 @@ The high number of submissions is not meant to increase workload but to spread i
 
 </div>
 
-### Why not enough marks for intermediate submissions?
+### Why aren't we allowed to build a new product from scratch?
 
-<div id="admin-faq-intermediateMarks">
+<div id="admin-faq-fromScratch">
 
-<img src="{{baseUrl}}/admin/images/no marks for intermediate submissions.png" width="688" height="102"/>
-
-Intermediate submissions are also incremental submissions. Intermediate submissions are included in the final submission too and will earn marks at that point. They are there to help you do well in the final submission and for us to monitor your progress and guide you accordingly. They are a means to an end. They are not achievements themselves. By right, they shouldn't be given marks at all. :stuck_out_tongue_closed_eyes:
+There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use CS2103/T to train you to work in existing code bases.
 
 </div>
 
