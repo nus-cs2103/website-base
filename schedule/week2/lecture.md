@@ -6,7 +6,7 @@
 
 **Slides**:
 
-* [[Discussion of current week LOs]()]
-* [[Preview of next week LOs]()]
+* [Discussion of current week LOs] ==slides will be uploaded after the lecture==
+* [Preview of next week LOs]
 
 
