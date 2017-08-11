@@ -1,13 +1,14 @@
 <h2 id="create-a-github-profile">Create a GitHub profile</h2>
-<p>Create a personal GitHub account.</p>
+<p>Create a personal GitHub account if you don't have one yet.</p>
 <ol>
   <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
-  <li>Strongly recommended: Complete your GitHub profile. In particular,</li>
+  <li>Strongly recommended: Complete your GitHub profile. In particular,
+    <ul>
+      <li>Specify your full name.</li>
+      <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+    </ul>
+  </li>
 </ol>
-<ul>
-  <li>Specify your full name.</li>
-  <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
-</ul>
 <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
   <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for
     the module.</p>
@@ -24,7 +25,7 @@
       <p>Fork the repo to your personal GitHub account, if you haven't done so already.</p>
     </li>
     <li>
-      <p>Create a branch named after tutorial activity e.g. <code>T2A2</code><br><mark>Remember to switch to master branch before creating the new branch.</mark></p>
+      <p>Create a branch named after the LO IDe.g. <code>W2.2b</code><br><mark>Remember to switch to master branch before creating the new branch.</mark></p>
     </li>
     <li>
       <p>Commit your changes to that branch. Push to your fork.</p>
@@ -32,8 +33,7 @@
     <li>
       <p>Create a Pull Request against the master branch of the repo<br><code>https://github.com/**nus-cs2103-AY1718S1**/{repo_name}</code><br> e.g. <code>https://github.com/nus-cs2103-AY1718S1/addressbook-level1</code><br><mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark><br>
         <img
-          src="/website/admin/images/PrDetails.png" width="700">
-          PR name should be: <code>[ACTIVITY_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[T3A2][W09-A1]James Yong</code><br> Note that our tutorial IDs are different from those shown in CORS/IVLE.
+          src="/website/admin/images/PrDetails.png" width="700"><br> PR name should be: <code>[LO_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[W2.2b][W09-A1]James Yong</code><br> Note that our tutorial IDs are different from those shown in CORS/IVLE.
           Our tutorial IDs are given in the panel below.</p>
     </li>
   </ol>
@@ -176,8 +176,12 @@
     <li>Clone the fork to your Computer.</li>
     <li>Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
   </ol>
-  <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.
-    <code>/src/main</code><br><code>/src/test</code><br><code>/docs</code></p>
+  <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.</p>
+  <ul>
+    <li><code>/src/main</code></li>
+    <li><code>/src/test</code></li>
+    <li><code>/docs</code></li>
+  </ul>
 </div>
 <div id="issue-tracker-setup">
   <h2 id="issue-tracker-setup">Issue tracker setup</h2>
@@ -221,8 +225,11 @@
       <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
     </li>
     <li>
-      <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g. <br> Good: Update class diagram in the project manual for
-        v1.5<br> Bad (reasons: not a one-person task, not small enough): Write the project manual</p>
+      <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. <span class="dimmed">e.g.</span></p>
+      <ul>
+        <li><span class="dimmed">👍 Good: Update class diagram in the project manual for v1.5</span></li>
+        <li><span class="dimmed">👎 Bad (reasons: not a one-person task, not small enough): Write the project manual</span></li>
+      </ul>
     </li>
     <li>
       <p><strong>Write a descriptive title for the issue.</strong><span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
@@ -241,10 +248,10 @@
     </li>
     <li>
       <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description
-        is enough. Similarly, labels such as 'priority' can be omitted if you think they don't help you.</p>
+        is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
     </li>
     <li>
-      <p><strong>Assign tasks to team members using the 'owner' field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+      <p><strong>Assign tasks to team members using the <code>owner</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
     </li>
     <li>
       <p><strong>Use <code>status</code> labels to indicate the status of the issue.</strong> i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.</p>
@@ -254,7 +261,7 @@
     <h3 id="using-milestones">Using Milestones:</h3>
     <ul>
       <li>
-        <p>Use milestones to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
+        <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
       </li>
       <li>
         <p>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</p>
@@ -279,6 +286,6 @@
   <h2 id="workflow">Workflow</h2>
   <p>We recommend using the <em>Forking Workflow</em>.</p>
   <p>
-    <panel src="/website\book\gitAndGithub\forkingWorkflow\embed._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website\book\gitAndGithub\forkingWorkflow\full._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
   </p>
 </div>
