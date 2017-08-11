@@ -1,4 +1,4 @@
-<panel type="danger" header="`W2.1` **Can use Git to save history** :star:" expandable expanded no-close>
+<panel type="danger" header="`W2.1` **Can use Git to save history** :star:" expandable no-close>
 
 <panel type="danger" header="`W2.1a` Can explain revision control :star:" expandable>
   <include src="../../book/revisionControl/what/full.md" />

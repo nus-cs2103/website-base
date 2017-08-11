@@ -1,4 +1,4 @@
-<panel type="warning" header="`W2.3` **Can automate simple regression testing of text UIs** :star::star:" expandable expanded no-close>
+<panel type="warning" header="`W2.3` **Can automate simple regression testing of text UIs** :star::star:" expandable no-close>
 
 <panel type="warning" header="`W2.3a` Can explain testing :star::star:" expandable>
   <include src="../../book/testing/introduction/what/full.md" />

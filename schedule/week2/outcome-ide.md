@@ -1,4 +1,4 @@
-<panel type="danger" header="`W2.2` **Can use basic features of an IDE** :star:" expandable expanded no-close>
+<panel type="danger" header="`W2.2` **Can use basic features of an IDE** :star:" expandable no-close>
 
 <panel type="danger" header="`W2.2a` Can explain IDEs :star:" expandable>
   <include src="../../book/ides/introduction/what/full.md" />
