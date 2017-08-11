@@ -1,0 +1,2970 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <div>
+      <panel type="danger" header=":trophy: Can apply EP for test case design :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain equivalence partitions :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider the testing of the following operation.</p>
+                <ul>
+                  <li><code>isValidMonth (int m): boolean</code></li>
+                  <li>Description: checks if <code>m</code> is in the range [1..12]. returns <code>true</code> if <code>m</code> is in the range, <code>false</code> otherwise.</li>
+                </ul>
+                <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to
+                  produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+                <p>In general, most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways. That means a range of inputs is treated the same way inside the SUT.</p>
+                <tip-box type="primary">
+                  <div>
+                    <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
+                  </div>
+                </tip-box>
+                <p><em>Equivalence partitioning</em> is a technique that uses the above observation to improve the E&amp;E of testing. By dividing possible inputs into equivalence partitions we can,</p>
+                <ul>
+                  <li>avoid testing too many inputs from one partisan. Testing too many inputs from the same partition is unlikely to find new bugs.</li>
+                  <li>ensure all partitions are tested. Missing partitions can result in bugs going unnoticed.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Boundary value analysis recommends testing only values that reside on the equivalence class boundary.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can apply EP for pure functions :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Equivalence partitions (EPs) are usually derived from the specifications of the SUT. Preconditions and postconditions can also help in identifying partitions. For example, these could be EPs for the isValidMonth example:</p>
+                <ul>
+                  <li>[MIN_INT ... 0] (below the range that produces ‘true’)</li>
+                  <li>[1 … 12] (the range that produces ‘true’)</li>
+                  <li>[13 … MAX_INT] (above the range that produces ‘true’)</li>
+                </ul>
+                <p>When the SUT has multiple inputs, we should identify EPs for each input.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>{example of a two-parameter method}</p>
+                </tip-box>
+                <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>{example where each value is a partition}</p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?">
+                        <question>
+                          <p>Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?</p>
+                          <tip-box>
+                            <p>isValidName (String s): boolean</p>
+                            <p>Description: returns true if s is not null and not longer than 50 characters.</p>
+                          </tip-box>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. null.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. strings having more than 50 characters.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. strings having 50 or fewer characters.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. strings consisting of numbers instead of letters.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. null.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. strings having more than 50 characters.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. strings having 50 or fewer characters.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. strings consisting of numbers instead of letters.</li>
+                            </ul>
+                            <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Assume you are testing the isValidName method described below. If you had to choose 3 test cases from the 4 given below, which one will you leave out?">
+                        <question>
+                          <p>Assume you are testing the isValidName method described below. If you had to choose 3 test cases from the 4 given below, which one will you leave out?</p>
+                          <tip-box>
+                            <p>isValidName (String s): boolean</p>
+                            <p>Description: returns true if s is not null and not longer than 50 characters.</p>
+                          </tip-box>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A string that is 50 characters long</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A string that is 51 characters long</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A string that is 40 characters long</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. null</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A string that is 50 characters long</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A string that is 51 characters long</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A string that is 40 characters long</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. null</li>
+                            </ul>
+                            <p>Explanation: (a) (b) and (d) covers all three equivalence partitions and check the boundaries of them as well. (c) belongs to the same partition as (a).</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can apply EP for OOP methods :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="intermediate-two">Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
+                <ul>
+                  <li>the target object of the operation call</li>
+                  <li>input parameters of the operation call</li>
+                  <li>other data/objects accessed by the operation such as global variables. This category may not be applicable if using the black box approach (because the test case designer using the black box approach will not know how the method is implemented)</li>
+                </ul>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Consider the push operation from a DataStack class.</p>
+                  <ul>
+                    <li>
+                      <p>Operation: <code>push(Object o): boolean</code></p>
+                    </li>
+                    <li>
+                      <p>Description: Throws <code>MutabilityException</code> if the global flag <code>FREEZE==true</code></p>
+                      <ul>
+                        <li>Else, throws <code>InvalidValueException</code> if <code>o==null</code>.</li>
+                        <li>Else, returns <code>false</code> if the stack is full.</li>
+                        <li>Else, puts <code>o</code> at the top of the <code>DataStack</code> and returns <code>true</code>.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>Here are the equivalence partitions for the push operation.</p>
+                      <ul>
+                        <li><code>DataStack</code> object: [full] [not full]</li>
+                        <li><code>o</code>: [null] [not null]</li>
+                        <li><code>FREEZE</code>: [true][false]</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </tip-box>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Consider the Minesweeper system that was explored previously. What are the EPs for the <code>newGame()</code> operation of the <code>Logic</code> component?</p>
+                  <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
+                  <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the operation might also be included as participants. For example, Minefield object can be considered as another participant of
+                    the <code>newGame()</code> operation. Here, the black-box approach is assumed.</p>
+                  <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame</code> operation behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently
+                    based on the game state. Therefore, the equivalence partitions are:</p>
+                  <ul>
+                    <li><code>PRE_GAME</code> (before the game starts, minefield does not exist yet)</li>
+                    <li><code>READY</code> (a new minefield has been created and waiting for player’s first move)</li>
+                    <li><code>IN_PLAY</code> (the current minefield is already in use)</li>
+                    <li><code>WON</code>, <code>LOST</code> (let us assume the <code>newGame</code> behaves the same way for these two values)</li>
+                  </ul>
+                </tip-box>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Consider the Logic component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> operation?. The partitions in <strong>bold</strong> represent valid inputs.</p>
+                  <ul>
+                    <li>Logic: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
+                    <li>x: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] (we assume a minefield size of WxH)</li>
+                    <li>y: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
+                    <li>Cell at (x,y): <strong>HIDDEN</strong>, MARKED, CLEARED</li>
+                  </ul>
+                  <p>A test case for the push operation can be a combination of the equivalence partitions. Given below is such a test case.</p>
+                  <ul>
+                    <li>id: DataStack_Push_001</li>
+                    <li>description: checks whether pushing onto a full stack works correctly</li>
+                    <li>input: ds is full, o!=null, FREEZE==false</li>
+                    <li>expected output: returns false, ds remains unchanged</li>
+                  </ul>
+                </tip-box>
+                <p>Knowledge of how the SUT behaves is used when deriving equivalence partitions for a given data participant. The table below illustrates some examples.</p>
+                <table class="table">
+                  <tr>
+                    <th>Specification</th>
+                    <th>Equivalence partitions</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>isValidFlag(String s): boolean</li>
+                        <li>Returns true if s is one of [“F”, “T”, “D”]. The comparison is case-sensitive.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>[“F”] [“T”] [“D”] [“f”, “t”, “d”] [any other string][null]</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>squareRoot(String s): int</li>
+                        <li>Pre-conditions: s represents a positive integer</li>
+                        <li>Returns the square root of s if the square root is an integer; returns 0 otherwise.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>[s is not a valid number] [s is a negative integer] [s has an integer square root] [s does not have an integer square root]</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>isPrimeNumber(int i): boolean</li>
+                        <li>Returns true if i is a prime number</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>[prime numbers] [non-prime numbers]</li>
+                        <li>* there are too many prime numbers to consider each one as a separate equivalence partition</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the
+                  SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can apply boundary value analysis :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain boundary value analysis :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Boundary Value Analysis (BVA)</em> is another heuristic that can enhance the E&amp;E of test cases designed using equivalence partitioning. It is based on the observation that bugs often result from incorrect handling of boundaries
+                  of equivalence partitions. This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
+                <p>E.g. <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt; = (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
+                <p>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) should be included.</p>
+                <p>Boundary values are sometimes called corner cases.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can explain different types of testing :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain integration testing :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Integration Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In <em>Integration testing</em> we test whether different parts of the software ‘work together’ (i.e. integrates) as expected. Here, we assume the individual parts have been unit tested already. Therefore, integration tests aim to discover
+                  bugs in the ‘glue code’ that are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing. For example let us assume a class <code>Car</code> users classes <code>Engine</code> and
+                  <code>Wheel</code>.</p>
+                <ul>
+                  <li>First, we should unit test <code>Engine</code> and <code>Wheel</code>.</li>
+                  <li>Next, we should unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</li>
+                  <li>After that, we can do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</li>
+                </ul>
+                <p>In the example above, if the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain system testing :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → System Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In system testing we take the <em>whole system</em> and test it <em>against the system specification</em>.</p>
+                <p>System testing is typically done by a testing team (also called a QA team).</p>
+                <p>System test cases are based on the specified external behavior of the system. Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails ‘gracefully’ having pushed beyond
+                  its limits.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Take the example of an SUT (software under test) that is a browser capable of handling web pages containing up to 5000 characters. A test case can involve loading a web page containing more than 5000 characters. The expected ‘graceful’
+                    behavior would be to ‘abort the loading of the page and show a meaningful error message’. This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
+                </tip-box>
+                <p>System testing includes testing against non-functional requirements too. Here are some examples.</p>
+                <ul>
+                  <li><em>Performance testing</em> – to ensure the system responds quickly.</li>
+                  <li><em>Load testing</em> (also called <em>stress testing</em> or <em>scalability testing</em>) – to ensure the system can work under heavy load.</li>
+                  <li><em>Security testing</em> – to test how secure the system is.</li>
+                  <li><em>Compatibility testing, interoperability testing</em> – to check whether the system can work with other systems.</li>
+                  <li><em>Usability testing</em> – to test how easy it is to use the system.</li>
+                  <li><em>Portability testing</em> – to test whether the system works on different platforms.</li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain the differences between system testing and acceptance testing :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Acceptance Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="acceptance-vs-system-testing-two">Acceptance vs System Testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
+                <p>Some differences between system testing and acceptance testing:</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">System Testing</th>
+                      <th style="text-align:center">Acceptance Testing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">Done against the system specification</td>
+                      <td style="text-align:center">Done against the requirements specification (see note 1 below)</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">Done by testers of the project team</td>
+                      <td style="text-align:center">Done by a team that represents the customer</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">Done on the development environment or a test bed</td>
+                      <td style="text-align:center">Done on the deployment site or on a close simulation of the deployment site</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">Both positive and negative test cases</td>
+                      <td style="text-align:center">More focus on positive test cases</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <tip-box>
+                  <p><strong>Requirement Specification vs System Specification</strong></p>
+                  <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
+                  <ul>
+                    <li>Requirements specification could be limited to how the system behaves in normal working conditions while the system specification can also include details on how it will fail gracefully when pushed beyond limits, how to recover,</li>
+                    <li>System specification could contain additional APIs not available for users (for the use of developers/testers), etc • Requirement specification could be written in terms of problems that need to be solved (e.g. provide a method to
+                      locate an email quickly) while the system specification could be written in terms of how the system solve those problems (e.g. explain the email search feature).</li>
+                  </ul>
+                  <p>However, in many cases one document serves as both a requirement specification and a system specification.</p>
+                  <p><strong>Importance of testing on the deployment environment</strong></p>
+                  <p>A system could work perfectly on the development environment, but fail in the deployment environment due to subtle differences between the two.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the least correct statement about system testing and acceptance testing.">
+                        <question>
+                          <p>Choose the least correct statement about system testing and acceptance testing.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
+                            </ul>
+                            <p>Explanation:</p>
+                            <p>System testing can aim for full coverage and can go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
+                            <p>Passing system tests does not necessarily mean passing acceptance testing. One reason for this is system tests are usually done on testbed environments while acceptance tests are usually done on the deployment environment.
+                              Another reason is system testing is done against the system specification while acceptance tests can discover mismatches between system specification and user requirements (i.e. validation failures).</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain test case design for use case based testing :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="testing-use-cases-four">Testing Use Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Use case testing is straightforward in principle: test cases are simply based on the use cases. It is used for system testing (i.e. testing the system as a whole). For example, the main success scenario can be one test case while each
+                  variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like “user enters his personal data into the system”. Therefore,
+                  the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
+                <p>To increase E&amp;E of testing, high-priority use cases are given more attention. For example, a scripted approach can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that
+                  could emerge during testing.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain automated GUI testing :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="automated-testing-of-guis-two">Automated Testing of GUIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, testing the GUI is much harder than testing the CLI (command line interface) or API,
+                  for the following reasons:</p>
+                <ul>
+                  <li>Most GUIs contain a large number of different operations, many of which can be performed in any arbitrary order.</li>
+                  <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with
+                    an expected value. Therefore, automated regression testing of GUIs is rather difficult. However, there are testing tools that can automate GUI testing. For example, TestFx and support automated testing of JavaFX GUIs and Selenium (
+                    <a
+                      href="http://seleniumhq.org/">http://seleniumhq.org/</a>) can be used to automate testing of Web application UIs. VisualStudio supports ‘record replay’ type of GUI test automation.</li>
+                  <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in
+                    a high resolution display or a low resolution display.</li>
+                </ul><img src="/website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
+                <p></p>
+                <p>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI. Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested manually,
+                  the number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: The handout section on ‘GUI testing’ describes why GUI testing is more difficult than API testing.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain alpha and beta testing :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Alpha/Beta Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</p>
+                <p><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</p>
+                <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in ‘beta’ for many years before the label was finally removed.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain acceptance testing :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Acceptance Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Acceptance testing</em>, also called <em>User Acceptance Testing (UAT)</em>, is a type of validation test carried out to show that the delivered system meets the requirements of the customer.</p>
+                <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful completion
+                  of UAT is often a prerequisite to the project signoff.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can use basic scheduling and tracking tools :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain milestones :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="milestones-one">Milestones <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A milestone is the end of a stage which indicates a significant progress. For example, each intermediate product release is a milestone. We should take into account dependencies and priorities when deciding on the features to be delivered
+                  at a certain milestone.</p>
+                <p>In some projects, it is not practical to have a very detailed plan for the whole project due to the uncertainty and unavailability of required information. In such cases, we can use a high-level plan for the whole project and a detailed
+                  plan for the next few weeks.</p>
+                <tip-box>
+                  <p>Milestones for the Minesweeper project, iteration 1</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th>Day</th>
+                        <th>Milestones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Day 1</td>
+                        <td>Architecture skeleton completed</td>
+                      </tr>
+                      <tr>
+                        <td>Day 3</td>
+                        <td>‘new game’ feature implemented</td>
+                      </tr>
+                      <tr>
+                        <td>Day 4</td>
+                        <td>‘new game’ feature tested</td>
+                      </tr>
+                      <tr>
+                        <td>Day 5</td>
+                        <td>Buffer</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain buffers :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="buffers-two">Buffers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>It is important to include buffers (i.e. time set aside to absorb any unforeseen delays) in the schedule. However, do not inflate tasks to create hidden buffers. Have them explicitly set aside.</p><img src="/website/book/projectPlanning/buffers/images/schedule.png"
+                  height="120">
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain issue trackers :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="issue-trackers-two">Issue Trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress. E.g. Bugzilla. Most online project management software such as GoogleCode, GitHub, SourceForge and BitBucket come with an integrated
+                  issue tracker. The following is a screenshot from the Jira Issue tracker software.</p><img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="500">
+                <p></p>
+                <p>Issue trackers can also be used as <em>task trackers</em>, i.e. to define tasks to be done, to track who is doing what, and the status of each task.</p>
+                <p>More elaborate tools for scheduling and tracking projects include PERT chars and Gantt charts.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Pick the odd one out.">
+                        <question>
+                          <p>Pick the odd one out.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. SubVersion</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. SubVersion</li>
+                            </ul>
+                            <p>Explanation: SubVersion is a revision control software (similar to Git). The others are online project management platforms.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain issue trackers :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="work-breakdown-structure-one">Work Breakdown Structure <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>When managing projects it is useful to divide the total work into smaller, well-defined units. Relatively complex tasks can be further split into subtasks. A structure that depicts the above information about tasks and their details in
+                  terms of subtasks is known as a Work Breakdown Structure (WBS). In complex projects a WBS can also include prerequisite tasks and effort estimates for each task.</p>
+                <p>For the Minesweeper example, the high level tasks for a single iteration could look like the following:</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th>Task ID</th>
+                      <th>Task</th>
+                      <th>Estimated Effort</th>
+                      <th>Prerequisite Task</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>Analysis</td>
+                      <td>1 man day</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>Design</td>
+                      <td>2 man day</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>Implementation</td>
+                      <td>4.5 man day</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>Testing</td>
+                      <td>1 man day</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>E</td>
+                      <td>Planning for next version</td>
+                      <td>1 man day</td>
+                      <td>D</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>The effort is traditionally measured in <em>man hour/day/month</em> i.e. work that can be done by one person in one hour/day/month. The <em>Task ID</em> is a label for easy reference to a task. Simple labeling is suitable for a small project,
+                  while a more informative labeling system can be adopted for bigger projects.</p>
+                <p>The high level tasks structure can be further refined into subtasks.</p>
+                <table class="table">
+                  <tr>
+                    <th>Task ID</th>
+                    <th>Task</th>
+                    <th>Estimated Effort</th>
+                    <th>Prerequisite Task</th>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td>High level design</td>
+                    <td>1 man day</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>
+                      Detail design
+                      <ol>
+                        <li>User Interface</li>
+                        <li>Game Logic</li>
+                        <li>Persistency Support</li>
+                      </ol>
+                    </td>
+                    <td>
+                      2 man day
+                      <ul>
+                        <li>0.5 man day</li>
+                        <li>1 man day</li>
+                        <li>0.5 man day</li>
+                      </ul>
+                    </td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>
+                      Implementation
+                      <ol>
+                        <li>User Interface</li>
+                        <li>Game Logic</li>
+                        <li>Persistency Support</li>
+                      </ol>
+                    </td>
+                    <td>
+                      4.5 man day
+                      <ul>
+                        <li>1.5 man day</li>
+                        <li>2 man day</li>
+                        <li>1 man day</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>B.1</li>
+                        <li>B.2</li>
+                        <li>B.3</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td>System Testing</td>
+                    <td>1 man day</td>
+                    <td>C</td>
+                  </tr>
+                  <tr>
+                    <td>E</td>
+                    <td>Planning for next version</td>
+                    <td>1 man day</td>
+                    <td>D</td>
+                  </tr>
+                </table>
+                <p><strong>All tasks should be well-defined.</strong> In particular, it should be clear as to when the task will be considered “done”. E.g.</p>
+                <ul>
+                  <li>Not good: more coding | better: implement component X</li>
+                  <li>Not good: do research on UI testing | better: find a suitable tool for testing the UI</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which one these is not well-defined task?">
+                        <question>
+                          <p>Which one these is not well-defined task? Context: These are tasks to be put in the issue tracker of your project.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Do some more testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Do some more testing.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
+                            </ul>
+                            <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain GANTT charts :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="gantt-charts-three">GANTT Charts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A <em>Gantt chart</em> is a 2-D bar-chart, drawn as <em>time vs tasks</em> (represented by horizontal bars).</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/projectPlanning/ganttCharts/images/gantt.png" height="360">
+                  <p></p>
+                </tip-box>
+                <p>In the chart, a solid bar represents the main task, which is generally composed of a number of subtasks, shown as grey bars. The diamond shape indicates an important deadline or deliverable or a <em>milestone</em>.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain PERT charts :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="pert-charts-four">PERT Charts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order/sequence of tasks. It is based on a simple idea of drawing a directed graph in which:</p>
+                <ul>
+                  <li>Node or vertex captures the effort estimation of a task, and</li>
+                  <li>Arrow depicts the precedence between tasks</li>
+                </ul>
+                <tip-box>
+                  <p>Example: a PERT chart for the Minesweeper project</p><img src="/website/book/projectPlanning/pertCharts/images/pert.jpg" height="320">
+                  <p></p>
+                </tip-box>
+                <p>A PERT chart can help determine the following important information:</p>
+                <ul>
+                  <li>The order of tasks. For example, observe that the Final Testing phase cannot begin until all coding of individual subsystems have been completed.</li>
+                  <li>Tasks can be done concurrently. For example, the various subsystem designs can start independently once the High level design is completed.</li>
+                  <li>The shortest possible completion time. From the above PERT chart, there is a path (indicated by the shaded boxes) from start to end that determines the longest possible completion time.</li>
+                  <li>The Critical Path. The shortest possible path is also the critical path in it is critical to ensure tasks on this path are completed on time. Any delay would directly affect the delivery time for the project.</li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain common team structures :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Teamwork →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="team-structures-three">Team Structures <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Given below are three commonly used team structures in software development. Irrespective of the team structure, it is a good practice to assign roles and responsibilities to different team members so that someone is clearly in charge
+                  of each aspect of the project. In comparison, the ‘everybody is responsible for everything’ approach can result in more chaos and hence slower progress.</p><img src="/website/book/teamwork/teamStructures/images/diagram.png" height="150">
+                <p></p>
+                <p><strong>Egoless team</strong></p>
+                <p>In this structure, every team member is equal in terms of responsibility and accountability. When any decision is required, consensus must be reached. This team structure is also known as a democratic team structure. This team structure
+                  usually finds a good solution to a relatively hard problem as all team members contribute ideas.</p>
+                <p>However, the democratic nature of the team structure bears a higher risk of falling apart due to the absence of an authority figure to manage the team and resolve conflicts.</p>
+                <p><strong>Chief programmer team</strong></p>
+                <p>Frederick Brooks proposed that software engineers learn from the medical surgical team in an operating room. In such a team, there is always a chief surgeon, assisted by experts in other areas. Similarly, in a chief programmer team structure,
+                  there is a single authoritative figure, the chief programmer. Major decisions, e.g. system architecture, are made solely by him/her and obeyed by all other team members. The chief programmer directs and coordinates the effort of other
+                  team members. When necessary, the chief will be assisted by domain specialists e.g. business specialists, database expert, network technology expert, etc. This allows individual group members to concentrate solely on the areas where
+                  they have sound knowledge and expertise.</p>
+                <p>The success of such a team structure relies heavily on the chief programmer. Not only must he be a superb technical hand, he also needs good managerial skills. Under a suitably qualified leader, such a team structure is known to produce
+                  successful work. .</p>
+                <p><strong>Strict hierarchy team</strong></p>
+                <p>In the opposite extreme of an egoless team, a strict hierarchy team has a strictly defined organization among the team members, reminiscent of the military or bureaucratic government. Each team member only works on his assigned tasks and
+                  reports to a single “boss”.</p>
+                <p>In a large, resource-intensive, complex project, this could be a good team structure to reduce communication overhead.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which team structure is the most suitable for a school project?">
+                        <question>
+                          <p>Which team structure is the most suitable for a school project?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Egoless</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Chief programmer</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Strict hierarchy</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Egoless</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Chief programmer</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Strict hierarchy</li>
+                            </ul>
+                            <p>Explanation: Given that you are all peers and beginners, Egoless team structure seems most suitable for the class project. It’s OK to try out a different team structure in your project though.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain test case design :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain the need for deliberate test case design :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Testing all possible ways of using an SUT often requires an infinite number of test cases. Except for trivial SUTs, exhaustive testing is not practical.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Consider the test cases for adding a String object to a Collection:</p>
+                  <ul>
+                    <li>Add an item to an empty collection.</li>
+                    <li>Add an item when there is one item in the collection.</li>
+                    <li>Add an item when there are 2, 3, .... n items in the collection.</li>
+                    <li>Add an item that has an English, a French, a Spanish, … word.</li>
+                    <li>Add an item that is the same as an existing item.</li>
+                    <li>Add an item immediately after adding another item.</li>
+                    <li>Add an item immediately after system startup.</li>
+                    <li>...</li>
+                  </ul>
+                  <p>Exhaustive testing of this operation can take many more test cases.</p>
+                </tip-box>
+                <blockquote>
+                  <p>Program testing can be used to show the presence of bugs, but never to show their absence!</p>
+                  <p>--Edsger Dijkstra</p>
+                </blockquote>
+                <p>Every test case adds to the cost of testing. In some systems, a single test case can cost thousands of dollars (e.g. on-field testing of flight-control software). Therefore, test cases have to be designed to make the best use of testing
+                  resources. In particular:</p>
+                <ul>
+                  <li>Testing should be effective, i.e. it finds a high % of existing bugs. A set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system.</li>
+                  <li>Testing should be efficient, i.e. it has a high rate of success (bugs found/test cases). A set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects.</li>
+                </ul>
+                <p>For testing to be E&amp;E, each new test we add should be targeting a potential fault that is not already targeted by existing test cases. There are test case design techniques that can help us improve E&amp;E (Effectiveness and Efficiency)
+                  of testing. E.g. Equivalence Partitioning, Boundary Value Analysis</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: List test cases you would use to test ‘TriangleDetector’.">
+                        <question has-input="true">
+                          <p>A sample output from a text-based program ‘TriangleDetector’ is given below that determines whether the three input numbers make up the three sides of a valid triangle. A sample output is shown below. List test cases you would
+                            use to test ‘TriangleDetector’. Two sample test cases are given below.</p>
+                          <pre class="hljs"><code>C:\&gt; java TriangleDetector
+Enter side 1: 34
+Enter side 2: 34
+Enter side 3: 32
+Can this be a triangle?:  Yes
+Enter side 1:
+</code></pre>
+                          <p>Sample test cases,</p>
+                          <pre class="hljs"><code>34,34,34: Yes
+0, any valid, any valid: No
+</code></pre>
+                          <div slot="answer">
+                            <p>In addition to obvious test cases such as</p>
+                            <ul>
+                              <li>sum of two sides == third,</li>
+                              <li>sum of two sides &lt; third, …</li>
+                            </ul>
+                            <p>We may also devise some interesting test cases such as the ones depicted below.</p>
+                            <p>Note that their applicability depends on the context in which the software is operating.</p>
+                            <ul>
+                              <li>Non-integer number, negative numbers, 0, numbers formatted differently (e.g. 13F), very large numbers (e.g. MAX_INT), numbers with many decimal places, empty string, …</li>
+                              <li>Check many triangles one after the other (will the system run out of memory?)</li>
+                              <li>Backspace, tab, CTRL+C , …</li>
+                              <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid
+                                inputs (the system may perform error handling differently for the very first test case), …</li>
+                              <li>Test on different locale.</li>
+                            </ul>
+                            <p>The main point to note is how difficult it is to test exhaustively, even on a trivial system.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Explain the why exhaustive testing is not possible using the newGame operation of the Logic class in the Minesweeper case study as an example.">
+                        <question has-input="true">
+                          <p>Explain the why exhaustive testing is not possible using the newGame operation of the Logic class in the Minesweeper case study as an example.</p>
+                          <div slot="answer">
+                            <p>Consider this sequence of test cases:</p>
+                            <ul>
+                              <li>Test case 1. Start Minesweeper. Activate newGame() and see if it works.</li>
+                              <li>Test case 2. Start Minesweeper. Activate newGame(). Activate newGame() again and see if it works.</li>
+                              <li>Test case 3. Start Minesweeper. Activate newGame() three times consecutively and see if it works.</li>
+                              <li>…</li>
+                              <li>Test case 267. Start Minesweeper. Activate newGame() 267 times consecutively and see if it works.</li>
+                            </ul>
+                            <p>Well, you get the idea. Exhaustive testing of newGame() is not possible.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>Improving efficiency and effectiveness of test case design can,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. improve the quality of the SUT.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. save money.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. save time spent on test execution.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. save effort on writing and maintaining tests.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. do all of the above.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. improve the quality of the SUT.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. save money.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. save time spent on test execution.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. save effort on writing and maintaining tests.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> g. do all of the above.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain exploratory testing and scripted testing :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Here are two alternative approaches to testing a software.</p>
+                <ol>
+                  <li>Scripted testing: First write a set of test cases based on the system specification, perform the test cases.</li>
+                  <li>Exploratory testing: Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</li>
+                </ol>
+                <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
+                  <trigger for="pop:bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                  because testing is driven by observations during testing. Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>. Exploratory testing usually starts with
+                  areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found. For example,</p>
+                <blockquote>
+                  <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if feature
+                    y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                </blockquote>
+                <popover id="pop:bach-et-explained" title="bach-et-explained :mag:" placement="right">
+                  <div slot="content">
+                    <div>
+                      <p>Exploratory testing explained, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> (James Bach is an industry thought leader in software testing). Softcopy available at <a href="http://www.satisfice.com/articles/et-article.pdf">http://www.satisfice.com/articles/et-article.pdf</a></p>
+                    </div>
+                  </div>
+                </popover>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>A) Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <p>B) Scripted testing is better than exploratory testing.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>A) Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                            <p>B) Scripted testing is better than exploratory testing.</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Which testing technique is better?">
+                        <question>
+                          <p>Which testing technique is better?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. error guessing</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. bug hunting</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. attack-based testing</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. reactive testing</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. I don’t know. I haven’t heard these terms before.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. These are different names used to describe exploratory testing.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. error guessing</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. bug hunting</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. attack-based testing</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. reactive testing</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. I don’t know. I haven’t heard these terms before.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. These are different names used to describe exploratory testing.</li>
+                            </ul>
+                            <p>Explanation: These terms are mentioned in the handout.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain the choice between exploratory testing and scripted testing :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>So which approach is better – scripted or exploratory?</p>
+                <p>The success of exploratory testing depends on the tester’s prior experience and intuition. Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing by unskilled or inexperienced
+                  testers without a clear strategy is not recommended for real-world non-trivial systems. While exploratory testing may allow us to detect some problems in a relatively short time, it is not prudent to use exploratory testing as the sole
+                  means of testing a critical system.</p>
+                <p>Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time, while exploratory testing would aid in quick error discovery, especially if the tester has a lot of experience in testing similar systems.</p>
+                <blockquote>
+                  <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations
+                    benefit from a mix of scripted and exploratory approaches.</p>
+                  <p>--
+                    <trigger for="pop:bach-et-explained">[source: bach-et-explained]</trigger>
+                  </p>
+                </blockquote>
+                <popover id="pop:bach-et-explained" title="bach-et-explained :mag:" placement="right">
+                  <div slot="content">
+                    <div>
+                      <p>Exploratory testing explained, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> (James Bach is an industry thought leader in software testing). Softcopy available at <a href="http://www.satisfice.com/articles/et-article.pdf">http://www.satisfice.com/articles/et-article.pdf</a></p>
+                    </div>
+                  </div>
+                </popover>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Explain the concept of exploratory testing using Minesweeper as an example.">
+                        <question has-input="true">
+                          <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
+                          <div slot="answer">
+                            <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain positive and negative test cases :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="positive-vs-negative-test-cases-one">Positive vs Negative Test Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <pre class="hljs"><code>SUT: print(Integer i) //prints the value of i
+
+A positive test case: i = new Integer(50)
+A negative test case: i = null;
+</code></pre>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain black box and glass box test case design :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="black-box-vs-glass-box-two">Black Box vs Glass Box <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Test case design is said to be following, a categorization based on how much of SUT internal details are considered when designing test cases.</p>
+                <ul>
+                  <li><em>Black-box</em> (aka <em>specification-based or responsibility-based</em>) approach: test cases are designed exclusively based on the SUT’s specified external behavior.</li>
+                  <li><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</li>
+                  <li><em>Gray-box</em> approach: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses an algorithm to sort lists shorter than 1000 items and another
+                    to sort lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can apply heuristics to combine multiple test inputs :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain the need for strategies to combine test inputs :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Often, an SUT can take multiple inputs. Having selected test values for each input (using equivalence partitioning, boundary value analysis, or some other technique), how are they combined to create test cases?</p>
+                <tip-box>
+                  <ul>
+                    <li>
+                      <p>Scenario: calculateGrade</p>
+                    </li>
+                    <li>
+                      <p>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</p>
+                    </li>
+                    <li>
+                      <p>Values to test (invalid values are <strong>bold</strong>)</p>
+                      <ul>
+                        <li>participation: 0, 1, 19, 20, <strong>21</strong>, <strong>22</strong></li>
+                        <li>projectGrade: A, B, C, D, F</li>
+                        <li>isAbsent: true, false</li>
+                        <li>examScore: 0, 1, 69, 70, <strong>71</strong>, <strong>72</strong></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </tip-box>
+                <p>For the calculateGrade scenario above, one obvious solution is to test all possible combinations i.e. test all 6x5x2x6=360 cases. Naturally, this technique has a higher chance of discovering bugs (i.e. effective) but the number of combinations
+                  can be too high to test (i.e. not efficient).</p>
+                <p>Therefore, we need smarter ways to combine test inputs that are both effective and efficient.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain some basic test input combination strategies :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="test-input-combination-strategies-two">Test Input Combination Strategies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
+                <tip-box>
+                  <p>Scenario: foo</p>
+                  <p>SUT: foo(p1 char, p2 int, p3 boolean)</p>
+                  <p>Selected values for each input:</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Input</th>
+                        <th style="text-align:center">Values</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">p1</td>
+                        <td style="text-align:center">a, b, c</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">p2</td>
+                        <td style="text-align:center">1, 2, 3</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">p3</td>
+                        <td style="text-align:center">T, F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>a) all combinations</strong>: generate test cases for each unique combination of test inputs</p>
+                <tip-box>
+                  <p>Example: the foo scenario requires 3x3x2=18 test cases under the ‘all combinations strategy</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">...</td>
+                        <td style="text-align:center">...</td>
+                        <td style="text-align:center">...</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">18</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>b) at least once</strong>: include each test input at least once</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">VV/IV</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV/IV = Any Value</p>
+                </tip-box>
+                <p><strong>c) all pairs</strong>: This strategy creates test cases so that for any given pair of parameters, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting
+                  factors. The resulting number of test cases is lower than the “all combinations” approach, but higher than the “at least once” approach.</p>
+                <tip-box>
+                  <p>Example: the foo scenario requires 9 test cases to cover all pairs</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">7</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">8</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">9</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
+                <tip-box>
+                  <p>Example: the foo scenario, testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>d) random:</strong> In this strategy we generate test cases using one of the other strategies and then pick a subset randomly (presumably because the original set of test cases is too big).</p>
+                <p><strong>e) other</strong>: There are other strategies that can be used.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can apply heuristic ‘each valid input at least once in a positive test case’ :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case-two">Heuristic: Each Valid Input At Least Once In A Positive Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box>
+                  <p>Scenario: calculateFruitPrice</p>
+                  <p>SUT printLabel(fruitName String, unitPrice int)</p>
+                  <p>Selected values for each input (invalid values are underlined):</p>
+                  <table class="table">
+                    <tr>
+                      <th>Input</th>
+                      <th>Values</th>
+                      <th>Reason</th>
+                    </tr>
+                    <tr>
+                      <td>fruitName</td>
+                      <td>
+                        <ul>
+                          <li>Apple</li>
+                          <li>Banana</li>
+                          <li>Cherry</li>
+                          <li>Dog</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>Label format is round</li>
+                          <li>Label format is oval</li>
+                          <li>Label format is square</li>
+                          <li>Not a valid fruit</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>unitPrice</td>
+                      <td>
+                        <ul>
+                          <li>1</li>
+                          <li>20</li>
+                          <li>0</li>
+                          <li>-1</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>Only one digit</li>
+                          <li>Two digits</li>
+                          <li>Invalid because 0 is not a valid price</li>
+                          <li>Invalid because negative prices are not allowed</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+                <p>Suppose these are the test cases being considered.</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Case</th>
+                      <th style="text-align:center">fruitName</th>
+                      <th style="text-align:center">unitPrice</th>
+                      <th style="text-align:center">Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Apple</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Print label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2</td>
+                      <td style="text-align:center">Banana</td>
+                      <td style="text-align:center">20</td>
+                      <td style="text-align:center">Print label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">Cherry</td>
+                      <td style="text-align:center">0</td>
+                      <td style="text-align:center">Error message “invalid price”</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4</td>
+                      <td style="text-align:center">Dog</td>
+                      <td style="text-align:center">-1</td>
+                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that
+                  can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
+                <p>In this case a useful heuristic to apply is ‘each valid input at least once in a positive test case’ which means exactly what it says. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a valid
+                  test case. Here are the updated test cases after applying that heuristic.</p>
+                <div id="heuristic-valid-test-case">
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case</th>
+                        <th style="text-align:center">fruitName</th>
+                        <th style="text-align:center">unitPrice</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">Apple</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">Print round label</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">Banana</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">Print oval label</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2.1</td>
+                        <td style="text-align:center">Cherry</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">Print square label</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">Error message “invalid price”</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">Dog</td>
+                        <td style="text-align:center">-1</td>
+                        <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can apply heuristic ‘no more than one invalid input in a test case’ :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case-two">Heuristic: No More Than One Invalid Input In A Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider the test cases designed in
+                  <trigger for="modal:heuristic-valid-test-case" trigger="click">Heuristic: each valid input at least once in a positive test case</trigger>.</p>
+                <modal title="**Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case">
+                  <div>
+                    <table class="markbind-table table">
+                      <thead>
+                        <tr>
+                          <th style="text-align:center">Case</th>
+                          <th style="text-align:center">fruitName</th>
+                          <th style="text-align:center">unitPrice</th>
+                          <th style="text-align:center">Expected</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align:center">1</td>
+                          <td style="text-align:center">Apple</td>
+                          <td style="text-align:center">1</td>
+                          <td style="text-align:center">Print round label</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">2</td>
+                          <td style="text-align:center">Banana</td>
+                          <td style="text-align:center">20</td>
+                          <td style="text-align:center">Print oval label</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">2.1</td>
+                          <td style="text-align:center">Cherry</td>
+                          <td style="text-align:center">VV/IV</td>
+                          <td style="text-align:center">Print square label</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">3</td>
+                          <td style="text-align:center">VV</td>
+                          <td style="text-align:center">0</td>
+                          <td style="text-align:center">Error message “invalid price”</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">4</td>
+                          <td style="text-align:center">Dog</td>
+                          <td style="text-align:center">-1</td>
+                          <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                  </div>
+                </modal>
+                <p>After running these test cases can we be sure that the error message “invalid price” is shown for negative prices? Answer: No. Reason: <code>-1</code> -- the only input that is a negative price – is in a test case that produces the error
+                  message “invalid fruit”.</p>
+                <p>In this case a useful heuristic to apply is ‘no more than one invalid input in a test case’. After applying that, we get the following test cases.</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Case</th>
+                      <th style="text-align:center">fruitName</th>
+                      <th style="text-align:center">unitPrice</th>
+                      <th style="text-align:center">Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Apple</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Print round label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2</td>
+                      <td style="text-align:center">Banana</td>
+                      <td style="text-align:center">20</td>
+                      <td style="text-align:center">Print oval label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2.1</td>
+                      <td style="text-align:center">Cherry</td>
+                      <td style="text-align:center">VV/IV</td>
+                      <td style="text-align:center">Print square label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">0</td>
+                      <td style="text-align:center">Error message “invalid price”</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">-1</td>
+                      <td style="text-align:center">Error message “invalid price&quot;</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4.1</td>
+                      <td style="text-align:center">Dog</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Applying the heuristics covered in the lecture, we can determine the precise number of test cases required to test any given SUT effectively.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: These heuristics are, well, heuristics only. They will help you to make better decisions about test case design. However, they are speculative in nature (especially, when testing in black-box fashion) and cannot
+                              give you precise number of test cases.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can apply multiple test input combination techniques together :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="mix-three">Mix <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider the calculateGrade scenario.</p>
+                <tip-box>
+                  <ul>
+                    <li>
+                      <p>Scenario: calculateGrade</p>
+                    </li>
+                    <li>
+                      <p>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</p>
+                    </li>
+                    <li>
+                      <p>Values to test (invalid values are underlined)</p>
+                      <ul>
+                        <li>participation: 0, 1, 19, 20, 21, 22</li>
+                        <li>projectGrade: A, B, C, D, F</li>
+                        <li>isAbsent: true, false</li>
+                        <li>examScore: 0, 1, 69, 70, 71, 72</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </tip-box>
+                <p>To get the first cut of test cases, let’s apply the ‘at least once’ strategy.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V1</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV/IV = Any Valid or Invalid Value, Err Msg = Error Message</p>
+                </tip-box>
+                <p>Next, let’s apply the ‘each valid input at least once in a positive test case’ heuristic.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V2</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.2</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV = Any Valid Value VV/IV = Any Valid or Invalid Value</p>
+                </tip-box>
+                <p>Next, we apply the ‘no more than one invalid input in a test case’ heuristic.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V3</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.2</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.3</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.2</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p>Next, let us assume that there is a dependency between the inputs examScore and isAbsent such that an absent student can only have examScore=0. To cater for the hidden invalid case arising from this, we can add a new test case where isAbsent=true
+                  and examScore!=0. In addition, test cases 3-6.2 should have isAbsent=false so that the input remains valid.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V4</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.2</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.3</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.2</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">7</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">!=0</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>Which of these is not one of the heuristics recommended when creating test cases with multiple inputs?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. All invalid test inputs must be tested together.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is ok to combine valid values for different inputs.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. No more than one invalid test input should be in a given test case.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. All invalid test inputs must be tested together.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is ok to combine valid values for different inputs.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. No more than one invalid test input should be in a given test case.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</li>
+                            </ul>
+                            <p>Explanation: If you test all invalid test inputs together, you will not know if each one of the invalid inputs are handled correctly by the SUT. This is because most SUTs return an error message upon encountering the first
+                              invalid input.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can isolate SUI in unit tests :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain unit testing :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Unit testing involves testing individual units (methods, classes, subsystems, …) and finding out whether each piece works correctly in isolation. A proper unit test require the unit we are testing to be isolated from other code.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain stubs :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="stubs-two">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>During unit testing, stubs are used in place of collaborating objects in order to isolate the SUT from those objects. Doing so prevents bugs within the collaborating objects from interfering with the test.</p>
+                <p><strong>A stub has the same interface as the collaborator it replaces, but its implementation is meant to be so simple that it cannot have any bugs. It mimics the responses of the collaborating object, but only for the inputs used for testing.</strong>                  That is, it does not know how to respond to any other inputs. These mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Stubs and drivers help us test a component in isolation from other interacting components.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain mocks :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="mocks-three">Mocks <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In addition to Stubs, there are other type of replacements we use during testing. E.g. <em>Mocks, Fakes, Dummies, Spies.</em></p>
+                <p>Refer <a href="https://martinfowler.com/articles/mocksArentStubs.html#TheDifferenceBetweenMocksAndStubs">this article</a> for a more elaborate description.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain dependency injection :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Dependency Injection →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Dependency injection</em> is the process of ‘injecting’ objects to replace current dependencies with a different object. This is often used to inject stubs to isolate the SUT from other collaborating objects so that it can be tested
+                  independently. In the example below, a Foo object normally depends on a Bar object, but we have injected a BarStub object so that the Foo object no longer depends on a Bar object. Now we can test the Foo object in isolation from the
+                  Bar object.</p><img src="/website/book/testing/dependencyInjection/what/images/diagram.png" height="150">
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain how dependency injection works :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Dependency Injection →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Given next is a sample testing scenario that tests the <code>totalSalary</code> of the <code>Payroll</code> class. The production version of the <code>totalSalary</code> method collaborates with the <code>SalaryManager</code> object to
+                  calculate the return value. During testing, the <code>SalaryManager</code> object is substituted with a <code>SalaryManagerStub</code> object which responds with hard-coded return values.</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+        p.setSalaryManager(<span class="hljs-keyword">new</span> SalaryManagerStub()); <span class="hljs-comment">//dependency injection</span>
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        assertEquals(<span class="hljs-number">2500.0</span>, p.totalSalary());
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        assertEquals(<span class="hljs-number">1000.0</span>, p.totalSalary());
+        <span class="hljs-comment">//more tests</span>
+        System.out.println(<span class="hljs-string">"Testing completed"</span>);
+    }
+}
+</code></pre>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+    <span class="hljs-keyword">private</span> SalaryManager manager = <span class="hljs-keyword">new</span> SalaryManager();
+    <span class="hljs-keyword">private</span> String[] employees;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setEmployees</span><span class="hljs-params">(String[] employees)</span> </span>{
+        <span class="hljs-keyword">this</span>.employees = employees;
+    }
+
+    <span class="hljs-comment">/*the operation below is used to substitute the actual SalaryManager
+    with a stub used for testing */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSalaryManager</span><span class="hljs-params">(SalaryManager sm)</span> </span>{
+       <span class="hljs-keyword">this</span>. manager = sm;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">totalSalary</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i &lt; employees.length; i++){
+            total += manager.getSalaryForEmployee(employees[i]);
+        }
+        <span class="hljs-keyword">return</span> total;
+    }
+}
+</code></pre>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManager</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span></span>{
+        <span class="hljs-comment">//code to access employee’s salary history</span>
+        <span class="hljs-comment">//code to calculate total salary paid and return it</span>
+    }
+}
+</code></pre>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SalaryManagerStub</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SalaryManager</span> </span>{
+    <span class="hljs-comment">/* this method returns hard coded values used for testing */</span>
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getSalaryForEmployee</span><span class="hljs-params">(String empID)</span> </span>{
+        <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E001"</span>)) {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1000.0</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(empID.equals(<span class="hljs-string">"E002"</span>)) {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1500.0</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"unknown id"</span>);
+        }
+    }
+}
+</code></pre>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the INCORRECT statement about dependency injection">
+                        <question>
+                          <p>Choose the INCORRECT statement about dependency injection</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is a technique for increasing dependencies</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It is a technique for increasing dependencies</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub.</li>
+                            </ul>
+                            <p>Explanation: It is a technique we can use to substitute an existing component with another, without breaking its dependent components. It is useful when we want to test a component in isolation but the SUT (i.e., component
+                              under test) depends on other components. Using dependency injection, we can substitute those other components with test-friendly stubs. This is often done using polymorphism.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain test coverage :star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain how test coverage works :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="how-three-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Measuring coverage is often done using <em>coverage analysis tools</em>. Coverage measurements are used to improve testing E&amp;E (Effectiveness and Efficiency). For example, if a set of test cases does not achieve 100% branch coverage,
+                  more test cases are added to cover missed branches.</p>
+                <p>Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Tools → JUnit →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="junit-intermediate-three">JUnit: Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>...</p>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="info" header=":trophy: Can explain some QA techniques complementary to testing :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain software quality assurance :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Software Quality assurance (QA for short) is the process of ensuring that the software being built has the required levels of quality.</p>
+                <p>While testing is the most common activity used in QA, there are other complementary techniques such as <em>static analysis, code reviews,</em> and <em>formal verification</em>.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain validation and verification :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="validation-vs-verification-two">Validation vs Verification <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Quality Assurance = Validation + Verification</strong></p>
+                <p>QA involves checking two aspects:</p>
+                <ol>
+                  <li>Building the right system, i.e. are the requirements correct? This is called <em>validation</em>.</li>
+                  <li>Building the system right, i.e. are the requirements implemented correctly? This is called <em>verification</em>.</li>
+                </ol>
+                <p>Whether something belongs under validation or verification is not that important. What is more important is both are done, instead of limiting to verification (i.e., remember that the requirements can be wrong too).</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the least correct statement about validation and verification.">
+                        <question>
+                          <p>Choose the least correct statement about validation and verification.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Validation: Are we building the right product?, Verification: Are we building the product right?</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is very important to clearly distinguish between validation and verification.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The important thing about validation and verification is to remember to pay adequate attention to both.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Developer-testing is more about verification than validation.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. QA covers both validation and verification.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A system crash is more likely to be a verification failure than a validation failure.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Validation: Are we building the right product?, Verification: Are we building the product right?</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. It is very important to clearly distinguish between validation and verification.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The important thing about validation and verification is to remember to pay adequate attention to both.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Developer-testing is more about verification than validation.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. QA covers both validation and verification.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A system crash is more likely to be a verification failure than a validation failure.</li>
+                            </ul>
+                            <p>Explanation:</p>
+                            <p>To quote the handout, “Whether something belongs under validation or verification is not that important. What is more important is that we do both”.</p>
+                            <p>Developer testing is more about bugs in code, rather than bugs in the requirements.</p>
+                            <p>In QA, system testing is more about verification (does the system follow the specification?) and acceptance testings is more about validation (does the system solve the user’s problem?). A system crash is more likely to be
+                              a bug in the code, not in the requirements.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can do code reviews :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Code review is the systematic examination code with the intention of finding where the code can be improved.</p>
+                <p>Reviews can be done in various forms. Some examples below:</p>
+                <ul>
+                  <li>
+                    <p><strong>In pair programming</strong></p>
+                    <ul>
+                      <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Pull Request reviews</strong></p>
+                    <ul>
+                      <li>Tools such as GitHub and BitBucket allows the new code to be proposed as Pull Requests and provides the ability for others to review the code in the PR.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Formal inspections</strong></p>
+                    <ul>
+                      <li>
+                        <p>Inspections involve a group of people systematically examining a project artefact to discover defects. Members of the inspection team play various roles during the process, such as:</p>
+                        <ul>
+                          <li>the author - the creator of the artefact</li>
+                          <li>the moderator - the planner and executer of the inspection meeting</li>
+                          <li>the secretary - the recorder of the findings of the inspection</li>
+                          <li>the inspector/reviewer - the one who inspects/reviews the artefact.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>Advantages:</p>
+                <ul>
+                  <li>It can detect functionality defects as well as other problems such as coding standard violations.</li>
+                  <li>Can verify non-code artefacts and incomplete code</li>
+                  <li>Do not require test drivers or stubs.</li>
+                </ul>
+                <p>Disadvantages:</p>
+                <ul>
+                  <li>It is a manual process and therefore, error prone.</li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain static analysis :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box type="primary">
+                  <div>
+                    <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
+                  </div>
+                </tip-box>
+                <p>Static analysis can find anomalies such as unused variables and unhandled exceptions. Detection of such anomalies helps in improving the code quality. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an
+                  IDE will highlight unused variables as you type the code into the editor. Higher-end static analyzers (e.g. CheckStyle for Java) can check for more complex (and sometimes user-defined) anomalies, such as overwriting a variable before
+                  its current value is used.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain formal verification :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Formal verification uses mathematical techniques to prove the correctness of a program.</p>
+                <p>Advantages:</p>
+                <ul>
+                  <li>Formal verification can be used to prove the absence of errors. In contrast, testing can only prove the presence of error, not the absence.</li>
+                </ul>
+                <p>Disadvantages:</p>
+                <ul>
+                  <li>It only proves the compliance with the specification, but not the actual utility of the software.</li>
+                  <li>It requires highly specialized notations and knowledge which makes it an expensive technique to administer.</li>
+                </ul>
+                <p>Therefore, formal verifications are more commonly used in safety-critical software such as flight control systems.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: While using formal methods is more expensive than testing, it indeed can prove the correctness of a piece of software conclusively, in certain contexts. Getting such proof via testing requires exhaustive testing,
+                              which is not practical to do in most cases.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header=":trophy: Can explain testability :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Quality Assurance → Testing →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="testability-three">Testability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>Testability is an indication of how easy it is to test an SUT. As testability depends a lot on the design and implementation. We should try to increase the testability of our software when we design and implement them.</p>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="info" header=":trophy: Can combine test case design techniques :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain test case design techniques at a higher level :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="recap-four">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>{todo}</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+  </div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\project-v13._include_.html" name="%%Admin &raquo;%% Project: v1.3 :star:" header="%%Admin &raquo;%% Project: v1.3 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 8" expandable="" ctrl-lvl="1" no-close=""></panel>
+
+<panel header=":mega: Lecture 9" expandable="" ctrl-lvl="1" no-close=""></panel>

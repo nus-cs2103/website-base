@@ -1,0 +1,1422 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <div>
+      <panel type="danger" header=":trophy: Can create PRs on GitHub :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain branching :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="branching-two">Branching <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Branching is the process of evolving multiple versions of the software in parallel. For example, one team member can create a new branch and add an experimental feature to it while the rest of the team keeps working on another branch.
+                  Branches can be given names e.g. <code>master</code><code>release</code><code>dev</code>. A branch can be <em>merged</em> to another branch. Merging usually result in a new commit that represents the combination of the changes done in
+                  the two branches.</p>
+                <pic src="/website/book/revisionControl/branching/images/diagram.png" height="180"><strong>Branching and merging</strong></pic>
+                <p><strong><em>Merge conflicts</em></strong> happen when you try to merge two branches that had changed the same part of the code and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those conflicts
+                  manually.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can use Git branching :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="branch-two">Branch <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>
+                  <panel src="/website\book\revisionControl\branching\embed._include_.html" header="Revision Control: Branching" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <p>Take any repo you have on your computer. Observe that you are in the branch called <code>master</code>.</p>
+                <ol>
+                  <li>Start branch named <code>feature1</code> and switch to the new branch.</li>
+                </ol>
+                <tabs>
+                  <tab header="SourceTree">
+                    <div>
+                      <p>Click on the <code>Branch</code> button on the main menu. In the next dialog, enter the branch name and click <code>Create Branch</code></p><img src="/website/book/gitAndGithub/branch/images/sourcetree_1.png" height="150">
+                      <p></p><img src="/website/book/gitAndGithub/branch/images/sourcetree_2.png" height="150">
+                      <p></p>
+                    </div>
+                    <hr>
+                  </tab>
+                  <tab header="CLI">
+                    <div>
+                      <pre class="hljs"><code>git branch feature1
+git checkout feature1
+</code></pre>
+                      <p>One-step shortcut</p>
+                      <pre class="hljs"><code>git checkout –b feature1
+</code></pre>
+                    </div>
+                    <hr>
+                  </tab>
+                </tabs>
+                <ol start="2">
+                  <li>
+                    <p>Create some commits in the new branch.</p>
+                  </li>
+                  <li>
+                    <p>Switch to master and note how the changes you did in the <code>feature1</code> branch are no longer in the working directory.</p>
+                  </li>
+                </ol>
+                <tabs>
+                  <tab header="SourceTree">
+                    <div>
+                      <p>Double-click the <code>master</code> branch</p><img src="/website/book/gitAndGithub/branch/images/sourcetree_3.png" height="150">
+                      <p></p>
+                    </div>
+                    <hr>
+                  </tab>
+                  <tab header="CLI">
+                    <div>
+                      <pre class="hljs"><code>git checkout master
+</code></pre>
+                    </div>
+                    <hr>
+                  </tab>
+                </tabs>
+                <ol start="4">
+                  <li>Add a commit to the master branch. Let’s imagine it’s a bug fix.</li>
+                </ol><img src="/website/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
+                <p></p>
+                <ol start="5">
+                  <li>
+                    <p>Switch back to the branch <code>feature1</code></p>
+                  </li>
+                  <li>
+                    <p>To get the bug fix in the <code>master</code> branch to the <code>feature1</code> branch, merge the <code>master</code> branch to the <code>feature1</code> branch, be like this:</p>
+                  </li>
+                </ol><img src="/website/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
+                <p></p>
+                <tabs>
+                  <tab header="SourceTree">
+                    <div>
+                      <p>Right-click on the <code>master</code> branch and choose <code>merge master into the current branch</code>. Click OK in the next dialog.</p>
+                    </div>
+                    <hr>
+                  </tab>
+                  <tab header="CLI">
+                    <div>
+                      <pre class="hljs"><code>git merge master
+</code></pre>
+                    </div>
+                    <hr>
+                  </tab>
+                </tabs>
+                <ol start="7">
+                  <li>
+                    <p>Add another commit to the <code>feature1</code> branch</p>
+                  </li>
+                  <li>
+                    <p>Switch to the <code>master</code> branch and add one more commit.</p>
+                  </li>
+                  <li>
+                    <p>Merge <code>feature1</code> to the master branch.</p>
+                  </li>
+                </ol><img src="/website/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
+                <p></p>
+                <p>{show a more intuitive version of the graph}</p>
+                <p>{mention fastforwarding}</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can use Git to resolve merge conflicts :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="merge-conflicts-three">Merge Conflicts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <ol>
+                  <li>
+                    <p>Start a branch named <code>fix1</code> in a local repo. Create a commit that adds a line with some text to one of the files.</p>
+                  </li>
+                  <li>
+                    <p>Switch back to <code>master</code> branch. Create a commit that adds a line with some different text in the exact location the previous line was added.</p>
+                  </li>
+                </ol><img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
+                <p></p>
+                <ol start="3">
+                  <li>Try to merge the branch. Git will report a merge conflict. If you open the conflicted file, you will see something like this:</li>
+                </ol>
+                <pre class="hljs"><code>COLORS
+------
+blue
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+black
+=======
+green
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
+red
+white```
+The conflicted part is marked between a line starting with `&lt;&lt;&lt;&lt;&lt;&lt;&lt; ` and a line starting with `&gt;&gt;&gt;&gt;&gt;&gt;&gt;`. Let us assume you want to keep both lines in the merged version. You can modify the file like this.
+```txt
+COLORS
+------
+blue
+black
+green
+red
+white
+</code></pre>
+                <p>Now, stage the changes, and commit.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can review and merge PRs on GitHub :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="manage-prs-three">Manage PRs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <ol>
+                  <li>Go to GitHub and review (i.e. add some dummy comments to the code) to the first PR created <a href="./createPRs">previously</a>.</li>
+                  <li>Update the add-foo PR: Add some more commits to the <code>add-foo</code> branch and push the new commits to the fork. The PR will be updated automatically.</li>
+                  <li>Merge add-foo PR.</li>
+                  <li>Sync the local repo with the upstream repo. i.e. pull the master branch to the local repo.</li>
+                </ol>
+                <pre class="hljs"><code>git checkout master
+git pull origin master
+</code></pre>
+                <ol start="5">
+                  <li>Resolve conflicts. Note that GitHub page for the <code>add-bar</code> PR is not showing a conflict. You can resolve it locally and update the PR accordingly.</li>
+                </ol>
+                <ul>
+                  <li>Switch to the <code>add-bar</code> branch. Merge <code>master</code> branch to it, which will surface the merge conflict. Resolve it and complete the merge.</li>
+                  <li>Push the updated <code>add-bar</code> branch to the fork.</li>
+                </ul>
+                <ol start="6">
+                  <li>Merge second PR.</li>
+                </ol>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can implement classes :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can describe OOP at a higher level :star:" expandable="">
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can describe how OOP relates to the real world :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <blockquote>
+                  <p>Every object has both state (data) and behavior (operations on data). In that, they’re not much different from ordinary physical objects. It’s easy to see how a mechanical device, such as a pocket watch or a piano, embodies both state
+                    and behavior. But almost anything that’s designed to do a job does, too. Even simple things with no moving parts such as an ordinary bottle combine state (how full the bottle is, whether or not it’s open, how warm its contents are)
+                    with behavior (the ability to dispense its contents at various flow rates, to be opened or closed, to withstand high or low temperatures).</p>
+                  <p>It’s this resemblance to real things that gives objects much of their power and appeal. They can not only model components of real systems, but equally as well fulfill assigned roles as components in software systems.</p>
+                  <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+                </blockquote>
+                <p><strong>Object Oriented Programming (OOP) views the world as a network of interacting objects.</strong></p>
+                <tip-box>
+                  <p>Consider the following real world scenario:</p>
+                  <p>You are asked to find out the average age of a group of people Adam, Beth, Charlie, and Daisy. Take a piece of paper and pen, go to each person, ask for their age, and note it down. After collecting the age of all four, you enter it
+                    into a calculator to find the total. And then, use the same calculator to divide the total by four, to get the average age. This can be viewed as the objects You, Pen, Paper, Calculator, Adam, Beth, Charlie, and Daisy interacting to
+                    accomplish to achieve some end result.</p>
+                  <p>{visual: real world scenario, objects marked}</p>
+                </tip-box>
+                <p>These objects can be considered as connected in a certain network of certain structure.</p>
+                <p>{visual: object network marked}</p>
+                <p><strong>OOP solutions try to follow a similar object network inside the computer’s memory – a sort of a virtual simulation of the corresponding real world scenario – so that a similar result can be achieved programmatically.</strong></p>
+                <p>{visual: Direct mapping}</p>
+                <p><strong>OOP does not demand that the virtual world object network follow the real world exactly.</strong></p>
+                <tip-box>
+                  <p>For example, it can be tweaked a bit as follows:</p>
+                  <ul>
+                    <li>Use an object called Main to represent your role in the scenario.</li>
+                    <li>As there is no physical writing involved, we can replace the Pen and Paper with an object called AgeList that is able to keep a list of ages.</li>
+                  </ul>
+                  <p>{visual: optimizations: You → Main; Pen + Paper → AgeList}</p>
+                </tip-box>
+                <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Object</th>
+                      <th style="text-align:center">Real World?</th>
+                      <th style="text-align:center">Virtual World?</th>
+                      <th style="text-align:center">Example of State (i.e. Data)</th>
+                      <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">Adam</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">Name, Date of Birth</td>
+                      <td style="text-align:center">Calculate age based on birthday</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">Pen</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center"></td>
+                      <td style="text-align:center">Ink color, Amount of ink remaining</td>
+                      <td style="text-align:center">Write</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">AgeList</td>
+                      <td style="text-align:center"></td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">Recorded ages</td>
+                      <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">Calculator</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">Numbers already entered</td>
+                      <td style="text-align:center">Calculate the sum, divide</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">You/Main</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">x</td>
+                      <td style="text-align:center">Average age, Sum of ages</td>
+                      <td style="text-align:center">Use other objects to calculate</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><strong>Every object has an interface and an implementation.</strong></p>
+                <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
+                <tip-box>
+                  <p>Examples:</p>
+                  <ul>
+                    <li>Calculator: the buttons and the display are part of the interface; circuits are part of the implementation.</li>
+                    <li>Adam: In the context of our ‘calculate average age’ example, the interface of Adam consists of requests that adam will respond to, e.g. “Give age to the nearest year, as at Jan 1st of this year” “State your name”; the implementation
+                      includes the mental calculation Adam uses to calculate the age which is not visible to other objects.</li>
+                  </ul>
+                </tip-box>
+                <p>Similarly, every object in the virtual world has an interface and an implementation.</p>
+                <tip-box>
+                  <p>Examples:</p>
+                  <ul>
+                    <li>Adam: the interface might have a method getAge(Date asAt); the implementation of that method is not visible to other objects.</li>
+                  </ul>
+                </tip-box>
+                <p><strong>Objects interact by sending messages.</strong></p>
+                <p>Both real world and virtual world object interactions can be viewed as objects sending message to each other. The message can result in the sender object receiving a response and/or the receiving object’s state being changed. Furthermore,
+                  the result can vary based on which object received the message, even if the message is identical.</p>
+                <tip-box>
+                  <p>Examples:</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">World</th>
+                        <th style="text-align:center">Sender</th>
+                        <th style="text-align:center">Receiver</th>
+                        <th style="text-align:center">Message</th>
+                        <th style="text-align:center">Response</th>
+                        <th style="text-align:center">State Change</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">Real</td>
+                        <td style="text-align:center">You</td>
+                        <td style="text-align:center">Adam</td>
+                        <td style="text-align:center">&quot;What is your name?&quot;</td>
+                        <td style="text-align:center">&quot;Adam&quot;</td>
+                        <td style="text-align:center">-</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">Real</td>
+                        <td style="text-align:center">Same</td>
+                        <td style="text-align:center">Beth</td>
+                        <td style="text-align:center">Same</td>
+                        <td style="text-align:center">&quot;Beth&quot;</td>
+                        <td style="text-align:center">-</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">Real</td>
+                        <td style="text-align:center">You</td>
+                        <td style="text-align:center">Pen</td>
+                        <td style="text-align:center">Put nib on paper and apply pressure</td>
+                        <td style="text-align:center">Makes a mark on your paper</td>
+                        <td style="text-align:center">Ink level goes down</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">Virtual</td>
+                        <td style="text-align:center">Main</td>
+                        <td style="text-align:center">Calculator (current total is 50)</td>
+                        <td style="text-align:center">add(int i): int i = 23</td>
+                        <td style="text-align:center">73</td>
+                        <td style="text-align:center">total = total + 23</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the least correct statement.">
+                        <question>
+                          <p>Choose the least correct statement</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. An object should not depend on another object</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>Choose the least correct statement</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. An object should not depend on another object</li>
+                            </ul>
+                            <p>Explanation: The first two statements means the same concept (the ‘state’ of an object is represented by the data values it holds). The third statement explains how that concept is implemented at code level. Objects can interact
+                              with other objects to perform various tasks and therefore may depend on other objects.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can draw a UML class :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div><img src="/website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="100">
+                <p></p>
+                <p>The above illustrates the basic notations of a class diagram: attributes represent the data of the class; methods represent the operations (or behavior).</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                  <p></p>
+                </tip-box>
+                <p>The ‘Operations’ compartment (or even both ‘Attributes’ and ‘Operations’ compartments) may be omitted if such details are not important for the task at hand.</p><img src="/website/book/uml/classDiagrams/classes/what/images/classes.png"
+                  height="100">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
+                  <p></p>
+                </tip-box>
+                <p>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation. The types of visibility and their exact meanings depend on the programming language used. Here are some
+                  common visibilities and how they are indicated in a class diagram:</p>
+                <div>
+                  <ul>
+                    <li><mark>+</mark> public</li>
+                    <li><mark>-</mark> private</li>
+                    <li><mark>#</mark> protected</li>
+                    <li><mark>~</mark> package</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which of these follow the correct UML notation?">
+                        <question>
+                          <p>Which of these follow the correct UML notation?</p><img src="/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. all of them</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. none of them</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. 1,2,3 only</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. 1,2,3,5 only</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. 3,4,5 only</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. all of them</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. none of them</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. 1,2,3 only</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. 1,2,3,5 only</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. 3,4,5 only</li>
+                            </ul>
+                            <p>Explanation: It is not necessary to have all three compartments. However, 2nd compartment should contain variables and 3rd one should contain methods. It is ok the keep the any of the bottom two empty too.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can draw objects shown in UML notation :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="objects-one">Objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Notation:</p><img src="/website/book/uml/objectDiagrams/objects/images/notation.png" height="85">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain the relationship between classes and object :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-one-2">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Writing an OOP program is essentially writing instructions that the computer uses to create the virtual world of object network and providing it the inputs to produce the outcome we want. It turns out sometimes multiple objects have the
+                  same behavior because they are of the same kind. Instructions for creating a one kind (or ‘class’) of objects can be done in one go and use that same instructions to instantiate (i.e. create) objects of that kind. We call such instructions
+                  a <em>Class</em>.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>When writing an OOP program to calculate the average age, instructions for creating objects Adam, Beth, Charlie, and Daisy will be very similar because they are all of the same kind : they all represent ‘persons’ with same interface,
+                    same kind of data (i.e. name, DoB, etc.), and the same kind of behavior (i.e. getAge(Date), getName(), etc.). Therefore, we can have a class called Person containing instructions on how to create Person objects and use that class to
+                    instantiate objects Adam, Beth, Charlie, and Daisy. Similarly, we need classes AgeList, Calculator, and Main classes to instantiate one each of AgeList, Calculator, and Main objects.</p>
+                </tip-box>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\classes\topicPanel._include_.html" header="UML: Class Diagrams: Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\uml\objectDiagrams\objects\embed._include_.html" header="UML: Object Diagrams: Objects" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box><img src="/website/book/oopDesign/classes/basic/images/person.png" height="100">
+                  <p></p>
+                  <p><code>Person</code> class and some example instances of the <code>Person</code> class.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can implement basic class structures :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain/identify class diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution. These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
+                <p>{Give some example class diagrams here}</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can use basic-level class diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="class-diagrams-basic-one">Class Diagrams - Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Class diagrams model class structures in OOP solutions.</p>
+                <p>
+                  <panel src="/website\book\oopDesign\classes\basic\embed._include_.html" header="OOP: Classes: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\inheritance\basic\embed._include_.html" header="OOP: Inheritance: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain associations :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-one-3">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
+                <p>
+                  <panel src="/website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120">
+                  <p></p>
+                </tip-box>
+                <p>These object structures can change over time.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100"><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100">
+                  <p></p>
+                </tip-box>
+                <p>These associations can be reflected among classes too.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\basic\embed._include_.html" header="UML: Class Diagrams: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\uml\classDiagrams\associations\labels\embed._include_.html" header="UML: Class Diagrams: Associations: Labels" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\uml\classDiagrams\associations\roles\embed._include_.html" header="UML: Class Diagrams: Associations: Roles" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can interpret simple associations in a class diagram :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-one-4">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use a solid line to show an association between two classes.</p><img src="/website/book/uml/classDiagrams/associations/basic/images/basic.png" height="200">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can interpret association navigabilities in class diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="navigability-two">Navigability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use arrow heads to indication the navigability of an association.</p>
+                <tip-box><img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
+                  <p></p>
+                  <p><code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain the meaning of navigability :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="navigability-one">Navigability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called <em>navigability</em>.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\navigability\embed._include_.html" header="UML: Class Diagrams: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: What does the navigability given by this diagram mean?">
+                        <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                            </ul>
+                            <p>Explanation: The diagram indicates that Unit item should know about the Item object. In the implementation, the Unit object will hold a Unit object in one of its variables.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain/use association roles in class diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="roles-two">Roles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>‘Role’ labels are optionally used to indicate the role played by the classes in the association.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associations/roles/images/husbandWife.png" height="70">
+                  <p></p>
+                  <p>This association represents a marriage between a Man object and a Woman object. The respective roles played by objects of these two classes are husband and wife.</p>
+                </tip-box>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
+                  <p></p>
+                </tip-box><img src="/website/book/uml/classDiagrams/associations/roles/images/association.png" height="120">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain/use association labels in class diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="labels-two">Labels <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Association labels</em> describe the association. The arrow head indicates the “direction” in which the label is to be read.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" height="70">
+                  <p></p>
+                  <p>an Admin object uses Student objects” or “Student objects are used by an Admin object”.</p>
+                </tip-box><img src="/website/book/uml/classDiagrams/associations/labels/images/association.png" height="70">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain what is the multiplicity of an association :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="multiplicity-two">Multiplicity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A class diagram can also indicate the <em>multiplicity</em> of an association. Multiplicity is the number of objects of a class that participate in the association.</p>
+                <p>Commonly used multiplicities:</p>
+                <ul>
+                  <li>0..1 : optional, can be linked to 0 or 1 objects</li>
+                  <li>1 : compulsory, must be linked to one object at all times.</li>
+                  <li>
+                    <ul>
+                      <li>: can be linked to 0 or more objects.</li>
+                    </ul>
+                  </li>
+                  <li>n..m : the number of linked objects must be n to m inclusive</li>
+                </ul>
+                <tip-box>
+                  <p>In the diagram below, an Admin object administers (in charge of) any number of students but a Student object must always be under the charge of exactly one Admin object</p><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png"
+                    height="100">
+                  <p></p>
+                  <p>Example:</p>
+                  <ul>
+                    <li>Each Student must be supervised by a Professor.</li>
+                    <li>Students have matriculation numbers. A Professor cannot supervise more than 5 students.</li>
+                    <li>Admin staff handles Professors as well.</li>
+                  </ul><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
+                  <p></p>
+                </tip-box><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/association.png" height="120">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain the meaning of multiplicity :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="multiplicity-two-2">Multiplicity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called <em>multiplicity</em>.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\multiplicity\embed._include_.html" header="UML: Class Diagrams: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
+                        <question><img src="/website/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can implement associations :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="associations-one">Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>
+                  <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="OOP: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <p>We use instance level variables to implement associations.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+                  <p></p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    Minefield minefield;
+    ...
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    ...
+}
+</code></pre>
+                  <p>A normal instance-level variable gives us a 0..1 multiplicity (also called <em>optional associations</em>) because a variable can hold a reference to a single object or null.</p><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png"
+                    height="40">
+                  <p></p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    ConfigGenerator cg;
+    ...
+}
+</code></pre>
+                  <p>A variable can be used to implement a 1-multiplicity too (also called <em>compulsory associations</em>).</p><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+                  <p></p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+    Bar bar;
+    ...
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
+    Foo foo;
+    ...
+}
+</code></pre>
+                  <p>Bi-directional associations require matching variables in both classes.</p>
+                  <p>To implement other multiplicities, choose a suitable data structure such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    Cell[][] cell;
+    ...
+}
+</code></pre>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can do exception handling in code :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain error handling :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <blockquote>
+                  <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own.
+                    In extreme cases, the application may log the user off or shut down the system. <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></p>
+                </blockquote>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain exceptions :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Exceptions are used to deal with ‘unusual’ but not entirely unexpected situations that the program might encounter at run time.</p>
+                <tip-box type="primary">
+                  <div>
+                    <p><strong>Exception</strong>:</p>
+                    <blockquote>
+                      <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
+                    </blockquote>
+                  </div>
+                </tip-box>
+                <tip-box>
+                  <p>Examples:</p>
+                  <ul>
+                    <li>A network connection encounters a timeout due to a slow server.</li>
+                    <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+                  </ul>
+                </tip-box>
+                <p>Exceptions are not program bugs. Rather, they are unusual situations that need to be recovered from, if possible.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can avoid using exceptions to control normal workflow :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>{to add: do not use exceptions for normal workflow}</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can interpret object diagrams :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain the purpose of UML object diagrams :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>An object diagram shows an object structure at a given point of time.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain object diagrams :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="object-diagrams-three">Object Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Object diagrams model object structures that exist at a given moment of time.</p>
+                <p>
+                  <panel src="/website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can distinguish between class diagrams and object diagrams :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="object-vs-class-diagrams-two">Object vs Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
+                <ul>
+                  <li>Instance name may be shown</li>
+                  <li>There is a <code>:</code> before the class name</li>
+                  <li>Instance and class names are underlined</li>
+                  <li>Methods are omitted</li>
+                  <li>Multiplicities are omitted</li>
+                </ul>
+                <p>Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+                <tip-box>
+                  <p>Examples:</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+                  <p></p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which of these class diagrams match the given object diagram?">
+                        <question>
+                          <p>Which of these class diagrams match the given object diagram?</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. none</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. (1) only</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. (2) only</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. both match</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. none</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. (1) only</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. (2) only</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. both match</li>
+                            </ul>
+                            <p>Explanation: Both class diagrams allow one Unit object to be linked to one Item object.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can explain how models are used :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain models :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>A <em>model</em> is anything used in any way to represent anything else.</strong> For example, a class diagram is a model that represents a software design and is drawn using the UML modeling notation.</p>
+                <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> For example, a class diagram captures the class structure of the software design but not the runtime behavior.</p>
+                <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong> For example, in addition to the class diagram, a number of sequence diagrams may need to be created to capture various interesting interaction scenarios
+                  the software undergoes.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can identify UML models :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="uml-models-four">UML Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p><img src="/website/book/modeling/introduction/umlModels/images/modelDiagram.png" height="300">
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header=":trophy: Can explain the abstraction aspect of OOP :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="objects-as-abstraction-two">Objects as Abstraction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>The concept of Object in OOP is an abstraction mechanism because it allows us to abstract away the lower level details (i.e. data and the methods) and work with bigger granularity entities (i.e. objects).</p>
+            <tip-box>
+              <p>Example:</p>
+              <p>We can deal with Adam object instead of details such as Adam’s date of birth (DoB), in what format the DoB is stored, the algorithm used to calculate the age from the DoB.</p>
+            </tip-box>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <panel type="info" header=":trophy: Can explain the encapsulation aspect of OOP :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="encapsulation-of-objects-two">Encapsulation Of Objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <blockquote>
+              <p>Encapsulation protects an implementation from unintended actions and from inadvertent access. -</p>
+              <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+            </blockquote>
+            <p>An object is an <em>encapsulation</em> some data and related functions. i.e.,</p>
+            <ol>
+              <li>It <em>packages</em> those data and related functions together into one self-contained unit.</li>
+              <li>The data is hidden from the outside world (we call this concept <em>information hiding</em>) and are only accessible using the interface.</li>
+            </ol>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Choose the correct statement.">
+                    <question>
+                      <p>Choose the correct statement</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
+                      </ul>
+                      <div slot="answer">
+                        <p>Choose the correct statement</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
+                        </ul>
+                        <p>Explanation: The second statement should be. An object is an <em>abstraction</em> because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="info" header=":trophy: Can use Java enumerations :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain the meaning of enumerations :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="enumerations-two">Enumerations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Enumerations are primarily a collection of values that can be considered a data type.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\enumerations\topicPanel._include_.html" header="UML: Class Diagrams: Enumerations" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/classes/enumerations/images/priority.png" height="100">
+                  <p></p>
+                  <p>Priority: HIGH, MEDIUM, LOW</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can interpret enumerations in class diagrams :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>An <code>&lt;&lt; enumeration &gt;&gt;</code> is used to indicate that an attribute can only take on a fixed set of values.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" height="150">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+  </div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\appendixB-policies._include_.html#policy-plagiarism" name="%%Admin &raquo;%% Policy on plagiarism :star:" fragment="policy-plagiarism" header="%%Admin &raquo;%% Policy on plagiarism :star:" isOpen="false"
+          no-close="true" no-switch="true"></panel>
+        <panel type="danger" src="/website\admin\appendixB-policies._include_.html#policy-reuse" name="%%Admin &raquo;%% Policy on reuse :star:" fragment="policy-reuse" header="%%Admin &raquo;%% Policy on reuse :star:" isOpen="false" no-close="true"
+          no-switch="true"></panel>
+        <panel type="danger" src="/website\admin\appendixB-policies._include_.html#policy-outsiderHelp" name="%%Admin &raquo;%% Policy on help from outsiders :star:" fragment="policy-outsiderHelp" header="%%Admin &raquo;%% Policy on help from outsiders :star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="info" src="/website\admin\exams._include_.html" name="%%Admin &raquo;%% Exams :star::star::star:" header="%%Admin &raquo;%% Exams :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-noLaptop" name="%%Admin &raquo;%% FAQ: What if I don't carry around a laptop :star::star::star::star:" fragment="admin-faq-noLaptop" header="%%Admin &raquo;%% FAQ: What if I don't carry around a laptop :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixB-policies._include_.html#policy-publishingSubmissions" name="%%Admin &raquo;%% Policy on publishing submissions :star::star::star::star:" fragment="policy-publishingSubmissions" header="%%Admin &raquo;%% Policy on publishing submissions :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+    <p></p>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 3" expandable="" ctrl-lvl="1" no-close=""></panel>
+
+<panel header=":mega: Lecture 4" expandable="" ctrl-lvl="1" no-close=""></panel>

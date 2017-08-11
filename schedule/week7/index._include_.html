@@ -1,0 +1,931 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <div>
+      <panel type="danger" header=":trophy: Can reduce coupling :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain coupling :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have
+                  a more coupling between the components than design B.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/designPrinciples/coupling/what/images/playerPuzzleManager.png" height="220">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Discuss the coupling levels of alternative designs x and y.">
+                        <question has-input="true">
+                          <p>Discuss the coupling levels of alternative designs x and y.</p>
+                          <tip-box><img src="/website/book/designPrinciples/coupling/what/images/alternativeDesigns.png" height="180">
+                            <p></p>
+                          </tip-box>
+                          <div slot="answer">
+                            <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links
+                              may be stronger than the others.). However, in <em>x</em>, A is highly-coupled to the rest of the system while <em>B</em>, <em>C</em>, <em>D</em>, and <em>E</em> are standalone (do not depend on anything else). In <em>y</em>,
+                              no component is as highly-coupled as <em>A</em> of <em>x</em>. However, only <em>D</em> and <em>E</em> are standalone.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can justify the need to reduce coupling :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Highly coupled (also referred to as tightly coupled or strongly coupled) systems display the following disadvantages:</p>
+                <ul>
+                  <li>A change in one module usually forces changes in other modules coupled to it (i.e. a ripple effect).</li>
+                  <li>Integration is harder because multiple components coupled with each other have to be integrated at the same time.</li>
+                  <li>Testing and reuse of the module is harder due to its dependence on other modules.</li>
+                </ul>
+                <p>In the case of high-coupling (i.e. relatively high dependency), a change in one component may require changes in other coupled components. Therefore, we should strive to achieve a low-coupled design.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Explain the link (if any) between regression and coupling.">
+                        <question has-input="true">
+                          <p>Explain the link (if any) between regression and coupling.</p>
+                          <div slot="answer">
+                            <p>When the system is highly-coupled, the risk of regression is higher too. When component A is modified, all components ‘coupled’ to component A risk ‘unintended behavioral changes’.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Discuss the relationship between coupling and testability (testability is a measure of how easily a given component can be tested).">
+                        <question has-input="true">
+                          <p>Discuss the relationship between coupling and testability (testability is a measure of how easily a given component can be tested).</p>
+                          <div slot="answer">
+                            <p>Coupling decreases testability as it is difficult to isolate highly-coupled objects.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Choose the least correct statement.">
+                        <question>
+                          <p>Choose the least correct statement.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                            </ul>
+                            <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can identify types of coupling :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="types-of-coupling-three">Types of Coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Temporal coupling etc.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can increase cohesion :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain cohesion :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are. A highly-cohesive component keeps related functionalities together while keeping out all other unrelated things.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can justify the need to increase cohesion :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="why-one-2">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The following are some disadvantages of low cohesion (or “weak cohesion”).</p>
+                <ul>
+                  <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                  <li>Difficulty in maintaining modules because a localized adjustment in the requirements can result in changes spread across the system since requirement-related functionality is implemented across many components of the system.</li>
+                  <li>Modules become less reusable because they do not represent logical units of functionality.</li>
+                </ul>
+                <p>One should strive for high cohesion to facilitate code maintenance and reuse.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="danger" header=":trophy: Can explain a product from the user's perspective :star:" expandable="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="warning" header=":trophy: Can interpret intermediate sequence diagrams :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can interpret sequence diagrams with reference frames :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="reference-frames-two">Reference Frames <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use a <em>ref frame</em> to allow a segment of the interaction to be omitted and detailed in another diagram.</p>
+                <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
+                  <p></p><img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can interpret sequence diagrams with object deletion :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="object-deletion-two">Object Deletion <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In languages such as Java that supports automatic memory management, although object deletion is not that important, the above notation can still be used to show the point at which the object ceased to be used.</p>
+                <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can interpret sequence diagrams with self invocation :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="self-invocation-two">Self Invocation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>This is how we show a method of an object calling another method of the same object.</p>
+                <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
+                  <p></p><img src="/website/book/uml/sequenceDiagrams/selfInvocation/images/object.png" height="150">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can interpret sequence diagrams with alternative paths :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="alternative-paths-two">Alternative Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use <code>alt</code> frames to indicate alternative paths.</p>
+                <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can interpret sequence diagrams with optional paths :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="optional-paths-two">Optional Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use <code>opt</code> frames to indicate optional paths.</p>
+                <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain abstraction :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain what is software design :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>What is software design? Design can be viewed as a form of problem solving.</p>
+                <p>Where does it fit in?</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can use simple class diagrams and sequence diagrams to model an OO solution :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain the use how design modelling can be used before implementation :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Suppose we are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/conceptualizingSolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                  <p></p>
+                </tip-box>
+                <p>Before jumping into coding, we may want to find out things such as,</p>
+                <ul>
+                  <li>Is this class structure is able to produce the behavior we want?</li>
+                  <li>What API should each class have?</li>
+                  <li>Do we need more classes?</li>
+                </ul>
+                <p>To answer those questions, we can analyze the how the objects of these classes will interact with each other to produce the behavior we want.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can use intermediate class diagram and sequence diagram concepts to model an OO design :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="intermediate-three">Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Next, let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
+                <p>
+                  <panel src="/website\book\uml\sequenceDiagrams\referenceFrames\embed._include_.html" header="UML: Sequence Diagrams: Reference Frames" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/playerTextLogicRef.png" height="250">
+                  <p></p><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/textLogicSd.png" height="210">
+                  <p></p>
+                </tip-box>
+                <p>This interaction adds the following methods to the <code>Logic</code> class</p>
+                <ul>
+                  <li><code>clearCellAt(int x, int y)</code></li>
+                  <li><code>markCellAt(int x, int y)</code></li>
+                  <li><code>getGameState() :GAME_STATE (GAME_STATE: READY, IN_PLAY, WON, LOST, …)</code></li>
+                </ul>
+                <p>And it adds the following operation to Logic API:</p>
+                <ul>
+                  <li><code>getAppearanceOfCellAt(int,int):CELL_APPEARANCE (CELL_APPEARANCE: HIDDEN, ZERO, ONE, TWO, THREE, …, MARKED, INCORRECTLY_MARKED, INCORRECTLY_CLEARED)</code></li>
+                </ul>
+                <p>In the above design, <code>TextUi</code> does not access <code>Cell</code> objects directly. Instead, it gets values of type <code>CELL_APPEARANCE</code> from <code>Logic</code> to be displayed as a minefield to the player. Alternatively,
+                  each cell or the entire Minefield can be passed directly to <code>TextUi</code>.</p>
+                <p>Here is the updated class diagram:</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/textLogicMinefieldCell.png" height="200">
+                  <p></p>
+                </tip-box>
+                <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code>                  operation. We can model it like this:</p>
+                <p>
+                  <panel src="/website\book\uml\sequenceDiagrams\objectDeletion\embed._include_.html" header="UML: Sequence Diagrams: Object Deletion" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldReset.png" height="100">
+                  <p></p>
+                </tip-box>
+                <p>Our current model assumes that the <code>Minefield</code> object has enough information (i.e. H, W, and mine locations) to create itself.</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldNewGame.png" height="85">
+                  <p></p>
+                </tip-box>
+                <p>An alternative is to have a <code>ConfigGenerator</code> object that generates a string containing the minefield information as shown below.</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicConfigGenerator.png" height="170">
+                  <p></p>
+                </tip-box>
+                <p>In addition, <code>getWidth()</code>, <code>getHeight()</code>, <code>markCellAt(x,y)</code> and <code>clearCellAt(x,y)</code> can be handled like this.</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldFunctions.png" height="180">
+                  <p></p>
+                </tip-box>
+                <p>The updated class diagram:</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250">
+                  <p></p>
+                </tip-box>
+                <p>How is <code>getGameState()</code> operation supported? Given below are two ways (there could be other ways):</p>
+                <ol>
+                  <li><code>Minefield</code> class knows the state of the game at any time. <code>Logic</code> class retrieves it from the <code>Minefield</code> class as and when required.</li>
+                  <li><code>Logic</code> class maintains the state of the game at all times.</li>
+                </ol>
+                <p>Here’s the SD for option 1.</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldGetGameState.png" height="180">
+                  <p></p>
+                </tip-box>
+                <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
+                <p>
+                  <panel src="/website\book\uml\sequenceDiagrams\selfInvocation\embed._include_.html" header="UML: Sequence Diagrams: Self-Invocation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicMinefieldUpdateState.png" height="250">
+                  <p></p>
+                </tip-box>
+                <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
+                <p>
+                  <panel src="/website\book\uml\sequenceDiagrams\alternativePaths\embed._include_.html" header="UML: Sequence Diagrams: Alternative Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/minefieldCellAlt.png" height="200">
+                  <p></p>
+                </tip-box>
+                <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
+                <p>
+                  <panel src="/website\book\uml\sequenceDiagrams\optionalPaths\embed._include_.html" header="UML: Sequence Diagrams: Optional Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/logicTimerOpt.png" height="130">
+                  <p></p>
+                </tip-box>
+                <p>Updated class diagram:</p>
+                <tip-box><img src="/website/book/oopDesign/conceptualizingSolution/intermediate/images/fullClassDiagram.png" height="250">
+                  <p></p>
+                </tip-box>
+                <tip-box type="info">
+                  <p>When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations are
+                    required by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header=":trophy: Can draw intermediate level sequence diagrams :star::star::star:" expandable="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <panel type="info" header=":trophy: Can explain open-closed principle (OCP) :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Design → Design Principles →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>While it is possible to isolate the functionalities of a software system into modules, there is no way to remove interaction between modules. When modules interact with each other, coupling naturally increases. Consequently, it is harder to
+              localize any changes to the software system. In 1988, Bertrand Meyer proposed a guiding principle to alleviate this problem. The principle, known as the <em>open-closed principle</em>, states: “A module should be <em>open</em> for extension
+              but <em>closed</em> for modification”. That is, modules should be written so that they can be extended, without requiring them to be modified. In other words, changing what the modules do without changing the source code of the modules.</p>
+            <p>In object-oriented programming, these two seemingly opposing requirements can be achieved in various ways. This often requires separating the <em>specification (interface)</em> of a module from its <em>implementation</em>.</p>
+            <tip-box>
+              <p>Example:</p><img src="/website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
+              <p></p>
+              <p>The behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>,
+                the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. Indeed, its behavior was extended without having to open up and modify its code. Hence, it was open to extensions, but closed to modification.</p>
+            </tip-box>
+            <tip-box>
+              <p>The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of
+                <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
+              <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
+ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
+</code></pre>
+            </tip-box>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Choose the correct statement.">
+                    <question>
+                      <p>Which of these is closest to the meaning of the open-closed principle?</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. We should be able to change a software module’s behavior without modifying its code.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software module should remain open to modification as long as possible.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software module should be either open to modification and closed to extension.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Open source software rocks. Closed source software sucks.</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. We should be able to change a software module’s behavior without modifying its code.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software module should remain open to modification as long as possible.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software module should be either open to modification and closed to extension.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Open source software rocks. Closed source software sucks.</li>
+                        </ul>
+                        <p>Explanation: Please refer the handout for the definition of OCP.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="info" header=":trophy: Can implement association classes :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain the meaning of association classes :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="association-classes-three">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>At times, there is a need to store additional information about an association. For example, a <code>Man</code> class and a <code>Woman</code> class linked with a ‘married to’ association might also require the date of marriage to be stored.
+                  However, that data is related to the association but not specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional class can be introduced, e.g. a <code>Marriage</code>                  class, to store such information. These classes are called <em>association classes</em>.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associationClasses\topicPanel._include_.html" header="UML: Class Diagrams: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can interpret association classes in class diagrams :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Association classes are denoted as a connection to an association link using a dashed line as shown below.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associationClasses/what/images/manWoman.png" height="150">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can implement aggregation :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain the meaning of aggregations :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="aggregation-three">Aggregation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Aggregation</em> represents a ‘container-contained’ relationship. It is a weaker relationship than composition.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\aggregation\topicPanel._include_.html" header="UML: Class Diagrams: Aggregation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p><img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
+                <p></p>
+                <p><strong>Aggregation vs Composition</strong></p>
+                <p>The distinction between composition and aggregation is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether as using it adds more confusion than clarity.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?">
+                        <question>
+                          <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Composition symbol</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Aggregation symbol</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Composition symbol</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. Aggregation symbol</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can interpret aggregation in class diagrams :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use a hollow diamond is used to indicate an aggregation.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header=":trophy: Can use advanced class diagrams :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="class-diagrams-advanced-three">Class Diagrams - Advanced <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>
+              <panel src="/website\book\oopDesign\associations\aggregation\embed._include_.html" header="OOP: Associations: Aggregation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/website\book\oopDesign\associations\associationClasses\embed._include_.html" header="OOP: Associations: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Which one of the statement below does not match the class diagram.">
+                    <question>
+                      <p>Which one of the statement below does not match the class diagram.</p><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/mismatch.png" height="290">
+                      <p></p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Snake must belong to at least one board.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A SnakeHeadSquare can contain only one Snake head.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Square can contain a Snake head.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Snake head can be in more than one SnakeHeadSquare</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The Board has exactly 5 snakes.</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A Snake must belong to at least one board.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A SnakeHeadSquare can contain only one Snake head.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Square can contain a Snake head.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Snake head can be in more than one SnakeHeadSquare</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The Board has exactly 5 snakes.</li>
+                        </ul>
+                        <p>Explanation:</p>
+                        <p>(a) does not match because a Snake may or may not belong to a board (multiplicity is 0..1). (b) matches the diagram because the multiplicity given in 1. (c) matches the diagram because SnakeHeadSquare is a Sqaure (due to inheritance).
+                          (d) matches the diagram because the multiplicity given is * . (e) matches the diagram because the multiplicity given in 5.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="success" header=":trophy: Can interpret advanced sequence diagrams :star::star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="success" header=":trophy: Can interpret sequence diagrams with parallel paths :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="parallel-paths-three">Parallel Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use <code>par</code> frames to indicate parallel paths.</p>
+                <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
+                  <p></p>
+                  <p>In this example Logic is polling both CloudServer and LocalServer objects in parallel.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="dependency-inversion-principle-four">Dependency Inversion Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <tip-box type="primary">
+              <div>
+                <p><strong>Dependency Inversion Principle</strong>:</p>
+                <ol>
+                  <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
+                  <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
+                </ol>
+              </div>
+            </tip-box>
+            <tip-box>
+              <p>Example:</p>
+              <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
+                (note that inheritance is a dependency). Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes. Here, <code>Payee</code> is the abstraction
+                and is owned by the <code>Payroll</code> class.</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="interface-segregation-principle-four">Interface Segregation Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <tip-box type="primary">
+              <div>
+                <p><strong>Interface Segregation Principle (ISP)</strong>: No client should be forced to depend on methods it does not use.</p>
+              </div>
+            </tip-box>
+            <tip-box>
+              <p>Example:</p>
+              <p>The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
+              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+    <span class="hljs-comment">//...    </span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
+        <span class="hljs-comment">//...</span>
+    }
+
+}
+</code></pre>
+              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+    <span class="hljs-comment">//...    </span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(SalariedStaff staff)</span></span>{ <span class="hljs-comment">//does not violate ISP</span>
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre><img src="/website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\project-v12._include_.html" name="%%Admin &raquo;%% Project: v1.2 :star:" header="%%Admin &raquo;%% Project: v1.2 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="info" src="/website\admin\appendixF-teamworkIssues._include_.html" name="%%Admin &raquo;%% Appedix F: Handling Teamwork Issues :star::star::star:" header="%%Admin &raquo;%% Appedix F: Handling Teamwork Issues :star::star::star:" isOpen="false"
+          no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-favoriteTool" name="%%Admin &raquo;%% FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.? :star::star::star::star:" fragment="admin-faq-favoriteTool"
+          header="%%Admin &raquo;%% FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 6" expandable="" ctrl-lvl="1" no-close=""></panel>
+
+<panel header=":mega: Lecture 7" expandable="" ctrl-lvl="1" no-close=""></panel>

@@ -1,0 +1,1685 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <div>
+      <panel type="danger" header=":trophy: Can use activity diagrams :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain activity diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="introduction-two">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed. Understanding the workflow of the problem domain is important if the problem that is to be solved is connected to the workflow.</p>
+                <p><strong>A UML Activity diagram (AD) can model workflows.</strong></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can use linear paths in activity diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="linear-paths-two">Linear Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>An activity diagram (AD) consists of a sequence of actions and control flows. An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges. A control flow shows the flow of control
+                  from one action to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/diagram.png" height="230">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can use alternate paths in activity diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="alternate-paths-two">Alternate Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Branch nodes</em> and <em>merge nodes</em> have the same notation: a <strong>diamond</strong> shape. They are used to show alternative (not parallel) paths through the AD. Each control flow exiting a <em>Branch node</em> has a guard
+                  condition which allows control to flow only if the guard condition is satisfied. Therefore, a <em>guard</em> is a boolean condition that should be true for execution to take a specific path.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/diagram.png"
+                  height="230">
+                <p></p>
+                <tip-box>
+                  <p>Example: AD for the Minesweeper (MS) that shows actions done by the player and the game (MS).</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/minesweeper.png" height="240">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can use parallel paths in activity diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="parallel-paths-two">Parallel Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Forks</em> and <em>joins</em> have the same notation: a <strong>bar</strong>. They indicate the start and end of concurrent flows of control. The following diagram shows an example of their use. For <em>join</em>, execution along all
+                  incoming control flows should be complete before the execution starts on the outgoing control flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can use basic activity diagram notations :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="combined-three">Combined <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div></div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Adding features to Minesweeper AD :three:">
+                        <question has-input="true">
+                          <p>Given below is the high-level game logic of the Minesweeper, drawn from the point of view of the player.</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperQuestion.png" height="220">
+                          <p></p>
+                          <p>Incorporate the following new features to the above AD.</p>
+                          <p><strong>(a) timing</strong></p>
+                          <p>Description: The game keeps track of the total time spent on a game. The counting starts from the moment the first cell is cleared/marked and stops when the game is won or lost. Time elapsed is shown to the player after every
+                            mark/clear operation.</p>
+                          <p><strong>(b) standing_ground</strong></p>
+                          <p>Description: At the beginning of the game, the player chooses five cells to be revealed without penalty. This is done one cell at a time. If the cell so selected is mined, it will be marked automatically. The objective is to
+                            give some “standing ground” to the player from which he/she can deduce remaining cells. The player cannot mark or clear cells until the standing ground is selected.</p>
+                          <p><strong>(c) tolerate</strong></p>
+                          <p>Description: Marking a cell incorrectly is tolerated as long as the number of cells does not exceed the total mines. Marked cells can be unmarked. The player is not allowed to mark more cells if the total number of marked cells
+                            equals the total number of mines.</p>
+                          <div slot="answer">
+                            <p><strong>(a) No change to the AD</strong></p>
+                            <p>After incorporating (b)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerA.png" height="220">
+                            <p></p>
+                            <p>Given above is a minimal change. It is OK to show more details of the ‘clear standing ground’ action or show it as a separate AD.</p>
+                            <p>After incorporating (c)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerB.png" height="290">
+                            <p></p>
+                            <p>Note that some actions/paths have been deleted. The above diagram uses a diamond as either a branch or a merge (but not both). It is ok to use a diamond as both a merge and branch, as long as it does not lead to ambiguities.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Which of these sequence of actions is not allowed by the given activity diagram?">
+                        <question>
+                          <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. start a b c d g c d end</li>
+                          </ul><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/sequence.png" height="190">
+                          <p></p>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. start a b c d g c d end</li>
+                            </ul>
+                            <p>Explanation: ‘-e-f-’ and ‘-g-’ are parallel paths. Both paths should complete before the execution reaches c again.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can use rakes in activity diagrams :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="rakes-three">Rakes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Here is the AD for a game of ‘snakes and ladders’.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
+                <p></p>
+                <p>The <em>rake</em> symbol (in the “Move piece” action above) is used to show that an action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png"
+                  height="230">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain swimlanes in activity diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="combined-three-2">Combined <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div></div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Adding features to Minesweeper AD :three:">
+                        <question has-input="true">
+                          <p>Given below is the high-level game logic of the Minesweeper, drawn from the point of view of the player.</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperQuestion.png" height="220">
+                          <p></p>
+                          <p>Incorporate the following new features to the above AD.</p>
+                          <p><strong>(a) timing</strong></p>
+                          <p>Description: The game keeps track of the total time spent on a game. The counting starts from the moment the first cell is cleared/marked and stops when the game is won or lost. Time elapsed is shown to the player after every
+                            mark/clear operation.</p>
+                          <p><strong>(b) standing_ground</strong></p>
+                          <p>Description: At the beginning of the game, the player chooses five cells to be revealed without penalty. This is done one cell at a time. If the cell so selected is mined, it will be marked automatically. The objective is to
+                            give some “standing ground” to the player from which he/she can deduce remaining cells. The player cannot mark or clear cells until the standing ground is selected.</p>
+                          <p><strong>(c) tolerate</strong></p>
+                          <p>Description: Marking a cell incorrectly is tolerated as long as the number of cells does not exceed the total mines. Marked cells can be unmarked. The player is not allowed to mark more cells if the total number of marked cells
+                            equals the total number of mines.</p>
+                          <div slot="answer">
+                            <p><strong>(a) No change to the AD</strong></p>
+                            <p>After incorporating (b)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerA.png" height="220">
+                            <p></p>
+                            <p>Given above is a minimal change. It is OK to show more details of the ‘clear standing ground’ action or show it as a separate AD.</p>
+                            <p>After incorporating (c)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerB.png" height="290">
+                            <p></p>
+                            <p>Note that some actions/paths have been deleted. The above diagram uses a diamond as either a branch or a merge (but not both). It is ok to use a diamond as both a merge and branch, as long as it does not lead to ambiguities.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Which of these sequence of actions is not allowed by the given activity diagram?">
+                        <question>
+                          <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. start a b c d g c d end</li>
+                          </ul><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/sequence.png" height="190">
+                          <p></p>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. start a b c d g c d end</li>
+                            </ul>
+                            <p>Explanation: ‘-e-f-’ and ‘-g-’ are parallel paths. Both paths should complete before the execution reaches c again.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain types of SDLC process models :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain SLDC process models :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Software development goes through different stages such as <em>requirements, analysis, design, implementation</em> and <em>testing</em>. These stages are collectively known as the <em>software development life cycle</em> (SDLC). There
+                  are several approaches, known as <em>software development life cycle models</em> (also called <em>software process models</em>) that describe different ways to go through the SDLC. Each process model prescribes a “roadmap” for the software
+                  developers to manage the development effort. The roadmap describes the aims of the development stage(s), the artifacts or outcome of each stage as well as the workflow i.e. the relationship between stages.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain sequential models :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="sequential-models-one">Sequential Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The <em>sequential model</em>, also called the <em>waterfall</em> model, models software development as a linear process, in which the project is seen as progressing steadily in one direction through the development stages. The name <em>waterfall</em>                  stems from how the model is drawn to look like a waterfall (see below).</p><img src="/website/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
+                <p></p>
+                <p>When one stage of the process is completed, it should produce some artifacts to be used in the next stage. For example, upon completion of the requirement stage a comprehensive list of requirements is produced that will see no further
+                  modifications. A strict application of the sequential model would require each stage to be completed before starting the next.</p>
+                <p>This could be a useful model when the problem statement that is well-understood and stable. In such cases, using the sequential model should result in a timely and systematic development effort, provided that all goes well. As each stage
+                  has a well-defined outcome, the progress of the project can be tracked with a relative ease.</p>
+                <p>The major problem with this model is that requirements of a real-world project are rarely well-understood at the beginning and keep changing over time. One reason for this is that users are generally not aware of how a software application
+                  can be used without prior experience in using a similar application.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain iterative models :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="iterative-models-one">Iterative Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The iterative model (sometimes called <em>iterative</em> and <em>incremental</em>) advocates having several <em>iterations</em> of SDLC. Each of the iterations could potentially go through all the development stages, from requirement gathering
+                  to testing &amp; deployment. Roughly, it appears to be similar to several cycles of the sequential model.</p><img src="/website/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
+                <p></p>
+                <p>In this model, each of the iterations produces a new version of the product. Feedback on the version can then be fed to the next iteration. Taking the Minesweeper game as an example, the iterative model will deliver a fully playable version
+                  from the early iterations. However, the first iteration will have primitive functionality, for example, a clumsy text based UI, fixed board size, limited randomization etc. These functionalities will then be improved in later releases.</p>
+                <p>The iterative model can take a <em>breadth-first</em> or a <em>depth-first</em> approach to iteration planning.</p>
+                <ul>
+                  <li>breadth-first: an iteration evolves all major components in parallel.</li>
+                  <li>depth-first: an iteration focuses on fleshing out only some components.</li>
+                </ul>
+                <p>The breadth-first approach is considered purely ‘iterative’, while depth-first is ‘incremental’. As mentioned before, most project use a mixture of breadth-first and depth-first iterations. Hence, the common phrase ‘an iterative and incremental
+                  process’.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain agile models :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="agile-models-one">Agile Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In 2001, a group of prominent software engineering practitioners met and brainstormed for an alternative to documentation-driven, heavyweight software development processes that were used in most large projects at the time. This resulted
+                  in something called the <em>agile manifesto</em> (a vision statement of what they were looking to do). The agile manifesto (taken from <a href="http://agilemanifesto.org/">http://agilemanifesto.org/</a>) is given below.</p>
+                <tip-box>
+                  <p>We are uncovering better ways of developing software by doing it and helping others do it.</p>
+                  <p>Through this work we have come to value:</p>
+                  <ul>
+                    <li><strong>Individuals and interactions</strong> over processes and tools</li>
+                    <li><strong>Working software</strong> over comprehensive documentation</li>
+                    <li><strong>Customer collaboration</strong> over contract negotiation</li>
+                    <li><strong>Responding to change</strong> over following a plan</li>
+                  </ul>
+                  <p>That is, while there is value in the items on the right, we value the items on the left more.</p>
+                </tip-box>
+                <p>Subsequently, some of the signatories of the manifesto went on to create process models that try to follow it. These processes are collectively called agile processes. Some of the key features of agile approaches are:</p>
+                <ul>
+                  <li>Requirements are prioritized based on the needs of the user, are clarified regularly (at times almost on a daily basis) with the entire project team, and are factored into the development schedule as appropriate.</li>
+                  <li>Instead of doing a very elaborate and detailed design and a project plan for the whole project, the team works based on a rough project plan and a high level design that evolves as the project goes on.</li>
+                  <li>Strong emphasis on complete transparency and responsibility sharing among the team members. The team is responsible together for the delivery of the product. Team members are accountable, and regularly and openly share progress with
+                    each other and with the user.</li>
+                </ul>
+                <p>There are a number of agile processes in the development world today. eXtreme Programming (XP) and Scrum are two of the well-known ones.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the incorrect statement about agile processes.">
+                        <question>
+                          <p>Choose the incorrect statement about agile processes.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They value working software over comprehensive documentation.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They value responding to change over following a plan.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They may not be suitable for some type of projects.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. XP and Scrum are agile processes.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They require the use of CMMI to measure process maturity.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They value working software over comprehensive documentation.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They value responding to change over following a plan.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They may not be suitable for some type of projects.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. XP and Scrum are agile processes.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. They require the use of CMMI to measure process maturity.</li>
+                            </ul>
+                            <p>Explanation: Yes, agile process do not suit every project. Agile processes do not require CMMI. In fact, process maturity as defined by CMMI requires heavy documentation that runs counter to agile values.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can use object oriented domain models :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain object oriented domain models :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="object-oriented-domain-models-three">Object Oriented Domain Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <blockquote>
+                  <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development.</p>
+                  <p>--Ian Sommerville, in the book ‘Software Engineering’</p>
+                </blockquote>
+                <p>Class diagrams can also be used to model objects in the problem domain (i.e. to model how objects actually interact in the real world, before emulating them in the solution). When used to model the problem domain, such class diagrams are
+                  called <strong><em>conceptual class diagrams</em></strong> or <strong><em>OO domain models (OODMs).</em></strong></p>
+                <tip-box>
+                  <p>Example: OO domain model of a snakes and ladders game is given below.</p>
+                  <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the
+                    number of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece
+                    can automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p><img src="/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png"
+                    height="420">
+                  <p></p>
+                  <p>The above OO domain model omits the ladder class for simplicity. It can be included in a similar fashion to the Snake class.</p>
+                </tip-box>
+                <p><strong>OODMs do not contain solution-specific classes</strong> (i.e. classes that are used in the solution domain but do not exist in the problem domain). For example, a class called DatabaseConnection could appear in a class diagram
+                  but not usually in an OO domain model because DatabaseConnection is something related to a software solution but not an entity in the problem domain.</p>
+                <p><strong>OODMs, just like a class diagram, represents the class <em>structure</em> of the problem</strong> domain and not their behavior. To show behavior, use other diagrams such as sequence diagrams.</p>
+                <p><strong>OODM notation is similar to class diagram notation but typically omit methods and navigability.</strong></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>This diagram is,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A class diagram.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object diagram.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An OO domain model, also known as a conceptual class diagram.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Can be either a class diagram or an OO domain model.</li>
+                          </ul><img src="/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
+                          <p></p>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A class diagram.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object diagram.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An OO domain model, also known as a conceptual class diagram.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Can be either a class diagram or an OO domain model.</li>
+                            </ul>
+                            <p>Explanation: If there was no navigability, this could have been either a class diagram or an OO domain model. However, the diagram shows navigability which is not shown in an OO domain model. Hence, it has to be a class diagram.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: What is the main difference between a class diagram and and an OO domain model?">
+                        <question>
+                          <p>What is the main difference between a class diagram and and an OO domain model?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. One is about the problem domain while the other is about the solution domain.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. One has more classes than the other.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. One shows more details than the other.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One is a UML diagram, while the other is not a UML diagram.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. One is about the problem domain while the other is about the solution domain.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. One has more classes than the other.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. One shows more details than the other.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One is a UML diagram, while the other is not a UML diagram.</li>
+                            </ul>
+                            <p>Explanation: Both are UML diagrams, and use the class diagram notation. While it is true that often a class diagram may have more classes and more details, the main difference is that the OO domain model describes the problem
+                              domain while the class diagram describes the solution.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can explain the costs and benefits of reuse :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain software reuse :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Reusability is a major theme in software engineering practices. By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement. Reusable components come
+                  in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can differentiate between frameworks, libraries, and platforms :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain frameworks :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</p>
+                <tip-box>
+                  <p>Running example:</p>
+                  <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
+                </tip-box>
+                <p>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</p>
+                <tip-box>
+                  <p>Running example:</p>
+                  <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
+                </tip-box>
+                <p>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</p>
+                <tip-box>
+                  <p>Running example:</p>
+                  <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
+                </tip-box>
+                <p>A framework facilitates the adaptation and customization of some desired functionality.</p>
+                <tip-box>
+                  <p>Running example:</p>
+                  <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
+                </tip-box>
+                <p>Some frameworks cover only a specific components or an aspect.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>JavaFx a framework for creating Java GUIs.</p>
+                </tip-box>
+                <tip-box>
+                  <p>More examples:</p>
+                  <ul>
+                    <li>Drupal: a framework for Web-based applications, content management systems in particular. Implemented using PHP</li>
+                    <li>Ruby on Rails : another Web-application framework similar to Drupal but uses Ruby instead of PHP</li>
+                    <li>JUnit: a framework for testing Java code.</li>
+                  </ul>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the incorrect statement about software frameworks.">
+                        <question>
+                          <p>Choose the incorrect statement about software frameworks.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                            </ul>
+                            <p>Explanation: While both libraries and frameworks are reuse mechanisms, and both more concrete than principles and patterns, libraries differ from frameworks in some key ways. One of them is the ‘inversion of control’ used by
+                              frameworks but not libraries. Furthermore, frameworks do not have to be bigger than libraries all the time.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can differentiate between frameworks and libraries :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="frameworks-vs-libraries-three">Frameworks vs Libraries <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
+                <ul>
+                  <li>
+                    <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong> Examples: writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules
+                      and themes to Drupal, and adding test cases to JUnit .</p>
+                  </li>
+                  <li>
+                    <p><strong>Your code calls the library code while the framework code calls your code.</strong> Frameworks use a technique called <em>inversion of control</em>, also called the “Hollywood principle” (i.e. don’t call us, we’ll call you!).
+                      That is, you write code that will be called by the framework, e.g. writing test methods that will be called by the JUnit framework. In the case of libraries, written code calls libraries.</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>Which one of these is not a framework but a library?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. JUnit</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Eclipse</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Drupal</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Ruby on Rails</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are all frameworks</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. JUnit</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Eclipse</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Drupal</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Ruby on Rails</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. They are all frameworks</li>
+                            </ul>
+                            <p>Explanation: These are framework examples cited in the handout.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain platforms :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A <em>platform</em> provides a runtime environment for applications. A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic of a software
+                  platform is the presence of a runtime environment.</p>
+                <p>Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+                <p>Two well-known examples of platforms are JavaEE and .NET, both of which sit above Operating systems layer, and are used to develop <em>enterprise applications</em>. Infrastructure services such as connection pooling, load balancing, remote
+                  code execution, transaction management, authentication, security, messaging etc. are done similarly in most
+                  <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+                <ul>
+                  <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
+                  <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
+                </ul>
+                <modal title="**Enterprise Applications**" id="modal:enterprise-application">
+                  <div>
+                    <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness)
+                      than software meant for individual use.</p>
+                  </div>
+                </modal>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can explain some popular SDLC process models :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain scrum :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="scrum-three">Scrum <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>This description of Scrum was adapted from Wikipedia [retrieved on 18/10/2011]:</p>
+                <tip-box>
+                  Scrum is a process skeleton that contains sets of practices and predefined roles. The main roles in Scrum are:
+                  <ul>
+                    <li>The ScrumMaster, who maintains the processes (typically in lieu of a project manager)</li>
+                    <li>The Product Owner, who represents the stakeholders and the business</li>
+                    <li>The Team, a cross-functional group who do the actual analysis, design, implementation, testing, etc.</li>
+                  </ul>
+                  <p>A Scrum project is divided into iterations called Sprints. A sprint is the basic unit of development in Scrum. Sprints tend to last between one week and one month, and are a timeboxed (i.e. restricted to a specific duration) effort of
+                    a constant length.</p>
+                  <p>Each sprint is preceded by a planning meeting, where the tasks for the sprint are identified and an estimated commitment for the sprint goal is made, and followed by a review or retrospective meeting, where the progress is reviewed and
+                    lessons for the next sprint are identified.</p>
+                  <p>During each sprint, the team creates a potentially deliverable product increment (for example, working and tested software). The set of features that go into a sprint come from the product backlog, which is a prioritized set of high
+                    level requirements of work to be done. Which backlog items go into the sprint is determined during the sprint planning meeting. During this meeting, the Product Owner informs the team of the items in the product backlog that he or
+                    she wants completed. The team then determines how much of this they can commit to complete during the next sprint, and records this in the sprint backlog. During a sprint, no one is allowed to change the sprint backlog, which means
+                    that the requirements are frozen for that sprint. Development is timeboxed such that the sprint must end on time; if requirements are not completed for any reason they are left out and returned to the product backlog. After a sprint
+                    is completed, the team demonstrates the use of the software.</p>
+                  <p>Scrum enables the creation of self-organizing teams by encouraging co-location of all team members, and verbal communication between all team members and disciplines in the project.</p>
+                  <p>A key principle of Scrum is its recognition that during a project the customers can change their minds about what they want and need (often called requirements churn), and that unpredicted challenges cannot be easily addressed in a traditional
+                    predictive or planned manner. As such, Scrum adopts an empirical approach—accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team’s ability to deliver quickly and respond to emerging
+                    requirements.</p>
+                  <p>Like other agile development methodologies, Scrum can be implemented through a wide range of tools. Many companies use universal software tools, such as spreadsheets to build and maintain artifacts such as the sprint backlog. There are
+                    also open-source and proprietary software packages dedicated to management of products under the Scrum process. Other organizations implement Scrum without the use of any software tools, and maintain their artifacts in hard-copy forms
+                    such as paper, whiteboards, and sticky notes. The diagram below illustrates the essence of the Scrum process.</p><img src="/website/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain XP :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="xp-four">XP <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The following description was adapted from <a href="http://www.extremeprogramming.org">http://www.extremeprogramming.org</a>:</p>
+                <tip-box>
+                  <p>The first Extreme Programming project was started March 6, 1996. Extreme Programming is one of several popular Agile Processes. Extreme Programming (XP) stresses customer satisfaction. Instead of delivering everything you could possibly
+                    want on some date far in the future, this process delivers the software you need as you need it. XP aims to empower developers to confidently respond to changing customer requirements, even late in the life cycle.</p>
+                  <p>XP emphasizes teamwork. Managers, customers, and developers are all equal partners in a collaborative team. XP implements a simple, yet effective environment enabling teams to become highly productive. The team self-organizes around
+                    the problem to solve it as efficiently as possible.</p>
+                  <p>XP aims to improve a software project in five essential ways: communication, simplicity, feedback, respect, and courage. Extreme Programmers constantly communicate with their customers and fellow programmers. They keep their design simple
+                    and clean. They get feedback by testing their software starting on day one. Every small success deepens their respect for the unique contributions of each and every team member. With this foundation, Extreme Programmers are able to
+                    courageously respond to changing requirements and technology.</p>
+                  <p>XP has a set of simple rules. XP is a lot like a jig saw puzzle with many small pieces. Individually the pieces make no sense, but when combined together a complete picture can be seen. This flow chart shows how Extreme Programming's
+                    rules work together.</p><img src="/website/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
+                  <p></p>
+                </tip-box>
+                <p><em>Pair programming, CRC cards, project velocity</em>, and <em>standup meetings</em> are some interesting topics related to XP. Refer to <a href="http://extremeprogramming.org">extremeprogramming.org</a> to find out more about XP.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain unified process :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="unified-process-three">Unified Process <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The <em>unified process</em> is developed by the Three Amigos - Ivar Jacobson, Grady Booch and James Rumbaugh (the creators of UML).</p>
+                <p>The unified process consists of four phases: <em>inception, elaboration, construction and transition</em>. The main purpose of each phase can be summarized as follows:</p>
+                <table class="table">
+                  <tr>
+                    <th>Phase</th>
+                    <th>Activities</th>
+                    <th>Typical Artifacts</th>
+                  </tr>
+                  <tr>
+                    <td>Inception</td>
+                    <td>
+                      <ul>
+                        <li>Understand the problem and requirements</li>
+                        <li>Communicate with customer</li>
+                        <li>Plan the development effort</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Basic use case model</li>
+                        <li>Rough project plan</li>
+                        <li>Project vision and scope</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Elaboration</td>
+                    <td>
+                      <ul>
+                        <li>Refines and expands requirements</li>
+                        <li>Determine a high-level design e.g. system architecture</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>System architecture</li>
+                        <li>Various design models</li>
+                        <li>Prototype</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Construction</td>
+                    <td>
+                      <ul>
+                        <li>Major implementation effort to support the use cases identified</li>
+                        <li>Design models are refined and fleshed out</li>
+                        <li>Testing of all levels are carried out</li>
+                        <li>Multiple releases of the system</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Test cases of all levels</li>
+                        <li>System release</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Transition</td>
+                    <td>
+                      <ul>
+                        <li>Ready the system for actual production use</li>
+                        <li>Familiarize end users with the system</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Final system release</li>
+                        <li>Instruction manual</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table><img src="/website/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
+                <p></p>
+                <p>Given above is a visualization of a project done using the Unified process (source: Wikipedia). As the diagram shows, a phase can consist of several iterations. Each vertical column (labeled “I1” “E1”, “E2”, “C1”, etc.) represents a single
+                  iteration. Each of the iterations consists of a set of ‘workflows’ such as ‘Business modeling’, ‘Requirements’, ‘Analysis &amp; Design’ etc. The shaded region indicates the amount of resource and effort spent on a particular workflow
+                  in a particular iteration.</p>
+                <p>Note that the unified process is a flexible and customizable process model framework rather than a single fixed process. For example, the number of iterations in each phase, definition of workflows, and the intensity of a given workflow
+                  in a given iteration can be adjusted according to the nature of the project. Take the Construction Phase, to develope a simple system, one or two iterations would be sufficient. For a more complicated system, multiple iterations will
+                  be more helpful. Therefore, the diagram above simply records a particular application of the UP rather than prescribe how the UP is to be applied. However, this record can be refined and reused for similar future projects.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Explain the process you followed (plan to follow) in a school project using the unified process framework.">
+                        <question has-input="true">
+                          <p>Explain the process you followed (plan to follow) in a school project using the unified process framework. You may also include smaller iterations that you followed within the two iterations we specified.</p>
+                          <div slot="answer">
+                            <p>Sample only. Will be different from project to project. We assume that you are building a Minesweeper game as your project.</p><img src="/website/book/processModels/exampleProcessModels/unifiedProcess/images/minesweeper.png"
+                              height="280">
+                            <p></p>
+                            <ul>
+                              <li>Iter 1: Project kick-off. We decide to do Minesweeper</li>
+                              <li>Iter 2: Produce the proposal</li>
+                              <li>Iter 3: Modify proposal on feedback, construct a minimal V0.0</li>
+                              <li>Iter 4: Construct version V0.1</li>
+                            </ul>
+                            <p>V0.2 is produced in three short iterations (5,6,7).</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Choose the incorrect statement about the unified process.">
+                        <question>
+                          <p>Choose the incorrect statement about the unified process.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It was conceived by the three amigos who also created UML.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The Unified process requires the use of UML.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The Unified process is actually a process framework rather than a fixed process.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The Unified process can be iterative and incremental</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It was conceived by the three amigos who also created UML.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. The Unified process requires the use of UML.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The Unified process is actually a process framework rather than a fixed process.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The Unified process can be iterative and incremental</li>
+                            </ul>
+                            <p>Explanation: Although UP was created by the same three amigos who created UML, the UP does not require UML.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain CMMI :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="cmmi-four">CMMI <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The following description was adapted from <a href="http://www.sei.cmu.edu/cmmi/:">http://www.sei.cmu.edu/cmmi/:</a></p>
+                <tip-box>
+                  <p>CMMI (Capability Maturity Model Integration) is a process improvement approach defined by Software Engineering Institute at Carnegie Melon University. CMMI provides organizations with the essential elements of effective processes, which
+                    will improve their performance. CMMI-based process improvement includes identifying an organization’s process strengths and weaknesses and making process changes to turn weaknesses into strengths.</p>
+                </tip-box>
+                <p>CMMI defines five maturity levels for a process and provides criteria to determine if the process of an organization is at a certain maturity level. The diagram below [taken from Wikipedia] gives an overview of the five levels.</p>
+                <img
+                  src="/website/book/processModels/more/cmmi/images/diagram.png" height="250">
+                  <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain process models at a higher level :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → SLDC Process Models →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="recap-three">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <div>
+                  <div id="extras">
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Sequential vs iterative approach :two:">
+                            <question has-input="true">
+                              <p>Discuss how sequential approach and the iterative approach can affect the following aspects of a project.</p>
+                              <p>a) Quality of the final product.</p>
+                              <p>b) Risk of overshooting the deadline.</p>
+                              <p>c) Total project cost.</p>
+                              <p>d) Customer satisfaction.</p>
+                              <p>e) Monitoring the project progress.</p>
+                              <p>f) Suitability for a school project</p>
+                              <div slot="answer">
+                                <p>a) Quality of the final product:</p>
+                                <ul>
+                                  <li>Iterative: Frequent reworking can deteriorate the design. Frequent refactoring should be used to prevent this. Frequent customer feedback can help to improve the quality (i.e. quality as seen by the customer).</li>
+                                  <li>Sequential: Final quality depends on the quality of each phase. Any quality problem in any phase could result in a low quality product.</li>
+                                </ul>
+                                <p>b) Risk of overshooting the deadline.</p>
+                                <ul>
+                                  <li>Iterative: Less risk. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised at the beginning will be delivered on the deadline.</li>
+                                  <li>Sequential: High risk. Any delay in any phase can result in overshooting the deadline with nothing to deliver.</li>
+                                </ul>
+                                <p>c) Total project cost.</p>
+                                <ul>
+                                  <li>Iterative: We can always stop before the project budget is exceeded. However, this does not guarantee that all features promised at the beginning will be delivered under the estimated cost. (The sequential model requires
+                                    us to carry on even if the budget is exceeded because there is no intermediate version to fall back on).</li>
+                                </ul>
+                                <p>Iterative reworking of existing artifacts could add to the cost. However, this is “cheaper” than finding at the end that we built the wrong product.</p>
+                                <p>d) Customer satisfaction</p>
+                                <ul>
+                                  <li>Iterative: Customer gets many opportunities to guide the product in the direction he wants. Customer gets to change requirements even in the middle of the product. Both these can increase the probability of customer satisfaction.</li>
+                                  <li>Sequential: Customer satisfaction is guaranteed only if the product was delivered as promised and if the initial requirements proved to be accurate. However, the customer is not required to do the extra work of giving
+                                    frequent feedback during the project.</li>
+                                </ul>
+                                <p>e) Monitoring project progress</p>
+                                <ul>
+                                  <li>Iterative: Hard to measure progress against a plan, as the plan itself keeps changing.</li>
+                                  <li>Sequential: Easier to measure progress against the plan, although this does not ensure eventual success.</li>
+                                </ul>
+                                <p>f) Suitability for a school project:</p>
+                                <p>Reasons to use iterative:</p>
+                                <ul>
+                                  <li>Requirements are not fixed.</li>
+                                  <li>Overshooting the deadline is not an option.</li>
+                                  <li>Gives a chance to learn lessons from one iteration and apply them in the next.</li>
+                                </ul>
+                                <p>Sequential:</p>
+                                <ul>
+                                  <li>Can save time because we minimize rework.</li>
+                                </ul>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Agile processes, Pair programming, Test-driven development :four:">
+                            <question has-input="true">
+                              <p>Find out more about the following three topics and give at least three arguments for and three arguments against each.</p>
+                              <p>(a) Agile processes</p>
+                              <p>(b) Pair programming</p>
+                              <p>(c) Test-driven development</p>
+                              <div slot="answer">
+                                <p>(a) Arguments in favor of agile processes:</p>
+                                <ul>
+                                  <li>More focus on customer satisfaction.</li>
+                                  <li>Less chance of building the wrong product (because of frequent customer feedback).</li>
+                                  <li>Less resource wasted on bureaucracy, over-documenting, contract negotiations.</li>
+                                </ul>
+                                <p>Arguments against agile processes (not necessarily true):</p>
+                                <ul>
+                                  <li>It is ‘just hacking’. Not very systematic. No discipline.</li>
+                                  <li>It is hard to know in advance the exact final product.</li>
+                                  <li>It does not give enough attention to documentation.</li>
+                                  <li>Lack of management control (gives too much freedom to developers)</li>
+                                </ul>
+                                <p>(b) Arguments in favor of pair programming:</p>
+                                <ul>
+                                  <li>It could produce better quality code.</li>
+                                  <li>It is good to have more than one person know about any piece of code.</li>
+                                  <li>It is a way to learn from each other.</li>
+                                  <li>It can be used to train new programmers.</li>
+                                  <li>Better discipline and better time management (e.g. less likely to play Farmville while working).</li>
+                                  <li>Better morale due to more interactions with co-workers.</li>
+                                </ul>
+                                <p>Arguments against pair programming:</p>
+                                <ul>
+                                  <li>Increase in total man hours required</li>
+                                  <li>Personality clashes between pair-members</li>
+                                  <li>Workspaces need to be adapted to suit two developers working at one computer.</li>
+                                  <li>If pairs are rotated, one needs to know more parts of the system than in solo programming</li>
+                                </ul>
+                                <p>(c) Arguments in favor of TDD:</p>
+                                <ul>
+                                  <li>Testing will not be neglected due to time pressure (because it is done first).</li>
+                                  <li>Forces the developer to think about what the component should be before jumping into implementing it.</li>
+                                  <li>Optimizes programmer effort (i.e. if all tests pass, there is no need to add any more functionality).</li>
+                                  <li>Forces us to automate all tests.</li>
+                                </ul>
+                                <p>Arguments against TDD (not necessarily true):</p>
+                                <ul>
+                                  <li>Since tests can be seen as ‘executable specifications’, programmers tend to neglect others forms of documentation.</li>
+                                  <li>Promotes ‘trial-and-error’ coding instead of making programmers think through their algorithms (i.e. ‘just keep hacking until all tests pass’).</li>
+                                  <li>Gives a false sense of security. (what if you forgot to test certain scenarios?)</li>
+                                </ul>
+                                <p>Not intuitive. Some programmer might resist adopting TDD.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: True or False?">
+                            <question>
+                              <p>The sequential model and the waterfall model are the two most basic process models.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                                </ul>
+                                <p>Explanation: The sequential model and the waterfall model are the same thing. The second basic model is the iterative model.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Choose the incorrect statement about the sequential and iterative process models.">
+                            <question>
+                              <p>Choose the incorrect statement about the sequential and iterative process models.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The sequential model organizes the project based on activities.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The iterative and incremental model organizes the project based on functionality.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The iterative model can be breadth-first or depth-first.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The iterative model is always better than the sequential model.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Compared to the sequential model, the iterative model is better at adapting to changing requirements.</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The sequential model organizes the project based on activities.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The iterative and incremental model organizes the project based on functionality.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The iterative model can be breadth-first or depth-first.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. The iterative model is always better than the sequential model.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Compared to the sequential model, the iterative model is better at adapting to changing requirements.</li>
+                                </ul>
+                                <p>Explanation: Both models have pros and cons. There is no definitive ‘better’ choice between the two. However, the iterative model works better in typical software projects than a purely sequential approach.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: In general, which has a higher risk of overshooting a deadline?">
+                            <question>
+                              <p>In general, which has a higher risk of overshooting a deadline?</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The iterative process.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The sequential process.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The risk is similar.</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The iterative process.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. The sequential process.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The risk is similar.</li>
+                                </ul>
+                                <p>Explanation: An iterative process can meet a deadline better than a sequential process. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised
+                                  at the beginning will be delivered on the deadline.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Sequential vs iterative approach :two:">
+                        <question has-input="true">
+                          <p>Discuss how sequential approach and the iterative approach can affect the following aspects of a project.</p>
+                          <p>a) Quality of the final product.</p>
+                          <p>b) Risk of overshooting the deadline.</p>
+                          <p>c) Total project cost.</p>
+                          <p>d) Customer satisfaction.</p>
+                          <p>e) Monitoring the project progress.</p>
+                          <p>f) Suitability for a school project</p>
+                          <div slot="answer">
+                            <p>a) Quality of the final product:</p>
+                            <ul>
+                              <li>Iterative: Frequent reworking can deteriorate the design. Frequent refactoring should be used to prevent this. Frequent customer feedback can help to improve the quality (i.e. quality as seen by the customer).</li>
+                              <li>Sequential: Final quality depends on the quality of each phase. Any quality problem in any phase could result in a low quality product.</li>
+                            </ul>
+                            <p>b) Risk of overshooting the deadline.</p>
+                            <ul>
+                              <li>Iterative: Less risk. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised at the beginning will be delivered on the deadline.</li>
+                              <li>Sequential: High risk. Any delay in any phase can result in overshooting the deadline with nothing to deliver.</li>
+                            </ul>
+                            <p>c) Total project cost.</p>
+                            <ul>
+                              <li>Iterative: We can always stop before the project budget is exceeded. However, this does not guarantee that all features promised at the beginning will be delivered under the estimated cost. (The sequential model requires
+                                us to carry on even if the budget is exceeded because there is no intermediate version to fall back on).</li>
+                            </ul>
+                            <p>Iterative reworking of existing artifacts could add to the cost. However, this is “cheaper” than finding at the end that we built the wrong product.</p>
+                            <p>d) Customer satisfaction</p>
+                            <ul>
+                              <li>Iterative: Customer gets many opportunities to guide the product in the direction he wants. Customer gets to change requirements even in the middle of the product. Both these can increase the probability of customer satisfaction.</li>
+                              <li>Sequential: Customer satisfaction is guaranteed only if the product was delivered as promised and if the initial requirements proved to be accurate. However, the customer is not required to do the extra work of giving frequent
+                                feedback during the project.</li>
+                            </ul>
+                            <p>e) Monitoring project progress</p>
+                            <ul>
+                              <li>Iterative: Hard to measure progress against a plan, as the plan itself keeps changing.</li>
+                              <li>Sequential: Easier to measure progress against the plan, although this does not ensure eventual success.</li>
+                            </ul>
+                            <p>f) Suitability for a school project:</p>
+                            <p>Reasons to use iterative:</p>
+                            <ul>
+                              <li>Requirements are not fixed.</li>
+                              <li>Overshooting the deadline is not an option.</li>
+                              <li>Gives a chance to learn lessons from one iteration and apply them in the next.</li>
+                            </ul>
+                            <p>Sequential:</p>
+                            <ul>
+                              <li>Can save time because we minimize rework.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Agile processes, Pair programming, Test-driven development :four:">
+                        <question has-input="true">
+                          <p>Find out more about the following three topics and give at least three arguments for and three arguments against each.</p>
+                          <p>(a) Agile processes</p>
+                          <p>(b) Pair programming</p>
+                          <p>(c) Test-driven development</p>
+                          <div slot="answer">
+                            <p>(a) Arguments in favor of agile processes:</p>
+                            <ul>
+                              <li>More focus on customer satisfaction.</li>
+                              <li>Less chance of building the wrong product (because of frequent customer feedback).</li>
+                              <li>Less resource wasted on bureaucracy, over-documenting, contract negotiations.</li>
+                            </ul>
+                            <p>Arguments against agile processes (not necessarily true):</p>
+                            <ul>
+                              <li>It is ‘just hacking’. Not very systematic. No discipline.</li>
+                              <li>It is hard to know in advance the exact final product.</li>
+                              <li>It does not give enough attention to documentation.</li>
+                              <li>Lack of management control (gives too much freedom to developers)</li>
+                            </ul>
+                            <p>(b) Arguments in favor of pair programming:</p>
+                            <ul>
+                              <li>It could produce better quality code.</li>
+                              <li>It is good to have more than one person know about any piece of code.</li>
+                              <li>It is a way to learn from each other.</li>
+                              <li>It can be used to train new programmers.</li>
+                              <li>Better discipline and better time management (e.g. less likely to play Farmville while working).</li>
+                              <li>Better morale due to more interactions with co-workers.</li>
+                            </ul>
+                            <p>Arguments against pair programming:</p>
+                            <ul>
+                              <li>Increase in total man hours required</li>
+                              <li>Personality clashes between pair-members</li>
+                              <li>Workspaces need to be adapted to suit two developers working at one computer.</li>
+                              <li>If pairs are rotated, one needs to know more parts of the system than in solo programming</li>
+                            </ul>
+                            <p>(c) Arguments in favor of TDD:</p>
+                            <ul>
+                              <li>Testing will not be neglected due to time pressure (because it is done first).</li>
+                              <li>Forces the developer to think about what the component should be before jumping into implementing it.</li>
+                              <li>Optimizes programmer effort (i.e. if all tests pass, there is no need to add any more functionality).</li>
+                              <li>Forces us to automate all tests.</li>
+                            </ul>
+                            <p>Arguments against TDD (not necessarily true):</p>
+                            <ul>
+                              <li>Since tests can be seen as ‘executable specifications’, programmers tend to neglect others forms of documentation.</li>
+                              <li>Promotes ‘trial-and-error’ coding instead of making programmers think through their algorithms (i.e. ‘just keep hacking until all tests pass’).</li>
+                              <li>Gives a false sense of security. (what if you forgot to test certain scenarios?)</li>
+                            </ul>
+                            <p>Not intuitive. Some programmer might resist adopting TDD.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>The sequential model and the waterfall model are the two most basic process models.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: The sequential model and the waterfall model are the same thing. The second basic model is the iterative model.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Choose the incorrect statement about the sequential and iterative process models.">
+                        <question>
+                          <p>Choose the incorrect statement about the sequential and iterative process models.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The sequential model organizes the project based on activities.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The iterative and incremental model organizes the project based on functionality.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The iterative model can be breadth-first or depth-first.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The iterative model is always better than the sequential model.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Compared to the sequential model, the iterative model is better at adapting to changing requirements.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The sequential model organizes the project based on activities.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The iterative and incremental model organizes the project based on functionality.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The iterative model can be breadth-first or depth-first.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. The iterative model is always better than the sequential model.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Compared to the sequential model, the iterative model is better at adapting to changing requirements.</li>
+                            </ul>
+                            <p>Explanation: Both models have pros and cons. There is no definitive ‘better’ choice between the two. However, the iterative model works better in typical software projects than a purely sequential approach.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: In general, which has a higher risk of overshooting a deadline?">
+                        <question>
+                          <p>In general, which has a higher risk of overshooting a deadline?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The iterative process.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The sequential process.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The risk is similar.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The iterative process.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. The sequential process.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The risk is similar.</li>
+                            </ul>
+                            <p>Explanation: An iterative process can meet a deadline better than a sequential process. If the last iteration got delayed, we can always deliver the previous version. However, this does not guarantee that all features promised
+                              at the beginning will be delivered on the deadline.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="success" header=":trophy: Can explain some UML models :star::star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="success" header=":trophy: Can explain deployment diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="deployment-diagrams-four">Deployment Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Deployment diagrams</strong> show a system's physical layout, revealing which pieces of software run on which pieces of hardware.</p><img src="/website/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png" height="500">
+                <p></p>
+                <p>Source: <a href="https://en.wikipedia.org/wiki/Deployment_diagram">https://en.wikipedia.org/wiki/Deployment_diagram</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain component diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="component-diagrams-four">Component Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A UML <strong>component diagram</strong> is used to show how a system is divided into components and how they are connected to each other through interfaces.</p><img src="/website/book/modeling/modelingStructures/componentDiagrams/images/diagram.png"
+                  height="500">
+                <p></p>
+                <p>Source: <a href="https://en.wikipedia.org/wiki/Component_diagram">https://en.wikipedia.org/wiki/Component_diagram</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain package diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="package-diagrams-four">Package Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A <strong>package diagram</strong> shows packages and their dependencies. A package is a grouping construct for grouping UML elements (classes, use cases, etc.).</p><img src="/website/book/modeling/modelingStructures/packageDiagrams/images/diagram.png"
+                  height="450">
+                <p></p>
+                <p>Source: <a href="https://en.wikipedia.org/wiki/Package_diagram">https://en.wikipedia.org/wiki/Package_diagram</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain composite structure diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="composite-structure-diagrams-four">Composite Structure Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A <strong>composite structure diagram</strong> hierarchically decomposes a class into its internal structure.</p><img src="/website/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png" height="150">
+                <p></p>
+                <p>Source: <a href="https://en.wikipedia.org/wiki/Composite_structure_diagram">https://en.wikipedia.org/wiki/Composite_structure_diagram</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain timing diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="timing-diagrams-four">Timing Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Timing diagrams</strong> focus on timing constraints.</p><img src="/website/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png" height="280">
+                <p></p>
+                <p>Adapted from:
+                  <popover id="pop:uml-distilled"></popover>
+                </p>
+                <div slot="content">
+                  <div>
+                    <p>UML distilled by Martin Fowler</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain interaction overview diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="interaction-overview-diagrams-four">Interaction Overview Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Interaction overview</strong> diagrams are a combination of activity diagrams and sequence diagrams.</p><img src="/website/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png" height="420">
+                <p></p>
+                <p>Source: <a href="https://en.wikipedia.org/wiki/Interaction_overview_diagram">https://en.wikipedia.org/wiki/Interaction_overview_diagram</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain communication diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="communication-diagrams-four">Communication Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Communication diagrams</strong> are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions.</p><img src="/website/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png"
+                  height="300">
+                <p></p>
+                <p>Adapted from:
+                  <popover id="pop:uml-distilled"></popover>
+                </p>
+                <div slot="content">
+                  <div>
+                    <p>UML distilled by Martin Fowler</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain state machine diagrams :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="state-machine-diagrams-four">State Machine Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>State Machine Diagrams model state-dependent behavior.</p>
+                <p>Consider how a CD player responds when the “eject CD” button is pushed:</p>
+                <ul>
+                  <li>If the CD tray is already open, it does nothing.</li>
+                  <li>If the CD tray is already in the process of opening (opened half-way), it continues to open the CD tray.</li>
+                  <li>If the CD tray is closed and the CD is being played, it stops playing and opens the CD tray.</li>
+                  <li>If the CD tray is closed and CD is not being played, it simply opens the CD tray.</li>
+                  <li>If the CD tray is already in the process of closing (closed half-way), it waits until the CD tray is fully closed and opens it immediately afterwards.</li>
+                </ul>
+                <p>What this means is that the CD player’s response to pushing the “eject CD” button depends on what it was doing at the time of the event. More generally, the CD player’s response to the event received depends on its internal state. Such
+                  a behavior is called a <em>state-dependent behavior</em>.</p>
+                <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a ‘conditional’ behavior like ‘if x&gt;y, then x=x-y’. Occasionally, objects may
+                  exhibit state-dependent behavior that is deemed too complex such that it needs to be captured into a separate model. Such state-dependent behavior can be modelled using UML <em>state machine diagrams</em> (SMD for short, sometimes also
+                  called ‘state charts’, ‘state diagrams’ or ‘state machines’).</p>
+                <p>An SMD views the life-cycle of an object as consisting of a finite number of states where each state displays a unique behavior pattern. An SMD captures information such as the states an object can be in, during its lifetime, and how the
+                  object responds to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over
+                  its full life cycle. Given below is an example SMD for the Minesweeper game. More details on SMDs can be found in the appendix of this handout.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="success" header=":trophy: Can explain cloud computing :star::star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="success" header=":trophy: Can distinguish between IaaS, PaaS, and SaaS :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="iaas-paas-and-saas-three">Iaas, PaaS, and SaaS <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div><img src="/website/book/reuse/cloudComputing/services/images/services.png" height="330">
+                <p></p>
+                <p>(source: Wikipedia)</p>
+                <p>Cloud computing can deliver computing services at three levels:</p>
+                <ol>
+                  <li>
+                    <p><strong>Infrastructure as a service (IaaS)</strong>: IaaS delivers computer infrastructure as a service. For example, a user can deploy virtual servers on the cloud instead of buying physical hardware and installing server software
+                      on them. Another example would be a customer using storage space on the cloud for off-site storage of data. Rackspace is an example of an IaaS cloud provider. Amazon Elastic Compute Cloud (Amazon EC2) is another one.</p>
+                  </li>
+                  <li>
+                    <p><strong>Platform as a service (PaaS)</strong>: PaaS provides a platform on which developers can build applications. Developers do not have to worry about infrastructure issues such as deploying servers or load balancing as is required
+                      when using IaaS. Those aspects are automatically taken care of by the platform. The price to pay is reduced flexibility; applications written on PaaS are limited to facilities provided by the platform. A PaaS example is the Google
+                      App Engine where developers can build applications using Java, Python, PHP, or Go whereas Amazon EC2 allows users to deploy application written in any language on their virtual servers.</p>
+                  </li>
+                  <li>
+                    <p><strong>Software as a service (SaaS)</strong>: This is when applications can be accessed over the network instead of installing them on a local machine. For example, Google Docs is an SaaS word processing software, while Microsoft
+                      Word is a traditional word processing software.</p>
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>Google Calendar belongs to which category of cloud computing services?s</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. IaaS</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. PaaS</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. SaaS</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. IaaS</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. PaaS</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. SaaS</li>
+                            </ul>
+                            <p>Explanation: It is a <em>software</em> as a service. Instead of installing a calendar software on your desktop, we can use the Google Calendar software that lives ‘on the cloud’.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+  </div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\project-v15rc._include_.html" name="%%Admin &raquo;%% Project: v1.5rc :star:" header="%%Admin &raquo;%% Project: v1.5rc :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 10" expandable="" ctrl-lvl="1" no-close=""></panel>
+
+<panel header=":mega: Lecture 11" expandable="" ctrl-lvl="1" no-close=""></panel>

@@ -1,0 +1,1562 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <div>
+      <panel type="danger" header=":trophy: Can interpret an architecture diagram :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain Software Architecture :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <blockquote>
+                  <p>“The software architecture of a program or computing system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them. Architecture
+                    is concerned with the public side of interfaces; private details of elements—details having to do solely with internal implementation—are not architectural.”</p>
+                  <p>-- <em>Software Architecture in Practice (2nd edition)</em>, Bass, Clements, and Kazman</p>
+                </blockquote>
+                <p>The software architecture shows the overall organization of the system and can be viewed as a very high-level design. It usually consists of a set of interacting components that fit together to achieve the required functionality. It should
+                  be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
+                <tip-box>
+                  <p>Example: A possible architecture for a <em>Minesweeper</em> game</p><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220">
+                  <p></p>
+                  <p>The high-level components:</p>
+                  <ul>
+                    <li>GUI: Graphical user interface</li>
+                    <li>TextUi: Textual user interface</li>
+                    <li>ATD: An automated test driver used for testing the game logic</li>
+                    <li>Logic: computation and logic of the game</li>
+                    <li>Store: storage and retrieval of game data (high scores etc.)</li>
+                  </ul><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160">
+                  <p></p>
+                </tip-box>
+                <p>The architecture is typically designed by the <em>software architect</em>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions on the project.</p>
+                <tip-box>
+                  <p>Examples: the logical view (satisfying the functional requirements) vs. the process view (concurrency issues) vs. the physical view (distribution issues) vs. the development view (how the design is broken down into implementation units
+                    with explicit representation of the dependencies among the units).</p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>Choose the correct statement</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The architecture of a system should be simple enough for all team members to understand it.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The architecture is primarily a high-level design of the system.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture of a system may follow more than one architectural style.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. These are architectural styles: pipes-and-filters architecture, the broker architecture, the peer-to-peer architecture, the message-oriented architecture</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. All of the above are correct</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The architecture of a system should be simple enough for all team members to understand it.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The architecture is primarily a high-level design of the system.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture of a system may follow more than one architectural style.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. These are architectural styles: pipes-and-filters architecture, the broker architecture, the peer-to-peer architecture, the message-oriented architecture</li>
+                              <li
+                                class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. All of the above are correct</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain multi-level design :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="multi-level-design-three">Multi-Level Design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Top-down vs bottom-up design High-level vs low-level design</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain architectural styles :star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can identify n-tier architectural style :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The main characteristic of an n-tier architectural style is that higher layers make use of services provided by lower layers. Lower layers are independent of higher layers. Operating systems and network communication software often use
+                  this style.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can identify client-server architectural style :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>This is an architectural style for distributed applications. The main characteristic of the client-server style is the presence of at least one component playing the role of a server, with at least one client component accessing the services
+                  of the server.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="250">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can identify transaction processing architectural style :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The main characteristic of a transaction processing architecture style is that the workload of the system is broken down to a number of <em>transactions</em>. These transactions are then given to a “dispatcher” that controls the execution
+                  of each transaction. Task queuing, ordering, “undo” etc. are handled by the dispatcher.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="250">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can identify service-oriented architectural style :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The <em>service-oriented architecture</em> (SOA) is a relatively recent architectural style for distributed applications. An SOA is essentially an application built by combining functionalities packaged as <strong>programmatically accessible services</strong>.
+                  A prerequisite for SOA is the interoperability between distributed services, which may not even be implemented using the same programming language. A common way to implement SOAs is through the use of <em>XML web services</em> where
+                  the web is used as the medium for the services to interact, and XML is used as the language of communication between service providers and service users.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandize, while HSBC provides a web service for merchants to charge HSBC credit cards. Using these web services, an ‘eBookShop’
+                    web application can be developed that allows HSBC customers to buy merchandize from Amazon and pay for them using HSBC credit cards. Since both Amazon and HSBC services follow the SOA architecture, their web services can be reused
+                    by the web application, even if all three systems use different programming platforms.</p><img src="/website/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can identify event-driven architectural style :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc. In the event-driven architectural style, events are detected and communicated
+                  to the affected components. These components then react to the events, if required. For example, when the ‘button clicked’ event occurs, functions that are tied to the button-click event is activated. This architectural style is often
+                  used in GUIs.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can name several other architecture styles :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="more-styles-two">More Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain how architectural styles are combined :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="using-styles-two">Using Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Most applications use a mix of these architectural styles or adopt a style that is customized to the requirements. For example, an application can use a client-server architecture where the server component comprises several layers, i.e.
+                  it uses the multi-layer architecture.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for Minesweeper.">
+                        <question has-input="true">
+                          <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before any
+                            of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players. Comment on how each of the following architectural styles (these architectural styles are patterns too) could
+                            be potentially useful when designing the architecture for this game.</p>
+                          <ol>
+                            <li>Client-server</li>
+                            <li>Transaction-processing</li>
+                            <li>MVC</li>
+                            <li>SOA (Service Oriented Architecture)</li>
+                            <li>multi-layer (n-tier)</li>
+                          </ol>
+                          <div slot="answer">
+                            <ol>
+                              <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
+                              <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
+                              <li>MVC – Game UI (running on player machines) can have the view and the controller part while the server can be considered as the model.</li>
+                              <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
+                              <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
+                            </ol><img src="/website/book/architecture/architecturalStyles/more/usingStyles/images/architectureExample.png" height="300">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain how architectural styles are combined :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Architecture →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="drawing-two">Drawing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>{add more}</p>
+                <tip-box type="info">
+                  <p>Tip: Avoid the indiscriminate use of double-headed arrows to show interactions between components.</p><img src="/website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
+                  <p></p>
+                  <p>Consider the two architecture diagrams of the same software. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the Logic component is no longer captured.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain APIs :star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can design reasonable quality APIs :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="designing-apis-three">Designing APIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>An API should be well-designed (i.e. should cater for the needs of its users) and well-documented.</p>
+                <p>When we write software consisting of multiple components, we need to define the API of each component.</p>
+                <p>One approach is to let the API emerge and evolve over time as we write code.</p>
+                <p>Another approach is to define the API up-front. Doing so allows us to develop the components in parallel.</p>
+                <p>We can use UML <em>sequence diagrams</em> to analyze the required interactions between components in order to discover the required API. Given below is an example.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/reuse/apis/designingAPIs/images/textLogic.png" height="500">
+                  <p></p>
+                  <p>As we analyze the interactions between components using sequence diagrams, we discover the API of those components. For example, the diagram above tells us that the MSLogic component API should have the methods:</p>
+                  <ul>
+                    <li><code>new()</code></li>
+                    <li><code>getWidth:int</code></li>
+                    <li><code>getHeight():int</code></li>
+                    <li><code>getRemainingMineCount():int</code></li>
+                  </ul>
+                  <p>More details can be included to increase the precision of the method definitions before coding. Such precision is important to avoid misunderstandings between the developer of the class and developers of other classes that interact with
+                    this class.</p>
+                  <ul>
+                    <li><strong>Operation</strong>: <em>newGame(): void</em></li>
+                    <li><strong>Description</strong>: Generates a new <em>WxH</em> minefield with <em>M</em> mines. Any existing minefield will be overwritten.</li>
+                    <li><strong>Preconditions</strong>: None</li>
+                    <li><strong>Postconditions</strong>: A new minefield is created. Game state is READY.</li>
+                  </ul>
+                  <p>Preconditions are the conditions that must be true before calling this operation. Postconditions describe the system after the operation is complete. Note that post conditions do not say what happens during the operation. Here is another
+                    example:</p>
+                  <ul>
+                    <li><strong>Operation</strong>: <em>clearCellAt(int x, int y): void</em></li>
+                    <li><strong>Description</strong>: Records the cell at x,y as cleared.</li>
+                    <li><strong>Parameters</strong>: x, y coordinates of the cell</li>
+                    <li><strong>Preconditions</strong>: game state is READY or IN_PLAY. x and y are in 0..(H-1) and 0..(W-1), respectively.</li>
+                    <li><strong>Postconditions</strong>: Cell at x,y changes state to ZERO, ONE, TWO, THREE, …, EIGHT, or INCORRECTLY_CLEARED. Game state changes to IN_PLAY, WON or LOST as appropriate.</li>
+                  </ul>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can use logging :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain logging :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Logging is the deliberate recording of certain information during a program execution.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain the motivation for logging :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="why-two">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Logging</em> can be useful for troubleshooting problems the error handling code could not prevent (due to the failure to cater for certain situations).</p>
+                <p>A good logging system records some system information regularly. When bad things happen to a system, their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.
+                  This is the same reason why airplanes have ‘black boxes’.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Why is logging like having the ‘black box’ in aircrafts?">
+                        <question>
+                          <p>Why is logging like having the ‘black box’ in aircrafts?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Because they can be used to find more info about how the system behaved before an ‘incident’.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Because they are hidden from the view of normal users.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Because they both can be in hardcopy form or digital form.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Because they are hard to open by normal users.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Because they can be used to find more info about how the system behaved before an ‘incident’.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Because they are hidden from the view of normal users.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Because they both can be in hardcopy form or digital form.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Because they are hard to open by normal users.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can use assertions :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain assertions :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Assertions are <strong>used to confirm assumptions about the program state</strong>. An assertion can be used to express something like ‘when the execution comes to this point, the variable v cannot be null’. This implies that if v is
+                  null at that point, the code has a bug. If the runtime detects such an ‘assertion failure’ (think of it as an ‘assumption violation), the runtime will typically take some drastic action such as terminating the execution with an error
+                  message. This is because an assertion failure is a confirmation of the code having a bug and the sooner the execution stops, the safer it is.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); <span class="hljs-comment">// line 1</span>
+<span class="hljs-keyword">assert</span> timeout &gt; <span class="hljs-number">0</span>; <span class="hljs-comment">// line 2</span>
+setTimeout(timeout); <span class="hljs-comment">// line 3</span>
+</code></pre>
+                  <p>In the Java code given above, the assertion in line 2 verifies the assumption that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than 0. The only reason for it to return a zero or lower value in line 1
+                    is the presence of a bug in the system.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can use assertions optimally :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Refer <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">this document</a> from Oracle to learn where to use assertions and where not to.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can distinguish situations where exceptions should be used from those where assertions are more suitable :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="exceptions-vs-assertions-two">Exceptions vs Assertions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Exceptions and assertions are two complementary ways of handling errors in software but they serve different purposes.</p>
+                <ul>
+                  <li>The raising of an exception indicates an unusual condition created by the user (e.g. user inputs an unacceptable input) or the environment (e.g., a file needed for the program is missing).</li>
+                  <li>An assertion failure indicates the programmer made a mistake in the code (e.g., a null value is returned from a method that is not supposed to return null under any circumstances).</li>
+                </ul>
+                <p>Both assertions and exceptions should be used in code.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Calculator">
+                        <question>
+                          <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. This is a correct use of assertions.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application should have terminated with an exception instead.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The program has a bug.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. All statements above are incorrect.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. This is a correct use of assertions.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application should have terminated with an exception instead.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. The program has a bug.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. All statements above are incorrect.</li>
+                            </ul>
+                            <p>Explanation: An assertion failure indicates a bug in the code. (b) is not acceptable because of the word &quot;terminated&quot;. The application should not fail at all for this input. But it could have used an exception to
+                              handle the situation internally.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Which of these is the correct statement?">
+                        <question>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Use assertions to indicate programmer messed up; Use exceptions to indicate the user or the environment messed up.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Use exceptions to indicate programmer messed up; Use assertions to indicate the user or the environment messed up.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Use assertions to indicate programmer messed up; Use exceptions to indicate the user or the environment messed up.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Use exceptions to indicate programmer messed up; Use assertions to indicate the user or the environment messed up.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain integration approaches :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain integration :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Integration →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><em>Integrating</em> parts written by different team members is inevitable in multi-person projects. It is also one of the most troublesome tasks and it rarely goes smoothly.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain how integration approaches vary based on timing and frequency :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Integration →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="late-and-one-time-vs-early-and-frequent-two">'Late and One Time' vs 'Early and Frequent' <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In terms of timing and frequency, there are two general approaches to integration:</p>
+                <ol>
+                  <li><em>Late and one-time</em>: In an extreme case of this approach, developers wait till all components are completed and integrate all finished components just before the release. This approach is not recommended because integration often
+                    causes many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays: Late integration → incompatibilities found → major rework required → cannot meet the delivery
+                    date.</li>
+                  <li><em>Early and frequent</em>: The other approach is to integrate early and evolve in parallel in small steps, re-integrating frequently. For example, a working skeleton can be written first (i.e. it compiles and runs but does not produce
+                    any useful output). This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate
+                    the new code to the main system.</li>
+                </ol>
+                <p>Whether using frequent integration or one-time late integration, there is still a need to decide the order in which components are to be integrated. There are several approaches to doing this, as explained next.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain how integration approaches vary based on amount merged at a time :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Integration →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="big-bang-vs-incremental-integration-two">Big-Bang vs Incremental Integration <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In the <em>big-bang integration</em> approach, all components are integrated at the same time. This approach is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex
+                  than when problems are uncovered incrementally.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Give two arguments in support and two arguments against the following statement.">
+                        <question has-input="true">
+                          <p>Give two arguments in support and two arguments against the following statement.</p>
+                          <p><em>Because there is no external client, it is OK to use big bang integration for a school project.</em></p>
+                          <div slot="answer">
+                            <p>Arguments for:</p>
+                            <ul>
+                              <li>It is relatively simple; even big-bang can succeed.</li>
+                              <li>Project duration is short; there is not enough time to integrate in steps.</li>
+                              <li>The system is non-critical, non-production (demo only); the cost of integration issues is relatively small.</li>
+                            </ul>
+                            <p>Arguments against:</p>
+                            <ul>
+                              <li>Inexperienced developers; big-bang more likely to fail</li>
+                              <li>Too many problems may be discovered too late. Submission deadline (fixed) can be missed.</li>
+                              <li>Team members have not worked together before; increases the probability of integration problems.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain how integration approaches vary based on top-down or bottom-up integration :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Integration →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="top-down-vs-bottom-up-integration-three">Top-Down vs Bottom-Up Integration <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>For incremental integration efforts, the following three incremental integration approaches are more suitable.</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/approaches.png" height="100">
+                <p></p>
+                <ul>
+                  <li><em>Top-down</em> integration: In top-down integration, higher-level components are integrated before bringing in the lower-level components. One advantage of this approach is that higher-level problems can be discovered early. One disadvantage
+                    is that this requires the use of dummy or skeletal components (i.e. stubs) in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as
+                    they depend on lower level ones.</li>
+                  <li><em>Bottom-up</em> integration: This is the reverse of top-down integration. Advantages and disadvantages are simply the reverse of those of the top-down approach.</li>
+                  <li><em>Sandwich</em> integration: This is a mix of the top-down and the bottom-up approaches. The idea is to do both top-down and bottom-up so as to “meet up” in the middle.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Suggest an integration strategy for the system represented by following diagram.">
+                        <question has-input="true">
+                          <p>Suggest an integration strategy for the system represented by following diagram. You need not follow a strict top-down, bottom-up, sandwich, or big bang approach. Dashed arrows represent dependencies between classes.</p>
+                          <p>Also take into account the following facts in your test strategy.</p>
+                          <ul>
+                            <li><strong>HospitalUI</strong> will be developed early, so as to get customer feedback early.</li>
+                            <li><strong>HospitalFacade</strong> shields the UI from complexities of the application layer. It simply redirects the method calls received to the appropriate classes below</li>
+                            <li><strong>IO_Helper</strong> is to be reused from an earlier project, with minor modifications</li>
+                            <li>Development of <strong>OutPatient</strong> component has been outsourced, and the delivery is not expected until the 2nd half of the project.</li>
+                          </ul><img src="/website/book/integration/approaches/topDownVsBottomUp/images/hospital.png" height="250">
+                          <p></p>
+                          <div slot="answer">
+                            <p>There can be many acceptable answers to this question. But any good strategy should consider at least some of the below.</p>
+                            <ul>
+                              <li>Since <strong>HospitalUI</strong> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <strong>HospitalUI</strong>)</li>
+                              <li>Because <strong>HospitalFacade</strong> is unlikely to have a lot of business logic, it may not be worth to write stubs to test it (i.e. a bottom-up integration is better for <strong>HospitalFacade</strong>).</li>
+                              <li>Since <strong>IO_Helper</strong> is to be reused from an earlier project, we can finish it early. This is especially suitable since there are many classes that use it. Therefore <strong>IO_Helper</strong> can be integrated
+                                with the dependent classes in bottom-up fashion.</li>
+                              <li>Since <strong>OutPatient</strong> class may be delayed, we may have to integrate <strong>PatientMgr</strong> using a stub.</li>
+                              <li><strong>TypeA</strong>, <strong>TypeB</strong>, and <strong>TypeC</strong> seem to be tightly coupled. It may be a good idea to test them together.</li>
+                            </ul>
+                            <p>Given below is one possible integration test strategy. Relative positioning also indicates a rough timeline.</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/hospitalIntegration.png" height="250">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="Q: Describe the order in which components will be integrated with one another if the following integration strategies were adopted.">
+                        <question has-input="false">
+                          <p>Consider the architecture given below. Describe the order in which components will be integrated with one another if the following integration strategies were adopted.</p>
+                          <p>a) top-down b) bottom-up c) sandwich</p>
+                          <p>Note that dashed arrows show dependencies (e.g. A depend on B, C, D and therefore, higher-level than B, C and D).</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/abc.png" height="190">
+                          <p></p>
+                          <div slot="answer">
+                            <p>a) Diagram:</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/aAnswer.png" height="230">
+                            <p></p>
+                            <p>b) Diagram:</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/bAnswer.png" height="230">
+                            <p></p>
+                            <p>c) Diagram:</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/cAnswer.png" height="230">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can use defensive programming :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain defensive programming :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A defensive programmer codes under the assumption “if we leave room for things to go wrong, they <em>will</em> go wrong”. Therefore, a defensive programmer proactively tries to eliminate any room for things to go wrong.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>{Defensive copying}</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can use defensive coding to enforce compulsory associations :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="enforcing-compulsory-associations-two">Enforcing Compulsory Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider two classes, Account and Guarantor, with an association as shown in the following diagram:</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+                  <p></p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    Guarantor guarantor;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGuarantor</span><span class="hljs-params">(Guarantor g)</span> </span>{
+        guarantor = g;
+    }
+}
+</code></pre>
+                  <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable as above. However, what if someone else in the
+                    team used the <code>Account</code> class as:</p>
+                  <pre><code class="hljs java">Account a = <span class="hljs-keyword">new</span> Account();
+a.setGuarantor(<span class="hljs-keyword">null</span>);
+</code></pre>
+                  <p>This results in an <code>Account</code> without a <code>Guarantor</code>! In a real banking system, this could have serious consequences! The code here did not try to prevent such a thing from happening. To proactively enforce the multiplicity
+                    constraint, a solution is offered as follows:</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    <span class="hljs-keyword">private</span> Guarantor guarantor;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span></span>{
+        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) stopSystemWithMessage(“multiplicity violated. Null Guarantor ”);
+        guarantor = g;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">setGuarantor</span> <span class="hljs-params">(Guarantor m)</span></span>{
+        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) stopSystemWithMessage(“multiplicity violated. Null Guarantor”);
+        guarantor = g;
+    }
+    …
+}
+</code></pre>
+                  <p>In the class Account, <code>guarantor</code> has to be declared as a private variable to prevent the value from being changed from outside the class.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: For the Manager class, write an addAccount() method.">
+                        <question has-input="true">
+                          <p>For the Manager class shown below, write an addAccount() method that</p>
+                          <ul>
+                            <li>restricts the maximum number of Accounts to 8</li>
+                            <li>avoids adding duplicate Accounts</li>
+                          </ul><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
+                          <p></p>
+                          <div slot="answer">
+                            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Manager</span> </span>{
+    <span class="hljs-keyword">private</span> ArrayList&lt; Account &gt; theAccounts ;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addAccount</span><span class="hljs-params">(Account acc)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-keyword">if</span> (theAccounts.size( ) == <span class="hljs-number">8</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception (<span class="hljs-string">"adding more than 8 accounts"</span>);
+
+        <span class="hljs-keyword">if</span> (!theAccounts.contains(acc)) {
+            theAccounts.add(acc) ;
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removeAccount</span><span class="hljs-params">(Account acc)</span> </span>{
+        theAccounts.remove(acc) ;
+    }
+} <span class="hljs-comment">//end class</span>
+</code></pre>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Implement the classes below using the defensive coding approach.">
+                        <question has-input="true">
+                          <p>Implement the classes with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the Marriage class handle setting/removal of reference.</p><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg"
+                            height="55">
+                          <p></p>
+                          <div slot="answer">
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
+    <span class="hljs-keyword">private</span> Man husband = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> Woman wife = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-comment">// extra information like date etc can be added</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Marriage</span><span class="hljs-params">(Man m, Woman w)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-keyword">if</span> (m == <span class="hljs-keyword">null</span> || w == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(<span class="hljs-string">"no man/woman"</span>);
+        }
+        <span class="hljs-keyword">if</span> (m.isMarried() || w.isMarried()) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(<span class="hljs-string">"already married"</span>);
+        }
+        husband = m;
+        m.enterMarriage(<span class="hljs-keyword">this</span>);
+        wife = w;
+        w.enterMarriage(<span class="hljs-keyword">this</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Man <span class="hljs-title">getHusband</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-keyword">if</span>(husband == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(“error state”);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> husband;
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Woman <span class="hljs-title">getWife</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-keyword">if</span>(wife == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(“error state”);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> wife;
+        }
+    }
+
+    <span class="hljs-comment">// removal of both ends of 'Marriage'</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">divorce</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-keyword">if</span> (husband==<span class="hljs-keyword">null</span> || wife==<span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(“no marriage”);
+        }
+        husband.removeFromMarriage(<span class="hljs-keyword">this</span>);
+        husband = <span class="hljs-keyword">null</span>;
+        wife.removeFromMarriage(<span class="hljs-keyword">this</span>);
+        wife = <span class="hljs-keyword">null</span>;
+    }
+} <span class="hljs-comment">// end class</span>
+</code></pre>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Give a suitable defensive implementation to the Account class.">
+                        <question has-input="true">
+                          <p>Give a suitable defensive implementation to the Account class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png"
+                            height="80">
+                          <p></p>
+                          <div slot="answer">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    <span class="hljs-keyword">private</span> Guarantor myGuarantor; <span class="hljs-comment">// should not be public</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span></span>{
+        <span class="hljs-keyword">if</span> (g==<span class="hljs-keyword">null</span>) {
+            haltWithErrorMessage(“Account must have a guarantor”);
+        }
+        myGuarantor = g;
+    }
+    <span class="hljs-comment">// there should not be a setGuarantor method</span>
+}
+</code></pre>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Defensive Implementation">
+                        <question>
+                          <p>This is a defensive implementation of the association.</p><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="150">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: While the design requires a City to be connected to exactly one Country, the code allows it to be connected to zero Country objects (by passing null to the setCountry() method).</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can use defensive coding to enforce 1-to-1 associations :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="enforcing-1-to-1-associations-three">Enforcing 1-to-1 Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider the association given below. Here, a MinedCell cannot exist without a Mine and vice versa. The only way to enforce this is by simultaneous object creation. However, in Java and C++, only one object can be created at a time. Given
+                  below are two alternatives. Both options violate the multiplicity for a short period of time.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
+                  <p></p>
+                  <p>Option 1:</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
+    <span class="hljs-keyword">private</span> Mine mine;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">(Mine m)</span></span>{
+        <span class="hljs-keyword">if</span> (m == <span class="hljs-keyword">null</span>) error;
+        mine = m;
+    }
+    …
+}
+</code></pre>
+                  <p>Option 1 forces us to keep a <code>Mine</code> without a <code>MinedCell</code> (until the <code>MinedCell</code> is created).</p>
+                  <p>Option 2:</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
+    <span class="hljs-keyword">private</span> Mine mine;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">()</span></span>{
+        mine = <span class="hljs-keyword">new</span> Mine();
+    }
+    …
+}
+</code></pre>
+                  <p>Option 2 is more defensive because the <code>Mine</code> is immediately linked to a <code>MinedCell</code>.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can use defensive coding to enforce referential integrity of bi-directional associations :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="enforcing-referential-integrity-three">Enforcing Referential Integrity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+                  <p></p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
+    Woman girlfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
+        girlfriend = w;
+    }
+    …
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+    Man boyfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
+        boyfriend = m;
+    }
+}
+</code></pre>
+                </tip-box>
+                <p>The two classes are meant to be used as shown in (c) below. Now see what happens if the two classes were used as in (d) below. Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not
+                  defensive enough to stop this “love triangle”. In such a situation, we say that <em>the referential integrity has been violated</em>. It simply means <em>there is an inconsistency in object references</em>.</p>
+                <tip-box>
+                  <p>c)</p>
+                  <pre><code class="hljs java">Woman jean;
+Man james;
+…
+james.setGirlfriend(jean);
+jean.setBoyfriend(james);
+</code></pre>
+                </tip-box>
+                <tip-box>
+                  <p>d)</p>
+                  <pre><code class="hljs java">Woman jean; Man james, yong;
+…
+james.setGirlfriend(jean);  
+jean.setBoyfriend(yong);  
+</code></pre><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+                  <p></p>
+                </tip-box>
+                <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
+                <tip-box>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+    <span class="hljs-keyword">private</span> Man boyfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
+        <span class="hljs-keyword">if</span>(boyfriend == m){
+            <span class="hljs-keyword">return</span>;
+        }
+        <span class="hljs-keyword">if</span> (boyfriend != <span class="hljs-keyword">null</span>) {
+            boyfriend.breakUp();
+        }
+        boyfriend = m;
+        m.setGirlfriend(<span class="hljs-keyword">this</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">breakUp</span><span class="hljs-params">()</span> </span>{
+        boyfriend = <span class="hljs-keyword">null</span>;
+    }   
+    ...
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+    <span class="hljs-keyword">private</span> Woman girlfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
+        <span class="hljs-keyword">if</span>(girlfriend == w){
+            <span class="hljs-keyword">return</span>;
+        }
+        <span class="hljs-keyword">if</span> (girlfriend != <span class="hljs-keyword">null</span>) {
+            girlfriend.breakUp();
+        }
+        girlfriend = w;
+        w.setBoyfriend(<span class="hljs-keyword">this</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">breakUp</span><span class="hljs-params">()</span> </span>{
+        girlfriend = <span class="hljs-keyword">null</span>;
+    }  
+   ...
+}
+</code></pre>
+                </tip-box>
+                <p>When the code <code>james.setGirlfriend(jean)</code> is executed, the code ensures that <code>james</code> break up with any current girlfriend before he accepts <code>jean</code> as the girlfriend. Furthermore, the code ensures that <code>jean</code>                  breaks up with any existing boyfriends and accepts <code>james</code> as the boyfriend.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Implement the Player and Region classes using a more defensive approach.">
+                        <question has-input="true">
+                          <p>Imagine that we now support the following feature in our Minesweeper game.</p>
+                          <tip-box>
+                            <p>Feature ID: multiplayer Description: A minefield is divided into mine regions. Each region is assigned to a single player. Players can swap regions. To win the game, all regions must be cleared.</p>
+                          </tip-box>
+                          <p>Given below is an extract from our class diagram.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
+                          <p></p>
+                          <p>Minimally, this can be implemented like this.</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span></span>{
+    Region region;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setRegion</span><span class="hljs-params">(Region r)</span> </span>{ region = r;}
+    <span class="hljs-function">Region <span class="hljs-title">getRegion</span><span class="hljs-params">()</span> </span>{<span class="hljs-keyword">return</span> region;}
+} <span class="hljs-comment">// Region class is similar</span>
+</code></pre>
+                          <p>However, this is not very defensive. For example, a user of this class can pass a null to either of the methods, thus violating the multiplicity of the relationship.</p>
+                          <p>Implement the two classes using a more defensive approach. Take note of the bidirectional link which requires us to preserve referential integrity at all times.</p>
+                          <div slot="answer">
+                            <p>In this solution, we assume Regions can be created without Players (note that we cannot be 100% defensive all the time). The usage will be something like this:</p>
+                            <pre><code class="hljs java">Region r1 = <span class="hljs-keyword">new</span> Region();
+Player p1 = <span class="hljs-keyword">new</span> Player(r1);
+Region r2 = <span class="hljs-keyword">new</span> Region();
+Player p2 = <span class="hljs-keyword">new</span> Player(r2);
+p1.setRegion(r2);
+r1.setPlayer(p2);
+</code></pre>
+                            <p>Here are the two classes. Get methods are omitted as they are simple. Note how much extra effort we need to be defensive.</p>
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Region</span> </span>{
+    <span class="hljs-keyword">private</span> Player myPlayer;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Region</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// initialise region</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setPlayer</span><span class="hljs-params">(Player newPlayer)</span> </span>{
+        <span class="hljs-keyword">if</span> (newPlayer == <span class="hljs-keyword">null</span>) {
+            stopSystemWithErrorMessage(<span class="hljs-string">"Multiplicity violation"</span>);
+        }
+        <span class="hljs-keyword">if</span> (myPlayer == newPlayer) {
+            <span class="hljs-keyword">return</span>; <span class="hljs-comment">// same player</span>
+        }
+        <span class="hljs-keyword">if</span> (myPlayer != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-comment">// I already have a Player!</span>
+            myPlayer.removeRegion(<span class="hljs-keyword">this</span>);
+        }
+        myPlayer = newPlayer;
+        <span class="hljs-comment">// set the reverse link</span>
+        myPlayer.setRegion(<span class="hljs-keyword">this</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removePlayer</span><span class="hljs-params">(Player disconnectingPlayer)</span> </span>{
+        <span class="hljs-keyword">if</span> (myPlayer == disconnectingPlayer) myPlayer = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">else</span> stopSystemWithErrorMessage(<span class="hljs-string">"Unknown Player trying to disconnect"</span>)
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stopSystemWithErrorMessage</span><span class="hljs-params">(String msg)</span> </span>{
+        ...
+    }
+}
+</code></pre>
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span> </span>{
+    <span class="hljs-keyword">private</span> Region myRegion;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Player</span><span class="hljs-params">(Region region)</span> </span>{
+        setRegion(region);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRegion</span><span class="hljs-params">(Region newRegion)</span> </span>{
+        <span class="hljs-keyword">if</span> (newRegion == <span class="hljs-keyword">null</span>) {
+            stopSystemWithErrorMessage(<span class="hljs-string">"Multiplicity violation"</span>);
+        }
+        <span class="hljs-keyword">if</span> (myRegion == newRegion) {
+            <span class="hljs-keyword">return</span>; <span class="hljs-comment">// no change in Region!</span>
+        }
+        <span class="hljs-keyword">if</span> (myRegion != <span class="hljs-keyword">null</span>) {
+            <span class="hljs-comment">// previous region exists</span>
+            myRegion.removePlayer(<span class="hljs-keyword">this</span>);
+        }
+        myRegion = newRegion;
+        <span class="hljs-comment">// set the reverse link</span>
+        myRegion.setPlayer(<span class="hljs-keyword">this</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removeRegion</span><span class="hljs-params">(Region disconnectingRegion)</span> </span>{
+        <span class="hljs-keyword">if</span> (myRegion == disconnectingRegion) myRegion = <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stopSystemWithErrorMessage</span><span class="hljs-params">(String msg)</span> </span>{
+        ...
+    }
+}
+</code></pre>
+                            <p>Note that the above code stops the system when the multiplicity is violated. Alternatively, we can throw an exception and let the caller handle the situation.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Implement the bidirectional association between Bank and Account.">
+                        <question has-input="true">
+                          <p>Implement this bidirectional association. Note that the Bank uses accNumber attribute to uniquely identify an Account object. Assume the Bank class is responsible for maintaining the links between objects.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg"
+                            height="60">
+                          <p></p>
+                          <div slot="answer">
+                            <p>The code below contains a method in the Bank class to create an account; the bank field in the new account is thereby filled by the bank creating it.</p>
+                            <p>We assume that once an Account has been assigned to one Bank, it cannot be assigned to a different Bank. Once the Account is removed from the Bank, it will not be used any more (hence, no need to remove the link from Account
+                              to Bank).</p>
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> accNumber ;
+    <span class="hljs-keyword">private</span> Bank theBank ;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, Bank b)</span> </span>{
+        accno = n ;
+        theBank = b ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNumber</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> accNumber;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Bank <span class="hljs-title">getBank</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> theBank ;
+    }
+}
+</code></pre>
+                            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bank</span> </span>{
+    <span class="hljs-keyword">private</span> HashMap&lt; Integer, Account &gt; theAccounts = <span class="hljs-keyword">new</span> HashMap &lt; Integer, Account &gt; ();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">createAccount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+        addAccount(<span class="hljs-keyword">new</span> Account(n, <span class="hljs-keyword">this</span>)) ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addAccount</span><span class="hljs-params">(Account a)</span> </span>{          
+        theAccounts.put(a.getNumber(), a);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removeAccount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> accNumber)</span> </span>{
+        theAccounts.remove(accNumber);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Account <span class="hljs-title">lookupAccount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> accNumber)</span> </span>{
+        <span class="hljs-keyword">return</span> theAccounts.get(accNumber);
+    }
+}
+</code></pre>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Is the code given below a defensive translation of the associations shown in the class diagram?">
+                        <question has-input="true">
+                          <p>(a) Is the code given below a defensive translation of the associations shown in the class diagram? Explain your answer.</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span></span>{
+    <span class="hljs-keyword">private</span> Student favStudent;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavStudent</span><span class="hljs-params">(Student s)</span></span>{
+        favStudent = s;
+    }
+}
+</code></pre>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span></span>{
+    <span class="hljs-keyword">private</span> Teacher favTeacher;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavTeacher</span><span class="hljs-params">(Teacher t)</span></span>{
+        favTeacher = t;
+    }
+}
+</code></pre><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
+                          <p></p>
+                          <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png"
+                            height="80">
+                          <p></p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
+                          <p></p>
+                          <p>(c) Show a defensive implementation of the remove(Member m) of the Club class given below.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
+                          <p></p>
+                          <div slot="answer">
+                            <p>(a) Yes. Each links is mutable and unidirectional. A simple reference variable is suitable to hold the link.</p>
+                            <p><code>Teacher</code> class can be made even more defensive by introducing a <code>resetFavStudent()</code> method to unlink the current favorite student from a teacher. In that case, <code>setFavStudent(Student)</code> method
+                              should not accept null. This approach is more defensive because it prevents a null value being passed to <code>setFavStudent(Student)</code> by mistake and being interpreted as a request to delink the current favorite student
+                              from the Teacher object.</p>
+                            <p>(b) First diagram has unidirectional links. Second has a bidirectional link. RI is only applicable to the second.</p>
+                            <p>(c)</p>
+                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">removeMember</span><span class="hljs-params">(Member m)</span> </span>{
+    <span class="hljs-keyword">if</span> (m==<span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> exception(“<span class="hljs-keyword">this</span> is <span class="hljs-keyword">null</span>, not a member!”);
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(member_count == <span class="hljs-number">10</span>) <span class="hljs-keyword">throw</span> exception(“we need at least <span class="hljs-number">10</span> members to survive!”);
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(!isMember(m)) <span class="hljs-keyword">throw</span> exception (“<span class="hljs-keyword">this</span> fellow is not a member of our club!”);
+    <span class="hljs-keyword">else</span> members.remove(m); <span class="hljs-comment">// members is a data structure such as ArrayList</span>
+}
+</code></pre>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Bidirectional associations, if not implemented properly, can result in referential integrity violations.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: Bidirectional associations require two objects to link to each other. When one of these links is not consistent with the other, we have a RI violation.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain when to use defensive programming :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="when-two">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>It is not necessary to be 100% defensive all the time. While defensive code may be less prone to be misused or abused, such code can also be more complicated and slower to run.</p>
+                <p>The degree of defensiveness depends on many factors such as:</p>
+                <ul>
+                  <li>How critical is the reliability of the system?</li>
+                  <li>Will the code be used by programmers other than the author?</li>
+                  <li>The level of programming language support for defensive programming</li>
+                  <li>The overhead of being defensive.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Defensive programming">
+                        <question>
+                          <p>Defensive programming,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. can make the program slower.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. can make the code longer.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. can make the code more complex.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. can make the code less susceptible to misuse.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. can require extra effort.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. is all of the above.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. can make the program slower.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. can make the code longer.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. can make the code more complex.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. can make the code less susceptible to misuse.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. can require extra effort.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. is all of the above.</li>
+                            </ul>
+                            <p>Explanation: Defensive programming requires a more checks, possibly making the code longer, more complex, and possibly slower. Use it only when benefits outweigh costs, which is often.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain DbC approach :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Suppose an operation is implemented with the behavior specified precisely in the API (preconditions, post conditions, exceptions etc.). When following the defensive approach, the code should first check if the preconditions have been met.
+                  Typically, exceptions are thrown if preconditions are violated. In contrast, the <em>Design-by-Contract (DbC)</em> approach to coding assumes that it is the responsibility of the caller to ensure all preconditions are met. The operation
+                  will honor the contract only if the preconditions have been met. If any of them have not been met, the behavior of the operation is “unspecified”.</p>
+                <p>Languages such as Eiffel have native support for DbC. For example, preconditions of an operation can be specified in Eiffel and the language runtime will check precondition violations without the need to do it explicitly in the code. To
+                  follow the DbC approach in languages such as Java and C++ where there is no built-in DbC support, assertions can be used to confirm pre-conditions.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: What is the incorrect statement about the Design-by-contract approach to coding?">
+                        <question>
+                          <p>What is the incorrect statement about the Design-by-contract approach to coding?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is not natively supported by Java and C++.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is an alternative to OOP.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It assumes the caller of a method is responsible for ensuring all preconditions are met.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is not natively supported by Java and C++.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. It is an alternative to OOP.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It assumes the caller of a method is responsible for ensuring all preconditions are met.</li>
+                            </ul>
+                            <p>Explanation: DbC is not an alternative to OOP. We can use DbC in an OOP solution. DbC is an alternative to defensive programming.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can explain continuous integration and continuous deployment :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can name some of the build automation tools :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Integration →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In a non-trivial project, building a product from source code can be a complex multi-step process. For example, it can include steps such as to pull code from the revision control system, compile, link, run automated tests, automatically
+                  update release documents (e.g. build number), package into a distributable, push to repo, deploy to a server, delete temporary files created during building/testing, email developers of the new build, and so on. Furthermore, this build
+                  process can be done ‘on demand’, it can be scheduled (e.g. every day at midnight) or it can be triggered by various events (e.g. triggered by a code push to the revision control system).</p>
+                <p>Some of these build steps such as to compile, link and package are already automated in most modern IDEs. For example, several steps happen automatically when the ‘build’ button of the IDE is clicked. Some IDEs even allow customization
+                  to this build process to some extent.</p>
+                <p>However, most big projects use specialized build tools to automate complex build processes.</p>
+                <p>Build tool examples:</p>
+                <ul>
+                  <li><a href="https://gradle.org/">Gradle</a></li>
+                  <li><a href="http://maven.apache.org/">Maven</a></li>
+                  <li><a href="http://ant.apache.org/">Apache Ant</a></li>
+                  <li><a href="http://www.gnu.org/software/make/">GNU Make</a></li>
+                </ul>
+                <p>Modern software projects often depend on third party libraries that evolve constantly. That means developers need to download the correct version of the required libraries and update them regularly. Therefore, dependency management is
+                  an important part of build automation. <em>Dependency Management</em> tools can automate that aspect of a project. Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Tools">
+                        <question>
+                          <p><em>Gradle</em> and <em>Maven</em> are tools used for,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. better revision control</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. build automation</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. generating UML diagrams from code</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. project collaboration</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. better revision control</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. build automation</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. generating UML diagrams from code</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. project collaboration</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="danger" header=":trophy: Can work with a 10 KLoC code base :star:" expandable="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\project-v12._include_.html" name="%%Admin &raquo;%% Project: v1.2 :star:" header="%%Admin &raquo;%% Project: v1.2 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-manySubmissions" name="%%Admin &raquo;%% FAQ: Why so many submissions? :star::star::star::star:" fragment="admin-faq-manySubmissions" header="%%Admin &raquo;%% FAQ: Why so many submissions? :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-intermediateMarks" name="%%Admin &raquo;%% FAQ: Why not enough marks for intermediate submissions? :star::star::star::star:" fragment="admin-faq-intermediateMarks"
+          header="%%Admin &raquo;%% FAQ: Why not enough marks for intermediate submissions? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-cs2101Differences" name="%%Admin &raquo;%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" fragment="admin-faq-cs2101Differences"
+          header="%%Admin &raquo;%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 7" expandable="" ctrl-lvl="1" no-close=""></panel>
+
+<panel header=":mega: Lecture 8" expandable="" ctrl-lvl="1" no-close=""></panel>

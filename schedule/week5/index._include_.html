@@ -1,0 +1,911 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <div>
+      <panel type="danger" header=":trophy: Can follow Forking Workflow :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain forking workflow :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="forking-flow-three">Forking Flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div><img src="/website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                <p></p>
+                <p>The ‘official’ version of the software is kept in a remote repo designated as the ‘main repo’. All team members fork the main repo and clone it to their local computer.</p>
+                <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+                <ol>
+                  <li>Jean creates a separate branch in her local repo and fix the bug in that branch.</li>
+                  <li>Jean pushes the branch to her fork.</li>
+                  <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                  <li>Other members review Jean’s pull request.</li>
+                  <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                  <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated ‘maintainer’ of the main repo) merge the PR, which brings Jean’s code to the main repo.</li>
+                  <li>Other members, realizing there is new code in the upstream repo, syncs their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own
+                    fork.</li>
+                  <li>Ravi clones Adam’s remote repo to his computer. As a result, Ravi now has a local repo with Adam’s code in it.</li>
+                </ol>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain DRCS vs CRCS :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="drcs-vs-crcs-three">DRCS vs CRCS <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>There are two models that can be followed when using an RCS in a team setting: the <em>centralized</em> model and the <em>distributed</em> model.</p>
+                <p><strong>Centralized RCS</strong> (CRCS for short): In this model, there is a central remote repo shared by the team. Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository.
+                  Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo. Instead, they force users to do all the versioning with the remote repo.</p>
+                <pic src="/website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png"
+                  height="180"><strong>The centralized RCS approach without any local repos (e.g., CVS, SVN)</strong></pic>
+                <p>Distributed RCS (DRCS for short, also known as Decentralized RCS): In this model, there can be multiple remote repos and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team.
+                  For example, every team member can have his/her own remote repository in addition to their own local repository, as shown in below. Git and Mercurial are some prominent RCS tools that support distributed RCS.</p>
+                <pic src="/website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png"
+                  height="240"><strong>The decentralized RCS approach</strong></pic>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain feature branch flow :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="feature-branch-flow-three">Feature Branch Flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>This is similar to forking workflow except there are no forks or PRs. Everyone is pushing/pulling from the same remote repo.</p><img src="/website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+                <p></p>
+                <p>More info: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain centralised flow :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="centralized-flow-two">Centralized Flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>This is similar to the feature branch workflow except all changes are done in the master branch.</p>
+                <p>More info: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow</a></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can use simple JUnit tests :star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain developer testing :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Developer testing is the testing done by the developers themselves as opposed to professional testers or end users.</p>
+                <p>Examples of developer testing: unit testing, integration testing</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain the need for early developer testing :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="why-two">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>At first it might seem logical to have the system built in its entirety first and then getting it tested by professional testers. Here are the downsides of that approach.</p>
+                <ul>
+                  <li>Locating the cause of such a test case failure is difficult due to a large search space; in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be due to multiple
+                    inter-related bugs.</li>
+                  <li>Fixing a bug found during such testing could result in major rework, especially if the bug originated during the design or during requirements specification (i.e. a faulty design or faulty requirements).</li>
+                  <li>One bug might 'hide' other bugs, which could emerge only after the first bug is fixed.</li>
+                  <li>Too many bugs found during system testing can lead to delivery delays.</li>
+                </ul>
+                <p>Due to the above reasons, it is better to do early developers testing. In fact, there is a widely accepted rule of thumb that says <em>the earlier a bug is found, the easier and cheaper to have it fixed</em>, as illustrated by the graph
+                  below.</p><img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+                <p></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Discuss advantages and disadvantages of developers testing their own code.">
+                        <question has-input="true">
+                          <p>Discuss advantages and disadvantages of developers testing their own code.</p>
+                          <div slot="answer">
+                            <p>Advantages:</p>
+                            <ul>
+                              <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
+                              <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
+                              <li>It is possible to do more thorough testing since developers know the expected external behavior as well as the internal structure of the component.</li>
+                              <li>It forces developers to take responsibility for their own work (they cannot claim that “testing is the job of the testers”).</li>
+                            </ul>
+                            <p>Disadvantages:</p>
+                            <ul>
+                              <li>Developer may unconsciously test only situations that he knows to work (i.e. test it too “gently”).</li>
+                              <li>Developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, he is likely to miss it again during testing).</li>
+                              <li>Developer may have misunderstood what the SUT is supposed to do in the first place.</li>
+                              <li>Developer may lack the testing expertise.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>A) The cost of fixing a bug goes down as we reach the product release.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <p>B) Developers should pass their code to testers for unit testing as soon as the implementation is done.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>A) The cost of fixing a bug goes down as we reach the product release.</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: No, the cost goes up over time.</p>
+                            <p>B) Developers should pass their code to testers for unit testing as soon as the implementation is done.</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: Unit testing is a type of ‘developer testing’. It is not done by testers.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain test drivers :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="test-automation-using-test-drivers-two">Test Automation Using Test Drivers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Automated testing requires test drivers. A test driver is a module written specifically for ‘driving’ the <em>SUT (Software Under Test)</em> for the purpose of testing i.e. invoking the SUT with test inputs and verifying the behavior is
+                  as expected. In the code example given below, <code>PayrollTest</code> is a test driver for the <code>Payroll</code> class that ‘drives’ the <code>PayRoll</code> class by sending it test inputs and printing out the output. However, it
+                  does not verify if the output is as expected.</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        print(<span class="hljs-string">"Test 1 output "</span> + p.totalSalary());
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        print(<span class="hljs-string">"Test 2 output "</span> + p.totalSalary());
+
+        <span class="hljs-comment">//more tests</span>
+        System.out.println(<span class="hljs-string">"Testing completed"</span>);
+    }
+    ...
+}
+</code></pre>
+                <p>The <code>PayrollTest</code> class below not only drives the SUT Payroll class using test inputs, it also automatically verifies that output for each test input in as expected.</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestAtd</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        <span class="hljs-comment">// automatically verify the response</span>
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);
+        }
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);
+        }
+
+        <span class="hljs-comment">//more tests...</span>
+
+        System.out.println(<span class="hljs-string">"All tests passed"</span>);
+    }
+}
+</code></pre>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can explain test automation tools :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="test-automation-tools-two">Test Automation Tools <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>JUnit is a tool for automated testing of Java programs. Similar tools are available for other languages.</p>
+                <p>Below is the code of an automated test for Payroll class, written using JUnit libraries.</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        assertEquals(p.totalSalary(), <span class="hljs-number">6400</span>);
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        assertEquals(p.totalSalary(), <span class="hljs-number">2300</span>);
+
+        <span class="hljs-comment">//more tests...</span>
+    }
+}
+</code></pre>
+                <p>Most modern IDEs come packaged with integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p><img src="/website/book/testing/testAutomation/tools/images/junit.png"
+                  height="190">
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header=":trophy: Can implement inheritance :star:" expandable="" expanded="" no-close="">
+        <panel type="danger" header=":trophy: Can explain the meaning of inheritance :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="inheritance-one">Inheritance <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>
+                  <panel src="/website\book\oopDesign\inheritance\basic\embed._include_.html" header="OOP: Inheritance: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the INCORRECT statement about inheritance">
+                        <question>
+                          <p>Choose the INCORRECT statement about inheritance</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Super class is more general than the sub class.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Child class is more specialized than the parent class.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A class can inherit behavior from its ancestor classes (ancestor classes = classes above it in the inheritance hierarchy).</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code reuse can be one benefit of inheritance.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Sub class has a dependency on the super class.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A change to the super class will not affect its sub classes.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Super class is more general than the sub class.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Child class is more specialized than the parent class.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A class can inherit behavior from its ancestor classes (ancestor classes = classes above it in the inheritance hierarchy).</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code reuse can be one benefit of inheritance.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Sub class has a dependency on the super class.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. A change to the super class will not affect its sub classes.</li>
+                            </ul>
+                            <p>Explanation: Since sub classes inherit behavior from the super class, any changes to the super class could affect sub classes. For the same reason, sub class has a dependency on the super class and all ancestor classes.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="danger" header=":trophy: Can interpret class inheritance in class diagrams :star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We uses a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/classInheritance/what/images/report.png" height="120">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div id="lo-2kloc">
+      <panel type="danger" header=":trophy: Can work with a 2KLoC code base :star: ==[Compulsory]==" expandable="">
+        <panel header=":dart: Evidence" expanded="">
+          <p><strong>Acceptable</strong>: Evidence that you have worked with a code base larger than 2KLoC. <span class="dimmed">e.g. a project in a previous module or a pet project</span></p>
+          <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span></p>
+          <ul>
+            <li>
+              <p>The size of the enhancement does not matter.</p>
+            </li>
+            <li>
+              <p>Remember to update all relevant documentation and tests.</p>
+            </li>
+            <li>
+              <p>Follow the coding standard</p>
+            </li>
+            <li>
+              <p>Write your code in the OOP style.</p>
+              <tip-box type="tip">
+                <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+              </tip-box>
+            </li>
+          </ul>
+          <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>].</p>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can implement class-level members :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can interpret class-level members in class diagrams :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In UML class diagrams, underlines are used to denote class-level attributes and variables.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain class-level members :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="class-level-members-two">Class Level Members <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>While all objects of a class has the same attributes, each object has its own copy of the attribute value.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>All <code>Person</code> objects have the Name attribute but the value of that attribute varies between <code>Person</code> objects.</p>
+                </tip-box>
+                <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class. Those
+                  are called <em>class level</em> attributes.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>The attribute totalPersons should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
+                </tip-box>
+                <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Sending the getName() message to Adam object results in the response “Adam” while sending the same message to the Beth object gets the response “Beth”.</p>
+                </tip-box>
+                <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Those are called class-level methods.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>The method getTotalPersons() is not suitable to send to a specific <code>Person</code> object.</p>
+                </tip-box>
+                <p>Class-level attributes and methods are collectively called <em>class-level members</em> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code> to identify class-level members).
+                  They are to be accessed using the class name rather than an instance of the class.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\classLevelMembers\topicPanel._include_.html" header="UML: Class Diagrams: Class Level Members" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p><img src="/website/book/oopDesign/classes/classLevelMembers/images/person.png" height="100">
+                <p></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which of these is most suitable as a class-level variable?">
+                        <question>
+                          <p>Which of these is most suitable as a class-level variable?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pacman game, Class: Player, variable: totalScore</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: Course, variable: totalStudents</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: Task, variable: totalPendingTasks</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: ArrayList, variable: total (i.e., total items in a given ArrayList object)</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pacman game, Class: Player, variable: totalScore</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: Course, variable: totalStudents</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. system: ToDo manager, class: Task, variable: totalPendingTasks</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: ArrayList, variable: total (i.e., total items in a given ArrayList object)</li>
+                            </ul>
+                            <p>Explanation: totalPendingTasks should not be managed by individual Task objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level as their value varies
+                              from instance to instance. e.g., totalStudents for one Course object will differ from totalStudents of another.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can implement composition :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain the meaning of composition :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="composition-two">Composition <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A composition is an association that represents a strong “whole-part” relationship. When the “whole” is destroyed, “parts” are destroyed too.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\composition\topicPanel._include_.html" header="UML: Class Diagrams: Composition" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+                  <p></p>
+                </tip-box>
+                <p>In addition, composition also implies that <strong>there cannot be cyclical links</strong>. In the example below, the notation represents a ‘sub-folder’ relationship between two folders while implying that a Folder cannot be a sub-folder
+                  of itself. If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be subfolder of itself.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/associations/composition/images/folder.png" height="80">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can interpret composition in class diagrams :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use a solid diamond symbol to denote composition.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/uml/classDiagrams/composition/what/images/boardSquare.png" height="150">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can make use of a library :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain libraries :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>A library is a collection of modular code that is general and can be used by other programs.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Java classes you get with the JDK (such as String, ArrayList, HashMap, etc.) are library classes that are provided in the default Java distribution.</p>
+                </tip-box>
+                <tip-box>
+                  <p>Example:</p>
+                  <p><a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header=":trophy: Can explain single responsibility principle :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="single-responsibility-principle-two">Single Responsibility Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <tip-box type="primary">
+              <div>
+                <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. -- Robert C. Martin</p>
+              </div>
+            </tip-box>
+            <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+            <tip-box>
+              <p>Example:</p>
+              <p>Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence,
+                such a class does not follow the SRP.</p>
+            </tip-box>
+          </div>
+          <div>
+            <div>
+              <panel header="Resources" expanded="" type="default">
+                <p>[Book Chapter] Single Responsibility Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+                <p><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">Single Responsibility Principle</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</p>
+              </panel>
+            </div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+    <div>
+      <panel type="info" header=":trophy: Can use intermediate-level class diagrams :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="success" header=":trophy: Can show an association as an attribute :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>An attribute is sometimes used to represent an association. The diagram below depicts a multiplayer <em>Square Game</em> being played on a board comprising of one hundred squares. Each of the squares may be occupied with any number of
+                  Pieces, each belonging to a certain player. A piece may or may not be on a square. Note how the association <code>’is on’</code> can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. In order to realize the
+                  0..1 multiplicity, the isOn attribute can either be null or hold a reference to a Square object.</p>
+                <tip-box><img src="/website/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" height="300">
+                  <p></p>
+                </tip-box>
+                <p>In addition, association multiplicities of two or more can be made as part of the attribute using</p>
+                <ul>
+                  <li>name: type <mark>[multiplicity]</mark> = default value</li>
+                </ul>
+                <tip-box><img src="/website/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain the meaning of dependencies in the context of UML class diagrams :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="dependencies-two">Dependencies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>In some cases, objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\dependencies\topicPanel._include_.html" header="UML: Class Diagrams: Dependencies" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can interpret dependencies in a class diagram :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>We use a dashed arrow to show dependencies.</p><img src="/website/book/uml/classDiagrams/dependencies/what/images/notation.png" height="120">
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can implement overloading :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain method overloading :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="overloading-two">Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Method overloading arises when there are multiple operations with the <strong>same name but different type signatures.</strong></p>
+                <tip-box type="primary">
+                  <div>
+                    <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                    <panel
+                      type="seamless" header="%%Examples%%">
+                      <table class="markbind-table table">
+                        <thead>
+                          <tr>
+                            <th style="text-align:center">Method</th>
+                            <th style="text-align:center">Type Signature</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align:center">int add(int X, int Y)</td>
+                            <td style="text-align:center">(int, int)</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center">void add(int A, int B)</td>
+                            <td style="text-align:center">(int, int)</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center">void m(int X, double Y)</td>
+                            <td style="text-align:center">(int, double)</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center">void m(double X, int Y)</td>
+                            <td style="text-align:center">(double, int)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </panel>
+        </div>
+        </tip-box>
+        <tip-box>
+          <p>Example:</p>
+          <pre class="hljs"><code>class Account {
+    Account () {
+        // Signature: ()
+        ...
+    }
+    Account (String name, String number, double balance) {
+        // Signature: (String, String, double)
+        ...
+    }
+}
+</code></pre>
+          <pre class="hljs"><code>void calculateCAP (String matric) { ... }
+void calculateCAP (int[] averages) { ... }
+</code></pre>
+          <p>The constructor <code>Account</code> and method <code>calculateCAP</code> has been overloaded.</p>
+        </tip-box>
+        <p>Overloading is used to indicate that multiple operations do similar things but take different parameters. An operation can be overloaded inside the same class or in a sub/super classes.</p>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        </div>
+        </div>
+        <panel header=":dart: Evidence" expanded="">
+          <p>...</p>
+        </panel>
+      </panel>
+</panel>
+</div>
+<div>
+  <panel type="info" header=":trophy: Can use UML notes :star::star::star:" expandable="" expanded="" no-close="">
+    <panel type="info" header=":trophy: Can specify constraints in UML diagrams :star::star::star:" expandable="">
+      <div>
+        <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+          </span>
+        </p>
+        <div>
+          <h4 id="constraints-three">Constraints <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>A note can be used to specify a <em>constraint</em><strong>within curly brackets</strong>. Natural language or a formal notation such as OCL (Object Constraint Language) may be used to specify constraints. OCL is beyond the scope of this handout.</p>
+            <img
+              src="/website/book/uml/notes/constraints/images/playerTurn.png" height="120">
+              <p></p>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <panel header=":dart: Evidence" expanded="">
+        <p>...</p>
+      </panel>
+    </panel>
+  </panel>
+</div>
+</div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="warning" src="/website\admin\appendixB-policies._include_.html#policy-workDistribution" name="%%Admin &raquo;%% Policy on project work distribution :star::star:" fragment="policy-workDistribution" header="%%Admin &raquo;%% Policy on project work distribution :star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="info" src="/website\admin\appendixB-policies._include_.html#policy-responseTime" name="%%Admin &raquo;%% Policy on email response time :star::star::star:" fragment="policy-responseTime" header="%%Admin &raquo;%% Policy on email response time :star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixB-policies._include_.html#policy-teamSize" name="%%Admin &raquo;%% Policy on grading smaller/larger teams :star::star::star::star:" fragment="policy-teamSize" header="%%Admin &raquo;%% Policy on grading smaller/larger teams :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-beanCounting" name="%%Admin &raquo;%% FAQ: Why so much bean counting? :star::star::star::star:" fragment="admin-faq-beanCounting" header="%%Admin &raquo;%% FAQ: Why so much bean counting? :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 4" expandable="" ctrl-lvl="1" no-close=""></panel>
+
+<panel header=":mega: Lecture 5" expandable="" ctrl-lvl="1" no-close=""></panel>
