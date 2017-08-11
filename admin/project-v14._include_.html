@@ -9,22 +9,22 @@
         <p>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a>.</p>
       </li>
       <li>
-        <p>Mark your code with a <code>//@@author matric-number</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
-        <pre class="hljs"><code>&lt;!-- @@author matric-number --&gt;
+        <p>Mark your code with a <code>//@@author github-ID</code>. Note the double <code>@</code>. The comment syntax may vary based on file type e.g. for markdown, fxml, html</p>
+        <pre class="hljs"><code>&lt;!-- @@author github-ID --&gt;
 </code></pre>
         <p>Here is a sample code file:</p>
-        <pre class="hljs"><code>//@@author A0909865T
+        <pre class="hljs"><code>//@@author johndoe
 method 1 ...
 method 2 ...
-//@@author A0702345U
+//@@author sarahkhoo
 method 3 ...
-//@@author A0909865X
+//@@author johndoe
 method 4 ...
 </code></pre>
       </li>
       <li>
-        <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>          However, you may put an empty <code>//@@author</code> (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric number
-          to the empty tag later.</p>
+        <p>The <code>//@@author</code> tag should appear only at the beginning of the code a person wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.<br>          However, you may put an empty <code>//@@author</code> (i.e. no GitHub ID) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the GitHub ID to the
+          empty tag later.</p>
       </li>
       <li>
         <p>If a method was written by more than one person, the <code>//@@author</code> tag should indicate the person who wrote most of that method. i.e., <code>//@@author</code> tag should not appear inside a method.<br> If some part of the code was done
@@ -36,10 +36,10 @@ method 4 ...
         <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
         <pre class="hljs"><code>/**
   * Returns true if ...
-  * @@author A0909865T
+  * @@author johndoe
   */
 </code></pre>
-        <pre class="hljs"><code>//@@author A0909865T
+        <pre class="hljs"><code>//@@author johndoe
 /**
   * Returns true if ...
   */
@@ -50,10 +50,10 @@ method 4 ...
         <ul>
           <li>Create a folder called <code>{project root}/unused</code></li>
           <li>Move unused files to that folder (those files should contain unused code only)</li>
-          <li>use <code>//@@author matric-number</code> to mark unused code in those files.</li>
+          <li>use <code>//@@author github-ID</code> to mark unused code in those files.</li>
         </ul>
         <p>e.g.</p>
-        <pre class="hljs"><code>//@@author A0909865T-unused
+        <pre class="hljs"><code>//@@author johndoe-unused
 method 1 ...
 method 2 ...
 </code></pre>
@@ -71,9 +71,9 @@ method 2 ...
           1000 tasks that was used to test performance.</p>
       </li>
       <li>
-        <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author matric-number-reused</code></p>
+        <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author github-ID-reused</code></p>
         <p>e.g.</p>
-        <pre class="hljs"><code>//@@author A0909865T-reused
+        <pre class="hljs"><code>//@@author johndoe-reused
 method 1 ...
 method 2 ...
 </code></pre>
@@ -105,16 +105,16 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>The output should be something like the structure given below.</p>
         <pre class="hljs"><code>collated/
     main/
-        A000000.md
-        A111111.md
-        A222222.md
-        A222222reused.md
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+        ravikumarreused.md
     test/
-        A000000.md
-        A111111.md
-        A222222.md
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
     unused/
-        A000000.md
+        johndoe.md
 </code></pre>
       </li>
       <li>
