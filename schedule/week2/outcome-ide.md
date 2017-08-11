@@ -1,6 +1,6 @@
-<panel type="danger" header=":trophy: Can use basic features of an IDE :star:" expandable expanded no-close>
+<panel type="danger" header="`W2.2` **Can use basic features of an IDE** :star:" expandable expanded no-close>
 
-<panel type="danger" header=":trophy: Can explain IDEs :star:" expandable>
+<panel type="danger" header="`W2.2a` Can explain IDEs :star:" expandable>
   <include src="../../book/ides/introduction/what/full.md" />
   <panel header=":dart: Evidence" expanded>
     
@@ -8,7 +8,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 
   </panel>
 </panel>
-<panel type="danger" header=":trophy: Can setup a project in an IDE :star:" expandable>
+<panel type="danger" header="`W2.2b` Can setup a project in an IDE :star:" expandable>
   <include src="../../book/intellij/projectSetup/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -20,7 +20,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 
   </panel>
 </panel>
-<panel type="warning" header=":trophy: Can navigate code effectively using IDE features :star::star:" expandable>
+<panel type="warning" header="`W2.2c` Can navigate code effectively using IDE features :star::star:" expandable>
   <include src="../../book/intellij/codeNavigation/full.md" />
   <panel header=":dart: Evidence" expanded>
 

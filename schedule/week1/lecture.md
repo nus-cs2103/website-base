@@ -2,6 +2,6 @@
 
 **Slides**:
 
-==slides will be uploaded after the lecture==
+==Slides will be uploaded after the lecture==
 
 
