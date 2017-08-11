@@ -8,7 +8,7 @@
 
 **Description**: 
 * Each member should try to add some enhancements that is in line with the vision for v2.0. Create a PR for the enhancement. 
-* Note that the enhancement may go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has some guidance on how to implement a new feature end-to-end.
+* We encourage enhancements that go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has some guidance on how to implement a new feature end-to-end.
 
 <tip-box type="important">
 
@@ -19,7 +19,7 @@
  
 </tip-box>
 
-**Submission**: If you manage to merge any of the PRs, do a proper release on GitHub. Do a demo of the new functionality during the tutorial.
+**Submission**: If you manage to merge any of the PRs, do a demo of the new functionality during the tutorial.
 
 **Grading**: Criteria to consider this milestone as reached
 * Minimal :star: : At least some ongoing PRs.
@@ -36,20 +36,21 @@ Update the following pages:
 
 * **About Us page**:  
   This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
-  * Remove photos of the SE-EDU developers. 
+  * Replace info of SE-EDU developers with info of your team.  
   * Including the name/photo of the supervisor/lecturer is optional. 
   * The photo of a team member should be `doc/images/githbub_id_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%.
 
-<panel header="==Choosing a profile photo==" expandable>
+<panel header="%%Admin &raquo; Choosing a profile photo%%" expandable>
   <include src="profilePhoto.md" />
-</panel>
+</panel><p/>
 
 * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
-<panel header="Roles and responsibilities" expandable>
+<panel header="More info on _roles and responsibilities_" expandable>
 
-  Roles imply aspects you are in charge of and responsible for. E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc.  
-  Here are some typical roles:
+  **Roles indicates aspects you are in charge of and responsible for.** %%E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc.%%  
+  
+  Here are some example roles:
 
   * _Team lead_: Responsible for overall project coordination.
   * _Documentation_ (short for ‘in charge of documentation’): Responsible for the quality of various project documents.
@@ -58,11 +59,12 @@ Update the following pages:
   * _Deliverables and deadlines_: Ensure project deliverables are done on time and in the right format.
   * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
   * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
-  * _[Tool ABC] expert_: e.g. Eclipse expert, Git expert, etc. Helps other team member with matters related to the specific tool.
-  * _In charge of[Component XYZ]_: e.g. In charge of `Model`, `UI`, `Storage`, etc. If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.5.
-  * You may define additional roles.
+  * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
+  * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.5.
 
-Please make sure each of the above roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but you should still have one person who is unequivocally the main person playing that role.
+  You may define additional roles.
+
+  Please make sure each of the important roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**.
     
 </panel><p/>
 

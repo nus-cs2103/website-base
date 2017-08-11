@@ -1,6 +1,6 @@
 <span id="individual-expectations">
 
-**Individually**, each student is expected to,
+:bust_in_silhouette: **Individually**, each student is expected to,
 
 1. **Contribute one or more enhancements**<br>
   Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.
@@ -38,13 +38,13 @@ Here are some examples, if done by one student, is likely to be earn the specifi
 </span>
 <span id="team-expectations">
 
-**As a team**, you are expected to work together to,
+:busts_in_silhouette::busts_in_silhouette: **As a team**, you are expected to work together to,
 
-1. **Maintain product integrity**: 
+1. **Preserve product integrity**: i.e.
    a. Enhancements added fit together to form a cohesive product.
-   b. Documentation follow a consistent style and presents a cohesive picture to the reader.
+   b. Documentation follows a consistent style and presents a cohesive picture to the reader.
    c. Final project demo presents a cohesive picture to the audience.
-1. **Preserve product quality**: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a PR breaks the entire product, the whole team will have to share the penalty.
-1. **Manage the project smoothly**: ensure i.e. PR workflow, repo maintenance, integration, releases, etc. are done smoothly.
+1. **Maintain product quality**: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+1. **Manage the project smoothly**: i.e. ensure PR workflow, repo maintenance, integration, releases, etc. are done smoothly.
 
 </span>

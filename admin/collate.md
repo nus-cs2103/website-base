@@ -1,22 +1,22 @@
 
 1.  Download `Collate-TUI.jar` from the [Collate Tool project](https://github.com/se-edu/collate).
-2.  Mark your code with a `//@@author matric-number`. Note the double `@`. The comment syntax may vary based on file type e.g. for markdown, fxml, html
+2.  Mark your code with a `//@@author github-ID`. Note the double `@`. The comment syntax may vary based on file type e.g. for markdown, fxml, html
     ```
-    <!-- @@author matric-number -->
+    <!-- @@author github-ID -->
     ```
 
     Here is a sample code file:
     ```
-    //@@author A0909865T
+    //@@author johndoe
     method 1 ...
     method 2 ...
-    //@@author A0702345U
+    //@@author sarahkhoo
     method 3 ...
-    //@@author A0909865X
+    //@@author johndoe
     method 4 ...
     ```
 3.  The `//@@author` tag should appear only at the beginning of the code a person wrote. The code up to the next `//@@author` tag or the end of the file (whichever comes first) will be considered as was written by that author.  
-    However, you may put an empty `//@@author` (i.e. no matric number) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the matric number to the empty tag later.
+    However, you may put an empty `//@@author` (i.e. no GitHub ID) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the GitHub ID to the empty tag later.
 4.  If a method was written by more than one person, the `//@@author` tag should indicate the person who wrote most of that method. i.e., `//@@author` tag should not appear inside a method.  
     If some part of the code was done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly 50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality, the designated author should refactor the code to make it high quality.  
     Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.
@@ -25,11 +25,11 @@
     ```
     /**
       * Returns true if ...
-      * @@author A0909865T
+      * @@author johndoe
       */
     ```
     ```
-    //@@author A0909865T
+    //@@author johndoe
     /**
       * Returns true if ...
       */
@@ -37,11 +37,11 @@
 6.  If you wrote a significant amount of code that was not used in the final product,
     *   Create a folder called `{project root}/unused`
     *   Move unused files to that folder (those files should contain unused code only)
-    *   use `//@@author matric-number` to mark unused code in those files.
+    *   use `//@@author github-ID` to mark unused code in those files.
     
     e.g.
     ```
-    //@@author A0909865T-unused
+    //@@author johndoe-unused
     method 1 ...
     method 2 ...
     ```
@@ -54,12 +54,12 @@
   If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let us know.
 
   *   **INCLUDE**: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file with 1000 tasks that was used to test performance.
-  *   **Code you reused** from elsewhere: Mark such code as `//@@author matric-number-reused`
+  *   **Code you reused** from elsewhere: Mark such code as `//@@author github-ID-reused`
   
       e.g.
   
       ```
-      //@@author A0909865T-reused
+      //@@author johndoe-reused
       method 1 ...
       method 2 ...
       ```
@@ -94,16 +94,16 @@
    ```
    collated/
        main/
-           A000000.md
-           A111111.md
-           A222222.md
-           A222222reused.md
+           johndoe.md
+           sarahkhoo.md
+           ravikumar.md
+           ravikumarreused.md
        test/
-           A000000.md
-           A111111.md
-           A222222.md
+           johndoe.md
+           sarahkhoo.md
+           ravikumar.md
        unused/
-           A000000.md
+           johndoe.md
    ```
 
 9. After running the collate tool, you are recommended to look through the generated **.md** files to ensure all your code has been extracted correctly. 

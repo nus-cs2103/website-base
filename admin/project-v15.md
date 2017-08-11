@@ -16,7 +16,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Submission**:
 
-* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated .md files are up to date, you will not be allowed to updated them later) ==Note that the quality of the code in these .md files accounts for a significant component of your final score, graded individually.==
+* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated .md files are up to date; you will not be allowed to updated them later) ==Note that the quality of the code in these .md files accounts for a significant component of your final score, graded individually.==
 * **Executable**: upload to IVLE as an exe or jar or zip file (this should not contain source files). File name: `[team][product name].jar` %%e.g. [T09-B1][Contacts+].jar%%  
   Warning: When determining the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.  
 
@@ -24,7 +24,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo;%% Project: Assessment" dynamic />
+<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
 
 ### v1.5 Documentation
 
@@ -45,7 +45,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo;%% Project: Assessment" dynamic />
+<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
 
 ### v1.5 Demo
 
@@ -85,4 +85,4 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo;%% Project: Assessment" dynamic />
+<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />

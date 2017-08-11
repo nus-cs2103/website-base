@@ -17,6 +17,6 @@ Can get you up to an **A**.
 
 These are meant for self-driven students who aims for a SE career in a high-end SE company.
 
-Required for an **A+** and can be used for CS2103R credit. 
+Required for an **A+** and can be used **for CS2103R credit**. 
 
 </panel>

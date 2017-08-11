@@ -1,5 +1,5 @@
 Your project should comply with the following constraints.
-%%**Reason**%%: to increase comparability among submissions and to maximize applicability of module content in the project.
+%%**Reason**: to increase comparability among submissions and to maximize applicability of module content in the project.%%
 
 * **Constraint-Morph**: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
   %%**Reason:** To ensure your code has a decent quality level from the start.%%

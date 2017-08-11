@@ -1,4 +1,4 @@
-To get the full marks allocated for participation you should satisfy the following criteria, evaluated based on peer evaluations and tutor observations. We will also take into account data recorded in other systems e.g. GitHub, IVLE.
+To get the full marks allocated for participation you should satisfy the following criteria, ==evaluated based on peer evaluations and tutor observations==. We will also take into account data recorded in other systems e.g. GitHub, IVLE.
 
 * **Professional Communication** : 
   * Communicates sufficiently and professionally. e.g. Does not use offensive language or excessive slang in project communications.
@@ -19,7 +19,7 @@ To get the full marks allocated for participation you should satisfy the followi
 The following criteria will be assessed but **considered only for pushing a student's grade from A to A+ and recruiting future tutors/interns**.
 
 * **Technical Competency**: Able to gain competency in all the required tools and techniques.
-* **Mentoring skills**: Helps others when possible and engages team members’ help when needed. Able to mentor others well.
+* **Mentoring skills**: Helps others when possible. Able to mentor others well.
 * **Communication skills**: Able to communicate (written and spoken) well. Takes initiative in discussions.
   
 

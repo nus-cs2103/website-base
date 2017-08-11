@@ -6,8 +6,8 @@ All peer evaluations will be taken into account when determining your participat
 **Extra Requirements:** [considered for participation marks]
 
 * Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you forfeit your participation marks.==
-* TEAMMATES normally allows students to access it without using Google login. In this module, we ==require you to login to TEAMMATES using your Google account==. and update your
-* After you login to TEAMMATES, please complete the profile . CS2103 is a big class. This profile helps us to remember you better, even after the module is over.
+* TEAMMATES normally allows students to access it without using Google login. In this module, we ==require you to login to TEAMMATES using your Google account==.
+* After you login to TEAMMATES, please complete your profile. CS2103 is a big class. This profile helps us to remember you better, even after the module is over.
 * Please upload a suitable profile photo.
 
 <panel header="Choosing a profile photo" expandable>
@@ -18,7 +18,7 @@ All peer evaluations will be taken into account when determining your participat
 
 <span id="giving-peer-feedback">
 
-Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. ==Those who give ineffective feedback will be penalized.==
+Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. ==Those who give half-hearted feedback will be penalized.==
 
 Here are some things to keep in mind:
 
