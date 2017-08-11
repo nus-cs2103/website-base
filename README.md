@@ -1,9 +1,17 @@
-### CS2103 Website + SE-book submodule
+### CS2103 Website
 
-## Demo
-[Here](https://markbind.github.io/cs2103-website/)
+[Live Website](https://nus-cs2103.github.io/website/)
 
-## Set up
+## Setting up
+
 1. Clone the repo.
-2. Run `git submodule update --init --recursive` to pull the content of the se-book.
-3. `markbind serve`
+2. Run `git submodule update --init --recursive` to pull the content of the submodule.
+3. `markbind serve` to start the local server
+
+This website is developed using the MarkBind platform.
+
+* [How to use MarkBind](https://github.com/MarkBind/markbind-cli/wiki)
+
+## Contributing
+
+Bug reports and suggestions welcome. PRs are welcome too.
