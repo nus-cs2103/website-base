@@ -1,4 +1,4 @@
-**Outdated; To be updated soon...**
+==Outdated; To be updated soon...==
 
 | Module  | Tutorial ID | Time     | Venue     | Tutors ([contact details](https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true)) |
 |---------|-------------|----------|-----------|---------------------------|
