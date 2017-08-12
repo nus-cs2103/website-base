@@ -1194,17 +1194,19 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <div id="admin-tools">
     <div><img src="/website/admin/images/toolsList.png" style="width: 700px">
       <p><strong>Collaboration platform</strong>: You are <mark><em>required to</em> use GitHub</mark> as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="/website/admin/index.html#admin-appendixE-github">Appendix E</a>        for more info on how to setup and use GitHub for your project.</p>
-      <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to practice how
-        to communicate technical things in written form.</p>
-      <ul>
-        <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S1/forum/issues">github/nus-cs2103-AY1718/forum</a></mark>.</li>
-        <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103.slack.com">https://nus-cs2103.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address ending in <code>@nus.edu.sg</code>,
-          <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
-        <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
-        <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct emails.
-          <span
-            class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
-      </ul>
+      <div id="communication">
+        <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to practice
+          how to communicate technical things in written form.</p>
+        <ul>
+          <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S1/forum/issues">github/nus-cs2103-AY1718/forum</a></mark>.</li>
+          <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103.slack.com">https://nus-cs2103.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address ending in <code>@nus.edu.sg</code>,
+            <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
+          <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
+          <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct emails.
+            <span
+              class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
+        </ul>
+      </div>
       <p><strong>IDE</strong>: You are recommended to use <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> for module-related programming work. You may use the community edition (free) or the ultimate edition (free for students). While the use
         of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk.</p>
       <p><strong>Revision control</strong>: You are <mark><em>required to</em> use Git</mark>. Other revision control software are not allowed.<br> The recommended GUI client for Git is <a href="https://www.sourcetreeapp.com/">SourceTree</a> (which comes
@@ -1719,6 +1721,27 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier 😛</p>
         <p><mark>How to reduce the workload?</mark> You can omit Learning Outcomes rated ⭐️⭐️⭐️⭐️ They are counted for CS2103R and for A+ grades only.</p>
       </div>
+      <h3 id="how-do-i-get-cs2103r-credit-for-optional-los">How do I get CS2103R credit for optional LOs?</h3>
+      <div id="admin-faq-cs2103r">
+        <p>General info on R modules are <a href="https://docs.comp.nus.edu.sg/node/3699">here</a>.</p>
+        <p>To get CS2103R credit,</p>
+        <ul>
+          <li>Achieved <em>most</em> of the 3-⭐️ LOs and <em>some</em> of the 4-⭐️ LOs during the semester.</li>
+          <li>Inform prof your interest to d0 CS2103 at the end of the semester.</li>
+          <li>Achieve the missed 3-⭐️ and 4-⭐️ LOs during the vacation.</li>
+          <li>Register for CS2103R in the subsequent semester.</li>
+        </ul>
+      </div>
+      <h3 id="what-are-the-extra-requirements-to-get-an-a">What are the extra requirements to get an A+?</h3>
+      <div id="admin-faq-aPlus">
+        <p>In CS2103/T, A+ is not given simply based on the final score. Requirements to get an A+,</p>
+        <ul>
+          <li>Scored enough to get an A</li>
+          <li>Considered technically competent by peers and tutor (based on peer evaluations and tutor observations)</li>
+          <li>Considered helpful by peers (based on peer evaluations and tutor observations)</li>
+          <li>Achieved <em>most</em> of the 3-⭐️ LOs and <em>some</em> of the 4-⭐️ LOs.</li>
+        </ul>
+      </div>
       <h3 id="why-so-much-bean-counting">Why so much bean counting?</h3>
       <div id="admin-faq-beanCounting"><img src="/website/admin/images/small things matter.png" width="600" height="300">
         <p>Sometimes, small things matter in big ways. e.g., all other things being equal, a job may be offered to the candidate who has the neater looking CV although both have the same qualifications. This may be unfair, but that's how the world works.
@@ -1884,25 +1907,27 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <div id="admin-appendixE-github">
     <div>
       <h2 id="create-a-github-profile">Create a GitHub profile</h2>
-      <p>Create a personal GitHub account if you don't have one yet.</p>
-      <ol>
-        <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
-        <li>Strongly recommended: Complete your GitHub profile. In particular,
-          <ul>
-            <li>Specify your full name.</li>
-            <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
-          </ul>
-        </li>
-      </ol>
-      <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
-        <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just
-          for the module.</p>
-      </panel>
-      <panel header="%%Admin &raquo; Choosing a profile photo%%" expandable="">
-        <div>
-          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
-            of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
-      </panel>
+      <div id="githubAccount">
+        <p>Create a personal GitHub account if you don't have one yet.</p>
+        <ol>
+          <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
+          <li>Strongly recommended: Complete your GitHub profile. In particular,
+            <ul>
+              <li>Specify your full name.</li>
+              <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+            </ul>
+          </li>
+        </ol>
+        <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
+          <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just
+            for the module.</p>
+        </panel>
+        <panel header="%%Admin &raquo; Choosing a profile photo%%" expandable="">
+          <div>
+            <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+              of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
+        </panel>
+      </div>
       <div id="tutorial-pr-instructions">
         <h2 id="submitting-pull-requests-for-tutorials">Submitting Pull Requests for tutorials</h2>
         <ol>
