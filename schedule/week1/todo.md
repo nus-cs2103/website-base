@@ -42,6 +42,8 @@ Here are some module admin info to read around this time:
 
 <include type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../admin/appendixC-faq.md#admin-faq-cs2103VsCs2103t"  dynamic />
 <include type="success" src="../../admin/appendixC-faq.md#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
+<include type="success" src="../../admin/appendixC-faq.md#admin-faq-aPlus" name="%%Admin &raquo;%% FAQ: What are the extra requirements to get an A+? :star::star::star::star:" dynamic />
+<include type="success" src="../../admin/appendixC-faq.md#admin-faq-cs2103r" name="%%Admin &raquo;%% FAQ: How do I get CS2103R credit for optional LOs? :star::star::star::star:" dynamic />
 
 </panel>
 
@@ -49,7 +51,7 @@ Here are some module admin info to read around this time:
 
 This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 
 
-In particular, you may want to have a look at the new Java 8 features that may not have been covered in previous Java modules.
+In particular, you may want to **have a look at the new Java 8 features** such as `streams`, `lambdas`, `Optionals`, that may not have been covered in previous Java modules.
 
 </panel>
 

@@ -32,6 +32,34 @@ Also, consider this a gradual introduction to 'heavy' modules; most project modu
 
 </div>
 
+### How do I get CS2103R credit for optional LOs?
+
+<div id="admin-faq-cs2103r">
+
+General info on R modules are [here](https://docs.comp.nus.edu.sg/node/3699).
+
+To get CS2103R credit, 
+
+* Achieved _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs during the semester.
+* Inform prof your interest to d0 CS2103 at the end of the semester. 
+* Achieve the missed 3-:star: and 4-:star: LOs during the vacation. 
+* Register for CS2103R in the subsequent semester.
+
+</div>
+
+### What are the extra requirements to get an A+?
+
+<div id="admin-faq-aPlus">
+
+In CS2103/T, A+ is not given simply based on the final score. Requirements to get an A+,
+
+* Scored enough to get an A
+* Considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
+* Considered helpful by peers (based on peer evaluations and tutor observations)
+* Achieved _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs.
+
+</div>
+
 ### Why so much bean counting?
 
 <div id="admin-faq-beanCounting">
