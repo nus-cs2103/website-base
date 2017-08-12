@@ -17,7 +17,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can work with a 1KLoC code base :star: ==[Compulsory]==" expandable>
+<panel type="danger" header="**Can work with a 1KLoC code base :star: ==[Compulsory]==**" expandable no-close>
   <panel header=":dart: Evidence" expanded>
 
 <tip-box type="important"> 
@@ -78,7 +78,7 @@ This is a compulsory LO. If you miss this LO, your participation marks will be a
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can use Java8 streams :star::star::star:" expandable>
+<panel type="info" header="**Can use Java8 streams :star::star::star:**" expandable no-close>
   <include src="../../book/javaTools/streamsBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
