@@ -6,6 +6,26 @@
 
 </panel>
 
+<panel type="danger" header="Create a GitHub Account :star:" expandable> 
+
+<include type="danger" src="../../admin/appendixE-github.md#githubAccount"/>
+
+</panel>
+
+<panel type="danger" header="Submit Pre-Module Survey ==(Compulsory)== :alarm_clock: :star:" expandable> 
+
+_Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :alarm_clock:**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub ID.%%
+
+</panel>
+
+<panel type="warning" header="Join the Slack Channel :star:" expandable> 
+
+<panel header="%%**Admin &raquo; Tools &rarr; Communication**%%" expanded>
+  <include type="danger" src="../../admin/tools.md#communication" />
+</panel>
+
+</panel>
+
 <panel  header="Admin info to read" expandable expanded>
 
 Here are some module admin info to read around this time:    

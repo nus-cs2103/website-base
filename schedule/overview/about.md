@@ -47,6 +47,7 @@ Icons:
 * :mega: lecture
 * :raising_hand: tutorial 
 * :dart: : evidence you can use to prove you have achieved a learning outcome
+* :alarm_clock: : deadline
 
 </panel>
 

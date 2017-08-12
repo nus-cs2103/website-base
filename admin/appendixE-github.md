@@ -1,5 +1,7 @@
 ## Create a GitHub profile
 
+<div id="githubAccount">
+
 Create a personal GitHub account if you don't have one yet. 
 1. You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts. 
 2. Strongly recommended: Complete your GitHub profile. In particular,  
@@ -14,6 +16,8 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 <panel header="%%Admin &raquo; Choosing a profile photo%%" expandable>
   <include src="profilePhoto.md" />
 </panel>
+
+</div>
 
 <div id="tutorial-pr-instructions">
 
