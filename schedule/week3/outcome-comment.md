@@ -8,7 +8,7 @@
   <include src="../../book/codeQuality/commentMinimally/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="outcome-readability.md#common-evidence" />
 
   </panel>
 </panel>
@@ -18,7 +18,7 @@
   <include src="../../book/codeQuality/commentMinimally/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Similar to the previous LO.
 
   </panel>
 </panel>
