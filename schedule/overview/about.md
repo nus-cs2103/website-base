@@ -4,7 +4,7 @@
 
 <tip-box type="important"> 
 
-This _Schedule Page_ is your main source of information for CS2103/T. You will need to refer to it weekly. **More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress**; don't print/save content relate to future weeks.
+This _Schedule Page_ is your main source of information for CS2103/T. You will need to refer to it weekly. **More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress**; don't print/save content related to future weeks marked as :construction:.
 
 </tip-box>
 
