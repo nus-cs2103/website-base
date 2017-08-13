@@ -2335,10 +2335,10 @@ class Academic extends Staff {
           </tip-box>
         </div>
       </div>
-      <h2 id="faq">FAQ</h2>
+      <h2 id="miscellaneous">Miscellaneous</h2>
       <div>
         <div>
-          <h4 id="faq-three">FAQ <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          <h4 id="miscellaneous-three">Miscellaneous <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2355,6 +2355,20 @@ class Academic extends Staff {
           <p><strong>How does overriding differ from <em>overloading</em>? <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></strong></p>
           <p>Overloading is used to indicate that multiple operations do similar things but take different parameters. Overloaded methods have the same method name but different method signatures and possibly different return types.</p>
           <p>Overriding is when a sub-class redefines an operation using the same method name and the same type signature. Overridden methods have the same name, same method signature, and same return type.</p>
+        </div>
+      </div>
+      <h2 id="review">Review</h2>
+      <div>
+        <div>
+          <h4 id="review-one">Review <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <tip-box>
+          <div>
+            <p>🏆 Can combine some OOP concepts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
+        <div>
+          <p>...</p>
         </div>
       </div>
     </div>
@@ -2768,6 +2782,20 @@ class Academic extends Staff {
             <p>Example:</p><img src="/website/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
             <p></p>
           </tip-box>
+        </div>
+      </div>
+      <h2 id="review-2">Review</h2>
+      <div>
+        <div>
+          <h4 id="review-one-2">Review <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <tip-box>
+          <div>
+            <p>🏆 Can combine some modeling concepts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
+        <div>
+          <p>...</p>
         </div>
       </div>
     </div>
@@ -5381,6 +5409,20 @@ jean.setBoyfriend(yong);
             <li><a href="https://www.appveyor.com">Appveyor</a></li>
             <li><a href="https://circleci.com">CircleCI</a></li>
           </ul>
+        </div>
+      </div>
+      <h2 id="review-3">Review</h2>
+      <div>
+        <div>
+          <h4 id="review-one-3">Review <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <tip-box>
+          <div>
+            <p>🏆 Can combine some integration concepts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
+        <div>
+          <p>...</p>
         </div>
       </div>
     </div>
@@ -8345,12 +8387,12 @@ A negative test case: i = null;
         </tip-box>
         <div>
           <h5 id="tracking-and-ignoring">Tracking and Ignoring</h5>
-          <p><strong>In a repo, we can specify which files to track and which files to ignore.</strong> Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
+          <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
           <h5 id="staging-and-committing">Staging and Committing</h5>
           <tabs>
             <tab header=":abc:">
-              <p><strong><em>Committing</em> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
-              <p><strong>When we are ready to commit, we should first <em>stage</em> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
+              <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
+              <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
               <p>
                 <hr>
               </p>
@@ -8363,8 +8405,8 @@ A negative test case: i = null;
             </tab>
           </tabs>
           <h5 id="identifying-points-in-history">Identifying Points in History</h5>
-          <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated hash</strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
-          <p><strong>We can tag a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
+          <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated <mark>hash</mark></strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
+          <p><strong>We can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
         </div>
       </div>
       <div>
@@ -9814,7 +9856,7 @@ A negative test case: i = null;
             <p></p>
         </div>
       </div>
-      <h2 id="miscellaneous">Miscellaneous</h2>
+      <h2 id="miscellaneous-2">Miscellaneous</h2>
       <div>
         <div>
           <h4 id="object-vs-class-diagrams-two">Object vs Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
@@ -11823,6 +11865,36 @@ git pull origin master
           </tip-box>
           <p>This principle guards against duplication of information. The functionality implemented twice is a violation of the DRY principle even if the two implementations are different. Similarly, the value a system-wide timeout being defined in multiple
             places is a violation of DRY.</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="review-one-4">Review <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <tip-box>
+          <div>
+            <p>🏆 Can combine some principles concepts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
+        <div>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 id="review-4">Review</h1>
+      <h2 id="review-5">Review</h2>
+      <div>
+        <div>
+          <h4 id="review-one-5">Review <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <tip-box>
+          <div>
+            <p>🏆 Can combine software engineering concepts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
+        <div>
+          <p>...</p>
         </div>
       </div>
     </div>

@@ -1527,10 +1527,115 @@ class Academic extends Staff {
       </div>
     </div>
   </panel>
-  <h2 id="faq">FAQ</h2>
-  <panel header="================================================================" type="seamless" alt="faq">
+  <h2 id="miscellaneous">Miscellaneous</h2>
+  <panel header="================================================================" type="seamless" alt="miscellaneous">
     <div>
-      <p>null</p>
+      <div>
+        <h4 id="miscellaneous-three">Miscellaneous <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+      </div>
+      <tip-box>
+        <div>
+          <p>🏆 Can answer frequently asked OOP questions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+        </div>
+      </tip-box>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+        <div>
+          <div>
+            <p><strong>What’s the difference between a Class, an Abstract Class, and an Interface? <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></strong></p>
+            <ul>
+              <li>An interface is a behavior specification with no implementation.</li>
+              <li>A class is a behavior specification + implementation.</li>
+              <li>An abstract class is a behavior specification + a possibly incomplete implementation.</li>
+            </ul>
+            <p><strong>How does overriding differ from <em>overloading</em>? <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></strong></p>
+            <p>Overloading is used to indicate that multiple operations do similar things but take different parameters. Overloaded methods have the same method name but different method signatures and possibly different return types.</p>
+            <p>Overriding is when a sub-class redefines an operation using the same method name and the same type signature. Overridden methods have the same name, same method signature, and same return type.</p>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
+    </div>
+  </panel>
+  <h2 id="review">Review</h2>
+  <panel header="================================================================" type="seamless" alt="review">
+    <div>
+      <div>
+        <h4 id="review-one">Review <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <tip-box>
+        <div>
+          <p>🏆 Can combine some OOP concepts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+        </div>
+      </tip-box>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+        <div>
+          <div>
+            <p>...</p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: In the context of OOP, what is the relationship between abstraction and encapsulation?">
+                    <panel header="%%Prerequisites%%" expandable="" expanded="">
+                      <panel src="/website\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
+                    </panel>
+                    <p></p>
+                    <question>
+                      In the context of OOP, what is the relationship between abstraction and encapsulation?
+                      <ul radio-group="h8b1o" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="h8b1o" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="h8b1o" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="h8b1o" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="h8b1o" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      </ul>
+                      <div slot="answer">
+                        <ul radio-group="rgu0u" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="rgu0u" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        </ul>
+                        <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
+                          in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
+                          actions using objects that represent student entities.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+                <div>
+                  <panel header=":lock::key: Which of these do not belong to four main OO principles?">
+                    <panel header="%%Prerequisites%%" expandable="" expanded="">
+                      <panel src="/website\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\oopDesign\inheritance\basic\full._include_.html" header="OOP: Inheritance: Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\oopDesign\inheritance\substitutability\full._include_.html" header="OOP: Inheritance: Substitutability" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\oopDesign\polymorphism\introduction\full._include_.html" header="OOP: Polymorphism: Introduction" isOpen="false" no-close="true" no-switch="true"></panel>
+                    </panel>
+                    <p></p>
+                    <question>
+                      Which of these do not belong to four main OO principles?
+                      <ul radio-group="e6xnm" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e6xnm" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e6xnm" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e6xnm" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e6xnm" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e6xnm" type="radio"> e. Polymorphism</label></li>
+                      </ul>
+                      <div slot="answer">
+                        <ul radio-group="c6n6c" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="c6n6c" type="radio"> d. Substitutability</label></li>
+                        </ul>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
     </div>
   </panel>
 </div>
