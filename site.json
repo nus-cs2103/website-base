@@ -2265,8 +2265,8 @@
       "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Intermediate"
     },
     {
-      "src": "book/oopDesign/faq/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: FAQ"
+      "src": "book/oopDesign/miscellaneous/index.md",
+      "title": "CS2103/T Textbook - Object Oriented Programming: Miscellaneous"
     }
   ]
 }
