@@ -1,0 +1,741 @@
+Learning Outcomes
+Software Engineering
+ * Can explain pros and cons of software engineering
+
+Requirements
+Requirements
+ * Can explain requirements
+
+ * Can explain non-functional requirements
+
+ * Can explain prioritizing requirements
+
+ * Can explain quality of requirements
+
+Gathering
+ * Can explain brainstorming
+
+ * Can explain user surveys
+
+ * Can explain observation
+
+ * Can explain interviews
+
+ * Can explain focus groups
+
+ * Can explain prototyping
+
+ * Can explain product surveys
+
+Specifying
+ * Can explain prose
+
+ * Can explain feature list
+
+ * Can write simple user stories
+
+ * Can write more detailed user stories
+
+ * Can use user stories to manage requirements of project
+
+ * Can explain use cases
+
+ * Can use use cases to list functional requirements of a simple system
+
+ * Can specify details of a use case in a structured format
+
+ * Can optimize the use of use cases
+
+ * Can explain glossary
+
+ * Can explain supplementary requirements
+
+Design
+Software Design
+ * Can explain what is software design
+
+ * Can explain multi-level design
+
+ * Can explain top-down and bottom-up design
+
+ * Can explain agile design
+
+Design Principles
+ * Can explain abstraction
+
+ * Can explain coupling
+
+ * Can justify the need to reduce coupling
+
+ * Can reduce coupling
+
+ * Can identify types of coupling
+
+ * Can increase cohesion
+
+ * Can explain cohesion
+
+ * Can justify the need to increase cohesion
+
+ * Can explain dependency inversion principle (DIP)
+
+ * Can explain open-closed principle (OCP)
+
+Object Oriented Programming
+ * Can describe OOP at a higher level
+
+ * Can describe how OOP relates to the real world
+
+ * Can explain the abstraction aspect of OOP
+
+ * Can explain the encapsulation aspect of OOP
+
+ * Can explain the relationship between classes and object
+
+ * Can explain class-level members
+
+ * Can explain the meaning of enumerations
+
+ * Can explain associations
+
+ * Can explain the meaning of navigability
+
+ * Can explain the meaning of multiplicity
+
+ * Can explain the meaning of dependencies in the context of UML class diagrams
+
+ * Can explain the meaning of composition
+
+ * Can explain the meaning of aggregations
+
+ * Can explain the meaning of association classes
+
+ * Can explain the interfaces concept and relate it to Java interfaces
+
+ * Can explain method overriding
+
+ * Can explain method overloading
+
+ * Can explain the interfaces concept and relate it to Java interfaces
+
+ * Can explain abstract classes
+
+ * Can explain dynamic and static binding
+
+ * Can explain substitutability
+
+ * Can explain OOP polymorphism
+
+ * Can describe the basics of OOP polymorphism
+
+ * Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism
+
+ * Can explain how modelling can be used before implementation
+
+ * Can use simple class diagrams and sequence diagrams to model an OO solution
+
+ * Can use intermediate class diagram and sequence diagram concepts to model an OO design
+
+ * Can answer frequently asked OOP questions
+
+ * Can combine some OOP concepts
+
+Modeling
+ * Can explain models
+
+ * Can explain how models are used
+
+ * Can identify UML models
+
+ * Can use basic-level class diagrams
+
+ * Can use intermediate-level class diagrams
+
+ * Can use advanced class diagrams
+
+ * Can explain object diagrams
+
+ * Can explain object oriented domain models
+
+ * Can explain deployment diagrams
+
+ * Can explain component diagrams
+
+ * Can explain package diagrams
+
+ * Can explain composite structure diagrams
+
+ * Can explain activity diagrams
+
+ * Can interpret basic sequence diagrams
+
+ * Can interpret intermediate sequence diagrams
+
+ * Can interpret advanced sequence diagrams
+
+ * Can explain use case diagrams
+
+ * Can explain timing diagrams
+
+ * Can explain interaction overview diagrams
+
+ * Can explain communication diagrams
+
+ * Can explain state machine diagrams
+
+ * Can combine some modeling concepts
+
+Architecture
+ * Can explain Software Architecture
+
+ * Can interpret an architecture diagram
+
+ * Can draw an architecture diagram
+
+ * Can explain architectural styles
+
+ * Can identify n-tier architectural style
+
+ * Can identify client-server architectural style
+
+ * Can identify transaction processing architectural style
+
+ * Can identify service-oriented architectural style
+
+ * Can identify event-driven architectural style
+
+ * Can name several other architecture styles
+
+ * Can explain how architectural styles are combined
+
+Design Patterns
+ * Can explain design patterns
+
+ * Can explain design patterns format
+
+ * Can explain the Singleton design pattern
+
+ * Can identify an application of the Singleton design pattern
+
+ * Can apply the Singleton design pattern
+
+ * Can decide when to apply Singleton design pattern
+
+ * Can explain the Abstraction Occurrence design pattern
+
+ * Can explain the Facade design pattern
+
+ * Can explain the Command design pattern
+
+ * Can explain the Model View Controller (MVC) design pattern
+
+ * Can explain the Observer design pattern
+
+ * Can combine multiple patterns to fit a context
+
+ * Can recognize some of the GoF design patterns
+
+ * Can explain pros and cons of design patterns
+
+ * Can explain how patterns exist beyond software design domain
+
+Implementation
+IDEs
+ * Can explain IDEs
+
+ * Can explain debugging
+
+Code Quality
+ * Can explain the importance of code quality
+
+ * Can explain the importance of readability
+
+ * Can follow basic guidelines for improving readability
+
+ * Can follow intermediate guidelines for improving readability
+
+ * Can follow advanced guidelines for improving readability
+
+ * Can explain the need for following a standard
+
+ * Can follow simple mechanical style rules
+
+ * Can follow intermediate style rules
+
+ * Can explain the need for good names in code
+
+ * Can follow basic guidelines for naming
+
+ * Can follow intermediate guidelines for naming
+
+ * Can explain the need for avoiding error-prone shortcuts
+
+ * Can follow basic guidelines for avoiding unsafe shortcuts
+
+ * Can follow intermediate guidelines for avoiding unsafe shortcuts
+
+ * Can explain the need for commenting minimally but sufficiently
+
+ * Can follow basic guidelines for writing code comments
+
+ * Can follow intermediate guidelines for writing code comments
+
+Refactoring
+ * Can explain refactoring
+
+ * Can apply some basic refactoring
+
+ * Can decide when to apply a given refactoring
+
+Documentation
+ * Can explain the two types of developer docs
+
+ * Can distinguish between top-down and bottom up documentation
+
+ * Can explain the advantages of top-down documentation
+
+ * Can write documentation in a top-down manner
+
+ * Can explain the need for comprehensibility in documents
+
+ * Can write reasonably comprehensible developer documents
+
+ * Can write minimal yet sufficient documentation
+
+ * Can explain documentation should be minimal yet sufficient
+
+ * Can write Javadoc comments
+
+ * Can explain JavaDoc
+
+ * Can explain Markdown
+
+ * Can write documents in Markdown format
+
+ * Can explain AsciiDoc
+
+Error Handling
+ * Can explain error handling
+
+ * Can explain exceptions
+
+ * Can do exception handling in code
+
+ * Can avoid using exceptions to control normal workflow
+
+ * Can explain assertions
+
+ * Can use assertions
+
+ * Can use assertions optimally
+
+ * Can explain logging
+
+ * Can explain the motivation for logging
+
+ * Can use logging
+
+ * Can choose between assertions and exceptions
+
+ * Can explain defensive programming
+
+ * Can use defensive coding to enforce compulsory associations
+
+ * Can use defensive coding to enforce 1-to-1 associations
+
+ * Can use defensive coding to enforce referential integrity of bi-directional associations
+
+ * Can explain when to use defensive programming
+
+ * Can explain the Design-by-Contract approach
+
+Integration
+ * Can explain integration
+
+ * Can explain how integration approaches vary based on timing and frequency
+
+ * Can explain how integration approaches vary based on amount merged at a time
+
+ * Can explain how integration approaches vary based on top-down or bottom-up integration
+
+ * Can name some of the build automation tools
+
+ * Can explain continuous integration and continuous deployment
+
+ * Can combine some integration concepts
+
+OOP Implementation
+ * Can implement classes
+
+ * Can implement associations
+
+ * Can implement dependencies
+
+ * Can implement composition
+
+ * Can implement aggregation
+
+ * Can implement association classes
+
+ * Can implement basic inheritance
+
+ * Can implement operation overriding
+
+ * Can implement overloading
+
+ * Can implement interfaces
+
+ * Can implement abstract classes
+
+ * Can implement polymorphic behavior
+
+ * Can implement substitutability
+
+Reuse
+ * Can explain software reuse
+
+ * Can explain the costs and benefits of reuse
+
+ * Can explain APIs
+
+ * Can design reasonable quality APIs
+
+ * Can explain libraries
+
+ * Can make use of a library
+
+ * Can explain frameworks
+
+ * Can differentiate between frameworks and libraries
+
+ * Can explain platforms
+
+ * Can explain cloud computing
+
+ * Can distinguish between IaaS, PaaS, and SaaS
+
+Quality Assurance
+Quality Assurance
+ * Can explain software quality assurance
+
+ * Can explain validation and verification
+
+ * Can explain code reviews
+
+ * Can explain static analysis
+
+ * Can explain formal verification
+
+Testing
+ * Can explain testing
+
+ * Can explain testability
+
+ * Can explain unit testing
+
+ * Can explain stubs
+
+ * Can explain mocks
+
+ * Can explain integration testing
+
+ * Can explain system testing
+
+ * Can explain alpha and beta testing
+
+ * Can explain dogfooding
+
+ * Can explain developer testing
+
+ * Can explain the need for early developer testing
+
+ * Can explain exploratory testing and scripted testing
+
+ * Can explain the choice between exploratory testing and scripted testing
+
+ * Can explain acceptance testing
+
+ * Can explain the differences between system testing and acceptance testing
+
+ * Can explain regression testing
+
+ * Can explain test automation
+
+ * Can semi-automate testing of CLIs
+
+ * Can explain test drivers
+
+ * Can explain test automation tools
+
+ * Can explain automated GUI testing
+
+ * Can explain test coverage
+
+ * Can explain how test coverage works
+
+ * Can explain dependency injection
+
+ * Can explain how dependency injection works
+
+ * Can explain TDD
+
+ * Can follow TDD
+
+Test Case Design
+ * Can explain the need for deliberate test case design
+
+ * Can explain positive and negative test cases
+
+ * Can explain black box and glass box test case design
+
+ * Can explain equivalence partitions
+
+ * Can apply EP for pure functions
+
+ * Can apply EP for OOP methods
+
+ * Can explain boundary value analysis
+
+ * Can apply boundary value analysis
+
+ * Can explain the need for strategies to combine test inputs
+
+ * Can explain some basic test input combination strategies
+
+ * Can apply heuristic ‘each valid input at least once in a positive test case’
+
+ * Can apply heuristic ‘no more than one invalid input in a test case’
+
+ * Can apply multiple test input combination techniques together
+
+ * Can explain test case design for use case based testing
+
+ * Can explain test case design techniques at a higher level
+
+ * Can combine test case design techniques
+
+Project Management
+Revision Control
+ * Can explain revision control
+
+ * Can explain repositories
+
+ * Can explain saving history
+
+ * Can explain using history
+
+ * Can explain remote repositories
+
+ * Can explain branching
+
+ * Can explain DRCS vs CRCS
+
+ * Can explain forking workflow
+
+ * Can explain feature branch flow
+
+ * Can explain centralised flow
+
+Project Planning
+ * Can explain work breakdown structures
+
+ * Can explain milestones
+
+ * Can explain buffers
+
+ * Can explain issue trackers
+
+ * Can explain GANTT charts
+
+ * Can explain PERT charts
+
+Teamwork
+ * Can explain common team structures
+
+Process Models
+ * Can explain SLDC process models
+
+ * Can explain sequential process models
+
+ * Can explain iterative process models
+
+ * Can explain agile process models
+
+ * Can explain XP
+
+ * Can explain scrum
+
+ * Can explain the Unified Process
+
+ * Can explain CMMI
+
+ * Can explain process models at a higher level
+
+Tools
+UML
+ * Can explain/identify class diagrams
+
+ * Can draw a UML class
+
+ * Can interpret simple associations in a class diagram
+
+ * Can interpret association navigabilities in class diagrams
+
+ * Can explain/use association roles in class diagrams
+
+ * Can explain/use association labels in class diagrams
+
+ * Can explain what is the multiplicity of an association
+
+ * Can interpret dependencies in a class diagram
+
+ * Can show an association as an attribute
+
+ * Can interpret enumerations in class diagrams
+
+ * Can interpret class-level members in class diagrams
+
+ * Can interpret association classes in class diagrams
+
+ * Can interpret composition in class diagrams
+
+ * Can interpret aggregation in class diagrams
+
+ * Can interpret class inheritance in class diagrams
+
+ * Can interpret abstract classes in class diagrams
+
+ * Can interpret interfaces in class diagrams
+
+ * Can explain/identify sequence diagrams
+
+ * Can interpret sequence diagrams with basic notation
+
+ * Can interpret sequence diagrams with object creation
+
+ * Can interpret sequence diagrams with object deletion
+
+ * Can interpret sequence diagrams with loops
+
+ * Can interpret sequence diagrams with self invocation
+
+ * Can interpret sequence diagrams with alternative paths
+
+ * Can interpret sequence diagrams with optional paths
+
+ * Can interpret sequence diagrams with parallel paths
+
+ * Can interpret sequence diagrams with reference frames
+
+ * Can interpret sequence diagrams with minimal notation
+
+ * Can explain the purpose of UML object diagrams
+
+ * Can draw objects shown in UML notation
+
+ * Can interpret object diagrams
+
+ * Can explain activity diagrams
+
+ * Can use linear paths in activity diagrams
+
+ * Can use alternate paths in activity diagrams
+
+ * Can use parallel paths in activity diagrams
+
+ * Can use rakes in activity diagrams
+
+ * Can explain swimlanes in activity diagrams
+
+ * Can use basic activity diagram notations
+
+ * Can use UML notes
+
+ * Can specify constraints in UML diagrams
+
+ * Can distinguish between class diagrams and object diagrams
+
+Intellij IDEA
+ * Can setup a project in an IDE
+
+ * Can navigate code effectively using IDE features
+
+ * Can use some useful IDE productivity shortcuts
+
+ * Can step through a program using a debugger
+
+ * Can use automated refactoring features of the IDE
+
+Git and GitHub
+ * Can create a local Git repo
+
+ * Can commit using Git
+
+ * Can set Git to ignore files
+
+ * Can tag commits using Git
+
+ * Can load a specific version of a Git repo
+
+ * Can use Git to stash files
+
+ * Can clone a remote repo
+
+ * Can pull changes from a repo
+
+ * Can push to a remote repo
+
+ * Can use Git branching
+
+ * Can use Git to resolve merge conflicts
+
+ * Can create PRs on GitHub
+
+ * Can review and merge PRs on GitHub
+
+ * Can follow Forking Workflow
+
+Java
+ * Can use Java Collections
+
+ * Can use Java enumerations
+
+ * Can use Java varargs feature
+
+ * Can use JavaFX to build a simple GUI
+
+ * Can use Java8 streams
+
+JUnit
+ * Can use simple JUnit tests
+
+ * Can use intermediate features of JUnit
+
+Supplementary
+SE Principles
+ * Can explain software engineering principles
+
+ * Can explain single responsibility principle
+
+ * Can explain interface segregation principle
+
+ * Can explain Liskov Substitution Principle
+
+ * Can explain dependency inversion principle
+
+ * Can explain SOLID Principles
+
+ * Can explain separation of concerns principle
+
+ * Can explain the Law of Demeter
+
+ * Can explain Brooks' law
+
+ * Can explain YAGNI principle
+
+ * Can explain DRY principle
+
+ * Can combine some principles concepts
+
+Review
+ * Can combine software engineering concepts
