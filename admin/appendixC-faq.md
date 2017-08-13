@@ -38,10 +38,10 @@ Also, consider this a gradual introduction to 'heavy' modules; most project modu
 
 General info on R modules are [here](https://docs.comp.nus.edu.sg/node/3699).
 
-To get CS2103R credit, 
+To get CS2103R credit you should, 
 
-* Achieved _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs during the semester.
-* Inform prof your interest to d0 CS2103 at the end of the semester. 
+* Achieve _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs during the semester.
+* Inform prof your interest to do CS2103 at the end of the semester. 
 * Achieve the missed 3-:star: and 4-:star: LOs during the vacation. 
 * Register for CS2103R in the subsequent semester.
 
@@ -51,12 +51,12 @@ To get CS2103R credit,
 
 <div id="admin-faq-aPlus">
 
-In CS2103/T, A+ is not given simply based on the final score. Requirements to get an A+,
+In CS2103/T, A+ is not given simply based on the final score. To get an A+ you should,
 
-* Scored enough to get an A
-* Considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
-* Considered helpful by peers (based on peer evaluations and tutor observations)
-* Achieved _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs.
+* score enough to get an A
+* be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
+* be considered helpful by peers (based on peer evaluations and tutor observations)
+* achieve _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs.
 
 </div>
 
