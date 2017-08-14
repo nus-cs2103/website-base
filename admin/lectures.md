@@ -2,6 +2,13 @@
 
 **Timing/venue**: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).
 
+<panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%"> 
+
+  CS2103T lectures are on Fridays 2-4pm at ICube auditorium, same as that for CS2103.
+  Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. %%The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.%%
+  
+</panel><p/>
+
 Each lecture consists of two sections:
 
 * First half: _Flipped classroom_ format. Discusses the learning outcomes of the current week.
