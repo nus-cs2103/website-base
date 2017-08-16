@@ -3,14 +3,22 @@
 <panel type="danger" header="`W2.1a` Can explain revision control :star:" expandable>
   <include src="../../book/revisionControl/what/full.md" />
   <panel header=":dart: Evidence" expanded>
-    <include src="../../book/revisionControl/what/q-essay-rcs-explain.md" />
+  
+Be able to answer questions such as these:
+  
+<include src="../../book/revisionControl/what/q-essay-rcs-explain.md" />
+
   </panel>
 </panel>
 
 <panel type="danger" header="`W2.1b` Can explain repositories :star:" expandable>
   <include src="../../book/revisionControl/repositories/full.md" />
   <panel header=":dart: Evidence" expanded>
-    <include src="../../book/revisionControl/repositories/q-essay-repo-definition.md" />
+  
+Be able to answer questions such as these:
+
+<include src="../../book/revisionControl/repositories/q-essay-repo-definition.md" />
+    
   </panel>
 </panel>
 
