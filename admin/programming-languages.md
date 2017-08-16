@@ -11,7 +11,7 @@ Java for all programming activities, the project, and exam answers.
 The module doesn’t “teach” Java. We assume you already know Java basics.
 We expect you to learn on your own any Java constructs not covered in your previous modules.
     
-Our ==Java coding standard== is [here](https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md).
+Our ==Java coding standard== is [here](https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html).
 
 </td>
 </tr>
