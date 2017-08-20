@@ -61,6 +61,15 @@
           </tabs>
           <p></p>
         </tip-box>
+        <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>          (activated by clicking) containing additional information.</p>
+        <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
+          <div slot="content">
+            Additional information
+          </div>
+        </popover>
+        <modal title="Modal Example" id="modal:modal-example">
+          Additional information
+        </modal>
         <p><strong>Sections tagged as <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> can be ignored because they are tangential info</strong>          that are strictly not within the scope of the topic.</p>
       </div>
     </panel>
