@@ -5,6 +5,11 @@
 <include type="danger" src="../../admin/teams.md" name="%%Admin &raquo;%% Team Forming :star:" dynamic />
 
 </panel>
+<panel type="info" header="[Exchange students only] Signing up for tutorials :star::star::star:" expandable>
+
+Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.  
+
+</panel>
 
 <panel type="danger" header="Create a GitHub Account :star:" expandable> 
 
@@ -18,7 +23,7 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 
 </panel>
 
-<panel type="warning" header="Join the Slack Channel :star:" expandable> 
+<panel type="warning" header="Join the Slack Channel :star::star:" expandable> 
 
 <panel header="%%**Admin &raquo; Tools &rarr; Communication**%%" expanded>
   <include type="danger" src="../../admin/tools.md#communication" />
