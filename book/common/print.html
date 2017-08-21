@@ -3560,7 +3560,7 @@ studentList.addUi(statusUi);
           <p><strong><em>Debugging</em> is the process of discovering defects in the program.</strong> Here are some approaches to debugging:</p>
           <ul>
             <li>
-              <p><strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
+              <p>👎 <strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
                 This approach is not recommended due to these reasons.</p>
               <ul>
                 <li>Incurs extra effort when inserting and removing the print statements.</li>
@@ -3569,13 +3569,13 @@ studentList.addUi(statusUi);
               </ul>
             </li>
             <li>
-              <p><strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than a 'quick try') due to these reasons:</p>
+              <p>👎 <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than a 'quick try') due to these reasons:</p>
               <ul>
                 <li>It is difficult, time consuming, and error-prone technique. If you didn't spot the error while writing code, you might not spot the error when reading code too.</li>
               </ul>
             </li>
             <li>
-              <p><strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
+              <p>👍 <strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
             </li>
           </ul>
         </div>
@@ -3622,9 +3622,8 @@ studentList.addUi(statusUi);
           </blockquote>
           <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood,
             and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
-          <p>The two code samples given below achieve the same functionality, but one is easier to read.</p>
           <tip-box>
-            <p>Example: Same function, different readability</p>
+            <p>Example: The two code samples given below achieve the same functionality, but one is easier to read.</p>
             <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
@@ -3682,8 +3681,10 @@ studentList.addUi(statusUi);
           <panel header="**Avoid Deep Nesting**" type="seamless">
             <div>
               <div>
-                <p>According to the Linux 1.3.53 CodingStyle documentation, <em>&quot;if you need more than 3 levels of indentation, you're screwed anyway, and should fix your program&quot;.</em></p>
-                <p>In particular, avoid <em>arrowhead</em> style code.</p>
+                <blockquote>
+                  <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
+                </blockquote>
+                <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
                 <tip-box>
                   <p>Example:</p><img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
                   <p></p>
@@ -3696,6 +3697,22 @@ studentList.addUi(statusUi);
               <div>
                 <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate
                   the final value).</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+</code></pre>
+                  <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                  <pre><code class="hljs java">
+<span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
+<span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
+<span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
+
+<span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;
+
+<span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
+</code></pre>
+                </tip-box>
                 <blockquote>
                   <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
                 </blockquote>
@@ -3727,7 +3744,7 @@ studentList.addUi(statusUi);
                     </tbody>
                   </table>
                 </tip-box>
-                <p>As you can see, using a named constant makes the code easier to understand because the name tells us more about the meaning of the number. Similarly, we can have ‘magic’ values of other data types.</p>
+                <p>Using a named constant makes the code easier to understand because the name tells us more about the meaning of the number. Similarly, we can have ‘magic’ values of other data types.</p>
                 <tip-box>
                   <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
                   <pre><code class="hljs java"><span class="hljs-keyword">return</span> “Error <span class="hljs-number">1432</span>”;  <span class="hljs-comment">// A magic string!</span>
@@ -3808,14 +3825,15 @@ studentList.addUi(statusUi);
                   <li><strong>We may not know which parts are the real performance bottlenecks</strong>. This is especially the case when the code undergoes transformations (e.g. compiling, minifying, transpiling, etc.) before it becomes an executable. Ideally,
                     you should use a profiler tool to identify the actual bottlenecks of the code first, and optimize only those parts.</li>
                   <li><strong>Optimizing can complicate the code</strong>, affecting correctness and understandability</li>
-                  <li><strong>Hand-optimized code can be harder for the compiler to optimize</strong> the code (the simpler the code, the easier for the compiler to optimize it)</li>
+                  <li><strong>Hand-optimized code can be harder for the compiler to optimize</strong> (the simpler the code, the easier for the compiler to optimize it). In many cases a compiler can do a better job of optimizing the runtime code if you don't
+                    get in the way by trying to hand-optimize the source code.</li>
                 </ul>
                 <p>A popular saying in the industry is <strong><em>make it work, make it right, make it fast</em></strong> which means in most cases getting the code to perform correctly should take priority over optimizing it. If the code doesn't work correctly,
                   it has no value on matter how fast/efficient it it.</p>
                 <blockquote>
                   <p>Premature optimization is the root of all evil in programming. <sub>--<a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a></sub></p>
                 </blockquote>
-                <p>Note that <strong>there are cases where optimizing takes priority over other things</strong><span class="dimmed">e.g. when writing code for resource constrained environments</span>. This guideline simply a caution that you should optimize
+                <p>Note that <strong>there are cases where optimizing takes priority over other things</strong><span class="dimmed">e.g. when writing code for resource-constrained environments</span>. This guideline simply a caution that you should optimize
                   only when it is really needed.</p>
               </div>
             </div>
@@ -3906,7 +3924,7 @@ process();
 cleanup();
 exit();
 </code></pre>
-                  <p>In the contrast, the above code</p>
+                  <p>In contrast, the above code</p>
                   <ul>
                     <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>
                     <li>keeps the main path un-indented.</li>
@@ -3928,13 +3946,14 @@ exit();
           </div>
         </tip-box>
         <div>
-          <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+          <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
           <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and
-            closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally consistent
-            with typical industry practices. Doing so will make it easier for others to work with your code, be they members from the same team or transferred from another team/company.</p>
-          <tip-box type="tip">
+            closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally inconsistent
+            with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+          <tip-box
+            type="tip">
             <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
-          </tip-box>
+            </tip-box>
         </div>
       </div>
       <div>
@@ -3974,7 +3993,7 @@ exit();
           </div>
         </tip-box>
         <div>
-          <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or method.</p>
+          <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
           <blockquote>
             <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
           </blockquote>
@@ -4049,7 +4068,7 @@ exit();
           <panel header="**Use Name to Explain**" type="seamless" alt="indentation">
             <div>
               <div>
-                <p><strong>A name is not just for differentiation; it should explain the named entity to the reader in an accurately and at a sufficient level of detail.</strong></p>
+                <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
                 <tip-box>
                   <p>Examples:</p>
                   <table class="markbind-table table">
@@ -4466,8 +4485,7 @@ compact(input);
           </div>
         </tip-box>
         <div>
-          <p>The first version of the code you write may not be of production quality. It is acceptable to first concentrate on making the code work, rather than worry over the quality of the code, as long as you improve the quality later. This process of
-            <strong>improving a program's internal structure in small steps without modifying its external behavior is called <em>refactoring</em>.</strong></p>
+          <p>The first version of the code you write may not be of production quality. It is OK to first concentrate on making the code work, rather than worry over the quality of the code, as long as you improve the quality later. This process of <strong>improving a program's internal structure in small steps without modifying its external behavior is called <em>refactoring</em>.</strong></p>
           <ul>
             <li><strong>Refactoring is not rewriting</strong>: Discarding poorly-written code entirely and re-writing it from scratch is not refactoring because refactoring needs to be done in small steps.</li>
             <li><strong>Refactoring is not bug fixing</strong>: By definition, refactoring is different from bug fixing or any other modifications that alter the external behavior (e.g. adding a feature) of the component in concern.</li>
@@ -4517,7 +4535,7 @@ send();
             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
-<span class="hljs-comment">//print details</span>
+    <span class="hljs-comment">//print details</span>
     System.out.println(<span class="hljs-string">"name:	"</span> + name);
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
@@ -4584,7 +4602,7 @@ send();
           </div>
         </tip-box>
         <div>
-          <p>We know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong>            The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <em>extract method vs inline method</em>).</p>
+          <p>We know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong>            The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <a href="https://refactoring.com/catalog/extractMethod.html"><em>extract method</em></a> vs <a href="https://refactoring.com/catalog/inlineMethod.html"><em>inline method</em></a>).</p>
         </div>
       </div>
     </div>
@@ -10340,7 +10358,8 @@ index 15b57f7..17f4528 100644
               <hr>
             </tab>
           </tabs>
-          <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to stash them first to prevent them from being overwritten.</p>
+          <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <a href="/website/book/gitAndGithub/stash/index.html">stash</a> them first to prevent them
+            from being overwritten.</p>
           <tabs>
             <tab header="SourceTree">
               <div>
@@ -10388,7 +10407,8 @@ index 15b57f7..17f4528 100644
           </div>
         </tip-box>
         <div>
-          <p><strong>You can use the git's <mark><em>stash</em></mark> temporarily shelve (or stash) changes you've made to your working copy</strong> so you can work on something else, and then come back and re-apply them later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
+          <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed changes
+            later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
           <tabs>
             <tab header="Source Tree">
               <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
@@ -10548,7 +10568,7 @@ index 15b57f7..17f4528 100644
         <div>
           <ol>
             <li>
-              <p>Fork the <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a>:</p>
+              <p>Fork the <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
               <panel type="seamless" header="%%How to fork a repo?%%">
                 <p>Navigate to the on GitHub and click on the <img src="/website/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                 <p></p>
