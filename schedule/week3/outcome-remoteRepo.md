@@ -1,10 +1,10 @@
-<panel type="danger" header="**Can communicate with a remote repo :star:**" expandable no-close>
+<panel type="danger" header="**`W3.1` Can communicate with a remote repo :star:**" expandable no-close>
 
-<panel type="danger" header="Can explain remote repositories :star:" expandable>
+<panel type="danger" header="`W3.1a` Can explain remote repositories :star:" expandable>
   <include src="../../book/revisionControl/remoteRepositories/full.md" />
 </panel>
 
-<panel type="danger" header="Can clone a remote repo :star:" expandable>
+<panel type="danger" header="`W3.1b` Can clone a remote repo :star:" expandable>
   <include src="../../book/gitAndGithub/clone/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -17,7 +17,7 @@
   </panel>
 </panel>
 
-<panel type="danger" header="Can pull changes from a repo :star:" expandable>
+<panel type="danger" header="`W3.1c` Can pull changes from a repo :star:" expandable>
   <include src="../../book/gitAndGithub/pull/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -30,7 +30,7 @@
   </panel>
 </panel>
 
-<panel type="danger" header="Can push to a remote repo :star:" expandable>
+<panel type="danger" header="`W3.1d` Can push to a remote repo :star:" expandable>
   <include src="../../book/gitAndGithub/push/full.md" />
   <panel header=":dart: Evidence" expanded>
 

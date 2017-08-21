@@ -1,6 +1,6 @@
-<panel type="warning" header="**Can refactor code at a basic level :star::star:**" expandable no-close>
+<panel type="warning" header="**`W3.2` Can refactor code at a basic level :star::star:**" expandable no-close>
 
-<panel type="warning" header="Can explain refactoring :star::star:" expandable>
+<panel type="warning" header="`W3.2a`Can explain refactoring :star::star:" expandable>
   <include src="../../book/refactoring/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -9,7 +9,7 @@
   </panel>
 </panel>
 
-<panel type="warning" header="Can use automated refactoring features of the IDE :star::star:" expandable>
+<panel type="warning" header="`W3.2b` Can use automated refactoring features of the IDE :star::star:" expandable>
   <include src="../../book/intellij/refactoring/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -20,7 +20,7 @@
   </panel>
 </panel>
 
-<panel type="info" header="Can apply some basic refactoring :star::star::star:" expandable>
+<panel type="info" header="`W3.2c` Can apply some basic refactoring :star::star::star:" expandable>
   <include src="../../book/refactoring/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -34,7 +34,7 @@
   </panel>
 </panel>
 
-<panel type="success" header="Can decide when to apply a given refactoring :star::star::star::star:" expandable>
+<panel type="success" header="`W3.2d` Can decide when to apply a given refactoring :star::star::star::star:" expandable>
   <include src="../../book/refactoring/when/full.md" />
   <panel header=":dart: Evidence" expanded>
 
