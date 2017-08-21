@@ -1,5 +1,10 @@
 ==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
 
+<panel header="%%Schedule &raquo; Overview &rarr; Tutorial Schedule%%">
+<include src="../schedule/overview/tutorialSchedule.md" />
+</panel>
+<p/>
+
 **What happens during the tutorial**:
 
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
