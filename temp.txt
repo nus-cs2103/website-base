@@ -1,0 +1,11 @@
+**`W2.1` Can use Git to save history**️
+- [ ] `W2.1a` Can explain revision control ️
+- [ ] `W2.1b` Can explain repositories ️
+- [ ] `W2.1c` Can create a local Git repo ️
+- [ ] `W2.1d` Can explain saving history ️
+- [ ] `W2.1e` Can commit using Git ️
+
+
+**`W2.2` Can use basic features of an IDE**
+- [ ] `W2.2a` Can explain IDEs ️
+- [ ] `W2.2b` Can setup a project in an IDE ️
