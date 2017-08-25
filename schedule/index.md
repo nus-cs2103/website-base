@@ -4,10 +4,10 @@
 <include src="../common/header.md" />
 
 <div class="website-content">
-<include src="overview/index.html" name=":exclamation: Overview" dynamic />
-<include src="week1/index.html" name=":exclamation: Week 1 [Aug 14]" dynamic />
-<include src="week2/index.html" name=":exclamation: Week 2 [Aug 21]" dynamic />
-<include src="week3/index.html" name=":construction: Week 3 [Aug 28]" dynamic />
+<include src="overview/index.html" name=":white_check_mark: Overview" dynamic />
+<include src="week1/index.html" name=":white_check_mark: Week 1 [Aug 14]" dynamic />
+<include src="week2/index.html" name=":white_check_mark: Week 2 [Aug 21]" dynamic />
+<include src="week3/index.html" name=":exclamation: Week 3 [Aug 28]" dynamic />
 <include src="week4/index.html" name=":construction: Week 4 [Sep 4]" dynamic />
 <include src="week5/index.html" name=":construction: Week 5 [Sep 11]" dynamic />
 <include src="week6/index.html" name=":construction: Week 6 [Sep 18]" dynamic />
