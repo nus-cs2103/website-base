@@ -4,7 +4,8 @@
   <include src="../../book/revisionControl/branching/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="../../book/revisionControl/branching/q-essay-branching-definition.md" />
+<include src="../../book/revisionControl/branching/q-essay-merging-definition.md" />
 
   </panel>
 </panel>
@@ -13,7 +14,11 @@
   <include src="../../book/gitAndGithub/branch/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Git branches you have created in any repo.
+
+**Suggested**: Results of following the steps in the LO. 
+
+**Submission**: Show your branches during the tutorial.
 
   </panel>
 </panel>
