@@ -27,7 +27,11 @@
   <include src="../../book/gitAndGithub/createPRs/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: PRs created in any repo.
+
+**Suggested**: PRs created by following the steps in the LO. 
+
+**Submission**: Show your PRs during the tutorial.
 
   </panel>
 </panel>
