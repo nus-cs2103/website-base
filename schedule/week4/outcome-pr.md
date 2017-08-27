@@ -40,7 +40,12 @@
   <include src="../../book/gitAndGithub/mergeConflicts/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+
+**Acceptable**: Merge conflicts resolved in any repo.
+
+**Suggested**: Evidence of following the steps in the LO. 
+
+**Submission**: Show your merge commit during the tutorial.
 
   </panel>
 </panel>
