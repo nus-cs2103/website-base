@@ -23,6 +23,8 @@ Evidence of applying these guidelines to some code (e.g. to addressbook-level1).
 
 Similar to the above LO [Can follow basic guidelines for improving readability]
 
+In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]](https://github.com/nus-cs2103-AY1718S1/addressbook-level1#abstract-methods-well-lo-methodabstraction)
+
   </panel>
 </panel>
 
