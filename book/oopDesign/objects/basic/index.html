@@ -39,22 +39,18 @@
         <tip-box>
           <p>📦 A real world scenario viewed as a network of interacting objects:</p>
           <p>You are asked to find out the average age of a group of people Adam, Beth, Charlie, and Daisy. You take a piece of paper and pen, go to each person, ask for their age, and note it down. After collecting the age of all four, you enter it into
-            a calculator to find the total. And then, use the same calculator to divide the total by four, to get the average age. This can be viewed as the objects You, Pen, Paper, Calculator, Adam, Beth, Charlie, and Daisy interacting to accomplish
-            to achieve some end result.</p>
-          <p>{visual: real world scenario, objects marked}</p>
-          <p>These objects can be considered as connected in a certain network of certain structure.</p>
-          <p>{visual: object network marked}</p>
+            a calculator to find the total. And then, use the same calculator to divide the total by four, to get the average age. This can be viewed as the objects <code>You</code>, <code>Pen</code>, <code>Paper</code>, <code>Calculator</code>, <code>Adam</code>,
+            <code>Beth</code>, <code>Charlie</code>, and <code>Daisy</code> interacting to accomplish to achieve the end result of calculating the average age of the four persons. These objects can be considered as connected in a certain network of certain
+            structure.</p>
         </tip-box>
-        <p><strong>OOP solutions try to follow a similar object network inside the computer’s memory – a sort of a virtual simulation of the corresponding real world scenario – so that a similar result can be achieved programmatically.</strong></p>
-        <p>{visual: Direct mapping}</p>
+        <p><strong>OOP solutions try to follow a similar object network inside the computer’s memory</strong> – a sort of a virtual simulation of the corresponding real world scenario – <strong>so that a similar result can be achieved programmatically.</strong></p>
         <p><strong>OOP does not demand that the virtual world object network follow the real world exactly.</strong></p>
         <tip-box>
-          <p>For example, it can be tweaked a bit as follows:</p>
+          <p>📦 Our previous example can be tweaked a bit as follows:</p>
           <ul>
-            <li>Use an object called Main to represent your role in the scenario.</li>
-            <li>As there is no physical writing involved, we can replace the Pen and Paper with an object called AgeList that is able to keep a list of ages.</li>
+            <li>Use an object called <code>Main</code> to represent your role in the scenario.</li>
+            <li>As there is no physical writing involved, we can replace the <code>Pen</code> and <code>Paper</code> with an object called <code>AgeList</code> that is able to keep a list of ages.</li>
           </ul>
-          <p>{visual: optimizations: You → Main; Pen + Paper → AgeList}</p>
         </tip-box>
         <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
         <table class="markbind-table table">
@@ -108,18 +104,18 @@
         <p><strong>Every object has an interface and an implementation.</strong></p>
         <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
         <tip-box>
-          <p>Examples:</p>
+          <p>📦 The interface and implementation of some real-world objects in our example:</p>
           <ul>
             <li>Calculator: the buttons and the display are part of the interface; circuits are part of the implementation.</li>
-            <li>Adam: In the context of our ‘calculate average age’ example, the interface of Adam consists of requests that adam will respond to, e.g. “Give age to the nearest year, as at Jan 1st of this year” “State your name”; the implementation includes
-              the mental calculation Adam uses to calculate the age which is not visible to other objects.</li>
+            <li>Adam: In the context of our 'calculate average age' example, the interface of Adam consists of requests that adam will respond to, e.g. &quot;Give age to the nearest year, as at Jan 1st of this year&quot; &quot;State your name&quot;; the implementation
+              includes the mental calculation Adam uses to calculate the age which is not visible to other objects.</li>
           </ul>
         </tip-box>
         <p>Similarly, every object in the virtual world has an interface and an implementation.</p>
         <tip-box>
-          <p>Examples:</p>
+          <p>📦 The interface and implementation of some virtual-world objects in our example:</p>
           <ul>
-            <li>Adam: the interface might have a method getAge(Date asAt); the implementation of that method is not visible to other objects.</li>
+            <li><code>Adam</code>: the interface might have a method <code>getAge(Date asAt)</code>; the implementation of that method is not visible to other objects.</li>
           </ul>
         </tip-box>
         <p><strong>Objects interact by sending messages.</strong></p>
@@ -181,7 +177,7 @@
             <div>
               <panel header=":lock::key: Choose the least correct statement.">
                 <question>
-                  <p>Choose the least correct statement</p>
+                  <p>Which statements are correct?</p>
                   <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
@@ -190,16 +186,9 @@
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. An object should not depend on another object</li>
                   </ul>
                   <div slot="answer">
-                    <p>Choose the least correct statement</p>
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. An object should not depend on another object</li>
-                    </ul>
-                    <p>Explanation: The first two statements means the same concept (the ‘state’ of an object is represented by the data values it holds). The third statement explains how that concept is implemented at code level. Objects can interact with
-                      other objects to perform various tasks and therefore may depend on other objects.</p>
+                    <p>a, b, c, d</p>
+                    <p>Explanation: (a) and (b) means the same concept (the ‘state’ of an object is represented by the data values it holds). The third statement explains how that concept is implemented at code level. Objects can interact with other objects
+                      to perform various tasks and therefore may depend on other objects.</p>
                   </div>
                 </question>
               </panel>
