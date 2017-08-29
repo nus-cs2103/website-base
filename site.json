@@ -25,6 +25,10 @@
       "title": "CS2103/T Website - Schedule"
     },
     {
+      "src": "schedule/overview/tutorialSchedule.md",
+      "title": "CS2103/T Website - Tutorial Schedule"
+    },
+    {
       "src": "schedule/week1/index.html",
       "title": "Week 1"
     },
