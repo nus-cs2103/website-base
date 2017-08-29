@@ -22,7 +22,7 @@
 
 <tip-box type="important"> 
   
-This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO (in Week 5):
+This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO **(in Week 5)**:
 
 <include src="../week5/outcomes.md#lo-2kloc"/>
 
