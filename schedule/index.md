@@ -5,7 +5,7 @@
 
 <div class="website-content">
 <include src="overview/index.html" name=":white_check_mark: Overview" dynamic />
-<panel header=":calendar: Tutorial Schedule" expandable>
+<panel header=":calendar: Tutorial Schedule" expandable no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
 <include src="week1/index.html" name=":white_check_mark: Week 1 [Aug 14]" dynamic />
