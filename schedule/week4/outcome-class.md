@@ -1,6 +1,6 @@
-<panel type="danger" header=":trophy: Can implement classes :star:" expandable expanded no-close>
+<panel type="danger" header="**`W4.2` Can implement classes** :star:" expandable no-close>
 
-<panel type="danger" header=":trophy: Can describe OOP at a higher level :star:" expandable>
+<panel type="danger" header="`W4.2a` Can describe OOP at a higher level :star:" expandable>
 
 **Object-Oriented Programming (OOP) is a _programming paradigm_.** A programming paradigm guides programmers to analyze programming problems, and structure programming solutions, in a specific way. Other examples of programming paradigms are [_Procedural Programming_ paradigm](https://en.wikipedia.org/wiki/Procedural_programming), [_Functional Programming_ paradigm](https://en.wikipedia.org/wiki/Functional_programming), [_Logic Programming_ paradigm](https://en.wikipedia.org/wiki/Logic_programming) etc.
 
@@ -8,16 +8,16 @@
 
 </panel>
 
-<panel type="danger" header=":trophy: Can describe how OOP relates to the real world :star:" expandable>
+<panel type="danger" header="`W4.2b` Can describe how OOP relates to the real world :star:" expandable>
   <include src="../../book/oopDesign/objects/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="../../book/oopDesign/objects/basic/q-essay-describeObjectInScenario.md" />
 
   </panel>
 </panel>
 
-<panel type="danger" header=":trophy: Can draw UML classes :star:" expandable>
+<panel type="danger" header="`W4.2c/i` Can draw UML classes :star:" expandable>
   <include src="../../book/uml/classDiagrams/classes/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -26,7 +26,7 @@
   </panel>
 </panel>
 
-<panel type="danger" header=":trophy: Can draw UML objects :star:" expandable>
+<panel type="danger" header="`W4.2c/ii` Can draw UML objects :star:" expandable>
   <include src="../../book/uml/objectDiagrams/objects/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -35,7 +35,7 @@
   </panel>
 </panel>
 
-<panel type="danger" header=":trophy: Can explain the relationship between classes and object :star:" expandable>
+<panel type="danger" header="`W4.2c` Can explain the relationship between classes and objects :star:" expandable>
   <include src="../../book/oopDesign/classes/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
