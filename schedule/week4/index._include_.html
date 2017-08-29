@@ -430,14 +430,14 @@ git pull origin master
       </panel>
     </div>
     <div>
-      <panel type="danger" header=":trophy: Can implement classes :star:" expandable="" expanded="" no-close="">
-        <panel type="danger" header=":trophy: Can describe OOP at a higher level :star:" expandable="">
+      <panel type="danger" header="**`W4.2` Can implement classes** :star:" expandable="" no-close="">
+        <panel type="danger" header="`W4.2a` Can describe OOP at a higher level :star:" expandable="">
           <p><strong>Object-Oriented Programming (OOP) is a <em>programming paradigm</em>.</strong> A programming paradigm guides programmers to analyze programming problems, and structure programming solutions, in a specific way. Other examples of programming
             paradigms are <a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a>, <a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a>, <a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a>            etc.</p>
         </panel>
-        <panel type="danger" header=":trophy: Can describe how OOP relates to the real world :star:" expandable="">
+        <panel type="danger" header="`W4.2b` Can describe how OOP relates to the real world :star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Objects →
 </span></strong>
               </span>
             </p>
@@ -451,7 +451,7 @@ git pull origin master
                     and behavior. But almost anything that’s designed to do a job does, too. Even simple things with no moving parts such as an ordinary bottle combine state (how full the bottle is, whether or not it’s open, how warm its contents are)
                     with behavior (the ability to dispense its contents at various flow rates, to be opened or closed, to withstand high or low temperatures).</p>
                   <p>It’s this resemblance to real things that gives objects much of their power and appeal. They can not only model components of real systems, but equally as well fulfill assigned roles as components in software systems.</p>
-                  <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+                  <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple </sub></p>
                 </blockquote>
                 <p><strong>Object Oriented Programming (OOP) views the world as a network of interacting objects.</strong></p>
                 <tip-box>
@@ -593,21 +593,22 @@ git pull origin master
                 <div>
                   <panel header=":muscle: Exercises" expandable="">
                     <div>
-                      <panel header=":lock::key: Choose the least correct statement.">
-                        <question>
-                          <p>Which statements are correct?</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. An object should not depend on another object</li>
-                          </ul>
-                          <div slot="answer">
-                            <p>a, b, c, d</p>
-                            <p>Explanation: (a) and (b) means the same concept (the ‘state’ of an object is represented by the data values it holds). The third statement explains how that concept is implemented at code level. Objects can interact with other
-                              objects to perform various tasks and therefore may depend on other objects.</p>
-                          </div>
+                      <panel header=":lock: Describe objects in the given scenario">
+                        <question has-input="true">
+                          <p>Consider the following real-world scenario.</p>
+                          <tip-box>
+                            <p>Tom read a Software Engineering textbook and highlighted some of the text in it.
+                            </p>
+                          </tip-box>
+                          <p></p>
+                          <p>Explain the following statements about OOP using the above scenario as an example.</p>
+                          <ol>
+                            <li>Object Oriented Programming (OOP) views the world as a network of interacting objects.</li>
+                            <li>Every object has both state (data) and behavior (operations on data).</li>
+                            <li>Every object has an interface and an implementation.</li>
+                            <li>Objects interact by sending messages.</li>
+                            <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
+                          </ol>
                         </question>
                       </panel>
                     </div>
@@ -618,14 +619,33 @@ git pull origin master
             </div>
           </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
+            <div>
+              <panel header=":lock: Describe objects in the given scenario">
+                <question has-input="true">
+                  <p>Consider the following real-world scenario.</p>
+                  <tip-box>
+                    <p>Tom read a Software Engineering textbook and highlighted some of the text in it.
+                    </p>
+                  </tip-box>
+                  <p></p>
+                  <p>Explain the following statements about OOP using the above scenario as an example.</p>
+                  <ol>
+                    <li>Object Oriented Programming (OOP) views the world as a network of interacting objects.</li>
+                    <li>Every object has both state (data) and behavior (operations on data).</li>
+                    <li>Every object has an interface and an implementation.</li>
+                    <li>Objects interact by sending messages.</li>
+                    <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
+                  </ol>
+                </question>
+              </panel>
+            </div>
           </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can draw UML classes :star:" expandable="">
+        <panel type="danger" header="`W4.2c/i` Can draw UML classes :star:" expandable="">
           <div>
             <div></div>
             <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML →
+            <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Classes →
 </span></strong>
               </span>
             </p>
@@ -760,11 +780,11 @@ git pull origin master
             </div>
           </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can draw UML objects :star:" expandable="">
+        <panel type="danger" header="`W4.2c/ii` Can draw UML objects :star:" expandable="">
           <div>
             <div></div>
             <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML →
+            <p><span class="dimmed"><strong><span>Tools → UML → Object Diagrams →
 </span></strong>
               </span>
             </p>
@@ -846,11 +866,11 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
             </div>
           </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can explain the relationship between classes and object :star:" expandable="">
+        <panel type="danger" header="`W4.2c` Can explain the relationship between classes and objects :star:" expandable="">
           <div>
             <div></div>
             <p></p>
-            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Classes →
 </span></strong>
               </span>
             </p>
@@ -874,8 +894,8 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
                     and <code>Daisy</code>. Similarly, we need classes <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> classes to instantiate one each of <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> objects.</p>
                 </tip-box>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html" header="UML: Class Diagrams: Classes"></panel>
-                  <panel src="/website\book\uml\objectDiagrams\objects\embed._include_.html" header="UML: Object Diagrams: Objects" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Classes" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html" header=":mortar_board: UML &rarr; Object Diagrams &rarr; Objects" isOpen="false" no-close="true" no-switch="true"></panel>
                 </p>
                 <p></p>
                 <tip-box><img src="/website/book/oopDesign/classes/basic/images/person.png" height="100">

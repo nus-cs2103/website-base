@@ -131,7 +131,7 @@
                   and behavior. But almost anything that’s designed to do a job does, too. Even simple things with no moving parts such as an ordinary bottle combine state (how full the bottle is, whether or not it’s open, how warm its contents are) with
                   behavior (the ability to dispense its contents at various flow rates, to be opened or closed, to withstand high or low temperatures).</p>
                 <p>It’s this resemblance to real things that gives objects much of their power and appeal. They can not only model components of real systems, but equally as well fulfill assigned roles as components in software systems.</p>
-                <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+                <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple </sub></p>
               </blockquote>
               <p><strong>Object Oriented Programming (OOP) views the world as a network of interacting objects.</strong></p>
               <tip-box>
@@ -273,21 +273,21 @@
               <div>
                 <panel header=":muscle: Exercises" expandable="">
                   <div>
-                    <panel header=":lock::key: Choose the least correct statement.">
-                      <question>
-                        <p>Which statements are correct?</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. An object should not depend on another object</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>a, b, c, d</p>
-                          <p>Explanation: (a) and (b) means the same concept (the ‘state’ of an object is represented by the data values it holds). The third statement explains how that concept is implemented at code level. Objects can interact with other
-                            objects to perform various tasks and therefore may depend on other objects.</p>
-                        </div>
+                    <panel header=":lock: Describe objects in the given scenario">
+                      <question has-input="true">
+                        <p>Consider the following real-world scenario.</p>
+                        <tip-box>
+                          <p>Tom read a Software Engineering textbook and highlighted some of the text in it.
+                          </p>
+                        </tip-box>
+                        <p>Explain the following statements about OOP using the above scenario as an example.</p>
+                        <ol>
+                          <li>Object Oriented Programming (OOP) views the world as a network of interacting objects.</li>
+                          <li>Every object has both state (data) and behavior (operations on data).</li>
+                          <li>Every object has an interface and an implementation.</li>
+                          <li>Objects interact by sending messages.</li>
+                          <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
+                        </ol>
                       </question>
                     </panel>
                   </div>
@@ -384,7 +384,7 @@
         </div>
         <tip-box>
           <div>
-            <p>🏆 Can explain the relationship between classes and object <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+            <p>🏆 Can explain the relationship between classes and objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
           </div>
         </tip-box>
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
@@ -405,8 +405,8 @@
                   and <code>Daisy</code>. Similarly, we need classes <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> classes to instantiate one each of <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> objects.</p>
               </tip-box>
               <p>
-                <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html" header="UML: Class Diagrams: Classes"></panel>
-                <panel src="/website\book\uml\objectDiagrams\objects\embed._include_.html" header="UML: Object Diagrams: Objects" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Classes" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html" header=":mortar_board: UML &rarr; Object Diagrams &rarr; Objects" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
               <p></p>
               <tip-box><img src="/website/book/oopDesign/classes/basic/images/person.png" height="100">
@@ -1622,15 +1622,15 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       In the context of OOP, what is the relationship between abstraction and encapsulation?
-                      <ul radio-group="t2vaw" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="t2vaw" type="radio"> a. They are the same thing</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="t2vaw" type="radio"> b. They are opposites</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="t2vaw" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="t2vaw" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      <ul radio-group="p5ow6" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="p5ow6" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="p5ow6" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="p5ow6" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="p5ow6" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="ov9od" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="ov9od" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <ul radio-group="opikf" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="opikf" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                         </ul>
                         <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
                           in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
@@ -1651,16 +1651,16 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       Which of these do not belong to four main OO principles?
-                      <ul radio-group="33pbp" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="33pbp" type="radio"> a. Abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="33pbp" type="radio"> b. Encapsulation</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="33pbp" type="radio"> c. Inheritance</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="33pbp" type="radio"> d. Substitutability</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="33pbp" type="radio"> e. Polymorphism</label></li>
+                      <ul radio-group="tvmgt" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="tvmgt" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="tvmgt" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="tvmgt" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="tvmgt" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="tvmgt" type="radio"> e. Polymorphism</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="e0hof" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="e0hof" type="radio"> d. Substitutability</label></li>
+                        <ul radio-group="9afai" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="9afai" type="radio"> d. Substitutability</label></li>
                         </ul>
                       </div>
                     </question>
