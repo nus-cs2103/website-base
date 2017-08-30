@@ -16,14 +16,7 @@
 
 **Suggested**: Do the exercise in [[addressbook-level2: LO-Exceptions](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions)].
 
-**Submission**: 
-* Options 1 (discouraged): Show the relevant code during the tutorial.
-* Options 2 (preferred): Create a pull request by following the instructions below.
-
-<include src="../../admin/appendixE-github.md#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests for tutorials%%" dynamic />
-
-  </panel>
-</panel>
+<include src="submission.md" />
 
 <panel type="info" header="`W4.4d` Can avoid using exceptions to control normal workflow :star::star::star:" expandable>
   <include src="../../book/errorHandling/exceptions/when/full.md" />

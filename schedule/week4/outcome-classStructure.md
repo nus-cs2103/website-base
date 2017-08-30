@@ -17,7 +17,11 @@
   <include src="../../book/oopImplementation/associations/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-<include src="../../book/oopImplementation/associations/q-essay-implementClassDiagram.md" />
+**Acceptable**: Some OOP code you have written in which there are more than 10 classes.
+
+**Suggested**: Do the exercise in [[addressbook-level2: LO-ImplementClass](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)].
+
+<include src="submission.md" />
 
   </panel>
 </panel>
