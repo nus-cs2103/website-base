@@ -927,13 +927,14 @@
         </div>
         <tip-box>
           <div>
-            <p>🏆 Can explain the purpose of UML object diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+            <p>🏆 Can explain/identify object diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
           </div>
         </tip-box>
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>An object diagram shows an object structure at a given point of time.</p>
+              <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
+              <tip-box><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
             </div>
             <div>
               <div></div>
@@ -1347,24 +1348,17 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
               <div>
                 <panel header=":muscle: Exercises" expandable="">
                   <div>
-                    <panel header=":lock::key: Which of these class diagrams match the given object diagram?">
+                    <panel header=":lock::key: Which class diagrams match object diagram?">
                       <question>
                         <p>Which of these class diagrams match the given object diagram?</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
                         <p></p>
                         <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. none</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. (1) only</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. (2) only</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. both match</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
                         </ul>
                         <div slot="answer">
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. none</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. (1) only</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. (2) only</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. both match</li>
-                          </ul>
-                          <p>Explanation: Both class diagrams allow one Unit object to be linked to one Item object.</p>
+                          <p>(a) (b)</p>
+                          <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
                         </div>
                       </question>
                     </panel>
