@@ -939,10 +939,12 @@ git pull origin master
       </panel>
     </div>
     <div>
-      <panel type="warning" header=":trophy: Can do exception handling in code :star::star:" expandable="" expanded="" no-close="">
-        <panel type="warning" header=":trophy: Can explain error handling :star::star:" expandable="">
+      <panel type="warning" header="**`W4.4` Can do exception handling in code** :star::star:" no-close="">
+        <panel type="warning" header="`W4.4a` Can explain error handling :star::star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling → Introduction →
 </span></strong>
               </span>
             </p>
@@ -953,7 +955,7 @@ git pull origin master
               <div>
                 <blockquote>
                   <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own.
-                    In extreme cases, the application may log the user off or shut down the system. <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></p>
+                    In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></sub></p>
                 </blockquote>
               </div>
               <div>
@@ -961,13 +963,12 @@ git pull origin master
               </div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
-        <panel type="warning" header=":trophy: Can explain exceptions :star::star:" expandable="">
+        <panel type="warning" header="`W4.4b` Can explain exceptions :star::star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
 </span></strong>
               </span>
             </p>
@@ -976,7 +977,8 @@ git pull origin master
             </div>
             <div id="main">
               <div>
-                <p>Exceptions are used to deal with ‘unusual’ but not entirely unexpected situations that the program might encounter at run time.</p>
+                <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time. Exceptions are not program bugs. Rather, they are unusual situations that need to
+                  be recovered from, if possible.</p>
                 <tip-box type="primary">
                   <div>
                     <p><strong>Exception</strong>:</p>
@@ -986,26 +988,93 @@ git pull origin master
                   </div>
                 </tip-box>
                 <tip-box>
-                  <p>Examples:</p>
+                  <p>📦 Examples:</p>
                   <ul>
                     <li>A network connection encounters a timeout due to a slow server.</li>
                     <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
                   </ul>
                 </tip-box>
-                <p>Exceptions are not program bugs. Rather, they are unusual situations that need to be recovered from, if possible.</p>
               </div>
               <div>
                 <div></div>
               </div>
             </div>
           </div>
+        </panel>
+        <panel type="warning" header="`W4.4c` Can do exception handling in code :star::star:" expandable="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Most languages allow a method to encapsulate the unusual situation in an Exception object and 'throw' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when code segment
+                  that encountered the unusual situation does not know how to deal with it.</p>
+                <p><strong>Exception objects can propagate up the method call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception
+                  it caught, it will throw the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown
+                  to the runtime, thus halting the system.</p>
+                <tip-box>
+                  <p>📦 In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code>                    block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p><img src="/website/book/errorHandling/exceptions/how/images/processInput.png" height="320">
+                  <p></p>
+                </tip-box>
+                <p>Advantages of exception handling in this way:</p>
+                <ul>
+                  <li>The ability to propagate error information through the call stack.</li>
+                  <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which is not a benefit of exceptions?">
+                        <question>
+                          <p>Which are benefits of exceptions?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Exceptions allow us to handle in one location similar errors arising in many different locations.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Exceptions can be used to specify potential errors as a part of the method signature</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a) (c) (d) (e)</p>
+                            <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
+            <p><strong>Acceptable</strong>: Some code you wrote that involves exception handling.</p>
+            <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions">addressbook-level2: LO-Exceptions</a>].</p>
+            <p><strong>Submission</strong>:</p>
+            <ul>
+              <li>Options 1 (discouraged): Show the relevant code during the tutorial.</li>
+              <li>Options 2 (preferred): Create a pull request by following the instructions below.</li>
+            </ul>
+            <p>
+              <panel src="/website\admin\appendixE-github._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests for tutorials%%" fragment="tutorial-pr-instructions" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests for tutorials%%"
+                isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
           </panel>
         </panel>
-        <panel type="info" header=":trophy: Can avoid using exceptions to control normal workflow :star::star::star:" expandable="">
+        <panel type="info" header="`W4.4d` Can avoid using exceptions to control normal workflow :star::star::star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
 </span></strong>
               </span>
             </p>
@@ -1014,16 +1083,19 @@ git pull origin master
             </div>
             <div id="main">
               <div>
-                <p>{to add: do not use exceptions for normal workflow}</p>
+                <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+                <tip-box>
+                  <p>📎 Resources to learn more about Java Exceptions:</p>
+                  <ul>
+                    <li><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/">Java Exceptions Tutorial from Oracle</a></li>
+                  </ul>
+                </tip-box>
               </div>
               <div>
                 <div></div>
               </div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
       </panel>
     </div>
