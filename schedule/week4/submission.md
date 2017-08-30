@@ -4,5 +4,3 @@
 
 <include src="../../admin/appendixE-github.md#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests for tutorials%%" dynamic />
 
-  </panel>
-</panel>

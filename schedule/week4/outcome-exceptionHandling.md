@@ -18,6 +18,9 @@
 
 <include src="submission.md" />
 
+  </panel>
+</panel>
+
 <panel type="info" header="`W4.4d` Can avoid using exceptions to control normal workflow :star::star::star:" expandable>
   <include src="../../book/errorHandling/exceptions/when/full.md" />
 </panel>
