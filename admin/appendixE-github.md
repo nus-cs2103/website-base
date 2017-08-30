@@ -31,7 +31,7 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 3. Commit your changes to that branch. Push to your fork.
 
 4. Create a Pull Request against the master branch of the repo  
-   `https://github.com/**nus-cs2103-AY1718S1**/{repo_name}`  
+   `https://github.com/nus-cs2103-AY1718S1/{repo_name}`  
    e.g. `https://github.com/nus-cs2103-AY1718S1/addressbook-level1`  
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
    <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
