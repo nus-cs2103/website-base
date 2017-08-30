@@ -17,24 +17,6 @@
   </panel>
 </panel>
 
-<panel type="danger" header="`W4.2c/i` Can draw UML classes :star:" expandable>
-  <include src="../../book/uml/classDiagrams/classes/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-<include src="../../book/uml/classDiagrams/classes/what/q-essay-drawCarClass.md" />
-
-  </panel>
-</panel>
-
-<panel type="danger" header="`W4.2c/ii` Can draw UML objects :star:" expandable>
-  <include src="../../book/uml/objectDiagrams/objects/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-<include src="../../book/uml/objectDiagrams/objects/q-essay-drawCarObject.md" />
-
-  </panel>
-</panel>
-
 <panel type="danger" header="`W4.2c` Can explain the relationship between classes and objects :star:" expandable>
   <include src="../../book/oopDesign/classes/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
