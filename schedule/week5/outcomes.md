@@ -21,9 +21,9 @@
 
 <!-- ==================================================================================================== -->
 
-<div id="lo-2kloc">
 <panel type="danger" header=":trophy: Can work with a 2KLoC code base :star: ==[Compulsory]==" expandable>
   <panel header=":dart: Evidence" expanded>
+<div id="lo-2kloc">
 
 **Acceptable**: Evidence that you have worked with a code base larger than 2KLoC. %%e.g. a project in a previous module or a pet project%%
 
@@ -42,9 +42,9 @@
 
 **Submission**: Create a PR against [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)].
 
+</div>
   </panel>
 </panel>
-</div>
 
 <!-- ==================================================================================================== -->
 

@@ -21,10 +21,16 @@
   <panel header=":dart: Evidence" expanded>
 
 <tip-box type="important"> 
-  
+
 This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO **(in Week 5)**:
 
+<panel type="seamless" header="[For Reference] details of the Week 5 LO mentioned above">
+
+:dart: Evidence:
+
 <include src="../week5/outcomes.md#lo-2kloc"/>
+
+</panel>
 
 </tip-box>
 
