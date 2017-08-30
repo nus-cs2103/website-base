@@ -538,7 +538,7 @@ git pull origin master
                 </tip-box>
                 <p><strong>Objects interact by sending messages.</strong></p>
                 <p>Both real world and virtual world object interactions can be viewed as objects sending message to each other. The message can result in the sender object receiving a response and/or the receiving object’s state being changed. Furthermore,
-                  the result can vary based on which object received the message, even if the message is identical.</p>
+                  the result can vary based on which object received the message, even if the message is identical <span class="dimmed">(see rows 1 and 2 in the example below)</span>.</p>
                 <tip-box>
                   <p>Examples:</p>
                   <table class="markbind-table table">
@@ -563,9 +563,9 @@ git pull origin master
                       </tr>
                       <tr>
                         <td style="text-align:center">Real</td>
-                        <td style="text-align:center">Same</td>
+                        <td style="text-align:center"><sub>as above</sub></td>
                         <td style="text-align:center">Beth</td>
-                        <td style="text-align:center">Same</td>
+                        <td style="text-align:center"><sub>as above</sub></td>
                         <td style="text-align:center">&quot;Beth&quot;</td>
                         <td style="text-align:center">-</td>
                       </tr>
@@ -636,231 +636,6 @@ git pull origin master
                     <li>Objects interact by sending messages.</li>
                     <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
                   </ol>
-                </question>
-              </panel>
-            </div>
-          </panel>
-        </panel>
-        <panel type="danger" header="`W4.2c/i` Can draw UML classes :star:" expandable="">
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Classes →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>The basic UML notations used to represent a <em>class</em>:<br></p><img src="/website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="100">
-                <p></p>
-                <tip-box>
-                  <p>📦 A <code>Table</code> class shown in UML notation:</p><img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
-                  <p></p>
-                  <panel type="seamless" header="The equivalent code">
-                    <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
-    
-    Integer number;
-    Chair[] chairs = <span class="hljs-keyword">null</span>;
-    
-    <span class="hljs-function">Integer <span class="hljs-title">getNumber</span><span class="hljs-params">()</span></span>{
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setNumber</span><span class="hljs-params">(Integer n)</span></span>{
-        ...
-    }
-}
-
-</code></pre>
-                  </panel>
-                </tip-box>
-                <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand.</p>
-                <tip-box><img src="/website/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
-                <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language
-                  used. Here are some common visibilities and how they are indicated in a class diagram:</p>
-                <ul>
-                  <li><code>+</code> : <code>public</code></li>
-                  <li><code>-</code> : <code>private</code></li>
-                  <li><code>#</code> : <code>protected</code></li>
-                  <li><code>~</code> : <code>package private</code></li>
-                </ul>
-                <tip-box>
-                  <p>📦 <code>Table</code> class with visibilities shown:</p><img src="/website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock::key: Which classes are correct?">
-                        <question>
-                          <p>Which of these follow the correct UML notation?</p><img src="/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
-                          <p></p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 2</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 3</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
-                          </ul>
-                          <div slot="answer">
-                            <ol>
-                              <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
-                              <li>Incorrect : All attributes should be inside the same compartment.</li>
-                              <li>Correct</li>
-                              <li>Correct : Both <em>Attributes</em> and <em>Methods</em> compartments can be omitted.</li>
-                              <li>Correct : The <em>Attributes</em> and <em>Methods</em> compartments can be empty.</li>
-                            </ol>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock: Draw Car class">
-                        <question>
-                          <p>Draw a UML diagram to represent the Car class as given below. Include visibilities.</p>
-                          <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-    
-    Engine engine;
-    <span class="hljs-keyword">private</span> List&lt;wheel&gt;[] wheels = <span class="hljs-keyword">null</span>;
-    <span class="hljs-keyword">public</span> String model;
-    
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        move(speed);
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        ...
-    }
-}
-
-</code></pre>
-                          <p></p>
-                        </question>
-                      </panel>
-                      <p></p>
-                    </div>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <div>
-              <panel header=":lock: Draw Car class">
-                <question>
-                  <p>Draw a UML diagram to represent the Car class as given below. Include visibilities.</p>
-                  <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-    
-    Engine engine;
-    <span class="hljs-keyword">private</span> List&lt;wheel&gt;[] wheels = <span class="hljs-keyword">null</span>;
-    <span class="hljs-keyword">public</span> String model;
-    
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        move(speed);
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        ...
-    }
-}
-
-</code></pre>
-                  <p></p>
-                </question>
-              </panel>
-              <p></p>
-            </div>
-          </panel>
-        </panel>
-        <panel type="danger" header="`W4.2c/ii` Can draw UML objects :star:" expandable="">
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Object Diagrams →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="objects-one">Objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>Notation:</p><img src="/website/book/uml/objectDiagrams/objects/images/notation.png" height="85">
-                <p></p>
-                <p>Notes:</p>
-                <ul>
-                  <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
-                  <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
-                  <li>Unlike classes, there is no compartment for methods.</li>
-                  <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
-                  <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
-                </ul>
-                <tip-box>
-                  <p>📦 Some example objects:</p><img src="/website/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock: Draw Car object">
-                        <question>
-                          <p>Draw a UML diagram to represent the Car object created by the following code.</p>
-                          <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-    
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
-    
-    Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){
-        ...
-    }
-}
-
-<span class="hljs-comment">// somewhere else in the code base</span>
-
-Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
-
-</code></pre>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <div>
-              <panel header=":lock: Draw Car object">
-                <question>
-                  <p>Draw a UML diagram to represent the Car object created by the following code.</p>
-                  <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-    
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
-    
-    Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){
-        ...
-    }
-}
-
-<span class="hljs-comment">// somewhere else in the code base</span>
-
-Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
-
-</code></pre>
                 </question>
               </panel>
             </div>
@@ -994,10 +769,12 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
       </panel>
     </div>
     <div>
-      <panel type="danger" header=":trophy: Can implement basic class structures :star:" expandable="" expanded="" no-close="">
-        <panel type="danger" header=":trophy: Can explain/identify class diagrams :star:" expandable="">
+      <panel type="danger" header="**`W4.3` Can implement basic class structures** :star:" no-close="">
+        <panel type="danger" header="`W4.3a` Can explain/identify class diagrams :star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Introduction →
 </span></strong>
               </span>
             </p>
@@ -1006,19 +783,23 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
             </div>
             <div id="main">
               <div>
-                <p>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution. These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
-                <p>{Give some example class diagrams here}</p>
+                <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
+                <tip-box>
+                  <p>📦 An example class diagram:</p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
               </div>
               <div></div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can use basic-level class diagrams :star:" expandable="">
+        <panel type="danger" header="`W4.3b` Can use basic-level class diagrams :star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Design → Modeling →
+            <div>
+              <p>
+                <panel src="/website\book\oopDesign\classes\basic\full._include_.html" header=":mortar_board: %%Design &rarr; OOP &rarr; Classes &rarr; Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
 </span></strong>
               </span>
             </p>
@@ -1027,148 +808,20 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
             </div>
             <div id="main">
               <div>
-                <p>Class diagrams model class structures in OOP solutions.</p>
                 <p>
-                  <panel src="/website\book\oopDesign\classes\basic\embed._include_.html" header="OOP: Classes: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\oopDesign\inheritance\basic\embed._include_.html" header="OOP: Inheritance: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: Design &rarr; OOP &rarr; Associations &rarr; Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: Design :&rarr; OOP &rarr; Associations &rarr; Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: Design &rarr; OOP &rarr; Associations &rarr; Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
                 </p>
-              </div>
-              <div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can explain associations :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="basic-one-3">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
-                <p>
-                  <panel src="/website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-                <p></p>
-                <tip-box>
-                  <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120">
-                  <p></p>
-                </tip-box>
-                <p>These object structures can change over time.</p>
-                <tip-box>
-                  <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100"><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100">
-                  <p></p>
-                </tip-box>
-                <p>These associations can be reflected among classes too.</p>
-                <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\basic\embed._include_.html" header="UML: Class Diagrams: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\uml\classDiagrams\associations\labels\embed._include_.html" header="UML: Class Diagrams: Associations: Labels" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\uml\classDiagrams\associations\roles\embed._include_.html" header="UML: Class Diagrams: Associations: Roles" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-                <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
-                <p></p>
-              </div>
-              <div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can interpret simple associations in a class diagram :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="basic-one-4">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>We use a solid line to show an association between two classes.</p><img src="/website/book/uml/classDiagrams/associations/basic/images/basic.png" height="200">
-                <p></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can interpret association navigabilities in class diagrams :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="navigability-two">Navigability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>We use arrow heads to indication the navigability of an association.</p>
-                <tip-box><img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
-                  <p></p>
-                  <p><code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can explain the meaning of navigability :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="navigability-one">Navigability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called <em>navigability</em>.</p>
-                <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\navigability\embed._include_.html" header="UML: Class Diagrams: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-                <p></p>
               </div>
               <div>
                 <div>
                   <panel header=":muscle: Exercises" expandable="">
                     <div>
-                      <panel header=":lock::key: What does the navigability given by this diagram mean?">
-                        <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
+                      <panel header=":lock: Explain Class Diagram">
+                        <question>
+                          <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
                           <p></p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
-                          </ul>
-                          <div slot="answer">
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
-                            </ul>
-                            <p>Explanation: The diagram indicates that Unit item should know about the Item object. In the implementation, the Unit object will hold a Unit object in one of its variables.</p>
-                          </div>
                         </question>
                       </panel>
                     </div>
@@ -1179,162 +832,26 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
             </div>
           </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can explain/use association roles in class diagrams :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
             <div>
-              <h4 id="roles-two">Roles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>‘Role’ labels are optionally used to indicate the role played by the classes in the association.</p>
-                <tip-box>
-                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associations/roles/images/husbandWife.png" height="70">
+              <panel header=":lock: Explain Class Diagram">
+                <question>
+                  <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
                   <p></p>
-                  <p>This association represents a marriage between a Man object and a Woman object. The respective roles played by objects of these two classes are husband and wife.</p>
-                </tip-box>
-                <tip-box>
-                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
-                  <p></p>
-                </tip-box><img src="/website/book/uml/classDiagrams/associations/roles/images/association.png" height="120">
-                <p></p>
-              </div>
-              <div></div>
+                </question>
+              </panel>
             </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
           </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can explain/use association labels in class diagrams :star:" expandable="">
+        <panel type="danger" header="`W4.3c` Can implement associations :star:" expandable="">
           <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
             <div>
-              <h4 id="labels-two">Labels <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              <p>
+                <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Multiplicity%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Navigability%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
             </div>
-            <div id="main">
-              <div>
-                <p><em>Association labels</em> describe the association. The arrow head indicates the “direction” in which the label is to be read.</p>
-                <tip-box>
-                  <p>Example:</p><img src="/website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" height="70">
-                  <p></p>
-                  <p>an Admin object uses Student objects” or “Student objects are used by an Admin object”.</p>
-                </tip-box><img src="/website/book/uml/classDiagrams/associations/labels/images/association.png" height="70">
-                <p></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can explain what is the multiplicity of an association :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="multiplicity-two">Multiplicity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>A class diagram can also indicate the <em>multiplicity</em> of an association. Multiplicity is the number of objects of a class that participate in the association.</p>
-                <p>Commonly used multiplicities:</p>
-                <ul>
-                  <li>0..1 : optional, can be linked to 0 or 1 objects</li>
-                  <li>1 : compulsory, must be linked to one object at all times.</li>
-                  <li>
-                    <ul>
-                      <li>: can be linked to 0 or more objects.</li>
-                    </ul>
-                  </li>
-                  <li>n..m : the number of linked objects must be n to m inclusive</li>
-                </ul>
-                <tip-box>
-                  <p>In the diagram below, an Admin object administers (in charge of) any number of students but a Student object must always be under the charge of exactly one Admin object</p><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png"
-                    height="100">
-                  <p></p>
-                  <p>Example:</p>
-                  <ul>
-                    <li>Each Student must be supervised by a Professor.</li>
-                    <li>Students have matriculation numbers. A Professor cannot supervise more than 5 students.</li>
-                    <li>Admin staff handles Professors as well.</li>
-                  </ul><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70">
-                  <p></p>
-                </tip-box><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/association.png" height="120">
-                <p></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can explain the meaning of multiplicity :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="multiplicity-two-2">Multiplicity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called <em>multiplicity</em>.</p>
-                <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\multiplicity\embed._include_.html" header="UML: Class Diagrams: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-                <p></p>
-              </div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
-                        <question><img src="/website/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
-                          <p></p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
-                          </ul>
-                          <div slot="answer">
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
-                            </ul>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can implement associations :star:" expandable="">
-          <div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
 </span></strong>
               </span>
@@ -1344,15 +861,10 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
             </div>
             <div id="main">
               <div>
-                <p>
-                  <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="OOP: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                  <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
                 <p></p>
-                <p>We use instance level variables to implement associations.</p>
-                <tip-box>
-                  <p>Example:</p><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+                <p><strong>We use instance level variables to implement associations.</strong></p>
+                <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+                <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
                   <p></p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Minefield minefield;
@@ -1363,15 +875,18 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
     ...
 }
 </code></pre>
-                  <p>A normal instance-level variable gives us a 0..1 multiplicity (also called <em>optional associations</em>) because a variable can hold a reference to a single object or null.</p><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png"
-                    height="40">
+                </tip-box>
+                <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+                <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
                   <p></p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    ConfigGenerator cg;
+    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
     ...
 }
 </code></pre>
-                  <p>A variable can be used to implement a 1-multiplicity too (also called <em>compulsory associations</em>).</p><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+                </tip-box>
+                <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+                <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
                   <p></p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
@@ -1383,8 +898,9 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
     ...
 }
 </code></pre>
-                  <p>Bi-directional associations require matching variables in both classes.</p>
-                  <p>To implement other multiplicities, choose a suitable data structure such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+                </tip-box>
+                <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+                <tip-box>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     Cell[][] cell;
     ...
@@ -1393,12 +909,31 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
                 </tip-box>
               </div>
               <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock: Implement Class Diagram">
+                        <question>
+                          <p>Implement the class structure given below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                          <p></p>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
                 <div></div>
               </div>
             </div>
           </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
+            <div>
+              <panel header=":lock: Implement Class Diagram">
+                <question>
+                  <p>Implement the class structure given below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                </question>
+              </panel>
+            </div>
           </panel>
         </panel>
       </panel>
@@ -1614,7 +1149,7 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
               </span>
             </p>
             <div>
-              <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
             </div>
             <div id="main">
               <div>
@@ -1776,7 +1311,7 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
               </span>
             </p>
             <div>
-              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
             </div>
             <div id="main">
               <div>

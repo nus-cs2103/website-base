@@ -144,7 +144,7 @@
         </tip-box>
         <p><strong>Objects interact by sending messages.</strong></p>
         <p>Both real world and virtual world object interactions can be viewed as objects sending message to each other. The message can result in the sender object receiving a response and/or the receiving object’s state being changed. Furthermore, the
-          result can vary based on which object received the message, even if the message is identical.</p>
+          result can vary based on which object received the message, even if the message is identical <span class="dimmed">(see rows 1 and 2 in the example below)</span>.</p>
         <tip-box>
           <p>Examples:</p>
           <table class="markbind-table table">
@@ -169,9 +169,9 @@
               </tr>
               <tr>
                 <td style="text-align:center">Real</td>
-                <td style="text-align:center">Same</td>
+                <td style="text-align:center"><sub>as above</sub></td>
                 <td style="text-align:center">Beth</td>
-                <td style="text-align:center">Same</td>
+                <td style="text-align:center"><sub>as above</sub></td>
                 <td style="text-align:center">&quot;Beth&quot;</td>
                 <td style="text-align:center">-</td>
               </tr>
@@ -343,27 +343,33 @@
         </div>
       </tip-box>
       <div>
-        <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
+        <p><strong>Connections between objects are called <em>associations</em>.</strong> Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
         <p>
-          <panel src="/website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\objectDiagrams\objectStructures\full._include_.html" header=":mortar_board: UML &rarr; Object Diagrams &rarr; Object Structures" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120">
-          <p></p>
-        </tip-box>
-        <p>These object structures can change over time.</p>
+          <p>📦 An object diagram example showing associations among objects. <span class="dimmed">For example, there is an association between the <code>AgeList</code> object and the <code>Main</code> object.</span></p><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png"
+            height="120"></tip-box>
+        <p><strong>Object structures can change over time</strong>.</p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100"><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100">
+          <p>📦 In this example, the object structure has changed <span class="dimmed">(from left to right) due to a new <code>Person</code> object being added and connected to the <code>Main</code> object.</span></p>
+          <p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100">   →
+            <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100"></p>
+        </tip-box>
+        <p><strong>Associations can be reflected among classes too.</strong></p>
+        <p>
+          <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <tip-box>
+          <p>📦 An example class diagram showing associations between classes.</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
           <p></p>
         </tip-box>
-        <p>These associations can be reflected among classes too.</p>
+        <p><strong>An association in a class diagram can use <em>association labels</em> and <em>association roles</em> to show additional info.</strong></p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\associations\basic\embed._include_.html" header="UML: Class Diagrams: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          <panel src="/website\book\uml\classDiagrams\associations\labels\embed._include_.html" header="UML: Class Diagrams: Associations: Labels" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          <panel src="/website\book\uml\classDiagrams\associations\roles\embed._include_.html" header="UML: Class Diagrams: Associations: Roles" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Labels" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Roles" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
-        <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
         <p></p>
       </div>
     </div>
@@ -377,9 +383,9 @@
         </div>
       </tip-box>
       <div>
-        <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called <em>navigability</em>.</p>
+        <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\associations\navigability\embed._include_.html" header="UML: Class Diagrams: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Navigability" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
       </div>
@@ -394,9 +400,11 @@
         </div>
       </tip-box>
       <div>
-        <p>Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called <em>multiplicity</em>.</p>
+        <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
+        <tip-box>
+          <p>📦 This class diagram does not tell us multiplicities. For exaple, how many <code>Calculator</code> objects can be associated with one <code>Main</code> object? How many <code>Main</code> objects can be associated with one <code>Calculator</code>            object? and so on.</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
         <p>
-          <panel src="/website\book\uml\classDiagrams\associations\multiplicity\embed._include_.html" header="UML: Class Diagrams: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Multiplicity" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
       </div>

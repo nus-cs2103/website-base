@@ -218,7 +218,7 @@
               </tip-box>
               <p><strong>Objects interact by sending messages.</strong></p>
               <p>Both real world and virtual world object interactions can be viewed as objects sending message to each other. The message can result in the sender object receiving a response and/or the receiving object’s state being changed. Furthermore,
-                the result can vary based on which object received the message, even if the message is identical.</p>
+                the result can vary based on which object received the message, even if the message is identical <span class="dimmed">(see rows 1 and 2 in the example below)</span>.</p>
               <tip-box>
                 <p>Examples:</p>
                 <table class="markbind-table table">
@@ -243,9 +243,9 @@
                     </tr>
                     <tr>
                       <td style="text-align:center">Real</td>
-                      <td style="text-align:center">Same</td>
+                      <td style="text-align:center"><sub>as above</sub></td>
                       <td style="text-align:center">Beth</td>
-                      <td style="text-align:center">Same</td>
+                      <td style="text-align:center"><sub>as above</sub></td>
                       <td style="text-align:center">&quot;Beth&quot;</td>
                       <td style="text-align:center">-</td>
                     </tr>
@@ -582,27 +582,33 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
+              <p><strong>Connections between objects are called <em>associations</em>.</strong> Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called <em>associations</em>.</p>
               <p>
-                <panel src="/website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\objectDiagrams\objectStructures\full._include_.html" header=":mortar_board: UML &rarr; Object Diagrams &rarr; Object Structures" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
               <p></p>
               <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120">
-                <p></p>
-              </tip-box>
-              <p>These object structures can change over time.</p>
+                <p>📦 An object diagram example showing associations among objects. <span class="dimmed">For example, there is an association between the <code>AgeList</code> object and the <code>Main</code> object.</span></p><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png"
+                  height="120"></tip-box>
+              <p><strong>Object structures can change over time</strong>.</p>
               <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100"><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100">
+                <p>📦 In this example, the object structure has changed <span class="dimmed">(from left to right) due to a new <code>Person</code> object being added and connected to the <code>Main</code> object.</span></p>
+                <p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100">   →
+                  <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100"></p>
+              </tip-box>
+              <p><strong>Associations can be reflected among classes too.</strong></p>
+              <p>
+                <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+              <tip-box>
+                <p>📦 An example class diagram showing associations between classes.</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
                 <p></p>
               </tip-box>
-              <p>These associations can be reflected among classes too.</p>
+              <p><strong>An association in a class diagram can use <em>association labels</em> and <em>association roles</em> to show additional info.</strong></p>
               <p>
-                <panel src="/website\book\uml\classDiagrams\associations\basic\embed._include_.html" header="UML: Class Diagrams: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\uml\classDiagrams\associations\labels\embed._include_.html" header="UML: Class Diagrams: Associations: Labels" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\uml\classDiagrams\associations\roles\embed._include_.html" header="UML: Class Diagrams: Associations: Roles" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Labels" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Roles" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
-              <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
               <p></p>
             </div>
             <div>
@@ -623,9 +629,9 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called <em>navigability</em>.</p>
+              <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
               <p>
-                <panel src="/website\book\uml\classDiagrams\associations\navigability\embed._include_.html" header="UML: Class Diagrams: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Navigability" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
               <p></p>
             </div>
@@ -636,18 +642,14 @@
                     <panel header=":lock::key: What does the navigability given by this diagram mean?">
                       <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                         <p></p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                        <ul radio-group="pwi0d" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="pwi0d" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="pwi0d" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="pwi0d" type="radio"> c. Depends on the programming language</label></li>
                         </ul>
                         <div slot="answer">
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
-                          </ul>
-                          <p>Explanation: The diagram indicates that Unit item should know about the Item object. In the implementation, the Unit object will hold a Unit object in one of its variables.</p>
+                          <p>(a)</p>
+                          <p>Explanation: The diagram indicates that <code>Unit</code> item should know about the <code>Item</code> object. In the implementation, the <code>Unit</code> object will hold a <code>Unit</code> object in one of its variables.</p>
                         </div>
                       </question>
                     </panel>
@@ -671,9 +673,11 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called <em>multiplicity</em>.</p>
+              <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
+              <tip-box>
+                <p>📦 This class diagram does not tell us multiplicities. For exaple, how many <code>Calculator</code> objects can be associated with one <code>Main</code> object? How many <code>Main</code> objects can be associated with one <code>Calculator</code>                  object? and so on.</p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
               <p>
-                <panel src="/website\book\uml\classDiagrams\associations\multiplicity\embed._include_.html" header="UML: Class Diagrams: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Multiplicity" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
               <p></p>
             </div>
@@ -685,18 +689,13 @@
                       <question><img src="/website/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
                         <p></p>
                         <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An <code>Item</code> object must be linked 1,2,3 or 4 <code>Unit</code> objects.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
                         </ul>
                         <div slot="answer">
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
-                          </ul>
+                          <p>(c)(d)</p>
                         </div>
                       </question>
                     </panel>
@@ -1622,15 +1621,15 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       In the context of OOP, what is the relationship between abstraction and encapsulation?
-                      <ul radio-group="q970s" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="q970s" type="radio"> a. They are the same thing</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="q970s" type="radio"> b. They are opposites</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="q970s" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="q970s" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      <ul radio-group="sxruw" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="sxruw" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="sxruw" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="sxruw" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="sxruw" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="42rvf" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="42rvf" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <ul radio-group="599so" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="599so" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                         </ul>
                         <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
                           in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
@@ -1651,16 +1650,16 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       Which of these do not belong to four main OO principles?
-                      <ul radio-group="ojl3n" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ojl3n" type="radio"> a. Abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ojl3n" type="radio"> b. Encapsulation</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ojl3n" type="radio"> c. Inheritance</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ojl3n" type="radio"> d. Substitutability</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ojl3n" type="radio"> e. Polymorphism</label></li>
+                      <ul radio-group="d2de6" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2de6" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2de6" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2de6" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2de6" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2de6" type="radio"> e. Polymorphism</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="34cb4" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="34cb4" type="radio"> d. Substitutability</label></li>
+                        <ul radio-group="clg81" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="clg81" type="radio"> d. Substitutability</label></li>
                         </ul>
                       </div>
                     </question>

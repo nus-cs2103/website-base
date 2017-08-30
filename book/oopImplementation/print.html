@@ -48,15 +48,10 @@
         </div>
       </tip-box>
       <div>
-        <p>
-          <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="OOP: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
         <p></p>
-        <p>We use instance level variables to implement associations.</p>
-        <tip-box>
-          <p>Example:</p><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+        <p><strong>We use instance level variables to implement associations.</strong></p>
+        <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Minefield minefield;
@@ -67,15 +62,18 @@
     ...
 }
 </code></pre>
-          <p>A normal instance-level variable gives us a 0..1 multiplicity (also called <em>optional associations</em>) because a variable can hold a reference to a single object or null.</p><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png"
-            height="40">
+        </tip-box>
+        <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    ConfigGenerator cg;
+    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
     ...
 }
 </code></pre>
-          <p>A variable can be used to implement a 1-multiplicity too (also called <em>compulsory associations</em>).</p><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+        </tip-box>
+        <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
@@ -87,8 +85,9 @@
     ...
 }
 </code></pre>
-          <p>Bi-directional associations require matching variables in both classes.</p>
-          <p>To implement other multiplicities, choose a suitable data structure such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+        </tip-box>
+        <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+        <tip-box>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     Cell[][] cell;
     ...

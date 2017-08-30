@@ -152,15 +152,25 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>Class diagrams model class structures in OOP solutions.</p>
               <p>
-                <panel src="/website\book\oopDesign\classes\basic\embed._include_.html" header="OOP: Classes: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="OOP: Associations: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="OOP: Associations: Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\inheritance\basic\embed._include_.html" header="OOP: Inheritance: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: Design &rarr; OOP &rarr; Associations &rarr; Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: Design :&rarr; OOP &rarr; Associations &rarr; Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: Design &rarr; OOP &rarr; Associations &rarr; Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock: Explain Class Diagram">
+                      <question>
+                        <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                        <p></p>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -316,7 +326,7 @@
                 <p>--Ian Sommerville, in the book ‘Software Engineering’</p>
               </blockquote>
               <p>Class diagrams can also be used to model objects in the problem domain (i.e. to model how objects actually interact in the real world, before emulating them in the solution). When used to model the problem domain, such class diagrams are
-                called <strong><em>conceptual class diagrams</em></strong> or <strong><em>OO domain models (OODMs).</em></strong></p>
+                called <em><strong>conceptual class diagrams</strong></em> or <em><strong>OO domain models (OODMs).</strong></em></p>
               <tip-box>
                 <p>Example: OO domain model of a snakes and ladders game is given below.</p>
                 <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the number
@@ -777,16 +787,16 @@
                     <p></p>
                     <question>
                       Choose the incorrect statement.
-                      <ul radio-group="26s11" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="26s11" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="26s11" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="26s11" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="26s11" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="26s11" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
+                      <ul radio-group="d2esk" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2esk" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2esk" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2esk" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2esk" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d2esk" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="u5xo3" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="u5xo3" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <ul radio-group="8tpc8" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="8tpc8" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
                         </ul>
                         <p>Explanation: A sequence diagram is a behavior diagram, not a structure diagram. An SD can represent how objects interact with each other (i.e., behavior), not how they are connected to each other (i.e. structure).</p>
                       </div>
@@ -805,16 +815,16 @@
                     <p></p>
                     <question>
                       Which one of these is the most useful to model a workflow?
-                      <ul radio-group="iedyh" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="iedyh" type="radio"> a. class diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="iedyh" type="radio"> b. object diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="iedyh" type="radio"> c. activity diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="iedyh" type="radio"> d. state machine diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="iedyh" type="radio"> e. use case diagram</label></li>
+                      <ul radio-group="05jtd" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="05jtd" type="radio"> a. class diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="05jtd" type="radio"> b. object diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="05jtd" type="radio"> c. activity diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="05jtd" type="radio"> d. state machine diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="05jtd" type="radio"> e. use case diagram</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="m9j4u" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="m9j4u" type="radio"> c. activity diagram</label></li>
+                        <ul radio-group="oyaxu" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="oyaxu" type="radio"> c. activity diagram</label></li>
                         </ul>
                       </div>
                     </question>
