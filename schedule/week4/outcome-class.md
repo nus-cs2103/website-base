@@ -30,7 +30,7 @@
   <include src="../../book/oopImplementation/classes/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+**Acceptable**: Any Java classes you have written.
 
   </panel>
 </panel>
