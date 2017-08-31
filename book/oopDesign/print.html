@@ -198,7 +198,7 @@
     </div>
     <div>
       <div>
-        <h4 id="objects-as-abstraction-two">Objects as Abstraction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="objects-as-abstractions-two">Objects as Abstractions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <tip-box>
         <div>
@@ -206,10 +206,11 @@
         </div>
       </tip-box>
       <div>
-        <p>The concept of Object in OOP is an abstraction mechanism because it allows us to abstract away the lower level details (i.e. data and the methods) and work with bigger granularity entities (i.e. objects).</p>
+        <p>The concept of <strong><em>Objects</em> in OOP is an abstraction mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details data formats and the method implementation
+          details and work at the level of objects.</p>
         <tip-box>
-          <p>Example:</p>
-          <p>We can deal with Adam object instead of details such as Adam’s date of birth (DoB), in what format the DoB is stored, the algorithm used to calculate the age from the DoB.</p>
+          <p>📦 We can deal with a <code>Person</code> object that represents the person Adam and query the object for Adam's age instead of dealing with details such as Adam’s date of birth (DoB), in what format the DoB is stored, the algorithm used to
+            calculate the age from the DoB, etc.</p>
         </tip-box>
       </div>
     </div>
@@ -224,14 +225,11 @@
       </tip-box>
       <div>
         <blockquote>
-          <p>Encapsulation protects an implementation from unintended actions and from inadvertent access. -</p>
-          <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+          <p>Encapsulation protects an implementation from unintended actions and from inadvertent access.<br><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple </sub></p>
         </blockquote>
-        <p>An object is an <em>encapsulation</em> some data and related functions. i.e.,</p>
-        <ol>
-          <li>It <em>packages</em> those data and related functions together into one self-contained unit.</li>
-          <li>The data is hidden from the outside world (we call this concept <em>information hiding</em>) and are only accessible using the interface.</li>
-        </ol>
+        <p><strong>An object is an <em>encapsulation</em> of some data and related behavior in two aspects:</strong></p>
+        <p><strong>1. The <em>packaging</em> aspect:</strong> An object packages data and related behavior together into one self-contained unit.</p>
+        <p><strong>2. The <em>information hiding</em> aspect:</strong> The data in an object is hidden from the outside world and are only accessible using the object's interface.</p>
       </div>
     </div>
     <h2 id="classes">Classes</h2>
@@ -320,15 +318,16 @@
         </div>
       </tip-box>
       <div>
-        <p>Enumerations are primarily a collection of values that can be considered a data type.</p>
+        <p><strong>An <em>Enumeration</em> is a fixed set of values that can be considered as a data type.</strong></p>
+        <p>An enumeration is often useful when using a regular data type such as <code>int</code> or <code>String</code> would allow invalid values to be assigned to a variable. <span class="dimmed">e.g. if a variable can only take values <code>0</code> and <code>1</code>, declaring it as an <code>int</code> would allow invalid values such as <code>2</code> to be assigned to it. But if you define an enumeration called <code>Binary</code> that has values <code>0</code> and <code>1</code> only, a variable of type <code>Binary</code> will never be assigned an invalid value such as <code>2</code> because the compiler is able to catch the error.</span></p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\enumerations\topicPanel._include_.html" header="UML: Class Diagrams: Enumerations" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\enumerations\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Enumerations" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopDesign/classes/enumerations/images/priority.png" height="100">
+          <p>📦 <code>Priority</code> can be considered an enumeration because it has only three values.</p>
+          <p><code>Priority</code>: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code></p><img src="/website/book/oopDesign/classes/enumerations/images/priority.png" height="100">
           <p></p>
-          <p>Priority: HIGH, MEDIUM, LOW</p>
         </tip-box>
       </div>
     </div>

@@ -202,7 +202,7 @@
     </div>
     <div>
       <div>
-        <h4 id="objects-as-abstraction-two">Objects as Abstraction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="objects-as-abstractions-two">Objects as Abstractions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <tip-box>
         <div>
@@ -212,10 +212,11 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>The concept of Object in OOP is an abstraction mechanism because it allows us to abstract away the lower level details (i.e. data and the methods) and work with bigger granularity entities (i.e. objects).</p>
+            <p>The concept of <strong><em>Objects</em> in OOP is an abstraction mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details data formats and the method implementation
+              details and work at the level of objects.</p>
             <tip-box>
-              <p>Example:</p>
-              <p>We can deal with Adam object instead of details such as Adam’s date of birth (DoB), in what format the DoB is stored, the algorithm used to calculate the age from the DoB.</p>
+              <p>📦 We can deal with a <code>Person</code> object that represents the person Adam and query the object for Adam's age instead of dealing with details such as Adam’s date of birth (DoB), in what format the DoB is stored, the algorithm used
+                to calculate the age from the DoB, etc.</p>
             </tip-box>
           </div>
           <div>
@@ -237,14 +238,11 @@
         <div>
           <div>
             <blockquote>
-              <p>Encapsulation protects an implementation from unintended actions and from inadvertent access. -</p>
-              <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+              <p>Encapsulation protects an implementation from unintended actions and from inadvertent access.<br><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple </sub></p>
             </blockquote>
-            <p>An object is an <em>encapsulation</em> some data and related functions. i.e.,</p>
-            <ol>
-              <li>It <em>packages</em> those data and related functions together into one self-contained unit.</li>
-              <li>The data is hidden from the outside world (we call this concept <em>information hiding</em>) and are only accessible using the interface.</li>
-            </ol>
+            <p><strong>An object is an <em>encapsulation</em> of some data and related behavior in two aspects:</strong></p>
+            <p><strong>1. The <em>packaging</em> aspect:</strong> An object packages data and related behavior together into one self-contained unit.</p>
+            <p><strong>2. The <em>information hiding</em> aspect:</strong> The data in an object is hidden from the outside world and are only accessible using the object's interface.</p>
           </div>
           <div>
             <div>
@@ -257,13 +255,13 @@
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
                       </ul>
+                      <div slot="hint">
+                        <p>Don't confuse encapsulation with abstraction_.</p>
+                      </div>
                       <div slot="answer">
                         <p>Choose the correct statement</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
-                        </ul>
-                        <p>Explanation: The second statement should be. An object is an <em>abstraction</em> because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</p>
+                        <p>(a)</p>
+                        <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong><s>encapsulation</s> because it lets ..._</p>
                       </div>
                     </question>
                   </panel>
