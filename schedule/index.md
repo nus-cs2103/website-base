@@ -4,10 +4,10 @@
 <include src="../common/header.md" />
 
 <div class="website-content">
-<include src="overview/index.html" name=":white_check_mark: Overview" dynamic />
 <panel header=":calendar: Tutorial Schedule" expandable no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
+<include src="overview/index.html" name=":white_check_mark: For all weeks" dynamic />
 <include src="week1/index.html" name=":white_check_mark: Week 1 [Aug 14]" dynamic />
 <include src="week2/index.html" name=":white_check_mark: Week 2 [Aug 21]" dynamic />
 <include src="week3/index.html" name=":exclamation: Week 3 [Aug 28]" dynamic />
