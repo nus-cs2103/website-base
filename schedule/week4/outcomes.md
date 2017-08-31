@@ -29,24 +29,14 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can explain the abstraction aspect of OOP :star::star::star:" expandable>
+<panel type="info" header="**`W4.6` Can explain the abstraction aspect of OOP** :star::star::star:" no-close>
   <include src="../../book/oopDesign/objects/abstraction/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can explain the encapsulation aspect of OOP :star::star::star:" expandable>
+<panel type="info" header="**`W4.7` Can explain the encapsulation aspect of OOP** :star::star::star:" no-close>
   <include src="../../book/oopDesign/objects/encapsulation/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
 </panel>
 
 <!-- ==================================================================================================== -->
