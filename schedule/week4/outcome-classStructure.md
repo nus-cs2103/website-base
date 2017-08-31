@@ -30,8 +30,4 @@
   </panel>
 </panel>
 
-<panel type="warning" header="`W4.e` Can distinguish between class diagrams and object diagrams :star::star:" expandable>
-  <include src="../../book/uml/miscellaneous/objectVsClassDiagrams/full.md" />
-</panel>
-
 </panel>

@@ -18,4 +18,13 @@
   </panel>
 </panel>
 
+<panel type="info" header=":trophy: Can use Java enumerations :star::star::star:" expandable>
+  <include src="../../book/javaTools/enums/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
 </panel>

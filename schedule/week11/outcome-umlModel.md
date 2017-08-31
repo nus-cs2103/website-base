@@ -1,5 +1,14 @@
 <panel type="success" header=":trophy: Can explain some UML models :star::star::star::star:" expandable expanded no-close>
 
+<panel type="info" header=":trophy: Can identify UML models :star::star::star:" expandable>
+  <include src="../../book/modeling/introduction/umlModels/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
 <panel type="success" header=":trophy: Can explain deployment diagrams :star::star::star::star:" expandable>
   <include src="../../book/modeling/modelingStructures/deploymentDiagrams/full.md" />
   <panel header=":dart: Evidence" expanded>

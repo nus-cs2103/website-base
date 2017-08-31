@@ -26,4 +26,13 @@
   </panel>
 </panel>
 
+<panel type="danger" header="`W4.2d` Can implement classes :star:" expandable>
+  <include src="../../book/oopImplementation/classes/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
 </panel>
