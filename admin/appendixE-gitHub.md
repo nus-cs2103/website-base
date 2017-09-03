@@ -21,7 +21,7 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 
 <div id="tutorial-pr-instructions">
 
-## Submitting Pull Requests for tutorials
+## Submitting Pull Requests as evidence of an LO
 
 1. Fork the repo to your personal GitHub account, if you haven't done so already.
 
