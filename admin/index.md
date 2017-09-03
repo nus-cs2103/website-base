@@ -218,7 +218,7 @@
 
 # Appendix E: Using GitHub Project Hosting
 <div id="admin-appendixE-github">
-<include src="appendixE-github.md" /></div>
+<include src="appendixE-gitHub.md" /></div>
 
 # Appendix F: Handling teamwork issues
 <div id="admin-appendixF-teamworkIssues">

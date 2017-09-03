@@ -13,7 +13,7 @@ Exchange students need to use the ORATUT system to register for the tutorials. Y
 
 <panel type="danger" header="Create a GitHub Account :star:" expandable> 
 
-<include type="danger" src="../../admin/appendixE-github.md#githubAccount"/>
+<include type="danger" src="../../admin/appendixE-gitHub.md#githubAccount"/>
 
 </panel>
 
