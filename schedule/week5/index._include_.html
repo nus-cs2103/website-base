@@ -1,8 +1,8 @@
 <panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
   <div>
     <div>
-      <panel type="danger" header=":trophy: Can follow Forking Workflow :star:" expandable="" expanded="" no-close="">
-        <panel type="danger" header=":trophy: Can explain forking workflow :star:" expandable="">
+      <panel type="danger" header="**`W5.1` Can follow Forking Workflow** :star:" no-close="">
+        <panel type="danger" header="`W5.1a` Can explain forking workflow :star:" expandable="">
           <div>
             <p><span class="dimmed"><strong><span>Project Management → Revision Control →
 </span></strong>
@@ -14,19 +14,79 @@
             <div id="main">
               <div><img src="/website/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
                 <p></p>
-                <p>The ‘official’ version of the software is kept in a remote repo designated as the ‘main repo’. All team members fork the main repo and clone it to their local computer.</p>
+                <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
                 <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
                 <ol>
-                  <li>Jean creates a separate branch in her local repo and fix the bug in that branch.</li>
+                  <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
                   <li>Jean pushes the branch to her fork.</li>
                   <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
                   <li>Other members review Jean’s pull request.</li>
                   <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
-                  <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated ‘maintainer’ of the main repo) merge the PR, which brings Jean’s code to the main repo.</li>
-                  <li>Other members, realizing there is new code in the upstream repo, syncs their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own
+                  <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                  <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own
                     fork.</li>
-                  <li>Ravi clones Adam’s remote repo to his computer. As a result, Ravi now has a local repo with Adam’s code in it.</li>
                 </ol>
+              </div>
+              <div>
+                <div>
+                  <panel header=":paperclip: Resources" expanded="">
+                    <ul>
+                      <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                    </ul>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="warning" header="`W5.1b` Can follow Forking Workflow :star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\revisionControl\forkingWorkflow\full._include_.html" header="%%:mortar_board: Revision Control &rarr; Forking Workflow%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="forking-workflow-four">Forking Workflow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p></p>
+                <ol>
+                  <li><strong>Create a GitHub organization</strong> for your team. We'll refer to this organization as <em>team org</em> from now on.</li>
+                  <li><strong>One member: Fork <a href="https://github.com/se-edu/samplerepo-workflow-practice">se-edu/samplerepo-workflow-practice</a> to your team org</strong>.</li>
+                  <li><strong>Each team member: Fork that repo</strong> from your team org to your own GitHub account.</li>
+                  <li><strong>Each team member: Create a PR</strong> to add a file <code>yourName.md</code><span class="dimmed"> (e.g. <code>jonhDoe.md</code>) </span> containing a brief resume of yourself.</li>
+                  <li><strong>For each PR: review, update, and merge.</strong> i.e. for each PR</li>
+                </ol>
+                <ul>
+                  <li>A team member (not the PR author): Review the PR by adding comments (can be just dummy comments).</li>
+                  <li>PR author: Update the PR by pushing more commits to it, to simulate updating the PR based on review comments.</li>
+                  <li>Another team member: Merge the PR using the GitHub interface.</li>
+                  <li>All members: Sync fork with upstream changes.</li>
+                </ul>
+                <ol start="6">
+                  <li><strong>Create conflicting PRs.</strong></li>
+                </ol>
+                <ul>
+                  <li>Each team member: Create a PR to add yourself under the <code>Team Members</code> section in the <code>README.md</code>.</li>
+                  <li>One member: in the <code>master</code> branch, remove John Doe and Jane Doe from the <code>README.md</code>, commit, and push to the main repo.</li>
+                </ul>
+                <ol start="7">
+                  <li><strong>Merge PRs one at a time.</strong> Before merging a PR, you’ll have to resolve conflicts. Steps:</li>
+                </ol>
+                <ul>
+                  <li>[Optional] A member can inform the PR author (by posting a comment) that there is a conflict in the PR.</li>
+                  <li>PR author: Pull the <code>master</code> branch from the repo in your team org. Merge the pulled <code>master</code> branch to your PR branch. Resolve the merge conflict that crops up during the merge. Push the updated PR branch to your
+                    fork.</li>
+                  <li>Another member or the PR author: When GitHub does not indicate a conflict anymore, you can go ahead and merge the PR.</li>
+                </ul>
               </div>
               <div>
                 <div></div>
@@ -34,11 +94,15 @@
             </div>
           </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
+            <p><strong>Acceptable</strong>: Evidence of following the forking workflow <mark>with the current team members</mark> using <em>any</em> repo.</p>
+            <p><strong>Suggested</strong>: Evidence of following the steps in the LO with current team members.</p>
+            <p><strong>Submission</strong>: Show during the tutorial.</p>
           </panel>
         </panel>
-        <panel type="success" header=":trophy: Can explain DRCS vs CRCS :star::star::star::star:" expandable="">
+        <panel type="success" header="`W5.1c` Can explain DRCS vs CRCS :star::star::star::star:">
           <div>
+            <div></div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Project Management → Revision Control →
 </span></strong>
               </span>
@@ -48,27 +112,30 @@
             </div>
             <div id="main">
               <div>
-                <p>There are two models that can be followed when using an RCS in a team setting: the <em>centralized</em> model and the <em>distributed</em> model.</p>
-                <p><strong>Centralized RCS</strong> (CRCS for short): In this model, there is a central remote repo shared by the team. Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository.
-                  Older RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo. Instead, they force users to do all the versioning with the remote repo.</p>
+                <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
+                <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS
+                  tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
                 <pic src="/website/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png"
                   height="180"><strong>The centralized RCS approach without any local repos (e.g., CVS, SVN)</strong></pic>
-                <p>Distributed RCS (DRCS for short, also known as Decentralized RCS): In this model, there can be multiple remote repos and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team.
-                  For example, every team member can have his/her own remote repository in addition to their own local repository, as shown in below. Git and Mercurial are some prominent RCS tools that support distributed RCS.</p>
-                <pic src="/website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png"
-                  height="240"><strong>The decentralized RCS approach</strong></pic>
+                <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For
+                  example, every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
+                <pic
+                  src="/website/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" height="240"><strong>The decentralized RCS approach</strong></pic>
               </div>
               <div>
                 <div></div>
               </div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
-        <panel type="success" header=":trophy: Can explain feature branch flow :star::star::star::star:" expandable="">
+        <panel type="success" header="`W5.1d` Can explain feature branch flow :star::star::star::star:">
           <div>
+            <div>
+              <p>
+                <panel src="/website\book\revisionControl\forkingWorkflow\full._include_.html" header="%%:mortar_board: Revision Conntrol &rarr; Forking Workflow%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Project Management → Revision Control →
 </span></strong>
               </span>
@@ -78,21 +145,31 @@
             </div>
             <div id="main">
               <div>
-                <p>This is similar to forking workflow except there are no forks or PRs. Everyone is pushing/pulling from the same remote repo.</p><img src="/website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+                <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks or PRs.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature
+                  (or bub fix, or any other modification) is done in a separate branch.</p><img src="/website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
                 <p></p>
-                <p>More info: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow</a></p>
               </div>
               <div>
+                <div>
+                  <panel header=":paperclip: Resources" expanded="">
+                    <ul>
+                      <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
+                    </ul>
+                  </panel>
+                </div>
                 <div></div>
               </div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
-        <panel type="success" header=":trophy: Can explain centralised flow :star::star::star::star:" expandable="">
+        <panel type="success" header="`W5.1e` Can explain centralised flow :star::star::star::star:">
           <div>
+            <div>
+              <p>
+                <panel src="/website\book\revisionControl\featureBranchFlow\full._include_.html" header="%%:mortar_board: Revision Conntrol &rarr; Feature Branch Workflow%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Project Management → Revision Control →
 </span></strong>
               </span>
@@ -102,24 +179,29 @@
             </div>
             <div id="main">
               <div>
-                <p>This is similar to the feature branch workflow except all changes are done in the master branch.</p>
-                <p>More info: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow</a></p>
+                <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the master branch.</strong></p>
               </div>
               <div>
+                <div>
+                  <panel header=":paperclip: Resources" expanded="">
+                    <ul>
+                      <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
+                    </ul>
+                  </panel>
+                </div>
                 <div></div>
               </div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
       </panel>
     </div>
     <div>
-      <panel type="danger" header=":trophy: Can use simple JUnit tests :star:" expandable="" expanded="" no-close="">
-        <panel type="warning" header=":trophy: Can explain developer testing :star::star:" expandable="">
+      <panel type="danger" header="**`W5.2` Can use simple JUnit tests** :star:" no-close="">
+        <panel type="warning" header="`W5.2a` Can explain developer testing :star::star:">
           <div>
+            <div></div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
 </span></strong>
               </span>
@@ -129,18 +211,16 @@
             </div>
             <div id="main">
               <div>
-                <p>Developer testing is the testing done by the developers themselves as opposed to professional testers or end users.</p>
-                <p>Examples of developer testing: unit testing, integration testing</p>
+                <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
               </div>
               <div></div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
-        <panel type="warning" header=":trophy: Can explain the need for early developer testing :star::star:" expandable="">
+        <panel type="warning" header="`W5.2b` Can explain the need for early developer testing :star::star:">
           <div>
+            <div></div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
 </span></strong>
               </span>
@@ -150,71 +230,65 @@
             </div>
             <div id="main">
               <div>
-                <p>At first it might seem logical to have the system built in its entirety first and then getting it tested by professional testers. Here are the downsides of that approach.</p>
+                <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
                 <ul>
-                  <li>Locating the cause of such a test case failure is difficult due to a large search space; in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be due to multiple
-                    inter-related bugs.</li>
-                  <li>Fixing a bug found during such testing could result in major rework, especially if the bug originated during the design or during requirements specification (i.e. a faulty design or faulty requirements).</li>
-                  <li>One bug might 'hide' other bugs, which could emerge only after the first bug is fixed.</li>
-                  <li>Too many bugs found during system testing can lead to delivery delays.</li>
+                  <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also
+                    be due to multiple inter-related bugs.</li>
+                  <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification (i.e. a faulty design or faulty requirements).</li>
+                  <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
+                  <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
                 </ul>
-                <p>Due to the above reasons, it is better to do early developers testing. In fact, there is a widely accepted rule of thumb that says <em>the earlier a bug is found, the easier and cheaper to have it fixed</em>, as illustrated by the graph
-                  below.</p><img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+                <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
+                <blockquote>
+                  <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
+                </blockquote><img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
                 <p></p>
+                <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
               </div>
               <div>
                 <div>
                   <panel header=":muscle: Exercises" expandable="">
                     <div>
-                      <panel header=":lock::key: Discuss advantages and disadvantages of developers testing their own code.">
+                      <panel header=":lock::key: implications of developers testing their own code">
                         <question has-input="true">
-                          <p>Discuss advantages and disadvantages of developers testing their own code.</p>
+                          <p>Discuss pros and cons of developers testing their own code.</p>
                           <div slot="answer">
-                            <p>Advantages:</p>
+                            <p>Pros:</p>
                             <ul>
                               <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
                               <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
-                              <li>It is possible to do more thorough testing since developers know the expected external behavior as well as the internal structure of the component.</li>
-                              <li>It forces developers to take responsibility for their own work (they cannot claim that “testing is the job of the testers”).</li>
+                              <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
+                              <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
                             </ul>
-                            <p>Disadvantages:</p>
+                            <p>Cons:</p>
                             <ul>
-                              <li>Developer may unconsciously test only situations that he knows to work (i.e. test it too “gently”).</li>
-                              <li>Developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, he is likely to miss it again during testing).</li>
-                              <li>Developer may have misunderstood what the SUT is supposed to do in the first place.</li>
-                              <li>Developer may lack the testing expertise.</li>
+                              <li>A developer may unconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
+                              <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
+                              <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
+                              <li>A developer may lack the testing expertise.</li>
                             </ul>
                           </div>
                         </question>
                       </panel>
                     </div>
                     <div>
-                      <panel header=":lock::key: True or False?">
+                      <panel header=":lock::key: Cost of bug fixing over time">
                         <question>
-                          <p>A) The cost of fixing a bug goes down as we reach the product release.</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                          </ul>
-                          <p>B) Developers should pass their code to testers for unit testing as soon as the implementation is done.</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          <p>The cost of fixing a bug goes down as we reach the product release.</p>
+                          <ul radio-group="jkcqn" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="jkcqn" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="jkcqn" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
-                            <p>A) The cost of fixing a bug goes down as we reach the product release.</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
-                            </ul>
-                            <p>Explanation: No, the cost goes up over time.</p>
-                            <p>B) Developers should pass their code to testers for unit testing as soon as the implementation is done.</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
-                            </ul>
-                            <p>Explanation: Unit testing is a type of ‘developer testing’. It is not done by testers.</p>
+                            <p>False. The cost goes up over time.</p>
                           </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock: Why early testing?">
+                        <question has-input="true">
+                          <p>Explain why early testing by developers is important.</p>
                         </question>
                       </panel>
                     </div>
@@ -224,11 +298,19 @@
             </div>
           </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
+            <div>
+              <panel header=":lock: Why early testing?">
+                <question has-input="true">
+                  <p>Explain why early testing by developers is important.</p>
+                </question>
+              </panel>
+            </div>
           </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can explain test drivers :star:" expandable="">
+        <panel type="danger" header="`W5.2c` Can explain test drivers :star:">
           <div>
+            <div></div>
+            <p></p>
             <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
 </span></strong>
               </span>
@@ -238,30 +320,10 @@
             </div>
             <div id="main">
               <div>
-                <p>Automated testing requires test drivers. A test driver is a module written specifically for ‘driving’ the <em>SUT (Software Under Test)</em> for the purpose of testing i.e. invoking the SUT with test inputs and verifying the behavior is
-                  as expected. In the code example given below, <code>PayrollTest</code> is a test driver for the <code>Payroll</code> class that ‘drives’ the <code>PayRoll</code> class by sending it test inputs and printing out the output. However, it
-                  does not verify if the output is as expected.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-comment">//test setup</span>
-        Payroll p = <span class="hljs-keyword">new</span> Payroll();
-
-        <span class="hljs-comment">//test case 1</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-        print(<span class="hljs-string">"Test 1 output "</span> + p.totalSalary());
-
-        <span class="hljs-comment">//test case 2</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-        print(<span class="hljs-string">"Test 2 output "</span> + p.totalSalary());
-
-        <span class="hljs-comment">//more tests</span>
-        System.out.println(<span class="hljs-string">"Testing completed"</span>);
-    }
-    ...
-}
-</code></pre>
-                <p>The <code>PayrollTest</code> class below not only drives the SUT Payroll class using test inputs, it also automatically verifies that output for each test input in as expected.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestAtd</span> </span>{
+                <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+                <tip-box>
+                  <p>📦 <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
 
         <span class="hljs-comment">//test setup</span>
@@ -286,17 +348,15 @@
     }
 }
 </code></pre>
+                </tip-box>
               </div>
               <div>
                 <div></div>
               </div>
             </div>
           </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
         </panel>
-        <panel type="danger" header=":trophy: Can explain test automation tools :star:" expandable="">
+        <panel type="danger" header="`W5.2d` Can explain test automation tools :star:">
           <div>
             <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
 </span></strong>
@@ -307,9 +367,10 @@
             </div>
             <div id="main">
               <div>
-                <p>JUnit is a tool for automated testing of Java programs. Similar tools are available for other languages.</p>
-                <p>Below is the code of an automated test for Payroll class, written using JUnit libraries.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
+                <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
+                <tip-box>
+                  <p>📦 This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
@@ -327,8 +388,8 @@
     }
 }
 </code></pre>
-                <p>Most modern IDEs come packaged with integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p><img src="/website/book/testing/testAutomation/tools/images/junit.png"
-                  height="190">
+                </tip-box>
+                <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p><img src="/website/book/testing/testAutomation/tools/images/junit.png" height="190">
                 <p></p>
               </div>
               <div>
@@ -336,8 +397,47 @@
               </div>
             </div>
           </div>
+        </panel>
+        <panel type="danger" header="`W5.2e` Can use simple JUnit tests :star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → JUnit →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="junit-basic-two">JUnit: Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <div v-closeable="" alt="Junit tutorial video">
+                  <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <panel header=":paperclip: Resources" expanded="">
+                    <ul>
+                      <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
+                      <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
+                      <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                        ]</li>
+                    </ul>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
           <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
+            <p><strong>Acceptable</strong>: Evidence of having written JUnit tests in some project.</p>
+            <p><strong>Suggested</strong>: Do the exercise in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit">Addressbook-Level2: LO-JUnit</a></p>
+            <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a></p>
+            <p>
+              <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"
+                header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
           </panel>
         </panel>
       </panel>
