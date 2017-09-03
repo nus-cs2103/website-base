@@ -36,7 +36,8 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
    <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
    PR name should be: `[LO_ID][TEAM_ID]Your Name`  
-   e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), `[W2.2b][W09-A1]James Yong`  
+   e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), `[W2.2b][W09-A1]James Yong`. 
+   Your Team ID can be found in [this page](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). 
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
    
 <panel header="%%Schedule &raquo; Tutorial Schedule%%">
