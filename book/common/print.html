@@ -1760,53 +1760,55 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
       <h2 id="inheritance">Inheritance</h2>
       <div>
         <div>
-          <h4 id="basic-one-5">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
-            <p>🏆 Can explain the interfaces concept and relate it to Java interfaces <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+            <p>🏆 Can explain the meaning of inheritance <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
           </div>
         </tip-box>
         <div>
-          <p>Sometimes, it helps to be able to define a new class based on another class. For example, to be able to define an <code>EvaluationReport</code> class based on a <code>Report</code> class so that the <code>EvaluationReport</code> class does not
-            have to duplicate code that is already implemented in the <code>Report</code> class. This can be achieved using the object-oriented concept of <em>inheritance</em>.</p>
+          <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code>            class so that the <code>EvaluationReport</code> class does not have to duplicate code that is already implemented in the <code>Report</code> class.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\classInheritance\topicPanel._include_.html" header="UML: Class Diagrams: Inheritance" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Inheritance" isOpen="false" no-close="true" no-switch="true"></panel>
           </p>
           <p></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/report.png" height="120">
+            <p>📦 Example: The <code>EvaluationReport</code> inherits the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em><code>Report</code>.</p><img src="/website/book/oopDesign/inheritance/what/images/report.png"
+              height="120">
             <p></p>
           </tip-box>
-          <p>In the example above, The <code>EvaluationReport</code> inherits the wordCount attribute and the print() method from the base class <code>Report</code>.</p>
           <ul>
-            <li>Other names for Base class: <em>Parent class, Super class</em></li>
-            <li>Other names for Derived class: <em>Extended class, Child class, Sub class</em></li>
+            <li>Other names for Base class: <em>Parent</em> class, <em>Super</em> class</li>
+            <li>Other names for Derived class: <em>Extended</em> class, <em>Child</em> class, <em>Derived</em> class</li>
           </ul>
-          <p>Applying inheritance concept on a group of similar classes can result in the common parts among classes being extracted into more general classes. In the example below, <code>Man</code> and <code>Woman</code> behaves the same way for the ‘owes
-            money’ association. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish between <code>Man</code> and <code>Woman</code> for the ‘marriage’ association. A solution
-            is to add the <code>Person</code> class as a super class and let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code>.</p>
+          <p><strong>A super class is said to be <em>more general</em> than the sub class.</strong> Conversely, a sub class is said to be more <em>specialized</em> than the super class.</p>
+          <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/manWoman.png" height="250">
+            <p>📦 <code>Man</code> and <code>Woman</code> behaves the same way for the 'owes money' association. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish between <code>Man</code>              and <code>Woman</code> for the ‘marriage’ association. A solution is to add the <code>Person</code> class as a super class and let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code>.</p><img src="/website/book/oopDesign/inheritance/what/images/manWoman.png"
+              height="250">
             <p></p>
           </tip-box>
-          <p>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an ‘is a’ relationship ; for example, in the class diagrams of
-            a <em>Snakes and Ladders</em> board game given below:</p>
-          <ul>
-            <li>SnakeHeadSquare <em>is a</em> Square.</li>
-            <li>SnakeTailSquare <em>is a</em> Square.</li>
-          </ul>
+          <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
           <tip-box type="info">
             <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
           </tip-box>
           <tip-box>
-            <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/boardSquare.png" height="250">
+            <p>📦 In this class diagrams of a <em>Snakes and Ladders</em> board game,</p>
+            <ul>
+              <li><code>SnakeHeadSquare</code><em>is a</em><code>Square</code></li>
+              <li><code>SnakeTailSquare</code><em>is a</em><code>Square</code></li>
+            </ul><img src="/website/book/oopDesign/inheritance/what/images/boardSquare.png" height="250">
             <p></p>
           </tip-box>
-          <p>{explain inheritance hierarchies}</p>
-          <p>In the example below, the <code>TA</code> class inherits from <code>Staff</code> as well as <code>Student</code>. Such multiple inheritance is allowed among C++ classes but not among Java classes.</p>
+          <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/studentStaff.png" height="200">
+            <p>📦 Two inheritance hierarchies/trees:</p><img src="/website/book/oopDesign/inheritance/what/images/inheritanceTreesExamples.png" width="500">
+            <p></p>
+          </tip-box>
+          <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance is allowed among C++ classes but not among Java classes.</p>
+          <tip-box>
+            <p>📦 The <code>TA</code> class inherits from the <code>Staff</code> class <em>and</em> the <code>Student</code>.</p><img src="/website/book/oopDesign/inheritance/what/images/studentStaff.png" height="200">
             <p></p>
           </tip-box>
         </div>
@@ -2831,7 +2833,7 @@ class Academic extends Staff {
       <h2 id="introduction-4">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2902,7 +2904,7 @@ class Academic extends Staff {
       <h3 id="introduction-5">Introduction</h3>
       <div>
         <div>
-          <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2916,7 +2918,7 @@ class Academic extends Staff {
       <h3 id="n-tier-architectural-style">N-tier Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2932,7 +2934,7 @@ class Academic extends Staff {
       <h3 id="client-server-architectural-style">Client-Server Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2948,7 +2950,7 @@ class Academic extends Staff {
       <h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2964,7 +2966,7 @@ class Academic extends Staff {
       <h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -2987,7 +2989,7 @@ class Academic extends Staff {
       <h3 id="event-driven-architectural-style">Event-driven Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3034,7 +3036,7 @@ class Academic extends Staff {
       <h2 id="introduction-6">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-18">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3551,7 +3553,7 @@ studentList.addUi(statusUi);
       <h2 id="introduction-7">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-18">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/ides/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-19">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/ides/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -3576,7 +3578,7 @@ studentList.addUi(statusUi);
       <h2 id="debugging">Debugging</h2>
       <div>
         <div>
-          <h4 id="what-one-19">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-20">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3613,7 +3615,7 @@ studentList.addUi(statusUi);
       <h2 id="introduction-8">Introduction</h2>
       <div>
         <div>
-          <h4 id="basic-one-6">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-5">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3690,7 +3692,7 @@ studentList.addUi(statusUi);
       </div>
       <div>
         <div>
-          <h4 id="basic-one-7">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-6">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3985,7 +3987,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-8">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-7">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4028,7 +4030,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-9">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-8">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4250,7 +4252,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-10">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-9">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4407,7 +4409,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-11">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-10">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4504,7 +4506,7 @@ compact(input);
       <h1 id="refactoring">Refactoring</h1>
       <div>
         <div>
-          <h4 id="what-one-20">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-21">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4638,7 +4640,7 @@ send();
       <h2 id="introduction-9">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-21">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-22">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4663,7 +4665,7 @@ send();
       <h3 id="guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up</h3>
       <div>
         <div>
-          <h4 id="what-one-22">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-23">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4752,7 +4754,7 @@ send();
       <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3>
       <div>
         <div>
-          <h4 id="what-one-23">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-24">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4786,7 +4788,7 @@ send();
       <h3 id="javadoc">JavaDoc</h3>
       <div>
         <div>
-          <h4 id="what-one-24">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-25">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4822,7 +4824,7 @@ send();
       <h3 id="markdown">Markdown</h3>
       <div>
         <div>
-          <h4 id="what-one-25">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-26">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4866,7 +4868,7 @@ send();
       <h2 id="introduction-10">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-26">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-27">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4883,7 +4885,7 @@ send();
       <h2 id="exceptions">Exceptions</h2>
       <div>
         <div>
-          <h4 id="what-one-27">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-28">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5031,7 +5033,7 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
       <h2 id="logging">Logging</h2>
       <div>
         <div>
-          <h4 id="what-one-28">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-29">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5097,7 +5099,7 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
       <h2 id="defensive-programming">Defensive Programming</h2>
       <div>
         <div>
-          <h4 id="what-one-29">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-30">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5341,7 +5343,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-11">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-30">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5412,7 +5414,7 @@ jean.setBoyfriend(yong);
       <h2 id="build-automation">Build Automation</h2>
       <div>
         <div>
-          <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-32">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5655,11 +5657,25 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>
-            <panel src="/website\book\oopDesign\inheritance\basic\embed._include_.html" header="OOP: Inheritance: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-          <p></p>
-          <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a></p>
+          <tabs>
+            <tab header=":abc:">
+              <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
+              <p>
+                <hr>
+              </p>
+            </tab>
+            <tab header=":tv:">
+              <p>A very beginner-friendly video about implementing Java inheritance.</p>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          </tabs>
+          <tip-box type="tip">
+            <p>Java requires all class to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.
+            </p>
+          </tip-box>
         </div>
       </div>
       <div>
@@ -5788,7 +5804,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-12">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-32">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-33">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5816,7 +5832,7 @@ jean.setBoyfriend(yong);
       <h2 id="apis">APIs</h2>
       <div>
         <div>
-          <h4 id="what-one-33">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-34">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5884,7 +5900,7 @@ jean.setBoyfriend(yong);
       <h2 id="libraries">Libraries</h2>
       <div>
         <div>
-          <h4 id="what-one-34">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-35">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6023,7 +6039,7 @@ jean.setBoyfriend(yong);
       <h2 id="cloud-computing">Cloud Computing</h2>
       <div>
         <div>
-          <h4 id="what-one-35">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-36">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6075,7 +6091,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-13">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-36">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-37">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6109,7 +6125,7 @@ jean.setBoyfriend(yong);
       <h2 id="code-reviews">Code Reviews</h2>
       <div>
         <div>
-          <h4 id="what-one-37">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-38">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6210,7 +6226,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-14">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-38">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-39">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -6289,7 +6305,7 @@ jean.setBoyfriend(yong);
       <h3 id="unit-testing">Unit Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-39">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-40">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6331,7 +6347,7 @@ jean.setBoyfriend(yong);
       <h3 id="integration-testing">Integration Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-40">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-41">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6352,7 +6368,7 @@ jean.setBoyfriend(yong);
       <h3 id="system-testing">System Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-41">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-42">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6516,7 +6532,7 @@ jean.setBoyfriend(yong);
       <h3 id="acceptance-testing">Acceptance Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-42">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-43">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6584,7 +6600,7 @@ jean.setBoyfriend(yong);
       <h3 id="regression-testing">Regression Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-43">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-44">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -6609,7 +6625,7 @@ jean.setBoyfriend(yong);
       <h2 id="test-automation">Test Automation</h2>
       <div>
         <div>
-          <h4 id="what-one-44">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-45">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -7278,7 +7294,7 @@ A negative test case: i = null;
       <h2 id="boundary-value-analysis">Boundary Value Analysis</h2>
       <div>
         <div>
-          <h4 id="what-one-45">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-46">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -8324,7 +8340,7 @@ A negative test case: i = null;
       <h1 id="revision-control">Revision Control</h1>
       <div>
         <div>
-          <h4 id="what-one-46">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-47">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -8874,7 +8890,7 @@ A negative test case: i = null;
       <h2 id="introduction-16">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-47">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-48">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -9151,7 +9167,7 @@ A negative test case: i = null;
       <h3 id="introduction-17">Introduction</h3>
       <div>
         <div>
-          <h4 id="what-one-48">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-49">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -9218,7 +9234,7 @@ A negative test case: i = null;
       <h3 id="associations-2">Associations</h3>
       <div>
         <div>
-          <h4 id="basic-one-12">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-11">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -9467,7 +9483,7 @@ A negative test case: i = null;
       <h3 id="class-inheritance">Class Inheritance</h3>
       <div>
         <div>
-          <h4 id="what-one-49">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="inheritance-one-2">Inheritance <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -9475,9 +9491,12 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>We uses a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
+          <p>You can use a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
+          <p>Notation:</p><img src="/website/book/uml/classDiagrams/classInheritance/what/images/notation.png" height="120">
+          <p></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/uml/classDiagrams/classInheritance/what/images/report.png" height="120">
+            <p>📦 Examples: The <code>Car</code> class <em>inherits</em> from the <code>Vehicle</code> class. The <code>Cat</code> and <code>Dog</code> classes <em>inherit</em> from the <code>Pet</code> class.</p><img src="/website/book/uml/classDiagrams/classInheritance/what/images/examples.png"
+              height="120">
             <p></p>
           </tip-box>
         </div>
@@ -9540,7 +9559,7 @@ A negative test case: i = null;
       </div>
       <div>
         <div>
-          <h4 id="basic-one-13">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-12">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>

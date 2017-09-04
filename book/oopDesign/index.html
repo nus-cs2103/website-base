@@ -652,10 +652,10 @@
                     <panel header=":lock::key: What does the navigability given by this diagram mean?">
                       <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                         <p></p>
-                        <ul radio-group="1k3pi" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="1k3pi" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="1k3pi" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="1k3pi" type="radio"> c. Depends on the programming language</label></li>
+                        <ul radio-group="qwcw7" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="qwcw7" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="qwcw7" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="qwcw7" type="radio"> c. Depends on the programming language</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -857,65 +857,8 @@
   <h2 id="inheritance">Inheritance</h2>
   <panel header="================================================================" type="seamless" alt="inheritance">
     <div>
-      <div>
-        <div>
-          <h4 id="basic-one-4">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can explain the interfaces concept and relate it to Java interfaces <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div>
-              <p>Sometimes, it helps to be able to define a new class based on another class. For example, to be able to define an <code>EvaluationReport</code> class based on a <code>Report</code> class so that the <code>EvaluationReport</code> class does
-                not have to duplicate code that is already implemented in the <code>Report</code> class. This can be achieved using the object-oriented concept of <em>inheritance</em>.</p>
-              <p>
-                <panel src="/website\book\uml\classDiagrams\classInheritance\topicPanel._include_.html" header="UML: Class Diagrams: Inheritance" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-              <p></p>
-              <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/report.png" height="120">
-                <p></p>
-              </tip-box>
-              <p>In the example above, The <code>EvaluationReport</code> inherits the wordCount attribute and the print() method from the base class <code>Report</code>.</p>
-              <ul>
-                <li>Other names for Base class: <em>Parent class, Super class</em></li>
-                <li>Other names for Derived class: <em>Extended class, Child class, Sub class</em></li>
-              </ul>
-              <p>Applying inheritance concept on a group of similar classes can result in the common parts among classes being extracted into more general classes. In the example below, <code>Man</code> and <code>Woman</code> behaves the same way for the
-                ‘owes money’ association. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish between <code>Man</code> and <code>Woman</code> for the ‘marriage’ association.
-                A solution is to add the <code>Person</code> class as a super class and let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code>.</p>
-              <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/manWoman.png" height="250">
-                <p></p>
-              </tip-box>
-              <p>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an ‘is a’ relationship ; for example, in the class diagrams
-                of a <em>Snakes and Ladders</em> board game given below:</p>
-              <ul>
-                <li>SnakeHeadSquare <em>is a</em> Square.</li>
-                <li>SnakeTailSquare <em>is a</em> Square.</li>
-              </ul>
-              <tip-box type="info">
-                <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
-              </tip-box>
-              <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/boardSquare.png" height="250">
-                <p></p>
-              </tip-box>
-              <p>{explain inheritance hierarchies}</p>
-              <p>In the example below, the <code>TA</code> class inherits from <code>Staff</code> as well as <code>Student</code>. Such multiple inheritance is allowed among C++ classes but not among Java classes.</p>
-              <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/inheritance/basic/images/studentStaff.png" height="200">
-                <p></p>
-              </tip-box>
-            </div>
-            <div>
-              <div></div>
-            </div>
-          </div>
-        </panel>
+      <div src="basic/embed.md">
+        <div style="color: red">ENOENT: no such file or directory, open 'C:\repos\nus-cs2103\website\book\oopDesign\inheritance\basic\embed.md'</div>
       </div>
       <div>
         <div>
@@ -1631,15 +1574,15 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       In the context of OOP, what is the relationship between abstraction and encapsulation?
-                      <ul radio-group="xq3gf" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xq3gf" type="radio"> a. They are the same thing</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xq3gf" type="radio"> b. They are opposites</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xq3gf" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xq3gf" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      <ul radio-group="o306k" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="o306k" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="o306k" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="o306k" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="o306k" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="8y9dw" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="8y9dw" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <ul radio-group="quzru" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="quzru" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                         </ul>
                         <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
                           in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
@@ -1653,23 +1596,23 @@ class Academic extends Staff {
                     <panel header="%%Prerequisites%%" expandable="" expanded="">
                       <panel src="/website\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
                       <panel src="/website\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
-                      <panel src="/website\book\oopDesign\inheritance\basic\full._include_.html" header="OOP: Inheritance: Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+                      <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="OOP: Inheritance: Basic" isOpen="false" no-close="true" no-switch="true"></panel>
                       <panel src="/website\book\oopDesign\inheritance\substitutability\full._include_.html" header="OOP: Inheritance: Substitutability" isOpen="false" no-close="true" no-switch="true"></panel>
                       <panel src="/website\book\oopDesign\polymorphism\introduction\full._include_.html" header="OOP: Polymorphism: Introduction" isOpen="false" no-close="true" no-switch="true"></panel>
                     </panel>
                     <p></p>
                     <question>
                       Which of these do not belong to four main OO principles?
-                      <ul radio-group="nrxb5" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="nrxb5" type="radio"> a. Abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="nrxb5" type="radio"> b. Encapsulation</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="nrxb5" type="radio"> c. Inheritance</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="nrxb5" type="radio"> d. Substitutability</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="nrxb5" type="radio"> e. Polymorphism</label></li>
+                      <ul radio-group="cdn7u" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="cdn7u" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="cdn7u" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="cdn7u" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="cdn7u" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="cdn7u" type="radio"> e. Polymorphism</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="9houf" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="9houf" type="radio"> d. Substitutability</label></li>
+                        <ul radio-group="y8rsa" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="y8rsa" type="radio"> d. Substitutability</label></li>
                         </ul>
                       </div>
                     </question>
