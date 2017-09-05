@@ -21,18 +21,23 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can work with a 2KLoC code base :star: ==[Compulsory]==" expandable>
+<panel type="danger" header="**`W5.4` Can work with a 2KLoC code base** :star: ==[Compulsory]==" expandable>
   <panel header=":dart: Evidence" expanded>
 <div id="lo-2kloc">
 
-**Acceptable**: Evidence that you have worked with a code base larger than 2KLoC. %%e.g. a project in a previous module or a pet project%%
+**Acceptable**: Evidence that you have worked with a code base where **more than 2KLoC was written by other developers** and **there were automated tests**. %%e.g. a project in a previous module or an internship%%
 
-**Suggested**: Do an enhancement to [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]  %%e.g. add a new command%%
+**Suggested**: Do an enhancement to [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you added to AddressBook Level1 (in week 3). The size of the enhancement does not matter.
 
-* The size of the enhancement does not matter.
-* Remember to update all relevant documentation and tests.
+Required:
+* Update the User Guide
+* Update existing tests and add new tests if necessary, for both JUnit tests and I/O tests
 * Follow the coding standard
-* Write your code in the OOP style.
+* Follow the OOP style
+
+Encouraged:
+* Update the Developer Guide
+* Use the _forking workflow_ to merge changes to the phase A team repo
 
   <tip-box type="tip">
   
