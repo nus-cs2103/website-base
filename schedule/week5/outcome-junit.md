@@ -27,11 +27,9 @@
   
 **Acceptable**: Evidence of having written JUnit tests in some project.
 
-**Suggested**: Do the exercise in [Addressbook-Level2: LO-JUnit](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit)
+**Suggested**: Do the exercise in [[Addressbook-Level2: LO-JUnit](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit)]
 
-**Submission**: Create a PR against [Addressbook-Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)
-
-<include src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &raquo; Submitting Pull Requests as evidence of an LO%%" dynamic />
+<include src="submission.md" />
 
   </panel>
 </panel>
