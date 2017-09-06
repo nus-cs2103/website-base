@@ -64,10 +64,6 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-aggregation.md" />
-
-<!-- ==================================================================================================== -->
-
 <panel type="info" header=":trophy: Can use advanced class diagrams :star::star::star:" expandable>
   <include src="../../book/modeling/modelingStructures/classDiagramsAdvanced/full.md" />
   <panel header=":dart: Evidence" expanded>

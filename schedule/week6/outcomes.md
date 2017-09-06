@@ -70,5 +70,16 @@
 
 <!-- ==================================================================================================== -->
 
+<panel type="info" header="**Can use Java8 streams :star::star::star:**" expandable no-close>
+  <include src="../../book/javaTools/streamsBasic/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
 </div>
 </div>
