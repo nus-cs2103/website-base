@@ -275,9 +275,9 @@
                       <panel header=":lock::key: Cost of bug fixing over time">
                         <question>
                           <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                          <ul radio-group="ger3i" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ger3i" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ger3i" type="radio"> False</label></li>
+                          <ul radio-group="b3rum" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="b3rum" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="b3rum" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>False. The cost goes up over time.</p>
@@ -574,7 +574,12 @@
     <panel type="danger" header="**`W5.4` Can work with a 2KLoC code base** :star: ==[Compulsory]==" expandable="">
       <panel header=":dart: Evidence" expanded="">
         <div id="lo-2kloc">
-          <p><strong>Acceptable</strong>: Evidence that you have worked with a code base where <strong>more than 2KLoC was written by other developers</strong> and <strong>there were automated tests</strong>. <span class="dimmed">e.g. a project in a previous module or an internship</span></p>
+          <p><strong>Acceptable</strong>: Evidence that you have worked with a code base that meets the following criteria:</p>
+          <ul>
+            <li>more than 2KLoC of the code base was written by other developers</li>
+            <li>your code included automated tests</li>
+            <li>your code was contributed via a proper revision control workflow e.g. pull requests</li>
+          </ul>
           <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span>. It can be the same enhancement you added to AddressBook
             Level1 (in week 3). The size of the enhancement does not matter.</p>
           <p>Required:</p>
@@ -586,17 +591,13 @@
           </ul>
           <p>Encouraged:</p>
           <ul>
-            <li>
-              <p>Update the Developer Guide</p>
-            </li>
-            <li>
-              <p>Use the <em>forking workflow</em> to merge changes to the phase A team repo</p>
-              <tip-box type="tip">
-                <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
-              </tip-box>
-            </li>
+            <li>Update the Developer Guide</li>
+            <li>Use the <em>forking workflow</em> to merge changes to the phase A team repo</li>
           </ul>
-          <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>].</p>
+          <tip-box type="tip">
+            <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+          </tip-box>
+          <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>]. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
         </div>
       </panel>
     </panel>
@@ -780,7 +781,7 @@
           </div>
           <panel header=":dart: Evidence" expanded="">
             <p>The exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass">addressbook-level2: LO-ImplementClasses</a>] also covers composition (note the ◆ in
-              the class diagaram).</p>
+              the class diagram).</p>
           </panel>
         </panel>
       </panel>
@@ -822,9 +823,9 @@
                       <panel header=":lock::key: Which one is not recommended to use?">
                         <question>
                           <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                          <ul radio-group="umvri" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="umvri" type="radio"> a. Composition symbol</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="umvri" type="radio"> b. Aggregation symbol</label></li>
+                          <ul radio-group="et8wv" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="et8wv" type="radio"> a. Composition symbol</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="et8wv" type="radio"> b. Aggregation symbol</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -1169,8 +1170,10 @@
     </panel>
   </panel>
 </div>
-<panel type="info" header=":trophy: Can explain single responsibility principle :star::star::star:" expandable="">
+<panel type="info" header="**`W5.10` Can explain single responsibility principle** :star::star::star:" no-close="">
   <div>
+    <div></div>
+    <p></p>
     <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
       </span>
@@ -1182,19 +1185,18 @@
       <div>
         <tip-box type="primary">
           <div>
-            <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. -- Robert C. Martin</p>
+            <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
           </div>
         </tip-box>
         <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
         <tip-box>
-          <p>Example:</p>
-          <p>Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence,
+          <p>📦 Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence,
             such a class does not follow the SRP.</p>
         </tip-box>
       </div>
       <div>
         <div>
-          <panel header="Resources" expanded="" type="default">
+          <panel header=":paperclip:  Resources" expanded="">
             <ul>
               <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
               <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
@@ -1206,7 +1208,15 @@
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
+    <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp">Addressbook-Level2: LO-SRP</a>]</p>
+    <div>
+      <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a></p>
+      <p>
+        <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
   </panel>
 </panel>
 </div>

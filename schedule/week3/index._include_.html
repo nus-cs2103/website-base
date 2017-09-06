@@ -521,9 +521,9 @@ send();
                       <panel header=":lock::key: ‘Extract method’ and ‘Inline method’ refactorings">
                         <question>
                           <p>‘Extract method’ and ‘Inline method’ refactorings</p>
-                          <ul radio-group="vjjs7" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="vjjs7" type="radio"> a. are opposites of each other.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="vjjs7" type="radio"> b. sounds like opposites but they are not.</label></li>
+                          <ul radio-group="zegob" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="zegob" type="radio"> a. are opposites of each other.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="zegob" type="radio"> b. sounds like opposites but they are not.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>a</p>
@@ -550,7 +550,12 @@ send();
           <panel type="seamless" header="[For Reference] details of the Week 5 LO mentioned above">
             <p>🎯 Evidence:</p>
             <div>
-              <p><strong>Acceptable</strong>: Evidence that you have worked with a code base where <strong>more than 2KLoC was written by other developers</strong> and <strong>there were automated tests</strong>. <span class="dimmed">e.g. a project in a previous module or an internship</span></p>
+              <p><strong>Acceptable</strong>: Evidence that you have worked with a code base that meets the following criteria:</p>
+              <ul>
+                <li>more than 2KLoC of the code base was written by other developers</li>
+                <li>your code included automated tests</li>
+                <li>your code was contributed via a proper revision control workflow e.g. pull requests</li>
+              </ul>
               <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span>. It can be the same enhancement you added
                 to AddressBook Level1 (in week 3). The size of the enhancement does not matter.</p>
               <p>Required:</p>
@@ -562,17 +567,13 @@ send();
               </ul>
               <p>Encouraged:</p>
               <ul>
-                <li>
-                  <p>Update the Developer Guide</p>
-                </li>
-                <li>
-                  <p>Use the <em>forking workflow</em> to merge changes to the phase A team repo</p>
-                  <tip-box type="tip">
-                    <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
-                  </tip-box>
-                </li>
+                <li>Update the Developer Guide</li>
+                <li>Use the <em>forking workflow</em> to merge changes to the phase A team repo</li>
               </ul>
-              <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>].</p>
+              <tip-box type="tip">
+                <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+              </tip-box>
+              <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>]. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
             </div>
           </panel>
         </tip-box>
@@ -661,11 +662,11 @@ send();
                       <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                         <question>
                           <p>What is the recommended approach regarding coding standards?</p>
-                          <ul radio-group="2cmbr" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2cmbr" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2cmbr" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2cmbr" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2cmbr" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                          <ul radio-group="ts7qz" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="ts7qz" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="ts7qz" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="ts7qz" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="ts7qz" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>c</p>
@@ -741,12 +742,12 @@ send();
                       <panel header=":lock::key: Unsuitable variable name">
                         <question>
                           <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                          <ul radio-group="lxw0g" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="lxw0g" type="radio"> a. integer variable name: totalPeople</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="lxw0g" type="radio"> b. boolean variable name: checkWeight</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="lxw0g" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="lxw0g" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="lxw0g" type="radio"> e. String variable name: description</label></li>
+                          <ul radio-group="9qwx9" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qwx9" type="radio"> a. integer variable name: totalPeople</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qwx9" type="radio"> b. boolean variable name: checkWeight</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qwx9" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qwx9" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qwx9" type="radio"> e. String variable name: description</label></li>
                           </ul>
                           <div slot="answer">
                             <p>b</p>
@@ -1067,9 +1068,9 @@ displayResult();
                       <panel header=":lock::key: Small methods or lengthy methods?">
                         <question>
                           <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                          <ul radio-group="assq9" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="assq9" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="assq9" type="radio"> False</label></li>
+                          <ul radio-group="imq2e" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="imq2e" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="imq2e" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>False</p>
@@ -1099,10 +1100,10 @@ displayResult();
                       <panel header=":lock::key: Common saying: Make it fast,...">
                         <question>
                           <p>This is a common saying among programmers</p>
-                          <ul radio-group="kesho" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kesho" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kesho" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kesho" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                          <ul radio-group="pw5rv" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="pw5rv" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="pw5rv" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="pw5rv" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                           </ul>
                           <div slot="answer">
                             <p>b</p>
