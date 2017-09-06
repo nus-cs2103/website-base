@@ -8,7 +8,7 @@
   <include src="../../book/oopImplementation/composition/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-The exercise in [[addressbook-level2: LO-ImplementClasses](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)] also covers composition (note the &#9670; in the class diagaram).
+The exercise in [[addressbook-level2: LO-ImplementClasses](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)] also covers composition (note the &#9670; in the class diagram).
 
   </panel>
 </panel>
