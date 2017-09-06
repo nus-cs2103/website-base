@@ -414,13 +414,13 @@
       </div>
       <tip-box>
         <div>
-          <p>🏆 Can explain the meaning of dependencies in the context of UML class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          <p>🏆 Can explain dependencies among classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
       <div>
-        <p>In some cases, objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
+        <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\dependencies\topicPanel._include_.html" header="UML: Class Diagrams: Dependencies" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html" header="UML: Class Diagrams: Dependencies" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
       </div>
@@ -435,19 +435,19 @@
         </div>
       </tip-box>
       <div>
-        <p>A composition is an association that represents a strong “whole-part” relationship. When the “whole” is destroyed, “parts” are destroyed too.</p>
+        <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\composition\topicPanel._include_.html" header="UML: Class Diagrams: Composition" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Composition" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+          <p>📦 A <code>Board</code> (used for playing board games) consists of <code>Square</code> objects.</p><img src="/website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
           <p></p>
         </tip-box>
-        <p>In addition, composition also implies that <strong>there cannot be cyclical links</strong>. In the example below, the notation represents a ‘sub-folder’ relationship between two folders while implying that a Folder cannot be a sub-folder of itself.
-          If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be subfolder of itself.</p>
+        <p><strong>Composition also implies that there cannot be cyclical links</strong>.</p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopDesign/associations/composition/images/folder.png" height="80">
+          <p>📦 In this ‘sub-folder’ association, a <code>Folder</code> cannot be a sub-folder of itself. If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be sub-folder of itself.</p><img src="/website/book/oopDesign/associations/composition/images/folder.png"
+            height="80">
           <p></p>
         </tip-box>
       </div>
@@ -462,14 +462,20 @@
         </div>
       </tip-box>
       <div>
-        <p><em>Aggregation</em> represents a ‘container-contained’ relationship. It is a weaker relationship than composition.</p>
+        <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\aggregation\topicPanel._include_.html" header="UML: Class Diagrams: Aggregation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Aggregation" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
-        <p></p><img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
         <p></p>
-        <p><strong>Aggregation vs Composition</strong></p>
-        <p>The distinction between composition and aggregation is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether as using it adds more confusion than clarity.</p>
+        <tip-box>
+          <p>📦 <code>Club</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>Club</code> object.</p><img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png"
+            height="80">
+          <p></p>
+        </tip-box>
+        <tip-box type="tip">
+          <p><strong>Aggregation vs Composition</strong></p>
+          <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
+        </tip-box>
       </div>
     </div>
     <div>
@@ -580,7 +586,7 @@
         </div>
       </tip-box>
       <div>
-        <p>Method overloading arises when there are multiple operations with the <strong>same name but different type signatures.</strong></p>
+        <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
         <tip-box type="primary">
           <div>
             <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
@@ -595,20 +601,20 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td style="text-align:center">int add(int X, int Y)</td>
-                    <td style="text-align:center">(int, int)</td>
+                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                    <td style="text-align:center"><code>(int, int)</code></td>
                   </tr>
                   <tr>
-                    <td style="text-align:center">void add(int A, int B)</td>
-                    <td style="text-align:center">(int, int)</td>
+                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                    <td style="text-align:center"><code>(int, int)</code></td>
                   </tr>
                   <tr>
-                    <td style="text-align:center">void m(int X, double Y)</td>
-                    <td style="text-align:center">(int, double)</td>
+                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                    <td style="text-align:center"><code>(int, double)</code></td>
                   </tr>
                   <tr>
-                    <td style="text-align:center">void m(double X, int Y)</td>
-                    <td style="text-align:center">(double, int)</td>
+                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                    <td style="text-align:center"><code>(double, int)</code></td>
                   </tr>
                 </tbody>
               </table>
@@ -616,24 +622,13 @@
           </div>
         </tip-box>
         <tip-box>
-          <p>Example:</p>
-          <pre class="hljs"><code>class Account {
-    Account () {
-        // Signature: ()
-        ...
-    }
-    Account (String name, String number, double balance) {
-        // Signature: (String, String, double)
-        ...
-    }
+          <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int[])</code></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RatingCalculator</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(String matric)</span> </span>{ ... }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
 }
 </code></pre>
-          <pre class="hljs"><code>void calculateCAP (String matric) { ... }
-void calculateCAP (int[] averages) { ... }
-</code></pre>
-          <p>The constructor <code>Account</code> and method <code>calculateCAP</code> has been overloaded.</p>
         </tip-box>
-        <p>Overloading is used to indicate that multiple operations do similar things but take different parameters. An operation can be overloaded inside the same class or in a sub/super classes.</p>
       </div>
     </div>
     <div>

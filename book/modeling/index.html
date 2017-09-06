@@ -186,6 +186,24 @@
               <div>
                 <panel header=":muscle: Exercises" expandable="">
                   <div>
+                    <panel header=":lock::key: Which association notations are shown?">
+                      <question>
+                        <p>Which association notatations are shown in this diagram?</p><img src="/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
+                        <p></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(a) (b) (c) (d)</p>
+                          <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
                     <panel header=":lock: Explain Class Diagram">
                       <question>
                         <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -211,46 +229,8 @@
         </tip-box>
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
+            <div></div>
             <div>
-              <p>
-                <panel src="/website\book\oopDesign\classes\classLevelMembers\embed._include_.html" header="OOP: Classes: Class Level Members" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\classes\enumerations\embed._include_.html" header="OOP: Classes: Enumerations" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="OOP: Associations: Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\dependencies\embed._include_.html" header="OOP: Associations: Dependencies" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\composition\embed._include_.html" header="OOP: Associations: Composition" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\inheritance\interfaces\embed._include_.html" header="OOP: Inheritance: Interfaces" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\inheritance\abstractClasses\embed._include_.html" header="OOP: Inheritance: Abstract Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-            </div>
-            <div>
-              <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: Which of these is not shown in this diagram?">
-                      <question><img src="/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
-                        <p></p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. none of the above (all are shown in the diagram)</li>
-                        </ul>
-                        <div slot="answer">
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. none of the above (all are shown in the diagram)</li>
-                          </ul>
-                          <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
-              </div>
               <div></div>
             </div>
           </div>
@@ -269,7 +249,8 @@
           <div>
             <div>
               <p>
-                <panel src="/website\book\oopDesign\associations\aggregation\embed._include_.html" header="OOP: Associations: Aggregation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\inheritance\interfaces\embed._include_.html" header="OOP: Inheritance: Interfaces" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\inheritance\abstractClasses\embed._include_.html" header="OOP: Inheritance: Abstract Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
                 <panel src="/website\book\oopDesign\associations\associationClasses\embed._include_.html" header="OOP: Associations: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
             </div>
@@ -811,16 +792,16 @@
                     <p></p>
                     <question>
                       Choose the incorrect statement.
-                      <ul radio-group="wpndb" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wpndb" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wpndb" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wpndb" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wpndb" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wpndb" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
+                      <ul radio-group="hbtl9" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="hbtl9" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="hbtl9" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="hbtl9" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="hbtl9" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="hbtl9" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="hvrtj" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="hvrtj" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <ul radio-group="g2zkw" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="g2zkw" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
                         </ul>
                         <p>Explanation: A sequence diagram is a behavior diagram, not a structure diagram. An SD can represent how objects interact with each other (i.e., behavior), not how they are connected to each other (i.e. structure).</p>
                       </div>
@@ -839,16 +820,16 @@
                     <p></p>
                     <question>
                       Which one of these is the most useful to model a workflow?
-                      <ul radio-group="jw1n2" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jw1n2" type="radio"> a. class diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jw1n2" type="radio"> b. object diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jw1n2" type="radio"> c. activity diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jw1n2" type="radio"> d. state machine diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jw1n2" type="radio"> e. use case diagram</label></li>
+                      <ul radio-group="ibopk" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ibopk" type="radio"> a. class diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ibopk" type="radio"> b. object diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ibopk" type="radio"> c. activity diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ibopk" type="radio"> d. state machine diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ibopk" type="radio"> e. use case diagram</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="r7fip" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="r7fip" type="radio"> c. activity diagram</label></li>
+                        <ul radio-group="8308e" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="8308e" type="radio"> c. activity diagram</label></li>
                         </ul>
                       </div>
                     </question>

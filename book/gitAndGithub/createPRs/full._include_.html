@@ -51,9 +51,14 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
     <p></p>
     <p>4d. (1) Set PR name, (2) set PR description, and (3) Click the <code>Create pull request</code> button.</p><img src="/website/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
     <p></p>
+    <tip-box type="important">
+      <p>A common newbie mistake when creating branch-based PRs is to mix commits of one PR with another. To learn how to avoid that mistake, you are encouraged to continue and create another PR as explained below.
+      </p>
+    </tip-box>
     <p><strong>5. In your local repo, create a new branch <code>add-summary</code></strong> off the <code>master</code> branch.</p>
     <tip-box type="warning">
-      <p>When creating the new branch, it is very important that you switch back to the <code>master</code> branch first. If not, the new branch will be created off the current branch <code>add-intro</code>.</p>
+      <p>When creating the new branch, it is very important that you switch back to the <code>master</code> branch first. If not, the new branch will be created off the current branch <code>add-intro</code>. And that is how you end up having commits of the
+        first PR in the second PR as well.</p>
     </tip-box>
     <p><strong>6. Add a commit in the <code>add-summary</code> branch</strong> that adds a <em>Summary</em> section to the <code>README.md</code>, in exactly the same place you added the <em>Introduction</em> section earlier.</p><img src="/website/book/gitAndGithub/createPRs/images/addSummaryBranch.png"
       width="400">
