@@ -1,28 +1,131 @@
-
-- [ ] **`W2.1` Can use Git to save history** ⭐️
-- [ ] `W2.1f` Can set Git to ignore files ⭐️⭐️
-
-- [ ] **`W2.2` Can use basic features of an IDE** ⭐️
-- [ ] `W2.2c` Can navigate code effectively using IDE features ⭐️⭐️
-
-- [ ] **`W2.3` Can automate simple regression testing of text UIs** ⭐️⭐️
-- [ ] `W2.3a` Can explain testing ⭐️⭐️
-- [ ] `W2.3b` Can explain regression testing ⭐️⭐️
-- [ ] `W2.3c` Can explain test automation ⭐️⭐️
-- [ ] `W2.3d` Can semi-automate testing of CLIs ⭐️⭐️
-
-- [ ] **`W2.4` Can use Java Collections** ⭐️⭐️
-- [ ] `W2.4` Can use Java Collections ⭐️⭐️
-
-------
-
-- [ ] **`W2.5` Can use Java varargs feature** ⭐️⭐️⭐️
+**`W2.1` Can use Git to save history**️
+- [ ] `W2.1a` Can explain revision control ️
+- [ ] `W2.1b` Can explain repositories ️
+- [ ] `W2.1c` Can create a local Git repo ️
+- [ ] `W2.1d` Can explain saving history ️
+- [ ] `W2.1e` Can commit using Git ️
 
 
-------
+**`W2.2` Can use basic features of an IDE**
+- [ ] `W2.2a` Can explain IDEs ️
+- [ ] `W2.2b` Can setup a project in an IDE ️
+
+@Vivian1995
+@JavynThun
+@nguyenduyson
+@Manish1Dahiya
+@cqhchan
+@ZhangH795
+@chairz
+@sarahane
+@ocharlton
+@nahtanojmil
+@jaivigneshvenugopal
+@Labradorites
+@valensia0711
+@fustilio
+@justuswah
+@e0031928
+@tby1994
+@quangtdn
+@jlks96
+@Infinity-Ace
+@Sri-vatsa
+@Haozhe321
+@stan789
+@hxy0229
+@JYL123
+@darrinloh
+@vmlimshimin
+@JunQuann
+@TravisPhey
+@erik0704
+@adileyzekmoon
+@KhawYewOnn
+@ng95junwei
+@e0007502
+️
+
+**`W3.1` Can communicate with a remote repo**️
+- [ ] `W3.1a` Can explain remote repositories️
+- [ ] `W3.1b` Can clone a remote repo️
+- [ ] `W3.1c` Can pull changes from a repo️
+- [ ] `W3.1d` Can push to a remote repo️
+
+**`W3.3` Can work with a 1KLoC code base**️
+
+-----------------
+
+**`W3.2` Can refactor code at a basic level**️
+- [ ] `W3.2a` Can explain refactoring️
+- [ ] `W3.2b` Can use automated refactoring features of the IDE️
 
 
-- [ ] **`W2.6` Can explain pros and cons of software engineering** ⭐️⭐️⭐️⭐️
+**`W3.4` Can follow a simple style guide**️
+- [ ] `W3.4a` Can explain the importance of code quality️
+- [ ] `W3.4b` Can explain the need for following a standard️
+- [ ] `W3.4c` Can follow simple mechanical style rules️
+
+**`W3.5` Can improve code readability**️
+- [ ] `W3.5a` Can explain the importance of readability️
+- [ ] `W3.5b` Can follow basic guidelines for improving readability️
+
+**`W3.6` Can use good naming**️
+- [ ] `W3.6a` Can explain the need for good names in code️
+- [ ] `W3.6b` Can follow basic guidelines for naming️
+
+**`W3.7` Can avoid unsafe coding practices**️
+- [ ] `W3.7a` Can explain the need for avoiding error-prone shortcuts️
+- [ ] `W3.7b` Can follow basic guidelines for avoiding unsafe shortcuts️
+
+----------------
 
 
-------
+
+**`W3.2` Can refactor code at a basic level**️
+- [ ] `W3.2c` Can apply some basic refactoring️
+
+
+**`W3.4` Can follow a simple style guide**️
+- [ ] `W3.4d` Can follow intermediate style rules️
+
+**`W3.5` Can improve code readability**️
+- [ ] `W3.5c` Can follow intermediate guidelines for improving readability️
+- [ ] `W3.5d` Can follow advanced guidelines for improving readability️
+
+**`W3.6` Can use good naming**️
+- [ ] `W3.6c` Can follow intermediate guidelines for naming️
+
+**`W3.7` Can avoid unsafe coding practices**️
+- [ ] `W3.7c` Can follow intermediate guidelines for avoiding unsafe shortcuts️
+
+**`W3.8` Can traverse Git history**️
+- [ ] `W3.8a` Can explain using history️
+- [ ] `W3.8b` Can load a specific version of a Git repo️
+- [ ] `W3.8c` Can tag commits using Git️
+
+**`W3.9` Can use intermediate level features of an IDE**️
+- [ ] `W3.9a` Can explain debugging️
+- [ ] `W3.9b` Can step through a program using a debugger️
+
+**`W3.10` Can write good code comments**️
+- [ ] `W3.10a` Can explain the need for commenting minimally but sufficiently️
+- [ ] `W3.10b` Can follow basic guidelines for writing code comments️
+- [ ] `W3.10c` Can follow intermediate guidelines for writing code comments️
+
+-------------
+
+
+**`W3.2` Can refactor code at a basic level**️
+- [ ] `W3.2d` Can decide when to apply a given refactoring️
+
+
+**`W3.5` Can improve code readability**️
+- [ ] `W3.5d` Can follow advanced guidelines for improving readability️
+
+**`W3.8` Can traverse Git history**️
+- [ ] `W3.8d` Can use Git to stash files️
+
+**`W3.9` Can use intermediate level features of an IDE**️
+- [ ] `W3.9c` Can use some useful IDE productivity shortcuts️
+

@@ -275,9 +275,9 @@
                       <panel header=":lock::key: Cost of bug fixing over time">
                         <question>
                           <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                          <ul radio-group="b3rum" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="b3rum" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="b3rum" type="radio"> False</label></li>
+                          <ul radio-group="46vtc" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="46vtc" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="46vtc" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>False. The cost goes up over time.</p>
@@ -434,7 +434,7 @@
             <p><strong>Acceptable</strong>: Evidence of having written JUnit tests in some project.</p>
             <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit">Addressbook-Level2: LO-JUnit</a>]</p>
             <div>
-              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a></p>
+              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
               <p>
                 <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"
                   header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
@@ -561,7 +561,7 @@
             <p><strong>Acceptable</strong>: Evidence of having used Java inheritance in some project.</p>
             <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-inheritance-to-achieve-code-reuse-lo-inheritance">Addressbook-Level2: LO-Inheritance</a>]</p>
             <div>
-              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a></p>
+              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
               <p>
                 <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"
                   header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
@@ -574,30 +574,45 @@
     <panel type="danger" header="**`W5.4` Can work with a 2KLoC code base** :star: ==[Compulsory]==" expandable="">
       <panel header=":dart: Evidence" expanded="">
         <div id="lo-2kloc">
-          <p><strong>Acceptable</strong>: Evidence that you have worked with a code base that meets the following criteria:</p>
+          <tip-box type="important">
+            This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
+          </tip-box>
+          <h4 id="individual-component">Individual component:</h4>
+          <p><strong>You can omit this individual component if</strong> you have worked with a code base that meets the following criteria:</p>
           <ul>
             <li>more than 2KLoC of the code base was written by other developers</li>
             <li>your code included automated tests</li>
             <li>your code was contributed via a proper revision control workflow e.g. pull requests</li>
           </ul>
-          <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span>. It can be the same enhancement you added to AddressBook
-            Level1 (in week 3). The size of the enhancement does not matter.</p>
-          <p>Required:</p>
+          <p><strong>Requirements</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span>. It can be the same enhancement you did to
+            AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,</p>
           <ul>
-            <li>Update the User Guide</li>
-            <li>Update existing tests and add new tests if necessary, for both JUnit tests and I/O tests</li>
-            <li>Follow the coding standard</li>
-            <li>Follow the OOP style</li>
+            <li>update the User Guide</li>
+            <li>update existing tests and add new tests if necessary, for both JUnit tests and I/O tests</li>
+            <li>follow the coding standard</li>
+            <li>follow the OOP style</li>
           </ul>
-          <p>Encouraged:</p>
+          <p>Optional but encouraged:</p>
           <ul>
             <li>Update the Developer Guide</li>
-            <li>Use the <em>forking workflow</em> to merge changes to the phase A team repo</li>
+          </ul>
+          <p>Those who failed to produce working code at 1KLoC milestone (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
+          <h4 id="team-component">Team component:</h4>
+          <p>The team component is <mark>to be done by all members</mark>, including those who were allowed to omit the individual component.</p>
+          <ul>
+            <li>Review PRs created by team members in the <em>Individual Component</em> above. You can either give suggestions to improve, or ask questions to understand, the code written by the team member. Try to get each PR reviewed by at least one team
+              member and try to ensure each team member's PR is reviewed by at least one other team member.</li>
           </ul>
           <tip-box type="tip">
             <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
           </tip-box>
-          <p><strong>Submission</strong>: Create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level2</a>]. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+          <div>
+            <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+            <p>
+              <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"
+                header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </div>
         </div>
       </panel>
     </panel>
@@ -702,7 +717,7 @@
             <p><strong>Acceptable</strong>: Evidence of having used Java class-level members in some project.</p>
             <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-class-level-members-lo-classlevel">Addressbook-Level2: LO-ClassLevel</a>]</p>
             <div>
-              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a></p>
+              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
               <p>
                 <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"
                   header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
@@ -823,9 +838,9 @@
                       <panel header=":lock::key: Which one is not recommended to use?">
                         <question>
                           <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                          <ul radio-group="et8wv" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="et8wv" type="radio"> a. Composition symbol</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="et8wv" type="radio"> b. Aggregation symbol</label></li>
+                          <ul radio-group="loue9" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="loue9" type="radio"> a. Composition symbol</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="loue9" type="radio"> b. Aggregation symbol</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -1211,7 +1226,7 @@
     <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
     <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp">Addressbook-Level2: LO-SRP</a>]</p>
     <div>
-      <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a></p>
+      <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
       <p>
         <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%"
           isOpen="false" no-close="true" no-switch="true"></panel>
