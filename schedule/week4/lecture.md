@@ -1,6 +1,6 @@
 **Questions to discuss during the lecture:**
 
-<panel header=":lock: Review code for quality">
+<panel header=":lock: Classes for CityConnect app">
 <question has-input="true">
 
 Assume you are writing a CLI program called **`CityConnect`** for storing and querying distances between cities. The behavior is as follows:
