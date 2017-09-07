@@ -25,22 +25,33 @@
   <panel header=":dart: Evidence" expanded>
 <div id="lo-2kloc">
 
-**Acceptable**: Evidence that you have worked with a code base that meets the following criteria:
+<tip-box type="important"> 
+  This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
+</tip-box>
+
+#### Individual component:
+
+**You can omit this individual component if** you have worked with a code base that meets the following criteria:
 * more than 2KLoC of the code base was written by other developers
 * your code included automated tests
 * your code was contributed via a proper revision control workflow e.g. pull requests
 
-**Suggested**: Do an enhancement to [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you added to AddressBook Level1 (in week 3). The size of the enhancement does not matter.
+**Requirements**: Do an enhancement to [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you did to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,
+* update the User Guide
+* update existing tests and add new tests if necessary, for both JUnit tests and I/O tests
+* follow the coding standard
+* follow the OOP style
 
-Required:
-* Update the User Guide
-* Update existing tests and add new tests if necessary, for both JUnit tests and I/O tests
-* Follow the coding standard
-* Follow the OOP style
-
-Encouraged:
+Optional but encouraged:
 * Update the Developer Guide
-* Use the _forking workflow_ to merge changes to the phase A team repo
+
+Those who failed to produce working code at 1KLoC milestone (in week 3) can recover the lost marks by doing _two_ enhancements at this milestone.
+
+#### Team component:
+
+The team component is ==to be done by all members==, including those who were allowed to omit the individual component.
+
+* Review PRs created by team members in the _Individual Component_ above. You can either give suggestions to improve, or ask questions to understand, the code written by the team member. Try to get each PR reviewed by at least one team member and try to ensure each team member's PR is reviewed by at least one other team member.  
 
 <tip-box type="tip">
   
@@ -48,7 +59,7 @@ Note that you can reuse the code you write here in your final project, if applic
  
 </tip-box>
 
-**Submission**: Create a PR against [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]. ==Only clean PRs== (i.e. free of unrelated code modifications) will be accepted. 
+<include src="submission.md" />
 
 </div>
   </panel>
