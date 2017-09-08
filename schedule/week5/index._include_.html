@@ -275,9 +275,9 @@
                       <panel header=":lock::key: Cost of bug fixing over time">
                         <question>
                           <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                          <ul radio-group="thoos" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="thoos" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="thoos" type="radio"> False</label></li>
+                          <ul radio-group="st130" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="st130" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="st130" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>False. The cost goes up over time.</p>
@@ -597,6 +597,16 @@
             <li>Update the Developer Guide</li>
           </ul>
           <p>Those who failed to produce working code at 1KLoC milestone (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
+          <tip-box type="tip">
+            <p>When working with existing code, a safe approach is to <strong>change the code in very small steps, each resulting in a verifiable change</strong> without breaking the app. For example, when adding a new <code>sort</code> command, the first
+              few steps can be,</p>
+            <ol>
+              <li>Teach the app to accept a <code>sort</code> command but ignore it.</li>
+              <li>Next, teach the app to direct the <code>sort</code> command to an existing command e.g. <code>sort</code> command simply invokes the <code>list</code> command internally.</li>
+              <li>Add a <code>SortCommand</code> class but make it simply a copy of the the existing <code>ListCommand</code>. Direct the <code>sort</code> command to the new <code>SortCommand</code>.</li>
+              <li>...</li>
+            </ol>
+          </tip-box>
           <h4 id="team-component">Team component:</h4>
           <p>The team component is <mark>to be done by all members</mark>, including those who were allowed to omit the individual component.</p>
           <ul>
@@ -838,9 +848,9 @@
                       <panel header=":lock::key: Which one is not recommended to use?">
                         <question>
                           <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                          <ul radio-group="jhqs3" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="jhqs3" type="radio"> a. Composition symbol</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="jhqs3" type="radio"> b. Aggregation symbol</label></li>
+                          <ul radio-group="7jkyx" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7jkyx" type="radio"> a. Composition symbol</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7jkyx" type="radio"> b. Aggregation symbol</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
