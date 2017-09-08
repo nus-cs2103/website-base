@@ -36,6 +36,6 @@ One class you can have is `Route`
 
 </question>
 
-[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L4.pptx)]
-
 </panel>
+
+[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L4.pptx)]
