@@ -47,6 +47,16 @@ Optional but encouraged:
 
 Those who failed to produce working code at 1KLoC milestone (in week 3) can recover the lost marks by doing _two_ enhancements at this milestone.
 
+<tip-box type="tip">
+
+When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
+1. Teach the app to accept a `sort` command but ignore it.
+2. Next, teach the app to direct the `sort` command to an existing command e.g. `sort` command simply invokes the `list` command internally.
+3. Add a `SortCommand` class but make it simply a copy of the the existing `ListCommand`. Direct the `sort` command to the new `SortCommand`.
+4. ...
+
+</tip-box>
+
 #### Team component:
 
 The team component is ==to be done by all members==, including those who were allowed to omit the individual component.
