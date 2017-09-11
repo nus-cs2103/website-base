@@ -25,10 +25,6 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-interface.md" />
-
-<!-- ==================================================================================================== -->
-
 <panel type="warning" header=":trophy: Can draw basic sequence diagrams :star::star:" expandable>
   <panel header=":dart: Evidence" expanded>
 
@@ -62,20 +58,6 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-tdd.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="info" header="**Can use Java8 streams :star::star::star:**" expandable no-close>
-  <include src="../../book/javaTools/streamsBasic/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
 
 </div>
 </div>

@@ -29,8 +29,13 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain abstract classes :star::star::star:" expandable>
+<panel type="warning" header=":trophy: Can explain abstract classes :star::star:" expandable>
   <include src="../../book/oopDesign/inheritance/abstractClasses/full.md" />
+<!-- TODO: add evidence -->
+</panel>
+
+<panel type="warning" header=":trophy: Can implement abstract classes :star::star:" expandable>
+  <include src="../../book/oopImplementation/abstractClasses/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 ...
@@ -38,8 +43,13 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can interpret abstract classes in class diagrams :star::star::star:" expandable>
-  <include src="../../book/uml/classDiagrams/abstractClasses/what/full.md" />
+<panel type="info" header=":trophy: Can explain interfaces :star::star::star:" expandable>
+  <include src="../../book/oopDesign/inheritance/interfaces/full.md" />
+<!-- TODO: add evidence -->
+</panel>
+
+<panel type="info" header=":trophy: Can implement interfaces :star::star::star:" expandable>
+  <include src="../../book/oopImplementation/interfaces/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 ...
@@ -48,13 +58,5 @@ Some evidence of using method overriding in some code you wrote.
 </panel>
 
 
-<panel type="success" header=":trophy: Can explain dynamic and static binding :star::star::star::star:" expandable>
-  <include src="../../book/oopDesign/inheritance/dynamicAndStaticBinding/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 </panel>
