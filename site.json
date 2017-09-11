@@ -2245,10 +2245,6 @@
       "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Introduction"
     },
     {
-      "src": "book/oopDesign/polymorphism/basic/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Basic"
-    },
-    {
       "src": "book/oopDesign/polymorphism/mechanism/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Mechanism"
     },

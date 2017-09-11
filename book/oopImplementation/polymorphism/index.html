@@ -15,26 +15,82 @@
 <div class="website-content">
   <tip-box>
     <div>
-      <p>🏆 Can implement polymorphic behavior <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+      <p>🏆 Can implement polymorphism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
     </div>
   </tip-box>
   <div>
+    <div>
+      <p>
+        <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="%%:mortar_board: OOP &rarr; Inheritance &rarr; What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
     <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
 </span></strong>
       </span>
     </p>
     <div>
-      <h4 id="polymorphism-two">Polymorphism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
     </div>
     <div id="main">
       <div>
-        <p>
-          <panel src="/website\book\oopDesign\polymorphism\index._include_.html" header="OOP: Polymorphism" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
-        <p></p>
-        <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Oracle’s Java Tutorials: Polymorphism</a></p>
+        <p><strong>We can use inheritance to achieve polymorphism</strong>.</p>
+        <tip-box>
+          <p>📦 Given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes.</p><img src="/website/book/oopImplementation/polymorphism/images/polymorphicPayroll.png" height="200">
+          <p></p>
+          <pre class="hljs"><code>class Staff {
+    String name;
+    double salary;
+
+    void adjustSalary(int percent) {
+        // do nothing
+    }
+}
+
+//------------------------------------------
+
+class Admin extends Staff {
+
+    @Override
+    void adjustSalary(int percent) {
+        salary = salary * percent;
+    }
+}
+
+//------------------------------------------
+
+class Academic extends Staff {
+
+    @Override
+    void adjustSalary(int percent) {
+        salary = salary * percent * 2;
+    }
+}
+
+//------------------------------------------
+
+class Payroll {
+    ArrayList&lt; Staff &gt; staff;
+    // ...
+
+    void adjustSalary(int byPercent) {
+        for (Staff s: staff) {
+            s.adjustSalary(byPercent);
+        }
+    }
+}
+</code></pre>
+        </tip-box>
       </div>
       <div>
+        <div>
+          <panel header=":paperclip: Resources" expanded="">
+            <ul>
+              <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Oracle’s Java Tutorials: Polymorphism</a></li>
+              <li><a href="https://www.tutorialspoint.com/java/java_polymorphism.htm">Java - Polymorphism</a> -- a tutorial from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+            </ul>
+          </panel>
+        </div>
         <div></div>
       </div>
     </div>

@@ -290,9 +290,9 @@
                       <panel header=":lock::key: Cost of bug fixing over time">
                         <question>
                           <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                          <ul radio-group="xi33i" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="xi33i" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="xi33i" type="radio"> False</label></li>
+                          <ul radio-group="3jq68" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3jq68" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3jq68" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>False. The cost goes up over time.</p>
@@ -592,7 +592,23 @@
           <tip-box type="important">
             This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
           </tip-box>
-          <h4 id="individual-component">Individual component:</h4>
+          <tip-box type="warning">
+            <p><strong>Those who failed to produce working code at 1KLoC milestone</strong> (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
+          </tip-box>
+          <tip-box type="tip">
+            <p>When working with existing code, a safe approach is to <strong>change the code in very small steps, each resulting in a verifiable change</strong> without breaking the app. For example, when adding a new <code>sort</code> command, the first
+              few steps can be,</p>
+            <ol>
+              <li>Teach the app to accept a <code>sort</code> command but ignore it.</li>
+              <li>Next, teach the app to direct the <code>sort</code> command to an existing command e.g. <code>sort</code> command simply invokes the <code>list</code> command internally.</li>
+              <li>Add a <code>SortCommand</code> class but make it simply a copy of the the existing <code>ListCommand</code>. Direct the <code>sort</code> command to the new <code>SortCommand</code>.</li>
+              <li>...</li>
+            </ol>
+          </tip-box>
+          <tip-box type="tip">
+            <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+          </tip-box>
+          <h3 id="individual-component">Individual component:</h3>
           <p><strong>You can omit this individual component if</strong> you have worked with a code base that meets the following criteria:</p>
           <ul>
             <li>more than 2KLoC of the code base was written by other developers</li>
@@ -611,26 +627,6 @@
           <ul>
             <li>Update the Developer Guide</li>
           </ul>
-          <p>Those who failed to produce working code at 1KLoC milestone (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
-          <tip-box type="tip">
-            <p>When working with existing code, a safe approach is to <strong>change the code in very small steps, each resulting in a verifiable change</strong> without breaking the app. For example, when adding a new <code>sort</code> command, the first
-              few steps can be,</p>
-            <ol>
-              <li>Teach the app to accept a <code>sort</code> command but ignore it.</li>
-              <li>Next, teach the app to direct the <code>sort</code> command to an existing command e.g. <code>sort</code> command simply invokes the <code>list</code> command internally.</li>
-              <li>Add a <code>SortCommand</code> class but make it simply a copy of the the existing <code>ListCommand</code>. Direct the <code>sort</code> command to the new <code>SortCommand</code>.</li>
-              <li>...</li>
-            </ol>
-          </tip-box>
-          <h4 id="team-component">Team component:</h4>
-          <p>The team component is <mark>to be done by all members</mark>, including those who were allowed to omit the individual component.</p>
-          <ul>
-            <li>Review PRs created by team members in the <em>Individual Component</em> above. You can either give suggestions to improve, or ask questions to understand, the code written by the team member. Try to get each PR reviewed by at least one team
-              member and try to ensure each team member's PR is reviewed by at least one other team member.</li>
-          </ul>
-          <tip-box type="tip">
-            <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
-          </tip-box>
           <div>
             <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
             <p>
@@ -638,6 +634,20 @@
                 header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
           </div>
+          <h3 id="team-component">Team component:</h3>
+          <p>The team component is <mark>to be done by all members</mark>, including those who were allowed to omit the individual component.</p>
+          <ul>
+            <li>
+              <p>Review PRs created by team members in the <em>Individual Component</em> above <span class="dimmed">i.e. add review comments in the PR created against module repo</span>. You can either give suggestions to improve, or ask questions to understand,
+                the code written by the team member.</p>
+            </li>
+            <li>
+              <p><strong>Requirements</strong>: Try to ensure that each PR reviewed by <em>at least</em> one team member and each team member's PR is reviewed by at least one other team member.</p>
+            </li>
+            <li>
+              <p><strong>Submission</strong>: Just update PR created in the individual component by adding comments/commits to it.</p>
+            </li>
+          </ul>
         </div>
       </panel>
     </panel>
@@ -863,9 +873,9 @@
                       <panel header=":lock::key: Which one is not recommended to use?">
                         <question>
                           <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                          <ul radio-group="ymwle" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ymwle" type="radio"> a. Composition symbol</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ymwle" type="radio"> b. Aggregation symbol</label></li>
+                          <ul radio-group="z6ft2" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="z6ft2" type="radio"> a. Composition symbol</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="z6ft2" type="radio"> b. Aggregation symbol</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>

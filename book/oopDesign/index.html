@@ -647,10 +647,10 @@
                     <panel header=":lock::key: What does the navigability given by this diagram mean?">
                       <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                         <p></p>
-                        <ul radio-group="059jr" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="059jr" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="059jr" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="059jr" type="radio"> c. Depends on the programming language</label></li>
+                        <ul radio-group="az695" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="az695" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="az695" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="az695" type="radio"> c. Depends on the programming language</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -804,9 +804,9 @@
                     <panel header=":lock::key: Which one is not recommended to use?">
                       <question>
                         <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                        <ul radio-group="tnk6g" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="tnk6g" type="radio"> a. Composition symbol</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="tnk6g" type="radio"> b. Aggregation symbol</label></li>
+                        <ul radio-group="hxlum" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="hxlum" type="radio"> a. Composition symbol</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="hxlum" type="radio"> b. Aggregation symbol</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(b)</p>
@@ -932,63 +932,60 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>A sub-class can change the behavior inherited from the parent class by simply re-implementing it. This is called <em>overriding</em>. Overridden methods have the same name, same type signature, and same return type.</p>
+              <p><strong>Method <em>overriding</em> is when a sub-class changes the behavior inherited from the parent class</strong> by re-implementing the method. Overridden methods have the same name, same type signature, and same return type.</p>
               <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/inheritance/overriding/images/report.png" height="150">
-                <p></p>
-              </tip-box>
-            </div>
-            <div>
-              <div></div>
-            </div>
-          </div>
-        </panel>
-      </div>
-      <div>
-        <div>
-          <h4 id="overloading-two">Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can explain method overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div>
-              <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-              <tip-box
-                type="primary">
-                <div>
-                  <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
-                  <panel
-                    type="seamless" header="%%Examples%%">
-                    <table class="markbind-table table">
-                      <thead>
-                        <tr>
-                          <th style="text-align:center">Method</th>
-                          <th style="text-align:center">Type Signature</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                          <td style="text-align:center"><code>(int, int)</code></td>
-                        </tr>
-                        <tr>
-                          <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                          <td style="text-align:center"><code>(int, int)</code></td>
-                        </tr>
-                        <tr>
-                          <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                          <td style="text-align:center"><code>(int, double)</code></td>
-                        </tr>
-                        <tr>
-                          <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                          <td style="text-align:center"><code>(double, int)</code></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <p>📦 In the diagram below,</p>
+                <ul>
+                  <li><code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method.</li>
+                  <li><code>Report#write(String)</code> method is overridden by <code>EvaluationReport#write(String)</code> method.</li>
+                  <li><code>Report#read():String</code> method is <strong>NOT</strong> overridden by <code>EvaluationReport#read(int):String</code> method. <span class="dimmed"> Reason: the two methods have different signatures; <code>EvaluationReport#read(int):String</code><trigger trigger="click" for="modal:overriding-overloading"><em>overloads</em></trigger> (rather than overrides) the <code>Report#read():String</code> method.</span></li>
+                </ul>
+                <modal title="**Overloading**" id="modal:overriding-overloading">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+                      </span>
+                    </p>
+                    <div>
+                      <h4 id="overloading-two">Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
+                        <tip-box
+                          type="primary">
+                          <div>
+                            <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                            <panel
+                              type="seamless" header="%%Examples%%">
+                              <table class="markbind-table table">
+                                <thead>
+                                  <tr>
+                                    <th style="text-align:center">Method</th>
+                                    <th style="text-align:center">Type Signature</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                    <td style="text-align:center"><code>(int, double)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(double, int)</code></td>
+                                  </tr>
+                                </tbody>
+                              </table>
         </panel>
         </div>
         </tip-box>
@@ -1005,7 +1002,78 @@
           <div></div>
         </div>
         </div>
+        </div>
+        </modal><img src="/website/book/oopDesign/inheritance/overriding/images/report.png" height="150">
+        <p></p>
+        </tip-box>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        </div>
   </panel>
+  </div>
+  <div>
+    <div>
+      <h4 id="overloading-two-2">Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <tip-box>
+      <div>
+        <p>🏆 Can explain method overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+      </div>
+    </tip-box>
+    <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <div>
+        <div>
+          <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
+          <tip-box type="primary">
+            <div>
+              <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+              <panel
+                type="seamless" header="%%Examples%%">
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Method</th>
+                      <th style="text-align:center">Type Signature</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                      <td style="text-align:center"><code>(int, int)</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                      <td style="text-align:center"><code>(int, int)</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                      <td style="text-align:center"><code>(int, double)</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                      <td style="text-align:center"><code>(double, int)</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+    </panel>
+    </div>
+    </tip-box>
+    <tip-box>
+      <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int[])</code></p>
+      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RatingCalculator</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(String matric)</span> </span>{ ... }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
+}
+</code></pre>
+    </tip-box>
+    </div>
+    <div>
+      <div></div>
+    </div>
+    </div>
+    </panel>
   </div>
   <div>
     <div>
@@ -1179,8 +1247,7 @@ void calculateCAP (int[] averages) { ... }
                 <div>
                   <p><strong>Polymorphism</strong>:</p>
                   <blockquote>
-                    <p>The ability of different objects to respond, each in its own way, to identical messages is called polymorphism.</p>
-                    <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+                    <p>The ability of different objects to respond, each in its own way, to identical messages is called polymorphism. <sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
                   </blockquote>
                 </div>
               </tip-box>
@@ -1188,7 +1255,7 @@ void calculateCAP (int[] averages) { ... }
                 executed whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing the classes in the
                 <code>Payroll</code> system.</p>
               <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
+                <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p><img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                 <p></p>
                 <p>Here is the implementation of the adjustSalary(int) operation from the above design.</p>
                 <pre class="hljs"><code>class Payroll1 {
@@ -1207,8 +1274,8 @@ void calculateCAP (int[] averages) { ... }
 }
 </code></pre>
               </tip-box>
-              <p>Note how processing is similar for the two staff types. It is <strong>as if the type of staff members is irrelevant</strong> to how they are processed inside this operation! If that is the case, can the staff type be “abstracted away” from
-                this operation? After all, why keep irrelevant details? Here is such an implementation of <code>adjustSalary(int)</code>:</p>
+              <p>Note how processing is similar for the two staff types. It is as if the type of staff members is irrelevant to how they are processed inside this operation! If that is the case, can the staff type be &quot;abstracted away&quot; from this
+                method? Here is such an implementation of <code>adjustSalary(int)</code>:</p>
               <tip-box>
                 <pre class="hljs"><code>class Payroll2 {
     ArrayList&lt; Staff &gt; staff;
@@ -1237,62 +1304,9 @@ void calculateCAP (int[] averages) { ... }
               </ul>
               <p>This does not mean we are getting rid of the <code>Academic</code> and <code>Admin</code> classes completely and replacing them with a more general class called <code>Staff</code>. Rather, this part of the code “treats” both <code>Admin</code>                and <code>Academic</code> objects as one type called <code>Staff</code>.</p>
               <p>For example, <code>ArrayList</code> staff contains both <code>Admin</code> and <code>Academic</code> objects although it treats all of them as <code>Staff</code> objects. However, when the <code>adjustSalary(int)</code> operation of these
-                objects is called, the resulting salary adjustment will be different for <code>Admin</code> objects and <code>Academic</code> objects. Therefore, <strong>different types of objects are treated as a single general type, but yet each type of object exhibits a different kind of behavior</strong>.
-                This is called <em>polymorphism</em> (literally, it means “ability to take many forms”). In this example, an object that is perceived as type <code>Staff</code> can be an <code>Admin</code> object or an <code>Academic</code> object.</p>
-            </div>
-            <div>
-              <div></div>
-            </div>
-          </div>
-        </panel>
-      </div>
-      <div>
-        <div>
-          <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can describe the basics of OOP polymorphism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div>
-              <p>To retain the multiple types while still allowing some parts of the system to treat them as one type, <em>inheritance</em> can be used.</p>
-              <tip-box>
-                <p>Example:</p><img src="/website/book/oopDesign/polymorphism/basic/images/staff.png" height="200">
-                <p></p>
-                <p>Given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes.</p>
-                <pre class="hljs"><code>class Staff {
-    String name;
-    double salary;
-
-    void adjustSalary(int percent) {
-        // do nothing
-    }
-}
-
-//------------------------------------------
-
-class Admin extends Staff {
-
-    @Override
-    void adjustSalary(int percent) {
-        salary = salary * percent;
-    }
-}
-
-//------------------------------------------
-
-class Academic extends Staff {
-
-    @Override
-    void adjustSalary(int percent) {
-        salary = salary * percent * 2;
-    }
-}
-</code></pre>
-              </tip-box>
+                objects is called, the resulting salary adjustment will be different for <code>Admin</code> objects and <code>Academic</code> objects. Therefore, different types of objects are treated as a single general type, but yet each type of object
+                exhibits a different kind of behavior. This is called <em>polymorphism</em> (literally, it means “ability to take many forms”). In this example, an object that is perceived as type <code>Staff</code> can be an <code>Admin</code> object
+                or an <code>Academic</code> object.</p>
             </div>
             <div>
               <div></div>
@@ -1391,7 +1405,7 @@ class Academic extends Staff {
       </div>
       <div>
         <div>
-          <h4 id="basic-two-2">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+          <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1624,15 +1638,15 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       In the context of OOP, what is the relationship between abstraction and encapsulation?
-                      <ul radio-group="kgrsp" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="kgrsp" type="radio"> a. They are the same thing</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="kgrsp" type="radio"> b. They are opposites</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="kgrsp" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="kgrsp" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      <ul radio-group="l66d0" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="l66d0" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="l66d0" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="l66d0" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="l66d0" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="x11j6" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="x11j6" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <ul radio-group="bvop0" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="bvop0" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                         </ul>
                         <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
                           in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
@@ -1653,16 +1667,16 @@ class Academic extends Staff {
                     <p></p>
                     <question>
                       Which of these do not belong to four main OO principles?
-                      <ul radio-group="j6xyi" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="j6xyi" type="radio"> a. Abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="j6xyi" type="radio"> b. Encapsulation</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="j6xyi" type="radio"> c. Inheritance</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="j6xyi" type="radio"> d. Substitutability</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="j6xyi" type="radio"> e. Polymorphism</label></li>
+                      <ul radio-group="gvxuh" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="gvxuh" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="gvxuh" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="gvxuh" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="gvxuh" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="gvxuh" type="radio"> e. Polymorphism</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="q2paj" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="q2paj" type="radio"> d. Substitutability</label></li>
+                        <ul radio-group="i1r2a" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="i1r2a" type="radio"> d. Substitutability</label></li>
                         </ul>
                       </div>
                     </question>

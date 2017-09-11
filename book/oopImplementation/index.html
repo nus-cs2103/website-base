@@ -427,35 +427,61 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>
-              <panel src="/website\book\oopDesign\inheritance\overriding\embed._include_.html" header="OOP: Inheritance: Overriding" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/override.html">Oracle’s Java Tutorials: Overriding</a></p>
+            <tip-box>
+              <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+              <pre><code class="hljs java">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">"Printing report"</span>);
+    }
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EvaluationReport</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Report</span></span>{
+
+    <span class="hljs-meta">@Override</span>  <span class="hljs-comment">// this annotation is optional</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">"Printing evaluation report"</span>);
+    }
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReportMain</span></span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+        Report report = <span class="hljs-keyword">new</span> Report();
+        report.print(); <span class="hljs-comment">// prints "Printing report"</span>
+
+        EvaluationReport evaluationReport = <span class="hljs-keyword">new</span> EvaluationReport();
+        evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
+    }
+}
+
+</code></pre>
+            </tip-box>
+            <ul>
+              <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+            </ul>
           </div>
           <div>
             <div>
               <panel header=":muscle: Exercises" expandable="">
                 <div>
-                  <panel header=":lock::key: Which one of these overrides another method?">
-                    <question><img src="/website/book/oopImplementation/overriding/images/overriding.png" height="220">
+                  <panel header=":lock::key: Which methods override?">
+                    <question>
+                      <p>Which of these methods override another method?</p><img src="/website/book/oopImplementation/overriding/images/overriding.png" height="220">
                       <p></p>
                       <ul class="task-list">
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. a</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. b</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. c</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. d</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. e</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
                       </ul>
                       <div slot="answer">
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. a</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. b</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. c</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. d</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. e</li>
-                        </ul>
-                        <p>Explanation: Method overriding requires a method in a child class to use the same method name and same parameter sequence used by one of its ancestors</p>
+                        <p>d</p>
+                        <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
                       </div>
                     </question>
                   </panel>
@@ -596,23 +622,73 @@
     </div>
     <div>
       <div>
-        <h4 id="polymorphism-two">Polymorphism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <tip-box>
         <div>
-          <p>🏆 Can implement polymorphic behavior <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          <p>🏆 Can implement polymorphism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>
-              <panel src="/website\book\oopDesign\polymorphism\index._include_.html" header="OOP: Polymorphism" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            </p>
-            <p></p>
-            <p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Oracle’s Java Tutorials: Polymorphism</a></p>
+            <p><strong>We can use inheritance to achieve polymorphism</strong>.</p>
+            <tip-box>
+              <p>📦 Given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes.</p><img src="/website/book/oopImplementation/polymorphism/images/polymorphicPayroll.png" height="200">
+              <p></p>
+              <pre class="hljs"><code>class Staff {
+    String name;
+    double salary;
+
+    void adjustSalary(int percent) {
+        // do nothing
+    }
+}
+
+//------------------------------------------
+
+class Admin extends Staff {
+
+    @Override
+    void adjustSalary(int percent) {
+        salary = salary * percent;
+    }
+}
+
+//------------------------------------------
+
+class Academic extends Staff {
+
+    @Override
+    void adjustSalary(int percent) {
+        salary = salary * percent * 2;
+    }
+}
+
+//------------------------------------------
+
+class Payroll {
+    ArrayList&lt; Staff &gt; staff;
+    // ...
+
+    void adjustSalary(int byPercent) {
+        for (Staff s: staff) {
+            s.adjustSalary(byPercent);
+        }
+    }
+}
+</code></pre>
+            </tip-box>
           </div>
           <div>
+            <div>
+              <panel header=":paperclip: Resources" expanded="">
+                <ul>
+                  <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Oracle’s Java Tutorials: Polymorphism</a></li>
+                  <li><a href="https://www.tutorialspoint.com/java/java_polymorphism.htm">Java - Polymorphism</a> -- a tutorial from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                </ul>
+              </panel>
+            </div>
             <div></div>
           </div>
         </div>
