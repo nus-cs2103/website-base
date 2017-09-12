@@ -25,16 +25,6 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header=":trophy: Can draw basic sequence diagrams :star::star:" expandable>
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
 <panel type="info" header=":trophy: Can use JavaFX to build a simple GUI :star::star::star:" expandable>
   <include src="../../book/javaTools/javaFXBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
