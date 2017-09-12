@@ -104,7 +104,7 @@
           </div>
         </tip-box>
         <div>
-          <p>A <em>software requirement</em> specifies a need to be fulfilled by the software product.</p>
+          <p><strong>A <em>software requirement</em> specifies a need to be fulfilled by the software product.</strong></p>
           <p>A software project may be,</p>
           <ul>
             <li>a <em>brown-field</em> project: develop a product to replace/update an existing software product</li>
@@ -112,7 +112,12 @@
           </ul>
           <p>In either case, requirements gathered, analyzed, specified, and managed.</p>
           <p>Requirements come from <em>stakeholders</em>.</p>
-          <p>Identifying requirements is not as straightforward as it sounds. It is not as simple as writing a wish list. {more details}</p>
+          <tip-box type="info">
+            <div>
+              <p><strong>Stakeholder</strong>: A party that is potentially affected by the software project. e.g. users, sponsors, developers, interest groups, government agencies, etc.</p>
+            </div>
+          </tip-box>
+          <p>Identifying requirements is not as straightforward as it sounds. It is not as simple as writing a wish list.</p>
         </div>
       </div>
       <div>
@@ -127,17 +132,19 @@
         <div>
           <p>There are two different kinds of requirements:</p>
           <ol>
-            <li><strong>Functional requirements</strong> specify what the system should do.</li>
-            <li><strong>Non-functional requirements</strong> specify the constraints under which system is developed and operated. Some examples of non-functional requirements:</li>
+            <li><strong><mark>Functional requirements</mark> specify what the system should do.</strong></li>
+            <li><strong><mark>Non-functional requirements</mark> specify the constraints under which system is developed and operated.</strong></li>
           </ol>
-          <ul>
-            <li>Data requirements e.g. size, volatility, persistency etc.,</li>
-            <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
-            <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability,
-              Security, Stability, Testability, and more…</li>
-          </ul>
-          <p>Non-functional requirements are easier to miss. We should spend extra effort in digging them out as early as possible because sometimes they are critical to the success of the software. E.g. A web application that is too slow or that has low
-            security is unlikely to succeed even if it has all the right functionalities.</p>
+          <tip-box>
+            <p>📦 Some examples of non-functional requirements:</p>
+            <ul>
+              <li>Data requirements e.g. size, volatility, persistency etc.,</li>
+              <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+              <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
+                Scalability, Security, Stability, Testability, and more ...</li>
+            </ul>
+          </tip-box>
+          <p><strong>Non-functional requirements are easier to miss.</strong> We should spend extra effort in digging them out as early as possible because sometimes they are critical to the success of the software. <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></p>
         </div>
       </div>
       <div>
@@ -150,21 +157,28 @@
           </div>
         </tip-box>
         <div>
-          <p>Short timelines and limited resources often mean that you cannot implement all requirements at once. A prioritization criterion can be used to gauge the importance and urgency of requirements from the user point of view, while keeping in mind
-            the constraints of schedule, budget, staff resources, and quality goals as seen by the development team.</p>
-          <p>A common approach to prioritization is to group requirements into priority categories. Note that all such scales are subjective, and stakeholders define the meaning of each level in the scale for the project at hand.</p>
-          <p>Here is an example:</p>
-          <ul>
-            <li><code>Essential</code>: The product must have this requirement fulfilled else it does not get user acceptance</li>
-            <li><code>Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
-            <li><code>Novel</code>: New features that could differentiate this product from the rest.</li>
-          </ul>
-          <p>More examples:</p>
-          <ul>
-            <li><code>High</code>, <code>Medium</code>, <code>Low</code></li>
-            <li><code>Must-have</code>, <code>Nice-to-have</code>, <code>Unlikely-to-have</code></li>
-          </ul>
-          <p>At the same time, some requirements may get discarded as they are considered ‘out of scope’.</p>
+          <p><strong>Requirements can be prioritized based the importance and urgency</strong>, while keeping in mind the constraints of schedule, budget, staff resources, quality goals, and other constraints.</p>
+          <p>A common approach is to group requirements into priority categories. Note that all such scales are subjective, and stakeholders define the meaning of each level in the scale for the project at hand.</p>
+          <tip-box>
+            <p>📦 An example scheme for categorizing requirements:</p>
+            <ul>
+              <li><code>Essential</code>: The product must have this requirement fulfilled else it does not get user acceptance</li>
+              <li><code>Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
+              <li><code>Novel</code>: New features that could differentiate this product from the rest.</li>
+            </ul>
+            <p>📦 Other schemes:</p>
+            <ul>
+              <li><code>High</code>, <code>Medium</code>, <code>Low</code></li>
+              <li><code>Must-have</code>, <code>Nice-to-have</code>, <code>Unlikely-to-have</code></li>
+            </ul>
+          </tip-box>
+          <p><strong>Some requirements can be discarded if they are considered ‘out of scope’.</strong></p>
+          <tip-box>
+            <p>📦 The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide that keeping track of the time taken for tasks is not in the scope of the software.</p>
+            <ul>
+              <li>The software records the actual time taken by each task and show the difference between the <em>actual</em> and <em>scheduled</em> time for the task.</li>
+            </ul>
+          </tip-box>
         </div>
       </div>
       <div>
@@ -187,9 +201,11 @@
             <li>Understandable</li>
             <li>Feasible (realistic, possible)</li>
             <li>Independent</li>
-            <li>Atomic</li>
+            <li>
+              <tooltip content="Not divisible any further">Atomic</tooltip>
+            </li>
             <li>Necessary</li>
-            <li>Implementation-free (abstract)</li>
+            <li>Implementation-free (i.e. abstract)</li>
           </ul>
           <p>Besides these criteria for individual requirements, the set of requirements as a whole should be</p>
           <ul>
@@ -2681,16 +2697,34 @@ void calculateCAP (int[] averages) { ... }
         </div>
         <tip-box>
           <div>
-            <p>🏆 Can interpret basic sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+            <p>🏆 Can draw basic sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
           </div>
         </tip-box>
         <div>
-          <p>
-            <panel src="/website\book\uml\sequenceDiagrams\basic\embed._include_.html" header="UML: Sequence Diagrams: Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            <panel src="/website\book\uml\sequenceDiagrams\objectCreation\embed._include_.html" header="UML: Sequence Diagrams: Object Creation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            <panel src="/website\book\uml\sequenceDiagrams\loops\embed._include_.html" header="UML: Sequence Diagrams: Loops" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-            <panel src="/website\book\uml\sequenceDiagrams\minimalNotation\embed._include_.html" header="UML: Sequence Diagrams: Minimal Notation" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
+          <tip-box>
+            <p>📦 Consider the code below.</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
+
+    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{
+        Unit prototype = <span class="hljs-keyword">new</span> Unit();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+            prototype.stressTest();
+        }
+        <span class="hljs-keyword">return</span> prototype;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{
+
+    }
+}
+
+</code></pre>
+            <p>Here is the sequence diagram to model the interactions for the method call <code>procudePrototype()</code> on a <code>Machine</code> object.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
+            <p></p>
+          </tip-box>
         </div>
       </div>
       <div>
@@ -9835,9 +9869,9 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></p>
+          <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
           <tip-box>
-            <p>Examples:</p><img src="/website/book/uml/sequenceDiagrams/introduction/images/textLogic.png" height="300">
+            <p>📦 Some exmaple sequence diagrams:</p><img src="/website/book/uml/sequenceDiagrams/introduction/images/textLogic.png" height="300">
             <p></p><img src="/website/book/uml/sequenceDiagrams/introduction/images/logicMinefield.png" height="300">
             <p></p>
           </tip-box>
@@ -9856,10 +9890,14 @@ A negative test case: i = null;
           <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/basic/images/notation.png" height="300">
           <p></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
+            <p>📦 This sequence diagram shows some interactions between a human user and the Text UI of a
+              <tooltip content="Command Line Interface">CLI</tooltip> Minesweeper game.</p><img src="/website/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
             <p></p>
-            <p>The notation :TextUi denotes ‘an unnamed instance of the class TextUi’. If there were two instances of TextUi in the diagram, they can be distinguished by naming them as TextUi1:TextUi and TextUi2:TextUi.</p>
+            <p>The player runs the <code>newgame</code> action on the <code>TextUi</code> object which results in the <code>TextUi</code> showing the minefield to the player. Then, the player runs the <code>clear x y</code> command; in response, the <code>TextUi</code>              object shows the updated minefield.</p>
           </tip-box>
+          <p>The <code>:TextUi</code> in the above example denotes <em>an unnamed instance of the class TextUi</em>. If there were two instances of <code>TextUi</code> in the diagram, they can be distinguished by naming them e.g. <code>TextUi1:TextUi</code>            and <code>TextUi2:TextUi</code>.</p>
+          <p><strong>Arrows representing method calls should be solid arrows while those representing method returns should be dashed arrows</strong>.</p>
+          <p>Note that unlike in Object Diagrams, the <strong>class/object name is not underlined in sequence diagrams</strong>.</p>
         </div>
       </div>
       <div>
@@ -9874,14 +9912,12 @@ A negative test case: i = null;
         <div>
           <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/objectCreation/images/notation.png" height="180">
           <p></p>
-          <tip-box type="info">
-            <ul>
-              <li>The arrow that represents the constructor arrives at the side of the box representing the instance.</li>
-              <li>The activation bar represents the period the constructor is active.</li>
-            </ul>
-          </tip-box>
+          <ul>
+            <li>The arrow that represents the constructor arrives at the side of the box representing the instance.</li>
+            <li>The activation bar represents the period the constructor is active.</li>
+          </ul>
           <tip-box>
-            <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/objectCreation/images/logicMinefield.png" height="150">
+            <p>📦 The <code>Logic</code> object creates a <code>Minefield</code> object.</p><img src="/website/book/uml/sequenceDiagrams/objectCreation/images/logicMinefield.png" height="150">
             <p></p>
           </tip-box>
         </div>
@@ -9918,7 +9954,7 @@ A negative test case: i = null;
           <p>Notation:</p><img src="/website/book/uml/sequenceDiagrams/loops/images/notation.png" height="80">
           <p></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/loops/images/playerText.png" height="300">
+            <p>📦 The <code>Player</code> calls the <code>mark x,y</code> command or <code>clear x y</code> command repeatedly until the game is won or lost.</p><img src="/website/book/uml/sequenceDiagrams/loops/images/playerText.png" height="300">
             <p></p>
           </tip-box>
         </div>
@@ -10031,10 +10067,10 @@ A negative test case: i = null;
           </div>
         </tip-box>
         <div>
-          <p>To reduce clutter, activation bars and return arrows may be omitted if they do not result in ambiguities or loss in information. Informal operation descriptions such as those given in the SD below can be used, if the purpose is to brainstorm
-            and not to specify the API.</p>
+          <p>To reduce clutter, <strong>activation bars and return arrows may be omitted</strong> if they do not result in ambiguities or loss of information. Informal operation descriptions such as those given in the example below can be used, if more precise
+            details are not required for the task at hand.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/uml/sequenceDiagrams/minimalNotation/images/textLogic.png" height="150">
+            <p>📦 A minimal sequence diagram</p><img src="/website/book/uml/sequenceDiagrams/minimalNotation/images/textLogic.png" height="150">
             <p></p>
           </tip-box>
         </div>
