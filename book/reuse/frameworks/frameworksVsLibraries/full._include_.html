@@ -1,0 +1,53 @@
+<p><span class="dimmed"><strong><span>Implementation → Reuse →
+</span></strong>
+  </span>
+</p>
+<div>
+  <h4 id="frameworks-vs-libraries-three">Frameworks vs Libraries <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+</div>
+<div id="main">
+  <div>
+    <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
+    <ul>
+      <li>
+        <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong> Examples: writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes
+          to Drupal, and adding test cases to JUnit .</p>
+      </li>
+      <li>
+        <p><strong>Your code calls the library code while the framework code calls your code.</strong> Frameworks use a technique called <em>inversion of control</em>, also called the “Hollywood principle” (i.e. don’t call us, we’ll call you!). That is,
+          you write code that will be called by the framework, e.g. writing test methods that will be called by the JUnit framework. In the case of libraries, written code calls libraries.</p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div>
+      <panel header=":muscle: Exercises" expandable="">
+        <div>
+          <panel header=":lock::key: Choose the correct statement.">
+            <question>
+              <p>Which one of these is not a framework but a library?</p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. JUnit</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Eclipse</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Drupal</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Ruby on Rails</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are all frameworks</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. JUnit</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Eclipse</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Drupal</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Ruby on Rails</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. They are all frameworks</li>
+                </ul>
+                <p>Explanation: These are framework examples cited in the handout.</p>
+              </div>
+            </question>
+          </panel>
+        </div>
+      </panel>
+    </div>
+    <div></div>
+  </div>
+</div>

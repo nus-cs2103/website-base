@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Textbook - Error Handling: Exceptions: How</title>
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
+<div class="website-content">
+  <tip-box>
+    <div>
+      <p>🏆 Can do exception handling in code <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+    </div>
+  </tip-box>
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>Most languages allow a method to encapsulate the unusual situation in an Exception object and 'throw' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when code segment that
+          encountered the unusual situation does not know how to deal with it.</p>
+        <p><strong>Exception objects can propagate up the method call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception it
+          caught, it will throw the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown to the
+          runtime, thus halting the system.</p>
+        <tip-box>
+          <p>📦 In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code> block
+            and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p><img src="/website/book/errorHandling/exceptions/how/images/processInput.png" height="320">
+          <p></p>
+        </tip-box>
+        <p>Advantages of exception handling in this way:</p>
+        <ul>
+          <li>The ability to propagate error information through the call stack.</li>
+          <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+        </ul>
+      </div>
+      <div>
+        <div>
+          <panel header=":paperclip: Resources" expandable="">
+            <ul>
+              <li><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/">Java Exceptions Tutorial from Oracle</a></li>
+            </ul>
+          </panel>
+        </div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Benefit of exceptions">
+                <question>
+                  <p>Which are benefits of exceptions?</p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Exceptions allow us to handle in one location similar errors arising in many different locations.</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Exceptions can be used to specify potential errors as a part of the method signature</li>
+                  </ul>
+                  <div slot="answer">
+                    <p>(a) (c) (d) (e)</p>
+                    <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\..\markbind\js\setup.js"></script>
+</html>

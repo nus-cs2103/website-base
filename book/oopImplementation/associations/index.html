@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Textbook - Object Oriented Programming: Associations</title>
+    <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/book/css/textbook.css">
+<div class="website-content">
+  <tip-box>
+    <div>
+      <p>🏆 Can implement associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+    </div>
+  </tip-box>
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Multiplicity%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Navigability%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="associations-one">Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p></p>
+        <p><strong>We use instance level variables to implement associations.</strong></p>
+        <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    Minefield minefield;
+    ...
+}
+</code></pre>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    ...
+}
+</code></pre>
+        </tip-box>
+        <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
+    ...
+}
+</code></pre>
+        </tip-box>
+        <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+    Bar bar;
+    ...
+}
+</code></pre>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
+    Foo foo;
+    ...
+}
+</code></pre>
+        </tip-box>
+        <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+        <tip-box>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    Cell[][] cell;
+    ...
+}
+</code></pre>
+        </tip-box>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Class Diagram for code">
+                <question>
+                  <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
+                  <ul>
+                    <li>Make the multiplicities as strict as possible without contradicting the code.</li>
+                    <li>You may omit the <code>Main</code> class from both diagrams.</li>
+                  </ul>
+                  <pre><code class="hljs java">
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Item item1 = <span class="hljs-keyword">new</span> Item();
+        Item item2 = <span class="hljs-keyword">new</span> Item();
+        Box box1 = <span class="hljs-keyword">new</span> Box(item1);
+        Box box2 = <span class="hljs-keyword">new</span> Box(item2);
+        item2.setMainCard(<span class="hljs-keyword">new</span> Card());
+        item2.addPreviousBox(box1);
+        item2.addPreviousBox(box2);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span></span>{
+    <span class="hljs-keyword">private</span> Item item;
+    Box (Item item){
+        <span class="hljs-keyword">this</span>.item = item;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{
+    <span class="hljs-keyword">private</span> List&lt;Box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{
+        <span class="hljs-keyword">this</span>.mainCard = card;
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{
+        <span class="hljs-keyword">this</span>.subCard = card;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPreviousBox</span><span class="hljs-params">(Box previousBox)</span></span>{
+        previousBoxes.add(previousBox);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
+    
+}
+
+</code></pre>
+                  <div slot="answer"><img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
+                  <p></p>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Object Diagrams for Class Diagram">
+                <question>
+                  <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                  <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+                  <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+                  <ol>
+                    <li>
+                      <p>There are no persons.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                    </li>
+                    <li>
+                      <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                    </li>
+                  </ol>
+                  <div slot="hint">
+                    <p>After step 2, the diagram should be like this:</p><img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Implement Class Diagram">
+                <question>
+                  <p>Implement the class structure given below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\markbind\js\setup.js"></script>
+</html>

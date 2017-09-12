@@ -1,0 +1,56 @@
+<p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+  </span>
+</p>
+<div>
+  <h4 id="separation-of-concerns-three">Separation of Concerns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+</div>
+<div id="main">
+  <div>
+    <tip-box type="primary">
+      <div>
+        <p><strong>Separation of Concerns Principle (SoC)</strong>: To achieve better modularity, separate the code into distinct sections, such that each section addresses a separate <em>concern</em>. -- Edsger W. Dijkstra</p>
+      </div>
+    </tip-box>
+    <p>A concern in this context is a set of information that affects the code of a computer program.</p>
+    <p>Examples for <em>concerns</em>:</p>
+    <ul>
+      <li>A specific feature, such as the code related to <code>add employee</code> feature</li>
+      <li>A specific aspect, such as the code related to <code>persistence</code> or <code>security</code></li>
+      <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
+    </ul>
+    <p>Applying SoC reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</p>
+    <p>This principle can be applied at the class level, as well as on higher levels. For example, the n-tier architecture utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.
+      A correct application of this principle should lead to higher cohesion and lower coupling.</p>
+  </div>
+  <div>
+    <div>
+      <panel header=":muscle: Exercises" expandable="">
+        <div>
+          <panel header=":lock::key: Choose the correct statement.">
+            <question>
+              <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software design should promote separation of concerns in a design.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software design should increase cohesion of its components.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software design should follow single responsibility principle.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. All of the above.</li>
+              </ul>
+              <div slot="answer">
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software design should promote separation of concerns in a design.</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software design should increase cohesion of its components.</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software design should follow single responsibility principle.</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. All of the above.</li>
+                </ul>
+                <p>Explanation: By making ‘user interaction’ GUI class’ sole responsibility, we increase its cohesion. This is also in line with separation of concerns (i.e., we separated the concern of user interaction) and single responsibility principle
+                  (GUI class has only one responsibility).</p>
+              </div>
+            </question>
+          </panel>
+        </div>
+      </panel>
+    </div>
+    <div></div>
+  </div>
+</div>
