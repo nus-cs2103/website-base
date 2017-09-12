@@ -1,4 +1,4 @@
-<panel type="danger" header=":trophy: Can interpret basic sequence diagrams :star:" expandable expanded no-close>
+<panel type="danger" header=":trophy: Can interpret basic sequence diagrams :star:" no-close>
 
 <panel type="danger" header=":trophy: Can explain/identify sequence diagrams :star:" expandable>
   <include src="../../book/uml/sequenceDiagrams/introduction/full.md" />

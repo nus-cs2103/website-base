@@ -1,4 +1,4 @@
-<panel type="danger" header=":trophy: Can implement polymorphism :star:" expandable expanded no-close>
+<panel type="danger" header=":trophy: Can implement polymorphism :star:" no-close>
 
 <panel type="danger" header=":trophy: Can explain method overriding :star:" expandable>
   <include src="../../book/oopDesign/inheritance/overriding/full.md" />
