@@ -25,7 +25,7 @@
   <include src="../../book/revisionControl/featureBranchFlow/full.md" />
 </panel>
 
-<panel type="success" header="`W5.1e` Can explain centralised flow :star::star::star::star:" >
+<panel type="success" header="`W5.1e` Can explain centralized flow :star::star::star::star:" >
   <include src="../../book/revisionControl/centralizedFlow/full.md" />
 </panel>
 
