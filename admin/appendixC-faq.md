@@ -56,6 +56,8 @@ In CS2103/T, A+ is not given simply based on the final score. To get an A+ you s
 * score enough to get an A
 * be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
 * be considered helpful by peers (based on peer evaluations and tutor observations)
+  * In particular, you are encouraged to be active on the slack channel and our [forum](https://github.com/nus-cs2103-AY1718S1/forum/issues) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
+  * Whenever you can, go out of your way to review PRs created by other class members (as part of weekly LOs), even if they are not in your team.
 * achieve _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs.
 
 </div>
