@@ -50,6 +50,8 @@
     *   [Where is everything?](#admin-faq-whereIsEverything)
     *   [What are the differences between CS2103 and CS2103T?](#admin-faq-cs2103VsCs2103t)
     *   [Why the workload is so high?](#admin-faq-highWorkload)
+    *   [How do I get CS2103R credit for optional LOs?](#admin-faq-cs2103r)
+    *   [What are the extra requirements to get an A+?](#admin-faq-aPlus)
     *   [Why so much bean counting?](#admin-faq-beanCounting)
     *   [Why you force me to visit a separate website instead of using IVLE?](#admin-faq-separateWebsite)
     *   [Why slides are not detailed?](#admin-faq-slideFormat)
