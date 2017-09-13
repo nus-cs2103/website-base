@@ -45,16 +45,6 @@
   </panel>
 </panel>
 
-
-<panel type="info" header=":trophy: Can explain product surveys :star::star::star:" expandable>
-  <include src="../../book/gatheringRequirements/productSurveys/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
 <panel type="info" header=":trophy: Can explain prose :star::star::star:" expandable>
   <include src="../../book/gatheringRequirements/userSurveys/full.md" />
   <panel header=":dart: Evidence" expanded>
