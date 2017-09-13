@@ -13,10 +13,6 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-substitutability.md" />
-
-<!-- ==================================================================================================== -->
-
 <panel type="info" header=":trophy: Can use JavaFX to build a simple GUI :star::star::star:" expandable>
   <include src="../../book/javaTools/javaFXBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
