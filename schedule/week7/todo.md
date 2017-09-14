@@ -1,6 +1,6 @@
 <panel  header="Admin info to read" expandable expanded>
 
-<include type="danger" src="../../admin/project-v12.md" name="%%Admin &raquo;%% Project: v1.2 :star:" dynamic />
+<include type="danger" src="../../admin/project-v11.md" name="%%Admin &raquo;%% Project: v1.1 :star:" dynamic />
 
 <include type="info" src="../../admin/appendixF-teamworkIssues.md" name="%%Admin &raquo;%% Appedix F: Handling Teamwork Issues :star::star::star:" dynamic />
 
