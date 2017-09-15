@@ -1,4 +1,4 @@
-<panel type="danger" header="**`W6.6` Can use some techniques for specifying requirements** :star::star:" no-close>
+<panel type="danger" header="**`W6.6` Can use some techniques for specifying requirements** :star:" no-close>
 
 
 <panel type="info" header="`W6.6a` Can explain prose :star::star::star:" expandable>
