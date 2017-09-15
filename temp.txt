@@ -4,45 +4,58 @@
 
 ------------
 
-W6.1 Can implement polymorphism ⭐️
-W6.1a Can explain method overriding ⭐️
-W6.1b Can implement overriding ⭐️
-W6.1c Can explain OOP polymorphism ⭐️
-W6.1d Can implement polymorphism ⭐️
-W6.1e Can explain abstract classes ⭐️⭐️
-W6.1f Can implement abstract classes ⭐️⭐️
-W6.1g Can explain interfaces ⭐️⭐️⭐️
-W6.1h Can implement interfaces ⭐️⭐️⭐️
-W6.2 Can use JavaFX to build a simple GUI ⭐️⭐️⭐️
-W6.3 Can interpret basic sequence diagrams ⭐️
-W6.3a Can explain/identify sequence diagrams ⭐️
-W6.3b Can interpret sequence diagrams with basic notation ⭐️
-W6.3c Can interpret sequence diagrams with loops ⭐️
-W6.3d Can interpret sequence diagrams with object creation ⭐️
-W6.3e Can interpret sequence diagrams with minimal notation ⭐️
-W6.3f Can draw basic sequence diagrams ⭐️⭐️
-W6.4 Can explain requirements ⭐️⭐️
-W6.4a Can explain requirements ⭐️⭐️
-W6.4b Can explain non-functional requirements ⭐️⭐️⭐️
-W6.4c Can explain prioritizing requirements ⭐️⭐️⭐️
-W6.4d Can explain quality of requirements LO ⭐️⭐️⭐️
-W5.5 Can explain some techniques for gathering requirements ⭐️⭐️⭐️
-W5.5a Can explain brainstorming ⭐️⭐️⭐️
-W5.5b Can explain product surveys ⭐️⭐️⭐️
-W5.5c Can explain observation ⭐️⭐️⭐️
-W5.5d Can explain user surveys ⭐️⭐️⭐️
-W5.5e Can explain interviews ⭐️⭐️⭐️
-W5.5f Can explain focus groups ⭐️⭐️⭐️
-W5.5g Can explain prototyping ⭐️⭐️⭐️
-W6.6 Can use some techniques for specifying requirements ⭐️⭐️
-W6.6a Can explain prose ⭐️⭐️⭐️
-W6.6b Can explain feature lists ⭐️⭐️⭐️
-W6.6c Can write simple user stories ⭐️⭐️
-W6.6d Can write more detailed user stories ⭐️⭐️⭐️
-W6.6e Can use user stories to manage requirements of project ⭐️⭐️⭐️
-W6.6f Can explain use cases ⭐️⭐️
-W6.6g Can use use cases to list functional requirements of a simple system ⭐️⭐️
-W6.6h Can specify details of a use case in a structured format ⭐️⭐️
-W6.6i Can optimize the use of use cases ⭐️⭐️⭐️⭐️
-W6.6j Can explain glossary ⭐️⭐️⭐️
-W6.6k Can explain supplementary requirements ⭐️⭐️⭐️
+
+------------
+
+
+
+
+------------
+
+
+
+
+------------
+
+**`W6.1` Can implement polymorphism** ⭐️
+- [ ] `W6.1a` Can explain method overriding ⭐️
+- [ ] `W6.1b` Can implement overriding ⭐️
+- [ ] `W6.1c` Can explain OOP polymorphism ⭐️
+- [ ] `W6.1d` Can implement polymorphism ⭐️
+- [ ] `W6.1e` Can explain abstract classes ⭐️⭐️
+- [ ] `W6.1f` Can implement abstract classes ⭐️⭐️
+- [ ] `W6.1g` Can explain interfaces ⭐️⭐️⭐️
+- [ ] `W6.1h` Can implement interfaces ⭐️⭐️⭐️
+
+
+- [ ] **`W6.2` Can use JavaFX to build a simple GUI** ⭐️⭐️⭐️
+
+
+**`W6.3` Can interpret basic sequence diagrams** ⭐️
+- [ ] `W6.3a` Can explain/identify sequence diagrams ⭐️
+- [ ] `W6.3b` Can interpret sequence diagrams with basic notation ⭐️
+- [ ] `W6.3c` Can interpret sequence diagrams with loops ⭐️
+- [ ] `W6.3d` Can interpret sequence diagrams with object creation ⭐️
+- [ ] `W6.3e` Can interpret sequence diagrams with minimal notation ⭐️
+- [ ] `W6.3f` Can draw basic sequence diagrams ⭐️⭐️
+
+
+**`W6.4` Can explain requirements** ⭐️⭐️
+- [ ] `W6.4a` Can explain requirements ⭐️⭐️
+- [ ] `W6.4b` Can explain non-functional requirements ⭐️⭐️⭐️
+- [ ] `W6.4c` Can explain prioritizing requirements ⭐️⭐️⭐️
+- [ ] `W6.4d` Can explain quality of requirements LO ⭐️⭐️⭐️
+
+
+**`W6.5` Can explain some techniques for gathering requirements** ⭐️⭐️⭐️
+- [ ] `W6.5a` Can explain brainstorming ⭐️⭐️⭐️
+- [ ] `W6.5b` Can explain product surveys ⭐️⭐️⭐️
+- [ ] `W6.5c` Can explain observation ⭐️⭐️⭐️
+- [ ] `W6.5d` Can explain user surveys ⭐️⭐️⭐️
+- [ ] `W6.5e` Can explain interviews ⭐️⭐️⭐️
+- [ ] `W6.5f` Can explain focus groups ⭐️⭐️⭐️
+- [ ] `W6.5g` Can explain prototyping ⭐️⭐️⭐️
+
+
+**`W6.6` Can use some techniques for specifying requirements** ⭐️
+- [ ] `W6.6i` Can optimize the use of use cases ⭐️⭐️⭐️⭐️
