@@ -1064,7 +1064,7 @@
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringProperty street;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> IntegerProperty postalCode;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringProperty city;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ObjectProperty&lt;localdate&gt; birthday;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ObjectProperty&lt; LocalDate &gt; birthday;
 
     <span class="hljs-comment">/**
      * Default constructor.
@@ -1084,7 +1084,7 @@
         <span class="hljs-keyword">this</span>.street = <span class="hljs-keyword">new</span> SimpleStringProperty(<span class="hljs-string">"some street"</span>);
         <span class="hljs-keyword">this</span>.postalCode = <span class="hljs-keyword">new</span> SimpleIntegerProperty(<span class="hljs-number">1234</span>);
         <span class="hljs-keyword">this</span>.city = <span class="hljs-keyword">new</span> SimpleStringProperty(<span class="hljs-string">"some city"</span>);
-        <span class="hljs-keyword">this</span>.birthday = <span class="hljs-keyword">new</span> SimpleObjectProperty&lt;localdate&gt;(LocalDate.of(<span class="hljs-number">1999</span>, <span class="hljs-number">2</span>, <span class="hljs-number">21</span>));
+        <span class="hljs-keyword">this</span>.birthday = <span class="hljs-keyword">new</span> SimpleObjectProperty&lt; LocalDate &gt;(LocalDate.of(<span class="hljs-number">1999</span>, <span class="hljs-number">2</span>, <span class="hljs-number">21</span>));
     }
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getFirstName</span><span class="hljs-params">()</span> </span>{
@@ -1155,7 +1155,7 @@
         <span class="hljs-keyword">this</span>.birthday.set(birthday);
     }
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> ObjectProperty&lt;localdate&gt; <span class="hljs-title">birthdayProperty</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">public</span> ObjectProperty&lt; LocalDate &gt; birthdayProperty() {
         <span class="hljs-keyword">return</span> birthday;
     }
 }
@@ -1909,11 +1909,11 @@
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="6wy6m" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="6wy6m" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="6wy6m" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="6wy6m" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="6wy6m" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="121zn" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="121zn" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="121zn" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="121zn" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="121zn" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
