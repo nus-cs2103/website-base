@@ -8,8 +8,45 @@
 
 Get together with your team members and brainstorm user stories **for the v2.0 of the product**. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).
 
-* It is ok to have more user stories than you can deliver in the project.You should have at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.
-* Write each use story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool such as Trello for recording the initial collection of user stories.
+* It is ok to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
+
+* You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given below).
+
+<tabs> 
+  <tab header="GitHub Project Boards">
+
+You can create issues for each of the user stories and use a GitHub _Project Board_ to sort them into categories.
+
+:package: Example Project Board:
+
+<img src="{{baseUrl}}/admin/images/userStoriesInGitHubProjectBoards.png" width="800" /><p/>
+
+:package: Example Issue to represent a user story:
+
+<img src="{{baseUrl}}/admin/images/userStoryAsGitHubIssue.png" width="800" /><p/>
+
+A video on GitHub Project Boards:
+
+@[youtube](C6MGKHkNtxU)
+
+  <hr></tab>
+  <tab header="Google Sheets">
+
+:package: Example Google Sheet for recording user stories:
+
+<img src="{{baseUrl}}/admin/images/userStoriesInGoogleSheets.png" width="800" /><p/>
+
+  <hr></tab>  
+  <tab header="Trello">
+
+:package: Example [Trello](https://trello.com) Board for recording user stories:
+
+<img src="{{baseUrl}}/admin/images/userStoriesInTrello.png" width="800" /><p/>
+
+  <hr></tab>
+
+</tabs>
+
 * Note that ==you should not 'evaluate' the value of user stories while doing the above==. An important aspect of brainstorming is not judging the ideas generated. 
 
 <include name="%%Textbook &raquo; Gathering Requirements &rarr; Brainstorming%%" src="../book/gatheringRequirements/brainstorming/full.md" dynamic /> 
@@ -34,13 +71,13 @@ Suggested workflow:
 * Take one use story at a time and get team member opinions about it.
 * Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
 
-  * `Must-Have` : The product will be practically useless without this feature.
+  * `Must-Have` : The product will be practically useless to the target user without this feature.
   * `Nice-To-Have` : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.
-  * `Not-Useful` : No significant benefit to the target use, or does not fit into the product vision.
+  * `Not-Useful` : No significant benefit to the target user, or does not fit into the product vision.
 
-* After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.
+* %%If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
 
-<include name="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; Tips%%" src="../book/specifyingRequirements/userStories/usage/text.md#usageTips" dynamic /> 
+<include name="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; Tips%%" src="../book/specifyingRequirements/userStories/usage/full.md#usageTips" dynamic /> 
 
 
 #### Step 3: Record v2.0 Requirements in the Developer Guide 
@@ -63,16 +100,26 @@ Update the following pages of the Developer Guide:
 
 **Suggested length**: Follow the existing user guide and developer guides in terms of the level of details.
 
-**Submission**: Update the relevant sections of the relevant asciidoc documents in your repo. 
+**Submission**: 
 
-**Grading**: Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.  
+1. One team member: Set up the team org and team repo for your phase B team if you haven't done that already.
+
+<include src="appendixE-gitHub.md#organization-setup" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Organization Setup%%" dynamic />
+<include src="appendixE-gitHub.md#repo-setup" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Repo Setup%%" dynamic />
+ 
+2. Divide among yourselves who will update which parts of the Developer guide.
+3. Update the team repo. Recommended: follow the forking workflow.
+
+<include src="../book/revisionControl/forkingWorkflow/full.md" name="%%TextBook &raquo; Revision Control &rarr; Forking Workflow%%" dynamic />
+
+**Grading**: ==Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.== 
 To claim this milestone as 'reached', you should at least have a full draft version of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.
 
 ### v1.0 Product
 
 **Objective**: To familiarize yourself with the code.
 
-**Description**: Divide the component among yourselves. Each member can do some small enhancements to the component they are in charge of to learn the code of that component. Some suggested enhancements are given in the AddressBook-Level4 developer guide.
+**Description**: Divide the <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the [AddressBook-Level4 developer guide](https://nus-cs2103-AY1718S1.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component).
 
 
 **Submission**: Create PRs from your own fork to your team repo. 
