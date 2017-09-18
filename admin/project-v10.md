@@ -1,3 +1,5 @@
+<div id="documentation">
+
 #### v1.0 Documentation
 
 **Objective**: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.
@@ -115,6 +117,9 @@ Update the following pages of the Developer Guide:
 **Grading**: ==Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.== 
 To claim this milestone as 'reached', you should at least have a full draft version of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.
 
+</div>
+<div id="product">
+
 ### v1.0 Product
 
 **Objective**: To familiarize yourself with the code.
@@ -125,3 +130,5 @@ To claim this milestone as 'reached', you should at least have a full draft vers
 **Submission**: Create PRs from your own fork to your team repo. 
 
 **Grading**: This is an individual milestone. Considered reached if you have at least attempted to enhance the code of a component, even if you did not fully succeed.
+
+</div>

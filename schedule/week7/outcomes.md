@@ -9,21 +9,23 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-coupling.md" />
+<include src="outcome-architecture.md" />
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-cohesion.md" />
+<include src="outcome-api.md" />
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can explain a product from the user's perspective :star:" expandable>
-  <panel header=":dart: Evidence" expanded>
+<include src="outcome-logging.md" />
 
-...
+<!-- ==================================================================================================== -->
 
-  </panel>
-</panel>
+<include src="outcome-assertion.md" />
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-continuous.md" />
 
 <!-- ==================================================================================================== -->
 
@@ -31,77 +33,22 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-abstraction.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-classDiagram.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="info" header=":trophy: Can draw intermediate level sequence diagrams :star::star::star:" expandable>
+<panel type="danger" header=":trophy: Can record requirements of a product :star:" expandable>
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="../../admin/project-v10.md#documentation" name="%%Admin &raquo; v1.0 &rarr; Documentation%%" dynamic />
 
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can explain open-closed principle (OCP) :star::star::star:" expandable>
-  <include src="../../book/designPrinciples/openClosedPrinciple/what/full.md" />
+<panel type="danger" header=":trophy: Can do local-impact changes to an existing software :star:" expandable>
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="../../admin/project-v10.md#product" name="%%Admin &raquo; v1.0 &rarr; Product%%" dynamic />
 
   </panel>
 </panel>
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-associationClass.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="info" header=":trophy: Can use advanced class diagrams :star::star::star:" expandable>
-  <include src="../../book/modeling/modelingStructures/classDiagramsAdvanced/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-sequenceDiagramAdvanced.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
-  <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable>
-  <include src="../../book/principles/interfaceSegregationPrinciple/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-tdd.md" />
 
 <!-- ==================================================================================================== -->
 
