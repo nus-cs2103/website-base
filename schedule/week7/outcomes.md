@@ -13,7 +13,14 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-api.md" />
+<panel type="warning" header=":trophy: Can explain APIs :star::star:" expandable>
+  <include src="../../book/reuse/apis/what/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Know the API of the AddressBook component you are in charge of and the APIs of the other components your component depends on.
+
+  </panel>
+</panel>
 
 <!-- ==================================================================================================== -->
 
