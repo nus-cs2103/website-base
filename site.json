@@ -1085,20 +1085,12 @@
       "title": "CS2103/T Textbook - Error Handling: Assertions: When"
     },
     {
-      "src": "book/errorHandling/assertions/exceptionsVsAssertions/index.md",
-      "title": "CS2103/T Textbook - Error Handling: Assertions: Exceptions vs Assertions"
-    },
-    {
       "src": "book/errorHandling/logging/index.md",
       "title": "CS2103/T Textbook - Error Handling: Logging"
     },
     {
       "src": "book/errorHandling/logging/what/index.md",
       "title": "CS2103/T Textbook - Error Handling: Logging: What"
-    },
-    {
-      "src": "book/errorHandling/logging/why/index.md",
-      "title": "CS2103/T Textbook - Error Handling: Logging: Why"
     },
     {
       "src": "book/errorHandling/logging/how/index.md",

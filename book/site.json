@@ -1066,20 +1066,12 @@
       "title": "SEforSDL - Error Handling: Assertions: When"
     },
     {
-      "src": "errorHandling/assertions/exceptionsVsAssertions/index.md",
-      "title": "SEforSDL - Error Handling: Assertions: Exceptions vs Assertions"
-    },
-    {
       "src": "errorHandling/logging/index.md",
       "title": "SEforSDL - Error Handling: Logging"
     },
     {
       "src": "errorHandling/logging/what/index.md",
       "title": "SEforSDL - Error Handling: Logging: What"
-    },
-    {
-      "src": "errorHandling/logging/why/index.md",
-      "title": "SEforSDL - Error Handling: Logging: Why"
     },
     {
       "src": "errorHandling/logging/how/index.md",

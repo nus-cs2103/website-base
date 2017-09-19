@@ -1,28 +1,61 @@
-
-- [ ] **`W2.1` Can use Git to save history** ⭐️
-- [ ] `W2.1f` Can set Git to ignore files ⭐️⭐️
-
-- [ ] **`W2.2` Can use basic features of an IDE** ⭐️
-- [ ] `W2.2c` Can navigate code effectively using IDE features ⭐️⭐️
-
-- [ ] **`W2.3` Can automate simple regression testing of text UIs** ⭐️⭐️
-- [ ] `W2.3a` Can explain testing ⭐️⭐️
-- [ ] `W2.3b` Can explain regression testing ⭐️⭐️
-- [ ] `W2.3c` Can explain test automation ⭐️⭐️
-- [ ] `W2.3d` Can semi-automate testing of CLIs ⭐️⭐️
-
-- [ ] **`W2.4` Can use Java Collections** ⭐️⭐️
-- [ ] `W2.4` Can use Java Collections ⭐️⭐️
-
-------
-
-- [ ] **`W2.5` Can use Java varargs feature** ⭐️⭐️⭐️
+**`W2.1` Can use Git to save history**️
+- [ ] `W2.1a` Can explain revision control ️
 
 
-------
+------------
 
 
-- [ ] **`W2.6` Can explain pros and cons of software engineering** ⭐️⭐️⭐️⭐️
+------------
 
 
-------
+
+
+------------
+
+
+
+
+------------
+
+**`W6.1` Can implement polymorphism** ⭐️
+- [ ] `W6.1a` Can explain method overriding ⭐️
+- [ ] `W6.1b` Can implement overriding ⭐️
+- [ ] `W6.1c` Can explain OOP polymorphism ⭐️
+- [ ] `W6.1d` Can implement polymorphism ⭐️
+- [ ] `W6.1e` Can explain abstract classes ⭐️⭐️
+- [ ] `W6.1f` Can implement abstract classes ⭐️⭐️
+- [ ] `W6.1g` Can explain interfaces ⭐️⭐️⭐️
+- [ ] `W6.1h` Can implement interfaces ⭐️⭐️⭐️
+
+
+- [ ] **`W6.2` Can use JavaFX to build a simple GUI** ⭐️⭐️⭐️
+
+
+**`W6.3` Can interpret basic sequence diagrams** ⭐️
+- [ ] `W6.3a` Can explain/identify sequence diagrams ⭐️
+- [ ] `W6.3b` Can interpret sequence diagrams with basic notation ⭐️
+- [ ] `W6.3c` Can interpret sequence diagrams with loops ⭐️
+- [ ] `W6.3d` Can interpret sequence diagrams with object creation ⭐️
+- [ ] `W6.3e` Can interpret sequence diagrams with minimal notation ⭐️
+- [ ] `W6.3f` Can draw basic sequence diagrams ⭐️⭐️
+
+
+**`W6.4` Can explain requirements** ⭐️⭐️
+- [ ] `W6.4a` Can explain requirements ⭐️⭐️
+- [ ] `W6.4b` Can explain non-functional requirements ⭐️⭐️⭐️
+- [ ] `W6.4c` Can explain prioritizing requirements ⭐️⭐️⭐️
+- [ ] `W6.4d` Can explain quality of requirements LO ⭐️⭐️⭐️
+
+
+**`W6.5` Can explain some techniques for gathering requirements** ⭐️⭐️⭐️
+- [ ] `W6.5a` Can explain brainstorming ⭐️⭐️⭐️
+- [ ] `W6.5b` Can explain product surveys ⭐️⭐️⭐️
+- [ ] `W6.5c` Can explain observation ⭐️⭐️⭐️
+- [ ] `W6.5d` Can explain user surveys ⭐️⭐️⭐️
+- [ ] `W6.5e` Can explain interviews ⭐️⭐️⭐️
+- [ ] `W6.5f` Can explain focus groups ⭐️⭐️⭐️
+- [ ] `W6.5g` Can explain prototyping ⭐️⭐️⭐️
+
+
+**`W6.6` Can use some techniques for specifying requirements** ⭐️
+- [ ] `W6.6i` Can optimize the use of use cases ⭐️⭐️⭐️⭐️

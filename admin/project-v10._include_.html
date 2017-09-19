@@ -1,130 +1,134 @@
-<h4 id="v10-documentation">v1.0 Documentation</h4>
-<p><strong>Objective</strong>: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.</p>
-<h4 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h4>
-<img src="/website/admin/images/v00.png" width="250px">
-<p>Get together with your team members and brainstorm user stories <strong>for the v2.0 of the product</strong>. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).</p>
-<ul>
-  <li>
-    <p>It is ok to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></p>
-  </li>
-  <li>
-    <p>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given below).</p>
-  </li>
-</ul>
-<tabs>
-  <tab header="GitHub Project Boards">
-    <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
-    <p>📦 Example Project Board:</p>
-    <p><img src="/website/admin/images/userStoriesInGitHubProjectBoards.png" width="800">
-      <p></p>
-    </p>
-    <p>📦 Example Issue to represent a user story:</p>
-    <p><img src="/website/admin/images/userStoryAsGitHubIssue.png" width="800">
-      <p></p>
-    </p>
-    <p>A video on GitHub Project Boards:</p>
-    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-    <p>
-      <hr>
-    </p>
-  </tab>
-  <tab header="Google Sheets">
-    <p>📦 Example Google Sheet for recording user stories:</p>
-    <p><img src="/website/admin/images/userStoriesInGoogleSheets.png" width="800">
-      <p></p>
-    </p>
-    <p>
-      <hr>
-    </p>
-  </tab>
-  <tab header="Trello">
-    <p>📦 Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
-    <p><img src="/website/admin/images/userStoriesInTrello.png" width="800">
-      <p></p>
-    </p>
-    <p>
-      <hr>
-    </p>
-  </tab>
-</tabs>
-<ul>
-  <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</li>
-</ul>
-<p>
-  <panel name="%%Textbook &raquo; Gathering Requirements &rarr; Brainstorming%%" src="/website\book\gatheringRequirements\brainstorming\full._include_.html" header="%%Textbook &raquo; Gathering Requirements &rarr; Brainstorming%%" isOpen="false" no-close="true"
-    no-switch="true"></panel>
-  <panel name="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Introduction%%" src="/website\book\specifyingRequirements\userStories\introduction\full._include_.html" header="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Introduction%%"
-    isOpen="false" no-close="true" no-switch="true"></panel>
-</p>
-<panel header="%%:package: User Story examples (from a different product)%%">
-  <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
-</panel>
-<h4 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h4><img src="/website/admin/images/userstories.png" width="250px">
-<p>Suggested workflow:</p>
-<ul>
-  <li>
-    <p>Take one use story at a time and get team member opinions about it.</p>
-  </li>
-  <li>
-    <p>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:</p>
-    <ul>
-      <li><code>Must-Have</code> : The product will be practically useless to the target user without this feature.</li>
-      <li><code>Nice-To-Have</code> : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.</li>
-      <li><code>Not-Useful</code> : No significant benefit to the target user, or does not fit into the product vision.</li>
-    </ul>
-  </li>
-  <li>
-    <p><span class="dimmed">If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.</span></p>
-  </li>
-</ul>
-<p>
-  <panel name="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; Tips%%" src="/website\book\specifyingRequirements\userStories\usage\full._include_.html#usageTips" fragment="usageTips" header="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; Tips%%"
-    isOpen="false" no-close="true" no-switch="true"></panel>
-</p>
-<h4 id="step-3-record-v20-requirements-in-the-developer-guide">Step 3: Record v2.0 Requirements in the Developer Guide</h4>
-<p>Based on your user story categorization in step 1, given project requirements, and the current state of the product, select which user stories you are likely to include in v2.0.</p>
-<p>Update the following pages of the Developer Guide:</p>
-<ul>
-  <li><strong>User Stories</strong>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.</li>
-  <li><strong>Use cases</strong>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
-  <li><strong>Non-functional requirements</strong>:<br> Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
-  <li><strong>Glossary</strong>: Define terms that are worth defining.</li>
-  <li><strong>Product survey</strong> [Optional]: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).</li>
-</ul>
-<p>
-  <panel name="%%Textbook &raquo; Specifying Requirements &rarr; Use Cases%%" src="/website\book\specifyingRequirements\useCases\index._include_.html#main" fragment="main" header="%%Textbook &raquo; Specifying Requirements &rarr; Use Cases%%" isOpen="false"
-    no-close="true" no-switch="true"></panel>
-  <panel name="%%Textbook &raquo; Requirements &rarr; Non Functional Requirements%%" src="/website\book\requirements\nonFunctionalRequirements\full._include_.html" header="%%Textbook &raquo; Requirements &rarr; Non Functional Requirements%%" isOpen="false"
-    no-close="true" no-switch="true"></panel>
-  <panel name="%%Textbook &raquo; Specifying Requirements &rarr; Glossary%%" src="/website\book\specifyingRequirements\glossary\what\full._include_.html" header="%%Textbook &raquo; Specifying Requirements &rarr; Glossary%%" isOpen="false" no-close="true"
-    no-switch="true"></panel>
-  <panel name="%%Textbook &raquo; Gathering Requirements &rarr; Product Surveys%%" src="/website\book\gatheringRequirements\productSurveys\full._include_.html" header="%%Textbook &raquo; Gathering Requirements &rarr; Product Surveys%%" isOpen="false"
-    no-close="true" no-switch="true"></panel>
-  <p></p>
-</p>
-<p><strong>Suggested length</strong>: Follow the existing user guide and developer guides in terms of the level of details.</p>
-<p><strong>Submission</strong>:</p>
-<ol>
-  <li>One team member: Set up the team org and team repo for your phase B team if you haven't done that already.</li>
-</ol>
-<p>
-  <panel src="/website\admin\appendixE-gitHub._include_.html#organization-setup" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Organization Setup%%" fragment="organization-setup" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Organization Setup%%"
-    isOpen="false" no-close="true" no-switch="true"></panel>
-  <panel src="/website\admin\appendixE-gitHub._include_.html#repo-setup" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Repo Setup%%" fragment="repo-setup" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Repo Setup%%"
-    isOpen="false" no-close="true" no-switch="true"></panel>
-</p>
-<ol start="2">
-  <li>Divide among yourselves who will update which parts of the Developer guide.</li>
-  <li>Update the team repo. Recommended: follow the forking workflow.</li>
-</ol>
-<p>
-  <panel src="/website\book\revisionControl\forkingWorkflow\full._include_.html" name="%%TextBook &raquo; Revision Control &rarr; Forking Workflow%%" header="%%TextBook &raquo; Revision Control &rarr; Forking Workflow%%" isOpen="false" no-close="true" no-switch="true"></panel>
-</p>
-<p><strong>Grading</strong>: <mark>Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.</mark> To claim this milestone as 'reached', you should at least have a full draft version
-  of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.</p>
-<h3 id="v10-product">v1.0 Product</h3>
-<p><strong>Objective</strong>: To familiarize yourself with the code.</p>
-<p><strong>Description</strong>: Divide the
-  <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the <a href="https://nus-cs2103-AY1718S1.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component">AddressBook-Level4 developer guide</a>.</p>
-<p><strong>Submission</strong>: Create PRs from your own fork to your team repo.</p>
-<p><strong>Grading</strong>: This is an individual milestone. Considered reached if you have at least attempted to enhance the code of a component, even if you did not fully succeed.</p>
+<div id="documentation">
+  <h4 id="v10-documentation">v1.0 Documentation</h4>
+  <p><strong>Objective</strong>: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.</p>
+  <h4 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h4><img src="/website/admin/images/v00.png" width="250px">
+  <p>Get together with your team members and brainstorm user stories <strong>for the v2.0 of the product</strong>. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).</p>
+  <ul>
+    <li>
+      <p>It is ok to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></p>
+    </li>
+    <li>
+      <p>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given below).</p>
+    </li>
+  </ul>
+  <tabs>
+    <tab header="GitHub Project Boards">
+      <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
+      <p>📦 Example Project Board:</p>
+      <p><img src="/website/admin/images/userStoriesInGitHubProjectBoards.png" width="800">
+        <p></p>
+      </p>
+      <p>📦 Example Issue to represent a user story:</p>
+      <p><img src="/website/admin/images/userStoryAsGitHubIssue.png" width="800">
+        <p></p>
+      </p>
+      <p>A video on GitHub Project Boards:</p>
+      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+      <p>
+        <hr>
+      </p>
+    </tab>
+    <tab header="Google Sheets">
+      <p>📦 Example Google Sheet for recording user stories:</p>
+      <p><img src="/website/admin/images/userStoriesInGoogleSheets.png" width="800">
+        <p></p>
+      </p>
+      <p>
+        <hr>
+      </p>
+    </tab>
+    <tab header="Trello">
+      <p>📦 Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
+      <p><img src="/website/admin/images/userStoriesInTrello.png" width="800">
+        <p></p>
+      </p>
+      <p>
+        <hr>
+      </p>
+    </tab>
+  </tabs>
+  <ul>
+    <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</li>
+  </ul>
+  <p>
+    <panel name="%%Textbook &raquo; Gathering Requirements &rarr; Brainstorming%%" src="/website\book\gatheringRequirements\brainstorming\full._include_.html" header="%%Textbook &raquo; Gathering Requirements &rarr; Brainstorming%%" isOpen="false" no-close="true"
+      no-switch="true"></panel>
+    <panel name="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Introduction%%" src="/website\book\specifyingRequirements\userStories\introduction\full._include_.html" header="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Introduction%%"
+      isOpen="false" no-close="true" no-switch="true"></panel>
+  </p>
+  <panel header="%%:package: User Story examples (from a different product)%%">
+    <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
+  </panel>
+  <h4 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h4><img src="/website/admin/images/userstories.png" width="250px">
+  <p>Suggested workflow:</p>
+  <ul>
+    <li>
+      <p>Take one use story at a time and get team member opinions about it.</p>
+    </li>
+    <li>
+      <p>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:</p>
+      <ul>
+        <li><code>Must-Have</code> : The product will be practically useless to the target user without this feature.</li>
+        <li><code>Nice-To-Have</code> : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.</li>
+        <li><code>Not-Useful</code> : No significant benefit to the target user, or does not fit into the product vision.</li>
+      </ul>
+    </li>
+    <li>
+      <p><span class="dimmed">If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.</span></p>
+    </li>
+  </ul>
+  <p>
+    <panel name="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; Tips%%" src="/website\book\specifyingRequirements\userStories\usage\full._include_.html#usageTips" fragment="usageTips" header="%%Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; Tips%%"
+      isOpen="false" no-close="true" no-switch="true"></panel>
+  </p>
+  <h4 id="step-3-record-v20-requirements-in-the-developer-guide">Step 3: Record v2.0 Requirements in the Developer Guide</h4>
+  <p>Based on your user story categorization in step 1, given project requirements, and the current state of the product, select which user stories you are likely to include in v2.0.</p>
+  <p>Update the following pages of the Developer Guide:</p>
+  <ul>
+    <li><strong>User Stories</strong>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.</li>
+    <li><strong>Use cases</strong>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
+    <li><strong>Non-functional requirements</strong>:<br> Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
+    <li><strong>Glossary</strong>: Define terms that are worth defining.</li>
+    <li><strong>Product survey</strong> [Optional]: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).</li>
+  </ul>
+  <p>
+    <panel name="%%Textbook &raquo; Specifying Requirements &rarr; Use Cases%%" src="/website\book\specifyingRequirements\useCases\index._include_.html#main" fragment="main" header="%%Textbook &raquo; Specifying Requirements &rarr; Use Cases%%" isOpen="false"
+      no-close="true" no-switch="true"></panel>
+    <panel name="%%Textbook &raquo; Requirements &rarr; Non Functional Requirements%%" src="/website\book\requirements\nonFunctionalRequirements\full._include_.html" header="%%Textbook &raquo; Requirements &rarr; Non Functional Requirements%%"
+      isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel name="%%Textbook &raquo; Specifying Requirements &rarr; Glossary%%" src="/website\book\specifyingRequirements\glossary\what\full._include_.html" header="%%Textbook &raquo; Specifying Requirements &rarr; Glossary%%" isOpen="false" no-close="true"
+      no-switch="true"></panel>
+    <panel name="%%Textbook &raquo; Gathering Requirements &rarr; Product Surveys%%" src="/website\book\gatheringRequirements\productSurveys\full._include_.html" header="%%Textbook &raquo; Gathering Requirements &rarr; Product Surveys%%" isOpen="false"
+      no-close="true" no-switch="true"></panel>
+    <p></p>
+  </p>
+  <p><strong>Suggested length</strong>: Follow the existing user guide and developer guides in terms of the level of details.</p>
+  <p><strong>Submission</strong>:</p>
+  <ol>
+    <li>One team member: Set up the team org and team repo for your phase B team if you haven't done that already.</li>
+  </ol>
+  <p>
+    <panel src="/website\admin\appendixE-gitHub._include_.html#organization-setup" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Organization Setup%%" fragment="organization-setup" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Organization Setup%%"
+      isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website\admin\appendixE-gitHub._include_.html#repo-setup" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Repo Setup%%" fragment="repo-setup" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Repo Setup%%"
+      isOpen="false" no-close="true" no-switch="true"></panel>
+  </p>
+  <ol start="2">
+    <li>Divide among yourselves who will update which parts of the Developer guide.</li>
+    <li>Update the team repo. Recommended: follow the forking workflow.</li>
+  </ol>
+  <p>
+    <panel src="/website\book\revisionControl\forkingWorkflow\full._include_.html" name="%%TextBook &raquo; Revision Control &rarr; Forking Workflow%%" header="%%TextBook &raquo; Revision Control &rarr; Forking Workflow%%" isOpen="false" no-close="true"
+      no-switch="true"></panel>
+  </p>
+  <p><strong>Grading</strong>: <mark>Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.</mark> To claim this milestone as 'reached', you should at least have a full draft version
+    of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.</p>
+</div>
+<div id="product">
+  <h3 id="v10-product">v1.0 Product</h3>
+  <p><strong>Objective</strong>: To familiarize yourself with the code.</p>
+  <p><strong>Description</strong>: Divide the
+    <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the <a href="https://nus-cs2103-AY1718S1.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component">AddressBook-Level4 developer guide</a>.</p>
+  <p><strong>Submission</strong>: Create PRs from your own fork to your team repo.</p>
+  <p><strong>Grading</strong>: This is an individual milestone. Considered reached if you have at least attempted to enhance the code of a component, even if you did not fully succeed.</p>
+</div>
