@@ -4,7 +4,7 @@
   <include src="../../book/requirements/introduction/full.md"  />
 </panel>
 
-<panel type="warning" header="`W6.4b` Can explain non-functional requirements :star::star::star:" expandable>
+<panel type="warning" header="`W6.4b` Can explain non-functional requirements :star::star:" expandable>
   <include src="../../book/requirements/nonFunctionalRequirements/full.md"  />
   <panel header=":dart: Evidence" expanded>
   
