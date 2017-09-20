@@ -1585,8 +1585,9 @@
                     <div>
                       <panel header=":lock: Draw a Sequence Diagram for code snippet">
                         <question>
-                          <p>Consider the code below:</p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                          <div>
+                            <p>Consider the code below:</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -1608,13 +1609,14 @@
     }
 }
 </code></pre>
-                          <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                          <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                            <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                            <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
+                          </div>
                         </question>
                       </panel>
                     </div>
@@ -1628,8 +1630,9 @@
             <div>
               <panel header=":lock: Draw a Sequence Diagram for code snippet">
                 <question>
-                  <p>Consider the code below:</p>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                  <div>
+                    <p>Consider the code below:</p>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -1651,13 +1654,14 @@
     }
 }
 </code></pre>
-                  <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                  <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                    <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                    <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
+                  </div>
                 </question>
               </panel>
             </div>
@@ -1909,11 +1913,11 @@
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="9qqhl" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qqhl" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qqhl" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qqhl" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="9qqhl" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="eqrye" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="eqrye" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="eqrye" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="eqrye" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="eqrye" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -3436,6 +3440,59 @@
   </div>
 </panel>
 
-<panel header=":raising_hand: Tutorial 6" expandable="" ctrl-lvl="1" no-close=""></panel>
+<panel header=":raising_hand: Tutorial 6" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <p><strong>An activity to do during tutorial:</strong><br></p>
+    <table>
+      <tr>
+        <td width="40%">
+          <div>
+            <p>Consider the code below:</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+    Tag tag;
+    String name;
+
+    Person(String personName, String tagName){
+        name = personName;
+        tag = <span class="hljs-keyword">new</span> Tag(tagName);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+    Tag(String value){
+        <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+            <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+            <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+<span class="hljs-keyword">while</span> (hasRoom){
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    personList.addPerson(p);
+}
+</code></pre>
+          </div>
+          <p>After that, draw a class diagram to match the code. Then, draw an object diagram to show the state of the objects after the code has executed one loop.</p>
+        </td>
+        <td>
+          &nbsp;
+        </td>
+        <td>
+          <tip-box>
+            <p>Here are some sample diagrams to use as references:<br><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="500"><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png"
+                width="400"><br><img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="500"></p>
+          </tip-box>
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+  </div>
+</panel>
 
 <panel header=":mega: Lecture 6" expandable="" ctrl-lvl="1" no-close=""></panel>
