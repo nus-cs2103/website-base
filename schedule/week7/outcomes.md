@@ -13,7 +13,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header=":trophy: Can explain APIs :star::star:" expandable>
+<panel type="warning" header="**`W7.2` Can explain APIs** :star::star:" no-close>
   <include src="../../book/reuse/apis/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -40,7 +40,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can record requirements of a product :star:" expandable>
+<panel type="danger" header="**`W7.7` Can record requirements of a product** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 <include src="../../admin/project-v10.md#documentation" name="%%Admin &raquo; v1.0 &rarr; Documentation%%" dynamic />
@@ -49,7 +49,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 </panel>
 
 
-<panel type="danger" header=":trophy: Can do local-impact changes to an existing software :star:" expandable>
+<panel type="danger" header="**`W7.8` Can do local-impact changes to an existing software** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 <include src="../../admin/project-v10.md#product" name="%%Admin &raquo; v1.0 &rarr; Product%%" dynamic />
@@ -59,7 +59,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="**Can use Java8 streams :star::star::star:**" expandable no-close>
+<panel type="info" header="**`W7.9` Can use Java8 streams :star::star::star:**" no-close>
   <include src="../../book/javaTools/streamsBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
 

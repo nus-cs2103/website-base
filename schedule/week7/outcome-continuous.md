@@ -1,11 +1,11 @@
-<panel type="info" header=":trophy: Can explain continuous integration and continuous deployment :star::star::star:" expandable expanded no-close>
+<panel type="info" header="**`W7.5` Can explain continuous integration and continuous deployment** :star::star::star:" no-close>
 
-<panel type="info" header=":trophy: Can explain integration :star::star::star:" expandable>
+<panel type="info" header="`W7.5a` Can explain integration :star::star::star:">
   <include src="../../book/integration/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="info" header=":trophy: Can explain build automation tools :star::star::star:" expandable>
+<panel type="info" header="`W7.5b` Can explain build automation tools :star::star::star:">
   <include src="../../book/integration/buildAutomation/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -15,7 +15,7 @@
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain continuous integration and continuous deployment :star::star::star:" expandable>
+<panel type="info" header="`W7.5c` Can explain continuous integration and continuous deployment :star::star::star:">
   <include src="../../book/integration/buildAutomation/continuousIntegrationDeployment/full.md" />
   <panel header=":dart: Evidence" expanded>
 
