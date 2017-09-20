@@ -1811,6 +1811,224 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
         <p>...</p>
       </panel>
     </panel>
+    <div>
+      <panel type="info" header=":trophy: Can implement substitutability :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="substitutability-two">Substitutability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="50">
+                  <p></p>
+                </tip-box>
+                <p>Every instance of a subclass is an instance of the superclass, but not vice-versa. For example, an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.
+                  As a result, inheritance allows <em>substitutability</em>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses. For example, the following code is valid because an <code>AcademicStaff</code>                  object is substitutable as a <code>Staff</code> object.</p>
+                <pre class="hljs"><code>Staff staff = new AcademicStaff (); // OK
+</code></pre>
+                <p>But the following code is not because <code>staff</code> is declared as a <code>Staff</code> type (see above) and therefore its value may or may not be of type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</p>
+                <pre
+                  class="hljs"><code>AcademicStaff academicStaff = staff; // Not OK
+</code></pre>
+                  <p>{link up with Liskov Substitution Principle}</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain dynamic and static binding :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="dynamic-and-static-binding-three">Dynamic and Static Binding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Overridden operations are <strong>resolved at runtime</strong>. That is, the runtime decides which version of the operation should be executed based on the actual type of the receiving object. This is also called <em>dynamic binding</em>                  (sometimes called <em>late binding</em> and <em>run-time binding</em>). Most OO languages support dynamic binding.</p>
+                <tip-box type="info">
+                  <p>There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document.</p>
+                </tip-box>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
+                  <p></p>
+                  <pre class="hljs"><code>void adjustSalary(int byPercent) {
+    for (Staff s: staff) {
+        s.adjustSalary(byPercent);
+    }
+}
+</code></pre>
+                  <p>The <strong>declared</strong> type of s is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked. However, at runtime the <code>adjustSalary(int)</code> operation
+                    of the actual object will be called (i.e. <code>adjustSalary(int)</code> operation of Admin or Academic). If the actual object does not override that operation, the operation defined in the immediate superclass (in this case, Staff
+                    class) will be called.</p>
+                </tip-box>
+                <p>In contrast, overloaded methods are resolved at compile time, also called <em>static binding</em> (also called <em>early binding</em> and <em>compile-time binding</em>.)</p>
+                <tip-box>
+                  <pre class="hljs"><code>class Account {
+    Account () {
+        // Signature: ()
+        ...
+    }
+    Account (String name, String number, double balance) {
+        // Signature: (String, String, double)
+        ...
+    }
+}
+</code></pre>
+                  <pre class="hljs"><code>void calculateCAP (String matric) { ... }
+void calculateCAP (int[] averages) { ... }
+</code></pre>
+                  <p>The calls to the two constructors are resolved at compile time.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="mechanism-three">Mechanism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>There are three issues that are at the center of how polymorphism is achieved: <em>substitutability, operation overriding, and dynamic binding</em>.</p>
+                <ul>
+                  <li>Substitutability: Because of substitutability, we can write code that expects object of a parent class and yet use that code with objects of child classes. That is how polymorphism is able to <em>treat objects of different types as one type</em>.</li>
+                  <li>Overriding: To get polymorphic behavior from an operation, the operation in the superclass needs to be overridden in each of the subclasses. That is how overriding allows objects of different sub classes to <em>display different behaviors in response to the same method call</em>.</li>
+                  <li>Dynamic binding: Overridden methods are bound to the method implementation dynamically during the runtime. That is how the code can call the method of the parent class and yet execute the implementation of the child class.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which of these is least related to how OO programs achieve polymorphism?">
+                        <question>
+                          <p>Which of these is least related to how OO programs achieve polymorphism?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. operation overloading</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. operation overloading</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
+                            </ul>
+                            <p>Explanation: Operation overriding is the one that is related, not operation overloading.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain Liskov Substitution Principle :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="liskov-substitution-principle-three">Liskov Substitution Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box type="primary">
+                  <div>
+                    <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. -- Barbara Liskov</p>
+                  </div>
+                </tip-box>
+                <p>In other words, if a program module is using a super class, then the reference to the super class can be replaced with a sub class without affecting the functionality of the program module.</p>
+                <p>As we know, Java already allows substituting objects of sub classes where an object of the super class is expected. However, that does not mean that doing so will not break the functionality of the code. To follow LSP, we should be careful
+                  not to contradict the behavior specified by the super class.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                  <p></p>
+                  <p>Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will
+                    work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method. Now consider the following:</p>
+                  <ul>
+                    <li><code>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
+                    <li><code>Academic#adjustMySalary</code> method works for percent values 1..100 only.</li>
+                  </ul>
+                  <p>In the above scenario,</p>
+                  <ul>
+                    <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects will not break
+                      the <code>Payroll</code> class functionality.</li>
+                    <li><code>Academic</code> class violates LSP because it will not work for percent values over 100 as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially
+                      break the <code>Payroll</code> class functionality.</li>
+                  </ul>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov substitution principle.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: If the subclass is more restrictive than the parent class, a piece of code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and Liskov substitution
+                              principle is violated.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
   </div>
 </panel>
 
