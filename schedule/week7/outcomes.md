@@ -59,7 +59,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="**`W7.9` Can use Java8 streams :star::star::star:**" no-close>
+<panel type="success" header="**`W7.9` Can use Java8 streams :star::star::star::star:**" no-close>
   <include src="../../book/javaTools/streamsBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
