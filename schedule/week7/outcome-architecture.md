@@ -5,6 +5,11 @@
 <!-- TODO: add evidence -->
 </panel>
 
+<panel type="danger" header="`W7.1a` Can interpret an architecture diagram :star:">
+  <include src="../../book/architecture/architectureDiagrams/reading/full.md" />
+<!-- TODO: add evidence -->
+</panel>
+
 <panel type="info" header="`W7.1b` Can explain multi-level design :star::star::star:">
   <include src="../../book/design/introduction/multilevelDesign/full.md"/>
   <panel header=":dart: Evidence" expanded>
