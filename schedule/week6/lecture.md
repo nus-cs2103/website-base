@@ -22,4 +22,4 @@ TeamFormer is a system for helping CS2103 students during team forming period. I
 
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-essay-findNotationMistakes.md" />
 
-[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L5.pptx)]
+[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L6.pptx)]
