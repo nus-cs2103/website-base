@@ -67,7 +67,7 @@ Based on your user story categorization in step 1, given project requirements, a
 
 Update the following pages of the Developer Guide:
 
-* **User Stories**: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.
+* <trigger trigger="click" for="modal:v10-userstories">**User Stories**</trigger>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.
 * <trigger trigger="click" for="modal:v10-usecases">**Use Cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%   
 * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:  
   Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
