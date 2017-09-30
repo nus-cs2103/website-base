@@ -2331,17 +2331,17 @@ void calculateCAP (int[] averages) { ... }
           <tip-box>
             <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p><img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
             <p></p>
-            <p>Here is the implementation of the adjustSalary(int) operation from the above design.</p>
-            <pre class="hljs"><code>class Payroll1 {
+            <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
     ArrayList&lt; Admin &gt; admins;
     ArrayList&lt; Academic &gt; academics;
-    // ...
+    <span class="hljs-comment">// ...</span>
 
-    void adjustSalary(int byPercent) {
-        for (Admin ad: admins) {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <span class="hljs-keyword">for</span> (Admin ad: admins) {
             ad.adjustSalary(byPercent);
         }
-        for (Academic ac: academics) {
+        <span class="hljs-keyword">for</span> (Academic ac: academics) {
             ac.adjustSalary(byPercent);
         }
     }
@@ -2351,12 +2351,12 @@ void calculateCAP (int[] averages) { ... }
           <p>Note how processing is similar for the two staff types. It is as if the type of staff members is irrelevant to how they are processed inside this operation! If that is the case, can the staff type be &quot;abstracted away&quot; from this method?
             Here is such an implementation of <code>adjustSalary(int)</code>:</p>
           <tip-box>
-            <pre class="hljs"><code>class Payroll2 {
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll2</span> </span>{
     ArrayList&lt; Staff &gt; staff;
-    // ...
+    <span class="hljs-comment">// ...</span>
 
-    void adjustSalary(int byPercent) {
-        for (Staff s: staff) {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <span class="hljs-keyword">for</span> (Staff s: staff) {
             s.adjustSalary(byPercent);
         }
     }
@@ -2364,11 +2364,10 @@ void calculateCAP (int[] averages) { ... }
 </code></pre>
             <p>Notice the following:</p>
             <ul>
-              <li>Only one data structure <code>ArrayList&lt;Staff&gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
+              <li>Only one data structure <code>ArrayList&lt; Staff &gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
               <li>Only one loop</li>
               <li>Outcome of the <code>s.adjustSalary(byPercent)</code> method call depends on whether <code>s</code> is an <code>Academic</code> or <code>Admin</code> object</li>
             </ul>
-            <p></p>
           </tip-box>
           <p>The above code is better in several ways:</p>
           <ul>
@@ -3091,7 +3090,7 @@ void calculateCAP (int[] averages) { ... }
             It should be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
           <tip-box>
             <p>📦 A possible architecture for a <em>Minesweeper</em> game</p>
-            <p><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220"><span>  ...  </span><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></p>
+            <p><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220"><span></span><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></p>
             <p></p>
             <p>Main components:</p>
             <ul>
@@ -5243,11 +5242,10 @@ send();
           <p><strong>If the runtime detects an <em>assertion failure</em>, it typically take some drastic action</strong> such as terminating the execution with an error message. This is because an assertion failure indicates a possible bug and the sooner
             the execution stops, the safer it is.</p>
           <tip-box>
-            <p>📦 In the Java code below, the assertion in line 2 verifies the assumption that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than 0. The only reason for it to return a zero or lower value in line 1 is the presence
-              of a bug in the system.</p>
-            <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); <span class="hljs-comment">// line 1</span>
-<span class="hljs-keyword">assert</span> timeout &gt; <span class="hljs-number">0</span>; <span class="hljs-comment">// line 2</span>
-setTimeout(timeout); <span class="hljs-comment">// line 3</span>
+            <p>📦 In the Java code below, suppose we set an assertion that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than <code>0</code>. Now, if the <code>Config.getTimeout()</code> returned <code>-1</code> in a specific
+              execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned out to be wrong which could potentially be the result of a bug -- and take some drastic
+              action such as terminating the execution.</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); 
 </code></pre>
           </tip-box>
         </div>
@@ -5331,7 +5329,7 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
             associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
           <div v-closeable="" alt="blackbox photo">
             <tip-box>
-              <p>💡 <strong>A log file is like the <tooltip content="flight data recorders">black box</tooltip> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
+              <p>💡 <strong>A log file is like the <tooltip content="flight data recorder">black box</tooltip> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
               <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br><sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
             </tip-box>
           </div>
@@ -6209,17 +6207,17 @@ jean.setBoyfriend(yong);
                     <tip-box>
                       <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p><img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                       <p></p>
-                      <p>Here is the implementation of the adjustSalary(int) operation from the above design.</p>
-                      <pre class="hljs"><code>class Payroll1 {
+                      <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
     ArrayList&lt; Admin &gt; admins;
     ArrayList&lt; Academic &gt; academics;
-    // ...
+    <span class="hljs-comment">// ...</span>
 
-    void adjustSalary(int byPercent) {
-        for (Admin ad: admins) {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <span class="hljs-keyword">for</span> (Admin ad: admins) {
             ad.adjustSalary(byPercent);
         }
-        for (Academic ac: academics) {
+        <span class="hljs-keyword">for</span> (Academic ac: academics) {
             ac.adjustSalary(byPercent);
         }
     }
@@ -6229,12 +6227,12 @@ jean.setBoyfriend(yong);
                     <p>Note how processing is similar for the two staff types. It is as if the type of staff members is irrelevant to how they are processed inside this operation! If that is the case, can the staff type be &quot;abstracted away&quot; from
                       this method? Here is such an implementation of <code>adjustSalary(int)</code>:</p>
                     <tip-box>
-                      <pre class="hljs"><code>class Payroll2 {
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll2</span> </span>{
     ArrayList&lt; Staff &gt; staff;
-    // ...
+    <span class="hljs-comment">// ...</span>
 
-    void adjustSalary(int byPercent) {
-        for (Staff s: staff) {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <span class="hljs-keyword">for</span> (Staff s: staff) {
             s.adjustSalary(byPercent);
         }
     }
@@ -6242,11 +6240,10 @@ jean.setBoyfriend(yong);
 </code></pre>
                       <p>Notice the following:</p>
                       <ul>
-                        <li>Only one data structure <code>ArrayList&lt;Staff&gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
+                        <li>Only one data structure <code>ArrayList&lt; Staff &gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
                         <li>Only one loop</li>
                         <li>Outcome of the <code>s.adjustSalary(byPercent)</code> method call depends on whether <code>s</code> is an <code>Academic</code> or <code>Admin</code> object</li>
                       </ul>
-                      <p></p>
                     </tip-box>
                     <p>The above code is better in several ways:</p>
                     <ul>

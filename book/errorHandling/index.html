@@ -186,11 +186,10 @@
               <p><strong>If the runtime detects an <em>assertion failure</em>, it typically take some drastic action</strong> such as terminating the execution with an error message. This is because an assertion failure indicates a possible bug and the sooner
                 the execution stops, the safer it is.</p>
               <tip-box>
-                <p>📦 In the Java code below, the assertion in line 2 verifies the assumption that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than 0. The only reason for it to return a zero or lower value in line 1 is the
-                  presence of a bug in the system.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); <span class="hljs-comment">// line 1</span>
-<span class="hljs-keyword">assert</span> timeout &gt; <span class="hljs-number">0</span>; <span class="hljs-comment">// line 2</span>
-setTimeout(timeout); <span class="hljs-comment">// line 3</span>
+                <p>📦 In the Java code below, suppose we set an assertion that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than <code>0</code>. Now, if the <code>Config.getTimeout()</code> returned <code>-1</code> in a specific
+                  execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned out to be wrong which could potentially be the result of a bug -- and take some drastic
+                  action such as terminating the execution.</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); 
 </code></pre>
               </tip-box>
             </div>
@@ -291,11 +290,11 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
                     <panel header=":lock::key: Assertions failure in Calculator">
                       <question>
                         <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                        <ul radio-group="hs042" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="hs042" type="radio"> a. This is a correct use of assertions.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="hs042" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="hs042" type="radio"> c. The program has a bug.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="hs042" type="radio"> d. All statements above are incorrect.</label></li>
+                        <ul radio-group="jjfnz" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jjfnz" type="radio"> a. This is a correct use of assertions.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jjfnz" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jjfnz" type="radio"> c. The program has a bug.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jjfnz" type="radio"> d. All statements above are incorrect.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(c)</p>
@@ -350,7 +349,7 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
                 their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
               <div v-closeable="" alt="blackbox photo">
                 <tip-box>
-                  <p>💡 <strong>A log file is like the <tooltip content="flight data recorders">black box</tooltip> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
+                  <p>💡 <strong>A log file is like the <tooltip content="flight data recorder">black box</tooltip> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                   <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br><sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
                 </tip-box>
               </div>
@@ -362,11 +361,11 @@ setTimeout(timeout); <span class="hljs-comment">// line 3</span>
                     <panel header=":lock::key: Logging vs blackbox">
                       <question>
                         <p>Why is logging like having the 'black box' in an airplane?</p>
-                        <ul radio-group="nv55t" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="nv55t" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="nv55t" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="nv55t" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="nv55t" type="radio"> d. Because they are hard to open by normal users.</label></li>
+                        <ul radio-group="5yct8" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5yct8" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5yct8" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5yct8" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5yct8" type="radio"> d. Because they are hard to open by normal users.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>

@@ -647,10 +647,10 @@
                     <panel header=":lock::key: What does the navigability given by this diagram mean?">
                       <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                         <p></p>
-                        <ul radio-group="32b8v" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="32b8v" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="32b8v" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="32b8v" type="radio"> c. Depends on the programming language</label></li>
+                        <ul radio-group="qe826" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="qe826" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="qe826" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="qe826" type="radio"> c. Depends on the programming language</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -804,9 +804,9 @@
                     <panel header=":lock::key: Which one is not recommended to use?">
                       <question>
                         <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                        <ul radio-group="3mr29" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3mr29" type="radio"> a. Composition symbol</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3mr29" type="radio"> b. Aggregation symbol</label></li>
+                        <ul radio-group="246xs" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="246xs" type="radio"> a. Composition symbol</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="246xs" type="radio"> b. Aggregation symbol</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(b)</p>
@@ -1270,17 +1270,17 @@ void calculateCAP (int[] averages) { ... }
               <tip-box>
                 <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p><img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                 <p></p>
-                <p>Here is the implementation of the adjustSalary(int) operation from the above design.</p>
-                <pre class="hljs"><code>class Payroll1 {
+                <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
     ArrayList&lt; Admin &gt; admins;
     ArrayList&lt; Academic &gt; academics;
-    // ...
+    <span class="hljs-comment">// ...</span>
 
-    void adjustSalary(int byPercent) {
-        for (Admin ad: admins) {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <span class="hljs-keyword">for</span> (Admin ad: admins) {
             ad.adjustSalary(byPercent);
         }
-        for (Academic ac: academics) {
+        <span class="hljs-keyword">for</span> (Academic ac: academics) {
             ac.adjustSalary(byPercent);
         }
     }
@@ -1290,12 +1290,12 @@ void calculateCAP (int[] averages) { ... }
               <p>Note how processing is similar for the two staff types. It is as if the type of staff members is irrelevant to how they are processed inside this operation! If that is the case, can the staff type be &quot;abstracted away&quot; from this
                 method? Here is such an implementation of <code>adjustSalary(int)</code>:</p>
               <tip-box>
-                <pre class="hljs"><code>class Payroll2 {
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll2</span> </span>{
     ArrayList&lt; Staff &gt; staff;
-    // ...
+    <span class="hljs-comment">// ...</span>
 
-    void adjustSalary(int byPercent) {
-        for (Staff s: staff) {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <span class="hljs-keyword">for</span> (Staff s: staff) {
             s.adjustSalary(byPercent);
         }
     }
@@ -1303,11 +1303,10 @@ void calculateCAP (int[] averages) { ... }
 </code></pre>
                 <p>Notice the following:</p>
                 <ul>
-                  <li>Only one data structure <code>ArrayList&lt;Staff&gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
+                  <li>Only one data structure <code>ArrayList&lt; Staff &gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
                   <li>Only one loop</li>
                   <li>Outcome of the <code>s.adjustSalary(byPercent)</code> method call depends on whether <code>s</code> is an <code>Academic</code> or <code>Admin</code> object</li>
                 </ul>
-                <p></p>
               </tip-box>
               <p>The above code is better in several ways:</p>
               <ul>
@@ -1651,15 +1650,15 @@ void calculateCAP (int[] averages) { ... }
                     <p></p>
                     <question>
                       In the context of OOP, what is the relationship between abstraction and encapsulation?
-                      <ul radio-group="8eaom" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="8eaom" type="radio"> a. They are the same thing</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="8eaom" type="radio"> b. They are opposites</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="8eaom" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="8eaom" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      <ul radio-group="w5qa6" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="9rk2x" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="9rk2x" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <ul radio-group="ar6zo" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="ar6zo" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                         </ul>
                         <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
                           in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
@@ -1680,16 +1679,16 @@ void calculateCAP (int[] averages) { ... }
                     <p></p>
                     <question>
                       Which of these do not belong to four main OO principles?
-                      <ul radio-group="r4juz" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4juz" type="radio"> a. Abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4juz" type="radio"> b. Encapsulation</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4juz" type="radio"> c. Inheritance</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4juz" type="radio"> d. Substitutability</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4juz" type="radio"> e. Polymorphism</label></li>
+                      <ul radio-group="bolq6" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> e. Polymorphism</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="ke30w" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="ke30w" type="radio"> d. Substitutability</label></li>
+                        <ul radio-group="glmt9" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="glmt9" type="radio"> d. Substitutability</label></li>
                         </ul>
                       </div>
                     </question>
