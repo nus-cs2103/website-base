@@ -9,14 +9,6 @@
   </panel>
 </panel>
 
-<panel type="warning" header=":trophy: Can explain separation of concerns principle :star::star:" expandable>
-  <include src="../../book/principles/separationOfConcernsPrinciple/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 <panel type="success" header=":trophy: Can explain dependency inversion principle :star::star::star::star:" expandable>
   <include src="../../book/principles/dependencyInversionPrinciple/full.md" />

@@ -1,13 +1,5 @@
 <panel type="warning" header=":trophy: Can explain integration approaches :star::star:" expandable expanded no-close>
 
-<panel type="warning" header=":trophy: Can explain integration :star::star:" expandable>
-  <include src="../../book/integration/introduction/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 <panel type="warning" header=":trophy: Can explain how integration approaches vary based on timing and frequency :star::star:" expandable>
   <include src="../../book/integration/approaches/lateVsEarly/full.md" />

@@ -9,6 +9,51 @@
 
 <!-- ==================================================================================================== -->
 
+<include src="outcome-defensiveProgramming.md" />
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-tdd.md" />
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-classDiagram.md" />
+
+<!-- ==================================================================================================== -->
+
+<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
+  <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable>
+  <include src="../../book/principles/interfaceSegregationPrinciple/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="info" header=":trophy: Can use advanced class diagrams :star::star::star:" expandable>
+  <include src="../../book/modeling/modelingStructures/classDiagramsAdvanced/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
 <include src="outcome-ep.md" />
 
 <!-- ==================================================================================================== -->
@@ -17,7 +62,7 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-testingTypes.md" />
+<include src="outcome-substitutability.md" />
 
 <!-- ==================================================================================================== -->
 
