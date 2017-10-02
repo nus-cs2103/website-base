@@ -1187,7 +1187,7 @@
       <h2 id="introduction">Introduction</h2>
       <div>
         <div>
-          <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1195,8 +1195,17 @@
           </div>
         </tip-box>
         <div>
-          <p>What is software design? Design can be viewed as a form of problem solving.</p>
-          <p>Where does it fit in?</p>
+          <tip-box type="definition">
+            <blockquote>
+              <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>,  Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
+            </blockquote>
+          </tip-box>
+          <p><strong>Software design has two main aspects:</strong></p>
+          <ul>
+            <li><strong>Product/external design: designing the external behavior of the product to meet the users' requirements.</strong> This is usually done by product designers with the input from business analysts, user experience experts, user representatives,
+              etc.</li>
+            <li><strong>Implementation/internal design: designing how the product will be implemented to meet the required external behavior.</strong> This is usually done by software architects and software engineers.</li>
+          </ul>
         </div>
       </div>
       <div>
@@ -1280,7 +1289,7 @@
       <h2 id="abstraction">Abstraction</h2>
       <div>
         <div>
-          <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1288,23 +1297,34 @@
           </div>
         </tip-box>
         <div>
-          <tip-box type="primary">
+          <tip-box type="defintion">
             <div>
-              <p><strong>Abstraction</strong>:</p>
-              <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details
-                that are relevant to the current perspective or the task at hand. For example, within a certain software component, we might deal with a ‘user’ data type, while ignoring the details contained in the user data item. These details have been
-                ‘abstracted away’ as they do not affect the task of that software component. This is called <em>data abstraction</em>. On the other hand, <em>control abstraction</em> abstracts away details of the actual control flow to focus on tasks
-                at a simplified level. For example, <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-              <p>Abstraction can be applied repeatedly to obtain higher and <em>higher levels of abstractions</em>. For example, a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit. Similarly,
-                <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+              <p><strong>Abstraction</strong>: Abstraction is a technique for dealing with complexity. It works by establishing a level of complexity on which a person interacts with the system, suppressing the more complex details below the current level.</p>
             </div>
+          </tip-box>
+          <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details
+            that are relevant to the current perspective or the task at hand.</p>
+          <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+          <tip-box>
+            <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as
+              they do not affect the task of that software component.</p>
+          </tip-box>
+          <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+          <tip-box>
+            <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+            <p></p>
+          </tip-box>For example,
+          <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+          <tip-box>
+            <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+            <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
           </tip-box>
         </div>
       </div>
       <h2 id="coupling">Coupling</h2>
       <div>
         <div>
-          <h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1312,31 +1332,16 @@
           </div>
         </tip-box>
         <div>
-          <p><em>Coupling</em> is a measure of the degree of <em>dependence</em> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. In the example below, design A appears to have a more
-            coupling between the components than design B.</p>
+          <p><strong><em>Coupling</em> is a measure of the degree of <em>dependence</em></strong> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. <strong>High coupling (aka <em>tight</em> coupling or <em>strong</em> coupling) is discouraged</strong>            due to the following disadvantages:</p>
+          <ul>
+            <li><strong>Maintenance is harder</strong> because a change in one module could cause changes in other modules coupled to it (i.e. a ripple effect).</li>
+            <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
+            <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
+          </ul>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPrinciples/coupling/what/images/playerPuzzleManager.png" height="220">
+            <p>📦 In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p><img src="/website/book/designPrinciples/coupling/what/images/playerPuzzleManager.png" height="220">
             <p></p>
           </tip-box>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can justify the need to reduce coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-          </div>
-        </tip-box>
-        <div>
-          <p>Highly coupled (also referred to as tightly coupled or strongly coupled) systems display the following disadvantages:</p>
-          <ul>
-            <li>A change in one module usually forces changes in other modules coupled to it (i.e. a ripple effect).</li>
-            <li>Integration is harder because multiple components coupled with each other have to be integrated at the same time.</li>
-            <li>Testing and reuse of the module is harder due to its dependence on other modules.</li>
-          </ul>
-          <p>In the case of high-coupling (i.e. relatively high dependency), a change in one component may require changes in other coupled components. Therefore, we should strive to achieve a low-coupled design.</p>
         </div>
       </div>
       <div>
@@ -1349,16 +1354,41 @@
           </div>
         </tip-box>
         <div>
-          <p>In general component A is coupled to B if a change to B could <em>potentially</em> require a change in A.</p>
-          <p>Some examples:</p>
-          <ul>
-            <li><em>component A</em> has access to the internal structure of <em>component B</em> (this results in a very high level of coupling);</li>
-            <li><em>component A</em> and B depend on the same global variable;</li>
-            <li><em>component A</em> calls <em>component B</em>;</li>
-            <li><em>component A</em> receives an object of <em>component B</em> as a parameter or a return value;</li>
-            <li><em>component A</em> inherits from <em>component B</em>;</li>
-            <li><em>components A</em> and <em>B</em> are required to follow the same data format or communication protocol.</li>
-          </ul>
+          <p><strong>X is <em>coupled</em> to Y if a change to Y can <mark>potentially</mark> require a change in X</strong>.</p>
+          <tip-box>
+            <p>📦 If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially (but not always) require a change in the <code>Foo</code> class
+              <span
+                class="dimmed"> e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code>                does not call <code>Bar#write()</code></span>.</p>
+            <panel type="seamless" header="%%code for the above example%%">
+              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+    ...
+    <span class="hljs-keyword">new</span> Bar().read();
+    ...
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
+        ...
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{
+        ...
+    }
+}
+</code></pre>
+            </panel>
+          </tip-box>
+          <tip-box>
+            <p>📦 Some examples of coupling: <code>A</code> is coupled to <code>B</code> if,</p>
+            <ul>
+              <li><code>A</code> has access to the internal structure of <code>B</code> (this results in a very high level of coupling)</li>
+              <li><code>A</code> and B depend on the same global variable</li>
+              <li><code>A</code> calls <code>B</code></li>
+              <li><code>A</code> receives an object of <code>B</code> as a parameter or a return value</li>
+              <li><code>A</code> inherits from <code>B</code></li>
+              <li><code>A</code> and <code>B</code> are required to follow the same data format or communication protocol</li>
+            </ul>
+          </tip-box>
         </div>
       </div>
       <div>
@@ -1371,13 +1401,22 @@
           </div>
         </tip-box>
         <div>
-          <p>Temporal coupling etc.</p>
+          <p>Some examples of different coupling types:</p>
+          <ul>
+            <li><strong>Content coupling</strong>: one module modifies or relies on the internal workings of another module <span class="dimmed"> e.g., accessing local data of another module</span></li>
+            <li><strong>Common/Global coupling</strong>: two modules share the same global data</li>
+            <li><strong>Control coupling</strong>: one module controlling the flow of another, by passing it information on what to do <span class="dimmed"> e.g., passing a flag</span></li>
+            <li><strong>Data coupling</strong>: one module sharing data with another module <span class="dimmed"> e.g. via passing parameters</span></li>
+            <li><strong>External coupling</strong>: two modules share an externally imposed convention <span class="dimmed"> e.g., data formats, communication protocols, device interfaces</span>.</li>
+            <li><strong>Subclass coupling</strong>: a class inherits from another class. Note that a child class is coupled to the parent class but not the other way around.</li>
+            <li><strong>Temporal coupling</strong>: two actions are bundled together just because they happen to occur at the same time <span class="dimmed"> e.g. extracting a contiguous block of code as a method although the code block contains statements unrelated to each other</span></li>
+          </ul>
         </div>
       </div>
       <h2 id="cohesion">Cohesion</h2>
       <div>
         <div>
-          <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1385,26 +1424,14 @@
           </div>
         </tip-box>
         <div>
-          <p><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are. A highly-cohesive component keeps related functionalities together while keeping out all other unrelated things.</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h4 id="why-one-2">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can justify the need to increase cohesion <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-          </div>
-        </tip-box>
-        <div>
-          <p>The following are some disadvantages of low cohesion (or “weak cohesion”).</p>
+          <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other unrelated things.</p>
+          <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
           <ul>
             <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
-            <li>Difficulty in maintaining modules because a localized adjustment in the requirements can result in changes spread across the system since requirement-related functionality is implemented across many components of the system.</li>
-            <li>Modules become less reusable because they do not represent logical units of functionality.</li>
+            <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed"> (reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small change
+              in behavior <span class="dimmed"> (reason: because the code realated to that change is not localized to a single module)</span>.</li>
+            <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
           </ul>
-          <p>One should strive for high cohesion to facilitate code maintenance and reuse.</p>
         </div>
       </div>
       <div>
@@ -1417,15 +1444,15 @@
           </div>
         </tip-box>
         <div>
-          <p>Cohesion can be present in many forms. For example,</p>
+          <p><strong>Cohesion can be present in many forms</strong>. Some examples:</p>
           <ul>
             <li>Code related to a single concept is kept together, e.g. the Student component handles everything related to students.</li>
             <li>Code that is invoked close together in time is kept together, e.g. all code related to initializing the system is kept together.</li>
-            <li>Code that manipulates the same data structure is kept together, e.g. the GameArchive component handles everything related to the storage and retrieval of game sessions.</li>
+            <li>Code that manipulates the same data structure is kept together, e.g. the <code>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li>
           </ul>
-          <p>The components in the following sequence diagram show low cohesion because user interactions are handled by many components. Its cohesion can be improved by moving all user interactions to the UI component.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPrinciples/cohesion/how/images/uiLogicStorage.png" height="220">
+            <p>📦 The components in the following sequence diagram show low cohesion because user interactions are handled by many components. Its cohesion can be improved by moving all user interactions to the UI component.</p><img src="/website/book/designPrinciples/cohesion/how/images/uiLogicStorage.png"
+              height="220">
             <p></p>
           </tip-box>
         </div>
@@ -1433,7 +1460,7 @@
       <h2 id="open-closed-principle">Open-Closed Principle</h2>
       <div>
         <div>
-          <h4 id="what-one-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1442,17 +1469,22 @@
         </tip-box>
         <div>
           <p>While it is possible to isolate the functionalities of a software system into modules, there is no way to remove interaction between modules. When modules interact with each other, coupling naturally increases. Consequently, it is harder to
-            localize any changes to the software system. In 1988, Bertrand Meyer proposed a guiding principle to alleviate this problem. The principle, known as the <em>open-closed principle</em>, states: “A module should be <em>open</em> for extension
-            but <em>closed</em> for modification”. That is, modules should be written so that they can be extended, without requiring them to be modified. In other words, changing what the modules do without changing the source code of the modules.</p>
-          <p>In object-oriented programming, these two seemingly opposing requirements can be achieved in various ways. This often requires separating the <em>specification (interface)</em> of a module from its <em>implementation</em>.</p>
+            localize any changes to the software system. The Open-Close Principle aims to alleviate this problem.</p>
+          <tip-box type="definition">
+            <div>
+              <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by Bertrand Meyer in 1988</sub></p>
+            </div>
+          </tip-box>
+          <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
+            <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>,
+              and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to
+              modification.</p><img src="/website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
             <p></p>
-            <p>The behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>,
-              the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. Indeed, its behavior was extended without having to open up and modify its code. Hence, it was open to extensions, but closed to modification.</p>
           </tip-box>
           <tip-box>
-            <p>The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of <code>Admin</code>              objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
+            <p>📦 The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of
+              <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
             <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
 ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
 </code></pre>
@@ -1462,7 +1494,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
       <h2 id="dependency-inversion-principle">Dependency Inversion Principle</h2>
       <div>
         <div>
-          <h4 id="what-one-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1498,7 +1530,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
           </div>
         </tip-box>
         <div>
-          <p>Object Oriented Programming is a widely used programming paradigm. Here is an introductory explanation of OOP from Apple:</p>
+          <p><strong>Object-Oriented Programming (OOP) is a <em>programming paradigm</em>.</strong> A programming paradigm guides programmers to analyze programming problems, and structure programming solutions, in a specific way.</p>
           <blockquote>
             <p>Programming languages have traditionally divided the world into two parts—data and operations on data. Data is static and immutable, except as the operations may change it. The procedures and functions that operate on data have no lasting
               state of their own; they’re useful only in their ability to affect data.</p>
@@ -1508,15 +1540,42 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               are the basic elements of design.</p>
             <p>Object-oriented programming doesn’t so much dispute this view of the world as restructure it at a higher level. It groups operations and data into modular units called objects and lets you combine objects into structured networks to form a
               complete program. In an object-oriented programming language, objects and object interactions are the basic elements of design.</p>
-            <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+            <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
           </blockquote>
-          <p>{mention other programming paradigms}</p>
+          <p>Some other examples of programming paradigms are:</p>
+          <table class="markbind-table table">
+            <thead>
+              <tr>
+                <th>Paradigm</th>
+                <th>Programming Languages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a></td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
+                <td>F#, Haskel, Scala</td>
+              </tr>
+              <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
+                <td>Prolog</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Some programming languages support multiple paradigms.</strong></p>
+          <tip-box>
+            <p>📦 Java is primarily an OOP language but it supports limited forms of functional programming and it can be used to (although not recommended) write procedural code. <span class="dimmed"> e.g. <a href="https://github.com/se-edu/addressbook-level1">se-edu/addressbook-level1</a></span></p>
+            <p>📦 JavaScript and Python support functional, procedural, and OOP programming.</p>
+          </tip-box>
         </div>
       </div>
       <h2 id="objects">Objects</h2>
       <div>
         <div>
-          <h4 id="basic-one-2">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1707,7 +1766,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
       <h2 id="classes">Classes</h2>
       <div>
         <div>
-          <h4 id="basic-one-3">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-2">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1806,7 +1865,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
       <h2 id="associations">Associations</h2>
       <div>
         <div>
-          <h4 id="basic-one-4">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-3">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -1976,7 +2035,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
       <h2 id="inheritance">Inheritance</h2>
       <div>
         <div>
-          <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3073,7 +3132,7 @@ void calculateCAP (int[] averages) { ... }
       <h2 id="introduction-4">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3090,7 +3149,13 @@ void calculateCAP (int[] averages) { ... }
             It should be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
           <tip-box>
             <p>📦 A possible architecture for a <em>Minesweeper</em> game</p>
-            <p><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220"><span></span><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></p>
+            <table>
+              <tr>
+                <td><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
+                <td width="10px"></td>
+                <td><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
+              </tr>
+            </table>
             <p></p>
             <p>Main components:</p>
             <ul>
@@ -3177,7 +3242,7 @@ void calculateCAP (int[] averages) { ... }
       <h3 id="introduction-5">Introduction</h3>
       <div>
         <div>
-          <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3185,13 +3250,20 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>It’s a form of reusing high-level designs {describe more}</p>
+          <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
+            <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+          <tip-box>
+            <p>📦 n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
+          </tip-box>
+          <modal title="" id="modal:archiStyles-buildingArchitectures">
+            <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br><sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
+          </modal>
         </div>
       </div>
       <h3 id="n-tier-architectural-style">N-tier Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3199,15 +3271,19 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>The main characteristic of an n-tier architectural style is that higher layers make use of services provided by lower layers. Lower layers are independent of higher layers. Operating systems and network communication software often use this
-            style.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+          <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png"
+            height="150">
+          <tip-box>
+            <p>📦 Operating systems and network communication software often use n-tier style.
+              <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+          </tip-box>
           <p></p>
         </div>
       </div>
       <h3 id="client-server-architectural-style">Client-Server Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3215,15 +3291,18 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>This is an architectural style for distributed applications. The main characteristic of the client-server style is the presence of at least one component playing the role of a server, with at least one client component accessing the services
-            of the server.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="250">
-          <p></p>
+          <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed applications.</p>
+          <img
+            src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+            <p></p>
+            <tip-box>
+              <p>📦 The online game and teh Web application below uses the client-server style.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
         </div>
       </div>
       <h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3231,15 +3310,18 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>The main characteristic of a transaction processing architecture style is that the workload of the system is broken down to a number of <em>transactions</em>. These transactions are then given to a “dispatcher” that controls the execution of
-            each transaction. Task queuing, ordering, “undo” etc. are handled by the dispatcher.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="250">
-          <p></p>
+          <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong> Task queuing,
+            ordering, undo etc. are handled by the dispatcher.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+          <tip-box>
+            <p>📦 In this example from a Banking system, transactions are generated by the terminals used by
+              <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png"
+              height="120"></tip-box>
         </div>
       </div>
       <h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3247,13 +3329,12 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>The <em>service-oriented architecture</em> (SOA) is a relatively recent architectural style for distributed applications. An SOA is essentially an application built by combining functionalities packaged as <strong>programmatically accessible services</strong>.
-            A prerequisite for SOA is the interoperability between distributed services, which may not even be implemented using the same programming language. A common way to implement SOAs is through the use of <em>XML web services</em> where the web
-            is used as the medium for the services to interact, and XML is used as the language of communication between service providers and service users.</p>
+          <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed services,
+            which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and XML is used as the language
+            of communication between service providers and service users.</p>
           <tip-box>
-            <p>Example:</p>
-            <p>Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandize, while HSBC provides a web service for merchants to charge HSBC credit cards. Using these web services, an ‘eBookShop’
-              web application can be developed that allows HSBC customers to buy merchandize from Amazon and pay for them using HSBC credit cards. Since both Amazon and HSBC services follow the SOA architecture, their web services can be reused by the
+            <p>📦 Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards. Using these web services, an ‘eBookShop’
+              web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA architecture, their web services can be reused by the
               web application, even if all three systems use different programming platforms.</p><img src="/website/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
             <p></p>
           </tip-box>
@@ -3262,7 +3343,7 @@ void calculateCAP (int[] averages) { ... }
       <h3 id="event-driven-architectural-style">Event-driven Architectural Style</h3>
       <div>
         <div>
-          <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-18">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3270,9 +3351,10 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc. In the event-driven architectural style, events are detected and communicated to
-            the affected components. These components then react to the events, if required. For example, when the ‘button clicked’ event occurs, functions that are tied to the button-click event is activated. This architectural style is often used in
-            GUIs.</p>
+          <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> and communicating those events to other interested parts of the code for possible actions.</strong>            This architectural style is often used in GUIs.</p>
+          <tip-box>
+            <p>📦 When the ‘button clicked’ event occurs in a GUI, methods that are tied to the <em>button-click</em> event are called.</p>
+          </tip-box>
         </div>
       </div>
       <h3 id="more">More</h3>
@@ -3286,7 +3368,7 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</p>
+          <p><strong>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</strong></p>
         </div>
       </div>
       <div>
@@ -3299,8 +3381,10 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p>Most applications use a mix of these architectural styles or adopt a style that is customized to the requirements. For example, an application can use a client-server architecture where the server component comprises several layers, i.e. it
-            uses the multi-layer architecture.</p>
+          <p><strong>Most applications use a mix of these architectural styles.</strong></p>
+          <tip-box>
+            <p>📦 An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
+          </tip-box>
         </div>
       </div>
     </div>
@@ -3309,7 +3393,7 @@ void calculateCAP (int[] averages) { ... }
       <h2 id="introduction-6">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-18">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-19">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3826,7 +3910,7 @@ studentList.addUi(statusUi);
       <h2 id="introduction-7">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-19">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/ides/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-20">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/ides/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -3851,7 +3935,7 @@ studentList.addUi(statusUi);
       <h2 id="debugging">Debugging</h2>
       <div>
         <div>
-          <h4 id="what-one-20">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-21">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3888,7 +3972,7 @@ studentList.addUi(statusUi);
       <h2 id="introduction-8">Introduction</h2>
       <div>
         <div>
-          <h4 id="basic-one-5">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-4">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -3965,7 +4049,7 @@ studentList.addUi(statusUi);
       </div>
       <div>
         <div>
-          <h4 id="basic-one-6">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-5">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4143,7 +4227,8 @@ studentList.addUi(statusUi);
           <panel header="**SLAP Hard**" type="seamless">
             <div>
               <div>
-                <p>Avoid varying the level of abstraction within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
+                <p>Avoid varying the level of
+                  <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
                 <tip-box>
                   <p>Example:</p>
                   <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
@@ -4158,17 +4243,49 @@ processData();
 displayResult();
 </code></pre>
                 </tip-box>
-                <tip-box type="info">
+                <modal title="" id="modal:slap-abstraction">
                   <div>
-                    <p><strong>Abstraction</strong>:</p>
-                    <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only
-                      details that are relevant to the current perspective or the task at hand. For example, within a certain software component, we might deal with a ‘user’ data type, while ignoring the details contained in the user data item. These
-                      details have been ‘abstracted away’ as they do not affect the task of that software component. This is called <em>data abstraction</em>. On the other hand, <em>control abstraction</em> abstracts away details of the actual control
-                      flow to focus on tasks at a simplified level. For example, <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                    <p>Abstraction can be applied repeatedly to obtain higher and <em>higher levels of abstractions</em>. For example, a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.
-                      Similarly, <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Design Principles → Abstraction →
+</span></strong>
+                      </span>
+                    </p>
+                    <div>
+                      <h4 id="what-one-22">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <tip-box type="defintion">
+                          <div>
+                            <p><strong>Abstraction</strong>: Abstraction is a technique for dealing with complexity. It works by establishing a level of complexity on which a person interacts with the system, suppressing the more complex details below the
+                              current level.</p>
+                          </div>
+                        </tip-box>
+                        <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture
+                          only details that are relevant to the current perspective or the task at hand.</p>
+                        <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                        <tip-box>
+                          <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted
+                            away’ as they do not affect the task of that software component.</p>
+                        </tip-box>
+                        <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                        <tip-box>
+                          <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                          <p></p>
+                        </tip-box>For example,
+                        <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                        <tip-box>
+                          <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                          <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                        </tip-box>
+                      </div>
+                      <div>
+                        <div></div>
+                      </div>
+                    </div>
                   </div>
-                </tip-box>
+                </modal>
               </div>
             </div>
           </panel>
@@ -4260,7 +4377,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-7">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-6">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4303,7 +4420,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-8">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-7">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4525,7 +4642,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-9">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-8">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4682,7 +4799,7 @@ exit();
       </div>
       <div>
         <div>
-          <h4 id="basic-one-10">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-9">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4779,7 +4896,7 @@ compact(input);
       <h1 id="refactoring">Refactoring</h1>
       <div>
         <div>
-          <h4 id="what-one-21">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-23">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4913,7 +5030,7 @@ send();
       <h2 id="introduction-9">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-22">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-24">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -4938,7 +5055,7 @@ send();
       <h3 id="guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up</h3>
       <div>
         <div>
-          <h4 id="what-one-23">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-25">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5027,7 +5144,7 @@ send();
       <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3>
       <div>
         <div>
-          <h4 id="what-one-24">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-26">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5061,7 +5178,7 @@ send();
       <h3 id="javadoc">JavaDoc</h3>
       <div>
         <div>
-          <h4 id="what-one-25">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-27">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5097,7 +5214,7 @@ send();
       <h3 id="markdown">Markdown</h3>
       <div>
         <div>
-          <h4 id="what-one-26">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-28">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5141,7 +5258,7 @@ send();
       <h2 id="introduction-10">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-27">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-29">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5158,7 +5275,7 @@ send();
       <h2 id="exceptions">Exceptions</h2>
       <div>
         <div>
-          <h4 id="what-one-28">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-30">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5316,7 +5433,7 @@ send();
       <h2 id="logging">Logging</h2>
       <div>
         <div>
-          <h4 id="what-one-29">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5376,7 +5493,7 @@ send();
       <h2 id="defensive-programming">Defensive Programming</h2>
       <div>
         <div>
-          <h4 id="what-one-30">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-32">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5620,7 +5737,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-11">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-33">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -5642,15 +5759,16 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>In terms of timing and frequency, there are two general approaches to integration:</p>
-          <ol>
-            <li><em>Late and one-time</em>: In an extreme case of this approach, developers wait till all components are completed and integrate all finished components just before the release. This approach is not recommended because integration often causes
-              many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays: Late integration → incompatibilities found → major rework required → cannot meet the delivery date.</li>
-            <li><em>Early and frequent</em>: The other approach is to integrate early and evolve in parallel in small steps, re-integrating frequently. For example, a working skeleton can be written first (i.e. it compiles and runs but does not produce any
-              useful output). This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the
-              new code to the main system.</li>
-          </ol>
-          <p>Whether using frequent integration or one-time late integration, there is still a need to decide the order in which components are to be integrated. There are several approaches to doing this, as explained next.</p>
+          <p><strong>In terms of timing and frequency, there are two general approaches to integration: <em>late and one-time</em>, <em>early and frequent</em>.</strong></p>
+          <p><strong><em>Late and one-time</em>: wait till all components are completed and integrate all finished components near the end of the project.</strong></p>
+          <tip-box type="wrong">
+            <p>This approach is not recommended because integration often causes many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays <span class="dimmed"> i.e. Late integration → incompatibilities found → major rework required → cannot meet the delivery date</span>.</p>
+          </tip-box>
+          <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
+          <tip-box>
+            <p>📦 A <em><tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip></em> can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers
+              can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
+          </tip-box>
         </div>
       </div>
       <div>
@@ -5663,8 +5781,11 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>In the <em>big-bang integration</em> approach, all components are integrated at the same time. This approach is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex
-            than when problems are uncovered incrementally.</p>
+          <p><strong><em>Big-bang integration</em>: integrate all components at the same time.</strong></p>
+          <tip-box type="wrong">
+            <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
+          </tip-box>
+          <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
         </div>
       </div>
       <div>
@@ -5673,25 +5794,23 @@ jean.setBoyfriend(yong);
         </div>
         <tip-box>
           <div>
-            <p>🏆 Can explain how integration approaches vary based on top-down or bottom-up integration <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+            <p>🏆 Can explain how integration approaches vary based on the order of integration <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
           </div>
         </tip-box>
-        <div>
-          <p>For incremental integration efforts, the following three incremental integration approaches are more suitable.</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/approaches.png" height="100">
+        <div><img src="/website/book/integration/approaches/topDownVsBottomUp/images/approaches.png" height="100">
           <p></p>
-          <ul>
-            <li><em>Top-down</em> integration: In top-down integration, higher-level components are integrated before bringing in the lower-level components. One advantage of this approach is that higher-level problems can be discovered early. One disadvantage
-              is that this requires the use of dummy or skeletal components (i.e. stubs) in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they
-              depend on lower level ones.</li>
-            <li><em>Bottom-up</em> integration: This is the reverse of top-down integration. Advantages and disadvantages are simply the reverse of those of the top-down approach.</li>
-            <li><em>Sandwich</em> integration: This is a mix of the top-down and the bottom-up approaches. The idea is to do both top-down and bottom-up so as to “meet up” in the middle.</li>
-          </ul>
+          <p><strong>Based on the order in which components are integrated, incremental integration can be done in three ways.</strong></p>
+          <p><strong><em>Top-down</em> integration: higher-level components are integrated before bringing in the lower-level components.</strong> One advantage of this approach is that higher-level problems can be discovered early. One disadvantage is that
+            this requires the use of
+            <tooltip content="dummy or skeletal components">stubs</tooltip> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
+          <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Advantages and disadvantages are simply the reverse of those of the top-down approach.</p>
+          <p><strong><em>Sandwich</em> integration: a mix of the top-down and the bottom-up approaches.</strong> The idea is to do both top-down and bottom-up so as to 'meet' in the middle.</p>
         </div>
       </div>
       <h2 id="build-automation">Build Automation</h2>
       <div>
         <div>
-          <h4 id="what-one-32">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-34">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6350,7 +6469,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-12">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-33">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-35">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6378,7 +6497,7 @@ jean.setBoyfriend(yong);
       <h2 id="apis">APIs</h2>
       <div>
         <div>
-          <h4 id="what-one-34">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-36">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6441,7 +6560,7 @@ jean.setBoyfriend(yong);
       <h2 id="libraries">Libraries</h2>
       <div>
         <div>
-          <h4 id="what-one-35">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-37">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6580,7 +6699,7 @@ jean.setBoyfriend(yong);
       <h2 id="cloud-computing">Cloud Computing</h2>
       <div>
         <div>
-          <h4 id="what-one-36">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-38">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6632,7 +6751,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-13">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-37">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-39">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6666,7 +6785,7 @@ jean.setBoyfriend(yong);
       <h2 id="code-reviews">Code Reviews</h2>
       <div>
         <div>
-          <h4 id="what-one-38">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-40">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6767,7 +6886,7 @@ jean.setBoyfriend(yong);
       <h2 id="introduction-14">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-39">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-41">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -6846,7 +6965,7 @@ jean.setBoyfriend(yong);
       <h3 id="unit-testing">Unit Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-40">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-42">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6888,7 +7007,7 @@ jean.setBoyfriend(yong);
       <h3 id="integration-testing">Integration Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-41">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-43">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -6909,7 +7028,7 @@ jean.setBoyfriend(yong);
       <h3 id="system-testing">System Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-42">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-44">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -7073,7 +7192,7 @@ jean.setBoyfriend(yong);
       <h3 id="acceptance-testing">Acceptance Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-43">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-45">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -7141,7 +7260,7 @@ jean.setBoyfriend(yong);
       <h3 id="regression-testing">Regression Testing</h3>
       <div>
         <div>
-          <h4 id="what-one-44">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-46">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -7166,7 +7285,7 @@ jean.setBoyfriend(yong);
       <h2 id="test-automation">Test Automation</h2>
       <div>
         <div>
-          <h4 id="what-one-45">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-47">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -7835,7 +7954,7 @@ A negative test case: i = null;
       <h2 id="boundary-value-analysis">Boundary Value Analysis</h2>
       <div>
         <div>
-          <h4 id="what-one-46">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-48">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -7939,7 +8058,7 @@ A negative test case: i = null;
       <h2 id="combining-test-inputs">Combining Test Inputs</h2>
       <div>
         <div>
-          <h4 id="why-one-3">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -8881,7 +9000,7 @@ A negative test case: i = null;
       <h1 id="revision-control">Revision Control</h1>
       <div>
         <div>
-          <h4 id="what-one-47">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+          <h4 id="what-one-49">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
         </div>
         <tip-box>
           <div>
@@ -9431,7 +9550,7 @@ A negative test case: i = null;
       <h2 id="introduction-16">Introduction</h2>
       <div>
         <div>
-          <h4 id="what-one-48">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-50">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -9708,7 +9827,7 @@ A negative test case: i = null;
       <h3 id="introduction-17">Introduction</h3>
       <div>
         <div>
-          <h4 id="what-one-49">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-51">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -9775,7 +9894,7 @@ A negative test case: i = null;
       <h3 id="associations-2">Associations</h3>
       <div>
         <div>
-          <h4 id="basic-one-11">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-10">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -10102,7 +10221,7 @@ A negative test case: i = null;
       </div>
       <div>
         <div>
-          <h4 id="basic-one-12">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="basic-one-11">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -12349,7 +12468,7 @@ git pull origin master
       <h1 id="principles">Principles</h1>
       <div>
         <div>
-          <h4 id="what-one-50">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="what-one-52">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -12506,7 +12625,7 @@ git pull origin master
       </div>
       <div>
         <div>
-          <h4 id="separation-of-concerns-three">Separation of Concerns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          <h4 id="separation-of-concerns-principle-three">Separation of Concerns Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -12519,16 +12638,167 @@ git pull origin master
               <p><strong>Separation of Concerns Principle (SoC)</strong>: To achieve better modularity, separate the code into distinct sections, such that each section addresses a separate <em>concern</em>. -- Edsger W. Dijkstra</p>
             </div>
           </tip-box>
-          <p>A concern in this context is a set of information that affects the code of a computer program.</p>
-          <p>Examples for <em>concerns</em>:</p>
-          <ul>
-            <li>A specific feature, such as the code related to <code>add employee</code> feature</li>
-            <li>A specific aspect, such as the code related to <code>persistence</code> or <code>security</code></li>
-            <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
-          </ul>
-          <p>Applying SoC reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</p>
-          <p>This principle can be applied at the class level, as well as on higher levels. For example, the n-tier architecture utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with
-            each other. A correct application of this principle should lead to higher cohesion and lower coupling.</p>
+          <p>A <em>concern</em> in this context is a set of information that affects the code of a computer program.</p>
+          <tip-box>
+            <p>📦 Examples for <em>concerns</em>:</p>
+            <ul>
+              <li>A specific feature, such as the code related to <code>add employee</code> feature</li>
+              <li>A specific aspect, such as the code related to <code>persistence</code> or <code>security</code></li>
+              <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
+            </ul>
+          </tip-box>
+          <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+          <tip-box>
+            <p>📦 If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p>
+          </tip-box>
+          <p><strong>This principle can be applied at the class level, as well as on higher levels.</strong></p>
+          <tip-box>
+            <p>📦 The
+              <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
+          </tip-box>
+          <modal title="TextBook &raquo;" id="modal:soc-nTier">
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-53">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png"
+                    height="150">
+                  <tip-box>
+                    <p>📦 Operating systems and network communication software often use n-tier style.
+                      <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                  </tip-box>
+                  <p></p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </modal>
+          <p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
+          <modal title="TextBook &raquo;" id="soc-coupling">
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Principles → Coupling →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-54">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong><em>Coupling</em> is a measure of the degree of <em>dependence</em></strong> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. <strong>High coupling (aka <em>tight</em> coupling or <em>strong</em> coupling) is discouraged</strong>                    due to the following disadvantages:</p>
+                  <ul>
+                    <li><strong>Maintenance is harder</strong> because a change in one module could cause changes in other modules coupled to it (i.e. a ripple effect).</li>
+                    <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
+                    <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
+                  </ul>
+                  <tip-box>
+                    <p>📦 In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p><img src="/website/book/designPrinciples/coupling/what/images/playerPuzzleManager.png" height="220">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: Coupling levels of alternative designs">
+                          <question has-input="true">
+                            <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
+                            <tip-box><img src="/website/book/designPrinciples/coupling/what/images/alternativeDesigns.png" height="180">
+                              <p></p>
+                            </tip-box>
+                            <div slot="answer">
+                              <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some
+                                links may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone (do not
+                                depend on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock::key: regressions and coupling.">
+                          <question has-input="true">
+                            <p>Explain the link (if any) between regressions and coupling.</p>
+                            <div slot="answer">
+                              <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed"> e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock::key: Coupling and testability">
+                          <question has-input="true">
+                            <p>Discuss the relationship between coupling and
+                              <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                            <div slot="answer">
+                              <p>Coupling decreases testability because if the
+                                <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock::key: Statements about coupling">
+                          <question>
+                            <p>Choose the correct statements.</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(a)(b)(c)<s>(d)</s>(e)</p>
+                              <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </modal>
+          <modal title="TextBook &raquo;" id="soc-cohesion">
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Principles → Cohesion →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-55">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other unrelated
+                    things.</p>
+                  <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
+                  <ul>
+                    <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                    <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed"> (reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small
+                      change in behavior <span class="dimmed"> (reason: because the code realated to that change is not localized to a single module)</span>.</li>
+                    <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </modal>
         </div>
       </div>
       <div>

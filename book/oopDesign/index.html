@@ -28,7 +28,7 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>Object Oriented Programming is a widely used programming paradigm. Here is an introductory explanation of OOP from Apple:</p>
+            <p><strong>Object-Oriented Programming (OOP) is a <em>programming paradigm</em>.</strong> A programming paradigm guides programmers to analyze programming problems, and structure programming solutions, in a specific way.</p>
             <blockquote>
               <p>Programming languages have traditionally divided the world into two parts—data and operations on data. Data is static and immutable, except as the operations may change it. The procedures and functions that operate on data have no lasting
                 state of their own; they’re useful only in their ability to affect data.</p>
@@ -38,17 +38,44 @@
                 are the basic elements of design.</p>
               <p>Object-oriented programming doesn’t so much dispute this view of the world as restructure it at a higher level. It groups operations and data into modular units called objects and lets you combine objects into structured networks to form
                 a complete program. In an object-oriented programming language, objects and object interactions are the basic elements of design.</p>
-              <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+              <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
             </blockquote>
-            <p>{mention other programming paradigms}</p>
+            <p>Some other examples of programming paradigms are:</p>
+            <table class="markbind-table table">
+              <thead>
+                <tr>
+                  <th>Paradigm</th>
+                  <th>Programming Languages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a></td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
+                  <td>F#, Haskel, Scala</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
+                  <td>Prolog</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><strong>Some programming languages support multiple paradigms.</strong></p>
+            <tip-box>
+              <p>📦 Java is primarily an OOP language but it supports limited forms of functional programming and it can be used to (although not recommended) write procedural code. <span class="dimmed"> e.g. <a href="https://github.com/se-edu/addressbook-level1">se-edu/addressbook-level1</a></span></p>
+              <p>📦 JavaScript and Python support functional, procedural, and OOP programming.</p>
+            </tip-box>
           </div>
           <div>
             <div>
               <panel header=":muscle: Exercises" expandable="">
                 <div>
-                  <panel header=":lock::key: Choose the least correct statement.">
+                  <panel header=":lock::key: statements about OOP">
                     <question>
-                      <p>A) Choose the least correct statement</p>
+                      <p>A) Choose the correct statements</p>
                       <ul class="task-list">
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. OO is a programming paradigm</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. OO guides us in how to structure the solution</li>
@@ -56,7 +83,7 @@
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. OO is a programming language</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. OO is modeled after how the objects in real world work</li>
                       </ul>
-                      <p>B) Choose the correct statement</p>
+                      <p>B) Choose the correct statements</p>
                       <ul class="task-list">
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Java and C++ are OO languages</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. C language follows the <em>Functional Programming</em> paradigm</li>
@@ -64,40 +91,25 @@
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
                       </ul>
                       <div slot="answer">
-                        <p>A) Choose the least correct statement</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. OO is a programming paradigm</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. OO guides us in how to structure the solution</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. OO is mainly an abstraction mechanism</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. OO is a programming language</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. OO is modeled after how the objects in real world work</li>
-                        </ul>
+                        <p>A) (a)(b)(c)(e)</p>
                         <p>Explanation: While many languages support the OO paradigm, OO is not a language itself.</p>
                         <p>B) Choose the correct statement</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Java and C++ are OO languages</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. C language follows the <em>Functional Programming</em> paradigm</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
-                        </ul>
+                        <p>(a)(b)(d)</p>
                         <p>Explanation: C follows the procedural paradigm. Yes, we can write procedural code using OO languages e.g., AddressBook-level1.</p>
                       </div>
                     </question>
                   </panel>
                 </div>
                 <div>
-                  <panel header=":lock::key: True or False?">
+                  <panel header=":lock::key: procedural vs OOP">
                     <question>
                       <p>OO is a higher level mechanism than the procedural paradigm.</p>
-                      <ul class="task-list">
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                      <ul radio-group="b5o4z" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="b5o4z" type="radio"> True</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="b5o4z" type="radio"> False</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                        </ul>
+                        <p>True.</p>
                         <p>Explanation: Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object is an abstraction over data+related functions, OO works at a higher level.</p>
                       </div>
                     </question>
@@ -647,10 +659,10 @@
                     <panel header=":lock::key: What does the navigability given by this diagram mean?">
                       <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                         <p></p>
-                        <ul radio-group="qe826" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="qe826" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="qe826" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="qe826" type="radio"> c. Depends on the programming language</label></li>
+                        <ul radio-group="ql9g9" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="ql9g9" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="ql9g9" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="ql9g9" type="radio"> c. Depends on the programming language</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -804,9 +816,9 @@
                     <panel header=":lock::key: Which one is not recommended to use?">
                       <question>
                         <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                        <ul radio-group="246xs" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="246xs" type="radio"> a. Composition symbol</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="246xs" type="radio"> b. Aggregation symbol</label></li>
+                        <ul radio-group="pglcg" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="pglcg" type="radio"> a. Composition symbol</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="pglcg" type="radio"> b. Aggregation symbol</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(b)</p>
@@ -1650,15 +1662,15 @@ void calculateCAP (int[] averages) { ... }
                     <p></p>
                     <question>
                       In the context of OOP, what is the relationship between abstraction and encapsulation?
-                      <ul radio-group="w5qa6" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> a. They are the same thing</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> b. They are opposites</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="w5qa6" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                      <ul radio-group="09d93" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="09d93" type="radio"> a. They are the same thing</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="09d93" type="radio"> b. They are opposites</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="09d93" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="09d93" type="radio"> d. Abstraction strengthens encapsulation</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="ar6zo" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="ar6zo" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                        <ul radio-group="a5rqg" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="a5rqg" type="radio"> c. Encapsulation strengthens abstraction</label></li>
                         </ul>
                         <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
                           in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can perform
@@ -1679,16 +1691,16 @@ void calculateCAP (int[] averages) { ... }
                     <p></p>
                     <question>
                       Which of these do not belong to four main OO principles?
-                      <ul radio-group="bolq6" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> a. Abstraction</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> b. Encapsulation</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> c. Inheritance</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> d. Substitutability</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="bolq6" type="radio"> e. Polymorphism</label></li>
+                      <ul radio-group="iwrqc" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="iwrqc" type="radio"> a. Abstraction</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="iwrqc" type="radio"> b. Encapsulation</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="iwrqc" type="radio"> c. Inheritance</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="iwrqc" type="radio"> d. Substitutability</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="iwrqc" type="radio"> e. Polymorphism</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="glmt9" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="glmt9" type="radio"> d. Substitutability</label></li>
+                        <ul radio-group="599u3" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="599u3" type="radio"> d. Substitutability</label></li>
                         </ul>
                       </div>
                     </question>

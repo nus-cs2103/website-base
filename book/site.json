@@ -1310,7 +1310,7 @@
       "title": "SEforSDL - Software Design: Introduction"
     },
     {
-      "src": "design/introduction/basic/index.md",
+      "src": "design/introduction/what/index.md",
       "title": "SEforSDL - Software Design: Introduction: Basic"
     },
     {
@@ -1350,10 +1350,6 @@
       "title": "SEforSDL - Software Design Principles: Coupling: What"
     },
     {
-      "src": "designPrinciples/coupling/why/index.md",
-      "title": "SEforSDL - Software Design Principles: Coupling: Why"
-    },
-    {
       "src": "designPrinciples/coupling/how/index.md",
       "title": "SEforSDL - Software Design Principles: Coupling: How"
     },
@@ -1368,10 +1364,6 @@
     {
       "src": "designPrinciples/cohesion/what/index.md",
       "title": "SEforSDL - Software Design Principles: Cohesion: What"
-    },
-    {
-      "src": "designPrinciples/cohesion/why/index.md",
-      "title": "SEforSDL - Software Design Principles: Cohesion: Why"
     },
     {
       "src": "designPrinciples/cohesion/how/index.md",

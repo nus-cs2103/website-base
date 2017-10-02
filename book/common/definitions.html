@@ -20,12 +20,7 @@
     <p>An <em>abstract class</em> is a class that is declared <code>abstract</code>—it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed. <sub>-- <a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle's Java Documentation</a></sub></p>
   </div>
   <div id="def-abstraction">
-    <p><strong>Abstraction</strong>:</p>
-    <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details that are
-      relevant to the current perspective or the task at hand. For example, within a certain software component, we might deal with a ‘user’ data type, while ignoring the details contained in the user data item. These details have been ‘abstracted away’
-      as they do not affect the task of that software component. This is called <em>data abstraction</em>. On the other hand, <em>control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level. For example,
-      <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-    <p>Abstraction can be applied repeatedly to obtain higher and <em>higher levels of abstractions</em>. For example, a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit. Similarly, <code>execute(Game)</code>      is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+    <p><strong>Abstraction</strong>: Abstraction is a technique for dealing with complexity. It works by establishing a level of complexity on which a person interacts with the system, suppressing the more complex details below the current level.</p>
   </div>
   <div id="def-actor">
     <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
@@ -112,6 +107,10 @@
   </div>
   <div id="def-liskov-substitution-principle">
     <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. -- Barbara Liskov</p>
+  </div>
+  <h2 id="o">O</h2>
+  <div id="def-open-closed-principle">
+    <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by Bertrand Meyer in 1988</sub></p>
   </div>
   <h2 id="p">P</h2>
   <div id="def-prototyping">
