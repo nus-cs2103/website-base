@@ -1064,11 +1064,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <panel header=":lock::key: Meaning of OCP">
                       <question>
                         <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                        <ul radio-group="4ruis" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4ruis" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4ruis" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4ruis" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4ruis" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                        <ul radio-group="5egvp" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5egvp" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5egvp" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5egvp" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5egvp" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -1093,10 +1093,12 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
 </panel>
 </div>
 <div>
-  <panel type="info" header=":trophy: Can implement association classes :star::star::star:" expandable="" expanded="" no-close="">
-    <panel type="info" header=":trophy: Can explain the meaning of association classes :star::star::star:" expandable="">
+  <panel type="info" header=":trophy: Can implement association classes :star::star::star:" no-close="">
+    <panel type="info" header=":trophy: Can explain the meaning of association classes :star::star::star:">
       <div>
-        <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+        <div></div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
 </span></strong>
           </span>
         </p>
@@ -1105,17 +1107,16 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
         </div>
         <div id="main">
           <div>
-            <p>At times, there is a need to store additional information about an association. For example, a <code>Man</code> class and a <code>Woman</code> class linked with a ‘married to’ association might also require the date of marriage to be stored.
-              However, that data is related to the association but not specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional class can be introduced, e.g. a <code>Marriage</code> class,
-              to store such information. These classes are called <em>association classes</em>.</p>
+            <p><strong>An <em>association class</em> represents additional information about an association.</strong> It is a normal class but plays a special role from a design point of view.</p>
+            <tip-box>
+              <p>📦 A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by either
+                the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p><img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png"
+                height="120"></tip-box>
             <p>
-              <panel src="/website\book\uml\classDiagrams\associationClasses\topicPanel._include_.html" header="UML: Class Diagrams: Association Classes" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/website\book\uml\classDiagrams\associationClasses\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Association Classes" isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
             <p></p>
-            <tip-box>
-              <p>Example:</p><img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120">
-              <p></p>
-            </tip-box>
+            <p></p>
           </div>
           <div>
             <div></div>
@@ -1123,31 +1124,83 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
         </div>
       </div>
       <panel header=":dart: Evidence" expanded="">
-        <p>...</p>
+        <p>Give more examples of association classes, preferably related to your project.</p>
       </panel>
     </panel>
-    <panel type="info" header=":trophy: Can interpret association classes in class diagrams :star::star::star:" expandable="">
+    <panel type="info" header=":trophy: Can implement association classes :star::star::star:">
       <div>
-        <p><span class="dimmed"><strong><span>Tools → UML →
+        <div>
+          <p>
+            <panel src="/website\book\oopDesign\associations\associationClasses\full._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Association Classes%%" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+        </div>
+        <p></p>
+        <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
 </span></strong>
           </span>
         </p>
         <div>
-          <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          <h4 id="association-classes-three-2">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <div id="main">
           <div>
-            <p>Association classes are denoted as a connection to an association link using a dashed line as shown below.</p>
+            <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
             <tip-box>
-              <p>Example:</p><img src="/website/book/uml/classDiagrams/associationClasses/what/images/manWoman.png" height="150">
+              <p>Example:</p><img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
               <p></p>
+              <p>At implementation level, an association class is most likely implemented as follows.</p><img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
+              <p></p>
+              <panel type="seamless" header="%%See code%%">
+                <pre><code class="hljs java">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span></span>{
+    
+    <span class="hljs-comment">//all fields are compulsory</span>
+    Man husband;
+    Woman wife;
+    Date date;
+    String licenseNumber;
+    
+    Marriage (Man husband, Woman wife, Date date, String licenseNumber){
+        <span class="hljs-comment">//set fiels</span>
+    }
+}
+
+</code></pre>
+              </panel>
             </tip-box>
           </div>
-          <div></div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Which are suitable as an Association Class?">
+                    <question>
+                      <p>Which one of these is the suitable as an Association Class?</p><img src="/website/book/oopImplementation/associationClasses/images/exerciseDiagram.png" height="330">
+                      <p></p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                      </ul>
+                      <div slot="answer">
+                        <p>(a)(b)<s>(c)</s>(d)</p>
+                        <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be
+                          suitable as an association class.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
       <panel header=":dart: Evidence" expanded="">
-        <p>...</p>
+        <p><strong>Acceptable</strong>: Evidence of implementing an association class.</p>
+        <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass">AddressBook - Level 2: LO-AssociationClass</a>]
+          and create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level 2</a>]</p>
       </panel>
     </panel>
   </panel>
@@ -1400,7 +1453,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
           </span>
         </p>
         <div>
-          <h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <div id="main">
           <div>
@@ -1440,13 +1493,23 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
   </panel>
 </div>
 <panel type="info" header=":trophy: Can apply basic product design guidelines :star::star::star:" expandable="">
+  <p>No textbook section. To be covered during the lecture.</p>
   <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
+    <p>Apply the discussed guidelines when designing the product (covered by v1.1 deliverables).</p>
+  </panel>
+</panel>
+<panel type="danger" header=":trophy: Can describe a product from the user's perspective :star:" expandable="">
+  <panel header=":dart: Evidence" expanded="">
+    <p>
+      <panel src="/website\admin\project-v11._include_.html#documentation" name="%%Admin &raquo; v1.1 &rarr; Documentation%%" fragment="documentation" header="%%Admin &raquo; v1.1 &rarr; Documentation%%" isOpen="false" no-close="true" no-switch="true"></panel>
+    </p>
   </panel>
 </panel>
 <panel type="danger" header=":trophy: Can do global-impact changes to an existing software :star:" expandable="">
   <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
+    <p>
+      <panel src="/website\admin\project-v11._include_.html#product" name="%%Admin &raquo; v1.1 &rarr; Product%%" fragment="product" header="%%Admin &raquo; v1.1 &rarr; Product%%" isOpen="false" no-close="true" no-switch="true"></panel>
+    </p>
   </panel>
 </panel>
 </div>
