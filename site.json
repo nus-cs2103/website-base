@@ -1361,10 +1361,6 @@
       "title": "CS2103/T Textbook - Software Design Principles: Coupling: What"
     },
     {
-      "src": "book/designPrinciples/coupling/why/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: Why"
-    },
-    {
       "src": "book/designPrinciples/coupling/how/index.md",
       "title": "CS2103/T Textbook - Software Design Principles: Coupling: How"
     },
@@ -1379,10 +1375,6 @@
     {
       "src": "book/designPrinciples/cohesion/what/index.md",
       "title": "CS2103/T Textbook - Software Design Principles: Cohesion: What"
-    },
-    {
-      "src": "book/designPrinciples/cohesion/why/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: Why"
     },
     {
       "src": "book/designPrinciples/cohesion/how/index.md",
