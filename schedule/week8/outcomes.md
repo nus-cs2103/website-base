@@ -30,9 +30,24 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header=":trophy: Can apply basic product design guidelines :star::star::star:" expandable>
+
+No textbook section. To be covered during the lecture.
+
   <panel header=":dart: Evidence" expanded>
 
-...
+Apply the discussed guidelines when designing the product (covered by v1.1 deliverables).
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header=":trophy: Can describe a product from the user's perspective :star:" expandable>
+
+
+  <panel header=":dart: Evidence" expanded>
+
+<include src="../../admin/project-v11.md#documentation" name="%%Admin &raquo; v1.1 &rarr; Documentation%%" dynamic />
 
   </panel>
 </panel>
@@ -42,7 +57,7 @@
 <panel type="danger" header=":trophy: Can do global-impact changes to an existing software :star:" expandable>
   <panel header=":dart: Evidence" expanded>
 
-...
+<include src="../../admin/project-v11.md#product" name="%%Admin &raquo; v1.1 &rarr; Product%%" dynamic />
 
   </panel>
 </panel>

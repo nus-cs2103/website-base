@@ -1,3 +1,5 @@
+<div id="product">
+
 ### v1.1 Product
 
 <img src="{{baseUrl}}/admin/images/v01demo.png" width="125px"><br/>
@@ -8,14 +10,14 @@
 
 **Description**: 
 * Each member should try to add some enhancements that is in line with the vision for v2.0. Create a PR for the enhancement. 
-* We encourage enhancements that go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has some guidance on how to implement a new feature end-to-end.
+* We encourage enhancements that go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
 
 <tip-box type="important">
 
 **You are required to divide work based on features rather than component**
 
- * Each team member should implement 1 or more features end-to-end, doing required changes in *all* components. The objective is to force you to learn all components of the software, instead of limiting yourself to your own components.
- * You will continue to be in charge of your own components although others will be modifying your components' code. Your new role is to help others modify code in your components (you are supposed to be the most knowledgeable about those components) and protect your components from degrading. For example, you can review others' changes to your components and suggest possible changes.
+ * Each team member should implement 1 or more features end-to-end, doing required changes in _almost all_ components. The objective is to force you to learn all components of the software, instead of limiting yourself to your own components.
+ * You will continue to be in charge of your own components although others will be modifying your components' code. Your role is to help others modify code in your components (you are supposed to be the most knowledgeable about those components) and protect your components from degrading. For example, you can review others' changes to your components and suggest possible changes.
  
 </tip-box>
 
@@ -24,7 +26,10 @@
 **Grading**: Criteria to consider this milestone as reached
 * Minimal :star: : At least some ongoing PRs.
 * On track :star::star: : At least some PRs merged.
-* Ahead :star::star::star: : Each member has merged at least one PR. 
+* Ahead :star::star::star: : Each member has merged at least one PR.
+ 
+</div>
+<div id="documentation">
 
 ### v1.1 Documentation
 
@@ -36,13 +41,13 @@ Update the following pages:
 
 * **About Us page**:  
   This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
-  * Replace info of SE-EDU developers with info of your team.  
+  * Replace info of SE-EDU developers with info of your team, including <trigger trigger="click" for="modal:v11-photo">a ==suitable photo==</trigger>.  
   * Including the name/photo of the supervisor/lecturer is optional. 
   * The photo of a team member should be `doc/images/githbub_id_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%.
 
-<panel header="%%Admin &raquo; Choosing a profile photo%%" expandable>
-  <include src="profilePhoto.md" />
-</panel><p/>
+<modal title="Admin &raquo; Choosing a profile photo" id="modal:v11-photo">
+  <include src="profilePhoto.md"/>
+</modal>
 
 * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
@@ -72,5 +77,6 @@ Update the following pages:
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
     Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
 
-**Grading**: To consider this milestone as reached, you should have all v1.0 deliverables completed and the two documents mentioned above updated.
+**Grading**: To consider this milestone as reached, you should have all v1.0 and v1.1 deliverables completed.
 
+</div>
