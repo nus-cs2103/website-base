@@ -1,15 +1,6 @@
 <panel type="danger" header=":trophy: Can use basic software design principles :star:" expandable expanded no-close>
 
-<panel type="warning" header=":trophy: Can explain what is software design :star::star:" expandable>
-  <include src="../../book/design/introduction/basic/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<panel type="warning" header=":trophy: Can explain abstraction :star::star:" expandable expanded no-close>
+<panel type="warning" header=":trophy: Can explain abstraction :star::star:" expandable no-close>
   {add abstraction}
   <panel header=":dart: Evidence" expanded>
 

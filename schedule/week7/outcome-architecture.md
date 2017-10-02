@@ -1,5 +1,18 @@
 <panel type="danger" header="**`W7.1` Can interpret an architecture diagram** :star:" no-close>
 
+<!-- TODO: add LO here  
+
+<panel type="warning" header=":trophy: Can explain what is software design :star::star:" expandable>
+  <include src="../../book/design/introduction/what/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+-->
+
 <panel type="danger" header="`W7.1a` Can explain Software Architecture :star:">
   <include src="../../book/architecture/introduction/what/full.md" />
 <!-- TODO: add evidence -->
