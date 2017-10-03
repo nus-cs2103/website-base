@@ -18,16 +18,6 @@
   </panel>
 </panel>
 
-
-<panel type="success" header=":trophy: Can explain mocks :star::star::star::star:" expandable>
-  <include src="../../book/testing/testingTypes/unitTesting/mocks/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
 <panel type="success" header=":trophy: Can explain dependency injection :star::star::star::star:" expandable>
   <include src="../../book/testing/dependencyInjection/what/full.md" />
   <panel header=":dart: Evidence" expanded>
