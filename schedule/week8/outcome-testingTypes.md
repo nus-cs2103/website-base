@@ -4,7 +4,18 @@
   <include src="../../book/testing/testingTypes/unitTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Identify some unit tests in AddressBook-Level4 (or your own project).
+
+  </panel>
+</panel>
+
+<panel type="info" header=":trophy: Can use stubs to isolate an SUT from its dependencies :star::star::star:" expandable>
+  <include src="../../book/testing/testingTypes/unitTesting/stubs/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Identify some tests in AddressBook-Level4,
+1. that can be made pure unit tests by introducing stubs
+2. that are using stubs to isolate the SUT from its dependencies 
 
   </panel>
 </panel>
