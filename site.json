@@ -225,10 +225,6 @@
       "title": "CS2103/T Textbook - Testing Types: Unit Testing: Stubs"
     },
     {
-      "src": "book/testing/testingTypes/unitTesting/mocks/index.md",
-      "title": "CS2103/T Textbook - Testing Types: Unit Testing: Mocks"
-    },
-    {
       "src": "book/testing/testingTypes/integrationTesting/index.md",
       "title": "CS2103/T Textbook - Testing: Testing Types: Integration Testing"
     },
