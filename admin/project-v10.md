@@ -112,6 +112,8 @@ Update the following pages of the Developer Guide:
   <include src="../book/revisionControl/forkingWorkflow/full.md"/>
 </modal>
 
+4. One member: create a PR from your ==team repo== to [[AddressBook - Level 4](https://github.com/nus-cs2103-AY1718S1/addressbook-level4)]. PR name: `[W7.7][Team ID] Product Name` e.g., `[W7.7][T09-B2] Contact List Pro`
+
 **Grading**: ==Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.== 
 To claim this milestone as 'reached', you should at least have a full draft version of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.
 
