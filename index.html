@@ -442,9 +442,9 @@
                           <panel header=":lock::key: True or False?">
                             <question>
                               <p>Defining component APIs early is useful for developing components in parallel.</p>
-                              <ul radio-group="o1vbi" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="o1vbi" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="o1vbi" type="radio"> False</label></li>
+                              <ul radio-group="r5fut" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="r5fut" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="r5fut" type="radio"> False</label></li>
                               </ul>
                               <div slot="answer">
                                 <p>True</p>
@@ -496,11 +496,11 @@
                               <panel header=":lock::key: Logging vs blackbox">
                                 <question>
                                   <p>Why is logging like having the 'black box' in an airplane?</p>
-                                  <ul radio-group="6e16g" class="radio-list">
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="6e16g" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="6e16g" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="6e16g" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="6e16g" type="radio"> d. Because they are hard to open by normal users.</label></li>
+                                  <ul radio-group="xwrc3" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="xwrc3" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="xwrc3" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="xwrc3" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="xwrc3" type="radio"> d. Because they are hard to open by normal users.</label></li>
                                   </ul>
                                   <div slot="answer">
                                     <p>(a)</p>
@@ -728,11 +728,11 @@
                               <panel header=":lock::key: Assertions failure in Calculator">
                                 <question>
                                   <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                                  <ul radio-group="fc846" class="radio-list">
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="fc846" type="radio"> a. This is a correct use of assertions.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="fc846" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="fc846" type="radio"> c. The program has a bug.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="fc846" type="radio"> d. All statements above are incorrect.</label></li>
+                                  <ul radio-group="2k86f" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="2k86f" type="radio"> a. This is a correct use of assertions.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="2k86f" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="2k86f" type="radio"> c. The program has a bug.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="2k86f" type="radio"> d. All statements above are incorrect.</label></li>
                                   </ul>
                                   <div slot="answer">
                                     <p>(c)</p>
@@ -1105,6 +1105,17 @@
                                 </question>
                               </panel>
                             </div>
+                            <div>
+                              <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
+                                <question>
+                                  <p>Explain the interactions depicted in this sequence diagram.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="350">
+                                  <p></p>
+                                  <div slot="hint">
+                                    <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
                           </panel>
                         </div>
                         <div></div>
@@ -1112,6 +1123,18 @@
                     </div>
                   </div>
                   <panel header=":dart: Evidence" expanded="">
+                    <div>
+                      <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
+                        <question>
+                          <p>Explain the interactions depicted in this sequence diagram.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="350">
+                          <p></p>
+                          <div slot="hint">
+                            <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <p></p>
                     <ol>
                       <li>Explain the sequence diagrams given [<a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
                       <li>Add more sequence diagrams to project documentation (to be done in future weeks)</li>
@@ -1236,7 +1259,34 @@
             </panel>
           </div>
         </panel>
-        <panel header=":raising_hand: Tutorial 7" expandable="" ctrl-lvl="1" no-close=""></panel>
+        <panel header=":raising_hand: Tutorial 7" expandable="" ctrl-lvl="1" no-close="">
+          <div>
+            <p><strong>Questions to discuss during tutorial:</strong></p>
+            <div>
+              <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
+                <question>
+                  <p>Explain the interactions depicted in this sequence diagram.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="350">
+                  <p></p>
+                  <div slot="hint">
+                    <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <p></p>
+            <ol>
+              <li>What is the profile of the target user of your product?. Describe the problem you are solving for that target user. Give some representative must-have user stories for your product that are not already present in
+                <tooltip content="AddressBook-Level4">AB4</tooltip>.</li>
+              <li>What’s the use of assertions?</li>
+              <li>Demonstrate an assertion failure using Intellij.</li>
+              <li>What is a multi-level design? How is it used in AB4?</li>
+              <li>What is an API? How is it used in AB4?</li>
+              <li>Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
+              <li>Explain what Gradle is. How is it used in AB4?</li>
+              <li>Explain what Travis is. How is it used in AB4?</li>
+            </ol>
+          </div>
+        </panel>
         <panel header=":mega: Lecture 7" expandable="" ctrl-lvl="1" no-close=""></panel>
       </div>
     </panel>
