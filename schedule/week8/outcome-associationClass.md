@@ -1,6 +1,6 @@
-<panel type="info" header=":trophy: Can implement association classes :star::star::star:" no-close>
+<panel type="info" header="**`W8.4` Can implement association classes** :star::star::star:" no-close>
 
-<panel type="info" header=":trophy: Can explain the meaning of association classes :star::star::star:">
+<panel type="info" header="`W8.4` Can explain the meaning of association classes :star::star::star:">
   <include src="../../book/oopDesign/associations/associationClasses/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -9,7 +9,7 @@ Give more examples of association classes, preferably related to your project.
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can implement association classes :star::star::star:">
+<panel type="info" header="`W8.4` Can implement association classes :star::star::star:">
   <include src="../../book/oopImplementation/associationClasses/full.md" />
   <panel header=":dart: Evidence" expanded>
 

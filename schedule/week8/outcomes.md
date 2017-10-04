@@ -29,7 +29,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can apply basic product design guidelines :star::star::star:" expandable>
+<panel type="info" header="**`W8.6` Can apply basic product design guidelines** :star::star::star:" expandable>
 
 No textbook section. To be covered during the lecture.
 
@@ -42,7 +42,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can describe a product from the user's perspective :star:" expandable>
+<panel type="danger" header="**`W8.7` Can describe a product from the user's perspective** :star:" expandable>
 
 
   <panel header=":dart: Evidence" expanded>
@@ -54,7 +54,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can do global-impact changes to an existing software :star:" expandable>
+<panel type="danger" header="**`W8.8` Can do global-impact changes to an existing software** :star:" expandable>
   <panel header=":dart: Evidence" expanded>
 
 <include src="../../admin/project-v11.md#product" name="%%Admin &raquo; v1.1 &rarr; Product%%" dynamic />

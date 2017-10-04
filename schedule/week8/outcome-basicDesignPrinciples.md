@@ -1,17 +1,17 @@
-<panel type="danger" header=":trophy: Can use basic software design principles :star:" no-close>
+<panel type="danger" header="**`W8.3` Can use basic software design principles** :star:" no-close>
 
-**Abstraction:**
+%%**Abstraction:**%%
 
-<panel type="warning" header=":trophy: Can explain abstraction :star::star:" no-close>
+<panel type="warning" header="`W8.3a` Can explain abstraction :star::star:" no-close>
   <include src="../../book/designPrinciples/abstraction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <p>
 
-**Coupling:**
+%%**Coupling:**%%
 
-<panel type="danger" header=":trophy: Can explain coupling :star:">
+<panel type="danger" header="`W8.3b` Can explain coupling :star:">
   <include src="../../book/designPrinciples/coupling/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -20,7 +20,7 @@ Explain coupling with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="warning" header=":trophy: Can reduce coupling :star::star:">
+<panel type="warning" header="`W8.3c` Can reduce coupling :star::star:">
   <include src="../../book/designPrinciples/coupling/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -29,7 +29,7 @@ Explain with examples from AddressBook-Level4 (or your own project) how coupling
   </panel>
 </panel>
 
-<panel type="success" header=":trophy: Can identify types of coupling :star::star::star::star:">
+<panel type="success" header="`W8.3d` Can identify types of coupling :star::star::star::star:">
   <include src="../../book/designPrinciples/coupling/types/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -40,9 +40,9 @@ Explain types of coupling with examples from AddressBook-Level4 (or your own pro
 
 <p>
 
-**Cohesion:**
+%%**Cohesion:**%%
 
-<panel type="danger" header=":trophy: Can explain cohesion :star:">
+<panel type="danger" header="`W8.3e` Can explain cohesion :star:">
   <include src="../../book/designPrinciples/cohesion/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -51,7 +51,7 @@ Explain cohesion with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="warning" header=":trophy: Can increase cohesion :star::star:">
+<panel type="warning" header="`W8.3f` Can increase cohesion :star::star:">
   <include src="../../book/designPrinciples/cohesion/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -62,9 +62,9 @@ Explain with examples from AddressBook-Level4 (or your own project) how cohesion
 
 <p>
 
-**SoC and OCP:**
+%%**SoC and OCP:**%%
 
-<panel type="warning" header=":trophy: Can explain separation of concerns principle (SoC) :star::star:">
+<panel type="warning" header="`W8.3g` Can explain separation of concerns principle (SoC) :star::star:">
   <include src="../../book/principles/separationOfConcernsPrinciple/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -73,7 +73,7 @@ Explain SoC with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain open-closed principle (OCP) :star::star::star:">
+<panel type="info" header="`W8.3h` Can explain open-closed principle (OCP) :star::star::star:">
   <include src="../../book/designPrinciples/openClosedPrinciple/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 

@@ -1,6 +1,8 @@
-<panel type="danger" header=":trophy: Can explain different types of testing :star:" expandable expanded no-close>
+<panel type="danger" header="**`W8.5` Can explain different types of testing** :star:" no-close>
 
-<panel type="danger" header=":trophy: Can explain unit testing :star:" expandable>
+%%**Unit Testing:**%%
+
+<panel type="danger" header="`W8.5a` Can explain unit testing :star:">
   <include src="../../book/testing/testingTypes/unitTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -9,7 +11,7 @@ Identify some unit tests in AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can use stubs to isolate an SUT from its dependencies :star::star::star:" expandable>
+<panel type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:">
   <include src="../../book/testing/testingTypes/unitTesting/stubs/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -18,9 +20,11 @@ Identify some tests in AddressBook-Level4,
 2. that are using stubs to isolate the SUT from its dependencies 
 
   </panel>
-</panel>
+</panel><p/>
 
-<panel type="warning" header=":trophy: Can explain integration testing :star::star:" expandable>
+%%**Integration Testing:**%%
+
+<panel type="warning" header="`W8.5c` Can explain integration testing :star::star:">
   <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -29,16 +33,18 @@ Explain the difference between unit tests and integration tests.
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can do integration testing :star::star::star:" expandable>
+<panel type="info" header="`W8.5d` Can do integration testing :star::star::star:">
   <include src="../../book/testing/testingTypes/integrationTesting/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Use tests from AddressBook-Level4 to illustrate the difference between unit testings and integration testing. Hint: good examples [`seedu.address.storage.StorageManagerTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/storage/StorageManagerTest.java),[`seedu.address.logic.commands.AddCommandTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandTest.java),[`seedu.address.logic.commands.AddCommandIntegrationTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandIntegrationTest.java)
 
   </panel>
-</panel>
+</panel><p/>
 
-<panel type="danger" header=":trophy: Can explain system testing :star:" expandable>
+%%**System Testing:**%%
+
+<panel type="danger" header="`W8.5e` Can explain system testing :star:">
   <include src="../../book/testing/testingTypes/systemTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -47,16 +53,18 @@ Explain what system tests are. Give examples from your own project.
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain automated GUI testing :star::star::star:" expandable>
+<panel type="info" header="`W8.5f` Can explain automated GUI testing :star::star::star:">
   <include src="../../book/testing/testAutomation/testingGuis/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Why is automated testing of GUIs is hard? What can we do about it?
 
   </panel>
-</panel>
+</panel><p/>
 
-<panel type="warning" header=":trophy: Can explain acceptance testing :star::star:" expandable>
+%%**Acceptance Testing:**%%
+
+<panel type="warning" header="`W8.5g` Can explain acceptance testing :star::star:">
   <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -65,18 +73,19 @@ Explain what acceptance tests are. Explain how acceptance testing of your projec
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain the differences between system testing and acceptance testing :star::star::star:" expandable>
+<panel type="info" header="`W8.5h` Can explain the differences between system testing and acceptance testing :star::star::star:">
   <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain the difference between system tests and acceptance tests. Explain why both are needed.
 
   </panel>
-</panel>
+</panel><p/>
 
 
+%%**Alpha/Beta Testing:**%%
 
-<panel type="info" header=":trophy: Can explain alpha and beta testing :star::star::star:" expandable>
+<panel type="info" header="`W8.5i` Can explain alpha and beta testing :star::star::star:">
   <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
