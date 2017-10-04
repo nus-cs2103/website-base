@@ -441,9 +441,9 @@
                         <panel header=":lock::key: True or False?">
                           <question>
                             <p>Defining component APIs early is useful for developing components in parallel.</p>
-                            <ul radio-group="nopgv" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nopgv" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nopgv" type="radio"> False</label></li>
+                            <ul radio-group="ha5l0" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="ha5l0" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="ha5l0" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>True</p>
@@ -495,11 +495,11 @@
                             <panel header=":lock::key: Logging vs blackbox">
                               <question>
                                 <p>Why is logging like having the 'black box' in an airplane?</p>
-                                <ul radio-group="u4y2c" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u4y2c" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u4y2c" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u4y2c" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u4y2c" type="radio"> d. Because they are hard to open by normal users.</label></li>
+                                <ul radio-group="5kqb4" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5kqb4" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5kqb4" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5kqb4" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5kqb4" type="radio"> d. Because they are hard to open by normal users.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>(a)</p>
@@ -530,31 +530,28 @@
                       <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
                         <tooltip content="how much information to record">intensity</tooltip>.</p>
                       <tip-box>
-                        <p>📦 This sample Java code uses Java’s default logging mechanism. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than
-                          <code>WARNING</code>) will not be written to the log file at all.</p>
+                        <p>📦 This sample Java code uses Java’s default logging mechanism.</p>
+                        <p>First, import the relevant Java package:</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
-<p><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-<span class="hljs-comment">// Obtain a suitable logger.</span>
-<span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">&quot;Foo&quot;</span>);</p>
-<pre><code>&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;// log a message at INFO level&lt;/span&gt;
-    logger.log(Level.INFO, &lt;span class=&quot;hljs-string&quot;&gt;&quot;going to start processing&quot;&lt;/span&gt;);
-    
-    &lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt; {
-        processInput();
-    } &lt;span class=&quot;hljs-keyword&quot;&gt;catch&lt;/span&gt; (Exception ex) {
-        &lt;span class=&quot;hljs-comment&quot;&gt;//log a message at WARNING level&lt;/span&gt;
-        logger.log(Level.WARNING, &lt;span class=&quot;hljs-string&quot;&gt;&quot;processing error&quot;&lt;/span&gt;, ex);
-    }
-    logger.log(Level.INFO, &lt;span class=&quot;hljs-string&quot;&gt;&quot;end of processing&quot;&lt;/span&gt;);
-}
 </code></pre>
-                        <p>}
-                        </p>
-                        </code>
-                        </pre>
+                        <p>Next, create a <code>Logger</code>:</p>
+                        <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
+</code></pre>
+                        <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
+                          <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>)
+                          will not be written to the log file at all.</p>
+                        <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
+logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
+<span class="hljs-comment">//...</span>
+processInput();
+<span class="hljs-keyword">if</span>(error){
+    <span class="hljs-comment">//log a message at WARNING level</span>
+    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);
+}
+<span class="hljs-comment">//...</span>
+logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
+</code></pre>
                       </tip-box>
-                      <p></p>
                     </div>
                     <div>
                       <div>
@@ -727,11 +724,11 @@
                             <panel header=":lock::key: Assertions failure in Calculator">
                               <question>
                                 <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                                <ul radio-group="nasbr" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="nasbr" type="radio"> a. This is a correct use of assertions.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="nasbr" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="nasbr" type="radio"> c. The program has a bug.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="nasbr" type="radio"> d. All statements above are incorrect.</label></li>
+                                <ul radio-group="f9f8y" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f9f8y" type="radio"> a. This is a correct use of assertions.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f9f8y" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f9f8y" type="radio"> c. The program has a bug.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f9f8y" type="radio"> d. All statements above are incorrect.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>(c)</p>
