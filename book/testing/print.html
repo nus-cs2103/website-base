@@ -234,14 +234,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </tip-box>
       <div>
-        <p>In <em>Integration testing</em> we test whether different parts of the software ‘work together’ (i.e. integrates) as expected. Here, we assume the individual parts have been unit tested already. Therefore, integration tests aim to discover bugs
-          in the ‘glue code’ that are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing. For example let us assume a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>.</p>
-        <ul>
-          <li>First, we should unit test <code>Engine</code> and <code>Wheel</code>.</li>
-          <li>Next, we should unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</li>
-          <li>After that, we can do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</li>
-        </ul>
-        <p>In the example above, if the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+        <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact
+          with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
+        <tip-box>
+          <p>📦 Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the <code>Wheel</code> can only support 150 mph, it is the
+            integration test that is supposed to uncover this discrepancy.</p>
+        </tip-box>
       </div>
     </div>
     <h3 id="system-testing">System Testing</h3>
@@ -255,15 +253,19 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </tip-box>
       <div>
-        <p>In system testing we take the <em>whole system</em> and test it <em>against the system specification</em>.</p>
+        <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
         <p>System testing is typically done by a testing team (also called a QA team).</p>
-        <p>System test cases are based on the specified external behavior of the system. Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails ‘gracefully’ having pushed beyond its limits.</p>
+        <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' having pushed
+          beyond its limits.</p>
         <tip-box>
-          <p>Example:</p>
-          <p>Take the example of an SUT (software under test) that is a browser capable of handling web pages containing up to 5000 characters. A test case can involve loading a web page containing more than 5000 characters. The expected ‘graceful’ behavior
-            would be to ‘abort the loading of the page and show a meaningful error message’. This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
+          <p>📦 Suppose the SUT is a browser capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
+          <pre class="hljs"><code>Test case: load a web page that is too big
+* Input: load a web page containing more than 5000 characters. 
+* Expected behavior: abort the loading of the page and show a meaningful error message. 
+</code></pre>
+          <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
         </tip-box>
-        <p>System testing includes testing against non-functional requirements too. Here are some examples.</p>
+        <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
         <ul>
           <li><em>Performance testing</em> – to ensure the system responds quickly.</li>
           <li><em>Load testing</em> (also called <em>stress testing</em> or <em>scalability testing</em>) – to ensure the system can work under heavy load.</li>
@@ -285,9 +287,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </tip-box>
       <div>
-        <p><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</p>
-        <p><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</p>
-        <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in ‘beta’ for many years before the label was finally removed.</p>
+        <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
+        <p><strong><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</strong></p>
+        <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in 'beta' for many years before the label was finally removed.</p>
       </div>
     </div>
     <h3 id="dogfooding">Dogfooding</h3>
@@ -418,9 +420,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </tip-box>
       <div>
-        <p><em>Acceptance testing</em>, also called <em>User Acceptance Testing (UAT)</em>, is a type of validation test carried out to show that the delivered system meets the requirements of the customer.</p>
+        <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
         <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful completion of UAT
-          is often a prerequisite to the project signoff.</p>
+          is often a prerequisite to the project sign-off.</p>
       </div>
     </div>
     <div>
@@ -438,41 +440,61 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <table class="markbind-table table">
           <thead>
             <tr>
-              <th style="text-align:center">System Testing</th>
-              <th style="text-align:center">Acceptance Testing</th>
+              <th style="text-align:left">System Testing</th>
+              <th style="text-align:left">Acceptance Testing</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="text-align:center">Done against the system specification</td>
-              <td style="text-align:center">Done against the requirements specification (see note 1 below)</td>
+              <td style="text-align:left">Done against the system specification</td>
+              <td style="text-align:left">Done against the requirements specification</td>
             </tr>
             <tr>
-              <td style="text-align:center">Done by testers of the project team</td>
-              <td style="text-align:center">Done by a team that represents the customer</td>
+              <td style="text-align:left">Done by testers of the project team</td>
+              <td style="text-align:left">Done by a team that represents the customer</td>
             </tr>
             <tr>
-              <td style="text-align:center">Done on the development environment or a test bed</td>
-              <td style="text-align:center">Done on the deployment site or on a close simulation of the deployment site</td>
+              <td style="text-align:left">Done on the development environment or a test bed</td>
+              <td style="text-align:left">Done on the deployment site or on a close simulation of the deployment site</td>
             </tr>
             <tr>
-              <td style="text-align:center">Both positive and negative test cases</td>
-              <td style="text-align:center">More focus on positive test cases</td>
+              <td style="text-align:left">Both positive and negative test cases</td>
+              <td style="text-align:left">More focus on positive test cases</td>
             </tr>
           </tbody>
         </table>
         <tip-box>
           <p><strong>Requirement Specification vs System Specification</strong></p>
           <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
-          <ul>
-            <li>Requirements specification could be limited to how the system behaves in normal working conditions while the system specification can also include details on how it will fail gracefully when pushed beyond limits, how to recover,</li>
-            <li>System specification could contain additional APIs not available for users (for the use of developers/testers), etc • Requirement specification could be written in terms of problems that need to be solved (e.g. provide a method to locate an
-              email quickly) while the system specification could be written in terms of how the system solve those problems (e.g. explain the email search feature).</li>
-          </ul>
-          <p>However, in many cases one document serves as both a requirement specification and a system specification.</p>
-          <p><strong>Importance of testing on the deployment environment</strong></p>
-          <p>A system could work perfectly on the development environment, but fail in the deployment environment due to subtle differences between the two.</p>
+          <table class="markbind-table table">
+            <thead>
+              <tr>
+                <th style="text-align:left">Requirements Specification</th>
+                <th style="text-align:left">System Specification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:left">limited to how the system behaves in normal working conditions</td>
+                <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td>
+              </tr>
+              <tr>
+                <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
+                <td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td>
+              </tr>
+              <tr>
+                <td style="text-align:left">specifies the interface available for intended end-users</td>
+                <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>However, <strong>in many cases one document serves as both a requirement specification and a system specification.</strong></p>
         </tip-box>
+        <p><strong>Passing system tests does not necessarily mean passing acceptance testing.</strong> Some examples:</p>
+        <ul>
+          <li>The system might work on the testbed environments but might not work the same way in the deployment environment, due to subtle differences between the two environments.</li>
+          <li>The system might conform to the system specification but could fail to solve the problem it was supposed to solve for the user, due to flaws in the system design.</li>
+        </ul>
       </div>
     </div>
     <h3 id="regression-testing">Regression Testing</h3>
@@ -690,19 +712,27 @@ Invalid command format: add
         </div>
       </tip-box>
       <div>
-        <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, testing the GUI is much harder than testing the CLI (command line interface) or API, for the
-          following reasons:</p>
+        <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>,
+          for the following reasons:</p>
         <ul>
-          <li>Most GUIs contain a large number of different operations, many of which can be performed in any arbitrary order.</li>
+          <li>Most GUIs can support a large number of different operations, many of which can be performed in any arbitrary order.</li>
           <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with an expected
-            value. Therefore, automated regression testing of GUIs is rather difficult. However, there are testing tools that can automate GUI testing. For example, TestFx and support automated testing of JavaFX GUIs and Selenium (<a href="http://seleniumhq.org/">http://seleniumhq.org/</a>)
-            can be used to automate testing of Web application UIs. VisualStudio supports ‘record replay’ type of GUI test automation.</li>
+            value. Therefore, automated regression testing of GUIs is rather difficult.</li>
           <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in a high resolution
             display or a low resolution display.</li>
         </ul><img src="/website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
         <p></p>
-        <p>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI. Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested manually, the number
-          of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
+        <p><strong>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI.</strong> Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested manually,
+          the number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
+        <p><strong>There are testing tools that can automate GUI testing.</strong></p>
+        <tip-box>
+          <p>📦 Some tools used for automated GUI testing:</p>
+          <ul>
+            <li><strong>TestFx</strong> can do automated testing of JavaFX GUIs<br></li>
+            <li><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></li>
+            <li><strong>VisualStudio</strong> supports ‘record replay’ type of GUI test automation.</li>
+          </ul>
+        </tip-box>
       </div>
     </div>
     <h2 id="test-coverage">Test Coverage</h2>

@@ -168,9 +168,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                         <panel header=":lock::key: Purpose of stubs">
                           <question>
                             <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                            <ul radio-group="ta5qr" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="ta5qr" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="ta5qr" type="radio"> False</label></li>
+                            <ul radio-group="lwmdc" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lwmdc" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lwmdc" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>True</p>
@@ -203,15 +203,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <panel type="seamless" header=" %%- - - - - - - - - -%%">
               <div>
                 <div>
-                  <p>In <em>Integration testing</em> we test whether different parts of the software ‘work together’ (i.e. integrates) as expected. Here, we assume the individual parts have been unit tested already. Therefore, integration tests aim to discover
-                    bugs in the ‘glue code’ that are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing. For example let us assume a class <code>Car</code> users classes <code>Engine</code> and
-                    <code>Wheel</code>.</p>
-                  <ul>
-                    <li>First, we should unit test <code>Engine</code> and <code>Wheel</code>.</li>
-                    <li>Next, we should unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</li>
-                    <li>After that, we can do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</li>
-                  </ul>
-                  <p>In the example above, if the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+                  <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components
+                    interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
+                  <tip-box>
+                    <p>📦 Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the <code>Wheel</code> can only support 150 mph,
+                      it is the integration test that is supposed to uncover this discrepancy.</p>
+                  </tip-box>
                 </div>
                 <div></div>
               </div>
@@ -236,16 +233,19 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <panel type="seamless" header=" %%- - - - - - - - - -%%">
               <div>
                 <div>
-                  <p>In system testing we take the <em>whole system</em> and test it <em>against the system specification</em>.</p>
+                  <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
                   <p>System testing is typically done by a testing team (also called a QA team).</p>
-                  <p>System test cases are based on the specified external behavior of the system. Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails ‘gracefully’ having pushed beyond
-                    its limits.</p>
+                  <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully'
+                    having pushed beyond its limits.</p>
                   <tip-box>
-                    <p>Example:</p>
-                    <p>Take the example of an SUT (software under test) that is a browser capable of handling web pages containing up to 5000 characters. A test case can involve loading a web page containing more than 5000 characters. The expected ‘graceful’
-                      behavior would be to ‘abort the loading of the page and show a meaningful error message’. This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
+                    <p>📦 Suppose the SUT is a browser capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
+                    <pre class="hljs"><code>Test case: load a web page that is too big
+* Input: load a web page containing more than 5000 characters. 
+* Expected behavior: abort the loading of the page and show a meaningful error message. 
+</code></pre>
+                    <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
                   </tip-box>
-                  <p>System testing includes testing against non-functional requirements too. Here are some examples.</p>
+                  <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
                   <ul>
                     <li><em>Performance testing</em> – to ensure the system responds quickly.</li>
                     <li><em>Load testing</em> (also called <em>stress testing</em> or <em>scalability testing</em>) – to ensure the system can work under heavy load.</li>
@@ -278,9 +278,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <panel type="seamless" header=" %%- - - - - - - - - -%%">
               <div>
                 <div>
-                  <p><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</p>
-                  <p><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</p>
-                  <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in ‘beta’ for many years before the label was finally removed.</p>
+                  <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
+                  <p><strong><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</strong></p>
+                  <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in 'beta' for many years before the label was finally removed.</p>
                 </div>
                 <div></div>
               </div>
@@ -415,9 +415,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                         <panel header=":lock::key: Cost of bug fixing over time">
                           <question>
                             <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                            <ul radio-group="xttni" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="xttni" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="xttni" type="radio"> False</label></li>
+                            <ul radio-group="rskg3" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="rskg3" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="rskg3" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>False. The cost goes up over time.</p>
@@ -612,9 +612,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <panel type="seamless" header=" %%- - - - - - - - - -%%">
               <div>
                 <div>
-                  <p><em>Acceptance testing</em>, also called <em>User Acceptance Testing (UAT)</em>, is a type of validation test carried out to show that the delivered system meets the requirements of the customer.</p>
+                  <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
                   <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful completion
-                    of UAT is often a prerequisite to the project signoff.</p>
+                    of UAT is often a prerequisite to the project sign-off.</p>
                 </div>
                 <div></div>
               </div>
@@ -637,49 +637,69 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <table class="markbind-table table">
                     <thead>
                       <tr>
-                        <th style="text-align:center">System Testing</th>
-                        <th style="text-align:center">Acceptance Testing</th>
+                        <th style="text-align:left">System Testing</th>
+                        <th style="text-align:left">Acceptance Testing</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td style="text-align:center">Done against the system specification</td>
-                        <td style="text-align:center">Done against the requirements specification (see note 1 below)</td>
+                        <td style="text-align:left">Done against the system specification</td>
+                        <td style="text-align:left">Done against the requirements specification</td>
                       </tr>
                       <tr>
-                        <td style="text-align:center">Done by testers of the project team</td>
-                        <td style="text-align:center">Done by a team that represents the customer</td>
+                        <td style="text-align:left">Done by testers of the project team</td>
+                        <td style="text-align:left">Done by a team that represents the customer</td>
                       </tr>
                       <tr>
-                        <td style="text-align:center">Done on the development environment or a test bed</td>
-                        <td style="text-align:center">Done on the deployment site or on a close simulation of the deployment site</td>
+                        <td style="text-align:left">Done on the development environment or a test bed</td>
+                        <td style="text-align:left">Done on the deployment site or on a close simulation of the deployment site</td>
                       </tr>
                       <tr>
-                        <td style="text-align:center">Both positive and negative test cases</td>
-                        <td style="text-align:center">More focus on positive test cases</td>
+                        <td style="text-align:left">Both positive and negative test cases</td>
+                        <td style="text-align:left">More focus on positive test cases</td>
                       </tr>
                     </tbody>
                   </table>
                   <tip-box>
                     <p><strong>Requirement Specification vs System Specification</strong></p>
                     <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
-                    <ul>
-                      <li>Requirements specification could be limited to how the system behaves in normal working conditions while the system specification can also include details on how it will fail gracefully when pushed beyond limits, how to recover,</li>
-                      <li>System specification could contain additional APIs not available for users (for the use of developers/testers), etc • Requirement specification could be written in terms of problems that need to be solved (e.g. provide a method to
-                        locate an email quickly) while the system specification could be written in terms of how the system solve those problems (e.g. explain the email search feature).</li>
-                    </ul>
-                    <p>However, in many cases one document serves as both a requirement specification and a system specification.</p>
-                    <p><strong>Importance of testing on the deployment environment</strong></p>
-                    <p>A system could work perfectly on the development environment, but fail in the deployment environment due to subtle differences between the two.</p>
+                    <table class="markbind-table table">
+                      <thead>
+                        <tr>
+                          <th style="text-align:left">Requirements Specification</th>
+                          <th style="text-align:left">System Specification</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align:left">limited to how the system behaves in normal working conditions</td>
+                          <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
+                          <td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:left">specifies the interface available for intended end-users</td>
+                          <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p>However, <strong>in many cases one document serves as both a requirement specification and a system specification.</strong></p>
                   </tip-box>
+                  <p><strong>Passing system tests does not necessarily mean passing acceptance testing.</strong> Some examples:</p>
+                  <ul>
+                    <li>The system might work on the testbed environments but might not work the same way in the deployment environment, due to subtle differences between the two environments.</li>
+                    <li>The system might conform to the system specification but could fail to solve the problem it was supposed to solve for the user, due to flaws in the system design.</li>
+                  </ul>
                 </div>
                 <div>
                   <div>
                     <panel header=":muscle: Exercises" expandable="">
                       <div>
-                        <panel header=":lock::key: Choose the least correct statement about system testing and acceptance testing.">
+                        <panel header=":lock::key: Statements about system testing and acceptance testing.">
                           <question>
-                            <p>Choose the least correct statement about system testing and acceptance testing.</p>
+                            <p>Choose the correct statements about system testing and acceptance testing.</p>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
@@ -689,18 +709,10 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
                             </ul>
                             <div slot="answer">
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
-                              </ul>
+                              <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
                               <p>Explanation:</p>
-                              <p>System testing can aim for full coverage and can go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
-                              <p>Passing system tests does not necessarily mean passing acceptance testing. One reason for this is system tests are usually done on testbed environments while acceptance tests are usually done on the deployment environment.
-                                Another reason is system testing is done against the system specification while acceptance tests can discover mismatches between system specification and user requirements (i.e. validation failures).</p>
+                              <p>(b) is correct because system testing can aim to cover all specified behaviors and can even go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
+                              <p>(f) is incorrect because it is possible for a system to pass system tests but fail acceptance tests.</p>
                             </div>
                           </question>
                         </panel>
@@ -750,10 +762,10 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                         <panel header=":lock::key: Regression Testing defintion T/F?">
                           <question>
                             <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                            <ul radio-group="gevs2" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="gevs2" type="radio"> a. True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="gevs2" type="radio"> b. False</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="gevs2" type="radio"> c. Partially true</label></li>
+                            <ul radio-group="mncsb" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="mncsb" type="radio"> a. True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="mncsb" type="radio"> b. False</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="mncsb" type="radio"> c. Partially true</label></li>
                             </ul>
                             <div slot="answer">
                               <p>c.</p>
