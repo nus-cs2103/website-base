@@ -42,7 +42,7 @@ Use tests from AddressBook-Level4 to illustrate the difference between unit test
   <include src="../../book/testing/testingTypes/systemTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain what system tests are. Give examples from your own project.
 
   </panel>
 </panel>
@@ -51,7 +51,7 @@ Use tests from AddressBook-Level4 to illustrate the difference between unit test
   <include src="../../book/testing/testAutomation/testingGuis/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Why is automated testing of GUIs is hard? What can we do about it?
 
   </panel>
 </panel>
@@ -60,7 +60,7 @@ Use tests from AddressBook-Level4 to illustrate the difference between unit test
   <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain what acceptance tests are. Explain how acceptance testing of your project will be done. 
 
   </panel>
 </panel>
@@ -69,26 +69,18 @@ Use tests from AddressBook-Level4 to illustrate the difference between unit test
   <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain the difference between system tests and acceptance tests. Explain why both are needed.
 
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain test case design for use case based testing :star::star::star:" expandable>
-  <include src="../../book/testCaseDesign/more/testingUseCases/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 
 <panel type="info" header=":trophy: Can explain alpha and beta testing :star::star::star:" expandable>
   <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain alpha and beta testing. How can you do alpha and beta testing in your project?
 
   </panel>
 </panel>

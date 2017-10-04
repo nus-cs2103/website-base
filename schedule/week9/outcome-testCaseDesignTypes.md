@@ -45,4 +45,14 @@
   </panel>
 </panel>
 
+
+<panel type="info" header=":trophy: Can explain test case design for use case based testing :star::star::star:" expandable>
+  <include src="../../book/testCaseDesign/more/testingUseCases/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
 </panel>
