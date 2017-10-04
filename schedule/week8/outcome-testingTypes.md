@@ -20,8 +20,26 @@ Identify some tests in AddressBook-Level4,
   </panel>
 </panel>
 
-<panel type="danger" header=":trophy: Can explain integration testing :star:" expandable>
+<panel type="warning" header=":trophy: Can explain integration testing :star::star:" expandable>
   <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Explain the difference between unit tests and integration tests. 
+
+  </panel>
+</panel>
+
+<panel type="info" header=":trophy: Can do integration testing :star::star::star:" expandable>
+  <include src="../../book/testing/testingTypes/integrationTesting/how/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Use tests from AddressBook-Level4 to illustrate the difference between unit testings and integration testing. Hint: good examples [`seedu.address.storage.StorageManagerTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/storage/StorageManagerTest.java),[`seedu.address.logic.commands.AddCommandTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandTest.java),[`seedu.address.logic.commands.AddCommandIntegrationTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandIntegrationTest.java)
+
+  </panel>
+</panel>
+
+<panel type="danger" header=":trophy: Can explain system testing :star:" expandable>
+  <include src="../../book/testing/testingTypes/systemTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 ...
@@ -29,8 +47,17 @@ Identify some tests in AddressBook-Level4,
   </panel>
 </panel>
 
-<panel type="danger" header=":trophy: Can explain system testing :star:" expandable>
-  <include src="../../book/testing/testingTypes/systemTesting/what/full.md" />
+<panel type="info" header=":trophy: Can explain automated GUI testing :star::star::star:" expandable>
+  <include src="../../book/testing/testAutomation/testingGuis/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<panel type="warning" header=":trophy: Can explain acceptance testing :star::star:" expandable>
+  <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 ...
@@ -56,14 +83,6 @@ Identify some tests in AddressBook-Level4,
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain automated GUI testing :star::star::star:" expandable>
-  <include src="../../book/testing/testAutomation/testingGuis/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 <panel type="info" header=":trophy: Can explain alpha and beta testing :star::star::star:" expandable>
   <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" />
@@ -74,13 +93,5 @@ Identify some tests in AddressBook-Level4,
   </panel>
 </panel>
 
-<panel type="danger" header=":trophy: Can explain acceptance testing :star:" expandable>
-  <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 </panel>
