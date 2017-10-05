@@ -17,7 +17,11 @@
   <div>
     <navbar placement="top" type="inverse"><a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T</a>
       <li><a href="/website/index.html">Schedule</a></li>
-      <li><a href="/website/book/index.html" target="_blank">Textbook</a></li>
+      <dropdown text="Textbook">
+        <li><a href="/website/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
+        <li><a href="/website/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+      </dropdown>
       <li><a href="/website/admin/index.html">Admin</a></li>
       <li><a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">Instructors</a></li>
       <dropdown text="IVLE">
@@ -32,7 +36,7 @@
         <li><a href="https://github.com/nus-cs2103/website/issues" target="_blank"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S1/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
         <li><a href="/website/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Team IDs</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
         <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
@@ -442,9 +446,9 @@
                           <panel header=":lock::key: True or False?">
                             <question>
                               <p>Defining component APIs early is useful for developing components in parallel.</p>
-                              <ul radio-group="qcgmy" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="qcgmy" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="qcgmy" type="radio"> False</label></li>
+                              <ul radio-group="5nfvk" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="5nfvk" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="5nfvk" type="radio"> False</label></li>
                               </ul>
                               <div slot="answer">
                                 <p>True</p>
@@ -496,11 +500,11 @@
                               <panel header=":lock::key: Logging vs blackbox">
                                 <question>
                                   <p>Why is logging like having the 'black box' in an airplane?</p>
-                                  <ul radio-group="89yo1" class="radio-list">
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="89yo1" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="89yo1" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="89yo1" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="89yo1" type="radio"> d. Because they are hard to open by normal users.</label></li>
+                                  <ul radio-group="nd03z" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="nd03z" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="nd03z" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="nd03z" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="nd03z" type="radio"> d. Because they are hard to open by normal users.</label></li>
                                   </ul>
                                   <div slot="answer">
                                     <p>(a)</p>
@@ -725,11 +729,11 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                               <panel header=":lock::key: Assertions failure in Calculator">
                                 <question>
                                   <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                                  <ul radio-group="k2tlg" class="radio-list">
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="k2tlg" type="radio"> a. This is a correct use of assertions.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="k2tlg" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="k2tlg" type="radio"> c. The program has a bug.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="k2tlg" type="radio"> d. All statements above are incorrect.</label></li>
+                                  <ul radio-group="r7fgb" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="r7fgb" type="radio"> a. This is a correct use of assertions.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="r7fgb" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="r7fgb" type="radio"> c. The program has a bug.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="r7fgb" type="radio"> d. All statements above are incorrect.</label></li>
                                   </ul>
                                   <div slot="answer">
                                     <p>(c)</p>
