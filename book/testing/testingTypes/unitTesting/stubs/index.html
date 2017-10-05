@@ -39,9 +39,13 @@
         <tip-box>
           <p>📦 If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
         </tip-box>
-        <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>. A stub has the same interface as the dependency it replaces, but its implementation
-          is so simple that it is unlikely to have any bugs. It mimics the responses of the dependency, but only for the inputs used for testing. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded
-          in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+        <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+        <tip-box type="definition">
+          <div>
+            <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
+              inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+          </div>
+        </tip-box>
         <tip-box>
           <p>📦 Consider the code below:</p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
@@ -89,7 +93,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
     }
 }
 </code></pre>
@@ -102,8 +110,8 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-          <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
         </tip-box>
+        <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
       </div>
       <div>
         <div>
@@ -119,9 +127,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               <panel header=":lock::key: Purpose of stubs">
                 <question>
                   <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                  <ul radio-group="080zt" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="080zt" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="080zt" type="radio"> False</label></li>
+                  <ul radio-group="985sy" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="985sy" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="985sy" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True</p>

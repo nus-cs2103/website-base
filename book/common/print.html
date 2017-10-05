@@ -3350,10 +3350,10 @@ void calculateCAP (int[] averages) { ... }
           </div>
         </tip-box>
         <div>
-          <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> and communicating those events to other interested parts of the code for possible actions.</strong>            This architectural style is often used in GUIs.</p>
+          <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>            This architectural style is often used in GUIs.</p><img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
           <tip-box>
-            <p>📦 When the ‘button clicked’ event occurs in a GUI, methods that are tied to the <em>button-click</em> event are called.</p>
-          </tip-box>
+            <p>📦 When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted to components related to operating
+              the Printer. The same event can be sent to multiple consumers too.</p><img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
         </div>
       </div>
       <h3 id="more">More</h3>
@@ -5767,6 +5767,11 @@ jean.setBoyfriend(yong);
             <p>📦 A <em><tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip></em> can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers
               can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
           </tip-box>
+          <div v-closeable="" alt="slideshow: comparison">
+            <p>Here is an animation that compares the two approaches:</p>
+            <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
         </div>
       </div>
       <div>
@@ -5784,6 +5789,11 @@ jean.setBoyfriend(yong);
             <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
           </tip-box>
           <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
+          <div v-closeable="" alt="slideshow: comparison">
+            <p>Here is an animation that compares the two approaches:</p>
+            <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
         </div>
       </div>
       <div>
@@ -5800,9 +5810,24 @@ jean.setBoyfriend(yong);
           <p><strong>Based on the order in which components are integrated, incremental integration can be done in three ways.</strong></p>
           <p><strong><em>Top-down</em> integration: higher-level components are integrated before bringing in the lower-level components.</strong> One advantage of this approach is that higher-level problems can be discovered early. One disadvantage is that
             this requires the use of
-            <tooltip content="dummy or skeletal components">stubs</tooltip> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
-          <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Advantages and disadvantages are simply the reverse of those of the top-down approach.</p>
+            <trigger for="pop:topdown-stub">stubs</trigger> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
+          <popover id="pop:topdown-stub"
+            title=":mag:" placement="top">
+            <div slot="content">
+              <div>
+                <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
+                  inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+              </div>
+            </div>
+          </popover>
+          <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components,
+            <tooltip content="additional code written to provide inputs to a component via an API">drivers</tooltip> may be needed to test the integrated components <span class="dimmed"> because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
           <p><strong><em>Sandwich</em> integration: a mix of the top-down and the bottom-up approaches.</strong> The idea is to do both top-down and bottom-up so as to 'meet' in the middle.</p>
+          <div v-closeable="" alt="slideshow: comparison">
+            <p>Here is an animation that compares the three approaches:</p>
+            <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212318&authkey=AD27jxfKqq3nqpQ&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
         </div>
       </div>
       <h2 id="build-automation">Build Automation</h2>
@@ -7035,9 +7060,13 @@ jean.setBoyfriend(yong);
           <tip-box>
             <p>📦 If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
           </tip-box>
-          <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>. A stub has the same interface as the dependency it replaces, but its implementation
-            is so simple that it is unlikely to have any bugs. It mimics the responses of the dependency, but only for the inputs used for testing. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded
-            in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+          <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+          <tip-box type="definition">
+            <div>
+              <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
+                inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+            </div>
+          </tip-box>
           <tip-box>
             <p>📦 Consider the code below:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
@@ -7085,7 +7114,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
     }
 }
 </code></pre>
@@ -7098,8 +7131,8 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-            <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
           </tip-box>
+          <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
         </div>
       </div>
       <h3 id="integration-testing">Integration Testing</h3>
@@ -7394,7 +7427,83 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <popover id="pop:sut" placement="top">
               <div slot="content">
                 <div>
-                  <p><strong>SUT</strong>: Software Under Test</p>
+                  <div id="def-stub">
+                    <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of
+                      predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                  </div>
+                  <div id="def-sut">
+                    <p><strong>SUT</strong>: Software Under Test</p>
+                  </div>
+                  <h2 id="t">T</h2>
+                  <div id="def-testing">
+                    <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
+                  </div>
+                  <div id="def-type-signature">
+                    <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                    <panel
+                      type="seamless" header="%%Examples%%">
+                      <table class="markbind-table table">
+                        <thead>
+                          <tr>
+                            <th style="text-align:center">Method</th>
+                            <th style="text-align:center">Type Signature</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                            <td style="text-align:center"><code>(int, int)</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                            <td style="text-align:center"><code>(int, int)</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                            <td style="text-align:center"><code>(int, double)</code></td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                            <td style="text-align:center"><code>(double, int)</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </panel>
+                  </div>
+                  <h2 id="u">U</h2>
+                  <div id="def-uml">
+                    <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
+                      Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
+                      in UML). UML is currently the <em>de facto</em> modeling notation used in the industry.</p>
+                  </div>
+                  <div id="def-use-case">
+                    <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
+                      <trigger for="pop:actor">actor</trigger>.[ 📖 :
+                      <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                      </popover>]</p>
+                    <popover id="pop:actor" title=":mag:" placement="top">
+                      <div slot="content">
+                        <div>
+                          <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+                        </div>
+                      </div>
+                    </popover>
+                  </div>
+                  <div id="def-user-story">
+                    <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
+                  </div>
+                  <div id="def-user-story-format">
+                    <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
+                  </div>
+                  <h2 id="w">W</h2>
+                  <div id="def-working-directory">
+                    <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
+                  </div>
+                  <h2 id="y">Y</h2>
+                  <div id="def-yagni-principle">
+                    <p><strong>YAGNI (You Aren't Gonna Need It!) Principle</strong>: Do not add code simply because ‘you might need it in the future’.</p>
+                  </div>
+                  <hr>
                 </div>
               </div>
             </popover>

@@ -89,9 +89,13 @@
                   <tip-box>
                     <p>📦 If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
                   </tip-box>
-                  <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>. A stub has the same interface as the dependency it replaces, but its
-                    implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the dependency, but only for the inputs used for testing. That is, it does not know how to respond to any other inputs. Typically, these mimicked
-                    responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                  <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set
+                        of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                    </div>
+                  </tip-box>
                   <tip-box>
                     <p>📦 Consider the code below:</p>
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
@@ -139,7 +143,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
     }
 }
 </code></pre>
@@ -151,8 +159,8 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-                    <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                   </tip-box>
+                  <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                 </div>
                 <div>
                   <div>
@@ -168,9 +176,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                         <panel header=":lock::key: Purpose of stubs">
                           <question>
                             <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                            <ul radio-group="lwmdc" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="lwmdc" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="lwmdc" type="radio"> False</label></li>
+                            <ul radio-group="q2bcq" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="q2bcq" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="q2bcq" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>True</p>
@@ -415,9 +423,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                         <panel header=":lock::key: Cost of bug fixing over time">
                           <question>
                             <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                            <ul radio-group="rskg3" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="rskg3" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="rskg3" type="radio"> False</label></li>
+                            <ul radio-group="fcsub" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fcsub" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="fcsub" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>False. The cost goes up over time.</p>
@@ -749,45 +757,121 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <popover id="pop:sut" placement="top">
                       <div slot="content">
                         <div>
-                          <p><strong>SUT</strong>: Software Under Test</p>
-                        </div>
-                      </div>
-                    </popover>
+                          <div id="def-stub">
+                            <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited
+                              set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                          </div>
+                          <div id="def-sut">
+                            <p><strong>SUT</strong>: Software Under Test</p>
+                          </div>
+                          <h2 id="t">T</h2>
+                          <div id="def-testing">
+                            <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
+                          </div>
+                          <div id="def-type-signature">
+                            <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                            <panel
+                              type="seamless" header="%%Examples%%">
+                              <table class="markbind-table table">
+                                <thead>
+                                  <tr>
+                                    <th style="text-align:center">Method</th>
+                                    <th style="text-align:center">Type Signature</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                    <td style="text-align:center"><code>(int, double)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(double, int)</code></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+            </panel>
+            </div>
+            <h2 id="u">U</h2>
+            <div id="def-uml">
+              <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
+                Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
+                UML is currently the <em>de facto</em> modeling notation used in the industry.</p>
+            </div>
+            <div id="def-use-case">
+              <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
+                <trigger for="pop:actor">actor</trigger>.[ 📖 :
+                <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                </popover>]</p>
+              <popover id="pop:actor" title=":mag:" placement="top">
+                <div slot="content">
+                  <div>
+                    <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                   </div>
                 </div>
-                <div>
+              </popover>
+            </div>
+            <div id="def-user-story">
+              <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
+            </div>
+            <div id="def-user-story-format">
+              <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
+            </div>
+            <h2 id="w">W</h2>
+            <div id="def-working-directory">
+              <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
+            </div>
+            <h2 id="y">Y</h2>
+            <div id="def-yagni-principle">
+              <p><strong>YAGNI (You Aren't Gonna Need It!) Principle</strong>: Do not add code simply because ‘you might need it in the future’.</p>
+            </div>
+            <hr>
+            </div>
+            </div>
+            </popover>
+            </div>
+            </div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
                   <div>
-                    <panel header=":muscle: Exercises" expandable="">
-                      <div>
-                        <panel header=":lock::key: Regression Testing defintion T/F?">
-                          <question>
-                            <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                            <ul radio-group="mncsb" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="mncsb" type="radio"> a. True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="mncsb" type="radio"> b. False</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="mncsb" type="radio"> c. Partially true</label></li>
-                            </ul>
-                            <div slot="answer">
-                              <p>c.</p>
-                              <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                      <div>
-                        <panel header=":lock: Explain regression testing">
-                          <question has-input="">
-                            <p>Explain why and when you would do regression testing in a software project.</p>
-                          </question>
-                        </panel>
-                      </div>
+                    <panel header=":lock::key: Regression Testing defintion T/F?">
+                      <question>
+                        <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
+                        <ul radio-group="8a8km" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="8a8km" type="radio"> a. True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="8a8km" type="radio"> b. False</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="8a8km" type="radio"> c. Partially true</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>c.</p>
+                          <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
+                        </div>
+                      </question>
                     </panel>
                   </div>
-                </div>
+                  <div>
+                    <panel header=":lock: Explain regression testing">
+                      <question has-input="">
+                        <p>Explain why and when you would do regression testing in a software project.</p>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
               </div>
-            </panel>
-          </div>
-        </div>
+            </div>
+            </div>
+      </panel>
+      </div>
+      </div>
       </panel>
     </div>
   </div>
