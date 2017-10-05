@@ -1,40 +1,28 @@
-**`W2.1` Can use Git to save history**️
-- [ ] `W2.1a` Can explain revision control ️
+
+- [ ] **`W2.1` Can use Git to save history** ⭐️
+- [ ] `W2.1f` Can set Git to ignore files ⭐️⭐️
+
+- [ ] **`W2.2` Can use basic features of an IDE** ⭐️
+- [ ] `W2.2c` Can navigate code effectively using IDE features ⭐️⭐️
+
+- [ ] **`W2.3` Can automate simple regression testing of text UIs** ⭐️⭐️
+- [ ] `W2.3a` Can explain testing ⭐️⭐️
+- [ ] `W2.3b` Can explain regression testing ⭐️⭐️
+- [ ] `W2.3c` Can explain test automation ⭐️⭐️
+- [ ] `W2.3d` Can semi-automate testing of CLIs ⭐️⭐️
+
+- [ ] **`W2.4` Can use Java Collections** ⭐️⭐️
+- [ ] `W2.4` Can use Java Collections ⭐️⭐️
+
+------
+
+- [ ] **`W2.5` Can use Java varargs feature** ⭐️⭐️⭐️
 
 
-------------
+------
 
 
-------------
+- [ ] **`W2.6` Can explain pros and cons of software engineering** ⭐️⭐️⭐️⭐️
 
 
-
-
-------------
-
-
-
-
-
-
-
-------------
-
-
-
-
-
-------------
-
-
-**`W7.4` Can use assertions** ⭐️⭐️⭐️
-- [ ] `W7.4c` Can use assertions optimally ⭐️⭐️⭐️⭐️
-<br>
-
-**`W7.6` Can use intermediate-level sequence diagrams** ⭐️⭐️
-- [ ] `W7.6g` Can interpret sequence diagrams with parallel paths ⭐️⭐️⭐️⭐️
-<br>
-
-- [ ] **`W7.9` Can use Java8 streams** ⭐️⭐️⭐️⭐️
-<br>
-
+------
