@@ -208,7 +208,7 @@
           <div>
             <div>
               <panel type="warning" header="**`W8.1` Can explain architectural styles** :star::star:" no-close="">
-                <panel type="warning" header="`W8.1a` Can expain architectural styles :star::star:">
+                <panel type="warning" header="`W8.1a` Can explain architectural styles :star::star:">
                   <div>
                     <div>
                       <p>
@@ -949,103 +949,9 @@
                   <p>Explain cohesion with examples from AddressBook-Level4 (or your own project).</p>
                 </panel>
               </panel>
-              <panel type="warning" header="`W8.3f` Can increase cohesion :star::star:">
-                <div>
-                  <div>
-                    <p>
-                      <panel src="/website\book\designPrinciples\cohesion\what\full._include_.html" header="%%:mortar_board: Design &rarr; Design Principles &rarr; Cohesion &rarr;
-What%%" isOpen="false" no-close="true" no-switch="true"></panel>
-                    </p>
-                  </div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Design → Design Principles → Cohesion →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong>Cohesion can be present in many forms</strong>. Some examples:</p>
-                      <ul>
-                        <li>Code related to a single concept is kept together, e.g. the Student component handles everything related to students.</li>
-                        <li>Code that is invoked close together in time is kept together, e.g. all code related to initializing the system is kept together.</li>
-                        <li>Code that manipulates the same data structure is kept together, e.g. the <code>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li>
-                      </ul>
-                      <tip-box>
-                        <p>📦 The components in the following sequence diagram show low cohesion because user interactions are handled by many components. Its cohesion can be improved by moving all user interactions to the UI component.</p><img src="/website/book/designPrinciples/cohesion/how/images/uiLogicStorage.png"
-                          height="220">
-                        <p></p>
-                      </tip-box>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header=":muscle: Exercises" expandable="">
-                          <div>
-                            <panel header=":lock::key: Which class is more cohesive?">
-                              <question has-input="true">
-                                <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
-                                <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-    <span class="hljs-keyword">private</span> String sendTo;
- 	  <span class="hljs-keyword">private</span> String subject;
-    <span class="hljs-keyword">private</span> String message;
-<pre><code>&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;EmailMessage&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String sendTo, String subject, String message)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.sendTo = sendTo;
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.subject = subject;
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.message = message;
-}
-
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;// sends message using sendTo, subject and message&lt;/span&gt;
-}
-</code></pre>
-                                <p>}</p>
-                                <p><span class="hljs-comment">// version-2</span>
-                                  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-                                  <span class="hljs-keyword">private</span> String sendTo;
-                                  <span class="hljs-keyword">private</span> String subject;
-                                  <span class="hljs-keyword">private</span> String message;
-                                  <span class="hljs-keyword">private</span> String username;</p>
-                                <pre><code>&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;EmailMessage&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String sendTo, String subject, String message)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.sendTo = sendTo;
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.subject = subject;
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.message = message;
-}
-
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;// sends message using sendTo, subject and message&lt;/span&gt;
-}
-
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String username, String password)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.username = username;
-    &lt;span class=&quot;hljs-comment&quot;&gt;// code to login&lt;/span&gt;
-}
-</code></pre>
-                                <p>}
-                                </p>
-                                </code>
-                                </pre>
-                                <p></p>
-                                <div slot="answer">
-                                  <p>Version 2 is less cohesive.</p>
-                                  <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion
-                                    of both versions by removing the sendMessage functionality. Although sending message is related to emails, this class is supposed to represent an email message, not an email server.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>Explain with examples from AddressBook-Level4 (or your own project) how cohesion can be increased/decreased.</p>
-                </panel>
-              </panel>
+              <p>
+                <panel src="/website\schedule\week8\lo-increaseCohesion._include_.html" type="warning" header="`W8.3f` Can increase cohesion :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
               <p></p>
               <p><span class="dimmed"><strong>SoC and OCP:</strong></span></p>
               <panel type="warning" header="`W8.3g` Can explain separation of concerns principle (SoC) :star::star:">
@@ -1303,11 +1209,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                             <panel header=":lock::key: Meaning of OCP">
                               <question>
                                 <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                                <ul radio-group="e86ik" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="e86ik" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="e86ik" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="e86ik" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="e86ik" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                                <ul radio-group="ui5bz" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ui5bz" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ui5bz" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ui5bz" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ui5bz" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>(a)</p>
@@ -1433,199 +1339,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
         <div>
           <panel type="danger" header="**`W8.5` Can explain different types of testing** :star:" no-close="">
             <p><span class="dimmed"><strong>Unit Testing:</strong></span></p>
-            <panel type="danger" header="`W8.5a` Can explain unit testing :star:">
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
-</span></strong>
-                  </span>
-                </p>
-                <div>
-                  <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong><em>Unit testing</em> : testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly.</strong></p>
-                    <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
-                    <tip-box>
-                      <p>📦 Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains JUnit tests for those two methods.</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-<pre><code>&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String input)&lt;/span&gt;&lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;//...&lt;/span&gt;
-}
-</code></pre>
-                      <p>}</p>
-                      <p><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{</p>
-                      <pre><code>&lt;span class=&quot;hljs-meta&quot;&gt;@Test&lt;/span&gt;
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;//a unit test for Foo#read() method&lt;/span&gt;
-}
-
-&lt;span class=&quot;hljs-meta&quot;&gt;@Test&lt;/span&gt;
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;write_emptyInput_exceptionThrown&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;//a unit tests for Foo#write(String) method&lt;/span&gt;
-}  
-
-&lt;span class=&quot;hljs-meta&quot;&gt;@Test&lt;/span&gt;
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;write_normalInput_writtenCorrectly&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;//another unit tests for Foo#write(String) method&lt;/span&gt;
-}
-</code></pre>
-                      <p>}
-                      </p>
-                      </code>
-                      </pre>
-                    </tip-box>
-                    <p></p>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-              <panel header=":dart: Evidence" expanded="">
-                <p>Identify some unit tests in AddressBook-Level4 (or your own project).</p>
-              </panel>
-            </panel>
-            <panel type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:">
-              <div>
-                <div>
-                  <p>
-                    <panel src="/website\book\testing\testingTypes\unitTesting\what\full._include_.html" header="%%:mortar_board: Quality Assurance &rarr; Testing &rarr; Unit Testing &rarr; What &rarr;%%" isOpen="false" no-close="true" no-switch="true"></panel>
-                  </p>
-                </div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Unit Testing →
-</span></strong>
-                  </span>
-                </p>
-                <div>
-                  <h4 id="stubs-two">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-                      <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
-                    <tip-box>
-                      <p>📦 If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
-                    </tip-box>
-                    <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
-                    <tip-box type="definition">
-                      <div>
-                        <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set
-                          of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
-                      </div>
-                    </tip-box>
-                    <tip-box>
-                      <p>📦 Consider the code below:</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Storage s;
-<pre><code>Logic(Storage s) {
-    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.s = s;
-}
-
-&lt;span class=&quot;hljs-function&quot;&gt;String &lt;span class=&quot;hljs-title&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; index)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Name: &quot;&lt;/span&gt; + s.getName(index);
-}
-</code></pre>
-                      <p>}</p>
-                      <p><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
-                        <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span>
-                        </span>; }
-                      </p>
-                      <p><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</p>
-                      <pre><code>&lt;span class=&quot;hljs-meta&quot;&gt;@Override&lt;/span&gt;
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; String &lt;span class=&quot;hljs-title&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; index)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; readValueFromDatabase(index);
-}
-
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;private&lt;/span&gt; String &lt;span class=&quot;hljs-title&quot;&gt;readValueFromDatabase&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; index)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;// retrieve name from the database&lt;/span&gt;
-}
-</code></pre>
-                      <p>}
-                      </p>
-                      </code>
-                      </pre>
-                      <p></p>
-                      <p>Normally, you would use the <code>Logic</code> class as follows (not how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                      <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-String name = logic.getName(<span class="hljs-number">23</span>);
-</code></pre>
-                      <p>You can test it like this:</p>
-                      <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
-                      <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code><em>in isolation from its dependencies</em>                        and hence it is not a pure unit test.</p>
-                      <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-<pre><code>&lt;span class=&quot;hljs-meta&quot;&gt;@Override&lt;/span&gt;
-&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; String &lt;span class=&quot;hljs-title&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; index)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;(index == &lt;span class=&quot;hljs-number&quot;&gt;5&lt;/span&gt;) {
-        &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Adam&quot;&lt;/span&gt;;
-    } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;hljs-keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; UnsupportedOperationException();
-    }
-}
-</code></pre>
-                      <p>}
-                      </p>
-                      </code>
-                      </pre>
-                      <p></p>
-                      <p>Note how the stub has the same interface as the real dependency, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response <code>DatabaseStorage</code>                        is expected to return for the given test input.</p>
-                      <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                      <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
-    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
-                    </tip-box>
-                    <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header=":paperclip: Resources" expanded="">
-                        <ul>
-                          <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a><em>by</em> Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
-                        </ul>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":muscle: Exercises" expandable="">
-                        <div>
-                          <panel header=":lock::key: Purpose of stubs">
-                            <question>
-                              <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                              <ul radio-group="7wclc" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="7wclc" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="7wclc" type="radio"> False</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>True</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <panel header=":dart: Evidence" expanded="">
-                <p>Identify some tests in AddressBook-Level4,</p>
-                <ol>
-                  <li>that can be made pure unit tests by introducing stubs</li>
-                  <li>that are using stubs to isolate the SUT from its dependencies</li>
-                </ol>
-              </panel>
-            </panel>
+            <p>
+              <panel src="/website\schedule\week8\lo-explainUnitTesting._include_.html" type="danger" header="`W8.5a` Can explain unit testing :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+              <panel src="/website\schedule\week8\lo-useStubs._include_.html" type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+            <p></p>
             <p></p>
             <p><span class="dimmed"><strong>Integration Testing:</strong></span></p>
             <panel type="warning" header="`W8.5c` Can explain integration testing :star::star:">
@@ -1641,7 +1359,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </span>
                 </p>
                 <div>
-                  <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1673,14 +1391,14 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </span>
                 </p>
                 <div>
-                  <h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                  <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
                 </div>
                 <div id="main">
                   <div>
                     <p><strong>Integration testing is not simply a repetition of the unit test cases but run using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus
                       on the interactions between the parts.</p>
                     <tip-box>
-                      <p>📦 Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
+                      <p>📦 Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
                       <p>a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br> b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, <mark>using stubs for <code>Engine</code> and <code>Wheel</code></mark>.<br>                        c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</p>
                     </tip-box>
                     <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
@@ -1712,7 +1430,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </span>
                 </p>
                 <div>
-                  <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1797,9 +1515,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                           <panel header=":lock::key: API testing vs GUI testing">
                             <question>
                               <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
-                              <ul radio-group="g7qiu" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="g7qiu" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="g7qiu" type="radio"> False</label></li>
+                              <ul radio-group="6hx1u" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="6hx1u" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="6hx1u" type="radio"> False</label></li>
                               </ul>
                               <div slot="answer">
                                 <p>False</p>
@@ -1828,7 +1546,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </span>
                 </p>
                 <div>
-                  <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
                 </div>
                 <div id="main">
                   <div>
