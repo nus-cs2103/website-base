@@ -51,14 +51,7 @@ Explain cohesion with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="warning" header="`W8.3f` Can increase cohesion :star::star:">
-  <include src="../../book/designPrinciples/cohesion/how/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-Explain with examples from AddressBook-Level4 (or your own project) how cohesion can be increased/decreased.
-
-  </panel>
-</panel>
+<dynamic-panel src="lo-increaseCohesion.md" type="warning" header="`W8.3f` Can increase cohesion :star::star:"/>
 
 <p>
 

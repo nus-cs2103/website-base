@@ -1,6 +1,6 @@
 <panel type="warning" header="**`W8.1` Can explain architectural styles** :star::star:" no-close>
 
-<panel type="warning" header="`W8.1a` Can expain architectural styles :star::star:">
+<panel type="warning" header="`W8.1a` Can explain architectural styles :star::star:">
   <include src="../../book/architecture/architecturalStyles/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
