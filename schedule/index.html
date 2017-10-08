@@ -1207,11 +1207,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                           <panel header=":lock::key: Meaning of OCP">
                             <question>
                               <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                              <ul radio-group="ch9d2" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ch9d2" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ch9d2" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ch9d2" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="ch9d2" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                              <ul radio-group="1ipqf" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1ipqf" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1ipqf" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1ipqf" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="1ipqf" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                               </ul>
                               <div slot="answer">
                                 <p>(a)</p>
@@ -1515,9 +1515,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                         <panel header=":lock::key: API testing vs GUI testing">
                           <question>
                             <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
-                            <ul radio-group="24dvf" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="24dvf" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="24dvf" type="radio"> False</label></li>
+                            <ul radio-group="snyi2" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="snyi2" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="snyi2" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>False</p>
@@ -1705,14 +1705,16 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
       <panel type="danger" header="**`W8.7` Can describe a product from the user's perspective** :star:" no-close="">
         <panel header=":dart: Evidence" expanded="">
           <p>
-            <panel src="/website\admin\project-v11._include_.html#documentation" name="%%Admin &raquo; v1.1 &rarr; Documentation%%" fragment="documentation" header="%%Admin &raquo; v1.1 &rarr; Documentation%%" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/website\admin\project-v11._include_.html#documentation" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Documentation%%" fragment="documentation" header="%%Admin &raquo; Project &rarr; v1.1 &rarr; Documentation%%" isOpen="false"
+              no-close="true" no-switch="true"></panel>
           </p>
         </panel>
       </panel>
       <panel type="danger" header="**`W8.8` Can do global-impact changes to an existing software** :star:" no-close="">
         <panel header=":dart: Evidence" expanded="">
           <p>
-            <panel src="/website\admin\project-v11._include_.html#product" name="%%Admin &raquo; v1.1 &rarr; Product%%" fragment="product" header="%%Admin &raquo; v1.1 &rarr; Product%%" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/website\admin\project-v11._include_.html#product" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Product%%" fragment="product" header="%%Admin &raquo; Project &rarr; v1.1 &rarr; Product%%" isOpen="false" no-close="true"
+              no-switch="true"></panel>
           </p>
         </panel>
       </panel>
@@ -1743,6 +1745,442 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
     <div>
       <panel header=":trophy: Outcomes" expanded="" ctrl-lvl="1" no-close="">
         <div>
+          <div>
+            <panel type="warning" header=":trophy: Can use basic scheduling and tracking tools :star::star:" expandable="" expanded="" no-close="">
+              <panel type="warning" header=":trophy: Can explain milestones :star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="milestones-one">Milestones <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>A milestone is the end of a stage which indicates a significant progress. For example, each intermediate product release is a milestone. We should take into account dependencies and priorities when deciding on the features to be
+                        delivered at a certain milestone.</p>
+                      <p>In some projects, it is not practical to have a very detailed plan for the whole project due to the uncertainty and unavailability of required information. In such cases, we can use a high-level plan for the whole project and a detailed
+                        plan for the next few weeks.</p>
+                      <tip-box>
+                        <p>Milestones for the Minesweeper project, iteration 1</p>
+                        <table class="markbind-table table">
+                          <thead>
+                            <tr>
+                              <th>Day</th>
+                              <th>Milestones</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Day 1</td>
+                              <td>Architecture skeleton completed</td>
+                            </tr>
+                            <tr>
+                              <td>Day 3</td>
+                              <td>‘new game’ feature implemented</td>
+                            </tr>
+                            <tr>
+                              <td>Day 4</td>
+                              <td>‘new game’ feature tested</td>
+                            </tr>
+                            <tr>
+                              <td>Day 5</td>
+                              <td>Buffer</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="warning" header=":trophy: Can explain buffers :star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="buffers-two">Buffers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>It is important to include buffers (i.e. time set aside to absorb any unforeseen delays) in the schedule. However, do not inflate tasks to create hidden buffers. Have them explicitly set aside.</p><img src="/website/book/projectPlanning/buffers/images/schedule.png"
+                        height="120">
+                      <p></p>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="warning" header=":trophy: Can explain issue trackers :star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="issue-trackers-two">Issue Trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress. E.g. Bugzilla. Most online project management software such as GoogleCode, GitHub, SourceForge and BitBucket come with an integrated
+                        issue tracker. The following is a screenshot from the Jira Issue tracker software.</p><img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="500">
+                      <p></p>
+                      <p>Issue trackers can also be used as <em>task trackers</em>, i.e. to define tasks to be done, to track who is doing what, and the status of each task.</p>
+                      <p>More elaborate tools for scheduling and tracking projects include PERT chars and Gantt charts.</p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header=":muscle: Exercises" expandable="">
+                          <div>
+                            <panel header=":lock::key: Pick the odd one out.">
+                              <question>
+                                <p>Pick the odd one out.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. SubVersion</li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. SubVersion</li>
+                                  </ul>
+                                  <p>Explanation: SubVersion is a revision control software (similar to Git). The others are online project management platforms.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="info" header=":trophy: Can explain issue trackers :star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="work-breakdown-structure-one">Work Breakdown Structure <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>When managing projects it is useful to divide the total work into smaller, well-defined units. Relatively complex tasks can be further split into subtasks. A structure that depicts the above information about tasks and their details
+                        in terms of subtasks is known as a Work Breakdown Structure (WBS). In complex projects a WBS can also include prerequisite tasks and effort estimates for each task.</p>
+                      <p>For the Minesweeper example, the high level tasks for a single iteration could look like the following:</p>
+                      <table class="markbind-table table">
+                        <thead>
+                          <tr>
+                            <th>Task ID</th>
+                            <th>Task</th>
+                            <th>Estimated Effort</th>
+                            <th>Prerequisite Task</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>A</td>
+                            <td>Analysis</td>
+                            <td>1 man day</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>B</td>
+                            <td>Design</td>
+                            <td>2 man day</td>
+                            <td>A</td>
+                          </tr>
+                          <tr>
+                            <td>C</td>
+                            <td>Implementation</td>
+                            <td>4.5 man day</td>
+                            <td>B</td>
+                          </tr>
+                          <tr>
+                            <td>D</td>
+                            <td>Testing</td>
+                            <td>1 man day</td>
+                            <td>C</td>
+                          </tr>
+                          <tr>
+                            <td>E</td>
+                            <td>Planning for next version</td>
+                            <td>1 man day</td>
+                            <td>D</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>The effort is traditionally measured in <em>man hour/day/month</em> i.e. work that can be done by one person in one hour/day/month. The <em>Task ID</em> is a label for easy reference to a task. Simple labeling is suitable for a small
+                        project, while a more informative labeling system can be adopted for bigger projects.</p>
+                      <p>The high level tasks structure can be further refined into subtasks.</p>
+                      <table class="table">
+                        <tr>
+                          <th>Task ID</th>
+                          <th>Task</th>
+                          <th>Estimated Effort</th>
+                          <th>Prerequisite Task</th>
+                        </tr>
+                        <tr>
+                          <td>A</td>
+                          <td>High level design</td>
+                          <td>1 man day</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>B</td>
+                          <td>
+                            Detail design
+                            <ol>
+                              <li>User Interface</li>
+                              <li>Game Logic</li>
+                              <li>Persistency Support</li>
+                            </ol>
+                          </td>
+                          <td>
+                            2 man day
+                            <ul>
+                              <li>0.5 man day</li>
+                              <li>1 man day</li>
+                              <li>0.5 man day</li>
+                            </ul>
+                          </td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>C</td>
+                          <td>
+                            Implementation
+                            <ol>
+                              <li>User Interface</li>
+                              <li>Game Logic</li>
+                              <li>Persistency Support</li>
+                            </ol>
+                          </td>
+                          <td>
+                            4.5 man day
+                            <ul>
+                              <li>1.5 man day</li>
+                              <li>2 man day</li>
+                              <li>1 man day</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>B.1</li>
+                              <li>B.2</li>
+                              <li>B.3</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>D</td>
+                          <td>System Testing</td>
+                          <td>1 man day</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>E</td>
+                          <td>Planning for next version</td>
+                          <td>1 man day</td>
+                          <td>D</td>
+                        </tr>
+                      </table>
+                      <p><strong>All tasks should be well-defined.</strong> In particular, it should be clear as to when the task will be considered “done”. E.g.</p>
+                      <ul>
+                        <li>Not good: more coding | better: implement component X</li>
+                        <li>Not good: do research on UI testing | better: find a suitable tool for testing the UI</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header=":muscle: Exercises" expandable="">
+                          <div>
+                            <panel header=":lock::key: Which one these is not well-defined task?">
+                              <question>
+                                <p>Which one these is not well-defined task? Context: These are tasks to be put in the issue tracker of your project.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Do some more testing.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Do some more testing.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
+                                  </ul>
+                                  <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="success" header=":trophy: Can explain GANTT charts :star::star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="gantt-charts-three">GANTT Charts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>A <em>Gantt chart</em> is a 2-D bar-chart, drawn as <em>time vs tasks</em> (represented by horizontal bars).</p>
+                      <tip-box>
+                        <p>Example:</p><img src="/website/book/projectPlanning/ganttCharts/images/gantt.png" height="360">
+                        <p></p>
+                      </tip-box>
+                      <p>In the chart, a solid bar represents the main task, which is generally composed of a number of subtasks, shown as grey bars. The diamond shape indicates an important deadline or deliverable or a <em>milestone</em>.</p>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="success" header=":trophy: Can explain PERT charts :star::star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="pert-charts-four">PERT Charts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order/sequence of tasks. It is based on a simple idea of drawing a directed graph in which:</p>
+                      <ul>
+                        <li>Node or vertex captures the effort estimation of a task, and</li>
+                        <li>Arrow depicts the precedence between tasks</li>
+                      </ul>
+                      <tip-box>
+                        <p>Example: a PERT chart for the Minesweeper project</p><img src="/website/book/projectPlanning/pertCharts/images/pert.jpg" height="320">
+                        <p></p>
+                      </tip-box>
+                      <p>A PERT chart can help determine the following important information:</p>
+                      <ul>
+                        <li>The order of tasks. For example, observe that the Final Testing phase cannot begin until all coding of individual subsystems have been completed.</li>
+                        <li>Tasks can be done concurrently. For example, the various subsystem designs can start independently once the High level design is completed.</li>
+                        <li>The shortest possible completion time. From the above PERT chart, there is a path (indicated by the shaded boxes) from start to end that determines the longest possible completion time.</li>
+                        <li>The Critical Path. The shortest possible path is also the critical path in it is critical to ensure tasks on this path are completed on time. Any delay would directly affect the delivery time for the project.</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="success" header=":trophy: Can explain common team structures :star::star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Project Management → Teamwork →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="team-structures-three">Team Structures <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Given below are three commonly used team structures in software development. Irrespective of the team structure, it is a good practice to assign roles and responsibilities to different team members so that someone is clearly in charge
+                        of each aspect of the project. In comparison, the ‘everybody is responsible for everything’ approach can result in more chaos and hence slower progress.</p><img src="/website/book/teamwork/teamStructures/images/diagram.png"
+                        height="150">
+                      <p></p>
+                      <p><strong>Egoless team</strong></p>
+                      <p>In this structure, every team member is equal in terms of responsibility and accountability. When any decision is required, consensus must be reached. This team structure is also known as a democratic team structure. This team structure
+                        usually finds a good solution to a relatively hard problem as all team members contribute ideas.</p>
+                      <p>However, the democratic nature of the team structure bears a higher risk of falling apart due to the absence of an authority figure to manage the team and resolve conflicts.</p>
+                      <p><strong>Chief programmer team</strong></p>
+                      <p>Frederick Brooks proposed that software engineers learn from the medical surgical team in an operating room. In such a team, there is always a chief surgeon, assisted by experts in other areas. Similarly, in a chief programmer team
+                        structure, there is a single authoritative figure, the chief programmer. Major decisions, e.g. system architecture, are made solely by him/her and obeyed by all other team members. The chief programmer directs and coordinates the
+                        effort of other team members. When necessary, the chief will be assisted by domain specialists e.g. business specialists, database expert, network technology expert, etc. This allows individual group members to concentrate solely
+                        on the areas where they have sound knowledge and expertise.</p>
+                      <p>The success of such a team structure relies heavily on the chief programmer. Not only must he be a superb technical hand, he also needs good managerial skills. Under a suitably qualified leader, such a team structure is known to
+                        produce successful work. .</p>
+                      <p><strong>Strict hierarchy team</strong></p>
+                      <p>In the opposite extreme of an egoless team, a strict hierarchy team has a strictly defined organization among the team members, reminiscent of the military or bureaucratic government. Each team member only works on his assigned tasks
+                        and reports to a single “boss”.</p>
+                      <p>In a large, resource-intensive, complex project, this could be a good team structure to reduce communication overhead.</p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header=":muscle: Exercises" expandable="">
+                          <div>
+                            <panel header=":lock::key: Which team structure is the most suitable for a school project?">
+                              <question>
+                                <p>Which team structure is the most suitable for a school project?</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Egoless</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Chief programmer</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Strict hierarchy</li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Egoless</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Chief programmer</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Strict hierarchy</li>
+                                  </ul>
+                                  <p>Explanation: Given that you are all peers and beginners, Egoless team structure seems most suitable for the class project. It’s OK to try out a different team structure in your project though.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+            </panel>
+          </div>
           <div>
             <panel type="info" header=":trophy: Can use defensive programming :star::star::star:" expandable="" expanded="" no-close="">
               <panel type="info" header=":trophy: Can explain defensive programming :star::star::star:" expandable="">
@@ -2480,6 +2918,290 @@ r1.setPlayer(p2);
             </panel>
           </div>
           <div>
+            <panel type="warning" header=":trophy: Can explain test coverage :star::star:" expandable="" expanded="" no-close="">
+              <panel type="info" header=":trophy: Can explain how test coverage works :star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Measuring coverage is often done using <em>coverage analysis tools</em>. Coverage measurements are used to improve testing E&amp;E (Effectiveness and Efficiency). For example, if a set of test cases does not achieve 100% branch coverage,
+                        more test cases are added to cover missed branches.</p>
+                      <p>Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+            </panel>
+          </div>
+          <panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable="">
+            <div>
+              <p><span class="dimmed"><strong><span>Tools → JUnit →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="junit-intermediate-three">JUnit: Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>...</p>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <panel header=":dart: Evidence" expanded="">
+              <p>...</p>
+            </panel>
+          </panel>
+          <div>
+            <panel type="info" header=":trophy: Can implement substitutability :star::star::star:" expandable="" expanded="" no-close="">
+              <panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="substitutability-two">Substitutability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <tip-box>
+                        <p>Example:</p><img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="50">
+                        <p></p>
+                      </tip-box>
+                      <p>Every instance of a subclass is an instance of the superclass, but not vice-versa. For example, an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.
+                        As a result, inheritance allows <em>substitutability</em>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses. For example, the following code is valid because an
+                        <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
+                      <pre class="hljs"><code>Staff staff = new AcademicStaff (); // OK
+</code></pre>
+                      <p>But the following code is not because <code>staff</code> is declared as a <code>Staff</code> type (see above) and therefore its value may or may not be of type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</p>
+                      <pre
+                        class="hljs"><code>AcademicStaff academicStaff = staff; // Not OK
+</code></pre>
+                        <p>{link up with Liskov Substitution Principle}</p>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="success" header=":trophy: Can explain dynamic and static binding :star::star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="dynamic-and-static-binding-three">Dynamic and Static Binding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Overridden operations are <strong>resolved at runtime</strong>. That is, the runtime decides which version of the operation should be executed based on the actual type of the receiving object. This is also called <em>dynamic binding</em>                        (sometimes called <em>late binding</em> and <em>run-time binding</em>). Most OO languages support dynamic binding.</p>
+                      <tip-box type="info">
+                        <p>There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document.</p>
+                      </tip-box>
+                      <tip-box>
+                        <p>Example:</p><img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
+                        <p></p>
+                        <pre class="hljs"><code>void adjustSalary(int byPercent) {
+    for (Staff s: staff) {
+        s.adjustSalary(byPercent);
+    }
+}
+</code></pre>
+                        <p>The <strong>declared</strong> type of s is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked. However, at runtime the <code>adjustSalary(int)</code>                          operation of the actual object will be called (i.e. <code>adjustSalary(int)</code> operation of Admin or Academic). If the actual object does not override that operation, the operation defined in the immediate superclass (in
+                          this case, Staff class) will be called.</p>
+                      </tip-box>
+                      <p>In contrast, overloaded methods are resolved at compile time, also called <em>static binding</em> (also called <em>early binding</em> and <em>compile-time binding</em>.)</p>
+                      <tip-box>
+                        <pre class="hljs"><code>class Account {
+    Account () {
+        // Signature: ()
+        ...
+    }
+    Account (String name, String number, double balance) {
+        // Signature: (String, String, double)
+        ...
+    }
+}
+</code></pre>
+                        <pre class="hljs"><code>void calculateCAP (String matric) { ... }
+void calculateCAP (int[] averages) { ... }
+</code></pre>
+                        <p>The calls to the two constructors are resolved at compile time.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="info" header=":trophy: Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="mechanism-three">Mechanism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>There are three issues that are at the center of how polymorphism is achieved: <em>substitutability, operation overriding, and dynamic binding</em>.</p>
+                      <ul>
+                        <li>Substitutability: Because of substitutability, we can write code that expects object of a parent class and yet use that code with objects of child classes. That is how polymorphism is able to <em>treat objects of different types as one type</em>.</li>
+                        <li>Overriding: To get polymorphic behavior from an operation, the operation in the superclass needs to be overridden in each of the subclasses. That is how overriding allows objects of different sub classes to <em>display different behaviors in response to the same method call</em>.</li>
+                        <li>Dynamic binding: Overridden methods are bound to the method implementation dynamically during the runtime. That is how the code can call the method of the parent class and yet execute the implementation of the child class.</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header=":muscle: Exercises" expandable="">
+                          <div>
+                            <panel header=":lock::key: Which of these is least related to how OO programs achieve polymorphism?">
+                              <question>
+                                <p>Which of these is least related to how OO programs achieve polymorphism?</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. operation overloading</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. operation overloading</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
+                                  </ul>
+                                  <p>Explanation: Operation overriding is the one that is related, not operation overloading.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+              <panel type="info" header=":trophy: Can explain Liskov Substitution Principle :star::star::star:" expandable="">
+                <div>
+                  <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="liskov-substitution-principle-three">Liskov Substitution Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <tip-box type="primary">
+                        <div>
+                          <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. -- Barbara Liskov</p>
+                        </div>
+                      </tip-box>
+                      <p>In other words, if a program module is using a super class, then the reference to the super class can be replaced with a sub class without affecting the functionality of the program module.</p>
+                      <p>As we know, Java already allows substituting objects of sub classes where an object of the super class is expected. However, that does not mean that doing so will not break the functionality of the code. To follow LSP, we should
+                        be careful not to contradict the behavior specified by the super class.</p>
+                      <tip-box>
+                        <p>Example:</p><img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                        <p></p>
+                        <p>Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method
+                          will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method. Now consider the following:</p>
+                        <ul>
+                          <li><code>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
+                          <li><code>Academic#adjustMySalary</code> method works for percent values 1..100 only.</li>
+                        </ul>
+                        <p>In the above scenario,</p>
+                        <ul>
+                          <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects will
+                            not break the <code>Payroll</code> class functionality.</li>
+                          <li><code>Academic</code> class violates LSP because it will not work for percent values over 100 as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially
+                            break the <code>Payroll</code> class functionality.</li>
+                        </ul>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header=":muscle: Exercises" expandable="">
+                          <div>
+                            <panel header=":lock::key: True or False?">
+                              <question>
+                                <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov substitution principle.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                                  </ul>
+                                  <p>Explanation: If the subclass is more restrictive than the parent class, a piece of code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and Liskov substitution
+                                    principle is violated.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <panel header=":dart: Evidence" expanded="">
+                  <p>...</p>
+                </panel>
+              </panel>
+            </panel>
+          </div>
+          <panel type="danger" header="**`W9.` Can describe the implementation from a develolper's perspective** :star:" no-close="">
+            <panel header=":dart: Evidence" expanded="">
+              <p>Covered by 'Project Management' component v1.2:</p>
+              <p>
+                <panel src="/website\admin\project-v12._include_.html" name="%%Admin &raquo; Project &rarr; v1.2%%" header="%%Admin &raquo; Project &rarr; v1.2%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </panel>
+          </panel>
+          <panel type="danger" header="**`W9.` Can use miletones to schedule/track project progress** :star:" no-close="">
+            <panel header=":dart: Evidence" expanded="">
+              <p>Covered by the 'Project Management' component of v1.2:</p>
+              <p>
+                <panel src="/website\admin\project-v12._include_.html" name="%%Admin &raquo; Project &rarr; v1.2%%" header="%%Admin &raquo; Project &rarr; v1.2%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </panel>
+          </panel>
+          <div>
             <panel type="success" header=":trophy: Can follow TDD :star::star::star::star:" expandable="" expanded="" no-close="">
               <panel type="success" header=":trophy: Can explain TDD :star::star::star::star:" expandable="">
                 <div>
@@ -3141,660 +3863,6 @@ r1.setPlayer(p2);
                       <p>Boundary values are sometimes called corner cases.</p>
                     </div>
                     <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-            </panel>
-          </div>
-          <div>
-            <panel type="info" header=":trophy: Can implement substitutability :star::star::star:" expandable="" expanded="" no-close="">
-              <panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="substitutability-two">Substitutability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <tip-box>
-                        <p>Example:</p><img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="50">
-                        <p></p>
-                      </tip-box>
-                      <p>Every instance of a subclass is an instance of the superclass, but not vice-versa. For example, an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.
-                        As a result, inheritance allows <em>substitutability</em>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses. For example, the following code is valid because an
-                        <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
-                      <pre class="hljs"><code>Staff staff = new AcademicStaff (); // OK
-</code></pre>
-                      <p>But the following code is not because <code>staff</code> is declared as a <code>Staff</code> type (see above) and therefore its value may or may not be of type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</p>
-                      <pre
-                        class="hljs"><code>AcademicStaff academicStaff = staff; // Not OK
-</code></pre>
-                        <p>{link up with Liskov Substitution Principle}</p>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="success" header=":trophy: Can explain dynamic and static binding :star::star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="dynamic-and-static-binding-three">Dynamic and Static Binding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>Overridden operations are <strong>resolved at runtime</strong>. That is, the runtime decides which version of the operation should be executed based on the actual type of the receiving object. This is also called <em>dynamic binding</em>                        (sometimes called <em>late binding</em> and <em>run-time binding</em>). Most OO languages support dynamic binding.</p>
-                      <tip-box type="info">
-                        <p>There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document.</p>
-                      </tip-box>
-                      <tip-box>
-                        <p>Example:</p><img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
-                        <p></p>
-                        <pre class="hljs"><code>void adjustSalary(int byPercent) {
-    for (Staff s: staff) {
-        s.adjustSalary(byPercent);
-    }
-}
-</code></pre>
-                        <p>The <strong>declared</strong> type of s is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked. However, at runtime the <code>adjustSalary(int)</code>                          operation of the actual object will be called (i.e. <code>adjustSalary(int)</code> operation of Admin or Academic). If the actual object does not override that operation, the operation defined in the immediate superclass (in
-                          this case, Staff class) will be called.</p>
-                      </tip-box>
-                      <p>In contrast, overloaded methods are resolved at compile time, also called <em>static binding</em> (also called <em>early binding</em> and <em>compile-time binding</em>.)</p>
-                      <tip-box>
-                        <pre class="hljs"><code>class Account {
-    Account () {
-        // Signature: ()
-        ...
-    }
-    Account (String name, String number, double balance) {
-        // Signature: (String, String, double)
-        ...
-    }
-}
-</code></pre>
-                        <pre class="hljs"><code>void calculateCAP (String matric) { ... }
-void calculateCAP (int[] averages) { ... }
-</code></pre>
-                        <p>The calls to the two constructors are resolved at compile time.</p>
-                      </tip-box>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="info" header=":trophy: Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="mechanism-three">Mechanism <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>There are three issues that are at the center of how polymorphism is achieved: <em>substitutability, operation overriding, and dynamic binding</em>.</p>
-                      <ul>
-                        <li>Substitutability: Because of substitutability, we can write code that expects object of a parent class and yet use that code with objects of child classes. That is how polymorphism is able to <em>treat objects of different types as one type</em>.</li>
-                        <li>Overriding: To get polymorphic behavior from an operation, the operation in the superclass needs to be overridden in each of the subclasses. That is how overriding allows objects of different sub classes to <em>display different behaviors in response to the same method call</em>.</li>
-                        <li>Dynamic binding: Overridden methods are bound to the method implementation dynamically during the runtime. That is how the code can call the method of the parent class and yet execute the implementation of the child class.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header=":muscle: Exercises" expandable="">
-                          <div>
-                            <panel header=":lock::key: Which of these is least related to how OO programs achieve polymorphism?">
-                              <question>
-                                <p>Which of these is least related to how OO programs achieve polymorphism?</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. operation overloading</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
-                                </ul>
-                                <div slot="answer">
-                                  <ul class="task-list">
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. operation overloading</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
-                                  </ul>
-                                  <p>Explanation: Operation overriding is the one that is related, not operation overloading.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="info" header=":trophy: Can explain Liskov Substitution Principle :star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="liskov-substitution-principle-three">Liskov Substitution Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <tip-box type="primary">
-                        <div>
-                          <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. -- Barbara Liskov</p>
-                        </div>
-                      </tip-box>
-                      <p>In other words, if a program module is using a super class, then the reference to the super class can be replaced with a sub class without affecting the functionality of the program module.</p>
-                      <p>As we know, Java already allows substituting objects of sub classes where an object of the super class is expected. However, that does not mean that doing so will not break the functionality of the code. To follow LSP, we should
-                        be careful not to contradict the behavior specified by the super class.</p>
-                      <tip-box>
-                        <p>Example:</p><img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
-                        <p></p>
-                        <p>Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method
-                          will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method. Now consider the following:</p>
-                        <ul>
-                          <li><code>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
-                          <li><code>Academic#adjustMySalary</code> method works for percent values 1..100 only.</li>
-                        </ul>
-                        <p>In the above scenario,</p>
-                        <ul>
-                          <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects will
-                            not break the <code>Payroll</code> class functionality.</li>
-                          <li><code>Academic</code> class violates LSP because it will not work for percent values over 100 as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially
-                            break the <code>Payroll</code> class functionality.</li>
-                        </ul>
-                      </tip-box>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header=":muscle: Exercises" expandable="">
-                          <div>
-                            <panel header=":lock::key: True or False?">
-                              <question>
-                                <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov substitution principle.</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                                </ul>
-                                <div slot="answer">
-                                  <ul class="task-list">
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                                  </ul>
-                                  <p>Explanation: If the subclass is more restrictive than the parent class, a piece of code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and Liskov substitution
-                                    principle is violated.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-            </panel>
-          </div>
-          <div>
-            <panel type="warning" header=":trophy: Can use basic scheduling and tracking tools :star::star:" expandable="" expanded="" no-close="">
-              <panel type="warning" header=":trophy: Can explain milestones :star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="milestones-one">Milestones <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>A milestone is the end of a stage which indicates a significant progress. For example, each intermediate product release is a milestone. We should take into account dependencies and priorities when deciding on the features to be
-                        delivered at a certain milestone.</p>
-                      <p>In some projects, it is not practical to have a very detailed plan for the whole project due to the uncertainty and unavailability of required information. In such cases, we can use a high-level plan for the whole project and a detailed
-                        plan for the next few weeks.</p>
-                      <tip-box>
-                        <p>Milestones for the Minesweeper project, iteration 1</p>
-                        <table class="markbind-table table">
-                          <thead>
-                            <tr>
-                              <th>Day</th>
-                              <th>Milestones</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Day 1</td>
-                              <td>Architecture skeleton completed</td>
-                            </tr>
-                            <tr>
-                              <td>Day 3</td>
-                              <td>‘new game’ feature implemented</td>
-                            </tr>
-                            <tr>
-                              <td>Day 4</td>
-                              <td>‘new game’ feature tested</td>
-                            </tr>
-                            <tr>
-                              <td>Day 5</td>
-                              <td>Buffer</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </tip-box>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="warning" header=":trophy: Can explain buffers :star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="buffers-two">Buffers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>It is important to include buffers (i.e. time set aside to absorb any unforeseen delays) in the schedule. However, do not inflate tasks to create hidden buffers. Have them explicitly set aside.</p><img src="/website/book/projectPlanning/buffers/images/schedule.png"
-                        height="120">
-                      <p></p>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="warning" header=":trophy: Can explain issue trackers :star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="issue-trackers-two">Issue Trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress. E.g. Bugzilla. Most online project management software such as GoogleCode, GitHub, SourceForge and BitBucket come with an integrated
-                        issue tracker. The following is a screenshot from the Jira Issue tracker software.</p><img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="500">
-                      <p></p>
-                      <p>Issue trackers can also be used as <em>task trackers</em>, i.e. to define tasks to be done, to track who is doing what, and the status of each task.</p>
-                      <p>More elaborate tools for scheduling and tracking projects include PERT chars and Gantt charts.</p>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header=":muscle: Exercises" expandable="">
-                          <div>
-                            <panel header=":lock::key: Pick the odd one out.">
-                              <question>
-                                <p>Pick the odd one out.</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. SubVersion</li>
-                                </ul>
-                                <div slot="answer">
-                                  <ul class="task-list">
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. SubVersion</li>
-                                  </ul>
-                                  <p>Explanation: SubVersion is a revision control software (similar to Git). The others are online project management platforms.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="info" header=":trophy: Can explain issue trackers :star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="work-breakdown-structure-one">Work Breakdown Structure <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>When managing projects it is useful to divide the total work into smaller, well-defined units. Relatively complex tasks can be further split into subtasks. A structure that depicts the above information about tasks and their details
-                        in terms of subtasks is known as a Work Breakdown Structure (WBS). In complex projects a WBS can also include prerequisite tasks and effort estimates for each task.</p>
-                      <p>For the Minesweeper example, the high level tasks for a single iteration could look like the following:</p>
-                      <table class="markbind-table table">
-                        <thead>
-                          <tr>
-                            <th>Task ID</th>
-                            <th>Task</th>
-                            <th>Estimated Effort</th>
-                            <th>Prerequisite Task</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>A</td>
-                            <td>Analysis</td>
-                            <td>1 man day</td>
-                            <td>-</td>
-                          </tr>
-                          <tr>
-                            <td>B</td>
-                            <td>Design</td>
-                            <td>2 man day</td>
-                            <td>A</td>
-                          </tr>
-                          <tr>
-                            <td>C</td>
-                            <td>Implementation</td>
-                            <td>4.5 man day</td>
-                            <td>B</td>
-                          </tr>
-                          <tr>
-                            <td>D</td>
-                            <td>Testing</td>
-                            <td>1 man day</td>
-                            <td>C</td>
-                          </tr>
-                          <tr>
-                            <td>E</td>
-                            <td>Planning for next version</td>
-                            <td>1 man day</td>
-                            <td>D</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <p>The effort is traditionally measured in <em>man hour/day/month</em> i.e. work that can be done by one person in one hour/day/month. The <em>Task ID</em> is a label for easy reference to a task. Simple labeling is suitable for a small
-                        project, while a more informative labeling system can be adopted for bigger projects.</p>
-                      <p>The high level tasks structure can be further refined into subtasks.</p>
-                      <table class="table">
-                        <tr>
-                          <th>Task ID</th>
-                          <th>Task</th>
-                          <th>Estimated Effort</th>
-                          <th>Prerequisite Task</th>
-                        </tr>
-                        <tr>
-                          <td>A</td>
-                          <td>High level design</td>
-                          <td>1 man day</td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>B</td>
-                          <td>
-                            Detail design
-                            <ol>
-                              <li>User Interface</li>
-                              <li>Game Logic</li>
-                              <li>Persistency Support</li>
-                            </ol>
-                          </td>
-                          <td>
-                            2 man day
-                            <ul>
-                              <li>0.5 man day</li>
-                              <li>1 man day</li>
-                              <li>0.5 man day</li>
-                            </ul>
-                          </td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>C</td>
-                          <td>
-                            Implementation
-                            <ol>
-                              <li>User Interface</li>
-                              <li>Game Logic</li>
-                              <li>Persistency Support</li>
-                            </ol>
-                          </td>
-                          <td>
-                            4.5 man day
-                            <ul>
-                              <li>1.5 man day</li>
-                              <li>2 man day</li>
-                              <li>1 man day</li>
-                            </ul>
-                          </td>
-                          <td>
-                            <ul>
-                              <li>B.1</li>
-                              <li>B.2</li>
-                              <li>B.3</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>D</td>
-                          <td>System Testing</td>
-                          <td>1 man day</td>
-                          <td>C</td>
-                        </tr>
-                        <tr>
-                          <td>E</td>
-                          <td>Planning for next version</td>
-                          <td>1 man day</td>
-                          <td>D</td>
-                        </tr>
-                      </table>
-                      <p><strong>All tasks should be well-defined.</strong> In particular, it should be clear as to when the task will be considered “done”. E.g.</p>
-                      <ul>
-                        <li>Not good: more coding | better: implement component X</li>
-                        <li>Not good: do research on UI testing | better: find a suitable tool for testing the UI</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header=":muscle: Exercises" expandable="">
-                          <div>
-                            <panel header=":lock::key: Which one these is not well-defined task?">
-                              <question>
-                                <p>Which one these is not well-defined task? Context: These are tasks to be put in the issue tracker of your project.</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Do some more testing.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
-                                </ul>
-                                <div slot="answer">
-                                  <ul class="task-list">
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Implement the ‘delete’ feature.</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Fix Issue 23 in the bug tracker.</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. Do some more testing.</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Choose a tool to draw UML diagrams.</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Clarify submission requirements with the professor.</li>
-                                  </ul>
-                                  <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="success" header=":trophy: Can explain GANTT charts :star::star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="gantt-charts-three">GANTT Charts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>A <em>Gantt chart</em> is a 2-D bar-chart, drawn as <em>time vs tasks</em> (represented by horizontal bars).</p>
-                      <tip-box>
-                        <p>Example:</p><img src="/website/book/projectPlanning/ganttCharts/images/gantt.png" height="360">
-                        <p></p>
-                      </tip-box>
-                      <p>In the chart, a solid bar represents the main task, which is generally composed of a number of subtasks, shown as grey bars. The diamond shape indicates an important deadline or deliverable or a <em>milestone</em>.</p>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="success" header=":trophy: Can explain PERT charts :star::star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="pert-charts-four">PERT Charts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order/sequence of tasks. It is based on a simple idea of drawing a directed graph in which:</p>
-                      <ul>
-                        <li>Node or vertex captures the effort estimation of a task, and</li>
-                        <li>Arrow depicts the precedence between tasks</li>
-                      </ul>
-                      <tip-box>
-                        <p>Example: a PERT chart for the Minesweeper project</p><img src="/website/book/projectPlanning/pertCharts/images/pert.jpg" height="320">
-                        <p></p>
-                      </tip-box>
-                      <p>A PERT chart can help determine the following important information:</p>
-                      <ul>
-                        <li>The order of tasks. For example, observe that the Final Testing phase cannot begin until all coding of individual subsystems have been completed.</li>
-                        <li>Tasks can be done concurrently. For example, the various subsystem designs can start independently once the High level design is completed.</li>
-                        <li>The shortest possible completion time. From the above PERT chart, there is a path (indicated by the shaded boxes) from start to end that determines the longest possible completion time.</li>
-                        <li>The Critical Path. The shortest possible path is also the critical path in it is critical to ensure tasks on this path are completed on time. Any delay would directly affect the delivery time for the project.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-              <panel type="success" header=":trophy: Can explain common team structures :star::star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Project Management → Teamwork →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="team-structures-three">Team Structures <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>Given below are three commonly used team structures in software development. Irrespective of the team structure, it is a good practice to assign roles and responsibilities to different team members so that someone is clearly in charge
-                        of each aspect of the project. In comparison, the ‘everybody is responsible for everything’ approach can result in more chaos and hence slower progress.</p><img src="/website/book/teamwork/teamStructures/images/diagram.png"
-                        height="150">
-                      <p></p>
-                      <p><strong>Egoless team</strong></p>
-                      <p>In this structure, every team member is equal in terms of responsibility and accountability. When any decision is required, consensus must be reached. This team structure is also known as a democratic team structure. This team structure
-                        usually finds a good solution to a relatively hard problem as all team members contribute ideas.</p>
-                      <p>However, the democratic nature of the team structure bears a higher risk of falling apart due to the absence of an authority figure to manage the team and resolve conflicts.</p>
-                      <p><strong>Chief programmer team</strong></p>
-                      <p>Frederick Brooks proposed that software engineers learn from the medical surgical team in an operating room. In such a team, there is always a chief surgeon, assisted by experts in other areas. Similarly, in a chief programmer team
-                        structure, there is a single authoritative figure, the chief programmer. Major decisions, e.g. system architecture, are made solely by him/her and obeyed by all other team members. The chief programmer directs and coordinates the
-                        effort of other team members. When necessary, the chief will be assisted by domain specialists e.g. business specialists, database expert, network technology expert, etc. This allows individual group members to concentrate solely
-                        on the areas where they have sound knowledge and expertise.</p>
-                      <p>The success of such a team structure relies heavily on the chief programmer. Not only must he be a superb technical hand, he also needs good managerial skills. Under a suitably qualified leader, such a team structure is known to
-                        produce successful work. .</p>
-                      <p><strong>Strict hierarchy team</strong></p>
-                      <p>In the opposite extreme of an egoless team, a strict hierarchy team has a strictly defined organization among the team members, reminiscent of the military or bureaucratic government. Each team member only works on his assigned tasks
-                        and reports to a single “boss”.</p>
-                      <p>In a large, resource-intensive, complex project, this could be a good team structure to reduce communication overhead.</p>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header=":muscle: Exercises" expandable="">
-                          <div>
-                            <panel header=":lock::key: Which team structure is the most suitable for a school project?">
-                              <question>
-                                <p>Which team structure is the most suitable for a school project?</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Egoless</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Chief programmer</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Strict hierarchy</li>
-                                </ul>
-                                <div slot="answer">
-                                  <ul class="task-list">
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Egoless</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Chief programmer</li>
-                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Strict hierarchy</li>
-                                  </ul>
-                                  <p>Explanation: Given that you are all peers and beginners, Egoless team structure seems most suitable for the class project. It’s OK to try out a different team structure in your project though.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
                       <div></div>
                     </div>
                   </div>
@@ -5188,56 +5256,6 @@ A negative test case: i = null;
               </panel>
             </panel>
           </div>
-          <div>
-            <panel type="warning" header=":trophy: Can explain test coverage :star::star:" expandable="" expanded="" no-close="">
-              <panel type="info" header=":trophy: Can explain how test coverage works :star::star::star:" expandable="">
-                <div>
-                  <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-</span></strong>
-                    </span>
-                  </p>
-                  <div>
-                    <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>Measuring coverage is often done using <em>coverage analysis tools</em>. Coverage measurements are used to improve testing E&amp;E (Effectiveness and Efficiency). For example, if a set of test cases does not achieve 100% branch coverage,
-                        more test cases are added to cover missed branches.</p>
-                      <p>Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
-                    </div>
-                    <div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <panel header=":dart: Evidence" expanded="">
-                  <p>...</p>
-                </panel>
-              </panel>
-            </panel>
-          </div>
-          <panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable="">
-            <div>
-              <p><span class="dimmed"><strong><span>Tools → JUnit →
-</span></strong>
-                </span>
-              </p>
-              <div>
-                <h4 id="junit-intermediate-three">JUnit: Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p>...</p>
-                </div>
-                <div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <panel header=":dart: Evidence" expanded="">
-              <p>...</p>
-            </panel>
-          </panel>
           <div>
             <panel type="info" header=":trophy: Can explain some QA techniques complementary to testing :star::star::star:" expandable="" expanded="" no-close="">
               <panel type="info" header=":trophy: Can explain software quality assurance :star::star::star:" expandable="">

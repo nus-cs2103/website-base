@@ -650,11 +650,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="t8tpc" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="t8tpc" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="t8tpc" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="t8tpc" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="t8tpc" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="hew0z" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="hew0z" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="hew0z" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="hew0z" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="hew0z" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -1920,13 +1920,14 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <p>Update the following pages:</p>
       <ul>
         <li>
-          <p><strong>User Guide</strong>:<br> Update the user guide to describe what the product would be like when it is at 2.0. Mark features not implemented yet as <code>Coming in v2.0</code>. You may use UI mockups where necessary.</p>
+          <p><strong>User Guide</strong>:<br> Update the user guide to describe what the product would be like when it is at 2.0. Mark features not implemented yet as <code>Coming in v2.0</code>. You may use UI mockups where necessary. You are recommended
+            to divide this task among team members such that <mark>each team member describes the features she will implement if this project were to continue until v2.0</mark><span class="dimmed"> Reason: in the final project submission you will be graded based on the sections of the User Guide you wrote</span>.</p>
         </li>
         <li>
           <p><strong>About Us page</strong>:<br> This page is used for module admin purposes. <mark>Please follow the format closely to avoid penalties</mark>.</p>
           <ul>
-            <li>Replace info of SE-EDU developers with info of your team, including
-              <trigger trigger="click" for="modal:v11-photo">a <mark>suitable photo</mark></trigger>.</li>
+            <li>Replace info of SE-EDU developers with info of your team, including a <mark>suitable photo</mark> as described
+              <trigger trigger="click" for="modal:v11-photo">here</trigger>.</li>
             <li>Including the name/photo of the supervisor/lecturer is optional.</li>
             <li>The photo of a team member should be <code>doc/images/githbub_id_in_lower_case.png</code><span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
           </ul>
@@ -1970,12 +1971,90 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
 <h2 id="v12-week-9">v1.2 [week 9]</h2>
 <div id="admin-project-v12">
   <div>
+    <h3 id="v12-project-management">v1.2 Project Management</h3>
+    <tip-box type="important">
+      <p>Starting from this version, you are <em>required</em> to, <strong>use GitHub to manage your milestones</strong> as described in
+        <trigger trigger="click" for="modal:v12-projectTracking">[Admin » Appendix F: Github: Project Schedule Tracking]</trigger>.</p>
+    </tip-box>
+    <p>As before, you are <em>recommended</em> (but not required) to follow the forking workflow when evolving the product.</p>
+    <modal large="" title="Admin &raquo; Appendix F: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
+      <div>
+        <h2 id="project-schedule-tracking">Project Schedule Tracking</h2>
+        <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current
+          status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+        <h3 id="using-issues">Using Issues:</h3>
+        <ul>
+          <li>
+            <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong><span class="dimmed">e.g.</span><code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></p>
+          </li>
+          <li>
+            <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
+          </li>
+          <li>
+            <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. <span class="dimmed">e.g.</span></p>
+            <ul>
+              <li><span class="dimmed">👍 Good: Update class diagram in the project manual for v1.5</span></li>
+              <li><span class="dimmed">👎 Bad (reasons: not a one-person task, not small enough): Write the project manual</span></li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Write a descriptive title for the issue.</strong><span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
+          </li>
+          <li>
+            <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
+          </li>
+          <li>
+            <p><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></p>
+          </li>
+          <li>
+            <p><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></p>
+          </li>
+          <li>
+            <p><strong>Do not track things taken for granted.</strong><span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+          </li>
+          <li>
+            <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal
+              description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
+          </li>
+          <li>
+            <p><strong>Assign tasks to team members using the <code>owner</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+          </li>
+          <li>
+            <p><strong>Use <code>status</code> labels to indicate the status of the issue.</strong> i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.</p>
+          </li>
+        </ul>
+        <div id="using-milestones">
+          <h3 id="using-milestones">Using Milestones:</h3>
+          <ul>
+            <li>
+              <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
+            </li>
+            <li>
+              <p>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</p>
+            </li>
+            <li>
+              <p>Note that you can change the milestone plan along the way as necessary.</p>
+            </li>
+          </ul>
+          <tip-box type="important">
+            <p>To consider the milestone as 'reached', <strong>you should have the following done <em>before</em> the tutorial begins. Missed milestones will count against the 'project management' component of your final grade</strong>:</p>
+            <ul>
+              <li>A working product tagged with the correct tag (e.g. v1.2) and pushed to the main repo.</li>
+              <li>All tests passing on Travis.</li>
+              <li>Milestone updated to match the product.</li>
+              <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
+              <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
+            </ul>
+          </tip-box>
+        </div>
+      </div>
+    </modal>
     <h3 id="v12-product">v1.2 Product</h3>
     <p><strong>Submission</strong>: Update code in GitHub.</p>
     <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
     <ul>
-      <li>A new version has been released on GitHub.</li>
-      <li>The new version has moved towards v2.0</li>
+      <li>A new version tagged <code>v1.2</code> is in your repo.</li>
+      <li>The version <code>v1.2</code> is step towards <code>v2.0</code> (but it does not matter how big a step it is)</li>
     </ul>
     <h3 id="v12-documentation">v1.2 Documentation</h3>
     <ul>
@@ -1989,7 +2068,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <li>
         <p><strong>Developer Guide</strong>:</p>
         <ul>
-          <li>Each member should describe the implementation of at least one feature she is adding. <br> Expected length: ~1 page per person</li>
+          <li>Each member should describe the implementation of at least one enhancement she has added (or planning to add). <br> Expected length: ~1 page per person</li>
           <li>The description can contain things such as,
             <ul>
               <li>How the feature is implemented.</li>
@@ -1997,9 +2076,9 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
               <li>Alternatives considered.</li>
             </ul>
           </li>
-          <li>The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply technical matters using prose, examples, diagrams, code snippets, etc. appropriately. To that
+          <li>The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that
             end, you may also describe features that you plan to implement in the future, even beyond v1.5 (hypothetically).</li>
-          <li>For an example, see the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide.</li>
+          <li>For an example, see <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-mechanism">the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide</a>.</li>
         </ul>
       </li>
     </ul>
@@ -2012,9 +2091,8 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
   <div>
     <h3 id="v13-product">v1.3 Product</h3>
     <tip-box type="important">
-      <p>Starting from this version, you are required to,</p>
+      <p>Starting from this version, you are <em>required</em> to,</p>
       <ul>
-        <li><strong>Use GitHub's milestone mechanism</strong> to manage your milestones.</li>
         <li><strong>Do a proper release</strong> as described in the Developer Guide.</li>
       </ul>
     </tip-box>
@@ -3606,10 +3684,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       </ul>
     </div>
     <div id="project-schedule-tracking">
-      <h2 id="project-schedule-tracking">Project Schedule Tracking</h2>
+      <h2 id="project-schedule-tracking-2">Project Schedule Tracking</h2>
       <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current
         status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
-      <h3 id="using-issues">Using Issues:</h3>
+      <h3 id="using-issues-2">Using Issues:</h3>
       <ul>
         <li>
           <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong><span class="dimmed">e.g.</span><code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></p>
@@ -3651,7 +3729,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         </li>
       </ul>
       <div id="using-milestones">
-        <h3 id="using-milestones">Using Milestones:</h3>
+        <h3 id="using-milestones-2">Using Milestones:</h3>
         <ul>
           <li>
             <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
