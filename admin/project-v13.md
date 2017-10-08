@@ -2,8 +2,7 @@
 
 <tip-box type="important">
 
-Starting from this version, you are required to,
-* **Use GitHub's milestone mechanism** to manage your milestones.
+Starting from this version, you are _required_ to,
 * **Do a proper release** as described in the Developer Guide.
 
 </tip-box>

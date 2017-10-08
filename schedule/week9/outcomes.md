@@ -9,9 +9,61 @@
 
 <!-- ==================================================================================================== -->
 
+<include src="outcome-schedule.md" />
+
+<!-- ==================================================================================================== -->
+
 <include src="outcome-defensiveProgramming.md" />
 
 <!-- ==================================================================================================== -->
+
+<include src="outcome-testCoverage.md" />
+
+<!-- ==================================================================================================== -->
+
+
+<panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable>
+  <include src="../../book/junit/intermediate/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-substitutability.md" />
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="**`W9.` Can describe the implementation from a develolper's perspective** :star:" no-close>
+
+
+  <panel header=":dart: Evidence" expanded>
+  
+Covered by 'Project Management' component v1.2:
+
+<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="**`W9.` Can use miletones to schedule/track project progress** :star:" no-close>
+  <panel header=":dart: Evidence" expanded>
+
+Covered by the 'Project Management' component of v1.2:
+
+<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+
 
 <include src="outcome-tdd.md" />
 
@@ -62,34 +114,11 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-substitutability.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-schedule.md" />
-
-<!-- ==================================================================================================== -->
-
 <include src="outcome-testCaseDesignTypes.md" />
 
 <!-- ==================================================================================================== -->
 
 <include src="outcome-heuristic.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-testCoverage.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable>
-  <include src="../../book/junit/intermediate/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
 
 <!-- ==================================================================================================== -->
 

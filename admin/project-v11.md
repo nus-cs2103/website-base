@@ -37,11 +37,11 @@ Update the following pages:
 
 
 * **User Guide**:  
-    Update the user guide to describe what the product would be like when it is at 2.0.  Mark features not implemented yet as `Coming in v2.0`. You may use UI mockups where necessary.
+    Update the user guide to describe what the product would be like when it is at 2.0.  Mark features not implemented yet as `Coming in v2.0`. You may use UI mockups where necessary. You are recommended to divide this task among team members such that ==each team member describes the features she will implement if this project were to continue until v2.0== %%&nbsp;Reason: in the final project submission you will be graded based on the sections of the User Guide you wrote%%.
 
 * **About Us page**:  
   This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
-  * Replace info of SE-EDU developers with info of your team, including <trigger trigger="click" for="modal:v11-photo">a ==suitable photo==</trigger>.  
+  * Replace info of SE-EDU developers with info of your team, including a ==suitable photo== as described <trigger trigger="click" for="modal:v11-photo">here</trigger>.  
   * Including the name/photo of the supervisor/lecturer is optional. 
   * The photo of a team member should be `doc/images/githbub_id_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%.
 
