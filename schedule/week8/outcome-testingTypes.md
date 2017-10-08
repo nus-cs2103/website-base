@@ -3,7 +3,9 @@
 %%**Unit Testing:**%%
 
 <dynamic-panel src="lo-explainUnitTesting.md" type="danger" header="`W8.5a` Can explain unit testing :star:"/>
-<dynamic-panel src="lo-useStubs.md" type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" /><p/>
+<dynamic-panel src="lo-useStubs.md" type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" />
+<dynamic-panel src="lo-explainDependencyInjection.md" type="success" header="`W8.5c` Can explain dependency injection :star::star::star::star:" />
+<dynamic-panel src="lo-useDependencyInjection.md" type="success" header="`W8.5d` Can use dependency injection :star::star::star::star:" /><p/>
 
 %%**Integration Testing:**%%
 
