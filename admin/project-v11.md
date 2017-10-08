@@ -37,7 +37,15 @@ Update the following pages:
 
 
 * **User Guide**:  
-    Update the user guide to describe what the product would be like when it is at 2.0.  Mark features not implemented yet as `Coming in v2.0`. You may use UI mockups where necessary. You are recommended to divide this task among team members such that ==each team member describes the features she will implement if this project were to continue until v2.0== %%&nbsp;Reason: in the final project submission you will be graded based on the sections of the User Guide you wrote%%.
+    Update the user guide to describe what the product would be like when it is at 2.0.  Mark features not implemented yet as `Coming in v2.0`. You may use UI mockups where necessary. 
+
+<tip-box type="tip"> 
+
+It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%&nbsp;e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%. For features that are not planned to be implemented by v1.5, you can divide them based on who will be implementing them if the project were to continue until v2.0.
+
+%%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
+  
+</tip-box>
 
 * **About Us page**:  
   This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
