@@ -20,14 +20,7 @@ Explain coupling with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="warning" header="`W8.3c` Can reduce coupling :star::star:">
-  <include src="../../book/designPrinciples/coupling/how/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-Explain with examples from AddressBook-Level4 (or your own project) how coupling can be increased/decreased.
-
-  </panel>
-</panel>
+<dynamic-panel type="warning" src="lo-reduceCoupling.md" header="`W8.3c` Can reduce coupling :star::star:"/>
 
 <panel type="success" header="`W8.3d` Can identify types of coupling :star::star::star::star:">
   <include src="../../book/designPrinciples/coupling/types/full.md" />
