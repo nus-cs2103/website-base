@@ -2,15 +2,21 @@
 
 <tip-box type="important">
 
-Starting from this version, you are _required_ to, **use GitHub to manage your milestones** as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix F: Github: Project Schedule Tracking]</trigger>.
+Starting from this version, you are _required_ to, **use GitHub to manage your milestones** as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix F: GitHub: Project Schedule Tracking]</trigger>.
 
 </tip-box>
 
-As before, you are _recommended_ (but not required) to follow the forking workflow when evolving the product.
+As before, you are _recommended_ (but not required) to **follow the forking workflow** when evolving the product.
 
 <modal large title="Admin &raquo; Appendix F: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
+
+**From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.2, v1.3, ...">weekly milestone</tooltip>; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important LO of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>%%.  ==If you <tooltip content="failed to contribute code to">miss</tooltip> more than two weekly milestones, you will start losing marks.== <br>
+  If an enhancement is too big to complete in one week, here are some options:
+   * [Preferred] Deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first. 
+   * Do a different, smaller, enhancement for the current week while working on a bigger enhancement to deliver in a future week.
+   * Choose not contribute to the weekly milestone. This should be fine as long as you don't miss more than two milestones.
 
 ### v1.2 Product
 
