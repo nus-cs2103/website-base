@@ -2,11 +2,7 @@
 
 <panel type="info" header=":trophy: Can explain testability :star::star::star:" expandable>
   <include src="../../book/testing/introduction/testability/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
+<!-- TODO: add evidence -->
 </panel>
 
 <panel type="warning" header=":trophy: Can explain test coverage :star::star::star:">
@@ -32,7 +28,7 @@ Measure test coverage in your project.
   <include src="../../book/junit/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Use the mentioned features in the project.
 
   </panel>
 </panel>
