@@ -1,4 +1,4 @@
-<panel type="info" header=":trophy: Can use defensive programming :star::star::star:" expandable expanded no-close>
+<panel type="info" header=":trophy: Can use defensive programming :star::star::star:" expandable no-close>
 
 <panel type="info" header=":trophy: Can explain defensive programming :star::star::star:" expandable>
   <include src="../../book/errorHandling/defensiveProgramming/what/full.md" />

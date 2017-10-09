@@ -1,4 +1,4 @@
-<panel type="warning" header=":trophy: Can use basic scheduling and tracking tools :star::star:" expandable expanded no-close>
+<panel type="warning" header=":trophy: Can use basic scheduling and tracking tools :star::star:" expandable no-close>
 
 <panel type="warning" header=":trophy: Can explain milestones :star::star:" expandable>
   <include src="../../book/projectPlanning/milestones/full.md" />

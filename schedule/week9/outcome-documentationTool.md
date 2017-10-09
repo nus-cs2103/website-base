@@ -1,4 +1,4 @@
-<panel type="warning" header=":trophy: Can use documentation tools :star::star:" expandable expanded no-close>
+<panel type="warning" header=":trophy: Can use documentation tools :star::star:" expandable no-close>
 
 <panel type="warning" header=":trophy: Can explain JavaDoc :star::star:" expandable>
   <include src="../../book/documentation/tools/javaDoc/what/full.md" />

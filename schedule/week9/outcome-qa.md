@@ -1,4 +1,4 @@
-<panel type="info" header=":trophy: Can explain some QA techniques complementary to testing :star::star::star:" expandable expanded no-close>
+<panel type="info" header=":trophy: Can explain some QA techniques complementary to testing :star::star::star:" expandable no-close>
 
 <panel type="info" header=":trophy: Can explain software quality assurance :star::star::star:" expandable>
   <include src="../../book/qualityAssurance/introduction/what/full.md" />

@@ -13,27 +13,27 @@
 
 <!-- ==================================================================================================== -->
 
+<include src="outcome-testingIntermediate.md" />
+
+<!-- ==================================================================================================== -->
+
 <include src="outcome-defensiveProgramming.md" />
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-testCoverage.md" />
+<include src="outcome-designIntermediate.md" />
 
 <!-- ==================================================================================================== -->
 
-
-<panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable>
-  <include src="../../book/junit/intermediate/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
+<include src="outcome-qa.md" />
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-substitutability.md" />
+<include src="outcome-documentation.md" />
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-documentationTool.md" />
 
 <!-- ==================================================================================================== -->
 
@@ -63,81 +63,7 @@ Covered by the 'Project Management' component of v1.2:
 
 <!-- ==================================================================================================== -->
 
-
-
-<include src="outcome-tdd.md" />
-
-<!-- ==================================================================================================== -->
-
 <include src="outcome-classDiagram.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
-  <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable>
-  <include src="../../book/principles/interfaceSegregationPrinciple/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<panel type="info" header=":trophy: Can use advanced class diagrams :star::star::star:" expandable>
-  <include src="../../book/modeling/modelingStructures/classDiagramsAdvanced/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-ep.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-boundaryValueAnalysis.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-testCaseDesignTypes.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-heuristic.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-qa.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="info" header=":trophy: Can explain testability :star::star::star:" expandable>
-  <include src="../../book/testing/introduction/testability/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-testCaseDesignCombined.md" />
 
 <!-- ==================================================================================================== -->
 

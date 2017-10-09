@@ -1,4 +1,4 @@
-<panel type="info" header=":trophy: Can implement substitutability :star::star::star:" expandable expanded no-close>
+<panel type="info" header=":trophy: Can use intermediate-level design principles :star::star::star:" expandable no-close>
 
 <panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable>
   <include src="../../book/oopDesign/inheritance/substitutability/full.md" />
@@ -36,5 +36,25 @@
 
   </panel>
 </panel>
+
+<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable>
+  <include src="../../book/principles/interfaceSegregationPrinciple/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
+  <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
+
 
 </panel>
