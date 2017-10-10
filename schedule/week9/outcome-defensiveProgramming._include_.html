@@ -225,9 +225,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
 }
 </code></pre>
                   <p>This is a defensive implementation of the association.</p>
-                  <ul radio-group="c8loh" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="c8loh" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="c8loh" type="radio"> False</label></li>
+                  <ul radio-group="7nxrx" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="7nxrx" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="7nxrx" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>False</p>
@@ -604,9 +604,9 @@ r1.setPlayer(p2);
               <panel header=":lock::key: True or False?">
                 <question>
                   <p>Bidirectional associations, if not implemented properly, can result in referential integrity violations.</p>
-                  <ul radio-group="smq6c" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smq6c" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smq6c" type="radio"> False</label></li>
+                  <ul radio-group="39t84" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="39t84" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="39t84" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True</p>
@@ -623,7 +623,13 @@ r1.setPlayer(p2);
 </panel>
 <panel type="success" header=":trophy: Can explain when to use defensive programming :star::star::star::star:" expandable="">
   <div>
-    <p><span class="dimmed"><strong><span>Implementation → Error Handling →
+    <div>
+      <p>
+        <panel src="/website\book\errorHandling\defensiveProgramming\what\full._include_.html" header="%%:mortar_board: Implementation &rarr; Error Handling &rarr; Defensive Programming &rarr; What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Implementation → Error Handling → Defensive Programming →
 </span></strong>
       </span>
     </p>
@@ -632,13 +638,13 @@ r1.setPlayer(p2);
     </div>
     <div id="main">
       <div>
-        <p>It is not necessary to be 100% defensive all the time. While defensive code may be less prone to be misused or abused, such code can also be more complicated and slower to run.</p>
-        <p>The degree of defensiveness depends on many factors such as:</p>
+        <p><strong>It is not necessary to be 100% defensive all the time.</strong> While defensive code may be less prone to be misused or abused, such code can also be more complicated and slower to run.</p>
+        <p>The suitable degree of defensiveness depends on many factors such as:</p>
         <ul>
-          <li>How critical is the reliability of the system?</li>
+          <li>How critical is the system?</li>
           <li>Will the code be used by programmers other than the author?</li>
           <li>The level of programming language support for defensive programming</li>
-          <li>The overhead of being defensive.</li>
+          <li>The overhead of being defensive</li>
         </ul>
       </div>
       <div>
@@ -654,17 +660,9 @@ r1.setPlayer(p2);
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. can make the code more complex.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. can make the code less susceptible to misuse.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. can require extra effort.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. is all of the above.</li>
                   </ul>
                   <div slot="answer">
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. can make the program slower.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. can make the code longer.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. can make the code more complex.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. can make the code less susceptible to misuse.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. can require extra effort.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. is all of the above.</li>
-                    </ul>
+                    <p>(a)(b)(c)(d)(e)</p>
                     <p>Explanation: Defensive programming requires a more checks, possibly making the code longer, more complex, and possibly slower. Use it only when benefits outweigh costs, which is often.</p>
                   </div>
                 </question>
@@ -676,24 +674,24 @@ r1.setPlayer(p2);
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
-  </panel>
 </panel>
 <panel type="success" header=":trophy: Can explain DbC approach :star::star::star::star:" expandable="">
   <div>
+    <div></div>
+    <p></p>
     <p><span class="dimmed"><strong><span>Implementation → Error Handling →
 </span></strong>
       </span>
     </p>
     <div>
-      <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+      <h4 id="design-by-contract-three">Design by Contract <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
     </div>
     <div id="main">
       <div>
+        <p><strong><tooltip content="term was coined by Bertrand Meyer">Design by contract (DbC)</tooltip> is an approach for designing software that requires defining formal, precise and verifiable interface specifications for software components.</strong></p>
         <p>Suppose an operation is implemented with the behavior specified precisely in the API (preconditions, post conditions, exceptions etc.). When following the defensive approach, the code should first check if the preconditions have been met. Typically,
           exceptions are thrown if preconditions are violated. In contrast, the <em>Design-by-Contract (DbC)</em> approach to coding assumes that it is the responsibility of the caller to ensure all preconditions are met. The operation will honor the
-          contract only if the preconditions have been met. If any of them have not been met, the behavior of the operation is “unspecified”.</p>
+          contract only if the preconditions have been met. If any of them have not been met, the behavior of the operation is &quot;unspecified&quot;.</p>
         <p>Languages such as Eiffel have native support for DbC. For example, preconditions of an operation can be specified in Eiffel and the language runtime will check precondition violations without the need to do it explicitly in the code. To follow
           the DbC approach in languages such as Java and C++ where there is no built-in DbC support, assertions can be used to confirm pre-conditions.</p>
       </div>
@@ -701,21 +699,17 @@ r1.setPlayer(p2);
         <div>
           <panel header=":muscle: Exercises" expandable="">
             <div>
-              <panel header=":lock::key: What is the incorrect statement about the Design-by-contract approach to coding?">
+              <panel header=":lock::key: Statements about the Design-by-contract approach?">
                 <question>
-                  <p>What is the incorrect statement about the Design-by-contract approach to coding?</p>
+                  <p>Which statements are correct?</p>
                   <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is not natively supported by Java and C++.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is an alternative to OOP.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It assumes the caller of a method is responsible for ensuring all preconditions are met.</li>
                   </ul>
                   <div slot="answer">
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is not natively supported by Java and C++.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. It is an alternative to OOP.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It assumes the caller of a method is responsible for ensuring all preconditions are met.</li>
-                    </ul>
-                    <p>Explanation: DbC is not an alternative to OOP. We can use DbC in an OOP solution. DbC is an alternative to defensive programming.</p>
+                    <p>(a)<s>(b)</s>(c)(d)</p>
+                    <p>Explanation: DbC is not an alternative to OOP. We can use DbC in an OOP solution.</p>
                   </div>
                 </question>
               </panel>
@@ -726,7 +720,4 @@ r1.setPlayer(p2);
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
-  </panel>
 </panel>
