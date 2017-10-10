@@ -20,18 +20,10 @@
 
 <panel type="success" header=":trophy: Can explain when to use defensive programming :star::star::star::star:" expandable>
   <include src="../../book/errorHandling/defensiveProgramming/when/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
+<!-- TODO: add evidence -->
 </panel>
 
 <panel type="success" header=":trophy: Can explain DbC approach :star::star::star::star:" expandable>
   <include src="../../book/errorHandling/designByContract/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
+<!-- TODO: add evidence -->
 </panel>
