@@ -17,7 +17,7 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-defensiveProgramming.md" />
+<dynamic-panel src="outcome-defensiveProgramming.md" type="info" header=":trophy: Can use defensive programming :star::star::star:" expandable no-close />
 
 <!-- ==================================================================================================== -->
 

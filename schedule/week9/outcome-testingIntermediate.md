@@ -35,11 +35,7 @@ Use the mentioned features in the project.
 
 <panel type="success" header=":trophy: Can explain TDD :star::star::star::star:" expandable>
   <include src="../../book/testing/tdd/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
+ <!-- TODO: add evidence -->
 </panel>
 
 </panel>
