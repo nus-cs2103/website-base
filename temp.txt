@@ -1,28 +1,65 @@
+**`W7.4` Can use assertions** ⭐️⭐️⭐️
+- [ ] `W7.4c` Can use assertions optimally ⭐️⭐️⭐️⭐️
+<br>
 
-- [ ] **`W2.1` Can use Git to save history** ⭐️
-- [ ] `W2.1f` Can set Git to ignore files ⭐️⭐️
+**`W7.6` Can use intermediate-level sequence diagrams** ⭐️⭐️
+- [ ] `W7.6g` Can interpret sequence diagrams with parallel paths ⭐️⭐️⭐️⭐️
+<br>
 
-- [ ] **`W2.2` Can use basic features of an IDE** ⭐️
-- [ ] `W2.2c` Can navigate code effectively using IDE features ⭐️⭐️
-
-- [ ] **`W2.3` Can automate simple regression testing of text UIs** ⭐️⭐️
-- [ ] `W2.3a` Can explain testing ⭐️⭐️
-- [ ] `W2.3b` Can explain regression testing ⭐️⭐️
-- [ ] `W2.3c` Can explain test automation ⭐️⭐️
-- [ ] `W2.3d` Can semi-automate testing of CLIs ⭐️⭐️
-
-- [ ] **`W2.4` Can use Java Collections** ⭐️⭐️
-- [ ] `W2.4` Can use Java Collections ⭐️⭐️
-
-------
-
-- [ ] **`W2.5` Can use Java varargs feature** ⭐️⭐️⭐️
+- [ ] **`W7.9` Can use Java8 streams** ⭐️⭐️⭐️⭐️
+<br>
 
 
-------
+
+======
+<br>
 
 
-- [ ] **`W2.6` Can explain pros and cons of software engineering** ⭐️⭐️⭐️⭐️
+======
 
 
-------
+
+
+
+
+======
+
+
+**- [ ] `W8.1` Can explain architectural styles** ⭐️⭐️
+- [ ] `W8.1c`  Can identify client-server architectural style ⭐️⭐️⭐️
+- [ ] `W8.1d`  Can identify event-driven architectural style ⭐️⭐️⭐️
+- [ ] `W8.1h`  Can explain how architectural styles are combined ⭐️⭐️⭐️
+<br>
+
+**- [ ] `W8.2` Can explain integration approaches** ⭐️⭐️
+- [ ] `W8.2b`  Can explain how integration approaches vary based on amount merged at a time ⭐️⭐️⭐️
+- [ ] `W8.2c`  Can explain how integration approaches vary based on the order of integration ⭐️⭐️⭐️
+<br>
+
+**- [ ] `W8.3` Can use basic software design principles** ⭐️
+- [ ] `W8.3h`  Can explain open-closed principle (OCP) ⭐️⭐️⭐️
+<br>
+
+**- [ ] `W8.4` Can implement association classes** ⭐️⭐️⭐️
+- [ ] `W8.4a` Can explain the meaning of association classes ⭐️⭐️⭐️
+- [ ] `W8.4b` Can implement association classes ⭐️⭐️⭐️
+<br>
+
+**- [ ] `W8.5` Can explain different types of testing** ⭐️
+- [ ] `W8.5b`  Can use stubs to isolate an SUT from its dependencies ⭐️⭐️⭐️
+- [ ] `W8.5d`  Can do integration testing ⭐️⭐️⭐️
+- [ ] `W8.5f`  Can explain automated GUI testing ⭐️⭐️⭐️
+- [ ] `W8.5h`  Can explain the differences between system testing and acceptance testing ⭐️⭐️⭐️
+- [ ] `W8.5i`  Can explain alpha and beta testing ⭐️⭐️⭐️
+<br>
+
+**- [ ] `W8.6` Can apply basic product design guidelines** ⭐️⭐️⭐️
+
+
+======
+
+
+
+
+
+

@@ -5499,10 +5499,24 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
         </tip-box>
         <div>
-          <p>A defensive programmer codes under the assumption “if we leave room for things to go wrong, they <em>will</em> go wrong”. Therefore, a defensive programmer proactively tries to eliminate any room for things to go wrong.</p>
+          <p><strong>A defensive programmer codes under the assumption &quot;if we leave room for things to go wrong, they <em>will</em> go wrong&quot;.</strong> Therefore, a defensive programmer proactively tries to eliminate any room for things to go wrong.</p>
           <tip-box>
-            <p>Example:</p>
-            <p>{Defensive copying}</p>
+            <p>📦 Consider a <code>MainApp#getConfig()</code> a method that returns a <code>Config</code> object containing configuration data. A typical implementation is given below:</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainApp</span></span>{
+    Config config;
+    
+    <span class="hljs-comment">/** Returns the config object */</span>
+    <span class="hljs-function">Config <span class="hljs-title">getConfig</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> config;
+    }
+}
+</code></pre>
+            <p>If the returned Config object is not meant to be modified, a defensive programmer might use a more <em>defensive</em> implementation given below. <span class="dimmed">  This is more defensive because even if the returned <code>Config</code> object is modified (although it is not meant to be) it will not affect the <code>config</code> object inside the <code>MainApp</code> object.</span></p>
+            <pre><code class="hljs java">    <span class="hljs-comment">/** Returns a copy of the config object */</span>
+    <span class="hljs-function">Config <span class="hljs-title">getConfig</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> config.copy(); <span class="hljs-comment">//return a defensive copy</span>
+    }
+</code></pre>
           </tip-box>
         </div>
       </div>
@@ -5516,10 +5530,11 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </div>
         </tip-box>
         <div>
-          <p>Consider two classes, Account and Guarantor, with an association as shown in the following diagram:</p>
+          <p>Consider two classes, <code>Account</code> and <code>Guarantor</code>, with an association as shown in the following diagram:</p>
           <tip-box>
             <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
             <p></p>
+            <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Guarantor guarantor;
 
@@ -5528,28 +5543,30 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-            <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable as above. However, what if someone else in the team
-              used the <code>Account</code> class as:</p>
+            <p>However, what if someone else used the <code>Account</code> class like this?</p>
             <pre><code class="hljs java">Account a = <span class="hljs-keyword">new</span> Account();
 a.setGuarantor(<span class="hljs-keyword">null</span>);
 </code></pre>
-            <p>This results in an <code>Account</code> without a <code>Guarantor</code>! In a real banking system, this could have serious consequences! The code here did not try to prevent such a thing from happening. To proactively enforce the multiplicity
-              constraint, a solution is offered as follows:</p>
+            <p>This results in an <code>Account</code> without a <code>Guarantor</code>! In a real banking system, this could have serious consequences! The code here did not try to prevent such a thing from happening. We can make the code more defensive
+              by proactively enforcing the multiplicity constraint, like this:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> Guarantor guarantor;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span></span>{
-        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) stopSystemWithMessage(“multiplicity violated. Null Guarantor ”);
+        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) {
+            stopSystemWithMessage(<span class="hljs-string">"multiplicity violated. Null Guarantor"</span>);
+        }
         guarantor = g;
     }
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">setGuarantor</span> <span class="hljs-params">(Guarantor m)</span></span>{
-        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) stopSystemWithMessage(“multiplicity violated. Null Guarantor”);
+        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) {
+            stopSystemWithMessage(<span class="hljs-string">"multiplicity violated. Null Guarantor"</span>);
+        }
         guarantor = g;
     }
     …
 }
 </code></pre>
-            <p>In the class Account, <code>guarantor</code> has to be declared as a private variable to prevent the value from being changed from outside the class.</p>
           </tip-box>
         </div>
       </div>
@@ -5563,25 +5580,25 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           </div>
         </tip-box>
         <div>
-          <p>Consider the association given below. Here, a MinedCell cannot exist without a Mine and vice versa. The only way to enforce this is by simultaneous object creation. However, in Java and C++, only one object can be created at a time. Given below
-            are two alternatives. Both options violate the multiplicity for a short period of time.</p>
-          <tip-box>
-            <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
-            <p></p>
-            <p>Option 1:</p>
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
+          <p>Consider the association given below. A defensive implementation requires to ensure a <code>MinedCell</code> cannot exist without a <code>Mine</code> and vice versa which requires simultaneous object creation. However, Java can only create one
+            object at a time. Given below are two alternatives implementations, both of which violate the multiplicity for a short period of time.</p><img src="/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
+          <p></p>
+          <p>Option 1:</p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
     <span class="hljs-keyword">private</span> Mine mine;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">(Mine m)</span></span>{
-        <span class="hljs-keyword">if</span> (m == <span class="hljs-keyword">null</span>) error;
+        <span class="hljs-keyword">if</span> (m == <span class="hljs-keyword">null</span>) {
+            showError();
+        }
         mine = m;
     }
     …
 }
 </code></pre>
-            <p>Option 1 forces us to keep a <code>Mine</code> without a <code>MinedCell</code> (until the <code>MinedCell</code> is created).</p>
-            <p>Option 2:</p>
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
+          <p>Option 1 forces us to keep a <code>Mine</code> without a <code>MinedCell</code> (until the <code>MinedCell</code> is created).</p>
+          <p>Option 2:</p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
     <span class="hljs-keyword">private</span> Mine mine;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MinedCell</span><span class="hljs-params">()</span></span>{
@@ -5590,8 +5607,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     …
 }
 </code></pre>
-            <p>Option 2 is more defensive because the <code>Mine</code> is immediately linked to a <code>MinedCell</code>.</p>
-          </tip-box>
+          <p>Option 2 is more defensive because the <code>Mine</code> is immediately linked to a <code>MinedCell</code>.</p>
         </div>
       </div>
       <div>
@@ -5604,11 +5620,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           </div>
         </tip-box>
         <div>
-          <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
-          <tip-box>
-            <p>Example:</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
-            <p></p>
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
+          <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
@@ -5617,7 +5631,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     …
 }
 </code></pre>
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
     Man boyfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
@@ -5625,30 +5639,24 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     }
 }
 </code></pre>
-          </tip-box>
-          <p>The two classes are meant to be used as shown in (c) below. Now see what happens if the two classes were used as in (d) below. Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not defensive
-            enough to stop this “love triangle”. In such a situation, we say that <em>the referential integrity has been violated</em>. It simply means <em>there is an inconsistency in object references</em>.</p>
-          <tip-box>
-            <p>c)</p>
-            <pre><code class="hljs java">Woman jean;
+          <p>The two classes are meant to be used as follows:</p>
+          <pre><code class="hljs java">Woman jean;
 Man james;
 …
 james.setGirlfriend(jean);
 jean.setBoyfriend(james);
 </code></pre>
-          </tip-box>
-          <tip-box>
-            <p>d)</p>
-            <pre><code class="hljs java">Woman jean; Man james, yong;
+          <p>Suppose the two classes were used this instead:</p>
+          <pre><code class="hljs java">Woman jean; Man james, yong;
 …
 james.setGirlfriend(jean);  
 jean.setBoyfriend(yong);  
-</code></pre><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
-            <p></p>
-          </tip-box>
+</code></pre>
+          <p>Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not defensive enough to stop this &quot;love triangle&quot;. In such a situation, we say that <em>the referential integrity has been violated</em>.
+            It simply means <em>there is an inconsistency in object references</em>.</p><img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+          <p></p>
           <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
-          <tip-box>
-            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
     <span class="hljs-keyword">private</span> Man boyfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
@@ -5668,7 +5676,7 @@ jean.setBoyfriend(yong);
     ...
 }
 </code></pre>
-            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
     <span class="hljs-keyword">private</span> Woman girlfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
@@ -5687,7 +5695,6 @@ jean.setBoyfriend(yong);
    ...
 }
 </code></pre>
-          </tip-box>
           <p>When the code <code>james.setGirlfriend(jean)</code> is executed, the code ensures that <code>james</code> break up with any current girlfriend before he accepts <code>jean</code> as the girlfriend. Furthermore, the code ensures that <code>jean</code>            breaks up with any existing boyfriends and accepts <code>james</code> as the boyfriend.</p>
         </div>
       </div>
@@ -7904,9 +7911,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="jjafb" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="jjafb" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="jjafb" type="radio"> False</label></li>
+                          <ul radio-group="plkvw" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="plkvw" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="plkvw" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -8045,9 +8052,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="p257g" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="p257g" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="p257g" type="radio"> False</label></li>
+                          <ul radio-group="fs5bq" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="fs5bq" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="fs5bq" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
