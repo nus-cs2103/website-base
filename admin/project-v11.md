@@ -84,6 +84,7 @@ It is highly recommended that you **divide documentation work (in the User Guide
 * **README.md** page: Update it to match your project. In particular, add a UI mockup of your intended final product.  
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
     Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
+    You may remove the `Learning Outcomes` link and related pages.
 
 **Grading**: To consider this milestone as reached, you should have all v1.0 and v1.1 deliverables completed.
 
