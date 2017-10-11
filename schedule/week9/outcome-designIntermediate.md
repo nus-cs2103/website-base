@@ -1,4 +1,4 @@
-<panel type="info" header=":trophy: Can use intermediate-level design principles :star::star::star:" expandable no-close>
+
 
 <panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable>
   <include src="../../book/oopDesign/inheritance/substitutability/full.md" />
@@ -10,7 +10,7 @@
 </panel>
 
 
-<panel type="success" header=":trophy: Can explain dynamic and static binding :star::star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain dynamic and static binding :star::star::star:" expandable>
   <include src="../../book/oopDesign/inheritance/dynamicAndStaticBinding/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -55,6 +55,3 @@
   </panel>
 </panel>
 
-
-
-</panel>

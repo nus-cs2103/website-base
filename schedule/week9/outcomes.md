@@ -21,7 +21,7 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-designIntermediate.md" />
+<dynamic-panel src="outcome-designIntermediate.md" type="info" header=":trophy: Can use intermediate-level design principles :star::star::star:" dynamic/>
 
 <!-- ==================================================================================================== -->
 

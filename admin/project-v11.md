@@ -9,8 +9,8 @@
 **Objective**: Move the product from v1.0 towards v2.0 in a small incremental step.
 
 **Description**: 
-* Each member should try to add some enhancements that is in line with the vision for v2.0. Create a PR for the enhancement. 
-* We encourage enhancements that go beyond the component you are in charge of. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
+* Each member should add some enhancements that are in line with the vision for v2.0.  
+* These enhancements should go beyond the component you are in charge of, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
 
 <tip-box type="important">
 
@@ -21,12 +21,12 @@
  
 </tip-box>
 
-**Submission**: If you manage to merge any of the PRs, do a demo of the new functionality during the tutorial.
+**Submission**: Demo of the new functionality during the tutorial.
 
 **Grading**: Criteria to consider this milestone as reached
-* Minimal :star: : At least some ongoing PRs.
-* On track :star::star: : At least some PRs merged.
-* Ahead :star::star::star: : Each member has merged at least one PR.
+* Minimal :star: : Your enhancement touches components other than the ones you modified in v1.0 and you are able to demo it using your own computer. 
+* On track :star::star: : In addition, you have created a PR for the enhancement, it covers tests and documentation updates for the new feature, and the PR passes Travis checks.
+* Ahead :star::star::star: : Your PR has been reviewed and merged.
  
 </div>
 <div id="documentation">
