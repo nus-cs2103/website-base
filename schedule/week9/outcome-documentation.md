@@ -1,5 +1,7 @@
 <panel type="danger" header=":trophy: Can apply best practices when writing developer documents :star:" expandable no-close>
 
+%%**Type of Developer Docs:**%%
+
 <panel type="danger" header=":trophy: Can explain the two types of developer docs :star:" expandable>
   <include src="../../book/documentation/introduction/what/full.md" />
   <panel header=":dart: Evidence" expanded>
@@ -8,6 +10,10 @@ Give examples of the two types of developer documents from the project.
 
   </panel>
 </panel>
+
+<p>
+
+%%**Guideline: Aim for Comprehensibility**%%
 
 <panel type="danger" header=":trophy: Can explain the need for comprehensibility in documents :star:" expandable>
   <include src="../../book/documentation/guidelines/aimForComprehensibility/what/full.md" />
@@ -22,6 +28,10 @@ Follow the guideline when documenting the project.
 
   </panel>
 </panel>
+
+<p>
+
+%%**Guideline: Describe Top-Down**%%
 
 <panel type="warning" header=":trophy: Can distinguish between top-down and bottom up documentation :star::star:" expandable>
   <include src="../../book/documentation/guidelines/goTopDown/what/full.md" />
@@ -46,6 +56,10 @@ Follow the guideline when documenting the project.
   </panel>
 </panel>
 
+<p>
+
+%%**Guideline: Minimal but Sufficient**%%
+
 <panel type="info" header=":trophy: Can explain documentation should be minimal yet sufficient :star::star::star:" expandable>
   <include src="../../book/documentation/guidelines/documentMinimally/what/full.md" />
 <!-- TODO: add evidence -->
@@ -56,6 +70,19 @@ Follow the guideline when documenting the project.
   <panel header=":dart: Evidence" expanded>
 
 Follow the guideline when documenting the project.
+
+  </panel>
+</panel>
+
+<p>
+
+%%**Drawing Architecture Diagrams**%%
+
+<panel type="info" header=":trophy: Can draw architecture diagrams :star::star::star:" expandable>
+  <include src="../../book/architecture/architectureDiagrams/drawing/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Follow the guidelines when documenting the project.
 
   </panel>
 </panel>

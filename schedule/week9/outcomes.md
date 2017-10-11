@@ -67,15 +67,5 @@ Covered by the 'Project Management' component of v1.2:
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can draw architecture diagrams :star::star::star:" expandable>
-  <include src="../../book/architecture/architectureDiagrams/drawing/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-<!-- ==================================================================================================== -->
-
 </div>
 </div>
