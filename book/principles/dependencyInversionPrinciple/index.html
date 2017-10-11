@@ -19,6 +19,8 @@
     </div>
   </tip-box>
   <div>
+    <div></div>
+    <p></p>
     <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
       </span>
@@ -28,7 +30,7 @@
     </div>
     <div id="main">
       <div>
-        <tip-box type="primary">
+        <tip-box type="definition">
           <div>
             <p><strong>Dependency Inversion Principle</strong>:</p>
             <ol>
@@ -38,8 +40,7 @@
           </div>
         </tip-box>
         <tip-box>
-          <p>Example:</p>
-          <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
+          <p>📦 In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
             (note that inheritance is a dependency). Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes. Here, <code>Payee</code> is the abstraction and
             is owned by the <code>Payroll</code> class.</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
           <p></p>

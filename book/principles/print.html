@@ -60,14 +60,13 @@
         </div>
       </tip-box>
       <div>
-        <tip-box type="primary">
+        <tip-box type="definition">
           <div>
             <p><strong>Interface Segregation Principle (ISP)</strong>: No client should be forced to depend on methods it does not use.</p>
           </div>
         </tip-box>
         <tip-box>
-          <p>Example:</p>
-          <p>The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
+          <p>📦 The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
@@ -105,7 +104,7 @@
         <p>LSP sounds same as
           <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability.
           However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-        <modal title="Textbook &raquo;" id="modal:lsp-substitutability">
+        <modal large="" title="Textbook &raquo;" id="modal:lsp-substitutability">
           <div>
             <div>
               <p>
@@ -161,7 +160,7 @@ AcademicStaff academicStaff = staff; // Not OK
             <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially
               break the <code>Payroll</code> class functionality.</li>
           </ul>
-          <panel type="seamless" header="Another example">
+          <panel type="seamless" header="%%Another example%%">
             <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different
               from the <code>width</code>.</p><img src="/website/book/oopImplementation/substitutability/images/rectangleSquare.png" height="120">
             <p></p>
@@ -204,7 +203,7 @@ AcademicStaff academicStaff = staff; // Not OK
         </div>
       </tip-box>
       <div>
-        <tip-box type="primary">
+        <tip-box type="definition">
           <div>
             <p><strong>Dependency Inversion Principle</strong>:</p>
             <ol>
@@ -214,8 +213,7 @@ AcademicStaff academicStaff = staff; // Not OK
           </div>
         </tip-box>
         <tip-box>
-          <p>Example:</p>
-          <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
+          <p>📦 In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
             (note that inheritance is a dependency). Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes. Here, <code>Payee</code> is the abstraction and
             is owned by the <code>Payroll</code> class.</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
           <p></p>

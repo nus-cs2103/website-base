@@ -36,9 +36,6 @@ AcademicStaff academicStaff = staff; // Not OK
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
-  </panel>
 </panel>
 <panel type="info" header=":trophy: Can explain dynamic and static binding :star::star::star:" expandable="">
   <div>
@@ -249,9 +246,6 @@ void calculateGrade (String matric) { ... }
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
-  </panel>
 </panel>
 <panel type="info" header=":trophy: Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expandable="">
   <div>
@@ -288,12 +282,12 @@ void calculateGrade (String matric) { ... }
               <panel header=":lock::key: Concepts related to polymorphism">
                 <question>
                   <p>Which one of these is least related to how OO programs achieve polymorphism?</p>
-                  <ul radio-group="smc9u" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smc9u" type="radio"> a. substitutability</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smc9u" type="radio"> b. dynamic binding</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smc9u" type="radio"> c. operation overloading</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smc9u" type="radio"> d. interfaces</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="smc9u" type="radio"> e. abstract classes</label></li>
+                  <ul radio-group="jntlf" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> a. substitutability</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> b. dynamic binding</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> c. operation overloading</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> d. interfaces</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> e. abstract classes</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(c)</p>
@@ -309,7 +303,7 @@ void calculateGrade (String matric) { ... }
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
+    <p>Explain how substitutability operation overriding, and dynamic binding relates to polymorphism by taking a real example from the project.</p>
   </panel>
 </panel>
 <panel type="info" header=":trophy: Can explain Liskov Substitution Principle :star::star::star:" expandable="">
@@ -333,7 +327,7 @@ void calculateGrade (String matric) { ... }
         <p>LSP sounds same as
           <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability.
           However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-        <modal title="Textbook &raquo;" id="modal:lsp-substitutability">
+        <modal large="" title="Textbook &raquo;" id="modal:lsp-substitutability">
           <div>
             <div>
               <p>
@@ -389,7 +383,7 @@ AcademicStaff academicStaff = staff; // Not OK
             <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially
               break the <code>Payroll</code> class functionality.</li>
           </ul>
-          <panel type="seamless" header="Another example">
+          <panel type="seamless" header="%%Another example%%">
             <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different
               from the <code>width</code>.</p><img src="/website/book/oopImplementation/substitutability/images/rectangleSquare.png" height="120">
             <p></p>
@@ -428,9 +422,9 @@ AcademicStaff academicStaff = staff; // Not OK
               <panel header=":lock::key: Is this LSP?">
                 <question>
                   <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                  <ul radio-group="vitx8" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="vitx8" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="vitx8" type="radio"> False</label></li>
+                  <ul radio-group="8mmgl" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="8mmgl" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="8mmgl" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True.</p>
@@ -446,11 +440,13 @@ AcademicStaff academicStaff = staff; // Not OK
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
+    <p>Give an example from the project where LSP is followed. Explain what kind of a change to that code will violate LSP <span class="dimmed"> e.g. Here, the superclass X and the subclass Y follow LSP. But if we change X in this way, or Y in this way, it will no longer follow LSP</span></p>
   </panel>
 </panel>
 <panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable="">
   <div>
+    <div></div>
+    <p></p>
     <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
       </span>
@@ -460,14 +456,13 @@ AcademicStaff academicStaff = staff; // Not OK
     </div>
     <div id="main">
       <div>
-        <tip-box type="primary">
+        <tip-box type="definition">
           <div>
             <p><strong>Interface Segregation Principle (ISP)</strong>: No client should be forced to depend on methods it does not use.</p>
           </div>
         </tip-box>
         <tip-box>
-          <p>Example:</p>
-          <p>The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
+          <p>📦 The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
@@ -491,12 +486,11 @@ AcademicStaff academicStaff = staff; // Not OK
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
-  </panel>
 </panel>
 <panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable="">
   <div>
+    <div></div>
+    <p></p>
     <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
       </span>
@@ -506,7 +500,7 @@ AcademicStaff academicStaff = staff; // Not OK
     </div>
     <div id="main">
       <div>
-        <tip-box type="primary">
+        <tip-box type="definition">
           <div>
             <p><strong>Dependency Inversion Principle</strong>:</p>
             <ol>
@@ -516,8 +510,7 @@ AcademicStaff academicStaff = staff; // Not OK
           </div>
         </tip-box>
         <tip-box>
-          <p>Example:</p>
-          <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
+          <p>📦 In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code> interface
             (note that inheritance is a dependency). Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes. Here, <code>Payee</code> is the abstraction and
             is owned by the <code>Payroll</code> class.</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
           <p></p>
@@ -528,7 +521,4 @@ AcademicStaff academicStaff = staff; // Not OK
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p>...</p>
-  </panel>
 </panel>

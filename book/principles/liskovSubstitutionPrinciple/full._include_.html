@@ -17,7 +17,7 @@
     <p>LSP sounds same as
       <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability.
       However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-    <modal title="Textbook &raquo;" id="modal:lsp-substitutability">
+    <modal large="" title="Textbook &raquo;" id="modal:lsp-substitutability">
       <div>
         <div>
           <p>
@@ -71,7 +71,7 @@ AcademicStaff academicStaff = staff; // Not OK
         <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially
           break the <code>Payroll</code> class functionality.</li>
       </ul>
-      <panel type="seamless" header="Another example">
+      <panel type="seamless" header="%%Another example%%">
         <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different
           from the <code>width</code>.</p><img src="/website/book/oopImplementation/substitutability/images/rectangleSquare.png" height="120">
         <p></p>
@@ -110,9 +110,9 @@ AcademicStaff academicStaff = staff; // Not OK
           <panel header=":lock::key: Is this LSP?">
             <question>
               <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-              <ul radio-group="x6jjy" class="radio-list">
-                <li class="radio-list-item"><label><input class="radio-list-input" name="x6jjy" type="radio"> True</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="x6jjy" type="radio"> False</label></li>
+              <ul radio-group="2nkfl" class="radio-list">
+                <li class="radio-list-item"><label><input class="radio-list-input" name="2nkfl" type="radio"> True</label></li>
+                <li class="radio-list-item"><label><input class="radio-list-input" name="2nkfl" type="radio"> False</label></li>
               </ul>
               <div slot="answer">
                 <p>True.</p>
