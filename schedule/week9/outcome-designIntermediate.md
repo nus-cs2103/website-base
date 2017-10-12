@@ -1,15 +1,16 @@
-<panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable>
+%%**How Polymorphism Works:**%% 
+
+<panel type="info" header="`W9.2a` Can explain substitutability :star::star::star:" no-close>
   <include src="../../book/oopDesign/inheritance/substitutability/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-
-<panel type="info" header=":trophy: Can explain dynamic and static binding :star::star::star:" expandable>
+<panel type="info" header="`W9.2b` Can explain dynamic and static binding :star::star::star:" no-close>
   <include src="../../book/oopDesign/inheritance/dynamicAndStaticBinding/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="info" header=":trophy: Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expandable>
+<panel type="info" header="`W9.2c` Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" no-close>
   <include src="../../book/oopDesign/polymorphism/mechanism/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -18,7 +19,11 @@ Explain how substitutability operation overriding, and dynamic binding relates t
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain Liskov Substitution Principle :star::star::star:" expandable>
+<br>
+
+%%**More Design Principles:**%%
+
+<panel type="info" header="`W9.2d` Can explain Liskov Substitution Principle :star::star::star:" no-close>
   <include src="../../book/principles/liskovSubstitutionPrinciple/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -27,12 +32,12 @@ Give an example from the project where LSP is followed. Explain what kind of a c
   </panel>
 </panel>
 
-<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable>
+<panel type="success" header="`W9.2e` Can explain interface segregation principle :star::star::star::star:" no-close>
   <include src="../../book/principles/interfaceSegregationPrinciple/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable>
+<panel type="success" header="`W9.2f` Can explain dependency inversion principle (DIP) :star::star::star::star:" no-close>
   <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
 <!-- TODO: add evidence -->
 </panel>

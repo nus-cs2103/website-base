@@ -7,32 +7,30 @@
 
 <div id="main">
 
-<!-- ==================================================================================================== -->
 
-<include src="outcome-schedule.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-testingIntermediate.md" />
+#### Design:
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel src="outcome-defensiveProgramming.md" type="info" header=":trophy: Can use defensive programming :star::star::star:" expandable no-close />
+<dynamic-panel src="outcome-classDiagram.md" type="warning" header="**`W9.1` Can use models to conceptualize an OO solution** :star::star:" />
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel src="outcome-designIntermediate.md" type="info" header=":trophy: Can use intermediate-level design principles :star::star::star:" dynamic/>
+<dynamic-panel src="outcome-designIntermediate.md" type="info" header="**`W9.2` Can use intermediate-level design principles** :star::star::star:" />
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-qa.md" />
+<br>
+
+#### Implementation:
+
+<dynamic-panel src="outcome-defensiveProgramming.md" type="info" header="**`W9.3` Can use defensive programming** :star::star::star:" />
 
 <!-- ==================================================================================================== -->
 
 <include src="outcome-documentation.md" />
 
 <!-- ==================================================================================================== -->
-
 <!-- TODO: add this back
  
 <include src="outcome-documentationTool.md" />
@@ -41,7 +39,27 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="**`W9.` Can describe the implementation from a develolper's perspective** :star:" no-close>
+<br>
+
+#### Quality Assurance:
+
+<include src="outcome-testingIntermediate.md" />
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-qa.md" />
+
+<!-- ==================================================================================================== -->
+
+<br>
+
+#### Project Management:
+
+<include src="outcome-schedule.md" />
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="**`W9.8` Can describe the implementation from a develolper's perspective** :star:" no-close>
 
 
   <panel header=":dart: Evidence" expanded>
@@ -55,7 +73,7 @@ Covered by 'Project Management' component v1.2:
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="**`W9.` Can use miletones to schedule/track project progress** :star:" no-close>
+<panel type="danger" header="**`W9.9` Can use miletones to schedule/track project progress** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by the 'Project Management' component of v1.2:
@@ -67,9 +85,6 @@ Covered by the 'Project Management' component of v1.2:
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-classDiagram.md" />
-
-<!-- ==================================================================================================== -->
 
 </div>
 </div>

@@ -1,11 +1,11 @@
-<panel type="warning" header=":trophy: Can use intermediate-level testing techniques :star::star:" expandable no-close>
+<panel type="warning" header="**`W9.5` Can use intermediate-level testing techniques** :star::star:" no-close>
 
-<panel type="info" header=":trophy: Can explain testability :star::star::star:" expandable>
+<panel type="info" header="`W9.5a` Can explain testability :star::star::star:" no-close>
   <include src="../../book/testing/introduction/testability/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header=":trophy: Can explain test coverage :star::star::star:">
+<panel type="warning" header="`W9.5b` Can explain test coverage :star::star::star:">
   <include src="../../book/testing/testCoverage/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -14,7 +14,7 @@ Explain what is test coverage and how it can be useful.
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can explain how test coverage works :star::star::star:">
+<panel type="info" header="`W9.5c` Can explain how test coverage works :star::star::star:">
   <include src="../../book/testing/testCoverage/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -24,7 +24,7 @@ Measure test coverage in your project.
 </panel>
 
 
-<panel type="info" header=":trophy: Can use intermediate features of JUnit :star::star::star:" expandable>
+<panel type="info" header="`W9.5d` Can use intermediate features of JUnit :star::star::star:" no-close>
   <include src="../../book/junit/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -33,7 +33,7 @@ Use the mentioned features in the project.
   </panel>
 </panel>
 
-<panel type="success" header=":trophy: Can explain TDD :star::star::star::star:" expandable>
+<panel type="success" header="`W9.5e` Can explain TDD :star::star::star::star:" no-close>
   <include src="../../book/testing/tdd/what/full.md" />
  <!-- TODO: add evidence -->
 </panel>
