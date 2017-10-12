@@ -114,33 +114,29 @@
                 <li>Top-down: Design the high-level design first and flesh out the lower levels later. This is especially useful when designing big and novel systems where the high-level design needs to be stable before lower levels can be designed.</li>
                 <li>Bottom-up: Design lower level components first and put them together to create the higher-level systems later. This is not usually scalable for bigger systems. One instance where this approach might work is when designing a variations
                   of an existing system or re-purposing existing components to build a new system.</li>
-                <li>Mix: Design the top levels using the top-down approach but switch to a bottom-up approach when designing the bottom later.</li>
+                <li>Mix: Design the top levels using the top-down approach but switch to a bottom-up approach when designing the bottom levels.</li>
               </ul>
             </div>
             <div>
               <div>
                 <panel header=":muscle: Exercises" expandable="">
                   <div>
-                    <panel header=":lock::key: True or False?">
+                    <panel header=":lock::key: Which is better?">
                       <question>
                         <p>Top-down design is better than bottom-up design.</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        <ul radio-group="lmv4y" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="lmv4y" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="lmv4y" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
-                          </ul>
-                          <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse. In CS2103, we enforce top-down design because beginner programmers only
-                            know bottom-up design which is not suitable in many situations.</p>
+                          <p>False</p>
+                          <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse.</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                 </panel>
-              </div>s
+              </div>
               <div></div>
             </div>
           </div>
@@ -158,24 +154,26 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>...</p>
+              <p><strong><em>Agile design</em> can be contrasted with <em>full upfront design</em> in the following way</strong>:</p>
+              <blockquote>
+                <p><strong>Agile designs are emergent, they’re not defined up front.</strong> Your overall system design will emerge over time, evolving to fulfill new requirements and take advantage of new technologies as appropriate. Although you will
+                  often do <strong>some initial architectural modeling at the very beginning</strong> of a project, this will be just enough to get your team going. This approach does not produce a fully documented set of models in place before you may
+                  begin coding. <sub>-- adapted from <a href="http://agilemodeling.com/essays/agileDesign.htm">agilemodeling.com</a></sub></p>
+              </blockquote>
             </div>
             <div>
               <div>
                 <panel header=":muscle: Exercises" expandable="">
                   <div>
-                    <panel header=":lock::key: True or False?">
+                    <panel header=":lock::key: Statement about agile design">
                       <question>
                         <p>Agile design camp expects the design to change over the product’s lifetime.</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        <ul radio-group="l8xh4" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="l8xh4" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="l8xh4" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                          </ul>
+                          <p>True</p>
                           <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design
                             approach.</p>
                         </div>

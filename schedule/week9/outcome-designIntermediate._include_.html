@@ -1,4 +1,5 @@
-<panel type="info" header=":trophy: Can explain substitutability :star::star::star:" expandable="">
+<p><span class="dimmed"><strong>How Polymorphism Works:</strong></span></p>
+<panel type="info" header="`W9.2a` Can explain substitutability :star::star::star:" no-close="">
   <div>
     <div>
       <p>
@@ -37,7 +38,7 @@ AcademicStaff academicStaff = staff; // Not OK
     </div>
   </div>
 </panel>
-<panel type="info" header=":trophy: Can explain dynamic and static binding :star::star::star:" expandable="">
+<panel type="info" header="`W9.2b` Can explain dynamic and static binding :star::star::star:" no-close="">
   <div>
     <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
 </span></strong>
@@ -247,7 +248,7 @@ void calculateGrade (String matric) { ... }
     </div>
   </div>
 </panel>
-<panel type="info" header=":trophy: Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expandable="">
+<panel type="info" header="`W9.2c` Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" no-close="">
   <div>
     <div>
       <p>
@@ -282,12 +283,12 @@ void calculateGrade (String matric) { ... }
               <panel header=":lock::key: Concepts related to polymorphism">
                 <question>
                   <p>Which one of these is least related to how OO programs achieve polymorphism?</p>
-                  <ul radio-group="jntlf" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> a. substitutability</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> b. dynamic binding</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> c. operation overloading</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> d. interfaces</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jntlf" type="radio"> e. abstract classes</label></li>
+                  <ul radio-group="0y957" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0y957" type="radio"> a. substitutability</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0y957" type="radio"> b. dynamic binding</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0y957" type="radio"> c. operation overloading</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0y957" type="radio"> d. interfaces</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0y957" type="radio"> e. abstract classes</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(c)</p>
@@ -306,7 +307,101 @@ void calculateGrade (String matric) { ... }
     <p>Explain how substitutability operation overriding, and dynamic binding relates to polymorphism by taking a real example from the project.</p>
   </panel>
 </panel>
-<panel type="info" header=":trophy: Can explain Liskov Substitution Principle :star::star::star:" expandable="">
+<br>
+<p><span class="dimmed"><strong>Design Approaches:</strong></span></p>
+<panel type="info" header="`W9.2d` Can explain top-down and bottom-up design :star::star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Design → Introduction →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="top-down-and-bottom-up-design-four">Top-Down and Bottom-Up Design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>Multi-level design can be done in a top-down manner, bottom-up manner, or as a mix.</strong></p>
+        <ul>
+          <li>Top-down: Design the high-level design first and flesh out the lower levels later. This is especially useful when designing big and novel systems where the high-level design needs to be stable before lower levels can be designed.</li>
+          <li>Bottom-up: Design lower level components first and put them together to create the higher-level systems later. This is not usually scalable for bigger systems. One instance where this approach might work is when designing a variations of an
+            existing system or re-purposing existing components to build a new system.</li>
+          <li>Mix: Design the top levels using the top-down approach but switch to a bottom-up approach when designing the bottom levels.</li>
+        </ul>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Which is better?">
+                <question>
+                  <p>Top-down design is better than bottom-up design.</p>
+                  <ul radio-group="e9c27" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="e9c27" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="e9c27" type="radio"> False</label></li>
+                  </ul>
+                  <div slot="answer">
+                    <p>False</p>
+                    <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</panel>
+<panel type="info" header="`W9.2e` Can explain agile design :star::star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Design → Introduction →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="agile-design-four">Agile Design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong><em>Agile design</em> can be contrasted with <em>full upfront design</em> in the following way</strong>:</p>
+        <blockquote>
+          <p><strong>Agile designs are emergent, they’re not defined up front.</strong> Your overall system design will emerge over time, evolving to fulfill new requirements and take advantage of new technologies as appropriate. Although you will often
+            do <strong>some initial architectural modeling at the very beginning</strong> of a project, this will be just enough to get your team going. This approach does not produce a fully documented set of models in place before you may begin coding.
+            <sub>-- adapted from <a href="http://agilemodeling.com/essays/agileDesign.htm">agilemodeling.com</a></sub></p>
+        </blockquote>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Statement about agile design">
+                <question>
+                  <p>Agile design camp expects the design to change over the product’s lifetime.</p>
+                  <ul radio-group="bz743" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bz743" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bz743" type="radio"> False</label></li>
+                  </ul>
+                  <div slot="answer">
+                    <p>True</p>
+                    <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design approach.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</panel><br>
+<p><span class="dimmed"><strong>More Design Principles:</strong></span></p>
+<panel type="info" header="`W9.2f` Can explain Liskov Substitution Principle :star::star::star:" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -422,9 +517,9 @@ AcademicStaff academicStaff = staff; // Not OK
               <panel header=":lock::key: Is this LSP?">
                 <question>
                   <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                  <ul radio-group="8mmgl" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="8mmgl" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="8mmgl" type="radio"> False</label></li>
+                  <ul radio-group="613uo" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="613uo" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="613uo" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True.</p>
@@ -443,7 +538,7 @@ AcademicStaff academicStaff = staff; // Not OK
     <p>Give an example from the project where LSP is followed. Explain what kind of a change to that code will violate LSP <span class="dimmed"> e.g. Here, the superclass X and the subclass Y follow LSP. But if we change X in this way, or Y in this way, it will no longer follow LSP</span></p>
   </panel>
 </panel>
-<panel type="success" header=":trophy: Can explain interface segregation principle :star::star::star::star:" expandable="">
+<panel type="success" header="`W9.2g` Can explain interface segregation principle :star::star::star::star:" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -487,7 +582,7 @@ AcademicStaff academicStaff = staff; // Not OK
     </div>
   </div>
 </panel>
-<panel type="success" header=":trophy: Can explain dependency inversion principle (DIP) :star::star::star::star:" expandable="">
+<panel type="success" header="`W9.2h` Can explain dependency inversion principle (DIP) :star::star::star::star:" no-close="">
   <div>
     <div></div>
     <p></p>
