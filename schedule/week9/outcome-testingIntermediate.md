@@ -33,7 +33,7 @@ Use the mentioned features in the project.
   </panel>
 </panel>
 
-<panel type="success" header="`W9.5e` Can explain TDD :star::star::star::star:" no-close>
+<panel type="info" header="`W9.5e` Can explain TDD :star::star::star:" no-close>
   <include src="../../book/testing/tdd/what/full.md" />
  <!-- TODO: add evidence -->
 </panel>
