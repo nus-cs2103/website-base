@@ -1,0 +1,1487 @@
+<panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" expanded="" no-close="">
+  <div>
+    <div>
+      <panel type="warning" header="**`W8.1` Can explain architectural styles** :star::star:" no-close="">
+        <panel type="warning" header="`W8.1a` Can explain architectural styles :star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\architecture\introduction\what\full._include_.html" header="%%:mortar_board: Design &rarr; Architecture &rarr; Introduction &rarr; What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
+                  <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+                <tip-box>
+                  <p>📦 n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
+                </tip-box>
+                <modal title="" id="modal:archiStyles-buildingArchitectures">
+                  <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br><sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
+                </modal>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="warning" header="`W8.1b` Can identify n-tier architectural style :star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png"
+                  height="150">
+                <tip-box>
+                  <p>📦 Operating systems and network communication software often use n-tier style.
+                    <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                </tip-box>
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="info" header="`W8.1c` Can identify client-server architectural style :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Client-Server Style
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
+                  applications.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+                <p></p>
+                <tip-box>
+                  <p>📦 The online game and teh Web application below uses the client-server style.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="info" header="`W8.1d` Can identify event-driven architectural style :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Event-Driven Style
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                  This architectural style is often used in GUIs.</p><img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
+                <tip-box>
+                  <p>📦 When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted to components related to operating
+                    the Printer. The same event can be sent to multiple consumers too.</p><img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain how the AddressBook-Level4 uses Event-Driven style (refer to the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design">Developer Guide</a> for more info).</p>
+          </panel>
+        </panel>
+        <panel type="success" header="`W8.1e` Can identify transaction processing architectural style :star::star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Transaction Processing Style
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong> Task
+                  queuing, ordering, undo etc. are handled by the dispatcher.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+                <tip-box>
+                  <p>📦 In this example from a Banking system, transactions are generated by the terminals used by
+                    <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png"
+                    height="120"></tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W8.1f` Can identify service-oriented architectural style :star::star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Service-Oriented Style
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
+                  services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and XML
+                  is used as the language of communication between service providers and service users.</p>
+                <tip-box>
+                  <p>📦 Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards. Using these web services, an
+                    ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA architecture, their web services
+                    can be reused by the web application, even if all three systems use different programming platforms.</p><img src="/website/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W8.1g` Can name several other architecture styles :star::star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="more-styles-two">More Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</strong></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":paperclip: Resources" expanded="">
+                    <ul>
+                      <li>
+                        <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
+                      </li>
+                      <li>
+                        <p><a href="https://en.wikipedia.org/wiki/Broker_pattern"><strong>Broker pattern</strong></a> -- Wikipedia article on the broker architectural style</p>
+                      </li>
+                      <li>
+                        <p><a href="https://en.wikipedia.org/wiki/Peer-to-peer"><strong>Peer-to-peer pattern</strong></a> -- Wikipedia article on the P2P architectural style</p>
+                      </li>
+                      <li>
+                        <p><a href="http://searchmicroservices.techtarget.com/definition/message-driven-processing"><strong>Message-driven processing</strong></a> -- a post by <em>Margaret Rouse</em></p>
+                      </li>
+                    </ul>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="info" header="`W8.1h` Can explain how architectural styles are combined :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="using-styles-two">Using Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Most applications use a mix of these architectural styles.</strong></p>
+                <tip-box>
+                  <p>📦 An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Comment on how to use architecture styles in Minesweeper.">
+                        <question has-input="true">
+                          <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before any
+                            of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
+                          <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
+                          <ol>
+                            <li>Client-server</li>
+                            <li>Transaction-processing</li>
+                            <li>SOA (Service Oriented Architecture)</li>
+                            <li>multi-layer (n-tier)</li>
+                          </ol>
+                          <div slot="answer">
+                            <ol>
+                              <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
+                              <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
+                              <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
+                              <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
+                            </ol><img src="/website/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain architectural styles currently used in AddressBook-Level4. Speculate under what circumstances other architectural styles can be used in it <span class="dimmed"> e.g. what kind of additional features can make a certain style applicable</span></p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header="**`W8.2` Can explain integration approaches** :star::star:" no-close="">
+        <panel type="warning" header="`W8.2a` Can explain how integration approaches vary based on timing and frequency :star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\integration\introduction\what\full._include_.html" header="%%:mortar_board: Implementation &rarr; Integration &rarr; Introduction &rarr; What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Integration → Approaches →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="late-and-one-time-vs-early-and-frequent-two">'Late and One Time' vs 'Early and Frequent' <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>In terms of timing and frequency, there are two general approaches to integration: <em>late and one-time</em>, <em>early and frequent</em>.</strong></p>
+                <p><strong><em>Late and one-time</em>: wait till all components are completed and integrate all finished components near the end of the project.</strong></p>
+                <tip-box type="wrong">
+                  <p>This approach is not recommended because integration often causes many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays <span class="dimmed"> i.e. Late integration → incompatibilities found → major rework required → cannot meet the delivery date</span>.</p>
+                </tip-box>
+                <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
+                <tip-box>
+                  <p>📦 A <em><tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip></em> can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all
+                    developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
+                </tip-box>
+                <div v-closeable="" alt="slideshow: comparison">
+                  <p>Here is an animation that compares the two approaches:</p>
+                  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="info" header="`W8.2b` Can explain how integration approaches vary based on amount merged at a time :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Integration → Approaches →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="big-bang-vs-incremental-integration-two">Big-Bang vs Incremental Integration <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Big-bang integration</em>: integrate all components at the same time.</strong></p>
+                <tip-box type="wrong">
+                  <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
+                </tip-box>
+                <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
+                <div v-closeable="" alt="slideshow: comparison">
+                  <p>Here is an animation that compares the two approaches:</p>
+                  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Big-bang integration in school projects">
+                        <question has-input="true">
+                          <p>Give two arguments in support and two arguments against the following statement.</p>
+                          <p><em>Because there is no external client, it is OK to use big bang integration for a school project.</em></p>
+                          <div slot="answer">
+                            <p>Arguments for:</p>
+                            <ul>
+                              <li>It is relatively simple; even big-bang can succeed.</li>
+                              <li>Project duration is short; there is not enough time to integrate in steps.</li>
+                              <li>The system is non-critical, non-production (demo only); the cost of integration issues is relatively small.</li>
+                            </ul>
+                            <p>Arguments against:</p>
+                            <ul>
+                              <li>Inexperienced developers; big-bang more likely to fail</li>
+                              <li>Too many problems may be discovered too late. Submission deadline (fixed) can be missed.</li>
+                              <li>Team members have not worked together before; increases the probability of integration problems.</li>
+                            </ul>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="info" header="`W8.2c` Can explain how integration approaches vary based on the order of integration :star::star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\integration\approaches\bigBangVsIncremental\full._include_.html" header="%%:mortar_board: Implementation &rarr; Integration &rarr; Approaches &rarr; Big-Bang Vs Incremental%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Integration → Approaches →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="top-down-vs-bottom-up-integration-three">Top-Down vs Bottom-Up Integration <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div><img src="/website/book/integration/approaches/topDownVsBottomUp/images/approaches.png" height="100">
+                <p></p>
+                <p><strong>Based on the order in which components are integrated, incremental integration can be done in three ways.</strong></p>
+                <p><strong><em>Top-down</em> integration: higher-level components are integrated before bringing in the lower-level components.</strong> One advantage of this approach is that higher-level problems can be discovered early. One disadvantage
+                  is that this requires the use of
+                  <trigger for="pop:topdown-stub">stubs</trigger> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
+                <popover id="pop:topdown-stub"
+                  title=":mag:" placement="top">
+                  <div slot="content">
+                    <div>
+                      <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set
+                        of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                    </div>
+                  </div>
+                </popover>
+                <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components,
+                  <tooltip content="additional code written to provide inputs to a component via an API">drivers</tooltip> may be needed to test the integrated components <span class="dimmed"> because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
+                <p><strong><em>Sandwich</em> integration: a mix of the top-down and the bottom-up approaches.</strong> The idea is to do both top-down and bottom-up so as to 'meet' in the middle.</p>
+                <div v-closeable="" alt="slideshow: comparison">
+                  <p>Here is an animation that compares the three approaches:</p>
+                  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212318&authkey=AD27jxfKqq3nqpQ&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Suggest an integration strategy">
+                        <question has-input="true">
+                          <p>Suggest an integration strategy for the system represented by following diagram. You need not follow a strict top-down, bottom-up, sandwich, or big bang approach. Dashed arrows represent dependencies between classes.</p>
+                          <p>Also take into account the following facts in your test strategy.</p>
+                          <ul>
+                            <li><code>HospitalUI</code> will be developed early, so as to get customer feedback early.</li>
+                            <li><code>HospitalFacade</code> shields the UI from complexities of the application layer. It simply redirects the method calls received to the appropriate classes below</li>
+                            <li><code>IO_Helper</code> is to be reused from an earlier project, with minor modifications</li>
+                            <li>Development of <code>OutPatient</code> component has been outsourced, and the delivery is not expected until the 2nd half of the project.</li>
+                          </ul><img src="/website/book/integration/approaches/topDownVsBottomUp/images/hospital.png" height="250">
+                          <p></p>
+                          <div slot="answer">
+                            <p>There can be many acceptable answers to this question. But any good strategy should consider at least some of the below.</p>
+                            <ul>
+                              <li>Because <code>HospitalUI</code> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <code>HospitalUI</code>)</li>
+                              <li>Because <code>HospitalFacade</code> is unlikely to have a lot of business logic, it may not be worth to write stubs to test it (i.e. a bottom-up integration is better for <code>HospitalFacade</code>).</li>
+                              <li>Because <code>IO_Helper</code> is to be reused from an earlier project, we can finish it early. This is especially suitable since there are many classes that use it. Therefore <code>IO_Helper</code> can be integrated with
+                                the dependent classes in bottom-up fashion.</li>
+                              <li>Because <code>OutPatient</code> class may be delayed, we may have to integrate <code>PatientMgr</code> using a stub.</li>
+                              <li><code>TypeA</code>, <code>TypeB</code>, and <code>TypeC</code> seem to be tightly coupled. It may be a good idea to test them together.</li>
+                            </ul>
+                            <p>Given below is one possible integration test strategy. Relative positioning also indicates a rough timeline.</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/hospitalIntegration.png" height="250">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Integration order">
+                        <question has-input="false">
+                          <p>Consider the architecture given below. Describe the order in which components will be integrated with one another if the following integration strategies were adopted.</p>
+                          <p>a) top-down b) bottom-up c) sandwich</p>
+                          <p>Note that dashed arrows show dependencies (e.g. A depend on B, C, D and therefore, higher-level than B, C and D).</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/abc.png" height="190">
+                          <p></p>
+                          <div slot="answer">
+                            <p>a) Diagram:</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/aAnswer.png" height="230">
+                            <p></p>
+                            <p>b) Diagram:</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/bAnswer.png" height="230">
+                            <p></p>
+                            <p>c) Diagram:</p><img src="/website/book/integration/approaches/topDownVsBottomUp/images/cAnswer.png" height="230">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header="**`W8.3` Can use basic software design principles** :star:" no-close="">
+        <p><span class="dimmed"><strong>Abstraction:</strong></span></p>
+        <panel type="warning" header="`W8.3a` Can explain abstraction :star::star:" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Design Principles → Abstraction →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box type="defintion">
+                  <div>
+                    <p><strong>Abstraction</strong>: Abstraction is a technique for dealing with complexity. It works by establishing a level of complexity on which a person interacts with the system, suppressing the more complex details below the current
+                      level.</p>
+                  </div>
+                </tip-box>
+                <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details
+                  that are relevant to the current perspective or the task at hand.</p>
+                <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                <tip-box>
+                  <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’
+                    as they do not affect the task of that software component.</p>
+                </tip-box>
+                <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                <tip-box>
+                  <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                  <p></p>
+                </tip-box>For example,
+                <p></p>
+                <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                <tip-box>
+                  <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                  <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <p></p>
+        <p><span class="dimmed"><strong>Coupling:</strong></span></p>
+        <panel type="danger" header="`W8.3b` Can explain coupling :star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Design Principles → Coupling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Coupling</em> is a measure of the degree of <em>dependence</em></strong> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. <strong>High coupling (aka <em>tight</em> coupling or <em>strong</em> coupling) is discouraged</strong>                  due to the following disadvantages:</p>
+                <ul>
+                  <li><strong>Maintenance is harder</strong> because a change in one module could cause changes in other modules coupled to it (i.e. a ripple effect).</li>
+                  <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
+                  <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
+                </ul>
+                <tip-box>
+                  <p>📦 In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p><img src="/website/book/designPrinciples/coupling/what/images/playerPuzzleManager.png" height="220">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Coupling levels of alternative designs">
+                        <question has-input="true">
+                          <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
+                          <tip-box><img src="/website/book/designPrinciples/coupling/what/images/alternativeDesigns.png" height="180">
+                            <p></p>
+                          </tip-box>
+                          <div slot="answer">
+                            <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links
+                              may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone (do not depend
+                              on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: regressions and coupling.">
+                        <question has-input="true">
+                          <p>Explain the link (if any) between regressions and coupling.</p>
+                          <div slot="answer">
+                            <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed"> e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Coupling and testability">
+                        <question has-input="true">
+                          <p>Discuss the relationship between coupling and
+                            <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                          <div slot="answer">
+                            <p>Coupling decreases testability because if the
+                              <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Statements about coupling">
+                        <question>
+                          <p>Choose the correct statements.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)(c)<s>(d)</s>(e)</p>
+                            <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain coupling with examples from AddressBook-Level4 (or your own project).</p>
+          </panel>
+        </panel>
+        <p>
+          <panel type="warning" src="/website\schedule\week8\lo-reduceCoupling._include_.html" header="`W8.3c` Can reduce coupling :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <panel type="success" header="`W8.3d` Can identify types of coupling :star::star::star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\designPrinciples\coupling\what\full._include_.html" header="%%:mortar_board: Design &rarr; Design Principles &rarr; Coupling &rarr; What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Design Principles → Coupling →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="types-of-coupling-three">Types of Coupling <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Some examples of different coupling types:</p>
+                <ul>
+                  <li><strong>Content coupling</strong>: one module modifies or relies on the internal workings of another module <span class="dimmed"> e.g., accessing local data of another module</span></li>
+                  <li><strong>Common/Global coupling</strong>: two modules share the same global data</li>
+                  <li><strong>Control coupling</strong>: one module controlling the flow of another, by passing it information on what to do <span class="dimmed"> e.g., passing a flag</span></li>
+                  <li><strong>Data coupling</strong>: one module sharing data with another module <span class="dimmed"> e.g. via passing parameters</span></li>
+                  <li><strong>External coupling</strong>: two modules share an externally imposed convention <span class="dimmed"> e.g., data formats, communication protocols, device interfaces</span>.</li>
+                  <li><strong>Subclass coupling</strong>: a class inherits from another class. Note that a child class is coupled to the parent class but not the other way around.</li>
+                  <li><strong>Temporal coupling</strong>: two actions are bundled together just because they happen to occur at the same time <span class="dimmed"> e.g. extracting a contiguous block of code as a method although the code block contains statements unrelated to each other</span></li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain types of coupling with examples from AddressBook-Level4 (or your own project).</p>
+          </panel>
+        </panel>
+        <p></p>
+        <p><span class="dimmed"><strong>Cohesion:</strong></span></p>
+        <panel type="danger" header="`W8.3e` Can explain cohesion :star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Design Principles → Cohesion →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other unrelated
+                  things.</p>
+                <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
+                <ul>
+                  <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                  <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed"> (reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small change
+                    in behavior <span class="dimmed"> (reason: because the code realated to that change is not localized to a single module)</span>.</li>
+                  <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain cohesion with examples from AddressBook-Level4 (or your own project).</p>
+          </panel>
+        </panel>
+        <p>
+          <panel src="/website\schedule\week8\lo-increaseCohesion._include_.html" type="warning" header="`W8.3f` Can increase cohesion :star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <p></p>
+        <p><span class="dimmed"><strong>SoC and OCP:</strong></span></p>
+        <panel type="warning" header="`W8.3g` Can explain separation of concerns principle (SoC) :star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="separation-of-concerns-principle-three">Separation of Concerns Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box type="primary">
+                  <div>
+                    <p><strong>Separation of Concerns Principle (SoC)</strong>: To achieve better modularity, separate the code into distinct sections, such that each section addresses a separate <em>concern</em>. -- Proposed by <a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Edsger W. Dijkstra</a></p>
+                  </div>
+                </tip-box>
+                <p>A <em>concern</em> in this context is a set of information that affects the code of a computer program.</p>
+                <tip-box>
+                  <p>📦 Examples for <em>concerns</em>:</p>
+                  <ul>
+                    <li>A specific feature, such as the code related to <code>add employee</code> feature</li>
+                    <li>A specific aspect, such as the code related to <code>persistence</code> or <code>security</code></li>
+                    <li>A specific entity, such as the code related to the <code>Employee</code> entity</li>
+                  </ul>
+                </tip-box>
+                <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+                <tip-box>
+                  <p>📦 If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p>
+                </tip-box>
+                <p><strong>This principle can be applied at the class level, as well as on higher levels.</strong></p>
+                <tip-box>
+                  <p>📦 The
+                    <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
+                </tip-box>
+                <modal title="TextBook &raquo;" id="modal:soc-nTier">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style
+</span></strong>
+                      </span>
+                    </p>
+                    <div>
+                      <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png"
+                          height="150">
+                        <tip-box>
+                          <p>📦 Operating systems and network communication software often use n-tier style.
+                            <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                        </tip-box>
+                        <p></p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </modal>
+                <p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
+                <modal title="TextBook &raquo;" id="soc-coupling">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Design Principles → Coupling →
+</span></strong>
+                      </span>
+                    </p>
+                    <div>
+                      <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong><em>Coupling</em> is a measure of the degree of <em>dependence</em></strong> between components, classes, methods, etc. Low coupling indicates that a component is less dependent on other components. <strong>High coupling (aka <em>tight</em> coupling or <em>strong</em> coupling) is discouraged</strong>                          due to the following disadvantages:</p>
+                        <ul>
+                          <li><strong>Maintenance is harder</strong> because a change in one module could cause changes in other modules coupled to it (i.e. a ripple effect).</li>
+                          <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
+                          <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
+                        </ul>
+                        <tip-box>
+                          <p>📦 In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p><img src="/website/book/designPrinciples/coupling/what/images/playerPuzzleManager.png" height="220">
+                          <p></p>
+                        </tip-box>
+                      </div>
+                      <div>
+                        <div>
+                          <panel header=":muscle: Exercises" expandable="">
+                            <div>
+                              <panel header=":lock::key: Coupling levels of alternative designs">
+                                <question has-input="true">
+                                  <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
+                                  <tip-box><img src="/website/book/designPrinciples/coupling/what/images/alternativeDesigns.png" height="180">
+                                    <p></p>
+                                  </tip-box>
+                                  <div slot="answer">
+                                    <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling.
+                                      Some links may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone
+                                      (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header=":lock::key: regressions and coupling.">
+                                <question has-input="true">
+                                  <p>Explain the link (if any) between regressions and coupling.</p>
+                                  <div slot="answer">
+                                    <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed"> e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header=":lock::key: Coupling and testability">
+                                <question has-input="true">
+                                  <p>Discuss the relationship between coupling and
+                                    <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                                  <div slot="answer">
+                                    <p>Coupling decreases testability because if the
+                                      <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header=":lock::key: Statements about coupling">
+                                <question>
+                                  <p>Choose the correct statements.</p>
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p>(a)(b)(c)<s>(d)</s>(e)</p>
+                                    <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                          </panel>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+                <modal title="TextBook &raquo;" id="soc-cohesion">
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Design Principles → Cohesion →
+</span></strong>
+                      </span>
+                    </p>
+                    <div>
+                      <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other
+                          unrelated things.</p>
+                        <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
+                        <ul>
+                          <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                          <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed"> (reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a
+                            small change in behavior <span class="dimmed"> (reason: because the code realated to that change is not localized to a single module)</span>.</li>
+                          <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </modal>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: correct statement about SoC">
+                        <question>
+                          <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software design should promote separation of concerns in a design.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software design should increase cohesion of its components.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software design should follow single responsibility principle.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)(c)</p>
+                            <p>Explanation: By making ‘user interaction’ GUI class’ sole responsibility, we increase its cohesion. This is also in line with separation of concerns (i.e., we separated the concern of user interaction) and single responsibility
+                              principle (GUI class has only one responsibility).</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain SoC with examples from AddressBook-Level4 (or your own project).</p>
+          </panel>
+        </panel>
+        <panel type="info" header="`W8.3h` Can explain open-closed principle (OCP) :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Design Principles → Open-Closed Principle →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>While it is possible to isolate the functionalities of a software system into modules, there is no way to remove interaction between modules. When modules interact with each other, coupling naturally increases. Consequently, it is harder
+                  to localize any changes to the software system. The Open-Close Principle aims to alleviate this problem.</p>
+                <tip-box type="definition">
+                  <div>
+                    <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified.
+                      <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p>
+                  </div>
+                </tip-box>
+                <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
+                <tip-box>
+                  <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>,
+                    <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to
+                    extensions, but closed to modification.</p><img src="/website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
+                  <p></p>
+                </tip-box>
+                <tip-box>
+                  <p>📦 The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container
+                    of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
+                  <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
+ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
+</code></pre>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Meaning of OCP">
+                        <question>
+                          <p>Which of these is closest to the meaning of the open-closed principle?</p>
+                          <ul radio-group="8stbi" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="8stbi" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="8stbi" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="8stbi" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="8stbi" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)</p>
+                            <p>Explanation: Please refer the handout for the definition of OCP.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).</p>
+          </panel>
+        </panel>
+        <p></p>
+        <p></p>
+        <p></p>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header="**`W8.4` Can implement association classes** :star::star::star:" no-close="">
+        <panel type="info" header="`W8.4a` Can explain the meaning of association classes :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="association-classes-three">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>An <em>association class</em> represents additional information about an association.</strong> It is a normal class but plays a special role from a design point of view.</p>
+                <tip-box>
+                  <p>📦 A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by
+                    either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p><img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png"
+                    height="120"></tip-box>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associationClasses\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Association Classes" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+                <p></p>
+                <p></p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Give more examples of association classes, preferably related to your project.</p>
+          </panel>
+        </panel>
+        <panel type="info" header="`W8.4b` Can implement association classes :star::star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\oopDesign\associations\associationClasses\full._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Association Classes%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="association-classes-three-2">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
+                  <p></p>
+                  <p>At implementation level, an association class is most likely implemented as follows.</p><img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
+                  <p></p>
+                  <p>
+                    <panel type="seamless" src="/website\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                  </p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which are suitable as an Association Class?">
+                        <question>
+                          <p>Which one of these is the suitable as an Association Class?</p><img src="/website/book/oopImplementation/associationClasses/images/exerciseDiagram.png" height="330">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)<s>(c)</s>(d)</p>
+                            <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would
+                              be suitable as an association class.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p><strong>Acceptable</strong>: Evidence of implementing an association class.</p>
+            <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass">AddressBook - Level 2: LO-AssociationClass</a>]
+              and create a PR against [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">AddressBook - Level 2</a>]</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="danger" header="**`W8.5` Can explain different types of testing** :star:" no-close="">
+        <p><span class="dimmed"><strong>Unit Testing:</strong></span></p>
+        <p>
+          <panel src="/website\schedule\week8\lo-explainUnitTesting._include_.html" type="danger" header="`W8.5a` Can explain unit testing :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\schedule\week8\lo-useStubs._include_.html" type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\schedule\week8\lo-explainDependencyInjection._include_.html" type="success" header="`W8.5c` Can explain dependency injection :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\schedule\week8\lo-useDependencyInjection._include_.html" type="success" header="`W8.5d` Can use dependency injection :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <p></p>
+        <p></p>
+        <p><span class="dimmed"><strong>Integration Testing:</strong></span></p>
+        <panel type="warning" header="`W8.5c` Can explain integration testing :star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\testing\testingTypes\unitTesting\what\full._include_.html" header="%%:mortar_board: Quality Assurance &rarr; Testing &rarr; Unit Testing &rarr; What &rarr;%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Integration Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact
+                  with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
+                <tip-box>
+                  <p>📦 Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the <code>Wheel</code> can only support 150 mph, it
+                    is the integration test that is supposed to uncover this discrepancy.</p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain the difference between unit tests and integration tests.</p>
+          </panel>
+        </panel>
+        <panel type="info" header="`W8.5d` Can do integration testing :star::star::star:">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\testing\testingTypes\integrationTesting\what\full._include_.html" header="%%:mortar_board: Quality Assurance &rarr; Testing &rarr; Integration Testing &rarr; What &rarr;%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Integration Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Integration testing is not simply a repetition of the unit test cases but run using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus on
+                  the interactions between the parts.</p>
+                <tip-box>
+                  <p>📦 Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
+                  <p>a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br> b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, <mark>using stubs for <code>Engine</code> and <code>Wheel</code></mark>.<br>                    c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</p>
+                </tip-box>
+                <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
+                <tip-box>
+                  <p>📦 Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
+                  <p>(a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br><s>(b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</s><br>                    (c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.
+                    <mark>This step should include test cases that are meant to test the unit <code>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code>Car</code>                    with <code>Wheel</code> and <code>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
+                  <p>💡 Note that you no longer need stubs for <code>Engine</code> and <code>Wheel</code>. The downside is that <code>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk
+                    of bugs in <code>Engine</code> and <code>Wheel</code> affecting the testing of <code>Car</code> can be considered minimal.</p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Use tests from AddressBook-Level4 to illustrate the difference between unit testings and integration testing. Hint: good examples <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/storage/StorageManagerTest.java"><code>seedu.address.storage.StorageManagerTest</code></a>,
+              <a
+                href="https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandTest.java"><code>seedu.address.logic.commands.AddCommandTest</code></a>,<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandIntegrationTest.java"><code>seedu.address.logic.commands.AddCommandIntegrationTest</code></a></p>
+          </panel>
+        </panel>
+        <p></p>
+        <p><span class="dimmed"><strong>System Testing:</strong></span></p>
+        <panel type="danger" header="`W8.5e` Can explain system testing :star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → System Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
+                <p>System testing is typically done by a testing team (also called a QA team).</p>
+                <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' having
+                  pushed beyond its limits.</p>
+                <tip-box>
+                  <p>📦 Suppose the SUT is a browser capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
+                  <pre class="hljs"><code>Test case: load a web page that is too big
+* Input: load a web page containing more than 5000 characters. 
+* Expected behavior: abort the loading of the page and show a meaningful error message. 
+</code></pre>
+                  <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
+                </tip-box>
+                <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
+                <ul>
+                  <li><em>Performance testing</em> – to ensure the system responds quickly.</li>
+                  <li><em>Load testing</em> (also called <em>stress testing</em> or <em>scalability testing</em>) – to ensure the system can work under heavy load.</li>
+                  <li><em>Security testing</em> – to test how secure the system is.</li>
+                  <li><em>Compatibility testing, interoperability testing</em> – to check whether the system can work with other systems.</li>
+                  <li><em>Usability testing</em> – to test how easy it is to use the system.</li>
+                  <li><em>Portability testing</em> – to test whether the system works on different platforms.</li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain what system tests are. Give examples from your own project.</p>
+          </panel>
+        </panel>
+        <panel type="info" header="`W8.5f` Can explain automated GUI testing :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="automated-testing-of-guis-two">Automated Testing of GUIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>,
+                  for the following reasons:</p>
+                <ul>
+                  <li>Most GUIs can support a large number of different operations, many of which can be performed in any arbitrary order.</li>
+                  <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with
+                    an expected value. Therefore, automated regression testing of GUIs is rather difficult.</li>
+                  <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in
+                    a high resolution display or a low resolution display.</li>
+                </ul><img src="/website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
+                <p></p>
+                <p><strong>One approach to overcome the challenges of testing GUIs is to minimize logic aspects in the GUI.</strong> Then, bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be
+                  tested manually, the number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
+                <p><strong>There are testing tools that can automate GUI testing.</strong></p>
+                <tip-box>
+                  <p>📦 Some tools used for automated GUI testing:</p>
+                  <ul>
+                    <li>
+                      <p><strong>TestFx</strong> can do automated testing of JavaFX GUIs<br></p>
+                    </li>
+                    <li>
+                      <p><strong>VisualStudio</strong> supports ‘record replay’ type of GUI test automation.</p>
+                    </li>
+                    <li>
+                      <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
+                      <panel type="seamless" header=":tv: demo video of autoamted testing of a Web application">
+                        <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                      </panel>
+                    </li>
+                  </ul>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: API testing vs GUI testing">
+                        <question>
+                          <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
+                          <ul radio-group="9ylvy" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9ylvy" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="9ylvy" type="radio"> False</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>False</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Why is automated testing of GUIs is hard? What can we do about it?</p>
+          </panel>
+        </panel>
+        <p></p>
+        <p><span class="dimmed"><strong>Acceptance Testing:</strong></span></p>
+        <panel type="warning" header="`W8.5g` Can explain acceptance testing :star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Acceptance Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
+                <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful completion
+                  of UAT is often a prerequisite to the project sign-off.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain what acceptance tests are. Explain how acceptance testing of your project will be done.</p>
+          </panel>
+        </panel>
+        <panel type="info" header="`W8.5h` Can explain the differences between system testing and acceptance testing :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Acceptance Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="acceptance-vs-system-testing-two">Acceptance vs System Testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
+                <p>Some differences between system testing and acceptance testing:</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:left">System Testing</th>
+                      <th style="text-align:left">Acceptance Testing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:left">Done against the system specification</td>
+                      <td style="text-align:left">Done against the requirements specification</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:left">Done by testers of the project team</td>
+                      <td style="text-align:left">Done by a team that represents the customer</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:left">Done on the development environment or a test bed</td>
+                      <td style="text-align:left">Done on the deployment site or on a close simulation of the deployment site</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:left">Both negative and positive test cases</td>
+                      <td style="text-align:left">More focus on positive test cases</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><span class="dimmed">Note: <em>negative</em> test cases: cases where the SUT is not expected to work normally e.g. incorrect inputs; <em>positive</em> test cases: cases where the SUT is expected to work normally</span></p>
+                <tip-box>
+                  <p><strong>Requirement Specification vs System Specification</strong></p>
+                  <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:left">Requirements Specification</th>
+                        <th style="text-align:left">System Specification</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:left">limited to how the system behaves in normal working conditions</td>
+                        <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
+                        <td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:left">specifies the interface available for intended end-users</td>
+                        <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>However, <strong>in many cases one document serves as both a requirement specification and a system specification.</strong></p>
+                </tip-box>
+                <p><strong>Passing system tests does not necessarily mean passing acceptance testing.</strong> Some examples:</p>
+                <ul>
+                  <li>The system might work on the testbed environments but might not work the same way in the deployment environment, due to subtle differences between the two environments.</li>
+                  <li>The system might conform to the system specification but could fail to solve the problem it was supposed to solve for the user, due to flaws in the system design.</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Statements about system testing and acceptance testing.">
+                        <question>
+                          <p>Choose the correct statements about system testing and acceptance testing.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
+                            <p>Explanation:</p>
+                            <p>(b) is correct because system testing can aim to cover all specified behaviors and can even go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
+                            <p>(f) is incorrect because it is possible for a system to pass system tests but fail acceptance tests.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain the difference between system tests and acceptance tests. Explain why both are needed.</p>
+          </panel>
+        </panel>
+        <p></p>
+        <p><span class="dimmed"><strong>Alpha/Beta Testing:</strong></span></p>
+        <panel type="info" header="`W8.5i` Can explain alpha and beta testing :star::star::star:">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Alpha/Beta Testing →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
+                <p><strong><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</strong></p>
+                <p>An <em>open beta release</em> is the release of not-yet-production-quality-but-almost-there software to the general population. For example, Google’s Gmail was in 'beta' for many years before the label was finally removed.</p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>Explain alpha and beta testing. How can you do alpha and beta testing in your project?</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <panel type="info" header="**`W8.6` Can apply basic product design guidelines** :star::star::star:" no-close="">
+      <p>No textbook section. To be covered during the lecture.</p>
+      <panel header=":dart: Evidence" expanded="">
+        <p>Apply the discussed guidelines when designing the product (covered by v1.1 deliverables).</p>
+      </panel>
+    </panel>
+    <panel type="danger" header="**`W8.7` Can describe a product from the user's perspective** :star:" no-close="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>
+          <panel src="/website\admin\project-v11._include_.html#documentation" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Documentation%%" fragment="documentation" header="%%Admin &raquo; Project &rarr; v1.1 &rarr; Documentation%%" isOpen="false"
+            no-close="true" no-switch="true"></panel>
+        </p>
+      </panel>
+    </panel>
+    <panel type="danger" header="**`W8.8` Can do global-impact changes to an existing software** :star:" no-close="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>
+          <panel src="/website\admin\project-v11._include_.html#product" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Product%%" fragment="product" header="%%Admin &raquo; Project &rarr; v1.1 &rarr; Product%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </panel>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":clipboard: Todo" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\project-v11._include_.html" name="%%Admin &raquo;%% Project: v1.1 :star:" header="%%Admin &raquo;%% Project: v1.1 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-fromScratch" name="%%Admin &raquo;%% FAQ: Why aren't we allowed to build a new product from scratch? :star::star::star::star:" fragment="admin-faq-fromScratch" header="%%Admin &raquo;%% FAQ: Why aren't we allowed to build a new product from scratch? :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-manySubmissions" name="%%Admin &raquo;%% FAQ: Why so many submissions? :star::star::star::star:" fragment="admin-faq-manySubmissions" header="%%Admin &raquo;%% FAQ: Why so many submissions? :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-cs2101Differences" name="%%Admin &raquo;%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" fragment="admin-faq-cs2101Differences"
+          header="%%Admin &raquo;%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+
+<panel header=":raising_hand: Tutorial 8" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <p><strong>Questions to discuss during tutorial:</strong></p>
+    <ol>
+      <li>Which architecture styles are used by AB4?</li>
+      <li>Any example of using a very high-level abstraction in the project?</li>
+      <li>What is coupling?
+        <ol>
+          <li><code>Foo</code> depends on <code>Bar</code> if …? 1.Give examples of different ways how a class <code>Foo</code> can be coupled to <code>Bar</code> 1.What is cohesion? 1.How does cohesion relates to coupling?</li>
+        </ol>
+      </li>
+      <li>What is the Principle of SoC? 1.How does SoC relates to coupling and cohesion?</li>
+      <li>What is OCP?
+        <ol>
+          <li>Does the project follows OCP? E.g. Can we add a new command or a new storage type without modifying existing code too much?</li>
+        </ol>
+      </li>
+      <li>What is unit/integration/system/acceptance testing?
+        <ol>
+          <li>What’s the difference between unit testing and integration testing?</li>
+          <li>What’s the difference between system testing and acceptance testing?</li>
+        </ol>
+      </li>
+      <li>Which integration approach is used by the project?</li>
+      <li>What is an association class?
+        <ol>
+          <li>IVLE quizzes allow a quiz to be attempted multiple times. For each attempt, it records the time taken. Model this scenario as a class diagram.</li>
+          <li>Draw another diagram to describe how you would implement it in code (because programming languages don’t have direct support for association classes).</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+</panel>
+
+<panel header=":mega: Lecture 8" expandable="" ctrl-lvl="1" no-close="">
+  <div>
+    <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L8.pptx">slides</a>]</p>
+  </div>
+</panel>
