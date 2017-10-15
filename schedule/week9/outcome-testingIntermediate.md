@@ -5,7 +5,7 @@
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header="`W9.5b` Can explain test coverage :star::star::star:">
+<panel type="warning" header="`W9.5b` Can explain test coverage :star::star:">
   <include src="../../book/testing/testCoverage/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
