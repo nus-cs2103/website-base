@@ -21,6 +21,10 @@
       "title": "CS2103/T Website - Admin"
     },
     {
+      "src": "admin/projectList.md",
+      "title": "CS2103/T Website - Project List"
+    },
+    {
       "src": "schedule/index.md",
       "title": "CS2103/T Website - Schedule"
     },
