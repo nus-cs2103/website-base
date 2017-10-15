@@ -31,10 +31,10 @@ We did **a complete rewrite of the website** and the text book this semester, in
 <div id="more">
 
 <panel header="More info about using the textbook" expanded>
-  <include src="../../book/about/usage.md#conventions" name="Conventions Used" bottom-switch dynamic/>
-  <include src="../../book/about/usage.md#searching" name="Searching for Keywords" bottom-switch dynamic/>
-  <include src="../../book/about/usage.md#saving" name="Saving as PDF" bottom-switch dynamic/>
-  <include src="../../book/about/usage.md#printing" name="Printing" bottom-switch dynamic/>
+  <include src="../../book/about/usage.md#conventions" name="Conventions Used" dynamic/>
+  <include src="../../book/about/usage.md#searching" name="Searching for Keywords" dynamic/>
+  <include src="../../book/about/usage.md#saving" name="Saving as PDF" dynamic/>
+  <include src="../../book/about/usage.md#printing" name="Printing" dynamic/>
 </panel>
 
 <panel header="Additional conventions used in the website" expanded>

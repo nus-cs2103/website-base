@@ -184,6 +184,6 @@ To consider the milestone as 'reached', **you should have the following done *be
 
 We recommend using the _Forking Workflow_.
 
-<dynamic-panel bottom-switch src="../book/gitAndGithub/forkingWorkflow/full.md" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" />
+<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/full.md" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" />
 
 </div>

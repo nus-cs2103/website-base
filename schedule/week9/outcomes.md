@@ -12,11 +12,11 @@
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel bottom-switch src="outcome-classDiagram.md" type="warning" header="**`W9.1` Can use models to conceptualize an OO solution** :star::star:" />
+<dynamic-panel src="outcome-classDiagram.md" type="warning" header="**`W9.1` Can use models to conceptualize an OO solution** :star::star:" />
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel bottom-switch src="outcome-designIntermediate.md" type="info" header="**`W9.2` Can use intermediate-level design principles** :star::star::star:" />
+<dynamic-panel src="outcome-designIntermediate.md" type="info" header="**`W9.2` Can use intermediate-level design principles** :star::star::star:" />
 
 <!-- ==================================================================================================== -->
 
@@ -24,7 +24,7 @@
 
 #### Implementation:
 
-<dynamic-panel bottom-switch src="outcome-defensiveProgramming.md" type="info" header="**`W9.3` Can use defensive programming** :star::star::star:" />
+<dynamic-panel src="outcome-defensiveProgramming.md" type="info" header="**`W9.3` Can use defensive programming** :star::star::star:" />
 
 <!-- ==================================================================================================== -->
 
@@ -66,7 +66,7 @@
   
 Covered by 'Project Management' component v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" bottom-switch dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
 
   </panel>
 </panel>
@@ -78,7 +78,7 @@ Covered by 'Project Management' component v1.2:
 
 Covered by the 'Project Management' component of v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" bottom-switch dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
 
   </panel>
 </panel>

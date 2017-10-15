@@ -43,7 +43,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 <panel type="danger" header="**`W7.7` Can record requirements of a product** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
-<include src="../../admin/project-v10.md#documentation" name="%%Admin &raquo; v1.0 &rarr; Documentation%%" bottom-switch dynamic />
+<include src="../../admin/project-v10.md#documentation" name="%%Admin &raquo; v1.0 &rarr; Documentation%%" dynamic />
 
   </panel>
 </panel>
@@ -52,7 +52,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 <panel type="danger" header="**`W7.8` Can do local-impact changes to an existing software** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
-<include src="../../admin/project-v10.md#product" name="%%Admin &raquo; v1.0 &rarr; Product%%" bottom-switch dynamic />
+<include src="../../admin/project-v10.md#product" name="%%Admin &raquo; v1.0 &rarr; Product%%" dynamic />
 
   </panel>
 </panel>
