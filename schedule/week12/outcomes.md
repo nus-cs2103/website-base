@@ -7,5 +7,18 @@
 
 <div id="main">
 
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header=":trophy: Can describe contributions to a project :star:" expandable>
+  <panel header=":dart: Evidence" expanded>
+
+Covered by the 'Project Portfolio Page' component of v1.5rc:
+
+<include src="../../admin/project-v15rc.md" name="%%Admin &raquo; Project &rarr; v1.5rc%%" dynamic />
+
+  </panel>
+</panel>
+
 </div>
 </div>

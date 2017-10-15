@@ -1,35 +1,42 @@
-### v1.3 Product
+### v1.3 Project Management
 
 <tip-box type="important">
 
-Starting from this version, you are _required_ to,
-* **Do a proper release** as described in the Developer Guide.
+Starting from this version, you are _required_ to, **do a proper product release** as described in the Developer Guide.
 
 </tip-box>
 
-<include src="appendixE-gitHub.md#using-milestones" name="%%Admin &raquo; Appendix F: Github: Using Milestones%%" dynamic />
+<tip-box type="tip"> 
+
+Ensure that **each PR that adds an enhancement also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
+
+</tip-box>
+
+
+### v1.3 Product
 
 **Submission**: Do a release on GitHub
 
-**Grading**: Criteria to consider this milestone as reached
+**Grading**: 
+
+Criteria to consider this milestone as reached:
 * The new version has moved towards v2.0 compared to the previous version.
-* The milestone and the release has been done as described in the box above.
+* The milestone is wrapped up and the release has been done.
  
 
 ### v1.3 Documentation
 
-Follow the documentation in the sample project in terms or organization, level of details, etc.
-
-*   **User Guide**: Update where the document does not match the current product.
-*   **Developer Guide**: Similar to User Guide.
+* **User Guide**: Update where the document does not match the current product.
+* **Developer Guide**: Similar to User Guide.
 
 **Submission**: Must be included in the version tagged `v1.3`.
 
-**Grading**: To consider this milestone as reached, your documentation should not be significantly out of date.  
+**Grading**: To consider this milestone as reached, your documentation should not be noticeably behind the product.  
+
 
 ### v1.3 Demo
 
-Do an informal demo of the new features during the tutorial. 
+Do an informal demo of the new features during the tutorial. Each person should demo their own contributions. 
 
 <tip-box type="important">
 

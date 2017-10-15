@@ -19,7 +19,9 @@
 <panel header=":exclamation: Week 9 [Oct 16]" expanded no-close>
   <include src="week9/index.html"/>
 </panel>
-<include src="week10/index.html" name=":construction: Week 10 [Oct 23]" dynamic />
+<panel header=":construction: Week 10 [Oct 23]" no-close>
+  <include src="week10/index.html"/>
+</panel>
 <include src="week11/index.html" name=":construction: Week 11 [Oct 30]" dynamic />
 <include src="week12/index.html" name=":construction: Week 12 [Nov 6]" dynamic />
 <include src="week13/index.html" name=":construction: Week 13 [Nov 13]" dynamic />

@@ -8,7 +8,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 * `{project root}\src\test\data\ManualTesting\SampleData.xml` :  
     Sample data that can be loaded to your app. Should contain 20+ items.
-* `{project root}\src\test\data\ManualTesting\TestScript.md` :  
+* `{project root}\src\test\data\ManualTesting\TestScript.adoc` :  
   A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.  
   Should cover all functionality of the product. Should be grouped by functionality.  
   Should specify the command to type and the expected result (screenshots not required).  
@@ -16,8 +16,8 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Submission**:
 
-* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated .md files are up to date; you will not be allowed to updated them later) ==Note that the quality of the code in these .md files accounts for a significant component of your final score, graded individually.==
-* **Executable**: upload to IVLE as an exe or jar or zip file (this should not contain source files). File name: `[team][product name].jar` %%e.g. [T09-B1][Contacts+].jar%%  
+* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline comes with an automatic penalty) ==Note that the quality of the code in these collated code files accounts for a significant component of your final score, graded individually.==
+* **Executable**: upload to IVLE the jar file (this should not contain source files). File name: `[team][product name].jar` %%e.g. [T09-B1][Contacts+].jar%%  
   Warning: When determining the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.  
 
 **Deadline**: Week 13 Monday 23.59.
@@ -31,9 +31,9 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 **Submission**:
 
 * Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.
-* Each member: ==Create a _Project Portfolio_ page== to describe your contribution to the project. Follow the [example in the AddressBook-Level4](https://se-edu.github.io/addressbook-level4/team/johndoe.html). 
+ 
 
-* Convert the following documents to pdf (AB-L4 dev guide has some instructions on converting a Web doc to pdf) and upload to IVLE.
+* Convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE.
 
 Document | Name format 
 ---------|-------------
@@ -53,13 +53,13 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 * **Venue:** Same as the tutorial venue.
 * **Duration:** Strictly no more than 3 minutes per person (i.e. a total of 12 minutes for a 4-person team). Exceeding this limit will be penalized.
-* **Schedule:** Your demo timing is same as your tutorial time in week 13\.  
+* **Schedule:** Your demo timing is same as your tutorial time in week 13.  
     Starting times: `Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes`  
     At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.  
     There is an ==automatic penalty if you are not ready to start on time.==.
 * **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.  
 * **Scope**: 
-  * Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.4-v1.5rc demos, there is no need for each person to demo their own features.
+  * Organize the demo to present a cohesive picture of the product as a whole, similar to the v1.5rc demo.
   * Remember to explain the profile of the target user early in the demo.
   * The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the product improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
@@ -73,11 +73,11 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 * **Optimizing the time:**  
     Try to make the maximum use of the short demo time in the following ways,
   * Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.  
-   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]`Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.`  
+   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, 
+   [Instead of this]`Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.`  
     [do this] `If Jim needs to postpone the meeting, he can type …`  
     It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
-
   * Rehearse the steps well and ensure you can do a smooth demo. ==Demos that are clearly under-prepared will be penalized.==
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC".
   * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates a bad impression too.

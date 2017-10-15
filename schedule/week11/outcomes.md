@@ -39,6 +39,19 @@
 
 <include src="outcome-cloudComputing.md" />
 
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header=":trophy: Can do acceptance testing :star:" expandable>
+  <panel header=":dart: Evidence" expanded>
+
+Covered by the 'Acceptance Testing' component of v1.4:
+
+<include src="../../admin/project-v14.md" name="%%Admin &raquo; Project &rarr; v1.4%%" dynamic />
+
+  </panel>
+</panel>
+
 <!-- ==================================================================================================== -->
 
 </div>

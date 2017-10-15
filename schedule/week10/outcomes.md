@@ -13,16 +13,6 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can evolve a product iteratively :star:" expandable>
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
 <include src="outcome-ep.md" />
 
 <!-- ==================================================================================================== -->
@@ -52,6 +42,18 @@
 <!-- ==================================================================================================== -->
 
 <include src="outcome-applyDesignPattern.md" />
+
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header=":trophy: Can release a product to end users :star:" expandable>
+  <panel header=":dart: Evidence" expanded>
+
+Covered by v1.3:
+
+<include src="../../admin/project-v13.md" name="%%Admin &raquo; Project &rarr; v1.3%%" dynamic />
+
+  </panel>
+</panel>
 
 <!-- ==================================================================================================== -->
 
