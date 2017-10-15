@@ -23,7 +23,7 @@ As before, you are _recommended_ (but not required) to **follow the forking work
 **Submission**: Update code in GitHub.
 
 **Grading**: Criteria to consider this milestone as reached
-* A new version tagged `v1.2` is in your repo.
+* A new version tagged `v1.2` is in your repo. If `v1.2` is already used by a past commit, you can use something similar such as `V1.2` or `v1.2.0`.
 * The version `v1.2` is step towards `v2.0` (but it does not matter how big a step it is)
 
 ### v1.2 Documentation
