@@ -47,7 +47,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
   <panel header=":dart: Evidence" expanded>
 
-<include src="../../admin/project-v11.md#documentation" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Documentation%%" dynamic />
+<include src="../../admin/project-v11.md#documentation" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Documentation%%" bottom-switch dynamic />
 
   </panel>
 </panel>
@@ -57,7 +57,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 <panel type="danger" header="**`W8.8` Can do global-impact changes to an existing software** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
-<include src="../../admin/project-v11.md#product" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Product%%" dynamic />
+<include src="../../admin/project-v11.md#product" name="%%Admin &raquo; Project &rarr; v1.1 &rarr; Product%%" bottom-switch dynamic />
 
   </panel>
 </panel>

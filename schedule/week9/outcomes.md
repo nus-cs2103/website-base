@@ -66,7 +66,7 @@
   
 Covered by 'Project Management' component v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" bottom-switch dynamic />
 
   </panel>
 </panel>
@@ -78,7 +78,7 @@ Covered by 'Project Management' component v1.2:
 
 Covered by the 'Project Management' component of v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" bottom-switch dynamic />
 
   </panel>
 </panel>

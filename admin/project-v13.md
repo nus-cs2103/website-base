@@ -7,7 +7,7 @@ Starting from this version, you are _required_ to,
 
 </tip-box>
 
-<include src="appendixE-gitHub.md#using-milestones" name="%%Admin &raquo; Appendix F: Github: Using Milestones%%" dynamic />
+<include src="appendixE-gitHub.md#using-milestones" name="%%Admin &raquo; Appendix F: Github: Using Milestones%%" bottom-switch dynamic />
 
 **Submission**: Do a release on GitHub
 

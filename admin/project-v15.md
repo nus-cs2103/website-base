@@ -24,7 +24,7 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" bottom-switch dynamic />
 
 ### v1.5 Documentation
 
@@ -45,7 +45,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" bottom-switch dynamic />
 
 ### v1.5 Demo
 
@@ -85,4 +85,4 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" bottom-switch dynamic />
