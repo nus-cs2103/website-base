@@ -59,9 +59,9 @@ It is highly recommended that you **divide documentation work (in the User Guide
 
 * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
-<panel header="More info on _roles and responsibilities_" expandable>
+<panel header="More info on _roles and responsibilities_">
 
-  **Roles indicates aspects you are in charge of and responsible for.** %%E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc.%%  
+  **Roles indicate aspects you are in charge of and responsible for.** %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%  
   
   Here are some example roles:
 
@@ -81,10 +81,16 @@ It is highly recommended that you **divide documentation work (in the User Guide
     
 </panel><p/>
 
-* **README.md** page: Update it to match your project. In particular, add a UI mockup of your intended final product.  
+* **README.adoc** page: Update it to match your project. In particular, add a UI mockup of your intended final product.  
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
     Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
     You may remove the `Learning Outcomes` link and related pages.
+    
+<tip-box type="tip"> 
+
+The original `README.adoc` file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You are recommended to rephrase it to read like the home page of a real product (not a school project) targeting real users %%&nbsp;e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.%%
+
+</tip-box>
 
 **Grading**: To consider this milestone as reached, you should have all v1.0 and v1.1 deliverables completed.
 
