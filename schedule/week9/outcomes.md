@@ -59,7 +59,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="**`W9.8` Can describe the implementation from a develolper's perspective** :star:" no-close>
+<panel type="danger" header="**`W9.8` Can describe the implementation from a developer's perspective** :star:" no-close>
 
 
   <panel header=":dart: Evidence" expanded>
