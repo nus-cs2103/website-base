@@ -20,7 +20,7 @@ Explain coupling with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<dynamic-panel type="warning" src="lo-reduceCoupling.md" header="`W8.3c` Can reduce coupling :star::star:"/>
+<dynamic-panel bottom-switch type="warning" src="lo-reduceCoupling.md" header="`W8.3c` Can reduce coupling :star::star:"/>
 
 <panel type="success" header="`W8.3d` Can identify types of coupling :star::star::star::star:">
   <include src="../../book/designPrinciples/coupling/types/full.md" />
@@ -44,7 +44,7 @@ Explain cohesion with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<dynamic-panel src="lo-increaseCohesion.md" type="warning" header="`W8.3f` Can increase cohesion :star::star:"/>
+<dynamic-panel bottom-switch src="lo-increaseCohesion.md" type="warning" header="`W8.3f` Can increase cohesion :star::star:"/>
 
 <p>
 
