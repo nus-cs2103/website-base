@@ -662,11 +662,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="i463v" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i463v" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i463v" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i463v" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i463v" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="bbs26" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="bbs26" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="bbs26" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="bbs26" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="bbs26" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -1957,8 +1957,8 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <ul>
         <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
       </ul>
-      <panel header="More info on _roles and responsibilities_" expandable="">
-        <p><strong>Roles indicates aspects you are in charge of and responsible for.</strong><span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate who should write which part, ensure the document is in right format, ensure consistency etc.</span></p>
+      <panel header="More info on _roles and responsibilities_">
+        <p><strong>Roles indicate aspects you are in charge of and responsible for.</strong><span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
         <p>Here are some example roles:</p>
         <ul>
           <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -1978,8 +1978,14 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       </panel>
       <p></p>
       <ul>
-        <li><strong><a href="http://README.md">README.md</a></strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark>          so that it can be downloaded by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code> You may remove the <code>Learning Outcomes</code>          link and related pages.</li>
+        <li><strong>README.adoc</strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded
+          by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code> You may remove the <code>Learning Outcomes</code> link
+          and related pages.</li>
       </ul>
+      <tip-box type="tip">
+        <p>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You are recommended to rephrase it to read like the home page
+          of a real product (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span></p>
+      </tip-box>
       <p><strong>Grading</strong>: To consider this milestone as reached, you should have all v1.0 and v1.1 deliverables completed.</p>
     </div>
   </div>
@@ -2123,8 +2129,8 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       </ul>
     </tip-box>
     <p>
-      <panel src="/website\admin\appendixE-gitHub._include_.html#using-milestones" name="%%Admin &raquo; Appendix F: Github: Using Milestones%%" fragment="using-milestones" header="%%Admin &raquo; Appendix F: Github: Using Milestones%%" isOpen="false"
-        no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\appendixE-gitHub._include_.html#using-milestones" name="%%Admin &raquo; Appendix F: Github: Using Milestones%%" bottom-switch="" fragment="using-milestones" header="%%Admin &raquo; Appendix F: Github: Using Milestones%%"
+        isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
     <p><strong>Submission</strong>: Do a release on GitHub</p>
     <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
@@ -2348,7 +2354,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
     <p><strong>Grading</strong>:</p>
     <p>
-      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" bottom-switch="" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
     <h3 id="v15-documentation">v1.5 Documentation</h3>
     <p><strong>Submission</strong>:</p>
@@ -2388,7 +2394,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <p><strong>Deadline</strong>: Same as v1.5 product.</p>
     <p><strong>Grading</strong>:</p>
     <p>
-      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" bottom-switch="" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
     <h3 id="v15-demo">v1.5 Demo</h3><img src="/website/admin/images/v05demo.png" style="width: 250px">
     <ul>
@@ -2436,7 +2442,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     </ul>
     <p><strong>Grading</strong>:</p>
     <p>
-      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" bottom-switch="" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
   </div>
 </div>
@@ -3783,7 +3789,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <h2 id="workflow">Workflow</h2>
       <p>We recommend using the <em>Forking Workflow</em>.</p>
       <p>
-        <panel src="/website\book\gitAndGithub\forkingWorkflow\full._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel bottom-switch="" src="/website\book\gitAndGithub\forkingWorkflow\full._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
     </div>
   </div>
