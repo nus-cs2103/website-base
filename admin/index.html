@@ -42,6 +42,7 @@
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
       <li><a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+      <li><a href="/website/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
     </dropdown>
   </navbar>
 </div>
@@ -662,11 +663,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="n39ts" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="n39ts" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="n39ts" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="n39ts" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="n39ts" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="xugxb" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xugxb" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xugxb" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xugxb" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xugxb" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2121,33 +2122,30 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
 <h2 id="v13-week-10">v1.3 [week 10]</h2>
 <div id="admin-project-v13">
   <div>
-    <h3 id="v13-product">v1.3 Product</h3>
+    <h3 id="v13-project-management">v1.3 Project Management</h3>
     <tip-box type="important">
-      <p>Starting from this version, you are <em>required</em> to,</p>
-      <ul>
-        <li><strong>Do a proper release</strong> as described in the Developer Guide.</li>
-      </ul>
+      <p>Starting from this version, you are <em>required</em> to, <strong>do a proper product release</strong> as described in the Developer Guide.</p>
     </tip-box>
-    <p>
-      <panel src="/website\admin\appendixE-gitHub._include_.html#using-milestones" name="%%Admin &raquo; Appendix F: Github: Using Milestones%%" bottom-switch="" fragment="using-milestones" header="%%Admin &raquo; Appendix F: Github: Using Milestones%%"
-        isOpen="false" no-close="true" no-switch="true"></panel>
-    </p>
+    <tip-box type="tip">
+      <p>Ensure that <strong>each PR that adds an enhancement also updates the relevant parts of documents and tests</strong>. That way, your documentation/testing work will not pile up towards the end.</p>
+    </tip-box>
+    <h3 id="v13-product">v1.3 Product</h3>
     <p><strong>Submission</strong>: Do a release on GitHub</p>
-    <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
+    <p><strong>Grading</strong>:</p>
+    <p>Criteria to consider this milestone as reached:</p>
     <ul>
       <li>The new version has moved towards v2.0 compared to the previous version.</li>
-      <li>The milestone and the release has been done as described in the box above.</li>
+      <li>The milestone is wrapped up and the release has been done.</li>
     </ul>
     <h3 id="v13-documentation">v1.3 Documentation</h3>
-    <p>Follow the documentation in the sample project in terms or organization, level of details, etc.</p>
     <ul>
       <li><strong>User Guide</strong>: Update where the document does not match the current product.</li>
       <li><strong>Developer Guide</strong>: Similar to User Guide.</li>
     </ul>
     <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
-    <p><strong>Grading</strong>: To consider this milestone as reached, your documentation should not be significantly out of date.</p>
+    <p><strong>Grading</strong>: To consider this milestone as reached, your documentation should not be noticeably behind the product.</p>
     <h3 id="v13-demo">v1.3 Demo</h3>
-    <p>Do an informal demo of the new features during the tutorial.</p>
+    <p>Do an informal demo of the new features during the tutorial. Each person should demo their own contributions.</p>
     <tip-box type="important">
       <p>Starting from this version, you should <strong>use the jar file</strong> (downloaded from GitHub release) for the demo, not the code loaded into the IDE.</p>
     </tip-box>
@@ -2156,9 +2154,10 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
 <h2 id="v14-week-11">v1.4 [week 11]</h2>
 <div id="admin-project-v14">
   <div>
-    <h3 id="v14-product">v1.4 Product</h3>
+    <h3 id="v14-project-management">v1.4 Project Management</h3>
     <tip-box type="important">
-      <p>From this version, you are required to collate (i.e., extract your own code and put in one file) at the end of the milestone. More instructions below.</p>
+      <p>From this version, you are required to
+        <tooltip content="extract your own code and put in one file">collate</tooltip> at the end of the milestone.</p>
     </tip-box>
     <panel header="**How to collate code for grading**">
       <div>
@@ -2286,6 +2285,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       </div>
     </panel>
     <p></p>
+    <h3 id="v14-product">v1.4 Product</h3>
+    <p>As before, move the product towards v2.0.</p>
     <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub.</p>
     <p><strong>Grading criteria</strong>:</p>
     <ul>
@@ -2293,44 +2294,53 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <li>Criteria given in v1.3</li>
     </ul>
     <h3 id="v14-documentation">v1.4 Documentation</h3>
+    <tip-box type="important">
+      <p>v1.4 user guide should be updated to match the current version of the product. <span class="dimmed"> Reason: v1.4 will be subjected to a trial <em>acceptance testing</em> session</span></p>
+    </tip-box>
     <ul>
       <li>
-        <p>User guide, Developer guide: As before, update if necessary.</p>
+        <p>Developer guide: As before, update if necessary.</p>
       </li>
       <li>
-        <p><mark>AboutUs.adoc page</mark>: Update to reflect <a href="https://github.com/nus-cs2103/website/blob/master/schedule/AboutUs.md">this sample</a>. Use the appropriate hyperlinks (as given in the sample) to substantiate your claimed contribution.</p>
+        <p>AboutUs.adoc page: Update to reflect current state of roles and responsibilities.</p>
       </li>
     </ul>
     <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.4</code>.</p>
     <h3 id="v14-demo">v1.4 Demo</h3>
-    <p>To be done during the tutorial, but note the following:</p>
-    <ul>
-      <li>Each member should demo the features they added. Duration: ~3 minutes (max) per person</li>
-      <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
-      <li>It is <mark>a <em>sitting down</em> demo</mark>: You'll be demonstrating the features using the TV while sitting down.</li>
-      <li>It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
-      <li>The app should be populated with a significant amount of realistic data at the start. e.g at least 20 contacts.</li>
-    </ul>
+    <p>As before.</p>
+    <h3 id="v14-acceptance-testing">v1.4 Acceptance Testing</h3>
+    <p>To be done during Lecture 10. More info will be released later.</p>
   </div>
 </div>
 <h2 id="v15rc-week-12">v1.5rc [week 12]</h2>
 <div id="admin-project-v15rc">
   <div>
-    <h3 id="v15rc-product">v1.5rc Product</h3>
     <p><code>rc</code> = Release Candidate</p>
-    <p>Functionality expectations: <strong>Freeze features</strong> after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding more features after this point is risky. The remaining
-      time should be left aside for fixing problems discovered late.<br> Other suggestions:</p>
+    <h3 id="v15rc-project-management">v1.5rc Project Management</h3>
+    <p>We strongly recommend you to <strong>freeze features</strong> after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding more features after this point is risky. The remaining
+      time should be left aside for fixing problems discovered late.</p>
+    <h3 id="v15rc-product">v1.5rc Product</h3>
     <ul>
-      <li>Bring code coverage near to your target if it is low.</li>
-      <li>After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to the level you target.</li>
+      <li>Increase code coverage by adding more tests if it is lower than the level you would like it to be.</li>
+      <li>After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.</li>
     </ul>
     <p><strong>Submission</strong>: as before.</p>
-    <p><strong>Grading</strong>: Your product should show significant progress since the previous milestone.</p>
+    <p><strong>Grading</strong>: as before.</p>
     <h3 id="v15rc-documentation">v1.5rc Documentation</h3>
     <p>Update to match the product.</p>
+    <tip-box type="important">
+      <p><strong>Each member must create a <em>Project Portfolio</em> page</strong> to describe your contribution to the project. Follow the <a href="https://se-edu.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</p>
+    </tip-box>
     <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.5rc</code>.</p>
     <h3 id="v15rc-demo">v1.5rc Demo</h3>
-    <p>As before, but this <mark>can be an incremental demo</mark> (i.e. explain only what's new since the previous release).</p>
+    <ul>
+      <li>Duration: ~3 minutes (max) per person <span class="dimmed">  a 4-member team will have 12 minutes</span></li>
+      <li>Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.2-v1.4 demos, there is no need for each person to demo their own features.</li>
+      <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
+      <li>It is <mark>a <em>sitting down</em> demo</mark>: You'll be demonstrating the features using the TV while sitting down.</li>
+      <li>It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
+      <li>The app should be populated with a significant amount of realistic data at the start. e.g at least 20 contacts.</li>
+    </ul>
   </div>
 </div>
 <h2 id="v15-week-13">v1.5 [week 13]</h2>
@@ -2342,19 +2352,20 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <p><mark>Add these two new files</mark> to the repo (these will be used by our testers when testing your final submission):</p>
     <ul>
       <li><code>{project root}\src\test\data\ManualTesting\SampleData.xml</code> :<br> Sample data that can be loaded to your app. Should contain 20+ items.</li>
-      <li><code>{project root}\src\test\data\ManualTesting\TestScript.md</code> :<br> A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.<br> Should cover all functionality of
-        the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
+      <li><code>{project root}\src\test\data\ManualTesting\TestScript.adoc</code> :<br> A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.<br> Should cover all functionality
+        of the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
     </ul>
     <p><strong>Submission</strong>:</p>
     <ul>
-      <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated .md files are up to date; you will not be allowed to updated them later) <mark>Note that the quality of the code in these .md files accounts for a significant component of your final score, graded individually.</mark></li>
-      <li><strong>Executable</strong>: upload to IVLE as an exe or jar or zip file (this should not contain source files). File name: <code>[team][product name].jar</code><span class="dimmed">e.g. [T09-B1][Contacts+].jar</span><br> Warning: When determining
-        the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
+      <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated <code>.md</code> files are up to date; any updates to collated code files after
+        the deadline comes with an automatic penalty) <mark>Note that the quality of the code in these collated code files accounts for a significant component of your final score, graded individually.</mark></li>
+      <li><strong>Executable</strong>: upload to IVLE the jar file (this should not contain source files). File name: <code>[team][product name].jar</code><span class="dimmed">e.g. [T09-B1][Contacts+].jar</span><br> Warning: When determining the late submission
+        penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
     </ul>
     <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
     <p><strong>Grading</strong>:</p>
     <p>
-      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" bottom-switch="" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
     <h3 id="v15-documentation">v1.5 Documentation</h3>
     <p><strong>Submission</strong>:</p>
@@ -2363,10 +2374,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.</p>
       </li>
       <li>
-        <p>Each member: <mark>Create a <em>Project Portfolio</em> page</mark> to describe your contribution to the project. Follow the <a href="https://se-edu.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</p>
-      </li>
-      <li>
-        <p>Convert the following documents to pdf (AB-L4 dev guide has some instructions on converting a Web doc to pdf) and upload to IVLE.</p>
+        <p>Convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE.</p>
       </li>
     </ul>
     <table class="markbind-table table">
@@ -2394,7 +2402,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <p><strong>Deadline</strong>: Same as v1.5 product.</p>
     <p><strong>Grading</strong>:</p>
     <p>
-      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" bottom-switch="" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
     <h3 id="v15-demo">v1.5 Demo</h3><img src="/website/admin/images/v05demo.png" style="width: 250px">
     <ul>
@@ -2405,7 +2413,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <li><strong>Target audience</strong>: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.</li>
       <li><strong>Scope</strong>:
         <ul>
-          <li>Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.4-v1.5rc demos, there is no need for each person to demo their own features.</li>
+          <li>Organize the demo to present a cohesive picture of the product as a whole, similar to the v1.5rc demo.</li>
           <li>Remember to explain the profile of the target user early in the demo.</li>
           <li>The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the
             product improves the user’s life rather than simply describe each feature.</li>
@@ -2418,31 +2426,20 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <li><strong>Structure:</strong><br> Demo the product using the same executable you submitted, on your own laptop, using the TV.<br> Every team member should take part in the demo. However, it's ok for one member to do all the typing.</li>
       <li><strong>Optimizing the time:</strong><br> Try to make the maximum use of the short demo time in the following ways,
         <ul>
-          <li>
-            <p>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br> Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch
-              or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code><br>              [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br> It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br> Note that CS2101 demo requirements may differ. Different
-              context → Different requirements.</p>
-          </li>
-          <li>
-            <p>Rehearse the steps well and ensure you can do a smooth demo. <mark>Demos that are clearly under-prepared will be penalized.</mark></p>
-          </li>
-          <li>
-            <p>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</p>
-          </li>
-          <li>
-            <p>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates
-              a bad impression too.</p>
-          </li>
-          <li>
-            <p>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and
-              whistles.</p>
-          </li>
+          <li>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br> Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch
+            or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code><br>            [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br> It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br> Note that CS2101 demo requirements may differ. Different context
+            → Different requirements.</li>
+          <li>Rehearse the steps well and ensure you can do a smooth demo. <mark>Demos that are clearly under-prepared will be penalized.</mark></li>
+          <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
+          <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates a
+            bad impression too.</li>
+          <li>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
         </ul>
       </li>
     </ul>
     <p><strong>Grading</strong>:</p>
     <p>
-      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" bottom-switch="" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
   </div>
 </div>
@@ -3789,7 +3786,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <h2 id="workflow">Workflow</h2>
       <p>We recommend using the <em>Forking Workflow</em>.</p>
       <p>
-        <panel bottom-switch="" src="/website\book\gitAndGithub\forkingWorkflow\full._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\gitAndGithub\forkingWorkflow\full._include_.html" header="%%Textbook &raquo;%% Git and GitHub: Forking Workflow" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
     </div>
   </div>
