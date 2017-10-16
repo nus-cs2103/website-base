@@ -9,7 +9,12 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-singleton.md" />
+
+<br>
+
+#### Design:
+
+<dynamic-panel src="outcome-patterns.md" type="danger" header=":trophy: Can use some basic design patterns :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
