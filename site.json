@@ -1641,10 +1641,6 @@
       "title": "CS2103/T Textbook - Software Design Patterns: Singleton: Implementation"
     },
     {
-      "src": "book/designPatterns/singleton/application/index.md",
-      "title": "CS2103/T Textbook - Software Design Patterns: Singleton: Application"
-    },
-    {
       "src": "book/designPatterns/singleton/evaluation/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: Singleton: Evaluation"
     },
