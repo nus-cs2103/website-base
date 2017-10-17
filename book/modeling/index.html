@@ -273,6 +273,59 @@
                       </question>
                     </panel>
                   </div>
+                  <div>
+                    <panel header=":lock::key: draw class diagram: Player, Bot, etc.">
+                      <p>(a) Draw a class diagram to represent the following code.</p>
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Trainable</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TrainableBot</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Trainable</span></span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{
+
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span> </span>{
+
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{
+
+    }
+}
+</code></pre>
+                      <p>(b) Add these association classes to the diagram:<br> i. A <code>Player</code> can <em>challenge</em> another <code>Player</code> object. <code>Challenge</code> class keeps track that association between the two <code>Player</code>                        objects: the <em>challenger</em> and the <em>target</em> of the challenge.<br> ii. A <code>Human</code> can <em>train</em> a <code>SmartBot</code> object. <code>Lesson</code> class keeps track that association.</p>
+                      <p>(c) Convert the two association classes to normal classes.</p>
+                      <panel header=":key: (a)"><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/playerBotA.png" height="250">
+                        <p></p>
+                        <p></p>
+                      </panel>
+                      <panel header=":key: (b)"><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/playerBotB.png" height="310">
+                        <p></p>
+                        <p></p>
+                      </panel>
+                      <panel header=":key: (c)"><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/playerBotC.png" height="290">
+                        <p></p>
+                        <p></p>
+                      </panel>
+                      <div slot="answer"></div>
+                    </panel>
+                  </div>
                 </panel>
               </div>
               <div></div>
@@ -845,16 +898,16 @@
                     <p></p>
                     <question>
                       Choose the incorrect statement.
-                      <ul radio-group="05phs" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="05phs" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="05phs" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="05phs" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="05phs" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="05phs" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
+                      <ul radio-group="rlawt" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="rlawt" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="rlawt" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="rlawt" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="rlawt" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="rlawt" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="kztpr" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="kztpr" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <ul radio-group="rqqcj" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="rqqcj" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
                         </ul>
                         <p>Explanation: A sequence diagram is a behavior diagram, not a structure diagram. An SD can represent how objects interact with each other (i.e., behavior), not how they are connected to each other (i.e. structure).</p>
                       </div>
@@ -873,16 +926,16 @@
                     <p></p>
                     <question>
                       Which one of these is the most useful to model a workflow?
-                      <ul radio-group="jxdge" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jxdge" type="radio"> a. class diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jxdge" type="radio"> b. object diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jxdge" type="radio"> c. activity diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jxdge" type="radio"> d. state machine diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="jxdge" type="radio"> e. use case diagram</label></li>
+                      <ul radio-group="n03uj" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="n03uj" type="radio"> a. class diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="n03uj" type="radio"> b. object diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="n03uj" type="radio"> c. activity diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="n03uj" type="radio"> d. state machine diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="n03uj" type="radio"> e. use case diagram</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="cbbsq" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="cbbsq" type="radio"> c. activity diagram</label></li>
+                        <ul radio-group="eoarc" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="eoarc" type="radio"> c. activity diagram</label></li>
                         </ul>
                       </div>
                     </question>
