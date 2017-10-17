@@ -50,7 +50,7 @@ Identify places in the project where only a single object of a class is needed b
   <include src="../../book/designPatterns/facade/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Discuss the current/potential applications of the pattern in your project.
 
   </panel>
 </panel>
@@ -63,7 +63,7 @@ Identify places in the project where only a single object of a class is needed b
   <include src="../../book/designPatterns/command/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Discuss the current/potential applications of the pattern in your project.
 
   </panel>
 </panel>
