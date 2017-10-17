@@ -142,16 +142,16 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **There is no need to break things into VERY small tasks.** Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
 
- * `Implementing parser `  %%: too big because it cannot be done by a single person in a week.%% 
- * `Implementing parser support for adding of floating tasks` %%: appropriate size.%%
+  * `Implementing parser `  %%: too big because it cannot be done by a single person in a week.%% 
+  * `Implementing parser support for adding of floating tasks` %%: appropriate size.%%
  
 * **Do not track things taken for granted.** %%e.g., `push code to repo` should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.%%
 
 * **Omit redundant details.** In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as `priority` can be omitted if you think they don't help you.
 
-* **Assign tasks to team members using the `owner` field.** At any point, there should be some ongoing tasks and some pending tasks against each team member.
+* **Assign tasks to team members using the `assignees` field.** At any point, there should be some ongoing tasks and some pending tasks against each team member.
 
-* **Use `status` labels to indicate the status of the issue.** i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.
+* **Optionally, you can use `status.ongoing` label to indicate issues currently ongoing.** 
 
 <div id="using-milestones">
 
@@ -170,6 +170,7 @@ To consider the milestone as 'reached', **you should have the following done *be
   * All tests passing on Travis.
   * Milestone updated to match the product.
   * Milestone closed. All issues assigned to that milestone should be closed too.
+  * Optionally, issues for next milestone are assigned to team members (this is not compulsory to do _before_ the tutorial, but we recommend you to do it soon after the tutorial)
   * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.  
 
 </tip-box> 

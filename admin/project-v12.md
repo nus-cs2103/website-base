@@ -23,7 +23,7 @@ As before, you are _recommended_ (but not required) to **follow the forking work
 **Submission**: Update code in GitHub.
 
 **Grading**: Criteria to consider this milestone as reached
-* A new version tagged `v1.2` is in your repo. If `v1.2` is already used by a past commit, you can use something similar such as `V1.2` or `v1.2.0`.
+* A new version tagged `v1.2` is in your repo. %%&nbsp;If `v1.2` is already used by a past commit, you can use something similar such as `V1.2` or `v1.2.0`.%%
 * The version `v1.2` is step towards `v2.0` (but it does not matter how big a step it is)
 
 ### v1.2 Documentation
@@ -33,7 +33,7 @@ As before, you are _recommended_ (but not required) to **follow the forking work
   * If a feature design has changed, update the descriptions accordingly.
 
 * **Developer Guide**:
-  * Each member should describe the implementation of at least one enhancement she has added (or planning to add). <br>
+  * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: ~1 page per person
   * The description can contain things such as,
     * How the feature is implemented.
@@ -45,4 +45,4 @@ As before, you are _recommended_ (but not required) to **follow the forking work
 
 ### v1.2 Demo
 
-Do an informal demo of the new feature during the tutorial.
+Do an informal demo of the new feature during the tutorial. ==Each team member should demo their own work, using the `master` branch.==
