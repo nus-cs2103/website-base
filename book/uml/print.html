@@ -691,8 +691,12 @@
         </div>
       </tip-box>
       <div>
-        <p>Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed. Understanding the workflow of the problem domain is important if the problem that is to be solved is connected to the workflow.</p>
         <p><strong>A UML Activity diagram (AD) can model workflows.</strong></p>
+        <p>Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed. Understanding the workflow of the
+          <tooltip content="the domain in which the target prolem occurs">problem domain</tooltip> is important if the problem that is to be solved is connected to the workflow.</p>
+        <div v-closeable="" alt="">
+          <p>An example activity diagram:<br><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br><sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
+        </div>
       </div>
     </div>
     <h3 id="basic-notations">Basic Notations</h3>
@@ -702,12 +706,15 @@
       </div>
       <tip-box>
         <div>
-          <p>🏆 Can use linear paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          <p>🏆 Can interpret linear paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
       <div>
-        <p>An activity diagram (AD) consists of a sequence of actions and control flows. An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges. A control flow shows the flow of control from one
-          action to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/diagram.png" height="230">
+        <p>An activity diagram (AD) consists of a sequence of <em>actions</em> and <em>control flows</em>.</p>
+        <ul>
+          <li>An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges.</li>
+          <li>A <em>control flow</em> shows the flow of control from one action to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</li>
+        </ul><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/diagram.png" height="230">
         <p></p>
       </div>
     </div>
@@ -717,16 +724,15 @@
       </div>
       <tip-box>
         <div>
-          <p>🏆 Can use alternate paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          <p>🏆 Can interpret alternate paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
       <div>
-        <p><em>Branch nodes</em> and <em>merge nodes</em> have the same notation: a <strong>diamond</strong> shape. They are used to show alternative (not parallel) paths through the AD. Each control flow exiting a <em>Branch node</em> has a guard condition
-          which allows control to flow only if the guard condition is satisfied. Therefore, a <em>guard</em> is a boolean condition that should be true for execution to take a specific path.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/diagram.png"
+        <p><strong><em>Branch nodes</em> and <em>merge nodes</em> have the same notation: a diamond shape.</strong> They are used to show alternative (not parallel) paths through the AD. Each control flow exiting a branch node has a <em>guard condition</em>          which : a boolean condition that should be true for execution to take that path. <strong>only one of the alternative paths can be taken at any time</strong>.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/diagram.png"
           height="230">
         <p></p>
         <tip-box>
-          <p>Example: AD for the Minesweeper (MS) that shows actions done by the player and the game (MS).</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/minesweeper.png" height="240">
+          <p>📦 The activity diagram for the Minesweeper (MS) that shows actions done by the player and the game (MS).</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/minesweeper.png" height="240">
           <p></p>
         </tip-box>
       </div>
@@ -737,13 +743,16 @@
       </div>
       <tip-box>
         <div>
-          <p>🏆 Can use parallel paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          <p>🏆 Can interpret parallel paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
         </div>
       </tip-box>
       <div>
-        <p><em>Forks</em> and <em>joins</em> have the same notation: a <strong>bar</strong>. They indicate the start and end of concurrent flows of control. The following diagram shows an example of their use. For <em>join</em>, execution along all incoming
-          control flows should be complete before the execution starts on the outgoing control flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
-        <p></p>
+        <p><strong><em>Forks</em> and <em>joins</em> have the same notation: a bar. They indicate the start and end of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong> In a
+          <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+        <tip-box>
+          <p>📦 The following diagram shows an example of their use.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
+          <p></p>
+        </tip-box>
       </div>
     </div>
     <div>
@@ -756,11 +765,14 @@
         </div>
       </tip-box>
       <div>
-        <p>Here is the AD for a game of ‘snakes and ladders’.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
-        <p></p>
-        <p>The <em>rake</em> symbol (in the “Move piece” action above) is used to show that an action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png"
-          height="230">
-        <p></p>
+        <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
+        <tip-box>
+          <p>📦 Here is the AD for a game of ‘Snakes and Ladders’.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
+          <p></p>
+          <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png"
+            height="230">
+          <p></p>
+        </tip-box>
       </div>
     </div>
     <div>
@@ -773,10 +785,11 @@
         </div>
       </tip-box>
       <div>
-        <p>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</p><img src="/website/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png"
-          height="220">
-        <p></p>
-        <p>Note: Only essential elements of ADs are covered in this handout.</p>
+        <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
+        <tip-box>
+          <p>📦 A simple example of a swimlane diagram:</p><img src="/website/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
+          <p></p>
+        </tip-box>
       </div>
     </div>
     <h2 id="notes">Notes</h2>

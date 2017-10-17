@@ -19,7 +19,15 @@
     </div>
   </tip-box>
   <div>
-    <p><span class="dimmed"><strong><span>Tools → UML →
+    <div>
+      <p>
+        <panel src="/website\book\uml\activityDiagrams\basicNotations\linearPaths\full._include_.html" header="%%:mortar_board: Tools &rarr; UML &rarr; Activity Diagrams &rarr; Linear Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\uml\activityDiagrams\basicNotations\alternatePaths\full._include_.html" header="%%:mortar_board: Tools &rarr; UML &rarr; Activity Diagrams &rarr; Alternate Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\uml\activityDiagrams\basicNotations\parallelPaths\full._include_.html" header="%%:mortar_board: Tools &rarr; UML &rarr; Activity Diagrams &rarr; Parallel Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
 </span></strong>
       </span>
     </p>
@@ -59,7 +67,7 @@
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: Which of these sequence of actions is not allowed by the given activity diagram?">
+              <panel header=":lock::key: Which are not allowed?">
                 <question>
                   <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
                   <ul class="task-list">
@@ -70,12 +78,7 @@
                   </ul><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/sequence.png" height="190">
                   <p></p>
                   <div slot="answer">
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. start a b c d g c d end</li>
-                    </ul>
+                    <p>(d)</p>
                     <p>Explanation: ‘-e-f-’ and ‘-g-’ are parallel paths. Both paths should complete before the execution reaches c again.</p>
                   </div>
                 </question>

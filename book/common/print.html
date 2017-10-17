@@ -3857,18 +3857,20 @@ AcademicStaff academicStaff = staff; // Not OK
         </tip-box>
         <div>
           <p><strong>Context</strong></p>
-          <p>Components need to access functionality deep inside other components. For example, the <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code>            component.</p>
+          <p>Components need to access functionality deep inside other components.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/facade/what/images/textBook.png" height="120">
+            <p>📦 The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p><img src="/website/book/designPatterns/facade/what/images/textBook.png"
+              height="120">
             <p></p>
           </tip-box>
           <p><strong>Problem</strong></p>
-          <p>Access to the component should be allowed without exposing its internal details. For example, the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code>            class within it.</p>
+          <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
           <p><strong>Solution</strong></p>
-          <p>Include a Façade class that sits between the component internals and users of the component such that all access to the component happens through the Façade class. The following class diagram shows the application of the Façade pattern to the
-            <code>Library System</code> example. In this example, the <code>LibraryLogic</code> class acts as the Façade class.</p>
+          <p>Include a
+            <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+            <p>📦 The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p><img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png"
+              height="120">
             <p></p>
           </tip-box>
         </div>
@@ -3887,21 +3889,22 @@ AcademicStaff academicStaff = staff; // Not OK
           <p><strong>Context</strong></p>
           <p>A system is required to execute a number of commands, each doing a different task. For example, a system might have to support <code>Sort</code>, <code>List</code>, <code>Reset</code> commands.</p>
           <p><strong>Problem</strong></p>
-          <p>It is preferable that some part of the code execute these commands without having to know each command type. For example, there can be a <code>CommandQueue</code> object that is responsible for queuing commands and executing them without knowledge
-            of what each command does.</p>
+          <p>It is preferable that some part of the code executes these commands without having to know each command type. <span class="dimmed"> e.g., there can be a <code>CommandQueue</code> object that is responsible for queuing commands and executing them without knowledge of what each command does.</span></p>
           <p><strong>Solution</strong></p>
-          <p>In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The <code>CommandQueue</code> object treats
-            them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code> object will access the <code>DataStore</code>            object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
+          <p>The essential element of this pattern is to have a general <code>&lt;&lt; Command &gt;&gt;</code> object that can be passed around, stored, executed, etc without knowing the type of command (i.e. via polymorphism).</p>
+          <p>Let us examine an example application of the pattern first:</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/command/what/images/commandCreator.png" height="150">
+            <p>📦 In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The <code>CommandQueue</code> object
+              treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code> object will access the <code>DataStore</code>              object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p><img src="/website/book/designPatterns/command/what/images/commandCreator.png" height="150">
             <p></p>
           </tip-box>
           <p>The general form of the solution is as follows.</p><img src="/website/book/designPatterns/command/what/images/clientInvoker.png" height="200">
           <p></p>
           <p>The <code>&lt;&lt; Client &gt;&gt;</code> creates a <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object, and passes it to the <code>&lt;&lt; Invoker &gt;&gt;</code>. The <code>&lt;&lt; Invoker &gt;&gt;</code> object treats all commands as
             a general <code>&lt;&lt; Command &gt;&gt;</code> type. <code>&lt;&lt; Invoker &gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> will
-            store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code> of the command before
-            it is passed to the <code>&lt;&lt; Invoker &gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above. The essential element is to have a general <code>&lt;&lt; Command &gt;&gt;</code>            object that can be passed around, stored, executed, etc</p>
+            store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code> of the command (
+            <tooltip
+              content="the object the command will operate on, in case different commands operate on different objects">?</tooltip>) before it is passed to the <code>&lt;&lt; Invoker &gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
         </div>
       </div>
       <h2 id="model-view-controller-mvc-pattern">Model View Controller (MVC) Pattern</h2>
@@ -8178,9 +8181,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="kwoc1" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kwoc1" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kwoc1" type="radio"> False</label></li>
+                          <ul radio-group="s9o6o" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="s9o6o" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="s9o6o" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -8319,9 +8322,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="rmhy6" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rmhy6" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rmhy6" type="radio"> False</label></li>
+                          <ul radio-group="0skvs" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="0skvs" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="0skvs" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -11277,8 +11280,12 @@ A negative test case: i = null;
       </div>
     </tip-box>
     <div>
-      <p>Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed. Understanding the workflow of the problem domain is important if the problem that is to be solved is connected to the workflow.</p>
       <p><strong>A UML Activity diagram (AD) can model workflows.</strong></p>
+      <p>Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed. Understanding the workflow of the
+        <tooltip content="the domain in which the target prolem occurs">problem domain</tooltip> is important if the problem that is to be solved is connected to the workflow.</p>
+      <div v-closeable="" alt="">
+        <p>An example activity diagram:<br><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br><sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
+      </div>
     </div>
   </div>
   <h3 id="basic-notations">Basic Notations</h3>
@@ -11288,12 +11295,15 @@ A negative test case: i = null;
     </div>
     <tip-box>
       <div>
-        <p>🏆 Can use linear paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+        <p>🏆 Can interpret linear paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
     </tip-box>
     <div>
-      <p>An activity diagram (AD) consists of a sequence of actions and control flows. An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges. A control flow shows the flow of control from one action
-        to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/diagram.png" height="230">
+      <p>An activity diagram (AD) consists of a sequence of <em>actions</em> and <em>control flows</em>.</p>
+      <ul>
+        <li>An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges.</li>
+        <li>A <em>control flow</em> shows the flow of control from one action to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</li>
+      </ul><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/diagram.png" height="230">
       <p></p>
     </div>
   </div>
@@ -11303,16 +11313,15 @@ A negative test case: i = null;
     </div>
     <tip-box>
       <div>
-        <p>🏆 Can use alternate paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+        <p>🏆 Can interpret alternate paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
     </tip-box>
     <div>
-      <p><em>Branch nodes</em> and <em>merge nodes</em> have the same notation: a <strong>diamond</strong> shape. They are used to show alternative (not parallel) paths through the AD. Each control flow exiting a <em>Branch node</em> has a guard condition
-        which allows control to flow only if the guard condition is satisfied. Therefore, a <em>guard</em> is a boolean condition that should be true for execution to take a specific path.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/diagram.png"
+      <p><strong><em>Branch nodes</em> and <em>merge nodes</em> have the same notation: a diamond shape.</strong> They are used to show alternative (not parallel) paths through the AD. Each control flow exiting a branch node has a <em>guard condition</em>        which : a boolean condition that should be true for execution to take that path. <strong>only one of the alternative paths can be taken at any time</strong>.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/diagram.png"
         height="230">
       <p></p>
       <tip-box>
-        <p>Example: AD for the Minesweeper (MS) that shows actions done by the player and the game (MS).</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/minesweeper.png" height="240">
+        <p>📦 The activity diagram for the Minesweeper (MS) that shows actions done by the player and the game (MS).</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/minesweeper.png" height="240">
         <p></p>
       </tip-box>
     </div>
@@ -11323,13 +11332,16 @@ A negative test case: i = null;
     </div>
     <tip-box>
       <div>
-        <p>🏆 Can use parallel paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+        <p>🏆 Can interpret parallel paths in activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
     </tip-box>
     <div>
-      <p><em>Forks</em> and <em>joins</em> have the same notation: a <strong>bar</strong>. They indicate the start and end of concurrent flows of control. The following diagram shows an example of their use. For <em>join</em>, execution along all incoming
-        control flows should be complete before the execution starts on the outgoing control flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
-      <p></p>
+      <p><strong><em>Forks</em> and <em>joins</em> have the same notation: a bar. They indicate the start and end of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong> In a
+        <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+      <tip-box>
+        <p>📦 The following diagram shows an example of their use.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
+        <p></p>
+      </tip-box>
     </div>
   </div>
   <div>
@@ -11342,11 +11354,14 @@ A negative test case: i = null;
       </div>
     </tip-box>
     <div>
-      <p>Here is the AD for a game of ‘snakes and ladders’.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
-      <p></p>
-      <p>The <em>rake</em> symbol (in the “Move piece” action above) is used to show that an action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png"
-        height="230">
-      <p></p>
+      <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
+      <tip-box>
+        <p>📦 Here is the AD for a game of ‘Snakes and Ladders’.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
+        <p></p>
+        <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png"
+          height="230">
+        <p></p>
+      </tip-box>
     </div>
   </div>
   <div>
@@ -11359,10 +11374,11 @@ A negative test case: i = null;
       </div>
     </tip-box>
     <div>
-      <p>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</p><img src="/website/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png"
-        height="220">
-      <p></p>
-      <p>Note: Only essential elements of ADs are covered in this handout.</p>
+      <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
+      <tip-box>
+        <p>📦 A simple example of a swimlane diagram:</p><img src="/website/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
+        <p></p>
+      </tip-box>
     </div>
   </div>
   <h2 id="notes">Notes</h2>

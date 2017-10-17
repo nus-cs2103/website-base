@@ -1,4 +1,6 @@
-<p><span class="dimmed"><strong><span>Tools → UML →
+<div></div>
+<p></p>
+<p><span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
 </span></strong>
   </span>
 </p>
@@ -7,9 +9,12 @@
 </div>
 <div id="main">
   <div>
-    <p><em>Forks</em> and <em>joins</em> have the same notation: a <strong>bar</strong>. They indicate the start and end of concurrent flows of control. The following diagram shows an example of their use. For <em>join</em>, execution along all incoming
-      control flows should be complete before the execution starts on the outgoing control flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
-    <p></p>
+    <p><strong><em>Forks</em> and <em>joins</em> have the same notation: a bar. They indicate the start and end of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong> In a
+      <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+    <tip-box>
+      <p>📦 The following diagram shows an example of their use.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
+      <p></p>
+    </tip-box>
   </div>
   <div></div>
 </div>

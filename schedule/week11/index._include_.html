@@ -1,272 +1,6 @@
 <panel header=":trophy: Outcomes" expandable="" ctrl-lvl="1" no-close="">
   <div>
     <div>
-      <panel type="danger" header=":trophy: Can use activity diagrams :star:" expandable="" expanded="" no-close="">
-        <panel type="danger" header=":trophy: Can explain activity diagrams :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="introduction-two">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed. Understanding the workflow of the problem domain is important if the problem that is to be solved is connected to the workflow.</p>
-                <p><strong>A UML Activity diagram (AD) can model workflows.</strong></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can use linear paths in activity diagrams :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="linear-paths-two">Linear Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>An activity diagram (AD) consists of a sequence of actions and control flows. An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges. A control flow shows the flow of control
-                  from one action to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/diagram.png" height="230">
-                <p></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can use alternate paths in activity diagrams :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="alternate-paths-two">Alternate Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><em>Branch nodes</em> and <em>merge nodes</em> have the same notation: a <strong>diamond</strong> shape. They are used to show alternative (not parallel) paths through the AD. Each control flow exiting a <em>Branch node</em> has a guard
-                  condition which allows control to flow only if the guard condition is satisfied. Therefore, a <em>guard</em> is a boolean condition that should be true for execution to take a specific path.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/diagram.png"
-                  height="230">
-                <p></p>
-                <tip-box>
-                  <p>Example: AD for the Minesweeper (MS) that shows actions done by the player and the game (MS).</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/minesweeper.png" height="240">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can use parallel paths in activity diagrams :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="parallel-paths-two">Parallel Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><em>Forks</em> and <em>joins</em> have the same notation: a <strong>bar</strong>. They indicate the start and end of concurrent flows of control. The following diagram shows an example of their use. For <em>join</em>, execution along all
-                  incoming control flows should be complete before the execution starts on the outgoing control flow.</p><img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/diagram.png" height="220">
-                <p></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="danger" header=":trophy: Can use basic activity diagram notations :star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="combined-three">Combined <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div></div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock::key: Adding features to Minesweeper AD :three:">
-                        <question has-input="true">
-                          <p>Given below is the high-level game logic of the Minesweeper, drawn from the point of view of the player.</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperQuestion.png" height="220">
-                          <p></p>
-                          <p>Incorporate the following new features to the above AD.</p>
-                          <p><strong>(a) timing</strong></p>
-                          <p>Description: The game keeps track of the total time spent on a game. The counting starts from the moment the first cell is cleared/marked and stops when the game is won or lost. Time elapsed is shown to the player after every
-                            mark/clear operation.</p>
-                          <p><strong>(b) standing_ground</strong></p>
-                          <p>Description: At the beginning of the game, the player chooses five cells to be revealed without penalty. This is done one cell at a time. If the cell so selected is mined, it will be marked automatically. The objective is to
-                            give some “standing ground” to the player from which he/she can deduce remaining cells. The player cannot mark or clear cells until the standing ground is selected.</p>
-                          <p><strong>(c) tolerate</strong></p>
-                          <p>Description: Marking a cell incorrectly is tolerated as long as the number of cells does not exceed the total mines. Marked cells can be unmarked. The player is not allowed to mark more cells if the total number of marked cells
-                            equals the total number of mines.</p>
-                          <div slot="answer">
-                            <p><strong>(a) No change to the AD</strong></p>
-                            <p>After incorporating (b)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerA.png" height="220">
-                            <p></p>
-                            <p>Given above is a minimal change. It is OK to show more details of the ‘clear standing ground’ action or show it as a separate AD.</p>
-                            <p>After incorporating (c)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerB.png" height="290">
-                            <p></p>
-                            <p>Note that some actions/paths have been deleted. The above diagram uses a diamond as either a branch or a merge (but not both). It is ok to use a diamond as both a merge and branch, as long as it does not lead to ambiguities.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock::key: Which of these sequence of actions is not allowed by the given activity diagram?">
-                        <question>
-                          <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. start a b c d g c d end</li>
-                          </ul><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/sequence.png" height="190">
-                          <p></p>
-                          <div slot="answer">
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. start a b c d g c d end</li>
-                            </ul>
-                            <p>Explanation: ‘-e-f-’ and ‘-g-’ are parallel paths. Both paths should complete before the execution reaches c again.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="info" header=":trophy: Can use rakes in activity diagrams :star::star::star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="rakes-three">Rakes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p>Here is the AD for a game of ‘snakes and ladders’.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
-                <p></p>
-                <p>The <em>rake</em> symbol (in the “Move piece” action above) is used to show that an action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p><img src="/website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png"
-                  height="230">
-                <p></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-        <panel type="success" header=":trophy: Can explain swimlanes in activity diagrams :star::star::star::star:" expandable="">
-          <div>
-            <p><span class="dimmed"><strong><span>Tools → UML →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="combined-three-2">Combined <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div></div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock::key: Adding features to Minesweeper AD :three:">
-                        <question has-input="true">
-                          <p>Given below is the high-level game logic of the Minesweeper, drawn from the point of view of the player.</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperQuestion.png" height="220">
-                          <p></p>
-                          <p>Incorporate the following new features to the above AD.</p>
-                          <p><strong>(a) timing</strong></p>
-                          <p>Description: The game keeps track of the total time spent on a game. The counting starts from the moment the first cell is cleared/marked and stops when the game is won or lost. Time elapsed is shown to the player after every
-                            mark/clear operation.</p>
-                          <p><strong>(b) standing_ground</strong></p>
-                          <p>Description: At the beginning of the game, the player chooses five cells to be revealed without penalty. This is done one cell at a time. If the cell so selected is mined, it will be marked automatically. The objective is to
-                            give some “standing ground” to the player from which he/she can deduce remaining cells. The player cannot mark or clear cells until the standing ground is selected.</p>
-                          <p><strong>(c) tolerate</strong></p>
-                          <p>Description: Marking a cell incorrectly is tolerated as long as the number of cells does not exceed the total mines. Marked cells can be unmarked. The player is not allowed to mark more cells if the total number of marked cells
-                            equals the total number of mines.</p>
-                          <div slot="answer">
-                            <p><strong>(a) No change to the AD</strong></p>
-                            <p>After incorporating (b)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerA.png" height="220">
-                            <p></p>
-                            <p>Given above is a minimal change. It is OK to show more details of the ‘clear standing ground’ action or show it as a separate AD.</p>
-                            <p>After incorporating (c)</p><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/minesweeperAnswerB.png" height="290">
-                            <p></p>
-                            <p>Note that some actions/paths have been deleted. The above diagram uses a diamond as either a branch or a merge (but not both). It is ok to use a diamond as both a merge and branch, as long as it does not lead to ambiguities.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock::key: Which of these sequence of actions is not allowed by the given activity diagram?">
-                        <question>
-                          <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. start a b c d g c d end</li>
-                          </ul><img src="/website/book/uml/activityDiagrams/basicNotations/combined/images/sequence.png" height="190">
-                          <p></p>
-                          <div slot="answer">
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. start a b c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. start a b c d e f g c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. start a b c d e g f c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. start a b c d g c d end</li>
-                            </ul>
-                            <p>Explanation: ‘-e-f-’ and ‘-g-’ are parallel paths. Both paths should complete before the execution reaches c again.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p>...</p>
-          </panel>
-        </panel>
-      </panel>
-    </div>
-    <div>
       <panel type="warning" header=":trophy: Can explain types of SDLC process models :star::star:" expandable="" expanded="" no-close="">
         <panel type="warning" header=":trophy: Can explain SLDC process models :star::star:" expandable="">
           <div>
@@ -1681,6 +1415,1518 @@
                   </panel>
                 </div>
                 <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can apply heuristics to combine multiple test inputs :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain the need for strategies to combine test inputs :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Often, an SUT can take multiple inputs. Having selected test values for each input (using equivalence partitioning, boundary value analysis, or some other technique), how are they combined to create test cases?</p>
+                <tip-box>
+                  <ul>
+                    <li>
+                      <p>Scenario: calculateGrade</p>
+                    </li>
+                    <li>
+                      <p>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</p>
+                    </li>
+                    <li>
+                      <p>Values to test (invalid values are <strong>bold</strong>)</p>
+                      <ul>
+                        <li>participation: 0, 1, 19, 20, <strong>21</strong>, <strong>22</strong></li>
+                        <li>projectGrade: A, B, C, D, F</li>
+                        <li>isAbsent: true, false</li>
+                        <li>examScore: 0, 1, 69, 70, <strong>71</strong>, <strong>72</strong></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </tip-box>
+                <p>For the calculateGrade scenario above, one obvious solution is to test all possible combinations i.e. test all 6x5x2x6=360 cases. Naturally, this technique has a higher chance of discovering bugs (i.e. effective) but the number of combinations
+                  can be too high to test (i.e. not efficient).</p>
+                <p>Therefore, we need smarter ways to combine test inputs that are both effective and efficient.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can explain some basic test input combination strategies :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="test-input-combination-strategies-two">Test Input Combination Strategies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
+                <tip-box>
+                  <p>Scenario: foo</p>
+                  <p>SUT: foo(p1 char, p2 int, p3 boolean)</p>
+                  <p>Selected values for each input:</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Input</th>
+                        <th style="text-align:center">Values</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">p1</td>
+                        <td style="text-align:center">a, b, c</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">p2</td>
+                        <td style="text-align:center">1, 2, 3</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">p3</td>
+                        <td style="text-align:center">T, F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>a) all combinations</strong>: generate test cases for each unique combination of test inputs</p>
+                <tip-box>
+                  <p>Example: the foo scenario requires 3x3x2=18 test cases under the ‘all combinations strategy</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">...</td>
+                        <td style="text-align:center">...</td>
+                        <td style="text-align:center">...</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">18</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>b) at least once</strong>: include each test input at least once</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">VV/IV</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV/IV = Any Value</p>
+                </tip-box>
+                <p><strong>c) all pairs</strong>: This strategy creates test cases so that for any given pair of parameters, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting
+                  factors. The resulting number of test cases is lower than the “all combinations” approach, but higher than the “at least once” approach.</p>
+                <tip-box>
+                  <p>Example: the foo scenario requires 9 test cases to cover all pairs</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">7</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">8</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">9</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
+                <tip-box>
+                  <p>Example: the foo scenario, testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Test Case</th>
+                        <th style="text-align:center">p1</th>
+                        <th style="text-align:center">p2</th>
+                        <th style="text-align:center">p3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">a</td>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">b</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">T</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">c</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>d) random:</strong> In this strategy we generate test cases using one of the other strategies and then pick a subset randomly (presumably because the original set of test cases is too big).</p>
+                <p><strong>e) other</strong>: There are other strategies that can be used.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="warning" header=":trophy: Can apply heuristic ‘each valid input at least once in a positive test case’ :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case-two">Heuristic: Each Valid Input At Least Once In A Positive Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <tip-box>
+                  <p>Scenario: calculateFruitPrice</p>
+                  <p>SUT printLabel(fruitName String, unitPrice int)</p>
+                  <p>Selected values for each input (invalid values are underlined):</p>
+                  <table class="table">
+                    <tr>
+                      <th>Input</th>
+                      <th>Values</th>
+                      <th>Reason</th>
+                    </tr>
+                    <tr>
+                      <td>fruitName</td>
+                      <td>
+                        <ul>
+                          <li>Apple</li>
+                          <li>Banana</li>
+                          <li>Cherry</li>
+                          <li>Dog</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>Label format is round</li>
+                          <li>Label format is oval</li>
+                          <li>Label format is square</li>
+                          <li>Not a valid fruit</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>unitPrice</td>
+                      <td>
+                        <ul>
+                          <li>1</li>
+                          <li>20</li>
+                          <li>0</li>
+                          <li>-1</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>Only one digit</li>
+                          <li>Two digits</li>
+                          <li>Invalid because 0 is not a valid price</li>
+                          <li>Invalid because negative prices are not allowed</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+                <p>Suppose these are the test cases being considered.</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Case</th>
+                      <th style="text-align:center">fruitName</th>
+                      <th style="text-align:center">unitPrice</th>
+                      <th style="text-align:center">Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Apple</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Print label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2</td>
+                      <td style="text-align:center">Banana</td>
+                      <td style="text-align:center">20</td>
+                      <td style="text-align:center">Print label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">Cherry</td>
+                      <td style="text-align:center">0</td>
+                      <td style="text-align:center">Error message “invalid price”</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4</td>
+                      <td style="text-align:center">Dog</td>
+                      <td style="text-align:center">-1</td>
+                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that
+                  can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
+                <p>In this case a useful heuristic to apply is ‘each valid input at least once in a positive test case’ which means exactly what it says. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a valid
+                  test case. Here are the updated test cases after applying that heuristic.</p>
+                <div id="heuristic-valid-test-case">
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case</th>
+                        <th style="text-align:center">fruitName</th>
+                        <th style="text-align:center">unitPrice</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">Apple</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">Print round label</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">Banana</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">Print oval label</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2.1</td>
+                        <td style="text-align:center">Cherry</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">Print square label</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">Error message “invalid price”</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">Dog</td>
+                        <td style="text-align:center">-1</td>
+                        <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can apply heuristic ‘no more than one invalid input in a test case’ :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case-two">Heuristic: No More Than One Invalid Input In A Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider the test cases designed in
+                  <trigger for="modal:heuristic-valid-test-case" trigger="click">Heuristic: each valid input at least once in a positive test case</trigger>.</p>
+                <modal title="**Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case">
+                  <div>
+                    <table class="markbind-table table">
+                      <thead>
+                        <tr>
+                          <th style="text-align:center">Case</th>
+                          <th style="text-align:center">fruitName</th>
+                          <th style="text-align:center">unitPrice</th>
+                          <th style="text-align:center">Expected</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align:center">1</td>
+                          <td style="text-align:center">Apple</td>
+                          <td style="text-align:center">1</td>
+                          <td style="text-align:center">Print round label</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">2</td>
+                          <td style="text-align:center">Banana</td>
+                          <td style="text-align:center">20</td>
+                          <td style="text-align:center">Print oval label</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">2.1</td>
+                          <td style="text-align:center">Cherry</td>
+                          <td style="text-align:center">VV/IV</td>
+                          <td style="text-align:center">Print square label</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">3</td>
+                          <td style="text-align:center">VV</td>
+                          <td style="text-align:center">0</td>
+                          <td style="text-align:center">Error message “invalid price”</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center">4</td>
+                          <td style="text-align:center">Dog</td>
+                          <td style="text-align:center">-1</td>
+                          <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+                  </div>
+                </modal>
+                <p>After running these test cases can we be sure that the error message “invalid price” is shown for negative prices? Answer: No. Reason: <code>-1</code> -- the only input that is a negative price – is in a test case that produces the error
+                  message “invalid fruit”.</p>
+                <p>In this case a useful heuristic to apply is ‘no more than one invalid input in a test case’. After applying that, we get the following test cases.</p>
+                <table class="markbind-table table">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Case</th>
+                      <th style="text-align:center">fruitName</th>
+                      <th style="text-align:center">unitPrice</th>
+                      <th style="text-align:center">Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Apple</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Print round label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2</td>
+                      <td style="text-align:center">Banana</td>
+                      <td style="text-align:center">20</td>
+                      <td style="text-align:center">Print oval label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2.1</td>
+                      <td style="text-align:center">Cherry</td>
+                      <td style="text-align:center">VV/IV</td>
+                      <td style="text-align:center">Print square label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">0</td>
+                      <td style="text-align:center">Error message “invalid price”</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">-1</td>
+                      <td style="text-align:center">Error message “invalid price&quot;</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4.1</td>
+                      <td style="text-align:center">Dog</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>Applying the heuristics covered in the lecture, we can determine the precise number of test cases required to test any given SUT effectively.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: These heuristics are, well, heuristics only. They will help you to make better decisions about test case design. However, they are speculative in nature (especially, when testing in black-box fashion) and cannot
+                              give you precise number of test cases.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can apply multiple test input combination techniques together :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="mix-three">Mix <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Consider the calculateGrade scenario.</p>
+                <tip-box>
+                  <ul>
+                    <li>
+                      <p>Scenario: calculateGrade</p>
+                    </li>
+                    <li>
+                      <p>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</p>
+                    </li>
+                    <li>
+                      <p>Values to test (invalid values are underlined)</p>
+                      <ul>
+                        <li>participation: 0, 1, 19, 20, 21, 22</li>
+                        <li>projectGrade: A, B, C, D, F</li>
+                        <li>isAbsent: true, false</li>
+                        <li>examScore: 0, 1, 69, 70, 71, 72</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </tip-box>
+                <p>To get the first cut of test cases, let’s apply the ‘at least once’ strategy.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V1</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV/IV = Any Valid or Invalid Value, Err Msg = Error Message</p>
+                </tip-box>
+                <p>Next, let’s apply the ‘each valid input at least once in a positive test case’ heuristic.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V2</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.2</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">VV/IV</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>VV = Any Valid Value VV/IV = Any Valid or Invalid Value</p>
+                </tip-box>
+                <p>Next, we apply the ‘no more than one invalid input in a test case’ heuristic.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V3</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.2</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.3</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.2</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p>Next, let us assume that there is a dependency between the inputs examScore and isAbsent such that an absent student can only have examScore=0. To cater for the hidden invalid case arising from this, we can add a new test case where isAbsent=true
+                  and examScore!=0. In addition, test cases 3-6.2 should have isAbsent=false so that the input remains valid.</p>
+                <tip-box>
+                  <p><strong>Test cases for calculateGrade V4</strong></p>
+                  <table class="markbind-table table">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Case No.</th>
+                        <th style="text-align:center">participation</th>
+                        <th style="text-align:center">projectGrade</th>
+                        <th style="text-align:center">isAbsent</th>
+                        <th style="text-align:center">examScore</th>
+                        <th style="text-align:center">Expected</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">A</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">0</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">2</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">B</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">1</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">3</td>
+                        <td style="text-align:center">19</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">69</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">4</td>
+                        <td style="text-align:center">20</td>
+                        <td style="text-align:center">D</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">70</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">F</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">...</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.2</td>
+                        <td style="text-align:center">21</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">5.3</td>
+                        <td style="text-align:center">22</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.1</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">71</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">6.2</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">false</td>
+                        <td style="text-align:center">72</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center">7</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">VV</td>
+                        <td style="text-align:center">true</td>
+                        <td style="text-align:center">!=0</td>
+                        <td style="text-align:center">Err Msg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Choose the correct statement.">
+                        <question>
+                          <p>Which of these is not one of the heuristics recommended when creating test cases with multiple inputs?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. All invalid test inputs must be tested together.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is ok to combine valid values for different inputs.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. No more than one invalid test input should be in a given test case.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. All invalid test inputs must be tested together.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is ok to combine valid values for different inputs.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. No more than one invalid test input should be in a given test case.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</li>
+                            </ul>
+                            <p>Explanation: If you test all invalid test inputs together, you will not know if each one of the invalid inputs are handled correctly by the SUT. This is because most SUTs return an error message upon encountering the first
+                              invalid input.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can combine test case design techniques :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can explain test case design techniques at a higher level :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="recap-four">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>{todo}</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="warning" header=":trophy: Can explain some design patterns :star::star:" expandable="" expanded="" no-close="">
+        <panel type="warning" header=":trophy: Can explain the Model View Controller (MVC) design pattern :star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Context</strong></p>
+                <p>Most applications support storage/retrieval of information, displaying of information to the user (often via multiple UIs having different formats), and changing stored information based on external inputs.</p>
+                <p><strong>Problem</strong></p>
+                <p>To reduce coupling resulting from the interlinked nature of the features described above.</p>
+                <p><strong>Solution</strong></p>
+                <p>To decouple data, presentation, and control logic of an application by separating them into three different components: Model, View and Controller.</p>
+                <ul>
+                  <li>View: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
+                  <li>Controller: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
+                  <li>Model: Stores and maintains data. Updates views if necessary.</li>
+                </ul>
+                <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/designPatterns/modelViewController/what/images/classDiagram.png" height="150">
+                  <p></p>
+                  <p>Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p><img src="/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png"
+                    height="220">
+                  <p></p>
+                  <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
+                </tip-box>
+                <p>Note that in a simple UI where there’s only one view, Controller and View can be combined as one class.</p>
+                <p>There are many variations of the MVC model used in different domains. For example, the one used in a desktop GUI could be different from the one used in a Web application.</p>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain the Observer design pattern :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-two-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Here is another scenario from the same student management system where the user is adding a new student to the system.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="300">
+                  <p></p>
+                  <p>Now, assume the system has two additional views used in parallel by different users:</p>
+                  <ul>
+                    <li><code>StudentListUi</code>: that accesses a list of students and</li>
+                    <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
+                  </ul>
+                  <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p><img src="/website/book/designPatterns/observer/what/images/studentListUI.png"
+                    height="150">
+                  <p></p>
+                  <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the
+                    type of problem addressed by the Observer pattern.</p>
+                </tip-box>
+                <p><strong>Context</strong></p>
+                <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
+                <p><strong>Problem</strong></p>
+                <p>A bidirectional link between the two objects is not desirable. However the two entities need to communicate with each other. That is, the ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
+                <p><strong>Solution</strong></p>
+                <p>The Observer pattern shows us how an object can communicate with other objects while avoiding a direct coupling with them. The solution is to force the communication through an interface known to both parties. A concrete example is given
+                  below.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="130">
+                  <p></p>
+                  <p>Here is the Observer pattern applied to the student management system.</p>
+                  <p>During initialization of the system,</p>
+                  <ol>
+                    <li>First, create the relevant objects.</li>
+                  </ol>
+                  <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
+StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();
+StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();
+</code></pre>
+                  <ol start="2">
+                    <li>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</li>
+                  </ol>
+                  <pre><code class="hljs java">studentList.addUi(listUi);
+studentList.addUi(statusUi);
+</code></pre>
+                  <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
+                  <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{
+    observerList.add(o);
+}
+</code></pre>
+                  <p>As such, whenever the data in <code>StudentList</code> changes (e.g. when a new student is added to the <code>StudentList</code>), all interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
+                  <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">for</span>(Observer o: observerList) <span class="hljs-comment">//for each observer in the list</span>
+        o.update();
+}
+</code></pre>
+                  <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
+                  <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
+}
+</code></pre>
+                  <p>Note that StudentList is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
+                </tip-box>
+                <p>Here is the generic description of the observer pattern:</p><img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="80">
+                <p></p>
+                <ul>
+                  <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to
+                    changes of) the <code>&lt;&lt; Observable &gt;&gt;</code> object.</li>
+                  <li>The <code>&lt;&lt; Observable &gt;&gt;</code> maintains a list of <code>&lt;&lt; Observer &gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation adds a new <code>&lt;&lt; Observer &gt;&gt;</code> to the list of <code>&lt;&lt; Observer &gt;&gt;s</code>.</li>
+                  <li>Whenever there is a change in the <code>&lt;&lt; Observable &gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt; Observer &gt;&gt;s</code> in
+                    the list.</li>
+                </ul>
+                <p>In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Explain how polymorphism is used in the Observer pattern.">
+                        <question has-input="true">
+                          <p>Explain how polymorphism is used in the Observer pattern.</p>
+                          <div slot="answer"><img src="/website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="80">
+                            <p></p>
+                            <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type
+                              called <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on
+                              its actual type. That is, <code>update()</code> method shows polymorphic behavior.</p>
+                            <p>In the example give below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p><img src="/website/book/designPatterns/observer/what/images/studentListStudentListObserver.png"
+                              height="160">
+                            <p></p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: True or False?">
+                        <question>
+                          <p>The Observer pattern can be used when we want one object to initiate an activity in another object without having a direct dependency from the first object to the second object.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                            </ul>
+                            <p>Explanation: Yes. For example, when applying the Observer pattern to an MVC structure, Views can get notified and update themselves about a change to the Model without the Model having to depend on the Views.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain the Abstraction Occurrence design pattern :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Context</strong></p>
+                <p>There is a group of similar entities that appears to be ‘occurrences’ (or ‘copies’) of the same thing, sharing lots of common information, but also differing in significant ways.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also significant differences like purchase date and barcode number (assumed to
+                    be unique for each copy of the book).</p>
+                  <p>Other examples:</p>
+                  <ul>
+                    <li>Episodes of the same TV series</li>
+                    <li>Stock items of the same product model (e.g. TV sets of the same model).</li>
+                  </ul>
+                </tip-box>
+                <p><strong>Problem</strong></p>
+                <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png"
+                    height="200">
+                  <p></p>
+                  <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian
+                    realized that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian has to
+                    make sure that all information entered is the same as the existing copies to avoid inconsistency.</p>
+                </tip-box>
+                <p><strong>Anti-pattern</strong></p>
+                <p>Refer to the same Library example given above.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+                  <p></p>
+                  <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic
+                    because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
+                </tip-box>
+                <p><strong>Solution</strong></p>
+                <p>Let a book copy be represented by two objects instead of one, as given below.</p>
+                <tip-box>
+                  <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
+                  <p></p>
+                  <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
+                    height="350">
+                  <p></p>
+                </tip-box>
+                <p>The general idea can be found in the following class diagram:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
+                <p></p>
+                <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not
+                  class names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which pairs of classes are likely to be the `<< Abstraction >>` and the `<< Occurrence >>` of the abstraction occurrence pattern?">
+                        <question has-input="true">
+                          <p>Which pairs of classes are likely to be the <code>&lt;&lt; Abstraction &gt;&gt;</code> and the <code>&lt;&lt; Occurrence &gt;&gt;</code> of the abstraction occurrence pattern?</p>
+                          <ol>
+                            <li>CarModel, Car. (Here CarModel represents a particular model of a car produced by the car manufacturer. E.g. BMW R4300)</li>
+                            <li>Car, Wheel</li>
+                            <li>Club, Member</li>
+                            <li>TeamLeader, TeamMember</li>
+                            <li>Magazine (E.g. ReadersDigest, PCWorld), MagazineIssue</li>
+                          </ol>
+                          <div slot="answer">
+                            <p>One of the key things to keep in mind is that the <code>&lt;&lt; Abstraction &gt;&gt;</code> does not represent a real entity. Rather, it represents some information common to a set of objects. A single real entity is represented
+                              by an object of <code>&lt;&lt; Abstraction &gt;&gt;</code> type and <code>&lt;&lt; Occurrence &gt;&gt;</code> type.</p>
+                            <p>Before applying the pattern, some attributes have the same values for multiple objects. For example, w.r.t. the BookTitle-BookCopy example given in this handout, values of attributes such as <code>book_title</code>, <code>ISBN</code>                              are exactly the same for copies of the same book.</p>
+                            <p>After applying the pattern, the <code>Abstraction</code> and the <code>Occurrence</code> classes together represent one entity. It is like one class has been split into two. For example, a <code>BookTitle</code> object and
+                              a <code>BookCopy</code> object combines to represent an actual <code>Book</code>.</p>
+                            <ol>
+                              <li>CarModel, Car: <strong>Yes</strong></li>
+                              <li>Car, Wheel: <strong>No. Wheel is a ‘part of’ Car. A wheel is not an occurrence of Car.</strong></li>
+                              <li>Club, Member: <strong>No. this is a ‘part of’ relationship.</strong></li>
+                              <li>TeamLeader, TeamMember: <strong>No. A TeamMember is not an occurrence of a TeamLeader or vice versa.</strong></li>
+                              <li>Magazine, MagazineIssue: <strong>Yes.</strong></li>
+                            </ol>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Which one of these is most suited for an application of the _Abstraction Occurrence_ pattern?">
+                        <question>
+                          <p>Which one of these is most suited for an application of the Abstraction Occurrence pattern?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Stagings of a stage drama at various theatres</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Teachers and their students</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Modules and exams/assignments given by those modules</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. Stagings of a stage drama at various theatres</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Teachers and their students</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Modules and exams/assignments given by those modules</li>
+                            </ul>
+                            <p>Explanation:</p>
+                            <p>(a) Stagings of a drama are ‘occurrences’ of the drama. They have many attributes common (e.g., Drama name, producer, cast, etc.) but some attributes are different (e.g., venue, time).</p>
+                            <p>(b) Students are not occurrences of a Teacher or vice versa</p>
+                            <p>(c) Module, Exam, Assignment are distinct entities with associations among them. But none of them can be considered an occurrence of another.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can recognize some of the GoF design patterns :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="other-design-patterns-three">Other Design Patterns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>However, most are common, and well known. As an example, GoF book contains 23 design patterns:</p>
+                <ul>
+                  <li><strong>Creational</strong>: About object creation. They separate the operation of an application from how its objects are created.
+                    <ul>
+                      <li>Abstract Factory, Builder, Factory Method, Prototype, Singleton</li>
+                    </ul>
+                  </li>
+                  <li><strong>Structural</strong>: About the composition of objects into larger structures while catering for future extension in structure.
+                    <ul>
+                      <li>Adapter, Bridge, Composite, Decorator, Façade, Flyweight, Proxy</li>
+                    </ul>
+                  </li>
+                  <li><strong>Behavioral</strong>: Defining how objects interact and how responsibility is distributed among them.
+                    <ul>
+                      <li>Chain of Responsibility, Command, Interpreter, Template Method, Iterator, Mediator, Memento, Observer, State, Strategy, Visitor</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+      </panel>
+    </div>
+    <div>
+      <panel type="info" header=":trophy: Can apply some design patterns :star::star::star:" expandable="" expanded="" no-close="">
+        <panel type="info" header=":trophy: Can combine multiple patterns to fit a context :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="combining-design-patterns-three">Combining Design Patterns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells appliances, and accessories for the appliances. SIS simply stores information
+                  about each item in the store.</p>
+                <tip-box>
+                  <p><strong>Use Cases</strong>:</p>
+                  <ul>
+                    <li>Create a new item</li>
+                    <li>View information about an item</li>
+                    <li>Modify information about an item</li>
+                    <li>View all available accessories for a given appliance</li>
+                    <li>List all items in the store</li>
+                  </ul>
+                </tip-box>
+                <p>SIS can be accessed using multiple terminals. Shop assistants use their own terminals to access SIS, while the shop manager’s terminal continuously displays a list of all items in store. In the future, it is expected that suppliers of
+                  items use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
+                <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
+                  <p></p>
+                  <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png"
+                    height="120">
+                  <p></p>
+                  <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p>
+                  <img
+                    src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
+                    <p></p>
+                    <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png"
+                      height="100">
+                    <p></p>
+                    <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
+                    <p></p>
+                    <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
+                    <p></p>
+                    <p>As UI consists of multiple views, the MVC pattern is applied here.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
+                    <p></p>
+                    <p>Some views need to be updated when the data change; apply the Observer pattern here.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
+                    <p></p>
+                    <p>In addition, the Singleton pattern can be applied to the façade class.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="info" header=":trophy: Can explain pros and cons of design patterns :star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="using-design-patterns-three">Using Design Patterns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>{patterns provide a vocabulary}</p>
+                <p>The more patterns one acquires, the more ‘experienced’ she is. Exposing oneself to a multitude of patterns (at least the context and problem) is a must. Some patterns are domain-specific (e.g. patterns for distributed applications), some
+                  are created in-house (e.g. patterns in the company/project) and some can be self-created (e.g. from past experience).</p>
+                <p>When using patterns, be careful not to overuse them. Do not throw patterns at a problem at every opportunity. Patterns come with overhead such as adding more classes or increasing the levels of abstraction. Use them only when they are
+                  needed. Before applying a pattern, make sure that:</p>
+                <ul>
+                  <li>there is substantial improvement in the design, not just superficial.</li>
+                  <li>the associated tradeoffs are carefully considered. There are times when a design pattern is not appropriate (or an overkill).</li>
+                </ul>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <panel header=":dart: Evidence" expanded="">
+            <p>...</p>
+          </panel>
+        </panel>
+        <panel type="success" header=":trophy: Can explain how patterns exist beyond software design domain :star::star::star::star:" expandable="">
+          <div>
+            <p><span class="dimmed"><strong><span>Design → Design Patterns →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="other-types-of-patterns-three">Other Types of Patterns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>The notion of capturing design ideas as &quot;patterns&quot; is usually attributed to Christopher Alexander. He is a building architect noted for his theories about design. His book <em>Timeless way of building</em> talks about “design
+                  patterns” for constructing buildings.</p>
+                <p>Here is a sample pattern from that book:</p>
+                <blockquote>
+                  <p>When a room has a window with a view, the window becomes a focal point: people are attracted to the window and want to look through it. The furniture in the room creates a second focal point: everyone is attracted toward whatever point
+                    the furniture aims them at (usually the center of the room or a TV). This makes people feel uncomfortable. They want to look out the window, and toward the other focus at the same time. If you rearrange the furniture, so that its focal
+                    point becomes the window, then everyone will suddenly notice that the room is much more “comfortable”</p>
+                </blockquote>
+                <p>Apparently, patterns and anti-patterns are found in the field of building architecture. This is because they are general concepts applicable to any domain, not just software design. In software engineering, there are many general types
+                  of patterns: Analysis patterns, Design patterns, Testing patterns, Architectural patterns, Project management patterns, and so on.</p>
+                <p>In fact, the abstraction occurrence pattern is more of an analysis pattern than a design pattern, while MVC is more of an architectural pattern.</p>
+                <p>New patterns can be created too. If a common problem needs to be solved frequently that leads to a non-obvious and better solution, it can be formulated as a pattern so that it can be reused by others. However, don’t reinvent the wheel;
+                  the pattern might already exist.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header="Q: Using similar elements, describe a pattern that is not a design pattern.">
+                        <question has-input="true">
+                          <p>Given below are some common elements of a design pattern. Using similar elements, describe a pattern that is not a design pattern. It must be a pattern you have noticed, not a pattern already documented by others. You may also
+                            give a pattern not related to software.</p>
+                          <p>Some examples:</p>
+                          <ul>
+                            <li>A pattern for testing textual UIs.</li>
+                            <li>A pattern for striking a good bargain at a mall such as Sim-Lim Square.</li>
+                          </ul>
+                          <p>Elements of a pattern: Name, Context, Problem, Solution, Anti-patterns (optional), Consequences (optional), other useful information (optional).</p>
+                          <div slot="answer">
+                            <p>No answer provided.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
               </div>
             </div>
           </div>
