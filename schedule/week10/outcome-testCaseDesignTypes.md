@@ -1,4 +1,4 @@
-<panel type="warning" header=":trophy: Can explain test case design :star::star:" expandable expanded no-close>
+<panel type="warning" header=":trophy: Can explain test case design :star::star:" expandable no-close>
 
 <panel type="warning" header=":trophy: Can explain the need for deliberate test case design :star::star:" expandable>
   <include src="../../book/testCaseDesign/introduction/what/full.md" />
