@@ -663,11 +663,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="i04q4" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i04q4" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i04q4" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i04q4" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="i04q4" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="s80b6" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="s80b6" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="s80b6" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="s80b6" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="s80b6" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2025,12 +2025,10 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
           </li>
           <li>
             <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
-          </li>
-          <li>
-            <p><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></p>
-          </li>
-          <li>
-            <p><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></p>
+            <ul>
+              <li><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
+              <li><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></li>
+            </ul>
           </li>
           <li>
             <p><strong>Do not track things taken for granted.</strong><span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
@@ -2040,10 +2038,10 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
               description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
           </li>
           <li>
-            <p><strong>Assign tasks to team members using the <code>owner</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+            <p><strong>Assign tasks to team members using the <code>assignees</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
           </li>
           <li>
-            <p><strong>Use <code>status</code> labels to indicate the status of the issue.</strong> i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.</p>
+            <p><strong>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</strong></p>
           </li>
         </ul>
         <div id="using-milestones">
@@ -2066,6 +2064,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
               <li>All tests passing on Travis.</li>
               <li>Milestone updated to match the product.</li>
               <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
+              <li>Optionally, issues for next milestone are assigned to team members (this is not compulsory to do <em>before</em> the tutorial, but we recommend you to do it soon after the tutorial)</li>
               <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
             </ul>
           </tip-box>
@@ -2086,7 +2085,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
     <p><strong>Submission</strong>: Update code in GitHub.</p>
     <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
     <ul>
-      <li>A new version tagged <code>v1.2</code> is in your repo. If <code>v1.2</code> is already used by a past commit, you can use something similar such as <code>V1.2</code> or <code>v1.2.0</code>.</li>
+      <li>A new version tagged <code>v1.2</code> is in your repo. <span class="dimmed"> If <code>v1.2</code> is already used by a past commit, you can use something similar such as <code>V1.2</code> or <code>v1.2.0</code>.</span></li>
       <li>The version <code>v1.2</code> is step towards <code>v2.0</code> (but it does not matter how big a step it is)</li>
     </ul>
     <h3 id="v12-documentation">v1.2 Documentation</h3>
@@ -2101,7 +2100,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <li>
         <p><strong>Developer Guide</strong>:</p>
         <ul>
-          <li>Each member should describe the implementation of at least one enhancement she has added (or planning to add). <br> Expected length: ~1 page per person</li>
+          <li><mark>Each member should describe the implementation of at least one enhancement she has added</mark> (or planning to add). <br> Expected length: ~1 page per person</li>
           <li>The description can contain things such as,
             <ul>
               <li>How the feature is implemented.</li>
@@ -2116,7 +2115,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       </li>
     </ul>
     <h3 id="v12-demo">v1.2 Demo</h3>
-    <p>Do an informal demo of the new feature during the tutorial.</p>
+    <p>Do an informal demo of the new feature during the tutorial. <mark>Each team member should demo their own work, using the <code>master</code> branch.</mark></p>
   </div>
 </div>
 <h2 id="v13-week-10">v1.3 [week 10]</h2>
@@ -3736,12 +3735,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         </li>
         <li>
           <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
-        </li>
-        <li>
-          <p><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></p>
-        </li>
-        <li>
-          <p><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></p>
+          <ul>
+            <li><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
+            <li><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></li>
+          </ul>
         </li>
         <li>
           <p><strong>Do not track things taken for granted.</strong><span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
@@ -3751,10 +3748,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
         </li>
         <li>
-          <p><strong>Assign tasks to team members using the <code>owner</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+          <p><strong>Assign tasks to team members using the <code>assignees</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
         </li>
         <li>
-          <p><strong>Use <code>status</code> labels to indicate the status of the issue.</strong> i.e. which tasks are completed, which are ongoing, and which are to be done by next milestone.</p>
+          <p><strong>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</strong></p>
         </li>
       </ul>
       <div id="using-milestones">
@@ -3777,6 +3774,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             <li>All tests passing on Travis.</li>
             <li>Milestone updated to match the product.</li>
             <li>Milestone closed. All issues assigned to that milestone should be closed too.</li>
+            <li>Optionally, issues for next milestone are assigned to team members (this is not compulsory to do <em>before</em> the tutorial, but we recommend you to do it soon after the tutorial)</li>
             <li>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</li>
           </ul>
         </tip-box>
