@@ -11,7 +11,7 @@
 
 #### SE:
 
-<dynamic-panel src="outcome-principle.md" type="warning" header=":trophy: Can explain SE principles :star::star:" no-close/>
+<dynamic-panel src="outcome-principle.md" type="warning" header="**`W10.1` Can explain SE principles** :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
@@ -19,14 +19,14 @@
 
 #### Requirements:
 
-<dynamic-panel src="outcome-activityDiagram.md" type="danger" header=":trophy: Can use activity diagrams :star:" no-close/>
+<dynamic-panel src="outcome-activityDiagram.md" type="danger" header="**`W10.2` Can use activity diagrams** :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 <br>
 
 #### Design:
 
-<dynamic-panel src="outcome-patterns.md" type="danger" header=":trophy: Can use some basic design patterns :star:" no-close/>
+<dynamic-panel src="outcome-patterns.md" type="danger" header="**`W10.3` Can use some basic design patterns** :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
@@ -34,22 +34,22 @@
 
 #### Implementation
 
-<dynamic-panel src="outcome-frameworkLibraryPlatform.md" type="info" header=":trophy: Can get reuse benefits from frameworks, libraries, and platforms :star::star::star:" no-close/>
+<dynamic-panel src="outcome-frameworkLibraryPlatform.md" type="info" header="**`W10.4` Can get reuse benefits from frameworks, libraries, and platforms** :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 <br>
 
 #### Testing:
 
-<dynamic-panel src="outcome-testCaseDesign.md" type="warning" header=":trophy: Can explain test case design :star::star:" no-close/>
+<dynamic-panel src="outcome-testCaseDesign.md" type="warning" header="**`W10.5` Can explain test case design** :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel src="outcome-ep.md" type="danger" header=":trophy: Can use EP for test case design :star:" no-close/>
+<dynamic-panel src="outcome-ep.md" type="danger" header="**`W10.6` Can use EP for test case design** :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel src="outcome-boundaryValueAnalysis.md" type="danger" header=":trophy: Can apply boundary value analysis :star:" no-close/>
+<dynamic-panel src="outcome-boundaryValueAnalysis.md" type="danger" header="**`W10.7` Can apply boundary value analysis** :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
@@ -58,7 +58,7 @@
 #### Project Management:
 
 
-<panel type="danger" header=":trophy: Can release a product to end users :star:" no-close>
+<panel type="danger" header="**`W10.8` Can release a product to end users** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by v1.3:
