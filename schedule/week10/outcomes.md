@@ -51,12 +51,12 @@
 #### Project Management:
 
 
-<panel type="danger" header=":trophy: Can release a product to end users :star:" expandable>
+<panel type="danger" header=":trophy: Can release a product to end users :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by v1.3:
 
-<include src="../../admin/project-v13.md" name="%%Admin &raquo; Project &rarr; v1.3%%" dynamic />
+<include src="../../admin/project-v13.md" name="%%Admin &raquo; Project &rarr; v1.3%%" dynamic no-close/>
 
   </panel>
 </panel>

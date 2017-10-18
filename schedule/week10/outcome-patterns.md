@@ -1,11 +1,11 @@
 %%**Introduction:**%%
 
-<panel type="danger" header=":trophy: Can explain design patterns :star:" expandable>
+<panel type="danger" header=":trophy: Can explain design patterns :star:" no-close>
   <include src="../../book/designPatterns/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="danger" header=":trophy: Can explain design patterns format :star:" expandable>
+<panel type="danger" header=":trophy: Can explain design patterns format :star:" no-close>
   <include src="../../book/designPatterns/introduction/format/full.md" />
 <!-- TODO: add evidence -->
 </panel>
@@ -15,7 +15,7 @@
 
 %%**Singleton Pattern:**%%
 
-<panel type="danger" header=":trophy: Can explain the Singleton design pattern :star:" expandable>
+<panel type="danger" header=":trophy: Can explain the Singleton design pattern :star:" no-close>
   <include src="../../book/designPatterns/singleton/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -24,7 +24,7 @@ Identify where in the project Singleton pattern can be used.
   </panel>
 </panel>
 
-<panel type="warning" header=":trophy: Can apply the Singleton design pattern :star::star:" expandable>
+<panel type="warning" header=":trophy: Can apply the Singleton design pattern :star::star:" no-close>
   <include src="../../book/designPatterns/singleton/implementation/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -33,7 +33,7 @@ Identify where in the project Singleton pattern has been used. Apply singleton p
   </panel>
 </panel>
 
-<panel type="info" header=":trophy: Can decide when to apply Singleton design pattern :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can decide when to apply Singleton design pattern :star::star::star:" no-close>
   <include src="../../book/designPatterns/singleton/evaluation/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -46,7 +46,7 @@ Identify places in the project where only a single object of a class is needed b
 
 %%**Facade pattern**%%
 
-<panel type="warning" header=":trophy: Can explain the Facade design pattern :star::star:" expandable>
+<panel type="warning" header=":trophy: Can explain the Facade design pattern :star::star:" no-close>
   <include src="../../book/designPatterns/facade/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -59,7 +59,7 @@ Discuss the current/potential applications of the pattern in your project.
 
 %%**Command pattern**%%
 
-<panel type="info" header=":trophy: Can explain the Command design pattern :star::star::star:" expandable>
+<panel type="info" header=":trophy: Can explain the Command design pattern :star::star::star:" no-close>
   <include src="../../book/designPatterns/command/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
