@@ -6750,8 +6750,8 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>Reusability is a major theme in software engineering practices. By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement. Reusable components come in many
-            forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
+          <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components
+            come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
         </div>
       </div>
       <div>
@@ -6764,7 +6764,16 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>{to add}</p>
+          <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
+          <ul>
+            <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
+            <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
+            <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
+            <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
+            <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as
+              fast as you need them to.</li>
+            <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
+          </ul>
         </div>
       </div>
       <h2 id="apis">APIs</h2>
@@ -6843,12 +6852,8 @@ jean.setBoyfriend(yong);
         <div>
           <p>A library is a collection of modular code that is general and can be used by other programs.</p>
           <tip-box>
-            <p>Example:</p>
-            <p>Java classes you get with the JDK (such as String, ArrayList, HashMap, etc.) are library classes that are provided in the default Java distribution.</p>
-          </tip-box>
-          <tip-box>
-            <p>Example:</p>
-            <p><a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+            <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+            <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
           </tip-box>
         </div>
       </div>
@@ -6866,7 +6871,8 @@ jean.setBoyfriend(yong);
           <ol>
             <li>Read the documentation to confirm that its functionality fits your needs</li>
             <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
-            <li>Download the library and make it accessible to your project. Alternatively, you can configure your dependency management tool to do it for you.</li>
+            <li>Download the library and make it accessible to your project. Alternatively, you can configure your
+              <tooltip content="e.g. Gradle">dependency management tool</tooltip> to do it for you.</li>
             <li>Call the library API from your code where you need to use the library functionality.</li>
           </ol>
         </div>
@@ -6882,33 +6888,32 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</p>
+          <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
           <tip-box>
-            <p>Running example:</p>
+            <p>📦 Running example:</p>
             <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
           </tip-box>
-          <p>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</p>
+          <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
           <tip-box>
-            <p>Running example:</p>
+            <p>📦 Running example:</p>
             <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
           </tip-box>
-          <p>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</p>
+          <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
           <tip-box>
-            <p>Running example:</p>
+            <p>📦 Running example:</p>
             <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
           </tip-box>
-          <p>A framework facilitates the adaptation and customization of some desired functionality.</p>
+          <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
           <tip-box>
-            <p>Running example:</p>
+            <p>📦 Running example:</p>
             <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
           </tip-box>
           <p>Some frameworks cover only a specific components or an aspect.</p>
           <tip-box>
-            <p>Example:</p>
-            <p>JavaFx a framework for creating Java GUIs.</p>
+            <p>📦 JavaFx a framework for creating Java GUIs.</p>
           </tip-box>
           <tip-box>
-            <p>More examples:</p>
+            <p>📦 More examples of frameworks</p>
             <ul>
               <li>Drupal: a framework for Web-based applications, content management systems in particular. Implemented using PHP</li>
               <li>Ruby on Rails : another Web-application framework similar to Drupal but uses Ruby instead of PHP</li>
@@ -6930,12 +6935,11 @@ jean.setBoyfriend(yong);
           <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
           <ul>
             <li>
-              <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong> Examples: writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules
-                and themes to Drupal, and adding test cases to JUnit .</p>
+              <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong><span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
             </li>
             <li>
-              <p><strong>Your code calls the library code while the framework code calls your code.</strong> Frameworks use a technique called <em>inversion of control</em>, also called the “Hollywood principle” (i.e. don’t call us, we’ll call you!). That
-                is, you write code that will be called by the framework, e.g. writing test methods that will be called by the JUnit framework. In the case of libraries, written code calls libraries.</p>
+              <p><strong>Your code calls the library code while the framework code calls your code.</strong><strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!).
+                That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span> In the case of libraries, your code calls libraries.</p>
             </li>
           </ul>
         </div>
@@ -6951,16 +6955,20 @@ jean.setBoyfriend(yong);
           </div>
         </tip-box>
         <div>
-          <p>A <em>platform</em> provides a runtime environment for applications. A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic of a software platform
-            is the presence of a runtime environment.</p>
-          <p>Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
-          <p>Two well-known examples of platforms are JavaEE and .NET, both of which sit above Operating systems layer, and are used to develop <em>enterprise applications</em>. Infrastructure services such as connection pooling, load balancing, remote code
-            execution, transaction management, authentication, security, messaging etc. are done similarly in most
-            <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
-          <ul>
-            <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
-            <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
-          </ul>
+          <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
+            of a software platform is the presence of a runtime environment.</p>
+          <tip-box>
+            <p>📦 Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+          </tip-box>
+          <tip-box>
+            <p>📦 <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
+              <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications.
+              Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+            <ul>
+              <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
+              <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
+            </ul>
+          </tip-box>
           <modal title="**Enterprise Applications**" id="modal:enterprise-application">
             <div>
               <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than
@@ -8190,9 +8198,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="x3unk" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="x3unk" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="x3unk" type="radio"> False</label></li>
+                          <ul radio-group="dbud3" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="dbud3" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="dbud3" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -8331,9 +8339,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="s1qzs" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="s1qzs" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="s1qzs" type="radio"> False</label></li>
+                          <ul radio-group="jy9fm" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="jy9fm" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="jy9fm" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -9832,9 +9840,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: statements about exploratory and scripted testing">
                         <question>
                           <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                          <ul radio-group="ejou7" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ejou7" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ejou7" type="radio"> False</label></li>
+                          <ul radio-group="ir0e0" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="ir0e0" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="ir0e0" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>A) False</p>
@@ -9847,12 +9855,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Which testing technique is better?">
                         <question>
                           <p>Which testing technique is better?</p>
-                          <ul radio-group="mrvff" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mrvff" type="radio"> a. error guessing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mrvff" type="radio"> b. bug hunting</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mrvff" type="radio"> c. attack-based testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mrvff" type="radio"> d. reactive testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mrvff" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                          <ul radio-group="3vqv1" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3vqv1" type="radio"> a. error guessing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3vqv1" type="radio"> b. bug hunting</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3vqv1" type="radio"> c. attack-based testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3vqv1" type="radio"> d. reactive testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="3vqv1" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(e)</p>
@@ -13680,11 +13688,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <panel header=":lock::key: Meaning of OCP">
                       <question>
                         <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                        <ul radio-group="teu0n" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="teu0n" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="teu0n" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="teu0n" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="teu0n" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                        <ul radio-group="0zhbb" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="0zhbb" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="0zhbb" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="0zhbb" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="0zhbb" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -13813,9 +13821,9 @@ AcademicStaff academicStaff = staff; // Not OK
                     <panel header=":lock::key: Is this LSP?">
                       <question>
                         <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                        <ul radio-group="ndsod" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ndsod" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ndsod" type="radio"> False</label></li>
+                        <ul radio-group="hftqs" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="hftqs" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="hftqs" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>True.</p>
