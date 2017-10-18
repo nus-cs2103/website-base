@@ -1,4 +1,4 @@
-<panel type="warning" header=":trophy: Can explain SE principles :star::star:" expandable expanded no-close>
+<panel type="warning" header=":trophy: Can explain SE principles :star::star:" expandable no-close>
 
 <panel type="warning" header=":trophy: Can explain software engineering principles :star::star:" expandable>
   <include src="../../book/principles/what/full.md" />

@@ -1,4 +1,4 @@
-<panel type="danger" header=":trophy: Can apply EP for test case design :star:" expandable expanded no-close>
+<panel type="danger" header=":trophy: Can apply EP for test case design :star:" expandable no-close>
 
 <panel type="danger" header=":trophy: Can explain equivalence partitions :star:" expandable>
   <include src="../../book/testCaseDesign/equivalencePartitions/what/full.md" />
