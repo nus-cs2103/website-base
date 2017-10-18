@@ -513,10 +513,6 @@
       "title": "CS2103/T Textbook - Principles [Printable]"
     },
     {
-      "src": "book/principles/what/index.md",
-      "title": "CS2103/T Textbook - Principles: What"
-    },
-    {
       "src": "book/principles/singleResponsibilityPrinciple/index.md",
       "title": "CS2103/T Textbook - Principles: Single Responsibility Principle"
     },
@@ -1703,6 +1699,10 @@
     {
       "src": "book/designPatterns/more/otherTypesOfPatterns/index.md",
       "title": "CS2103/T Textbook - Software Design Patterns: More: Other Types of Patterns"
+    },
+    {
+      "src": "book/designPatterns/more/vsPrinciples/index.md",
+      "title": "CS2103/T Textbook - Software Design Patterns: More: Patterns vs Principles"
     },
     {
       "src": "book/gatheringRequirements/index.md",

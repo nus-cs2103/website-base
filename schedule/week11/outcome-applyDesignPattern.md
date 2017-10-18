@@ -18,6 +18,15 @@
   </panel>
 </panel>
 
+<panel type="info" header=":trophy: Can differentiate between design patterns and principles :star::star::star:" expandable>
+  <include src="../../book/designPatterns/more/vsPrinciples/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+...
+
+  </panel>
+</panel>
+
 <panel type="success" header=":trophy: Can explain how patterns exist beyond software design domain :star::star::star::star:" expandable>
   <include src="../../book/designPatterns/more/otherTypesOfPatterns/full.md" />
   <panel header=":dart: Evidence" expanded>

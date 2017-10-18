@@ -1,15 +1,5 @@
 <panel type="warning" header=":trophy: Can explain SE principles :star::star:" expandable no-close>
 
-<panel type="warning" header=":trophy: Can explain software engineering principles :star::star:" expandable>
-  <include src="../../book/principles/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
-
-
 <panel type="success" header=":trophy: Can explain dependency inversion principle :star::star::star::star:" expandable>
   <include src="../../book/principles/dependencyInversionPrinciple/full.md" />
   <panel header=":dart: Evidence" expanded>
