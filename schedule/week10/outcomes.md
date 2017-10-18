@@ -11,7 +11,7 @@
 
 #### SE:
 
-<include src="outcome-principle.md" />
+<dynamic-panel src="outcome-principle.md" type="warning" header=":trophy: Can explain SE principles :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
