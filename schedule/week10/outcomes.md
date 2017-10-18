@@ -34,11 +34,11 @@
 
 #### Testing:
 
-<include src="outcome-testCaseDesignTypes.md" />
+<dynamic-panel src="outcome-testCaseDesign.md" type="warning" header=":trophy: Can explain test case design :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-ep.md" />
+<dynamic-panel src="outcome-ep.md" type="danger" header=":trophy: Can use EP for test case design :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 

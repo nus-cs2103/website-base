@@ -1,5 +1,3 @@
-<panel type="warning" header=":trophy: Can explain test case design :star::star:" no-close>
-
 <panel type="warning" header=":trophy: Can explain the need for deliberate test case design :star::star:" no-close>
   <include src="../../book/testCaseDesign/introduction/what/full.md" />
   <panel header=":dart: Evidence" expanded>
@@ -49,6 +47,4 @@ Explain black/white/grey box testing using examples from your project.
 Explain use case based test case design using examples from your project.
 
   </panel>
-</panel>
-
 </panel>
