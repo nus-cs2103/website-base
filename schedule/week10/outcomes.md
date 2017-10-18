@@ -32,6 +32,13 @@
 
 <br>
 
+#### Implementation
+
+<dynamic-panel src="outcome-frameworkLibraryPlatform.md" type="info" header=":trophy: Can get reuse benefits from frameworks, libraries, and platforms :star::star::star:" no-close/>
+
+<!-- ==================================================================================================== -->
+<br>
+
 #### Testing:
 
 <dynamic-panel src="outcome-testCaseDesign.md" type="warning" header=":trophy: Can explain test case design :star::star:" no-close/>
