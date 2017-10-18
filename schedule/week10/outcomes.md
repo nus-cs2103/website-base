@@ -42,7 +42,7 @@
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-boundaryValueAnalysis.md" />
+<dynamic-panel src="outcome-boundaryValueAnalysis.md" type="danger" header=":trophy: Can apply boundary value analysis :star:" no-close/>
 
 <!-- ==================================================================================================== -->
 

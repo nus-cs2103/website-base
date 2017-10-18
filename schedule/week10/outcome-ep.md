@@ -3,7 +3,7 @@
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="danger" header=":trophy: Can apply EP for pure functions :star:" no-close>
+<panel type="warning" header=":trophy: Can apply EP for pure functions :star::star:" no-close>
   <include src="../../book/testCaseDesign/equivalencePartitions/basic/full.md" />
 <!-- TODO: add evidence -->
 </panel>

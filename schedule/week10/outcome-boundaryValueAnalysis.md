@@ -1,12 +1,13 @@
-<panel type="danger" header=":trophy: Can apply boundary value analysis :star:" expandable no-close>
-
-<panel type="danger" header=":trophy: Can explain boundary value analysis :star:" expandable>
+<panel type="danger" header=":trophy: Can explain boundary value analysis :star:" no-close>
   <include src="../../book/testCaseDesign/boundaryValueAnalysis/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
+<!-- TODO: add evidence -->
 </panel>
 
+<panel type="warning" header=":trophy: Can use boundary value analysis :star::star:" no-close>
+  <include src="../../book/testCaseDesign/boundaryValueAnalysis/how/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Apply BVA when writing test cases in the project.
+
+  </panel>
 </panel>
