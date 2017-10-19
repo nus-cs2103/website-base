@@ -17,7 +17,7 @@ Here is a summary of individual and team deliverables for v1.2 to consider it as
 
 <tip-box type="important">
 
-Starting from this version, you are _required_ to, **use GitHub to manage your milestones** as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix F: GitHub: Project Schedule Tracking]</trigger>.
+Starting from this version, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix F: GitHub: Project Schedule Tracking]</trigger>.
 
 </tip-box>
 
