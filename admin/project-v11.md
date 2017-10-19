@@ -2,13 +2,11 @@
 
 **v1.1 Summary of Deliverables**
 
-Here is a summary of individual and team deliverables for v1.1 to consider it as _reached_. See sections below for more details of each deliverable. Individual deliverables and team deliverables are considered separately for grading %%&nbsp;e.g. if a team member fail individual deliverables for more than two milestones, only that member's marks will be affected%%.
-
 * :bust_in_silhouette: Individual:
-  - [ ] Cumulative code contributions so far involve multiple components
+  - [ ] Have modified in multiple components
 * :busts_in_silhouette::busts_in_silhouette: Team:
   - [ ] All project documents updated as required
-  - [ ] Org/repo set up correctly
+  - [ ] Any errors in org/repo set up fixed %%&nbsp;(e.g. wrong repo name)%%
 
 </tip-box>
 

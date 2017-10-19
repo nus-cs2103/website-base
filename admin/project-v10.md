@@ -1,3 +1,17 @@
+<tip-box> 
+
+**v1.0 Summary of Deliverables**
+
+Here is a summary of individual and team deliverables for v1.1 to consider it as _reached_. See sections below for more details of each deliverable. Individual deliverables and team deliverables are considered separately for grading %%&nbsp;e.g. if a team member fail individual deliverables for more than two milestones, only that member's marks will be affected%%.
+
+* :bust_in_silhouette: Individual:
+  - [ ] Have done some enhancement to the code
+* :busts_in_silhouette::busts_in_silhouette: Team:
+  - [ ] Team org/repo set up
+  - [ ] All project documents updated as required
+
+</tip-box>
+
 <div id="documentation">
 
 #### v1.0 Documentation

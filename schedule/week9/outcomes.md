@@ -64,7 +64,7 @@
 
   <panel header=":dart: Evidence" expanded>
   
-Covered by 'Project Management' component v1.2:
+Covered by 'Documentation' component of v1.2:
 
 <include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
 
