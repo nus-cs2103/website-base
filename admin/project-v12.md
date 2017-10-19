@@ -1,3 +1,18 @@
+<tip-box> 
+
+**v1.2 Summary of Deliverables**
+
+Here is a summary of individual and team deliverables for v1.2 to consider it as _reached_. See sections below for more details of each deliverable. Individual deliverables and team deliverables are considered separately for grading %%&nbsp;e.g. if a team member fail individual deliverables for more than two milestones, only that member's marks will be affected%%.
+
+* :bust_in_silhouette: Individual:
+  - [ ] Contributed code to the product
+  - [ ] Described implementation details in the Developer Guide
+* :busts_in_silhouette::busts_in_silhouette: Team:
+  - [ ] v1.2 managed using GitHub features (issue tracker, milestones, etc.)
+
+</tip-box>
+
+  
 ### v1.2 Project Management
 
 <tip-box type="important">
