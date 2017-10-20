@@ -13,7 +13,7 @@
 
 <br>
 
-%%**Singleton Pattern:**%%
+%%**Singleton pattern:**%%
 
 <panel type="danger" header="`W10.3c` Can explain the Singleton design pattern :star:" no-close>
   <include src="../../book/designPatterns/singleton/what/full.md" />

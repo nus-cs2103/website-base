@@ -7,7 +7,7 @@
 
 <br>
 
-%%**Basic notation:**%%
+%%**Basic notations:**%%
 
 <panel type="danger" header="`W10.2b` Can interpret linear paths in activity diagrams :star:" no-close>
   <include src="../../book/uml/activityDiagrams/basicNotations/linearPaths/full.md" />
@@ -35,7 +35,7 @@ Use activity diagram to model workflows in the project.
 
 <br>
 
-%%**Intermediate Notations:**%%
+%%**Intermediate notations:**%%
 
 <panel type="info" header="`W10.2f` Can use rakes in activity diagrams :star::star::star:" no-close>
   <include src="../../book/uml/activityDiagrams/basicNotations/rakes/full.md" />
