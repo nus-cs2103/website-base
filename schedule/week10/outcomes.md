@@ -11,7 +11,7 @@
 
 #### SE:
 
-<dynamic-panel src="outcome-principle.md" type="warning" header="**`W10.1` Can explain SE principles** :star::star:" no-close/>
+<dynamic-panel src="outcome-principle.md" type="info" header="**`W10.1` Can explain SE principles** :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
