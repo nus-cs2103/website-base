@@ -28,8 +28,8 @@
 
 **You are required to divide work based on features rather than component**
 
- * Each team member should implement 1 or more features end-to-end, doing required changes in _almost all_ components. The objective is to force you to learn all components of the software, instead of limiting yourself to your own components.
- * You will continue to be in charge of your own components although others will be modifying your components' code. Your role is to help others modify code in your components (you are supposed to be the most knowledgeable about those components) and protect your components from degrading. For example, you can review others' changes to your components and suggest possible changes.
+ * By the end of this project (i.e. by v1.5) each team member is expected to have implemented 1 or more enhancement/feature end-to-end, doing required changes in _almost all_ components. The objective is to force you to learn all components of the software, instead of limiting yourself to just one/few components.
+ * However, you will continue to be _in charge_ of components that were allocated to you at v1.0 (you can change the allocation later if you wish) while others will be modifying those components as necessary for the features they are implementing. Your role as the _in charge_ of a component is to guide others modifying that component %%&nbsp;(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
  
 </tip-box>
 
