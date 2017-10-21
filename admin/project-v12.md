@@ -17,13 +17,13 @@ Here is a summary of individual and team deliverables for v1.2 to consider it as
 
 <tip-box type="important">
 
-Starting from this version, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix F: GitHub: Project Schedule Tracking]</trigger>.
+Starting from this version, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
 </tip-box>
 
 As before, you are _recommended_ (but not required) to **follow the forking workflow** when evolving the product.
 
-<modal large title="Admin &raquo; Appendix F: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
+<modal large title="Admin &raquo; Appendix E: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
 
