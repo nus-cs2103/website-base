@@ -8,6 +8,12 @@
 <div id="main">
 
 
+<include src="outcome-umlModel.md" />
+
+<!-- ==================================================================================================== -->
+
+<include src="outcome-cloudComputing.md" />
+
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header=":trophy: Can describe contributions to a project :star:" expandable>

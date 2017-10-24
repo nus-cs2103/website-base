@@ -1,4 +1,4 @@
-<panel type="info" header=":trophy: Can apply some design patterns :star::star::star:" expandable expanded no-close>
+<panel type="info" header=":trophy: Can apply some design patterns :star::star::star:" expandable no-close>
 
 <panel type="info" header=":trophy: Can combine multiple patterns to fit a context :star::star::star:" expandable>
   <include src="../../book/designPatterns/more/combiningDesignPatterns/full.md" />

@@ -1,4 +1,4 @@
-<panel type="info" header=":trophy: Can explain some popular SDLC process models :star::star::star:" expandable expanded no-close>
+<panel type="info" header=":trophy: Can explain some popular SDLC process models :star::star::star:" expandable no-close>
 
 <panel type="info" header=":trophy: Can explain scrum :star::star::star:" expandable>
   <include src="../../book/processModels/exampleProcessModels/scrum/full.md" />

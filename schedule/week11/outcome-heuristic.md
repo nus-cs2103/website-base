@@ -1,4 +1,4 @@
-<panel type="warning" header=":trophy: Can apply heuristics to combine multiple test inputs :star::star:" expandable expanded no-close>
+<panel type="warning" header=":trophy: Can apply heuristics to combine multiple test inputs :star::star:" expanded no-close>
 
 <panel type="warning" header=":trophy: Can explain the need for strategies to combine test inputs :star::star:" expandable>
   <include src="../../book/testCaseDesign/combiningTestInputs/why/full.md" />
