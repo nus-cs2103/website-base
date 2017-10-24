@@ -20,14 +20,15 @@
 4.  If a method was written by more than one person, the `//@@author` tag should indicate the person who wrote most of that method. i.e., `//@@author` tag should not appear inside a method.  
     If some part of the code was done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly 50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality, the designated author should refactor the code to make it high quality.  
     Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.
-5.  Do not put the `//@@author` inside java header comments as only the content below that tag will be collated.
-    
+5.  Do not put the `//@@author` inside java header comments as only the content below that tag will be collated.<br>
+    :-1::arrow_heading_down:
     ```
     /**
       * Returns true if ...
       * @@author johndoe
       */
     ```
+    :+1::arrow_heading_down:
     ```
     //@@author johndoe
     /**
@@ -49,11 +50,11 @@
     Please put a comment in the code to explain why it was not used. 
     
 7.  The `//@@author` tag should be used to mark *all* code/test you claim credit for. There is no need to mark documentation files.  
-  You will be penalized if you try to boost the length of your collated files using unethical means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.  
+  You will be penalized if you try to boost the length of your collated files using dubious means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.  
   Individual members are responsible for making sure their own collated files contain the correct content.  
   If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let us know.
 
-  *   **INCLUDE**: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file with 1000 tasks that was used to test performance.
+  *   **INCLUDE**: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file with 1000 persons that was used to test performance.
   *   **Code you reused** from elsewhere: Mark such code as `//@@author github-ID-reused`
   
       e.g.
