@@ -1,75 +1,25 @@
-**`W7.4` Can use assertions** ⭐️⭐️⭐️
-- [ ] `W7.4c` Can use assertions optimally ⭐️⭐️⭐️⭐️
-<br>
 
-**`W7.6` Can use intermediate-level sequence diagrams** ⭐️⭐️
-- [ ] `W7.6g` Can interpret sequence diagrams with parallel paths ⭐️⭐️⭐️⭐️
-<br>
-
-**`W7.9` Can use Java8 streams** ⭐️⭐️⭐️⭐️
-<br>
+- [ ] **`W2.1` Can use Git to save history** ⭐️
+- [ ] `W2.1f` Can set Git to ignore files ⭐️⭐️
 
 
-
-======
-
-️
-======
-️
-<br>
-
-======
-
-<br>
-
-======
-
-<br>
-
-**`W10.3` Can use some basic design patterns** ⭐️
-- [ ] `W10.3a` Can explain design patterns ⭐️
-- [ ] `W10.3b` Can explain design patterns format ⭐️
-- [ ] `W10.3c` Can explain the Singleton design pattern ⭐️
-- [ ] `W10.3d` Can apply the Singleton design pattern ⭐️⭐️
-- [ ] `W10.3e` Can decide when to apply Singleton design pattern ⭐️⭐️⭐️
-- [ ] `W10.3f` Can explain the Facade design pattern ⭐️⭐️
-- [ ] `W10.3g` Can explain the Command design pattern ⭐️⭐️⭐️
-<br>
-
-**`W10.4` Can get reuse benefits from frameworks, libraries, and platforms** ⭐️⭐️⭐️
-- [ ] `W10.4a` Can explain software reuse ⭐️⭐️⭐️
-- [ ] `W10.4b` Can explain the costs and benefits of reuse ⭐️⭐️⭐️
-- [ ] `W10.4c` Can explain software libraries ⭐️⭐️⭐️
-- [ ] `W10.4d` Can use software libraries ⭐️⭐️⭐️
-- [ ] `W10.4e` Can explain frameworks ⭐️⭐️⭐️
-- [ ] `W10.4f` Can differentiate between frameworks and libraries ⭐️⭐️⭐️
-- [ ] `W10.4g` Can explain platforms ⭐️⭐️⭐️
-<br>
-
-**`W10.5` Can explain test case design** ⭐️⭐️
-- [ ] `W10.5a` Can explain the need for deliberate test case design ⭐️⭐️
-- [ ] `W10.5b` Can explain exploratory testing and scripted testing ⭐️⭐️⭐️
-- [ ] `W10.5c` Can explain the choice between exploratory testing and scripted testing ⭐️⭐️⭐️
-- [ ] `W10.5d` Can explain positive and negative test cases ⭐️⭐️
-- [ ] `W10.5e` Can explain black box and glass box test case design ⭐️⭐️
-- [ ] `W10.5f` Can explain test case design for use case based testing ⭐️⭐️⭐️
-<br>
-
-**`W10.6` Can use EP for test case design** ⭐️
-- [ ] `W10.6a` Can explain equivalence partitions ⭐️
-- [ ] `W10.6b` Can apply EP for pure functions ⭐️⭐️
-- [ ] `W10.6c` Can apply EP for OOP methods ⭐️⭐️⭐️
-<br>
-
-**`W10.7` Can apply boundary value analysis** ⭐️
-- [ ] `W10.7a` Can explain boundary value analysis ⭐️
-- [ ] `W10.7b` Can use boundary value analysis ⭐️⭐️
-<br>
-
-**`W10.8` Can release a product to end users** ⭐️
+------
 
 
 
 
+
+------
+
+
+
+
+
+------
+
+
+
+
+------
 
 

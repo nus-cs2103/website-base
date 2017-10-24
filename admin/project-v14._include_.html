@@ -1,3 +1,21 @@
+<tip-box>
+  <p><strong>v1.4 Summary of Deliverables</strong></p>
+  <ul>
+    <li>👤 Individual:
+      <ul class="task-list">
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Contributed code to v1.4</li>
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Code collated</li>
+      </ul>
+    </li>
+    <li>👥👥 Team:
+      <ul class="task-list">
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.4 jar file released properly on GitHub</li>
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.4 milestone properly wrapped up on GitHub</li>
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> User Guide reflects the current state of the product</li>
+      </ul>
+    </li>
+  </ul>
+</tip-box>
 <h3 id="v14-project-management">v1.4 Project Management</h3>
 <tip-box type="important">
   <p>From this version, you are required to
@@ -34,12 +52,14 @@ method 4 ...
           author should refactor the code to make it high quality.<br> Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.</p>
       </li>
       <li>
-        <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.</p>
+        <p>Do not put the <code>//@@author</code> inside java header comments as only the content below that tag will be collated.<br> 👎⤵️
+        </p>
         <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author johndoe
   */
 </code></pre>
+        <p>👍⤵️</p>
         <pre class="hljs"><code>//@@author johndoe
 /**
   * Returns true if ...
@@ -61,7 +81,7 @@ method 2 ...
         <p>Please put a comment in the code to explain why it was not used.</p>
       </li>
       <li>
-        <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using unethical means
+        <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using dubious means
           such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br>          Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let
           us know.</p>
       </li>
@@ -69,7 +89,7 @@ method 2 ...
     <ul>
       <li>
         <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file with
-          1000 tasks that was used to test performance.</p>
+          1000 persons that was used to test performance.</p>
       </li>
       <li>
         <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author github-ID-reused</code></p>
