@@ -1,12 +1,7 @@
-<panel type="info" header=":trophy: Can use object oriented domain models :star::star::star:" expandable no-close>
+<include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/full.md" />
+<panel header=":dart: Evidence" expanded>
 
-<panel type="info" header=":trophy: Can explain object oriented domain models :star::star::star:" expandable>
-  <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
-...
-
-  </panel>
-</panel>
+Draw an OODM for the problem domain of your project.
 
 </panel>
+

@@ -11,7 +11,7 @@
 
 #### Requirements:
 
-<include src="outcome-objectOrientedDomainModel.md" />
+<dynamic-panel src="outcome-objectOrientedDomainModel.md" type="info" header=":trophy: Can explain object oriented domain models :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
