@@ -165,15 +165,24 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 <tip-box type="important"> 
 
-To consider the milestone as 'reached', **you should have the following done *before* the tutorial begins. Missed milestones will count against the 'project management' component of your final grade**:
-  * A working product tagged with the correct tag (e.g. v1.2) and pushed to the main repo.
-  * All tests passing on Travis.
-  * Milestone updated to match the product.
-  * Milestone closed. All issues assigned to that milestone should be closed too.
-  * Optionally, issues for next milestone are assigned to team members (this is not compulsory to do _before_ the tutorial, but we recommend you to do it soon after the tutorial)
-  * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.  
+To consider the milestone as 'reached', **you should have <tooltip content="described below">wrapped up</tooltip> the milestone _before_ the tutorial begins. Missed milestones will count against the 'project management' component of your final grade**.
 
 </tip-box> 
+
+**Wrapping up a Milestone**:<br>
+Here are the conditions to satisfy for a milestone to be considered properly wrapped up:
+  * A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.
+  * All tests passing on Travis for the version tagged above.
+  * Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br>
+    <img src="{{baseUrl}}/admin/images/assigningIssuesToMilestones.png" width="700"/>
+  * Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br>
+    <img src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
+  * Optionally, issues for the next milestone are assigned to team members (this is not compulsory to do _before_ the tutorial, but we recommend you to do it soon after the tutorial). 
+    
+  * Optionally, future milestones are revised based on what you experienced in the current milestone %%&nbsp;e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
+   
+  * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.  
+
 
 </div>
 

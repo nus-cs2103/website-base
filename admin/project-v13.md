@@ -24,6 +24,8 @@ Ensure that **each PR that adds an enhancement also updates the relevant parts o
 
 </tip-box>
 
+As before, the milestone v1.3 must be wrapped up on GitHub. Remember to ==move all incomplete issues to a future milestone and _close_ the milestone== so that it no longer appears under _open_ milestones.
+
 
 ### v1.3 Product
 
