@@ -1,10 +1,10 @@
-<panel type="warning" header=":trophy: Can explain some design patterns :star::star:" expandable no-close>
+<panel type="warning" header=":trophy: Can apply some more design patterns :star::star:" expandable no-close>
 
 <panel type="warning" header=":trophy: Can explain the Model View Controller (MVC) design pattern :star::star:" expandable>
   <include src="../../book/designPatterns/modelViewController/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain relevance of the pattern to the project.
 
   </panel>
 </panel>
@@ -13,7 +13,7 @@
   <include src="../../book/designPatterns/observer/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain relevance of the pattern to the project.
 
   </panel>
 </panel>
@@ -22,7 +22,7 @@
   <include src="../../book/designPatterns/abstractionOccurrence/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Explain relevance of the pattern to the project.
 
   </panel>
 </panel>
@@ -31,7 +31,7 @@
   <include src="../../book/designPatterns/more/otherDesignPatterns/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-...
+Name a few GoF patterns not covered in the module.
 
   </panel>
 </panel>
