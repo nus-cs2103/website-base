@@ -20,12 +20,11 @@
 
 #### Design:
 
-
-<include src="outcome-explainDesignPattern.md" />
+<dynamic-panel src="outcome-explainDesignPattern.md" type="warning" header=":trophy: Can apply some more design patterns :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-applyDesignPattern.md" />
+<dynamic-panel src="outcome-applyDesignPattern.md" type="info" header=":trophy: Can optimize the use of design patterns :star::star::star:" no-close />
 
 <!-- ==================================================================================================== -->
 
