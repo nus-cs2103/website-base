@@ -3071,13 +3071,12 @@ AcademicStaff academicStaff = staff; // Not OK
         </tip-box>
         <div>
           <blockquote>
-            <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development.</p>
-            <p>--Ian Sommerville, in the book ‘Software Engineering’</p>
+            <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development. <sub>--<a href="http://www.software-engin.com/">Ian Sommerville, in the book <em>Software Engineering</em></a></sub></p>
           </blockquote>
-          <p>Class diagrams can also be used to model objects in the problem domain (i.e. to model how objects actually interact in the real world, before emulating them in the solution). When used to model the problem domain, such class diagrams are called
-            <em><strong>conceptual class diagrams</strong></em> or <em><strong>OO domain models (OODMs).</strong></em></p>
+          <p>Class diagrams can also be used to model objects in the
+            <tooltip content="the relevant information that needs to be examined to understand a problem">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
           <tip-box>
-            <p>Example: OO domain model of a snakes and ladders game is given below.</p>
+            <p>📦 OO domain model of a snakes and ladders game is given below.</p>
             <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the number
               of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece can automatically
               move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p><img src="/website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
@@ -3086,7 +3085,7 @@ AcademicStaff academicStaff = staff; // Not OK
           </tip-box>
           <p><strong>OODMs do not contain solution-specific classes</strong> (i.e. classes that are used in the solution domain but do not exist in the problem domain). For example, a class called DatabaseConnection could appear in a class diagram but not
             usually in an OO domain model because DatabaseConnection is something related to a software solution but not an entity in the problem domain.</p>
-          <p><strong>OODMs, just like a class diagram, represents the class <em>structure</em> of the problem</strong> domain and not their behavior. To show behavior, use other diagrams such as sequence diagrams.</p>
+          <p><strong>OODMs represents the class <em>structure</em> of the problem domain</strong> and not their behavior, just like class diagrams. To show behavior, use other diagrams such as sequence diagrams.</p>
           <p><strong>OODM notation is similar to class diagram notation but typically omit methods and navigability.</strong></p>
         </div>
       </div>
@@ -3662,7 +3661,7 @@ AcademicStaff academicStaff = staff; // Not OK
               </tbody>
             </table>
           </tip-box>
-          <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, <strong>a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em> by the so-called &quot;Gang of Four&quot;</strong>            (GoF) Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</p>
+          <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, **a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>            by the so-called <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot;** (GoF) book written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</a></p>
         </div>
       </div>
       <div>
@@ -3791,9 +3790,8 @@ AcademicStaff academicStaff = staff; // Not OK
           <p><strong>Context</strong></p>
           <p>There is a group of similar entities that appears to be ‘occurrences’ (or ‘copies’) of the same thing, sharing lots of common information, but also differing in significant ways.</p>
           <tip-box>
-            <p>Example:</p>
-            <p>In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also significant differences like purchase date and barcode number (assumed to be unique
-              for each copy of the book).</p>
+            <p>📦 In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also significant differences like purchase date and barcode number (assumed to be
+              unique for each copy of the book).</p>
             <p>Other examples:</p>
             <ul>
               <li>Episodes of the same TV series</li>
@@ -3803,32 +3801,29 @@ AcademicStaff academicStaff = staff; // Not OK
           <p><strong>Problem</strong></p>
           <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
           <tip-box>
-            <p>Example:</p>
-            <p>Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png"
+            <p>📦 Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png"
               height="200">
             <p></p>
             <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian realized
-              that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian has to make sure that
-              all information entered is the same as the existing copies to avoid inconsistency.</p>
+              that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian (or the system) has to
+              make sure that all information entered is the same as the existing copies to avoid inconsistency.</p>
           </tip-box>
           <p><strong>Anti-pattern</strong></p>
-          <p>Refer to the same Library example given above.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+            <p>📦 Refer to the same Library example given above.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
             <p></p>
             <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic
               because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
           </tip-box>
           <p><strong>Solution</strong></p>
-          <p>Let a book copy be represented by two objects instead of one, as given below.</p>
+          <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="240">
+            <p>📦 Given below is how the pattern is applied to the Library example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
             <p></p>
-            <p>In this solution, the common and unique information are separated into two classes to avoid duplication. Given below is another example that contrasts the two situations before and after applying the pattern.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png"
-              height="350">
+            <p>📦 Here's a more generic example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
             <p></p>
           </tip-box>
-          <p>The general idea can be found in the following class diagram:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="50">
+          <p>The general solution:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="70">
           <p></p>
           <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class
             names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
@@ -3914,15 +3909,15 @@ AcademicStaff academicStaff = staff; // Not OK
           <p><strong>Solution</strong></p>
           <p>To decouple data, presentation, and control logic of an application by separating them into three different components: Model, View and Controller.</p>
           <ul>
-            <li>View: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
-            <li>Controller: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
-            <li>Model: Stores and maintains data. Updates views if necessary.</li>
+            <li><em>View</em>: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
+            <li><em>Controller</em>: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
+            <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
           </ul>
-          <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
+          <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p><img src="/website/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
+          <p></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/modelViewController/what/images/classDiagram.png" height="150">
-            <p></p>
-            <p>Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p><img src="/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" height="220">
+            <p>📦 Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p><img src="/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png"
+              width="500">
             <p></p>
             <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
           </tip-box>
@@ -3941,9 +3936,8 @@ AcademicStaff academicStaff = staff; // Not OK
           </div>
         </tip-box>
         <div>
-          <p>Here is another scenario from the same student management system where the user is adding a new student to the system.</p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="300">
+            <p>📦 Here is a scenario from the a student management system where the user is adding a new student to the system.</p><img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
             <p></p>
             <p>Now, assume the system has two additional views used in parallel by different users:</p>
             <ul>
@@ -3951,7 +3945,7 @@ AcademicStaff academicStaff = staff; // Not OK
               <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
             </ul>
             <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p><img src="/website/book/designPatterns/observer/what/images/studentListUI.png"
-              height="150">
+              height="180">
             <p></p>
             <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type
               of problem addressed by the Observer pattern.</p>
@@ -3959,13 +3953,12 @@ AcademicStaff academicStaff = staff; // Not OK
           <p><strong>Context</strong></p>
           <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
           <p><strong>Problem</strong></p>
-          <p>A bidirectional link between the two objects is not desirable. However the two entities need to communicate with each other. That is, the ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
+          <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
           <p><strong>Solution</strong></p>
-          <p>The Observer pattern shows us how an object can communicate with other objects while avoiding a direct coupling with them. The solution is to force the communication through an interface known to both parties. A concrete example is given below.</p>
+          <p>Force the communication through an interface known to both parties.</p><img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
+          <p></p>
           <tip-box>
-            <p>Example:</p><img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="130">
-            <p></p>
-            <p>Here is the Observer pattern applied to the student management system.</p>
+            <p>📦Here is the Observer pattern applied to the student management system.</p>
             <p>During initialization of the system,</p>
             <ol>
               <li>First, create the relevant objects.</li>
@@ -3999,9 +3992,9 @@ studentList.addUi(statusUi);
     <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
 }
 </code></pre>
-            <p>Note that StudentList is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
+            <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
           </tip-box>
-          <p>Here is the generic description of the observer pattern:</p><img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="80">
+          <p>Here is the generic description of the observer pattern:</p><img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
           <p></p>
           <ul>
             <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes
@@ -4023,9 +4016,10 @@ studentList.addUi(statusUi);
           </div>
         </tip-box>
         <div>
-          <p>Let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells appliances, and accessories for the appliances. SIS simply stores information
-            about each item in the store.</p>
+          <p><strong>Design patterns are usually embedded in a larger design and sometimes applied in combination with other design patterns.</strong></p>
           <tip-box>
+            <p>📦 Let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells appliances, and accessories for the appliances. SIS simply stores information
+              about each item in the store.</p>
             <p><strong>Use Cases</strong>:</p>
             <ul>
               <li>Create a new item</li>
@@ -4034,12 +4028,9 @@ studentList.addUi(statusUi);
               <li>View all available accessories for a given appliance</li>
               <li>List all items in the store</li>
             </ul>
-          </tip-box>
-          <p>SIS can be accessed using multiple terminals. Shop assistants use their own terminals to access SIS, while the shop manager’s terminal continuously displays a list of all items in store. In the future, it is expected that suppliers of items
-            use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
-          <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
-          <tip-box>
-            <p>Example:</p>
+            <p>SIS can be accessed using multiple terminals. Shop assistants use their own terminals to access SIS, while the shop manager’s terminal continuously displays a list of all items in store. In the future, it is expected that suppliers of items
+              use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
+            <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
             <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
             <p></p>
             <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p><img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png"
@@ -4074,7 +4065,7 @@ studentList.addUi(statusUi);
           </div>
         </tip-box>
         <div>
-          <p>However, most are common, and well known. As an example, GoF book contains 23 design patterns:</p>
+          <p><strong>The most famous source of design patterns is the <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot; (GoF) book</a> which contains 23 design patterns divided into three categories</strong>:</p>
           <ul>
             <li><strong>Creational</strong>: About object creation. They separate the operation of an application from how its objects are created.
               <ul>
@@ -4104,10 +4095,15 @@ studentList.addUi(statusUi);
           </div>
         </tip-box>
         <div>
-          <p>{patterns provide a vocabulary}</p>
-          <p>The more patterns one acquires, the more ‘experienced’ she is. Exposing oneself to a multitude of patterns (at least the context and problem) is a must. Some patterns are domain-specific (e.g. patterns for distributed applications), some are
-            created in-house (e.g. patterns in the company/project) and some can be self-created (e.g. from past experience).</p>
-          <p>When using patterns, be careful not to overuse them. Do not throw patterns at a problem at every opportunity. Patterns come with overhead such as adding more classes or increasing the levels of abstraction. Use them only when they are needed.
+          <p><strong>Design pattern provides a high-level vocabulary to talk about design.</strong></p>
+          <tip-box>
+            <p>📦 Someone can say 'apply Observer pattern here' instead of having to describe the mechanics of the solution in detail.</p>
+          </tip-box>
+          <p><strong>Knowing more patterns is a way to become more ‘experienced’.</strong> Aim to learn at least the context and the problem of patterns <span class="dimmed"> so that when you encounter those problems you know where to look for a solution</span>.</p>
+          <p><strong>Some patterns are domain-specific</strong><span class="dimmed"> e.g. patterns for distributed applications</span>, <strong>some are created in-house</strong><span class="dimmed"> e.g. patterns in the company/project</span> and <strong>some can be self-created</strong>
+            <span
+              class="dimmed"> e.g. from past experience</span>.</p>
+          <p><strong>Be careful not to overuse patterns.</strong> Do not throw patterns at a problem at every opportunity. Patterns come with overhead such as adding more classes or increasing the levels of abstraction. Use them only when they are needed.
             Before applying a pattern, make sure that:</p>
           <ul>
             <li>there is substantial improvement in the design, not just superficial.</li>
@@ -4125,8 +4121,7 @@ studentList.addUi(statusUi);
           </div>
         </tip-box>
         <div>
-          <p>The notion of capturing design ideas as &quot;patterns&quot; is usually attributed to Christopher Alexander. He is a building architect noted for his theories about design. His book <em>Timeless way of building</em> talks about “design patterns”
-            for constructing buildings.</p>
+          <p>The notion of capturing design ideas as &quot;patterns&quot; is usually attributed to [Christopher Alexander](Christopher Alexander). He is a building architect noted for his theories about design. His book <em>Timeless way of building</em>            talks about &quot;design patterns&quot; for constructing buildings.</p>
           <p>Here is a sample pattern from that book:</p>
           <blockquote>
             <p>When a room has a window with a view, the window becomes a focal point: people are attracted to the window and want to look through it. The furniture in the room creates a second focal point: everyone is attracted toward whatever point the
@@ -8198,9 +8193,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="ujlda" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ujlda" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ujlda" type="radio"> False</label></li>
+                          <ul radio-group="xbnie" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xbnie" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xbnie" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -8339,9 +8334,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="poggn" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="poggn" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="poggn" type="radio"> False</label></li>
+                          <ul radio-group="yiftv" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="yiftv" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="yiftv" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -9840,9 +9835,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: statements about exploratory and scripted testing">
                         <question>
                           <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                          <ul radio-group="911u5" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="911u5" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="911u5" type="radio"> False</label></li>
+                          <ul radio-group="sf4le" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="sf4le" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="sf4le" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>A) False</p>
@@ -9855,12 +9850,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Which testing technique is better?">
                         <question>
                           <p>Which testing technique is better?</p>
-                          <ul radio-group="kmt6r" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kmt6r" type="radio"> a. error guessing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kmt6r" type="radio"> b. bug hunting</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kmt6r" type="radio"> c. attack-based testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kmt6r" type="radio"> d. reactive testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kmt6r" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                          <ul radio-group="xjv0s" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xjv0s" type="radio"> a. error guessing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xjv0s" type="radio"> b. bug hunting</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xjv0s" type="radio"> c. attack-based testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xjv0s" type="radio"> d. reactive testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="xjv0s" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(e)</p>
@@ -13688,11 +13683,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <panel header=":lock::key: Meaning of OCP">
                       <question>
                         <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                        <ul radio-group="sqj9i" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="sqj9i" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="sqj9i" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="sqj9i" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="sqj9i" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                        <ul radio-group="jztev" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jztev" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jztev" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jztev" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="jztev" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -13821,9 +13816,9 @@ AcademicStaff academicStaff = staff; // Not OK
                     <panel header=":lock::key: Is this LSP?">
                       <question>
                         <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                        <ul radio-group="mm5ca" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="mm5ca" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="mm5ca" type="radio"> False</label></li>
+                        <ul radio-group="38q4j" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="38q4j" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="38q4j" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>True.</p>
