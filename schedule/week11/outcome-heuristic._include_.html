@@ -1,420 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Test Case Design [Printable]</title>
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-</head>
-<body>
-<div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <div id="main">
-    <h1 id="test-case-design">Test Case Design</h1>
-    <h2 id="introduction">Introduction</h2>
+<panel type="warning" header="`W11.4a` Can explain the need for strategies to combine test inputs :star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
+</span></strong>
+      </span>
+    </p>
     <div>
-      <div>
-        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain the need for deliberate test case design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number
-          of test cases.</p>
-        <tip-box>
-          <p>📦 Consider the test cases for adding a <code>String</code> object to a <code>Collection</code> object:</p>
-          <ul>
-            <li>Add an item to an empty collection.</li>
-            <li>Add an item when there is one item in the collection.</li>
-            <li>Add an item when there are 2, 3, .... n items in the collection.</li>
-            <li>Add an item that has an English, a French, a Spanish, ... word.</li>
-            <li>Add an item that is the same as an existing item.</li>
-            <li>Add an item immediately after adding another item.</li>
-            <li>Add an item immediately after system startup.</li>
-            <li>...</li>
-          </ul>
-          <p>Exhaustive testing of this operation can take many more test cases.</p>
-        </tip-box>
-        <blockquote>
-          <p>Program testing can be used to show the presence of bugs, but never to show their absence!<br><sub>--Edsger Dijkstra</sub></p>
-        </blockquote>
-        <div id="e-and-e">
-          <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>            In particular:</p>
-          <ul>
-            <li>
-              <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high % of existing bugs <span class="dimmed"> e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
-            </li>
-            <li>
-              <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed"> a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
-            </li>
-          </ul>
-          <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
-            that can help us improve E&amp;E of testing.</p>
-        </div>
-      </div>
+      <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
     </div>
-    <div>
-      <div>
-        <h4 id="positive-vs-negative-test-cases-one">Positive vs Negative Test Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain positive and negative test cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
-        <tip-box>
-          <p>📦 Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
-          <ul>
-            <li>A positive test case: <code>i == new Integer(50)</code></li>
-            <li>A negative test case: <code>i == null;</code></li>
-          </ul>
-        </tip-box>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="black-box-vs-glass-box-two">Black Box vs Glass Box <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain black box and glass box test case design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
-        <ul>
-          <li>
-            <p><strong><em>Black-box</em> (aka <em>specification-based or responsibility-based</em>) approach</strong>: test cases are designed exclusively based on the SUT’s specified external behavior.</p>
-          </li>
-          <li>
-            <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
-          </li>
-          <li>
-            <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than 1000
-              items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
-          </li>
-        </ul>
-        <div v-closeable="" alt="videos: Black-box and white-box testing">
-          <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
-          <tabs>
-            <tab header=":tv: Black-box vs White-box testing">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>
-                <hr>
-              </p>
-            </tab>
-            <tab header=":tv: Black-box testing example">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>
-                <hr>
-              </p>
-            </tab>
-            <tab header=":tv: White-box testing example">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>
-                <hr>
-              </p>
-            </tab>
-          </tabs>
-        </div>
-      </div>
-    </div>
-    <h2 id="equivalence-partitions">Equivalence Partitions</h2>
-    <div>
-      <div>
-        <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain equivalence partitions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p>Consider the testing of the following operation.</p>
-        <tip-box>
-          <div id="isValidMonth">
-            <p><code>isValidMonth (int m): boolean</code> : returns <code>true</code> if <code>m</code> is in the range [1..12]</p>
-          </div>
-        </tip-box>
-        <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce
-          the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
-        <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
-          <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
-        <tip-box type="definition">
-          <div>
-            <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
-          </div>
-        </tip-box>
-        <p><strong>By dividing possible inputs into equivalence partitions we can,</strong></p>
-        <ul>
-          <li><strong>avoid testing too many inputs from one partition.</strong> Testing too many inputs from the same partition is unlikely to find new bugs. This increases the efficiency of testing by reducing redundant test cases.</li>
-          <li><strong>ensure all partitions are tested.</strong> Missing partitions can result in bugs going unnoticed. This increases the effectiveness of testing by increasing the chance of finding bugs.</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can apply EP for pure functions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
-        <tip-box>
-          <p>📦 These could be EPs for the
-            <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
-          <ul>
-            <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code></li>
-            <li>[1 … 12] : the range that produces <code>true</code></li>
-            <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code></li>
-          </ul>
-        </tip-box>
-        <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
-          <div slot="content">
-            <div>
-              <p><code>isValidMonth (int m): boolean</code> : returns <code>true</code> if <code>m</code> is in the range [1..12]</p>
-            </div>
-          </div>
-        </popover>
-        <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
-        <tip-box>
-          <p>📦 Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
-          <p>Example EPs for <code>s</code>:</p>
-          <ul>
-            <li>zero-length strings</li>
-            <li>string containing whitespaces</li>
-            <li>...</li>
-          </ul>
-          <p>Example EPs for <code>n</code>:</p>
-          <ul>
-            <li><code>0</code></li>
-            <li>negative values</li>
-            <li>...</li>
-          </ul>
-        </tip-box>
-        <p>An EP may not have adjacent values.</p>
-        <tip-box>
-          <p>📦 Consider the method <code>isPrime(int i):boolean</code> that returns true if <code>i</code> is a prime number.</p>
-          <p>EPs for <code>i</code>:</p>
-          <ul>
-            <li>prime numbers</li>
-            <li>non-prime numbers</li>
-          </ul>
-        </tip-box>
-        <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
-        <tip-box>
-          <p>📦 Consider the method <code>showStatusMessage(GameStatus s):String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In this case, each possible value for
-            <code>s</code> will have to be considered as a partition.</p>
-        </tip-box>
-        <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT to
-          behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
-        <tip-box>
-          <p>📦 Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
-          <ul>
-            <li>[1 … 12] : the range that produces <code>true</code></li>
-            <li>[all other integers] : the range that produces <code>false</code></li>
-          </ul>
-        </tip-box>
-        <tip-box>
-          <p>📦 Some more examples:</p>
-          <table class="table">
-            <tr>
-              <th>Specification</th>
-              <th>Equivalence partitions</th>
-            </tr>
-            <tr>
-              <td>
-                <p><code>isValidFlag(String s): boolean</code><br> Returns <code>true</code> if s is one of [“F”, “T”, “D”]. The comparison is case-sensitive.</p>
-              </td>
-              <td>
-                <p>[“F”] [“T”] [“D”] [“f”, “t”, “d”] [any other string][null]</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p><code>squareRoot(String s): int</code><br> Pre-conditions: s represents a positive integer<br> Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
-              </td>
-              <td>
-                <p>[s is not a valid number] [s is a negative integer] [s has an integer square root] [s does not have an integer square root]</p>
-              </td>
-            </tr>
-          </table>
-        </tip-box>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="intermediate-two">Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can apply EP for OOP methods <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
-        <ul>
-          <li>the target object of the method call</li>
-          <li>input parameters of the method call</li>
-          <li>other data/objects accessed by the method such as global variables. This category may not be applicable if using the black box approach (because the test case designer using the black box approach will not know how the method is implemented)</li>
-        </ul>
-        <tip-box>
-          <p>📦 Consider this method in the <code>DataStack</code> class:</p>
-          <pre><code class="hljs java"><span class="hljs-comment">/**
- * Adds o to the top of the stack if the stack is not full.
- * <span class="hljs-doctag">@throws</span> MutabilityException if the global flag FREEZE==true.
- * <span class="hljs-doctag">@throws</span> InvalidValueException if  o is null.
- * <span class="hljs-doctag">@return</span> true if the push operation was a success.
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">push</span><span class="hljs-params">(Object o)</span> </span>{
-    ...
-}
-</code></pre>
-          <p>EPs:</p>
-          <ul>
-            <li><code>DataStack</code> object: [full] [not full]</li>
-            <li><code>o</code>: [null] [not null]</li>
-            <li><code>FREEZE</code>: [true][false]</li>
-          </ul>
-        </tip-box>
-        <tip-box>
-          <p>📦 Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
-          <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
-          <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant
-            of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
-          <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently
-            based on the game state. Therefore, the equivalence partitions are:</p>
-          <ul>
-            <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
-            <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
-            <li><code>IN_PLAY</code> : the current minefield is already in use</li>
-            <li><code>WON</code>, <code>LOST</code> : let us assume the <code>newGame</code> behaves the same way for these two values</li>
-          </ul>
-        </tip-box>
-        <tip-box>
-          <p>📦 Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
-          <ul>
-            <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
-            <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] (we assume a minefield size of WxH)</li>
-            <li><code>y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
-            <li><code>Cell</code> at <code>(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
-          </ul>
-          <p>A test case for the push method can be a combination of the equivalence partitions. Given below is such a test case.</p>
-          <ul>
-            <li>id: DataStack_Push_001</li>
-            <li>description: checks whether pushing onto a full stack works correctly</li>
-            <li>input: stack is full, o != null, FREEZE == false</li>
-            <li>expected output: returns false, stack remains unchanged</li>
-          </ul>
-        </tip-box>
-      </div>
-    </div>
-    <h2 id="boundary-value-analysis">Boundary Value Analysis</h2>
-    <div>
-      <div>
-        <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain boundary value analysis <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points
-          of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
-        <tip-box>
-          <p>📦 <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt; = (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
-        </tip-box>
-        <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
-        <p>Boundary values are sometimes called <em>corner cases</em>.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can apply boundary value analysis <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such
-          as the cost of each test case.</p>
-        <tip-box>
-          <p>📦 Some examples:</p>
-          <table class="table">
-            <tr>
-              <th>Equivalence partition</th>
-              <th>Some possible boundary values</th>
-            </tr>
-            <tr>
-              <td>
-                <p>[1-12]</p>
-              </td>
-              <td>
-                <p>0,1,2, 11,12,13</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>[MIN_INT, 0]<br><span class="dimmed">(MIN_INT is the minimum possible integer value allowed by the environment)</span></p>
-              </td>
-              <td>
-                <p>MIN_INT, MIN_INT+1, -1, 0 , 1</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>[any non-null String]</p>
-              </td>
-              <td>
-                <p>Empty String, a String of maximum possible length</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>[prime numbers]<br> [“F”]
-                  <br> [“A”, “D”, “X”]</p>
-              </td>
-              <td>
-                <p>No specific boundary<br> No specific boundary<br> No specific boundary</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>[non-empty Stack]<br><span class="dimmed">(we assume a fixed size stack)</span></p>
-              </td>
-              <td>
-                <p>Stack with: one element, two elements, no empty spaces, only one empty space</p>
-              </td>
-            </tr>
-          </table>
-        </tip-box>
-      </div>
-    </div>
-    <h2 id="combining-test-inputs">Combining Test Inputs</h2>
-    <div>
-      <div>
-        <h4 id="why-one">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain the need for strategies to combine test inputs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <div id="main">
       <div>
         <p><strong>An SUT can take multiple inputs.</strong> You can select values for each input (using equivalence partitioning, boundary value analysis, or some other technique).</p>
         <tip-box>
@@ -459,16 +54,22 @@
         <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective)
           but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
       </div>
+      <div></div>
     </div>
+  </div>
+</panel>
+<panel type="warning" header="`W11.4b` Can explain some basic test input combination strategies :star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
+</span></strong>
+      </span>
+    </p>
     <div>
-      <div>
-        <h4 id="test-input-combination-strategies-two">Test Input Combination Strategies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain some basic test input combination strategies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+      <h4 id="test-input-combination-strategies-two">Test Input Combination Strategies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
       <div>
         <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
         <tip-box>
@@ -751,16 +352,22 @@
         <p><strong>d) random:</strong> This strategy generates test cases using one of the other strategies and then pick a subset randomly (presumably because the original set of test cases is too big).</p>
         <p><strong>e) other</strong>: There are other strategies that can be used.</p>
       </div>
+      <div></div>
     </div>
+  </div>
+</panel>
+<panel type="warning" header="`W11.4c` Can apply heuristic ‘each valid input at least once in a positive test case’ :star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
+</span></strong>
+      </span>
+    </p>
     <div>
-      <div>
-        <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case-two">Heuristic: Each Valid Input at Least Once in a Positive Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can apply heuristic ‘each valid input at least once in a positive test case’ <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+      <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case-two">Heuristic: Each Valid Input at Least Once in a Positive Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
       <div>
         <p>Consider the following scenario.</p>
         <tip-box>
@@ -911,16 +518,27 @@
           </div>
         </tip-box>
       </div>
+      <div></div>
     </div>
+  </div>
+</panel>
+<panel type="info" header="`W11.4d` Can apply heuristic ‘no more than one invalid input in a test case’ :star::star::star:" no-close="">
+  <div>
     <div>
-      <div>
-        <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case-two">Heuristic: No More Than One Invalid Input In A Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can apply heuristic ‘no more than one invalid input in a test case’ <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+      <p>
+        <panel src="/website\book\testCaseDesign\combiningTestInputs\heuristicValid\full._include_.html" header="%%:mortar_board: Quality Assurance &rarr; Test Case Design &rarr; Combining Test Inputs &rarr; Heuristic: Each Valid Input at Least Once in a Positive Test Case%%"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case-two">Heuristic: No More Than One Invalid Input In A Test Case <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
       <div>
         <p>Consider the
           <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
@@ -1027,16 +645,43 @@
           <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
         </tip-box>
       </div>
-    </div>
-    <div>
       <div>
-        <h4 id="mix-three">Mix <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
         <div>
-          <p>🏆 Can apply multiple test input combination techniques together <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Can define test cases precisely">
+                <question>
+                  <p>Applying the heuristics covered so far, we can determine the precise number of test cases required to test any given SUT effectively.</p>
+                  <ul radio-group="nabya" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="nabya" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="nabya" type="radio"> False</label></li>
+                  </ul>
+                  <div slot="answer">
+                    <p>False</p>
+                    <p>Explanation: These heuristics are, well, heuristics only. They will help you to make better decisions about test case design. However, they are speculative in nature (especially, when testing in black-box fashion) and cannot give you
+                      precise number of test cases.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
         </div>
-      </tip-box>
+      </div>
+    </div>
+  </div>
+</panel>
+<panel type="info" header="`W11.4e` Can apply multiple test input combination techniques together :star::star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="mix-three">Mix <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+    </div>
+    <div id="main">
       <div>
         <p>Consider the calculateGrade scenario given below:</p>
         <tip-box>
@@ -1391,154 +1036,33 @@
           </table>
         </tip-box>
       </div>
-    </div>
-    <h2 id="more">More</h2>
-    <div>
       <div>
-        <h4 id="testing-based-on-use-cases-four">Testing Based on Use Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-      </div>
-      <tip-box>
         <div>
-          <p>🏆 Can explain test case design for use case based testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
-      <div>
-        <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do
-          not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary
-          values. The combinations of these could result in one use case producing many test cases.</p>
-        <p>To increase
-          <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
-          <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-        <modal large="" title="Quality Assurance &rarr; Test Case Design &rarr; Introduction &rarr; (extract) E&E of testing"
-          id="modal:usebaseBased-EandE">
-          <div>
-            <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>              In particular:</p>
-            <ul>
-              <li>
-                <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high % of existing bugs <span class="dimmed"> e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
-              </li>
-              <li>
-                <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed"> a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
-              </li>
-            </ul>
-            <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
-              that can help us improve E&amp;E of testing.</p>
-          </div>
-        </modal>
-        <modal large="" title="Textbook &raquo;" id="modal:usecaseBased-scripted">
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
-</span></strong>
-              </span>
-            </p>
+          <panel header=":muscle: Exercises" expandable="">
             <div>
-              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
-                <ol>
-                  <li>
-                    <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
-                  </li>
-                  <li>
-                    <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
-                  </li>
-                </ol>
-                <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-                  <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                  because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
-                  operations where more faults are found.</p>
-                <tip-box>
-                  <p>📦 Here is an example thought process behind a segment of an exploratory testing session:</p>
-                  <blockquote>
-                    <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if feature
-                      y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
-                  </blockquote>
-                </tip-box>
-                <tip-box type="tip">
-                  <p><strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
-                </tip-box>
-                <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained :mag:">
-                  <div>
-                    <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
-                      leader in software testing).</p>
+              <panel header=":lock::key: statements about test input combinations">
+                <question>
+                  <p>Which of these contradict the heuristics recommended when creating test cases with multiple inputs?</p>
+                  <ul radio-group="x68gh" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="x68gh" type="radio"> a. All invalid test inputs must be tested together.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="x68gh" type="radio"> b. It is ok to combine valid values for different inputs.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="x68gh" type="radio"> c. No more than one invalid test input should be in a given test case.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="x68gh" type="radio"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</label></li>
+                  </ul>
+                  <div slot="answer">
+                    <p>(a) inputs.</p>
+                    <p>Explanation: If you test all invalid test inputs together, you will not know if each one of the invalid inputs are handled correctly by the SUT. This is because most SUTs return an error message upon encountering the first invalid
+                      input.</p>
                   </div>
-                </modal>
-              </div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock::key: statements about exploratory and scripted testing">
-                        <question>
-                          <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                          <ul radio-group="py5qo" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="py5qo" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="py5qo" type="radio"> False</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <p>A) False</p>
-                            <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock::key: Which testing technique is better?">
-                        <question>
-                          <p>Which testing technique is better?</p>
-                          <ul radio-group="nsjs2" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nsjs2" type="radio"> a. error guessing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nsjs2" type="radio"> b. bug hunting</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nsjs2" type="radio"> c. attack-based testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nsjs2" type="radio"> d. reactive testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nsjs2" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <p>(e)</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
-                        <question has-input="true">
-                          <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                          <div slot="answer">
-                            <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </div>
+                </question>
+              </panel>
             </div>
-          </div>
-        </modal>
-      </div>
-    </div>
-    <h2 id="summary">Summary</h2>
-    <div>
-      <div>
-        <h4 id="recap-four">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain test case design techniques at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </panel>
         </div>
-      </tip-box>
-      <div>
-        <p>{todo}</p>
       </div>
     </div>
   </div>
-</div>
-</div>
-</body>
-<script src="..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\markbind\js\setup.js"></script>
-</html>
+  <panel header=":dart: Evidence" expanded="">
+    <p>Apply the heuristics to design test cases for a simple method that takes two parameters.</p>
+  </panel>
+</panel>
