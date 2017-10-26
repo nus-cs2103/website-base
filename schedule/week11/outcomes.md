@@ -53,7 +53,7 @@ Covered by the 'Acceptance Testing' component of v1.4:
 
 #### Project Management:
 
-<include src="outcome-processModelTypes.md" />
+<dynamic-panel src="outcome-processModelTypes.md" type="warning" header=":trophy: Can explain types of SDLC process models :star::star:" expandable no-close/>
 
 <!-- ==================================================================================================== -->
 
