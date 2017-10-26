@@ -32,11 +32,8 @@
 
 #### Testing:
 
-<include src="outcome-heuristic.md" />
+<dynamic-panel src="outcome-heuristic.md" type="warning" header=":trophy: Can apply heuristics to combine multiple test inputs :star::star:" no-close/>
 
-<!-- ==================================================================================================== -->
-
-<include src="outcome-testCaseDesignCombined.md" />
 
 <!-- ==================================================================================================== -->
 

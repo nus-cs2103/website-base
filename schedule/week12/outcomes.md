@@ -16,6 +16,10 @@
 
 <!-- ==================================================================================================== -->
 
+<dynamic-panel src="outcome-testCaseDesignCombined.md" type="warning" header=":trophy: Can combine test case design heuristics :star::star:" no-close/>
+
+<!-- ==================================================================================================== -->
+
 <panel type="danger" header=":trophy: Can describe contributions to a project :star:" expandable>
   <panel header=":dart: Evidence" expanded>
 

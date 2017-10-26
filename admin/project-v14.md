@@ -57,4 +57,4 @@ As before.
 
 ### v1.4 Acceptance Testing
 
-To be done during Lecture 10. More info will be released later.
+To be done during Lecture 11. More info will be released later.
