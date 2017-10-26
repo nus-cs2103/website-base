@@ -11,20 +11,19 @@
 
 #### Requirements:
 
-<dynamic-panel src="outcome-objectOrientedDomainModel.md" type="info" header=":trophy: Can explain object oriented domain models :star::star::star:" no-close/>
+<dynamic-panel src="outcome-objectOrientedDomainModel.md" type="info" header="**`W11.1` Can explain object oriented domain models** :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
-
 
 <br>
 
 #### Design:
 
-<dynamic-panel src="outcome-explainDesignPattern.md" type="warning" header=":trophy: Can apply some more design patterns :star::star:" no-close/>
+<dynamic-panel src="outcome-explainDesignPattern.md" type="warning" header="**`W11.2` Can apply some more design patterns** :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel src="outcome-applyDesignPattern.md" type="info" header=":trophy: Can optimize the use of design patterns :star::star::star:" no-close/>
+<dynamic-panel src="outcome-applyDesignPattern.md" type="info" header="**`W11.3` Can optimize the use of design patterns** :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
@@ -32,12 +31,11 @@
 
 #### Testing:
 
-<dynamic-panel src="outcome-heuristic.md" type="warning" header=":trophy: Can apply heuristics to combine multiple test inputs :star::star:" no-close/>
-
+<dynamic-panel src="outcome-heuristic.md" type="warning" header="**`W11.4` Can apply heuristics to combine multiple test inputs** :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can do acceptance testing :star:" no-close>
+<panel type="danger" header="**`W11.5` Can do acceptance testing** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by the 'Acceptance Testing' component of v1.4:
@@ -53,11 +51,11 @@ Covered by the 'Acceptance Testing' component of v1.4:
 
 #### Project Management:
 
-<dynamic-panel src="outcome-processModelTypes.md" type="warning" header=":trophy: Can explain types of SDLC process models :star::star:" no-close/>
+<dynamic-panel src="outcome-processModelTypes.md" type="warning" header="**`W11.6` Can explain types of SDLC process models** :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<dynamic-panel src="outcome-popularProcessModels.md" type="info" header=":trophy: Can explain some popular SDLC process models :star::star::star:" no-close/>
+<dynamic-panel src="outcome-popularProcessModels.md" type="info" header="**`W11.7` Can explain some popular SDLC process models** :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
