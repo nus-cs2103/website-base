@@ -17,10 +17,8 @@
 <include src="week7/index.html" name=":white_check_mark: Week 7 [Oct 2]" dynamic />
 <include src="week8/index.html" name=":white_check_mark: Week 8 [Oct 9]" dynamic />
 <include src="week9/index.html" name=":white_check_mark: Week 9 [Oct 16]" dynamic />
-<panel header=":exclamation: Week 10 [Oct 23]" expanded no-close>
-  <include src="week10/index.html"/>
-</panel>
-<panel header=":construction: Week 11 [Oct 30]" no-close>
+<include src="week10/index.html" name=":white_check_mark: Week 10 [Oct 23]" dynamic />
+<panel header=":exclamation: Week 11 [Oct 30]" expanded no-close>
   <include src="week11/index.html"/>
 </panel>
 <include src="week12/index.html" name=":construction: Week 12 [Nov 6]" dynamic />
