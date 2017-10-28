@@ -43,6 +43,13 @@ v1.4 user guide should be updated to match the current version of the product. %
   
 </tip-box>
 
+* README.adoc: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular,
+  * ==Describe the profile of the target user==
+  * Remove irrelevant content such as _Learning Outcomes_
+  * ==Update the `Ui.png` to match the current product==
+  
+* User guide: ==This document will be used by acceptance testers==. Update to match the current version. In particular, clearly indicate which features are not implemented yet. 
+ 
 * Developer guide: As before, update if necessary.
   
 * AboutUs.adoc page: Update to reflect current state of roles and responsibilities.  
@@ -57,4 +64,34 @@ As before.
 
 ### v1.4 Acceptance Testing
 
-To be done during Lecture 11. More info will be released later.
+* **Objectives**:
+  * **To train you** to do manual testing, bug reporting, bug triaging, bug fixing, communicating with users, evaluating products etc. (Note: ==you will be doing a graded acceptance testing session in week 13==; this session will serve as practice for that)
+  * **To help you improve your product** before the final submission.
+  
+* **When, where**: 
+  * To be done **during Lecture 11**. Duration: **30 minutes**.
+
+* **During the session**:
+  * Each student will be assigned a product from another team to test. 
+  * Testers will post bug reports and feature suggestions in your issue tracker.
+  * Do not use the session time to read bug reports your team is receiving.
+  * Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.
+  * Use descriptive titles for the issues. Give a good description of the bug/suggestion.
+  
+* **Grading**:
+  * **Attendance is strongly encouraged** but not compulsory. Your participation in the session benefits your team because the number of testers testing your product will depend on how many members of your team is taking part in testing %%&nbsp;e.g. if 3 members of your team are taking part in testing, three other testers will be assigned to test your product%%.
+  * There is **no penalty for bugs reported** at this session.
+  * The **reward for reporting bugs** or suggesting features: you can include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger> or your CV to show how you contributed to another project.
+  
+<modal title="Admin &raquo; Project &rarr;" id="modal:v1.4-ppp">
+  <include src="project-v15rc.md#project-portfolio"/>
+</modal>
+  
+* **Preparation**:
+  * **Bring your laptop fully charged**. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.
+  * **Have a good screenshot tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
+  * Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker. 
+  
+* **After the session**:
+  * It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.
+  * You can post in the issue thread to communicate with the original poster to give your response, ask for more info, etc.

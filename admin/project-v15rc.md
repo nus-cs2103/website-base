@@ -19,8 +19,30 @@ Update to match the product.
 
 <tip-box type="important"> 
 
-**Each member must create a _Project Portfolio_ page** to describe your contribution to the project. Follow the [example in the AddressBook-Level4](https://se-edu.github.io/addressbook-level4/team/johndoe.html).
+**Each member must create a _Project Portfolio_ page** to describe your contribution to the project. 
 
+</tip-box>
+
+<tip-box> 
+
+<div id="project-portfolio">
+
+#### Project Portfolio Page (PPP)
+
+* **Objective:** 
+  * For you to use (e.g. in your resume) as a well-documented data point of your SE experience 
+  * For us to use as a data point to evaluate your contributions to the project and your documentation skills
+
+* **Format**:
+  * Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html).
+  * Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project<br>
+    Other things you can include: Evidence of helping others %%&nbsp;e.g. responses you posted in our forum%%, Evidence of technical leadership %%&nbsp;e.g. offering features for others to reuse, evidence of those features being reused by others%% <br>
+    If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
+  * Tip: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html). 
+  * Important: It is assumed that sections _included_ in this way were written primarily by you. If those sections were written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
+
+
+</div>
 </tip-box>
 
 **Submission**: Must be included in the version tagged `v1.5rc`. 
