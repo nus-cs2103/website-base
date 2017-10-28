@@ -3,6 +3,8 @@ Your project should comply with the following constraints.
 
 * **Constraint-Morph**: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
   %%**Reason:** To ensure your code has a decent quality level from the start.%%
+  
+* **Constraint-Incremental**: The product needs to be developed incrementally over the project duration (week 6-13). While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. %%&nbsp;Reasons: 1.To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
 
 <span id="constraint-cli">
 
