@@ -86,3 +86,23 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 **Grading**: 
 
 <include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+
+<div id=v15-testathon>
+
+### v1.5 Testathon
+
+* **Objective:** to evaluate your manual testing skills, to peer test your product
+
+* **Time/venue:** week 13 lecture, lecture venue
+
+<include src="project-testing.md#testathonPreparations" />
+
+* **During:** 
+  * You will be assigned two other products to test/evaluate.
+  * More info to be given later
+
+* **Grading:** Your performance can affect your final grade (under the _QA_ category) 
+  * You will lose marks if you missed too many bugs in the products you tested
+  * The bugs found in your product by others will affect your v1.5 marks
+  
+</div>

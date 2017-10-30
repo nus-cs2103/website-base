@@ -41,6 +41,22 @@ As before, you are _recommended_ (but not required) to **follow the forking work
 * A new version tagged `v1.2` is in your repo. %%&nbsp;If `v1.2` is already used by a past commit, you can use something similar such as `V1.2` or `v1.2.0`.%%
 * The version `v1.2` is step towards `v2.0` (but it does not matter how big a step it is)
 
+<tip-box>
+
+:bulb: **If tests are causing too much pain ...**
+
+Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.
+
+If you find tests too big a burden, it is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated test coverage you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.
+
+Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>. 
+
+<modal title="Admin &raquo; Project Asessement &rarr; Expectation on testing" id="modal:v12-testingExpectations">
+  <include src="project-testing.md#expectations"/>
+</modal>
+
+</tip-box>
+
 ### v1.2 Documentation
 
 * **User Guide**: Update as necessary.

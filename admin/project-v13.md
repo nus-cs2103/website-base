@@ -10,6 +10,16 @@
 
 </tip-box>
 
+<tip-box> 
+
+**If the project is too difficult for you to keep up with, there is an easier path**
+
+:bulb: As CS2103/T is a core module for Computing students, the project standards are set high enough to train students for a CS/SE career. However, some of you may not have gained enough pre-requisite skills (possibly because you don't plan for a CS/SE-related career, or for some other reason) in previous modules to be able to survive a code base such as AddressBook-Level4 (AB4). Based on your v1.0-1.2 experience, you should now be able to decide weather you are in that category.
+
+If you think you are in that category (e.g. you haven't managed to merge any code to AB4 code base yet in spite of much trying) and you fear that you are not going to learn much by continuing to struggle in the AB4 code base, we are willing to let you go back to AB3 or AB2 code base and use that for your project instead. This decision can be made as a team or individually. We'll use the same criteria for grading your project either way, but naturally, work done in AB2/AB3 is going to earn significantly less marks than similar work done in AB4. If you want to take that option, please email us know before v1.3 deadline.
+
+</tip-box>
+
 ### v1.3 Project Management
 
 <tip-box type="important">
@@ -18,9 +28,9 @@ Starting from this version, you are _required_ to, **do a proper product release
 
 </tip-box>
 
-<tip-box type="tip"> 
+<tip-box> 
 
-Ensure that **each PR that adds an enhancement also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
+:bulb: Ensure that **each PR that adds an enhancement also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
 
 </tip-box>
 

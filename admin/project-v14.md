@@ -87,10 +87,7 @@ As before.
   <include src="project-v15rc.md#project-portfolio"/>
 </modal>
   
-* **Preparation**:
-  * **Bring your laptop fully charged**. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.
-  * **Have a good screenshot tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
-  * Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker. 
+<include src="project-testing.md#testathonPreparations" />
   
 * **After the session**:
   * It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.
