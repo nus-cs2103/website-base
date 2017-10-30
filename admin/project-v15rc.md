@@ -55,8 +55,7 @@ Update to match the product.
   * Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project
   * Other things you can include: 
     * Evidence of helping others %%&nbsp;e.g. responses you posted in our forum%%, 
-    * Evidence of technical leadership %%&nbsp;e.g. offering features for others to reuse, 
-    * evidence of those features being reused by others%%
+    * Evidence of technical leadership %%&nbsp;e.g. offering features for others to reuse, evidence of those features being reused by others%%
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:

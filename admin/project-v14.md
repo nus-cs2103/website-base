@@ -16,7 +16,7 @@
 
 <tip-box type="important">
 
-From this version, you are required to <tooltip content="extract your own code and put in one file">collate</tooltip> at the end of the milestone. 
+You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collated code at your final submission. As an early preparation for that, we require you to collate code once at v1.4 so that you can iron out any code collation glitches early.%% 
 
 </tip-box>
 
