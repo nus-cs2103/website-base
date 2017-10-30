@@ -7,16 +7,19 @@
 
 <div id="main">
 
+<br>
 
-<include src="outcome-umlModel.md" />
+#### Design:
+
+<dynamic-panel src="outcome-umlModel.md" type="success" header=":trophy: Can explain some UML models :star::star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
+
+<br>
+
+#### Implementation:
 
 <include src="outcome-cloudComputing.md" />
-
-<!-- ==================================================================================================== -->
-
-<dynamic-panel src="outcome-testCaseDesignCombined.md" type="warning" header=":trophy: Can combine test case design heuristics :star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
@@ -29,6 +32,14 @@ Covered by the 'Project Portfolio Page' component of v1.5rc:
 
   </panel>
 </panel>
+
+<br>
+
+#### QA:
+
+<dynamic-panel src="outcome-testCaseDesignCombined.md" type="warning" header=":trophy: Can combine test case design heuristics :star::star:" no-close/>
+
+<!-- ==================================================================================================== -->
 
 </div>
 </div>
