@@ -11,7 +11,7 @@
 
 #### Design:
 
-<dynamic-panel src="outcome-umlModel.md" type="success" header=":trophy: Can explain some UML models :star::star::star::star:" no-close/>
+<dynamic-panel src="outcome-umlModel.md" type="success" header="**`W12.1` Can explain some UML models** :star::star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
@@ -19,11 +19,11 @@
 
 #### Implementation:
 
-<dynamic-panel src="outcome-cloudComputing.md" type="success" header=":trophy: Can explain cloud computing :star::star::star::star:" no-close/>
+<dynamic-panel src="outcome-cloudComputing.md" type="success" header="**`W12.2` Can explain cloud computing basics** :star::star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can describe contributions to a project :star:" expandable>
+<panel type="danger" header="**`W12.3` Can describe contributions to a project** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by the 'Project Portfolio Page' component of v1.5rc:
@@ -32,14 +32,6 @@ Covered by the 'Project Portfolio Page' component of v1.5rc:
 
   </panel>
 </panel>
-
-<br>
-
-#### QA:
-
-<dynamic-panel src="outcome-testCaseDesignCombined.md" type="warning" header=":trophy: Can combine test case design heuristics :star::star:" no-close/>
-
-<!-- ==================================================================================================== -->
 
 </div>
 </div>
