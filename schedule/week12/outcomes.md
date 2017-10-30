@@ -19,7 +19,7 @@
 
 #### Implementation:
 
-<include src="outcome-cloudComputing.md" />
+<dynamic-panel src="outcome-cloudComputing.md" type="success" header=":trophy: Can explain cloud computing :star::star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 
