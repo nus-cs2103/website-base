@@ -1,4 +1,4 @@
-<panel type="warning" header="`W11.6a` Can explain SLDC process models :star::star:" expandable>
+<panel type="warning" header="`W11.6a` Can explain SDLC process models :star::star:" expandable>
   <include src="../../book/processModels/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>

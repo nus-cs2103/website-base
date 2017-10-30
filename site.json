@@ -614,63 +614,63 @@
     },
     {
       "src": "book/processModels/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models"
+      "title": "CS2103/T Textbook - SDLC Process Models"
     },
     {
       "src": "book/processModels/print.md",
-      "title": "CS2103/T Textbook - SLDC Process Models [Printable]"
+      "title": "CS2103/T Textbook - SDLC Process Models [Printable]"
     },
     {
       "src": "book/processModels/introduction/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Introduction"
+      "title": "CS2103/T Textbook - SDLC Process Models: Introduction"
     },
     {
       "src": "book/processModels/introduction/what/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: What"
+      "title": "CS2103/T Textbook - SDLC Process Models: Introduction: What"
     },
     {
       "src": "book/processModels/introduction/sequentialModels/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: Sequential Models"
+      "title": "CS2103/T Textbook - SDLC Process Models: Introduction: Sequential Models"
     },
     {
       "src": "book/processModels/introduction/iterativeModels/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: Iterative Models"
+      "title": "CS2103/T Textbook - SDLC Process Models: Introduction: Iterative Models"
     },
     {
       "src": "book/processModels/introduction/agileModels/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Introduction: Agile Models"
+      "title": "CS2103/T Textbook - SDLC Process Models: Introduction: Agile Models"
     },
     {
       "src": "book/processModels/exampleProcessModels/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models"
+      "title": "CS2103/T Textbook - SDLC Process Models: Exaxmple Process Models"
     },
     {
       "src": "book/processModels/exampleProcessModels/xp/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models: XP"
+      "title": "CS2103/T Textbook - SDLC Process Models: Exaxmple Process Models: XP"
     },
     {
       "src": "book/processModels/exampleProcessModels/scrum/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models: SCRUM"
+      "title": "CS2103/T Textbook - SDLC Process Models: Exaxmple Process Models: SCRUM"
     },
     {
       "src": "book/processModels/exampleProcessModels/unifiedProcess/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Exaxmple Process Models: Unified Process"
+      "title": "CS2103/T Textbook - SDLC Process Models: Exaxmple Process Models: Unified Process"
     },
     {
       "src": "book/processModels/more/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: More"
+      "title": "CS2103/T Textbook - SDLC Process Models: More"
     },
     {
       "src": "book/processModels/more/cmmi/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: More: CMMI"
+      "title": "CS2103/T Textbook - SDLC Process Models: More: CMMI"
     },
     {
       "src": "book/processModels/summary/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Summary"
+      "title": "CS2103/T Textbook - SDLC Process Models: Summary"
     },
     {
       "src": "book/processModels/summary/recap/index.md",
-      "title": "CS2103/T Textbook - SLDC Process Models: Summary: Recap"
+      "title": "CS2103/T Textbook - SDLC Process Models: Summary: Recap"
     },
     {
       "src": "book/projectPlanning/index.md",
@@ -855,10 +855,6 @@
     {
       "src": "book/oopImplementation/polymorphism/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism"
-    },
-    {
-      "src": "book/oopImplementation/substitutability/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Substitutability"
     },
     {
       "src": "book/modeling/index.md",
