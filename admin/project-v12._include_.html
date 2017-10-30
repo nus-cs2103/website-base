@@ -125,6 +125,27 @@
   <li>A new version tagged <code>v1.2</code> is in your repo. <span class="dimmed"> If <code>v1.2</code> is already used by a past commit, you can use something similar such as <code>V1.2</code> or <code>v1.2.0</code>.</span></li>
   <li>The version <code>v1.2</code> is step towards <code>v2.0</code> (but it does not matter how big a step it is)</li>
 </ul>
+<tip-box>
+  <p>💡 <strong>If tests are causing too much pain ...</strong></p>
+  <p>Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.</p>
+  <p>If you find tests too big a burden, it is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated test coverage you have, the higher the risk of regressions; but it may be an acceptable trade-off under
+    the circumstances if tests are slowing you down too much.</p>
+  <p>Also note
+    <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>.</p>
+  <modal title="Admin &raquo; Project Asessement &rarr; Expectation on testing" id="modal:v12-testingExpectations">
+    <div>
+      <ul>
+        <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk
+          of regression bugs, which will cost marks if not fixed before the final submission.</li>
+        <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+        <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what
+          extent you want to automate tests, depending on the benefits and the effort required.</li>
+        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because
+          the code has low testability.</li>
+      </ul>
+    </div>
+  </modal>
+</tip-box>
 <h3 id="v12-documentation">v1.2 Documentation</h3>
 <ul>
   <li>

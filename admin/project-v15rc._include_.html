@@ -1,12 +1,44 @@
 <p><code>rc</code> = Release Candidate</p>
+<tip-box>
+  <p><strong>v1.5 Summary of Deliverables</strong></p>
+  <ul>
+    <li>👤 Individual:
+      <ul class="task-list">
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Contributed code to v1.5rc</li>
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Project Portfolio Page merged</li>
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Well-prepared for the demo</li>
+      </ul>
+    </li>
+    <li>👥👥 Team:
+      <ul class="task-list">
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.5rc released properly on GitHub</li>
+        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.5rc milestone wrapped up properly on GitHub</li>
+      </ul>
+    </li>
+  </ul>
+</tip-box>
 <h3 id="v15rc-project-management">v1.5rc Project Management</h3>
 <p>We strongly recommend you to <strong>freeze features</strong> after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding more features after this point is risky. The remaining time
   should be left aside for fixing problems discovered late.</p>
 <h3 id="v15rc-product">v1.5rc Product</h3>
 <ul>
-  <li>Increase code coverage by adding more tests if it is lower than the level you would like it to be.</li>
+  <li>Increase code coverage by adding more tests if it is lower than the level you would like it to be. Take note of
+    <trigger trigger="click" for="modal:v15rc-testingExpectations">our expectation on test code</trigger>.</li>
   <li>After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.</li>
 </ul>
+<modal title="Admin &raquo; Project Asessement &rarr; Expectation on testing" id="modal:v15rc-testingExpectations">
+  <div>
+    <ul>
+      <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk
+        of regression bugs, which will cost marks if not fixed before the final submission.</li>
+      <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+      <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent
+        you want to automate tests, depending on the benefits and the effort required.</li>
+      <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because
+        the code has low testability.</li>
+    </ul>
+  </div>
+</modal>
 <p><strong>Submission</strong>: as before.</p>
 <p><strong>Grading</strong>: as before.</p>
 <h3 id="v15rc-documentation">v1.5rc Documentation</h3>
@@ -26,12 +58,23 @@
         </ul>
       </li>
       <li>
+        <p><strong>What to include:</strong></p>
+        <ul>
+          <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project</li>
+          <li>Other things you can include:
+            <ul>
+              <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,</li>
+              <li>Evidence of technical leadership %% e.g. offering features for others to reuse,</li>
+              <li>evidence of those features being reused by others%%</li>
+            </ul>
+          </li>
+          <li>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</li>
+        </ul>
+      </li>
+      <li>
         <p><strong>Format</strong>:</p>
         <ul>
           <li>Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
-          <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project<br> Other things you can include: Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,
-            Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span><br> If you plan to use the PPP in your Resume, you can also include your SE work outside
-            of the module (will not be graded)</li>
           <li>Tip: You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example
             in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
           <li>Important: It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
@@ -44,8 +87,10 @@
 <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.5rc</code>.</p>
 <h3 id="v15rc-demo">v1.5rc Demo</h3>
 <ul>
+  <li>Objective: to serve as a rehearsal for the final project demo at v1.5</li>
   <li>Duration: ~3 minutes (max) per person <span class="dimmed">  a 4-member team will have 12 minutes</span></li>
   <li>Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.2-v1.4 demos, there is no need for each person to demo their own features.</li>
+  <li><mark>Cover all features</mark>, not just the ones added in the recent iteration.</li>
   <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
   <li>It is <mark>a <em>sitting down</em> demo</mark>: You'll be demonstrating the features using the TV while sitting down.</li>
   <li>It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.</li>

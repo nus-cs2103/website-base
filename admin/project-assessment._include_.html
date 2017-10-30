@@ -1,45 +1,94 @@
 <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
 <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥👥 10 team marks)</p>
-<ol>
-  <li>
-    <p><strong>Product features</strong> [👥👥][5 marks] - How well do your features fit together</p>
-    <p>Based on<br> (a) <strong>how well the features implemented fit together</strong> to make a good product (not how many features or how big the features are), <br> (b)and <strong>how well they are demonstrated</strong>.</p>
-    <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
-  </li>
-  <li>
-    <p><strong>Implementation</strong> [👤][20 marks] - How good is your implementation? A measure of the <mark>quality and the quantity</mark> of code you have written yourself. Evaluated based on an inspection of the collated code (submitted in your <code>/collated/*.md</code>      files).</p>
-  </li>
-  <li>
-    <p><strong>QA</strong> [👤][10 marks] - How good is your Quality Assurance? Evaluated based on your test code and our own manual testing.</p>
-    <p>Expectations:</p>
+<panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded="">
+  <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
+  <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
+  <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
+</panel>
+<panel header="2. **Implementation** [:bust_in_silhouette:][20 marks]" expanded="">
+  <p>Evaluates: How good your implementation is, in terms of the <mark>quality and the quantity</mark> of the code you have written yourself.</p>
+  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+</panel>
+<panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
+  <p>Evaluates: How good is your Quality Assurance?</p>
+  <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the
+    <trigger trigger="click" for="modal:projectAssessment-testathon">v1.5 testathon</trigger>, 4. bugs found during testathon.</p>
+  <panel type="seamless" header="Expectations for writing automated tests:" expanded="">
+    <div>
+      <ul>
+        <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk
+          of regression bugs, which will cost marks if not fixed before the final submission.</li>
+        <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+        <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what
+          extent you want to automate tests, depending on the benefits and the effort required.</li>
+        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because
+          the code has low testability.</li>
+      </ul>
+    </div>
+  </panel>
+</panel>
+<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
+  <div>
+    <h3 id="v15-testathon">v1.5 Testathon</h3>
     <ul>
-      <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less.</li>
-      <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent
-        you want to automate tests, depending on the benefits and the effort required.</li>
-      <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because
-        the code has low testability.</li>
+      <li>
+        <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+      </li>
+      <li>
+        <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+      </li>
     </ul>
-  </li>
-  <li>
-    <p><strong>Documentation</strong> [👤][10 marks] - How well does your user guide achieves its objectives? Evaluated based on the relevant sections of your project portfolio.<br> Criteria considered:</p>
+    <div>
+      <ul>
+        <li><strong>Preparation</strong>:
+          <ul>
+            <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
+            <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+            <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <ul>
-      <li>Explanation should be clear and written to match the audience.</li>
-      <li>Good use of visuals to complement text.</li>
+      <li>
+        <p><strong>During:</strong></p>
+        <ul>
+          <li>You will be assigned two other products to test/evaluate.</li>
+          <li>More info to be given later</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+        <ul>
+          <li>You will lose marks if you missed too many bugs in the products you tested</li>
+          <li>The bugs found in your product by others will affect your v1.5 marks</li>
+        </ul>
+      </li>
     </ul>
-  </li>
-  <li>
-    <p><strong>Project management</strong> [👥👥: 5 marks] - How well you worked together as a team to follow a systematic process? Evaluated based on GitHub data and supervisor observations.<br> Criteria:
-    </p>
-    <ul>
-      <li>Good use of GitHub milestones.</li>
-      <li>Good use of GitHub release mechanism.</li>
-      <li>Good version control, based on the repo.</li>
-      <li>Reasonable attempt to use the forking workflow.</li>
-      <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
-      <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
-      <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
-      <li>Passed almost all checkpoints from v1.0 to v1.5</li>
-    </ul>
-  </li>
-</ol>
-<p><strong>Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
+  </div>
+</modal>
+<panel header="4. **Documentation** [:bust_in_silhouette:][10 marks]" expanded="">
+  <p>Evaluates: How well does your user guide achieves its objectives?</p>
+  <p>Based on: the relevant sections of your project portfolio. Criteria considered:</p>
+  <ul>
+    <li>Explanation should be clear and written to match the audience.</li>
+    <li>Good use of visuals to complement text.</li>
+  </ul>
+</panel>
+<panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded="">
+  <p>Evaluates: How well you worked together as a team to follow a systematic process?</p>
+  <p>Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.</p>
+  <p>Criteria:</p>
+  <ul>
+    <li>Good use of GitHub milestones.</li>
+    <li>Good use of GitHub release mechanism.</li>
+    <li>Good version control, based on the repo.</li>
+    <li>Reasonable attempt to use the forking workflow.</li>
+    <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
+    <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+    <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
+  </ul>
+  <p></p>
+</panel>
+<p></p>
+<p><strong>❗️ Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>

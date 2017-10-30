@@ -688,11 +688,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="mju72" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mju72" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mju72" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mju72" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="mju72" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="uajo8" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="uajo8" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="uajo8" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="uajo8" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="uajo8" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2156,6 +2156,27 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <li>A new version tagged <code>v1.2</code> is in your repo. <span class="dimmed"> If <code>v1.2</code> is already used by a past commit, you can use something similar such as <code>V1.2</code> or <code>v1.2.0</code>.</span></li>
       <li>The version <code>v1.2</code> is step towards <code>v2.0</code> (but it does not matter how big a step it is)</li>
     </ul>
+    <tip-box>
+      <p>💡 <strong>If tests are causing too much pain ...</strong></p>
+      <p>Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.</p>
+      <p>If you find tests too big a burden, it is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated test coverage you have, the higher the risk of regressions; but it may be an acceptable trade-off
+        under the circumstances if tests are slowing you down too much.</p>
+      <p>Also note
+        <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>.</p>
+      <modal title="Admin &raquo; Project Asessement &rarr; Expectation on testing" id="modal:v12-testingExpectations">
+        <div>
+          <ul>
+            <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the
+              risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
+            <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+            <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to
+              what extent you want to automate tests, depending on the benefits and the effort required.</li>
+            <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code
+              because the code has low testability.</li>
+          </ul>
+        </div>
+      </modal>
+    </tip-box>
     <h3 id="v12-documentation">v1.2 Documentation</h3>
     <ul>
       <li>
@@ -2205,12 +2226,20 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
         </li>
       </ul>
     </tip-box>
+    <tip-box>
+      <p><strong>If the project is too difficult for you to keep up with, there is an easier path</strong></p>
+      <p>💡 As CS2103/T is a core module for Computing students, the project standards are set high enough to train students for a CS/SE career. However, some of you may not have gained enough pre-requisite skills (possibly because you don't plan for a CS/SE-related
+        career, or for some other reason) in previous modules to be able to survive a code base such as AddressBook-Level4 (AB4). Based on your v1.0-1.2 experience, you should now be able to decide weather you are in that category.</p>
+      <p>If you think you are in that category (e.g. you haven't managed to merge any code to AB4 code base yet in spite of much trying) and you fear that you are not going to learn much by continuing to struggle in the AB4 code base, we are willing to let
+        you go back to AB3 or AB2 code base and use that for your project instead. This decision can be made as a team or individually. We'll use the same criteria for grading your project either way, but naturally, work done in AB2/AB3 is going to earn
+        significantly less marks than similar work done in AB4. If you want to take that option, please email us know before v1.3 deadline.</p>
+    </tip-box>
     <h3 id="v13-project-management">v1.3 Project Management</h3>
     <tip-box type="important">
       <p>Starting from this version, you are <em>required</em> to, <strong>do a proper product release</strong> as described in the Developer Guide.</p>
     </tip-box>
-    <tip-box type="tip">
-      <p>Ensure that <strong>each PR that adds an enhancement also updates the relevant parts of documents and tests</strong>. That way, your documentation/testing work will not pile up towards the end.</p>
+    <tip-box>
+      <p>💡 Ensure that <strong>each PR that adds an enhancement also updates the relevant parts of documents and tests</strong>. That way, your documentation/testing work will not pile up towards the end.</p>
     </tip-box>
     <p>As before, the milestone v1.3 must be wrapped up on GitHub. Remember to <mark>move all incomplete issues to a future milestone and <em>close</em> the milestone</mark> so that it no longer appears under <em>open</em> milestones.</p>
     <h3 id="v13-product">v1.3 Product</h3>
@@ -2310,7 +2339,7 @@ method 4 ...
             <p>If you wrote a significant amount of code that was not used in the final product,</p>
             <ul>
               <li>Create a folder called <code>{project root}/unused</code></li>
-              <li>Move unused files to that folder (those files should contain unused code only)</li>
+              <li>Move unused files (or copies of files containing unused code) to that folder.</li>
               <li>use <code>//@@author github-ID</code> to mark unused code in those files.</li>
             </ul>
             <p>e.g.</p>
@@ -2321,32 +2350,43 @@ method 2 ...
             <p>Please put a comment in the code to explain why it was not used.</p>
           </li>
           <li>
-            <p>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.<br> You will be penalized if you try to boost the length of your collated files using dubious
-              means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code
-              duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final
-              submission) to let us know.</p>
+            <p><mark>The <code>//@@author</code> tag should be used to mark <em>all</em> code/test you claim credit for. There is no need to mark documentation files.</mark> You will be penalized if you try to boost the length of your collated files using
+              dubious means such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce
+              code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming credit for code that he/she did not write, you can email us (after the
+              final submission) to let us know.</p>
           </li>
         </ol>
         <ul>
-          <li>
-            <p><strong>INCLUDE</strong>: everything that required significant ‘writing’ effort. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file
-              with 1000 persons that was used to test performance.</p>
-          </li>
-          <li>
-            <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author github-ID-reused</code></p>
-            <p>e.g.</p>
-            <pre class="hljs"><code>//@@author johndoe-reused
+          <li><strong>INCLUDE</strong>:
+            <ul>
+              <li>
+                <p><strong>All code/test-related work you contributed</strong>. e.g. comments, test code, styling (e.g. css), xml, even test data files. But do not include chunks of text that were trivially copy pasted e.g. a test data file with 1000 persons
+                  that was used to test performance.</p>
+              </li>
+              <li>
+                <p><strong>Code you reused</strong> from elsewhere: Mark such code as <code>//@@author github-ID-reused</code></p>
+                <p>e.g.</p>
+                <pre class="hljs"><code>//@@author johndoe-reused
 method 1 ...
 method 2 ...
 </code></pre>
+              </li>
+            </ul>
           </li>
-          <li>
-            <p><strong>EXCLUDE</strong> code generated by the IDE/framework. You may also mark such code <code>//@@author generated</code></p>
-            <p>e.g.</p>
-            <pre class="hljs"><code>//@@author generated
+          <li><strong>EXCLUDE</strong>
+            <ul>
+              <li>
+                <p><strong>Documentation files</strong> (User guide, Developer guide etc.). Those will be evaluated under a different category.</p>
+              </li>
+              <li>
+                <p><strong>Code generated by the IDE/framework.</strong> You may also mark such code <code>//@@author generated</code></p>
+                <p>e.g.</p>
+                <pre class="hljs"><code>//@@author generated
 method 1 ...
 method 2 ...
 </code></pre>
+              </li>
+            </ul>
           </li>
         </ul>
         <ol start="8">
@@ -2472,12 +2512,23 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             </ul>
           </li>
           <li>
+            <p><strong>What to include:</strong></p>
+            <ul>
+              <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project</li>
+              <li>Other things you can include:
+                <ul>
+                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,</li>
+                  <li>Evidence of technical leadership %% e.g. offering features for others to reuse,</li>
+                  <li>evidence of those features being reused by others%%</li>
+                </ul>
+              </li>
+              <li>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</li>
+            </ul>
+          </li>
+          <li>
             <p><strong>Format</strong>:</p>
             <ul>
               <li>Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
-              <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project<br> Other things you can include: Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,
-                Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span><br> If you plan to use the PPP in your Resume, you can also include your SE work
-                outside of the module (will not be graded)</li>
               <li>Tip: You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the
                 example in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
               <li>Important: It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
@@ -2487,17 +2538,19 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         </ul>
       </div>
     </modal>
+    <div>
+      <ul>
+        <li><strong>Preparation</strong>:
+          <ul>
+            <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
+            <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+            <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <ul>
-      <li>
-        <p><strong>Preparation</strong>:</p>
-        <ul>
-          <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
-          <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
-          <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>After the session</strong>:</p>
+      <li><strong>After the session</strong>:
         <ul>
           <li>It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.</li>
           <li>You can post in the issue thread to communicate with the original poster to give your response, ask for more info, etc.</li>
@@ -2510,14 +2563,46 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
 <div id="admin-project-v15rc">
   <div>
     <p><code>rc</code> = Release Candidate</p>
+    <tip-box>
+      <p><strong>v1.5 Summary of Deliverables</strong></p>
+      <ul>
+        <li>👤 Individual:
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Contributed code to v1.5rc</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Project Portfolio Page merged</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Well-prepared for the demo</li>
+          </ul>
+        </li>
+        <li>👥👥 Team:
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.5rc released properly on GitHub</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.5rc milestone wrapped up properly on GitHub</li>
+          </ul>
+        </li>
+      </ul>
+    </tip-box>
     <h3 id="v15rc-project-management">v1.5rc Project Management</h3>
     <p>We strongly recommend you to <strong>freeze features</strong> after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding more features after this point is risky. The remaining
       time should be left aside for fixing problems discovered late.</p>
     <h3 id="v15rc-product">v1.5rc Product</h3>
     <ul>
-      <li>Increase code coverage by adding more tests if it is lower than the level you would like it to be.</li>
+      <li>Increase code coverage by adding more tests if it is lower than the level you would like it to be. Take note of
+        <trigger trigger="click" for="modal:v15rc-testingExpectations">our expectation on test code</trigger>.</li>
       <li>After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.</li>
     </ul>
+    <modal title="Admin &raquo; Project Asessement &rarr; Expectation on testing" id="modal:v15rc-testingExpectations">
+      <div>
+        <ul>
+          <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the
+            risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
+          <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+          <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what
+            extent you want to automate tests, depending on the benefits and the effort required.</li>
+          <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code
+            because the code has low testability.</li>
+        </ul>
+      </div>
+    </modal>
     <p><strong>Submission</strong>: as before.</p>
     <p><strong>Grading</strong>: as before.</p>
     <h3 id="v15rc-documentation">v1.5rc Documentation</h3>
@@ -2537,12 +2622,23 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             </ul>
           </li>
           <li>
+            <p><strong>What to include:</strong></p>
+            <ul>
+              <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project</li>
+              <li>Other things you can include:
+                <ul>
+                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,</li>
+                  <li>Evidence of technical leadership %% e.g. offering features for others to reuse,</li>
+                  <li>evidence of those features being reused by others%%</li>
+                </ul>
+              </li>
+              <li>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</li>
+            </ul>
+          </li>
+          <li>
             <p><strong>Format</strong>:</p>
             <ul>
               <li>Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
-              <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project<br> Other things you can include: Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,
-                Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span><br> If you plan to use the PPP in your Resume, you can also include your SE work
-                outside of the module (will not be graded)</li>
               <li>Tip: You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the
                 example in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
               <li>Important: It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
@@ -2555,8 +2651,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.5rc</code>.</p>
     <h3 id="v15rc-demo">v1.5rc Demo</h3>
     <ul>
+      <li>Objective: to serve as a rehearsal for the final project demo at v1.5</li>
       <li>Duration: ~3 minutes (max) per person <span class="dimmed">  a 4-member team will have 12 minutes</span></li>
       <li>Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.2-v1.4 demos, there is no need for each person to demo their own features.</li>
+      <li><mark>Cover all features</mark>, not just the ones added in the recent iteration.</li>
       <li>It <mark>should be a 'well prepared' demo</mark>. You should know in advance exactly what you'll do in the demo.</li>
       <li>It is <mark>a <em>sitting down</em> demo</mark>: You'll be demonstrating the features using the TV while sitting down.</li>
       <li>It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.</li>
@@ -2662,6 +2760,44 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <p>
       <panel src="/website\admin\project-assessment._include_.html" name="%%Admin &raquo; Project: Assessment%%" header="%%Admin &raquo; Project: Assessment%%" isOpen="false" no-close="true" no-switch="true"></panel>
     </p>
+    <div id="v15-testathon">
+      <h3 id="v15-testathon">v1.5 Testathon</h3>
+      <ul>
+        <li>
+          <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+        </li>
+        <li>
+          <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+        </li>
+      </ul>
+      <div>
+        <ul>
+          <li><strong>Preparation</strong>:
+            <ul>
+              <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
+              <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+              <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li>
+          <p><strong>During:</strong></p>
+          <ul>
+            <li>You will be assigned two other products to test/evaluate.</li>
+            <li>More info to be given later</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+          <ul>
+            <li>You will lose marks if you missed too many bugs in the products you tested</li>
+            <li>The bugs found in your product by others will affect your v1.5 marks</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 <h2 id="project-retrospective">Project retrospective</h2>
@@ -2684,50 +2820,98 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <div>
     <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
     <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥👥 10 team marks)</p>
-    <ol>
-      <li>
-        <p><strong>Product features</strong> [👥👥][5 marks] - How well do your features fit together</p>
-        <p>Based on<br> (a) <strong>how well the features implemented fit together</strong> to make a good product (not how many features or how big the features are), <br> (b)and <strong>how well they are demonstrated</strong>.</p>
-        <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
-      </li>
-      <li>
-        <p><strong>Implementation</strong> [👤][20 marks] - How good is your implementation? A measure of the <mark>quality and the quantity</mark> of code you have written yourself. Evaluated based on an inspection of the collated code (submitted in your
-          <code>/collated/*.md</code> files).</p>
-      </li>
-      <li>
-        <p><strong>QA</strong> [👤][10 marks] - How good is your Quality Assurance? Evaluated based on your test code and our own manual testing.</p>
-        <p>Expectations:</p>
+    <panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded="">
+      <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
+      <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
+      <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
+    </panel>
+    <panel header="2. **Implementation** [:bust_in_silhouette:][20 marks]" expanded="">
+      <p>Evaluates: How good your implementation is, in terms of the <mark>quality and the quantity</mark> of the code you have written yourself.</p>
+      <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+    </panel>
+    <panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
+      <p>Evaluates: How good is your Quality Assurance?</p>
+      <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the
+        <trigger trigger="click" for="modal:projectAssessment-testathon">v1.5 testathon</trigger>, 4. bugs found during testathon.</p>
+      <panel type="seamless" header="Expectations for writing automated tests:" expanded="">
+        <div>
+          <ul>
+            <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the
+              risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
+            <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+            <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to
+              what extent you want to automate tests, depending on the benefits and the effort required.</li>
+            <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code
+              because the code has low testability.</li>
+          </ul>
+        </div>
+      </panel>
+    </panel>
+    <modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
+      <div>
+        <h3 id="v15-testathon-2">v1.5 Testathon</h3>
         <ul>
-          <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less.</li>
-          <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what
-            extent you want to automate tests, depending on the benefits and the effort required.</li>
-          <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code
-            because the code has low testability.</li>
+          <li>
+            <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+          </li>
+          <li>
+            <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+          </li>
         </ul>
-      </li>
-      <li>
-        <p><strong>Documentation</strong> [👤][10 marks] - How well does your user guide achieves its objectives? Evaluated based on the relevant sections of your project portfolio.<br> Criteria considered:</p>
+        <div>
+          <ul>
+            <li><strong>Preparation</strong>:
+              <ul>
+                <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
+                <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+                <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         <ul>
-          <li>Explanation should be clear and written to match the audience.</li>
-          <li>Good use of visuals to complement text.</li>
+          <li>
+            <p><strong>During:</strong></p>
+            <ul>
+              <li>You will be assigned two other products to test/evaluate.</li>
+              <li>More info to be given later</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+            <ul>
+              <li>You will lose marks if you missed too many bugs in the products you tested</li>
+              <li>The bugs found in your product by others will affect your v1.5 marks</li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li>
-        <p><strong>Project management</strong> [👥👥: 5 marks] - How well you worked together as a team to follow a systematic process? Evaluated based on GitHub data and supervisor observations.<br> Criteria:
-        </p>
-        <ul>
-          <li>Good use of GitHub milestones.</li>
-          <li>Good use of GitHub release mechanism.</li>
-          <li>Good version control, based on the repo.</li>
-          <li>Reasonable attempt to use the forking workflow.</li>
-          <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
-          <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
-          <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
-          <li>Passed almost all checkpoints from v1.0 to v1.5</li>
-        </ul>
-      </li>
-    </ol>
-    <p><strong>Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
+      </div>
+    </modal>
+    <panel header="4. **Documentation** [:bust_in_silhouette:][10 marks]" expanded="">
+      <p>Evaluates: How well does your user guide achieves its objectives?</p>
+      <p>Based on: the relevant sections of your project portfolio. Criteria considered:</p>
+      <ul>
+        <li>Explanation should be clear and written to match the audience.</li>
+        <li>Good use of visuals to complement text.</li>
+      </ul>
+    </panel>
+    <panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded="">
+      <p>Evaluates: How well you worked together as a team to follow a systematic process?</p>
+      <p>Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.</p>
+      <p>Criteria:</p>
+      <ul>
+        <li>Good use of GitHub milestones.</li>
+        <li>Good use of GitHub release mechanism.</li>
+        <li>Good version control, based on the repo.</li>
+        <li>Reasonable attempt to use the forking workflow.</li>
+        <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
+        <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+        <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
+      </ul>
+      <p></p>
+    </panel>
+    <p></p>
+    <p><strong>❗️ Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
   </div>
 </div>
 <h1 id="supervision">Supervision</h1>
@@ -3038,50 +3222,98 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking
           scheme.</p>
         <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥👥 10 team marks)</p>
-        <ol>
-          <li>
-            <p><strong>Product features</strong> [👥👥][5 marks] - How well do your features fit together</p>
-            <p>Based on<br> (a) <strong>how well the features implemented fit together</strong> to make a good product (not how many features or how big the features are), <br> (b)and <strong>how well they are demonstrated</strong>.</p>
-            <p>‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
-          </li>
-          <li>
-            <p><strong>Implementation</strong> [👤][20 marks] - How good is your implementation? A measure of the <mark>quality and the quantity</mark> of code you have written yourself. Evaluated based on an inspection of the collated code (submitted in
-              your <code>/collated/*.md</code> files).</p>
-          </li>
-          <li>
-            <p><strong>QA</strong> [👤][10 marks] - How good is your Quality Assurance? Evaluated based on your test code and our own manual testing.</p>
-            <p>Expectations:</p>
+        <panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded="">
+          <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
+          <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
+          <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
+        </panel>
+        <panel header="2. **Implementation** [:bust_in_silhouette:][20 marks]" expanded="">
+          <p>Evaluates: How good your implementation is, in terms of the <mark>quality and the quantity</mark> of the code you have written yourself.</p>
+          <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+        </panel>
+        <panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
+          <p>Evaluates: How good is your Quality Assurance?</p>
+          <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the
+            <trigger trigger="click" for="modal:projectAssessment-testathon">v1.5 testathon</trigger>, 4. bugs found during testathon.</p>
+          <panel type="seamless" header="Expectations for writing automated tests:" expanded="">
+            <div>
+              <ul>
+                <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher
+                  the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
+                <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+                <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide
+                  to what extent you want to automate tests, depending on the benefits and the effort required.</li>
+                <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
+                  code because the code has low testability.</li>
+              </ul>
+            </div>
+          </panel>
+        </panel>
+        <modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
+          <div>
+            <h3 id="v15-testathon-3">v1.5 Testathon</h3>
             <ul>
-              <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less.</li>
-              <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to
-                what extent you want to automate tests, depending on the benefits and the effort required.</li>
-              <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code
-                because the code has low testability.</li>
+              <li>
+                <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+              </li>
+              <li>
+                <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+              </li>
             </ul>
-          </li>
-          <li>
-            <p><strong>Documentation</strong> [👤][10 marks] - How well does your user guide achieves its objectives? Evaluated based on the relevant sections of your project portfolio.<br> Criteria considered:</p>
+            <div>
+              <ul>
+                <li><strong>Preparation</strong>:
+                  <ul>
+                    <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
+                    <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+                    <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
             <ul>
-              <li>Explanation should be clear and written to match the audience.</li>
-              <li>Good use of visuals to complement text.</li>
+              <li>
+                <p><strong>During:</strong></p>
+                <ul>
+                  <li>You will be assigned two other products to test/evaluate.</li>
+                  <li>More info to be given later</li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+                <ul>
+                  <li>You will lose marks if you missed too many bugs in the products you tested</li>
+                  <li>The bugs found in your product by others will affect your v1.5 marks</li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li>
-            <p><strong>Project management</strong> [👥👥: 5 marks] - How well you worked together as a team to follow a systematic process? Evaluated based on GitHub data and supervisor observations.<br> Criteria:
-            </p>
-            <ul>
-              <li>Good use of GitHub milestones.</li>
-              <li>Good use of GitHub release mechanism.</li>
-              <li>Good version control, based on the repo.</li>
-              <li>Reasonable attempt to use the forking workflow.</li>
-              <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
-              <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
-              <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
-              <li>Passed almost all checkpoints from v1.0 to v1.5</li>
-            </ul>
-          </li>
-        </ol>
-        <p><strong>Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
+          </div>
+        </modal>
+        <panel header="4. **Documentation** [:bust_in_silhouette:][10 marks]" expanded="">
+          <p>Evaluates: How well does your user guide achieves its objectives?</p>
+          <p>Based on: the relevant sections of your project portfolio. Criteria considered:</p>
+          <ul>
+            <li>Explanation should be clear and written to match the audience.</li>
+            <li>Good use of visuals to complement text.</li>
+          </ul>
+        </panel>
+        <panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded="">
+          <p>Evaluates: How well you worked together as a team to follow a systematic process?</p>
+          <p>Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.</p>
+          <p>Criteria:</p>
+          <ul>
+            <li>Good use of GitHub milestones.</li>
+            <li>Good use of GitHub release mechanism.</li>
+            <li>Good version control, based on the repo.</li>
+            <li>Reasonable attempt to use the forking workflow.</li>
+            <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
+            <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+            <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
+          </ul>
+          <p></p>
+        </panel>
+        <p></p>
+        <p><strong>❗️ Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
       </div>
     </panel>
   </div>
