@@ -16,7 +16,7 @@
 
    </tip-box>
 
-1. Apply heuristics for combining multiple test inputs to the following test cases. Point out where the heuristics are contradicted and how to improve the test cases.
+1. Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. :white_check_mark: indicates valid values and :exclamation: indicates invalid values. Point out where the heuristics are contradicted and how to improve the test cases.
 
    <tip-box> 
    
@@ -33,7 +33,7 @@
 
 1. Distinguish between _sequential_ and _iterative_ processes. Which one are we using in the project?
 
-1. Distinguish between _depth-first_ and _depth-first_ iterative processes using your project as an example.
+1. Distinguish between _breadth-first_ and _depth-first_ iterative processes using your project as an example.
 
 1. Describe how _agile process models_ differ from traditional process models.
 
