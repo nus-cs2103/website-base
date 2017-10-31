@@ -1,0 +1,45 @@
+**Show evidence of achieving v1.4 team/individual milestone**
+* [One member] Show the v1.4 release, the milestone, and collated code on GitHub
+* [Each member] Demo your contribution for v1.4 using the jar file 
+
+**Questions to discuss during tutorial:**
+
+==While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them==. 
+
+1. How does an _OO Domain Model_ differ from a class diagram?
+
+1. Draw an OODM for the description below, about how modules work in a certain university:
+
+<tip-box> 
+
+A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a grade and an optional feedback is given.
+
+</tip-box>
+
+1. Apply heuristics for combining multiple test inputs to the following test cases. Point out where the heuristics are contradicted?
+
+<tip-box> 
+
+SUT: `foo(x,y)`
+
+Test case |  x  |  y
+--------- | --- | ---
+TC1 | :white_check_mark: x1-valid | :white_check_mark: y1-valid
+TC2 | :white_check_mark: x2-valid | :exclamation: y2-invalid
+TC3 | :exclamation: x3-invalid | :exclamation: y3-invalid
+
+</tip-box>
+
+
+1. Distinguish between _sequential_ and _iterative_ processes. Which one are we using in the project?
+
+1. Distinguish between _depth-first_ and _depth-first_ iterative processes using your project as an example.
+
+1. Describe how _agile process models_ differ from traditional process models.
+
+1. Describe some distinguishing features of Scrum. Relate those features to your project. %%&nbsp;i.e. are they applicable? are you doing something similar?%%
+    
+1. When do you use _MVC_ pattern? Do we have MVC in AB4?
+
+1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB4?
+
