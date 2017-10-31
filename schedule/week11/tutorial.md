@@ -10,25 +10,25 @@
 
 1. Draw an OODM for the description below, about how modules work in a certain university:
 
-<tip-box> 
+   <tip-box> 
 
-A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a grade and an optional feedback is given.
+   A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a grade and an optional feedback is given.
 
-</tip-box>
+   </tip-box>
 
-1. Apply heuristics for combining multiple test inputs to the following test cases. Point out where the heuristics are contradicted?
+1. Apply heuristics for combining multiple test inputs to the following test cases. Point out where the heuristics are contradicted and how to improve the test cases.
 
-<tip-box> 
-
-SUT: `foo(x,y)`
-
-Test case |  x  |  y
---------- | --- | ---
-TC1 | :white_check_mark: x1-valid | :white_check_mark: y1-valid
-TC2 | :white_check_mark: x2-valid | :exclamation: y2-invalid
-TC3 | :exclamation: x3-invalid | :exclamation: y3-invalid
-
-</tip-box>
+   <tip-box> 
+   
+   SUT: `foo(x,y)`
+   
+   Test case |  x  |  y
+   --------- | --- | ---
+   TC1 | :white_check_mark: x1-valid | :white_check_mark: y1-valid
+   TC2 | :white_check_mark: x2-valid | :exclamation: y2-invalid
+   TC3 | :exclamation: x3-invalid | :exclamation: y3-invalid
+   
+   </tip-box>
 
 
 1. Distinguish between _sequential_ and _iterative_ processes. Which one are we using in the project?
