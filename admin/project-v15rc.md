@@ -20,7 +20,8 @@ We strongly recommend you to **freeze features** after reaching this milestone. 
 
 ### v1.5rc Product
 
-* Increase code coverage by adding more tests if it is lower than the level you would like it to be. Take note of <trigger trigger="click" for="modal:v15rc-testingExpectations">our expectation on test code</trigger>. 
+* As before, you can continue to add more enhancements.
+* Also, consider increasing code coverage by adding more tests if it is lower than the level you would like it to be. Take note of <trigger trigger="click" for="modal:v15rc-testingExpectations">our expectation on test code</trigger>. 
 * After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.
 
 <modal title="Admin &raquo; Project Asessement &rarr; Expectation on testing" id="modal:v15rc-testingExpectations">
