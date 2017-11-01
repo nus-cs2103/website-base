@@ -43,16 +43,18 @@ v1.4 user guide should be updated to match the current version of the product. %
   
 </tip-box>
 
-* README.adoc: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular,
+* **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular,
   * ==Describe the profile of the target user==
   * Remove irrelevant content such as _Learning Outcomes_
   * ==Update the `Ui.png` to match the current product==
   
-* User guide: ==This document will be used by acceptance testers==. Update to match the current version. In particular, clearly indicate which features are not implemented yet. 
+* **User Guide**: ==This document will be used by acceptance testers==. Update to match the current version. In particular,
+  * Clearly indicate which features are not implemented yet %%&nbsp;e.g. tag those features with a `Coming in v2.0`%%. 
+  * For those features already implemented, ensure their description match the exact behavior of the product %%&nbsp;e.g. replace mockups with actual screenshots%% 
  
-* Developer guide: As before, update if necessary.
+* **Developer Guide**: As before, update if necessary.
   
-* AboutUs.adoc page: Update to reflect current state of roles and responsibilities.  
+* **AboutUs page**: Update to reflect current state of roles and responsibilities.  
 
 **Submission**: Must be included in the version tagged `v1.4`.
 
