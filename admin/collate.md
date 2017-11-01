@@ -76,6 +76,7 @@
       method 1 ...
       method 2 ...
       ```
+    * **Methods you modified in minor ways** e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.
     
 
 8. You need to put the,   
