@@ -40,6 +40,29 @@
     </ul>
   </div>
 </modal>
+<panel header=":bulb: Tips: how to score high for code quality" no-close="">
+  <ul>
+    <li>
+      <p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p>
+      <ul>
+        <li>logging</li>
+        <li>exceptions</li>
+        <li>assertions</li>
+        <li>defensive coding</li>
+      </ul>
+    </li>
+    <li>
+      <p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent
+        only <em>some</em> coding standard violations; others need to be checked manually.</p>
+    </li>
+    <li>
+      <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.</p>
+    </li>
+    <li>
+      <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+    </li>
+  </ul>
+</panel>
 <p><strong>Submission</strong>: as before.</p>
 <p><strong>Grading</strong>: as before.</p>
 <h3 id="v15rc-documentation">v1.5rc Documentation</h3>
