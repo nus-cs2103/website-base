@@ -74,16 +74,21 @@ As before.
   * To be done **during Lecture 11**. Duration: **30 minutes**.
 
 * **During the session**:
-  * Each student will be assigned a product from another team to test. 
-  * Testers will post bug reports and feature suggestions in your issue tracker.
-  * Do not use the session time to read bug reports your team is receiving.
+  * Each student will be assigned a product from another team to test.
+  * Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==. 
+  * Test the product based on the user guide. First, _acceptance test_ it from the perspective of the target user profile. If there is any time left, you can switch to _system testing_ mode.
+  * Post bugs you find in the team's issue tracker. 
+    * Each bug should be a separate issue.
+    * Even problems in the user guide %%&nbsp;e.g. lack of explanations%% can be posted as issues.
+    * Feel free to ==post other suggestions for improvements== too %%&nbsp;e.g. ways to improve the command format%%.
+  * ==Do not use the session time to read bug reports your team is receiving.==
   * Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.
-  * Use descriptive titles for the issues. Give a good description of the bug/suggestion.
+  * Use descriptive titles for the issues. Give a good description of the bug/suggestion, including steps required to reproduce.
   
 * **Grading**:
   * **Attendance is strongly encouraged** but not compulsory. Your participation in the session benefits your team because the number of testers testing your product will depend on how many members of your team is taking part in testing %%&nbsp;e.g. if 3 members of your team are taking part in testing, three other testers will be assigned to test your product%%.
   * There is **no penalty for bugs reported** at this session.
-  * The **reward for reporting bugs** or suggesting features: you can include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger> or your CV to show how you contributed to another project.
+  * The **reward for reporting bugs** or suggesting features: do ==include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger>== to show how you contributed to another project.
   
 <modal title="Admin &raquo; Project &rarr;" id="modal:v1.4-ppp">
   <include src="project-v15rc.md#project-portfolio"/>
@@ -93,4 +98,4 @@ As before.
   
 * **After the session**:
   * It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.
-  * You can post in the issue thread to communicate with the original poster to give your response, ask for more info, etc.
+  * You can post in the issue thread to communicate with the tester %%&nbsp;e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
