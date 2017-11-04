@@ -7,8 +7,8 @@
 * :bust_in_silhouette: Individual:
   - [ ] Contributed code to v1.5rc
   - [ ] Project Portfolio Page merged
-  - [ ] Well-prepared for the demo
 * :busts_in_silhouette::busts_in_silhouette: Team:
+  - [ ] Well-prepared for the demo
   - [ ] v1.5rc released properly on GitHub
   - [ ] v1.5rc milestone wrapped up properly on GitHub
 
