@@ -11,7 +11,7 @@
 
 #### Design:
 
-<dynamic-panel src="outcome-umlModel.md" type="success" header="**`W12.1` Can explain some UML models** :star::star::star::star:" no-close/>
+<dynamic-panel src="outcome-umlModel.md" type="info" header="**`W12.1` Can explain some UML models** :star::star::star:" no-close/>
 
 <!-- ==================================================================================================== -->
 

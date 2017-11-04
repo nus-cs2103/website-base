@@ -75,16 +75,20 @@ Update to match the product.
   * For us to use as a data point to evaluate your contributions to the project and your documentation skills
 
 * **What to include:**
-  * Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project
+  * Main things to include: 
+    * links to collated code
+    * features you implemented %%&nbsp;(include relevant extracts from the user guide and the developer guide)%%
+    * features you propose to implement in future %%&nbsp;(include relevant extracts from the user guide and the developer guide if applicable)%%
+    * other significant contributions to the project %%&nbsp;e.g. tweaks to existing features, setting up project tools%%
   * Other things you can include: 
-    * Evidence of helping others %%&nbsp;e.g. responses you posted in our forum%%, 
+    * Evidence of helping others %%&nbsp;e.g. responses you posted in our forum, bugs you reported in other team's products%%, 
     * Evidence of technical leadership %%&nbsp;e.g. offering features for others to reuse, evidence of those features being reused by others%%
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:
-  * Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html).
-  * Tip: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html). 
-  * Important: It is assumed that sections _included_ in this way were written primarily by you. If those sections were written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
+  * :package: Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html).
+  * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html). 
+  * :exclamation: It is assumed that sections _included_ in this way were written primarily by you. If those sections were written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
 
 </div>
 </tip-box>
