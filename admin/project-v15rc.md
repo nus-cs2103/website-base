@@ -42,7 +42,13 @@ We strongly recommend you to **freeze features** after reaching this milestone. 
 
 * Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
 
+* In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as you can.
+
 </panel>
+
+<modal large title="Textbook &raquo; Implementation &rarr;" id="modal:v15-codeQuality">
+  <include src="../book/codeQuality/index.md"/>
+</modal>
 
 **Submission**: as before.
 
