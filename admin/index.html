@@ -688,11 +688,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="rm6up" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rm6up" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rm6up" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rm6up" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rm6up" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="adgbx" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="adgbx" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="adgbx" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="adgbx" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="adgbx" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2530,10 +2530,17 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <li>
             <p><strong>What to include:</strong></p>
             <ul>
-              <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project</li>
+              <li>Main things to include:
+                <ul>
+                  <li>links to collated code</li>
+                  <li>features you implemented <span class="dimmed"> (include relevant extracts from the user guide and the developer guide)</span></li>
+                  <li>features you propose to implement in future <span class="dimmed"> (include relevant extracts from the user guide and the developer guide if applicable)</span></li>
+                  <li>other significant contributions to the project <span class="dimmed"> e.g. tweaks to existing features, setting up project tools</span></li>
+                </ul>
+              </li>
               <li>Other things you can include:
                 <ul>
-                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,</li>
+                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                   <li>Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span></li>
                 </ul>
               </li>
@@ -2543,10 +2550,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <li>
             <p><strong>Format</strong>:</p>
             <ul>
-              <li>Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
-              <li>Tip: You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the
-                example in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
-              <li>Important: It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
+              <li>📦 Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
+              <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example
+                in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
+              <li>❗️ It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
                 clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></li>
             </ul>
           </li>
@@ -3001,9 +3008,9 @@ displayResult();
                             <panel header=":lock::key: Small methods or lengthy methods?">
                               <question>
                                 <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                                <ul radio-group="wm7tt" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="wm7tt" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="wm7tt" type="radio"> False</label></li>
+                                <ul radio-group="e3r8k" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="e3r8k" type="radio"> True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="e3r8k" type="radio"> False</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>False</p>
@@ -3033,10 +3040,10 @@ displayResult();
                             <panel header=":lock::key: Common saying: Make it fast,...">
                               <question>
                                 <p>This is a common saying among programmers</p>
-                                <ul radio-group="5eng4" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5eng4" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5eng4" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5eng4" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                                <ul radio-group="9mfcs" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="9mfcs" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="9mfcs" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="9mfcs" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -3151,11 +3158,11 @@ exit();
                             <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                               <question>
                                 <p>What is the recommended approach regarding coding standards?</p>
-                                <ul radio-group="7fxfn" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7fxfn" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7fxfn" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7fxfn" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7fxfn" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                <ul radio-group="mwq9o" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mwq9o" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mwq9o" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mwq9o" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="mwq9o" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c</p>
@@ -3215,12 +3222,12 @@ exit();
                             <panel header=":lock::key: Unsuitable variable name">
                               <question>
                                 <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                                <ul radio-group="huz8e" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="huz8e" type="radio"> a. integer variable name: totalPeople</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="huz8e" type="radio"> b. boolean variable name: checkWeight</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="huz8e" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="huz8e" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="huz8e" type="radio"> e. String variable name: description</label></li>
+                                <ul radio-group="6gnhv" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6gnhv" type="radio"> a. integer variable name: totalPeople</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6gnhv" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6gnhv" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6gnhv" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6gnhv" type="radio"> e. String variable name: description</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -3876,10 +3883,17 @@ compact(input);
           <li>
             <p><strong>What to include:</strong></p>
             <ul>
-              <li>Main things to include: features you implemented, features you propose to implement in future, other major contributions to the project</li>
+              <li>Main things to include:
+                <ul>
+                  <li>links to collated code</li>
+                  <li>features you implemented <span class="dimmed"> (include relevant extracts from the user guide and the developer guide)</span></li>
+                  <li>features you propose to implement in future <span class="dimmed"> (include relevant extracts from the user guide and the developer guide if applicable)</span></li>
+                  <li>other significant contributions to the project <span class="dimmed"> e.g. tweaks to existing features, setting up project tools</span></li>
+                </ul>
+              </li>
               <li>Other things you can include:
                 <ul>
-                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum</span>,</li>
+                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                   <li>Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span></li>
                 </ul>
               </li>
@@ -3889,10 +3903,10 @@ compact(input);
           <li>
             <p><strong>Format</strong>:</p>
             <ul>
-              <li>Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
-              <li>Tip: You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the
-                example in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
-              <li>Important: It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
+              <li>📦 Follow the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
+              <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example
+                in the <a href="https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
+              <li>❗️ It is assumed that sections <em>included</em> in this way were written primarily by you. If those sections were written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
                 clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></li>
             </ul>
           </li>
