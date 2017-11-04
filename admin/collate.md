@@ -17,9 +17,11 @@
     ```
 3.  The `//@@author` tag should appear only at the beginning of the code a person wrote. The code up to the next `//@@author` tag or the end of the file (whichever comes first) will be considered as was written by that author.  
     However, you may put an empty `//@@author` (i.e. no GitHub ID) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the GitHub ID to the empty tag later.
-4.  If a method was written by more than one person, the `//@@author` tag should indicate the person who wrote most of that method. i.e., `//@@author` tag should not appear inside a method.  
-    If some part of the code was done collectively, you should still divide it up to reflect the amount of work each person contributed. For example, if 3 people wrote 150 lines of code and put in equal effort in doing so, you can divide the methods among yourselves roughly 50 lines to each person. Once a code segment is allocated to one person, that person is responsible (and will be graded for) the quality of that code. If parts of that code was written by someone else and those parts are not of high quality, the designated author should refactor the code to make it high quality.  
-    Tip: GitHub has a 'blame' feature and a 'history' feature that can help you determine who wrote a piece of code.
+    
+4. ==Claim only significant size code blocks that can be reviewed on its own== %%&nbsp;e.g., a class, a sequence of methods, a  method, a bock of statements, a composite statement such as a loop or an if-else statement%%. If a code block was touched by more than one person, the `//@@author` tag should indicate the person who wrote most of that method. i.e., `//@@author` tag should not appear inside a method.
+   * :exclamation: We recommend that you **do not claim credit for tiny/trivial code fragments** as it will pollute your code with too many `@@author` tags.
+   * :bulb: GitHub has a [_blame_ feature and a _history_](https://help.github.com/articles/tracing-changes-in-a-file/) feature that can help you determine who wrote a piece of code.     
+   
 5.  Do not put the `//@@author` inside java header comments as only the content below that tag will be collated.<br>
     :-1::arrow_heading_down:
     ```
@@ -76,7 +78,7 @@
       method 1 ...
       method 2 ...
       ```
-    * **Methods you modified in minor ways** e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.
+    * **Code you modified in minor ways** e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.
     
 
 8. You need to put the,   
