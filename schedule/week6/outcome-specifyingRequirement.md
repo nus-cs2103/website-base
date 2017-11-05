@@ -62,11 +62,7 @@ Covered by the final project.
 
 <panel type="info" header="`W6.6j` Can explain glossary :star::star::star:" expandable>
   <include src="../../book/specifyingRequirements/glossary/what/full.md" />
-  <panel header=":dart: Evidence" expanded>
-
 <!-- TODO: add evidence -->
-
-  </panel>
 </panel>
 
 <panel type="info" header="`W6.6k` Can explain supplementary requirements :star::star::star:" expandable>
