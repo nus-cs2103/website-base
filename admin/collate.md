@@ -20,6 +20,7 @@
     
 4. ==Claim only significant size code blocks that can be reviewed on its own== %%&nbsp;e.g., a class, a sequence of methods, a  method, a bock of statements, a composite statement such as a loop or an if-else statement%%. If a code block was touched by more than one person, the `//@@author` tag should indicate the person who wrote most of that code block. 
    * :exclamation: We recommend that you **do not claim credit for tiny/trivial code fragments** as it will pollute your code with too many `@@author` tags.
+   * If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead. 
    * :bulb: GitHub has a [_blame_ feature and a _history_](https://help.github.com/articles/tracing-changes-in-a-file/) feature that can help you determine who wrote a piece of code.     
    
 5.  Do not put the `//@@author` inside java header comments as only the content below that tag will be collated.<br>
