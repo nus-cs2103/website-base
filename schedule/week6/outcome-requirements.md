@@ -19,7 +19,7 @@
   <include src="../../book/requirements/prioritizing/full.md"  />
 </panel>
 
-<panel type="info" header="`W6.4d` Can explain quality of requirements LO :star::star::star:" expandable>
+<panel type="info" header="`W6.4d` Can explain quality of requirements :star::star::star:" expandable>
   <include src="../../book/requirements/quality/full.md"  />
 </panel>
 
