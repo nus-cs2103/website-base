@@ -18,7 +18,7 @@
 3.  The `//@@author` tag should appear only at the beginning of the code a person wrote. The code up to the next `//@@author` tag or the end of the file (whichever comes first) will be considered as was written by that author.  
     However, you may put an empty `//@@author` (i.e. no GitHub ID) to indicate the end of the code segment you wrote, if you don't know who wrote the code segment below yours. The author of that code segment can add the GitHub ID to the empty tag later.
     
-4. ==Claim only significant size code blocks that can be reviewed on its own== %%&nbsp;e.g., a class, a sequence of methods, a  method, a bock of statements, a composite statement such as a loop or an if-else statement%%. If a code block was touched by more than one person, the `//@@author` tag should indicate the person who wrote most of that code block. 
+4. ==Claim only significant size code blocks that can be reviewed on its own== %%&nbsp;e.g., a class, a sequence of methods, a  method, a block of statements, a composite statement such as a loop or an if-else statement%%. If a code block was touched by more than one person, the `//@@author` tag should indicate the person who wrote most of that code block. 
    * :exclamation: We recommend that you **do not claim credit for tiny/trivial code fragments** as it will pollute your code with too many `@@author` tags.
    * If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead. 
    * :bulb: GitHub has a [_blame_ feature and a _history_](https://help.github.com/articles/tracing-changes-in-a-file/) feature that can help you determine who wrote a piece of code.     
