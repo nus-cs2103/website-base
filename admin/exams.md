@@ -95,7 +95,7 @@ However, given the fast pace required by Part 1, you will not have time left to 
 
 :bulb: **Write the answer in the exam paper as well** as marking it in the OCR form. %%&nbsp;Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
 
-Note: We have tried to **avoid deliberately misleading/tricky questions**. If a question seems to take a very long time to figure out, you are probably over-thinking it.
+:bulb: We have tried to **avoid deliberately misleading/tricky questions**. If a question seems to take a very long time to figure out, you are probably over-thinking it.
 
 
 ## Final Exam: Part 2 (Essay)
