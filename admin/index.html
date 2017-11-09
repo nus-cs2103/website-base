@@ -688,11 +688,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="42lxf" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="42lxf" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="42lxf" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="42lxf" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="42lxf" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="gvbe9" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="gvbe9" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="gvbe9" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="gvbe9" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="gvbe9" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2474,48 +2474,38 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <h3 id="v14-demo">v1.4 Demo</h3>
     <p>As before.</p>
     <h3 id="v14-acceptance-testing">v1.4 Acceptance Testing</h3>
+    <p><strong>Objectives</strong>:</p>
     <ul>
-      <li>
-        <p><strong>Objectives</strong>:</p>
+      <li><strong>To train you</strong> to do manual testing, bug reporting, bug triaging, bug fixing, communicating with users, evaluating products etc. (Note: <mark>you will be doing a graded acceptance testing session in week 13</mark>; this session will
+        serve as practice for that)</li>
+      <li><strong>To help you improve your product</strong> before the final submission.</li>
+    </ul>
+    <p><strong>When, where</strong>:</p>
+    <ul>
+      <li>To be done <strong>during Lecture 11</strong>. Duration: <strong>30 minutes</strong>.</li>
+    </ul>
+    <p><strong>During the session</strong>:</p>
+    <ul>
+      <li>Each student will be assigned a product from another team to test.</li>
+      <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
+      <li>Test the product based on the user guide. First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</li>
+      <li>Post bugs you find in the team's issue tracker.
         <ul>
-          <li><strong>To train you</strong> to do manual testing, bug reporting, bug triaging, bug fixing, communicating with users, evaluating products etc. (Note: <mark>you will be doing a graded acceptance testing session in week 13</mark>; this session
-            will serve as practice for that)</li>
-          <li><strong>To help you improve your product</strong> before the final submission.</li>
+          <li>Each bug should be a separate issue.</li>
+          <li>Even problems in the user guide <span class="dimmed"> e.g. lack of explanations</span> can be posted as issues.</li>
+          <li>Feel free to <mark>post other suggestions for improvements</mark> too <span class="dimmed"> e.g. ways to improve the command format</span>.</li>
         </ul>
       </li>
-      <li>
-        <p><strong>When, where</strong>:</p>
-        <ul>
-          <li>To be done <strong>during Lecture 11</strong>. Duration: <strong>30 minutes</strong>.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>During the session</strong>:</p>
-        <ul>
-          <li>Each student will be assigned a product from another team to test.</li>
-          <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
-          <li>Test the product based on the user guide. First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</li>
-          <li>Post bugs you find in the team's issue tracker.
-            <ul>
-              <li>Each bug should be a separate issue.</li>
-              <li>Even problems in the user guide <span class="dimmed"> e.g. lack of explanations</span> can be posted as issues.</li>
-              <li>Feel free to <mark>post other suggestions for improvements</mark> too <span class="dimmed"> e.g. ways to improve the command format</span>.</li>
-            </ul>
-          </li>
-          <li><mark>Do not use the session time to read bug reports your team is receiving.</mark></li>
-          <li>Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.</li>
-          <li>Use descriptive titles for the issues. Give a good description of the bug/suggestion, including steps required to reproduce.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Grading</strong>:</p>
-        <ul>
-          <li><strong>Attendance is strongly encouraged</strong> but not compulsory. Your participation in the session benefits your team because the number of testers testing your product will depend on how many members of your team is taking part in testing
-            <span class="dimmed"> e.g. if 3 members of your team are taking part in testing, three other testers will be assigned to test your product</span>.</li>
-          <li>There is <strong>no penalty for bugs reported</strong> at this session.</li>
-          <li>The <strong>reward for reporting bugs</strong> or suggesting features: do <mark>include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger></mark> to show how you contributed to another project.</li>
-        </ul>
-      </li>
+      <li><mark>Do not use the session time to read bug reports your team is receiving.</mark></li>
+      <li>Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.</li>
+      <li>Use descriptive titles for the issues. Give a good description of the bug/suggestion, including steps required to reproduce.</li>
+    </ul>
+    <p><strong>Grading</strong>:</p>
+    <ul>
+      <li><strong>Attendance is strongly encouraged</strong> but not compulsory. Your participation in the session benefits your team because the number of testers testing your product will depend on how many members of your team is taking part in testing
+        <span class="dimmed"> e.g. if 3 members of your team are taking part in testing, three other testers will be assigned to test your product</span>.</li>
+      <li>There is <strong>no penalty for bugs reported</strong> at this session.</li>
+      <li>The <strong>reward for reporting bugs</strong> or suggesting features: do <mark>include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger></mark> to show how you contributed to another project.</li>
     </ul>
     <modal title="Admin &raquo; Project &rarr;" id="modal:v1.4-ppp">
       <div>
@@ -2562,23 +2552,17 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       </div>
     </modal>
     <div>
+      <p><strong>Preparation</strong>:</p>
       <ul>
-        <li><strong>Preparation</strong>:
-          <ul>
-            <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
-            <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
-            <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
-          </ul>
-        </li>
+        <li><strong>Bring your laptop, and charger cable</strong>.</li>
+        <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+        <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
       </ul>
     </div>
+    <p><strong>After the session</strong>:</p>
     <ul>
-      <li><strong>After the session</strong>:
-        <ul>
-          <li>It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.</li>
-          <li>You can post in the issue thread to communicate with the tester <span class="dimmed"> e.g. to ask for more info</span>, etc. However, the tester is not obliged to respond.</li>
-        </ul>
-      </li>
+      <li>It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.</li>
+      <li>You can post in the issue thread to communicate with the tester <span class="dimmed"> e.g. to ask for more info</span>, etc. However, the tester is not obliged to respond.</li>
     </ul>
   </div>
 </div>
@@ -3009,9 +2993,9 @@ displayResult();
                             <panel header=":lock::key: Small methods or lengthy methods?">
                               <question>
                                 <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                                <ul radio-group="jpbfi" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="jpbfi" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="jpbfi" type="radio"> False</label></li>
+                                <ul radio-group="uyw7e" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="uyw7e" type="radio"> True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="uyw7e" type="radio"> False</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>False</p>
@@ -3041,10 +3025,10 @@ displayResult();
                             <panel header=":lock::key: Common saying: Make it fast,...">
                               <question>
                                 <p>This is a common saying among programmers</p>
-                                <ul radio-group="vwyxo" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="vwyxo" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="vwyxo" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="vwyxo" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                                <ul radio-group="df6rw" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="df6rw" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="df6rw" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="df6rw" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -3159,11 +3143,11 @@ exit();
                             <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                               <question>
                                 <p>What is the recommended approach regarding coding standards?</p>
-                                <ul radio-group="b4p6x" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="b4p6x" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="b4p6x" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="b4p6x" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="b4p6x" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                <ul radio-group="zho8x" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="zho8x" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="zho8x" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="zho8x" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="zho8x" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c</p>
@@ -3223,12 +3207,12 @@ exit();
                             <panel header=":lock::key: Unsuitable variable name">
                               <question>
                                 <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                                <ul radio-group="t2178" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="t2178" type="radio"> a. integer variable name: totalPeople</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="t2178" type="radio"> b. boolean variable name: checkWeight</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="t2178" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="t2178" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="t2178" type="radio"> e. String variable name: description</label></li>
+                                <ul radio-group="658ov" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="658ov" type="radio"> a. integer variable name: totalPeople</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="658ov" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="658ov" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="658ov" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="658ov" type="radio"> e. String variable name: description</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -3936,16 +3920,25 @@ compact(input);
     <p>Please follow submission instructions closely. <mark>Any non-compliance will be penalized</mark>. e.g. wrong file name, team member photos not suitable, product manual page header doesn't have the team ID, etc.</p>
     <p><mark>Add these two new files</mark> to the repo (these will be used by our testers when testing your final submission):</p>
     <ul>
-      <li><code>{project root}\src\test\data\ManualTesting\SampleData.xml</code> :<br> Sample data that can be loaded to your app. Should contain 20+ items.</li>
-      <li><code>{project root}\src\test\data\ManualTesting\TestScript.adoc</code> :<br> A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.<br> Should cover all functionality
-        of the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to about 20 minutes worth of testing.</li>
+      <li><code>{project root}\src\test\data\ManualTesting\[team][Project Name]SampleData.xml</code> : <span class="dimmed">e.g. [T09-B1][ContactsPlus]SampleData.xml</span> Sample data that can be loaded to your app. Should contain 20+ items.</li>
+      <li><code>{project root}\src\test\data\ManualTesting\[team][Project Name]TestScript.adoc</code> : <span class="dimmed">e.g. [T09-B1][ContactsPlus]TestScript.adoc</span> A document explaining the steps to perform manual testing (i.e. manual scripted
+        testing), starting with how to load the sample data.<br> Should cover all functionality of the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the
+        test cases to about 20 minutes worth of testing.</li>
     </ul>
     <p><strong>Submission</strong>:</p>
+    <tip-box>
+      <p>❗️ When determining the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</p>
+    </tip-box>
     <ul>
       <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated <code>.md</code> files are up to date; any updates to collated code files after
-        the deadline comes with an automatic penalty) <mark>Note that the quality of the code in these collated code files accounts for a significant component of your final score, graded individually.</mark></li>
-      <li><strong>Executable</strong>: upload to IVLE the jar file (this should not contain source files). File name: <code>[team][product name].jar</code><span class="dimmed">e.g. [T09-B1][Contacts+].jar</span><br> Warning: When determining the late submission
-        penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
+        the deadline comes with an automatic penalty) Note that the quality of the code in these <mark>collated code files accounts for a significant component of your final score</mark>, graded individually.</li>
+      <li><strong>Executable</strong>: upload the jar file to IVLE. File name: <code>[team][product name].jar</code><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></li>
+      <li><strong>Test data/instructions</strong>: Upload following files to IVLE.
+        <ul>
+          <li>Sample data file. File name <code>[team][Project Name]SampleData.xml</code><span class="dimmed">e.g. [T09-B1][ContactsPlus]SampleData.xml</span></li>
+          <li>Testing instructions. File name <code>[team][Project Name]TestScript.pdf</code><span class="dimmed">e.g. [T09-B1][ContactsPlus]TestScript.pdf</span></li>
+        </ul>
+      </li>
     </ul>
     <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
     <p><strong>Grading</strong>:</p>
@@ -4006,8 +3999,6 @@ compact(input);
         </ul>
       </li>
       <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
-      <li><strong>Testing:</strong> All team member should remain in the holding area during the tutorial slot (when you are not doing the demo) because our testers might need to communicate with you during the testing.<br> Holding area for Active Learning
-        Room: Unused area of the room (enter by the door near the staircase)<br> Holding area for SR5 and SR10: corridor outside the venue</li>
       <li><strong>Structure:</strong><br> Demo the product using the same executable you submitted, on your own laptop, using the TV.<br> Every team member should take part in the demo. However, it's ok for one member to do all the typing.</li>
       <li><strong>Optimizing the time:</strong><br> Try to make the maximum use of the short demo time in the following ways,
         <ul>
@@ -4016,9 +4007,11 @@ compact(input);
             → Different requirements.</li>
           <li>Rehearse the steps well and ensure you can do a smooth demo. <mark>Demos that are clearly under-prepared will be penalized.</mark></li>
           <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
-          <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates a
-            bad impression too.</li>
+          <li>No need to spend time describing features that existed in original AB4 but you can mention if you did any changes to those features.</li>
+          <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression
+            too.</li>
           <li>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
+          <li>Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.</li>
         </ul>
       </li>
     </ul>
@@ -4028,40 +4021,154 @@ compact(input);
     </p>
     <div id="v15-testathon">
       <h3 id="v15-testathon">v1.5 Testathon</h3>
+      <tip-box type="important">
+        <p>This session is part of project deliverables and will be conducted similar to a final exam. <strong>Graded. Attendance is compulsory</strong>.</p>
+      </tip-box>
+      <p><strong>Objectives:</strong></p>
       <ul>
-        <li>
-          <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+        <li>Evaluate your,
+          <ul>
+            <li>manual testing skills</li>
+            <li>product evaluation skills</li>
+            <li>effort estimation skills</li>
+          </ul>
         </li>
-        <li>
-          <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+        <li>Peer-evaluate your
+          <ul>
+            <li>product design 👥👥</li>
+            <li>implementation effort 👤</li>
+            <li>documentation quality 👤</li>
+          </ul>
         </li>
       </ul>
+      <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
       <div>
+        <p><strong>Preparation</strong>:</p>
         <ul>
-          <li><strong>Preparation</strong>:
+          <li><strong>Bring your laptop, and charger cable</strong>.</li>
+          <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+          <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+        </ul>
+      </div>
+      <p><strong>During:</strong></p>
+      <tip-box>
+        <p>❗️ this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.</p>
+        <ul>
+          <li>Wait outside the venue until you are allowed in.</li>
+          <li>Sit in the assigned row.</li>
+          <li>Not allowed:
             <ul>
-              <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
-              <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
-              <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+              <li>communicating with others (except with teaching team members present)</li>
+              <li>use any other software/websites than those strictly required for the testing</li>
+              <li>running background IM/chat/notification services</li>
+              <li>use of phones</li>
             </ul>
           </li>
         </ul>
-      </div>
+      </tip-box>
+      <ol>
+        <li>Take note of the team you need to test and the <em>Tester ID</em> you need to use to refer to the team. Both will be given to you by the teaching team.</li>
+        <li>Download from IVLE all files submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</li>
+        <li>[40 minutes] Test the product and report bugs
+          <ul>
+            <li>Launch the jar file. Test it.</li>
+            <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
+            <li>The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.</li>
+            <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
+            <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S1/testathon/issues">testathon issue tracker</a>, <mark>not in the team's repo</mark>.
+              <ul>
+                <li>Issue title format: <code>[Tester ID] Issue description</code><span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
+                <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others testing the same team from copying bug reports</span></li>
+              </ul>
+            </li>
+            <li>Report bugs only. Do not post suggestions. These are considered bugs:
+              <ul>
+                <li>Behavior differs from the user guide (or testing instructions)</li>
+                <li>A legitimate user behavior is not handled <span class="dimmed"> e.g. incorrect commands, extra parameters</span></li>
+                <li>Behavior is not specified and differs from normal expectations <span class="dimmed"> e.g. error message does not match the error</span></li>
+              </ul>
+            </li>
+            <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will be penalized</strong>.
+              <ul>
+                <li>Use a descriptive title</li>
+                <li>Give a good description of the bug with steps to reproduce and screenshots</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <tip-box>
+        <p>🔍 Note that we plan to <strong>anonymize bug reports</strong> before revealing it to the receiving team.</p>
+      </tip-box>
+      1. [30 minutes] Evaluate the following aspects. Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
       <ul>
         <li>
-          <p><strong>During:</strong></p>
+          <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
           <ul>
-            <li>You will be assigned two other products to test/evaluate.</li>
-            <li>More info to be given later</li>
+            <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
+            <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
+            <li><code>high</code>: One of these
+              <ul>
+                <li>Almost all features are relevant to the target user but the target user is very general</li>
+                <li>Almost all features are relevant to the target user but the features are not very high value to the target user</li>
+              </ul>
+            </li>
+            <li><code>excellent</code>: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
           </ul>
         </li>
         <li>
-          <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+          <p><strong>B. Quality of the user docs</strong> [👤]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
           <ul>
-            <li>You will lose marks if you missed too many bugs in the products you tested</li>
-            <li>The bugs found in your product by others will affect your v1.5 marks</li>
+            <li><code>unable to judge</code>: not enough content to make a judgement</li>
+            <li><code>low</code>: Hard to understand, often inaccurate or missing important information</li>
+            <li><code>medium</code>:</li>
+            <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+            <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).</li>
           </ul>
         </li>
+        <li>
+          <p><strong>C. Development effort</strong> [👤]: Evaluate the amount of coding effort on a scale of 0 to 25</p>
+          <ul>
+            <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>              is about 15 points of effort.</li>
+            <li>Count all implementation/testing/documentation work mentioned in that person's portfolio page.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>D. Depth of features</strong> [👤]: Evaluate <mark>the strongest feature</mark> done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
+          <ul>
+            <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
+            <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
+            <li><code>high</code>: one of the below
+              <ul>
+                <li>A moderately difficult feature but fully implemented <span class="dimmed"> e.g. an <em>edit</em> command that allows editing any field</span></li>
+                <li>A difficult feature with a reasonable implementation but some aspects are not covered <span class="dimmed"> undo/redo command that only allows a single undo/redo</span></li>
+              </ul>
+            </li>
+            <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span></li>
+            <li><code>over the top</code>: A difficult feature, implemented as good as it can be under the circumstances. <span class="dimmed"> undo/redo command that even allows undoing non-mutating commands such as <em>select</em>, allows selectively undo specific commands in the history, etc.</span></li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>E. Quality of the developer docs</strong> [👤]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+          <ul>
+            <li><code>unable to judge</code>: not enough content to make a judgement.</li>
+            <li><code>low</code>: One of these
+              <ul>
+                <li>Very small amount of content (i.e., less than 1 page).</li>
+                <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
+                <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
+              </ul>
+            </li>
+            <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much.</li>
+            <li><code>high</code>: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
+            <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Grading:</strong> Your performance in the testathon will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category)</p>
+      <ul>
+        <li>You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate</span></li>
+        <li>The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized <span class="dimmed"> i.e. give you a chance to reject false-positive bug reports</span></li>
       </ul>
     </div>
   </div>
@@ -4116,40 +4223,154 @@ compact(input);
     <modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
       <div>
         <h3 id="v15-testathon-2">v1.5 Testathon</h3>
+        <tip-box type="important">
+          <p>This session is part of project deliverables and will be conducted similar to a final exam. <strong>Graded. Attendance is compulsory</strong>.</p>
+        </tip-box>
+        <p><strong>Objectives:</strong></p>
         <ul>
-          <li>
-            <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+          <li>Evaluate your,
+            <ul>
+              <li>manual testing skills</li>
+              <li>product evaluation skills</li>
+              <li>effort estimation skills</li>
+            </ul>
           </li>
-          <li>
-            <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+          <li>Peer-evaluate your
+            <ul>
+              <li>product design 👥👥</li>
+              <li>implementation effort 👤</li>
+              <li>documentation quality 👤</li>
+            </ul>
           </li>
         </ul>
+        <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
         <div>
+          <p><strong>Preparation</strong>:</p>
           <ul>
-            <li><strong>Preparation</strong>:
+            <li><strong>Bring your laptop, and charger cable</strong>.</li>
+            <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+            <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+          </ul>
+        </div>
+        <p><strong>During:</strong></p>
+        <tip-box>
+          <p>❗️ this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.</p>
+          <ul>
+            <li>Wait outside the venue until you are allowed in.</li>
+            <li>Sit in the assigned row.</li>
+            <li>Not allowed:
               <ul>
-                <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
-                <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
-                <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+                <li>communicating with others (except with teaching team members present)</li>
+                <li>use any other software/websites than those strictly required for the testing</li>
+                <li>running background IM/chat/notification services</li>
+                <li>use of phones</li>
               </ul>
             </li>
           </ul>
-        </div>
+        </tip-box>
+        <ol>
+          <li>Take note of the team you need to test and the <em>Tester ID</em> you need to use to refer to the team. Both will be given to you by the teaching team.</li>
+          <li>Download from IVLE all files submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</li>
+          <li>[40 minutes] Test the product and report bugs
+            <ul>
+              <li>Launch the jar file. Test it.</li>
+              <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
+              <li>The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.</li>
+              <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
+              <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S1/testathon/issues">testathon issue tracker</a>, <mark>not in the team's repo</mark>.
+                <ul>
+                  <li>Issue title format: <code>[Tester ID] Issue description</code><span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
+                  <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others testing the same team from copying bug reports</span></li>
+                </ul>
+              </li>
+              <li>Report bugs only. Do not post suggestions. These are considered bugs:
+                <ul>
+                  <li>Behavior differs from the user guide (or testing instructions)</li>
+                  <li>A legitimate user behavior is not handled <span class="dimmed"> e.g. incorrect commands, extra parameters</span></li>
+                  <li>Behavior is not specified and differs from normal expectations <span class="dimmed"> e.g. error message does not match the error</span></li>
+                </ul>
+              </li>
+              <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will be penalized</strong>.
+                <ul>
+                  <li>Use a descriptive title</li>
+                  <li>Give a good description of the bug with steps to reproduce and screenshots</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <tip-box>
+          <p>🔍 Note that we plan to <strong>anonymize bug reports</strong> before revealing it to the receiving team.</p>
+        </tip-box>
+        1. [30 minutes] Evaluate the following aspects. Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
         <ul>
           <li>
-            <p><strong>During:</strong></p>
+            <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
             <ul>
-              <li>You will be assigned two other products to test/evaluate.</li>
-              <li>More info to be given later</li>
+              <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
+              <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
+              <li><code>high</code>: One of these
+                <ul>
+                  <li>Almost all features are relevant to the target user but the target user is very general</li>
+                  <li>Almost all features are relevant to the target user but the features are not very high value to the target user</li>
+                </ul>
+              </li>
+              <li><code>excellent</code>: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
             </ul>
           </li>
           <li>
-            <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+            <p><strong>B. Quality of the user docs</strong> [👤]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
             <ul>
-              <li>You will lose marks if you missed too many bugs in the products you tested</li>
-              <li>The bugs found in your product by others will affect your v1.5 marks</li>
+              <li><code>unable to judge</code>: not enough content to make a judgement</li>
+              <li><code>low</code>: Hard to understand, often inaccurate or missing important information</li>
+              <li><code>medium</code>:</li>
+              <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+              <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).</li>
             </ul>
           </li>
+          <li>
+            <p><strong>C. Development effort</strong> [👤]: Evaluate the amount of coding effort on a scale of 0 to 25</p>
+            <ul>
+              <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>                is about 15 points of effort.</li>
+              <li>Count all implementation/testing/documentation work mentioned in that person's portfolio page.</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>D. Depth of features</strong> [👤]: Evaluate <mark>the strongest feature</mark> done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
+            <ul>
+              <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
+              <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
+              <li><code>high</code>: one of the below
+                <ul>
+                  <li>A moderately difficult feature but fully implemented <span class="dimmed"> e.g. an <em>edit</em> command that allows editing any field</span></li>
+                  <li>A difficult feature with a reasonable implementation but some aspects are not covered <span class="dimmed"> undo/redo command that only allows a single undo/redo</span></li>
+                </ul>
+              </li>
+              <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span></li>
+              <li><code>over the top</code>: A difficult feature, implemented as good as it can be under the circumstances. <span class="dimmed"> undo/redo command that even allows undoing non-mutating commands such as <em>select</em>, allows selectively undo specific commands in the history, etc.</span></li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>E. Quality of the developer docs</strong> [👤]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+            <ul>
+              <li><code>unable to judge</code>: not enough content to make a judgement.</li>
+              <li><code>low</code>: One of these
+                <ul>
+                  <li>Very small amount of content (i.e., less than 1 page).</li>
+                  <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
+                  <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
+                </ul>
+              </li>
+              <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much.</li>
+              <li><code>high</code>: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
+              <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.</li>
+            </ul>
+          </li>
+        </ul>
+        <p><strong>Grading:</strong> Your performance in the testathon will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category)</p>
+        <ul>
+          <li>You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate</span></li>
+          <li>The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized <span class="dimmed"> i.e. give you a chance to reject false-positive bug reports</span></li>
         </ul>
       </div>
     </modal>
@@ -4573,40 +4794,154 @@ compact(input);
         <modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
           <div>
             <h3 id="v15-testathon-3">v1.5 Testathon</h3>
+            <tip-box type="important">
+              <p>This session is part of project deliverables and will be conducted similar to a final exam. <strong>Graded. Attendance is compulsory</strong>.</p>
+            </tip-box>
+            <p><strong>Objectives:</strong></p>
             <ul>
-              <li>
-                <p><strong>Objective:</strong> to evaluate your manual testing skills, to peer test your product</p>
+              <li>Evaluate your,
+                <ul>
+                  <li>manual testing skills</li>
+                  <li>product evaluation skills</li>
+                  <li>effort estimation skills</li>
+                </ul>
               </li>
-              <li>
-                <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+              <li>Peer-evaluate your
+                <ul>
+                  <li>product design 👥👥</li>
+                  <li>implementation effort 👤</li>
+                  <li>documentation quality 👤</li>
+                </ul>
               </li>
             </ul>
+            <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
             <div>
+              <p><strong>Preparation</strong>:</p>
               <ul>
-                <li><strong>Preparation</strong>:
+                <li><strong>Bring your laptop, and charger cable</strong>.</li>
+                <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+                <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+              </ul>
+            </div>
+            <p><strong>During:</strong></p>
+            <tip-box>
+              <p>❗️ this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.</p>
+              <ul>
+                <li>Wait outside the venue until you are allowed in.</li>
+                <li>Sit in the assigned row.</li>
+                <li>Not allowed:
                   <ul>
-                    <li><strong>Bring your laptop fully charged</strong>. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.</li>
-                    <li><strong>Have a good screenshot tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
-                    <li>Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+                    <li>communicating with others (except with teaching team members present)</li>
+                    <li>use any other software/websites than those strictly required for the testing</li>
+                    <li>running background IM/chat/notification services</li>
+                    <li>use of phones</li>
                   </ul>
                 </li>
               </ul>
-            </div>
+            </tip-box>
+            <ol>
+              <li>Take note of the team you need to test and the <em>Tester ID</em> you need to use to refer to the team. Both will be given to you by the teaching team.</li>
+              <li>Download from IVLE all files submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</li>
+              <li>[40 minutes] Test the product and report bugs
+                <ul>
+                  <li>Launch the jar file. Test it.</li>
+                  <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
+                  <li>The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.</li>
+                  <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
+                  <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S1/testathon/issues">testathon issue tracker</a>, <mark>not in the team's repo</mark>.
+                    <ul>
+                      <li>Issue title format: <code>[Tester ID] Issue description</code><span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
+                      <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others testing the same team from copying bug reports</span></li>
+                    </ul>
+                  </li>
+                  <li>Report bugs only. Do not post suggestions. These are considered bugs:
+                    <ul>
+                      <li>Behavior differs from the user guide (or testing instructions)</li>
+                      <li>A legitimate user behavior is not handled <span class="dimmed"> e.g. incorrect commands, extra parameters</span></li>
+                      <li>Behavior is not specified and differs from normal expectations <span class="dimmed"> e.g. error message does not match the error</span></li>
+                    </ul>
+                  </li>
+                  <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will be penalized</strong>.
+                    <ul>
+                      <li>Use a descriptive title</li>
+                      <li>Give a good description of the bug with steps to reproduce and screenshots</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <tip-box>
+              <p>🔍 Note that we plan to <strong>anonymize bug reports</strong> before revealing it to the receiving team.</p>
+            </tip-box>
+            1. [30 minutes] Evaluate the following aspects. Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
             <ul>
               <li>
-                <p><strong>During:</strong></p>
+                <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
                 <ul>
-                  <li>You will be assigned two other products to test/evaluate.</li>
-                  <li>More info to be given later</li>
+                  <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
+                  <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
+                  <li><code>high</code>: One of these
+                    <ul>
+                      <li>Almost all features are relevant to the target user but the target user is very general</li>
+                      <li>Almost all features are relevant to the target user but the features are not very high value to the target user</li>
+                    </ul>
+                  </li>
+                  <li><code>excellent</code>: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
                 </ul>
               </li>
               <li>
-                <p><strong>Grading:</strong> Your performance can affect your final grade (under the <em>QA</em> category)</p>
+                <p><strong>B. Quality of the user docs</strong> [👤]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
                 <ul>
-                  <li>You will lose marks if you missed too many bugs in the products you tested</li>
-                  <li>The bugs found in your product by others will affect your v1.5 marks</li>
+                  <li><code>unable to judge</code>: not enough content to make a judgement</li>
+                  <li><code>low</code>: Hard to understand, often inaccurate or missing important information</li>
+                  <li><code>medium</code>:</li>
+                  <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                  <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).</li>
                 </ul>
               </li>
+              <li>
+                <p><strong>C. Development effort</strong> [👤]: Evaluate the amount of coding effort on a scale of 0 to 25</p>
+                <ul>
+                  <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>                    is about 15 points of effort.</li>
+                  <li>Count all implementation/testing/documentation work mentioned in that person's portfolio page.</li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>D. Depth of features</strong> [👤]: Evaluate <mark>the strongest feature</mark> done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
+                <ul>
+                  <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
+                  <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
+                  <li><code>high</code>: one of the below
+                    <ul>
+                      <li>A moderately difficult feature but fully implemented <span class="dimmed"> e.g. an <em>edit</em> command that allows editing any field</span></li>
+                      <li>A difficult feature with a reasonable implementation but some aspects are not covered <span class="dimmed"> undo/redo command that only allows a single undo/redo</span></li>
+                    </ul>
+                  </li>
+                  <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span></li>
+                  <li><code>over the top</code>: A difficult feature, implemented as good as it can be under the circumstances. <span class="dimmed"> undo/redo command that even allows undoing non-mutating commands such as <em>select</em>, allows selectively undo specific commands in the history, etc.</span></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>E. Quality of the developer docs</strong> [👤]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                <ul>
+                  <li><code>unable to judge</code>: not enough content to make a judgement.</li>
+                  <li><code>low</code>: One of these
+                    <ul>
+                      <li>Very small amount of content (i.e., less than 1 page).</li>
+                      <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
+                      <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
+                    </ul>
+                  </li>
+                  <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much.</li>
+                  <li><code>high</code>: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
+                  <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>Grading:</strong> Your performance in the testathon will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category)</p>
+            <ul>
+              <li>You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate</span></li>
+              <li>The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized <span class="dimmed"> i.e. give you a chance to reject false-positive bug reports</span></li>
             </ul>
           </div>
         </modal>
