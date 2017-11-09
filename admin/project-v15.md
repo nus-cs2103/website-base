@@ -6,9 +6,9 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 ==Add these two new files== to the repo (these will be used by our testers when testing your final submission):
 
-* `{project root}\src\test\data\ManualTesting\SampleData.xml` :  
+* `{project root}\src\test\data\ManualTesting\[team][Project Name]SampleData.xml` :  %%e.g. [T09-B1][ContactsPlus]SampleData.xml%%
     Sample data that can be loaded to your app. Should contain 20+ items.
-* `{project root}\src\test\data\ManualTesting\TestScript.adoc` :  
+* `{project root}\src\test\data\ManualTesting\[team][Project Name]TestScript.adoc` :  %%e.g. [T09-B1][ContactsPlus]TestScript.adoc%%
   A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.  
   Should cover all functionality of the product. Should be grouped by functionality.  
   Should specify the command to type and the expected result (screenshots not required).  
@@ -16,9 +16,18 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
 
 **Submission**:
 
-* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline comes with an automatic penalty) ==Note that the quality of the code in these collated code files accounts for a significant component of your final score, graded individually.==
-* **Executable**: upload to IVLE the jar file (this should not contain source files). File name: `[team][product name].jar` %%e.g. [T09-B1][Contacts+].jar%%  
-  Warning: When determining the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.  
+<tip-box> 
+
+:exclamation: When determining the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
+
+</tip-box>
+
+* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline comes with an automatic penalty) Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
+* **Executable**: upload the jar file to IVLE. File name: `[team][product name].jar` %%e.g. [T09-B1][ContactsPlus].jar%%
+* **Test data/instructions**: Upload following files to IVLE.
+  * Sample data file. File name  `[team][Project Name]SampleData.xml` %%e.g. [T09-B1][ContactsPlus]SampleData.xml%%
+  * Testing instructions. File name  `[team][Project Name]TestScript.pdf` %%e.g. [T09-B1][ContactsPlus]TestScript.pdf%%
+    
 
 **Deadline**: Week 13 Monday 23.59.
 
@@ -64,9 +73,6 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
   * The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the product improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
 * **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
-* **Testing:** All team member should remain in the holding area during the tutorial slot (when you are not doing the demo) because our testers might need to communicate with you during the testing.  
-    Holding area for Active Learning Room: Unused area of the room (enter by the door near the staircase)  
-    Holding area for SR5 and SR10: corridor outside the venue
 * **Structure:**  
     Demo the product using the same executable you submitted, on your own laptop, using the TV.  
     Every team member should take part in the demo. However, it's ok for one member to do all the typing.
@@ -79,9 +85,11 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
     It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
   * Rehearse the steps well and ensure you can do a smooth demo. ==Demos that are clearly under-prepared will be penalized.==
-  * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC".
-  * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just a couple of sample tasks creates a bad impression too.
+  * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC". 
+  * No need to spend time describing features that existed in original AB4 but you can mention if you did any changes to those features.
+  * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
+  * Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.
 
 **Grading**: 
 
@@ -91,18 +99,107 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 ### v1.5 Testathon
 
-* **Objective:** to evaluate your manual testing skills, to peer test your product
+<tip-box type="important"> 
 
-* **Time/venue:** week 13 lecture, lecture venue
+This session is part of project deliverables and will be conducted similar to a final exam. **Graded. Attendance is compulsory**. 
+
+</tip-box>
+
+**Objectives:** 
+* Evaluate your,
+  * manual testing skills
+  * product evaluation skills
+  * effort estimation skills
+* Peer-evaluate your
+  * product design :busts_in_silhouette::busts_in_silhouette:
+  * implementation effort :bust_in_silhouette:
+  * documentation quality :bust_in_silhouette:
+
+**Time/venue:** week 13 lecture, lecture venue
 
 <include src="project-testing.md#testathonPreparations" />
 
-* **During:** 
-  * You will be assigned two other products to test/evaluate.
-  * More info to be given later
+**During:** 
 
-* **Grading:** Your performance can affect your final grade (under the _QA_ category) 
-  * You will lose marks if you missed too many bugs in the products you tested
-  * The bugs found in your product by others will affect your v1.5 marks
+<tip-box> 
+
+:exclamation: this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.
+* Wait outside the venue until you are allowed in. 
+* Sit in the assigned row.
+* Not allowed:
+  * communicating with others (except with teaching team members present)
+  * use any other software/websites than those strictly required for the testing 
+  * running background IM/chat/notification services
+  * use of phones
+
+</tip-box>
+
+1. Take note of the team you need to test and the _Tester ID_ you need to use to refer to the team. Both will be given to you by the teaching team. 
+1. Download from IVLE all files submitted by the team %%&nbsp;(i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)%% ==into an empty folder==.
+1. [40 minutes] Test the product and report bugs 
+   * Launch the jar file. Test it. 
+   * You can use the provided _test script_ and _user guide_ in your testing. 
+   * The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.
+   * You can do _acceptance_ testing as well as _system_ testing.
+   * Report bugs in the [testathon issue tracker](https://github.com/nus-cs2103-AY1718S1/testathon/issues), ==not in the team's repo==. 
+     * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
+     * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others testing the same team from copying bug reports%%
+   * Report bugs only. Do not post suggestions. These are considered bugs:
+     * Behavior differs from the user guide (or testing instructions)
+     * A legitimate user behavior is not handled %%&nbsp;e.g. incorrect commands, extra parameters%%
+     * Behavior is not specified and differs from normal expectations %%&nbsp;e.g. error message does not match the error%%
+   * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will be penalized**.
+     * Use a descriptive title
+     * Give a good description of the bug with steps to reproduce and screenshots
+     
+<tip-box> 
+
+:mag: Note that we plan to **anonymize bug reports** before revealing it to the receiving team. 
+
+</tip-box>
+1. [30 minutes] Evaluate the following aspects. Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
+  
+  * **A. Cohesiveness of product features** [:busts_in_silhouette::busts_in_silhouette:]: Do the features fit together and match the target user (and the target problem being addressed)?
+    * `low`: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.
+    * `medium`: Some features are relevant to the target user but some are not.
+    * `high`: One of these
+      * Almost all features are relevant to the target user but the target user is very general
+      * Almost all features are relevant to the target user but the features are not very high value to the target user 
+    * `excellent`: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.
+  
+  * **B. Quality of the user docs** [:bust_in_silhouette:]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.== 
+    * `unable to judge`: not enough content to make a judgement
+    * `low`: Hard to understand, often inaccurate or missing important information
+    * `medium`:
+    * `high`: Mostly easy to follow. Only a few areas for improvements.
+    * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).
+
+  * **C. Development effort** [:bust_in_silhouette:]:  Evaluate the amount of coding effort on a scale of 0 to 25
+    * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort.
+    * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
+  
+  * **D. Depth of features** [:bust_in_silhouette:]: Evaluate ==the strongest feature== done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo`
+    * `low` : an easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%% 
+    * `medium` : moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%% 
+    * `high`: one of the below
+      * A moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%
+      * A difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%
+    * `excellent`: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%
+    * `over the top`: A difficult feature, implemented as good as it can be under the circumstances. %%&nbsp;undo/redo command that even allows undoing non-mutating commands such as _select_, allows selectively undo specific commands in the history, etc.%%
+  
+  * **E. Quality of the developer docs** [:bust_in_silhouette:]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.== 
+    * `unable to judge`: not enough content to make a judgement.
+    * `low`: One of these
+      * Very small amount of content (i.e., less than 1 page). 
+      * Hardly any use to the reader (i.e., content doesn't make much sense or redundant). 
+      * Uses ad-hoc diagrams where UML diagrams could have been used instead.
+    * `medium`: _Some_ diagrams, _some_ descriptions, but does not help the reader that much.
+    * `high`: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
+    * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.
+
+**Grading:** Your performance in the testathon will be considered for your final grade (under the _QA_ category and under _Implementation_ category) 
+
+* You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate%%
+* The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized %%&nbsp;i.e. give you a chance to reject false-positive bug reports%%
   
 </div>

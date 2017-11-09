@@ -8,9 +8,9 @@
 </div>
 <div id="testathonPreparations">
 
-* **Preparation**:
-  * **Bring your laptop fully charged**. If your laptop battery cannot last more than one hour, come early to get a seat near a power outlet.
-  * **Have a good screenshot tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
-  * Tip: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker. 
+**Preparation**:
+* **Bring your laptop, and charger cable**.
+* **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
+* :bulb: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker. 
   
 </div>
