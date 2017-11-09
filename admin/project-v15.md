@@ -167,16 +167,17 @@ This session is part of project deliverables and will be conducted similar to a 
       * Almost all features are relevant to the target user but the features are not very high value to the target user 
     * `excellent`: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.
   
-  * **B. Quality of the user docs** [:bust_in_silhouette:]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.== 
-    * `unable to judge`: not enough content to make a judgement
+  * **B. Quality of user docs** [:bust_in_silhouette:]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.== 
     * `low`: Hard to understand, often inaccurate or missing important information
     * `medium`:
     * `high`: Mostly easy to follow. Only a few areas for improvements.
     * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).
+    * `unable to judge`: not enough content to make a judgement
 
-  * **C. Development effort** [:bust_in_silhouette:]:  Evaluate the amount of coding effort on a scale of 0 to 25
+  * **C. Amount of work** [:bust_in_silhouette:]:  Evaluate the amount of work on a scale of 0 to 25
     * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort.
     * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
+    * If the features was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
   
   * **D. Depth of features** [:bust_in_silhouette:]: Evaluate ==the strongest feature== done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo`
     * `low` : an easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%% 
@@ -185,10 +186,9 @@ This session is part of project deliverables and will be conducted similar to a 
       * A moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%
       * A difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%
     * `excellent`: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%
-    * `over the top`: A difficult feature, implemented as good as it can be under the circumstances. %%&nbsp;undo/redo command that even allows undoing non-mutating commands such as _select_, allows selectively undo specific commands in the history, etc.%%
+    * `outstanding`: A difficult feature, implemented as good as it can be under the circumstances. %%&nbsp;undo/redo command that even allows undoing non-mutating commands such as _select_, allows selectively undo specific commands in the history, etc.%%
   
-  * **E. Quality of the developer docs** [:bust_in_silhouette:]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.== 
-    * `unable to judge`: not enough content to make a judgement.
+  * **E. Quality of developer docs** [:bust_in_silhouette:]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.== 
     * `low`: One of these
       * Very small amount of content (i.e., less than 1 page). 
       * Hardly any use to the reader (i.e., content doesn't make much sense or redundant). 
@@ -196,6 +196,7 @@ This session is part of project deliverables and will be conducted similar to a 
     * `medium`: _Some_ diagrams, _some_ descriptions, but does not help the reader that much.
     * `high`: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
     * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.
+    * `unable to judge`: not enough content to make a judgement.
 
 **Grading:** Your performance in the testathon will be considered for your final grade (under the _QA_ category and under _Implementation_ category) 
 
