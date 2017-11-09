@@ -24,7 +24,6 @@
     *   [v1.4 [week 11]](#admin-project-v14)
     *   [v1.5rc [week 12]](#admin-project-v15rc)
     *   [v1.5 [week 13]](#admin-project-v15)
-    *   [Retrospective](#admin-project-retrospective)
     *   [Assessment](#admin-project-assessment)
 *   [Supervision](#admin-supervision)
 *   [Forming Teams](#admin-teams)
@@ -157,11 +156,6 @@
 ## v1.5 [week 13]
 <div id="admin-project-v15">
 <include src="project-v15.md" />
-</div>
-
-## Project retrospective
-<div id="admin-project-retrospective">
-<include src="project-retrospective.md" />
 </div>
 
 ## Project Assessment

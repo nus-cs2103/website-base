@@ -27,13 +27,15 @@ Unless stated otherwise, the meaning of answer options are<br>
 **E.** `Disagree with confidence`
 
 
-**Incorrect answers receive negative marks.** Here is an example marking scheme for a question that gives you a correct statement.
+**Incorrect answers receive negative marks.** Here is an example marking scheme for a question that gives you a correct statement. %%&nbsp;The scheme will be reversed if the statement given is incorrect.%%
 
 A. Agree with confidence **(+0.2)**<br>
 B. Agree, but not confident **(+0.1)**<br>
 C. Question unclear **(0)**<br>
 D. Disagree, but not confident **(-0.1)**<br>
 E. Disagree with confidence **(-0.2)**<br>
+
+%%&nbsp;Negative marks are necessary because all questions are Agree/Disagree type. Without negative marks, anyone can score roughly half the marks by simply choosing the same option for all questions.%%
 
 **All questions carry equal marks.**
  

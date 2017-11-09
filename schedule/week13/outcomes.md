@@ -55,17 +55,5 @@ Covered by the 'Peer Evaluations' component of the module:
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header=":trophy: Can learn from project experience :star::star::star:" expandable>
-  <panel header=":dart: Evidence" expanded>
-
-Covered by the 'Project Retrospective' component of the project:
-
-<include src="../../admin/project-retrospective.md" name="%%Admin &raquo; Project &rarr; Retrospective%%" dynamic />
-
-  </panel>
-</panel>
-
-<!-- ==================================================================================================== -->
-
 </div>
 </div>

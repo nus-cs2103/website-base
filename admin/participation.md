@@ -15,6 +15,8 @@ To get the full marks allocated for participation you should satisfy the followi
 * **Meticulousness**:
   * Rarely overlooks submission requirements.
   * Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.
+
+* **Teamwork**: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.
   
 The following criteria will be assessed but **considered only for pushing a student's grade from A to A+ and recruiting future tutors/interns**.
 
