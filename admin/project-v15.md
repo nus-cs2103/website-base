@@ -101,7 +101,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 <tip-box type="important"> 
 
-This session is part of project deliverables and will be conducted similar to a final exam. **Graded. Attendance is compulsory**. 
+This session is part of project deliverables and will be conducted similar to a final exam. **Graded ==(accounting for about 10 marks in total)==. Attendance is compulsory**. 
 
 </tip-box>
 
@@ -170,10 +170,11 @@ This session is part of project deliverables and will be conducted similar to a 
      * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).
      * `unable to judge`: not enough content to make a judgement
 
-   * **C. Amount of work** [:bust_in_silhouette:]:  Evaluate the amount of work on a scale of 0 to 25
+   * **C. Amount of work** [:bust_in_silhouette:]:  Evaluate the amount of work on a scale of 0 to 30
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort.
      * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
      * If the features was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
+     * :exclamation: Do not give a high value to be nice. If your estimate is wildly inaccurate, it is a sign that you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
   
    * **D. Depth of features** [:bust_in_silhouette:]: Evaluate ==the strongest feature== done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo`
      * `low` : an easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%% 
@@ -194,7 +195,7 @@ This session is part of project deliverables and will be conducted similar to a 
      * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.
      * `unable to judge`: not enough content to make a judgement.
 
-**Grading:** Your performance in the testathon will be considered for your final grade (under the _QA_ category and under _Implementation_ category) 
+**Grading:** Your performance in the testathon will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
 
 * You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate%%
 * The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized %%&nbsp;i.e. give you a chance to reject false-positive bug reports%%
