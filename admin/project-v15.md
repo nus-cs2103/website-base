@@ -58,10 +58,14 @@ This is as a ‘production release’. It should be at least ‘near production 
 
 **Submission**:
 
-* Update User Guide, Developer Guide, README, and AboutUs pages on GitHub.
+First, update following pages on GitHub: 
+* User Guide, Developer Guide
+* README : ==Ensure the `Ui.png` matches the current product==
+* AboutUs : Ensure the following:
+  * Contains a ==link to each person's Project Portfolio page== 
+  * Team member ==names match full names used by IVLE==
  
-
-* Convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE.
+Next, convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE.
 
 Document | Name format 
 ---------|-------------
