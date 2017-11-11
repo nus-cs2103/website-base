@@ -6,7 +6,7 @@
 * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
 * :exclamation: Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
 * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%&nbsp;e.g. broken links, outdated diagrams/instructions etc.%%.
-* **Do not update the repo during the 7 days after the deadline.** Get our permission first if you need to update the repo during that one-week _freeze_ period. You can continue to evolve our repo after that. 
+* **Do not update the repo during the 7 days after the deadline.** Get our permission first if you need to update the repo during that one-week _freeze_ period. You can continue to evolve your repo after that. 
 
 **Summary of submissions**:
 
