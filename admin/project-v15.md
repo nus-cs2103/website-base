@@ -1,8 +1,33 @@
+<tip-box> 
+
+* :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed.== Even a 1-second delay is penalized, irrespective of the reason. 
+  * For submissions done via IVLE, the submission time is the timestamp shown by IVLE.
+  * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
+* The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
+* :exclamation: Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
+* For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%&nbsp;e.g. broken links, outdated diagrams/instructions etc.%%.
+* **Do not update the repo during the 7 days after the deadline.** Get our permission first if you need to update the repo during that one-week _freeze_ period. You can continue to evolve our repo after that. 
+
+**Summary of submissions**:
+
+Item | Team/Individual | Method
+---- | --------------- | ------
+Jar file | :busts_in_silhouette::busts_in_silhouette: | IVLE
+User Guide | :busts_in_silhouette::busts_in_silhouette: | IVLE
+Developer Guide | :busts_in_silhouette::busts_in_silhouette: | IVLE
+Sample Data | :busts_in_silhouette::busts_in_silhouette: | IVLE
+Test Script | :busts_in_silhouette::busts_in_silhouette: | IVLE
+Project Portfolio Page | :bust_in_silhouette: | IVLE
+`README.adoc`, `Ui.png` | :busts_in_silhouette::busts_in_silhouette: | GitHub
+`AboutUs.adoc` | :busts_in_silhouette::busts_in_silhouette: | GitHub
+Collated files | :bust_in_silhouette: | GitHub
+
+</tip-box>
+
+
 ### v1.5 Product
 
 This is as a ‘production release’. It should be at least ‘near production quality’.
-
-Please follow submission instructions closely. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, product manual page header doesn't have the team ID, etc.
 
 ==Add these two new files== to the repo (these will be used by our testers when testing your final submission):
 
@@ -15,12 +40,6 @@ Please follow submission instructions closely. ==Any non-compliance will be pena
   Limit the test cases to about 20 minutes worth of testing.
 
 **Submission**:
-
-<tip-box> 
-
-:exclamation: When determining the late submission penalty, we take the latest submission even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
-
-</tip-box>
 
 * **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline comes with an automatic penalty) Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
 * **Executable**: upload the jar file to IVLE. File name: `[team][product name].jar` %%e.g. [T09-B1][ContactsPlus].jar%%
@@ -60,7 +79,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
-* **Venue:** Same as the tutorial venue.
+* **Venue:** Same as the tutorial venue unless informed otherwise.
 * **Duration:** Strictly no more than 3 minutes per person (i.e. a total of 12 minutes for a 4-person team). Exceeding this limit will be penalized.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.  
     Starting times: `Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes`  
@@ -95,13 +114,15 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 <include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
 
-<div id=v15-testathon>
+<div id=v15-practicalExam>
 
-### v1.5 Testathon
+### v1.5 Practical Exam
+
+(Previously called _Testathon_)
 
 <tip-box type="important"> 
 
-This session is part of project deliverables and will be conducted similar to a final exam. **Graded ==(accounting for about 10 marks in total)==. Attendance is compulsory**. 
+**Graded ==(accounting for about 10 marks in total)==. Attendance is compulsory**. 
 
 </tip-box>
 
@@ -117,15 +138,14 @@ This session is part of project deliverables and will be conducted similar to a 
 
 **Time/venue:** week 13 lecture, lecture venue
 
-<include src="project-testing.md#testathonPreparations" />
+<include src="project-testing.md#testingPreparations" />
 
 **During:** 
 
 <tip-box> 
 
 :exclamation: this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.
-* Wait outside the venue until you are allowed in. 
-* Sit in the assigned row.
+* Sit in the [assigned row](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). When you select a seat to sit in the assigned row, choose the empty seat closest to the middle of the seat segment (i.e. fill rows starting from the middle) so that those who come later than you don't have to distrub you to get to empty seats in the middle.
 * Not allowed:
   * communicating with others (except with teaching team members present)
   * use any other software/websites than those strictly required for the testing 
@@ -141,9 +161,9 @@ This session is part of project deliverables and will be conducted similar to a 
    * You can use the provided _test script_ and _user guide_ in your testing. 
    * The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.
    * You can do _acceptance_ testing as well as _system_ testing.
-   * Report bugs in the [testathon issue tracker](https://github.com/nus-cs2103-AY1718S1/testathon/issues), ==not in the team's repo==. 
+   * Report bugs in the [practical exam issue tracker](https://github.com/nus-cs2103-AY1718S1/pe/issues), ==not in the team's repo==. 
      * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
-     * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others testing the same team from copying bug reports%%
+     * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others copying your bug reports%%
    * Report bugs only. Do not post suggestions. These are considered bugs:
      * Behavior differs from the user guide (or testing instructions)
      * A legitimate user behavior is not handled %%&nbsp;e.g. incorrect commands, extra parameters%%
@@ -171,7 +191,7 @@ This session is part of project deliverables and will be conducted similar to a 
      * `unable to judge`: not enough content to make a judgement
 
    * **C. Amount of work** [:bust_in_silhouette:]:  Evaluate the amount of work on a scale of 0 to 30
-     * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort.
+     * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature, we do not expect a vast majority of students to be have efforts lower than 20.
      * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
      * If the features was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
      * :exclamation: Do not give a high value to be nice. If your estimate is wildly inaccurate, it is a sign that you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
@@ -195,7 +215,7 @@ This session is part of project deliverables and will be conducted similar to a 
      * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.
      * `unable to judge`: not enough content to make a judgement.
 
-**Grading:** Your performance in the testathon will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
+**Grading:** Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
 
 * You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate%%
 * The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized %%&nbsp;i.e. give you a chance to reject false-positive bug reports%%

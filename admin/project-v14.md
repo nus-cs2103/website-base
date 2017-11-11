@@ -94,7 +94,7 @@ As before.
   <include src="project-v15rc.md#project-portfolio"/>
 </modal>
   
-<include src="project-testing.md#testathonPreparations" />
+<include src="project-testing.md#testingPreparations" />
   
 **After the session**:
 * It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.

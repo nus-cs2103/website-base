@@ -6,7 +6,7 @@
 * Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.
 
 </div>
-<div id="testathonPreparations">
+<div id="testingPreparations">
 
 **Preparation**:
 * **Bring your laptop, and charger cable**.

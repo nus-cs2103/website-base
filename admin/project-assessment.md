@@ -24,7 +24,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 Evaluates: How good is your Quality Assurance? 
 
-Based on: 1. your test code 2. our own manual testing 3. your performance in the <trigger trigger="click" for="modal:projectAssessment-testathon">v1.5 testathon</trigger>, 4. bugs found during testathon. 
+Based on: 1. your test code 2. our own manual testing 3. your performance in the <trigger trigger="click" for="modal:projectAssessment-practicalExam">v1.5 Practical Exam</trigger>, 4. bugs found during testathon. 
 
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
   <include src="project-testing.md#expectations"/>
@@ -32,8 +32,8 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
   
 </panel>
 
-<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
-  <include src="project-v15.md#v15-testathon"/>
+<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
+  <include src="project-v15.md#v15-practicalExam"/>
 </modal>
 
 
@@ -63,6 +63,3 @@ Criteria:
 * Project done iteratively %%(opposite: fake iterative, doing most of the work in one iteration)%%. 
 
 </panel><p/>
-
-
-**:exclamation: Penalty for late submission:** ==-1 mark for each hour delayed.== Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.
