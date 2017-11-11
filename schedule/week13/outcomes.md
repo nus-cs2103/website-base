@@ -10,7 +10,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can demo a product :star:" expandable>
+<panel type="danger" header="**`W13.1` Can demo a product** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by the 'Demo' component of v1.5:
@@ -23,7 +23,7 @@ Covered by the 'Demo' component of v1.5:
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can deliver a product iteratively :star:" expandable>
+<panel type="info" header="**`W13.2` Can deliver a product iteratively** :star::star::star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by v1.0-v1.5:
@@ -33,7 +33,7 @@ Covered by v1.0-v1.5:
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header=":trophy: Can work in an existing code base of small/medium size :star:" expandable>
+<panel type="danger" header="**`W13.3` Can work in an existing code base of small/medium size** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by v1.0-v1.5:
@@ -43,12 +43,16 @@ Covered by v1.0-v1.5:
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header=":trophy: Can evaluate contributions from project members :star::star:" expandable>
+<panel type="warning" header="**`W13.4` Can evaluate contributions from project members** :star::star:" no-close>
   <panel header=":dart: Evidence" expanded>
 
 Covered by the 'Peer Evaluations' component of the module:
 
 <include src="../../admin/peer-evaluations.md" name="%%Admin &raquo; Peer Evaluations%%" dynamic />
+
+Also covered by the 'Practical Exam' of v1.5:
+
+<include src="../../admin/project-v15.md" name="%%Admin &raquo; Project &rarr; v1.5%%" dynamic />
 
   </panel>
 </panel>
