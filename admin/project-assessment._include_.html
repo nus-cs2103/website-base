@@ -12,7 +12,7 @@
 <panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
   <p>Evaluates: How good is your Quality Assurance?</p>
   <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the
-    <trigger trigger="click" for="modal:projectAssessment-testathon">v1.5 testathon</trigger>, 4. bugs found during testathon.</p>
+    <trigger trigger="click" for="modal:projectAssessment-practicalExam">v1.5 Practical Exam</trigger>, 4. bugs found during testathon.</p>
   <panel type="seamless" header="Expectations for writing automated tests:" expanded="">
     <div>
       <ul>
@@ -27,11 +27,12 @@
     </div>
   </panel>
 </panel>
-<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-testathon">
+<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
   <div>
-    <h3 id="v15-testathon">v1.5 Testathon</h3>
+    <h3 id="v15-practical-exam">v1.5 Practical Exam</h3>
+    <p>(Previously called <em>Testathon</em>)</p>
     <tip-box type="important">
-      <p>This session is part of project deliverables and will be conducted similar to a final exam. <strong>Graded <mark>(accounting for about 10 marks in total)</mark>. Attendance is compulsory</strong>.</p>
+      <p><strong>Graded <mark>(accounting for about 10 marks in total)</mark>. Attendance is compulsory</strong>.</p>
     </tip-box>
     <p><strong>Objectives:</strong></p>
     <ul>
@@ -63,8 +64,8 @@
     <tip-box>
       <p>❗️ this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.</p>
       <ul>
-        <li>Wait outside the venue until you are allowed in.</li>
-        <li>Sit in the assigned row.</li>
+        <li>Sit in the <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&amp;single=true">assigned row</a>. When you select a seat to sit in the assigned
+          row, choose the empty seat closest to the middle of the seat segment (i.e. fill rows starting from the middle) so that those who come later than you don't have to distrub you to get to empty seats in the middle.</li>
         <li>Not allowed:
           <ul>
             <li>communicating with others (except with teaching team members present)</li>
@@ -89,10 +90,10 @@
           <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
           <li>The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.</li>
           <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
-          <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S1/testathon/issues">testathon issue tracker</a>, <mark>not in the team's repo</mark>.
+          <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S1/pe/issues">practical exam issue tracker</a>, <mark>not in the team's repo</mark>.
             <ul>
               <li>Issue title format: <code>[Tester ID] Issue description</code><span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
-              <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others testing the same team from copying bug reports</span></li>
+              <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others copying your bug reports</span></li>
             </ul>
           </li>
           <li>Report bugs only. Do not post suggestions. These are considered bugs:
@@ -141,7 +142,7 @@
           <li>
             <p><strong>C. Amount of work</strong> [👤]: Evaluate the amount of work on a scale of 0 to 30</p>
             <ul>
-              <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>                is about 15 points of effort.</li>
+              <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>                is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature, we do not expect a vast majority of students to be have efforts lower than 20.</li>
               <li>Count all implementation/testing/documentation work mentioned in that person's portfolio page.</li>
               <li>If the features was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch.</li>
               <li>❗️ Do not give a high value to be nice. If your estimate is wildly inaccurate, it is a sign that you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark></li>
@@ -181,7 +182,7 @@
         </ul>
       </li>
     </ol>
-    <p><strong>Grading:</strong> Your performance in the testathon will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</p>
+    <p><strong>Grading:</strong> Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</p>
     <ul>
       <li>You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate</span></li>
       <li>The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized <span class="dimmed"> i.e. give you a chance to reject false-positive bug reports</span></li>
@@ -212,4 +213,3 @@
   <p></p>
 </panel>
 <p></p>
-<p><strong>❗️ Penalty for late submission:</strong><mark>-1 mark for each hour delayed.</mark> Even a 1-second delay is penalized, irrespective of the reason. Based on the time shown by IVLE.</p>
