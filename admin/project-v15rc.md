@@ -78,7 +78,8 @@ Update to match the product.
   * Main things to include: 
     * links to collated code
     * features you implemented %%&nbsp;(include relevant extracts from the user guide and the developer guide)%%
-    * features you propose to implement in future %%&nbsp;(include relevant extracts from the user guide and the developer guide if applicable)%%
+    * features you propose to implement in future %%&nbsp;(include relevant extracts from the user guide and the developer guide if applicable)%%<br>
+      Note: the purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. %%&nbsp;e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
     * other significant contributions to the project %%&nbsp;e.g. tweaks to existing features, setting up project tools%%
   * Other things you can include: 
     * Evidence of helping others %%&nbsp;e.g. responses you posted in our forum, bugs you reported in other team's products%%, 
