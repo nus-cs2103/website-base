@@ -7129,9 +7129,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="v8tq3" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="v8tq3" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="v8tq3" type="radio"> False</label></li>
+                          <ul radio-group="1nzzn" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="1nzzn" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="1nzzn" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -7265,9 +7265,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="1crc4" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="1crc4" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="1crc4" type="radio"> False</label></li>
+                          <ul radio-group="qnjmf" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="qnjmf" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="qnjmf" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -8767,9 +8767,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: statements about exploratory and scripted testing">
                         <question>
                           <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                          <ul radio-group="y318l" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="y318l" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="y318l" type="radio"> False</label></li>
+                          <ul radio-group="d8vl1" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="d8vl1" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="d8vl1" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>A) False</p>
@@ -8782,12 +8782,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Which testing technique is better?">
                         <question>
                           <p>Which testing technique is better?</p>
-                          <ul radio-group="4x5ja" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="4x5ja" type="radio"> a. error guessing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="4x5ja" type="radio"> b. bug hunting</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="4x5ja" type="radio"> c. attack-based testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="4x5ja" type="radio"> d. reactive testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="4x5ja" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                          <ul radio-group="7f11n" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7f11n" type="radio"> a. error guessing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7f11n" type="radio"> b. bug hunting</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7f11n" type="radio"> c. attack-based testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7f11n" type="radio"> d. reactive testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7f11n" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(e)</p>
@@ -9900,6 +9900,13 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <p>The <code>:TextUi</code> in the above example denotes <em>an unnamed instance of the class TextUi</em>. If there were two instances of <code>TextUi</code> in the diagram, they can be distinguished by naming them e.g. <code>TextUi1:TextUi</code>        and <code>TextUi2:TextUi</code>.</p>
       <p><strong>Arrows representing method calls should be solid arrows while those representing method returns should be dashed arrows</strong>.</p>
       <p>Note that unlike in Object Diagrams, the <strong>class/object name is not underlined in sequence diagrams</strong>.</p>
+      <tip-box>
+        <p>❌ <strong>[Common notation error] Activation bar too long:</strong> The activation bar of a method cannot start before the method call arrives and a method cannot remain active after the method had returned. <span class="dimmed"> In the two sequence diagrams below, the one on the left commits this error because the activation bar starts <em>before</em> the method <code>Foo#xyz()</code> is called and remains active <em>after</em> the method returns.</span></p>
+        <img
+          src="/website/book/uml/sequenceDiagrams/basic/images/commonError-activationBarTooLong.png" height="120">
+          <p>❌ <strong>[Common notation error] Broken activation bar:</strong> The activation bar should remain unbroken from the point the method is called until the method returns. <span class="dimmed"> In the two sequence diagrams below, the one on the left commits this error because the activation bar for the method <code>Foo#abc()</code> is not contiguous, but appears as two pieces instead.</span></p>
+          <img
+            src="/website/book/uml/sequenceDiagrams/basic/images/commonError-brokenActivationBar.png" height="120"></tip-box>
     </div>
   </div>
   <div>
@@ -12158,11 +12165,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <panel header=":lock::key: Meaning of OCP">
                       <question>
                         <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                        <ul radio-group="5xmxo" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5xmxo" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5xmxo" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5xmxo" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5xmxo" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                        <ul radio-group="nli9p" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="nli9p" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="nli9p" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="nli9p" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="nli9p" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -12291,9 +12298,9 @@ AcademicStaff academicStaff = staff; // Not OK
                     <panel header=":lock::key: Is this LSP?">
                       <question>
                         <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                        <ul radio-group="5pssg" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5pssg" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5pssg" type="radio"> False</label></li>
+                        <ul radio-group="vu8s7" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="vu8s7" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="vu8s7" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>True.</p>

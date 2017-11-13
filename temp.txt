@@ -1,25 +1,25 @@
+**`W7.4` Can use assertions** ⭐️⭐️⭐️
+- [ ] `W7.4c` Can use assertions optimally ⭐️⭐️⭐️⭐️
+<br>
 
-- [ ] **`W2.1` Can use Git to save history** ⭐️
-- [ ] `W2.1f` Can set Git to ignore files ⭐️⭐️
+**`W7.6` Can use intermediate-level sequence diagrams** ⭐️⭐️
+- [ ] `W7.6g` Can interpret sequence diagrams with parallel paths ⭐️⭐️⭐️⭐️
+<br>
 
-
-------
-
-
-
-
-
-------
+**`W7.9` Can use Java8 streams** ⭐️⭐️⭐️⭐️
+<br>
 
 
 
+======
 
 
-------
+=IF(B16="A", 0.2, IF(B16="B", 0.1, IF(B16="D", -0.1, IF(B16="E", -0.2, 0))))
+=IF(B16="B", 0.1, 0)
+=IF(B16="D", -0.1, 0)
+=IF(B16="E", -0.2, 0)
 
 
 
-
-------
 
 
