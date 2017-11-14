@@ -198,8 +198,8 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
    * **C. Amount of work** [:bust_in_silhouette:]:  Evaluate the amount of work on a scale of 0 to 30
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
      * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
-     * If the features was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
-     * :exclamation: Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it is a sign that you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
+     * If the feature was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
+     * :exclamation: Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
   
    * **D. Depth of features** [:bust_in_silhouette:]: Evaluate ==the strongest feature== done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo`
      * `low` : an easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%% 
@@ -215,14 +215,15 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
        * Very small amount of content (i.e., less than 1 page). 
        * Hardly any use to the reader (i.e., content doesn't make much sense or redundant). 
        * Uses ad-hoc diagrams where UML diagrams could have been used instead.
+       * Multiple notation errors in UML diagrams.
      * `medium`: _Some_ diagrams, _some_ descriptions, but does not help the reader that much.
      * `high`: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
-     * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions.
+     * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.
      * `unable to judge`: not enough content to make a judgement.
 
 **Grading:** Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
 
-* You will lose marks if you missed too many bugs in the products you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate%%
-* The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized %%&nbsp;i.e. give you a chance to reject false-positive bug reports%%
+* You will lose marks if you missed too many bugs in the product you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
+* The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized %%&nbsp;i.e. give you a chance to reject false-positive bug reports%%.
   
 </div>
