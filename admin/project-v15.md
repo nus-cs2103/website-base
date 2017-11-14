@@ -84,11 +84,12 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
-* **Duration:** Strictly no more than 3 minutes per person (i.e. a total of 12 minutes for a 4-person team). Exceeding this limit will be penalized.
+* **Duration:** Strictly `teamSize x 3` minutes %%&nbsp;e.g. 12 minutes for a 4-person team.%% Exceeding this limit will be penalized.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.  
-    Starting times: `Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes`  
-    At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.  
-    There is an ==automatic penalty if you are not ready to start on time.==.
+    Starting times: `Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes`<br>
+    At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.<br> 
+    There is an ==automatic penalty if you are not ready to start on time.==<br>
+    Wait outside the venue until you are called in.
 * **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.  
 * **Scope**: 
   * Organize the demo to present a cohesive picture of the product as a whole, similar to the v1.5rc demo.
