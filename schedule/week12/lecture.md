@@ -60,4 +60,4 @@
 
 **Talk on getting ready for internships**
 
-* Optional
+* [[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L12.pptx)]
