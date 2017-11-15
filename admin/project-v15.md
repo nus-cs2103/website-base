@@ -164,6 +164,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 1. **[40 minutes] Test the product and report bugs** 
    * Launch the jar file. Test it. 
    * You can use the provided _test script_ and _user guide_ in your testing. 
+   * No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
    * The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.
    * You can do _acceptance_ testing as well as _system_ testing.
    * Report bugs in the [practical exam issue tracker](https://github.com/nus-cs2103-AY1718S1/pe/issues), ==not in the team's repo==. 
@@ -200,6 +201,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
      * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
      * If the feature was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
      * :exclamation: Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
+     * When estimating effort, ignore features that are driven by GUI inputs.
   
    * **D. Depth of features** [:bust_in_silhouette:]: Evaluate ==the strongest feature== done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo`
      * `low` : an easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%% 
