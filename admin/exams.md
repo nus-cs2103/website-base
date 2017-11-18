@@ -106,5 +106,8 @@ Unlike in part 1, **you can ask invigilators for clarifications** if you found a
 
 Yes, **you may use pencils** when answering part 2. 
 
+[[Sample paper](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf)]
+[[Answers to the sample paper](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf)]
+
   
 
