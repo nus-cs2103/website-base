@@ -164,7 +164,7 @@
     <div>
       <div>
         <div>
-          <h4 id="class-diagrams-basic-one">Class Diagrams - Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="class-diagrams-one">Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -174,11 +174,9 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>
-                <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: Design &rarr; OOP &rarr; Associations &rarr; Basic" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: Design :&rarr; OOP &rarr; Associations &rarr; Navigability" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: Design &rarr; OOP &rarr; Associations &rarr; Multiplicity" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
+              <p><strong>Class diagrams model the classes and how they are connected to each other</strong>.</p>
+              <tip-box>
+                <p>📦 An example class diagram:</p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
             </div>
             <div>
               <div>
@@ -217,96 +215,6 @@
       </div>
       <div>
         <div>
-          <h4 id="class-diagrams-intermediate-two">Class Diagrams - Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can use intermediate-level class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-        </panel>
-      </div>
-      <div>
-        <div>
-          <h4 id="class-diagrams-advanced-three">Class Diagrams - Advanced <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can use advanced class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div></div>
-            <div>
-              <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: draw class diagram: Player, Bot, etc.">
-                      <p>(a) Draw a class diagram to represent the following code.</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span></span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Trainable</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span></span>;
-}
-
-<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TrainableBot</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Bot</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Trainable</span></span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{
-
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">train</span><span class="hljs-params">()</span> </span>{
-
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Player</span></span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span> </span>{
-
-    }
-}
-</code></pre>
-                      <p>(b) Add these association classes to the diagram:<br> i. A <code>Player</code> can <em>challenge</em> another <code>Player</code> object. <code>Challenge</code> class keeps track that association between the two <code>Player</code>                        objects: the <em>challenger</em> and the <em>target</em> of the challenge.<br> ii. A <code>Human</code> can <em>train</em> a <code>SmartBot</code> object. <code>Lesson</code> class keeps track that association.</p>
-                      <p>(c) Convert the two association classes to normal classes.</p>
-                      <panel header=":key: (a)"><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/playerBotA.png" height="250">
-                        <p></p>
-                        <p></p>
-                      </panel>
-                      <panel header=":key: (b)"><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/playerBotB.png" height="310">
-                        <p></p>
-                        <p></p>
-                      </panel>
-                      <panel header=":key: (c)"><img src="/website/book/modeling/modelingStructures/classDiagramsAdvanced/images/playerBotC.png" height="290">
-                        <p></p>
-                        <p></p>
-                      </panel>
-                      <div slot="answer"></div>
-                    </panel>
-                  </div>
-                </panel>
-              </div>
-            </div>
-          </div>
-        </panel>
-      </div>
-      <div>
-        <div>
           <h4 id="object-diagrams-three">Object Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <tip-box>
@@ -317,10 +225,10 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>Object diagrams model object structures that exist at a given moment of time.</p>
-              <p>
-                <panel src="/website\book\uml\objectDiagrams\objectStructures\embed._include_.html" header="UML: Object Diagrams: Object Structures" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
+              <div>
+                <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
+                <tip-box><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
+              </div>
             </div>
             <div></div>
           </div>
@@ -381,11 +289,11 @@
                     <panel header=":lock::key: Difference between a class diagram and and an OO domain model?">
                       <question>
                         <p>What is the main difference between a class diagram and and an OO domain model?</p>
-                        <ul radio-group="r70f6" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="r70f6" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="r70f6" type="radio"> b. One has more classes than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="r70f6" type="radio"> c. One shows more details than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="r70f6" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
+                        <ul radio-group="mkr46" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="mkr46" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="mkr46" type="radio"> b. One has more classes than the other.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="mkr46" type="radio"> c. One shows more details than the other.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="mkr46" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -508,9 +416,11 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>Activity diagrams model workflows</p>
-              <p>More…</p>
-              <p>Sequence diagrams model object interactions for specific scenarios</p>
+              <p><strong>Activity diagrams model workflows.</strong></p>
+              <tip-box>
+                <p>📦 An example activity diagram:</p>
+                <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br><sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
+              </tip-box>
             </div>
             <div></div>
           </div>
@@ -528,6 +438,7 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
+              <p><strong>Sequence diagrams model interactions between entities for a given scenario.</strong></p>
               <tip-box>
                 <p>📦 Consider the code below.</p>
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
@@ -549,7 +460,7 @@
 }
 
 </code></pre>
-                <p>Here is the sequence diagram to model the interactions for the method call <code>procudePrototype()</code> on a <code>Machine</code> object.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png"
+                <p>Here is the sequence diagram to model the interactions for the method call <code>prouducePrototype()</code> on a <code>Machine</code> object.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png"
                   width="450">
                 <p></p>
               </tip-box>
@@ -609,76 +520,6 @@
       </div>
       <div>
         <div>
-          <h4 id="sequence-diagrams-intermediate-two">Sequence Diagrams - Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can draw intermediate-level sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div></div>
-            <div>
-              <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: What’s going on here?">
-                      <question>
-                        <p>What’s going on here?</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
-                        <p></p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>(d)</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
-                      <question>
-                        <p>Explain the interactions depicted in this sequence diagram.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
-                        <p></p>
-                        <div slot="hint">
-                          <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
-              </div>
-            </div>
-          </div>
-        </panel>
-      </div>
-      <div>
-        <div>
-          <h4 id="sequence-diagrams-advanced-three">Sequence Diagrams - Advanced <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-        </div>
-        <tip-box>
-          <div>
-            <p>🏆 Can interpret advanced sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-          </div>
-        </tip-box>
-        <panel type="seamless" header=" %%- - - - - - - - - -%%">
-          <div>
-            <div>
-              <p>
-                <panel src="/website\book\uml\sequenceDiagrams\parallelPaths\embed._include_.html" header="UML: Sequence Diagrams: Parallel Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-      </div>
-      <div>
-        <div>
           <h4 id="use-case-diagrams-two">Use Case Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
         </div>
         <tip-box>
@@ -689,8 +530,9 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p>Use case diagrams model the mapping between features of a system and its user roles</p>
-              <p>More…</p>
+              <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
+              <tip-box>
+                <p>📦 A simple use case diagram:</p><img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
             </div>
             <div></div>
           </div>
@@ -818,9 +660,7 @@
       </tip-box>
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <div>
-            <p>...</p>
-          </div>
+          <div></div>
           <div>
             <div>
               <panel header=":muscle: Exercises" expandable="">
@@ -834,16 +674,16 @@
                     <p></p>
                     <question>
                       Choose the incorrect statement.
-                      <ul radio-group="ixf95" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ixf95" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ixf95" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ixf95" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ixf95" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ixf95" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
+                      <ul radio-group="luuei" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="luuei" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="luuei" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="luuei" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="luuei" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="luuei" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="sc0a6" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="sc0a6" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <ul radio-group="3k9ii" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="3k9ii" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
                         </ul>
                         <p>Explanation: A sequence diagram is a behavior diagram, not a structure diagram. An SD can represent how objects interact with each other (i.e., behavior), not how they are connected to each other (i.e. structure).</p>
                       </div>
@@ -862,16 +702,16 @@
                     <p></p>
                     <question>
                       Which one of these is the most useful to model a workflow?
-                      <ul radio-group="98ufj" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="98ufj" type="radio"> a. class diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="98ufj" type="radio"> b. object diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="98ufj" type="radio"> c. activity diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="98ufj" type="radio"> d. state machine diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="98ufj" type="radio"> e. use case diagram</label></li>
+                      <ul radio-group="zorbg" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="zorbg" type="radio"> a. class diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="zorbg" type="radio"> b. object diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="zorbg" type="radio"> c. activity diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="zorbg" type="radio"> d. state machine diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="zorbg" type="radio"> e. use case diagram</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="5hi3u" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="5hi3u" type="radio"> c. activity diagram</label></li>
+                        <ul radio-group="auk0t" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="auk0t" type="radio"> c. activity diagram</label></li>
                         </ul>
                       </div>
                     </question>
