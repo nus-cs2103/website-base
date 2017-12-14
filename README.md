@@ -1,6 +1,6 @@
 ### CS2103 Website
 
-[Live Website](https://nus-cs2103.github.io/website/)
+[Live Website](https://nus-cs2103-ay1718s1.github.io/website/)
 
 ## Setting up
 
