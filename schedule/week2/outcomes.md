@@ -7,7 +7,7 @@
 
 <div id="main">
 
-### SE Intro
+### SE Intro:
 
 <panel type="success" header="`W2.1` **Can explain pros and cons of software engineering** :star::star::star::star:" expandable no-close>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" />
@@ -20,7 +20,7 @@ To be able answer questions such as these:
   </panel>
 </panel>
 
-### Implementation
+### Implementation:
 
 <dynamic-panel type="danger" src="outcome-ide.md" header="`W2.2` **Can use basic features of an IDE** :star:" no-close />
 
@@ -54,11 +54,11 @@ To be able answer questions such as these:
   </panel>
 </panel>
 
-### Testing
+### Testing:
 
 <dynamic-panel type="warning" src="outcome-testing.md" header="`W2.5` **Can automate simple regression testing of text UIs** :star::star:" expandable no-close />
 
-### Project Management
+### Project Management:
 
 <dynamic-panel type="danger" src="outcome-git.md" header="`W2.6` **Can use Git to save history** :star:" expandable no-close />
 

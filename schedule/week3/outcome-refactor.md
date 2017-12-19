@@ -1,6 +1,4 @@
-<panel type="warning" header="**`W3.2` Can refactor code at a basic level :star::star:**" expandable no-close>
-
-<panel type="warning" header="`W3.2a`Can explain refactoring :star::star:" expandable>
+<panel type="warning" header="`W3.1a`Can explain refactoring :star::star:" no-close>
   <include src="../../book/refactoring/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -9,7 +7,9 @@
   </panel>
 </panel>
 
-<panel type="warning" header="`W3.2b` Can use automated refactoring features of the IDE :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W3.1b` Can use automated refactoring features of the IDE :star::star:" no-close>
   <include src="../../book/intellij/refactoring/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -20,7 +20,9 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W3.2c` Can apply some basic refactoring :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W3.1c` Can apply some basic refactoring :star::star::star:" no-close>
   <include src="../../book/refactoring/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -30,17 +32,16 @@
 
 **Submission**: Show the relevant commits during the tutorial.
 
-
   </panel>
 </panel>
 
-<panel type="success" header="`W3.2d` Can decide when to apply a given refactoring :star::star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="success" header="`W3.1d` Can decide when to apply a given refactoring :star::star::star::star:" no-close>
   <include src="../../book/refactoring/when/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Give an example from any project (e.g. addressbook-level1) where a refactoring can be applied but you decide against it because it is not worth it.
 
   </panel>
-</panel>
-
 </panel>

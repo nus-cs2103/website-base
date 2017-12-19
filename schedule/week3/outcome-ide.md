@@ -1,10 +1,8 @@
-<panel type="info" header="**`W3.9` Can use intermediate level features of an IDE :star::star::star:**" expandable no-close>
-
-<panel type="info" header="`W3.9a` Can explain debugging :star::star::star:" expandable>
+<panel type="info" header="`W3.7a` Can explain debugging :star::star::star:" no-close>
   <include src="../../book/ides/debugging/what/full.md" />
 </panel>
 
-<panel type="info" header="`W3.9b` Can step through a program using a debugger :star::star::star:" expandable>
+<panel type="info" header="`W3.7b` Can step through a program using a debugger :star::star::star:" no-close>
   <include src="../../book/intellij/debuggingBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -13,13 +11,11 @@
   </panel>
 </panel>
 
-<panel type="success" header="`W3.9c` Can use some useful IDE productivity shortcuts :star::star::star::star:" expandable>
+<panel type="success" header="`W3.7c` Can use some useful IDE productivity shortcuts :star::star::star::star:" no-close>
   <include src="../../book/intellij/productivityShortcuts/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 **Submission**: Demo some Intellij productivity shortcuts during the tutorial.
 
   </panel>
-</panel>
-
 </panel>

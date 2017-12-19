@@ -1,10 +1,8 @@
-<panel type="warning" header="**`W3.4` Can follow a simple style guide :star::star:**" expandable no-close>
-
-<panel type="warning" header="`W3.4a` Can explain the importance of code quality :star::star:" expandable>
+<panel type="warning" header="`W3.2a` Can explain the importance of code quality :star::star:" no-close>
   <include src="../../book/codeQuality/introduction/basic/full.md" />
 </panel>
 
-<panel type="warning" header="`W3.4b` Can explain the need for following a standard :star::star:" expandable>
+<panel type="warning" header="`W3.2b` Can explain the need for following a standard :star::star:" no-close>
   <include src="../../book/codeQuality/followStandard/introduction/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -13,7 +11,9 @@
   </panel>
 </panel>
 
-<panel type="warning" header="`W3.4c` Can follow simple mechanical style rules :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W3.2c` Can follow simple mechanical style rules :star::star:" no-close>
   <include src="../../book/codeQuality/followStandard/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -26,13 +26,11 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W3.4d` Can follow intermediate style rules :star::star::star:" expandable>
+<panel type="info" header="`W3.2d` Can follow intermediate style rules :star::star::star:" no-close>
   <include src="../../book/codeQuality/followStandard/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Similar to [Can follow simple mechanical style rules] above, but also fix violations of _intermediate_ style rules.
 
   </panel>
-</panel>
-
 </panel>

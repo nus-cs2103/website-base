@@ -7,17 +7,33 @@
 
 <div id="main">
 
+### Implementation:
+
+<dynamic-panel type="warning" src="outcome-refactor.md" header="**`W3.1` Can refactor code at a basic level :star::star:**" no-close />
+
+<dynamic-panel type="warning" src="outcome-styleGuide.md" header="**`W3.2` Can follow a simple style guide :star::star:**" no-close />
+
+<dynamic-panel type="warning" src="outcome-readability.md" header="**`W3.3` Can improve code readability :star::star:**" no-close/>
+
+<dynamic-panel type="warning" src="outcome-naming.md" header="**`W3.4` Can use good naming :star::star:**" no-close />
+
+<dynamic-panel type="warning" src="outcome-codingPractice.md" header="**`W3.5` Can avoid unsafe coding practices :star::star:**" no-close />
+
+<dynamic-panel type="info" src="outcome-comment.md" header="**`W3.6` Can write good code comments :star::star::star:**" no-close />
+
+<dynamic-panel type="info" src="outcome-ide.md" header="**`W3.7` Can use intermediate level features of an IDE :star::star::star:**" no-close />
+
+### Project Management:
+
+<dynamic-panel type="danger" src="outcome-remoteRepo.md" header="**`W3.8` Can communicate with a remote repo :star:**" no-close />
+
+<dynamic-panel type="info" src="outcome-gitHistory.md" header="**`W3.9` Can traverse Git history :star::star::star:**" no-close />
+
+### Other:
+
 <!-- ==================================================================================================== -->
 
-<include src="outcome-remoteRepo.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-refactor.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="danger" header="**`W3.3` Can work with a 1KLoC code base :star: ==[Compulsory]==**" expandable no-close>
+<panel type="danger" header="**`W3.10` Can work with a 1KLoC code base :star: ==[Compulsory]==**" expandable no-close>
   <panel header=":dart: Evidence" expanded>
 
 <tip-box type="important"> 
@@ -55,36 +71,6 @@ This is a compulsory LO. If you miss this LO, your participation marks will be a
 
   </panel>
 </panel>
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-styleGuide.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-readability.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-naming.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-codingPractice.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-gitHistory.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-ide.md" />
-
-<!-- ==================================================================================================== -->
-
-<include src="outcome-comment.md" />
-
-<!-- ==================================================================================================== -->
 
 </div>
 </div>

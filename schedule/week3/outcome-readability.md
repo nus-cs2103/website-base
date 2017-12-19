@@ -1,10 +1,8 @@
-<panel type="warning" header="**`W3.5` Can improve code readability :star::star:**" expandable no-close>
-
-<panel type="warning" header="`W3.5a` Can explain the importance of readability :star::star:" expandable>
+<panel type="warning" header="`W3.3a` Can explain the importance of readability :star::star:" no-close>
   <include src="../../book/codeQuality/maximiseReadability/introduction/full.md" />
 </panel>
 
-<panel type="warning" header="`W3.5b` Can follow basic guidelines for improving readability :star::star:" expandable>
+<panel type="warning" header="`W3.3b` Can follow basic guidelines for improving readability :star::star:" no-close>
   <include src="../../book/codeQuality/maximiseReadability/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
   <div id="common-evidence">
@@ -17,7 +15,9 @@ Evidence of applying these guidelines to some code (e.g. to addressbook-level1).
   </panel>
 </panel>
 
-<panel type="info" header="`W3.5c` Can follow intermediate guidelines for improving readability :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W3.3c` Can follow intermediate guidelines for improving readability :star::star::star:" no-close>
   <include src="../../book/codeQuality/maximiseReadability/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -28,13 +28,13 @@ In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]](h
   </panel>
 </panel>
 
-<panel type="success" header="`W3.5d` Can follow advanced guidelines for improving readability :star::star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="success" header="`W3.3d` Can follow advanced guidelines for improving readability :star::star::star::star:" no-close>
   <include src="../../book/codeQuality/maximiseReadability/advanced/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Similar to the above LO [Can follow basic guidelines for improving readability]
 
   </panel>
-</panel>
-
 </panel>
