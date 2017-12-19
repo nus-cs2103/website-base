@@ -7,8 +7,8 @@
 <panel header=":calendar: Tutorial Schedule" expandable no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
-<include src="overview/index.html" name=":white_check_mark: For all weeks" dynamic />
-<include src="week1/index.html" name=":white_check_mark: Week 1 [Aug 14]" dynamic />
+<include src="overview/index.html" name=":exclamation: For all weeks" dynamic />
+<include src="week1/index.html" name=":exclamation: Week 1 [Aug 14]" dynamic />
 <panel header=":exclamation: Week 2 [Aug 21]" expanded no-close>
   <include src="week2/index.html"/>
 </panel>
@@ -22,7 +22,5 @@
 <include src="week10/index.html" name=":white_check_mark: Week 10 [Oct 23]" dynamic />
 <include src="week11/index.html" name=":white_check_mark: Week 11 [Oct 30]" dynamic />
 <include src="week12/index.html" name=":white_check_mark: Week 12 [Nov 6]" dynamic />
-<panel header=":exclamation: Week 13 [Nov 13]" expanded no-close>
-  <include src="week13/index.html"/>
-</panel>
+<include src="week13/index.html" name=":white_check_mark: Week 13 [Nov 13]" dynamic />
 </div>
