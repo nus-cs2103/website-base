@@ -1,0 +1,472 @@
+<panel type="danger" header="`W2.6a` Can explain revision control :star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
+        <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
+        <tabs>
+          <tab header=":abc:">
+            <blockquote>
+              <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains a
+                number, each one higher than the number of the preceding version.</p>
+              <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
+                user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control
+                tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+              <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of
+                who made it; why they made it; when they made it; and what the change was.</p>
+              <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help
+                you to identify and resolve those conflicts.</p>
+              <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help you
+                to efficiently figure out exactly when a problem was introduced.</p>
+              <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself, or
+                with a hundred other people.</p>
+              <p>-- [adapted from
+                <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+            </blockquote>
+            <hr>
+          </tab>
+          <tab header=":tv:">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <hr>
+          </tab>
+        </tabs>
+        <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
+          <div slot="content">
+            <div>
+              <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
+            </div>
+          </div>
+        </popover>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: What does RCS stand for?">
+                <question has-input="true">
+                  <div slot="answer">
+                    <p>Revision Control Software</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock::key: What is a Revision?">
+                <question has-input="true">
+                  <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
+                  <div slot="answer">
+                    <p>Versions of a piece of information. For example, take a file containing program code. If you modify the code and save the file, you have a new version of that file.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock::key: Which of these is not considered a benefit of a typical RCS?">
+                <question>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Help a developer recover from a incorrect modification to a code file</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Makes it easier for a group of developers to collaborate on a project</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Manage the drift between multiple versions of your project</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
+                  </ul>
+                  <div slot="answer">
+                    <p>f</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Explain RCS in a team project context">
+                <question has-input="true">
+                  <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p>Be able to answer questions such as these:</p>
+    <div>
+      <panel header=":lock: Explain RCS in a team project context">
+        <question has-input="true">
+          <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
+        </question>
+      </panel>
+    </div>
+  </panel>
+</panel>
+<panel type="danger" header="`W2.6b` Can explain repositories :star:" no-close="">
+  <div>
+    <div></div>
+    <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="repositories-one">Repositories <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/repositories/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <tip-box type="definition">
+          <div>
+            <p><strong>Repository</strong> (<em>repo</em> for short): The database of the history of a directory being tracked by an RCS software (e.g. Git).</p>
+          </div>
+        </tip-box>
+        <tabs>
+          <tab header=":abc:">
+            <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to as the <em>working directory</em>              of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working directory.</p>
+            <p>You can have multiple repos in your computer, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
+            <hr>
+          </tab>
+          <tab header=":tv:">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <hr>
+          </tab>
+        </tabs>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock: What is a repo?">
+                <question has-input="true">
+                  <p>In the context of RCS, what is a <em>repo</em>?</p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p>Be able to answer questions such as these:</p>
+    <div>
+      <panel header=":lock: What is a repo?">
+        <question has-input="true">
+          <p>In the context of RCS, what is a <em>repo</em>?</p>
+        </question>
+      </panel>
+    </div>
+  </panel>
+</panel>
+<panel type="danger" header="`W2.6c` Can create a local Git repo :star:" no-close="">
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\revisionControl\repositories\full._include_.html" header=":mortar_board: %%Project Management &rarr; Revision Control &rarr; Repositories%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="init-one">Init <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/gitAndGithub/init/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <panel header="%%:paperclip: Git Overview :three:%%">
+          <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
+          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          <p></p>
+        </panel>
+        <p></p>
+        <p>Install <a href="https://www.sourcetreeapp.com/">SourceTree</a> which is Git + a GUI for Git.</p>
+        <p>Suppose you want to create a repository in an empty directory <code>things</code></p>
+        <tabs>
+          <tab header="SourceTree">
+            <div>
+              <p>Windows: Click <code>File</code> → <code>Clone/New…</code>. Click on <code>Create</code> button.<br> Mac: <code>New...</code> → <code>Create New Repository</code>.</p>
+              <p>Enter the location of the directory (Windows version shown below) and click <code>Create</code>.</p><img src="/website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
+              <p></p>
+              <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
+              <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
+            </div>
+            <hr>
+          </tab>
+          <tab header="CLI">
+            <div>
+              <p>Open a Git Bash Terminal.</p>
+              <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p><img src="/website/book/gitAndGithub/init/images/cli_1.png" height="100">
+              <p></p>
+              <p>Navigate to the <code>things</code> directory.</p>
+              <p>Use the command <code>git init</code> which should initialize the repo.</p>
+              <pre class="hljs"><code>$ git init
+Initialized empty Git repository in c:/repos/things/.git/
+</code></pre>
+              <p>You can use the command <code>ls -a</code> to view all files, which should show the <code>.git</code> directory that was created by the previous command.</p>
+              <pre class="hljs"><code>$ ls -a
+.  ..  .git
+</code></pre>
+              <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
+              <pre class="hljs"><code>git status
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code># On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use &quot;git add&quot; to track)
+</code></pre>
+            </div>
+            <hr>
+          </tab>
+        </tabs>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p>Have a local repo that you created.</p>
+  </panel>
+</panel>
+<panel type="danger" header="`W2.6d` Can explain saving history :star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="saving-history-one">Saving History <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/revisionControl/savingHistory/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <h5 id="tracking-and-ignoring">Tracking and Ignoring</h5>
+        <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
+        <h5 id="staging-and-committing">Staging and Committing</h5>
+        <tabs>
+          <tab header=":abc:">
+            <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
+            <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
+            <p>
+              <hr>
+            </p>
+          </tab>
+          <tab header=":tv:">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <p>
+              <hr>
+            </p>
+          </tab>
+        </tabs>
+        <h5 id="identifying-points-in-history">Identifying Points in History</h5>
+        <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated <mark>hash</mark></strong> e.g. <code>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
+        <p><strong>We can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</panel>
+<panel type="danger" header="`W2.6e` Can commit using Git :star:" no-close="">
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\gitAndGithub\init\full._include_.html" header=":mortar_board: %%Git & GitHub &rarr; Init%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="commit-one">Commit <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/gitAndGithub/commit/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p>Create an empty repo.</p>
+        <p>Create a file named <code>fruits.txt</code> in the working directory and add some dummy text to it.</p>
+        <tip-box type="definition">
+          <div>
+            <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
+          </div>
+        </tip-box>
+        <p>Observe how the file is detected by Git.</p>
+        <tabs>
+          <tab header="SourceTree">
+            <div>
+              <p>The file is shown as ‘unstaged’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
+              <p></p>
+            </div>
+            <hr>
+          </tab>
+          <tab header="CLI">
+            <div>
+              <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
+              <pre><code class="hljs sh">git status
+</code></pre>
+              <p>⤵️</p>
+              <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Untracked files:</span>
+<span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#   a.txt</span>
+nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
+</code></pre>
+              <p></p>
+            </div>
+            <hr>
+          </tab>
+        </tabs>
+        <p>Although git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose we want to commit the current state of the file. First, we should stage the file.</p>
+        <tip-box type="definition">
+          <div>
+            <p><strong>Commit</strong>: Saving the current state of the working folder into the Git revision history.</p>
+          </div>
+        </tip-box>
+        <tip-box type="definition">
+          <div>
+            <p><strong>Stage</strong>: Instructing Git to prepare a file for committing.</p>
+          </div>
+        </tip-box>
+        <tabs>
+          <tab header="SourceTree">
+            <div>
+              <p>Select the <code>fruits.txt</code> and click on the <code>Stage Selected</code> button</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_2.png" height="100">
+              <p></p>
+              <p><code>fruits.txt</code> should appear in the <code>Staged files</code> panel now.’</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_3.png" height="180">
+              <p></p>
+            </div>
+            <hr>
+          </tab>
+          <tab header="CLI">
+            <div>
+              <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
+              <pre><code class="hljs sh">git add fruits.txt
+git status
+</code></pre>
+              <p>⤵️</p>
+              <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Initial commit</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Changes to be committed:</span>
+<span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#       new file:   fruits.txt</span>
+<span class="hljs-comment">#</span>
+</code></pre>
+              <p></p>
+            </div>
+            <hr>
+          </tab>
+        </tabs>
+        <p>Next, we can commit the staged version of <code>fruits.txt</code></p>
+        <tabs>
+          <tab header="SourceTree">
+            <div>
+              <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p><img src="/website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
+              <p></p>
+            </div>
+            <hr>
+          </tab>
+          <tab header="CLI">
+            <div>
+              <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
+              <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
+</code></pre>
+              <p>You can use the <code>log</code> command to see the commit history</p>
+              <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
+Author: … &lt; … @... &gt;
+Date:   Wed Jul 5 16:06:28 2017 +0800
+
+  Add fruits.txt
+</code></pre>
+            </div>
+            <hr>
+          </tab>
+        </tabs>
+        <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which the commits
+          go on by default.</p>
+        <p>Do some changes to <code>fruits.txt</code> (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_6.png"
+          height="180">
+        <p></p>
+        <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p><img src="/website/book/gitAndGithub/commit/images/sourcetree_7.png"
+          height="150">
+        <p></p>
+      </div>
+      <div>
+        <div>
+          <panel header=":paperclip: Resources" expanded="">
+            <ul>
+              <li><a href="https://try.github.io/levels/1/challenges/4"><strong>Try Git</strong></a> is an online simulation/tutorial of Git basics. You can try its first few steps to solidify what you learned in this LO.</li>
+            </ul>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p>Have a local repo that has commits you created.</p>
+  </panel>
+</panel>
+<panel type="warning" header="`W2.6f` Can set Git to ignore files :star::star:" no-close="">
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\revisionControl\savingHistory\full._include_.html" header=":mortar_board: Revision Control: Saving History" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="ignore-two">Ignore <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"><a href="/website/book/gitAndGithub/ignore/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code>temp.txt</code></p>
+        <tabs>
+          <tab header="SourceTree">
+            <div>
+              <p>The file should be currently listed under <code>Unstaged files</code>. Right-click it and choose <code>Ignore…</code>. Choose <code>Ignore exact filename(s)</code> and click <code>OK</code>.</p>
+              <p>Observe that a file named <code>.gitignore</code> has been created in the working directory root and has the following line in it.</p>
+              <pre class="hljs"><code>temp.text
+</code></pre>
+            </div>
+            <hr>
+          </tab>
+          <tab header="CLI">
+            <div>
+              <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
+              <pre class="hljs"><code>temp.text
+</code></pre>
+            </div>
+            <hr>
+          </tab>
+        </tabs>
+        <p>The <code>.gitignore</code> file tells Git which files to ignore when tracking revision history. That file itself can be either revision controlled or ignored.</p>
+        <ul>
+          <li>To version control it (the more common choice – which allows you to track how the <code>.gitignore</code> file changed over time), simply commit it as you would commit any other file.</li>
+          <li>To ignore it, follow the same steps we followed above when we set Git to ignore the <code>temp.txt</code> file.</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p>Have a local repo that has git-ignored files.</p>
+  </panel>
+</panel>

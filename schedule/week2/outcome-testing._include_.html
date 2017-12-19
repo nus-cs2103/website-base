@@ -1,0 +1,356 @@
+<panel type="warning" header="`W2.5a` Can explain testing :star::star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <tip-box type="definition">
+          <div>
+            <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
+          </div>
+        </tip-box><img src="/website/book/testing/introduction/what/images/diagram.png" height="220">
+        <p></p>
+        <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
+        <tip-box>
+          <p>📦 Example: A minimal test case for testing a browser:</p>
+          <ul>
+            <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load <code>longfile.html</code> located in the <code>test data</code> folder.</li>
+            <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading <code>longfile.html</code>.</li>
+          </ul>
+        </tip-box>
+        <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
+        <panel header="%%Other details a test case can contain :two:%%" type="seamless">
+          <p>A more elaborate test case can have other details such as those given below.</p>
+          <ul>
+            <li>A unique identifier : <span class="dimmed">e.g. TC0034-a</span></li>
+            <li>A descriptive name: <span class="dimmed">e.g. vertical scrollbar activation for long web pages</span></li>
+            <li>Objectives: <span class="dimmed">e.g. to check whether the vertical scrollbar is correctly activated when a long web page is loaded to the browser</span></li>
+            <li>Classification information: <span class="dimmed">e.g. priority - medium, category - UI features</span></li>
+            <li>Cleanup, if any: <span class="dimmed">e.g. empty the browser cache.</span></li>
+          </ul>
+          <p></p>
+        </panel>
+        <p></p>
+        <p>For each test case we do the following:</p>
+        <ol>
+          <li>Feed the input to the SUT</li>
+          <li>Observe the actual output</li>
+          <li>Compare actual output with the expected output</li>
+        </ol>
+        <p><strong>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</strong></p>
+        <tip-box>
+          <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading ‘longfile.html’. The defect/bug causing that failure could be an uninitialized variable.</p>
+        </tip-box>
+        <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
+          <p>Here is another definition of testing:</p>
+          <blockquote>
+            <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain. <sub>-– source: <a href="https://www.computer.org/web/swebok/v3">Software Engineering Book of Knowledge V3</a></sub></p>
+          </blockquote>
+          <p>Some things to note (indicated by keywords in the above definition):</p>
+          <ul>
+            <li><em>Dynamic</em>: Testing involves executing the software. It is not by examining the code statically.</li>
+            <li><em>Finite</em>: In most non-trivial cases there are potentially infinite test scenarios but resource constraints dictate that we can test only a finite number of scenarios.</li>
+            <li><em>Selected</em>: In most cases it is not possible to test all scenarios. That means we need to select what scenarios to test.</li>
+            <li><em>Expected</em>: Testing requires some knowledge of how the software is expected to behave.</li>
+          </ul>
+          <p></p>
+        </panel>
+        <p></p>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock: Relate testing, test cases, failure, and defect">
+                <question has-input="">
+                  <p>Explain how the concepts of testing, test case, test failure, and defect are related to each other.</p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <div>
+      <panel header=":lock: Relate testing, test cases, failure, and defect">
+        <question has-input="">
+          <p>Explain how the concepts of testing, test case, test failure, and defect are related to each other.</p>
+        </question>
+      </panel>
+    </div>
+  </panel>
+</panel>
+<panel type="warning" header="`W2.5b` Can explain regression testing :star::star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Regression Testing →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
+        <p><strong><em>Regression testing</em> is re-testing the <trigger for="pop:sut">SUT</trigger> to detect regressions.</strong> Noted that to detect regressions, we need to retest all related components, even if they were tested before.</p>
+        <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, <strong>regression testing is more practical when it is automated</strong>.</p>
+        <div>
+          <popover id="pop:sut" placement="top">
+            <div slot="content">
+              <div>
+                <div id="def-stub">
+                  <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of
+                    predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+                </div>
+                <div id="def-sut">
+                  <p><strong>SUT</strong>: Software Under Test</p>
+                </div>
+                <h2 id="t">T</h2>
+                <div id="def-testing">
+                  <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
+                </div>
+                <div id="def-type-signature">
+                  <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                  <panel
+                    type="seamless" header="%%Examples%%">
+                    <table class="markbind-table table">
+                      <thead>
+                        <tr>
+                          <th style="text-align:center">Method</th>
+                          <th style="text-align:center">Type Signature</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                          <td style="text-align:center"><code>(int, int)</code></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                          <td style="text-align:center"><code>(int, int)</code></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                          <td style="text-align:center"><code>(int, double)</code></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                          <td style="text-align:center"><code>(double, int)</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+</panel>
+</div>
+<h2 id="u">U</h2>
+<div id="def-uml">
+  <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch
+    and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em>    modeling notation used in the industry.</p>
+</div>
+<div id="def-use-case">
+  <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
+    <trigger for="pop:actor">actor</trigger>.[ 📖 :
+    <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+    </popover>]</p>
+  <popover id="pop:actor" title=":mag:" placement="top">
+    <div slot="content">
+      <div>
+        <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+      </div>
+    </div>
+  </popover>
+</div>
+<div id="def-user-story">
+  <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
+</div>
+<div id="def-user-story-format">
+  <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
+</div>
+<h2 id="w">W</h2>
+<div id="def-working-directory">
+  <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
+</div>
+<h2 id="y">Y</h2>
+<div id="def-yagni-principle">
+  <p><strong>YAGNI (You Aren't Gonna Need It!) Principle</strong>: Do not add code simply because ‘you might need it in the future’.</p>
+</div>
+<hr>
+</div>
+</div>
+</popover>
+</div>
+</div>
+<div>
+  <div>
+    <panel header=":muscle: Exercises" expandable="">
+      <div>
+        <panel header=":lock::key: Regression Testing defintion T/F?">
+          <question>
+            <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
+            <ul radio-group="awezn" class="radio-list">
+              <li class="radio-list-item"><label><input class="radio-list-input" name="awezn" type="radio"> a. True</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="awezn" type="radio"> b. False</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="awezn" type="radio"> c. Partially true</label></li>
+            </ul>
+            <div slot="answer">
+              <p>c.</p>
+              <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
+            </div>
+          </question>
+        </panel>
+      </div>
+      <div>
+        <panel header=":lock: Explain regression testing">
+          <question has-input="">
+            <p>Explain why and when you would do regression testing in a software project.</p>
+          </question>
+        </panel>
+      </div>
+    </panel>
+  </div>
+</div>
+</div>
+</div>
+<panel header=":dart: Evidence" expanded="">
+  <div>
+    <panel header=":lock: Explain regression testing">
+      <question has-input="">
+        <p>Explain why and when you would do regression testing in a software project.</p>
+      </question>
+    </panel>
+  </div>
+</panel>
+</panel>
+<panel type="warning" header="`W2.5c` Can explain test automation :star::star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <tabs>
+          <tab header=":abc:">
+            <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests repeatedly
+              and increases precision of testing (because manual testing is susceptible to human errors).</p>
+            <p>
+              <hr>
+            </p>
+          </tab>
+          <tab header=":tv:"><iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe>
+            <p>
+              <hr>
+            </p>
+          </tab>
+        </tabs>
+      </div>
+      <div>
+        <div>
+          <panel header=":paperclip: Resources">
+            <p><strong>Side readings:</strong></p>
+            <ul>
+              <li>[Quora post] <a href="href=%22http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
+              <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
+              <li>[Quora post] <a href="http://www.quora.com/What-kind-of-automated-testing-should-a-startup-have-from-the-beginning-through-the-first-six-months-of-live-operation/answer/Zach-Brock">Is automated testing relevant to startups?</a></li>
+              <li><a href="http://avandeursen.com/2014/02/22/gotofail-security/">Learning from Apple’s #gotofail Security Bug</a> - How unit testing (and other good coding practices) could have prevented a major security bug.</li>
+            </ul>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+</panel>
+<panel type="warning" header="`W2.5d` Can semi-automate testing of CLIs :star::star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="automated-testing-of-cli-apps-one">Automated Testing of CLI Apps <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"><a href="/website/book/testing/testAutomation/testingTextUis/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>A simple way to semi-automate testing of a <trigger for="pop:cli">CLI</trigger> app is using input/output re-direction.</strong></p>
+        <ul>
+          <li><strong>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</strong><br> e.g., <code>java AddressBook &lt; input.txt &gt; output.txt</code></li>
+          <li><strong>Next, we compare the actual output file with another file containing the expected output.</strong><br> e.g., <code>FC output.txt expected.txt</code></li>
+        </ul>
+        <p>Let us assume we are testing a CLI app called <code>AddressBook</code> (Example: <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1">se-edu/addressbook-level1</a>). Here are the detailed steps:</p>
+        <ol>
+          <li>
+            <p>Store the test input in the text file <code>input.txt</code>.</p>
+            <panel header="%%:package: Example `input.txt`%%" type="seamless">
+              <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
+add Valid Name 12345 e/valid@email.butPhonePrefixMissing
+</code></pre>
+            </panel>
+          </li>
+          <li>
+            <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
+            <panel header="%%:package: Example `expected.txt`%%" type="seamless">
+              <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
+Invalid command format: add 
+
+Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
+Invalid command format: add 
+</code></pre>
+            </panel>
+          </li>
+          <li>
+            <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
+            <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+</code></pre>
+            <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
+              <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
+                For example, if you run <code>AddressBook</code> in the DOS prompt, the output will be shown in the console, but if you run it like this,</p>
+              <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+</code></pre>
+              <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename)
+                makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
+              <tip-box>
+                <p>📎 Resources:</p>
+                <ul>
+                  <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
+                </ul>
+              </tip-box>
+              <p></p>
+            </panel>
+            <p></p>
+          </li>
+          <li>
+            <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as Winmerge.</p>
+            <pre
+              class="hljs"><code>FC output.txt expected.txt
+</code></pre>
+          </li>
+        </ol>
+        <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
+        <div>
+          <popover id="pop:cli" placement="top">
+            <div slot="content">
+              <div>
+                <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
+              </div>
+            </div>
+          </popover>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p><strong>Acceptable</strong>: Any project where you use the I/O redirection method to test a CLI.</p>
+    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level1#automate-cli-testing-lo-automatedclitesting">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
+    <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
+  </panel>
+</panel>
