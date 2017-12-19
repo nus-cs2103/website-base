@@ -9,7 +9,9 @@
 </panel>
 <include src="overview/index.html" name=":white_check_mark: For all weeks" dynamic />
 <include src="week1/index.html" name=":white_check_mark: Week 1 [Aug 14]" dynamic />
-<include src="week2/index.html" name=":white_check_mark: Week 2 [Aug 21]" dynamic />
+<panel header=":exclamation: Week 2 [Aug 21]" expanded no-close>
+  <include src="week2/index.html"/>
+</panel>
 <include src="week3/index.html" name=":white_check_mark: Week 3 [Aug 28]" dynamic />
 <include src="week4/index.html" name=":white_check_mark: Week 4 [Sep 4]" dynamic />
 <include src="week5/index.html" name=":white_check_mark: Week 5 [Sep 11]" dynamic />

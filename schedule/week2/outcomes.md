@@ -7,17 +7,26 @@
 
 <div id="main">
 
+### SE Intro
 
+<panel type="success" header="`W2.1` **Can explain pros and cons of software engineering** :star::star::star::star:" expandable no-close>
+  <include src="../../book/softwareEngineering/prosAndCons/full.md" />
+  <panel header=":dart: Evidence" expanded>
+  
+To be able answer questions such as these:
+
+<include src="../../book/softwareEngineering/prosAndCons/q-essay-listProsAndCons.md"/>
+
+  </panel>
+</panel>
+
+### Implementation
+
+<dynamic-panel type="danger" src="outcome-ide.md" header="`W2.2` **Can use basic features of an IDE** :star:" no-close />
 
 <!-- ==================================================================================================== -->
 
-<include src="outcome-git.md" />
-<include src="outcome-ide.md" />
-<include src="outcome-testing.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="warning" header="`W2.4` **Can use Java Collections** :star::star:" expandable no-close>
+<panel type="warning" header="`W2.3` **Can use Java Collections** :star::star:" expandable no-close>
   <include src="../../book/javaTools/collections/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -32,7 +41,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W2.5` **Can use Java varargs feature** :star::star::star:" expandable no-close>
+<panel type="info" header="`W2.4` **Can use Java varargs feature** :star::star::star:" expandable no-close>
   <include src="../../book/javaTools/varargs/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -45,19 +54,13 @@
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
+### Testing
 
-<panel type="success" header="`W2.6` **Can explain pros and cons of software engineering** :star::star::star::star:" expandable no-close>
-  <include src="../../book/softwareEngineering/prosAndCons/full.md" />
-  <panel header=":dart: Evidence" expanded>
-  
-To be able answer questions such as these:
+<dynamic-panel type="warning" src="outcome-testing.md" header="`W2.5` **Can automate simple regression testing of text UIs** :star::star:" expandable no-close />
 
-<include src="../../book/softwareEngineering/prosAndCons/q-essay-listProsAndCons.md"/>
+### Project Management
 
-  </panel>
-</panel>
-<!-- ==================================================================================================== -->
+<dynamic-panel type="danger" src="outcome-git.md" header="`W2.6` **Can use Git to save history** :star:" expandable no-close />
 
 </div>
 </div>
