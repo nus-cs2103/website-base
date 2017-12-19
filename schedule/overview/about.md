@@ -8,17 +8,17 @@ This _Schedule Page_ is your main source of information for CS2103/T. You will n
 
 </tip-box>
 
-<tip-box type="info"> 
-
-We did **a complete rewrite of the website** and the text book this semester, including the [underlying platform](https://markbind.github.io/) that generates the web pages. **We _really_ welcome bug reports, suggestions, and contributions**, to be submitted [here](https://github.com/nus-cs2103/website/issues).
-
-</tip-box>
-
-<tip-box type="warning"> 
+<tip-box type="tip"> 
 
 **If you don't like the click-to-see-more style used by this website**, you can use an all-in-one version of the textbook in the [printable version]({{baseUrl}}/book/common/print.html) page and a similar version of admin info in the [Admin Page]({{baseUrl}}/admin/index.html).
 
-**If you don't like the Web version at all**, a partial solution is to use the pdf version (available on IVLE) of the textbook used in the previous semesters. Caution: That file has not been updated since the previous semester and is slightly behind the Web version.
+**If you don't like the Web version at all**, a partial solution is to use the pdf version (available on IVLE) of the textbook used in the previous semesters. Caution: That file has not been updated since AY1617 and is slightly behind the Web version.
+
+</tip-box>
+
+<tip-box> 
+
+:information_source: This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [here](https://github.com/nus-cs2103-AY1718S2/website/issues).
 
 </tip-box>
 
