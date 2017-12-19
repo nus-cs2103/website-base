@@ -1,5 +1,5 @@
 <navbar placement="top" type="default">
-  <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S1(archived)</a>
+  <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">CS2103/T-AY____S_(template)</a>
   <li><a href="{{baseUrl}}/index.html">Schedule</a></li>
   
   <dropdown text="Textbook">
