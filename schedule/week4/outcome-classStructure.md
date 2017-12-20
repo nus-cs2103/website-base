@@ -1,14 +1,16 @@
-<panel type="danger" header="**`W4.3` Can implement basic class structures** :star:" no-close>
-
-<panel type="danger" header="`W4.3a` Can explain/identify class diagrams :star:" expandable>
+<panel type="danger" header="`W4.5a` Can explain/identify class diagrams :star:" no-close>
   <include src="../../book/uml/classDiagrams/introduction/what/full.md" />
 </panel>
 
-<panel type="warning" header="`W4.3b` Can explain/identify object diagrams :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W4.5b` Can explain/identify object diagrams :star::star:" no-close>
   <include src="../../book/uml/objectDiagrams/introduction/full.md" />
 </panel>
 
-<panel type="danger" header="`W4.3c` Can use basic-level class diagrams :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W4.5c` Can use basic-level class diagrams :star:" no-close>
   <include src="../../book/modeling/modelingStructures/classDiagramsBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -17,7 +19,9 @@
   </panel>
 </panel>
 
-<panel type="danger" header="`W4.3d` Can implement associations :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W4.5d` Can implement associations :star:" no-close>
   <include src="../../book/oopImplementation/associations/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -28,6 +32,4 @@
 <include src="submission.md" />
 
   </panel>
-</panel>
-
 </panel>

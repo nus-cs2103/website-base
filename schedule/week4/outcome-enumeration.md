@@ -1,6 +1,4 @@
-<panel type="info" header="**`W4.8` Can use Java enumerations** :star::star::star:" no-close>
-
-<panel type="info" header="`W4.8a` Can explain the meaning of enumerations :star::star::star:" expandable>
+<panel type="info" header="`W4.7a` Can explain the meaning of enumerations :star::star::star:" no-close>
   <include src="../../book/oopDesign/classes/enumerations/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -9,7 +7,9 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W4.8b` Can use Java enumerations :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W4.7b` Can use Java enumerations :star::star::star:" no-close>
   <include src="../../book/javaTools/enums/full.md" />
   <panel header=":dart: Evidence" expanded>
   
@@ -20,6 +20,4 @@
 **Submission**: Show your code during tutorial
 
   </panel>
-</panel>
-
 </panel>

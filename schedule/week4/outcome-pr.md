@@ -1,6 +1,4 @@
-<panel type="danger" header="**`W4.1` Can create PRs on GitHub** :star:" expandable no-close>
-
-<panel type="danger" header="`W4.1a` Can explain branching :star:" expandable>
+<panel type="danger" header="`W4.8a` Can explain branching :star:" no-close>
   <include src="../../book/revisionControl/branching/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -10,7 +8,9 @@
   </panel>
 </panel>
 
-<panel type="danger" header="`W4.1b` Can use Git branching :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W4.8b` Can use Git branching :star:" no-close>
   <include src="../../book/gitAndGithub/branch/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -23,7 +23,9 @@
   </panel>
 </panel>
 
-<panel type="danger" header="`W4.1c` Can create PRs on GitHub :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W4.8c` Can create PRs on GitHub :star:" no-close>
   <include src="../../book/gitAndGithub/createPRs/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -36,7 +38,9 @@
   </panel>
 </panel>
 
-<panel type="warning" header="`W4.1d` Can use Git to resolve merge conflicts :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W4.8d` Can use Git to resolve merge conflicts :star::star:" no-close>
   <include src="../../book/gitAndGithub/mergeConflicts/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -49,7 +53,9 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W4.1e` Can review and merge PRs on GitHub :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W4.8e` Can review and merge PRs on GitHub :star::star::star:" no-close>
   <include src="../../book/gitAndGithub/managePRs/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -60,6 +66,4 @@
 **Submission**: Show your merged PRs during the tutorial.
 
   </panel>
-</panel>
-
 </panel>
