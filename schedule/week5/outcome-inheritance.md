@@ -1,13 +1,13 @@
-<panel type="danger" header="**`W5.3` Can implement inheritance** :star:" no-close>
-
-<panel type="danger" header="`W5.3a` Can explain the meaning of inheritance :star:" expandable>
+<panel type="danger" header="`W5.3a` Can explain the meaning of inheritance :star:" no-close>
   <include src="../../book/oopDesign/inheritance/what/full.md" />
 
 <!-- TODO: add evidence -->
 
 </panel>
 
-<panel type="danger" header="`W5.3b` Can implement inheritance :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W5.3b` Can implement inheritance :star:" no-close>
   <include src="../../book/oopImplementation/inheritance/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -18,6 +18,4 @@
 <include src="submission.md" />
 
   </panel>
-</panel>
-
 </panel>

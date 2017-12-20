@@ -1,10 +1,10 @@
-<panel type="danger" header="**`W5.2` Can use simple JUnit tests** :star:" no-close>
-
-<panel type="warning" header="`W5.2a` Can explain developer testing :star::star:" >
+<panel type="warning" header="`W5.8a` Can explain developer testing :star::star:" no-close>
   <include src="../../book/testing/testingTypes/developerTesting/what/full.md" />
 </panel>
 
-<panel type="warning" header="`W5.2b` Can explain the need for early developer testing :star::star:" >
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W5.8b` Can explain the need for early developer testing :star::star:" no-close>
   <include src="../../book/testing/testingTypes/developerTesting/why/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -13,15 +13,19 @@
   </panel>
 </panel>
 
-<panel type="danger" header="`W5.2c` Can explain test drivers :star:" >
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W5.8c` Can explain test drivers :star:" no-close>
   <include src="../../book/testing/testAutomation/usingTestDrivers/full.md" />
 </panel>
 
-<panel type="danger" header="`W5.2d` Can explain test automation tools :star:" >
+<panel type="danger" header="`W5.8d` Can explain test automation tools :star:" no-close>
   <include src="../../book/testing/testAutomation/tools/full.md" />
 </panel>
 
-<panel type="danger" header="`W5.2e` Can use simple JUnit tests :star:" >
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W5.8e` Can use simple JUnit tests :star:" no-close>
   <include src="../../book/junit/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
   
@@ -32,6 +36,4 @@
 <include src="submission.md" />
 
   </panel>
-</panel>
-
 </panel>

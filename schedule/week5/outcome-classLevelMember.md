@@ -1,10 +1,10 @@
-<panel type="warning" header="**`W5.5` Can implement class-level members** :star::star:" no-close>
-
-<panel type="warning" header="`W5.5a` Can explain class-level members :star::star:" expandable>
+<panel type="warning" header="`W5.4a` Can explain class-level members :star::star:" no-close>
   <include src="../../book/oopDesign/classes/classLevelMembers/full.md" />
 </panel>
 
-<panel type="warning" header="`W5.5b` Can implement class-level members :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W5.4b` Can implement class-level members :star::star:" no-close>
   <include src="../../book/oopImplementation/classLevelMembers/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -15,6 +15,4 @@
 <include src="submission.md" />
 
   </panel>
-</panel>
-
 </panel>
