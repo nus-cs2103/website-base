@@ -1,0 +1,242 @@
+<panel type="warning" header="`W5.8a` Can explain developer testing :star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</panel>
+<!-- ==================================================================================================== -->
+<panel type="warning" header="`W5.8b` Can explain the need for early developer testing :star::star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="why-two">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
+        <ul>
+          <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be due
+            to multiple inter-related bugs.</li>
+          <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification (i.e. a faulty design or faulty requirements).</li>
+          <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
+          <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
+        </ul>
+        <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
+        <blockquote>
+          <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
+        </blockquote><img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+        <p></p>
+        <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: implications of developers testing their own code">
+                <question has-input="true">
+                  <p>Discuss pros and cons of developers testing their own code.</p>
+                  <div slot="answer">
+                    <p>Pros:</p>
+                    <ul>
+                      <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
+                      <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
+                      <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
+                      <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
+                    </ul>
+                    <p>Cons:</p>
+                    <ul>
+                      <li>A developer may unconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
+                      <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
+                      <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
+                      <li>A developer may lack the testing expertise.</li>
+                    </ul>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock::key: Cost of bug fixing over time">
+                <question>
+                  <p>The cost of fixing a bug goes down as we reach the product release.</p>
+                  <ul radio-group="9o0u4" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9o0u4" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9o0u4" type="radio"> False</label></li>
+                  </ul>
+                  <div slot="answer">
+                    <p>False. The cost goes up over time.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Why early testing?">
+                <question has-input="true">
+                  <p>Explain why early testing by developers is important.</p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <div>
+      <panel header=":lock: Why early testing?">
+        <question has-input="true">
+          <p>Explain why early testing by developers is important.</p>
+        </question>
+      </panel>
+    </div>
+  </panel>
+</panel>
+<!-- ==================================================================================================== -->
+<panel type="danger" header="`W5.8c` Can explain test drivers :star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="test-automation-using-test-drivers-two">Test Automation Using Test Drivers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+        <tip-box>
+          <p>📦 <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        <span class="hljs-comment">// automatically verify the response</span>
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);
+        }
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);
+        }
+
+        <span class="hljs-comment">//more tests...</span>
+
+        System.out.println(<span class="hljs-string">"All tests passed"</span>);
+    }
+}
+</code></pre>
+        </tip-box>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</panel>
+<panel type="danger" header="`W5.8d` Can explain test automation tools :star:" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="test-automation-tools-two">Test Automation Tools <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
+        <tip-box>
+          <p>📦 This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        assertEquals(p.totalSalary(), <span class="hljs-number">6400</span>);
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        assertEquals(p.totalSalary(), <span class="hljs-number">2300</span>);
+
+        <span class="hljs-comment">//more tests...</span>
+    }
+}
+</code></pre>
+        </tip-box>
+        <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p><img src="/website/book/testing/testAutomation/tools/images/junit.png" height="190">
+        <p></p>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</panel>
+<!-- ==================================================================================================== -->
+<panel type="danger" header="`W5.8e` Can use simple JUnit tests :star:" no-close="">
+  <div>
+    <div></div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Tools → JUnit →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="junit-basic-two">JUnit: Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <div v-closeable="" alt="Junit tutorial video">
+          <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
+          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <panel header=":paperclip: Resources" expanded="">
+            <ul>
+              <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
+              <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
+              <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                ]</li>
+            </ul>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p><strong>Acceptable</strong>: Evidence of having written JUnit tests in some project.</p>
+    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit">Addressbook-Level2: LO-JUnit</a>]</p>
+    <div>
+      <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+      <p>
+        <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+  </panel>
+</panel>
