@@ -1,31 +1,39 @@
-<panel type="warning" header="**`W7.6` Can use intermediate-level sequence diagrams** :star::star:" no-close>
-
-<panel type="warning" header="`W7.6a` Can interpret sequence diagrams with object deletion :star::star:">
+<panel type="warning" header="`W7.4a` Can interpret sequence diagrams with object deletion :star::star:" no-close>
   <include src="../../book/uml/sequenceDiagrams/objectDeletion/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header="`W7.6b` Can interpret sequence diagrams with self invocation :star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W7.4b` Can interpret sequence diagrams with self invocation :star::star:" no-close>
   <include src="../../book/uml/sequenceDiagrams/selfInvocation/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header="`W7.6c` Can interpret sequence diagrams with alternative paths :star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W7.4c` Can interpret sequence diagrams with alternative paths :star::star:" no-close>
   <include src="../../book/uml/sequenceDiagrams/alternativePaths/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header="`W7.6d` Can interpret sequence diagrams with optional paths :star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W7.4d` Can interpret sequence diagrams with optional paths :star::star:" no-close>
   <include src="../../book/uml/sequenceDiagrams/optionalPaths/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header="`W7.6e` Can interpret sequence diagrams with reference frames :star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W7.4e` Can interpret sequence diagrams with reference frames :star::star:" no-close>
   <include src="../../book/uml/sequenceDiagrams/referenceFrames/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="info" header="`W7.6f` Can draw intermediate level sequence diagrams :star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W7.4f` Can draw intermediate level sequence diagrams :star::star::star:" no-close>
   <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
   
@@ -37,9 +45,9 @@
   </panel>
 </panel>
 
-<panel type="success" header="`W7.6g` Can interpret sequence diagrams with parallel paths :star::star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="success" header="`W7.4g` Can interpret sequence diagrams with parallel paths :star::star::star::star:" no-close>
   <include src="../../book/uml/sequenceDiagrams/parallelPaths/full.md" />
 <!-- TODO: add evidence -->
-</panel>
-
 </panel>

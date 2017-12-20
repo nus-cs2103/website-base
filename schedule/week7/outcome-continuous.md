@@ -1,11 +1,11 @@
-<panel type="info" header="**`W7.5` Can explain continuous integration and continuous deployment** :star::star::star:" no-close>
-
-<panel type="info" header="`W7.5a` Can explain integration :star::star::star:">
+<panel type="info" header="`W7.8a` Can explain integration :star::star::star:" no-close>
   <include src="../../book/integration/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="info" header="`W7.5b` Can explain build automation tools :star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W7.8b` Can explain build automation tools :star::star::star:" no-close>
   <include src="../../book/integration/buildAutomation/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -15,7 +15,9 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W7.5c` Can explain continuous integration and continuous deployment :star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W7.8c` Can explain continuous integration and continuous deployment :star::star::star:" no-close>
   <include src="../../book/integration/buildAutomation/continuousIntegrationDeployment/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -23,6 +25,4 @@
 2. One member: Set up Travis for your team repo by following [[AddressBook - Level 4: Using Travis](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/UsingTravis.html)]
 
   </panel>
-</panel>
-
 </panel>
