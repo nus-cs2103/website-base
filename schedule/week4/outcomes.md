@@ -25,7 +25,7 @@
 
 ### Implementation:
 
-<dynamic-panel type="danger" src="outcome-class.md" header="**`W4.4` Can implement classes** :star:" no-close no-close />
+<dynamic-panel type="danger" src="outcome-class.md" header="**`W4.4` Can implement classes** :star:" no-close />
 
 <dynamic-panel type="danger" src="outcome-classStructure.md" header="**`W4.5` Can implement basic class structures** :star:" no-close />
 
