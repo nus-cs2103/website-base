@@ -1,5 +1,3 @@
-<panel type="danger" header="**`W9.4` Can apply best practices when writing developer documents** :star:" no-close>
-
 %%**Type of Developer Docs:**%%
 
 <panel type="danger" header="`W9.4a` Can explain the two types of developer docs :star:" no-close>
@@ -11,7 +9,7 @@ Give examples of the two types of developer documents from the project.
   </panel>
 </panel>
 
-<br>
+<br><!-- ##################################################################################################### -->
 
 %%**Guideline: Aim for Comprehensibility**%%
 
@@ -19,6 +17,8 @@ Give examples of the two types of developer documents from the project.
   <include src="../../book/documentation/guidelines/aimForComprehensibility/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
+
+<!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W9.4c` Can write reasonably comprehensible developer documents :star:" no-close>
   <include src="../../book/documentation/guidelines/aimForComprehensibility/how/full.md" />
@@ -29,7 +29,7 @@ Follow the guideline when documenting the project.
   </panel>
 </panel>
 
-<br>
+<br><!-- ##################################################################################################### -->
 
 %%**Guideline: Describe Top-Down**%%
 
@@ -37,6 +37,8 @@ Follow the guideline when documenting the project.
   <include src="../../book/documentation/guidelines/goTopDown/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
+
+<!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W9.4e` Can explain the advantages of top-down documentation :star::star:" no-close>
   <include src="../../book/documentation/guidelines/goTopDown/why/full.md" />
@@ -47,6 +49,8 @@ Explain advantages of top-down documents by using the project's Developer Guide 
   </panel>
 </panel>
 
+<!-- ==================================================================================================== -->
+
 <panel type="warning" header="`W9.4f` Can write documentation in a top-down manner :star::star:" no-close>
   <include src="../../book/documentation/guidelines/goTopDown/how/full.md" />
   <panel header=":dart: Evidence" expanded>
@@ -56,7 +60,7 @@ Follow the guideline when documenting the project.
   </panel>
 </panel>
 
-<br>
+<br><!-- ##################################################################################################### -->
 
 %%**Guideline: Minimal but Sufficient**%%
 
@@ -64,6 +68,8 @@ Follow the guideline when documenting the project.
   <include src="../../book/documentation/guidelines/documentMinimally/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
+
+<!-- ==================================================================================================== -->
 
 <panel type="info" header="`W9.4h` Can write minimal yet sufficient documentation :star::star::star:" no-close>
   <include src="../../book/documentation/guidelines/documentMinimally/how/full.md" />
@@ -74,7 +80,7 @@ Follow the guideline when documenting the project.
   </panel>
 </panel>
 
-<br>
+<br><!-- ##################################################################################################### -->
 
 %%**Drawing Architecture Diagrams**%%
 
@@ -85,6 +91,4 @@ Follow the guideline when documenting the project.
 Follow the guidelines when documenting the project.
 
   </panel>
-</panel>
-
 </panel>

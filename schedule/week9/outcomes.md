@@ -7,61 +7,33 @@
 
 <div id="main">
 
-
-#### Design:
-
-<!-- ==================================================================================================== -->
+### Design:
 
 <dynamic-panel src="outcome-classDiagram.md" type="warning" header="**`W9.1` Can use models to conceptualize an OO solution** :star::star:" />
 
-<!-- ==================================================================================================== -->
-
 <dynamic-panel src="outcome-designIntermediate.md" type="info" header="**`W9.2` Can use intermediate-level design principles** :star::star::star:" />
 
-<!-- ==================================================================================================== -->
-
-<br>
-
-#### Implementation:
+### Implementation:
 
 <dynamic-panel src="outcome-defensiveProgramming.md" type="info" header="**`W9.3` Can use defensive programming** :star::star::star:" />
 
-<!-- ==================================================================================================== -->
+<dynamic-panel type="danger" src="outcome-documentation.md" header="**`W9.4` Can apply best practices when writing developer documents** :star:" no-close />
 
-<include src="outcome-documentation.md" />
-
-<!-- ==================================================================================================== -->
 <!-- TODO: add this back
  
 <include src="outcome-documentationTool.md" />
 
 -->
 
-<!-- ==================================================================================================== -->
+### Quality Assurance:
 
-<br>
+<dynamic-panel type="warning" src="outcome-testingIntermediate.md" header="**`W9.5` Can use intermediate-level testing techniques** :star::star:" no-close />
 
-#### Quality Assurance:
+<dynamic-panel type="info" src="outcome-qa.md" header="**`W9.6` Can explain some QA techniques complementary to testing** :star::star::star:" no-close />
 
-<include src="outcome-testingIntermediate.md" />
+### Documentation:
 
-<!-- ==================================================================================================== -->
-
-<include src="outcome-qa.md" />
-
-<!-- ==================================================================================================== -->
-
-<br>
-
-#### Project Management:
-
-<include src="outcome-schedule.md" />
-
-<!-- ==================================================================================================== -->
-
-<panel type="danger" header="**`W9.8` Can describe the implementation from a developer's perspective** :star:" no-close>
-
-
+<panel type="danger" header="**`W9.7` Can describe the implementation from a developer's perspective** :star:" no-close>
   <panel header=":dart: Evidence" expanded>
   
 Covered by 'Documentation' component of v1.2:
@@ -70,6 +42,10 @@ Covered by 'Documentation' component of v1.2:
 
   </panel>
 </panel>
+
+### Project Management:
+
+<dynamic-panel type="warning" src="outcome-schedule.md" header="**`W9.8` Can use basic scheduling and tracking tools** :star::star:"  no-close />
 
 <!-- ==================================================================================================== -->
 
@@ -82,9 +58,6 @@ Covered by the 'Project Management' component of v1.2:
 
   </panel>
 </panel>
-
-<!-- ==================================================================================================== -->
-
 
 </div>
 </div>
