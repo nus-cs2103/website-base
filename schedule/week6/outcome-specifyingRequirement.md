@@ -1,14 +1,20 @@
+%%**Prose**%%
+
 <panel type="info" header="`W6.3a` Can explain prose :star::star::star:" no-close>
   <include src="../../book/specifyingRequirements/prose/what/full.md" />
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Feature Lists**%%
 
 <panel type="info" header="`W6.3b` Can explain feature lists :star::star::star:" no-close>
   <include src="../../book/specifyingRequirements/featureList/what/full.md" />
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**User Stories**%%
 
 <panel type="danger" header="`W6.3c` Can write simple user stories :star::star:" no-close>
   <include src="../../book/specifyingRequirements/userStories/introduction/full.md" />
@@ -41,7 +47,9 @@ Covered by the final project.
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Use Cases**%%
 
 <panel type="warning" header="`W6.3f` Can explain use cases :star::star:" no-close>
   <include src="../../book/specifyingRequirements/useCases/introduction/full.md" />
@@ -73,14 +81,18 @@ Covered by the final project.
 <!-- TODO: add evidence -->
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Glossary**%%
 
 <panel type="info" header="`W6.3j` Can explain glossary :star::star::star:" no-close>
   <include src="../../book/specifyingRequirements/glossary/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Supplementary Requirements**%%
 
 <panel type="info" header="`W6.3k` Can explain supplementary requirements :star::star::star:" no-close>
   <include src="../../book/specifyingRequirements/supplementaryRequirements/what/full.md" />

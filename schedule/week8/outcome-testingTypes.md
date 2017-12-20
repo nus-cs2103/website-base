@@ -34,9 +34,9 @@ Identify some tests in AddressBook-Level4,
 <panel type="success" header="`W8.7d` Can use dependency injection :star::star::star::star:" no-close>
 <include src="../../book/testing/dependencyInjection/how/full.md" />
 <!-- TODO: add evidence -->
-</panel><p/>
+</panel>
 
-<!-- ##################################################################################################### -->
+<br><!-- ##################################################################################################### -->
 
 %%**Integration Testing:**%%
 
@@ -58,9 +58,9 @@ Explain the difference between unit tests and integration tests.
 Use tests from AddressBook-Level4 to illustrate the difference between unit testings and integration testing. Hint: good examples [`seedu.address.storage.StorageManagerTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/storage/StorageManagerTest.java),[`seedu.address.logic.commands.AddCommandTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandTest.java),[`seedu.address.logic.commands.AddCommandIntegrationTest`](https://github.com/nus-cs2103-AY1718S1/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandIntegrationTest.java)
 
   </panel>
-</panel><p/>
+</panel>
 
-<!-- ##################################################################################################### -->
+<br><!-- ##################################################################################################### -->
 
 %%**System Testing:**%%
 
@@ -82,9 +82,9 @@ Explain what system tests are. Give examples from your own project.
 Why is automated testing of GUIs is hard? What can we do about it?
 
   </panel>
-</panel><p/>
+</panel>
 
-<!-- ##################################################################################################### -->
+<br><!-- ##################################################################################################### -->
 
 %%**Acceptance Testing:**%%
 
@@ -97,7 +97,7 @@ Explain what acceptance tests are. Explain how acceptance testing of your projec
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ==================================================================================================== -->
 
 <panel type="info" header="`W8.7h` Can explain the differences between system testing and acceptance testing :star::star::star:" no-close>
   <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" />
@@ -109,7 +109,7 @@ Explain the difference between system tests and acceptance tests. Explain why bo
 </panel><p/>
 
 
-<!-- ##################################################################################################### -->
+<br><!-- ##################################################################################################### -->
 
 %%**Alpha/Beta Testing:**%%
 

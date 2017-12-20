@@ -1,3 +1,5 @@
+%%**Method Overriding**%%
+
 <panel type="danger" header="`W6.5a` Can explain method overriding :star:" no-close>
   <include src="../../book/oopDesign/inheritance/overriding/full.md" />
 <!-- TODO: add evidence -->
@@ -14,7 +16,9 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Polymorphism**%%
 
 <panel type="danger" header="`W6.5c` Can explain OOP polymorphism :star:" no-close>
   <include src="../../book/oopDesign/polymorphism/introduction/full.md" />
@@ -35,7 +39,9 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Abstract Classes**%%
 
 <panel type="warning" header="`W6.5e` Can explain abstract classes :star::star:" no-close>
   <include src="../../book/oopDesign/inheritance/abstractClasses/full.md" />
@@ -56,7 +62,9 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
+<br><!-- ##################################################################################################### -->
+
+%%**Interfaces**%%
 
 <panel type="info" header="`W6.5g` Can explain interfaces :star::star::star:" no-close>
   <include src="../../book/oopDesign/inheritance/interfaces/full.md" />

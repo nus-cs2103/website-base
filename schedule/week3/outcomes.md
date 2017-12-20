@@ -9,7 +9,11 @@
 
 ### Implementation:
 
+#### Refactoring:
+
 <dynamic-panel type="warning" src="outcome-refactor.md" header="**`W3.1` Can refactor code at a basic level :star::star:**" no-close />
+
+#### Code Quality:
 
 <dynamic-panel type="warning" src="outcome-styleGuide.md" header="**`W3.2` Can follow a simple style guide :star::star:**" no-close />
 
@@ -20,6 +24,8 @@
 <dynamic-panel type="warning" src="outcome-codingPractice.md" header="**`W3.5` Can avoid unsafe coding practices :star::star:**" no-close />
 
 <dynamic-panel type="info" src="outcome-comment.md" header="**`W3.6` Can write good code comments :star::star::star:**" no-close />
+
+#### IDEs:
 
 <dynamic-panel type="info" src="outcome-ide.md" header="**`W3.7` Can use intermediate level features of an IDE :star::star::star:**" no-close />
 

@@ -54,7 +54,7 @@ To be able answer questions such as these:
   </panel>
 </panel>
 
-### Testing:
+### Quality Assurance:
 
 <dynamic-panel type="warning" src="outcome-testing.md" header="`W2.5` **Can automate simple regression testing of text UIs** :star::star:" expandable no-close />
 

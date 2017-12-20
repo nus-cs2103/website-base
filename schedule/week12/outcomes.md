@@ -9,15 +9,11 @@
 
 <br>
 
-#### Design:
+### Design:
 
 <dynamic-panel src="outcome-umlModel.md" type="info" header="**`W12.1` Can explain some UML models** :star::star::star:" no-close/>
 
-<!-- ==================================================================================================== -->
-
-<br>
-
-#### Implementation:
+### Implementation:
 
 <dynamic-panel src="outcome-cloudComputing.md" type="success" header="**`W12.2` Can explain cloud computing basics** :star::star::star::star:" no-close/>
 

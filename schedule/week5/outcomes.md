@@ -42,7 +42,7 @@
 <include src="outcome-library.md" />
 -->
 
-### Testing:
+### Quality Assurance:
 
 <dynamic-panel type="danger" src="outcome-junit.md" header="**`W5.8` Can use simple JUnit tests** :star:" no-close />
 

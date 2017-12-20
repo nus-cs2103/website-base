@@ -7,29 +7,17 @@
 
 <div id="main">
 
-<!-- ==================================================================================================== -->
-
-#### Requirements:
+### Requirements:
 
 <dynamic-panel src="outcome-objectOrientedDomainModel.md" type="info" header="**`W11.1` Can explain object oriented domain models** :star::star::star:" no-close/>
 
-<!-- ==================================================================================================== -->
-
-<br>
-
-#### Design:
+### Design:
 
 <dynamic-panel src="outcome-explainDesignPattern.md" type="warning" header="**`W11.2` Can apply some more design patterns** :star::star:" no-close/>
 
-<!-- ==================================================================================================== -->
-
 <dynamic-panel src="outcome-applyDesignPattern.md" type="info" header="**`W11.3` Can optimize the use of design patterns** :star::star::star:" no-close/>
 
-<!-- ==================================================================================================== -->
-
-<br>
-
-#### Testing:
+### Quality Assurance:
 
 <dynamic-panel src="outcome-heuristic.md" type="warning" header="**`W11.4` Can apply heuristics to combine multiple test inputs** :star::star:" no-close/>
 
@@ -45,20 +33,11 @@ Covered by the 'Acceptance Testing' component of v1.4:
   </panel>
 </panel>
 
-<!-- ==================================================================================================== -->
-
-<br>
-
-#### Project Management:
+### Project Management:
 
 <dynamic-panel src="outcome-processModelTypes.md" type="warning" header="**`W11.6` Can explain types of SDLC process models** :star::star:" no-close/>
 
-<!-- ==================================================================================================== -->
-
 <dynamic-panel src="outcome-popularProcessModels.md" type="info" header="**`W11.7` Can explain some popular SDLC process models** :star::star::star:" no-close/>
-
-<!-- ==================================================================================================== -->
-
 
 </div>
 </div>
