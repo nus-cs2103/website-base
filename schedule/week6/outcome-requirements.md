@@ -1,10 +1,10 @@
-<panel type="warning" header="**`W6.4` Can explain requirements** :star::star:" no-close>
-
-<panel type="warning" header="`W6.4a` Can explain requirements :star::star:" expandable>
+<panel type="warning" header="`W6.1a` Can explain requirements :star::star:" no-close>
   <include src="../../book/requirements/introduction/full.md"  />
 </panel>
 
-<panel type="warning" header="`W6.4b` Can explain non-functional requirements :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W6.1b` Can explain non-functional requirements :star::star:" no-close>
   <include src="../../book/requirements/nonFunctionalRequirements/full.md"  />
   <panel header=":dart: Evidence" expanded>
   
@@ -15,12 +15,12 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W6.4c` Can explain prioritizing requirements :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W6.1c` Can explain prioritizing requirements :star::star::star:" no-close>
   <include src="../../book/requirements/prioritizing/full.md"  />
 </panel>
 
-<panel type="info" header="`W6.4d` Can explain quality of requirements :star::star::star:" expandable>
+<panel type="info" header="`W6.1d` Can explain quality of requirements :star::star::star:" no-close>
   <include src="../../book/requirements/quality/full.md"  />
-</panel>
-
 </panel>

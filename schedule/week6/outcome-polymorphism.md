@@ -1,11 +1,11 @@
-<panel type="danger" header="**`W6.1` Can implement polymorphism** :star:" no-close>
-
-<panel type="danger" header="`W6.1a` Can explain method overriding :star:" expandable>
+<panel type="danger" header="`W6.5a` Can explain method overriding :star:" no-close>
   <include src="../../book/oopDesign/inheritance/overriding/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="danger" header="`W6.1b` Can implement overriding :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W6.5b` Can implement overriding :star:" no-close>
   <include src="../../book/oopImplementation/overriding/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -14,13 +14,16 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
+<!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W6.1c` Can explain OOP polymorphism :star:" expandable>
+<panel type="danger" header="`W6.5c` Can explain OOP polymorphism :star:" no-close>
   <include src="../../book/oopDesign/polymorphism/introduction/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="danger" header="`W6.1d` Can implement polymorphism :star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="danger" header="`W6.5d` Can implement polymorphism :star:" no-close>
   <include src="../../book/oopImplementation/polymorphism/full.md" />
   <panel header=":dart: Evidence" expanded>
   
@@ -32,12 +35,16 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<panel type="warning" header="`W6.1e` Can explain abstract classes :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W6.5e` Can explain abstract classes :star::star:" no-close>
   <include src="../../book/oopDesign/inheritance/abstractClasses/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="warning" header="`W6.1f` Can implement abstract classes :star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="warning" header="`W6.5f` Can implement abstract classes :star::star:" no-close>
   <include src="../../book/oopImplementation/abstractClasses/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -49,12 +56,16 @@ Some evidence of using method overriding in some code you wrote.
   </panel>
 </panel>
 
-<panel type="info" header="`W6.1g` Can explain interfaces :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W6.5g` Can explain interfaces :star::star::star:" no-close>
   <include src="../../book/oopDesign/inheritance/interfaces/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
-<panel type="info" header="`W6.1h` Can implement interfaces :star::star::star:" expandable>
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W6.5h` Can implement interfaces :star::star::star:" no-close>
   <include src="../../book/oopImplementation/interfaces/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -65,8 +76,4 @@ Some evidence of using method overriding in some code you wrote.
 <include src="submission.md" />
 
   </panel>
-</panel>
-
-
-
 </panel>
