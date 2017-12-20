@@ -1,15 +1,46 @@
-<panel type="danger" header="**`W8.5` Can explain different types of testing** :star:" no-close>
-
 %%**Unit Testing:**%%
 
-<dynamic-panel src="lo-explainUnitTesting.md" type="danger" header="`W8.5a` Can explain unit testing :star:"/>
-<dynamic-panel src="lo-useStubs.md" type="info" header="`W8.5b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" />
-<dynamic-panel src="lo-explainDependencyInjection.md" type="success" header="`W8.5c` Can explain dependency injection :star::star::star::star:" />
-<dynamic-panel src="lo-useDependencyInjection.md" type="success" header="`W8.5d` Can use dependency injection :star::star::star::star:" /><p/>
+<panel type="danger" header="`W8.7a` Can explain unit testing :star:" no-close>
+<include src="../../book/testing/testingTypes/unitTesting/what/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Identify some unit tests in AddressBook-Level4 (or your own project).
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W8.7b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" no-close>
+<include src="../../book/testing/testingTypes/unitTesting/stubs/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Identify some tests in AddressBook-Level4,
+1. that can be made pure unit tests by introducing stubs
+2. that are using stubs to isolate the SUT from its dependencies 
+
+  </panel>
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="success" header="`W8.7c` Can explain dependency injection :star::star::star::star:" no-close>
+<include src="../../book/testing/dependencyInjection/what/full.md" />
+<!-- TODO: add evidence -->
+</panel>
+
+<!-- ==================================================================================================== -->
+
+<panel type="success" header="`W8.7d` Can use dependency injection :star::star::star::star:" no-close>
+<include src="../../book/testing/dependencyInjection/how/full.md" />
+<!-- TODO: add evidence -->
+</panel><p/>
+
+<!-- ##################################################################################################### -->
 
 %%**Integration Testing:**%%
 
-<panel type="warning" header="`W8.5c` Can explain integration testing :star::star:">
+<panel type="warning" header="`W8.7c` Can explain integration testing :star::star:" no-close>
   <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -18,7 +49,9 @@ Explain the difference between unit tests and integration tests.
   </panel>
 </panel>
 
-<panel type="info" header="`W8.5d` Can do integration testing :star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W8.7d` Can do integration testing :star::star::star:" no-close>
   <include src="../../book/testing/testingTypes/integrationTesting/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -27,9 +60,11 @@ Use tests from AddressBook-Level4 to illustrate the difference between unit test
   </panel>
 </panel><p/>
 
+<!-- ##################################################################################################### -->
+
 %%**System Testing:**%%
 
-<panel type="danger" header="`W8.5e` Can explain system testing :star:">
+<panel type="danger" header="`W8.7e` Can explain system testing :star:" no-close>
   <include src="../../book/testing/testingTypes/systemTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -38,7 +73,9 @@ Explain what system tests are. Give examples from your own project.
   </panel>
 </panel>
 
-<panel type="info" header="`W8.5f` Can explain automated GUI testing :star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W8.7f` Can explain automated GUI testing :star::star::star:" no-close>
   <include src="../../book/testing/testAutomation/testingGuis/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -47,9 +84,11 @@ Why is automated testing of GUIs is hard? What can we do about it?
   </panel>
 </panel><p/>
 
+<!-- ##################################################################################################### -->
+
 %%**Acceptance Testing:**%%
 
-<panel type="warning" header="`W8.5g` Can explain acceptance testing :star::star:">
+<panel type="warning" header="`W8.7g` Can explain acceptance testing :star::star:" no-close>
   <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -58,7 +97,9 @@ Explain what acceptance tests are. Explain how acceptance testing of your projec
   </panel>
 </panel>
 
-<panel type="info" header="`W8.5h` Can explain the differences between system testing and acceptance testing :star::star::star:">
+<!-- ==================================================================================================== -->
+
+<panel type="info" header="`W8.7h` Can explain the differences between system testing and acceptance testing :star::star::star:" no-close>
   <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -68,16 +109,15 @@ Explain the difference between system tests and acceptance tests. Explain why bo
 </panel><p/>
 
 
+<!-- ##################################################################################################### -->
+
 %%**Alpha/Beta Testing:**%%
 
-<panel type="info" header="`W8.5i` Can explain alpha and beta testing :star::star::star:">
+<panel type="info" header="`W8.7i` Can explain alpha and beta testing :star::star::star:" no-close>
   <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain alpha and beta testing. How can you do alpha and beta testing in your project?
 
   </panel>
-</panel>
-
-
 </panel>

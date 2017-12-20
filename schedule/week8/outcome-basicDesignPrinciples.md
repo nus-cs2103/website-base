@@ -1,8 +1,6 @@
-<panel type="danger" header="**`W8.3` Can use basic software design principles** :star:" no-close>
-
 %%**Abstraction:**%%
 
-<panel type="warning" header="`W8.3a` Can explain abstraction :star::star:" no-close>
+<panel type="warning" header="`W8.4a` Can explain abstraction :star::star:" no-close>
   <include src="../../book/designPrinciples/abstraction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
@@ -11,7 +9,7 @@
 
 %%**Coupling:**%%
 
-<panel type="danger" header="`W8.3b` Can explain coupling :star:">
+<panel type="danger" header="`W8.4b` Can explain coupling :star:" no-close>
   <include src="../../book/designPrinciples/coupling/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -20,9 +18,16 @@ Explain coupling with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<dynamic-panel type="warning" src="lo-reduceCoupling.md" header="`W8.3c` Can reduce coupling :star::star:"/>
+<panel type="warning" header="`W8.4c` Can reduce coupling :star::star:" no-close>
+<include src="../../book/designPrinciples/coupling/how/full.md" />
+  <panel header=":dart: Evidence" expanded>
 
-<panel type="success" header="`W8.3d` Can identify types of coupling :star::star::star::star:">
+Explain with examples from AddressBook-Level4 (or your own project) how coupling can be increased/decreased.
+
+  </panel>
+</panel>
+
+<panel type="success" header="`W8.4d` Can identify types of coupling :star::star::star::star:" no-close>
   <include src="../../book/designPrinciples/coupling/types/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -35,7 +40,7 @@ Explain types of coupling with examples from AddressBook-Level4 (or your own pro
 
 %%**Cohesion:**%%
 
-<panel type="danger" header="`W8.3e` Can explain cohesion :star:">
+<panel type="danger" header="`W8.4e` Can explain cohesion :star:" no-close>
   <include src="../../book/designPrinciples/cohesion/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -44,13 +49,20 @@ Explain cohesion with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<dynamic-panel src="lo-increaseCohesion.md" type="warning" header="`W8.3f` Can increase cohesion :star::star:"/>
+<panel type="warning" header="`W8.4f` Can increase cohesion :star::star:" no-close>
+<include src="../../book/designPrinciples/cohesion/how/full.md" />
+  <panel header=":dart: Evidence" expanded>
+
+Explain with examples from AddressBook-Level4 (or your own project) how cohesion can be increased/decreased.
+
+  </panel>
+</panel>
 
 <p>
 
 %%**SoC and OCP:**%%
 
-<panel type="warning" header="`W8.3g` Can explain separation of concerns principle (SoC) :star::star:">
+<panel type="warning" header="`W8.4g` Can explain separation of concerns principle (SoC) :star::star:" no-close>
   <include src="../../book/principles/separationOfConcernsPrinciple/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -59,13 +71,11 @@ Explain SoC with examples from AddressBook-Level4 (or your own project).
   </panel>
 </panel>
 
-<panel type="info" header="`W8.3h` Can explain open-closed principle (OCP) :star::star::star:">
+<panel type="info" header="`W8.4h` Can explain open-closed principle (OCP) :star::star::star:" no-close>
   <include src="../../book/designPrinciples/openClosedPrinciple/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).
 
   </panel>
-</panel>
-
 </panel>
