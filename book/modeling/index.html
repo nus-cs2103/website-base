@@ -29,17 +29,62 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p><strong>A <em>model</em> is anything used in any way to represent anything else.</strong></p>
+              <p><strong>A <em>model</em> is a representation of something else.</strong></p>
               <tip-box>
-                <p>📦 A class diagram is a model that represents an OOP software design and is drawn using the UML modeling notation.</p>
+                <p>📦 A
+                  <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
               </tip-box>
-              <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are abstractions.</p>
+              <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
+                <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br> 📦 An example class diagram:<br></p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
+              <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
+                <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
+              <modal large="" title="%%Textbook &raquo;%%" id="modal:modellingIntro-abstraction">
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Design → Design Principles → Abstraction →
+</span></strong>
+                    </span>
+                  </p>
+                  <div>
+                    <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <tip-box type="definition">
+                        <div>
+                          <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant
+                            to that aspect).</p>
+                        </div>
+                      </tip-box>
+                      <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only
+                        details that are relevant to the current perspective or the task at hand.</p>
+                      <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                      <tip-box>
+                        <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted
+                          away’ as they do not affect the task of that software component.</p>
+                      </tip-box>
+                      <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                      <tip-box>
+                        <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                        <p></p>
+                      </tip-box>For example,
+                      <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                      <tip-box>
+                        <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                        <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                      </tip-box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </modal>
               <tip-box>
-                <p>📦 A class diagram captures the class structure of the software design but not the runtime behavior.</p>
+                <p>📦 A class diagram captures the structure of the software design but not the behavior.</p>
               </tip-box>
               <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong></p>
               <tip-box>
-                <p>📦 In addition to the class diagram, a number of sequence diagrams may need to be created to capture various interesting interaction scenarios the software undergoes.</p>
+                <p>📦 In addition to a class diagram (or even multiple class diagrams), a number of other diagrams may be needed to capture various interesting aspects of the software.</p>
               </tip-box>
             </div>
             <div></div>
@@ -164,7 +209,7 @@
     <div>
       <div>
         <div>
-          <h4 id="class-diagrams-one">Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="class-diagrams-basics-one">Class Diagrams (Basics) <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box>
           <div>
@@ -174,9 +219,28 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p><strong>Class diagrams model the classes and how they are connected to each other</strong>.</p>
+              <p><strong><em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+              <p>
+                <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: OOP &rarr; Associations &rarr; Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+              <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
               <tip-box>
-                <p>📦 An example class diagram:</p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
+                <p>📦 An example class diagram showing associations between classes.</p>
+                <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+                <p></p>
+              </tip-box>
+              <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
+              <p>
+                <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Labels" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Roles" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: OOP &rarr; Associations &rarr; Multiplicity" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: OOP &rarr; Associations &rarr; Navigability" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+              <tip-box>
+                <p>📦 Here is the same class diagram shown earlier but with some additional information included:</p>
+                <p></p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
+                <p></p>
+              </tip-box>
             </div>
             <div>
               <div>
@@ -289,11 +353,11 @@
                     <panel header=":lock::key: Difference between a class diagram and and an OO domain model?">
                       <question>
                         <p>What is the main difference between a class diagram and and an OO domain model?</p>
-                        <ul radio-group="4kc0l" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4kc0l" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4kc0l" type="radio"> b. One has more classes than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4kc0l" type="radio"> c. One shows more details than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="4kc0l" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
+                        <ul radio-group="36vjw" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="36vjw" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="36vjw" type="radio"> b. One has more classes than the other.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="36vjw" type="radio"> c. One shows more details than the other.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="36vjw" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -674,16 +738,16 @@
                     <p></p>
                     <question>
                       Choose the incorrect statement.
-                      <ul radio-group="xl2rr" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xl2rr" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xl2rr" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xl2rr" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xl2rr" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="xl2rr" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
+                      <ul radio-group="y0t03" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="y0t03" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="y0t03" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="y0t03" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="y0t03" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="y0t03" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="cv6t5" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="cv6t5" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <ul radio-group="jfwbp" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="jfwbp" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
                         </ul>
                         <p>Explanation: A sequence diagram is a behavior diagram, not a structure diagram. An SD can represent how objects interact with each other (i.e., behavior), not how they are connected to each other (i.e. structure).</p>
                       </div>
@@ -702,16 +766,16 @@
                     <p></p>
                     <question>
                       Which one of these is the most useful to model a workflow?
-                      <ul radio-group="0lii4" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0lii4" type="radio"> a. class diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0lii4" type="radio"> b. object diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0lii4" type="radio"> c. activity diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0lii4" type="radio"> d. state machine diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0lii4" type="radio"> e. use case diagram</label></li>
+                      <ul radio-group="j0ia5" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="j0ia5" type="radio"> a. class diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="j0ia5" type="radio"> b. object diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="j0ia5" type="radio"> c. activity diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="j0ia5" type="radio"> d. state machine diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="j0ia5" type="radio"> e. use case diagram</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="9xz04" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="9xz04" type="radio"> c. activity diagram</label></li>
+                        <ul radio-group="5ql1p" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="5ql1p" type="radio"> c. activity diagram</label></li>
                         </ul>
                       </div>
                     </question>

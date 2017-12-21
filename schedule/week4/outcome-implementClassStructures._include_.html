@@ -1,0 +1,219 @@
+<panel type="danger" header="`W4.4a` Can implement classes :star:" no-close="">
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\oopDesign\classes\basic\full._include_.html" header="%%:mortar_board: Design &rarr; OOP &rarr; Classes &rarr; Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="classes-one">Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p>Given below is a tutorial you can refer to (from Oracle’s official Java tutorials) to learn how to implement java classes, in the unlikely case you don't know how to do that already.</p>
+        <ul>
+          <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p><strong>Acceptable</strong>: Any Java classes you have written.</p>
+  </panel>
+</panel>
+<!-- ==================================================================================================== -->
+<panel type="danger" header="`W4.4b` Can implement associations :star:" no-close="">
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\modeling\modelingStructures\classDiagramsBasic\full._include_.html" header="%%:mortar_board: Design &rarr; Modelling Structure &rarr; Class Diagrams%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="associations-one">Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p></p>
+        <p><strong>We use instance level variables to implement associations.</strong></p>
+        <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    Minefield minefield;
+    ...
+}
+</code></pre>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    ...
+}
+</code></pre>
+        </tip-box>
+        <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
+    ...
+}
+</code></pre>
+        </tip-box>
+        <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+        <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+          <p></p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+    Bar bar;
+    ...
+}
+</code></pre>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
+    Foo foo;
+    ...
+}
+</code></pre>
+        </tip-box>
+        <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+        <tip-box>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    Cell[][] cell;
+    ...
+}
+</code></pre>
+        </tip-box>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Class Diagram for code">
+                <question>
+                  <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
+                  <ul>
+                    <li>Make the multiplicities as strict as possible without contradicting the code.</li>
+                    <li>You may omit the <code>Main</code> class from both diagrams.</li>
+                  </ul>
+                  <pre><code class="hljs java">
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Item item1 = <span class="hljs-keyword">new</span> Item();
+        Item item2 = <span class="hljs-keyword">new</span> Item();
+        Box box1 = <span class="hljs-keyword">new</span> Box(item1);
+        Box box2 = <span class="hljs-keyword">new</span> Box(item2);
+        item2.setMainCard(<span class="hljs-keyword">new</span> Card());
+        item2.addPreviousBox(box1);
+        item2.addPreviousBox(box2);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span></span>{
+    <span class="hljs-keyword">private</span> Item item;
+    Box (Item item){
+        <span class="hljs-keyword">this</span>.item = item;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{
+    <span class="hljs-keyword">private</span> List&lt;box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{
+        <span class="hljs-keyword">this</span>.mainCard = card;
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{
+        <span class="hljs-keyword">this</span>.subCard = card;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPreviousBox</span><span class="hljs-params">(Box previousBox)</span></span>{
+        previousBoxes.add(previousBox);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
+    
+}
+
+</code></pre>
+                  <div slot="answer"><img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
+                  <p></p>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Object Diagrams for Class Diagram">
+                <question>
+                  <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                  <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+                  <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+                  <ol>
+                    <li>
+                      <p>There are no persons.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                    </li>
+                    <li>
+                      <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                    </li>
+                  </ol>
+                  <div slot="hint">
+                    <p>After step 2, the diagram should be like this:</p><img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Implement Class Diagram">
+                <question>
+                  <p>Implement the class structure given below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <panel header=":dart: Evidence" expanded="">
+    <p><strong>Acceptable</strong>: Some OOP code you have written in which there are more than 10 classes.</p>
+    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass">addressbook-level2: LO-ImplementClasses</a>]. Update I/O tests
+      (i.e. <code>expected.txt</code> etc.) and the User Guide (if applicable) but you may ignore JUnit tests (we have not covered that topic yet).</p>
+    <div>
+      <p><strong>Submission</strong>:</p>
+      <ul>
+        <li>Options 1 (discouraged): Show the relevant code during the tutorial.</li>
+        <li>Options 2 (preferred): Create a pull request by following the instructions below.</li>
+      </ul>
+      <p>
+        <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>If you choose option 2, we recommend that you complete the following LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in that LOs.</p>
+      <p>
+        <panel type="danger" src="/website\schedule\week4\outcome-pr._include_.html" header="**`W4.8` Can create PRs on GitHub** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+    </div>
+  </panel>
+</panel>

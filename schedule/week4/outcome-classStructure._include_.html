@@ -1,47 +1,4 @@
-<panel type="danger" header="`W4.5a` Can explain/identify class diagrams :star:" no-close="">
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Introduction →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-    </div>
-    <div id="main">
-      <div>
-        <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
-        <tip-box>
-          <p>📦 An example class diagram:</p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
-      </div>
-      <div></div>
-    </div>
-  </div>
-</panel>
-<!-- ==================================================================================================== -->
-<panel type="warning" header="`W4.5b` Can explain/identify object diagrams :star::star:" no-close="">
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Tools → UML → Object Diagrams →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-    </div>
-    <div id="main">
-      <div>
-        <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
-        <tip-box><img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
-      </div>
-      <div></div>
-    </div>
-  </div>
-</panel>
-<!-- ==================================================================================================== -->
-<panel type="danger" header="`W4.5c` Can use basic-level class diagrams :star:" no-close="">
+<panel type="danger" header="`W4.3a` Can explain modeling of OO structures :star:" no-close="">
   <div>
     <div>
       <p>
@@ -54,13 +11,96 @@
       </span>
     </p>
     <div>
-      <h4 id="class-diagrams-one">Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      <h4 id="oo-structures-one">OO Structures <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
     </div>
     <div id="main">
       <div>
-        <p><strong>Class diagrams model the classes and how they are connected to each other</strong>.</p>
+        <p>An OO solution is basically a network of objects interacting with each other. Therefore, <strong>it is useful to be able to model how the relevant objects are 'networked' together</strong> inside a software <span class="dimmed"> i.e. how the objects are connect together</span>.</p>
         <tip-box>
-          <p>📦 An example class diagram:</p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
+          <p>📦 Given below is an illustration of some objects and how they are connected together. <span class="dimmed"> Note: the diagram uses an ad-hoc notation.</span></p>
+          <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc.png" width="500"></p>
+          <p></p>
+          <p></p>
+        </tip-box>
+        <p>Note that these <strong>object structures within the same software can change over time</strong>.</p>
+        <tip-box>
+          <p>📦 Given below is how the object structure in the previous example could have looked like at a different time.</p>
+          <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc2.png" width="500"></p>
+          <p></p>
+          <p></p>
+        </tip-box>
+        <p>However, object structures do not change at random; they change based on a set of rules, as was decided by the designer of that software. Those <strong>rules that object structures need to follow can be illustrated as a <em>class structure</em></strong>
+          <span
+            class="dimmed"> i.e. a structure that exists among the relevant classes</span>.</p>
+        <tip-box>
+          <p>📦 Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure does not allow any connection between <code>Genre</code> objects
+            and <code>Author</code> objects, a rule followed by the two object structures above.</p>
+          <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png" width="500"></p>
+          <p></p>
+          <p></p>
+        </tip-box>
+        <p>UML Object Diagrams are used to model object structures and UML class diagrams are used to model class structures of an OO solution.</p>
+        <p>
+          <panel src="/website\book\uml\objectDiagrams\introduction\full._include_.html" header=":mortar_board: UML &rarr; Object Diagrams &rarr; Introduction" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\introduction\what\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Introduction &rarr; What" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <tip-box>
+          <p>📦 Here is an object diagram for the above example:</p>
+          <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" width="500">
+            <p>📦 And here is the class diagram for it:</p>
+          </p>
+          <p><img src="/website/book/modeling/modelingStructures/ooStructures/images/classDiagram.png" width="500"></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </tip-box>
+      </div>
+      <div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</panel>
+<!-- ==================================================================================================== -->
+<panel type="danger" header="`W4.3b` Can use basic-level class diagrams :star:" no-close="">
+  <div>
+    <div>
+      <p>
+        <panel src="/website\book\oopDesign\classes\basic\full._include_.html" header=":mortar_board: %%Design &rarr; OOP &rarr; Classes &rarr; Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="class-diagrams-basics-one">Class Diagrams (Basics) <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong><em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+        <p>
+          <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: OOP &rarr; Associations &rarr; Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
+        <tip-box>
+          <p>📦 An example class diagram showing associations between classes.</p>
+          <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+          <p></p>
+        </tip-box>
+        <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
+        <p>
+          <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Labels" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html" header=":mortar_board: UML &rarr; Class Diagrams &rarr; Associations &rarr; Roles" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: OOP &rarr; Associations &rarr; Multiplicity" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: OOP &rarr; Associations &rarr; Navigability" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+        <tip-box>
+          <p>📦 Here is the same class diagram shown earlier but with some additional information included:</p>
+          <p></p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
+          <p></p>
+        </tip-box>
       </div>
       <div>
         <div>
@@ -108,168 +148,55 @@
   </panel>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="danger" header="`W4.5d` Can implement associations :star:" no-close="">
+<panel type="danger" header="`W4.3c` Can distinguish between class diagrams and object diagrams :star:" no-close="">
   <div>
-    <div>
-      <p>
-        <panel src="/website\book\oopDesign\associations\basic\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\oopDesign\associations\multiplicity\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Multiplicity%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\oopDesign\associations\navigability\embed._include_.html" header="%%:mortar_board: OOP &rarr; Associations &rarr; Navigability%%" isOpen="false" no-close="true" no-switch="true"></panel>
-      </p>
-    </div>
+    <div></div>
     <p></p>
-    <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+    <p><span class="dimmed"><strong><span>Tools → UML →
 </span></strong>
       </span>
     </p>
     <div>
-      <h4 id="associations-one">Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      <h4 id="object-vs-class-diagrams-two">Object vs Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
     </div>
     <div id="main">
       <div>
-        <p></p>
-        <p><strong>We use instance level variables to implement associations.</strong></p>
-        <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
-        <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
-          <p></p>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Minefield minefield;
-    ...
-}
-</code></pre>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
-    ...
-}
-</code></pre>
-        </tip-box>
-        <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
-        <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
-          <p></p>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
-    ...
-}
-</code></pre>
-        </tip-box>
-        <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
-        <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
-          <p></p>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
-    Bar bar;
-    ...
-}
-</code></pre>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
-    Foo foo;
-    ...
-}
-</code></pre>
-        </tip-box>
-        <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+        <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
+        <ul>
+          <li>Shows objects instead of classes:
+            <ul>
+              <li>Instance name may be shown</li>
+              <li>There is a <code>:</code> before the class name</li>
+              <li>Instance and class names are underlined</li>
+            </ul>
+          </li>
+          <li>Methods are omitted</li>
+          <li>Multiplicities are omitted</li>
+        </ul>
+        <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
         <tip-box>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
-    Cell[][] cell;
-    ...
-}
-</code></pre>
+          <p>📦 Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png"
+            height="85">
+          <p></p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+          <p></p>
         </tip-box>
       </div>
       <div>
         <div>
           <panel header=":muscle: Exercises" expandable="">
             <div>
-              <panel header=":lock::key: Class Diagram for code">
+              <panel header=":lock::key: Which class diagrams match object diagram?">
                 <question>
-                  <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
-                  <ul>
-                    <li>Make the multiplicities as strict as possible without contradicting the code.</li>
-                    <li>You may omit the <code>Main</code> class from both diagrams.</li>
+                  <p>Which of these class diagrams match the given object diagram?</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                  <p></p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
                   </ul>
-                  <pre><code class="hljs java">
-<span class="hljs-keyword">import</span> java.util.ArrayList;
-<span class="hljs-keyword">import</span> java.util.List;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        Item item1 = <span class="hljs-keyword">new</span> Item();
-        Item item2 = <span class="hljs-keyword">new</span> Item();
-        Box box1 = <span class="hljs-keyword">new</span> Box(item1);
-        Box box2 = <span class="hljs-keyword">new</span> Box(item2);
-        item2.setMainCard(<span class="hljs-keyword">new</span> Card());
-        item2.addPreviousBox(box1);
-        item2.addPreviousBox(box2);
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span></span>{
-    <span class="hljs-keyword">private</span> Item item;
-    Box (Item item){
-        <span class="hljs-keyword">this</span>.item = item;
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{
-    <span class="hljs-keyword">private</span> List&lt;box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
-    <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;
-    <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{
-        <span class="hljs-keyword">this</span>.mainCard = card;
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{
-        <span class="hljs-keyword">this</span>.subCard = card;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPreviousBox</span><span class="hljs-params">(Box previousBox)</span></span>{
-        previousBoxes.add(previousBox);
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
-    
-}
-
-</code></pre>
-                  <div slot="answer"><img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
-                  <p></p>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock: Object Diagrams for Class Diagram">
-                <question>
-                  <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
-                  <p></p>
-                  <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
-                  <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
-                  <ol>
-                    <li>
-                      <p>There are no persons.</p>
-                    </li>
-                    <li>
-                      <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
-                    </li>
-                    <li>
-                      <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
-                    </li>
-                    <li>
-                      <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
-                    </li>
-                    <li>
-                      <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
-                    </li>
-                  </ol>
-                  <div slot="hint">
-                    <p>After step 2, the diagram should be like this:</p><img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock: Implement Class Diagram">
-                <question>
-                  <p>Implement the class structure given below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
-                  <p></p>
+                  <div slot="answer">
+                    <p>(a) (b)</p>
+                    <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
+                  </div>
                 </question>
               </panel>
             </div>
@@ -278,446 +205,4 @@
       </div>
     </div>
   </div>
-  <panel header=":dart: Evidence" expanded="">
-    <p><strong>Acceptable</strong>: Some OOP code you have written in which there are more than 10 classes.</p>
-    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass">addressbook-level2: LO-ImplementClasses</a>]. Update I/O tests
-      (i.e. <code>expected.txt</code> etc.) and the User Guide (if applicable) but you may ignore JUnit tests (we have not covered that topic yet).</p>
-    <div>
-      <p><strong>Submission</strong>:</p>
-      <ul>
-        <li>Options 1 (discouraged): Show the relevant code during the tutorial.</li>
-        <li>Options 2 (preferred): Create a pull request by following the instructions below.</li>
-      </ul>
-      <p>
-        <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin &raquo; Appendix E: Using GitHub Project Hosting &rarr; Submitting Pull Requests as evidence of an LO%%"
-          isOpen="false" no-close="true" no-switch="true"></panel>
-      </p>
-      <p>If you choose option 2, we recommend that you complete this LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in this LOs.</p>
-      <div>
-        <panel type="danger" header="`W4.8a` Can explain branching :star:" no-close="">
-          <div>
-            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="branching-two">Branching <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the
-                  team keeps working on another branch. Branches can be given names e.g. <code>master</code><code>release</code><code>dev</code>.</p>
-                <p><strong>A branch can be <mark><em>merged</em></mark> into another branch.</strong> Merging usually result in a new commit that represents the changes done in the branch being merged.</p>
-                <pic src="/website/book/revisionControl/branching/images/diagram.png"
-                  height="180"><strong>Branching and merging</strong></pic>
-                <p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those
-                  conflicts manually.</p>
-              </div>
-              <div>
-                <div>
-                  <panel header=":muscle: Exercises" expandable="">
-                    <div>
-                      <panel header=":lock: What is branching?">
-                        <question has-input="true">
-                          <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock: What is merging?">
-                        <question has-input="true">
-                          <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <div>
-              <panel header=":lock: What is branching?">
-                <question has-input="true">
-                  <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock: What is merging?">
-                <question has-input="true">
-                  <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
-                </question>
-              </panel>
-            </div>
-          </panel>
-        </panel>
-        <panel type="danger" header="`W4.8b` Can use Git branching :star:" no-close="">
-          <div>
-            <div>
-              <p>
-                <panel src="/website\book\revisionControl\branching\full._include_.html" header=":mortar_board: %%Project Management &rarr; Revision Control &rarr; Branching%%" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-            </div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="branch-two">Branch <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong>0. Observe that you are normally in the branch called <code>master</code>.</strong> For this, you can take any repo you have on your computer (e.g. a clone of the <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-things">samplerepo-things</a>).</p>
-                <tabs>
-                  <tab header="SourceTree">
-                    <div><img src="/website/book/gitAndGithub/branch/images/onMasterBranch.png" height="120">
-                      <p></p>
-                    </div>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <div>
-                      <pre class="hljs"><code>git status
-</code></pre>
-                      <p>⤵️</p>
-                      <pre class="hljs"><code>on branch master
-</code></pre>
-                    </div>
-                    <hr>
-                  </tab>
-                </tabs>
-                <p><strong>1. Start a branch named <code>feature1</code> and switch to the new branch.</strong></p>
-                <tabs>
-                  <tab header="SourceTree">
-                    <div>
-                      <p>Click on the <code>Branch</code> button on the main menu. In the next dialog, enter the branch name and click <code>Create Branch</code></p><img src="/website/book/gitAndGithub/branch/images/sourcetree_1.png" height="150">
-                      <p></p>
-                      <p>Note how the <code>feature1</code> is indicated as the current branch.</p><img src="/website/book/gitAndGithub/branch/images/sourcetree_2.png" height="150">
-                      <p></p>
-                    </div>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <div>
-                      <p>You can use the <code>branch</code> command to create a new branch and the <code>checkout</code> command to switch to a specific branch.</p>
-                      <pre class="hljs"><code>git branch feature1
-git checkout feature1
-</code></pre>
-                      <p>One-step shortcut to create a branch and switch to it at the same time:</p>
-                      <pre class="hljs"><code>git checkout –b feature1
-</code></pre>
-                    </div>
-                    <hr>
-                  </tab>
-                </tabs>
-                <p><strong>2. Create some commits in the new branch.</strong><span class="dimmed">Just commit as per normal. Commits you add while on a certain branch will become part of that branch.</span></p>
-                <p><strong>3. Switch to <code>master</code> branch.</strong> Note how the changes you did in the <code>feature1</code> branch are no longer in the working directory.</p>
-                <tabs>
-                  <tab header="SourceTree">
-                    <div>
-                      <p>Double-click the <code>master</code> branch</p><img src="/website/book/gitAndGithub/branch/images/sourcetree_3.png" height="150">
-                      <p></p>
-                    </div>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <div>
-                      <pre class="hljs"><code>git checkout master
-</code></pre>
-                    </div>
-                    <hr>
-                  </tab>
-                </tabs>
-                <p><strong>4. Add a commit to the master branch.</strong> Let’s imagine it’s a bug fix.</p><img src="/website/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
-                <p></p>
-                <p><strong>5. Switch back to the <code>feature1</code> branch</strong><span class="dimmed">(similar to step 3)</span>.</p>
-                <p><strong>6. Merge the <code>master</code> branch to the <code>feature1</code> branch</strong>, giving an end-result like the below. Also note how Git has created a <em>merge commit</em>.</p><img src="/website/book/gitAndGithub/branch/images/sourcetree_5.png"
-                  height="120">
-                <p></p>
-                <tabs>
-                  <tab header="SourceTree">
-                    <div>
-                      <p>Right-click on the <code>master</code> branch and choose <code>merge master into the current branch</code>. Click <code>OK</code> in the next dialog.</p>
-                    </div>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <div>
-                      <pre class="hljs"><code>git merge master
-</code></pre>
-                    </div>
-                    <hr>
-                  </tab>
-                </tabs>
-                <p>Observe how the changes you did in the <code>master</code> branch (i.e. the imaginary bug fix) is now available even when you are in the <code>feature1</code> branch.</p>
-                <p><strong>7. Add another commit to the <code>feature1</code> branch.</strong></p>
-                <p><strong>8. Switch to the <code>master</code> branch and add one more commit.</strong></p>
-                <p><strong>9. Merge <code>feature1</code> to the master branch</strong>, giving and end-result like this:</p><img src="/website/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
-                <p></p>
-                <tabs>
-                  <tab header="SourceTree">
-                    <p>Right-click on the <code>feature1</code> branch and choose <code>Merge...</code>.</p>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <pre class="hljs"><code>git merge feature1
-</code></pre>
-                    <hr>
-                  </tab>
-                </tabs>
-                <p><strong>10. Create a new branch called <code>add-countries</code>, switch to it, and add some commits to it</strong><span class="dimmed">(similar to steps 1-2 above)</span>. You should have something like this now:</p><img src="/website/book/gitAndGithub/branch/images/addCountriesBranchBeforeMerging.png"
-                  height="80">
-                <p></p>
-                <p><strong>11. Go back to the <code>master</code> branch and merge the <code>add-countries</code> branch onto the <code>master</code> branch</strong><span class="dimmed">(similar to steps 8-9 above)</span>. While you might expect to see something
-                  like the below,</p><img src="/website/book/gitAndGithub/branch/images/addCountriesBranchNoFastForward.png" height="100">
-                <p></p>
-                <p>... you are likely to see something like this instead:</p><img src="/website/book/gitAndGithub/branch/images/addCountriesBranchAfterMerging.png" height="80">
-                <p></p>
-                <p>That is because <strong>Git does a <mark><em>fast forward</em> merge</mark> if possible</strong>. Seeing that the <code>master</code> branch has not changed since you started the <code>add-countries</code> branch, Git has decided it is
-                  simpler to just put the commits of the <code>add-countries</code> branch in front of the <code>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
-                <p><strong>It is possible to force Git to create a merge commit even if fast forwarding is possible.</strong></p>
-                <tabs>
-                  <tab header="SourceTree">
-                    <div>
-                      <p>Tick the box shown below when you merge a branch:</p><img src="/website/book/gitAndGithub/branch/images/mergeBranchDialog.png" height="150">
-                      <p></p>
-                    </div>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <div>
-                      <p>Use the <code>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
-                      <pre class="hljs"><code>git merge --no-ff add-countries
-</code></pre>
-                    </div>
-                    <hr>
-                  </tab>
-                </tabs>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p><strong>Acceptable</strong>: Git branches you have created in any repo.</p>
-            <p><strong>Suggested</strong>: Results of following the steps in the LO.</p>
-            <p><strong>Submission</strong>: Show your branches during the tutorial.</p>
-          </panel>
-        </panel>
-        <panel type="danger" header="`W4.8c` Can create PRs on GitHub :star:" no-close="">
-          <div>
-            <div>
-              <p>
-                <panel src="/website\book\gitAndGithub\branch\full._include_.html" header=":mortar_board: %%Tools &rarr; Git & GitHub &rarr; Branching%%" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-            </div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="create-prs-two">Create PRs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong>1. Fork the <a href="https://github.com/nus-cs2103-AY1718S1/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
-                <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <a href="http://README.md">README.md</a>. Example:</p>
-                <pre><code class="hljs md">
-<span class="hljs-section"># Introduction</span>
-Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects. This repo can be used to practice creating PRs.
-
-</code></pre>
-                <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
-                <tabs>
-                  <tab header="SourceTree"><img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
-                    <p></p>
-                    <hr>
-                  </tab>
-                  <tab header="CLI">
-                    <pre class="hljs"><code>git push origin add-intro
-</code></pre>
-                    <hr>
-                  </tab>
-                </tabs>
-                <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>),
-                  as described below.</p>
-                <p>4a. Go to the GitHub page of your fork (i.e. <code>https://github.com/{your_username}/samplerepo-pr-practice</code>), click on the <code>Pull Requests</code> tab, and then click on <code>New Pull Request</code> button.</p><img src="/website/book/gitAndGithub/createPRs/images/createPrButton.png"
-                  width="800">
-                <p></p>
-                <p>4b. Select <code>base fork</code> and <code>head fork</code> as follows:</p>
-                <ul>
-                  <li><code>base fork</code>: your own fork (i.e. <code>{your user name}/samplerepo-pr-practice</code>, <mark>NOT <code>nus-cs2103-AY1718S1/samplerepo-pr-practice</code></mark>)</li>
-                  <li><code>head fork</code>: your own fork.</li>
-                </ul><img src="/website/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
-                <p></p>
-                <tip-box type="info">
-                  <p>The <em>base fork</em> is where changes should be applied. The <em>head fork</em> contains the changes you would like to be applied.</p>
-                </tip-box>
-                <p>4c. (1) Set the base branch to <code>master</code> and head branch to <code>add-intro</code>, (2) confirm the <em>diff</em> contains the changes you propose to merge in this PR <span class="dimmed">(i.e. confirm that you did not accidentally include extra commits in the branch)</span>,
-                  and (3) click the <code>Create pull request</code> button.</p><img src="/website/book/gitAndGithub/createPRs/images/checkDiff.png" width="800">
-                <p></p>
-                <p>4d. (1) Set PR name, (2) set PR description, and (3) Click the <code>Create pull request</code> button.</p><img src="/website/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
-                <p></p>
-                <tip-box type="important">
-                  <p>A common newbie mistake when creating branch-based PRs is to mix commits of one PR with another. To learn how to avoid that mistake, you are encouraged to continue and create another PR as explained below.
-                  </p>
-                </tip-box>
-                <p><strong>5. In your local repo, create a new branch <code>add-summary</code></strong> off the <code>master</code> branch.</p>
-                <tip-box type="warning">
-                  <p>When creating the new branch, it is very important that you switch back to the <code>master</code> branch first. If not, the new branch will be created off the current branch <code>add-intro</code>. And that is how you end up having
-                    commits of the first PR in the second PR as well.</p>
-                </tip-box>
-                <p><strong>6. Add a commit in the <code>add-summary</code> branch</strong> that adds a <em>Summary</em> section to the <code>README.md</code>, in exactly the same place you added the <em>Introduction</em> section earlier.</p><img src="/website/book/gitAndGithub/createPRs/images/addSummaryBranch.png"
-                  width="400">
-                <p></p>
-                <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-                <panel header=":paperclip: Resources" expanded="">
-                  <ul>
-                    <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
-                  </ul>
-                </panel>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p><strong>Acceptable</strong>: PRs created in any repo.</p>
-            <p><strong>Suggested</strong>: PRs created by following the steps in the LO.</p>
-            <p><strong>Submission</strong>: Show your PRs during the tutorial.</p>
-          </panel>
-        </panel>
-        <panel type="warning" header="`W4.8d` Can use Git to resolve merge conflicts :star::star:" no-close="">
-          <div>
-            <div>
-              <p>
-                <panel src="/website\book\gitAndGithub\branch\full._include_.html" header=":mortar_board: %%Tools &rarr; Git & GitHub &rarr; Branching%%" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-            </div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="merge-conflicts-three">Merge Conflicts <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong>1. Start a branch named <code>fix1</code> in a local repo. Create a commit</strong> that adds a line with some text to one of the files.</p>
-                <p><strong>2. Switch back to <code>master</code> branch. Create a commit with a conflicting change</strong> i.e. it adds a line with some different text in the exact location the previous line was added.</p><img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png"
-                  height="350">
-                <p></p>
-                <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-                <pre
-                  class="hljs"><code>COLORS
-------
-blue
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-black
-=======
-green
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
-red
-white
-</code></pre>
-                  <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and a line starting with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting
-                    with <code>=======</code>.</p>
-                  <p>This is the conflicting part that is coming from the <code>master</code> branch:</p>
-                  <pre class="hljs"><code>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-black
-=======
-
-</code></pre>
-                  <p>This is the conflicting part that is coming from the <code>fix1</code> branch:</p>
-                  <pre class="hljs"><code>
-=======
-green
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
-
-</code></pre>
-                  <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-                  <pre class="hljs"><code>COLORS
-------
-blue
-black
-green
-red
-white
-</code></pre>
-                  <p><strong>6. Stage the changes, and commit.</strong></p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p><strong>Acceptable</strong>: Merge conflicts resolved in any repo.</p>
-            <p><strong>Suggested</strong>: Evidence of following the steps in the LO.</p>
-            <p><strong>Submission</strong>: Show your merge commit during the tutorial.</p>
-          </panel>
-        </panel>
-        <panel type="info" header="`W4.8e` Can review and merge PRs on GitHub :star::star::star:" no-close="">
-          <div>
-            <div>
-              <p>
-                <panel src="/website\book\gitAndGithub\branch\full._include_.html" header=":mortar_board: %%Tools &rarr; Git & GitHub &rarr; Branching%%" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\gitAndGithub\createPRs\full._include_.html" header=":mortar_board: %%Tools &rarr; Git & GitHub &rarr; Create PRs%%" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel src="/website\book\gitAndGithub\mergeConflicts\full._include_.html" header=":mortar_board: %%Tools &rarr; Git & GitHub &rarr; Merge Conflicts%%" isOpen="false" no-close="true" no-switch="true"></panel>
-              </p>
-            </div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="manage-prs-three">Manage PRs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in <a href="/website/book/gitAndGithub/createPRs/index.html">Tools → Git &amp; GitHub → Create PRs</a> to simulate the PR
-                  being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <code>+</code> icon that appears on the left margin. That should create a text box for you to
-                  enter your comment.</p><img src="/website/book/gitAndGithub/managePRs/images/startReview.png" width="800">
-                <p></p>
-                <p>1b. Enter some dummy comment and click on <code>Start a review</code> button.</p><img src="/website/book/gitAndGithub/managePRs/images/addComment.png" width="800">
-                <p></p>
-                <p>1c. Add a few more comments in other places of the code.</p>
-                <p>1d. Click on the <code>Review Changes</code> button, enter an overall comment, and click on the <code>Submit review</code> button.</p><img src="/website/book/gitAndGithub/managePRs/images/submitReview.png" width="500">
-                <p></p>
-                <p><strong>2. Update the PR</strong> to simulate revising the code based on reviewer comments. Add some more commits to the <code>add-intro</code> branch and push the new commits to the fork. Observe how the PR is updated automatically to
-                  reflect the new code.</p>
-                <p><strong>3. Merge the PR.</strong> Go to the GitHub page of the respective PR, scroll to the bottom of the <code>Conversation</code> tab, and click on the <code>Merge pull request</code> button, followed by the <code>Confirm merge</code>                  button. You should see a <code>Pull request successfully merged and closed</code> message after the PR is merged.</p><img src="/website/book/gitAndGithub/managePRs/images/mergePr.png" width="800">
-                <p></p>
-                <p><strong>4. Sync the local repo with the remote repo.</strong> Because of the merge you did on the GitHub, the <code>master</code> branch of your fork is now ahead of your local repo by one commit. To sync the local repo with the remote
-                  repo, pull the <code>master</code> branch to the local repo.</p>
-                <pre class="hljs"><code>git checkout master
-git pull origin master
-</code></pre>
-                <p>Observe how the <code>add-intro</code> branch is now merged to the <code>master</code> branch in your local repo as well.</p>
-                <p><strong>5. De-conflict the <code>add-summary</code> PR.</strong> Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
-                  You can resolve it locally and update the PR accordingly, as explained below.</p>
-                <p>5a. Switch to the <code>add-summary</code> branch. To make that branch up-to-date with the <code>master</code> branch, merge the <code>master</code> branch to it, which will surface the merge conflict. Resolve it and complete the merge.</p>
-                <p>5b. Push the updated <code>add-summary</code> branch to the fork. That will remove the 'merge conflicts' warning in the GitHub page of the PR.</p>
-                <p><strong>6. Merge the <code>add-summary</code> PR</strong> using the GitHub interface, similar to how you merged the previous PR.</p>
-                <tip-box type="info">
-                  <p>Note that you could have merged the <code>add-summary</code> branch to the <code>master</code> branch locally before pushing it to GitHub. In that case, the PR will be merged on GitHub automatically to reflect that the branch has been
-                    merged already.
-                  </p>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <panel header=":dart: Evidence" expanded="">
-            <p><strong>Acceptable</strong>: PRs you merged in any repo.</p>
-            <p><strong>Suggested</strong>: Evidence of following the steps in the LO.</p>
-            <p><strong>Submission</strong>: Show your merged PRs during the tutorial.</p>
-          </panel>
-        </panel>
-      </div>
-    </div>
-  </panel>
 </panel>

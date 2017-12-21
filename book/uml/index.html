@@ -177,8 +177,11 @@
               <panel type="seamless" header=" %%- - - - - - - - - -%%">
                 <div>
                   <div>
-                    <p>We use a solid line to show an association between two classes.</p><img src="/website/book/uml/classDiagrams/associations/basic/images/basic.png" height="200">
+                    <p>We use a solid line to show an association between two classes.</p><img src="/website/book/uml/classDiagrams/associations/basic/images/notation.png" width="300">
                     <p></p>
+                    <tip-box>
+                      <p>📦 This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br><img src="/website/book/uml/classDiagrams/associations/basic/images/example.png" width="300"></p>
+                    </tip-box>
                   </div>
                   <div></div>
                 </div>
@@ -1337,15 +1340,20 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
             <div>
               <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
               <ul>
-                <li>Instance name may be shown</li>
-                <li>There is a <code>:</code> before the class name</li>
-                <li>Instance and class names are underlined</li>
+                <li>Shows objects instead of classes:
+                  <ul>
+                    <li>Instance name may be shown</li>
+                    <li>There is a <code>:</code> before the class name</li>
+                    <li>Instance and class names are underlined</li>
+                  </ul>
+                </li>
                 <li>Methods are omitted</li>
                 <li>Multiplicities are omitted</li>
               </ul>
-              <p>Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+              <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
               <tip-box>
-                <p>Examples:</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+                <p>📦 Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png"
+                  height="85">
                 <p></p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
                 <p></p>
               </tip-box>
