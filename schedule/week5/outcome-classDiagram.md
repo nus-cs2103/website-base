@@ -19,7 +19,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="`W5.1d` Can show an association as an attribute :star::star::star::star:" >
+<panel type="info" header="`W5.1d` Can show an association as an attribute :star::star::star:" >
   <include src="../../book/uml/classDiagrams/associationsAsAttributes/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
