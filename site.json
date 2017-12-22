@@ -529,6 +529,14 @@
       "title": "CS2103/T Textbook - Principles: Dependency Inversion Principle"
     },
     {
+      "src": "book/principles/openClosedPrinciple/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle"
+    },
+    {
+      "src": "book/principles/openClosedPrinciple/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle: What"
+    },
+    {
       "src": "book/principles/solidPrinciples/index.md",
       "title": "CS2103/T Textbook - Principles: SOLID Principles"
     },
@@ -961,6 +969,22 @@
       "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: State Machine Diagrams"
     },
     {
+      "src": "book/modeling/modelingASolution/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution"
+    },
+    {
+      "src": "book/modeling/modelingASolution/introduction/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution: Introduction"
+    },
+    {
+      "src": "book/modeling/modelingASolution/basic/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution: Basic"
+    },
+    {
+      "src": "book/modeling/modelingASolution/intermediate/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution: Intermediate"
+    },
+    {
       "src": "book/integration/index.md",
       "title": "CS2103/T Textbook - Integration"
     },
@@ -1325,68 +1349,64 @@
       "title": "CS2103/T Textbook - Software Design: Introduction: Basic"
     },
     {
-      "src": "book/design/introduction/multilevelDesign/index.md",
-      "title": "CS2103/T Textbook - Software Design: Introduction: Multi-Level Design"
+      "src": "book/designApproaches/index.md",
+      "title": "CS2103/T Textbook - Design Approaches"
     },
     {
-      "src": "book/designPrinciples/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles"
+      "src": "book/designApproaches/multilevelDesign/what/index.md",
+      "title": "CS2103/T Textbook - Design Approaches: Multi-Level Design"
     },
     {
-      "src": "book/designPrinciples/print.md",
-      "title": "CS2103/T Textbook - Software Design Principles [Printable]"
+      "src": "book/designApproaches/topDownBottomUp/what/index.md",
+      "title": "CS2103/T Textbook - Design Approaches: Top-Down and Bottom-Up Design"
     },
     {
-      "src": "book/designPrinciples/abstraction/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Abstraction"
+      "src": "book/designApproaches/agileDesign/what/index.md",
+      "title": "CS2103/T Textbook - Design Approaches: Agile Design"
     },
     {
-      "src": "book/designPrinciples/abstraction/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Abstraction: What"
+      "src": "book/designFundamentals/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals"
     },
     {
-      "src": "book/designPrinciples/coupling/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling"
+      "src": "book/designFundamentals/print.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals [Printable]"
     },
     {
-      "src": "book/designPrinciples/coupling/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: What"
+      "src": "book/designFundamentals/abstraction/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Abstraction"
     },
     {
-      "src": "book/designPrinciples/coupling/how/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: How"
+      "src": "book/designFundamentals/abstraction/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Abstraction: What"
     },
     {
-      "src": "book/designPrinciples/coupling/types/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: Types of Coupling"
+      "src": "book/designFundamentals/coupling/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling"
     },
     {
-      "src": "book/designPrinciples/cohesion/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion"
+      "src": "book/designFundamentals/coupling/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling: What"
     },
     {
-      "src": "book/designPrinciples/cohesion/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: What"
+      "src": "book/designFundamentals/coupling/how/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling: How"
     },
     {
-      "src": "book/designPrinciples/cohesion/how/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: How"
+      "src": "book/designFundamentals/coupling/types/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling: Types of Coupling"
     },
     {
-      "src": "book/designPrinciples/openClosedPrinciple/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle"
+      "src": "book/designFundamentals/cohesion/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Cohesion"
     },
     {
-      "src": "book/designPrinciples/openClosedPrinciple/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle: What"
+      "src": "book/designFundamentals/cohesion/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Cohesion: What"
     },
     {
-      "src": "book/designPrinciples/dependencyInversionPrinciple/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle"
-    },
-    {
-      "src": "book/designPrinciples/dependencyInversionPrinciple/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle: What"
+      "src": "book/designFundamentals/cohesion/how/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Cohesion: How"
     },
     {
       "src": "book/codeQuality/index.md",
@@ -2223,22 +2243,6 @@
     {
       "src": "book/oopDesign/polymorphism/mechanism/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Mechanism"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/introduction/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Introduction"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/basic/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Basic"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/intermediate/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Intermediate"
     },
     {
       "src": "book/oopDesign/miscellaneous/index.md",

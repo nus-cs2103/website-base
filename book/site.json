@@ -494,6 +494,14 @@
       "title": "SEforSDL - Principles: Dependency Inversion Principle"
     },
     {
+        "src": "principles/openClosedPrinciple/index.md",
+        "title": "SEforSDL - Software Design Principles: Open-Closed Principle"
+    },
+    {
+        "src": "principles/openClosedPrinciple/index.md",
+        "title": "SEforSDL - Software Design Principles: Open-Closed Principle: What"
+    },
+    {
       "src": "principles/solidPrinciples/index.md",
       "title": "SEforSDL - Principles: SOLID Principles"
     },
@@ -930,6 +938,22 @@
       "title": "SEforSDL - Modeling: Modeling Behaviors: State Machine Diagrams"
     },
     {
+        "src": "modeling/modelingASolution/index.md",
+        "title": "SEforSDL - Modeling: Modeling a Solution"
+    },
+    {
+        "src": "modeling/modelingASolution/introduction/index.md",
+        "title": "SEforSDL - Modeling: Modeling a Solution: Introduction"
+    },
+    {
+        "src": "modeling/modelingASolution/basic/index.md",
+        "title": "SEforSDL - Modeling: Modeling a Solution: Basic"
+    },
+    {
+        "src": "modeling/modelingASolution/intermediate/index.md",
+        "title": "SEforSDL - Modeling: Modeling a Solution: Intermediate"
+    },
+    {
       "src": "modeling/review/index.md",
       "title": "SEforSDL - Modeling: Review"
     },
@@ -1302,76 +1326,64 @@
       "title": "SEforSDL - Software Design: Introduction: Basic"
     },
     {
-      "src": "design/introduction/multilevelDesign/index.md",
-      "title": "SEforSDL - Software Design: Introduction: Multi-Level Design"
+      "src": "designApproaches/index.md",
+      "title": "SEforSDL - Design Approaches"
     },
     {
-      "src": "design/introduction/topDownBottomUp/index.md",
-      "title": "SEforSDL - Software Design: Introduction: Top-Down and Bottom-Up Design"
+      "src": "designApproaches/multilevelDesign/what/index.md",
+      "title": "SEforSDL - Design Approaches: Multi-Level Design"
     },
     {
-      "src": "design/introduction/agileDesign/index.md",
-      "title": "SEforSDL - Software Design: Introduction: Agile Design"
+      "src": "designApproaches/topDownBottomUp/what/index.md",
+      "title": "SEforSDL - Design Approaches: Top-Down and Bottom-Up Design"
     },
     {
-      "src": "designPrinciples/index.md",
-      "title": "SEforSDL - Software Design Principles"
+      "src": "designApproaches/agileDesign/what/index.md",
+      "title": "SEforSDL - Design Approaches: Agile Design"
     },
     {
-      "src": "designPrinciples/print.md",
-      "title": "SEforSDL - Software Design Principles [Printable]"
+      "src": "designFundamentals/index.md",
+      "title": "SEforSDL - Software Design Fundamentals"
     },
     {
-      "src": "designPrinciples/abstraction/index.md",
-      "title": "SEforSDL - Software Design Principles: Abstraction"
+      "src": "designFundamentals/print.md",
+      "title": "SEforSDL - Software Design Fundamentals [Printable]"
     },
     {
-      "src": "designPrinciples/abstraction/what/index.md",
-      "title": "SEforSDL - Software Design Principles: Abstraction: What"
+      "src": "designFundamentals/abstraction/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Abstraction"
     },
     {
-      "src": "designPrinciples/coupling/index.md",
-      "title": "SEforSDL - Software Design Principles: Coupling"
+      "src": "designFundamentals/abstraction/what/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Abstraction: What"
     },
     {
-      "src": "designPrinciples/coupling/what/index.md",
-      "title": "SEforSDL - Software Design Principles: Coupling: What"
+      "src": "designFundamentals/coupling/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Coupling"
     },
     {
-      "src": "designPrinciples/coupling/how/index.md",
-      "title": "SEforSDL - Software Design Principles: Coupling: How"
+      "src": "designFundamentals/coupling/what/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Coupling: What"
     },
     {
-      "src": "designPrinciples/coupling/types/index.md",
-      "title": "SEforSDL - Software Design Principles: Coupling: Types of Coupling"
+      "src": "designFundamentals/coupling/how/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Coupling: How"
     },
     {
-      "src": "designPrinciples/cohesion/index.md",
-      "title": "SEforSDL - Software Design Principles: Cohesion"
+      "src": "designFundamentals/coupling/types/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Coupling: Types of Coupling"
     },
     {
-      "src": "designPrinciples/cohesion/what/index.md",
-      "title": "SEforSDL - Software Design Principles: Cohesion: What"
+      "src": "designFundamentals/cohesion/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Cohesion"
     },
     {
-      "src": "designPrinciples/cohesion/how/index.md",
-      "title": "SEforSDL - Software Design Principles: Cohesion: How"
+      "src": "designFundamentals/cohesion/what/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Cohesion: What"
     },
     {
-      "src": "designPrinciples/openClosedPrinciple/index.md",
-      "title": "SEforSDL - Software Design Principles: Open-Closed Principle"
-    },
-    {
-      "src": "designPrinciples/openClosedPrinciple/what/index.md",
-      "title": "SEforSDL - Software Design Principles: Open-Closed Principle: What"
-    },
-    {
-      "src": "designPrinciples/dependencyInversionPrinciple/index.md",
-      "title": "SEforSDL - Software Design Principles: Dependency Inversion Principle"
-    },
-    {
-      "src": "designPrinciples/dependencyInversionPrinciple/what/index.md",
-      "title": "SEforSDL - Software Design Principles: Dependency Inversion Principle: What"
+      "src": "designFundamentals/cohesion/how/index.md",
+      "title": "SEforSDL - Software Design Fundamentals: Cohesion: How"
     },
     {
       "src": "codeQuality/index.md",
@@ -2208,22 +2220,6 @@
     {
       "src": "oopDesign/polymorphism/mechanism/index.md",
      "title": "SEforSDL - Object Oriented Programming: Polymorphism: Mechanism"
-    },
-    {
-      "src": "oopDesign/conceptualizingSolution/index.md",
-      "title": "SEforSDL - Object Oriented Programming: Conceptualizing an OOP Solution"
-    },
-    {
-      "src": "oopDesign/conceptualizingSolution/introduction/index.md",
-      "title": "SEforSDL - Object Oriented Programming: Conceptualizing an OOP Solution: Introduction"
-    },
-    {
-      "src": "oopDesign/conceptualizingSolution/basic/index.md",
-      "title": "SEforSDL - Object Oriented Programming: Conceptualizing an OOP Solution: Basic"
-    },
-    {
-      "src": "oopDesign/conceptualizingSolution/intermediate/index.md",
-      "title": "SEforSDL - Object Oriented Programming: Conceptualizing an OOP Solution: Intermediate"
     },
     {
       "src": "oopDesign/miscellaneous/index.md",

@@ -73,12 +73,12 @@
           <div>
             <div></div>
             <p></p>
-            <p><span class="dimmed"><strong><span>Design → Design Principles → Open-Closed Principle →
+            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
               </span>
             </p>
             <div>
-              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              <h4 id="open-closed-principle-one">Open-Closed Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
             </div>
             <div id="main">
               <div>
@@ -94,7 +94,7 @@
                 <tip-box>
                   <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>,
                     <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to
-                    extensions, but closed to modification.</p><img src="/website/book/designPrinciples/openClosedPrinciple/what/images/commandQueue.png" height="170">
+                    extensions, but closed to modification.</p><img src="/website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
                   <p></p>
                 </tip-box>
                 <tip-box>
@@ -112,11 +112,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                       <panel header=":lock::key: Meaning of OCP">
                         <question>
                           <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                          <ul radio-group="xbdws" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="xbdws" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="xbdws" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="xbdws" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="xbdws" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                          <ul radio-group="14xyd" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="14xyd" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="14xyd" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="14xyd" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="14xyd" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(a)</p>
@@ -245,9 +245,9 @@ AcademicStaff academicStaff = staff; // Not OK
                       <panel header=":lock::key: Is this LSP?">
                         <question>
                           <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                          <ul radio-group="y9usd" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="y9usd" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="y9usd" type="radio"> False</label></li>
+                          <ul radio-group="7rwuq" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7rwuq" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="7rwuq" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True.</p>
@@ -306,33 +306,57 @@ AcademicStaff academicStaff = staff; // Not OK
         </panel>
         <panel type="seamless" header="**D**ependency Inversion Principle (DIP)">
           <div>
-            <div></div>
-            <p></p>
             <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
               </span>
             </p>
             <div>
-              <h4 id="dependency-inversion-principle-four">Dependency Inversion Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+              <h4 id="dependency-inversion-principle-one">Dependency Inversion Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
             </div>
             <div id="main">
               <div>
-                <tip-box type="definition">
-                  <div>
-                    <p><strong>Dependency Inversion Principle</strong>:</p>
-                    <ol>
-                      <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
-                      <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
-                    </ol>
-                  </div>
-                </tip-box>
+                <p>The <em>Dependency Inversion Principle</em> states that,</p>
+                <ol>
+                  <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
+                  <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
+                </ol>
                 <tip-box>
-                  <p>📦 In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the <code>Payee</code>                    interface (note that inheritance is a dependency). Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes. Here, <code>Payee</code> is
-                    the abstraction and is owned by the <code>Payroll</code> class.</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payroll.png" height="130">
+                  <p>Example:</p><img src="/website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
                   <p></p>
+                  <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the Payee interface
+                    (note that inheritance is a dependency).</p>
+                  <p>Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes.</p>
                 </tip-box>
               </div>
-              <div></div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which of these statements is true about the Dependency Inversion Principle.">
+                        <question>
+                          <p>Which of these statements is true about the Dependency Inversion Principle.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
+                          </ul>
+                          <div slot="answer">
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
+                            </ul>
+                            <p>Explanation: Replacing dependencies with mocks is Dependency Injection, not DIP. DIP does not reduce dependencies, rather, it changes the direction of dependencies. Yes, it can introduce extra abstractions but often the benefit
+                              can outweigh the extra complications.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
             </div>
           </div>
         </panel>
