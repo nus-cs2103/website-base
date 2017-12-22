@@ -969,6 +969,22 @@
       "title": "CS2103/T Textbook - Modeling: Modeling Behaviors: State Machine Diagrams"
     },
     {
+      "src": "book/modeling/modelingASolution/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution"
+    },
+    {
+      "src": "book/modeling/modelingASolution/introduction/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution: Introduction"
+    },
+    {
+      "src": "book/modeling/modelingASolution/basic/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution: Basic"
+    },
+    {
+      "src": "book/modeling/modelingASolution/intermediate/index.md",
+      "title": "CS2103/T Textbook - Modeling: Modeling a Solution: Intermediate"
+    },
+    {
       "src": "book/integration/index.md",
       "title": "CS2103/T Textbook - Integration"
     },
@@ -2227,22 +2243,6 @@
     {
       "src": "book/oopDesign/polymorphism/mechanism/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: Polymorphism: Mechanism"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/introduction/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Introduction"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/basic/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Basic"
-    },
-    {
-      "src": "book/oopDesign/conceptualizingSolution/intermediate/index.md",
-      "title": "CS2103/T Textbook - Object Oriented Programming: Conceptualizing an OOP Solution: Intermediate"
     },
     {
       "src": "book/oopDesign/miscellaneous/index.md",
