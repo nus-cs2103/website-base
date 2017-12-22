@@ -529,6 +529,14 @@
       "title": "CS2103/T Textbook - Principles: Dependency Inversion Principle"
     },
     {
+      "src": "book/principles/openClosedPrinciple/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle"
+    },
+    {
+      "src": "book/principles/openClosedPrinciple/index.md",
+      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle: What"
+    },
+    {
       "src": "book/principles/solidPrinciples/index.md",
       "title": "CS2103/T Textbook - Principles: SOLID Principles"
     },
@@ -1371,14 +1379,6 @@
     {
       "src": "book/designPrinciples/cohesion/how/index.md",
       "title": "CS2103/T Textbook - Software Design Principles: Cohesion: How"
-    },
-    {
-      "src": "book/designPrinciples/openClosedPrinciple/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle"
-    },
-    {
-      "src": "book/designPrinciples/openClosedPrinciple/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Open-Closed Principle: What"
     },
     {
       "src": "book/designPrinciples/dependencyInversionPrinciple/index.md",

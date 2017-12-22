@@ -72,7 +72,7 @@ Explain SoC with examples from AddressBook-Level4 (or your own project).
 </panel>
 
 <panel type="info" header="`W8.4h` Can explain open-closed principle (OCP) :star::star::star:" no-close>
-  <include src="../../book/designPrinciples/openClosedPrinciple/what/full.md" />
+  <include src="../../book/principles/openClosedPrinciple/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).
