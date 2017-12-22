@@ -1381,14 +1381,6 @@
       "title": "CS2103/T Textbook - Software Design Principles: Cohesion: How"
     },
     {
-      "src": "book/designPrinciples/dependencyInversionPrinciple/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle"
-    },
-    {
-      "src": "book/designPrinciples/dependencyInversionPrinciple/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Dependency Inversion Principle: What"
-    },
-    {
       "src": "book/codeQuality/index.md",
       "title": "CS2103/T Textbook - Code Quality"
     },
