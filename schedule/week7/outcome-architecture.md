@@ -15,7 +15,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W7.2b` Can explain multi-level design :star::star::star:" no-close>
-  <include src="../../book/design/introduction/multilevelDesign/full.md"/>
+  <include src="../../book/designApproaches/multilevelDesign/what/full.md"/>
   <panel header=":dart: Evidence" expanded>
 
 Covered by the deliverable below %%&nbsp;(i.e. to be able to enhance an component of AddressBook-Level4, you need to be able to understand its multi-level design)%%:

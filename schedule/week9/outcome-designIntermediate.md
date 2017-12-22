@@ -24,12 +24,12 @@ Explain how substitutability operation overriding, and dynamic binding relates t
 %%**Design Approaches:**%%
 
 <panel type="info" header="`W9.2d` Can explain top-down and bottom-up design :star::star::star:" no-close>
-  <include src="../../book/design/introduction/topDownBottomUp/full.md" />
+  <include src="../../book/designApproaches/topDownBottomUp/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <panel type="info" header="`W9.2e` Can explain agile design :star::star::star:" no-close>
-  <include src="../../book/design/introduction/agileDesign/full.md" />
+  <include src="../../book/designApproaches/agileDesign/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 

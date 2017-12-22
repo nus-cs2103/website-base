@@ -1333,8 +1333,20 @@
       "title": "CS2103/T Textbook - Software Design: Introduction: Basic"
     },
     {
-      "src": "book/design/introduction/multilevelDesign/index.md",
-      "title": "CS2103/T Textbook - Software Design: Introduction: Multi-Level Design"
+      "src": "book/designApproaches/index.md",
+      "title": "CS2103/T Textbook - Design Approaches"
+    },
+    {
+      "src": "book/designApproaches/multilevelDesign/what/index.md",
+      "title": "CS2103/T Textbook - Design Approaches: Multi-Level Design"
+    },
+    {
+      "src": "book/designApproaches/topDownBottomUp/what/index.md",
+      "title": "CS2103/T Textbook - Design Approaches: Top-Down and Bottom-Up Design"
+    },
+    {
+      "src": "book/designApproaches/agileDesign/what/index.md",
+      "title": "CS2103/T Textbook - Design Approaches: Agile Design"
     },
     {
       "src": "book/designFundamentals/index.md",
