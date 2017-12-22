@@ -38,7 +38,7 @@ Covered by the 'Documentation' of component v1.1:
 
 <dynamic-panel type="warning" src="outcome-architecturalStyle.md" header="**`W8.3` Can explain architectural styles** :star::star:" no-close />
 
-<dynamic-panel type="danger" src="outcome-basicDesignPrinciples.md" header="**`W8.4` Can use basic software design principles** :star:" no-close />
+<dynamic-panel type="danger" src="outcome-basicdesignPrinciples.md" header="**`W8.4` Can use basic software design principles** :star:" no-close />
 
 ### Implementation:
 

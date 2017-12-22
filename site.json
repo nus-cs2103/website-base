@@ -1337,48 +1337,48 @@
       "title": "CS2103/T Textbook - Software Design: Introduction: Multi-Level Design"
     },
     {
-      "src": "book/designPrinciples/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles"
+      "src": "book/designFundamentals/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals"
     },
     {
-      "src": "book/designPrinciples/print.md",
-      "title": "CS2103/T Textbook - Software Design Principles [Printable]"
+      "src": "book/designFundamentals/print.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals [Printable]"
     },
     {
-      "src": "book/designPrinciples/abstraction/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Abstraction"
+      "src": "book/designFundamentals/abstraction/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Abstraction"
     },
     {
-      "src": "book/designPrinciples/abstraction/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Abstraction: What"
+      "src": "book/designFundamentals/abstraction/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Abstraction: What"
     },
     {
-      "src": "book/designPrinciples/coupling/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling"
+      "src": "book/designFundamentals/coupling/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling"
     },
     {
-      "src": "book/designPrinciples/coupling/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: What"
+      "src": "book/designFundamentals/coupling/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling: What"
     },
     {
-      "src": "book/designPrinciples/coupling/how/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: How"
+      "src": "book/designFundamentals/coupling/how/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling: How"
     },
     {
-      "src": "book/designPrinciples/coupling/types/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Coupling: Types of Coupling"
+      "src": "book/designFundamentals/coupling/types/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Coupling: Types of Coupling"
     },
     {
-      "src": "book/designPrinciples/cohesion/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion"
+      "src": "book/designFundamentals/cohesion/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Cohesion"
     },
     {
-      "src": "book/designPrinciples/cohesion/what/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: What"
+      "src": "book/designFundamentals/cohesion/what/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Cohesion: What"
     },
     {
-      "src": "book/designPrinciples/cohesion/how/index.md",
-      "title": "CS2103/T Textbook - Software Design Principles: Cohesion: How"
+      "src": "book/designFundamentals/cohesion/how/index.md",
+      "title": "CS2103/T Textbook - Software Design Fundamentals: Cohesion: How"
     },
     {
       "src": "book/codeQuality/index.md",

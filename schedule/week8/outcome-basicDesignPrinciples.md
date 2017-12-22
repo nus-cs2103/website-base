@@ -1,7 +1,7 @@
 %%**Abstraction:**%%
 
 <panel type="warning" header="`W8.4a` Can explain abstraction :star::star:" no-close>
-  <include src="../../book/designPrinciples/abstraction/what/full.md" />
+  <include src="../../book/designFundamentals/abstraction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
@@ -10,7 +10,7 @@
 %%**Coupling:**%%
 
 <panel type="danger" header="`W8.4b` Can explain coupling :star:" no-close>
-  <include src="../../book/designPrinciples/coupling/what/full.md" />
+  <include src="../../book/designFundamentals/coupling/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain coupling with examples from AddressBook-Level4 (or your own project).
@@ -19,7 +19,7 @@ Explain coupling with examples from AddressBook-Level4 (or your own project).
 </panel>
 
 <panel type="warning" header="`W8.4c` Can reduce coupling :star::star:" no-close>
-<include src="../../book/designPrinciples/coupling/how/full.md" />
+<include src="../../book/designFundamentals/coupling/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain with examples from AddressBook-Level4 (or your own project) how coupling can be increased/decreased.
@@ -28,7 +28,7 @@ Explain with examples from AddressBook-Level4 (or your own project) how coupling
 </panel>
 
 <panel type="success" header="`W8.4d` Can identify types of coupling :star::star::star::star:" no-close>
-  <include src="../../book/designPrinciples/coupling/types/full.md" />
+  <include src="../../book/designFundamentals/coupling/types/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain types of coupling with examples from AddressBook-Level4 (or your own project).
@@ -41,7 +41,7 @@ Explain types of coupling with examples from AddressBook-Level4 (or your own pro
 %%**Cohesion:**%%
 
 <panel type="danger" header="`W8.4e` Can explain cohesion :star:" no-close>
-  <include src="../../book/designPrinciples/cohesion/what/full.md" />
+  <include src="../../book/designFundamentals/cohesion/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain cohesion with examples from AddressBook-Level4 (or your own project).
@@ -50,7 +50,7 @@ Explain cohesion with examples from AddressBook-Level4 (or your own project).
 </panel>
 
 <panel type="warning" header="`W8.4f` Can increase cohesion :star::star:" no-close>
-<include src="../../book/designPrinciples/cohesion/how/full.md" />
+<include src="../../book/designFundamentals/cohesion/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Explain with examples from AddressBook-Level4 (or your own project) how cohesion can be increased/decreased.
