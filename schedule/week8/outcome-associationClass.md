@@ -15,7 +15,7 @@ Give more examples of association classes, preferably related to your project.
 
 **Acceptable**: Evidence of implementing an association class. 
 
-**Suggested**: Do the exercise in [[AddressBook - Level 2: LO-AssociationClass](https://github.com/nus-cs2103-AY1718S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass)] and create a PR against [[AddressBook - Level 2](https://github.com/nus-cs2103-AY1718S1/addressbook-level2)]
+**Suggested**: Do the exercise in [[AddressBook - Level 2: LO-AssociationClass](https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass)] and create a PR against [[AddressBook - Level 2](https://github.com/nus-cs2103-AY1718S2/addressbook-level2)]
 
   </panel>
 </panel>

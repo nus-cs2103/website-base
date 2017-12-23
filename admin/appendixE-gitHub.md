@@ -31,8 +31,8 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 3. Commit your changes to that branch. Push to your fork.
 
 4. Create a Pull Request against the master branch of the repo  
-   `https://github.com/nus-cs2103-AY1718S1/{repo_name}`  
-   e.g. `https://github.com/nus-cs2103-AY1718S1/addressbook-level1`  
+   `https://github.com/nus-cs2103-AY1718S2/{repo_name}`  
+   e.g. `https://github.com/nus-cs2103-AY1718S2/addressbook-level1`  
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
    <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
    PR name should be: `[LO_ID][TEAM_ID]Your Name`  
@@ -78,7 +78,7 @@ You can create your GitHub account after receiving your Phase B team ID. Here ar
 
 Only one team member:
 
-1. Fork [Address Book Level 4](https://github.com/nus-cs2103-AY1718S1/addressbook-level4) to your team org.
+1. Fork [Address Book Level 4](https://github.com/nus-cs2103-AY1718S2/addressbook-level4) to your team org.
 1. Rename the forked repo as `main`. This repo is to be used as the repo for your project.
 1. Ensure your team members have the desired level of access to your team repo
 

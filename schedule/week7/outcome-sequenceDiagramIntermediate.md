@@ -39,7 +39,7 @@
   
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" /><p/>
 
-1. Explain the sequence diagrams given [[AddressBook Level4: Developer Guide](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html)]
+1. Explain the sequence diagrams given [[AddressBook Level4: Developer Guide](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html)]
 2. Add more sequence diagrams to project documentation (to be done in future weeks)
 
   </panel>

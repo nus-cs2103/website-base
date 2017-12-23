@@ -10,7 +10,7 @@
 
 **Acceptable**: Any remote repo cloned to your Computer.
 
-**Suggested**: A clone of the [samplerepo-things](https://github.com/nus-cs2103-AY1718S1/samplerepo-things) in your Computer. 
+**Suggested**: A clone of the [samplerepo-things](https://github.com/nus-cs2103-AY1718S2/samplerepo-things) in your Computer. 
 
 **Submission**: Show the clone to the tutor during the tutorial.
 

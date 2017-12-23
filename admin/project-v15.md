@@ -167,7 +167,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
    * No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
    * The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.
    * You can do _acceptance_ testing as well as _system_ testing.
-   * Report bugs in the [practical exam issue tracker](https://github.com/nus-cs2103-AY1718S1/pe/issues), ==not in the team's repo==. 
+   * Report bugs in the [practical exam issue tracker](https://github.com/nus-cs2103-AY1718S2/pe/issues), ==not in the team's repo==. 
      * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
      * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others copying your bug reports%%
    * Report bugs only. Do not post suggestions. These are considered bugs:

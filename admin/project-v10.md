@@ -126,7 +126,7 @@ Update the following pages of the Developer Guide:
   <include src="../book/revisionControl/forkingWorkflow/full.md"/>
 </modal>
 
-4. One member: create a PR from your ==team repo `master` branch== to [[nus-cs2103-AY1718S1/addressbook-level4](https://github.com/nus-cs2103-AY1718S1/addressbook-level4)] `master` branch. PR name: `[W7.7][Team ID] Product Name` e.g., `[W7.7][T09-B2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+4. One member: create a PR from your ==team repo `master` branch== to [[nus-cs2103-AY1718S2/addressbook-level4](https://github.com/nus-cs2103-AY1718S2/addressbook-level4)] `master` branch. PR name: `[W7.7][Team ID] Product Name` e.g., `[W7.7][T09-B2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 **Grading**: ==Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.== 
 To claim this milestone as 'reached', you should at least have a full draft version of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.
@@ -138,7 +138,7 @@ To claim this milestone as 'reached', you should at least have a full draft vers
 
 **Objective**: To familiarize yourself with the code.
 
-**Description**: Divide the <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the [AddressBook-Level4 developer guide](https://nus-cs2103-AY1718S1.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component).
+**Description**: Divide the <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the [AddressBook-Level4 developer guide](https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component).
 
 
 **Submission**: Create PRs from your own fork to your team repo. 

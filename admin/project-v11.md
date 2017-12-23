@@ -22,7 +22,7 @@
 
 **Description**: 
 * Each member should add some enhancements that are in line with the vision for v2.0.  
-* These enhancements should go beyond the component you are in charge of, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
+* These enhancements should go beyond the component you are in charge of, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
 
 <tip-box type="important">
 

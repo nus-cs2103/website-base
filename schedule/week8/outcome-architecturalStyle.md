@@ -23,7 +23,7 @@
   <include src="../../book/architecture/architecturalStyles/eventDriven/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Developer Guide](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design) for more info).
+Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Developer Guide](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design) for more info).
 
   </panel>
 </panel>

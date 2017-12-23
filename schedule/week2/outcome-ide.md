@@ -15,7 +15,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 
 **Acceptable**: Any Java project set up in Intellij.
 
-**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-IdeSetup](https://github.com/nus-cs2103-AY1718S1/addressbook-level1#set-up-a-project-in-an-ide-lo-idesetup) 
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-IdeSetup](https://github.com/nus-cs2103-AY1718S2/addressbook-level1#set-up-a-project-in-an-ide-lo-idesetup) 
 
 **Submission**: Demo the test during the tutorial.
 
@@ -30,7 +30,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 
 **Acceptable**: Use Intellij basic code navigation features to navigate the code of any java project.
 
-**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-CodeNavigation](https://github.com/nus-cs2103-AY1718S1/addressbook-level1#navigate-code-efficiently-lo-codenavigation) 
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-CodeNavigation](https://github.com/nus-cs2103-AY1718S2/addressbook-level1#navigate-code-efficiently-lo-codenavigation) 
 
 **Submission**: Demo the test during the tutorial.
 

@@ -87,8 +87,8 @@ Update to match the product.
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:
-  * :package: Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html).
-  * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s1.github.io/addressbook-level4/team/johndoe.html). 
+  * :package: Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html).
+  * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html). 
   * :exclamation: It is assumed that sections _included_ in this way were written primarily by you. If those sections were written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
 
 </div>

@@ -54,4 +54,4 @@ Some relevant points:
 </question>
 </panel>
 
-[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/slides/L3.pptx)]
+[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L3.pptx)]
