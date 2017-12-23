@@ -159,23 +159,45 @@
   </div>
   <h1 id="lectures">Lectures</h1>
   <div id="admin-lectures">
-    <div><img src="/website/admin/images/Lecture photo.png" style="width: 713px;">
-      <p><strong>Timing/venue</strong>: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).</p>
+    <div><img src="/website/admin/images/Lecture photo.png" style="width: 900px;">
+      <p><strong>Timing/venue</strong>:</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Semester</th>
+            <th>Venue</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Semester 1 (Aug-Nov)</td>
+            <td>ICube Auditorium</td>
+            <td><strong>1400</strong>-1600</td>
+          </tr>
+          <tr>
+            <td>Semester 2 (Jan-April)</td>
+            <td>ICube Auditorium</td>
+            <td><strong>1600</strong>-1800</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
       <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%">
-        <p>CS2103T lectures are on Fridays 2-4pm at ICube auditorium, same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>
+        <p>CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>
         <p></p>
       </panel>
       <p></p>
-      <p>Each lecture consists of two sections:</p>
+      <p>Each lecture is a mixture of:</p>
       <ul>
-        <li>First half: <em>Flipped classroom</em> format. Discusses the learning outcomes of the current week.</li>
-        <li>Second half: A preview of the learning outcomes for the following week.</li>
+        <li>A <em>flipped classroom</em> format activities covering learning outcomes of the <em>current</em> week.</li>
+        <li>A preview of the learning outcomes for the <em>following</em> week.</li>
       </ul>
       <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
       <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
       <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website/book/index.html">Textbook</a> section
         and are also hyperlinked from the <a href="/website/schedule/index.html">Schedule Page</a>.</p>
-      <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture.</p>
+      <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture (link available in the <a href="/website/schedule/index.html">Schedule Page</a>).</p>
     </div>
   </div>
   <h1 id="tutorials">Tutorials</h1>
@@ -518,41 +540,108 @@
   </div>
   <h2 id="project-scope">Project Scope</h2>
   <div id="admin-project-scope">
-    <div><span id="individual-expectations"><p>👤 <strong>Individually</strong>, each student is expected to,</p><ol><li><p><strong>Contribute one or more enhancements</strong><br>
-Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>[Highly recommended] Rename the product to a more catchy name.</li><li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
-      <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
-      <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
-      <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
-      <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
-      <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
+    <div>
+      <p>In general, each team is expected to take one of these two directions:</p>
+      <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a specific target user:</p>
+      <ul>
+        <li>Define a very specific target user profile. <br> 💡 We recommend you narrow down the target user profile as much as you can <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span></li>
+        <li>Optimize the AddressBook for those specific target users <span class="dimmed"> i.e., add features that are only applicable for those users to make the app especially attractive to them. To add to the example in the previous point, there can be features that are applicable to CS2103 instructors only, such as the ability to pull down a student's photo from IVLE or navigate to a student's project on GitHub</span></li>
+      </ul>
+      <panel header="Examples for _optimize_ direction" expanded="">
+        <ul>
+          <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+          <li>for users dealing with a huge number of contacts <span class="dimmed"> e.g. HR admins, user group admins</span></li>
+          <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+        </ul>
+        <p></p>
+      </panel>
+      <p></p>
+      <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something
+        else.</p>
+      <ul>
+        <li>This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</li>
+        <li>As mentioned in the <em>optimize</em> direction, this direction too requires you to define a narrow target user profile.</li>
+      </ul>
+      <panel header="Examples for _morph_ direction" expanded="">
+        <p>An app to manage, * Bookmarks of websites * Tasks/Schedule * Forum posts, news feeds, Social media feeds * Online projects or issue trackers that the user is interested in * Emails, possibly from different accounts</p>
+        <p></p>
+      </panel>
+      <p></p><span id="individual-expectations"><p>👤 <strong>Individually</strong>, each student is expected to,</p><ol><li><p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p><ul><li>Each enhancement should be stand-alone but,
+<ul><li>should fit with the rest of the software,</li><li>and should have the consent of the team members.</li></ul></li></ul><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>Add a new feature</li><li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+      <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
+      <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
       <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
-      <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
       </ol>
       <p></p>
       </panel>
       <p></p>
+      <panel header="Major enhancements vs Grade: Examples" expanded="">
+        <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+        <ul>
+          <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+          <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+        </ul>
+        <p></p>
+      </panel>
+      <p></p>
+      </li>
+      <li>
+        <p><strong>Contribute one <em>minor</em> enhancements to the product</strong>:</p>
+        <ul>
+          <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
+          <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
+          <li>The minor enhancement must touch multiple components <span class="dimmed">  so that it helps you to familiarize yourself wit the codebase</span>.</li>
+        </ul>
+        <panel header="Examples of minor enhancements" expanded="">
+          <p>Here is a non-exhaustive list of minor enhancements:</p>
+          <ol>
+            <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+            <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+            <li>Load a different page instead of the default Google search page</li>
+            <li>Sort items</li>
+            <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+            <li>Marking some items as favorites</li>
+            <li>Ability to search by labels</li>
+            <li>Ability to specify colors for labels</li>
+          </ol>
+          <p></p>
+        </panel>
+        <p></p>
       </li>
       <li>
         <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the
           aspects you did not do.</p>
       </li>
       <li>
-        <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.</p>
+        <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+        <panel header="Examples of team-tasks"
+          expanded="">
+          <p>Here is a non-exhaustive list of team-tasks:</p>
+          <ol>
+            <li>Necessary general code enhancements
+              <ol>
+                <li>Work related to renaming the product</li>
+                <li>Work related to changing the product icon</li>
+                <li>Morphing the product into a different product</li>
+              </ol>
+            </li>
+            <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+            <li>Maintaining the issue tracker</li>
+            <li>Release management</li>
+            <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+            <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+          </ol>
+          <p></p>
+        </panel>
+        <p></p>
+      </li>
+      <li>
+        <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.</p>
       </li>
       <li>
         <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
       </li>
       </ol>
-      <panel header="Enhancements vs Grade: Examples" expanded="">
-        <p>Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.</p>
-        <ul>
-          <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
-          <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
-          <li>Example 3 (Expected grade: <code>B+</code> to <code>A-</code>) : Example 2 + <a href="https://github.com/se-edu/addressbook-level4/pull/513/files">Add some missing tests</a></li>
-        </ul>
-        <p></p>
-      </panel>
-      <p></p>
       </span><span id="team-expectations"><p>👥👥 <strong>As a team</strong>, you are expected to work together to,</p><ol><li><strong>Preserve product integrity</strong>: i.e.
 a. Enhancements added fit together to form a cohesive product.
 b. Documentation follows a consistent style and presents a cohesive picture to the reader.
@@ -687,11 +776,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="iymuj" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="iymuj" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="iymuj" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="iymuj" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="iymuj" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="n1hhv" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="n1hhv" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="n1hhv" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="n1hhv" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="n1hhv" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2993,9 +3082,9 @@ displayResult();
                             <panel header=":lock::key: Small methods or lengthy methods?">
                               <question>
                                 <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                                <ul radio-group="gc18q" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gc18q" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gc18q" type="radio"> False</label></li>
+                                <ul radio-group="6lw4q" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6lw4q" type="radio"> True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="6lw4q" type="radio"> False</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>False</p>
@@ -3025,10 +3114,10 @@ displayResult();
                             <panel header=":lock::key: Common saying: Make it fast,...">
                               <question>
                                 <p>This is a common saying among programmers</p>
-                                <ul radio-group="70raz" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="70raz" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="70raz" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="70raz" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                                <ul radio-group="u0ulk" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u0ulk" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u0ulk" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="u0ulk" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -3143,11 +3232,11 @@ exit();
                             <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                               <question>
                                 <p>What is the recommended approach regarding coding standards?</p>
-                                <ul radio-group="l6lyk" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="l6lyk" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="l6lyk" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="l6lyk" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="l6lyk" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                <ul radio-group="xxqgw" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="xxqgw" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="xxqgw" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="xxqgw" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="xxqgw" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c</p>
@@ -3207,12 +3296,12 @@ exit();
                             <panel header=":lock::key: Unsuitable variable name">
                               <question>
                                 <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                                <ul radio-group="65lkv" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="65lkv" type="radio"> a. integer variable name: totalPeople</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="65lkv" type="radio"> b. boolean variable name: checkWeight</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="65lkv" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="65lkv" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="65lkv" type="radio"> e. String variable name: description</label></li>
+                                <ul radio-group="gq4dt" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gq4dt" type="radio"> a. integer variable name: totalPeople</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gq4dt" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gq4dt" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gq4dt" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="gq4dt" type="radio"> e. String variable name: description</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -5303,19 +5392,55 @@ compact(input);
           <p>👤 <strong>Individually</strong>, each student is expected to,</p>
           <ol>
             <li>
-              <p><strong>Contribute one or more enhancements</strong><br> Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p>
+              <p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p>
+              <ul>
+                <li>Each enhancement should be stand-alone but,
+                  <ul>
+                    <li>should fit with the rest of the software,</li>
+                    <li>and should have the consent of the team members.</li>
+                  </ul>
+                </li>
+              </ul>
               <panel header="Allowed enhancements" expanded="">
                 <p>Here are the allowed options for enhancing AddressBook:</p>
                 <ol>
-                  <li>[Highly recommended] Rename the product to a more catchy name.</li>
-                  <li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
-                  <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
-                  <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
-                  <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
-                  <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
-                  <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
+                  <li>Add a new feature</li>
+                  <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+                  <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
+                  <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
                   <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
-                  <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                </ol>
+                <p></p>
+              </panel>
+              <p></p>
+              <panel header="Major enhancements vs Grade: Examples" expanded="">
+                <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+                <ul>
+                  <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+                  <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+                </ul>
+                <p></p>
+              </panel>
+              <p></p>
+            </li>
+            <li>
+              <p><strong>Contribute one <em>minor</em> enhancements to the product</strong>:</p>
+              <ul>
+                <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
+                <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
+                <li>The minor enhancement must touch multiple components <span class="dimmed">  so that it helps you to familiarize yourself wit the codebase</span>.</li>
+              </ul>
+              <panel header="Examples of minor enhancements" expanded="">
+                <p>Here is a non-exhaustive list of minor enhancements:</p>
+                <ol>
+                  <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+                  <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+                  <li>Load a different page instead of the default Google search page</li>
+                  <li>Sort items</li>
+                  <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+                  <li>Marking some items as favorites</li>
+                  <li>Ability to search by labels</li>
+                  <li>Ability to specify colors for labels</li>
                 </ol>
                 <p></p>
               </panel>
@@ -5326,23 +5451,36 @@ compact(input);
                 the aspects you did not do.</p>
             </li>
             <li>
-              <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.</p>
-            </li>
-            <li>
-              <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
-            </li>
-          </ol>
-          <panel header="Enhancements vs Grade: Examples" expanded="">
-            <p>Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.</p>
-            <ul>
-              <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
-              <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
-              <li>Example 3 (Expected grade: <code>B+</code> to <code>A-</code>) : Example 2 + <a href="https://github.com/se-edu/addressbook-level4/pull/513/files">Add some missing tests</a></li>
-            </ul>
-            <p></p>
-          </panel>
-          <p></p>
-        </div>
+              <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+              <panel
+                header="Examples of team-tasks" expanded="">
+                <p>Here is a non-exhaustive list of team-tasks:</p>
+                <ol>
+                  <li>Necessary general code enhancements
+                    <ol>
+                      <li>Work related to renaming the product</li>
+                      <li>Work related to changing the product icon</li>
+                      <li>Morphing the product into a different product</li>
+                    </ol>
+                  </li>
+                  <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+                  <li>Maintaining the issue tracker</li>
+                  <li>Release management</li>
+                  <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+                  <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                </ol>
+                <p></p>
+      </panel>
+      <p></p>
+      </li>
+      <li>
+        <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.</p>
+      </li>
+      <li>
+        <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+      </li>
+      </ol>
+      </div>
       </panel>
     </div>
     <h3 id="policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events">Policy on absence due to valid reasons (e.g. MC, LOA, University events)</h3>

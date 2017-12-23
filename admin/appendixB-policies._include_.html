@@ -15,19 +15,55 @@
       <p>👤 <strong>Individually</strong>, each student is expected to,</p>
       <ol>
         <li>
-          <p><strong>Contribute one or more enhancements</strong><br> Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.</p>
+          <p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p>
+          <ul>
+            <li>Each enhancement should be stand-alone but,
+              <ul>
+                <li>should fit with the rest of the software,</li>
+                <li>and should have the consent of the team members.</li>
+              </ul>
+            </li>
+          </ul>
           <panel header="Allowed enhancements" expanded="">
             <p>Here are the allowed options for enhancing AddressBook:</p>
             <ol>
-              <li>[Highly recommended] Rename the product to a more catchy name.</li>
-              <li>Add more features related to managing contacts. <span class="dimmed">e.g. support storing birthdays of contacts</span></li>
-              <li>Enhance existing features. <span class="dimmed">e.g. make the <code>find</code> feature more powerful</span></li>
-              <li>Make the command syntax more user friendly <span class="dimmed">e.g. allow more variations of the keywords, change command format to an easier to type syntax</span></li>
-              <li>Add features that allows managing things other than contacts. <span class="dimmed">e.g. todo items, appointments, deadlines, etc.</span></li>
-              <li>Modify the internal design <span class="dimmed">e.g. change the architecture</span></li>
-              <li>Modify the GUI design <span class="dimmed">e.g. remove the browser component and replace with something else</span></li>
+              <li>Add a new feature</li>
+              <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+              <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
+              <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
               <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
-              <li>Incorporate more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+            </ol>
+            <p></p>
+          </panel>
+          <p></p>
+          <panel header="Major enhancements vs Grade: Examples" expanded="">
+            <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+            <ul>
+              <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+              <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+            </ul>
+            <p></p>
+          </panel>
+          <p></p>
+        </li>
+        <li>
+          <p><strong>Contribute one <em>minor</em> enhancements to the product</strong>:</p>
+          <ul>
+            <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
+            <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
+            <li>The minor enhancement must touch multiple components <span class="dimmed">  so that it helps you to familiarize yourself wit the codebase</span>.</li>
+          </ul>
+          <panel header="Examples of minor enhancements" expanded="">
+            <p>Here is a non-exhaustive list of minor enhancements:</p>
+            <ol>
+              <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+              <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+              <li>Load a different page instead of the default Google search page</li>
+              <li>Sort items</li>
+              <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+              <li>Marking some items as favorites</li>
+              <li>Ability to search by labels</li>
+              <li>Ability to specify colors for labels</li>
             </ol>
             <p></p>
           </panel>
@@ -38,23 +74,36 @@
             aspects you did not do.</p>
         </li>
         <li>
-          <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.</p>
-        </li>
-        <li>
-          <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
-        </li>
-      </ol>
-      <panel header="Enhancements vs Grade: Examples" expanded="">
-        <p>Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.</p>
-        <ul>
-          <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
-          <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
-          <li>Example 3 (Expected grade: <code>B+</code> to <code>A-</code>) : Example 2 + <a href="https://github.com/se-edu/addressbook-level4/pull/513/files">Add some missing tests</a></li>
-        </ul>
-        <p></p>
-      </panel>
-      <p></p>
-    </div>
+          <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+          <panel
+            header="Examples of team-tasks" expanded="">
+            <p>Here is a non-exhaustive list of team-tasks:</p>
+            <ol>
+              <li>Necessary general code enhancements
+                <ol>
+                  <li>Work related to renaming the product</li>
+                  <li>Work related to changing the product icon</li>
+                  <li>Morphing the product into a different product</li>
+                </ol>
+              </li>
+              <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+              <li>Maintaining the issue tracker</li>
+              <li>Release management</li>
+              <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+              <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+            </ol>
+            <p></p>
+  </panel>
+  <p></p>
+  </li>
+  <li>
+    <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.</p>
+  </li>
+  <li>
+    <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+  </li>
+  </ol>
+  </div>
   </panel>
 </div>
 <h3 id="policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events">Policy on absence due to valid reasons (e.g. MC, LOA, University events)</h3>
