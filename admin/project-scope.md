@@ -1,40 +1,105 @@
+In general, each team is expected to take one of these two directions:
+
+**[Direction 1]  _Optimize_** AddressBook for a specific target user: 
+   * Define a very specific target user profile. <br> :bulb: We recommend you narrow down the target user profile as much as you can %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody &rarr; teachers &rarr; university teachers &rarr; tech savvy university teachers &rarr; CS2103 instructors.%%
+   * Optimize the AddressBook for those specific target users %%&nbsp;i.e., add features that are only applicable for those users to make the app especially attractive to them. To add to the example in the previous point, there can be features that are applicable to CS2103 instructors only, such as the ability to pull down a student's photo from IVLE or navigate to a student's project on GitHub%%
+   
+   <panel header="Examples for _optimize_ direction" expanded> 
+   
+   * for users in a specific profession %%&nbsp;e.g. doctors, salesmen, teachers, etc.%%
+   * for users dealing with a huge number of contacts %%&nbsp;e.g. HR admins, user group admins%%
+   * based on what users do with the contacts %%&nbsp;e.g. organize group events, share info, do business, do analytics%%   
+   
+   </panel><p/>
+   
+**[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.
+   * This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.
+   * As mentioned in the _optimize_ direction, this direction too requires you to define a narrow target user profile.
+   
+   <panel header="Examples for _morph_ direction" expanded> 
+   
+   An app to manage, 
+     * Bookmarks of websites
+     * Tasks/Schedule
+     * Forum posts, news feeds, Social media feeds
+     * Online projects or issue trackers that the user is interested in
+     * Emails, possibly from different accounts
+   
+   </panel><p/>
+   
 <span id="individual-expectations">
 
 :bust_in_silhouette: **Individually**, each student is expected to,
 
-1. **Contribute one or more enhancements**<br>
-  Each enhancement should be stand-alone but should fit with the rest of the software and should have the consent of the team members.
+1. **Contribute ==one major enhancement== to the product**<br>
+   * Each enhancement should be stand-alone but,
+     * should fit with the rest of the software,
+     * and should have the consent of the team members.
   
    <panel header="Allowed enhancements" expanded>
    
    Here are the allowed options for enhancing AddressBook:
    
-   1. [Highly recommended] Rename the product to a more catchy name.
-   1. Add more features related to managing contacts. %%e.g. support storing birthdays of contacts%%
-   1. Enhance existing features. %%e.g. make the `find` feature more powerful%%
-   1. Make the command syntax more user friendly %%e.g. allow more variations of the keywords, change command format to an easier to type syntax%%
-   1. Add features that allows managing things other than contacts. %%e.g. todo items, appointments, deadlines, etc.%%
-   1. Modify the internal design %%e.g. change the architecture%%
-   1. Modify the GUI design %%e.g. remove the browser component and replace with something else%%
+   1. Add a new feature
+   1. Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
+   1. Modify the internal design in a major way %%e.g. change the architecture%%
+   1. A major redesign of the GUI %%e.g. make it work like a chat application (note: chat is a form of CLI)%%
    1. Integrate with online services %%e.g. Google contacts, Facebook, GitHub, etc.%%
-   1. Incorporate more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
    
    </panel><p/>
-  
+   
+   <panel header="Major enhancements vs Grade: Examples" expanded> 
+   
+   Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.
+   * Example 1 (Expected grade: `A`) : [Add support for undo/redo](https://github.com/se-edu/addressbook-level4/pull/610/files)
+   * Example 2 (Expected grade: `B`) : [Add support for viewing history](https://github.com/se-edu/addressbook-level4/pull/440/files)
+   
+   </panel><p/>
+
+1. **Contribute one _minor_ enhancements to the product**: 
+   * In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.
+   * Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.
+   * The minor enhancement must touch multiple components %%&nbsp; so that it helps you to familiarize yourself wit the codebase%%. 
+   
+   <panel header="Examples of minor enhancements" expanded>
+   
+   Here is a non-exhaustive list of minor enhancements:
+   
+   1. Support different themes for the Look & Feel %%&nbsp;dark, light, etc.%%
+   1. Support more fields %%&nbsp;e.g. Birthday%%
+   1. Load a different page instead of the default Google search page
+   1. Sort items
+   1. Multiple panels %%&nbsp;e.g. an additional panel to show recently accessed items%%
+   1. Marking some items as favorites
+   1. Ability to search by labels
+   1. Ability to specify colors for labels
+   
+   </panel><p/> 
+ 
 1. **Contribute to all aspects of the project**: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.
 
-1. **Contribute incrementally**: A student's contribution should be incremental, over at least three releases of the product. It should not be done in one big burst.
+1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
+
+   <panel header="Examples of team-tasks" expanded>
+   
+   Here is a non-exhaustive list of team-tasks:
+   
+   1. Necessary general code enhancements
+      1. Work related to renaming the product
+      1. Work related to changing the product icon
+      1. Morphing the product into a different product
+   1. Setting up the GitHub, Travis, AppVeyor, etc.
+   1. Maintaining the issue tracker
+   1. Release management
+   1. Updating user/developer docs that are not specific to a feature %%&nbsp;e.g. documenting the target user profile%%
+   1. Incorporating more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
+   
+   </panel><p/>
+
+1. **Contribute incrementally**: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.
 
 1. Write **~0.5 KLoC of code**, on average.
 
-<panel header="Enhancements vs Grade: Examples" expanded> 
-
-Here are some examples, if done by one student, is likely to be earn the specified grade for the relevant parts of the project grade.
-* Example 1 (Expected grade: `A`) : [Add support for undo/redo](https://github.com/se-edu/addressbook-level4/pull/610/files)
-* Example 2 (Expected grade: `B`) : [Add support for viewing history](https://github.com/se-edu/addressbook-level4/pull/440/files)
-* Example 3 (Expected grade: `B+` to `A-`) : Example 2 + [Add some missing tests](https://github.com/se-edu/addressbook-level4/pull/513/files)
-
-</panel><p/>
 </span>
 <span id="team-expectations">
 
