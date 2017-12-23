@@ -1,18 +1,24 @@
-<img src="{{baseUrl}}/admin/images/Lecture photo.png" style="width: 713px;">
+<img src="{{baseUrl}}/admin/images/Lecture photo.png" style="width: 900px;">
 
-**Timing/venue**: Fri 1400-1600 ICube Auditorium. Lectures start at 1400 sharp and end around 1545 (15 minutes to travel to next lecture).
+**Timing/venue**: 
+
+Semester | Venue | Time 
+-------- | ----- | ----
+Semester 1 (Aug-Nov) | ICube Auditorium | **1400**-1600
+Semester 2 (Jan-April) | ICube Auditorium | **1600**-1800
+
+Lectures start on time sharp and end around 15 minutes before official end time.
 
 <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%"> 
 
-  CS2103T lectures are on Fridays 2-4pm at ICube auditorium, same as that for CS2103.
-  Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. %%The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.%%
+CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. %%The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.%%
   
 </panel><p/>
 
-Each lecture consists of two sections:
+Each lecture is a mixture of:
 
-* First half: _Flipped classroom_ format. Discusses the learning outcomes of the current week.
-* Second half: A preview of the learning outcomes for the following week.
+* A _flipped classroom_ format activities covering learning outcomes of the _current_ week.
+* A preview of the learning outcomes for the _following_ week.
 
 **Attendance**: Attendance for the ==first lecture is compulsory==.
 
@@ -20,5 +26,5 @@ Each lecture consists of two sections:
 
 **Handouts**: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the [Textbook]({{baseUrl}}/book/index.html) section and are also hyperlinked from the [Schedule Page]({{baseUrl}}/schedule/index.html).  
 
-**Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded *after* the lecture.
+**Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded *after* the lecture (link available in the [Schedule Page]({{baseUrl}}/schedule/index.html)).
 
