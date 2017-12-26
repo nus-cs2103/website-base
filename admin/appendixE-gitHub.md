@@ -163,14 +163,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * Note that you can change the milestone plan along the way as necessary.
 
-<tip-box type="important"> 
-
-To consider the milestone as 'reached', **you should have <tooltip content="described below">wrapped up</tooltip> the milestone _before_ the tutorial begins. Missed milestones will count against the 'project management' component of your final grade**.
-
-</tip-box> 
-
 **Wrapping up a Milestone**:<br>
-Here are the conditions to satisfy for a milestone to be considered properly wrapped up:
+==Here are the conditions to satisfy for a milestone to be considered properly wrapped up==:
   * A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.
   * All tests passing on Travis for the version tagged above.
   * Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br>
@@ -182,7 +176,6 @@ Here are the conditions to satisfy for a milestone to be considered properly wra
   * Optionally, future milestones are revised based on what you experienced in the current milestone %%&nbsp;e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
    
   * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.  
-
 
 </div>
 

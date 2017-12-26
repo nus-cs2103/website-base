@@ -2,13 +2,13 @@
 
 **v1.4 Summary of Deliverables**
 
-* :bust_in_silhouette: Individual:
-  - [ ] Contributed code to v1.4
-  - [ ] Code collated
-* :busts_in_silhouette: Team:
-  - [ ] v1.4 jar file released properly on GitHub
-  - [ ] v1.4 milestone properly wrapped up on GitHub
-  - [ ] User Guide reflects the current state of the product 
+Milestone | Minimum acceptable performance to consider as 'reached'
+--------- | -------------------------------------------------------
+:bust_in_silhouette: Contributed code to v1.4 | code merged
+:bust_in_silhouette: Code collated | as stated
+:busts_in_silhouette: v1.4 jar file released properly on GitHub | as stated
+:busts_in_silhouette: v1.4 milestone properly wrapped up on GitHub | as stated
+:busts_in_silhouette: Documentation updated to match v1.4 | at least the User Guide and the `README.adoc` is updated
 
 </tip-box>
 
@@ -29,11 +29,6 @@ You are required to <tooltip content="extract your own code and put in one file"
 As before, move the product towards v2.0.
 
 **Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub.
-
-**Grading criteria**:
-
-* Code collated properly
-* Criteria given in v1.3 
 
 ### v1.4 Documentation
 
