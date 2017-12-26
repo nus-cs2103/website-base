@@ -4,7 +4,7 @@
 
 * :bust_in_silhouette: Individual:
   - [ ] Contributed code to v1.3
-* :busts_in_silhouette::busts_in_silhouette: Team:
+* :busts_in_silhouette: Team:
   - [ ] v1.3 jar file released properly on GitHub
   - [ ] v1.3 milestone properly wrapped up on GitHub
 

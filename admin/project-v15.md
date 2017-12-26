@@ -12,14 +12,14 @@
 
 Item | Team/Individual | Method
 ---- | --------------- | ------
-Jar file | :busts_in_silhouette::busts_in_silhouette: | IVLE
-User Guide | :busts_in_silhouette::busts_in_silhouette: | IVLE
-Developer Guide | :busts_in_silhouette::busts_in_silhouette: | IVLE
-Sample Data | :busts_in_silhouette::busts_in_silhouette: | IVLE
-Test Script | :busts_in_silhouette::busts_in_silhouette: | IVLE
+Jar file | :busts_in_silhouette: | IVLE
+User Guide | :busts_in_silhouette: | IVLE
+Developer Guide | :busts_in_silhouette: | IVLE
+Sample Data | :busts_in_silhouette: | IVLE
+Test Script | :busts_in_silhouette: | IVLE
 Project Portfolio Page | :bust_in_silhouette: | IVLE
-`README.adoc`, `Ui.png` | :busts_in_silhouette::busts_in_silhouette: | GitHub
-`AboutUs.adoc` | :busts_in_silhouette::busts_in_silhouette: | GitHub
+`README.adoc`, `Ui.png` | :busts_in_silhouette: | GitHub
+`AboutUs.adoc` | :busts_in_silhouette: | GitHub
 Collated files | :bust_in_silhouette: | GitHub
 
 </tip-box>
@@ -137,7 +137,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
   * product evaluation skills
   * effort estimation skills
 * Peer-evaluate your
-  * product design :busts_in_silhouette::busts_in_silhouette:
+  * product design :busts_in_silhouette:
   * implementation effort :bust_in_silhouette:
   * documentation quality :bust_in_silhouette:
 
@@ -181,7 +181,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 1. **[30 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
   
-   * **A. Cohesiveness of product features** [:busts_in_silhouette::busts_in_silhouette:]: Do the features fit together and match the target user (and the target problem being addressed)?
+   * **A. Cohesiveness of product features** [:busts_in_silhouette:]: Do the features fit together and match the target user (and the target problem being addressed)?
      * `low`: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.
      * `medium`: Some features are relevant to the target user but some are not.
      * `high`: One of these

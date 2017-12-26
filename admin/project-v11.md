@@ -4,7 +4,7 @@
 
 * :bust_in_silhouette: Individual:
   - [ ] Have modified in multiple components
-* :busts_in_silhouette::busts_in_silhouette: Team:
+* :busts_in_silhouette: Team:
   - [ ] All project documents updated as required
   - [ ] Any errors in org/repo set up fixed %%&nbsp;(e.g. wrong repo name)%%
 

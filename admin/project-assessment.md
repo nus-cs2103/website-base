@@ -1,8 +1,8 @@
 Note that project grading is ==not competitive (not bell curved)==. ==CS2103T projects will be assessed separately from CS2103 projects.== This is to account for the perceived difference in workload. Given below is the marking scheme.
 
-**Total**: 50 marks (:bust_in_silhouette: 40 individual marks + :busts_in_silhouette::busts_in_silhouette: 10 team marks)
+**Total**: 50 marks (:bust_in_silhouette: 40 individual marks + :busts_in_silhouette: 10 team marks)
 
-<panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded>
+<panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded>
 
 Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?
 
@@ -47,7 +47,7 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
     
 </panel>
   
-<panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded>
+<panel header="5. **Project management** [:busts_in_silhouette:: 5 marks]" expanded>
 <div id="project-management-grading">  
 
 Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 

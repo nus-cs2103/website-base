@@ -2,13 +2,13 @@
 
 **v1.0 Summary of Deliverables**
 
-Here is a summary of items you need to deliver to _reach_ v1.0 individual (:bust_in_silhouette:) and team (:busts_in_silhouette::busts_in_silhouette:) milestones. See sections below for more details of each item. 
+Here is a summary of items you need to deliver to _reach_ v1.0 individual (:bust_in_silhouette:) and team (:busts_in_silhouette:) milestones. See sections below for more details of each item. 
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 :bust_in_silhouette: Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
-:busts_in_silhouette::busts_in_silhouette: Team org/repo set up | as stated
-:busts_in_silhouette::busts_in_silhouette: All project documents updated as required | at least have a full draft version of the required document updates in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo
+:busts_in_silhouette: Team org/repo set up | as stated
+:busts_in_silhouette: All project documents updated as required | at least have a full draft version of the required document updates in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo
 
 :exclamation: ==Reaching weekly individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 

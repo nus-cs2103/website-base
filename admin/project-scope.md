@@ -123,7 +123,7 @@ For either direction, you need to define a target user profile and a value propo
 </span>
 <span id="team-expectations">
 
-:busts_in_silhouette::busts_in_silhouette: **As a team**, you are expected to work together to,
+:busts_in_silhouette: **As a team**, you are expected to work together to,
 
 1. **Preserve product integrity**: i.e.
    1. Enhancements added fit together to form a cohesive product.

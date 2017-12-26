@@ -7,7 +7,7 @@ Here is a summary of individual and team deliverables for v1.2 to consider it as
 * :bust_in_silhouette: Individual:
   - [ ] Contributed code to the product
   - [ ] Described implementation details in the Developer Guide
-* :busts_in_silhouette::busts_in_silhouette: Team:
+* :busts_in_silhouette: Team:
   - [ ] v1.2 managed using GitHub features (issue tracker, milestones, etc.)
 
 </tip-box>
