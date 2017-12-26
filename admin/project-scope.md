@@ -78,7 +78,7 @@ For either direction, you need to define a target user profile and a value propo
    
    </panel><p/>
 
-1. **Contribute one _minor_ enhancements to the product**: 
+1. **Contribute ==one _minor_ enhancement== to the product**: 
    * In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.
    * Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.
    * The minor enhancement must touch multiple components %%&nbsp;so that it helps you to familiarize yourself wit the codebase%%. 
@@ -98,7 +98,10 @@ For either direction, you need to define a target user profile and a value propo
    
    </panel><p/> 
  
-1. **Contribute to all aspects of the project**: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.
+1. **Contribute to all aspects of the project**: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.<br>
+  In particular, ==you are required to divide work based on features rather than components==:
+ * By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components%%.
+ * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%&nbsp;(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
 
 1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
 

@@ -1,6 +1,6 @@
 <tip-box> 
 
-**v1.0 Summary of Deliverables**
+**v1.0 Summary of Milestone**
 
 Here is a summary of items you need to deliver to _reach_ v1.0 individual (:bust_in_silhouette:) and team (:busts_in_silhouette:) milestones. See sections below for more details of each item. 
 
