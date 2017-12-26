@@ -1,14 +1,12 @@
 <tip-box> 
 
-**v1.2 Summary of Deliverables**
+**v1.2 Summary of Milestone**
 
-Here is a summary of individual and team deliverables for v1.2 to consider it as _reached_. See sections below for more details of each deliverable. Individual deliverables and team deliverables are considered separately for grading %%&nbsp;e.g. if a team member fail individual deliverables for more than two milestones, only that member's marks will be affected%%.
-
-* :bust_in_silhouette: Individual:
-  - [ ] Contributed code to the product
-  - [ ] Described implementation details in the Developer Guide
-* :busts_in_silhouette: Team:
-  - [ ] v1.2 managed using GitHub features (issue tracker, milestones, etc.)
+Milestone | Minimum acceptable performance to consider as 'reached'
+--------- | -------------------------------------------------------
+:bust_in_silhouette: Contributed code to the product | some code merged
+:bust_in_silhouette: Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
+:busts_in_silhouette: v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version tagged `v1.2` is in your repo. There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin &raquo; Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
 
 </tip-box>
 
@@ -27,19 +25,14 @@ As before, you are _recommended_ (but not required) to **follow the forking work
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
 
-**From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.2, v1.3, ...">weekly milestone</tooltip>; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important LO of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>%%.  ==If you <tooltip content="failed to contribute code to">miss</tooltip> more than two weekly milestones, you will start losing marks.== <br>
+**From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.2, v1.3, ...">weekly milestone</tooltip>; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important LO of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
   If an enhancement is too big to complete in one week, here are some options:
    * [Preferred] Deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first. 
-   * Do a different, smaller, enhancement for the current week while working on a bigger enhancement to deliver in a future week.
-   * Choose not contribute to the weekly milestone. This should be fine as long as you don't miss more than two milestones.
+   * Choose not to contribute to the weekly milestone. This should be fine as long as you don't miss more than two milestones.
 
 ### v1.2 Product
 
 **Submission**: Update code in GitHub.
-
-**Grading**: Criteria to consider this milestone as reached
-* A new version tagged `v1.2` is in your repo. %%&nbsp;If `v1.2` is already used by a past commit, you can use something similar such as `V1.2` or `v1.2.0`.%%
-* The version `v1.2` is step towards `v2.0` (but it does not matter how big a step it is)
 
 <tip-box>
 
@@ -65,7 +58,7 @@ Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expec
 
 * **Developer Guide**:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
-    Expected length: ~1 page per person
+    Expected length: 1+ page per person
   * The description can contain things such as,
     * How the feature is implemented.
     * Why it is implemented that way.
@@ -76,4 +69,4 @@ Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expec
 
 ### v1.2 Demo
 
-Do an informal demo of the new feature during the tutorial. ==Each team member should demo their own work, using the `master` branch.==
+Do an informal demo of the new feature during the tutorial. ==Each team member should demo their own work, using commit tagged as `v1.2` in the `master` branch== %%&nbsp;i.e. only features included in the current release should be demoed%%.

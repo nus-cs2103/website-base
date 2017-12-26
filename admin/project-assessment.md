@@ -53,8 +53,8 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
 Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 
 
 Based on: Supervisor observations of weekly milestones and GitHub data. ==Marks will be deducted== if,
- * if you missed more than two individual milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%%
- * if your team missed more than two team milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%%
+ * if you missed more than two individual milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%% (only the team member loses marks)
+ * if your team missed more than two team milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%% (all team members lose marks)
  
 Milestones ==need to be reached _before_ the start of the tutorial==. If you reach the milestone _during_ the tutorial, it will be considered as missed.
   
