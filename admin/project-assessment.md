@@ -48,18 +48,25 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
 </panel>
   
 <panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded>
+<div id="project-management-grading">  
 
-Evaluates: How well you worked together as a team to follow a systematic process? 
+Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 
 
-Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.
+Based on: Supervisor observations of weekly milestones and GitHub data. ==Marks will be deducted== if,
+ * if you missed more than two individual milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%%
+ * if your team missed more than two team milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%%
+ 
+Milestones ==need to be reached _before_ the start of the tutorial==. If you reach the milestone _during_ the tutorial, it will be considered as missed.
   
-Criteria:
-* Good use of GitHub milestones.
-* Good use of GitHub release mechanism.
-* Good version control, based on the repo.
-* Reasonable attempt to use the forking workflow.
-* Good task definition, assignment and tracking, based on the issue tracker.
+Other criteria:
+* Good use of GitHub milestones
+* Good use of GitHub release mechanism
+* Good version control, based on the repo
+* Reasonable attempt to use the forking workflow
+* Good task definition, assignment and tracking, based on the issue tracker
 * Good use of buffers %%(opposite: everything at the last minute)%%
-* Project done iteratively %%(opposite: fake iterative, doing most of the work in one iteration)%%. 
+* Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%% 
 
-</panel><p/>
+</div>
+</panel>
+<p/>

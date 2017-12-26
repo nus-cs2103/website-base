@@ -4,7 +4,7 @@ Your project should comply with the following constraints.
 * **Constraint-Morph**: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
   %%**Reason:** To ensure your code has a decent quality level from the start.%%
   
-* **Constraint-Incremental**: The product needs to be developed incrementally over the project duration (week 6-13). While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. %%&nbsp;Reasons: 1.To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
+* **Constraint-Incremental**: The product needs to be developed incrementally over the project duration (week 6-13). While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. %%&nbsp;Reasons: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
 
 <span id="constraint-cli">
 
@@ -12,6 +12,7 @@ Your project should comply with the following constraints.
   * Mouse actions should have keyboard alternatives. 
   * Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.
   * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. %%&nbsp;Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.%%
+  * :exclamation: While we don't prohibit <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading. 
 
 </span>
 
@@ -21,8 +22,8 @@ Your project should comply with the following constraints.
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/> 
   %%**Reason:** For you to practice OOP that you learned in the course.%%
 
-* **Constraint-Windows**: The software should work on the Windows platform.<br/>
-  %%**Reason:** Final testing will be done on Windows machines.%%
+* **Constraint-Platform-Independent**: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
+  %%**Reason:** Peer testers can use any of these platforms.%%
 
 * **Constraint-No-Installer**: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.  
   %%**Reason:** We do not want to install all your projects on our testing machines when we test them for grading.%%
@@ -35,6 +36,6 @@ Your project should comply with the following constraints.
   and is subjected to prior approval by us.<br> 
   %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
-  Please post your request for approval in IVLE forum before you start using the library.<br/>
+  Please ==post in the [forum](https://github.com/nus-cs2103-AY1718S2/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
   %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 
