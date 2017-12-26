@@ -1,30 +1,54 @@
-<p>In general, each team is expected to take one of these two directions:</p>
-<p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a specific target user:</p>
-<ul>
-  <li>Define a very specific target user profile. <br> 💡 We recommend you narrow down the target user profile as much as you can <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span></li>
-  <li>Optimize the AddressBook for those specific target users <span class="dimmed"> i.e., add features that are only applicable for those users to make the app especially attractive to them. To add to the example in the previous point, there can be features that are applicable to CS2103 instructors only, such as the ability to pull down a student's photo from IVLE or navigate to a student's project on GitHub</span></li>
-</ul>
-<panel header="Examples for _optimize_ direction" expanded="">
+<div id="project-direction">
+  In general, each team is expected to take one of these two directions:
+  <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
+  <panel header="Examples for the _optimize_ direction" expanded="">
+    <p>An AddressBook,</p>
+    <ul>
+      <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+      <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+      <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+    </ul>
+    <p></p>
+  </panel>
+  <p></p>
+  <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.<br>    ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
+  <panel header="Examples for _morph_ direction" expanded="">
+    <p>An app to manage,</p>
+    <ul>
+      <li>Bookmarks of websites</li>
+      <li>Tasks/Schedule</li>
+      <li>Location info</li>
+      <li>Thing to memorize i.e. flash cards, trivia</li>
+      <li>Forum posts, news feeds, Social media feeds</li>
+      <li>Online projects or issue trackers that the user is interested in</li>
+      <li>Emails, possibly from different accounts</li>
+      <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+    </ul>
+    <p></p>
+  </panel>
+  <p></p>
+  <p>For either direction, you need to define a target user profile and a value proposition:</p>
   <ul>
-    <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
-    <li>for users dealing with a huge number of contacts <span class="dimmed"> e.g. HR admins, user group admins</span></li>
-    <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+    <li>
+      <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We recommend you narrow down the target user profile quite a lot <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br>        ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.</p>
+    </li>
+    <li>
+      <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em><span class="dimmed"> what problem does the product solve? how does it make the the user's life easier</span> that matches the target user profile.</p>
+    </li>
   </ul>
+  <p><strong>It is expected that your product will be optimized for those specific target users</strong><span class="dimmed"> i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). To add to the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span><br>    💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
+  <panel header="%%Why the need to narrow down the user profile?%%">
+    <ul>
+      <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+      <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job
+        of implementing that feature.</li>
+    </ul>
+    <p></p>
+  </panel>
   <p></p>
-</panel>
-<p></p>
-<p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.</p>
-<ul>
-  <li>This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</li>
-  <li>As mentioned in the <em>optimize</em> direction, this direction too requires you to define a narrow target user profile.</li>
-</ul>
-<panel header="Examples for _morph_ direction" expanded="">
-  <p>An app to manage, * Bookmarks of websites * Tasks/Schedule * Forum posts, news feeds, Social media feeds * Online projects or issue trackers that the user is interested in * Emails, possibly from different accounts</p>
-  <p></p>
-</panel>
-<p></p>
+</div>
 <span id="individual-expectations"><p>👤 <strong>Individually</strong>, each student is expected to,</p><ol><li><p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p><ul><li>Each enhancement should be stand-alone but,
-<ul><li>should fit with the rest of the software,</li><li>and should have the consent of the team members.</li></ul></li></ul><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>Add a new feature</li><li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+<ul><li>should fit with the rest of the software (and the target user profile),</li><li>and should have the consent of the team members.</li></ul></li></ul><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>Add a new feature</li><li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
 <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
 <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
 <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
@@ -43,18 +67,18 @@
 <p></p>
 </li>
 <li>
-  <p><strong>Contribute one <em>minor</em> enhancements to the product</strong>:</p>
+  <p><strong>Contribute <mark>one <em>minor</em> enhancement</mark> to the product</strong>:</p>
   <ul>
     <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
     <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
-    <li>The minor enhancement must touch multiple components <span class="dimmed">  so that it helps you to familiarize yourself wit the codebase</span>.</li>
+    <li>The minor enhancement must touch multiple components <span class="dimmed"> so that it helps you to familiarize yourself wit the codebase</span>.</li>
   </ul>
   <panel header="Examples of minor enhancements" expanded="">
     <p>Here is a non-exhaustive list of minor enhancements:</p>
     <ol>
       <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
       <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
-      <li>Load a different page instead of the default Google search page</li>
+      <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
       <li>Sort items</li>
       <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
       <li>Marking some items as favorites</li>
@@ -67,40 +91,43 @@
 </li>
 <li>
   <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects
-    you did not do.</p>
-</li>
-<li>
-  <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-  <panel header="Examples of team-tasks"
-    expanded="">
-    <p>Here is a non-exhaustive list of team-tasks:</p>
-    <ol>
-      <li>Necessary general code enhancements
-        <ol>
-          <li>Work related to renaming the product</li>
-          <li>Work related to changing the product icon</li>
-          <li>Morphing the product into a different product</li>
-        </ol>
-      </li>
-      <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
-      <li>Maintaining the issue tracker</li>
-      <li>Release management</li>
-      <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
-      <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-    </ol>
-    <p></p>
-  </panel>
-  <p></p>
-</li>
-<li>
-  <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.</p>
-</li>
-<li>
-  <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+    you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
 </li>
 </ol>
+<ul>
+  <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+  <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary for the
+    features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span> and protect that
+    component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+</ul>
+<ol>
+  <li>
+    <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+    <panel header="Examples of team-tasks"
+      expanded="">
+      <p>Here is a non-exhaustive list of team-tasks:</p>
+      <ol>
+        <li>Necessary general code enhancements
+          <ol>
+            <li>Work related to renaming the product</li>
+            <li>Work related to changing the product icon</li>
+            <li>Morphing the product into a different product</li>
+          </ol>
+        </li>
+        <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+        <li>Maintaining the issue tracker</li>
+        <li>Release management</li>
+        <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+        <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+      </ol>
+      <p></p>
+    </panel>
+    <p></p>
+  </li>
+  <li>
+    <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+  </li>
+</ol>
 </span>
-<span id="team-expectations"><p>👥👥 <strong>As a team</strong>, you are expected to work together to,</p><ol><li><strong>Preserve product integrity</strong>: i.e.
-a. Enhancements added fit together to form a cohesive product.
-b. Documentation follows a consistent style and presents a cohesive picture to the reader.
-c. Final project demo presents a cohesive picture to the audience.</li><li><strong>Maintain product quality</strong>: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li><li><strong>Manage the project smoothly</strong>: i.e. ensure PR workflow, repo maintenance, integration, releases, etc. are done smoothly.</li></ol></span>
+<span id="team-expectations"><p>👥 <strong>As a team</strong>, you are expected to work together to,</p><ol><li><strong>Preserve product integrity</strong>: i.e.
+<ol><li>Enhancements added fit together to form a cohesive product.</li><li>Documentation follows a consistent style and presents a cohesive picture to the reader.</li><li>Final project demo presents a cohesive picture to the audience.</li></ol></li><li><strong>Maintain product quality</strong>: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li><li><strong>Manage the project smoothly</strong>: i.e. ensure PR workflow, repo maintenance, integration, releases, etc. are done smoothly.</li></ol></span>

@@ -1,18 +1,32 @@
 <tip-box>
-  <p><strong>v1.1 Summary of Deliverables</strong></p>
-  <ul>
-    <li>👤 Individual:
-      <ul class="task-list">
-        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Have modified in multiple components</li>
-      </ul>
-    </li>
-    <li>👥👥 Team:
-      <ul class="task-list">
-        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> All project documents updated as required</li>
-        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Any errors in org/repo set up fixed <span class="dimmed"> (e.g. wrong repo name)</span></li>
-      </ul>
-    </li>
-  </ul>
+  <p><strong>v1.1 Summary of Milestone</strong></p>
+  <table class="markbind-table table">
+    <thead>
+      <tr>
+        <th>Milestone</th>
+        <th>Minimum acceptable performance to consider as 'reached'</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>👤 Have modified in multiple components</td>
+        <td>Minimal : Your enhancement touches components other than the ones you modified in v1.0 and you are able to demo it using your own computer <br> On track : In addition, you have created a PR for the enhancement, it covers tests and documentation
+          updates for the new feature, and the PR passes Travis checks<br> Ahead : Your PR has been reviewed and merged.</td>
+      </tr>
+      <tr>
+        <td>👥 All project documents updated as required</td>
+        <td>At least there is a PR containing all required changes</td>
+      </tr>
+      <tr>
+        <td>👥 v1.0 document updates are merged</td>
+        <td>as stated</td>
+      </tr>
+      <tr>
+        <td>👥 Any errors in org/repo set up fixed <span class="dimmed"> (e.g. wrong repo name)</span></td>
+        <td>as stated</td>
+      </tr>
+    </tbody>
+  </table>
 </tip-box>
 <div id="product">
   <h3 id="v11-product">v1.1 Product</h3>
@@ -21,26 +35,112 @@
   <p><strong>Objective</strong>: Move the product from v1.0 towards v2.0 in a small incremental step.</p>
   <p><strong>Description</strong>:</p>
   <ul>
-    <li>Each member should add some enhancements that are in line with the vision for v2.0.</li>
-    <li>These enhancements should go beyond the component you are in charge of, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
+    <li>Each member should add some enhancements that are in line with the vision for v2.0. We recommend this to be your
+      <trigger trigger="click" for="modal:v11-individual-expectations"><em>minor enhancement</em></trigger>, but it can also be an initial step in your <em>major enhancement</em>.</li>
   </ul>
-  <tip-box type="important">
-    <p><strong>You are required to divide work based on features rather than component</strong></p>
-    <ul>
-      <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented 1 or more enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. The objective is to force you to learn all components
-        of the software, instead of limiting yourself to just one/few components.</li>
-      <li>However, you will continue to be <em>in charge</em> of components that were allocated to you at v1.0 (you can change the allocation later if you wish) while others will be modifying those components as necessary for the features they are implementing.
-        Your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span> and protect that component from degrading
-        <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
-    </ul>
-  </tip-box>
-  <p><strong>Submission</strong>: Demo of the new functionality during the tutorial.</p>
-  <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
+  <modal title="" id="modal:v11-individual-expectations">
+    <div>
+      <p>👤 <strong>Individually</strong>, each student is expected to,</p>
+      <ol>
+        <li>
+          <p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p>
+          <ul>
+            <li>Each enhancement should be stand-alone but,
+              <ul>
+                <li>should fit with the rest of the software (and the target user profile),</li>
+                <li>and should have the consent of the team members.</li>
+              </ul>
+            </li>
+          </ul>
+          <panel header="Allowed enhancements" expanded="">
+            <p>Here are the allowed options for enhancing AddressBook:</p>
+            <ol>
+              <li>Add a new feature</li>
+              <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+              <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
+              <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
+              <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
+            </ol>
+            <p></p>
+          </panel>
+          <p></p>
+          <panel header="Major enhancements vs Grade: Examples" expanded="">
+            <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+            <ul>
+              <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+              <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+            </ul>
+            <p></p>
+          </panel>
+          <p></p>
+        </li>
+        <li>
+          <p><strong>Contribute <mark>one <em>minor</em> enhancement</mark> to the product</strong>:</p>
+          <ul>
+            <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
+            <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
+            <li>The minor enhancement must touch multiple components <span class="dimmed"> so that it helps you to familiarize yourself wit the codebase</span>.</li>
+          </ul>
+          <panel header="Examples of minor enhancements" expanded="">
+            <p>Here is a non-exhaustive list of minor enhancements:</p>
+            <ol>
+              <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+              <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+              <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
+              <li>Sort items</li>
+              <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+              <li>Marking some items as favorites</li>
+              <li>Ability to search by labels</li>
+              <li>Ability to specify colors for labels</li>
+            </ol>
+            <p></p>
+          </panel>
+          <p></p>
+        </li>
+        <li>
+          <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the
+            aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
+        </li>
+      </ol>
+      <ul>
+        <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+        <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
+          for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>          and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+      </ul>
+      <ol>
+        <li>
+          <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+          <panel
+            header="Examples of team-tasks" expanded="">
+            <p>Here is a non-exhaustive list of team-tasks:</p>
+            <ol>
+              <li>Necessary general code enhancements
+                <ol>
+                  <li>Work related to renaming the product</li>
+                  <li>Work related to changing the product icon</li>
+                  <li>Morphing the product into a different product</li>
+                </ol>
+              </li>
+              <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+              <li>Maintaining the issue tracker</li>
+              <li>Release management</li>
+              <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+              <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+            </ol>
+            <p></p>
+            </panel>
+            <p></p>
+        </li>
+        <li>
+          <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+        </li>
+      </ol>
+    </div>
+  </modal>
   <ul>
-    <li>Minimal ⭐️ : Your enhancement touches components other than the ones you modified in v1.0 and you are able to demo it using your own computer.</li>
-    <li>On track ⭐️⭐️ : In addition, you have created a PR for the enhancement, it covers tests and documentation updates for the new feature, and the PR passes Travis checks.</li>
-    <li>Ahead ⭐️⭐️⭐️ : Your PR has been reviewed and merged.</li>
+    <li>These enhancements <mark>should go beyond the component you are in charge of</mark>, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
   </ul>
+  <p><strong>Submission</strong>: Demo of the new functionality during the tutorial.</p>
 </div>
 <div id="documentation">
   <h3 id="v11-documentation">v1.1 Documentation</h3>
@@ -48,9 +148,9 @@
   <ul>
     <li><strong>User Guide</strong>:<br> Update the user guide to describe what the product would be like when it is at 2.0. Mark features not implemented yet as <code>Coming in v2.0</code>. You may use UI mockups where necessary.</li>
   </ul>
-  <tip-box type="tip">
-    <p>It is highly recommended that you <strong>divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding</strong><span class="dimmed"> e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.
-      For features that are not planned to be implemented by v1.5, you can divide them based on who will be implementing them if the project were to continue until v2.0.</p>
+  <tip-box>
+    <p>💡 It is highly recommended that you <strong>divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding</strong><span class="dimmed"> e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.
+      For features that are not planned to be implemented by v1.5, you can divide them based on who will be implementing them <em>if</em> the project were to continue until v2.0 (hypothetically).</p>
     <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
   </tip-box>
   <ul>
@@ -59,14 +159,23 @@
         <li>Replace info of SE-EDU developers with info of your team, including a <mark>suitable photo</mark> as described
           <trigger trigger="click" for="modal:v11-photo">here</trigger>.</li>
         <li>Including the name/photo of the supervisor/lecturer is optional.</li>
-        <li>The photo of a team member should be <code>doc/images/githbub_id_in_lower_case.png</code><span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
+        <li>The photo of a team member should be <code>doc/images/githbub_username_in_lower_case.png</code><span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
       </ul>
     </li>
   </ul>
-  <modal title="Admin &raquo; Choosing a profile photo" id="modal:v11-photo">
+  <modal large="" title="Admin &raquo; Choosing a profile photo" id="modal:v11-photo">
     <div>
-      <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of
-        good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
+      <ul>
+        <li>
+          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+            of good and bad profile photos.<br><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+        </li>
+        <li>
+          <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you can request permission
+            to omit your photo from the page by writing to prof.</p>
+        </li>
+      </ul>
+    </div>
   </modal>
   <ul>
     <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
@@ -87,18 +196,17 @@
         done to that component in v1.3-v1.5.</li>
     </ul>
     <p>You may define additional roles.</p>
-    <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.</p>
+    <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.</p>
     <p></p>
   </panel>
   <p></p>
   <ul>
-    <li><strong>README.adoc</strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded
-      by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code> You may remove the <code>Learning Outcomes</code> link and
-      related pages.</li>
+    <li><strong>README.adoc</strong> page: Update it to match your project.
+      <ul>
+        <li>Add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts.</li>
+        <li>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark>          (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code>          link and related pages.</li>
+        <li>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
+      </ul>
+    </li>
   </ul>
-  <tip-box type="tip">
-    <p>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You are recommended to rephrase it to read like the home page of a
-      real product (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span></p>
-  </tip-box>
-  <p><strong>Grading</strong>: To consider this milestone as reached, you should have all v1.0 and v1.1 deliverables completed.</p>
 </div>

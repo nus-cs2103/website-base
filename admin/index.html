@@ -530,6 +530,8 @@
                 <li>
                   <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over
                   <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
+                <li>❗️ While we don't prohibit
+                  <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.</li>
               </ul>
             </li>
           </ul>
@@ -541,33 +543,57 @@
   <h2 id="project-scope">Project Scope</h2>
   <div id="admin-project-scope">
     <div>
-      <p>In general, each team is expected to take one of these two directions:</p>
-      <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a specific target user:</p>
-      <ul>
-        <li>Define a very specific target user profile. <br> 💡 We recommend you narrow down the target user profile as much as you can <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span></li>
-        <li>Optimize the AddressBook for those specific target users <span class="dimmed"> i.e., add features that are only applicable for those users to make the app especially attractive to them. To add to the example in the previous point, there can be features that are applicable to CS2103 instructors only, such as the ability to pull down a student's photo from IVLE or navigate to a student's project on GitHub</span></li>
-      </ul>
-      <panel header="Examples for _optimize_ direction" expanded="">
+      <div id="project-direction">
+        In general, each team is expected to take one of these two directions:
+        <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
+        <panel header="Examples for the _optimize_ direction" expanded="">
+          <p>An AddressBook,</p>
+          <ul>
+            <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+            <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+            <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+          </ul>
+          <p></p>
+        </panel>
+        <p></p>
+        <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something
+          else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
+        <panel header="Examples for _morph_ direction" expanded="">
+          <p>An app to manage,</p>
+          <ul>
+            <li>Bookmarks of websites</li>
+            <li>Tasks/Schedule</li>
+            <li>Location info</li>
+            <li>Thing to memorize i.e. flash cards, trivia</li>
+            <li>Forum posts, news feeds, Social media feeds</li>
+            <li>Online projects or issue trackers that the user is interested in</li>
+            <li>Emails, possibly from different accounts</li>
+            <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+          </ul>
+          <p></p>
+        </panel>
+        <p></p>
+        <p>For either direction, you need to define a target user profile and a value proposition:</p>
         <ul>
-          <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
-          <li>for users dealing with a huge number of contacts <span class="dimmed"> e.g. HR admins, user group admins</span></li>
-          <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+          <li>
+            <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We recommend you narrow down the target user profile quite a lot <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br>              ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.</p>
+          </li>
+          <li>
+            <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em><span class="dimmed"> what problem does the product solve? how does it make the the user's life easier</span> that matches the target user profile.</p>
+          </li>
         </ul>
+        <p><strong>It is expected that your product will be optimized for those specific target users</strong><span class="dimmed"> i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). To add to the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span><br>          💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
+        <panel header="%%Why the need to narrow down the user profile?%%">
+          <ul>
+            <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+            <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better
+              job of implementing that feature.</li>
+          </ul>
+          <p></p>
+        </panel>
         <p></p>
-      </panel>
-      <p></p>
-      <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something
-        else.</p>
-      <ul>
-        <li>This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</li>
-        <li>As mentioned in the <em>optimize</em> direction, this direction too requires you to define a narrow target user profile.</li>
-      </ul>
-      <panel header="Examples for _morph_ direction" expanded="">
-        <p>An app to manage, * Bookmarks of websites * Tasks/Schedule * Forum posts, news feeds, Social media feeds * Online projects or issue trackers that the user is interested in * Emails, possibly from different accounts</p>
-        <p></p>
-      </panel>
-      <p></p><span id="individual-expectations"><p>👤 <strong>Individually</strong>, each student is expected to,</p><ol><li><p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p><ul><li>Each enhancement should be stand-alone but,
-<ul><li>should fit with the rest of the software,</li><li>and should have the consent of the team members.</li></ul></li></ul><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>Add a new feature</li><li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+      </div><span id="individual-expectations"><p>👤 <strong>Individually</strong>, each student is expected to,</p><ol><li><p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p><ul><li>Each enhancement should be stand-alone but,
+<ul><li>should fit with the rest of the software (and the target user profile),</li><li>and should have the consent of the team members.</li></ul></li></ul><panel header="Allowed enhancements" expanded=""><p>Here are the allowed options for enhancing AddressBook:</p><ol><li>Add a new feature</li><li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
       <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
       <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
       <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
@@ -586,18 +612,18 @@
       <p></p>
       </li>
       <li>
-        <p><strong>Contribute one <em>minor</em> enhancements to the product</strong>:</p>
+        <p><strong>Contribute <mark>one <em>minor</em> enhancement</mark> to the product</strong>:</p>
         <ul>
           <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
           <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
-          <li>The minor enhancement must touch multiple components <span class="dimmed">  so that it helps you to familiarize yourself wit the codebase</span>.</li>
+          <li>The minor enhancement must touch multiple components <span class="dimmed"> so that it helps you to familiarize yourself wit the codebase</span>.</li>
         </ul>
         <panel header="Examples of minor enhancements" expanded="">
           <p>Here is a non-exhaustive list of minor enhancements:</p>
           <ol>
             <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
             <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
-            <li>Load a different page instead of the default Google search page</li>
+            <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
             <li>Sort items</li>
             <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
             <li>Marking some items as favorites</li>
@@ -610,42 +636,44 @@
       </li>
       <li>
         <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the
-          aspects you did not do.</p>
-      </li>
-      <li>
-        <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-        <panel header="Examples of team-tasks"
-          expanded="">
-          <p>Here is a non-exhaustive list of team-tasks:</p>
-          <ol>
-            <li>Necessary general code enhancements
-              <ol>
-                <li>Work related to renaming the product</li>
-                <li>Work related to changing the product icon</li>
-                <li>Morphing the product into a different product</li>
-              </ol>
-            </li>
-            <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
-            <li>Maintaining the issue tracker</li>
-            <li>Release management</li>
-            <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
-            <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-          </ol>
-          <p></p>
-        </panel>
-        <p></p>
-      </li>
-      <li>
-        <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.</p>
-      </li>
-      <li>
-        <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+          aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
       </li>
       </ol>
-      </span><span id="team-expectations"><p>👥👥 <strong>As a team</strong>, you are expected to work together to,</p><ol><li><strong>Preserve product integrity</strong>: i.e.
-a. Enhancements added fit together to form a cohesive product.
-b. Documentation follows a consistent style and presents a cohesive picture to the reader.
-c. Final project demo presents a cohesive picture to the audience.</li><li><strong>Maintain product quality</strong>: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li><li><strong>Manage the project smoothly</strong>: i.e. ensure PR workflow, repo maintenance, integration, releases, etc. are done smoothly.</li></ol></span></div>
+      <ul>
+        <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+        <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
+          for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>          and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+      </ul>
+      <ol>
+        <li>
+          <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+          <panel
+            header="Examples of team-tasks" expanded="">
+            <p>Here is a non-exhaustive list of team-tasks:</p>
+            <ol>
+              <li>Necessary general code enhancements
+                <ol>
+                  <li>Work related to renaming the product</li>
+                  <li>Work related to changing the product icon</li>
+                  <li>Morphing the product into a different product</li>
+                </ol>
+              </li>
+              <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+              <li>Maintaining the issue tracker</li>
+              <li>Release management</li>
+              <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+              <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+            </ol>
+            <p></p>
+            </panel>
+            <p></p>
+        </li>
+        <li>
+          <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+        </li>
+      </ol>
+      </span><span id="team-expectations"><p>👥 <strong>As a team</strong>, you are expected to work together to,</p><ol><li><strong>Preserve product integrity</strong>: i.e.
+<ol><li>Enhancements added fit together to form a cohesive product.</li><li>Documentation follows a consistent style and presents a cohesive picture to the reader.</li><li>Final project demo presents a cohesive picture to the audience.</li></ol></li><li><strong>Maintain product quality</strong>: i.e. prevent regressions in other parts of the product as the product evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li><li><strong>Manage the project smoothly</strong>: i.e. ensure PR workflow, repo maintenance, integration, releases, etc. are done smoothly.</li></ol></span></div>
   </div>
   <h2 id="project-constraints">Project Constraints</h2>
   <div id="admin-project-constraints">
@@ -659,10 +687,12 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
         </li>
         <li>
           <p><strong>Constraint-Incremental</strong>: The product needs to be developed incrementally over the project duration (week 6-13). While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected.
-            For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. <span class="dimmed"> Reasons: <a href="http://1.To">1.To</a> simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.</span></p>
+            For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. <span class="dimmed"> Reasons: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.</span></p>
         </li>
       </ul><span id="constraint-cli"><ul><li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven.
 <ul><li>Mouse actions should have keyboard alternatives.</li><li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.</li><li><tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
+      <li>❗️ While we don't prohibit
+        <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.</li>
       </ul>
       </li>
       </ul>
@@ -675,7 +705,8 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
           <p><strong>Constraint-OO</strong>: The software should follow the Object-oriented paradigm.<br><span class="dimmed"><strong>Reason:</strong> For you to practice OOP that you learned in the course.</span></p>
         </li>
         <li>
-          <p><strong>Constraint-Windows</strong>: The software should work on the Windows platform.<br><span class="dimmed"><strong>Reason:</strong> Final testing will be done on Windows machines.</span></p>
+          <p><strong>Constraint-Platform-Independent</strong>: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and
+            OS-specific features.<br><span class="dimmed"><strong>Reason:</strong> Peer testers can use any of these platforms.</span></p>
         </li>
         <li>
           <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.<br><span class="dimmed"><strong>Reason:</strong> We do not want to install all your projects on our testing machines when we test them for grading.</span></p>
@@ -688,7 +719,8 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
             <li>do not violate other constraints.</li>
           </ul>
           <p>and is subjected to prior approval by us.<br><span class="dimmed"><strong>Reason:</strong> We will not allow third-party software that can interfere with the learning objectives of the module.</span></p>
-          <p>Please post your request for approval in IVLE forum before you start using the library.<br><span class="dimmed"><strong>Reason:</strong> The whole class should know which external software are used by others so that they can do the same if they wish to.</span></p>
+          <p>Please <mark>post in the <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">forum</a> your request to use a third-party libraries</mark><em>before</em> you start using the library. Once a specific library has been approved for one
+            team, other teams may use it without requesting permission again.<br><span class="dimmed"><strong>Reason:</strong> The whole class should know which external software are used by others so that they can do the same if they wish to.</span></p>
         </li>
       </ul>
     </div>
@@ -707,45 +739,130 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
   <div id="admin-project-v10">
     <div>
       <tip-box>
-        <p><strong>v1.0 Summary of Deliverables</strong></p>
-        <p>Here is a summary of individual and team deliverables for v1.1 to consider it as <em>reached</em>. See sections below for more details of each deliverable. Individual deliverables and team deliverables are considered separately for grading
-          <span
-            class="dimmed"> e.g. if a team member fail individual deliverables for more than two milestones, only that member's marks will be affected</span>.</p>
-        <ul>
-          <li>👤 Individual:
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Have done some enhancement to the code</li>
+        <p><strong>v1.0 Summary of Milestone</strong></p>
+        <p>Here is a summary of items you need to deliver to <em>reach</em> v1.0 individual (👤) and team (👥) milestones. See sections below for more details of each item.</p>
+        <table class="markbind-table table">
+          <thead>
+            <tr>
+              <th>Milestone</th>
+              <th>Minimum acceptable performance to consider as 'reached'</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>👤 Have done some enhancement to the code</td>
+              <td>at least attempted to enhance the code of a component, even if you did not fully succeed</td>
+            </tr>
+            <tr>
+              <td>👥 Team org/repo set up</td>
+              <td>as stated</td>
+            </tr>
+            <tr>
+              <td>👥 All project documents updated as required</td>
+              <td>at least have a full draft version of the required document updates in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>❗️ <mark>Reaching weekly individual and team milestones are considered for grading</mark> the <em>project management</em> component of your project grade (expand the panel below for more info).</p>
+        <panel type="seamless" header="%%Admin &raquo; Project Assessment &rarr; Project Management%%">
+          <div>
+            <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
+            <p>Based on: Supervisor observations of weekly milestones and GitHub data. <mark>Marks will be deducted</mark> if,</p>
+            <ul>
+              <li>if you missed more than two individual milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (only the team member loses marks)</li>
+              <li>if your team missed more than two team milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (all team members lose marks)</li>
             </ul>
-          </li>
-          <li>👥👥 Team:
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Team org/repo set up</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> All project documents updated as required</li>
+            <p>Milestones <mark>need to be reached <em>before</em> the start of the tutorial</mark>. If you reach the milestone <em>during</em> the tutorial, it will be considered as missed.</p>
+            <p>Other criteria:</p>
+            <ul>
+              <li>Good use of GitHub milestones</li>
+              <li>Good use of GitHub release mechanism</li>
+              <li>Good version control, based on the repo</li>
+              <li>Reasonable attempt to use the forking workflow</li>
+              <li>Good task definition, assignment and tracking, based on the issue tracker</li>
+              <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+              <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </panel>
       </tip-box>
       <div id="documentation">
         <h4 id="v10-documentation">v1.0 Documentation</h4>
         <p><strong>Objective</strong>: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.</p>
-        <h4 id="step-1-brainstorm-user-stories">Step 1 : Brainstorm user stories</h4><img src="/website/admin/images/v00.png" width="250px">
+        <h4 id="step-1-decide-project-direction-target-user-profile-and-problem-addressed">Step 1 : Decide project direction, target user profile, and problem addressed</h4>
+        <p>Discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in
+          <trigger trigger="click" for="modal:v10-scope">[Admin » Project Scope]</trigger>
+        </p>
+        <modal large="" title="Admin &raquo; Project Scope (Extract)" id="modal:v10-scope">
+          <div>
+            <p>In general, each team is expected to take one of these two directions:</p>
+            <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
+            <panel header="Examples for the _optimize_ direction" expanded="">
+              <p>An AddressBook,</p>
+              <ul>
+                <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+                <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+                <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+              </ul>
+              <p></p>
+            </panel>
+            <p></p>
+            <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something
+              else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
+            <panel header="Examples for _morph_ direction" expanded="">
+              <p>An app to manage,</p>
+              <ul>
+                <li>Bookmarks of websites</li>
+                <li>Tasks/Schedule</li>
+                <li>Location info</li>
+                <li>Thing to memorize i.e. flash cards, trivia</li>
+                <li>Forum posts, news feeds, Social media feeds</li>
+                <li>Online projects or issue trackers that the user is interested in</li>
+                <li>Emails, possibly from different accounts</li>
+                <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+              </ul>
+              <p></p>
+            </panel>
+            <p></p>
+            <p>For either direction, you need to define a target user profile and a value proposition:</p>
+            <ul>
+              <li>
+                <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We recommend you narrow down the target user profile quite a lot <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br>                  ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.</p>
+              </li>
+              <li>
+                <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em><span class="dimmed"> what problem does the product solve? how does it make the the user's life easier</span> that matches the target user profile.</p>
+              </li>
+            </ul>
+            <p><strong>It is expected that your product will be optimized for those specific target users</strong><span class="dimmed"> i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). To add to the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span><br>              💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
+            <panel header="%%Why the need to narrow down the user profile?%%">
+              <ul>
+                <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+                <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a
+                  better job of implementing that feature.</li>
+              </ul>
+              <p></p>
+            </panel>
+            <p></p>
+          </div>
+        </modal>
+        <h4 id="step-2-brainstorm-user-stories">Step 2 : Brainstorm user stories</h4><img src="/website/admin/images/v00.png" width="250px">
         <p>Get together with your team members and
           <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for
-          <trigger trigger="click" for="modal:v10-userstories">user stories</trigger><strong> for the v2.0 of the product</strong>. Note that in the project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).</p>
+          <trigger trigger="click" for="modal:v10-userstories">user stories</trigger><strong> for the v2.0 of the product</strong>. Note that in the module project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).</p>
         <ul>
           <li>
             <p>It is ok to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></p>
           </li>
           <li>
             <p>Refer
-              <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook » Specifying Requirements → UserStories → Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.<br><mark>Pay special attention to the tips about <em>target user profile</em> and <em>problem scope</em>.</mark></p>
+              <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook » Specifying Requirements → UserStories → Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.<mark>Pay special attention to the tips about <em>target user profile</em> and <em>problem scope</em>.</mark></p>
           </li>
           <li>
             <p>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in
               <trigger trigger="click" for="modal:v10-onlinetools">[Textbook » Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br></p>
           </li>
           <li>
-            <p>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. An important aspect of brainstorming is not judging the ideas generated.</p>
+            <p>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. <span class="dimmed"> Reason: an important aspect of brainstorming is not judging the ideas generated.</span></p>
           </li>
         </ul>
         <modal large="" title="Textbook &raquo;" id="modal:v10-brainstorming">
@@ -776,11 +893,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="2efas" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2efas" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2efas" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2efas" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="2efas" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="cwcs4" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="cwcs4" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="cwcs4" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="cwcs4" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="cwcs4" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -960,11 +1077,11 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <panel header="%%:package: User Story examples (from a different product)%%">
         <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br><code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br><code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br><code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br><code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
       </panel>
-      <h4 id="step-2-prioritize-the-user-stories">Step 2: Prioritize the user stories</h4><img src="/website/admin/images/userstories.png" width="250px">
+      <h4 id="step-3-prioritize-the-user-stories">Step 3: Prioritize the user stories</h4><img src="/website/admin/images/userstories.png" width="250px">
       <p>Suggested workflow:</p>
       <ul>
         <li>
-          <p>Take one use story at a time and get team member opinions about it.</p>
+          <p>Take one user story at a time and get team member opinions about it.</p>
         </li>
         <li>
           <p>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:</p>
@@ -978,14 +1095,15 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
           <p><span class="dimmed">If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.</span></p>
         </li>
       </ul>
-      <h4 id="step-3-record-v20-requirements-in-the-developer-guide">Step 3: Record v2.0 Requirements in the Developer Guide</h4>
+      <h4 id="step-4-record-v20-requirements-in-the-developer-guide">Step 4: Record v2.0 Requirements in the Developer Guide</h4>
       <p>Based on your user story categorization in step 1, given project requirements, and the current state of the product, select which user stories you are likely to include in v2.0.</p>
       <p>Update the following pages of the Developer Guide:</p>
       <ul>
+        <li><strong>Target user profile</strong>, <strong>value proposition</strong>, and
+          <trigger trigger="click" for="modal:v10-userstories"><strong>user stories</strong></trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities.
+          This can include user stories considered but will not be included in the final product.</li>
         <li>
-          <trigger trigger="click" for="modal:v10-userstories"><strong>User Stories</strong></trigger>: Give a list of the user stories, including priorities. This can include user stories considered but will not be included in the final product.</li>
-        <li>
-          <trigger trigger="click" for="modal:v10-usecases"><strong>Use Cases</strong></trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
+          <trigger trigger="click" for="modal:v10-usecases"><strong>Use cases</strong></trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
         <li>
           <trigger trigger="click" for="modal:v10-nfr"><strong>Non-functional requirements</strong></trigger>:<br> Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
         <li>
@@ -1914,7 +2032,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
           <p>You can create your GitHub account after receiving your Phase B team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
           <ul>
             <li>One team member (e.g. team leader) should create an organization with the following details:</li>
-            <li><mark>Organization name : <code>CS2103AUG2017-TEAM_ID</code></mark>. e.g.  <code>CS2103AUG2017-W09-B3</code></li>
+            <li><mark>Organization name : <code>CS2103JAN2018-TEAM_ID</code></mark>. e.g.  <code>CS2103JAN2018-W09-B3</code></li>
             <li>Plan:  Open Source ($0/month)</li>
             <li>After that, the same person can add members to the organization:</li>
             <li>Create a team called <code>developers</code> to your organization.</li>
@@ -1987,19 +2105,16 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
         </div>
       </modal>
       <ol start="4">
-        <li>One member: create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4">nus-cs2103-AY1718S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[W7.7][Team ID] Product Name</code>          e.g., <code>[W7.7][T09-B2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span> In the PR description
+        <li>One member: create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4">nus-cs2103-AY1718S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[v1.x][Team ID] Product Name</code>          e.g., <code>[v1.x][T09-B2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use <code>v1.x</code> instead of <code>v1.0</code> in the PR title).</span>          In the PR description
           <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
       </ol>
-      <p><strong>Grading</strong>: <mark>Reaching this milestone (and future milestones) will be counted under 'Project management' component of the final project grade.</mark> To claim this milestone as 'reached', you should at least have a full draft version
-        of the above documents in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo.</p>
     </div>
     <div id="product">
       <h3 id="v10-product">v1.0 Product</h3>
-      <p><strong>Objective</strong>: To familiarize yourself with the code.</p>
+      <p><strong>Objective</strong>: To familiarize yourself with at least one component the code.</p>
       <p><strong>Description</strong>: Divide the
         <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the <a href="https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component">AddressBook-Level4 developer guide</a>.</p>
-      <p><strong>Submission</strong>: Create PRs from your own fork to your team repo.</p>
-      <p><strong>Grading</strong>: This is an individual milestone. Considered reached if you have at least attempted to enhance the code of a component, even if you did not fully succeed.</p>
+      <p><strong>Submission</strong>: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.</p>
     </div>
   </div>
 </div>
@@ -2007,20 +2122,34 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
 <div id="admin-project-v11">
   <div>
     <tip-box>
-      <p><strong>v1.1 Summary of Deliverables</strong></p>
-      <ul>
-        <li>👤 Individual:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Have modified in multiple components</li>
-          </ul>
-        </li>
-        <li>👥👥 Team:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> All project documents updated as required</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Any errors in org/repo set up fixed <span class="dimmed"> (e.g. wrong repo name)</span></li>
-          </ul>
-        </li>
-      </ul>
+      <p><strong>v1.1 Summary of Milestone</strong></p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Milestone</th>
+            <th>Minimum acceptable performance to consider as 'reached'</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>👤 Have modified in multiple components</td>
+            <td>Minimal : Your enhancement touches components other than the ones you modified in v1.0 and you are able to demo it using your own computer <br> On track : In addition, you have created a PR for the enhancement, it covers tests and documentation
+              updates for the new feature, and the PR passes Travis checks<br> Ahead : Your PR has been reviewed and merged.</td>
+          </tr>
+          <tr>
+            <td>👥 All project documents updated as required</td>
+            <td>At least there is a PR containing all required changes</td>
+          </tr>
+          <tr>
+            <td>👥 v1.0 document updates are merged</td>
+            <td>as stated</td>
+          </tr>
+          <tr>
+            <td>👥 Any errors in org/repo set up fixed <span class="dimmed"> (e.g. wrong repo name)</span></td>
+            <td>as stated</td>
+          </tr>
+        </tbody>
+      </table>
     </tip-box>
     <div id="product">
       <h3 id="v11-product">v1.1 Product</h3>
@@ -2029,26 +2158,112 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <p><strong>Objective</strong>: Move the product from v1.0 towards v2.0 in a small incremental step.</p>
       <p><strong>Description</strong>:</p>
       <ul>
-        <li>Each member should add some enhancements that are in line with the vision for v2.0.</li>
-        <li>These enhancements should go beyond the component you are in charge of, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
+        <li>Each member should add some enhancements that are in line with the vision for v2.0. We recommend this to be your
+          <trigger trigger="click" for="modal:v11-individual-expectations"><em>minor enhancement</em></trigger>, but it can also be an initial step in your <em>major enhancement</em>.</li>
       </ul>
-      <tip-box type="important">
-        <p><strong>You are required to divide work based on features rather than component</strong></p>
-        <ul>
-          <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented 1 or more enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. The objective is to force you to learn all components
-            of the software, instead of limiting yourself to just one/few components.</li>
-          <li>However, you will continue to be <em>in charge</em> of components that were allocated to you at v1.0 (you can change the allocation later if you wish) while others will be modifying those components as necessary for the features they are implementing.
-            Your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span> and protect that component from degrading
-            <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
-        </ul>
-      </tip-box>
-      <p><strong>Submission</strong>: Demo of the new functionality during the tutorial.</p>
-      <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
+      <modal title="" id="modal:v11-individual-expectations">
+        <div>
+          <p>👤 <strong>Individually</strong>, each student is expected to,</p>
+          <ol>
+            <li>
+              <p><strong>Contribute <mark>one major enhancement</mark> to the product</strong><br></p>
+              <ul>
+                <li>Each enhancement should be stand-alone but,
+                  <ul>
+                    <li>should fit with the rest of the software (and the target user profile),</li>
+                    <li>and should have the consent of the team members.</li>
+                  </ul>
+                </li>
+              </ul>
+              <panel header="Allowed enhancements" expanded="">
+                <p>Here are the allowed options for enhancing AddressBook:</p>
+                <ol>
+                  <li>Add a new feature</li>
+                  <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+                  <li>Modify the internal design in a major way <span class="dimmed">e.g. change the architecture</span></li>
+                  <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
+                  <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
+                </ol>
+                <p></p>
+              </panel>
+              <p></p>
+              <panel header="Major enhancements vs Grade: Examples" expanded="">
+                <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+                <ul>
+                  <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+                  <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+                </ul>
+                <p></p>
+              </panel>
+              <p></p>
+            </li>
+            <li>
+              <p><strong>Contribute <mark>one <em>minor</em> enhancement</mark> to the product</strong>:</p>
+              <ul>
+                <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
+                <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
+                <li>The minor enhancement must touch multiple components <span class="dimmed"> so that it helps you to familiarize yourself wit the codebase</span>.</li>
+              </ul>
+              <panel header="Examples of minor enhancements" expanded="">
+                <p>Here is a non-exhaustive list of minor enhancements:</p>
+                <ol>
+                  <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+                  <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+                  <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
+                  <li>Sort items</li>
+                  <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+                  <li>Marking some items as favorites</li>
+                  <li>Ability to search by labels</li>
+                  <li>Ability to specify colors for labels</li>
+                </ol>
+                <p></p>
+              </panel>
+              <p></p>
+            </li>
+            <li>
+              <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for
+                the aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
+            </li>
+          </ol>
+          <ul>
+            <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+            <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
+              for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>              and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+          </ul>
+          <ol>
+            <li>
+              <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+              <panel
+                header="Examples of team-tasks" expanded="">
+                <p>Here is a non-exhaustive list of team-tasks:</p>
+                <ol>
+                  <li>Necessary general code enhancements
+                    <ol>
+                      <li>Work related to renaming the product</li>
+                      <li>Work related to changing the product icon</li>
+                      <li>Morphing the product into a different product</li>
+                    </ol>
+                  </li>
+                  <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+                  <li>Maintaining the issue tracker</li>
+                  <li>Release management</li>
+                  <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+                  <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                </ol>
+                <p></p>
+                </panel>
+                <p></p>
+            </li>
+            <li>
+              <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
+            </li>
+          </ol>
+        </div>
+      </modal>
       <ul>
-        <li>Minimal ⭐️ : Your enhancement touches components other than the ones you modified in v1.0 and you are able to demo it using your own computer.</li>
-        <li>On track ⭐️⭐️ : In addition, you have created a PR for the enhancement, it covers tests and documentation updates for the new feature, and the PR passes Travis checks.</li>
-        <li>Ahead ⭐️⭐️⭐️ : Your PR has been reviewed and merged.</li>
+        <li>These enhancements <mark>should go beyond the component you are in charge of</mark>, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
       </ul>
+      <p><strong>Submission</strong>: Demo of the new functionality during the tutorial.</p>
     </div>
     <div id="documentation">
       <h3 id="v11-documentation">v1.1 Documentation</h3>
@@ -2056,9 +2271,9 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <ul>
         <li><strong>User Guide</strong>:<br> Update the user guide to describe what the product would be like when it is at 2.0. Mark features not implemented yet as <code>Coming in v2.0</code>. You may use UI mockups where necessary.</li>
       </ul>
-      <tip-box type="tip">
-        <p>It is highly recommended that you <strong>divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding</strong><span class="dimmed"> e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.
-          For features that are not planned to be implemented by v1.5, you can divide them based on who will be implementing them if the project were to continue until v2.0.</p>
+      <tip-box>
+        <p>💡 It is highly recommended that you <strong>divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding</strong><span class="dimmed"> e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.
+          For features that are not planned to be implemented by v1.5, you can divide them based on who will be implementing them <em>if</em> the project were to continue until v2.0 (hypothetically).</p>
         <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
       </tip-box>
       <ul>
@@ -2067,14 +2282,23 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
             <li>Replace info of SE-EDU developers with info of your team, including a <mark>suitable photo</mark> as described
               <trigger trigger="click" for="modal:v11-photo">here</trigger>.</li>
             <li>Including the name/photo of the supervisor/lecturer is optional.</li>
-            <li>The photo of a team member should be <code>doc/images/githbub_id_in_lower_case.png</code><span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
+            <li>The photo of a team member should be <code>doc/images/githbub_username_in_lower_case.png</code><span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
           </ul>
         </li>
       </ul>
-      <modal title="Admin &raquo; Choosing a profile photo" id="modal:v11-photo">
+      <modal large="" title="Admin &raquo; Choosing a profile photo" id="modal:v11-photo">
         <div>
-          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
-            of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
+          <ul>
+            <li>
+              <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+                of good and bad profile photos.<br><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+            </li>
+            <li>
+              <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you can request
+                permission to omit your photo from the page by writing to prof.</p>
+            </li>
+          </ul>
+        </div>
       </modal>
       <ul>
         <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
@@ -2095,20 +2319,19 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
             changes done to that component in v1.3-v1.5.</li>
         </ul>
         <p>You may define additional roles.</p>
-        <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a ‘backup’ for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.</p>
+        <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.</p>
         <p></p>
       </panel>
       <p></p>
       <ul>
-        <li><strong>README.adoc</strong> page: Update it to match your project. In particular, add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded
-          by our scripts.<br> Also, remember to acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code> You may remove the <code>Learning Outcomes</code> link
-          and related pages.</li>
+        <li><strong>README.adoc</strong> page: Update it to match your project.
+          <ul>
+            <li>Add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts.</li>
+            <li>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark>              (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code>              link and related pages.</li>
+            <li>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
+          </ul>
+        </li>
       </ul>
-      <tip-box type="tip">
-        <p>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You are recommended to rephrase it to read like the home page
-          of a real product (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span></p>
-      </tip-box>
-      <p><strong>Grading</strong>: To consider this milestone as reached, you should have all v1.0 and v1.1 deliverables completed.</p>
     </div>
   </div>
 </div>
@@ -2116,23 +2339,30 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
 <div id="admin-project-v12">
   <div>
     <tip-box>
-      <p><strong>v1.2 Summary of Deliverables</strong></p>
-      <p>Here is a summary of individual and team deliverables for v1.2 to consider it as <em>reached</em>. See sections below for more details of each deliverable. Individual deliverables and team deliverables are considered separately for grading
-        <span
-          class="dimmed"> e.g. if a team member fail individual deliverables for more than two milestones, only that member's marks will be affected</span>.</p>
-      <ul>
-        <li>👤 Individual:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Contributed code to the product</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Described implementation details in the Developer Guide</li>
-          </ul>
-        </li>
-        <li>👥👥 Team:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.2 managed using GitHub features (issue tracker, milestones, etc.)</li>
-          </ul>
-        </li>
-      </ul>
+      <p><strong>v1.2 Summary of Milestone</strong></p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Milestone</th>
+            <th>Minimum acceptable performance to consider as 'reached'</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>👤 Contributed code to the product</td>
+            <td>some code merged</td>
+          </tr>
+          <tr>
+            <td>👤 Described implementation details in the Developer Guide</td>
+            <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
+          </tr>
+          <tr>
+            <td>👥 v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
+            <td>A new version tagged <code>v1.2</code> is in your repo. There is evidence of an attempt (even if not completely successful) to use GitHub features as described in
+              <trigger trigger="click" for="modal:v12-projectTracking">[Admin » Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
+          </tr>
+        </tbody>
+      </table>
     </tip-box>
     <h3 id="v12-project-management">v1.2 Project Management</h3>
     <tip-box type="important">
@@ -2197,10 +2427,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
               <p>Note that you can change the milestone plan along the way as necessary.</p>
             </li>
           </ul>
-          <tip-box type="important">
-            <p>To consider the milestone as 'reached', <strong>you should have <tooltip content="described below">wrapped up</tooltip> the milestone <em>before</em> the tutorial begins. Missed milestones will count against the 'project management' component of your final grade</strong>.</p>
-          </tip-box>
-          <p><strong>Wrapping up a Milestone</strong>:<br> Here are the conditions to satisfy for a milestone to be considered properly wrapped up:</p>
+          <p><strong>Wrapping up a Milestone</strong>:<br><mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
           <ul>
             <li>
               <p>A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.</p>
@@ -2231,19 +2458,13 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <span
         class="dimmed">
         <popover content="The ability to deliver code incrementally is an important LO of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>
-        </span>. <mark>If you <tooltip content="failed to contribute code to">miss</tooltip> more than two weekly milestones, you will start losing marks.</mark><br> If an enhancement is too big to complete in one week, here are some options:</p>
+        </span>. <br> If an enhancement is too big to complete in one week, here are some options:</p>
     <ul>
       <li>[Preferred] Deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.</li>
-      <li>Do a different, smaller, enhancement for the current week while working on a bigger enhancement to deliver in a future week.</li>
-      <li>Choose not contribute to the weekly milestone. This should be fine as long as you don't miss more than two milestones.</li>
+      <li>Choose not to contribute to the weekly milestone. This should be fine as long as you don't miss more than two milestones.</li>
     </ul>
     <h3 id="v12-product">v1.2 Product</h3>
     <p><strong>Submission</strong>: Update code in GitHub.</p>
-    <p><strong>Grading</strong>: Criteria to consider this milestone as reached</p>
-    <ul>
-      <li>A new version tagged <code>v1.2</code> is in your repo. <span class="dimmed"> If <code>v1.2</code> is already used by a past commit, you can use something similar such as <code>V1.2</code> or <code>v1.2.0</code>.</span></li>
-      <li>The version <code>v1.2</code> is step towards <code>v2.0</code> (but it does not matter how big a step it is)</li>
-    </ul>
     <tip-box>
       <p>💡 <strong>If tests are causing too much pain ...</strong></p>
       <p>Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.</p>
@@ -2277,7 +2498,7 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       <li>
         <p><strong>Developer Guide</strong>:</p>
         <ul>
-          <li><mark>Each member should describe the implementation of at least one enhancement she has added</mark> (or planning to add). <br> Expected length: ~1 page per person</li>
+          <li><mark>Each member should describe the implementation of at least one enhancement she has added</mark> (or planning to add). <br> Expected length: 1+ page per person</li>
           <li>The description can contain things such as,
             <ul>
               <li>How the feature is implemented.</li>
@@ -2292,35 +2513,134 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
       </li>
     </ul>
     <h3 id="v12-demo">v1.2 Demo</h3>
-    <p>Do an informal demo of the new feature during the tutorial. <mark>Each team member should demo their own work, using the <code>master</code> branch.</mark></p>
+    <p>Do an informal demo of the new feature during the tutorial. <mark>Each team member should demo their own work, using commit tagged as <code>v1.2</code> in the <code>master</code> branch</mark><span class="dimmed"> i.e. only features included in the current release should be demoed</span>.</p>
   </div>
 </div>
 <h2 id="v13-week-10">v1.3 [week 10]</h2>
 <div id="admin-project-v13">
   <div>
     <tip-box>
-      <p><strong>v1.3 Summary of Deliverables</strong></p>
-      <ul>
-        <li>👤 Individual:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Contributed code to v1.3</li>
-          </ul>
-        </li>
-        <li>👥👥 Team:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.3 jar file released properly on GitHub</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.3 milestone properly wrapped up on GitHub</li>
-          </ul>
-        </li>
-      </ul>
+      <p><strong>v1.3 Summary of Milestone</strong></p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Milestone</th>
+            <th>Minimum acceptable performance to consider as 'reached'</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>👤 Contributed code to v1.3</td>
+            <td>some code merged</td>
+          </tr>
+          <tr>
+            <td>👥 v1.3 jar file released properly on GitHub</td>
+            <td>as stated</td>
+          </tr>
+          <tr>
+            <td>👥 Documentation not significantly behind v1.3</td>
+            <td>as stated</td>
+          </tr>
+          <tr>
+            <td>👥 v1.3 milestone (and previous milestones) properly wrapped up on GitHub as explained in
+              <trigger trigger="click" for="modal:v13-milestone-wrapup">[Admin » Appendix E (Extract)]</trigger>
+            </td>
+            <td>as stated</td>
+          </tr>
+        </tbody>
+      </table>
     </tip-box>
+    <modal large="" title="Admin &raquo; Appendix E (Extract)" id="modal:v13-milestone-wrapup">
+      <div>
+        <h2 id="project-schedule-tracking-2">Project Schedule Tracking</h2>
+        <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current
+          status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+        <h3 id="using-issues-2">Using Issues:</h3>
+        <ul>
+          <li>
+            <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong><span class="dimmed">e.g.</span><code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></p>
+          </li>
+          <li>
+            <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
+          </li>
+          <li>
+            <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. <span class="dimmed">e.g.</span></p>
+            <ul>
+              <li><span class="dimmed">👍 Good: Update class diagram in the project manual for v1.5</span></li>
+              <li><span class="dimmed">👎 Bad (reasons: not a one-person task, not small enough): Write the project manual</span></li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Write a descriptive title for the issue.</strong><span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
+          </li>
+          <li>
+            <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
+            <ul>
+              <li><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
+              <li><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Do not track things taken for granted.</strong><span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+          </li>
+          <li>
+            <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal
+              description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
+          </li>
+          <li>
+            <p><strong>Assign tasks to team members using the <code>assignees</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+          </li>
+          <li>
+            <p><strong>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</strong></p>
+          </li>
+        </ul>
+        <div id="using-milestones">
+          <h3 id="using-milestones-2">Using Milestones:</h3>
+          <ul>
+            <li>
+              <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
+            </li>
+            <li>
+              <p>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</p>
+            </li>
+            <li>
+              <p>Note that you can change the milestone plan along the way as necessary.</p>
+            </li>
+          </ul>
+          <p><strong>Wrapping up a Milestone</strong>:<br><mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
+          <ul>
+            <li>
+              <p>A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.</p>
+            </li>
+            <li>
+              <p>All tests passing on Travis for the version tagged above.</p>
+            </li>
+            <li>
+              <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br><img src="/website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
+            </li>
+            <li>
+              <p>Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br><img src="/website/admin/images/closingMilestones.png" width="700"></p>
+            </li>
+            <li>
+              <p>Optionally, issues for the next milestone are assigned to team members (this is not compulsory to do <em>before</em> the tutorial, but we recommend you to do it soon after the tutorial).</p>
+            </li>
+            <li>
+              <p>Optionally, future milestones are revised based on what you experienced in the current milestone <span class="dimmed"> e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation</span>.</p>
+            </li>
+            <li>
+              <p>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </modal>
     <tip-box>
-      <p><strong>If the project is too difficult for you to keep up with, there is an easier path</strong></p>
-      <p>💡 As CS2103/T is a core module for Computing students, the project standards are set high enough to train students for a CS/SE career. However, some of you may not have gained enough pre-requisite skills (possibly because you don't plan for a CS/SE-related
+      <p>💡 <strong>If the project is too difficult for you to keep up with, there is an easier path</strong></p>
+      <p>As CS2103/T is a core module for Computing students, the project standards are set high enough to train students for a CS/SE career. However, some of you may not have gained enough pre-requisite skills (possibly because you don't plan for a CS/SE-related
         career, or for some other reason) in previous modules to be able to survive a code base such as AddressBook-Level4 (AB4). Based on your v1.0-1.2 experience, you should now be able to decide weather you are in that category.</p>
-      <p>If you think you are in that category (e.g. you haven't managed to merge any code to AB4 code base yet in spite of much trying) and you fear that you are not going to learn much by continuing to struggle in the AB4 code base, we are willing to let
-        you go back to AB3 or AB2 code base and use that for your project instead. This decision can be made as a team or individually. We'll use the same criteria for grading your project either way, but naturally, work done in AB2/AB3 is going to earn
-        significantly less marks than similar work done in AB4. If you want to take that option, please email us know before v1.3 deadline.</p>
+      <p>If you think you are in that category <span class="dimmed"> (e.g. you haven't managed to merge any code to AB4 code base yet in spite of much trying)</span> and you fear that you are not going to learn much by continuing to struggle in the AB4 code
+        base, we are willing to let you go back to AB3 or AB2 code base and use that for your project instead. This decision can be made as a team or individually. We'll use the same criteria for grading your project either way, but naturally, work done
+        in AB2/AB3 is going to earn significantly less marks than similar work done in AB4. If you want to take that option, please email us know before v1.3 deadline.</p>
     </tip-box>
     <h3 id="v13-project-management">v1.3 Project Management</h3>
     <tip-box type="important">
@@ -2332,19 +2652,12 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
     <p>As before, the milestone v1.3 must be wrapped up on GitHub. Remember to <mark>move all incomplete issues to a future milestone and <em>close</em> the milestone</mark> so that it no longer appears under <em>open</em> milestones.</p>
     <h3 id="v13-product">v1.3 Product</h3>
     <p><strong>Submission</strong>: Do a release on GitHub</p>
-    <p><strong>Grading</strong>:</p>
-    <p>Criteria to consider this milestone as reached:</p>
-    <ul>
-      <li>The new version has moved towards v2.0 compared to the previous version.</li>
-      <li>The milestone is wrapped up and the release has been done.</li>
-    </ul>
     <h3 id="v13-documentation">v1.3 Documentation</h3>
     <ul>
       <li><strong>User Guide</strong>: Update where the document does not match the current product.</li>
       <li><strong>Developer Guide</strong>: Similar to User Guide.</li>
     </ul>
     <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
-    <p><strong>Grading</strong>: To consider this milestone as reached, your documentation should not be noticeably behind the product.</p>
     <h3 id="v13-demo">v1.3 Demo</h3>
     <p>Do an informal demo of the new features during the tutorial. Each person should demo their own contributions.</p>
     <tip-box type="important">
@@ -2357,21 +2670,36 @@ c. Final project demo presents a cohesive picture to the audience.</li><li><stro
   <div>
     <tip-box>
       <p><strong>v1.4 Summary of Deliverables</strong></p>
-      <ul>
-        <li>👤 Individual:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Contributed code to v1.4</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Code collated</li>
-          </ul>
-        </li>
-        <li>👥👥 Team:
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.4 jar file released properly on GitHub</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.4 milestone properly wrapped up on GitHub</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> User Guide reflects the current state of the product</li>
-          </ul>
-        </li>
-      </ul>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Milestone</th>
+            <th>Minimum acceptable performance to consider as 'reached'</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>👤 Contributed code to v1.4</td>
+            <td>code merged</td>
+          </tr>
+          <tr>
+            <td>👤 Code collated</td>
+            <td>as stated</td>
+          </tr>
+          <tr>
+            <td>👥 v1.4 jar file released properly on GitHub</td>
+            <td>as stated</td>
+          </tr>
+          <tr>
+            <td>👥 v1.4 milestone properly wrapped up on GitHub</td>
+            <td>as stated</td>
+          </tr>
+          <tr>
+            <td>👥 Documentation updated to match v1.4</td>
+            <td>at least the User Guide and the <code>README.adoc</code> is updated</td>
+          </tr>
+        </tbody>
+      </table>
     </tip-box>
     <h3 id="v14-project-management">v1.4 Project Management</h3>
     <tip-box type="important">
@@ -2546,11 +2874,6 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <h3 id="v14-product">v1.4 Product</h3>
     <p>As before, move the product towards v2.0.</p>
     <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub.</p>
-    <p><strong>Grading criteria</strong>:</p>
-    <ul>
-      <li>Code collated properly</li>
-      <li>Criteria given in v1.3</li>
-    </ul>
     <h3 id="v14-documentation">v1.4 Documentation</h3>
     <tip-box type="important">
       <p>v1.4 user guide should be updated to match the current version of the product. <span class="dimmed"> Reason: v1.4 will be subjected to a trial <em>acceptance testing</em> session</span></p>
@@ -2688,7 +3011,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Project Portfolio Page merged</li>
           </ul>
         </li>
-        <li>👥👥 Team:
+        <li>👥 Team:
           <ul class="task-list">
             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Well-prepared for the demo</li>
             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> v1.5rc released properly on GitHub</li>
@@ -3102,9 +3425,9 @@ displayResult();
                             <panel header=":lock::key: Small methods or lengthy methods?">
                               <question>
                                 <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                                <ul radio-group="d6my6" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d6my6" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d6my6" type="radio"> False</label></li>
+                                <ul radio-group="amxuu" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="amxuu" type="radio"> True</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="amxuu" type="radio"> False</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>False</p>
@@ -3134,10 +3457,10 @@ displayResult();
                             <panel header=":lock::key: Common saying: Make it fast,...">
                               <question>
                                 <p>This is a common saying among programmers</p>
-                                <ul radio-group="8rjga" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="8rjga" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="8rjga" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="8rjga" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                                <ul radio-group="m556y" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="m556y" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="m556y" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="m556y" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -3252,11 +3575,11 @@ exit();
                             <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                               <question>
                                 <p>What is the recommended approach regarding coding standards?</p>
-                                <ul radio-group="7oc6k" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7oc6k" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7oc6k" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7oc6k" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="7oc6k" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                <ul radio-group="0v3hr" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="0v3hr" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="0v3hr" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="0v3hr" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="0v3hr" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>c</p>
@@ -3316,12 +3639,12 @@ exit();
                             <panel header=":lock::key: Unsuitable variable name">
                               <question>
                                 <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                                <ul radio-group="d78fy" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d78fy" type="radio"> a. integer variable name: totalPeople</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d78fy" type="radio"> b. boolean variable name: checkWeight</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d78fy" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d78fy" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="d78fy" type="radio"> e. String variable name: description</label></li>
+                                <ul radio-group="ntplj" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ntplj" type="radio"> a. integer variable name: totalPeople</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ntplj" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ntplj" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ntplj" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="ntplj" type="radio"> e. String variable name: description</label></li>
                                 </ul>
                                 <div slot="answer">
                                   <p>b</p>
@@ -4050,27 +4373,27 @@ compact(input);
         <tbody>
           <tr>
             <td>Jar file</td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>IVLE</td>
           </tr>
           <tr>
             <td>User Guide</td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>IVLE</td>
           </tr>
           <tr>
             <td>Developer Guide</td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>IVLE</td>
           </tr>
           <tr>
             <td>Sample Data</td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>IVLE</td>
           </tr>
           <tr>
             <td>Test Script</td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>IVLE</td>
           </tr>
           <tr>
@@ -4080,12 +4403,12 @@ compact(input);
           </tr>
           <tr>
             <td><code>README.adoc</code>, <code>Ui.png</code></td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>GitHub</td>
           </tr>
           <tr>
             <td><code>AboutUs.adoc</code></td>
-            <td>👥👥</td>
+            <td>👥</td>
             <td>GitHub</td>
           </tr>
           <tr>
@@ -4217,7 +4540,7 @@ compact(input);
         </li>
         <li>Peer-evaluate your
           <ul>
-            <li>product design 👥👥</li>
+            <li>product design 👥</li>
             <li>implementation effort 👤</li>
             <li>documentation quality 👤</li>
           </ul>
@@ -4290,7 +4613,7 @@ compact(input);
           <p><strong>[30 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
           <ul>
             <li>
-              <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
+              <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
               <ul>
                 <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
                 <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
@@ -4373,8 +4696,8 @@ compact(input);
 <div id="admin-project-assessment">
   <div>
     <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
-    <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥👥 10 team marks)</p>
-    <panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded="">
+    <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥 10 team marks)</p>
+    <panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded="">
       <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
       <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
       <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
@@ -4419,7 +4742,7 @@ compact(input);
           </li>
           <li>Peer-evaluate your
             <ul>
-              <li>product design 👥👥</li>
+              <li>product design 👥</li>
               <li>implementation effort 👤</li>
               <li>documentation quality 👤</li>
             </ul>
@@ -4492,7 +4815,7 @@ compact(input);
             <p><strong>[30 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
             <ul>
               <li>
-                <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
+                <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
                 <ul>
                   <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
                   <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
@@ -4578,20 +4901,26 @@ compact(input);
         <li>Good use of visuals to complement text.</li>
       </ul>
     </panel>
-    <panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded="">
-      <p>Evaluates: How well you worked together as a team to follow a systematic process?</p>
-      <p>Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.</p>
-      <p>Criteria:</p>
-      <ul>
-        <li>Good use of GitHub milestones.</li>
-        <li>Good use of GitHub release mechanism.</li>
-        <li>Good version control, based on the repo.</li>
-        <li>Reasonable attempt to use the forking workflow.</li>
-        <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
-        <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
-        <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
-      </ul>
-      <p></p>
+    <panel header="5. **Project management** [:busts_in_silhouette:: 5 marks]" expanded="">
+      <div id="project-management-grading">
+        <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
+        <p>Based on: Supervisor observations of weekly milestones and GitHub data. <mark>Marks will be deducted</mark> if,</p>
+        <ul>
+          <li>if you missed more than two individual milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (only the team member loses marks)</li>
+          <li>if your team missed more than two team milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (all team members lose marks)</li>
+        </ul>
+        <p>Milestones <mark>need to be reached <em>before</em> the start of the tutorial</mark>. If you reach the milestone <em>during</em> the tutorial, it will be considered as missed.</p>
+        <p>Other criteria:</p>
+        <ul>
+          <li>Good use of GitHub milestones</li>
+          <li>Good use of GitHub release mechanism</li>
+          <li>Good version control, based on the repo</li>
+          <li>Reasonable attempt to use the forking workflow</li>
+          <li>Good task definition, assignment and tracking, based on the issue tracker</li>
+          <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+          <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+        </ul>
+      </div>
     </panel>
     <p></p>
   </div>
@@ -4802,8 +5131,17 @@ compact(input);
     </ul>
     <panel header="Choosing a profile photo" expandable="">
       <div>
-        <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples of
-          good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
+        <ul>
+          <li>
+            <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+              of good and bad profile photos.<br><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+          </li>
+          <li>
+            <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you can request permission
+              to omit your photo from the page by writing to prof.</p>
+          </li>
+        </ul>
+      </div>
     </panel>
     </span><span id="giving-peer-feedback"><p>Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. <mark>Those who give half-hearted feedback will be penalized.</mark></p><p>Here are some things to keep in mind:</p><ul><li>Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.</li><li>The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. <code>Thanks for all the hard work!</code> and negative ratings (e.g. <code>Equal share - 40%</code>) to the same team member is not being honest.</li><li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li></ul></span>
     <p>The final peer evaluation (in week 13) is graded. In that peer-evaluation you will be asked to evaluate the work of your team members. The quality and accuracy of your evaluation will affect your grade and your evaluations will be considered as a
@@ -4960,8 +5298,8 @@ compact(input);
       <div>
         <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking
           scheme.</p>
-        <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥👥 10 team marks)</p>
-        <panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded="">
+        <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥 10 team marks)</p>
+        <panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded="">
           <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
           <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
           <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
@@ -5006,7 +5344,7 @@ compact(input);
               </li>
               <li>Peer-evaluate your
                 <ul>
-                  <li>product design 👥👥</li>
+                  <li>product design 👥</li>
                   <li>implementation effort 👤</li>
                   <li>documentation quality 👤</li>
                 </ul>
@@ -5079,7 +5417,7 @@ compact(input);
                 <p><strong>[30 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                 <ul>
                   <li>
-                    <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
+                    <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
                     <ul>
                       <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
                       <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
@@ -5165,20 +5503,26 @@ compact(input);
             <li>Good use of visuals to complement text.</li>
           </ul>
         </panel>
-        <panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded="">
-          <p>Evaluates: How well you worked together as a team to follow a systematic process?</p>
-          <p>Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.</p>
-          <p>Criteria:</p>
-          <ul>
-            <li>Good use of GitHub milestones.</li>
-            <li>Good use of GitHub release mechanism.</li>
-            <li>Good version control, based on the repo.</li>
-            <li>Reasonable attempt to use the forking workflow.</li>
-            <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
-            <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
-            <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
-          </ul>
-          <p></p>
+        <panel header="5. **Project management** [:busts_in_silhouette:: 5 marks]" expanded="">
+          <div id="project-management-grading">
+            <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
+            <p>Based on: Supervisor observations of weekly milestones and GitHub data. <mark>Marks will be deducted</mark> if,</p>
+            <ul>
+              <li>if you missed more than two individual milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (only the team member loses marks)</li>
+              <li>if your team missed more than two team milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (all team members lose marks)</li>
+            </ul>
+            <p>Milestones <mark>need to be reached <em>before</em> the start of the tutorial</mark>. If you reach the milestone <em>during</em> the tutorial, it will be considered as missed.</p>
+            <p>Other criteria:</p>
+            <ul>
+              <li>Good use of GitHub milestones</li>
+              <li>Good use of GitHub release mechanism</li>
+              <li>Good version control, based on the repo</li>
+              <li>Reasonable attempt to use the forking workflow</li>
+              <li>Good task definition, assignment and tracking, based on the issue tracker</li>
+              <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+              <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+            </ul>
+          </div>
         </panel>
         <p></p>
       </div>
@@ -5416,7 +5760,7 @@ compact(input);
               <ul>
                 <li>Each enhancement should be stand-alone but,
                   <ul>
-                    <li>should fit with the rest of the software,</li>
+                    <li>should fit with the rest of the software (and the target user profile),</li>
                     <li>and should have the consent of the team members.</li>
                   </ul>
                 </li>
@@ -5444,18 +5788,18 @@ compact(input);
               <p></p>
             </li>
             <li>
-              <p><strong>Contribute one <em>minor</em> enhancements to the product</strong>:</p>
+              <p><strong>Contribute <mark>one <em>minor</em> enhancement</mark> to the product</strong>:</p>
               <ul>
                 <li>In the initial stages of the project you are required to add one small generic enhancements in order to get familiar with the project.</li>
                 <li>Minor enhancements earn a minimal amount of marks. You are advised not to spend a lot of effort on the minor enhancement.</li>
-                <li>The minor enhancement must touch multiple components <span class="dimmed">  so that it helps you to familiarize yourself wit the codebase</span>.</li>
+                <li>The minor enhancement must touch multiple components <span class="dimmed"> so that it helps you to familiarize yourself wit the codebase</span>.</li>
               </ul>
               <panel header="Examples of minor enhancements" expanded="">
                 <p>Here is a non-exhaustive list of minor enhancements:</p>
                 <ol>
                   <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
                   <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
-                  <li>Load a different page instead of the default Google search page</li>
+                  <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
                   <li>Sort items</li>
                   <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
                   <li>Marking some items as favorites</li>
@@ -5468,8 +5812,15 @@ compact(input);
             </li>
             <li>
               <p><strong>Contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for
-                the aspects you did not do.</p>
+                the aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
             </li>
+          </ol>
+          <ul>
+            <li>By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+            <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
+              for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>              and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+          </ul>
+          <ol>
             <li>
               <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
               <panel
@@ -5492,9 +5843,6 @@ compact(input);
                 <p></p>
       </panel>
       <p></p>
-      </li>
-      <li>
-        <p><strong>Contribute incrementally</strong>: A student's contribution should be incremental, over at least three releases of the product, each one containing a significant step forward. It should not be done in one big burst.</p>
       </li>
       <li>
         <p>Write <strong>~0.5 KLoC of code</strong>, on average.</p>
@@ -5893,8 +6241,17 @@ compact(input);
       </panel>
       <panel header="%%Admin &raquo; Choosing a profile photo%%" expandable="">
         <div>
-          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
-            of good and bad profile photos.</p><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></div>
+          <ul>
+            <li>
+              <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+                of good and bad profile photos.<br><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+            </li>
+            <li>
+              <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you can request
+                permission to omit your photo from the page by writing to prof.</p>
+            </li>
+          </ul>
+        </div>
       </panel>
     </div>
     <div id="tutorial-pr-instructions">
@@ -6086,7 +6443,7 @@ compact(input);
       <p>You can create your GitHub account after receiving your Phase B team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
       <ul>
         <li>One team member (e.g. team leader) should create an organization with the following details:</li>
-        <li><mark>Organization name : <code>CS2103AUG2017-TEAM_ID</code></mark>. e.g.  <code>CS2103AUG2017-W09-B3</code></li>
+        <li><mark>Organization name : <code>CS2103JAN2018-TEAM_ID</code></mark>. e.g.  <code>CS2103JAN2018-W09-B3</code></li>
         <li>Plan:  Open Source ($0/month)</li>
         <li>After that, the same person can add members to the organization:</li>
         <li>Create a team called <code>developers</code> to your organization.</li>
@@ -6144,10 +6501,10 @@ compact(input);
       </ul>
     </div>
     <div id="project-schedule-tracking">
-      <h2 id="project-schedule-tracking-2">Project Schedule Tracking</h2>
+      <h2 id="project-schedule-tracking-3">Project Schedule Tracking</h2>
       <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current
         status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
-      <h3 id="using-issues-2">Using Issues:</h3>
+      <h3 id="using-issues-3">Using Issues:</h3>
       <ul>
         <li>
           <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong><span class="dimmed">e.g.</span><code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></p>
@@ -6187,7 +6544,7 @@ compact(input);
         </li>
       </ul>
       <div id="using-milestones">
-        <h3 id="using-milestones-2">Using Milestones:</h3>
+        <h3 id="using-milestones-3">Using Milestones:</h3>
         <ul>
           <li>
             <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
@@ -6199,10 +6556,7 @@ compact(input);
             <p>Note that you can change the milestone plan along the way as necessary.</p>
           </li>
         </ul>
-        <tip-box type="important">
-          <p>To consider the milestone as 'reached', <strong>you should have <tooltip content="described below">wrapped up</tooltip> the milestone <em>before</em> the tutorial begins. Missed milestones will count against the 'project management' component of your final grade</strong>.</p>
-        </tip-box>
-        <p><strong>Wrapping up a Milestone</strong>:<br> Here are the conditions to satisfy for a milestone to be considered properly wrapped up:</p>
+        <p><strong>Wrapping up a Milestone</strong>:<br><mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
         <ul>
           <li>
             <p>A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.</p>

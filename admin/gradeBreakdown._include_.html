@@ -123,8 +123,8 @@
 <panel header="[50%] Project" minmized="">
   <div>
     <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
-    <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥👥 10 team marks)</p>
-    <panel header="1. **Product features** [:busts_in_silhouette::busts_in_silhouette:][5 marks]" expanded="">
+    <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥 10 team marks)</p>
+    <panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded="">
       <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
       <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
       <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
@@ -169,7 +169,7 @@
           </li>
           <li>Peer-evaluate your
             <ul>
-              <li>product design 👥👥</li>
+              <li>product design 👥</li>
               <li>implementation effort 👤</li>
               <li>documentation quality 👤</li>
             </ul>
@@ -242,7 +242,7 @@
             <p><strong>[30 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
             <ul>
               <li>
-                <p><strong>A. Cohesiveness of product features</strong> [👥👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
+                <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
                 <ul>
                   <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
                   <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
@@ -328,20 +328,26 @@
         <li>Good use of visuals to complement text.</li>
       </ul>
     </panel>
-    <panel header="5. **Project management** [:busts_in_silhouette::busts_in_silhouette:: 5 marks]" expanded="">
-      <p>Evaluates: How well you worked together as a team to follow a systematic process?</p>
-      <p>Based on: GitHub data and supervisor observations of weekly milestones. Marks will be dedecuted if you miss more than two individual milestones or more than two team milestones.</p>
-      <p>Criteria:</p>
-      <ul>
-        <li>Good use of GitHub milestones.</li>
-        <li>Good use of GitHub release mechanism.</li>
-        <li>Good version control, based on the repo.</li>
-        <li>Reasonable attempt to use the forking workflow.</li>
-        <li>Good task definition, assignment and tracking, based on the issue tracker.</li>
-        <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
-        <li>Project done iteratively <span class="dimmed">(opposite: fake iterative, doing most of the work in one iteration)</span>.</li>
-      </ul>
-      <p></p>
+    <panel header="5. **Project management** [:busts_in_silhouette:: 5 marks]" expanded="">
+      <div id="project-management-grading">
+        <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
+        <p>Based on: Supervisor observations of weekly milestones and GitHub data. <mark>Marks will be deducted</mark> if,</p>
+        <ul>
+          <li>if you missed more than two individual milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (only the team member loses marks)</li>
+          <li>if your team missed more than two team milestones <span class="dimmed"> out of the six milestones v1.0 - v1.5rc</span> (all team members lose marks)</li>
+        </ul>
+        <p>Milestones <mark>need to be reached <em>before</em> the start of the tutorial</mark>. If you reach the milestone <em>during</em> the tutorial, it will be considered as missed.</p>
+        <p>Other criteria:</p>
+        <ul>
+          <li>Good use of GitHub milestones</li>
+          <li>Good use of GitHub release mechanism</li>
+          <li>Good version control, based on the repo</li>
+          <li>Reasonable attempt to use the forking workflow</li>
+          <li>Good task definition, assignment and tracking, based on the issue tracker</li>
+          <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+          <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+        </ul>
+      </div>
     </panel>
     <p></p>
   </div>
