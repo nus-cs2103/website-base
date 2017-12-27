@@ -30,9 +30,8 @@
 <modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
   <div>
     <h3 id="v15-practical-exam">v1.5 Practical Exam</h3>
-    <p>(Previously called <em>Testathon</em>)</p>
     <tip-box type="important">
-      <p><strong>Graded <mark>(accounting for about 10 marks in total)</mark>. Attendance is compulsory</strong>.</p>
+      <p><strong>Compulsory. Graded <mark>(accounting for about 10 marks in total)</mark></strong>.</p>
     </tip-box>
     <p><strong>Objectives:</strong></p>
     <ul>
@@ -51,40 +50,20 @@
         </ul>
       </li>
     </ul>
-    <p><strong>Time/venue:</strong> week 13 lecture, lecture venue</p>
+    <p><strong>Time/venue:</strong> week 13 lecture slot, but not in the lecture venue (you can do it anywhere)</p>
     <div>
       <p><strong>Preparation</strong>:</p>
       <ul>
-        <li><strong>Bring your laptop, and charger cable</strong>.</li>
+        <li>Ensure you have access to a <strong>computer that is able to run module projects</strong><span class="dimmed"> e.g. has the right Java version</span>.</li>
         <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
         <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
       </ul>
     </div>
     <p><strong>During:</strong></p>
-    <tip-box>
-      <p>❗️ this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.</p>
-      <ul>
-        <li>Sit in the <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&amp;single=true">assigned row</a>. When you select a seat to sit in the assigned
-          row, choose the empty seat closest to the middle of the seat segment (i.e. fill rows starting from the middle) so that those who come later than you don't have to distrub you to get to empty seats in the middle.</li>
-        <li>Not allowed:
-          <ul>
-            <li>communicating with others (except with teaching team members present)</li>
-            <li>use any other software/websites than those strictly required for the testing</li>
-            <li>running background IM/chat/notification services</li>
-            <li>use of phones</li>
-          </ul>
-        </li>
-      </ul>
-    </tip-box>
     <ol>
-      <li>
-        <p><strong>Take note of your team to test and your <em>Tester ID</em></strong>. Both will be given to you by the teaching team.</p>
-      </li>
-      <li>
-        <p><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</p>
-      </li>
-      <li>
-        <p><strong>[40 minutes] Test the product and report bugs</strong></p>
+      <li><strong>Take note of your team to test and your <em>Tester ID</em></strong>. Both will be given to you by the teaching team (distributed via IVLE gradebook).</li>
+      <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</li>
+      <li><strong>[~40 minutes] Test the product and report bugs</strong>
         <ul>
           <li>Launch the jar file. Test it.</li>
           <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
@@ -100,7 +79,7 @@
           </li>
           <li>Report bugs only. Do not post suggestions. These are considered bugs:
             <ul>
-              <li>Behavior differs from the user guide (or testing instructions)</li>
+              <li>Behavior differs from the user guide (or test script)</li>
               <li>A legitimate user behavior is not handled <span class="dimmed"> e.g. incorrect commands, extra parameters</span></li>
               <li>Behavior is not specified and differs from normal expectations <span class="dimmed"> e.g. error message does not match the error</span></li>
             </ul>
@@ -109,13 +88,26 @@
             <ul>
               <li>Use a descriptive title</li>
               <li>Give a good description of the bug with steps to reproduce and screenshots</li>
+              <li>🔍 Note that we will <strong>anonymize bug reports</strong> before revealing it to the receiving team.</li>
             </ul>
           </li>
-          <li>🔍 Note that we plan to <strong>anonymize bug reports</strong> before revealing it to the receiving team.</li>
+          <li>Assign a severity to the bug report:</li>
         </ul>
       </li>
+    </ol>
+    <div>
+      <tip-box>
+        <p>Bug Severity labels:</p>
+        <ul>
+          <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+          <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+          <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+        </ul>
+      </tip-box>
+    </div>
+    <ol>
       <li>
-        <p><strong>[30 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+        <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
         <ul>
           <li>
             <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
@@ -188,10 +180,77 @@
         </ul>
       </li>
     </ol>
-    <p><strong>Grading:</strong> Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</p>
+    <p><strong>Bug Review Period</strong>:</p>
+    <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1718S2/pe-results/issues">bug reports</a> you received.</p>
+    <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>.</p>
+    <p>Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.</p>
+    <tip-box>
+      <p><strong>Instructions for Reviewing Bug Reports</strong></p>
+      <ul>
+        <li>
+          <p><strong>First, don't freak out if there are lot of bug reports.</strong> Many can be duplicates and some can be <em>false positives</em>. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not
+            harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.</p>
+        </li>
+        <li>
+          <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
+        </li>
+        <li>
+          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a>            to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+        </li>
+        <li>
+          <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
+        </li>
+        <li>
+          <p><strong>Decide if it is a real bug and apply ONLY one of these labels</strong>.</p>
+        </li>
+      </ul>
+      <tip-box>
+        <p>Response Labels:</p>
+        <ul>
+          <li><code>response.Accepted</code> : You accept it as a bug.</li>
+          <li><code>response.Rejected</code> : What tester thought as a bug is in fact expected behavior. ❗️ The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can also reject bugs
+            that you inherited from AB4.</li>
+          <li><code>response.CannotReproduce</code> : You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
+          <li><code>response.IssueUnclear</code> : The issue description is not clear.</li>
+        </ul>
+      </tip-box>
+      <ul>
+        <li>If applicable, <strong>decide the type of bug</strong>:</li>
+      </ul>
+      <tip-box>
+        <p>Bug Type Labels:</p>
+        <ul>
+          <li><code>type-FunctionalityBug</code> : the bug is a flaw in how the product works</li>
+          <li><code>type-DocumentationBug</code> : the bug is in the documentation</li>
+        </ul>
+      </tip-box>
+      <ul>
+        <li><strong>Suggest a severity for the bug</strong>:</li>
+      </ul>
+      <div>
+        <tip-box>
+          <p>Bug Severity labels:</p>
+          <ul>
+            <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+            <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+            <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+          </ul>
+        </tip-box>
+      </div>
+      <ul>
+        <li>
+          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+        </li>
+        <li>
+          <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
+        </li>
+      </ul>
+    </tip-box>
+    <p><strong>Grading:</strong></p>
     <ul>
+      <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
       <li>You will lose marks if you missed too many bugs in the product you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
-      <li>The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized <span class="dimmed"> i.e. give you a chance to reject false-positive bug reports</span>.</li>
+      <li>The bugs found in your product by others will affect your v1.5 marks. You will be given a chance to reject false-positive bug reports.</li>
     </ul>
   </div>
 </modal>

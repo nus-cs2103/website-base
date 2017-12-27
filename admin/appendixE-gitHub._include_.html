@@ -250,25 +250,36 @@
   <h2 id="issue-tracker-setup">Issue tracker setup</h2>
   <p>When you create a repo, you get an issue tracker for that repo automatically. Configure it as follows:</p>
   <ul>
+    <li>Delete existing labels and add the following labels.</li>
+  </ul>
+  <tip-box>
+    <p>Issue type labels:</p>
+    <ul>
+      <li><code>type.epic</code> : A big feature which can be broken down into smaller stories e.g. search</li>
+      <li><code>type.story</code> : A user story</li>
+      <li><code>type.enhancement</code>: An enhancement to an existing story</li>
+      <li><code>type.task</code> : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)</li>
+      <li><code>type.bug</code> : A bug</li>
+    </ul>
+  </tip-box>
+  <tip-box>
+    <p>Status labels:</p>
+    <ul>
+      <li><code>status.ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.
+      </li>
+    </ul>
+  </tip-box>
+  <tip-box>
+    <p>Priority labels:</p>
+    <ul>
+      <li><code>priority.high</code> : Must do</li>
+      <li><code>priority.medium</code> : Nice to have</li>
+      <li><code>priority.low</code> : Unlikely to do</li>
+    </ul>
+  </tip-box><span id="bug-severity"><tip-box><p>Bug Severity labels:</p><ul><li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li><li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li><li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li></ul></tip-box></span>
+  <ul>
     <li>
-      <p>Delete existing labels and add the following labels.</p>
-      <ul>
-        <li><code>type.epic</code> : A big feature which can be broken down into smaller stories e.g. search</li>
-        <li><code>type.story</code> : A user story</li>
-        <li><code>type.enhancement</code>: An enhancement to an existing story</li>
-        <li><code>type.task</code> : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)</li>
-        <li><code>type.bug</code> : A bug</li>
-        <li><code>status.ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.</li>
-        <li><code>priority.high</code> : Must do</li>
-        <li><code>priority.medium</code> : Nice to have</li>
-        <li><code>priority.low</code> : Unlikely to do</li>
-      </ul>
-    </li>
-    <li>
-      <p>Create following milestones</p>
-    </li>
-    <li>
-      <p><code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>, <code>v1.5rc</code>, <code>v1.5</code></p>
+      <p>Create following milestones : <code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>, <code>v1.5rc</code>, <code>v1.5</code></p>
     </li>
     <li>
       <p>You may configure other project settings as you wish. e.g. more labels, more milestones</p>
