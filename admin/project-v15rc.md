@@ -2,21 +2,21 @@
 
 <tip-box> 
 
-**v1.5 Summary of Deliverables**
+**v1.5 Summary of Milestone**
 
-* :bust_in_silhouette: Individual:
-  - [ ] Contributed code to v1.5rc
-  - [ ] Project Portfolio Page merged
-* :busts_in_silhouette: Team:
-  - [ ] Well-prepared for the demo
-  - [ ] v1.5rc released properly on GitHub
-  - [ ] v1.5rc milestone wrapped up properly on GitHub
+Milestone | Minimum acceptable performance to consider as 'reached'
+--------- | -------------------------------------------------------
+:bust_in_silhouette: Contributed code to v1.5rc | some code merged
+:bust_in_silhouette: Project Portfolio Page merged | at least 2 pages worth of content merged
+:busts_in_silhouette: Well-prepared for the demo | pre-determined speaker order, completed demo within time limit
+:busts_in_silhouette: v1.5rc released properly on GitHub | as stated
+:busts_in_silhouette: v1.5rc milestone wrapped up properly on GitHub | as stated
 
 </tip-box>
 
 ### v1.5rc Project Management
 
-We strongly recommend you to **freeze features** after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding more features after this point is risky. The remaining time should be left aside for fixing problems discovered late.  
+We strongly recommend you to **freeze features** after reaching this milestone. As this is a release candidate, it should have all the features you intend to release at v1.5. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.  
 
 ### v1.5rc Product
 
@@ -42,7 +42,7 @@ We strongly recommend you to **freeze features** after reaching this milestone. 
 
 * Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
 
-* In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as you can.
+* In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
 
 </panel>
 
@@ -51,8 +51,6 @@ We strongly recommend you to **freeze features** after reaching this milestone. 
 </modal>
 
 **Submission**: as before.
-
-**Grading**: as before.
 
 ### v1.5rc Documentation
 
@@ -71,8 +69,10 @@ Update to match the product.
 #### Project Portfolio Page (PPP)
 
 * **Objective:** 
-  * For you to use (e.g. in your resume) as a well-documented data point of your SE experience 
-  * For us to use as a data point to evaluate your contributions to the project and your documentation skills
+  * For you to use %%&nbsp;(e.g. in your resume)%% as a well-documented data point of your SE experience 
+  * For us to use as a data point to evaluate your,
+    * contributions to the project
+    * your documentation skills
 
 * **What to include:**
   * Main things to include: 
@@ -87,9 +87,16 @@ Update to match the product.
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:
+  * Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be penalized. 
+    Content | Limit
+    ------- | -----
+    Description in point form | 0.5-1
+    Extracts from the User Guide | 1-2
+    Extracts from the Developer Guide | 2-3
+    Total | 3-6
   * :package: Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html).
   * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html). 
-  * :exclamation: It is assumed that sections _included_ in this way were written primarily by you. If those sections were written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
+  * ==:exclamation: It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
 
 </div>
 </tip-box>
@@ -99,10 +106,10 @@ Update to match the product.
 ### v1.5rc Demo
 
 * Objective: to serve as a rehearsal for the final project demo at v1.5
-* Duration: ~3 minutes (max) per person %%&nbsp; a 4-member team will have 12 minutes%%
-* Organize the demo to present a cohesive picture of the product as a whole. Unlike in v1.2-v1.4 demos, there is no need for each person to demo their own features.
-* ==Cover all features==, not just the ones added in the recent iteration.
-* It ==should be a 'well prepared' demo==. You should know in advance exactly what you'll do in the demo.
-* It is ==a _sitting down_ demo==: You'll be demonstrating the features using the TV while sitting down.
-* It will be uninterrupted demo: The tutor will not interrupt you during the demo. That means you should finish within the given time.
-* The app should be populated with a significant amount of realistic data at the start. e.g at least 20 contacts.
+* ==Follow <trigger trigger="click" for="modal:v15rc-demo-instructions">final demo instructions</trigger>== as much as possible.
+* **Cover all features**, not just the ones added in the recent iteration.
+* It **should be a 'well prepared' demo**. You should know in advance exactly what you'll do in the demo.
+
+<modal large title="Admin &raquo; Project &rarr; v1.5 Demo (extract)" id="modal:v15rc-demo-instructions">
+  <include src="project-v15.md#v15-demo-instructions"/>
+</modal> 

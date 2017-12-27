@@ -1,6 +1,6 @@
 <tip-box> 
 
-**v1.4 Summary of Deliverables**
+**v1.4 Summary of Milestone**
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------

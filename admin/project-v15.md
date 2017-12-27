@@ -79,41 +79,51 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 <include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
 
+
+
 ### v1.5 Demo
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
-* **Duration:** Strictly `teamSize x 3` minutes %%&nbsp;e.g. 12 minutes for a 4-person team.%% Exceeding this limit will be penalized.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.  
     Starting times: `Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes`<br>
     At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.<br> 
     There is an ==automatic penalty if you are not ready to start on time.==<br>
     Wait outside the venue until you are called in.
-* **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product.  
+    
+<div id="v15-demo-instructions">
+
+* **Duration:** Strictly `(teamSize x 3) + 1` minutes %%&nbsp;e.g. 13 minutes for a 4-person team.%% Exceeding this limit will be penalized. The extra minute is for the first speaker to give an overview of the product.
+
+* **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product.
+
 * **Scope**: 
-  * Organize the demo to present a cohesive picture of the product as a whole, similar to the v1.5rc demo.
-  * Remember to explain the profile of the target user early in the demo.
-  * The scenarios you demonstrate should be chosen judiciously so that you cover the full range of your product's functionality. Give more time to stronger features (i.e. cover mundane/basic features fast). It is recommended you showcase how the product improves the user’s life rather than simply describe each feature.
+  * **Each person should demo the enhancements they added**. However, it's ok for one member to do all the typing.
+  * Subjected to the constraint mentioned in the previous point, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. %%&nbsp;Remember to explain the profile of the target user profile and value proposition early in the demo.%%
+  * It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
-* **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
+  * Mention features you inherited from AB4 only if they are needed to explain your new features. %%&nbsp;Reason: existing features will not earn you marks, and the audience is already familiar with AB4 features.%%
+
 * **Structure:**  
-    Demo the product using the same executable you submitted, on your own laptop, using the TV.  
-    Every team member should take part in the demo. However, it's ok for one member to do all the typing.
-* **Optimizing the time:**  
-    Try to make the maximum use of the short demo time in the following ways,
+  * Demo the product using the same executable you submitted, on your own laptop, using the TV.  
+  * It can be **a _sitting down_ demo**: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.
+  * It will be uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.
+  * The app should be populated with a significant amount of realistic data at the start. %%&nbsp;e.g at least 20 contacts%%.
+  * **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
+    
+* **Optimizing the time:** 
   * Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.  
-   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, 
-   [Instead of this]`Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.`  
-    [do this] `If Jim needs to postpone the meeting, he can type …`  
+   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]`Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.` [do this] `If Jim needs to postpone the meeting, he can type …`  
     It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
   * Rehearse the steps well and ensure you can do a smooth demo. ==Demos that are clearly under-prepared will be penalized.==
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC". 
-  * No need to spend time describing features that existed in original AB4 but you can mention if you did any changes to those features.
   * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
   * Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.
+
+</div>
 
 **Grading**: 
 
