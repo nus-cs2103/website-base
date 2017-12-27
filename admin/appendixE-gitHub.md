@@ -102,19 +102,47 @@ Note that some of our download scripts depend on the following folder paths. Ple
 When you create a repo, you get an issue tracker for that repo automatically. Configure it as follows:
 
 * Delete existing labels and add the following labels.
-  * `type.epic` : A big feature which can be broken down into smaller stories e.g. search
-  * `type.story` : A user story
-  * `type.enhancement`: An enhancement to an existing story
-  * `type.task` : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
-  * `type.bug` : A bug
-  * `status.ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
-  * `priority.high` : Must do
-  * `priority.medium` : Nice to have
-  * `priority.low` : Unlikely to do  
 
-* Create following milestones
+<tip-box>
 
-* `v1.0`, `v1.1`, `v1.2`, `v1.3`, `v1.4`, `v1.5rc`, `v1.5`
+Issue type labels:
+* `type.epic` : A big feature which can be broken down into smaller stories e.g. search
+* `type.story` : A user story
+* `type.enhancement`: An enhancement to an existing story
+* `type.task` : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
+* `type.bug` : A bug
+
+</tip-box>
+
+<tip-box>
+
+Status labels:
+* `status.ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
+</tip-box>
+
+<tip-box>
+
+Priority labels:
+* `priority.high` : Must do
+* `priority.medium` : Nice to have
+* `priority.low` : Unlikely to do 
+
+</tip-box>
+
+<span id="bug-severity">
+
+<tip-box>
+
+Bug Severity labels:
+* `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
+* `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
+* `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
+
+</tip-box>
+
+</span>
+
+* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `v1.3`, `v1.4`, `v1.5rc`, `v1.5`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 

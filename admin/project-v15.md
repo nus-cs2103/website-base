@@ -1,12 +1,12 @@
 <tip-box> 
 
-* :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed.== Even a 1-second delay is penalized, irrespective of the reason. 
+* :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a 1-second delay is penalized, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis. 
   * For submissions done via IVLE, the submission time is the timestamp shown by IVLE.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
 * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
 * :exclamation: Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
 * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%&nbsp;e.g. broken links, outdated diagrams/instructions etc.%%.
-* **Do not update the repo during the 7 days after the deadline.** Get our permission first if you need to update the repo during that one-week _freeze_ period. You can continue to evolve your repo after that. 
+* **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that one-week _freeze_ period. You can continue to evolve your repo after that. 
 
 **Summary of submissions**:
 
@@ -80,7 +80,6 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 <include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
 
 
-
 ### v1.5 Demo
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
@@ -133,11 +132,9 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 ### v1.5 Practical Exam
 
-(Previously called _Testathon_)
-
 <tip-box type="important"> 
 
-**Graded ==(accounting for about 10 marks in total)==. Attendance is compulsory**. 
+**Compulsory. Graded ==(accounting for about 10 marks in total)==**. 
 
 </tip-box>
 
@@ -151,27 +148,15 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
   * implementation effort :bust_in_silhouette:
   * documentation quality :bust_in_silhouette:
 
-**Time/venue:** week 13 lecture, lecture venue
+**Time/venue:** week 13 lecture slot, but not in the lecture venue (you can do it anywhere)
 
 <include src="project-testing.md#testingPreparations" />
 
 **During:** 
 
-<tip-box> 
-
-:exclamation: this session is conducted under conditions similar to that of a final exam except limited use of the computer is allowed.
-* Sit in the [assigned row](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). When you select a seat to sit in the assigned row, choose the empty seat closest to the middle of the seat segment (i.e. fill rows starting from the middle) so that those who come later than you don't have to distrub you to get to empty seats in the middle.
-* Not allowed:
-  * communicating with others (except with teaching team members present)
-  * use any other software/websites than those strictly required for the testing 
-  * running background IM/chat/notification services
-  * use of phones
-
-</tip-box>
-
-1. **Take note of your team to test and your _Tester ID_**. Both will be given to you by the teaching team. 
+1. **Take note of your team to test and your _Tester ID_**. Both will be given to you by the teaching team (distributed via IVLE gradebook). 
 1. **Download from IVLE all files** submitted by the team %%&nbsp;(i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)%% ==into an empty folder==.
-1. **[40 minutes] Test the product and report bugs** 
+1. **[~40 minutes] Test the product and report bugs** 
    * Launch the jar file. Test it. 
    * You can use the provided _test script_ and _user guide_ in your testing. 
    * No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
@@ -181,15 +166,20 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
      * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
      * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others copying your bug reports%%
    * Report bugs only. Do not post suggestions. These are considered bugs:
-     * Behavior differs from the user guide (or testing instructions)
+     * Behavior differs from the user guide (or test script)
      * A legitimate user behavior is not handled %%&nbsp;e.g. incorrect commands, extra parameters%%
      * Behavior is not specified and differs from normal expectations %%&nbsp;e.g. error message does not match the error%%
    * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will be penalized**.
      * Use a descriptive title
      * Give a good description of the bug with steps to reproduce and screenshots
-   * :mag: Note that we plan to **anonymize bug reports** before revealing it to the receiving team. 
+     * :mag: Note that we will **anonymize bug reports** before revealing it to the receiving team. 
+   * Assign a severity to the bug report:
 
-1. **[30 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
+<include src="appendixE-gitHub.md#bug-severity" />
+
+   
+
+1. **[~40 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
   
    * **A. Cohesiveness of product features** [:busts_in_silhouette:]: Do the features fit together and match the target user (and the target problem being addressed)?
      * `low`: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.
@@ -233,9 +223,61 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
      * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.
      * `unable to judge`: not enough content to make a judgement.
 
-**Grading:** Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
+**Bug Review Period**:
 
+There will be a review period for you to respond to the [bug reports](https://github.com/nus-cs2103-AY1718S2/pe-results/issues) you received.
+
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Wednesday midnight**. 
+
+Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
+
+<tip-box> 
+
+**Instructions for Reviewing Bug Reports**
+
+* **First, don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
+
+* **Do not edit the subject or the description. Do not close bug reports.** Your response (if any) should be added as a comment.
+
+* **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag. In addition, use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.
+
+* **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know (email prof).
+
+* **Decide if it is a real bug and apply ONLY one of these labels**.
+
+<tip-box> 
+
+Response Labels:
+* `response.Accepted` : You accept it as a bug. 
+* `response.Rejected` : What tester thought as a bug is in fact expected behavior. :exclamation: The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can also reject bugs that you inherited from AB4.
+* `response.CannotReproduce` : You are unable to reproduce the behavior reported in the bug after multiple tries. 
+* `response.IssueUnclear` : The issue description is not clear.
+
+</tip-box>
+
+* If applicable, **decide the type of bug**:
+
+<tip-box> 
+
+Bug Type Labels:
+* `type-FunctionalityBug` : the bug is a flaw in how the product works
+* `type-DocumentationBug` : the bug is in the documentation
+
+</tip-box>
+
+* **Suggest a severity for the bug**:
+
+<include src="appendixE-gitHub.md#bug-severity" />
+
+
+* **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.**
+
+* **Add an explanatory comment** explaining your choice of labels and assignees.
+
+</tip-box>
+
+**Grading:** 
+
+* Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
 * You will lose marks if you missed too many bugs in the product you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
-* The bugs found in your product by others will affect your v1.5 marks. In some cases we'll ask for your input before deciding whether a bug should be penalized %%&nbsp;i.e. give you a chance to reject false-positive bug reports%%.
-  
-</div>
+* The bugs found in your product by others will affect your v1.5 marks. You will be given a chance to reject false-positive bug reports.
