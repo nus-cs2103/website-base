@@ -9,7 +9,7 @@
 <div id="testingPreparations">
 
 **Preparation**:
-* **Bring your laptop, and charger cable**.
+* Ensure you have access to a **computer that is able to run module projects** %%&nbsp;e.g. has the right Java version%%.
 * **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
 * :bulb: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker. 
   

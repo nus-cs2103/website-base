@@ -59,14 +59,16 @@ v1.4 user guide should be updated to match the current version of the product. %
 As before.
 
 
-### v1.4 Acceptance Testing
+### v1.4 Testing
+
+v1.4 is subjected to a round of _peer testing_.
 
 **Objectives**:
-* **To train you** to do manual testing, bug reporting, bug triaging, bug fixing, communicating with users, evaluating products etc. (Note: ==you will be doing a graded acceptance testing session in week 13==; this session will serve as practice for that)
+* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users, evaluating products etc. 
 * **To help you improve your product** before the final submission.
   
 **When, where**: 
-* To be done **during Lecture 11**. Duration: **30 minutes**.
+* To be done **during Lecture 11** (but you can do it from anywhere, not necessarily lecture venue). Suggested duration: **30 minutes** (we'll stop the lecture for a 30 minute block for you do do the testing).
 
 **During the session**:
 * Each student will be assigned a product from another team to test.
@@ -79,18 +81,19 @@ As before.
 * ==Do not use the session time to read bug reports your team is receiving.==
 * Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.
 * Use descriptive titles for the issues. Give a good description of the bug/suggestion, including steps required to reproduce.
+  * :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
   
 **Grading**:
-* **Attendance is strongly encouraged** but not compulsory. Your participation in the session benefits your team because the number of testers testing your product will depend on how many members of your team is taking part in testing %%&nbsp;e.g. if 3 members of your team are taking part in testing, three other testers will be assigned to test your product%%.
-* There is **no penalty for bugs reported** at this session.
-* The **reward for reporting bugs** or suggesting features: do ==include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger>== to show how you contributed to another project.
+* Considered for phase B participation. In addition, issues you created can be include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger> to show how you contributed to another project.
+* There is **no penalty for bugs reported** in your product.
   
-<modal title="Admin &raquo; Project &rarr;" id="modal:v1.4-ppp">
+<modal large title="Admin &raquo; Project &rarr;" id="modal:v1.4-ppp">
   <include src="project-v15rc.md#project-portfolio"/>
 </modal>
   
 <include src="project-testing.md#testingPreparations" />
   
 **After the session**:
-* It is up to you to decide whether you will act on those issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.
+* It is up to you to decide whether you will act on reported issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.
 * You can post in the issue thread to communicate with the tester %%&nbsp;e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
+  * :bulb: Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.
