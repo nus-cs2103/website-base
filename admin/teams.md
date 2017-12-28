@@ -32,7 +32,7 @@ Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. B
 We allow some freedom in choosing team members, subject to these constraints:
 
 * All team members should be in the same tutorial. ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred team mates.  
-* Teams of ==single nationality are not allowed== %%Rationale: to train you to work in multicultural teams.%% However, we allow same nationality teams if the only language common among all team members is English. e.g. an all-Singaporean team that include both Chinese and Malay students.
+* Teams of ==single nationality are not allowed== %%&nbsp;Rationale: to train you to work in multicultural teams.%% However, we allow same nationality teams if the only language common among all team members is English. e.g. an all-Singaporean team that include both Chinese and Malay students.
 * No more than one exchange students per team %%Rationale: to increase interaction between exchange students and NUS students.%%
 
 * Also note that **we may modify teams when circumstances call for it**. There is no avenue for you to object. Staying with your preferred team is not guaranteed.

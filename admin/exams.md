@@ -20,30 +20,25 @@ Each MCQ question gives you a statement to evaluate.
 
 
 Unless stated otherwise, the meaning of answer options are<br>
-**A.** `Agree with confidence`<br>
-**B.** `Agree, but not confident`<br>
+**A.** `True`<br>
+**B.** Option not used<br>
 **C.** `Question unclear` (in this case, write down your doubt in the question paper)<br>
-**D.** `Disagree, but not confident`<br>
-**E.** `Disagree with confidence`
+**D.** Option not used<br>
+**E.** `False`
 
 
-**Incorrect answers receive negative marks.** Here is an example marking scheme for a question that gives you a correct statement. %%&nbsp;The scheme will be reversed if the statement given is incorrect.%%
+**Incorrect answers receive negative marks.** Here is an example marking scheme:
 
-A. Agree with confidence **(+0.2)**<br>
-B. Agree, but not confident **(+0.1)**<br>
-C. Question unclear **(0)**<br>
-D. Disagree, but not confident **(-0.1)**<br>
-E. Disagree with confidence **(-0.2)**<br>
+Answer correct **(+0.24)**<br>
+Option `C`  **(0)**<br>
+No answer  **(0)**<br>
+Answer incorrect **(-0.24)**<br>
 
-%%&nbsp;Negative marks are necessary because all questions are Agree/Disagree type. Without negative marks, anyone can score roughly half the marks by simply choosing the same option for all questions.%%
+%%&nbsp;Negative marks are necessary because all questions are True/False type. Without negative marks, anyone can score roughly half the marks by simply choosing the same option for all questions.%%
 
 **All questions carry equal marks.**
  
-The exam paper has 133 questions. 
-* 3 are dummy questions used for admin purposes (not graded). 
-* The remaining 130 questions includes **10 extra questions**. i.e., you need only 120 correct answers to get full marks. 
-  * These extra questions are meant as a safety buffer against mistakes you might commit under exam pressure or questions that are not clear to you. 
-  * Alternatively, you can simply skip (or use option C for) 10 questions.
+The exam paper has 100 questions.  
 
 Note that you have **slightly less than ½ minute for each question**, which means you need to go through the questions fairly quickly.
 
@@ -53,7 +48,7 @@ Given the fast pace required by the paper, to be fair to all students, **you wil
 
 **Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.
 
-You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given three OCR forms. **Indicate your student number in all three OCR forms**. 
+You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. **Indicate your student number in both OCR forms**. 
 
 To save space, we use the following notation in MCQ question.
  **[<span class="underline">x</span> | y | <span class="underline">z</span>] means ‘x and z, but not y’**
@@ -66,7 +61,7 @@ To save space, we use the following notation in MCQ question.
 
 * IDEs can help with [<span class="underline">writing</span> | debugging | <span class="underline">testing</span>] code.
 
-The correct response for it is `Disagree with confidence` because IDEs can help with all three of the given options, not just writing and testing.
+The correct response for it is `False` because IDEs can help with all three of the given options, not just writing and testing.
 
 </tip-box>
 
