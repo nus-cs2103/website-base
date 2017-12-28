@@ -32,7 +32,7 @@ An app to manage,
    
 For either direction, you need to define a target user profile and a value proposition:
 
-* **Target user profile**: Define a very specific target user profile. <br> :bulb: We recommend you narrow down the target user profile quite a lot %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody &rarr; teachers &rarr; university teachers &rarr; tech savvy university teachers &rarr; CS2103 instructors.%%<br>
+* **Target user profile**: Define a very specific target user profile. <br> :bulb: We required you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody &rarr; teachers &rarr; university teachers &rarr; tech savvy university teachers &rarr; CS2103 instructors.%%<br>
  :exclamation: Be careful not to contradict given project constraints when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.
 
 * **Value proposition**: Define a clear _value proposition_ %%&nbsp;what problem does the product solve? how does it make the the user's life easier%% that matches the target user profile.
@@ -100,8 +100,8 @@ For either direction, you need to define a target user profile and a value propo
  
 1. **Contribute to all aspects of the project**: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.<br>
   In particular, ==you are required to divide work based on features rather than components==:
- * By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components%%.
- * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%&nbsp;(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
+   * By the end of this project (i.e. by v1.5) each team member is expected to have implemented one minor and one major enhancement/feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to force you to learn all components of the software, instead of limiting yourself to just one/few components%%.
+   * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%&nbsp;(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
 
 1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
 

@@ -177,33 +177,33 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 <include src="appendixE-gitHub.md#bug-severity" />
 
-   
 
 1. **[~40 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
   
-   * **A. Cohesiveness of product features** [:busts_in_silhouette:]: Do the features fit together and match the target user (and the target problem being addressed)?
-     * `low`: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.
-     * `medium`: Some features are relevant to the target user but some are not.
-     * `high`: One of these
-       * Almost all features are relevant to the target user but the target user is very general
-       * Almost all features are relevant to the target user but the features are not very high value to the target user 
-     * `excellent`: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.
+   * **A. Cohesiveness of product features** [:busts_in_silhouette:]: Do the major features fit together and match the stated target user and the value proposition?
+     * `low`: One of these
+       * target user is too general %%&nbsp;i.e. not narrower than AB4%%
+       * target user and value proposition is not clear from the user guide OR
+       * features don't seem to match for the most part
+     * `medium`: Some features match but some don't
+     * `high`: all features match but the features are not very high value to the target user 
+     * `excellent`: the product is very attractive to the target user. i.e. and almost all new features are of high-value to the target user.
+     * `unable to judge`: you are unable to judge this aspect for some reason
   
    * **B. Quality of user docs** [:bust_in_silhouette:]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.== 
      * `low`: Hard to understand, often inaccurate or missing important information
      * `medium`:
      * `high`: Mostly easy to follow. Only a few areas for improvements.
-     * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).
-     * `unable to judge`: not enough content to make a judgement
+     * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).
+     * `unable to judge`: less than 1 page worth of UG content written by the student
 
    * **C. Amount of work** [:bust_in_silhouette:]:  Evaluate the amount of work on a scale of 0 to 30
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
-     * Count all implementation/testing/documentation work mentioned in that person's portfolio page.
-     * If the feature was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch. 
+     * Count all implementation/testing/documentation work as mentioned in that person's portfolio page.
      * :exclamation: Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
      * When estimating effort, ignore features that are driven by GUI inputs.
   
-   * **D. Depth of features** [:bust_in_silhouette:]: Evaluate ==the strongest feature== done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo`
+   * **D. Depth of feature (major feature)** [:bust_in_silhouette:]: Evaluate ==the major feature== done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands`edit` `undo` `redo` 
      * `low` : an easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%% 
      * `medium` : moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%% 
      * `high`: one of the below
@@ -211,17 +211,21 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
        * A difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%
      * `excellent`: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%
      * `outstanding`: A difficult feature, implemented as good as it can be under the circumstances. %%&nbsp;undo/redo command that even allows undoing non-mutating commands such as _select_, allows selectively undo specific commands in the history, etc.%%
+     * `unable to judge`: you are unable to judge this aspect for some reason
   
    * **E. Quality of developer docs** [:bust_in_silhouette:]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.== 
      * `low`: One of these
-       * Very small amount of content (i.e., less than 1 page). 
-       * Hardly any use to the reader (i.e., content doesn't make much sense or redundant). 
-       * Uses ad-hoc diagrams where UML diagrams could have been used instead.
-       * Multiple notation errors in UML diagrams.
-     * `medium`: _Some_ diagrams, _some_ descriptions, but does not help the reader that much.
-     * `high`: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
+       * Very small amount of content (i.e., 0.5 - 1 page)
+       * Hardly any use to the reader (i.e., content doesn't make much sense or redundant) 
+       * Uses ad-hoc diagrams where UML diagrams could have been used instead
+       * Multiple notation errors in UML diagrams
+     * `medium`: _Some_ diagrams, _some_ descriptions, but does not help the reader that much %%&nbsp;e.g. overly complicated diagrams%%
+     * `high`: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
      * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.
-     * `unable to judge`: not enough content to make a judgement.
+     * `unable to judge`: One of these
+       * no content at all
+       * less than 0.5 pages worth of content
+       * other problems in the document %%&nbsp;e.g. looks like included wrong content%%
 
 **Bug Review Period**:
 
