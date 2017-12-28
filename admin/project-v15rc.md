@@ -28,23 +28,7 @@ We strongly recommend you to **freeze features** after reaching this milestone. 
   <include src="project-testing.md#expectations"/>
 </modal>
 
-<panel header=":bulb: Tips: how to score high for code quality" no-close>
-
-* Ensure your code has at least some evidence of these (see [here](../book/errorHandling/index.html) for more info)
-  * logging
-  * exceptions
-  * assertions
-  * defensive coding
-  
-* Ensure there are no [coding standard](https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
-
-* Ensure [SLAP](../book/codeQuality/maximiseReadability/intermediate/index.html) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.
-
-* Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
-
-* In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
-
-</panel>
+<include src="project-assessment.md#code-quality-tips" />
 
 <modal large title="Textbook &raquo; Implementation &rarr;" id="modal:v15-codeQuality">
   <include src="../book/codeQuality/index.md"/>

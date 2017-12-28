@@ -107,6 +107,8 @@ For either direction, you need to define a target user profile and a value propo
 
    <panel header="Examples of team-tasks" expanded>
    
+   <span id="example-team-tasks">
+   
    Here is a non-exhaustive list of team-tasks:
    
    1. Necessary general code enhancements
@@ -118,6 +120,8 @@ For either direction, you need to define a target user profile and a value propo
    1. Release management
    1. Updating user/developer docs that are not specific to a feature %%&nbsp;e.g. documenting the target user profile%%
    1. Incorporating more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
+   
+   </span>
    
    </panel><p/>
 

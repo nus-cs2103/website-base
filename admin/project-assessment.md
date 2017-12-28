@@ -1,4 +1,4 @@
-Note that project grading is ==not competitive (not bell curved)==. ==CS2103T projects will be assessed separately from CS2103 projects.== This is to account for the perceived difference in workload. Given below is the marking scheme.
+Note that project grading is ==not competitive (not bell curved)==. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
 **Total**: 50 marks (:bust_in_silhouette: 40 individual marks + :busts_in_silhouette: 10 team marks)
 
@@ -12,11 +12,39 @@ Based on: user guide and the product demo. The **quality of the demo will be fac
 
 </panel>
 
-<panel header="2. **Implementation** [:bust_in_silhouette:][20 marks]" expanded>
+<panel header="2. **Implementation** [:bust_in_silhouette:][15 marks]" expanded>
 
-Evaluates: How good your implementation is, in terms of the ==quality and the quantity== of the code you have written yourself.  
+Evaluates: 
+
+**A. Code quality/quantity:** 
+
+How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.
 
 Based on: an inspection of the collated code (submitted in your `/collated/*.md` files).
+
+<span id="code-quality-tips">
+
+<panel header=":bulb: Tips: how to score high for code quality" no-close>
+
+* Ensure your code has at least some evidence of these (see [here](../book/errorHandling/index.html) for more info)
+  * logging
+  * exceptions
+  * assertions
+  * defensive coding
+  
+* Ensure there are no [coding standard](https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
+
+* Ensure [SLAP](../book/codeQuality/maximiseReadability/intermediate/index.html) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.
+
+* Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
+
+* In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
+
+</panel><p>
+
+</span>
+
+**B. Depth and completeness of the major feature**
 
 </panel>
 
@@ -24,7 +52,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 Evaluates: How good is your Quality Assurance? 
 
-Based on: 1. your test code 2. our own manual testing 3. your performance in the <trigger trigger="click" for="modal:projectAssessment-practicalExam">v1.5 Practical Exam</trigger>, 4. bugs found during testathon. 
+Based on: 1. your test code 2. our own manual testing 3. your performance in the <trigger trigger="click" for="modal:projectAssessment-practicalExam">v1.5 Practical Exam</trigger>, 4. bugs found during PE. 
 
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
   <include src="project-testing.md#expectations"/>
@@ -32,7 +60,7 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
   
 </panel>
 
-<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
+<modal large title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
   <include src="project-v15.md#v15-practicalExam"/>
 </modal>
 
@@ -47,8 +75,10 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
     
 </panel>
   
-<panel header="5. **Project management** [:busts_in_silhouette:: 5 marks]" expanded>
+<panel header="5. **Project management** [:busts_in_silhouette: 5 + :bust_in_silhouette: 5 = 10 marks]" expanded>
 <div id="project-management-grading">  
+
+**A. Process:** 
 
 Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 
 
@@ -66,6 +96,16 @@ Other criteria:
 * Good task definition, assignment and tracking, based on the issue tracker
 * Good use of buffers %%(opposite: everything at the last minute)%%
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%% 
+
+**B. Team-based tasks**: 
+
+Evaluates: how much you contributed to common <trigger trigger="click" for="modal:projectAssessment-teamTasksExamples">team-based tasks</trigger>
+
+Based on: peer evaluations and tutor observations
+
+<modal large title="Admin &raquo; Project Scope (extract)" id="modal:projectAssessment-teamTasksExamples">
+  <include src="project-scope.md#example-team-tasks"/>
+</modal>
 
 </div>
 </panel>
