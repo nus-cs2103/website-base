@@ -234,17 +234,18 @@
             <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
             <ul>
               <li>
-                <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the target user (and the target problem being addressed)?</p>
+                <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the major features fit together and match the stated target user and the value proposition?</p>
                 <ul>
-                  <li><code>low</code>: Target user/problem not clear from the user guide OR features don't seem to match target user for the most part.</li>
-                  <li><code>medium</code>: Some features are relevant to the target user but some are not.</li>
-                  <li><code>high</code>: One of these
+                  <li><code>low</code>: One of these
                     <ul>
-                      <li>Almost all features are relevant to the target user but the target user is very general</li>
-                      <li>Almost all features are relevant to the target user but the features are not very high value to the target user</li>
+                      <li>target user is too general <span class="dimmed"> i.e. not narrower than AB4</span></li>
+                      <li>target user and value proposition is not clear from the user guide OR</li>
+                      <li>features don't seem to match for the most part</li>
                     </ul>
                   </li>
-                  <li><code>excellent</code>: Target user clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
+                  <li><code>medium</code>: Some features match but some don't</li>
+                  <li><code>high</code>: all features match but the features are not very high value to the target user</li>
+                  <li><code>excellent</code>: the product is very attractive to the target user. i.e. and almost all new features are of high-value to the target user. i.e. .</li>
                 </ul>
               </li>
               <li>
@@ -253,8 +254,8 @@
                   <li><code>low</code>: Hard to understand, often inaccurate or missing important information</li>
                   <li><code>medium</code>:</li>
                   <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
-                  <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much).</li>
-                  <li><code>unable to judge</code>: not enough content to make a judgement</li>
+                  <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
+                  <li><code>unable to judge</code>: less than 1 page worth of UG content written by the student</li>
                 </ul>
               </li>
               <li>
@@ -262,15 +263,14 @@
                 <ul>
                   <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>                    is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have
                     efforts lower than 20.</li>
-                  <li>Count all implementation/testing/documentation work mentioned in that person's portfolio page.</li>
-                  <li>If the feature was adapted from another team, count the effort required for adapting it, rather than the effort needed for writing it from scratch.</li>
+                  <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
                   <li>❗️ Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point.
                     <mark>You will lose marks if that is the case.</mark></li>
                   <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                 </ul>
               </li>
               <li>
-                <p><strong>D. Depth of features</strong> [👤]: Evaluate <mark>the strongest feature</mark> done by the developer for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
+                <p><strong>D. Depth of feature (major feature)</strong> [👤]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
                 <ul>
                   <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
                   <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
@@ -289,17 +289,23 @@
                 <ul>
                   <li><code>low</code>: One of these
                     <ul>
-                      <li>Very small amount of content (i.e., less than 1 page).</li>
-                      <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
-                      <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
-                      <li>Multiple notation errors in UML diagrams.</li>
+                      <li>Very small amount of content (i.e., 0.5 - 1 page)</li>
+                      <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant)</li>
+                      <li>Uses ad-hoc diagrams where UML diagrams could have been used instead</li>
+                      <li>Multiple notation errors in UML diagrams</li>
                     </ul>
                   </li>
-                  <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much.</li>
-                  <li><code>high</code>: Enough diagrams and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
+                  <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much <span class="dimmed"> e.g. overly complicated diagrams</span></li>
+                  <li><code>high</code>: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
                   <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather
                     than very complicated diagrams that are hard to understand.</li>
-                  <li><code>unable to judge</code>: not enough content to make a judgement.</li>
+                  <li><code>unable to judge</code>: One of these
+                    <ul>
+                      <li>no content at all</li>
+                      <li>less than 0.5 pages worth of content</li>
+                      <li>other problems in the document <span class="dimmed"> e.g. looks like included wrong content</span></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
