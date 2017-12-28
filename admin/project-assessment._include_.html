@@ -1,18 +1,38 @@
-<p>Note that project grading is <mark>not competitive (not bell curved)</mark>. <mark>CS2103T projects will be assessed separately from CS2103 projects.</mark> This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
+<p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
 <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥 10 team marks)</p>
 <panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded="">
   <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
   <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
   <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
 </panel>
-<panel header="2. **Implementation** [:bust_in_silhouette:][20 marks]" expanded="">
-  <p>Evaluates: How good your implementation is, in terms of the <mark>quality and the quantity</mark> of the code you have written yourself.</p>
-  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+<panel header="2. **Implementation** [:bust_in_silhouette:][15 marks]" expanded="">
+  <p>Evaluates:</p>
+  <p><strong>A. Code quality/quantity:</strong></p>
+  <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
+  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p><span id="code-quality-tips"><panel header=":bulb: Tips: how to score high for code quality" no-close=""><ul><li><p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p><ul><li>logging</li><li>exceptions</li><li>assertions</li><li>defensive coding</li></ul></li><li><p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>.
+  Checkstyle can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p>
+  </li>
+  <li>
+    <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.</p>
+  </li>
+  <li>
+    <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+  </li>
+  <li>
+    <p>In addition, tyr to apply as many of the
+      <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
+  </li>
+  </ul>
+  <p></p>
+</panel>
+<p></p>
+</span>
+<p><strong>B. Depth and completeness of the major feature</strong></p>
 </panel>
 <panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
   <p>Evaluates: How good is your Quality Assurance?</p>
   <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the
-    <trigger trigger="click" for="modal:projectAssessment-practicalExam">v1.5 Practical Exam</trigger>, 4. bugs found during testathon.</p>
+    <trigger trigger="click" for="modal:projectAssessment-practicalExam">v1.5 Practical Exam</trigger>, 4. bugs found during PE.</p>
   <panel type="seamless" header="Expectations for writing automated tests:" expanded="">
     <div>
       <ul>
@@ -27,7 +47,7 @@
     </div>
   </panel>
 </panel>
-<modal title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
+<modal large="" title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
   <div>
     <h3 id="v15-practical-exam">v1.5 Practical Exam</h3>
     <tip-box type="important">
@@ -121,7 +141,8 @@
               </li>
               <li><code>medium</code>: Some features match but some don't</li>
               <li><code>high</code>: all features match but the features are not very high value to the target user</li>
-              <li><code>excellent</code>: the product is very attractive to the target user. i.e. and almost all new features are of high-value to the target user. i.e. .</li>
+              <li><code>excellent</code>: the product is very attractive to the target user. i.e. and almost all new features are of high-value to the target user.</li>
+              <li><code>unable to judge</code>: you are unable to judge this aspect for some reason</li>
             </ul>
           </li>
           <li>
@@ -157,6 +178,7 @@
               </li>
               <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span></li>
               <li><code>outstanding</code>: A difficult feature, implemented as good as it can be under the circumstances. <span class="dimmed"> undo/redo command that even allows undoing non-mutating commands such as <em>select</em>, allows selectively undo specific commands in the history, etc.</span></li>
+              <li><code>unable to judge</code>: you are unable to judge this aspect for some reason</li>
             </ul>
           </li>
           <li>
@@ -268,8 +290,9 @@
     <li>Good use of visuals to complement text.</li>
   </ul>
 </panel>
-<panel header="5. **Project management** [:busts_in_silhouette:: 5 marks]" expanded="">
+<panel header="5. **Project management** [:busts_in_silhouette: 5 + :bust_in_silhouette: 5 = 10 marks]" expanded="">
   <div id="project-management-grading">
+    <p><strong>A. Process:</strong></p>
     <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
     <p>Based on: Supervisor observations of weekly milestones and GitHub data. <mark>Marks will be deducted</mark> if,</p>
     <ul>
@@ -287,6 +310,30 @@
       <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
       <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
     </ul>
+    <p><strong>B. Team-based tasks</strong>:</p>
+    <p>Evaluates: how much you contributed to common
+      <trigger trigger="click" for="modal:projectAssessment-teamTasksExamples">team-based tasks</trigger>
+    </p>
+    <p>Based on: peer evaluations and tutor observations</p>
+    <modal large="" title="Admin &raquo; Project Scope (extract)" id="modal:projectAssessment-teamTasksExamples">
+      <div>
+        <p>Here is a non-exhaustive list of team-tasks:</p>
+        <ol>
+          <li>Necessary general code enhancements
+            <ol>
+              <li>Work related to renaming the product</li>
+              <li>Work related to changing the product icon</li>
+              <li>Morphing the product into a different product</li>
+            </ol>
+          </li>
+          <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+          <li>Maintaining the issue tracker</li>
+          <li>Release management</li>
+          <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+          <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+        </ol>
+      </div>
+    </modal>
   </div>
 </panel>
 <p></p>

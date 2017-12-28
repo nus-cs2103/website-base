@@ -55,33 +55,37 @@
     </ul>
   </div>
 </modal>
-<panel header=":bulb: Tips: how to score high for code quality" no-close="">
-  <ul>
-    <li>
-      <p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p>
-      <ul>
-        <li>logging</li>
-        <li>exceptions</li>
-        <li>assertions</li>
-        <li>defensive coding</li>
-      </ul>
-    </li>
-    <li>
-      <p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent
-        only <em>some</em> coding standard violations; others need to be checked manually.</p>
-    </li>
-    <li>
-      <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.</p>
-    </li>
-    <li>
-      <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
-    </li>
-    <li>
-      <p>In addition, tyr to apply as many of the
-        <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
-    </li>
-  </ul>
-</panel>
+<div>
+  <panel header=":bulb: Tips: how to score high for code quality" no-close="">
+    <ul>
+      <li>
+        <p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p>
+        <ul>
+          <li>logging</li>
+          <li>exceptions</li>
+          <li>assertions</li>
+          <li>defensive coding</li>
+        </ul>
+      </li>
+      <li>
+        <p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent
+          only <em>some</em> coding standard violations; others need to be checked manually.</p>
+      </li>
+      <li>
+        <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.</p>
+      </li>
+      <li>
+        <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+      </li>
+      <li>
+        <p>In addition, tyr to apply as many of the
+          <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
+      </li>
+    </ul>
+    <p></p>
+  </panel>
+  <p></p>
+</div>
 <modal large="" title="Textbook &raquo; Implementation &rarr;" id="modal:v15-codeQuality">
   <div>
     <link rel="stylesheet" href="/website/book/css/textbook.css">
@@ -437,9 +441,9 @@ displayResult();
                         <panel header=":lock::key: Small methods or lengthy methods?">
                           <question>
                             <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                            <ul radio-group="4k4v4" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="4k4v4" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="4k4v4" type="radio"> False</label></li>
+                            <ul radio-group="rnjyr" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="rnjyr" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="rnjyr" type="radio"> False</label></li>
                             </ul>
                             <div slot="answer">
                               <p>False</p>
@@ -469,10 +473,10 @@ displayResult();
                         <panel header=":lock::key: Common saying: Make it fast,...">
                           <question>
                             <p>This is a common saying among programmers</p>
-                            <ul radio-group="cdrcu" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="cdrcu" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="cdrcu" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="cdrcu" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                            <ul radio-group="hmzwa" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hmzwa" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hmzwa" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="hmzwa" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                             </ul>
                             <div slot="answer">
                               <p>b</p>
@@ -587,11 +591,11 @@ exit();
                         <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                           <question>
                             <p>What is the recommended approach regarding coding standards?</p>
-                            <ul radio-group="xfqjd" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="xfqjd" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="xfqjd" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="xfqjd" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="xfqjd" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                            <ul radio-group="2c0nx" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="2c0nx" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="2c0nx" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="2c0nx" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="2c0nx" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                             </ul>
                             <div slot="answer">
                               <p>c</p>
@@ -651,12 +655,12 @@ exit();
                         <panel header=":lock::key: Unsuitable variable name">
                           <question>
                             <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                            <ul radio-group="nutgp" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nutgp" type="radio"> a. integer variable name: totalPeople</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nutgp" type="radio"> b. boolean variable name: checkWeight</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nutgp" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nutgp" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="nutgp" type="radio"> e. String variable name: description</label></li>
+                            <ul radio-group="lhhv2" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lhhv2" type="radio"> a. integer variable name: totalPeople</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lhhv2" type="radio"> b. boolean variable name: checkWeight</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lhhv2" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lhhv2" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="lhhv2" type="radio"> e. String variable name: description</label></li>
                             </ul>
                             <div slot="answer">
                               <p>b</p>
