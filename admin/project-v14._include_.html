@@ -47,8 +47,7 @@
     <h4 id="annotating-code-to-indicate-authorship">Annotating code to indicate authorship</h4>
     <ul>
       <li>
-        <p>Mark your code with a <code>//@@author github-ID</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag or the
-          end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
+        <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code>          tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
         <pre class="hljs"><code>//@@author johndoe
 method 1 ...
 method 2 ...
@@ -59,8 +58,8 @@ method 4 ...
 </code></pre>
       </li>
       <li>
-        <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub ID) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub ID
-          to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
+        <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub
+          username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
         <pre class="hljs"><code>method 0 ...
 //@@author johndoe
 method 1 ...
@@ -72,7 +71,7 @@ method 4 ...
       </li>
       <li>
         <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml file.</p>
-        <pre class="hljs"><code>&lt;!-- @@author github-ID --&gt;
+        <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
 &lt;textbox&gt;
   &lt;label&gt;...&lt;/label&gt;
   &lt;input&gt;...
@@ -120,7 +119,7 @@ method 4 ...
         <ul>
           <li>Create a folder called <code>{project root}/unused</code></li>
           <li>Move unused files (or copies of files containing unused code) to that folder</li>
-          <li>use <code>//@@author github-ID-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
+          <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
           </li>
         </ul>
         <pre class="hljs"><code>//@@author johndoe-unused
@@ -130,7 +129,7 @@ method 2 ...
         <p>Please put a comment in the code to explain why it was not used.</p>
       </li>
       <li>
-        <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author github-ID-reused</code> (note the suffix <code>reused</code>) e.g.
+        <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
         </p>
         <pre class="hljs"><code>//@@author johndoe-reused
 method 1 ...
@@ -272,7 +271,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger> to show how you contributed to another project.</li>
   <li>There is <strong>no penalty for bugs reported</strong> in your product.</li>
 </ul>
-<modal large="" title="Admin &raquo; Project &rarr;" id="modal:v1.4-ppp">
+<modal large="" title="Admin » Project →" id="modal:v1.4-ppp">
   <div>
     <h4 id="project-portfolio-page-ppp">Project Portfolio Page (PPP)</h4>
     <ul>
