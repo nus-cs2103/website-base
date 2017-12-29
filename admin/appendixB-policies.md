@@ -105,7 +105,7 @@ Penalties:
 
 ### Policy on reuse
 
-<div id="policy-reuse">
+<div id="policy-reuse"><div id="policy-reuse-nomodals">
 
 **Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for using work done by others.
 
@@ -116,7 +116,65 @@ Penalties:
   * The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.
   * You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely to get into trouble if you unintentionally reused something copyrighted.
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
-  * ==Always get permission from us before you reuse== things from elsewhere. Please post your 'request to use 3rd party library' in our GitHub forum. That way, the whole class get to see what libraries are being used by others.
+  * ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our GitHub forum. That way, the whole class get to see what libraries are being used by others.
+
+<tip-box> 
+
+#### Giving credit for reused work
+
+Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module %%&nbsp;i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)%%
+
+
+If you **used a third party library**: 
+* Mention in the `README.adoc` (under the _Acknowledgements_ section) 
+* mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
+
+
+If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOverflow answers%% or<br>
+**referred code in another software** or<br>
+**referred project code by current/past student**:
+* If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
+  :package: Example:
+  ```java
+  //Solution below adpated from https://stackoverflow.com/a/16252290`
+  {Your implmentation of the reused solution here ...}
+  ```
+* If you copy-pasted a non-trivial code block (possibly with minor modifications %%&nbsp;renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-collateSyntax">Collate Tool Syntax</trigger>)<br>
+  Format:
+  ```java
+  //@@author {yourGithubUsername}-reused
+  //{Info about the source...}
+
+  {Reused code (possibly with minor modifications) here ...}
+
+  //@@author
+  ```
+  :package: Example of reusing a code snipped (with minor modifications):
+  ```java
+  persons = getList()
+  //@@author johndoe-reused
+  //Reused from https://stackoverflow.com/a/34646172 with minor modifications
+  Collections.sort(persons, new Comparator<CustomData>() {
+      @Override
+      public int compare(CustomData lhs, CustomData rhs) {
+          return lhs.customInt > rhs.customInt ? -1 : (lhs.customInt < rhs.customInt) ? 1 : 0;
+      }
+  });
+  //@@author
+  return persons;
+  ```
+
+</tip-box>
+
+</div>
+
+<modal large title="Admin &raquo; Project v1.4 &rarr; Colalte Tool" id="modal:reusePolicy-collateSyntax">
+  <include src="collate.md"/>
+</modal>
+
+<modal large title="Admin &raquo; Project &rarr; Deliverables &rarr; Project Portfolio Page" id="modal:reusePolicy-ppp">
+  <include src="project-v15rc.md#project-portfolio"/>
+</modal>
 
 </div>
 

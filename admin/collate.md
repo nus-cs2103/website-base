@@ -6,7 +6,7 @@ Steps:
 
 #### Annotating code to indicate authorship
 
-* Mark your code with a `//@@author github-ID`. Note the double `@`.<br>
+* Mark your code with a `//@@author {yourGithubUsername}`. Note the double `@`.<br>
 The `//@@author` tag should appear only at the beginning of the code you wrote. The code up to the next `//@@author` tag or the end of the file (whichever comes first) will be considered as was written by that author.
   Here is a sample code file:
   ```
@@ -19,7 +19,7 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
   method 4 ...
   ```
   
-* **If you don't know who wrote the code segment below yours**, you may put an empty `//@@author` (i.e. no GitHub ID) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub ID to the empty tag later.
+* **If you don't know who wrote the code segment below yours**, you may put an empty `//@@author` (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
   Here is a sample code with an empty `author` tag:
   ```
   method 0 ...
@@ -34,7 +34,7 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
 * **The author tag syntax varies based on file type** e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
   Here is an example code from an xml file.
    ```
-   <!-- @@author github-ID -->
+   <!-- @@author sereneWong -->
    <textbox>
      <label>...</label>
      <input>...</input>
@@ -75,7 +75,7 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
 * **If you wrote a significant amount of code that was not used in the final product**,
   * Create a folder called `{project root}/unused`
   * Move unused files (or copies of files containing unused code) to that folder
-  * use `//@@author github-ID-unused` to mark unused code in those files (note the suffix `unused`)
+  * use `//@@author {yourGithubUsername}-unused` to mark unused code in those files (note the suffix `unused`)
   e.g.
   ```
   //@@author johndoe-unused
@@ -84,7 +84,7 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
   ```
   Please put a comment in the code to explain why it was not used. 
    
-* **If you reused code from elsewhere,** mark such code as `//@@author github-ID-reused` (note the suffix `reused`)
+* **If you reused code from elsewhere,** mark such code as `//@@author {yourGithubUsername}-reused` (note the suffix `reused`)
   e.g.
   ```
   //@@author johndoe-reused

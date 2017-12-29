@@ -150,6 +150,11 @@ Update the following pages of the Developer Guide:
 
 **Description**: Divide the <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the [AddressBook-Level4 developer guide](https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component).
 
+:exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
+
+<panel type="seamless" header="%%Admin &raquo; Appendix B: Policies &rarr; Policy on Reuse%%">
+  <include src="appendixB-policies.md#policy-reuse-nomodals" />
+</panel><p/>
 
 **Submission**: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.
 
