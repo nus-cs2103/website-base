@@ -38,7 +38,7 @@
 
 Covered by v1.3:
 
-<include src="../../admin/project-v13.md" name="%%Admin &raquo; Project &rarr; v1.3%%" dynamic no-close/>
+<include src="../../admin/project-v13.md" name="%%Admin » Project → v1.3%%" dynamic no-close/>
 
   </panel>
 </panel>

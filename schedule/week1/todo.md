@@ -2,7 +2,7 @@
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
-<include type="danger" src="../../admin/teams.md" name="%%Admin &raquo;%% Team Forming :star:" dynamic />
+<include type="danger" src="../../admin/teams.md" name="%%Admin »%% Team Forming :star:" dynamic />
 
 </panel>
 <panel type="info" header="[Exchange students only] Signing up for tutorials :star::star::star:" expandable>
@@ -25,7 +25,7 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 
 <panel type="warning" header="Join the Slack Channel :star::star:" expandable> 
 
-<panel header="%%**Admin &raquo; Tools &rarr; Communication**%%" expanded>
+<panel header="%%**Admin » Tools → Communication**%%" expanded>
   <include type="danger" src="../../admin/tools.md#communication" />
 </panel>
 
@@ -35,20 +35,20 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 
 Here are some module admin info to read around this time:    
 
-<include type="danger" name="%%Admin &raquo;%% FAQ: Where is everything? :star:" src="../../admin/appendixC-faq.md#admin-faq-whereIsEverything"  dynamic />
-<include type="danger" name="%%Admin &raquo;%% Project: Overview :star:" src="../../admin/project.md"  dynamic />
-<include type="danger" name="%%Admin &raquo;%% Project: The Product :star:" src="../../admin/project-product.md"  dynamic />
-<include type="danger" src="../../admin/project-scope.md" name="%%Admin &raquo;%% Project: Scope :star:" dynamic />
+<include type="danger" name="%%Admin »%% FAQ: Where is everything? :star:" src="../../admin/appendixC-faq.md#admin-faq-whereIsEverything"  dynamic />
+<include type="danger" name="%%Admin »%% Project: Overview :star:" src="../../admin/project.md"  dynamic />
+<include type="danger" name="%%Admin »%% Project: The Product :star:" src="../../admin/project-product.md"  dynamic />
+<include type="danger" src="../../admin/project-scope.md" name="%%Admin »%% Project: Scope :star:" dynamic />
 
-<include type="warning" src="../../admin/textBooks.md" name="%%Admin &raquo;%% Text Books :star::star:" dynamic />
-<include type="warning" src="../../admin/programming-languages.md" name="%%Admin &raquo;%% Programming Language :star::star:" dynamic />
-<include type="warning" src="../../admin/project-constraints.md" name="%%Admin &raquo;%% Project: Constraints :star::star:"  dynamic />
-<include type="warning" src="../../admin/project-deliverables.md" name="%%Admin &raquo;%% Project: Deliverables :star::star:"  dynamic />
+<include type="warning" src="../../admin/textBooks.md" name="%%Admin »%% Text Books :star::star:" dynamic />
+<include type="warning" src="../../admin/programming-languages.md" name="%%Admin »%% Programming Language :star::star:" dynamic />
+<include type="warning" src="../../admin/project-constraints.md" name="%%Admin »%% Project: Constraints :star::star:"  dynamic />
+<include type="warning" src="../../admin/project-deliverables.md" name="%%Admin »%% Project: Deliverables :star::star:"  dynamic />
 
-<include type="success" name="%%Admin &raquo;%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../admin/appendixC-faq.md#admin-faq-cs2103VsCs2103t"  dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-highWorkload" name="%%Admin &raquo;%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-aPlus" name="%%Admin &raquo;%% FAQ: What are the extra requirements to get an A+? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-cs2103r" name="%%Admin &raquo;%% FAQ: How do I get CS2103R credit for optional LOs? :star::star::star::star:" dynamic />
+<include type="success" name="%%Admin »%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../admin/appendixC-faq.md#admin-faq-cs2103VsCs2103t"  dynamic />
+<include type="success" src="../../admin/appendixC-faq.md#admin-faq-highWorkload" name="%%Admin »%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
+<include type="success" src="../../admin/appendixC-faq.md#admin-faq-aPlus" name="%%Admin »%% FAQ: What are the extra requirements to get an A+? :star::star::star::star:" dynamic />
+<include type="success" src="../../admin/appendixC-faq.md#admin-faq-cs2103r" name="%%Admin »%% FAQ: How do I get CS2103R credit for optional LOs? :star::star::star::star:" dynamic />
 
 </panel>
 
@@ -63,6 +63,6 @@ In particular, you may want to **have a look at the new Java 8 features** such a
 
 <panel type="danger" header="Attend Lecture 1 ==(compulsory)== :star:" expandable>
 
-  <include type="info" src="../../admin/lectures.md" name="%%Admin &raquo;%% Lectures :star::star::star:" dynamic />
+  <include type="info" src="../../admin/lectures.md" name="%%Admin »%% Lectures :star::star::star:" dynamic />
 
 </panel>

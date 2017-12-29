@@ -29,7 +29,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 Covered by the 'Documentation' of component v1.1:
 
-<dynamic-panel src="../../admin/project-v11.md" header="%%Admin &raquo; Project &rarr; v1.1%%" no-close />
+<dynamic-panel src="../../admin/project-v11.md" header="%%Admin » Project → v1.1%%" no-close />
 
   </panel>
 </panel>
@@ -57,7 +57,7 @@ Covered by the 'Documentation' of component v1.1:
 
 Covered by the 'Product' component of v1.1:
 
-<dynamic-panel src="../../admin/project-v11.md" header="%%Admin &raquo; Project &rarr; v1.1%%" no-close />
+<dynamic-panel src="../../admin/project-v11.md" header="%%Admin » Project → v1.1%%" no-close />
 
   </panel>
 </panel>

@@ -14,7 +14,7 @@
 
 Covered by the 'Documentation' component of v1.0:
 
-<dynamic-panel src="../../admin/project-v10.md" header="%%Admin &raquo; Project &rarr; v1.0%%" no-close />
+<dynamic-panel src="../../admin/project-v10.md" header="%%Admin » Project → v1.0%%" no-close />
 
   </panel>
 </panel>
@@ -63,7 +63,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 
 Covered by the 'Product' component of v1.0:
 
-<dynamic-panel src="../../admin/project-v10.md" header="%%Admin &raquo; Project &rarr; v1.0%%" no-close />
+<dynamic-panel src="../../admin/project-v10.md" header="%%Admin » Project → v1.0%%" no-close />
 
   </panel>
 </panel>

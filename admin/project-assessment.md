@@ -60,7 +60,7 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
   
 </panel>
 
-<modal large title="Admin &raquo; Project &rarr;" id="modal:projectAssessment-practicalExam">
+<modal large title="Admin » Project →" id="modal:projectAssessment-practicalExam">
   <include src="project-v15.md#v15-practicalExam"/>
 </modal>
 
@@ -103,7 +103,7 @@ Evaluates: how much you contributed to common <trigger trigger="click" for="moda
 
 Based on: peer evaluations and tutor observations
 
-<modal large title="Admin &raquo; Project Scope (extract)" id="modal:projectAssessment-teamTasksExamples">
+<modal large title="Admin » Project Scope (extract)" id="modal:projectAssessment-teamTasksExamples">
   <include src="project-scope.md#example-team-tasks"/>
 </modal>
 

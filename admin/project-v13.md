@@ -7,11 +7,11 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 :bust_in_silhouette: Contributed code to v1.3 | some code merged
 :busts_in_silhouette: v1.3 jar file released properly on GitHub | as stated
 :busts_in_silhouette: Documentation not significantly behind v1.3 | as stated
-:busts_in_silhouette: v1.3 milestone (and previous milestones) properly wrapped up on GitHub as explained in <trigger trigger="click" for="modal:v13-milestone-wrapup">[Admin &raquo; Appendix E (Extract)]</trigger>| as stated
+:busts_in_silhouette: v1.3 milestone (and previous milestones) properly wrapped up on GitHub as explained in <trigger trigger="click" for="modal:v13-milestone-wrapup">[Admin » Appendix E (Extract)]</trigger>| as stated
 
 </tip-box>
 
-<modal large title="Admin &raquo; Appendix E (Extract)" id="modal:v13-milestone-wrapup">
+<modal large title="Admin » Appendix E (Extract)" id="modal:v13-milestone-wrapup">
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
 

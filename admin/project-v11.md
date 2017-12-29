@@ -57,7 +57,7 @@ Update the following pages:
   * Including the name/photo of the supervisor/lecturer is optional. 
   * The photo of a team member should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%.
 
-<modal large title="Admin &raquo; Choosing a profile photo" id="modal:v11-photo">
+<modal large title="Admin » Choosing a profile photo" id="modal:v11-photo">
   <include src="profilePhoto.md"/>
 </modal>
 

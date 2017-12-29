@@ -52,7 +52,7 @@ This is as a ‘production release’. It should be at least ‘near production 
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin » Project: Assessment%%" dynamic />
 
 ### v1.5 Documentation
 
@@ -77,7 +77,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin » Project: Assessment%%" dynamic />
 
 
 ### v1.5 Demo
@@ -126,7 +126,7 @@ Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Port
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin &raquo; Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin » Project: Assessment%%" dynamic />
 
 <div id=v15-practicalExam>
 

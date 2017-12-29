@@ -24,7 +24,7 @@
 
 Covered by the 'Project Portfolio Page' component of v1.5rc:
 
-<include src="../../admin/project-v15rc.md" name="%%Admin &raquo; Project &rarr; v1.5rc%%" dynamic />
+<include src="../../admin/project-v15rc.md" name="%%Admin » Project → v1.5rc%%" dynamic />
 
   </panel>
 </panel>

@@ -32,7 +32,7 @@ An app to manage,
    
 For either direction, you need to define a target user profile and a value proposition:
 
-* **Target user profile**: Define a very specific target user profile. <br> :bulb: We required you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody &rarr; teachers &rarr; university teachers &rarr; tech savvy university teachers &rarr; CS2103 instructors.%%<br>
+* **Target user profile**: Define a very specific target user profile. <br> :bulb: We required you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.%%<br>
  :exclamation: Be careful not to contradict given project constraints when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.
 
 * **Value proposition**: Define a clear _value proposition_ %%&nbsp;what problem does the product solve? how does it make the the user's life easier%% that matches the target user profile.

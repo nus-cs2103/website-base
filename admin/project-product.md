@@ -5,7 +5,7 @@ In this semester, we are going to enhance [an AddressBook application](https://s
 
 This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.== 
 
-<panel header="%%Admin &raquo; Admin: Project Contstraints: More info about the 'CLI app' requirement%%">
+<panel header="%%Admin » Admin: Project Contstraints: More info about the 'CLI app' requirement%%">
   <include src="project-constraints.md#constraint-cli" />
 </panel>
 <p/>

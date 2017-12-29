@@ -15,7 +15,7 @@
 
 Covered by the 'Demo' component of v1.5:
 
-<include src="../../admin/project-v15.md" name="%%Admin &raquo; Project &rarr; v1.5%%" dynamic />
+<include src="../../admin/project-v15.md" name="%%Admin » Project → v1.5%%" dynamic />
 
   </panel>
 </panel>
@@ -48,11 +48,11 @@ Covered by v1.0-v1.5:
 
 Covered by the 'Peer Evaluations' component of the module:
 
-<include src="../../admin/peer-evaluations.md" name="%%Admin &raquo; Peer Evaluations%%" dynamic />
+<include src="../../admin/peer-evaluations.md" name="%%Admin » Peer Evaluations%%" dynamic />
 
 Also covered by the 'Practical Exam' of v1.5:
 
-<include src="../../admin/project-v15.md" name="%%Admin &raquo; Project &rarr; v1.5%%" dynamic />
+<include src="../../admin/project-v15.md" name="%%Admin » Project → v1.5%%" dynamic />
 
   </panel>
 </panel>

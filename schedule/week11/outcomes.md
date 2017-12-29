@@ -28,7 +28,7 @@
 
 Covered by the 'Acceptance Testing' component of v1.4:
 
-<include src="../../admin/project-v14.md" name="%%Admin &raquo; Project &rarr; v1.4%%" dynamic />
+<include src="../../admin/project-v14.md" name="%%Admin » Project → v1.4%%" dynamic />
 
   </panel>
 </panel>

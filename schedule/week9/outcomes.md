@@ -38,7 +38,7 @@
   
 Covered by 'Documentation' component of v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
 
   </panel>
 </panel>
@@ -54,7 +54,7 @@ Covered by 'Documentation' component of v1.2:
 
 Covered by the 'Project Management' component of v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin &raquo; Project &rarr; v1.2%%" dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
 
   </panel>
 </panel>

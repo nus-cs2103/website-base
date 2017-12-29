@@ -1,6 +1,6 @@
 ==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
 
-<panel header="%%Schedule &raquo; Overview &rarr; Tutorial Schedule%%">
+<panel header="%%Schedule » Overview → Tutorial Schedule%%">
 <include src="../schedule/overview/tutorialSchedule.md" />
 </panel>
 <p/>
@@ -13,7 +13,7 @@
 * The tutor will observe, and give feedback on, how well you are achieving required LOs.
 * Please ==bring your laptop to tutorials.== You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
 
-<panel header="%%Admin &raquo; FAQ: What if I don't carry around a laptop?%%">
+<panel header="%%Admin » FAQ: What if I don't carry around a laptop?%%">
 <include src="appendixC-faq.md#admin-faq-noLaptop" />
 </panel>
 <p/>
@@ -22,7 +22,7 @@
 
 * **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%    
   
-<panel header="%%Admin &raquo; Appendix D: How to get Help in CS2103/T%%">
+<panel header="%%Admin » Appendix D: How to get Help in CS2103/T%%">
 <include src="appendixD-help.md" />
 </panel>
 <p/>
