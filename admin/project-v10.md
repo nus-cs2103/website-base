@@ -40,7 +40,7 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 
 * It is ok to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
 
-* Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr;  Usage &rarr; (section) Tips]</trigger> for tips on how to use user stories in this task.==Pay special attention to the tips about _target user profile_ and _problem scope_.==
+* Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr;  Usage &rarr; (section) Tips]</trigger> for tips on how to use user stories in this task.
 
 * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook &raquo; Specifying Requirements &rarr; UserStories &rarr; Usage &rarr; (panel) Tool Examples ]</trigger>).<br>
   
