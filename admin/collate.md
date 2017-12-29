@@ -1,5 +1,6 @@
+Collate is a tool for collating code written by different developers.
 
-Steps:
+Steps to use Collate:
 1. Download `Collate-TUI.jar` from the [Collate Tool project](https://github.com/se-edu/collate)
 1. Annotate your code to indicate who wrote which part of the code (instructions given below)
 1. Run the Collate tool to collate code written by each person into separate files (instructions given below)
