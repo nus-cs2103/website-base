@@ -7,7 +7,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 :bust_in_silhouette: Have modified in multiple components | Minimal : Your enhancement touches components other than the ones you modified in v1.0 and you are able to demo it using your own computer <br> On track : In addition, you have created a PR for the enhancement, it covers tests and documentation updates for the new feature, and the PR passes Travis checks<br> Ahead : Your PR has been reviewed and merged.
 :busts_in_silhouette: All project documents updated as required | At least there is a PR containing all required changes
 :busts_in_silhouette: v1.0 document updates are merged | as stated
-:busts_in_silhouette: Any errors in org/repo set up fixed %%&nbsp;(e.g. wrong repo name)%% | as stated
+:busts_in_silhouette: Any errors in org/repo set up fixed %%&nbsp;(e.g. wrong repo name)%%.<br>[Auto-publishing of docs](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation) is set up and working | as stated
 
 </tip-box>
 
