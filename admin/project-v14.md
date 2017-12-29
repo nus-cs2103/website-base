@@ -88,7 +88,7 @@ v1.4 is subjected to a round of _peer testing_.
 * There is **no penalty for bugs reported** in your product.
   
 <modal large title="Admin » Project →" id="modal:v1.4-ppp">
-  <include src="project-v15rc.md#project-portfolio"/>
+  <include src="projectPortfolioPage.md"/>
 </modal>
   
 <include src="project-testing.md#testingPreparations" />
