@@ -15,55 +15,45 @@
   <table class="markbind-table table">
     <thead>
       <tr>
-        <th>Item</th>
-        <th>Team/Individual</th>
-        <th>Method</th>
+        <th>Team/Individual Item</th>
+        <th>Name format</th>
+        <th>Upload to</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Jar file</td>
-        <td>👥</td>
-        <td>IVLE</td>
-      </tr>
-      <tr>
-        <td>User Guide</td>
-        <td>👥</td>
-        <td>IVLE</td>
-      </tr>
-      <tr>
-        <td>Developer Guide</td>
-        <td>👥</td>
-        <td>IVLE</td>
-      </tr>
-      <tr>
-        <td>Sample Data</td>
-        <td>👥</td>
-        <td>IVLE</td>
-      </tr>
-      <tr>
-        <td>Test Script</td>
-        <td>👥</td>
-        <td>IVLE</td>
-      </tr>
-      <tr>
-        <td>Project Portfolio Page</td>
-        <td>👤</td>
-        <td>IVLE</td>
-      </tr>
-      <tr>
-        <td><code>README.adoc</code>, <code>Ui.png</code></td>
-        <td>👥</td>
+        <td>👥 Source code</td>
+        <td>tag as <code>v1.5</code></td>
         <td>GitHub</td>
       </tr>
       <tr>
-        <td><code>AboutUs.adoc</code></td>
-        <td>👥</td>
+        <td>👥 Jar file</td>
+        <td><code>[team][product name].jar</code><br><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></td>
+        <td>IVLE</td>
+      </tr>
+      <tr>
+        <td>👥 User Guide</td>
+        <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br><span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
+        <td>IVLE</td>
+      </tr>
+      <tr>
+        <td>👥 Developer Guide</td>
+        <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br><span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
+        <td>IVLE</td>
+      </tr>
+      <tr>
+        <td>👥 <code>README.adoc</code>, <code>Ui.png</code>, <code>AboutUs.adoc</code></td>
+        <td></td>
         <td>GitHub</td>
       </tr>
       <tr>
-        <td>Collated files</td>
-        <td>👤</td>
+        <td>👤 Project Portfolio Page</td>
+        <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br><span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
+        <td>IVLE</td>
+      </tr>
+      <tr>
+        <td>👤 Collated files</td>
+        <td></td>
         <td>GitHub</td>
       </tr>
     </tbody>
@@ -71,24 +61,11 @@
 </tip-box>
 <h3 id="v15-product">v1.5 Product</h3>
 <p>This is as a ‘production release’. It should be at least ‘near production quality’.</p>
-<p><mark>Add these two new files</mark> to the repo (these will be used by our testers when testing your final submission):</p>
-<ul>
-  <li><code>{project root}\src\test\data\ManualTesting\[team][Project Name]SampleData.xml</code> : <span class="dimmed">e.g. [T09-B1][ContactsPlus]SampleData.xml</span> Sample data that can be loaded to your app. Should contain 20+ items.</li>
-  <li><code>{project root}\src\test\data\ManualTesting\[team][Project Name]TestScript.adoc</code> : <span class="dimmed">e.g. [T09-B1][ContactsPlus]TestScript.adoc</span> A document explaining the steps to perform manual testing (i.e. manual scripted testing),
-    starting with how to load the sample data.<br> Should cover all functionality of the product. Should be grouped by functionality.<br> Should specify the command to type and the expected result (screenshots not required).<br> Limit the test cases to
-    about 20 minutes worth of testing.</li>
-</ul>
 <p><strong>Submission</strong>:</p>
 <ul>
   <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated <code>.md</code> files are up to date; any updates to collated code files after
     the deadline comes with an automatic penalty) Note that the quality of the code in these <mark>collated code files accounts for a significant component of your final score</mark>, graded individually.</li>
-  <li><strong>Executable</strong>: upload the jar file to IVLE. File name: <code>[team][product name].jar</code><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></li>
-  <li><strong>Test data/instructions</strong>: Upload following files to IVLE.
-    <ul>
-      <li>Sample data file. File name <code>[team][Project Name]SampleData.xml</code><span class="dimmed">e.g. [T09-B1][ContactsPlus]SampleData.xml</span></li>
-      <li>Testing instructions. File name <code>[team][Project Name]TestScript.pdf</code><span class="dimmed">e.g. [T09-B1][ContactsPlus]TestScript.pdf</span></li>
-    </ul>
-  </li>
+  <li><strong>Executable</strong>: See summary of submissions above</li>
 </ul>
 <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
 <p><strong>Grading</strong>:</p>
@@ -99,7 +76,12 @@
 <p><strong>Submission</strong>:</p>
 <p>First, update following pages on GitHub:</p>
 <ul>
-  <li>User Guide, Developer Guide</li>
+  <li>User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and <mark>any inaccuracy in the content will be reported/penalized as bugs</mark>).
+    <ul>
+      <li>❗️ in particular, <strong>update the <em>Appendix G (Instructions for Manual Testing)</em></strong> of the Developer Guide to include testing instructions to <strong>cover all your major and minor enhancements</strong>. There is no need to add testing
+        instructions for existing features if you did not touch them.</li>
+    </ul>
+  </li>
   <li>README : <mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
   <li>AboutUs : Ensure the following:
     <ul>
@@ -107,30 +89,14 @@
       <li>Team member <mark>names match full names used by IVLE</mark></li>
     </ul>
   </li>
+  <li>Project Portfolio Pages of each member</li>
 </ul>
-<p>Next, convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE.</p>
-<table class="markbind-table table">
-  <thead>
-    <tr>
-      <th>Document</th>
-      <th>Name format</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>User guide</td>
-      <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br><span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
-    </tr>
-    <tr>
-      <td>Developer guide</td>
-      <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br><span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
-    </tr>
-    <tr>
-      <td>Portfolio</td>
-      <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br><span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
-    </tr>
-  </tbody>
-</table>
+<p>Next, convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE. See <em>summary of submissions</em> above for the file name format for each.</p>
+<ul>
+  <li>User Guide</li>
+  <li>Developer Guide</li>
+  <li>Project Portfolio Pages</li>
+</ul>
 <p><strong>Deadline</strong>: Same as v1.5 product.</p>
 <p><strong>Grading</strong>:</p>
 <p>
