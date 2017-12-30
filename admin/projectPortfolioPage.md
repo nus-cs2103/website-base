@@ -25,9 +25,9 @@ At the end of the project each student is required to submit a _Project Portfoli
     Content | Limit
     ------- | -----
     Description in point form | 0.5-1
-    Extracts from the User Guide | 1-2
-    Extracts from the Developer Guide | 2-3
-    Total | 3-6
+    Extracts from the User Guide | 1-3
+    Extracts from the Developer Guide | 3-6
+    Total | 5-10
   * :package: Follow the [example in the AddressBook-Level4](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html).
   * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html). 
   * ==:exclamation: It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
