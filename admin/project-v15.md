@@ -10,17 +10,15 @@
 
 **Summary of submissions**:
 
-Item | Team/Individual | Method
----- | --------------- | ------
-Jar file | :busts_in_silhouette: | IVLE
-User Guide | :busts_in_silhouette: | IVLE
-Developer Guide | :busts_in_silhouette: | IVLE
-Sample Data | :busts_in_silhouette: | IVLE
-Test Script | :busts_in_silhouette: | IVLE
-Project Portfolio Page | :bust_in_silhouette: | IVLE
-`README.adoc`, `Ui.png` | :busts_in_silhouette: | GitHub
-`AboutUs.adoc` | :busts_in_silhouette: | GitHub
-Collated files | :bust_in_silhouette: | GitHub
+Team/Individual Item | Name format | Upload to
+-------------------- | ----------- | ---------
+:busts_in_silhouette: Source code |  tag as `v1.5` | GitHub
+:busts_in_silhouette: Jar file |  `[team][product name].jar`<br>%%e.g. [T09-B1][ContactsPlus].jar%% | IVLE
+:busts_in_silhouette: User Guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%% | IVLE
+:busts_in_silhouette: Developer Guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
+:busts_in_silhouette: `README.adoc`, `Ui.png`, `AboutUs.adoc` | | GitHub
+:bust_in_silhouette: Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
+:bust_in_silhouette: Collated files | | GitHub
 
 </tip-box>
 
@@ -29,23 +27,10 @@ Collated files | :bust_in_silhouette: | GitHub
 
 This is as a ‘production release’. It should be at least ‘near production quality’.
 
-==Add these two new files== to the repo (these will be used by our testers when testing your final submission):
-
-* `{project root}\src\test\data\ManualTesting\[team][Project Name]SampleData.xml` :  %%e.g. [T09-B1][ContactsPlus]SampleData.xml%%
-    Sample data that can be loaded to your app. Should contain 20+ items.
-* `{project root}\src\test\data\ManualTesting\[team][Project Name]TestScript.adoc` :  %%e.g. [T09-B1][ContactsPlus]TestScript.adoc%%
-  A document explaining the steps to perform manual testing (i.e. manual scripted testing), starting with how to load the sample data.  
-  Should cover all functionality of the product. Should be grouped by functionality.  
-  Should specify the command to type and the expected result (screenshots not required).  
-  Limit the test cases to about 20 minutes worth of testing.
-
 **Submission**:
 
 * **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline comes with an automatic penalty) Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
-* **Executable**: upload the jar file to IVLE. File name: `[team][product name].jar` %%e.g. [T09-B1][ContactsPlus].jar%%
-* **Test data/instructions**: Upload following files to IVLE.
-  * Sample data file. File name  `[team][Project Name]SampleData.xml` %%e.g. [T09-B1][ContactsPlus]SampleData.xml%%
-  * Testing instructions. File name  `[team][Project Name]TestScript.pdf` %%e.g. [T09-B1][ContactsPlus]TestScript.pdf%%
+* **Executable**: See summary of submissions above 
     
 
 **Deadline**: Week 13 Monday 23.59.
@@ -59,19 +44,18 @@ This is as a ‘production release’. It should be at least ‘near production 
 **Submission**:
 
 First, update following pages on GitHub: 
-* User Guide, Developer Guide
+* User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and ==any inaccuracy in the content will be reported/penalized as bugs==).
+  * :exclamation: in particular, **update the _Appendix G (Instructions for Manual Testing)_** of the Developer Guide to include testing instructions to **cover all your major and minor enhancements**. There is no need to add testing instructions for existing features if you did not touch them.
 * README : ==Ensure the `Ui.png` matches the current product==
 * AboutUs : Ensure the following:
   * Contains a ==link to each person's Project Portfolio page== 
   * Team member ==names match full names used by IVLE==
- 
-Next, convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE.
+* Project Portfolio Pages of each member
 
-Document | Name format 
----------|-------------
-User guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%%
-Developer guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%%
-Portfolio | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%%
+Next, convert the following documents to pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE. See _summary of submissions_ above for the file name format for each. 
+* User Guide
+* Developer Guide
+* Project Portfolio Pages
 
 **Deadline**: Same as v1.5 product.
 
