@@ -139,18 +139,19 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 **During:** 
 
 1. **Take note of your team to test and your _Tester ID_**. Both will be given to you by the teaching team (distributed via IVLE gradebook). 
-1. **Download from IVLE all files** submitted by the team %%&nbsp;(i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)%% ==into an empty folder==.
+1. **Download from IVLE all files** submitted by the team %%&nbsp;(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
 1. **[~40 minutes] Test the product and report bugs** 
    * Launch the jar file. Test it. 
-   * You can use the provided _test script_ and _user guide_ in your testing. 
+   * You can use Developer Guide _(Appendix G: Instructions for Manual Testing)_ and the _User Guide_ in your testing. 
    * No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
-   * The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.
+   * The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
    * You can do _acceptance_ testing as well as _system_ testing.
+   * Omit feature that existed in AB4. Instead, test features the team has added. 
    * Report bugs in the [practical exam issue tracker](https://github.com/nus-cs2103-AY1718S2/pe/issues), ==not in the team's repo==. 
      * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
      * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others copying your bug reports%%
    * Report bugs only. Do not post suggestions. These are considered bugs:
-     * Behavior differs from the user guide (or test script)
+     * Behavior differs from the User Guide (or Developer Guide)
      * A legitimate user behavior is not handled %%&nbsp;e.g. incorrect commands, extra parameters%%
      * Behavior is not specified and differs from normal expectations %%&nbsp;e.g. error message does not match the error%%
    * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will be penalized**.
