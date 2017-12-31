@@ -51,29 +51,29 @@ Given the fast pace required by the paper, to be fair to all students, **you wil
 You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. **Indicate your student number in both OCR forms**. 
 
 To save space, we use the following notation in MCQ question.
- **[<span class="underline">x</span> | y | <span class="underline">z</span>] means ‘x and z, but not y’**
+ **[++x++ | y | ++z++] means ‘x and z, but not y’**
 
 <tip-box> 
 
-:package: SE is [boring | <span class="underline">useful</span> | <span class="underline">fun</span>] means _SE is not boring_ AND _SE is useful_ AND _SE is fun_.
+:package: SE is [boring | ++useful++ | ++fun++] means _SE is not boring_ AND _SE is useful_ AND _SE is fun_.
 
 :package: Consider the following statement:
 
-* IDEs can help with [<span class="underline">writing</span> | debugging | <span class="underline">testing</span>] code.
+* IDEs can help with [++writing++ | debugging | ++testing++] code.
 
 The correct response for it is `False` because IDEs can help with all three of the given options, not just writing and testing.
 
 </tip-box>
 
-Some questions will use <span class="underline">underlines</span> or ==highlighting== to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.
+Some questions will use ++underlines++ or ==highlighting== to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.
 
 <tip-box> 
 
 :package: Consider the statement below:
   
-> Technique ABC <span class="underline">can</span> be used to generate more test cases. 
+> Technique ABC ++can++ be used to generate more test cases. 
 
-The word <span class="underline">can</span> is underlined because the decision you need to make is whether the ABC _can or cannot_ be used to generate more test cases; the decision is not whether ABC can be used to generate _more or better_ test cases.
+The word ++can++ is underlined because the decision you need to make is whether the ABC _can or cannot_ be used to generate more test cases; the decision is not whether ABC can be used to generate _more or better_ test cases.
 
 </tip-box>
 
