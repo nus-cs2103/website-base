@@ -1,4 +1,6 @@
-To get the full marks allocated for participation you should satisfy the following criteria, ==evaluated based on peer evaluations and tutor observations==. We will also take into account data recorded in other systems e.g. GitHub, IVLE.
+Participation marks for each phase is ==given on a 'all or nothing' basis== %%&nbsp;i.e., you get either `5` or `0` marks%%.
+
+To get the full marks allocated for participation you should meet a minimal bar on all the following criteria, ==evaluated based on peer evaluations and tutor observations==. We will also take into account data recorded in other systems e.g. GitHub, IVLE.
 
 * **Professional Communication** : 
   * Communicates sufficiently and professionally. e.g. Does not use offensive language or excessive slang in project communications.
@@ -17,6 +19,10 @@ To get the full marks allocated for participation you should satisfy the followi
   * Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.
 
 * **Teamwork**: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.
+
+:exclamation: you will lose _all_ participation marks if,
+* if you receive **multiple `Below Average`/`Poor` ratings** for any of the criteria above, or, 
+* if you **miss more than one compulsory tasks** %%&nbsp;(e.g. submitting peer evaluations, taking part in peer testing, compulsory LOs)%%
   
 The following criteria will be assessed but **considered only for pushing a student's grade from A to A+ and recruiting future tutors/interns**.
 

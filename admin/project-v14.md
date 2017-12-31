@@ -61,6 +61,12 @@ As before.
 
 ### v1.4 Testing
 
+<tip-box type="important"> 
+  
+Taking part in v1.4 is compulsory and counts for participation marks.
+
+</tip-box>
+
 v1.4 is subjected to a round of _peer testing_.
 
 **Objectives**:
