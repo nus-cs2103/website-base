@@ -2,27 +2,17 @@
   This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
 </tip-box>
 
-<tip-box type="warning"> 
 
-**Those who failed to produce working code at 1KLoC milestone** (in week 3) can recover the lost marks by doing _two_ enhancements at this milestone.
+:bulb: **Those who failed to produce working code at 1KLoC milestone** (in week 3) can recover the lost marks by doing _two_ enhancements at this milestone.
 
-</tip-box>
-
-<tip-box type="tip">
-
-When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
+:bulb: When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
 1. Teach the app to accept a `sort` command but ignore it.
 2. Next, teach the app to direct the `sort` command to an existing command e.g. `sort` command simply invokes the `list` command internally.
 3. Add a `SortCommand` class but make it simply a copy of the the existing `ListCommand`. Direct the `sort` command to the new `SortCommand`.
 4. ...
 
-</tip-box>
-
-<tip-box type="tip">
-  
-Note that you can reuse the code you write here in your final project, if applicable.
+:bulb: Note that you can reuse the code you write here in your final project, if applicable.
  
-</tip-box>
 
 #### Individual component:
 
