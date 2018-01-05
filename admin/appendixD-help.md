@@ -28,7 +28,7 @@ Instead, here are some things you can do:
 
   Ask classmates using the module forum or the slack channel. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in the forum, you may use [this form](https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform) to submit your question anonymously which we will then post in the forum.
 
-  <panel header="Rubber Duck Debugging" expandable>
+  <panel header="Rubber Duck Debugging">
 
   <img src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
 
@@ -36,13 +36,14 @@ Instead, here are some things you can do:
 
   [for more, see [wikipedia entry](https://en.wikipedia.org/wiki/Rubber_duck_debugging)]  
 
-    </panel><p/>
+  </panel><p/>
 
 * **Ask the world** using programming forums such as stackoverflow.   
 
   Here are some tips for posting help request:
   * PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.
   * Learn to isolate the problem. "My code doesn't work" isn't going to help even if you post the whole code online. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself. If not, at least it increases the chance of someone else being able to help you.  
+    
     <tip-box>
     
     :bulb: How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
@@ -51,6 +52,7 @@ Instead, here are some things you can do:
 
   * Generalize the problem. "How to write tasks to a text file using Java" is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) "How to write to a file using Java".
   * Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.  
+    
     <tip-box>
     
     :bulb: Know what these stand for: **RTFM**, **STFW**, **GIYF**
