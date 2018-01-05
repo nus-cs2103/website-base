@@ -16,7 +16,7 @@ All peer evaluations will be taken into account when determining your participat
 
 <span id="giving-peer-feedback">
 
-Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. ==Those who give half-hearted feedback will be penalized.==
+Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. Half-hearted/trivial feedback will not earn participation marks.
 
 Here are some things to keep in mind:
 

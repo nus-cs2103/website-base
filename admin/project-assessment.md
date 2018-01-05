@@ -8,7 +8,7 @@ Evaluates: How well do your features fit together to form a cohesive product (no
 
 Based on: user guide and the product demo. The **quality of the demo will be factored in** as well.
 
-:exclamation: ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.
+:exclamation: ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all. It may be better to remove such features before submission.
 
 </panel>
 
@@ -34,7 +34,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
   
 * Ensure there are no [coding standard](https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
-* Ensure [SLAP](../book/codeQuality/maximiseReadability/intermediate/index.html) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.
+* Ensure [SLAP](../book/codeQuality/maximiseReadability/intermediate/index.html) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.
 
 * Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
 

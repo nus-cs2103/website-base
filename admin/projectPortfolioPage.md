@@ -21,7 +21,7 @@ At the end of the project each student is required to submit a _Project Portfoli
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:
-  * Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be penalized. Note: the ==page limits given below are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
+  * Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the ==page limits given below are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
     Content | Limit
     ------- | -----
     Description in point form | 0.5-1

@@ -2,7 +2,7 @@
 
 <div id="policy-followingInstructions">
 
-When working with others, especially in a large class such as CS2103,  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and sends negative signals about your work attitude. That is why we penalize repeated violations of instructions.
+When working with others, especially in a large class such as CS2103,  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
 
 </div>
 

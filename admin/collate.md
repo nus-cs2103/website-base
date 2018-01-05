@@ -69,9 +69,9 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
   * Related to the above point, ==if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself==. For example, no more than 20% of it can be code you reused from somewhere. 
   * :bulb: GitHub has a [_blame_ feature and a _history_](https://help.github.com/articles/tracing-changes-in-a-file/) feature that can help you determine who wrote a piece of code.
   
-* **You will be penalized if you try to boost the length of your collated files using dubious means** such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.  
+* **Do not try to boost the length of your collated files using dubious means** such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.  
   Individual members are responsible for making sure their own collated files contain the correct content.  
-  If you notice a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let us know.
+  If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.
    
 * **If you wrote a significant amount of code that was not used in the final product**,
   * Create a folder called `{project root}/unused`

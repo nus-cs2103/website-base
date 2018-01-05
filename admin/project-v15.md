@@ -1,6 +1,6 @@
 <tip-box> 
 
-* :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a 1-second delay is penalized, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis. 
+* :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a 1-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis. 
   * For submissions done via IVLE, the submission time is the timestamp shown by IVLE.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
 * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
@@ -29,7 +29,7 @@ This is as a ‘production release’. It should be at least ‘near production 
 
 **Submission**:
 
-* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline comes with an automatic penalty) Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
+* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission) Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
 * **Executable**: See summary of submissions above 
     
 
@@ -44,7 +44,7 @@ This is as a ‘production release’. It should be at least ‘near production 
 **Submission**:
 
 First, update following pages on GitHub: 
-* User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and ==any inaccuracy in the content will be reported/penalized as bugs==).
+* User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and ==any inaccuracy in the content will be considered bugs==).
   * :exclamation: in particular, **update the appendix named _Instructions for Manual Testing_** of the Developer Guide to include testing instructions to **cover all your major and minor enhancements**. There is no need to add testing instructions for existing features if you did not touch them.<br>
     :bulb: What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provided some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
 * README : ==Ensure the `Ui.png` matches the current product==
@@ -101,7 +101,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
    Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]`Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.` [do this] `If Jim needs to postpone the meeting, he can type …`  
     It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
-  * Rehearse the steps well and ensure you can do a smooth demo. ==Demos that are clearly under-prepared will be penalized.==
+  * Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC". 
   * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
@@ -155,7 +155,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
      * Behavior differs from the User Guide (or Developer Guide)
      * A legitimate user behavior is not handled %%&nbsp;e.g. incorrect commands, extra parameters%%
      * Behavior is not specified and differs from normal expectations %%&nbsp;e.g. error message does not match the error%%
-   * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will be penalized**.
+   * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will not earn credit**.
      * Use a descriptive title
      * Give a good description of the bug with steps to reproduce and screenshots
      * :mag: Note that we will **anonymize bug reports** before revealing it to the receiving team. 
@@ -269,5 +269,5 @@ Bug Type Labels:
 **Grading:** 
 
 * Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
-* You will lose marks if you missed too many bugs in the product you tested or your evaluation/estimates are significantly off from the evaluator consensus. %%&nbsp;Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
+* You will be graded based on many bugs in the product you tested and how far off your evaluation/estimates are from the evaluator consensus. %%&nbsp;Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
 * The bugs found in your product by others will affect your v1.5 marks. You will be given a chance to reject false-positive bug reports.

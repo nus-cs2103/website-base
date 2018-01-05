@@ -6,7 +6,7 @@ If your team is facing difficulties due to differences in skill/motivation /avai
 
 * **Third, if you care about your grade and willing to work for it, you need to take initiative** to turn the situation around or else the whole team is going to suffer. Don't hesitate to take charge if the situation calls for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you try.
 
-* **Finally, don't feed angry or 'wronged'.** Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility to get others to contribute.
+* **Finally, don't feel angry or 'wronged'.** Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility to get others to contribute.
 
 Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It is still better than sinking the whole team together.
 
