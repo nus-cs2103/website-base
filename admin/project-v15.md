@@ -45,7 +45,8 @@ This is as a ‘production release’. It should be at least ‘near production 
 
 First, update following pages on GitHub: 
 * User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and ==any inaccuracy in the content will be reported/penalized as bugs==).
-  * :exclamation: in particular, **update the _Appendix G (Instructions for Manual Testing)_** of the Developer Guide to include testing instructions to **cover all your major and minor enhancements**. There is no need to add testing instructions for existing features if you did not touch them.
+  * :exclamation: in particular, **update the appendix named _Instructions for Manual Testing_** of the Developer Guide to include testing instructions to **cover all your major and minor enhancements**. There is no need to add testing instructions for existing features if you did not touch them.<br>
+    :bulb: What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provided some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
 * README : ==Ensure the `Ui.png` matches the current product==
 * AboutUs : Ensure the following:
   * Contains a ==link to each person's Project Portfolio page== 
@@ -142,7 +143,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 1. **Download from IVLE all files** submitted by the team %%&nbsp;(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
 1. **[~40 minutes] Test the product and report bugs** 
    * Launch the jar file. Test it. 
-   * You can use Developer Guide _(Appendix G: Instructions for Manual Testing)_ and the _User Guide_ in your testing. 
+   * You can use Developer Guide (Appendix named _Instructions for Manual Testing_) and the User Guide in your testing. 
    * No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
    * The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
    * You can do _acceptance_ testing as well as _system_ testing.
