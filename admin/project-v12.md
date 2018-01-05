@@ -50,6 +50,16 @@ Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expec
 
 </tip-box>
 
+<tip-box> 
+
+:bulb: We use a tool called _Collate_ to extract out code written by each member in your final project submission. The tool requires you to annotate code with special tags to mark code written by you. Adding those annotations is usually done at v1.4 but you are welcome to start early. 
+
+<panel header="**How to collate code for grading**" no-close>
+  <include src="collate.md" />
+</panel><p/>
+
+</tip-box>
+
 ### v1.2 Documentation
 
 * **User Guide**: Update as necessary.
