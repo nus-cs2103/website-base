@@ -1,3 +1,13 @@
+<tip-box type="important"> 
+  
+Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
+
+<panel header="%%Admin » Appendix E → Setting Git Username to Match GitHub Username%%">
+  <include src="appendixE-gitHub.md#git-username" />
+</panel>
+
+</tip-box>
+
 <tip-box> 
 
 **v1.0 Summary of Milestone**

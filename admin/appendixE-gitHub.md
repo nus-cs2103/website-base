@@ -19,6 +19,21 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 
 </div>
 
+<div id="git-username">
+
+## Setting Git Username to Match GitHub Username
+
+We use various tools to analyze your code. ==For us to be able to identify your commits, you should use the GitHub username as your Git username as well. If there is a mismatch, or if you use multiple user names for Git,== our tools might miss some of your work and as a result you might not get credit for some of your work.
+
+In each Computer you use for coding, after installing Git, you should set the Git username as follows.
+
+1. Open a command window that can run Git commands (e.g., Git bash window)
+2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
+   e.g., `git config --global user.name JohnDoe`
+   
+More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
+
+</div>
 <div id="tutorial-pr-instructions">
 
 ## Submitting Pull Requests as evidence of an LO
