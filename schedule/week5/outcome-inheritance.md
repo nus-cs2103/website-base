@@ -1,4 +1,4 @@
-<panel type="danger" header="`W5.3a` Can explain the meaning of inheritance :star:" no-close>
+<panel type="danger" header="`W5.3a` Can explain the meaning of inheritance :star:" expanded no-close>
   <include src="../../book/oopDesign/inheritance/what/full.md" />
 
 <!-- TODO: add evidence -->
@@ -7,7 +7,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W5.3b` Can implement inheritance :star:" no-close>
+<panel type="danger" header="`W5.3b` Can implement inheritance :star:" expanded no-close>
   <include src="../../book/oopImplementation/inheritance/full.md" />
   <panel header=":dart: Evidence" expanded>
 

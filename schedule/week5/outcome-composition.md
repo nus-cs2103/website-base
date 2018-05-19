@@ -1,10 +1,10 @@
-<panel type="info" header="`W5.5a` Can explain the meaning of composition :star::star::star:" no-close>
+<panel type="info" header="`W5.5a` Can explain the meaning of composition :star::star::star:" expanded no-close>
   <include src="../../book/oopDesign/associations/composition/full.md" />
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W5.5b` Can implement composition :star::star::star:" no-close>
+<panel type="info" header="`W5.5b` Can implement composition :star::star::star:" expanded no-close>
   <include src="../../book/oopImplementation/composition/full.md" />
   <panel header=":dart: Evidence" expanded>
 
