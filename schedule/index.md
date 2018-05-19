@@ -19,7 +19,7 @@ title: "Schedule"
 <include src="week3/index.md" name="Week 3 [Jan 29]" dynamic />
 <include src="week4/index.md" name="Week 4 [Feb 5]" dynamic />
 <include src="week5/index.md" name="Week 5 [Feb 12]" dynamic />
-<include src="week6/index.html" name="Week 6 [Feb 19]" dynamic />
+<include src="week6/index.md" name="Week 6 [Feb 19]" dynamic />
 <include src="week7/index.html" name="Week 7 [Mar 5]" dynamic />
 <include src="week8/index.html" name="Week 8 [Mar 12]" dynamic />
 <include src="week9/index.html" name="Week 9 [Mar 19]" dynamic />
