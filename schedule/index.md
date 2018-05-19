@@ -11,8 +11,8 @@ title: "Schedule"
 <panel header=":calendar: Tutorial Schedule" expandable no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
-<include src="overview/index.html" name=":exclamation: For all weeks" dynamic />
-<include src="week1/index.html" name=":exclamation: Week 1 [Jan 15]" dynamic />
+<include src="overview/index.md" name=":exclamation: For all weeks" dynamic />
+<include src="week1/index.md" name=":exclamation: Week 1 [Jan 15]" dynamic />
 <panel header=":exclamation: Week 2 [Jan 22]" expanded no-close>
   <include src="week2/index.md"/>
 </panel>
