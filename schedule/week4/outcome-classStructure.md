@@ -1,10 +1,10 @@
-<panel type="danger" header="`W4.3a` Can explain modeling of OO structures :star:" no-close>
+<panel type="danger" header="`W4.3a` Can explain modeling of OO structures :star:" expanded no-close>
   <include src="../../book/modeling/modelingStructures/ooStructures/full.md" />
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W4.3b` Can use basic-level class diagrams :star:" no-close>
+<panel type="danger" header="`W4.3b` Can use basic-level class diagrams :star:" expanded no-close>
   <include src="../../book/modeling/modelingStructures/classDiagramsBasic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -14,7 +14,7 @@
 </panel>
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W4.3c` Can distinguish between class diagrams and object diagrams :star:" no-close>
+<panel type="danger" header="`W4.3c` Can distinguish between class diagrams and object diagrams :star:" expanded no-close>
   <include src="../../book/uml/miscellaneous/objectVsClassDiagrams/full.md" />
 
 <!-- TODO: add evidence -->

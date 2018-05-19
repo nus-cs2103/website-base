@@ -1,4 +1,4 @@
-<panel type="danger" header="`W4.4a` Can implement classes :star:" no-close>
+<panel type="danger" header="`W4.4a` Can implement classes :star:" expanded no-close>
   <include src="../../book/oopImplementation/classes/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -10,7 +10,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W4.4b` Can implement associations :star:" no-close>
+<panel type="danger" header="`W4.4b` Can implement associations :star:" expanded no-close>
   <include src="../../book/oopImplementation/associations/full.md" />
   <panel header=":dart: Evidence" expanded>
 
