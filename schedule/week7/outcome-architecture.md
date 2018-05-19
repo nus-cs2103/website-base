@@ -1,20 +1,20 @@
 <!-- TODO: add LO here  ../../book/design/introduction/what/full.md -->
 
-<panel type="danger" header="`W7.2a` Can explain Software Architecture :star:" no-close>
+<panel type="danger" header="`W7.2a` Can explain Software Architecture :star:" expanded no-close>
   <include src="../../book/architecture/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W7.2a` Can interpret an architecture diagram :star:" no-close>
+<panel type="danger" header="`W7.2a` Can interpret an architecture diagram :star:" expanded no-close>
   <include src="../../book/architecture/architectureDiagrams/reading/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W7.2b` Can explain multi-level design :star::star::star:" no-close>
+<panel type="info" header="`W7.2b` Can explain multi-level design :star::star::star:" expanded no-close>
   <include src="../../book/designApproaches/multilevelDesign/what/full.md"/>
   <panel header=":dart: Evidence" expanded>
 

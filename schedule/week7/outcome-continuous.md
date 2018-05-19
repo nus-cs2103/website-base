@@ -1,11 +1,11 @@
-<panel type="info" header="`W7.8a` Can explain integration :star::star::star:" no-close>
+<panel type="info" header="`W7.8a` Can explain integration :star::star::star:" expanded no-close>
   <include src="../../book/integration/introduction/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W7.8b` Can explain build automation tools :star::star::star:" no-close>
+<panel type="info" header="`W7.8b` Can explain build automation tools :star::star::star:" expanded no-close>
   <include src="../../book/integration/buildAutomation/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -17,7 +17,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W7.8c` Can explain continuous integration and continuous deployment :star::star::star:" no-close>
+<panel type="info" header="`W7.8c` Can explain continuous integration and continuous deployment :star::star::star:" expanded no-close>
   <include src="../../book/integration/buildAutomation/continuousIntegrationDeployment/full.md" />
   <panel header=":dart: Evidence" expanded>
 

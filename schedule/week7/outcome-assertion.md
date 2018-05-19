@@ -1,11 +1,11 @@
-<panel type="info" header="`W7.6a` Can explain assertions :star::star::star:" no-close>
+<panel type="info" header="`W7.6a` Can explain assertions :star::star::star:" expanded no-close>
   <include src="../../book/errorHandling/assertions/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W7.6b` Can use assertions :star::star::star:" no-close>
+<panel type="info" header="`W7.6b` Can use assertions :star::star::star:" expanded no-close>
   <include src="../../book/errorHandling/assertions/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -16,7 +16,7 @@ Explain assertions in AddressBook-Level4 code.
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="`W7.6c` Can use assertions optimally :star::star::star::star:" no-close>
+<panel type="success" header="`W7.6c` Can use assertions optimally :star::star::star::star:" expanded no-close>
   <include src="../../book/errorHandling/assertions/when/full.md" />
   <panel header=":dart: Evidence" expanded>
 

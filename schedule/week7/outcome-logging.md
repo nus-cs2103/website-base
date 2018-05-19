@@ -1,11 +1,11 @@
-<panel type="warning" header="`W7.5a` Can explain logging :star::star:" no-close>
+<panel type="warning" header="`W7.5a` Can explain logging :star::star:" expanded no-close>
   <include src="../../book/errorHandling/logging/what/full.md" />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="`W7.5b` Can use logging :star::star:" no-close>
+<panel type="warning" header="`W7.5b` Can use logging :star::star:" expanded no-close>
   <include src="../../book/errorHandling/logging/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
