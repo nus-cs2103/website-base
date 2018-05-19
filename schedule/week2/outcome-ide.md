@@ -1,4 +1,4 @@
-<panel type="danger" header="`W2.2a` Can explain IDEs :star:" no-close>
+<panel type="danger" header="`W2.2a` Can explain IDEs :star:" expanded no-close>
   <include src="../../book/ides/introduction/what/full.md" />
   <panel header=":dart: Evidence" expanded>
     
@@ -9,7 +9,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W2.2b` Can setup a project in an IDE :star:" no-close>
+<panel type="danger" header="`W2.2b` Can setup a project in an IDE :star:" expanded no-close>
   <include src="../../book/intellij/projectSetup/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -24,7 +24,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="`W2.2c` Can navigate code effectively using IDE features :star::star:" no-close>
+<panel type="warning" header="`W2.2c` Can navigate code effectively using IDE features :star::star:" expanded no-close>
   <include src="../../book/intellij/codeNavigation/full.md" />
   <panel header=":dart: Evidence" expanded>
 
