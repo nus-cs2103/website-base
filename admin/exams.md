@@ -40,7 +40,7 @@ Answer incorrect **(-0.24)**<br>
  
 The exam paper has 100 questions.  
 
-Note that you have **slightly less than ½ minute for each question**, which means you need to go through the questions fairly quickly.
+Note that you have **slightly more than ½ minute for each question**, which means you need to go through the questions fairly quickly.
 
 Given the fast pace required by the paper, to be fair to all students, **you will not be allowed to clarify doubts about questions** (in Part 1) by talking to invigilators. 
 * If a question is not clear, you can choose option C and write your doubt in the exam paper, near the unclear question. 
