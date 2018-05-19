@@ -153,7 +153,7 @@ Update the following pages of the Developer Guide:
 :exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
 
 <panel type="seamless" header="%%Admin » Appendix B: Policies → Policy on Reuse%%">
-  <include src="appendixB-policies.md#policy-reuse-nomodals" />
+  <include src="appendixB-policies.md#policy-reuse" />
 </panel><p/>
 
 **Submission**: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.

@@ -1,3 +1,7 @@
+<frontmatter>
+title: "Tutorial Schedule"
+</frontmatter>
+
 <tip-box type="important"> 
 
 Our tutorial IDs are different from CORS. Format: `W09` means `Wednesday` `0900` and so on.

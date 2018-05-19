@@ -25,7 +25,6 @@
 </panel>
 
 <panel type="warning" header="`W10.2e` Can use basic activity diagram notations :star::star:" no-close>
-  <include src="../../book/uml/activityDiagrams/basicNotations/combined/full.md" />
   <panel header=":dart: Evidence" expanded>
 
 Use activity diagram to model workflows in the project.

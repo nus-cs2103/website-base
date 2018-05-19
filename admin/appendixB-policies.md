@@ -105,7 +105,7 @@ Penalties:
 
 ### Policy on reuse
 
-<div id="policy-reuse"><div id="policy-reuse-nomodals">
+<div id="policy-reuse">
 
 **Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for using work done by others.
 
@@ -136,7 +136,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 * If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
   :package: Example:
   ```java
-  //Solution below adpated from https://stackoverflow.com/a/16252290`
+  //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implmentation of the reused solution here ...}
   ```
 * If you copy-pasted a non-trivial code block (possibly with minor modifications %%&nbsp;renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-collateSyntax">Collate Tool Syntax</trigger>)<br>
@@ -165,8 +165,6 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
   ```
 
 </tip-box>
-
-</div>
 
 <modal large title="Admin » Project v1.4 → Colalte Tool" id="modal:reusePolicy-collateSyntax">
   <include src="collate.md"/>

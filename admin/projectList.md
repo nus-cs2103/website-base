@@ -1,3 +1,7 @@
+<frontmatter>
+title: "Project List"
+</frontmatter>
+
 <panel header="W09" expanded>
 
 
