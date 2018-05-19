@@ -1,4 +1,4 @@
-<panel type="warning" header="`W3.1a`Can explain refactoring :star::star:" no-close>
+<panel type="warning" header="`W3.1a`Can explain refactoring :star::star:" expanded no-close>
   <include src="../../book/refactoring/what/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -9,7 +9,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="`W3.1b` Can use automated refactoring features of the IDE :star::star:" no-close>
+<panel type="warning" header="`W3.1b` Can use automated refactoring features of the IDE :star::star:" expanded no-close>
   <include src="../../book/intellij/refactoring/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -22,7 +22,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W3.1c` Can apply some basic refactoring :star::star::star:" no-close>
+<panel type="info" header="`W3.1c` Can apply some basic refactoring :star::star::star:" expanded no-close>
   <include src="../../book/refactoring/how/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -37,7 +37,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="`W3.1d` Can decide when to apply a given refactoring :star::star::star::star:" no-close>
+<panel type="success" header="`W3.1d` Can decide when to apply a given refactoring :star::star::star::star:" expanded no-close>
   <include src="../../book/refactoring/when/full.md" />
   <panel header=":dart: Evidence" expanded>
 

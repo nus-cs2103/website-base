@@ -1,10 +1,10 @@
-<panel type="danger" header="`W3.8a` Can explain remote repositories :star:" no-close>
+<panel type="danger" header="`W3.8a` Can explain remote repositories :star:" expanded no-close>
   <include src="../../book/revisionControl/remoteRepositories/full.md" />
 </panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W3.8b` Can clone a remote repo :star:" no-close>
+<panel type="danger" header="`W3.8b` Can clone a remote repo :star:" expanded no-close>
   <include src="../../book/gitAndGithub/clone/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -19,7 +19,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W3.8c` Can pull changes from a repo :star:" no-close>
+<panel type="danger" header="`W3.8c` Can pull changes from a repo :star:" expanded no-close>
   <include src="../../book/gitAndGithub/pull/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -34,7 +34,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="danger" header="`W3.8d` Can push to a remote repo :star:" no-close>
+<panel type="danger" header="`W3.8d` Can push to a remote repo :star:" expanded no-close>
   <include src="../../book/gitAndGithub/push/full.md" />
   <panel header=":dart: Evidence" expanded>
 

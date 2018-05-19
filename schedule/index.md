@@ -16,7 +16,7 @@ title: "Schedule"
 <panel header=":exclamation: Week 2 [Jan 22]" expanded no-close>
   <include src="week2/index.md"/>
 </panel>
-<include src="week3/index.html" name="Week 3 [Jan 29]" dynamic />
+<include src="week3/index.md" name="Week 3 [Jan 29]" dynamic />
 <include src="week4/index.html" name="Week 4 [Feb 5]" dynamic />
 <include src="week5/index.html" name="Week 5 [Feb 12]" dynamic />
 <include src="week6/index.html" name="Week 6 [Feb 19]" dynamic />

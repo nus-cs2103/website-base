@@ -1,8 +1,8 @@
-<panel type="warning" header="`W3.3a` Can explain the importance of readability :star::star:" no-close>
+<panel type="warning" header="`W3.3a` Can explain the importance of readability :star::star:" expanded no-close>
   <include src="../../book/codeQuality/maximiseReadability/introduction/full.md" />
 </panel>
 
-<panel type="warning" header="`W3.3b` Can follow basic guidelines for improving readability :star::star:" no-close>
+<panel type="warning" header="`W3.3b` Can follow basic guidelines for improving readability :star::star:" expanded no-close>
   <include src="../../book/codeQuality/maximiseReadability/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
   <div id="common-evidence">
@@ -17,7 +17,7 @@ Evidence of applying these guidelines to some code (e.g. to addressbook-level1).
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W3.3c` Can follow intermediate guidelines for improving readability :star::star::star:" no-close>
+<panel type="info" header="`W3.3c` Can follow intermediate guidelines for improving readability :star::star::star:" expanded no-close>
   <include src="../../book/codeQuality/maximiseReadability/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -30,7 +30,7 @@ In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]](h
 
 <!-- ==================================================================================================== -->
 
-<panel type="success" header="`W3.3d` Can follow advanced guidelines for improving readability :star::star::star::star:" no-close>
+<panel type="success" header="`W3.3d` Can follow advanced guidelines for improving readability :star::star::star::star:" expanded no-close>
   <include src="../../book/codeQuality/maximiseReadability/advanced/full.md" />
   <panel header=":dart: Evidence" expanded>
 

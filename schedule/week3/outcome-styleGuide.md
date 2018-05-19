@@ -1,8 +1,8 @@
-<panel type="warning" header="`W3.2a` Can explain the importance of code quality :star::star:" no-close>
+<panel type="warning" header="`W3.2a` Can explain the importance of code quality :star::star:" expanded no-close>
   <include src="../../book/codeQuality/introduction/basic/full.md" />
 </panel>
 
-<panel type="warning" header="`W3.2b` Can explain the need for following a standard :star::star:" no-close>
+<panel type="warning" header="`W3.2b` Can explain the need for following a standard :star::star:" expanded no-close>
   <include src="../../book/codeQuality/followStandard/introduction/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -13,7 +13,7 @@
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="`W3.2c` Can follow simple mechanical style rules :star::star:" no-close>
+<panel type="warning" header="`W3.2c` Can follow simple mechanical style rules :star::star:" expanded no-close>
   <include src="../../book/codeQuality/followStandard/basic/full.md" />
   <panel header=":dart: Evidence" expanded>
 
@@ -26,7 +26,7 @@
   </panel>
 </panel>
 
-<panel type="info" header="`W3.2d` Can follow intermediate style rules :star::star::star:" no-close>
+<panel type="info" header="`W3.2d` Can follow intermediate style rules :star::star::star:" expanded no-close>
   <include src="../../book/codeQuality/followStandard/intermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
