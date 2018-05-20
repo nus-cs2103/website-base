@@ -21,7 +21,7 @@
 * your code included automated tests
 * your code was contributed via a proper revision control workflow e.g. pull requests
 
-**Requirements**: Do an enhancement to [[AddressBook - Level2](https://github.com/nus-cs2103-AY1718S2/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you did to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,
+**Requirements**: Do an enhancement to [[AddressBook - Level2]({{module_org}}/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you did to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,
 * update the User Guide
 * update existing tests and add new tests if necessary, for both JUnit tests and I/O tests
 * follow the coding standard

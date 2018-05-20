@@ -148,7 +148,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
    * The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
    * You can do _acceptance_ testing as well as _system_ testing.
    * Omit feature that existed in AB4. Instead, test features the team has added. 
-   * Report bugs in the [practical exam issue tracker](https://github.com/nus-cs2103-AY1718S2/pe/issues), ==not in the team's repo==. 
+   * Report bugs in the [practical exam issue tracker]({{module_org}}/pe/issues), ==not in the team's repo==. 
      * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
      * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others copying your bug reports%%
    * Report bugs only. Do not post suggestions. These are considered bugs:
@@ -215,7 +215,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 
 **Bug Review Period**:
 
-There will be a review period for you to respond to the [bug reports](https://github.com/nus-cs2103-AY1718S2/pe-results/issues) you received.
+There will be a review period for you to respond to the [bug reports]({{module_org}}/pe-results/issues) you received.
 
 Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Wednesday midnight**. 
 

@@ -18,7 +18,7 @@ This _Schedule Page_ is your main source of information for CS2103/T. You will n
 
 <tip-box> 
 
-:information_source: This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [here](https://github.com/nus-cs2103-AY1718S2/website/issues).
+:information_source: This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [here]({{module_org}}/website/issues).
 
 </tip-box>
 

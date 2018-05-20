@@ -31,7 +31,7 @@
 
 **Acceptable**: Using JavaFX in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-JavaFX](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-java-fx-for-gui-programming-lo-javafx)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-JavaFX]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-java-fx-for-gui-programming-lo-javafx)]
    
 <include src="submission.md" />
 

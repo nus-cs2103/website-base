@@ -10,7 +10,7 @@
 
 **Acceptable**: Evidence of having used Java class-level members in some project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level2: LO-ClassLevel](https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-class-level-members-lo-classlevel)]
+**Suggested**: Do the exercise in [[Addressbook-Level2: LO-ClassLevel]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-class-level-members-lo-classlevel)]
 
 <include src="submission.md" />
 

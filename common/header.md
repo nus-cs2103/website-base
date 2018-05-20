@@ -16,19 +16,19 @@
   </dropdown>   
   <dropdown text="Discuss">
     <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank">{{glyphicon_comment}} Slack</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank">{{glyphicon_question_sign}} Forum</a></li>
+    <li><a href="{{module_org}}/forum/issues" target="_blank">{{glyphicon_question_sign}} Forum</a></li>
   </dropdown>    
   <dropdown text="Links">
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> {{glyphicon_thumbs_down}} Report Bugs</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank">{{glyphicon_question_sign}} Forum</a></li>
+    <li><a href="{{module_org}}/website/issues" target="_blank"> {{glyphicon_thumbs_down}} Report Bugs</a></li>
+    <li><a href="{{module_org}}/forum/issues" target="_blank">{{glyphicon_question_sign}} Forum</a></li>
     <li><a href="{{baseUrl}}/schedule/overview/tutorialSchedule.html" target="_blank">{{glyphicon_calendar}} Tutorial Schedule</a></li>
     <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank">{{glyphicon_list_alt}} Team IDs</a></li>
     <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank">{{glyphicon_file}} Java Coding Standard</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank">{{glyphicon_compressed}} samplerepo-things</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank">{{glyphicon_compressed}} Addressbook-level1</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank">{{glyphicon_compressed}} Addressbook-level2</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank">{{glyphicon_compressed}} Addressbook-level3</a></li>
-    <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank">{{glyphicon_compressed}} Addressbook-level4</a></li>
+    <li><a href="{{module_org}}/samplerepo-things" target="_blank">{{glyphicon_compressed}} samplerepo-things</a></li>
+    <li><a href="{{module_org}}/addressbook-level1" target="_blank">{{glyphicon_compressed}} Addressbook-level1</a></li>
+    <li><a href="{{module_org}}/addressbook-level2" target="_blank">{{glyphicon_compressed}} Addressbook-level2</a></li>
+    <li><a href="{{module_org}}/addressbook-level3" target="_blank">{{glyphicon_compressed}} Addressbook-level3</a></li>
+    <li><a href="{{module_org}}/addressbook-level4" target="_blank">{{glyphicon_compressed}} Addressbook-level4</a></li>
     <li><a href="{{baseUrl}}/admin/projectList.html" target="_blank">{{glyphicon_folder_open}} Projects List</a></li>
   </dropdown>
 </navbar>

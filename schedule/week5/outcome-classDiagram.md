@@ -30,7 +30,7 @@
   <include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-Able to explain the class diagram of the [[AddressBook-Level2](https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/DeveloperGuide.md#design)]. You may ignore the `ReadOnlyPerson` interface (we have not covered _interfaces_ yet)
+Able to explain the class diagram of the [[AddressBook-Level2]({{module_org}}/addressbook-level2/blob/master/doc/DeveloperGuide.md#design)]. You may ignore the `ReadOnlyPerson` interface (we have not covered _interfaces_ yet)
 
   </panel>
 </panel>

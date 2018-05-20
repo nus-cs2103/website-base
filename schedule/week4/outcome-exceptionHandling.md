@@ -16,7 +16,7 @@
 
 **Acceptable**: Some code you wrote that involves exception handling.
 
-**Suggested**: Do the exercise in [[addressbook-level2: LO-Exceptions](https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions)].
+**Suggested**: Do the exercise in [[addressbook-level2: LO-Exceptions]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions)].
 
 <include src="submission.md" />
 

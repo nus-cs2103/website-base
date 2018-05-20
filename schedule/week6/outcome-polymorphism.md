@@ -33,7 +33,7 @@ Some evidence of using method overriding in some code you wrote.
   
 **Acceptable**: Using polymorphism in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Polymorphism](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-polymorphism-lo-polymorphism)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Polymorphism]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-polymorphism-lo-polymorphism)]
    
 <include src="submission.md" />
   </panel>
@@ -56,7 +56,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Acceptable**: Using abstract classes in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Abstract](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-abstract-classesmethods-lo-abstract)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Abstract]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-abstract-classesmethods-lo-abstract)]
    
 <include src="submission.md" />
   </panel>
@@ -79,7 +79,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Acceptable**: Using interfaces in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Interfaces](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-interfaces-lo-interfaces)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Interfaces]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-interfaces-lo-interfaces)]
    
 <include src="submission.md" />
 

@@ -22,7 +22,7 @@
 
 **Acceptable**: Using user stories in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-UesrStories](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-user-stories-lo-userstories)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-UesrStories]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-user-stories-lo-userstories)]
    
 <include src="submission.md" />
 
@@ -67,7 +67,7 @@ Covered by the final project.
   <include src="../../book/specifyingRequirements/useCases/details/full.md" />
   <panel header=":dart: Evidence" expanded>
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-UseCases](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-UseCases]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases)]
    
 <include src="submission.md" />
 

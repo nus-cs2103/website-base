@@ -36,6 +36,6 @@ Your project should comply with the following constraints.
   and is subjected to prior approval by us.<br> 
   %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
-  Please ==post in the [forum](https://github.com/nus-cs2103-AY1718S2/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
+  Please ==post in the [forum]({{module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
   %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 

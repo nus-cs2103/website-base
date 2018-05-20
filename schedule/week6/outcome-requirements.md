@@ -8,7 +8,7 @@
   <include src="../../book/requirements/nonFunctionalRequirements/full.md"  />
   <panel header=":dart: Evidence" expanded>
   
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-NFR](https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-non-functional-requirements-lo-nfr)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-NFR]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-non-functional-requirements-lo-nfr)]
    
 <include src="submission.md" />
   

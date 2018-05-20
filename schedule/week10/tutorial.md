@@ -27,7 +27,7 @@
    
 1. What’s a _design pattern_?<br>
    a. When do you use the _Singleton_ pattern, _Facade_ pattern, _Command_ pattern?<br>
-   b. Which of the three patterns are used in AB4? Hint: See [[AB4 Learning Outcomes: LO-DesignPatterns](https://github.com/nus-cs2103-AY1718S2/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
+   b. Which of the three patterns are used in AB4? Hint: See [[AB4 Learning Outcomes: LO-DesignPatterns]({{module_org}}/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
 1. Explain basic AD notation using the example below:<br>
    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
    <sub>[[source:wikipeida](https://en.wikipedia.org/wiki/Activity_diagram)]</sub>

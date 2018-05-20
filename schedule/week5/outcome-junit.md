@@ -31,7 +31,7 @@
   
 **Acceptable**: Evidence of having written JUnit tests in some project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level2: LO-JUnit](https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit)]
+**Suggested**: Do the exercise in [[Addressbook-Level2: LO-JUnit]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit)]
 
 <include src="submission.md" />
 
