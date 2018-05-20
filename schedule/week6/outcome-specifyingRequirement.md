@@ -1,7 +1,7 @@
 %%**Prose**%%
 
 <panel type="info" header="`W6.3a` Can explain prose :star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/prose/what/full.md" />
+  <include src="../../book/specifyingRequirements/prose/what/full.md" boilerplate />
 </panel>
 
 <br><!-- ##################################################################################################### -->
@@ -9,7 +9,7 @@
 %%**Feature Lists**%%
 
 <panel type="info" header="`W6.3b` Can explain feature lists :star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/featureList/what/full.md" />
+  <include src="../../book/specifyingRequirements/featureList/what/full.md" boilerplate />
 </panel>
 
 <br><!-- ##################################################################################################### -->
@@ -17,7 +17,7 @@
 %%**User Stories**%%
 
 <panel type="danger" header="`W6.3c` Can write simple user stories :star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/userStories/introduction/full.md" />
+  <include src="../../book/specifyingRequirements/userStories/introduction/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 **Acceptable**: Using user stories in any past project.
@@ -32,14 +32,14 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W6.3d` Can write more detailed user stories :star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/userStories/details/full.md" />
+  <include src="../../book/specifyingRequirements/userStories/details/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W6.3e` Can use user stories to manage requirements of project :star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/userStories/usage/full.md" />
+  <include src="../../book/specifyingRequirements/userStories/usage/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 Covered by the final project.
@@ -52,19 +52,19 @@ Covered by the final project.
 %%**Use Cases**%%
 
 <panel type="warning" header="`W6.3f` Can explain use cases :star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/useCases/introduction/full.md" />
+  <include src="../../book/specifyingRequirements/useCases/introduction/full.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W6.3g` Can use use cases to list functional requirements of a simple system :star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/useCases/identifying/full.md" />
+  <include src="../../book/specifyingRequirements/useCases/identifying/full.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W6.3h` Can specify details of a use case in a structured format :star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/useCases/details/full.md" />
+  <include src="../../book/specifyingRequirements/useCases/details/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-UseCases]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases)]
@@ -77,7 +77,7 @@ Covered by the final project.
 <!-- ==================================================================================================== -->
 
 <panel type="success" header="`W6.3i` Can optimize the use of use cases :star::star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/useCases/usage/full.md" />
+  <include src="../../book/specifyingRequirements/useCases/usage/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
@@ -86,7 +86,7 @@ Covered by the final project.
 %%**Glossary**%%
 
 <panel type="info" header="`W6.3j` Can explain glossary :star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/glossary/what/full.md" />
+  <include src="../../book/specifyingRequirements/glossary/what/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
@@ -95,6 +95,6 @@ Covered by the final project.
 %%**Supplementary Requirements**%%
 
 <panel type="info" header="`W6.3k` Can explain supplementary requirements :star::star::star:" expanded no-close>
-  <include src="../../book/specifyingRequirements/supplementaryRequirements/what/full.md" />
+  <include src="../../book/specifyingRequirements/supplementaryRequirements/what/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>

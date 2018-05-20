@@ -1,5 +1,5 @@
 <panel type="danger" header="`W5.3a` Can explain the meaning of inheritance :star:" expanded no-close>
-  <include src="../../book/oopDesign/inheritance/what/full.md" />
+  <include src="../../book/oopDesign/inheritance/what/full.md" boilerplate />
 
 <!-- TODO: add evidence -->
 
@@ -8,7 +8,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W5.3b` Can implement inheritance :star:" expanded no-close>
-  <include src="../../book/oopImplementation/inheritance/full.md" />
+  <include src="../../book/oopImplementation/inheritance/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 **Acceptable**: Evidence of having used Java inheritance in some project.

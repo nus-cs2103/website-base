@@ -1,11 +1,11 @@
 <panel type="warning" header="`W5.8a` Can explain developer testing :star::star:" expanded no-close>
-  <include src="../../book/testing/testingTypes/developerTesting/what/full.md" />
+  <include src="../../book/testing/testingTypes/developerTesting/what/full.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W5.8b` Can explain the need for early developer testing :star::star:" expanded no-close>
-  <include src="../../book/testing/testingTypes/developerTesting/why/full.md" />
+  <include src="../../book/testing/testingTypes/developerTesting/why/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 <include src="../../book/testing/testingTypes/developerTesting/why/q-essay-why.md" />
@@ -16,17 +16,17 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W5.8c` Can explain test drivers :star:" expanded no-close>
-  <include src="../../book/testing/testAutomation/usingTestDrivers/full.md" />
+  <include src="../../book/testing/testAutomation/usingTestDrivers/full.md" boilerplate />
 </panel>
 
 <panel type="danger" header="`W5.8d` Can explain test automation tools :star:" expanded no-close>
-  <include src="../../book/testing/testAutomation/tools/full.md" />
+  <include src="../../book/testing/testAutomation/tools/full.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W5.8e` Can use simple JUnit tests :star:" expanded no-close>
-  <include src="../../book/junit/basic/full.md" />
+  <include src="../../book/junit/basic/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
   
 **Acceptable**: Evidence of having written JUnit tests in some project.

@@ -1,11 +1,11 @@
 <panel type="warning" header="`W3.5a` Can explain the need for avoiding error-prone shortcuts :star::star:" expanded no-close>
-  <include src="../../book/codeQuality/avoidShortcuts/introduction/full.md" />
+  <include src="../../book/codeQuality/avoidShortcuts/introduction/full.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W3.5b` Can follow basic guidelines for avoiding unsafe shortcuts :star::star:" expanded no-close>
-  <include src="../../book/codeQuality/avoidShortcuts/basic/full.md" />
+  <include src="../../book/codeQuality/avoidShortcuts/basic/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 <include src="outcome-readability.md#common-evidence" />
@@ -16,7 +16,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W3.5c` Can follow intermediate guidelines for avoiding unsafe shortcuts :star::star::star:" expanded no-close>
-  <include src="../../book/codeQuality/avoidShortcuts/intermediate/full.md" />
+  <include src="../../book/codeQuality/avoidShortcuts/intermediate/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 Similar to the previous LO.

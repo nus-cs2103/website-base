@@ -57,11 +57,11 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%&nbsp;Reason: an important aspect of brainstorming is not judging the ideas generated.%%  
 
 <modal large title="Textbook »" id="modal:v10-brainstorming">
-  <include src="../book/gatheringRequirements/brainstorming/full.md"/>
+  <include src="../book/gatheringRequirements/brainstorming/full.md" boilerplate/>
 </modal>
 
 <modal large title="Textbook »" id="modal:v10-userstories">
-  <include src="../book/specifyingRequirements/userStories/introduction/full.md"/>
+  <include src="../book/specifyingRequirements/userStories/introduction/full.md" boilerplate/>
 </modal> 
 
 <modal large title="Textbook » Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
@@ -116,15 +116,15 @@ Update the following pages of the Developer Guide:
 </modal>
 
 <modal large title="Textbook »" id="modal:v10-nfr">
-  <include src="../book/requirements/nonFunctionalRequirements/full.md"/>
+  <include src="../book/requirements/nonFunctionalRequirements/full.md" boilerplate/>
 </modal>
 
 <modal title="Textbook »" id="modal:v10-glossary">
-  <include src="../book/specifyingRequirements/glossary/what/full.md"/>
+  <include src="../book/specifyingRequirements/glossary/what/full.md" boilerplate/>
 </modal>
 
 <modal title="Textbook »" id="modal:v10-prodsurveys">
-  <include src="../book/gatheringRequirements/productSurveys/full.md"/>
+  <include src="../book/gatheringRequirements/productSurveys/full.md" boilerplate/>
 </modal>
 
 
@@ -146,7 +146,7 @@ Update the following pages of the Developer Guide:
 3. Update the team repo. Recommended: follow the <trigger trigger="click" for="modal:v10-forkingworkflow">forking workflow</trigger>.
 
 <modal large title="TextBook »" id="modal:v10-forkingworkflow">
-  <include src="../book/revisionControl/forkingWorkflow/full.md"/>
+  <include src="../book/revisionControl/forkingWorkflow/full.md" boilerplate/>
 </modal>
 
 4. One member: create a PR from your ==team repo `master` branch== to [[nus-cs2103-AY1718S2/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[v1.x][Team ID] Product Name` e.g., `[v1.x][T09-B2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use `v1.x` instead of `v1.0` in the PR title).%% In the PR description <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.

@@ -26,7 +26,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="**`W6.6` Can use JavaFX to build a simple GUI** :star::star::star:" no-close>
-  <include src="../../book/javaTools/javaFXBasic/full.md" />
+  <include src="../../book/javaTools/javaFXBasic/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 **Acceptable**: Using JavaFX in any past project.

@@ -1,40 +1,40 @@
 <panel type="warning" header="`W7.4a` Can interpret sequence diagrams with object deletion :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/objectDeletion/full.md" />
+  <include src="../../book/uml/sequenceDiagrams/objectDeletion/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4b` Can interpret sequence diagrams with self invocation :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/selfInvocation/full.md" />
+  <include src="../../book/uml/sequenceDiagrams/selfInvocation/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4c` Can interpret sequence diagrams with alternative paths :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/alternativePaths/full.md" />
+  <include src="../../book/uml/sequenceDiagrams/alternativePaths/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4d` Can interpret sequence diagrams with optional paths :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/optionalPaths/full.md" />
+  <include src="../../book/uml/sequenceDiagrams/optionalPaths/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4e` Can interpret sequence diagrams with reference frames :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/referenceFrames/full.md" />
+  <include src="../../book/uml/sequenceDiagrams/referenceFrames/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W7.4f` Can draw intermediate level sequence diagrams :star::star::star:" expanded no-close>
-  <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/full.md" />
+  <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
   
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" /><p/>
@@ -48,6 +48,6 @@
 <!-- ==================================================================================================== -->
 
 <panel type="success" header="`W7.4g` Can interpret sequence diagrams with parallel paths :star::star::star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/parallelPaths/full.md" />
+  <include src="../../book/uml/sequenceDiagrams/parallelPaths/full.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>

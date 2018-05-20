@@ -14,7 +14,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="**`W5.2` Can explain single responsibility principle** :star::star::star:" no-close>
-  <include src="../../book/principles/singleResponsibilityPrinciple/full.md" />
+  <include src="../../book/principles/singleResponsibilityPrinciple/full.md" boilerplate />
   <panel header=":dart: Evidence" expanded>
 
 **Acceptable**: Evidence of having used SRP in some project.
