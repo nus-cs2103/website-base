@@ -19,7 +19,7 @@
 
 **Acceptable**: Evidence of following a coding standard in any project.
 
-**Suggested**: Go through the [provided Java coding standard](https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html). Identify and fix any violations of _basic_ style rules in local copy of addressbook-level1 code base. Commit after each fix.
+**Suggested**: Go through the [provided Java coding standard]({{java_coding_standard}}). Identify and fix any violations of _basic_ style rules in local copy of addressbook-level1 code base. Commit after each fix.
 
 **Submission**: Show the relevant commits during the tutorial.
 

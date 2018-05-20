@@ -32,7 +32,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
   * assertions
   * defensive coding
   
-* Ensure there are no [coding standard](https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
+* Ensure there are no [coding standard]({{java_coding_standard}}) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
 * Ensure [SLAP](../book/codeQuality/maximiseReadability/intermediate/index.html) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.
 
