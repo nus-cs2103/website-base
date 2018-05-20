@@ -8,7 +8,7 @@ title: "Schedule"
 <include src="../common/header.md" />
 
 <div class="website-content">
-<panel header=":calendar: Tutorial Schedule" expandable no-close>
+<panel header=":calendar: Tutorial Schedule" no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
 <include src="overview/index.md" name=":exclamation: For all weeks" dynamic />
