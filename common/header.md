@@ -31,4 +31,9 @@
     <li><a href="{{module_org}}/addressbook-level4" target="_blank">{{glyphicon_compressed}} Addressbook-level4</a></li>
     <li><a href="{{baseUrl}}/admin/projectList.html" target="_blank">{{glyphicon_folder_open}} Projects List</a></li>
   </dropdown>
+  <li slot="right">
+    <form class="navbar-form">
+      <typeahead :data="searchData" placeholder="Search" :template="titleTemplate" template-name="title" :on-hit="searchCallback"></typeahead>  
+    </form>
+  </li>
 </navbar>
