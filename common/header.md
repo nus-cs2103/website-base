@@ -5,6 +5,7 @@
   <dropdown text="Textbook">
     <li><a href="{{baseUrl}}/book/index.html" target="_blank">{{glyphicon_th_list}} Table of Contents</a></li>
     <li><a href="{{baseUrl}}/book/common/outcomes.html" target="_blank">{{glyphicon_th_list}} List of all LOs</a></li>
+    <li><a href="{{baseUrl}}/book/common/all.html" target="_blank">{{glyphicon_file}} All as one page</a></li>
     <li><a href="{{baseUrl}}/book/common/print.html" target="_blank">{{glyphicon_print}} Printer-Friendly(ish)</a></li>
   </dropdown> 
   
