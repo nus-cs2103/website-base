@@ -4,64 +4,70 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Software Design Patterns: Singleton: What</title>
+    <title>CS2103/T Website - Software Design Patterns: Singleton: What</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can explain the Singleton design pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Design → Design Patterns → Singleton →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
-        <p><strong>Context</strong></p>
-        <p>A certain classes should have no more than just one instance (e.g. the main controller class of the system). These single instances are commonly known as <em>singletons</em>.</p>
-        <p><strong>Problem</strong></p>
-        <p>A normal class can be instantiated multiple times by invoking the constructor.</p>
-        <p><strong>Solution</strong></p>
-        <p>Make the constructor of the singleton class <code>private</code>, <span class="dimmed"> because a <code>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code>public</code> class-level method to access
-          the <em>single instance</em>.</p>
-        <tip-box>
-          <p>Example:</p><img src="/website/book/designPatterns/singleton/what/images/singleton.png" height="130">
-          <p></p>
-        </tip-box>
+        <p>🏆 Can explain the Singleton design pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
-      <div>
+    </tip-box>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Design Patterns → Singleton →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p><strong>Context</strong></p>
+            <p>A certain classes should have no more than just one instance (e.g. the main controller class of the system). These single instances are commonly known as <em>singletons</em>.</p>
+            <p><strong>Problem</strong></p>
+            <p>A normal class can be instantiated multiple times by invoking the constructor.</p>
+            <p><strong>Solution</strong></p>
+            <p>Make the constructor of the singleton class <code>private</code>, <span class="dimmed"> because a <code>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code>public</code> class-level method to
+              access the <em>single instance</em>.</p>
+            <tip-box>
+              <p>Example:</p>
+              <img src="/website/book/designPatterns/singleton/what/images/singleton.png" height="130">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
             <div>
-              <panel header=":lock::key: Statements about the Singleton pattern">
-                <question>
-                  <p>We use the Singleton pattern when</p>
-                  <ul radio-group="d9nqc" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="d9nqc" type="radio"> a. we want an a class with a private constructor.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="d9nqc" type="radio"> b. we want a single class to hold all functionality of the system.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="d9nqc" type="radio"> c. we want a class with no more than one instance.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="d9nqc" type="radio"> d. we want to hide internal structure of a component from its clients.</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(c)</p>
-                  </div>
-                </question>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Statements about the Singleton pattern">
+                    <question>
+                      <p>We use the Singleton pattern when</p>
+                      <ul radio-group="d9393" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> a. we want an a class with a private constructor.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> b. we want a single class to hold all functionality of the system.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> c. we want a class with no more than one instance.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> d. we want to hide internal structure of a component from its clients.</label></li>
+                      </ul>
+                      <div slot="answer">
+                        <p>(c)</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
               </panel>
             </div>
-          </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -71,5 +77,8 @@
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

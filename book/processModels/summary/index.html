@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - SDLC Process Models: Summary</title>
+    <title>CS2103/T Website - SDLC Process Models: Summary</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>SDLC Process Models →</strong></span></p>
   <h2 id="summary">Summary</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="recap-three">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain process models at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="recap-three">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain process models at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>This section has some exercise that cover multiple topics related to SDLC process models.</p>
@@ -145,9 +145,9 @@
                   <panel header=":lock::key: the two basic process models">
                     <question>
                       <p>The sequential model and the waterfall model are the two most basic process models.</p>
-                      <ul radio-group="ytztn" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ytztn" type="radio"> True</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ytztn" type="radio"> False</label></li>
+                      <ul radio-group="44ac6" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="44ac6" type="radio"> True</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="44ac6" type="radio"> False</label></li>
                       </ul>
                       <div slot="answer">
                         <p>False</p>
@@ -178,10 +178,10 @@
                   <panel header=":lock::key: Risk of overshooting a deadline">
                     <question>
                       <p>In general, which has a higher risk of overshooting a deadline?</p>
-                      <ul radio-group="6f5y2" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="6f5y2" type="radio"> a. The iterative process.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="6f5y2" type="radio"> b. The sequential process.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="6f5y2" type="radio"> c. The risk is similar.</label></li>
+                      <ul radio-group="2ba69" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> a. The iterative process.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> b. The sequential process.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="2ba69" type="radio"> c. The risk is similar.</label></li>
                       </ul>
                       <div slot="answer">
                         <p>(b)</p>
@@ -203,5 +203,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

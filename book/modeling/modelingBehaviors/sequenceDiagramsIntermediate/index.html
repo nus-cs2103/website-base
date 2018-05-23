@@ -4,73 +4,82 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Intermediate</title>
+    <title>CS2103/T Website - Modeling: Modeling Behaviors: Sequence Diagrams - Intermediate</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can draw intermediate-level sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div>
-      <p>
-        <panel src="/website\book\uml\sequenceDiagrams\referenceFrames\full._include_.html" header=":mortar_board: %%UML → Sequence Diagrams → Reference Frames%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\objectDeletion\full._include_.html" header=":mortar_board: %%UML :→ Sequence Diagrams → Object Deletion%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\selfInvocation\full._include_.html" header=":mortar_board: %%UML :→ Sequence Diagrams → Self-Invocation%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\alternativePaths\full._include_.html" header=":mortar_board: %%UML → Sequence Diagrams → Alternative Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\optionalPaths\full._include_.html" header=":mortar_board: %%UML → Sequence Diagrams → Optional Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
-      </p>
-    </div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="sequence-diagrams-intermediate-two">Sequence Diagrams - Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
-      <div></div>
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
+        <p>🏆 Can draw intermediate-level sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+      </div>
+    </tip-box>
+    <div>
+      <div>
+        <p>
+          <panel src="/website\book\uml\sequenceDiagrams\referenceFrames\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+          <panel src="/website\book\uml\sequenceDiagrams\objectDeletion\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\sequenceDiagrams\selfInvocation\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\sequenceDiagrams\alternativePaths\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+          <panel src="/website\book\uml\sequenceDiagrams\optionalPaths\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <h4 id="sequence-diagrams-intermediate-two">Sequence Diagrams - Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div></div>
+          <div>
             <div>
-              <panel header=":lock::key: What’s going on here?">
-                <question>
-                  <p>What’s going on here?</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
-                  <p></p>
-                  <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(d)</p>
-                  </div>
-                </question>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: What’s going on here?">
+                    <question>
+                      <p>What’s going on here?</p>
+                      <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
+                      <p></p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
+                      </ul>
+                      <div slot="answer">
+                        <p>(d)</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+                <div>
+                  <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
+                    <question>
+                      <p>Explain the interactions depicted in this sequence diagram.</p>
+                      <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+                      <p></p>
+                      <div slot="hint">
+                        <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
               </panel>
             </div>
-            <div>
-              <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
-                <question>
-                  <p>Explain the interactions depicted in this sequence diagram.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
-                  <p></p>
-                  <div slot="hint">
-                    <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -80,5 +89,8 @@
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

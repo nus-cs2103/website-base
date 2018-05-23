@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Coding Best Practices: [Practice] Minimise Code Duplication</title>
+    <title>CS2103/T Website - Coding Best Practices: [Practice] Minimise Code Duplication</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong><span>Coding Best Practices →</span></strong>
     </span>
   </p>
@@ -36,23 +37,25 @@
 </span></strong>
             </span>
           </p>
-          <div>
-            <h4 id="dry-principle-three">DRY Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-          </div>
-          <div id="main">
+          <div id="title-and-body">
             <div>
-              <tip-box type="definition">
-                <div>
-                  <p><strong>DRY (Don't Repeat Yourself) Principle</strong>: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system <sub><em>The Pragmatic Programmer</em>, by Andy Hunt and Dave Thomas</sub></p>
-                </div>
-              </tip-box>
-              <p>This principle guards against duplication of information.</p>
-              <tip-box>
-                <p>📦 The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-                <p>📦 The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
-              </tip-box>
+              <h4 id="dry-principle-three">DRY Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
             </div>
-            <div></div>
+            <div id="main">
+              <div>
+                <tip-box type="definition">
+                  <div>
+                    <p><strong>DRY (Don't Repeat Yourself) Principle</strong>: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system <sub><em>The Pragmatic Programmer</em>, by Andy Hunt and Dave Thomas</sub></p>
+                  </div>
+                </tip-box>
+                <p>This principle guards against duplication of information.</p>
+                <tip-box>
+                  <p>📦 The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
+                  <p>📦 The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
           </div>
         </div>
       </modal>
@@ -64,5 +67,8 @@
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

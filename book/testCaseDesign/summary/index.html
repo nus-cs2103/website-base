@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Test Case Design: Summary</title>
+    <title>CS2103/T Website - Test Case Design: Summary</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Test Case Design →</strong></span></p>
   <h2 id="recap">Recap</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="recap-four">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain test case design techniques at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="recap-four">Recap <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain test case design techniques at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>{todo}</p>
@@ -35,15 +35,14 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="exercises-three">Exercises <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can combine test case design techniques <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="exercises-three">Exercises <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can combine test case design techniques <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <div>
@@ -202,7 +201,7 @@
                               </li>
                             </ul>
                             <p><strong>Test cases:</strong></p>
-                            <table class="markbind-table table">
+                            <table class="markbind-table table table-bordered table-striped">
                               <thead>
                                 <tr>
                                   <th style="text-align:center">Test case</th>
@@ -256,7 +255,8 @@
                     <div>
                       <panel header=":lock::key: add(Item) :three:">
                         <question has-input="true">
-                          <p>Assume you are testing the add(Item) method specified below.</p><img src="/website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
+                          <p>Assume you are testing the add(Item) method specified below.</p>
+                          <img src="/website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
                           <p></p>
                           <p>Assume i to be the Item being added.</p>
                           <p><strong>Preconditions:</strong></p>
@@ -282,7 +282,8 @@
                             <p>i: i != null, i == null list: contains(i)==true, contains(i)==false, count() &lt; 10, count() == 10 list == null should NOT be considered.</p>
                             <p>(b)</p>
                             <p>list: count() == 0, count() == 9, count() == 10; count() == [1|2|3|4|5|6|7|8] (1 preferred)</p>
-                            <p>(c)</p><img src="/website/book/testCaseDesign/summary/exercises/images/count.png" height="250">
+                            <p>(c)</p>
+                            <img src="/website/book/testCaseDesign/summary/exercises/images/count.png" height="250">
                             <p></p>
                           </div>
                         </question>
@@ -291,9 +292,11 @@
                     <div>
                       <panel header=":lock::key: setWife :three:">
                         <question has-input="true">
-                          <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p><img src="/website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
+                          <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
+                          <img src="/website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
                           <p></p>
-                          <div slot="answer"><img src="/website/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
+                          <div slot="answer">
+                            <img src="/website/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
                             <p></p>
                             <p>Partitioning ‘married’ as ‘to same woman’ and ‘to different woman’ seems redundant at first. Arguments for having it:</p>
                             <ul>
@@ -506,7 +509,7 @@
                           </li>
                         </ul>
                         <p><strong>Test cases:</strong></p>
-                        <table class="markbind-table table">
+                        <table class="markbind-table table table-bordered table-striped">
                           <thead>
                             <tr>
                               <th style="text-align:center">Test case</th>
@@ -560,7 +563,8 @@
                 <div>
                   <panel header=":lock::key: add(Item) :three:">
                     <question has-input="true">
-                      <p>Assume you are testing the add(Item) method specified below.</p><img src="/website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
+                      <p>Assume you are testing the add(Item) method specified below.</p>
+                      <img src="/website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
                       <p></p>
                       <p>Assume i to be the Item being added.</p>
                       <p><strong>Preconditions:</strong></p>
@@ -586,7 +590,8 @@
                         <p>i: i != null, i == null list: contains(i)==true, contains(i)==false, count() &lt; 10, count() == 10 list == null should NOT be considered.</p>
                         <p>(b)</p>
                         <p>list: count() == 0, count() == 9, count() == 10; count() == [1|2|3|4|5|6|7|8] (1 preferred)</p>
-                        <p>(c)</p><img src="/website/book/testCaseDesign/summary/exercises/images/count.png" height="250">
+                        <p>(c)</p>
+                        <img src="/website/book/testCaseDesign/summary/exercises/images/count.png" height="250">
                         <p></p>
                       </div>
                     </question>
@@ -595,9 +600,11 @@
                 <div>
                   <panel header=":lock::key: setWife :three:">
                     <question has-input="true">
-                      <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p><img src="/website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
+                      <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
+                      <img src="/website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
                       <p></p>
-                      <div slot="answer"><img src="/website/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
+                      <div slot="answer">
+                        <img src="/website/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
                         <p></p>
                         <p>Partitioning ‘married’ as ‘to same woman’ and ‘to different woman’ seems redundant at first. Arguments for having it:</p>
                         <ul>
@@ -662,5 +669,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

@@ -4,69 +4,76 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Software Design Patterns: Facade: What</title>
+    <title>CS2103/T Website - Software Design Patterns: Facade: What</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can explain the Facade design pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Design → Design Patterns → Facade Pattern →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
-        <p><strong>Context</strong></p>
-        <p>Components need to access functionality deep inside other components.</p>
-        <tip-box>
-          <p>📦 The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p><img src="/website/book/designPatterns/facade/what/images/textBook.png"
-            height="120">
-          <p></p>
-        </tip-box>
-        <p><strong>Problem</strong></p>
-        <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
-        <p><strong>Solution</strong></p>
-        <p>Include a
-          <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
-        <tip-box>
-          <p>📦 The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p><img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
-          <p></p>
-        </tip-box>
+        <p>🏆 Can explain the Facade design pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
-      <div>
+    </tip-box>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Design Patterns → Facade Pattern →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p><strong>Context</strong></p>
+            <p>Components need to access functionality deep inside other components.</p>
+            <tip-box>
+              <p>📦 The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
+              <img src="/website/book/designPatterns/facade/what/images/textBook.png" height="120">
+              <p></p>
+            </tip-box>
+            <p><strong>Problem</strong></p>
+            <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
+            <p><strong>Solution</strong></p>
+            <p>Include a
+              <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+            <tip-box>
+              <p>📦 The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
+              <img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
             <div>
-              <panel header=":lock::key: Is this Facade?">
-                <question>
-                  <p>Does the design below likely to use the Facade pattern?</p><img src="/website/book/designPatterns/facade/what/images/textStorage.png" height="150">
-                  <p></p>
-                  <ul radio-group="rq3z9" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="rq3z9" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="rq3z9" type="radio"> False</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>True.</p>
-                    <p>Facade is clearly visible (Storage is the &lt;&lt; Facade &gt;&gt; class).</p>
-                  </div>
-                </question>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Is this Facade?">
+                    <question>
+                      <p>Does the design below likely to use the Facade pattern?</p>
+                      <img src="/website/book/designPatterns/facade/what/images/textStorage.png" height="150">
+                      <p></p>
+                      <ul radio-group="d8720" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d8720" type="radio"> True</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d8720" type="radio"> False</label></li>
+                      </ul>
+                      <div slot="answer">
+                        <p>True.</p>
+                        <p>Facade is clearly visible (Storage is the &lt;&lt; Facade &gt;&gt; class).</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
               </panel>
             </div>
-          </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -76,5 +83,8 @@
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

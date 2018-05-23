@@ -4,71 +4,58 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Project Planning: Issue Trackers</title>
+    <title>CS2103/T Website - Project Planning: Issue Trackers</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can explain issue trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Project Management → Project Planning →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="issue-trackers-two">Issue Trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
-        <p><strong>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress.</strong> Most online project management software such as GitHub, SourceForge, and BitBucket come with an integrated issue tracker.</p>
-        <div
-          v-closeable="" alt="Jira screenshot">
-          <tip-box>
-            <p>📦 A screenshot from the Jira Issue tracker software:</p><img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="500">
-            <p></p>
-          </tip-box>
+        <p>🏆 Can explain issue trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
-      <p>Issue trackers can also be used as <em>task trackers</em>, i.e. to define tasks to be done, to track who is doing what, and the status of each task.</p>
-    </div>
+    </tip-box>
     <div>
-      <div>
-        <panel header=":muscle: Exercises" expandable="">
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Project Management → Project Planning →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
+        <div>
+          <h4 id="issue-trackers-two">Issue Trackers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
           <div>
-            <panel header=":lock::key: Pick the odd one out.">
-              <question>
-                <p>Pick the odd one out.</p>
-                <ul class="task-list">
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. SubVersion</li>
-                </ul>
-                <div slot="answer">
-                  <p>(d)</p>
-                  <p>Explanation: SubVersion is a revision control software (similar to Git). The others are online project management platforms.</p>
-                </div>
-              </question>
-            </panel>
+            <p>Keeping track of project tasks <span class="dimmed">(who is doing what, which tasks are ongoing, which tasks are done etc.)</span> is an essential part of project management. In small projects it may be possible to track tasks using simple
+              tools as online spreadsheets or general-purpose/light-weight tasks tracking tools such as Trello. Bigger projects need more sophisticated task tracking tools.</p>
+            <p><strong>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress.</strong> Most online project management software such as GitHub, SourceForge, and BitBucket come with an integrated issue tracker.</p>
+            <div v-closeable="" alt="Jira screenshot">
+              <tip-box>
+                <p>📦 A screenshot from the Jira Issue tracker software <span class="dimmed">(Jira is part of the BitBucket project management tool suite)</span>:</p>
+                <img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="350">
+                <p></p>
+              </tip-box>
+            </div>
           </div>
-        </panel>
+          <div></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 </div>
-</div>
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

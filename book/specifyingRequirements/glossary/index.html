@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Specifying Requirements: Glossary</title>
+    <title>CS2103/T Website - Specifying Requirements: Glossary</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Specifying Requirements →</strong></span></p>
   <h2 id="glossary">Glossary</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain glossary <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain glossary <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <tip-box type="definition">
@@ -34,7 +34,7 @@
               </div>
             </tip-box>
             <tip-box>
-              <p>📦 Here is a partial glossary from a variant of the Snakes and Ladders game:</p>
+              <p>📦 Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
               <ul>
                 <li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
                 <li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li>
@@ -51,5 +51,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

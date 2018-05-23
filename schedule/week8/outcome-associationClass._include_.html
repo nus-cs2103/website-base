@@ -1,4 +1,4 @@
-<panel type="info" header="`W8.6a` Can explain the meaning of association classes :star::star::star:" no-close="">
+<panel type="info" header="`W8.6a` Can explain the meaning of association classes :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -6,22 +6,24 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="association-classes-three">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>An <em>association class</em> represents additional information about an association.</strong> It is a normal class but plays a special role from a design point of view.</p>
-        <tip-box>
-          <p>📦 A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by either
-            the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p><img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png"
-            height="120"></tip-box>
-        <p>
-          <panel src="/website\book\uml\classDiagrams\associationClasses\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Association Classes" isOpen="false" no-close="true" no-switch="true"></panel>
-          <p></p>
-        </p>
+        <h4 id="association-classes-three">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong>An <em>association class</em> represents additional information about an association.</strong> It is a normal class but plays a special role from a design point of view.</p>
+          <tip-box>
+            <p>📦 A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by either
+              the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
+            <img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120"></tip-box>
+          <p>
+            <panel src="/website\book\uml\classDiagrams\associationClasses\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Association Classes" expanded=""></panel>
+            <p></p>
+          </p>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
@@ -29,11 +31,12 @@
   </panel>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="info" header="`W8.6b` Can implement association classes :star::star::star:" no-close="">
+<panel type="info" header="`W8.6b` Can implement association classes :star::star::star:" expanded="" no-close="">
   <div>
     <div>
       <p>
-        <panel src="/website\book\oopDesign\associations\associationClasses\full._include_.html" header="%%:mortar_board: OOP → Associations → Association Classes%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\oopDesign\associations\associationClasses\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Association Classes%%" isOpen="false" no-close="true"
+          no-switch="true"></panel>
       </p>
     </div>
     <p></p>
@@ -41,45 +44,50 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="association-classes-three-2">Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
-        <tip-box>
-          <p>Example:</p><img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
-          <p></p>
-          <p>At implementation level, an association class is most likely implemented as follows.</p><img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
-          <p></p>
-          <p>
-            <panel type="seamless" src="/website\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%" isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-        </tip-box>
+        <h4 id="implementing-association-classes-three">Implementing Association Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: Which are suitable as an Association Class?">
-                <question>
-                  <p>Which one of these is the suitable as an Association Class?</p><img src="/website/book/oopImplementation/associationClasses/images/exerciseDiagram.png" height="330">
-                  <p></p>
-                  <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(a)(b)<s>(c)</s>(d)</p>
-                    <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be suitable
-                      as an association class.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
+          <tip-box>
+            <p>Example:</p>
+            <img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
+            <p></p>
+            <p>At implementation level, an association class is most likely implemented as follows.</p>
+            <img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
+            <p></p>
+            <p>
+              <panel type="seamless" src="/website\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%" isOpen="false" no-close="true" no-switch="true"></panel>
+            </p>
+          </tip-box>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Which are suitable as an Association Class?">
+                  <question>
+                    <p>Which one of these is the suitable as an Association Class?</p>
+                    <img src="/website/book/oopImplementation/associationClasses/images/exerciseDiagram.png" height="330">
+                    <p></p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(a)(b)<s>(c)</s>(d)</p>
+                      <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be suitable
+                        as an association class.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>

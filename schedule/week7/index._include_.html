@@ -1,3 +1,4 @@
+<p><small>[<a href="/website/schedule/week7/outcomes.html" target="_blank">Open <em>Outcomes</em> in a new Window <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>]</small></p>
 <panel header=":trophy: Outcomes" ctrl-lvl="1" expanded="" no-close="">
   <div>
     <h3 id="requirements">Requirements:</h3>
@@ -21,55 +22,58 @@
 </span></strong>
           </span>
         </p>
-        <div>
-          <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-        </div>
-        <div id="main">
+        <div id="title-and-body">
           <div>
-            <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
-            <tip-box>
-              <p>📦 The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a> is a collection of public methods that you can invoke to make use of the <code>String</code> class.</p>
-              <p>📦 The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
-            </tip-box>
-            <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
+            <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
           </div>
-          <div>
+          <div id="main">
             <div>
-              <panel header=":muscle: Exercises" expandable="">
-                <div>
-                  <panel header=":lock::key: Statements about APIs">
-                    <question>
-                      <p>Choose the correct statements</p>
-                      <ul class="task-list">
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software component can have an API.</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Any method of a class is part of its API.</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Private methods of a class are not part of its API.</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The API forms the contract between the component developer and the component user.</li>
-                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Sequence diagrams can be used to show how components interact with each other via APIs.</li>
-                      </ul>
-                      <div slot="answer">
-                        <p>(a) (c) (d) (e)</p>
-                        <p>Explanation: (b) is incorrect because private methods cannot be a part of the API</p>
-                      </div>
-                    </question>
-                  </panel>
-                </div>
-                <div>
-                  <panel header=":lock::key: True or False?">
-                    <question>
-                      <p>Defining component APIs early is useful for developing components in parallel.</p>
-                      <ul radio-group="uo18z" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="uo18z" type="radio"> True</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="uo18z" type="radio"> False</label></li>
-                      </ul>
-                      <div slot="answer">
-                        <p>True</p>
-                        <p>Explanation: Yes, once we know the precise behavior expected of each component, we can start developing them in parallel.</p>
-                      </div>
-                    </question>
-                  </panel>
-                </div>
-              </panel>
+              <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
+              <tip-box>
+                <p>📦 A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code>str</code> class</a>)
+                  which is a collection of public methods that you can invoke to make use of the class.</p>
+                <p>📦 The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
+              </tip-box>
+              <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
+            </div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: Statements about APIs">
+                      <question>
+                        <p>Choose the correct statements</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software component can have an API.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Any method of a class is part of its API.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Private methods of a class are not part of its API.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The API forms the contract between the component developer and the component user.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Sequence diagrams can be used to show how components interact with each other via APIs.</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(a) (c) (d) (e)</p>
+                          <p>Explanation: (b) is incorrect because private methods cannot be a part of the API</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock::key: True or False?">
+                      <question>
+                        <p>Defining component APIs early is useful for developing components in parallel.</p>
+                        <ul radio-group="9bd8a" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="9bd8a" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="9bd8a" type="radio"> False</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>True</p>
+                          <p>Explanation: Yes, once we know the precise behavior expected of each component, we can start developing them in parallel.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -88,6 +92,7 @@
     <p>
       <panel type="info" src="/website\schedule\week7\outcome-assertion._include_.html" header="**`W7.6` Can use assertions** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
     </p>
+
     <panel type="success" header="**`W7.7` Can use Java8 streams :star::star::star::star:**" no-close="">
       <div>
         <div></div>
@@ -96,39 +101,43 @@
 </span></strong>
           </span>
         </p>
-        <div>
-          <h4 id="streams-basic-three">Streams: Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-        </div>
-        <div id="main">
+        <div id="title-and-body">
           <div>
-            <p><strong>Java 8 introduced a number of new features (e.g. Lambdas, Streams)</strong> that are not trivial to learn but also extremely useful to know.</p>
-            <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features .<span class="dimmed"> (written by Benjamin Winterberg)</span></p>
+            <h4 id="streams-basic-three">Streams: Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
           </div>
-          <div>
+          <div id="main">
             <div>
-              <panel header=":paperclip: Resources" expanded="">
-                <p><strong>Tutorials</strong>:</p>
-                <tabs>
-                  <tab header=":abc:">
-                    <ul>
-                      <li><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. 💡 Also provides a way to try out code online</li>
-                      <li><strong>Tutorials from Oracle</strong>: [<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>][<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a>]</li>
-                    </ul>
-                    <p>
+              <p><strong>Java 8 introduced a number of new features (e.g. Lambdas, Streams)</strong> that are not trivial to learn but also extremely useful to know.</p>
+              <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features .<span class="dimmed"> (written by Benjamin Winterberg)</span></p>
+            </div>
+            <div>
+              <div>
+                <panel header=":paperclip: Resources" expanded="">
+                  <p><strong>Tutorials</strong>:</p>
+                  <tabs>
+                  
+                    <tab header=":abc:">
+                      <ul>
+                        <li><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. 💡 Also provides a way to try out code online</li>
+                        <li><strong>Tutorials from Oracle</strong>: [<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>][<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a>]</li>
+                      </ul>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  
+                    <tab header=":tv:">
+                      <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
+                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                      <panel type="seamless" header="A a more detailed version covering similar grounds">
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                      </panel>
+                    
                       <hr>
-                    </p>
-                  </tab>
-                  <tab header=":tv:">
-                    <p></p>
-                    <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
-                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                    <panel type="seamless" header="A a more detailed version covering similar grounds">
-                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                    </panel>
-                    <hr>
-                  </tab>
-                </tabs>
-              </panel>
+                    </tab>
+                  </tabs>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +164,6 @@
     </panel>
   </div>
 </panel>
-
 <panel header=":clipboard: Todo" ctrl-lvl="1" no-close="">
   <div>
     <panel header="Admin info to read" expandable="" expanded="">
@@ -173,14 +181,14 @@
     </panel>
   </div>
 </panel>
-
 <panel header=":raising_hand: Tutorial 7" ctrl-lvl="1" no-close="">
   <div>
     <p><strong>Questions to discuss during tutorial:</strong></p>
     <div>
       <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
         <question>
-          <p>Explain the interactions depicted in this sequence diagram.</p><img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+          <p>Explain the interactions depicted in this sequence diagram.</p>
+          <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
           <p></p>
           <div slot="hint">
             <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
@@ -202,7 +210,6 @@
     </ol>
   </div>
 </panel>
-
 <panel header=":loudspeaker: Lecture 7" ctrl-lvl="1" no-close="">
   <div>
     <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L7.pptx">slides</a>]</p>

@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Error Handling: Assertions</title>
+    <title>CS2103/T Website - Error Handling: Assertions</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Error Handling →</strong></span></p>
   <h2 id="assertions">Assertions</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain assertions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain assertions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong><em>Assertions</em> are used to define assumptions about the program state so that the runtime can verify them.</strong> An assertion failure indicates a possible bug in the code <span class="dimmed">because the code has resulted in a program state that violates an assumption about how the code <em>should</em> behave</span>.</p>
@@ -47,22 +47,21 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can use assertions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can use assertions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>Use the <code>assert</code> keyword to define assertions.</p>
             <tip-box>
               <p>📦 This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
               <pre><code class="hljs java">x = getX();
-<span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;`
+<span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;
 ...
 </code></pre>
             </tip-box>
@@ -78,7 +77,7 @@
               <p>💡 Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code>assert false</code>                into the code temporarily) to confirm assertions are being verified.</p>
             </tip-box>
             <tip-box type="info">
-              <p><strong>Java <code>asset</code> vs JUnit assertions</strong>: They are similar in purpose but JUnit assertions are more powerful and customized for testing. In addition, JUnit assertions are not disabled by default. We recommend you use
+              <p><strong>Java <code>assert</code> vs JUnit assertions</strong>: They are similar in purpose but JUnit assertions are more powerful and customized for testing. In addition, JUnit assertions are not disabled by default. We recommend you use
                 JUnit assertions in test code and Java <code>assert</code> in functional code.</p>
             </tip-box>
           </div>
@@ -102,15 +101,14 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can use assertions optimally <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can use assertions optimally <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong>It is recommended that assertions be used liberally in the code.</strong> Their impact on performance is considered low and worth the additional safety they provide.</p>
@@ -136,11 +134,11 @@
                   <panel header=":lock::key: Assertions failure in Calculator">
                     <question>
                       <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                      <ul radio-group="ob520" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ob520" type="radio"> a. This is a correct use of assertions.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ob520" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ob520" type="radio"> c. The program has a bug.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="ob520" type="radio"> d. All statements above are incorrect.</label></li>
+                      <ul radio-group="f7dad" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> a. This is a correct use of assertions.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> c. The program has a bug.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> d. All statements above are incorrect.</label></li>
                       </ul>
                       <div slot="answer">
                         <p>(c)</p>
@@ -176,5 +174,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

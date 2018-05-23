@@ -3,15 +3,21 @@
 <ul>
   <li>
     <p><strong>Constraint-Morph</strong>: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code,
-      as long as it is done incrementally. <span class="dimmed">e.g. one feature/component at a time</span><br><span class="dimmed"><strong>Reason:</strong> To ensure your code has a decent quality level from the start.</span></p>
+      as long as it is done incrementally. <span class="dimmed">e.g. one feature/component at a time</span><br>
+      <span class="dimmed"><strong>Reason:</strong> To ensure your code has a decent quality level from the start.</span></p>
   </li>
   <li>
     <p><strong>Constraint-Incremental</strong>: The product needs to be developed incrementally over the project duration (week 6-13). While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For
       example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. <span class="dimmed"> Reasons: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.</span></p>
   </li>
 </ul>
-<span id="constraint-cli"><ul><li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven.
-<ul><li>Mouse actions should have keyboard alternatives.</li><li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.</li><li><tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
+<span id="constraint-cli">
+<ul>
+<li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven.
+<ul>
+<li>Mouse actions should have keyboard alternatives.</li>
+<li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.</li>
+<li><tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
 <li>❗️ While we don't prohibit
   <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.</li>
 </ul>
@@ -20,17 +26,21 @@
 </span>
 <ul>
   <li>
-    <p><strong>Constraint-Human-Editable-File</strong>: The data should be stored locally and should be in a human editable text file. Use of relational or No-SQL databases are not allowed.<br><span class="dimmed"><strong>Reason:</strong> To allow advanced users to manipulate the data by editing the data file.</span></p>
+    <p><strong>Constraint-Human-Editable-File</strong>: The data should be stored locally and should be in a human editable text file. Use of relational or No-SQL databases are not allowed.<br>
+      <span class="dimmed"><strong>Reason:</strong> To allow advanced users to manipulate the data by editing the data file.</span></p>
   </li>
   <li>
-    <p><strong>Constraint-OO</strong>: The software should follow the Object-oriented paradigm.<br><span class="dimmed"><strong>Reason:</strong> For you to practice OOP that you learned in the course.</span></p>
+    <p><strong>Constraint-OO</strong>: The software should follow the Object-oriented paradigm.<br>
+      <span class="dimmed"><strong>Reason:</strong> For you to practice OOP that you learned in the course.</span></p>
   </li>
   <li>
     <p><strong>Constraint-Platform-Independent</strong>: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific
-      features.<br><span class="dimmed"><strong>Reason:</strong> Peer testers can use any of these platforms.</span></p>
+      features.<br>
+      <span class="dimmed"><strong>Reason:</strong> Peer testers can use any of these platforms.</span></p>
   </li>
   <li>
-    <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.<br><span class="dimmed"><strong>Reason:</strong> We do not want to install all your projects on our testing machines when we test them for grading.</span></p>
+    <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.<br>
+      <span class="dimmed"><strong>Reason:</strong> We do not want to install all your projects on our testing machines when we test them for grading.</span></p>
   </li>
   <li>
     <p><strong>Constraint-External-Software</strong>: The use of third-party frameworks/libraries is allowed but only if they,</p>
@@ -39,8 +49,10 @@
       <li>do not require any installation by the user of your software.</li>
       <li>do not violate other constraints.</li>
     </ul>
-    <p>and is subjected to prior approval by us.<br><span class="dimmed"><strong>Reason:</strong> We will not allow third-party software that can interfere with the learning objectives of the module.</span></p>
-    <p>Please <mark>post in the <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">forum</a> your request to use a third-party libraries</mark><em>before</em> you start using the library. Once a specific library has been approved for one team,
-      other teams may use it without requesting permission again.<br><span class="dimmed"><strong>Reason:</strong> The whole class should know which external software are used by others so that they can do the same if they wish to.</span></p>
+    <p>and is subjected to prior approval by us.<br>
+      <span class="dimmed"><strong>Reason:</strong> We will not allow third-party software that can interfere with the learning objectives of the module.</span></p>
+    <p>Please <mark>post in the <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">forum</a> your request to use a third-party libraries</mark> <em>before</em> you start using the library. Once a specific library has been approved for one team,
+      other teams may use it without requesting permission again.<br>
+      <span class="dimmed"><strong>Reason:</strong> The whole class should know which external software are used by others so that they can do the same if they wish to.</span></p>
   </li>
 </ul>

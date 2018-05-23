@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently</title>
+    <title>CS2103/T Website - Code Quality: [Guideline] Comment Minimally, but Sufficiently</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Code Quality →</strong></span></p>
   <h2 id="guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain the need for commenting minimally but sufficiently <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain the need for commenting minimally but sufficiently <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <blockquote>
@@ -38,18 +38,17 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can follow basic guidelines for writing code comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can follow basic guidelines for writing code comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
-            <panel header="**Do Not Repeat the Obvious**" type="seamless" alt="indentation">
+            <panel header="**Do Not Repeat the Obvious**" type="seamless" alt="indentation" expanded="">
               <div>
                 <div>
                   <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
@@ -63,23 +62,48 @@ trimInput();
                 </div>
               </div>
             </panel>
-            <panel header="**Write to the Reader**" type="seamless" alt="indentation">
+            <panel header="**Write to the Reader**" type="seamless" alt="indentation" expanded="">
               <div>
                 <div>
                   <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a
                     class or an operation to explain its purpose.</p>
-                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"><span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                  <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+                  <tip-box>
+                    <p>📦 Examples:</p>
+                    <tabs>
+                    
+                      <tab header="Java">
+                        <div>
+                          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                          <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                  <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
-                  <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                          <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                          <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
+                        </div>
+                      </tab>
+                    
+                      <tab header="Python">
+                        <div>
+                          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                          <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+    ...
+</code></pre>
+                          <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
+    ...
+</code></pre>
+                        </div>
+                      </tab>
+                    </tabs>
+                  </tip-box>
                 </div>
               </div>
             </panel>
@@ -89,18 +113,17 @@ trimInput();
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="intermediate-two">Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can follow intermediate guidelines for writing code comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="intermediate-two">Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can follow intermediate guidelines for writing code comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
-            <panel header="**Explain WHAT and WHY, not HOW**" type="seamless" alt="indentation">
+            <panel header="**Explain WHAT and WHY, not HOW**" type="seamless" alt="indentation" expanded="">
               <div>
                 <div>
                   <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
@@ -123,11 +146,11 @@ compact(input);
                   <p>👎 <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
                   <tip-box>
                     <p>📦 Example:</p>
-                    <p><img src="/website/book/images/Bad.png" alt="" title="Bad"><span class="dimmed">Reason: Comment explains how the code works.</span></p>
+                    <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
                     <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
 <span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
 </code></pre>
-                    <p><img src="/website/book/images/Good.png" alt="" title="Good"><span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
+                    <p><img src="/website/book/images/Good.png" alt="" title="Good"> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
                     <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
 <span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
@@ -168,5 +191,8 @@ compact(input);
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

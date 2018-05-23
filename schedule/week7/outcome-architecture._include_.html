@@ -1,5 +1,5 @@
 <!-- TODO: add LO here  ../../book/design/introduction/what/full.md -->
-<panel type="danger" header="`W7.2a` Can explain Software Architecture :star:" no-close="">
+<panel type="danger" header="`W7.2a` Can explain Software Architecture :star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -7,75 +7,77 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <blockquote>
-          <p>The software architecture of a program or computing system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them. Architecture is
-            concerned with the public side of interfaces; private details of elements—details having to do solely with internal implementation—are not architectural.
-            <sub>-- <em>Software Architecture in Practice (2nd edition)</em>, Bass, Clements, and Kazman</sub></p>
-        </blockquote>
-        <p><strong>The software architecture shows the overall organization of the system and can be viewed as a very high-level design.</strong> It usually consists of a set of interacting components that fit together to achieve the required functionality.
-          It should be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
-        <tip-box>
-          <p>📦 A possible architecture for a <em>Minesweeper</em> game</p>
-          <table>
-            <tr>
-              <td><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
-              <td width="10px"></td>
-              <td><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
-            </tr>
-          </table>
-          <p></p>
-          <p>Main components:</p>
-          <ul>
-            <li><code>GUI</code>: Graphical user interface</li>
-            <li><code>TextUi</code>: Textual user interface</li>
-            <li><code>ATD</code>: An automated test driver used for testing the game logic</li>
-            <li><code>Logic</code>: computation and logic of the game</li>
-            <li><code>Store</code>: storage and retrieval of game data (high scores etc.)</li>
-          </ul>
-        </tip-box>
-        <p><strong>The architecture is typically designed by the <em>software architect</em></strong>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions about the project.</p>
+        <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: Statements about architecture">
-                <question>
-                  <p>Choose the correct statement</p>
-                  <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The architecture of a system should be simple enough for all team members to understand it.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The architecture is primarily a high-level design of the system.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture is usually decided by the project manager.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The architecture can contain details private to a component.</li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(a)(b)</p>
-                    <p><s>(c)</s> Reason: Architecture is usually designed by the Architect</p>
-                    <p><s>(d)</s> Reason:</p>
-                    <blockquote>
-                      <p>... private details of elements—details having to do solely with internal implementation—are not architectural.</p>
-                    </blockquote>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          <blockquote>
+            <p>The software architecture of a program or computing system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them. Architecture
+              is concerned with the public side of interfaces; private details of elements—details having to do solely with internal implementation—are not architectural.
+              <sub>-- <em>Software Architecture in Practice (2nd edition)</em>, Bass, Clements, and Kazman</sub></p>
+          </blockquote>
+          <p><strong>The software architecture shows the overall organization of the system and can be viewed as a very high-level design.</strong> It usually consists of a set of interacting components that fit together to achieve the required functionality.
+            It should be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
+          <tip-box>
+            <p>📦 A possible architecture for a <em>Minesweeper</em> game</p>
+            <table>
+              <tr>
+                <td><img src="/website/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
+                <td width="10px"></td>
+                <td><img src="/website/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
+              </tr>
+            </table>
+            <p></p>
+            <p>Main components:</p>
+            <ul>
+              <li><code>GUI</code>: Graphical user interface</li>
+              <li><code>TextUi</code>: Textual user interface</li>
+              <li><code>ATD</code>: An automated test driver used for testing the game logic</li>
+              <li><code>Logic</code>: computation and logic of the game</li>
+              <li><code>Store</code>: storage and retrieval of game data (high scores etc.)</li>
+            </ul>
+          </tip-box>
+          <p><strong>The architecture is typically designed by the <em>software architect</em></strong>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions about the project.</p>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Statements about architecture">
+                  <question>
+                    <p>Choose the correct statement</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The architecture of a system should be simple enough for all team members to understand it.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The architecture is primarily a high-level design of the system.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture is usually decided by the project manager.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The architecture can contain details private to a component.</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(a)(b)</p>
+                      <p><s>(c)</s> Reason: Architecture is usually designed by the Architect</p>
+                      <p><s>(d)</s> Reason:</p>
+                      <blockquote>
+                        <p>... private details of elements—details having to do solely with internal implementation—are not architectural.</p>
+                      </blockquote>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="danger" header="`W7.2a` Can interpret an architecture diagram :star:" no-close="">
+<panel type="danger" header="`W7.2a` Can interpret an architecture diagram :star:" expanded="" no-close="">
   <div>
     <div>
       <p>
-        <panel src="/website\book\architecture\introduction\what\full._include_.html" header="%%:mortar_board: Design → Architecture → Introduction → What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website\book\architecture\introduction\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Architecture → Introduction → What%%" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
     </div>
     <p></p>
@@ -83,56 +85,66 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="reading-one">Reading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
-        <div v-closeable="" alt="architecture diagram examples">
-          <tip-box>
-            <p>📦 Some example architecture diagrams from elsewhere:</p>
-            <tabs>
-              <tab header="TEAMMATES">
-                <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-              <tab header="se-edu/addressbook-level4">
-                <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-              <tab header="Example 1">
-                <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br><sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-              <tab header="Example 2">
-                <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br><sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-              <tab header="Example 3">
-                <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br><sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-            </tabs>
-          </tip-box>
-        </div>
+        <h4 id="reading-one">Reading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
+          <div v-closeable="" alt="architecture diagram examples" id="architecture-diagram-examples">
+            <tip-box>
+              <p>📦 Some example architecture diagrams:</p>
+              <tabs>
+              
+                <tab header="TEAMMATES">
+                  <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              
+                <tab header="se-edu/addressbook-level4">
+                  <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              
+                <tab header="Example 1">
+                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                    <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              
+                <tab header="Example 2">
+                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                    <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              
+                <tab header="Example 3">
+                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                    <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              </tabs>
+            </tip-box>
+          </div>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="info" header="`W7.2b` Can explain multi-level design :star::star::star:" no-close="">
+<panel type="info" header="`W7.2b` Can explain multi-level design :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -140,44 +152,52 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="multi-level-design-three">Multi-Level Design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p>In a smaller system, design of the entire system can be shown in one place.</p>
-        <div v-closeable="" alt="single-level design example">
-          <tip-box>
-            <p>📦 This class diagram of <a href="https://se-edu.github.io/addressbook-level3">se-edu/addressbook-level3</a> depicts the design of the entire software.</p><img src="https://se-edu.github.io/addressbook-level3/doc/images/mainClassDiagram.png"
-              width="600"></tip-box>
-        </div>
-        <p><strong>Design of bigger systems needs to be done/shown at multiple levels.</strong></p>
-        <div v-closeable="" alt="multi-level design example">
-          <tip-box>
-            <p>📦 This architecture diagram of <a href="https://se-edu.github.io/addressbook-level4">se-edu/addressbook-level4</a> depicts the high-level design of the software.</p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png"
-              width="600">
-            <p>Here are examples of lower level designs of some components of the same software:</p>
-            <tabs>
-              <tab header="UI"><img src="https://se-edu.github.io/addressbook-level4/images/UiClassDiagram.png" width="600">
-                <p>
-                  <hr>
-                </p>
-              </tab>
-              <tab header="Logic"><img src="https://se-edu.github.io/addressbook-level4/images/LogicClassDiagram.png" width="600">
-                <p>
-                  <hr>
-                </p>
-              </tab>
-              <tab header="Storage"><img src="https://se-edu.github.io/addressbook-level4/images/StorageClassDiagram.png" width="600">
-                <p>
-                  <hr>
-                </p>
-              </tab>
-            </tabs>
-          </tip-box>
-        </div>
+        <h4 id="multi-level-design-three">Multi-Level Design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p>In a smaller system, design of the entire system can be shown in one place.</p>
+          <div v-closeable="" alt="single-level design example">
+            <tip-box>
+              <p>📦 This class diagram of <a href="https://se-edu.github.io/addressbook-level3">se-edu/addressbook-level3</a> depicts the design of the entire software.</p>
+              <img src="https://se-edu.github.io/addressbook-level3/doc/images/mainClassDiagram.png" width="600"></tip-box>
+          </div>
+          <p><strong>Design of bigger systems needs to be done/shown at multiple levels.</strong></p>
+          <div v-closeable="" alt="multi-level design example">
+            <tip-box>
+              <p>📦 This architecture diagram of <a href="https://se-edu.github.io/addressbook-level4">se-edu/addressbook-level4</a> depicts the high-level design of the software.</p>
+              <img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="600">
+              <p>Here are examples of lower level designs of some components of the same software:</p>
+              <tabs>
+              
+                <tab header="UI">
+                  <img src="https://se-edu.github.io/addressbook-level4/images/UiClassDiagram.png" width="600">
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              
+                <tab header="Logic">
+                  <img src="https://se-edu.github.io/addressbook-level4/images/LogicClassDiagram.png" width="600">
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              
+                <tab header="Storage">
+                  <img src="https://se-edu.github.io/addressbook-level4/images/StorageClassDiagram.png" width="600">
+                  <p>
+                    <hr>
+                  </p>
+                </tab>
+              </tabs>
+            </tip-box>
+          </div>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">

@@ -1,15 +1,170 @@
-<panel header=":trophy: Outcomes" ctrl-lvl="1" expanded no-close>
-  <include src="outcomes.md#main" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Week 4</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <p><small>[<a href="/website/schedule/week4/outcomes.html" target="_blank">Open <em>Outcomes</em> in a new Window <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>]</small></p>
+<panel header=":trophy: Outcomes" ctrl-lvl="1" expanded="" no-close="">
+  <div>
+    <h3 id="design">Design:</h3>
+    <p>
+      <panel type="info" src="/website\schedule\week4\outcome-model._include_.html" header="**`W4.1` Can explain models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="danger" src="/website\schedule\week4\outcome-oop._include_.html" header="**`W4.2` Can explain OOP** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="danger" src="/website\schedule\week4\outcome-classStructure._include_.html" header="**`W4.3` Can explain basic object/class structures** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="implementation">Implementation:</h3>
+    <p>
+      <panel type="danger" src="/website\schedule\week4\outcome-implementClassStructures._include_.html" header="**`W4.4` Can implement classes** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="warning" src="/website\schedule\week4\outcome-exceptionHandling._include_.html" header="**`W4.5` Can do exception handling in code** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="info" src="/website\schedule\week4\outcome-enumeration._include_.html" header="**`W4.6` Can use Java enumerations** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="project-management">Project Management:</h3>
+    <p>
+      <panel type="danger" src="/website\schedule\week4\outcome-pr._include_.html" header="**`W4.7` Can create PRs on GitHub** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+  </div>
 </panel>
+<panel header=":clipboard: Todo" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\appendixB-policies._include_.html#policy-plagiarism" name="%%Admin »%% Policy on plagiarism :star:" fragment="policy-plagiarism" header="%%Admin »%% Policy on plagiarism :star:" isOpen="false" no-close="true"
+          no-switch="true"></panel>
+        <panel type="danger" src="/website\admin\appendixB-policies._include_.html#policy-reuse" name="%%Admin »%% Policy on reuse :star:" fragment="policy-reuse" header="%%Admin »%% Policy on reuse :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="danger" src="/website\admin\appendixB-policies._include_.html#policy-outsiderHelp" name="%%Admin »%% Policy on help from outsiders :star:" fragment="policy-outsiderHelp" header="%%Admin »%% Policy on help from outsiders :star:" isOpen="false"
+          no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="info" src="/website\admin\exams._include_.html" name="%%Admin »%% Exams :star::star::star:" header="%%Admin »%% Exams :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-noLaptop" name="%%Admin »%% FAQ: What if I don't carry around a laptop :star::star::star::star:" fragment="admin-faq-noLaptop" header="%%Admin »%% FAQ: What if I don't carry around a laptop :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixB-policies._include_.html#policy-publishingSubmissions" name="%%Admin »%% Policy on publishing submissions :star::star::star::star:" fragment="policy-publishingSubmissions" header="%%Admin »%% Policy on publishing submissions :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
+</panel>
+<panel header=":raising_hand: Tutorial 4" ctrl-lvl="1" no-close="">
+  <div>
+    <tip-box type="important">
+      <p>In this week's tutorial we would like to ensure that,</p>
+      <ol>
+        <li><strong><em>All</em> students are able to create branch-based PRs without accidentally mixing commits</strong> between PRs (a common mistake)</li>
+        <li><strong><em>At least some members</em> of the team are able to resolve merge conflicts and merge PRs</strong></li>
+      </ol>
+      <p><span class="dimmed">Reason: These two skills are going to be essential for you in future weeks because most of your work will require creating PRs.</span></p>
+      <p>Therefore, we <strong>strongly encourage you to achieve the <code>W4.1 Can create PRs on GitHub</code> before coming to the tutorial</strong>. If not, you'll have to do it during the tutorial and then there will be less time for you to do the other
+        activities we have planned for this tutorial</p>
+    </tip-box>
+    <ul>
+      <li>This week we don't join teams during discussions, to give you more time to work with your own team members in preparation for the upcoming peer review in week 6.</li>
+      <li>As before, discuss evidence of achieving LOs as directed by the tutor.</li>
+    </ul>
+    <p><strong>Suggested question to discuss:</strong></p>
+    <div>
+      <panel header=":lock: Explain Class Diagram">
+        <question>
+          <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+          <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+          <p></p>
+        </question>
+      </panel>
+    </div>
+    <div>
+      <panel header=":lock: Object Diagrams for Class Diagram">
+        <question>
+          <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+          <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+          <p></p>
+          <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+          <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+          <ol>
+            <li>
+              <p>There are no persons.</p>
+            </li>
+            <li>
+              <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+            </li>
+            <li>
+              <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+            </li>
+            <li>
+              <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+            </li>
+            <li>
+              <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+            </li>
+          </ol>
+          <div slot="hint">
+            <p>After step 2, the diagram should be like this:</p>
+            <img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+        </question>
+      </panel>
+    </div>
+  </div>
+</panel>
+<panel header=":loudspeaker: Lecture 4" ctrl-lvl="1" no-close="">
+  <div>
+    <p><strong>Questions to discuss during the lecture:</strong></p>
+    <panel header=":lock: Classes for CityConnect app">
+      <question has-input="true">
+        <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
+        <pre class="hljs"><code>Welcome to CityConnect!
 
-<panel header=":clipboard: Todo" ctrl-lvl="1" no-close>
-  <include src="todo.md" />
-</panel>
+Enter command: addroute Clementi BuonaVista 12
+Route from Clementi to BuonaVista with distance 12km added
 
-<panel header=":raising_hand: Tutorial 4" ctrl-lvl="1" no-close>
-  <include src="tutorial.md" />
-</panel>
+Enter command: getdistance Clementi BuonaVista
+Distance from Clementi to BuonaVista is 12
 
-<panel header=":loudspeaker: Lecture 4" ctrl-lvl="1" no-close>
-  <include src="lecture.md" />
+Enter command: getdistance Clementi JurongWest
+No route exists from Clementi to JurongWest!
+
+Enter command: addroute Clementi JurongWest 24
+Route from Clementi to JurongWest with distance 24km added
+
+Enter command: getdistance Clementi JurongWest
+Distance from Clementi to JurongWest is 24
+
+Enter command: exit
+
+</code></pre>
+        <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
+        <div slot="hint">
+          <p>One class you can have is <code>Route</code></p>
+        </div>
+      </question>
+    </panel>
+    <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L4.pptx">slides</a>]</p>
+  </div>
 </panel>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>

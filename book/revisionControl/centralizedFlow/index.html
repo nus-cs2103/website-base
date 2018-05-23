@@ -4,45 +4,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Revision Control: Centralized Flow</title>
+    <title>CS2103/T Website - Revision Control: Centralized Flow</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can explain centralized flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div>
-      <p>
-        <panel src="/website\book\revisionControl\featureBranchFlow\full._include_.html" header="%%:mortar_board: Revision Control → Feature Branch Workflow%%" isOpen="false" no-close="true" no-switch="true"></panel>
-      </p>
-    </div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Project Management → Revision Control →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="centralized-flow-two">Centralized Flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
-        <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the master branch.</strong></p>
+        <p>🏆 Can explain centralized flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
       </div>
+    </tip-box>
+    <div>
       <div>
+        <p>
+          <panel src="/website\book\revisionControl\featureBranchFlow\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control → Feature Branch Workflow%%" isOpen="false" no-close="true"
+            no-switch="true"></panel>
+        </p>
+      </div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
         <div>
-          <panel header=":paperclip: Resources" expanded="">
-            <ul>
-              <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
-            </ul>
-          </panel>
+          <h4 id="centralized-flow-two">Centralized Flow <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the master branch.</strong></p>
+          </div>
+          <div>
+            <div>
+              <panel header=":paperclip: Resources" expanded="">
+                <ul>
+                  <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
+                </ul>
+              </panel>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,5 +58,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

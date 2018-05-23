@@ -1,6 +1,6 @@
 <tip-box>
   <p><strong>v1.4 Summary of Milestone</strong></p>
-  <table class="markbind-table table">
+  <table class="markbind-table table table-bordered table-striped">
     <thead>
       <tr>
         <th>Milestone</th>
@@ -75,7 +75,7 @@ method 4 ...
         <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
 &lt;textbox&gt;
   &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...
+  &lt;input&gt;...&lt;/input&gt;
 &lt;/textbox&gt;
 ...
 </code></pre>
@@ -102,7 +102,7 @@ method 4 ...
         <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
       </li>
       <li>
-        <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong><span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span><br><strong>Claiming credit for code blocks smaller than a method is discouraged</strong>          but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
+        <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>          but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
         <ul>
           <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
           <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
@@ -111,9 +111,9 @@ method 4 ...
         </ul>
       </li>
       <li>
-        <p><strong>You will be penalized if you try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even
-          repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice
-          a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let us know.</p>
+        <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks
+          within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming
+          credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
       </li>
       <li>
         <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
@@ -146,7 +146,7 @@ method 2 ...
     </ul>
     <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
     <p>You need to put the collated code in the following folders</p>
-    <table class="markbind-table table">
+    <table class="markbind-table table table-bordered table-striped">
       <thead>
         <tr>
           <th>Code Type</th>
@@ -235,6 +235,9 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
 <h3 id="v14-demo">v1.4 Demo</h3>
 <p>As before.</p>
 <h3 id="v14-testing">v1.4 Testing</h3>
+<tip-box type="important">
+  Taking part in v1.4 is compulsory and counts for participation marks.
+</tip-box>
 <p>v1.4 is subjected to a round of <em>peer testing</em>.</p>
 <p><strong>Objectives</strong>:</p>
 <ul>
@@ -273,6 +276,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
   <li>There is <strong>no penalty for bugs reported</strong> in your product.</li>
 </ul>
 <modal large="" title="Admin » Project →" id="modal:v1.4-ppp">
+
   <div>
     <h4 id="project-portfolio-page-ppp">Project Portfolio Page (PPP)</h4>
     <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -313,8 +317,9 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
       <li>
         <p><strong>Format</strong>:</p>
         <ul>
-          <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be penalized.
-            <table class="markbind-table table">
+          <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>.
+            The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th>Content</th>
@@ -354,7 +359,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
 <div>
   <p><strong>Preparation</strong>:</p>
   <ul>
-    <li>Ensure you have access to a <strong>computer that is able to run module projects</strong><span class="dimmed"> e.g. has the right Java version</span>.</li>
+    <li>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</li>
     <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
     <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
   </ul>

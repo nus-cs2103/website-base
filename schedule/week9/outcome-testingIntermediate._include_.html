@@ -1,4 +1,4 @@
-<panel type="info" header="`W9.5a` Can explain testability :star::star::star:" no-close="">
+<panel type="info" header="`W9.5a` Can explain testability :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -6,20 +6,22 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="testability-three">Testability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher
-          the testability, the easier it is to achieve a better quality software.</p>
+        <h4 id="testability-three">Testability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The
+            higher the testability, the easier it is to achieve a better quality software.</p>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="warning" header="`W9.5b` Can explain test coverage :star::star:" no-close="">
+<panel type="warning" header="`W9.5b` Can explain test coverage :star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -27,61 +29,64 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
-        <p>Here are some examples of different coverage criteria:</p>
-        <ul>
-          <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
-          <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
-          <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
-          <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
-        </ul>
-        <tip-box>
-          <p>📦 <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
-          <p>For 100% branch or decision coverage, two test cases are required:</p>
-          <ul>
-            <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-            <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-          </ul>
-          <p>For 100% condition coverage, three test cases are required</p>
-          <ul>
-            <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-            <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-            <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
-          </ul>
-        </tip-box>
-        <ul>
-          <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
-          <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
-        </ul>
+        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: highest intensity coverage">
-                <question>
-                  <p>Which of these gives us the highest intensity of testing?</p>
-                  <ul radio-group="ycei5" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ycei5" type="radio"> a. 100% statement coverage</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ycei5" type="radio"> b. 100% path coverage</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ycei5" type="radio"> c. 100% branch coverage</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ycei5" type="radio"> d. 100% condition coverage</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(b)</p>
-                    <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the
-                      highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer
-                      left them out by mistake.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
+          <p>Here are some examples of different coverage criteria:</p>
+          <ul>
+            <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
+            <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
+            <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
+            <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
+          </ul>
+          <tip-box>
+            <p>📦 <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
+            <p>For 100% branch or decision coverage, two test cases are required:</p>
+            <ul>
+              <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+              <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+            </ul>
+            <p>For 100% condition coverage, three test cases are required</p>
+            <ul>
+              <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+              <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+              <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
+            </ul>
+          </tip-box>
+          <ul>
+            <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the
+              <em>Control Flow Graph (CFG)</em>.</li>
+            <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: highest intensity coverage">
+                  <question>
+                    <p>Which of these gives us the highest intensity of testing?</p>
+                    <ul radio-group="3db75" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> a. 100% statement coverage</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> b. 100% path coverage</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> c. 100% branch coverage</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> d. 100% condition coverage</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(b)</p>
+                      <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the
+                        highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer
+                        left them out by mistake.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -91,7 +96,7 @@
   </panel>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="info" header="`W9.5c` Can explain how test coverage works :star::star::star:" no-close="">
+<panel type="info" header="`W9.5c` Can explain how test coverage works :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -99,28 +104,30 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
-        <p><strong>Coverage analysis can be useful in improving the quality of testing</strong><span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
-        <div
-          v-closeable="" alt="Test Coverage in Intellij">
-          <p>📺 Measuring code coverage in Intellij IDEA</p>
-          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+        <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
+          <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
+
+          <div v-closeable="" alt="Test Coverage in Intellij">
+            <p>📺 Measuring code coverage in Intellij IDEA</p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
+        </div>
+        <div></div>
       </div>
     </div>
-    <div></div>
-  </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
     <p>Measure test coverage in your project.</p>
   </panel>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="info" header="`W9.5d` Can use intermediate features of JUnit :star::star::star:" no-close="">
+<panel type="info" header="`W9.5d` Can use intermediate features of JUnit :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -128,21 +135,23 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="junit-intermediate-three">JUnit: Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p>Some intermediate JUnit techniques that may be useful:</p>
-        <ul>
-          <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
-          <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by)
-            the test.</li>
-          <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
-          <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
-        </ul>
+        <h4 id="junit-intermediate-three">JUnit: Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p>Some intermediate JUnit techniques that may be useful:</p>
+          <ul>
+            <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
+            <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated
+              by) the test.</li>
+            <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
+            <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
@@ -150,7 +159,7 @@
   </panel>
 </panel>
 <!-- ==================================================================================================== -->
-<panel type="info" header="`W9.5e` Can explain TDD :star::star::star:" no-close="">
+<panel type="info" header="`W9.5e` Can explain TDD :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -158,40 +167,42 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then write
-          the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
+        <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: When do we write tests in TDD?">
-                <question>
-                  <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
-                  <ul radio-group="gguqb" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="gguqb" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="gguqb" type="radio"> False</label></li>
-                  </ul>
-                  <p>B) Testing tools such as Junit require us to follow TDD.</p>
-                  <ul radio-group="bbzg8" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="bbzg8" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="bbzg8" type="radio"> False</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>A) False</p>
-                    <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
-                    <p>B) False</p>
-                    <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then
+            write the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: When do we write tests in TDD?">
+                  <question>
+                    <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
+                    <ul radio-group="d75ae" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> False</label></li>
+                    </ul>
+                    <p>B) Testing tools such as Junit require us to follow TDD.</p>
+                    <ul radio-group="b90f5" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> False</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>A) False</p>
+                      <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
+                      <p>B) False</p>
+                      <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>

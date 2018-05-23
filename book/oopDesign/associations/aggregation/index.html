@@ -4,65 +4,71 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Object Oriented Programming: Associations: Aggregation</title>
+    <title>CS2103/T Website - Object Oriented Programming: Associations: Aggregation</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can explain the meaning of aggregations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="aggregation-three">Aggregation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
-        <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
-        <p>
-          <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Aggregation" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
-        <p></p>
-        <tip-box>
-          <p>📦 <code>Club</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>Club</code> object.</p><img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png"
-            height="80">
-          <p></p>
-        </tip-box>
-        <tip-box type="tip">
-          <p><strong>Aggregation vs Composition</strong></p>
-          <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
-        </tip-box>
+        <p>🏆 Can explain the meaning of aggregations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
       </div>
-      <div>
+    </tip-box>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <h4 id="aggregation-three">Aggregation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
+            <p>
+              <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Aggregation" expanded=""
+                fragment="title-and-body"></panel>
+            </p>
+            <p></p>
+            <tip-box>
+              <p>📦 <code>Club</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>Club</code> object.</p>
+              <img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
+              <p></p>
+            </tip-box>
+            <tip-box type="tip">
+              <p><strong>Aggregation vs Composition</strong></p>
+              <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
+            </tip-box>
+          </div>
+          <div>
             <div>
-              <panel header=":lock::key: Which one is not recommended to use?">
-                <question>
-                  <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                  <ul radio-group="xy864" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="xy864" type="radio"> a. Composition symbol</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="xy864" type="radio"> b. Aggregation symbol</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(b)</p>
-                  </div>
-                </question>
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock::key: Which one is not recommended to use?">
+                    <question>
+                      <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                      <ul radio-group="29b56" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
+                      </ul>
+                      <div slot="answer">
+                        <p>(b)</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
               </panel>
             </div>
-          </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -72,5 +78,8 @@
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

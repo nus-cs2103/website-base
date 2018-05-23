@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Testing: TDD</title>
+    <title>CS2103/T Website - Testing: TDD</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Testing →</strong></span></p>
   <h2 id="tdd">TDD</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain TDD <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain TDD <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then
@@ -38,14 +38,14 @@
                   <panel header=":lock::key: When do we write tests in TDD?">
                     <question>
                       <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
-                      <ul radio-group="wtonp" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wtonp" type="radio"> True</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="wtonp" type="radio"> False</label></li>
+                      <ul radio-group="d75ae" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> True</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> False</label></li>
                       </ul>
                       <p>B) Testing tools such as Junit require us to follow TDD.</p>
-                      <ul radio-group="r4pxh" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4pxh" type="radio"> True</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="r4pxh" type="radio"> False</label></li>
+                      <ul radio-group="b90f5" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> True</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> False</label></li>
                       </ul>
                       <div slot="answer">
                         <p>A) False</p>
@@ -63,15 +63,14 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can follow TDD <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can follow TDD <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>Note that TDD does not imply writing all the test cases first before writing functional code. Rather, proceed in small steps:</p>
@@ -96,5 +95,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

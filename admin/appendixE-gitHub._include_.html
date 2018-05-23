@@ -19,7 +19,8 @@
       <ul>
         <li>
           <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
-            of good and bad profile photos.<br><img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+            of good and bad profile photos.<br>
+            <img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
         </li>
         <li>
           <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you can request permission
@@ -29,6 +30,17 @@
     </div>
   </panel>
 </div>
+<div id="git-username">
+  <h2 id="setting-git-username-to-match-github-username">Setting Git Username to Match GitHub Username</h2>
+  <p>We use various tools to analyze your code. <mark>For us to be able to identify your commits, you should use the GitHub username as your Git username as well. If there is a mismatch, or if you use multiple user names for Git,</mark> our tools might miss
+    some of your work and as a result you might not get credit for some of your work.</p>
+  <p>In each Computer you use for coding, after installing Git, you should set the Git username as follows.</p>
+  <ol>
+    <li>Open a command window that can run Git commands (e.g., Git bash window)</li>
+    <li>Run the command <code>git config --global user.name YOUR_GITHUB_USERNAME</code><br> e.g., <code>git config --global user.name JohnDoe</code></li>
+  </ol>
+  <p>More info about setting Git username is <a href="https://help.github.com/articles/setting-your-username-in-git/">here</a>.</p>
+</div>
 <div id="tutorial-pr-instructions">
   <h2 id="submitting-pull-requests-as-evidence-of-an-lo">Submitting Pull Requests as evidence of an LO</h2>
   <ol>
@@ -36,24 +48,27 @@
       <p>Fork the repo to your personal GitHub account, if you haven't done so already.</p>
     </li>
     <li>
-      <p>Create a branch named after the LO IDe.g. <code>W2.2b</code><br><mark>Remember to switch to master branch before creating the new branch.</mark></p>
+      <p>Create a branch named after the LO IDe.g. <code>W2.2b</code><br>
+        <mark>Remember to switch to master branch before creating the new branch.</mark></p>
     </li>
     <li>
       <p>Commit your changes to that branch. Push to your fork.</p>
     </li>
     <li>
-      <p>Create a Pull Request against the master branch of the repo<br><code>https://github.com/nus-cs2103-AY1718S2/{repo_name}</code><br> e.g. <code>https://github.com/nus-cs2103-AY1718S2/addressbook-level1</code><br><mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark><br>
-        <img
-          src="/website/admin/images/PrDetails.png" width="700"><br> PR name should be: <code>[LO_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[W2.2b][W09-A1]James Yong</code>. Your Team ID can be found in <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&amp;single=true">this page</a>.
-          Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.</p>
+      <p>Create a Pull Request against the master branch of the repo<br>
+        <code>https://github.com/nus-cs2103-AY1718S2/{repo_name}</code><br> e.g. <code>https://github.com/nus-cs2103-AY1718S2/addressbook-level1</code><br>
+        <mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark> <br>
+        <img src="/website/admin/images/PrDetails.png" width="700"><br> PR name should be: <code>[LO_ID][TEAM_ID]Your Name</code><br> e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), <code>[W2.2b][W09-A1]James Yong</code>. Your Team ID
+        can be found in <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&amp;single=true">this page</a>. Note that our tutorial IDs are different from
+        those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.</p>
     </li>
   </ol>
   <panel header="%%Schedule » Tutorial Schedule%%">
     <div>
       <tip-box type="important">
-        <p>Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code><code>0900</code> and so on.</p>
+        <p>Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
       </tip-box>
-      <table class="markbind-table table">
+      <table class="markbind-table table table-bordered table-striped">
         <thead>
           <tr>
             <th>Module</th>
@@ -198,7 +213,8 @@
   <p></p>
   <ol start="5">
     <li>
-      <p>Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br><img src="images/FilesChangedTab.png" alt=""></p>
+      <p>Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br>
+        <img src="images/FilesChangedTab.png" alt=""></p>
     </li>
     <li>
       <p>If the content of the PR is not as you expected, you can fix those problems in your local repo, commit, and push those new commits to the fork. The PR content will update automatically to match new commits. Alternatively, you can close that PR and
@@ -269,6 +285,7 @@
       </li>
     </ul>
   </tip-box>
+
   <tip-box>
     <p>Priority labels:</p>
     <ul>
@@ -276,7 +293,14 @@
       <li><code>priority.medium</code> : Nice to have</li>
       <li><code>priority.low</code> : Unlikely to do</li>
     </ul>
-  </tip-box><span id="bug-severity"><tip-box><p>Bug Severity labels:</p><ul><li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li><li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li><li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li></ul></tip-box></span>
+  </tip-box>
+  <span id="bug-severity">
+<tip-box>
+<p>Bug Severity labels:</p>
+<ul>
+<li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+<li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+<li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li></ul></tip-box></span>
   <ul>
     <li>
       <p>Create following milestones : <code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>, <code>v1.5rc</code>, <code>v1.5</code></p>
@@ -293,7 +317,9 @@
   <h3 id="using-issues">Using Issues:</h3>
   <ul>
     <li>
-      <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong><span class="dimmed">e.g.</span><code>Title: As a user I can add a deadline</code><br><code>Description: ... so that I can keep track of my deadlines</code></p>
+      <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong>
+        <span class="dimmed">e.g.</span> <code>Title: As a user I can add a deadline</code><br>
+        <code>Description: ... so that I can keep track of my deadlines</code></p>
     </li>
     <li>
       <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
@@ -306,17 +332,17 @@
       </ul>
     </li>
     <li>
-      <p><strong>Write a descriptive title for the issue.</strong><span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
+      <p><strong>Write a descriptive title for the issue.</strong> <span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
     </li>
     <li>
       <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
       <ul>
-        <li><code>Implementing parser</code><span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
-        <li><code>Implementing parser support for adding of floating tasks</code><span class="dimmed">: appropriate size.</span></li>
+        <li><code>Implementing parser</code>  <span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
+        <li><code>Implementing parser support for adding of floating tasks</code> <span class="dimmed">: appropriate size.</span></li>
       </ul>
     </li>
     <li>
-      <p><strong>Do not track things taken for granted.</strong><span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+      <p><strong>Do not track things taken for granted.</strong> <span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
     </li>
     <li>
       <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description
@@ -342,7 +368,8 @@
         <p>Note that you can change the milestone plan along the way as necessary.</p>
       </li>
     </ul>
-    <p><strong>Wrapping up a Milestone</strong>:<br><mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
+    <p><strong>Wrapping up a Milestone</strong>:<br>
+      <mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
     <ul>
       <li>
         <p>A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.</p>
@@ -351,10 +378,12 @@
         <p>All tests passing on Travis for the version tagged above.</p>
       </li>
       <li>
-        <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br><img src="/website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
+        <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br>
+          <img src="/website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
       </li>
       <li>
-        <p>Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br><img src="/website/admin/images/closingMilestones.png" width="700"></p>
+        <p>Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br>
+          <img src="/website/admin/images/closingMilestones.png" width="700"></p>
       </li>
       <li>
         <p>Optionally, issues for the next milestone are assigned to team members (this is not compulsory to do <em>before</em> the tutorial, but we recommend you to do it soon after the tutorial).</p>

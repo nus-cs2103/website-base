@@ -4,32 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Software Architecture: Architectural Styles</title>
+    <title>CS2103/T Website - Software Architecture: Architectural Styles</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Software Architecture →</strong></span></p>
   <h2 id="architectural-styles">Architectural Styles</h2>
   <div id="main">
     <div>
-      <h3 id="introduction">Introduction</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="introduction">Introduction</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can explain architectural styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can explain architectural styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
@@ -38,7 +39,8 @@
                     <p>📦 n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
                   </tip-box>
                   <modal title="" id="modal:archiStyles-buildingArchitectures">
-                    <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br><sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
+                    <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br>
+                      <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
                   </modal>
                 </div>
                 <div></div>
@@ -49,23 +51,23 @@
       </panel>
     </div>
     <div>
-      <h3 id="n-tier-architectural-style">N-tier Architectural Style</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="n-tier-architectural-style">N-tier Architectural Style</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can identify n-tier architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can identify n-tier architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
-                  <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p><img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png"
-                    height="150">
+                  <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
+                  <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
                   <tip-box>
                     <p>📦 Operating systems and network communication software often use n-tier style.
                       <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
@@ -80,26 +82,28 @@
       </panel>
     </div>
     <div>
-      <h3 id="client-server-architectural-style">Client-server Architectural Style</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="client-server-architectural-style">Client-server Architectural Style</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can identify client-server architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can identify client-server architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
-                    applications.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+                    applications.</p>
+                  <img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
                   <p></p>
                   <tip-box>
-                    <p>📦 The online game and teh Web application below uses the client-server style.</p><img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
+                    <p>📦 The online game and teh Web application below uses the client-server style.</p>
+                    <img src="/website/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
                 </div>
                 <div></div>
               </div>
@@ -109,27 +113,28 @@
       </panel>
     </div>
     <div>
-      <h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can identify transaction processing architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can identify transaction processing architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong> Task
-                    queuing, ordering, undo etc. are handled by the dispatcher.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+                    queuing, ordering, undo etc. are handled by the dispatcher.</p>
+                  <img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
                   <tip-box>
                     <p>📦 In this example from a Banking system, transactions are generated by the terminals used by
-                      <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p><img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png"
-                      height="120"></tip-box>
+                      <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
+                    <img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
                 </div>
                 <div></div>
               </div>
@@ -139,19 +144,19 @@
       </panel>
     </div>
     <div>
-      <h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can identify service-oriented architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can identify service-oriented architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
@@ -160,7 +165,8 @@
                   <tip-box>
                     <p>📦 Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards. Using these web services, an
                       ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA architecture, their web services
-                      can be reused by the web application, even if all three systems use different programming platforms.</p><img src="/website/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                      can be reused by the web application, even if all three systems use different programming platforms.</p>
+                    <img src="/website/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
                     <p></p>
                   </tip-box>
                 </div>
@@ -172,25 +178,27 @@
       </panel>
     </div>
     <div>
-      <h3 id="event-driven-architectural-style">Event-driven Architectural Style</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="event-driven-architectural-style">Event-driven Architectural Style</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can identify event-driven architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can identify event-driven architectural style <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
-                  <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                    This architectural style is often used in GUIs.</p><img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
+                  <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                    This architectural style is often used in GUIs.</p>
+                  <img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
                   <tip-box>
                     <p>📦 When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted to components related to
-                      operating the Printer. The same event can be sent to multiple consumers too.</p><img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
+                      operating the Printer. The same event can be sent to multiple consumers too.</p>
+                    <img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
                 </div>
                 <div></div>
               </div>
@@ -200,19 +208,19 @@
       </panel>
     </div>
     <div>
-      <h3 id="more">More</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="more">More</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="more-styles-two">More Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can name several other architecture styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="more-styles-two">More Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can name several other architecture styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</strong></p>
@@ -241,15 +249,14 @@
             </panel>
           </div>
           <div>
-            <div>
-              <h4 id="using-styles-two">Using Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can explain how architectural styles are combined <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="using-styles-two">Using Styles <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can explain how architectural styles are combined <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>Most applications use a mix of these architectural styles.</strong></p>
@@ -278,7 +285,8 @@
                                 <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
                                 <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
                                 <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
-                              </ol><img src="/website/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
+                              </ol>
+                              <img src="/website/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
                               <p></p>
                             </div>
                           </question>
@@ -299,5 +307,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

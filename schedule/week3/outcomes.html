@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/css/main.css">
+<link rel="stylesheet" href="/website/css/schedule.css">
+<div class="website-content">
+  <h2 id="week-3-outcomes">Week 3 - Outcomes</h2>
+  <div id="main">
+    <h3 id="implementation">Implementation:</h3>
+    <h4 id="refactoring">Refactoring:</h4>
+    <p>
+      <panel type="warning" src="/website\schedule\week3\outcome-refactor._include_.html" header="**`W3.1` Can refactor code at a basic level :star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h4 id="code-quality">Code Quality:</h4>
+    <p>
+      <panel type="warning" src="/website\schedule\week3\outcome-styleGuide._include_.html" header="**`W3.2` Can follow a simple style guide :star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="warning" src="/website\schedule\week3\outcome-readability._include_.html" header="**`W3.3` Can improve code readability :star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="warning" src="/website\schedule\week3\outcome-naming._include_.html" header="**`W3.4` Can use good naming :star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="warning" src="/website\schedule\week3\outcome-codingPractice._include_.html" header="**`W3.5` Can avoid unsafe coding practices :star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="info" src="/website\schedule\week3\outcome-comment._include_.html" header="**`W3.6` Can write good code comments :star::star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h4 id="ides">IDEs:</h4>
+    <p>
+      <panel type="info" src="/website\schedule\week3\outcome-ide._include_.html" header="**`W3.7` Can use intermediate level features of an IDE :star::star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="project-management">Project Management:</h3>
+    <p>
+      <panel type="danger" src="/website\schedule\week3\outcome-remoteRepo._include_.html" header="**`W3.8` Can communicate with a remote repo :star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="info" src="/website\schedule\week3\outcome-gitHistory._include_.html" header="**`W3.9` Can traverse Git history :star::star::star:**" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="other">Other:</h3>
+
+    <panel type="danger" header="**`W3.10` Can work with a 1KLoC code base :star: ==[Compulsory]==**" expandable="" no-close="">
+      <panel header=":dart: Evidence" expanded="">
+        <tip-box type="important">
+          <p>This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO <strong>(in Week 5)</strong>:</p>
+          <panel type="seamless" header="[For Reference] details of the Week 5 LO mentioned above">
+            <p>🎯 Evidence:</p>
+            <div>
+              <tip-box type="important">
+                This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
+              </tip-box>
+              <p>💡 <strong>Those who failed to produce working code at 1KLoC milestone</strong> (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
+              <p>💡 When working with existing code, a safe approach is to <strong>change the code in very small steps, each resulting in a verifiable change</strong> without breaking the app. For example, when adding a new <code>sort</code> command, the
+                first few steps can be,</p>
+              <ol>
+                <li>Teach the app to accept a <code>sort</code> command but ignore it.</li>
+                <li>Next, teach the app to direct the <code>sort</code> command to an existing command e.g. <code>sort</code> command simply invokes the <code>list</code> command internally.</li>
+                <li>Add a <code>SortCommand</code> class but make it simply a copy of the the existing <code>ListCommand</code>. Direct the <code>sort</code> command to the new <code>SortCommand</code>.</li>
+                <li>...</li>
+              </ol>
+              <p>💡 Note that you can reuse the code you write here in your final project, if applicable.</p>
+              <h4 id="individual-component">Individual component:</h4>
+              <p><strong>You can omit this individual component if</strong> you have worked with a code base that meets the following criteria:</p>
+              <ul>
+                <li>more than 2KLoC of the code base was written by other developers</li>
+                <li>your code included automated tests</li>
+                <li>your code was contributed via a proper revision control workflow e.g. pull requests</li>
+              </ul>
+              <p><strong>Requirements</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">AddressBook - Level2</a>] <span class="dimmed">e.g. add a new command</span>. It can be the same enhancement you did
+                to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,</p>
+              <ul>
+                <li>update the User Guide</li>
+                <li>update existing tests and add new tests if necessary, for both JUnit tests and I/O tests</li>
+                <li>follow the coding standard</li>
+                <li>follow the OOP style</li>
+              </ul>
+              <p>Optional but encouraged:</p>
+              <ul>
+                <li>Update the Developer Guide</li>
+              </ul>
+              <div>
+                <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+                <p>
+                  <panel src="/website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"
+                    header="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                </p>
+              </div>
+              <h4 id="team-component">Team component:</h4>
+              <p>The team component is <mark>to be done by all members</mark>, including those who were allowed to omit the individual component.</p>
+              <ul>
+                <li>
+                  <p>Review PRs created by team members in the <em>Individual Component</em> above <span class="dimmed">i.e. add review comments in the PR created against module repo</span>. You can either give suggestions to improve, or ask questions to
+                    understand, the code written by the team member.</p>
+                </li>
+                <li>
+                  <p><strong>Requirements</strong>: Try to ensure that each PR reviewed by <em>at least</em> one team member and each team member's PR is reviewed by at least one other team member.</p>
+                </li>
+                <li>
+                  <p><strong>Submission</strong>: Just update PR created in the individual component by adding comments/commits to it.</p>
+                </li>
+              </ul>
+            </div>
+          </panel>
+        </tip-box>
+        <p><strong>Acceptable</strong>: Evidence that you have worked with a code base larger than 1KLoC. <span class="dimmed">e.g. a project in a previous module or a pet project</span></p>
+        <p><strong>Suggested</strong>: Do an enhancement to [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1">AddressBook - Level1</a>] <span class="dimmed">e.g. add a new command</span></p>
+        <ul>
+          <li>
+            <p>The size of the enhancement does not matter.</p>
+          </li>
+          <li>
+            <p>Change the code in small steps and commit after each significant change.</p>
+          </li>
+          <li>
+            <p>Remember to update all relevant documentation and tests.</p>
+          </li>
+          <li>
+            <p>Try to follow the coding standard in your new code.</p>
+          </li>
+          <li>
+            <p>Try to stay within the procedural (not OOP) style of the code base.</p>
+          </li>
+          <li>
+            <p>[Optional] Fork address <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1">AddressBook - Level1</a> to your GitHub account and push your changes to your fork.</p>
+            <tip-box type="tip">
+              <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
+            </tip-box>
+          </li>
+        </ul>
+        <p><strong>Submission</strong>: demo during tutorial.</p>
+      </panel>
+    </panel>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>

@@ -1,4 +1,4 @@
-<panel type="warning" header="`W11.2a` Can explain the Model View Controller (MVC) design pattern :star::star:" no-close="">
+<panel type="warning" header="`W11.2a` Can explain the Model View Controller (MVC) design pattern :star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -6,41 +6,44 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Context</strong></p>
-        <p>Most applications support storage/retrieval of information, displaying of information to the user (often via multiple UIs having different formats), and changing stored information based on external inputs.</p>
-        <p><strong>Problem</strong></p>
-        <p>To reduce coupling resulting from the interlinked nature of the features described above.</p>
-        <p><strong>Solution</strong></p>
-        <p>To decouple data, presentation, and control logic of an application by separating them into three different components: Model, View and Controller.</p>
-        <ul>
-          <li><em>View</em>: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
-          <li><em>Controller</em>: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
-          <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
-        </ul>
-        <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p><img src="/website/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
-        <p></p>
-        <tip-box>
-          <p>📦 Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p><img src="/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png"
-            width="500">
-          <p></p>
-          <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
-        </tip-box>
-        <p>Note that in a simple UI where there’s only one view, Controller and View can be combined as one class.</p>
-        <p>There are many variations of the MVC model used in different domains. For example, the one used in a desktop GUI could be different from the one used in a Web application.</p>
+        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong>Context</strong></p>
+          <p>Most applications support storage/retrieval of information, displaying of information to the user (often via multiple UIs having different formats), and changing stored information based on external inputs.</p>
+          <p><strong>Problem</strong></p>
+          <p>To reduce coupling resulting from the interlinked nature of the features described above.</p>
+          <p><strong>Solution</strong></p>
+          <p>To decouple data, presentation, and control logic of an application by separating them into three different components: Model, View and Controller.</p>
+          <ul>
+            <li><em>View</em>: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
+            <li><em>Controller</em>: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
+            <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
+          </ul>
+          <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
+          <img src="/website/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
+          <p></p>
+          <tip-box>
+            <p>📦 Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
+            <img src="/website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
+            <p></p>
+            <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
+          </tip-box>
+          <p>Note that in a simple UI where there’s only one view, Controller and View can be combined as one class.</p>
+          <p>There are many variations of the MVC model used in different domains. For example, the one used in a desktop GUI could be different from the one used in a Web application.</p>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
     <p>Explain relevance of the pattern to the project.</p>
   </panel>
 </panel>
-<panel type="info" header="`W11.2b` Can explain the Observer design pattern :star::star::star:" no-close="">
+<panel type="info" header="`W11.2b` Can explain the Observer design pattern :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -48,112 +51,120 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <tip-box>
-          <p>📦 Here is a scenario from the a student management system where the user is adding a new student to the system.</p><img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
+        <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <tip-box>
+            <p>📦 Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
+            <img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
+            <p></p>
+            <p>Now, assume the system has two additional views used in parallel by different users:</p>
+            <ul>
+              <li><code>StudentListUi</code>: that accesses a list of students and</li>
+              <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
+            </ul>
+            <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
+            <img src="/website/book/designPatterns/observer/what/images/studentListUI.png" height="180">
+            <p></p>
+            <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type
+              of problem addressed by the Observer pattern.</p>
+          </tip-box>
+          <p><strong>Context</strong></p>
+          <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
+          <p><strong>Problem</strong></p>
+          <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
+          <p><strong>Solution</strong></p>
+          <p>Force the communication through an interface known to both parties.</p>
+          <img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
           <p></p>
-          <p>Now, assume the system has two additional views used in parallel by different users:</p>
-          <ul>
-            <li><code>StudentListUi</code>: that accesses a list of students and</li>
-            <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
-          </ul>
-          <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p><img src="/website/book/designPatterns/observer/what/images/studentListUI.png"
-            height="180">
-          <p></p>
-          <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type of
-            problem addressed by the Observer pattern.</p>
-        </tip-box>
-        <p><strong>Context</strong></p>
-        <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
-        <p><strong>Problem</strong></p>
-        <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
-        <p><strong>Solution</strong></p>
-        <p>Force the communication through an interface known to both parties.</p><img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
-        <p></p>
-        <tip-box>
-          <p>📦Here is the Observer pattern applied to the student management system.</p>
-          <p>During initialization of the system,</p>
-          <ol>
-            <li>First, create the relevant objects.</li>
-          </ol>
-          <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
+          <tip-box>
+            <p>📦Here is the Observer pattern applied to the student management system.</p>
+            <p>During initialization of the system,</p>
+            <ol>
+              <li>First, create the relevant objects.</li>
+            </ol>
+            <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
 StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();
 StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();
 </code></pre>
-          <ol start="2">
-            <li>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</li>
-          </ol>
-          <pre><code class="hljs java">studentList.addUi(listUi);
+            <ol start="2">
+              <li>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</li>
+            </ol>
+            <pre><code class="hljs java">studentList.addUi(listUi);
 studentList.addUi(statusUi);
 </code></pre>
-          <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
-          <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+            <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
+            <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{
     observerList.add(o);
 }
 </code></pre>
-          <p>As such, whenever the data in <code>StudentList</code> changes (e.g. when a new student is added to the <code>StudentList</code>), all interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
-          <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+            <p>As such, whenever the data in <code>StudentList</code> changes (e.g. when a new student is added to the <code>StudentList</code>), all interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
+            <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">for</span>(Observer o: observerList) <span class="hljs-comment">//for each observer in the list</span>
         o.update();
 }
 </code></pre>
-          <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
-          <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
+            <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
+            <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
 }
 </code></pre>
-          <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
-        </tip-box>
-        <p>Here is the generic description of the observer pattern:</p><img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
-        <p></p>
-        <ul>
-          <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes
-            of) the <code>&lt;&lt; Observable &gt;&gt;</code> object.</li>
-          <li>The <code>&lt;&lt; Observable &gt;&gt;</code> maintains a list of <code>&lt;&lt; Observer &gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation adds a new <code>&lt;&lt; Observer &gt;&gt;</code> to the list of <code>&lt;&lt; Observer &gt;&gt;s</code>.</li>
-          <li>Whenever there is a change in the <code>&lt;&lt; Observable &gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt; Observer &gt;&gt;s</code> in the list.</li>
-        </ul>
-        <p>In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
-      </div>
-      <div>
+            <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
+          </tip-box>
+          <p>Here is the generic description of the observer pattern:</p>
+          <img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
+          <p></p>
+          <ul>
+            <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes
+              of) the <code>&lt;&lt; Observable &gt;&gt;</code> object.</li>
+            <li>The <code>&lt;&lt; Observable &gt;&gt;</code> maintains a list of <code>&lt;&lt; Observer &gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation adds a new <code>&lt;&lt; Observer &gt;&gt;</code> to the list of <code>&lt;&lt; Observer &gt;&gt;s</code>.</li>
+            <li>Whenever there is a change in the <code>&lt;&lt; Observable &gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt; Observer &gt;&gt;s</code> in the list.</li>
+          </ul>
+          <p>In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
+        </div>
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: polymorphism and Observer pattern.">
-                <question has-input="true">
-                  <p>Explain how polymorphism is used in the Observer pattern.</p>
-                  <div slot="answer"><img src="/website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
-                    <p></p>
-                    <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called <code>Observer</code>                      and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual type. That is, <code>update()</code>                      method shows polymorphic behavior.</p>
-                    <p>In the example given below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p><img src="/website/book/designPatterns/observer/what/images/studentListStudentListObserver.png"
-                      height="190">
-                    <p></p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock::key: Observer patter usage">
-                <question>
-                  <p>The Observer pattern can be used when we want one object to initiate an activity in another object without having a direct dependency from the first object to the second object.</p>
-                  <ul radio-group="t2v7l" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="t2v7l" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="t2v7l" type="radio"> False</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>True</p>
-                    <p>Explanation: Yes. For example, when applying the Observer pattern to an MVC structure, Views can get notified and update themselves about a change to the Model without the Model having to depend on the Views.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: polymorphism and Observer pattern.">
+                  <question has-input="true">
+                    <p>Explain how polymorphism is used in the Observer pattern.</p>
+                    <div slot="answer">
+                      <img src="/website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
+                      <p></p>
+                      <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called
+                        <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual type.
+                        That is, <code>update()</code> method shows polymorphic behavior.</p>
+                      <p>In the example given below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p>
+                      <img src="/website/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
+                      <p></p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Observer patter usage">
+                  <question>
+                    <p>The Observer pattern can be used when we want one object to initiate an activity in another object without having a direct dependency from the first object to the second object.</p>
+                    <ul radio-group="caf40" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> False</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>True</p>
+                      <p>Explanation: Yes. For example, when applying the Observer pattern to an MVC structure, Views can get notified and update themselves about a change to the Model without the Model having to depend on the Views.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -162,7 +173,7 @@ studentList.addUi(statusUi);
     <p>Explain relevance of the pattern to the project.</p>
   </panel>
 </panel>
-<panel type="success" header="`W11.2c` Can explain the Abstraction Occurrence design pattern :star::star::star::star:" no-close="">
+<panel type="success" header="`W11.2c` Can explain the Abstraction Occurrence design pattern :star::star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -170,102 +181,108 @@ studentList.addUi(statusUi);
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Context</strong></p>
-        <p>There is a group of similar entities that appears to be ‘occurrences’ (or ‘copies’) of the same thing, sharing lots of common information, but also differing in significant ways.</p>
-        <tip-box>
-          <p>📦 In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also significant differences like purchase date and barcode number (assumed to be
-            unique for each copy of the book).</p>
-          <p>Other examples:</p>
-          <ul>
-            <li>Episodes of the same TV series</li>
-            <li>Stock items of the same product model (e.g. TV sets of the same model).</li>
-          </ul>
-        </tip-box>
-        <p><strong>Problem</strong></p>
-        <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
-        <tip-box>
-          <p>📦 Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png"
-            height="200">
-          <p></p>
-          <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian realized
-            that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian (or the system) has to make
-            sure that all information entered is the same as the existing copies to avoid inconsistency.</p>
-        </tip-box>
-        <p><strong>Anti-pattern</strong></p>
-        <tip-box>
-          <p>📦 Refer to the same Library example given above.</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
-          <p></p>
-          <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic
-            because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
-        </tip-box>
-        <p><strong>Solution</strong></p>
-        <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
-        <tip-box>
-          <p>📦 Given below is how the pattern is applied to the Library example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
-          <p></p>
-          <p>📦 Here's a more generic example:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
-          <p></p>
-        </tip-box>
-        <p>The general solution:</p><img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
-        <p></p>
-        <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class names,
-          but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
+        <h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: Which situations match the pattern?">
-                <question has-input="true">
-                  <p>Which pairs of classes are likely to be the <code>&lt;&lt; Abstraction &gt;&gt;</code> and the <code>&lt;&lt; Occurrence &gt;&gt;</code> of the abstraction occurrence pattern?</p>
-                  <ol>
-                    <li>CarModel, Car. (Here CarModel represents a particular model of a car produced by the car manufacturer. E.g. BMW R4300)</li>
-                    <li>Car, Wheel</li>
-                    <li>Club, Member</li>
-                    <li>TeamLeader, TeamMember</li>
-                    <li>Magazine (E.g. ReadersDigest, PCWorld), MagazineIssue</li>
-                  </ol>
-                  <div slot="answer">
-                    <p>One of the key things to keep in mind is that the <code>&lt;&lt; Abstraction &gt;&gt;</code> does not represent a real entity. Rather, it represents some information common to a set of objects. A single real entity is represented by
-                      an object of <code>&lt;&lt; Abstraction &gt;&gt;</code> type and <code>&lt;&lt; Occurrence &gt;&gt;</code> type.</p>
-                    <p>Before applying the pattern, some attributes have the same values for multiple objects. For example, w.r.t. the BookTitle-BookCopy example given in this handout, values of attributes such as <code>book_title</code>, <code>ISBN</code>                      are exactly the same for copies of the same book.</p>
-                    <p>After applying the pattern, the <code>Abstraction</code> and the <code>Occurrence</code> classes together represent one entity. It is like one class has been split into two. For example, a <code>BookTitle</code> object and a <code>BookCopy</code>                      object combines to represent an actual <code>Book</code>.</p>
+          <p><strong>Context</strong></p>
+          <p>There is a group of similar entities that appears to be ‘occurrences’ (or ‘copies’) of the same thing, sharing lots of common information, but also differing in significant ways.</p>
+          <tip-box>
+            <p>📦 In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also significant differences like purchase date and barcode number (assumed to be
+              unique for each copy of the book).</p>
+            <p>Other examples:</p>
+            <ul>
+              <li>Episodes of the same TV series</li>
+              <li>Stock items of the same product model (e.g. TV sets of the same model).</li>
+            </ul>
+          </tip-box>
+          <p><strong>Problem</strong></p>
+          <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
+          <tip-box>
+            <p>📦 Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p>
+            <img src="/website/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
+            <p></p>
+            <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the librarian realized
+              that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian (or the system) has to
+              make sure that all information entered is the same as the existing copies to avoid inconsistency.</p>
+          </tip-box>
+          <p><strong>Anti-pattern</strong></p>
+          <tip-box>
+            <p>📦 Refer to the same Library example given above.</p>
+            <img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+            <p></p>
+            <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is problematic
+              because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
+          </tip-box>
+          <p><strong>Solution</strong></p>
+          <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
+          <tip-box>
+            <p>📦 Given below is how the pattern is applied to the Library example:</p>
+            <img src="/website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
+            <p></p>
+            <p>📦 Here's a more generic example:</p>
+            <img src="/website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
+            <p></p>
+          </tip-box>
+          <p>The general solution:</p>
+          <img src="/website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
+          <p></p>
+          <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are not class
+            names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Which situations match the pattern?">
+                  <question has-input="true">
+                    <p>Which pairs of classes are likely to be the <code>&lt;&lt; Abstraction &gt;&gt;</code> and the <code>&lt;&lt; Occurrence &gt;&gt;</code> of the abstraction occurrence pattern?</p>
                     <ol>
-                      <li>CarModel, Car: <strong>Yes</strong></li>
-                      <li>Car, Wheel: <strong>No. Wheel is a ‘part of’ Car. A wheel is not an occurrence of Car.</strong></li>
-                      <li>Club, Member: <strong>No. this is a ‘part of’ relationship.</strong></li>
-                      <li>TeamLeader, TeamMember: <strong>No. A TeamMember is not an occurrence of a TeamLeader or vice versa.</strong></li>
-                      <li>Magazine, MagazineIssue: <strong>Yes.</strong></li>
+                      <li>CarModel, Car. (Here CarModel represents a particular model of a car produced by the car manufacturer. E.g. BMW R4300)</li>
+                      <li>Car, Wheel</li>
+                      <li>Club, Member</li>
+                      <li>TeamLeader, TeamMember</li>
+                      <li>Magazine (E.g. ReadersDigest, PCWorld), MagazineIssue</li>
                     </ol>
-                  </div>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock::key: Apply pattern?">
-                <question>
-                  <p>Which one of these is most suited for an application of the Abstraction Occurrence pattern?</p>
-                  <ul radio-group="jlnqr" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jlnqr" type="radio"> a. Stagings of a stage drama at various theatres</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jlnqr" type="radio"> b. Teachers and their students</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="jlnqr" type="radio"> c. Modules and exams/assignments given by those modules</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(a)</p>
-                    <p>Explanation:</p>
-                    <p>(a) Stagings of a drama are ‘occurrences’ of the drama. They have many attributes common (e.g., Drama name, producer, cast, etc.) but some attributes are different (e.g., venue, time).</p>
-                    <p>(b) Students are not occurrences of a Teacher or vice versa</p>
-                    <p>(c) Module, Exam, Assignment are distinct entities with associations among them. But none of them can be considered an occurrence of another.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+                    <div slot="answer">
+                      <p>One of the key things to keep in mind is that the <code>&lt;&lt; Abstraction &gt;&gt;</code> does not represent a real entity. Rather, it represents some information common to a set of objects. A single real entity is represented
+                        by an object of <code>&lt;&lt; Abstraction &gt;&gt;</code> type and <code>&lt;&lt; Occurrence &gt;&gt;</code> type.</p>
+                      <p>Before applying the pattern, some attributes have the same values for multiple objects. For example, w.r.t. the BookTitle-BookCopy example given in this handout, values of attributes such as <code>book_title</code>, <code>ISBN</code>                        are exactly the same for copies of the same book.</p>
+                      <p>After applying the pattern, the <code>Abstraction</code> and the <code>Occurrence</code> classes together represent one entity. It is like one class has been split into two. For example, a <code>BookTitle</code> object and a <code>BookCopy</code>                        object combines to represent an actual <code>Book</code>.</p>
+                      <ol>
+                        <li>CarModel, Car: <strong>Yes</strong></li>
+                        <li>Car, Wheel: <strong>No. Wheel is a ‘part of’ Car. A wheel is not an occurrence of Car.</strong></li>
+                        <li>Club, Member: <strong>No. this is a ‘part of’ relationship.</strong></li>
+                        <li>TeamLeader, TeamMember: <strong>No. A TeamMember is not an occurrence of a TeamLeader or vice versa.</strong></li>
+                        <li>Magazine, MagazineIssue: <strong>Yes.</strong></li>
+                      </ol>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Apply pattern?">
+                  <question>
+                    <p>Which one of these is most suited for an application of the Abstraction Occurrence pattern?</p>
+                    <ul radio-group="56836" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> a. Stagings of a stage drama at various theatres</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> b. Teachers and their students</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> c. Modules and exams/assignments given by those modules</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(a)</p>
+                      <p>Explanation:</p>
+                      <p>(a) Stagings of a drama are ‘occurrences’ of the drama. They have many attributes common (e.g., Drama name, producer, cast, etc.) but some attributes are different (e.g., venue, time).</p>
+                      <p>(b) Students are not occurrences of a Teacher or vice versa</p>
+                      <p>(c) Module, Exam, Assignment are distinct entities with associations among them. But none of them can be considered an occurrence of another.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -274,7 +291,7 @@ studentList.addUi(statusUi);
     <p>Explain relevance of the pattern to the project.</p>
   </panel>
 </panel>
-<panel type="success" header="`W11.2d` Can recognize some of the GoF design patterns :star::star::star::star:" no-close="">
+<panel type="success" header="`W11.2d` Can recognize some of the GoF design patterns :star::star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -282,31 +299,33 @@ studentList.addUi(statusUi);
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="other-design-patterns-three">Other Design Patterns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>The most famous source of design patterns is the <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot; (GoF) book</a> which contains 23 design patterns divided into three categories</strong>:</p>
-        <ul>
-          <li><strong>Creational</strong>: About object creation. They separate the operation of an application from how its objects are created.
-            <ul>
-              <li>Abstract Factory, Builder, Factory Method, Prototype, Singleton</li>
-            </ul>
-          </li>
-          <li><strong>Structural</strong>: About the composition of objects into larger structures while catering for future extension in structure.
-            <ul>
-              <li>Adapter, Bridge, Composite, Decorator, Façade, Flyweight, Proxy</li>
-            </ul>
-          </li>
-          <li><strong>Behavioral</strong>: Defining how objects interact and how responsibility is distributed among them.
-            <ul>
-              <li>Chain of Responsibility, Command, Interpreter, Template Method, Iterator, Mediator, Memento, Observer, State, Strategy, Visitor</li>
-            </ul>
-          </li>
-        </ul>
+        <h4 id="other-design-patterns-three">Other Design Patterns <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong>The most famous source of design patterns is the <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot; (GoF) book</a> which contains 23 design patterns divided into three categories</strong>:</p>
+          <ul>
+            <li><strong>Creational</strong>: About object creation. They separate the operation of an application from how its objects are created.
+              <ul>
+                <li>Abstract Factory, Builder, Factory Method, Prototype, Singleton</li>
+              </ul>
+            </li>
+            <li><strong>Structural</strong>: About the composition of objects into larger structures while catering for future extension in structure.
+              <ul>
+                <li>Adapter, Bridge, Composite, Decorator, Façade, Flyweight, Proxy</li>
+              </ul>
+            </li>
+            <li><strong>Behavioral</strong>: Defining how objects interact and how responsibility is distributed among them.
+              <ul>
+                <li>Chain of Responsibility, Command, Interpreter, Template Method, Iterator, Mediator, Memento, Observer, State, Strategy, Visitor</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">

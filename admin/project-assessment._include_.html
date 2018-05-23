@@ -3,17 +3,29 @@
 <panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded="">
   <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
   <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
-  <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all and could even be penalized. It may be better to remove such features before submission.</p>
+  <p>❗️ ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all. It may be better to remove such features before submission.</p>
 </panel>
 <panel header="2. **Implementation** [:bust_in_silhouette:][15 marks]" expanded="">
   <p>Evaluates:</p>
   <p><strong>A. Code quality/quantity:</strong></p>
   <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
-  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p><span id="code-quality-tips"><panel header=":bulb: Tips: how to score high for code quality" no-close=""><ul><li><p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p><ul><li>logging</li><li>exceptions</li><li>assertions</li><li>defensive coding</li></ul></li><li><p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>.
-  Checkstyle can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p>
+  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+  <span id="code-quality-tips">
+<panel header=":bulb: Tips: how to score high for code quality" no-close="">
+<ul>
+<li>
+<p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p>
+<ul>
+<li>logging</li>
+<li>exceptions</li>
+<li>assertions</li>
+<li>defensive coding</li></ul></li>
+<li>
+<p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent
+  only <em>some</em> coding standard violations; others need to be checked manually.</p>
   </li>
   <li>
-    <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP and may be penalized.</p>
+    <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.</p>
   </li>
   <li>
     <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
@@ -59,7 +71,7 @@
       <div>
         <p><strong>Preparation</strong>:</p>
         <ul>
-          <li>Ensure you have access to a <strong>computer that is able to run module projects</strong><span class="dimmed"> e.g. has the right Java version</span>.</li>
+          <li>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</li>
           <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
           <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
         </ul>
@@ -67,29 +79,31 @@
       <p><strong>During:</strong></p>
       <ol>
         <li><strong>Take note of your team to test and your <em>Tester ID</em></strong>. Both will be given to you by the teaching team (distributed via IVLE gradebook).</li>
-        <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</li>
+        <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed"> (i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
         <li><strong>[~40 minutes] Test the product and report bugs</strong>
           <ul>
             <li>Launch the jar file. Test it.</li>
-            <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
+            <li>You can use Developer Guide (Appendix named <em>Instructions for Manual Testing</em>) and the User Guide in your testing.</li>
             <li>No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed"> Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven
               and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
-            <li>The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.</li>
+            <li>The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have
+              bugs.</li>
             <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
+            <li>Omit feature that existed in AB4. Instead, test features the team has added.</li>
             <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S2/pe/issues">practical exam issue tracker</a>, <mark>not in the team's repo</mark>.
               <ul>
-                <li>Issue title format: <code>[Tester ID] Issue description</code><span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
+                <li>Issue title format: <code>[Tester ID] Issue description</code> <span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
                 <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others copying your bug reports</span></li>
               </ul>
             </li>
             <li>Report bugs only. Do not post suggestions. These are considered bugs:
               <ul>
-                <li>Behavior differs from the user guide (or test script)</li>
+                <li>Behavior differs from the User Guide (or Developer Guide)</li>
                 <li>A legitimate user behavior is not handled <span class="dimmed"> e.g. incorrect commands, extra parameters</span></li>
                 <li>Behavior is not specified and differs from normal expectations <span class="dimmed"> e.g. error message does not match the error</span></li>
               </ul>
             </li>
-            <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will be penalized</strong>.
+            <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will not earn credit</strong>.
               <ul>
                 <li>Use a descriptive title</li>
                 <li>Give a good description of the bug with steps to reproduce and screenshots</li>
@@ -152,7 +166,7 @@
               </ul>
             </li>
             <li>
-              <p><strong>D. Depth of feature (major feature)</strong> [👤]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
+              <p><strong>D. Depth of feature (major feature)</strong> [👤]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code>                <code>undo</code> <code>redo</code></p>
               <ul>
                 <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
                 <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
@@ -263,7 +277,7 @@
       <p><strong>Grading:</strong></p>
       <ul>
         <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
-        <li>You will lose marks if you missed too many bugs in the product you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
+        <li>You will be graded based on many bugs in the product you tested and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed"> Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
         <li>The bugs found in your product by others will affect your v1.5 marks. You will be given a chance to reject false-positive bug reports.</li>
       </ul>
     </div>

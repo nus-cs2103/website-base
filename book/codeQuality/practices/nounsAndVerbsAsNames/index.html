@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Coding Best Practices: [Practice] Nouns and Verbs as Names</title>
+    <title>CS2103/T Website - Coding Best Practices: [Practice] Nouns and Verbs as Names</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong><span>Coding Best Practices →</span></strong>
     </span>
   </p>
@@ -24,7 +25,7 @@
       <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
       <tip-box>
         <p>Examples:</p>
-        <table class="markbind-table table">
+        <table class="markbind-table table table-bordered table-striped">
           <thead>
             <tr>
               <th>Name for a</th>
@@ -46,11 +47,26 @@
           </tbody>
         </table>
       </tip-box>
-      <p><strong>Distinguish clearly between single valued and multivalued variables.</strong></p>
+      <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
       <tip-box>
-        <p>Examples:</p>
-        <p><code>Person student</code><br><code>ArrayList&lt;Person&gt; students</code></p>
-        <p></p>
+        <p>📦 Examples:</p>
+        <tabs>
+        
+          <tab header="Java">
+            <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+            <pre><code class="hljs java">Person student;
+ArrayList&lt;Person&gt; students;
+</code></pre>
+          </tab>
+        
+          <tab header="Python">
+            <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+            <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
+students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
+</code></pre>
+          </tab>
+        </tabs>
+        <hr>
       </tip-box>
     </div>
   </div>
@@ -59,5 +75,8 @@
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

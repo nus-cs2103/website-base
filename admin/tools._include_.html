@@ -55,7 +55,7 @@ method 4 ...
         <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
 &lt;textbox&gt;
   &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...
+  &lt;input&gt;...&lt;/input&gt;
 &lt;/textbox&gt;
 ...
 </code></pre>
@@ -82,7 +82,7 @@ method 4 ...
         <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
       </li>
       <li>
-        <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong><span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span><br><strong>Claiming credit for code blocks smaller than a method is discouraged</strong>          but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
+        <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>          but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
         <ul>
           <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
           <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
@@ -91,9 +91,9 @@ method 4 ...
         </ul>
       </li>
       <li>
-        <p><strong>You will be penalized if you try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even
-          repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice
-          a team member claiming credit for code that he/she did not write, you can email us (after the final submission) to let us know.</p>
+        <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks
+          within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming
+          credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
       </li>
       <li>
         <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
@@ -126,7 +126,7 @@ method 2 ...
     </ul>
     <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
     <p>You need to put the collated code in the following folders</p>
-    <table class="markbind-table table">
+    <table class="markbind-table table table-bordered table-striped">
       <thead>
         <tr>
           <th>Code Type</th>

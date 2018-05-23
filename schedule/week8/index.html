@@ -1,15 +1,126 @@
-<panel header=":trophy: Outcomes" ctrl-lvl="1" expanded no-close>
-  <include src="outcomes.md#main" />
-</panel>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Week 8</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <p><small>[<a href="/website/schedule/week8/outcomes.html" target="_blank">Open <em>Outcomes</em> in a new Window <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>]</small></p>
+<panel header=":trophy: Outcomes" ctrl-lvl="1" expanded="" no-close="">
+  <div>
+    <h3 id="requirements">Requirements:</h3>
+    <panel type="info" header="**`W8.1` Can apply basic product design guidelines** :star::star::star:" no-close="">
+      <p>No textbook section. To be covered during the lecture.</p>
+      <panel header=":dart: Evidence" expanded="">
+        <p>Apply the discussed guidelines when designing the product (covered by v1.1 deliverables).</p>
+      </panel>
+    </panel>
 
-<panel header=":clipboard: Todo" ctrl-lvl="1" no-close>
-  <include src="todo.md" />
+    <panel type="danger" header="**`W8.2` Can describe a product from the user's perspective** :star:" no-close="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>Covered by the 'Documentation' of component v1.1:</p>
+        <p>
+          <panel src="/website\admin\project-v11._include_.html" header="%%Admin » Project → v1.1%%" no-close="true" isOpen="false" no-switch="true"></panel>
+        </p>
+      </panel>
+    </panel>
+    <h3 id="design">Design:</h3>
+    <p>
+      <panel type="warning" src="/website\schedule\week8\outcome-architecturalStyle._include_.html" header="**`W8.3` Can explain architectural styles** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="danger" src="/website\schedule\week8\outcome-basicdesignPrinciples._include_.html" header="**`W8.4` Can use basic software design principles** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="implementation">Implementation:</h3>
+    <p>
+      <panel type="warning" src="/website\schedule\week8\outcome-integration._include_.html" header="**`W8.5` Can explain integration approaches** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <p>
+      <panel type="info" src="/website\schedule\week8\outcome-associationClass._include_.html" header="**`W8.6` Can implement association classes** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="quality-assurance">Quality Assurance:</h3>
+    <p>
+      <panel type="danger" src="/website\schedule\week8\outcome-testingTypes._include_.html" header="**`W8.7` Can explain different types of testing** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+    </p>
+    <h3 id="other">Other:</h3>
+    <panel type="danger" header="**`W8.8` Can do global-impact changes to an existing software** :star:" no-close="">
+      <panel header=":dart: Evidence" expanded="">
+        <p>Covered by the 'Product' component of v1.1:</p>
+        <p>
+          <panel src="/website\admin\project-v11._include_.html" header="%%Admin » Project → v1.1%%" no-close="true" isOpen="false" no-switch="true"></panel>
+        </p>
+      </panel>
+    </panel>
+  </div>
 </panel>
-
-<panel header=":raising_hand: Tutorial 8" ctrl-lvl="1" no-close>
-  <include src="tutorial.md" />
+<panel header=":clipboard: Todo" ctrl-lvl="1" no-close="">
+  <div>
+    <panel header="Admin info to read" expandable="" expanded="">
+      <p>
+        <panel type="danger" src="/website\admin\project-v11._include_.html" name="%%Admin »%% Project: v1.1 :star:" header="%%Admin »%% Project: v1.1 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-fromScratch" name="%%Admin »%% FAQ: Why aren't we allowed to build a new product from scratch? :star::star::star::star:" fragment="admin-faq-fromScratch" header="%%Admin »%% FAQ: Why aren't we allowed to build a new product from scratch? :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-manySubmissions" name="%%Admin »%% FAQ: Why so many submissions? :star::star::star::star:" fragment="admin-faq-manySubmissions" header="%%Admin »%% FAQ: Why so many submissions? :star::star::star::star:"
+          isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-cs2101Differences" name="%%Admin »%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" fragment="admin-faq-cs2101Differences"
+          header="%%Admin »%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </panel>
+  </div>
 </panel>
-
-<panel header=":loudspeaker: Lecture 8" ctrl-lvl="1" no-close>
-  <include src="lecture.md" />
+<panel header=":raising_hand: Tutorial 8" ctrl-lvl="1" no-close="">
+  <div>
+    <p><strong>Questions to discuss during tutorial:</strong></p>
+    <ol>
+      <li>Which architecture styles are used by AB4?</li>
+      <li>Any example of using a very high-level abstraction in the project?</li>
+      <li>What is coupling?
+        <ol>
+          <li><code>Foo</code> depends on <code>Bar</code> if …? 1.Give examples of different ways how a class <code>Foo</code> can be coupled to <code>Bar</code> 1.What is cohesion? 1.How does cohesion relates to coupling?</li>
+        </ol>
+      </li>
+      <li>What is the Principle of SoC? 1.How does SoC relates to coupling and cohesion?</li>
+      <li>What is OCP?
+        <ol>
+          <li>Does the project follows OCP? E.g. Can we add a new command or a new storage type without modifying existing code too much?</li>
+        </ol>
+      </li>
+      <li>What is unit/integration/system/acceptance testing?
+        <ol>
+          <li>What’s the difference between unit testing and integration testing?</li>
+          <li>What’s the difference between system testing and acceptance testing?</li>
+        </ol>
+      </li>
+      <li>Which integration approach is used by the project?</li>
+      <li>What is an association class?
+        <ol>
+          <li>IVLE quizzes allow a quiz to be attempted multiple times. For each attempt, it records the time taken. Model this scenario as a class diagram.</li>
+          <li>Draw another diagram to describe how you would implement it in code (because programming languages don’t have direct support for association classes).</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
 </panel>
+<panel header=":loudspeaker: Lecture 8" ctrl-lvl="1" no-close="">
+  <div>
+    <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L8.pptx">slides</a>]</p>
+  </div>
+</panel>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>

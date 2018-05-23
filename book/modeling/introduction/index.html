@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Modeling: Introduction</title>
+    <title>CS2103/T Website - Modeling: Introduction</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Modeling →</strong></span></p>
   <h2 id="introduction">Introduction</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong>A <em>model</em> is a representation of something else.</strong></p>
@@ -34,10 +34,12 @@
                 <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
             </tip-box>
             <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
-              <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br> 📦 An example class diagram:<br></p><img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
+              <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br> 📦 An example class diagram:<br></p>
+              <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
             <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
               <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
             <modal large="" title="%%Textbook »%%" id="modal:modellingIntro-abstraction">
+            
               <div>
                 <div></div>
                 <p></p>
@@ -45,36 +47,37 @@
 </span></strong>
                   </span>
                 </p>
-                <div>
-                  <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-                </div>
-                <div id="main">
+                <div id="title-and-body">
                   <div>
-                    <tip-box type="definition">
-                      <div>
-                        <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant
-                          to that aspect).</p>
-                      </div>
-                    </tip-box>
-                    <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only
-                      details that are relevant to the current perspective or the task at hand.</p>
-                    <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
-                    <tip-box>
-                      <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted
-                        away’ as they do not affect the task of that software component.</p>
-                    </tip-box>
-                    <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
-                    <tip-box>
-                      <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                      <p></p>
-                    </tip-box>For example,
-                    <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
-                    <tip-box>
-                      <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-                      <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
-                    </tip-box>
+                    <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
                   </div>
-                  <div></div>
+                  <div id="main">
+                    <div>
+                      <tip-box type="definition">
+                        <div>
+                          <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant
+                            to that aspect).</p>
+                        </div>
+                      </tip-box>
+                      <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only
+                        details that are relevant to the current perspective or the task at hand.</p>
+                      <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                      <tip-box>
+                        <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted
+                          away’ as they do not affect the task of that software component.</p>
+                      </tip-box>
+                      <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                      <tip-box>
+                        <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                      </tip-box>
+                      <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                      <tip-box>
+                        <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                        <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                      </tip-box>
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
             </modal>
@@ -91,15 +94,14 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain how models are used <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain how models are used <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong>In software development, models are useful in several ways:</strong></p>
@@ -115,11 +117,60 @@
             <tip-box>
               <p>📦 Some examples of using models to communicate:</p>
               <ol>
-                <li>An architect can use an architecture diagram to explain the high-level design of the software to developers.</li>
+                <li>We can use an
+                  <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
                 <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
                 <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
               </ol>
             </tip-box>
+            <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+              <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
+              <div>
+                <tip-box>
+                  <p>📦 Some example architecture diagrams:</p>
+                  <tabs>
+                  
+                    <tab header="TEAMMATES">
+                      <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  
+                    <tab header="se-edu/addressbook-level4">
+                      <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  
+                    <tab header="Example 1">
+                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                        <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  
+                    <tab header="Example 2">
+                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                        <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  
+                    <tab header="Example 3">
+                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                        <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  </tabs>
+                </tip-box>
+              </div>
+            </modal>
             <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
             <tip-box>
               <p>📦 Some examples of using models to as blueprints:</p>
@@ -129,6 +180,7 @@
               </ol>
             </tip-box>
             <tip-box>
+
               <panel header="Model Driven Development :four:" type="seamless">
                 <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints.</strong> MDD uses models as primary engineering artifacts
                   when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation
@@ -180,20 +232,20 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="uml-models-four">UML Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can identify UML models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="uml-models-four">UML Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can identify UML models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p>
             <tip-box>
-              <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br><sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>
+              <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
+                <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>
             </tip-box>
           </div>
           <div></div>
@@ -206,5 +258,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <tip-box type="important">
-  <p>Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code><code>0900</code> and so on.</p>
+  <p>Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
 </tip-box>
-<table class="markbind-table table">
+<table class="markbind-table table table-bordered table-striped">
   <thead>
     <tr>
       <th>Module</th>
@@ -158,5 +159,8 @@
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\markbind\js\setup.js"></script>
 </html>

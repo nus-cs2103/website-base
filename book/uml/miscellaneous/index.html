@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - UML: Miscellaneous</title>
+    <title>CS2103/T Website - UML: Miscellaneous</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>UML →</strong></span></p>
   <h2 id="miscellaneous">Miscellaneous</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="object-vs-class-diagrams-two">Object vs Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can distinguish between class diagrams and object diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="object-vs-class-diagrams-two">Object vs Class Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can distinguish between class diagrams and object diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
@@ -42,9 +42,10 @@
             </ul>
             <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
             <tip-box>
-              <p>📦 Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png"
-                height="85">
-              <p></p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+              <p>📦 Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+              <img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+              <p></p>
+              <img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
               <p></p>
             </tip-box>
           </div>
@@ -54,7 +55,8 @@
                 <div>
                   <panel header=":lock::key: Which class diagrams match object diagram?">
                     <question>
-                      <p>Which of these class diagrams match the given object diagram?</p><img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                      <p>Which of these class diagrams match the given object diagram?</p>
+                      <img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
                       <p></p>
                       <ul class="task-list">
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
@@ -79,5 +81,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

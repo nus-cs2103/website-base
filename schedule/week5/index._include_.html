@@ -1,9 +1,11 @@
+<p><small>[<a href="/website/schedule/week5/outcomes.html" target="_blank">Open <em>Outcomes</em> in a new Window <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>]</small></p>
 <panel header=":trophy: Outcomes" ctrl-lvl="1" expanded="" no-close="">
   <div>
     <h3 id="design">Design:</h3>
     <p>
       <panel type="info" src="/website\schedule\week5\outcome-classDiagram._include_.html" header="**`W5.1` Can use intermediate-level class diagrams** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
     </p>
+
     <panel type="info" header="**`W5.2` Can explain single responsibility principle** :star::star::star:" no-close="">
       <div>
         <div></div>
@@ -12,31 +14,33 @@
 </span></strong>
           </span>
         </p>
-        <div>
-          <h4 id="single-responsibility-principle-two">Single Responsibility Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-        </div>
-        <div id="main">
+        <div id="title-and-body">
           <div>
-            <tip-box type="primary">
-              <div>
-                <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
-              </div>
-            </tip-box>
-            <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
-            <tip-box>
-              <p>📦 Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes.
-                Hence, such a class does not follow the SRP.</p>
-            </tip-box>
+            <h4 id="single-responsibility-principle-two">Single Responsibility Principle <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
           </div>
-          <div>
+          <div id="main">
             <div>
-              <panel header=":paperclip:  Resources" expanded="">
-                <ul>
-                  <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
-                  <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
-                  <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
-                </ul>
-              </panel>
+              <tip-box type="primary">
+                <div>
+                  <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                </div>
+              </tip-box>
+              <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+              <tip-box>
+                <p>📦 Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes.
+                  Hence, such a class does not follow the SRP.</p>
+              </tip-box>
+            </div>
+            <div>
+              <div>
+                <panel header=":paperclip:  Resources" expanded="">
+                  <ul>
+                    <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                    <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                    <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                  </ul>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -69,6 +73,7 @@
     <p>
       <panel type="info" src="/website\schedule\week5\outcome-overloading._include_.html" header="**`W5.7` Can implement overloading** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
     </p>
+
     <h3 id="quality-assurance">Quality Assurance:</h3>
     <p>
       <panel type="danger" src="/website\schedule\week5\outcome-junit._include_.html" header="**`W5.8` Can use simple JUnit tests** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
@@ -84,22 +89,16 @@
           <tip-box type="important">
             This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
           </tip-box>
-          <tip-box type="warning">
-            <p><strong>Those who failed to produce working code at 1KLoC milestone</strong> (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
-          </tip-box>
-          <tip-box type="tip">
-            <p>When working with existing code, a safe approach is to <strong>change the code in very small steps, each resulting in a verifiable change</strong> without breaking the app. For example, when adding a new <code>sort</code> command, the first
-              few steps can be,</p>
-            <ol>
-              <li>Teach the app to accept a <code>sort</code> command but ignore it.</li>
-              <li>Next, teach the app to direct the <code>sort</code> command to an existing command e.g. <code>sort</code> command simply invokes the <code>list</code> command internally.</li>
-              <li>Add a <code>SortCommand</code> class but make it simply a copy of the the existing <code>ListCommand</code>. Direct the <code>sort</code> command to the new <code>SortCommand</code>.</li>
-              <li>...</li>
-            </ol>
-          </tip-box>
-          <tip-box type="tip">
-            <p>Note that you can reuse the code you write here in your final project, if applicable.</p>
-          </tip-box>
+          <p>💡 <strong>Those who failed to produce working code at 1KLoC milestone</strong> (in week 3) can recover the lost marks by doing <em>two</em> enhancements at this milestone.</p>
+          <p>💡 When working with existing code, a safe approach is to <strong>change the code in very small steps, each resulting in a verifiable change</strong> without breaking the app. For example, when adding a new <code>sort</code> command, the first
+            few steps can be,</p>
+          <ol>
+            <li>Teach the app to accept a <code>sort</code> command but ignore it.</li>
+            <li>Next, teach the app to direct the <code>sort</code> command to an existing command e.g. <code>sort</code> command simply invokes the <code>list</code> command internally.</li>
+            <li>Add a <code>SortCommand</code> class but make it simply a copy of the the existing <code>ListCommand</code>. Direct the <code>sort</code> command to the new <code>SortCommand</code>.</li>
+            <li>...</li>
+          </ol>
+          <p>💡 Note that you can reuse the code you write here in your final project, if applicable.</p>
           <h4 id="individual-component">Individual component:</h4>
           <p><strong>You can omit this individual component if</strong> you have worked with a code base that meets the following criteria:</p>
           <ul>
@@ -145,7 +144,6 @@
     </panel>
   </div>
 </panel>
-
 <panel header=":clipboard: Todo" ctrl-lvl="1" no-close="">
   <div>
     <panel header="Admin info to read" expandable="" expanded="">
@@ -166,9 +164,7 @@
     </panel>
   </div>
 </panel>
-
 <panel header=":raising_hand: Tutorial 5" ctrl-lvl="1" no-close=""></panel>
-
 <panel header=":loudspeaker: Lecture 5" ctrl-lvl="1" no-close="">
   <div>
     <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L5.pptx">slides</a>]</p>

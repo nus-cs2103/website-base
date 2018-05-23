@@ -1,6 +1,6 @@
 <tip-box>
   <ul>
-    <li>❗️ <strong>Penalty for late submission:</strong><mark>-1 mark for each hour delayed, up to 3 hours.</mark> Even a 1-second delay is penalized, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis.
+    <li>❗️ <strong>Penalty for late submission:</strong> <mark>-1 mark for each hour delayed, up to 3 hours.</mark> Even a 1-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis.
       <ul>
         <li>For submissions done via IVLE, the submission time is the timestamp shown by IVLE.</li>
         <li>When determining the late submission penalty, <strong>we take the latest submission</strong> even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
@@ -12,7 +12,7 @@
     <li><strong>Do not update the repo during the 14 days after the deadline.</strong> Get our permission first if you need to update the repo during that one-week <em>freeze</em> period. You can continue to evolve your repo after that.</li>
   </ul>
   <p><strong>Summary of submissions</strong>:</p>
-  <table class="markbind-table table">
+  <table class="markbind-table table table-bordered table-striped">
     <thead>
       <tr>
         <th>Team/Individual Item</th>
@@ -33,12 +33,12 @@
       </tr>
       <tr>
         <td>👥 User Guide</td>
-        <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br><span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
+        <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br> <span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
         <td>IVLE</td>
       </tr>
       <tr>
         <td>👥 Developer Guide</td>
-        <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br><span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
+        <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br> <span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
         <td>IVLE</td>
       </tr>
       <tr>
@@ -48,7 +48,7 @@
       </tr>
       <tr>
         <td>👤 Project Portfolio Page</td>
-        <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br><span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
+        <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br> <span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
         <td>IVLE</td>
       </tr>
       <tr>
@@ -64,7 +64,7 @@
 <p><strong>Submission</strong>:</p>
 <ul>
   <li><strong>Source code</strong>: Push the code to GitHub and tag with the version number. Source code (<mark>including collated .md files</mark>; please ensure the collated <code>.md</code> files are up to date; any updates to collated code files after
-    the deadline comes with an automatic penalty) Note that the quality of the code in these <mark>collated code files accounts for a significant component of your final score</mark>, graded individually.</li>
+    the deadline will be considered a later submission) Note that the quality of the code in these <mark>collated code files accounts for a significant component of your final score</mark>, graded individually.</li>
   <li><strong>Executable</strong>: See summary of submissions above</li>
 </ul>
 <p><strong>Deadline</strong>: Week 13 Monday 23.59.</p>
@@ -76,10 +76,12 @@
 <p><strong>Submission</strong>:</p>
 <p>First, update following pages on GitHub:</p>
 <ul>
-  <li>User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and <mark>any inaccuracy in the content will be reported/penalized as bugs</mark>).
+  <li>User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and <mark>any inaccuracy in the content will be considered bugs</mark>).
     <ul>
-      <li>❗️ in particular, <strong>update the <em>Appendix G (Instructions for Manual Testing)</em></strong> of the Developer Guide to include testing instructions to <strong>cover all your major and minor enhancements</strong>. There is no need to add testing
-        instructions for existing features if you did not touch them.</li>
+      <li>❗️ in particular, <strong>update the appendix named <em>Instructions for Manual Testing</em></strong> of the Developer Guide to include testing instructions to <strong>cover all your major and minor enhancements</strong>. There is no need to add
+        testing instructions for existing features if you did not touch them.<br> 💡 What to include in the appendix <em>Instructions for Manual Testing</em>? This appendix is meant to give some guidance to the tester to chart a path through the features,
+        and provided some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions
+        are inaccurate or deliberately misses/mis-states information to make testing harder <span class="dimmed"> i.e. annoys the tester</span>, the tester can report it as a bug <span class="dimmed"> (because flaws in developer docs are considered as bugs)</span>.</li>
     </ul>
   </li>
   <li>README : <mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
@@ -145,7 +147,7 @@
         <li>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br> Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or
           an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code>          [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br> It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br> Note that CS2101 demo requirements may differ. Different context
           → Different requirements.</li>
-        <li>Rehearse the steps well and ensure you can do a smooth demo. <mark>Demos that are clearly under-prepared will be penalized.</mark></li>
+        <li>Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.</li>
         <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
         <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression
           too.</li>
@@ -185,7 +187,7 @@
   <div>
     <p><strong>Preparation</strong>:</p>
     <ul>
-      <li>Ensure you have access to a <strong>computer that is able to run module projects</strong><span class="dimmed"> e.g. has the right Java version</span>.</li>
+      <li>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</li>
       <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
       <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
     </ul>
@@ -193,29 +195,31 @@
   <p><strong>During:</strong></p>
   <ol>
     <li><strong>Take note of your team to test and your <em>Tester ID</em></strong>. Both will be given to you by the teaching team (distributed via IVLE gradebook).</li>
-    <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed"> (i.e. jar file, user guide, developer guide, sample data, test script, project portfolio pages)</span><mark>into an empty folder</mark>.</li>
+    <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed"> (i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
     <li><strong>[~40 minutes] Test the product and report bugs</strong>
       <ul>
         <li>Launch the jar file. Test it.</li>
-        <li>You can use the provided <em>test script</em> and <em>user guide</em> in your testing.</li>
+        <li>You can use Developer Guide (Appendix named <em>Instructions for Manual Testing</em>) and the User Guide in your testing.</li>
         <li>No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed"> Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and
           CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
-        <li>The test script can provide you some guidance but if you follow the test script strictly, you are unlikely to find many bugs. You can deviate from the script to probe areas that are more likely to have bugs.</li>
+        <li>The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have
+          bugs.</li>
         <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
+        <li>Omit feature that existed in AB4. Instead, test features the team has added.</li>
         <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S2/pe/issues">practical exam issue tracker</a>, <mark>not in the team's repo</mark>.
           <ul>
-            <li>Issue title format: <code>[Tester ID] Issue description</code><span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
+            <li>Issue title format: <code>[Tester ID] Issue description</code> <span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
             <li>Do not use team ID in bug reports <span class="dimmed"> Reason: to prevent others copying your bug reports</span></li>
           </ul>
         </li>
         <li>Report bugs only. Do not post suggestions. These are considered bugs:
           <ul>
-            <li>Behavior differs from the user guide (or test script)</li>
+            <li>Behavior differs from the User Guide (or Developer Guide)</li>
             <li>A legitimate user behavior is not handled <span class="dimmed"> e.g. incorrect commands, extra parameters</span></li>
             <li>Behavior is not specified and differs from normal expectations <span class="dimmed"> e.g. error message does not match the error</span></li>
           </ul>
         </li>
-        <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will be penalized</strong>.
+        <li>Write good quality bug reports; ❗️ <strong>poor quality or incorrect bug reports will not earn credit</strong>.
           <ul>
             <li>Use a descriptive title</li>
             <li>Give a good description of the bug with steps to reproduce and screenshots</li>
@@ -277,7 +281,7 @@
           </ul>
         </li>
         <li>
-          <p><strong>D. Depth of feature (major feature)</strong> [👤]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code><code>undo</code><code>redo</code></p>
+          <p><strong>D. Depth of feature (major feature)</strong> [👤]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code> <code>undo</code>            <code>redo</code></p>
           <ul>
             <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
             <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
@@ -388,7 +392,7 @@
   <p><strong>Grading:</strong></p>
   <ul>
     <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
-    <li>You will lose marks if you missed too many bugs in the product you tested or your evaluation/estimates are significantly off from the evaluator consensus. <span class="dimmed"> Explanation: we penalize if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
+    <li>You will be graded based on many bugs in the product you tested and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed"> Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
     <li>The bugs found in your product by others will affect your v1.5 marks. You will be given a chance to reject false-positive bug reports.</li>
   </ul>
 </div>

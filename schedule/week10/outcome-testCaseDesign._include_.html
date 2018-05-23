@@ -1,4 +1,4 @@
-<panel type="warning" header="`W10.5a` Can explain the need for deliberate test case design :star::star:" no-close="">
+<panel type="warning" header="`W10.5a` Can explain the need for deliberate test case design :star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -6,121 +6,125 @@
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number
-          of test cases.</p>
-        <tip-box>
-          <p>📦 Consider the test cases for adding a <code>String</code> object to a <code>Collection</code> object:</p>
-          <ul>
-            <li>Add an item to an empty collection.</li>
-            <li>Add an item when there is one item in the collection.</li>
-            <li>Add an item when there are 2, 3, .... n items in the collection.</li>
-            <li>Add an item that has an English, a French, a Spanish, ... word.</li>
-            <li>Add an item that is the same as an existing item.</li>
-            <li>Add an item immediately after adding another item.</li>
-            <li>Add an item immediately after system startup.</li>
-            <li>...</li>
-          </ul>
-          <p>Exhaustive testing of this operation can take many more test cases.</p>
-        </tip-box>
-        <blockquote>
-          <p>Program testing can be used to show the presence of bugs, but never to show their absence!<br><sub>--Edsger Dijkstra</sub></p>
-        </blockquote>
-        <div id="e-and-e">
-          <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>            In particular:</p>
-          <ul>
-            <li>
-              <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high % of existing bugs <span class="dimmed"> e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
-            </li>
-            <li>
-              <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed"> a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
-            </li>
-          </ul>
-          <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
-            that can help us improve E&amp;E of testing.</p>
-        </div>
+        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
-            <div>
-              <panel header=":lock::key: Test cases for `TriangleDetector`">
-                <question has-input="true">
-                  <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software.
-                    Two sample test cases are given below.</p>
-                  <pre class="hljs"><code>C:\&gt; java TriangleDetector
+          <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number
+            of test cases.</p>
+          <tip-box>
+            <p>📦 Consider the test cases for adding a string object to a
+              <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
+            <ul>
+              <li>Add an item to an empty collection.</li>
+              <li>Add an item when there is one item in the collection.</li>
+              <li>Add an item when there are 2, 3, .... n items in the collection.</li>
+              <li>Add an item that has an English, a French, a Spanish, ... word.</li>
+              <li>Add an item that is the same as an existing item.</li>
+              <li>Add an item immediately after adding another item.</li>
+              <li>Add an item immediately after system startup.</li>
+              <li>...</li>
+            </ul>
+            <p>Exhaustive testing of this operation can take many more test cases.</p>
+          </tip-box>
+          <blockquote>
+            <p>Program testing can be used to show the presence of bugs, but never to show their absence!<br>
+              <sub>--Edsger Dijkstra</sub></p>
+          </blockquote>
+          <div id="e-and-e">
+            <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>              In particular:</p>
+            <ul>
+              <li>
+                <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
+              </li>
+              <li>
+                <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
+              </li>
+            </ul>
+            <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
+              that can help us improve E&amp;E of testing.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Test cases for `TriangleDetector`">
+                  <question has-input="true">
+                    <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software.
+                      Two sample test cases are given below.</p>
+                    <pre class="hljs"><code>C:\&gt; java TriangleDetector
 Enter side 1: 34
 Enter side 2: 34
 Enter side 3: 32
 Can this be a triangle?:  Yes
 Enter side 1:
 </code></pre>
-                  <p>Sample test cases,</p>
-                  <pre class="hljs"><code>34,34,34: Yes
+                    <p>Sample test cases,</p>
+                    <pre class="hljs"><code>34,34,34: Yes
 0, any valid, any valid: No
 </code></pre>
-                  <div slot="answer">
-                    <p>In addition to obvious test cases such as</p>
-                    <ul>
-                      <li>sum of two sides == third,</li>
-                      <li>sum of two sides &lt; third ...</li>
+                    <div slot="answer">
+                      <p>In addition to obvious test cases such as</p>
+                      <ul>
+                        <li>sum of two sides == third,</li>
+                        <li>sum of two sides &lt; third ...</li>
+                      </ul>
+                      <p>We may also devise some interesting test cases such as the ones depicted below.</p>
+                      <p>Note that their applicability depends on the context in which the software is operating.</p>
+                      <ul>
+                        <li>Non-integer number, negative numbers, <code>0</code>, numbers formatted differently (e.g. <code>13F</code>), very large numbers (e.g. <code>MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
+                        <li>Check many triangles one after the other (will the system run out of memory?)</li>
+                        <li><kbd>Backspace</kbd>, <kbd>tab</kbd>, <kbd>CTRL+C</kbd> , …</li>
+                        <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid inputs
+                          (the system may perform error handling differently for the very first test case), …</li>
+                        <li>Test on different locale.</li>
+                      </ul>
+                      <p>The main point to note is how difficult it is to test exhaustively, even on a trivial system.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Exhaustive testing in Minesweeper">
+                  <question has-input="true">
+                    <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
+                    <div slot="answer">
+                      <p>Consider this sequence of test cases:</p>
+                      <ul>
+                        <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
+                        <li>Test case 2. Start Minesweeper. Activate <code>newGame()</code>. Activate <code>newGame()</code> again and see if it works.</li>
+                        <li>Test case 3. Start Minesweeper. Activate <code>newGame()</code> three times consecutively and see if it works.</li>
+                        <li>…</li>
+                        <li>Test case 267. Start Minesweeper. Activate <code>newGame()</code> 267 times consecutively and see if it works.</li>
+                      </ul>
+                      <p>Well, you get the idea. Exhaustive testing of <code>newGame()</code> is not practical.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Statements about E&E of testing">
+                  <question>
+                    <p>Improving efficiency and effectiveness of test case design can,</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. improve the quality of the SUT.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. save money.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. save time spent on test execution.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. save effort on writing and maintaining tests.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
                     </ul>
-                    <p>We may also devise some interesting test cases such as the ones depicted below.</p>
-                    <p>Note that their applicability depends on the context in which the software is operating.</p>
-                    <ul>
-                      <li>Non-integer number, negative numbers, 0, numbers formatted differently (e.g. 13F), very large numbers (e.g. MAX_INT), numbers with many decimal places, empty string, ...</li>
-                      <li>Check many triangles one after the other (will the system run out of memory?)</li>
-                      <li>Backspace, tab, CTRL+C , …</li>
-                      <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid inputs
-                        (the system may perform error handling differently for the very first test case), …</li>
-                      <li>Test on different locale.</li>
-                    </ul>
-                    <p>The main point to note is how difficult it is to test exhaustively, even on a trivial system.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock::key: Exhaustive testing in Minesweeper">
-                <question has-input="true">
-                  <p>Explain the why exhaustive testing is not practical using the example of testing <code>Logic#newGame()</code> operation in the Minesweeper game.</p>
-                  <div slot="answer">
-                    <p>Consider this sequence of test cases:</p>
-                    <ul>
-                      <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
-                      <li>Test case 2. Start Minesweeper. Activate <code>newGame()</code>. Activate <code>newGame()</code> again and see if it works.</li>
-                      <li>Test case 3. Start Minesweeper. Activate <code>newGame()</code> three times consecutively and see if it works.</li>
-                      <li>…</li>
-                      <li>Test case 267. Start Minesweeper. Activate <code>newGame()</code> 267 times consecutively and see if it works.</li>
-                    </ul>
-                    <p>Well, you get the idea. Exhaustive testing of <code>newGame()</code> is not practical.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock::key: Statements about E&E of testing">
-                <question>
-                  <p>Improving efficiency and effectiveness of test case design can,</p>
-                  <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. improve the quality of the SUT.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. save money.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. save time spent on test execution.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. save effort on writing and maintaining tests.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(a)(b)(c)(d)(e)(f)</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+                    <div slot="answer">
+                      <p>(a)(b)(c)(d)(e)(f)</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -129,7 +133,7 @@ Enter side 1:
     <p>Explain why testing needs to be E&amp;E, using examples from your project.</p>
   </panel>
 </panel>
-<panel type="info" header="`W10.5b` Can explain exploratory testing and scripted testing :star::star::star:" no-close="">
+<panel type="info" header="`W10.5b` Can explain exploratory testing and scripted testing :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -137,86 +141,88 @@ Enter side 1:
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
-        <ol>
-          <li>
-            <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
-          </li>
-          <li>
-            <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
-          </li>
-        </ol>
-        <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-          <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>          because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations
-          where more faults are found.</p>
-        <tip-box>
-          <p>📦 Here is an example thought process behind a segment of an exploratory testing session:</p>
-          <blockquote>
-            <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if feature y works,
-              even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
-          </blockquote>
-        </tip-box>
-        <tip-box type="tip">
-          <p><strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
-        </tip-box>
-        <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained :mag:">
-          <div>
-            <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
-              in software testing).</p>
-          </div>
-        </modal>
+        <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
+          <ol>
+            <li>
+              <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
+            </li>
+            <li>
+              <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
+            </li>
+          </ol>
+          <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
+            <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>            because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations
+            where more faults are found.</p>
+          <tip-box>
+            <p>📦 Here is an example thought process behind a segment of an exploratory testing session:</p>
+            <blockquote>
+              <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if feature y
+                works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+            </blockquote>
+          </tip-box>
+          <tip-box>
+            <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
+          </tip-box>
+          <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained :mag:">
             <div>
-              <panel header=":lock::key: statements about exploratory and scripted testing">
-                <question>
-                  <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                  <ul radio-group="t65ml" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="t65ml" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="t65ml" type="radio"> False</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>A) False</p>
-                    <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
-                  </div>
-                </question>
-              </panel>
+              <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
+                in software testing).</p>
             </div>
-            <div>
-              <panel header=":lock::key: Which testing technique is better?">
-                <question>
-                  <p>Which testing technique is better?</p>
-                  <ul radio-group="aigdq" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="aigdq" type="radio"> a. error guessing</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="aigdq" type="radio"> b. bug hunting</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="aigdq" type="radio"> c. attack-based testing</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="aigdq" type="radio"> d. reactive testing</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="aigdq" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>(e)</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-            <div>
-              <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
-                <question has-input="true">
-                  <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                  <div slot="answer">
-                    <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
-                  </div>
-                </question>
-              </panel>
-            </div>
-          </panel>
+          </modal>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: statements about exploratory and scripted testing">
+                  <question>
+                    <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                    <ul radio-group="db31a" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>A) False</p>
+                      <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Which testing technique is better?">
+                  <question>
+                    <p>Which testing technique is better?</p>
+                    <ul radio-group="9fd35" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(e)</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
+                  <question has-input="true">
+                    <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
+                    <div slot="answer">
+                      <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -225,7 +231,7 @@ Enter side 1:
     <p>Explain exploratory and scripted testing in the context of your project.</p>
   </panel>
 </panel>
-<panel type="info" header="`W10.5c` Can explain the choice between exploratory testing and scripted testing :star::star::star:" no-close="">
+<panel type="info" header="`W10.5c` Can explain the choice between exploratory testing and scripted testing :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -233,54 +239,56 @@ Enter side 1:
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
-        <p><strong>The success of exploratory testing depends on the tester’s prior experience and intuition.</strong> Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing by unskilled
-          or inexperienced testers without a clear strategy is not recommended for real-world non-trivial systems. While <strong>exploratory testing may allow us to detect some problems in a relatively short time, it is not prudent to use exploratory testing as the sole means of testing a critical system</strong>.</p>
-        <p><strong>Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time</strong>, while exploratory testing would aid in quick error discovery, especially if the tester has a lot of experience in testing similar
-          systems.</p>
-        <blockquote>
-          <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations
-            benefit from a mix of scripted and exploratory approaches. --
-            <trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
-          </p>
-        </blockquote>
-        <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained :mag:">
-          <div>
-            <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
-              in software testing).</p>
-          </div>
-        </modal>
+        <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
       </div>
-      <div>
+      <div id="main">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
+          <p><strong>The success of exploratory testing depends on the tester’s prior experience and intuition.</strong> Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing by unskilled
+            or inexperienced testers without a clear strategy is not recommended for real-world non-trivial systems. While <strong>exploratory testing may allow us to detect some problems in a relatively short time, it is not prudent to use exploratory testing as the sole means of testing a critical system</strong>.</p>
+          <p><strong>Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time</strong>, while exploratory testing would aid in quick error discovery, especially if the tester has a lot of experience in testing similar
+            systems.</p>
+          <blockquote>
+            <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations
+              benefit from a mix of scripted and exploratory approaches. --
+              <trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
+            </p>
+          </blockquote>
+          <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained :mag:">
             <div>
-              <panel header=":lock::key: Which is better?">
-                <question>
-                  <p>Scripted testing is better than exploratory testing.</p>
-                  <ul radio-group="ryzrm" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ryzrm" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ryzrm" type="radio"> False</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <p>B) False</p>
-                    <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
-                  </div>
-                </question>
-              </panel>
+              <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader
+                in software testing).</p>
             </div>
-          </panel>
+          </modal>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Which is better?">
+                  <question>
+                    <p>Scripted testing is better than exploratory testing.</p>
+                    <ul radio-group="7d3ff" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> False</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>B) False</p>
+                      <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </panel>
-<panel type="warning" header="`W10.5d` Can explain positive and negative test cases :star::star:" no-close="">
+<panel type="warning" header="`W10.5d` Can explain positive and negative test cases :star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -288,28 +296,30 @@ Enter side 1:
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="positive-vs-negative-test-cases-one">Positive vs Negative Test Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
-        <tip-box>
-          <p>📦 Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
-          <ul>
-            <li>A positive test case: <code>i == new Integer(50)</code></li>
-            <li>A negative test case: <code>i == null;</code></li>
-          </ul>
-        </tip-box>
+        <h4 id="positive-vs-negative-test-cases-one">Positive vs Negative Test Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
+          <tip-box>
+            <p>📦 Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
+            <ul>
+              <li>A positive test case: <code>i == new Integer(50)</code></li>
+              <li>A negative test case: <code>i == null;</code></li>
+            </ul>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
     <p>Give examples of positive and negative test cases from your project.</p>
   </panel>
 </panel>
-<panel type="warning" header="`W10.5e` Can explain black box and glass box test case design :star::star:" no-close="">
+<panel type="warning" header="`W10.5e` Can explain black box and glass box test case design :star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -317,56 +327,61 @@ Enter side 1:
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="black-box-vs-glass-box-two">Black Box vs Glass Box <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
-        <ul>
-          <li>
-            <p><strong><em>Black-box</em> (aka <em>specification-based or responsibility-based</em>) approach</strong>: test cases are designed exclusively based on the SUT’s specified external behavior.</p>
-          </li>
-          <li>
-            <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
-          </li>
-          <li>
-            <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than 1000
-              items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
-          </li>
-        </ul>
-        <div v-closeable="" alt="videos: Black-box and white-box testing">
-          <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
-          <tabs>
-            <tab header=":tv: Black-box vs White-box testing">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>
-                <hr>
-              </p>
-            </tab>
-            <tab header=":tv: Black-box testing example">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>
-                <hr>
-              </p>
-            </tab>
-            <tab header=":tv: White-box testing example">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>
-                <hr>
-              </p>
-            </tab>
-          </tabs>
-        </div>
+        <h4 id="black-box-vs-glass-box-two">Black Box vs Glass Box <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
-      <div></div>
+      <div id="main">
+        <div>
+          <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
+          <ul>
+            <li>
+              <p><strong><em>Black-box</em> (aka <em>specification-based or responsibility-based</em>) approach</strong>: test cases are designed exclusively based on the SUT’s specified external behavior.</p>
+            </li>
+            <li>
+              <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
+            </li>
+            <li>
+              <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than
+                1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
+            </li>
+          </ul>
+          <panel type="seamless" header=":tv: %%Black-box and white-box testing%%">
+            <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
+            <tabs>
+            
+              <tab header=":tv: Black-box vs White-box testing">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <p>
+                  <hr>
+                </p>
+              </tab>
+            
+              <tab header=":tv: Black-box testing example">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <p>
+                  <hr>
+                </p>
+              </tab>
+            
+              <tab header=":tv: White-box testing example">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <p>
+                  <hr>
+                </p>
+              </tab>
+            </tabs>
+          </panel>
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">
     <p>Explain black/white/grey box testing using examples from your project.</p>
   </panel>
 </panel>
-<panel type="info" header="`W10.5f` Can explain test case design for use case based testing :star::star::star:" no-close="">
+<panel type="info" header="`W10.5f` Can explain test case design for use case based testing :star::star::star:" expanded="" no-close="">
   <div>
     <div></div>
     <p></p>
@@ -374,128 +389,133 @@ Enter side 1:
 </span></strong>
       </span>
     </p>
-    <div>
-      <h4 id="testing-based-on-use-cases-four">Testing Based on Use Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-    </div>
-    <div id="main">
+    <div id="title-and-body">
       <div>
-        <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do
-          not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary
-          values. The combinations of these could result in one use case producing many test cases.</p>
-        <p>To increase
-          <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
-          <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-        <modal large="" title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing"
-          id="modal:usebaseBased-EandE">
-          <div>
-            <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>              In particular:</p>
-            <ul>
-              <li>
-                <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high % of existing bugs <span class="dimmed"> e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
-              </li>
-              <li>
-                <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed"> a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
-              </li>
-            </ul>
-            <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
-              that can help us improve E&amp;E of testing.</p>
-          </div>
-        </modal>
-        <modal large="" title="Textbook »" id="modal:usecaseBased-scripted">
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
-</span></strong>
-              </span>
-            </p>
+        <h4 id="testing-based-on-use-cases-four">Testing Based on Use Cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do
+            not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary
+            values. The combinations of these could result in one use case producing many test cases.</p>
+          <p>To increase
+            <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
+            <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
+          <modal large="" title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE">
+          
             <div>
-              <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+              <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                In particular:</p>
+              <ul>
+                <li>
+                  <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
+                </li>
+                <li>
+                  <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
+                </li>
+              </ul>
+              <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
+                that can help us improve E&amp;E of testing.</p>
             </div>
-            <div id="main">
-              <div>
-                <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
-                <ol>
-                  <li>
-                    <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
-                  </li>
-                  <li>
-                    <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
-                  </li>
-                </ol>
-                <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-                  <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                  because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
-                  operations where more faults are found.</p>
-                <tip-box>
-                  <p>📦 Here is an example thought process behind a segment of an exploratory testing session:</p>
-                  <blockquote>
-                    <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if feature
-                      y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
-                  </blockquote>
-                </tip-box>
-                <tip-box type="tip">
-                  <p><strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
-                </tip-box>
-                <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained :mag:">
-                  <div>
-                    <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
-                      leader in software testing).</p>
-                  </div>
-                </modal>
-              </div>
-              <div>
+          </modal>
+          <modal large="" title="Textbook »" id="modal:usecaseBased-scripted">
+          
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <panel header=":muscle: Exercises" expandable="">
+                  <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
+                    <ol>
+                      <li>
+                        <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
+                      </li>
+                      <li>
+                        <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
+                      </li>
+                    </ol>
+                    <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
+                      <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                      because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
+                      operations where more faults are found.</p>
+                    <tip-box>
+                      <p>📦 Here is an example thought process behind a segment of an exploratory testing session:</p>
+                      <blockquote>
+                        <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if
+                          feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                      </blockquote>
+                    </tip-box>
+                    <tip-box>
+                      <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
+                    </tip-box>
+                    <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained :mag:">
+                      <div>
+                        <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
+                          thought leader in software testing).</p>
+                      </div>
+                    </modal>
+                  </div>
+                  <div>
                     <div>
-                      <panel header=":lock::key: statements about exploratory and scripted testing">
-                        <question>
-                          <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                          <ul radio-group="5a5mj" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="5a5mj" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="5a5mj" type="radio"> False</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <p>A) False</p>
-                            <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
-                          </div>
-                        </question>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: statements about exploratory and scripted testing">
+                            <question>
+                              <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                              <ul radio-group="db31a" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>A) False</p>
+                                <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Which testing technique is better?">
+                            <question>
+                              <p>Which testing technique is better?</p>
+                              <ul radio-group="9fd35" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(e)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
+                            <question has-input="true">
+                              <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
+                              <div slot="answer">
+                                <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
                       </panel>
                     </div>
-                    <div>
-                      <panel header=":lock::key: Which testing technique is better?">
-                        <question>
-                          <p>Which testing technique is better?</p>
-                          <ul radio-group="nx2kp" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nx2kp" type="radio"> a. error guessing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nx2kp" type="radio"> b. bug hunting</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nx2kp" type="radio"> c. attack-based testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nx2kp" type="radio"> d. reactive testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="nx2kp" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <p>(e)</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
-                        <question has-input="true">
-                          <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                          <div slot="answer">
-                            <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </modal>
+          </modal>
+        </div>
+        <div></div>
       </div>
-      <div></div>
     </div>
   </div>
   <panel header=":dart: Evidence" expanded="">

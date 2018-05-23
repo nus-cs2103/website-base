@@ -1,1 +1,0 @@
-markbind build . c:\website

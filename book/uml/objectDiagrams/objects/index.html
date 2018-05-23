@@ -4,74 +4,98 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - UML: Object Diagrams: Objects</title>
+    <title>CS2103/T Website - UML: Object Diagrams: Objects</title>
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
-  <tip-box>
     <div>
-      <p>🏆 Can draw UML objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-    </div>
-  </tip-box>
-  <div>
-    <div></div>
-    <p></p>
-    <p><span class="dimmed"><strong><span>Tools → UML → Object Diagrams →
-</span></strong>
-      </span>
-    </p>
-    <div>
-      <h4 id="objects-one">Objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-    </div>
-    <div id="main">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <div class="website-content" id="all">
+    <tip-box>
       <div>
-        <p>Notation:</p><img src="/website/book/uml/objectDiagrams/objects/images/notation.png" height="85">
-        <p></p>
-        <p>Notes:</p>
-        <ul>
-          <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
-          <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
-          <li>Unlike classes, there is no compartment for methods.</li>
-          <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
-          <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
-        </ul>
-        <tip-box>
-          <p>📦 Some example objects:</p><img src="/website/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
-          <p></p>
-        </tip-box>
+        <p>🏆 Can draw UML objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
       </div>
-      <div>
+    </tip-box>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Tools → UML → Object Diagrams →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
         <div>
-          <panel header=":muscle: Exercises" expandable="">
+          <h4 id="objects-one">Objects <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div id="main">
+          <div>
+            <p>Notation:</p>
+            <img src="/website/book/uml/objectDiagrams/objects/images/notation.png" height="85">
+            <p></p>
+            <p>Notes:</p>
+            <ul>
+              <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
+              <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
+              <li>Unlike classes, there is no compartment for methods.</li>
+              <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
+              <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
+            </ul>
+            <tip-box>
+              <p>📦 Some example objects:</p>
+              <img src="/website/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
+              <p></p>
+            </tip-box>
+          </div>
+          <div>
             <div>
-              <panel header=":lock: Draw Car object">
-                <question>
-                  <p>Draw a UML diagram to represent the Car object created by the following code.</p>
-                  <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+              <panel header=":muscle: Exercises" expandable="">
+                <div>
+                  <panel header=":lock: Draw Car object">
+                    <question>
+                      <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
+                      <tabs>
+                      
+                        <tab header="Java">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
     
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
     
     Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){
-        ...
+        <span class="hljs-comment">//...</span>
     }
 }
 
-<span class="hljs-comment">// somewhere else in the code base</span>
+<span class="hljs-comment">// somewhere else in the code</span>
 
 Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
-
 </code></pre>
-                </question>
+                        </tab>
+                      
+                        <tab header="Python">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
+    self.__price = price <span class="hljs-comment"># type: float</span>
+    self.__speed = speed <span class="hljs-comment"># type: int</span>
+    
+
+<span class="hljs-comment"># somewhere else in the code</span>
+my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);  
+</code></pre>
+                        </tab>
+                      </tabs>
+                      <hr>
+                    </question>
+                  </panel>
+                </div>
               </panel>
             </div>
-          </panel>
+          </div>
         </div>
       </div>
     </div>
@@ -81,5 +105,8 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
 </body>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

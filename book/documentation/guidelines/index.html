@@ -4,33 +4,36 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Documentation: Guidelines</title>
+    <title>CS2103/T Website - Documentation: Guidelines</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Documentation →</strong></span></p>
   <h2 id="guidelines">Guidelines</h2>
   <div id="main">
-    <p>Given below are some guidelines to write developer documentation, particularly applicable to documents targeted at developer-as-maintainer.</p>
     <div>
-      <h3 id="guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <p>Given below are some guidelines to write developer documentation.</p>
+    </div>
+    <div>
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can distinguish between top-down and bottom up documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can distinguish between top-down and bottom up documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>When writing project documents, a top-down breadth-first explanation is easier to understand than a bottom-up one.</strong></p>
@@ -40,15 +43,14 @@
             </panel>
           </div>
           <div>
-            <div>
-              <h4 id="why-two">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can explain the advantages of top-down documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="why-two">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can explain the advantages of top-down documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p>The main advantage of the top-down approach is that the document is structured like an upside down tree (root at the top) and <strong>the reader can travel down a path she is interested in until she reaches the component she is interested to learn in-depth</strong>,
@@ -59,15 +61,14 @@
             </panel>
           </div>
           <div>
-            <div>
-              <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can write documentation in a top-down manner <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can write documentation in a top-down manner <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <tip-box>
@@ -83,8 +84,8 @@
                     </blockquote>
                     <p>[Now we can drill down to <code>FrontEnd</code>'s details.]</p>
                     <blockquote>
-                      <p><code>FrontEnd</code> consists of three major components: <code>A</code>, <code>B</code>, <code>C</code><br><br><code>A</code>'s job is to ...<br><code>B</code>'s job is to...<br><code>C</code>'s job is to...<br><br> And this is
-                        how the three components work together ...</p>
+                      <p><code>FrontEnd</code> consists of three major components: <code>A</code>, <code>B</code>, <code>C</code><br><br>
+                        <code>A</code>'s job is to ...<br><code>B</code>'s job is to...<br><code>C</code>'s job is to...<br><br> And this is how the three components work together ...</p>
                     </blockquote>
                     <p>[At this point, further drill down the internal workings of each component. A reader who is not interested in knowing nitty-gritty details can skip ahead to the section on <code>BackEnd</code>.]</p>
                     <blockquote>
@@ -105,19 +106,19 @@
       </panel>
     </div>
     <div>
-      <h3 id="guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can explain the need for comprehensibility in documents <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can explain the need for comprehensibility in documents <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p>Technical documents exist to help others understand technical details. Therefore, <strong>it is not enough for the documentation to be accurate and comprehensive, it should also be comprehensible too</strong>.</p>
@@ -127,15 +128,14 @@
             </panel>
           </div>
           <div>
-            <div>
-              <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can write reasonably comprehensible developer documents <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can write reasonably comprehensible developer documents <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p>Here are some tips on writing effective documentation.</p>
@@ -179,25 +179,25 @@
       </panel>
     </div>
     <div>
-      <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally but Sufficiently</h3>
-      <panel type="seamless" header="%%-----------------------------------------%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3></div></span>
         <div>
           <div>
-            <div>
-              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can explain documentation should be minimal yet sufficient <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can explain documentation should be minimal yet sufficient <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p><strong>Aim for 'just enough' developer documentation.</strong></p>
                   <ul>
                     <li>Writing and maintaining developer documents is an overhead. You should try to minimize that overhead.</li>
-                    <li>The readers are developers who will eventually read the code. The documentation complements the code and can provide only just enough guidance to get started.</li>
+                    <li>If the readers are developers who will eventually read the code, the documentation should complement the code and should provide only just enough guidance to get started.</li>
                   </ul>
                 </div>
                 <div></div>
@@ -205,15 +205,14 @@
             </panel>
           </div>
           <div>
-            <div>
-              <h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-            </div>
-            <tip-box>
-              <div>
-                <p>🏆 Can write minimal yet sufficient documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-              </div>
-            </tip-box>
-            <panel type="seamless" header=" %%- - - - - - - - - -%%">
+            <panel type="seamless" expanded="">
+              <span slot="header" class="panel-title"><div>
+<h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+              <tip-box>
+                <div>
+                  <p>🏆 Can write minimal yet sufficient documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+                </div>
+              </tip-box>
               <div>
                 <div>
                   <p>Anything that is already clear in the code need not be described in words. Instead, <strong>focus on providing higher level information that is not readily visible in the code or comments</strong>.</p>
@@ -232,5 +231,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

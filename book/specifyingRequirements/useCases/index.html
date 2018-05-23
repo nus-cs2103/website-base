@@ -4,28 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Specifying Requirements: Use Cases</title>
+    <title>CS2103/T Website - Specifying Requirements: Use Cases</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/book/css/textbook.css">
-<div class="website-content">
+<div class="website-content" id="all">
   <p><span class="dimmed"><strong>Specifying Requirements →</strong></span></p>
   <h2 id="use-cases">Use Cases</h2>
   <div id="main">
     <div>
-      <div>
-        <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can explain use cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can explain use cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <tip-box type="definition">
@@ -50,7 +50,8 @@
                   <li>System:
                     <popover effect="fade" placement="right" content="Automated Teller Machine">
                       ATM </popover>
-                    Actor: Customer</li>
+                  </li>
+                  <li>Actor: Customer</li>
                   <li>Use Case: Check account balance
                     <ol>
                       <li>User inserts an ATM card</li>
@@ -86,10 +87,11 @@
               <div>
                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
                   Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
-                  UML is currently the <em>de facto</em> modeling notation used in the industry.</p>
+                  UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
               </div>
             </modal>
-            <p></p><img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250">
+            <p></p>
+            <img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250">
             <p></p>
             <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
           </div>
@@ -98,15 +100,14 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="identifying-one">Identifying <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can use use cases to list functional requirements of a simple system <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="identifying-one">Identifying <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can use use cases to list functional requirements of a simple system <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p>A use case is an interaction between a system and its <em>actors</em>.</p>
@@ -156,6 +157,7 @@
                 <li>Persons that can play this role : <mark>undergraduate student, graduate student, a staff member doing a part-time course, exchange student</mark></li>
               </ul>
             </tip-box>
+
             <p><strong>Use cases can be specified at <em>various levels of detail</em>.</strong></p>
             <tip-box>
               <p>📦 Consider the three use cases given below. Clearly, (a) is at a higher level than (b) and (b) is at a higher level than (c).</p>
@@ -182,7 +184,8 @@
                         before pressing the “buy” button. Printed tickets can be collected from a slot at the bottom of the machine. The machine also displays messages such as &quot;Please enter more money”, “Request fewer tickets&quot; or &quot;SOLD
                         OUT!”. Finally, a &quot;Return Change&quot; button allows the customer to get back his unspent money.</p>
                       <p><strong>Draw a use case diagram for the above requirements.</strong></p>
-                      <div slot="answer"><img src="/website/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" height="250">
+                      <div slot="answer">
+                        <img src="/website/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" height="250">
                         <p></p>
                         <p>Note that most of the details in the description are better given as part of the use case description rather than as low-level use cases in the diagram.</p>
                       </div>
@@ -200,7 +203,8 @@
                         closed e.g. number of bugs per component and per customer; number of bugs found by a particular tester ; number of bugs awaiting to be fixed; number of bugs awaiting to be retested; number of bugs awaiting to be assigned to programmers
                         etc.</p>
                       <p><strong>Develop a use case diagram to capture their requirements given below.</strong></p>
-                      <div slot="answer"><img src="/website/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" height="400">
+                      <div slot="answer">
+                        <img src="/website/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" height="400">
                         <p></p>
                         <p><strong>Explanation</strong>: The given description contains information not relevant to use case modeling. Furthermore, the description is not enough to complete the use case diagram All these are realities of real projects. However,
                           the process of trying to create this use case diagram prompts us to investigate issues such as:</p>
@@ -223,15 +227,14 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="details-two">Details <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can specify details of a use case in a structured format <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="details-two">Details <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can specify details of a use case in a structured format <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong>Writing use case steps</strong></p>
@@ -273,7 +276,8 @@
                   <li>Current Player adjusts the throw speed.</li>
                   <li>Current Player triggers the die throw.</li>
                   <li>Square Game shows the face value of the die.</li>
-                  <li>Square Game moves the Player's piece accordingly.<br><mark>Steps 5-9 are repeated for each Player, and for as many rounds as required until a Player reaches the 100th square.</mark></li>
+                  <li>Square Game moves the Player's piece accordingly.<br>
+                    <mark>Steps 5-9 are repeated for each Player, and for as many rounds as required until a Player reaches the 100th square.</mark></li>
                   <li>Square Game shows the Winner.</li>
                 </ol>
                 <p>  Use case ends.</p>
@@ -362,8 +366,8 @@
                 <li>the extension marked as <code>*a.</code> can happen at any step (hence, the <code>*</code>).</li>
               </ul>
               <p>When separating extensions from the MSS, keep in mind that the <strong>MSS should be self-contained</strong>. That is, the MSS should give us a complete usage scenario.</p>
-              <p>Also note that it is not useful to mention events such as power failures or system crashes as extensions because the system cannot function beyond such catastrophic failures.</p><img src="/website/book/specifyingRequirements/useCases/details/images/extension.png"
-                height="250">
+              <p>Also note that it is not useful to mention events such as power failures or system crashes as extensions because the system cannot function beyond such catastrophic failures.</p>
+              <img src="/website/book/specifyingRequirements/useCases/details/images/extension.png" height="250">
               <p></p>
               <p>In use case diagrams you can use the <code>&lt;&lt; extend &gt;&gt;</code> arrows to show extensions. Note the direction of the arrow is from the extension to the use case it extends and the arrow uses a dashed line.</p>
             </div>
@@ -391,8 +395,8 @@
                 <li>when you don't want to clutter a use case with too many low-level steps.</li>
                 <li>when a set of steps is repeated in multiple use cases.</li>
               </ul>
-              <p>We use a dotted arrow and a <code>&lt;&lt; include &gt;&gt;</code> annotation to show use case inclusions in a use case diagram. Note how the arrow direction is different from the <code>&lt;&lt; extend &gt;&gt;</code> arrows.</p><img src="/website/book/specifyingRequirements/useCases/details/images/inclusion.png"
-                height="250">
+              <p>We use a dotted arrow and a <code>&lt;&lt; include &gt;&gt;</code> annotation to show use case inclusions in a use case diagram. Note how the arrow direction is different from the <code>&lt;&lt; extend &gt;&gt;</code> arrows.</p>
+              <img src="/website/book/specifyingRequirements/useCases/details/images/inclusion.png" height="250">
               <p></p>
             </div>
             <div>
@@ -428,7 +432,9 @@
                     <li>Actor: User</li>
                     <li>Preconditions: User is logged in.</li>
                     <li><b>Guarantees:
-        <ul><li>Money will be deducted from the source account only if the transfer to the destination account is successful</li><li>The transfer will not result in the account balance going below the minimum balance required.</li></ul></b></li>
+        <ul>
+          <li>Money will be deducted from the source account only if the transfer to the destination account is successful</li>
+          <li>The transfer will not result in the account balance going below the minimum balance required.</li></ul></b></li>
                     <li>MSS:
                       <ol>
                         <li>User chooses to transfer money.</li>
@@ -717,30 +723,28 @@
       </panel>
     </div>
     <div>
-      <div>
-        <h4 id="usage-three">Usage <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <tip-box>
-        <div>
-          <p>🏆 Can optimize the use of use cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
-      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h4 id="usage-three">Usage <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+        <tip-box>
+          <div>
+            <p>🏆 Can optimize the use of use cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+          </div>
+        </tip-box>
         <div>
           <div>
             <p><strong>You can use actor generalization in use case diagrams</strong> using a symbol similar to that of UML notation for inheritance.</p>
             <tip-box>
-              <p>📦 In this example, actor <code>Blogger</code> can do all the use cases the actor <code>Guest</code> can do, as a result of the actor generalization relationship given in the diagram.</p><img src="/website/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png"
-                height="250"></tip-box>
-            <tip-box type="tip">
-              Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.
-            </tip-box>
+              <p>📦 In this example, actor <code>Blogger</code> can do all the use cases the actor <code>Guest</code> can do, as a result of the actor generalization relationship given in the diagram.</p>
+              <img src="/website/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png" height="250"></tip-box>
+            <p>💡 Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.</p>
             <p><strong>Some include ‘System’ as an actor to indicate that something is done by the system itself without being initiated by a user or an external system.</strong></p>
             <tip-box>
-              <p>📦 The diagram below can be used to indicate that the system generates daily reports at midnight.</p><img src="/website/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg" height="200"></tip-box>
+              <p>📦 The diagram below can be used to indicate that the system generates daily reports at midnight.</p>
+              <img src="/website/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg" height="200"></tip-box>
             <p>However, others argue that only use cases providing value to an external user/system should be shown in the use case diagram. For example, they argue that ‘view daily report’ should be the use case and <code>generate daily report</code> is
               not to be shown in the use case diagram because it is simply something the system has to do to support the <code>view daily report</code> use case.</p>
-            <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for Modeling Behaviors that involve an external actor.</p>
+            <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for modeling behaviors that involve an external actor.</p>
             <p><strong>UML is not very specific about the text contents of a use case.</strong> Hence, there are many styles for writing use cases. For example, the steps can be written as a continuous paragraph. Use cases should be easy to read. Note that
               there is no strict rule about writing all details of all steps or a need to use all the elements of a use case.</p>
             <p><strong>There are some advantages of documenting system requirements as use cases:</strong></p>
@@ -800,5 +804,8 @@
 </body>
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website'
+</script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>
