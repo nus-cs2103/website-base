@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <div>
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
   <div class="website-content" id="all">
     <tip-box>
       <div>
@@ -23,7 +23,7 @@
     <div>
       <div>
         <p>
-          <panel src="/website\book\errorHandling\defensiveProgramming\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%" isOpen="false"
+          <panel src="/website-base\book\errorHandling\defensiveProgramming\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%" isOpen="false"
             no-close="true" no-switch="true"></panel>
         </p>
       </div>
@@ -40,7 +40,7 @@
           <div>
             <p>Consider the association given below. A defensive implementation requires to ensure a <code>MinedCell</code> cannot exist without a <code>Mine</code> and vice versa which requires simultaneous object creation. However, Java can only create
               one object at a time. Given below are two alternatives implementations, both of which violate the multiplicity for a short period of time.</p>
-            <img src="/website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
+            <img src="/website-base/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
             <p></p>
             <p>Option 1:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
@@ -79,7 +79,7 @@
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content" id="all">
   <p><span class="dimmed"><strong>Object Oriented Programming →</strong></span></p>
   <h2 id="classes">Classes</h2>
@@ -45,12 +45,12 @@
 
             <p>Let us use the UML notation to illustrate classes and objects under discussion.</p>
             <p>
-              <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
-              <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
+              <panel src="/website-base\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
+              <panel src="/website-base\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
             </p>
             <p></p>
             <tip-box>
-              <img src="/website/book/oopDesign/classes/basic/images/person.png" height="100">
+              <img src="/website-base/book/oopDesign/classes/basic/images/person.png" height="100">
               <p></p>
               <p><code>Person</code> class and some example instances of the <code>Person</code> class.</p>
             </tip-box>
@@ -132,7 +132,7 @@
             <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code> to
               identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
             <p>
-              <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Class Level Members"
+              <panel src="/website-base\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Class Level Members"
                 expanded="" fragment="title-and-body"></panel>
               <p></p>
             </p>
@@ -178,13 +178,13 @@
             <p><strong>An <em>Enumeration</em> is a fixed set of values that can be considered as a data type.</strong></p>
             <p>An enumeration is often useful when using a regular data type such as <code>int</code> or <code>String</code> would allow invalid values to be assigned to a variable. <span class="dimmed">e.g. if a variable can only take values <code>0</code> and <code>1</code>, declaring it as an <code>int</code> would allow invalid values such as <code>2</code> to be assigned to it. But if you define an enumeration called <code>Binary</code> that has values <code>0</code> and <code>1</code> only, a variable of type <code>Binary</code> will never be assigned an invalid value such as <code>2</code> because the compiler is able to catch the error.</span></p>
             <p>
-              <panel src="/website\book\uml\classDiagrams\enumerations\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Enumerations" expanded=""></panel>
+              <panel src="/website-base\book\uml\classDiagrams\enumerations\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Enumerations" expanded=""></panel>
             </p>
             <p></p>
             <tip-box>
               <p>📦 <code>Priority</code> can be considered an enumeration because it has only three values.</p>
               <p><code>Priority</code>: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code></p>
-              <img src="/website/book/oopDesign/classes/enumerations/images/priority.png" height="100">
+              <img src="/website-base/book/oopDesign/classes/enumerations/images/priority.png" height="100">
               <p></p>
             </tip-box>
           </div>
@@ -212,7 +212,7 @@
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

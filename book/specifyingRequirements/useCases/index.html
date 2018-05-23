@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content" id="all">
   <p><span class="dimmed"><strong>Specifying Requirements →</strong></span></p>
   <h2 id="use-cases">Use Cases</h2>
@@ -91,7 +91,7 @@
               </div>
             </modal>
             <p></p>
-            <img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250">
+            <img src="/website-base/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250">
             <p></p>
             <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
           </div>
@@ -185,7 +185,7 @@
                         OUT!”. Finally, a &quot;Return Change&quot; button allows the customer to get back his unspent money.</p>
                       <p><strong>Draw a use case diagram for the above requirements.</strong></p>
                       <div slot="answer">
-                        <img src="/website/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" height="250">
+                        <img src="/website-base/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" height="250">
                         <p></p>
                         <p>Note that most of the details in the description are better given as part of the use case description rather than as low-level use cases in the diagram.</p>
                       </div>
@@ -204,7 +204,7 @@
                         etc.</p>
                       <p><strong>Develop a use case diagram to capture their requirements given below.</strong></p>
                       <div slot="answer">
-                        <img src="/website/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" height="400">
+                        <img src="/website-base/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" height="400">
                         <p></p>
                         <p><strong>Explanation</strong>: The given description contains information not relevant to use case modeling. Furthermore, the description is not enough to complete the use case diagram All these are realities of real projects. However,
                           the process of trying to create this use case diagram prompts us to investigate issues such as:</p>
@@ -239,7 +239,7 @@
           <div>
             <p><strong>Writing use case steps</strong></p>
             <div>
-              <link rel="stylesheet" href="/website/book/css/common.css">
+              <link rel="stylesheet" href="/website-base/book/css/common.css">
               <p><strong>The main body of the use case is the sequence of steps that describes the interaction between the system and the actors.</strong> Each step is given as a simple statement describing who does what.</p>
               <tip-box>
                 <p>📦 An example of the main body of a use case.</p>
@@ -284,7 +284,7 @@
               </tip-box>
             </div>
             <div>
-              <link rel="stylesheet" href="/website/book/css/common.css">
+              <link rel="stylesheet" href="/website-base/book/css/common.css">
               <p><strong>The <mark><em>Main Success Scenario (MSS)</em></mark> describes the most straightforward interaction for a given use case, which assumes that nothing goes wrong.</strong> This is also called the <em>Basic Course of Action</em> or
                 the <em>Main Flow of Events</em> of a use case.</p>
               <tip-box>
@@ -367,12 +367,12 @@
               </ul>
               <p>When separating extensions from the MSS, keep in mind that the <strong>MSS should be self-contained</strong>. That is, the MSS should give us a complete usage scenario.</p>
               <p>Also note that it is not useful to mention events such as power failures or system crashes as extensions because the system cannot function beyond such catastrophic failures.</p>
-              <img src="/website/book/specifyingRequirements/useCases/details/images/extension.png" height="250">
+              <img src="/website-base/book/specifyingRequirements/useCases/details/images/extension.png" height="250">
               <p></p>
               <p>In use case diagrams you can use the <code>&lt;&lt; extend &gt;&gt;</code> arrows to show extensions. Note the direction of the arrow is from the extension to the use case it extends and the arrow uses a dashed line.</p>
             </div>
             <div>
-              <link rel="stylesheet" href="/website/book/css/common.css">
+              <link rel="stylesheet" href="/website-base/book/css/common.css">
               <p><strong>A use case can <mark>include</mark> another use case.</strong> Underlined text is commonly used to show an inclusion of a use case.</p>
               <tip-box>
                 <p>📦 This use case includes two other use cases, one in step 1 and one in step 2.</p>
@@ -396,11 +396,11 @@
                 <li>when a set of steps is repeated in multiple use cases.</li>
               </ul>
               <p>We use a dotted arrow and a <code>&lt;&lt; include &gt;&gt;</code> annotation to show use case inclusions in a use case diagram. Note how the arrow direction is different from the <code>&lt;&lt; extend &gt;&gt;</code> arrows.</p>
-              <img src="/website/book/specifyingRequirements/useCases/details/images/inclusion.png" height="250">
+              <img src="/website-base/book/specifyingRequirements/useCases/details/images/inclusion.png" height="250">
               <p></p>
             </div>
             <div>
-              <link rel="stylesheet" href="/website/book/css/common.css">
+              <link rel="stylesheet" href="/website-base/book/css/common.css">
               <p><strong><mark><em>Preconditions</em></mark> specify the specific state we expect the system to be in before the use case starts.</strong></p>
               <tip-box>
                 <div>
@@ -422,7 +422,7 @@
               <p></p>
             </div>
             <div>
-              <link rel="stylesheet" href="/website/book/css/common.css">
+              <link rel="stylesheet" href="/website-base/book/css/common.css">
               <p><strong><mark><em>Guarantees</em></mark> specify what the use case promises to give us at the end of its operation.</strong></p>
               <tip-box>
                 <div>
@@ -452,7 +452,7 @@
             <div>
               <panel header=":muscle: Exercises" expandable="">
                 <div>
-                  <link rel="stylesheet" href="/website/book/css/common.css">
+                  <link rel="stylesheet" href="/website-base/book/css/common.css">
                   <panel header=":lock::key: EZ-Link top-up use case">
                     <question has-input="true">
                       <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing
@@ -558,7 +558,7 @@
                   </panel>
                 </div>
                 <div>
-                  <link rel="stylesheet" href="/website/book/css/common.css">
+                  <link rel="stylesheet" href="/website-base/book/css/common.css">
                   <panel header=":lock::key: LearnSys – reply to post use case">
                     <question has-input="true">
                       <p>Complete the following use case (MSS, extensions, etc.).</p>
@@ -663,7 +663,7 @@
                   </panel>
                 </div>
                 <div>
-                  <link rel="stylesheet" href="/website/book/css/common.css">
+                  <link rel="stylesheet" href="/website-base/book/css/common.css">
                   <panel header=":lock::key: What’s wrong with this use case?">
                     <question>
                       <p>Identify problems with this use case description.</p>
@@ -736,12 +736,12 @@
             <p><strong>You can use actor generalization in use case diagrams</strong> using a symbol similar to that of UML notation for inheritance.</p>
             <tip-box>
               <p>📦 In this example, actor <code>Blogger</code> can do all the use cases the actor <code>Guest</code> can do, as a result of the actor generalization relationship given in the diagram.</p>
-              <img src="/website/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png" height="250"></tip-box>
+              <img src="/website-base/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png" height="250"></tip-box>
             <p>💡 Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.</p>
             <p><strong>Some include ‘System’ as an actor to indicate that something is done by the system itself without being initiated by a user or an external system.</strong></p>
             <tip-box>
               <p>📦 The diagram below can be used to indicate that the system generates daily reports at midnight.</p>
-              <img src="/website/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg" height="200"></tip-box>
+              <img src="/website-base/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg" height="200"></tip-box>
             <p>However, others argue that only use cases providing value to an external user/system should be shown in the use case diagram. For example, they argue that ‘view daily report’ should be the use case and <code>generate daily report</code> is
               not to be shown in the use case diagram because it is simply something the system has to do to support the <code>view daily report</code> use case.</p>
             <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for modeling behaviors that involve an external actor.</p>
@@ -805,7 +805,7 @@
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

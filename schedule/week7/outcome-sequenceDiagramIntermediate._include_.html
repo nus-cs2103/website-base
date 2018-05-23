@@ -17,11 +17,11 @@
             <p>💡 Although object deletion is not that important in languages such as Java that support automatic memory management, you can still show object deletion in UML diagrams to indicate the point at which the object ceases to be used.</p>
           </tip-box>
           <p>Notation:</p>
-          <img src="/website/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
+          <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
           <p></p>
           <tip-box>
             <p>📦 Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
-            <img src="/website/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
+            <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
             <p></p>
           </tip-box>
         </div>
@@ -47,14 +47,14 @@
         <div>
           <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
           <p>Notation:</p>
-          <img src="/website/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
+          <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
           <p></p>
           <tip-box>
             <p>📦 The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
-            <img src="/website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
+            <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
             <p></p>
             <p>📦 In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method of the calling object.</p>
-            <img src="/website/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
+            <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
             <p></p>
           </tip-box>
         </div>
@@ -80,11 +80,11 @@
         <div>
           <p><strong>UML uses <code>alt</code> frames to indicate alternative paths.</strong></p>
           <p>Notation:</p>
-          <img src="/website/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
+          <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
           <p></p>
           <tip-box>
             <p>📦 <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
-            <img src="/website/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
+            <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
             <p></p>
           </tip-box>
         </div>
@@ -110,11 +110,11 @@
         <div>
           <p><strong>UML uses <code>opt</code> frames to indicate optional paths.</strong></p>
           <p>Notation:</p>
-          <img src="/website/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
+          <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
           <p></p>
           <tip-box>
             <p>📦 <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
-            <img src="/website/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
+            <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
             <p></p>
           </tip-box>
         </div>
@@ -141,14 +141,14 @@
           <p><strong>UML uses <em>ref frame</em> to allow a segment of the interaction to be omitted and shown as a separate sequence diagram.</strong> Reference frames help us to break complicated sequence diagrams into multiple parts or simply to omit
             details we are not interested in showing.</p>
           <p>Notation:</p>
-          <img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
+          <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
           <p></p>
           <tip-box>
             <p>📦 The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
-            <img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
+            <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
             <p></p>
             <p>Those details are shown in a separate sequence diagram given below.<br>
-              <img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
+              <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
             <p></p>
           </tip-box>
         </div>
@@ -162,11 +162,12 @@
   <div>
     <div>
       <p>
-        <panel src="/website\book\uml\sequenceDiagrams\referenceFrames\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\objectDeletion\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\selfInvocation\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\alternativePaths\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        <panel src="/website\book\uml\sequenceDiagrams\optionalPaths\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website-base\book\uml\sequenceDiagrams\referenceFrames\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%" isOpen="false" no-close="true"
+          no-switch="true"></panel>
+        <panel src="/website-base\book\uml\sequenceDiagrams\objectDeletion\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website-base\book\uml\sequenceDiagrams\selfInvocation\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website-base\book\uml\sequenceDiagrams\alternativePaths\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website-base\book\uml\sequenceDiagrams\optionalPaths\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%" isOpen="false" no-close="true" no-switch="true"></panel>
       </p>
     </div>
     <p></p>
@@ -187,7 +188,7 @@
                 <panel header=":lock::key: What’s going on here?">
                   <question>
                     <p>What’s going on here?</p>
-                    <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
+                    <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
                     <p></p>
                     <ul class="task-list">
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
@@ -206,7 +207,7 @@
                 <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
                   <question>
                     <p>Explain the interactions depicted in this sequence diagram.</p>
-                    <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+                    <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                     <p></p>
                     <div slot="hint">
                       <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
@@ -225,7 +226,7 @@
       <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
         <question>
           <p>Explain the interactions depicted in this sequence diagram.</p>
-          <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+          <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
           <p></p>
           <div slot="hint">
             <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
@@ -257,11 +258,11 @@
         <div>
           <p><strong>UML uses <code>par</code> frames to indicate parallel paths.</strong></p>
           <p>Notation:</p>
-          <img src="/website/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
+          <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
           <p></p>
           <tip-box>
             <p>📦 <code>Logic</code> is calling methods <code>CloudServer#poll()</code> and <code>LocalServer#poll()</code> in parallel.</p>
-            <img src="/website/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
+            <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
             <p></p>
             <tip-box>
               <p>💡 If you show parallel paths in a sequence diagram, the corresponding Java implementation is likely to be <em>multi-threaded</em> <span class="dimmed">  because a normal Java program cannot do multiple things at the same time</span>.</p>

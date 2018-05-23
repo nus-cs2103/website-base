@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content">
   <div id="main">
     <h1 id="oop-implementation">OOP - Implementation</h1>
@@ -78,7 +78,7 @@
         <p><strong>We use instance level variables to implement associations.</strong></p>
         <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
         <tip-box>
-          <img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+          <img src="/website-base/book/oopImplementation/associations/images/logicMinefield.png" height="40">
           <p></p>
           <div>
             <table>
@@ -123,7 +123,7 @@
         </tip-box>
         <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
         <tip-box>
-          <img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
+          <img src="/website-base/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
           <p></p>
           <tabs>
           
@@ -149,7 +149,7 @@
         </tip-box>
         <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
         <tip-box>
-          <img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+          <img src="/website-base/book/oopImplementation/associations/images/fooBar.png" height="40">
           <p></p>
           <table>
             <tr>
@@ -274,7 +274,7 @@
             </tr>
           </table>
           <p>The code above results in this dependency.</p>
-          <img src="/website/book/oopImplementation/dependencies/images/fooBarDependency.png" height="40"></tip-box>
+          <img src="/website-base/book/oopImplementation/dependencies/images/fooBarDependency.png" height="40"></tip-box>
       </div>
     </div>
     <div>
@@ -286,7 +286,7 @@
           object.</p>
         <tip-box>
           <p>Example:</p>
-          <img src="/website/book/oopImplementation/composition/images/carEngine.png" height="40">
+          <img src="/website-base/book/oopImplementation/composition/images/carEngine.png" height="40">
           <p></p>
           <table>
             <tr>
@@ -325,7 +325,7 @@
         <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
         <tip-box>
           <p>📦 Example:</p>
-          <img src="/website/book/oopImplementation/aggregation/images/carPerson.png" height="40">
+          <img src="/website-base/book/oopImplementation/aggregation/images/carPerson.png" height="40">
           <table>
             <tr>
             
@@ -369,13 +369,13 @@
         <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
         <tip-box>
           <p>Example:</p>
-          <img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
+          <img src="/website-base/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
           <p></p>
           <p>At implementation level, an association class is most likely implemented as follows.</p>
-          <img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
+          <img src="/website-base/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
           <p></p>
           <p>
-            <panel type="seamless" src="/website\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel type="seamless" src="/website-base\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%" isOpen="false" no-close="true" no-switch="true"></panel>
           </p>
         </tip-box>
       </div>
@@ -584,7 +584,7 @@ Ben is a student
         <p><strong>Java allows multiple inheritance among interfaces. A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
         <tip-box>
           <p>📦 The design below is allowed by Java.</p>
-          <img src="/website/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
+          <img src="/website-base/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
           <p></p>
           <ol>
             <li><code>Staff</code> interface inherits (note the solid lines) the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
@@ -647,7 +647,7 @@ Ben is a student
         <p><strong>Use the <code>abstract</code> keyword to identify abstract classes/methods.</strong></p>
         <tip-box>
           <p>📦 Partial code below gives an example of how to declare abstract classes/methods.</p>
-          <img src="/website/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
+          <img src="/website-base/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     
@@ -710,7 +710,7 @@ Ben is a student
                       classes in the <code>Payroll</code> system.</p>
                     <tip-box>
                       <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p>
-                      <img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
+                      <img src="/website-base/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                       <p></p>
                       <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
@@ -766,7 +766,7 @@ Ben is a student
               </div>
             </div>
           </modal>
-          <img src="/website/book/oopImplementation/polymorphism/images/polymorphicPayroll.png" height="200">
+          <img src="/website-base/book/oopImplementation/polymorphism/images/polymorphicPayroll.png" height="200">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Staff</span> </span>{
     String name;
@@ -820,7 +820,7 @@ Ben is a student
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 </html>

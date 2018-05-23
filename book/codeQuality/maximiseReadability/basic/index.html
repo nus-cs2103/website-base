@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <div>
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
   <div class="website-content" id="all">
     <tip-box>
       <div>
@@ -56,7 +56,7 @@
                   <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
                   <tip-box>
                     <p>Example:</p>
-                    <img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                    <img src="/website-base/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
                     <p></p>
                   </tip-box>
                 </div>
@@ -73,10 +73,10 @@
                       <div>
                         <tip-box>
                           <p>📦 Example:</p>
-                          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                          <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                           <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                          <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                          <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                           <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
@@ -94,10 +94,10 @@
                       <div>
                         <tip-box>
                           <p>📦 Example:</p>
-                          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                          <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                           <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                          <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                          <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                           <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
@@ -132,7 +132,7 @@ is_urgent = type_code == URGENT
                             <tr>
                             
                               <td valign="top">
-                                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                                <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
@@ -143,7 +143,7 @@ is_urgent = type_code == URGENT
                               <td>  <br><br></td>
                             
                               <td valign="top">
-                                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                                <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
@@ -165,7 +165,7 @@ is_urgent = type_code == URGENT
                             <tr>
                             
                               <td valign="top">
-                                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                                <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                                 <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
@@ -176,7 +176,7 @@ is_urgent = type_code == URGENT
                               <td>  <br><br></td>
                             
                               <td valign="top">
-                                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                                <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                                 <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
@@ -195,7 +195,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                   </tip-box>
                   <p>Similarly, we can have ‘magic’ values of other data types.</p>
                   <tip-box>
-                    <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                    <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                     <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
                   </tip-box>
@@ -234,7 +234,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

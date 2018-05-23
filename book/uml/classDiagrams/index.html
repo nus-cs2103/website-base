@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content" id="all">
   <p><span class="dimmed"><strong>UML →</strong></span></p>
   <h2 id="class-diagrams">Class Diagrams</h2>
@@ -36,7 +36,7 @@
                   <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
                   <tip-box>
                     <p>📦 An example class diagram:</p>
-                    <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
+                    <img src="/website-base/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
                 </div>
                 <div></div>
               </div>
@@ -62,11 +62,11 @@
               <div>
                 <div>
                   <p>The basic UML notations used to represent a <em>class</em>:<br></p>
-                  <img src="/website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
+                  <img src="/website-base/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
                   <p></p>
                   <tip-box>
                     <p>📦 A <code>Table</code> class shown in UML notation:</p>
-                    <img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                    <img src="/website-base/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
                     <p></p>
                     <panel type="seamless" header="The equivalent code">
                       <table>
@@ -118,7 +118,7 @@
                   <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. 'Attributes' always appear above the 'Operations' compartment. All operations should
                     be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
                   <tip-box>
-                    <img src="/website/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
+                    <img src="/website-base/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
                   <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language
                     used. Here are some common visibilities and how they are indicated in a class diagram:</p>
                   <ul>
@@ -164,7 +164,7 @@
                   <p></p>
                   <tip-box>
                     <p>📦 <code>Table</code> class with visibilities shown:</p>
-                    <img src="/website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
+                    <img src="/website-base/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
                     <p></p>
                   </tip-box>
                 </div>
@@ -175,7 +175,7 @@
                         <panel header=":lock::key: Which classes are correct?">
                           <question>
                             <p>Which of these follow the correct UML notation?</p>
-                            <img src="/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
+                            <img src="/website-base/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
                             <p></p>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
@@ -267,11 +267,11 @@
               <div>
                 <div>
                   <p>We use a solid line to show an association between two classes.</p>
-                  <img src="/website/book/uml/classDiagrams/associations/basic/images/notation.png" width="300">
+                  <img src="/website-base/book/uml/classDiagrams/associations/basic/images/notation.png" width="300">
                   <p></p>
                   <tip-box>
                     <p>📦 This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
-                      <img src="/website/book/uml/classDiagrams/associations/basic/images/example.png" width="300"></p>
+                      <img src="/website-base/book/uml/classDiagrams/associations/basic/images/example.png" width="300"></p>
                   </tip-box>
                 </div>
                 <div></div>
@@ -292,7 +292,7 @@
                   <p><strong>We use arrow heads to indication the navigability of an association.</strong></p>
                   <tip-box>
                     <p>📦 <code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
-                    <img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
+                    <img src="/website-base/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
                     <div>
                       <table>
                         <tr>
@@ -335,12 +335,12 @@
                     </div>
                     <p>📦 Here is an example of a bidirectional navigability; each class is aware of the other.
                       <p></p>
-                      <img src="/website/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40"></p>
+                      <img src="/website-base/book/uml/classDiagrams/associations/navigability/images/manDog.png" height="40"></p>
                   </tip-box>
                   <p><strong>Navigability can be shown in class diagrams as well as object diagrams</strong>.</p>
                   <tip-box>
                     <p>📦 According to this object diagram the given <code>Logic</code> object is associated with and aware of two <code>MineField</code> objects.</p>
-                    <img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80"></tip-box>
+                    <img src="/website-base/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80"></tip-box>
                 </div>
                 <div></div>
               </div>
@@ -358,10 +358,10 @@
               <div>
                 <div>
                   <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
-                  <img src="/website/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
+                  <img src="/website-base/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
                   <tip-box>
                     <p>📦 This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p>
-                    <img src="/website/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
+                    <img src="/website-base/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
                     <p></p>
                     <p>Note how the variable names match closely with the association roles.</p>
                     <table>
@@ -399,7 +399,7 @@
                   </tip-box>
                   <tip-box>
                     <p>📦 The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
-                    <img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
+                    <img src="/website-base/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
                     <p></p>
                     <table>
                       <tr>
@@ -443,10 +443,10 @@
               <div>
                 <div>
                   <p><strong><em>Association labels</em> describe the meaning of the association.</strong> The arrow head indicates the direction in which the label is to be read.</p>
-                  <img src="/website/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
+                  <img src="/website-base/book/uml/classDiagrams/associations/labels/images/notation.png" width="400">
                   <tip-box>
                     <p>📦 In this example, the same association is described using two different labels.</p>
-                    <img src="/website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
+                    <img src="/website-base/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
                     <p></p>
                     <ul>
                       <li>Diagram on the left: <code>Admin</code> class is associated with <code>Student</code> class because an <code>Admin</code> object <em>uses</em> a <code>Student</code> object.</li>
@@ -469,7 +469,7 @@
               </tip-box>
               <div>
                 <div>
-                  <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
+                  <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
                   <p></p>
                   <p>Commonly used multiplicities:</p>
                   <ul>
@@ -480,7 +480,7 @@
                   </ul>
                   <tip-box>
                     <p>📦 In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code> object</p>
-                    <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300"></tip-box>
+                    <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300"></tip-box>
                   <tip-box>
                     <p>📦 In the diagram below,</p>
                     <ul>
@@ -489,7 +489,7 @@
                       <li>An admin can handle any number of professors and any number of students, including none.</li>
                       <li>A professor/student can be handled by any number of admins, including none.</li>
                     </ul>
-                    <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
+                    <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
                 </div>
                 <div></div>
               </div>
@@ -516,10 +516,10 @@
                 <div>
                   <p>In a UML class diagram, a <strong>dependency is a weaker form of an association where there is an interactions between objects that do not result in a long-term relationship</strong> between the said objects.</p>
                   <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
-                  <img src="/website/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
+                  <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
                   <tip-box>
                     <p>📦 Two examples of dependencies:</p>
-                    <img src="/website/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
+                    <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
                     <p></p>
                   </tip-box>
                 </div>
@@ -552,10 +552,10 @@
                   <tip-box>
                     <p>📦 The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number of pieces, each belonging to a certain player.</p>
                     <p>A <code>Piece</code> may or may not be on a <code>Square</code>. Note how that association can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. The <code>isOn</code> attribute can either be <code>null</code>                      or hold a reference to a <code>Square</code> object, matching the <code>0..1</code> multiplicity of the association it replaces. The default value is <code>null</code>.</p>
-                    <img src="/website/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
+                    <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
                     <p></p>
                     <p>The association that a <code>Board</code> has 100 <code>Sqaure</code>s can be shown in either of these two ways:</p>
-                    <img src="/website/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                    <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
                     <p></p>
                   </tip-box>
                 </div>
@@ -583,10 +583,10 @@
               <div>
                 <div>
                   <p>Notation:</p>
-                  <img src="/website/book/uml/classDiagrams/enumerations/what/images/notation.png" width="150">
+                  <img src="/website-base/book/uml/classDiagrams/enumerations/what/images/notation.png" width="150">
                   <tip-box>
                     <p>📦 In the class diagram below, there are two enumerations in use:</p>
-                    <img src="/website/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" width="600">
+                    <img src="/website-base/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" width="600">
                     <p></p>
                   </tip-box>
                 </div>
@@ -616,7 +616,7 @@
                   <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
                   <tip-box>
                     <p>📦 In the class below, <code>totalStudents</code> attribute and the <code>getTotalStudents</code> method are class-level.</p>
-                    <img src="/website/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
+                    <img src="/website-base/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
                     <p></p>
                   </tip-box>
                 </div>
@@ -644,10 +644,10 @@
               <div>
                 <div>
                   <p>Association classes are denoted as a connection to an association link using a dashed line as shown below.</p>
-                  <img src="/website/book/uml/classDiagrams/associationClasses/what/images/notation.png" height="100">
+                  <img src="/website-base/book/uml/classDiagrams/associationClasses/what/images/notation.png" height="100">
                   <tip-box>
                     <p>📦 In this example <code>Loan</code> is an association class because it stores information about the <code>borrows</code> association between the <code>User</code> and the <code>Book</code>.</p>
-                    <img src="/website/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png" height="150">
+                    <img src="/website-base/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png" height="150">
                     <p></p>
                   </tip-box>
                 </div>
@@ -676,11 +676,11 @@
                 <div>
                   <p><strong>UML uses a solid diamond symbol to denote composition.</strong></p>
                   <p>Notation:</p>
-                  <img src="/website/book/uml/classDiagrams/composition/what/images/notation.png" width="220">
+                  <img src="/website-base/book/uml/classDiagrams/composition/what/images/notation.png" width="220">
                   <p></p>
                   <tip-box>
                     <p>📦 A <code>Book</code> consists of <code>Chapter</code> objects. When the <code>Book</code> object is destroyed, its <code>Chapter</code> objects are destroyed too.</p>
-                    <img src="/website/book/uml/classDiagrams/composition/what/images/bookChapter.png" width="220">
+                    <img src="/website-base/book/uml/classDiagrams/composition/what/images/bookChapter.png" width="220">
                     <p></p>
                   </tip-box>
                 </div>
@@ -709,10 +709,10 @@
                 <div>
                   <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
                   <p>Notation:</p>
-                  <img src="/website/book/uml/classDiagrams/aggregation/what/images/notation.png" height="45">
+                  <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/notation.png" height="45">
                   <tip-box>
                     <p>📦 Example:</p>
-                    <img src="/website/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
+                    <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
                     <p></p>
                   </tip-box>
                 </div>
@@ -741,11 +741,11 @@
                 <div>
                   <p>You can use a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
                   <p>Notation:</p>
-                  <img src="/website/book/uml/classDiagrams/classInheritance/what/images/notation.png" height="120">
+                  <img src="/website-base/book/uml/classDiagrams/classInheritance/what/images/notation.png" height="120">
                   <p></p>
                   <tip-box>
                     <p>📦 Examples: The <code>Car</code> class <em>inherits</em> from the <code>Vehicle</code> class. The <code>Cat</code> and <code>Dog</code> classes <em>inherit</em> from the <code>Pet</code> class.</p>
-                    <img src="/website/book/uml/classDiagrams/classInheritance/what/images/examples.png" height="120">
+                    <img src="/website-base/book/uml/classDiagrams/classInheritance/what/images/examples.png" height="120">
                     <p></p>
                   </tip-box>
                 </div>
@@ -775,7 +775,7 @@
                   <p><strong>An interface is shown similar to a class with an additional keyword <code>&lt;&lt; interface &gt;&gt;</code>. When a class implements an interface, it is shown similar to class inheritance except a dashed line is used instead of a solid line.</strong></p>
                   <tip-box>
                     <p>📦 The <code>AcademicStaff</code> and the <code>AdminStaff</code> classes <em>implement</em> the <code>SalariedStaff</code> interface.</p>
-                    <img src="/website/book/uml/classDiagrams/interfaces/what/images/staff.png" height="250">
+                    <img src="/website-base/book/uml/classDiagrams/interfaces/what/images/staff.png" height="250">
                     <p></p>
                   </tip-box>
                 </div>
@@ -803,11 +803,11 @@
               <div>
                 <div>
                   <p>We can use <em>italics</em> or <code>{abstract}</code> keyword to denote abstract classes/methods.</p>
-                  <img src="/website/book/uml/classDiagrams/abstractClasses/what/images/notation.png" height="110">
+                  <img src="/website-base/book/uml/classDiagrams/abstractClasses/what/images/notation.png" height="110">
                   <p></p>
                   <tip-box>
                     <p>Example:</p>
-                    <img src="/website/book/uml/classDiagrams/abstractClasses/what/images/staff.png" height="110">
+                    <img src="/website-base/book/uml/classDiagrams/abstractClasses/what/images/staff.png" height="110">
                     <p></p>
                   </tip-box>
                 </div>
@@ -825,7 +825,7 @@
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

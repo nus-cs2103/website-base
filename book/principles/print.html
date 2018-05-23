@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content">
   <div id="main">
     <h1 id="principles">Principles</h1>
@@ -60,7 +60,7 @@
     }
 }
 </code></pre>
-          <img src="/website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+          <img src="/website-base/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
           <p></p>
         </tip-box>
       </div>
@@ -83,7 +83,7 @@
           <div>
             <div>
               <p>
-                <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%" isOpen="false"
+                <panel src="/website-base\book\oopDesign\inheritance\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%" isOpen="false"
                   no-close="true" no-switch="true"></panel>
               </p>
             </div>
@@ -101,7 +101,7 @@
                   <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent class object
                     is expected.</p>
                   <tip-box>
-                    <img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
+                    <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
                     <p></p>
                     <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted by
                       an object of any of its subclasses.</p>
@@ -123,7 +123,7 @@ AcademicStaff academicStaff = staff; // Not OK
         <tip-box>
           <p>📦 Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will work
             for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
-          <img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+          <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
           <p></p>
           <p>Now consider the following:</p>
           <ul>
@@ -140,7 +140,7 @@ AcademicStaff academicStaff = staff; // Not OK
           <panel type="seamless" header="%%Another example%%">
             <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different
               from the <code>width</code>.</p>
-            <img src="/website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
+            <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
             <p></p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     ...
@@ -183,7 +183,7 @@ AcademicStaff academicStaff = staff; // Not OK
         </ol>
         <tip-box>
           <p>Example:</p>
-          <img src="/website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
+          <img src="/website-base/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
           <p></p>
           <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the Payee interface (note that
             inheritance is a dependency).</p>
@@ -208,7 +208,7 @@ AcademicStaff academicStaff = staff; // Not OK
           <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>,
             and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to
             modification.</p>
-          <img src="/website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
+          <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
           <p></p>
         </tip-box>
         <tip-box>
@@ -293,7 +293,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>,
                       <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open
                       to extensions, but closed to modification.</p>
-                    <img src="/website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
+                    <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
                     <p></p>
                   </tip-box>
                   <tip-box>
@@ -358,7 +358,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <div>
                       <div>
                         <p>
-                          <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%" isOpen="false"
+                          <panel src="/website-base\book\oopDesign\inheritance\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%" isOpen="false"
                             no-close="true" no-switch="true"></panel>
                         </p>
                       </div>
@@ -376,7 +376,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                             <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent class
                               object is expected.</p>
                             <tip-box>
-                              <img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
+                              <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
                               <p></p>
                               <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted
                                 by an object of any of its subclasses.</p>
@@ -398,7 +398,7 @@ AcademicStaff academicStaff = staff; // Not OK
                   <tip-box>
                     <p>📦 Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method
                       will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
-                    <img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                    <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                     <p></p>
                     <p>Now consider the following:</p>
                     <ul>
@@ -414,7 +414,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     </ul>
                     <panel type="seamless" header="%%Another example%%">
                       <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code>                        that is different from the <code>width</code>.</p>
-                      <img src="/website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
+                      <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                       <p></p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     ...
@@ -505,7 +505,7 @@ AcademicStaff academicStaff = staff; // Not OK
     }
 }
 </code></pre>
-                    <img src="/website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+                    <img src="/website-base/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
                     <p></p>
                   </tip-box>
                 </div>
@@ -535,7 +535,7 @@ AcademicStaff academicStaff = staff; // Not OK
                   </ol>
                   <tip-box>
                     <p>Example:</p>
-                    <img src="/website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
+                    <img src="/website-base/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
                     <p></p>
                     <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the Payee interface
                       (note that inheritance is a dependency).</p>
@@ -621,10 +621,10 @@ AcademicStaff academicStaff = staff; // Not OK
               <div id="main">
                 <div>
                   <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
-                  <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+                  <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
                   <tip-box>
                     <p>📦 Operating systems and network communication software often use n-tier style.
-                      <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                      <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
                   </tip-box>
                   <p></p>
                 </div>
@@ -657,7 +657,7 @@ AcademicStaff academicStaff = staff; // Not OK
                   </ul>
                   <tip-box>
                     <p>📦 In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p>
-                    <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
+                    <img src="/website-base/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
                     <p></p>
                   </tip-box>
                 </div>
@@ -669,7 +669,7 @@ AcademicStaff academicStaff = staff; // Not OK
                           <question has-input="true">
                             <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                             <tip-box>
-                              <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
+                              <img src="/website-base/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
                               <p></p>
                             </tip-box>
                             <div slot="answer">
@@ -854,7 +854,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 </html>

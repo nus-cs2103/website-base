@@ -27,7 +27,7 @@
                     <tr>
                     
                       <td>
-                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                         <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
@@ -52,7 +52,7 @@
                       <td>  <br><br></td>
                     
                       <td valign="top">
-                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                         <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
@@ -80,7 +80,7 @@
                     <tr>
                     
                       <td>
-                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
@@ -100,7 +100,7 @@
                       <td>  <br><br></td>
                     
                       <td valign="top">
-                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
@@ -163,7 +163,7 @@
                 <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
                 <tip-box>
                   <p>Example:</p>
-                  <img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                  <img src="/website-base/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
                   <p></p>
                 </tip-box>
               </div>
@@ -180,10 +180,10 @@
                     <div>
                       <tip-box>
                         <p>📦 Example:</p>
-                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                         <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                         <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
@@ -201,10 +201,10 @@
                     <div>
                       <tip-box>
                         <p>📦 Example:</p>
-                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                         <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                         <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
@@ -239,7 +239,7 @@ is_urgent = type_code == URGENT
                           <tr>
                           
                             <td valign="top">
-                              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                              <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                               <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
@@ -250,7 +250,7 @@ is_urgent = type_code == URGENT
                             <td>  <br><br></td>
                           
                             <td valign="top">
-                              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                              <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                               <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
@@ -272,7 +272,7 @@ is_urgent = type_code == URGENT
                           <tr>
                           
                             <td valign="top">
-                              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                              <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                               <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
@@ -283,7 +283,7 @@ is_urgent = type_code == URGENT
                             <td>  <br><br></td>
                           
                             <td valign="top">
-                              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                              <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                               <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
@@ -302,7 +302,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                 </tip-box>
                 <p>Similarly, we can have ‘magic’ values of other data types.</p>
                 <tip-box>
-                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                  <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                   <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
                 </tip-box>
@@ -428,13 +428,13 @@ MAX_SIZE = <span class="hljs-number">10</span>
                   <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
                 <tip-box>
                   <p>Example:</p>
-                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                  <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                   <pre><code class="hljs java">readData();
 salary = basic*rise+<span class="hljs-number">1000</span>;
 tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);
 displayResult();
 </code></pre>
-                  <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                  <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                   <pre><code class="hljs java">readData();
 processData();
 displayResult();
@@ -570,7 +570,7 @@ displayResult();
                   Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
                 <tip-box>
                   <p>Example:</p>
-                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                  <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
                   <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
         start();    <span class="hljs-comment">//main path</span>
@@ -589,7 +589,7 @@ displayResult();
                     <li>Unusual condition detection is separated from their handling.</li>
                     <li>Main path is nested deeply.</li>
                   </ul>
-                  <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                  <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
                   <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
     <span class="hljs-keyword">return</span>;

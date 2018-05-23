@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <div>
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
   <div class="website-content" id="all">
     <tip-box>
       <div>
@@ -35,11 +35,11 @@
           <div>
             <p><strong>UML uses <code>par</code> frames to indicate parallel paths.</strong></p>
             <p>Notation:</p>
-            <img src="/website/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
+            <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
             <p></p>
             <tip-box>
               <p>📦 <code>Logic</code> is calling methods <code>CloudServer#poll()</code> and <code>LocalServer#poll()</code> in parallel.</p>
-              <img src="/website/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
+              <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
               <p></p>
               <tip-box>
                 <p>💡 If you show parallel paths in a sequence diagram, the corresponding Java implementation is likely to be <em>multi-threaded</em> <span class="dimmed">  because a normal Java program cannot do multiple things at the same time</span>.</p>
@@ -57,7 +57,7 @@
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

@@ -1,6 +1,6 @@
 <div>
   <p>
-    <panel src="/website\book\errorHandling\defensiveProgramming\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%" isOpen="false"
+    <panel src="/website-base\book\errorHandling\defensiveProgramming\what\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%" isOpen="false"
       no-close="true" no-switch="true"></panel>
   </p>
 </div>
@@ -18,7 +18,7 @@
       <p>Consider two classes, <code>Account</code> and <code>Guarantor</code>, with an association as shown in the following diagram:</p>
       <tip-box>
         <p>Example:</p>
-        <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+        <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
         <p></p>
         <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p>
         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -66,7 +66,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                   <li>restricts the maximum number of Accounts to 8</li>
                   <li>avoids adding duplicate Accounts</li>
                 </ul>
-                <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
+                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                 <p></p>
                 <div slot="answer">
                   <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
@@ -97,7 +97,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
             <panel header=":lock::key: Implement `Marriage`">
               <question has-input="true">
                 <p>Implement the classes defensively with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the <code>Marriage</code> class handle setting/removal of reference.</p>
-                <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
+                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                 <p></p>
                 <div slot="answer">
                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
@@ -155,7 +155,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
             <panel header=":lock::key: Immutable `Account` class">
               <question has-input="true">
                 <p>Give a suitable defensive implementation to the <code>Account</code> class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p>
-                <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
+                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                 <p></p>
                 <div slot="answer">
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -177,7 +177,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           <div>
             <panel header=":lock::key: Is this defensive?">
               <question>
-                <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
+                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
                 <p></p>
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">City</span></span>{
     Country country;

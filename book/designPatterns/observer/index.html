@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content" id="all">
   <p><span class="dimmed"><strong>Software Design Patterns →</strong></span></p>
   <h2 id="observer-pattern">Observer Pattern</h2>
@@ -30,7 +30,7 @@
           <div>
             <tip-box>
               <p>📦 Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
-              <img src="/website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
+              <img src="/website-base/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
               <p></p>
               <p>Now, assume the system has two additional views used in parallel by different users:</p>
               <ul>
@@ -38,7 +38,7 @@
                 <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
               </ul>
               <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
-              <img src="/website/book/designPatterns/observer/what/images/studentListUI.png" height="180">
+              <img src="/website-base/book/designPatterns/observer/what/images/studentListUI.png" height="180">
               <p></p>
               <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type
                 of problem addressed by the Observer pattern.</p>
@@ -49,7 +49,7 @@
             <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
             <p><strong>Solution</strong></p>
             <p>Force the communication through an interface known to both parties.</p>
-            <img src="/website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
+            <img src="/website-base/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
             <p></p>
             <tip-box>
               <p>📦Here is the Observer pattern applied to the student management system.</p>
@@ -89,7 +89,7 @@ studentList.addUi(statusUi);
               <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
             </tip-box>
             <p>Here is the generic description of the observer pattern:</p>
-            <img src="/website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
+            <img src="/website-base/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
             <p></p>
             <ul>
               <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes
@@ -108,13 +108,13 @@ studentList.addUi(statusUi);
                     <question has-input="true">
                       <p>Explain how polymorphism is used in the Observer pattern.</p>
                       <div slot="answer">
-                        <img src="/website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
+                        <img src="/website-base/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
                         <p></p>
                         <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called
                           <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual
                           type. That is, <code>update()</code> method shows polymorphic behavior.</p>
                         <p>In the example given below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p>
-                        <img src="/website/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
+                        <img src="/website-base/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
                         <p></p>
                       </div>
                     </question>
@@ -148,7 +148,7 @@ studentList.addUi(statusUi);
 <script src="..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\markbind\js\setup.js"></script>
 </html>

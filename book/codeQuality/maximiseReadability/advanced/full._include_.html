@@ -17,7 +17,7 @@
               Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
             <tip-box>
               <p>Example:</p>
-              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+              <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
               <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
         start();    <span class="hljs-comment">//main path</span>
@@ -36,7 +36,7 @@
                 <li>Unusual condition detection is separated from their handling.</li>
                 <li>Main path is nested deeply.</li>
               </ul>
-              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+              <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
               <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
     <span class="hljs-keyword">return</span>;

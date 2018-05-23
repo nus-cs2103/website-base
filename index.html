@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="markbind\css\github.min.css">
     <link rel="stylesheet" href="markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <div>
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="stylesheet" href="/website-base/css/main.css">
+  <link rel="stylesheet" href="/website-base/css/schedule.css">
   <div>
     <navbar placement="top" type="inverse">
-      <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-      <li><a href="/website/index.html">Schedule</a></li>
+      <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+      <li><a href="/website-base/index.html">Schedule</a></li>
       <dropdown text="Textbook">
-        <li><a href="/website/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
-        <li><a href="/website/book/common/all.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> All as one page</a></li>
-        <li><a href="/website/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website-base/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
+        <li><a href="/website-base/book/common/all.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> All as one page</a></li>
+        <li><a href="/website-base/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
       </dropdown>
-      <li><a href="/website/admin/index.html">Admin</a></li>
+      <li><a href="/website-base/admin/index.html">Admin</a></li>
       <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
       <dropdown text="IVLE">
         <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
@@ -38,7 +38,7 @@
       <dropdown text="Links">
         <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-        <li><a href="/website/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+        <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
         <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
@@ -46,7 +46,7 @@
         <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-        <li><a href="/website/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+        <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
       </dropdown>
       <li slot="right">
         <form class="navbar-form">
@@ -203,11 +203,11 @@
         <p><span class="dimmed">*ALL: Active Learning Room</span></p>
       </div>
     </panel>
-    <panel src="/website\schedule\overview\index._include_.html" name=":exclamation: For all weeks" header=":exclamation: For all weeks" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week1\index._include_.html" name=":exclamation: Week 1 [Jan 15]" header=":exclamation: Week 1 [Jan 15]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\overview\index._include_.html" name=":exclamation: For all weeks" header=":exclamation: For all weeks" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week1\index._include_.html" name=":exclamation: Week 1 [Jan 15]" header=":exclamation: Week 1 [Jan 15]" isOpen="false" no-close="true" no-switch="true"></panel>
     <panel header=":exclamation: Week 2 [Jan 22]" expanded="" no-close="">
       <div>
-        <p><small>[<a href="/website/schedule/week2/outcomes.html" target="_blank">Open <em>Outcomes</em> in a new Window <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>]</small></p>
+        <p><small>[<a href="/website-base/schedule/week2/outcomes.html" target="_blank">Open <em>Outcomes</em> in a new Window <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>]</small></p>
         <panel header=":trophy: Outcomes" ctrl-lvl="1" expanded="" no-close="">
           <div>
             <h3 id="se-intro">SE Intro:</h3>
@@ -221,7 +221,7 @@
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="pros-and-cons-two">Pros and Cons <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> <a href="/website/book/softwareEngineering/prosAndCons/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+                    <h4 id="pros-and-cons-two">Pros and Cons <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> <a href="/website-base/book/softwareEngineering/prosAndCons/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -429,7 +429,7 @@
             </panel>
             <h3 id="implementation">Implementation:</h3>
             <p>
-              <panel type="danger" src="/website\schedule\week2\outcome-ide._include_.html" header="`W2.2` **Can use basic features of an IDE** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+              <panel type="danger" src="/website-base\schedule\week2\outcome-ide._include_.html" header="`W2.2` **Can use basic features of an IDE** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
             </p>
 
             <panel type="warning" header="`W2.3` **Can use Java Collections** :star::star:" no-close="">
@@ -442,7 +442,7 @@
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="collections-two">Collections <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> <a href="/website/book/javaTools/collections/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+                    <h4 id="collections-two">Collections <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> <a href="/website-base/book/javaTools/collections/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -473,7 +473,7 @@
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="varargs-three">Varargs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"> <a href="/website/book/javaTools/varargs/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+                    <h4 id="varargs-three">Varargs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"> <a href="/website-base/book/javaTools/varargs/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -495,11 +495,11 @@
             </panel>
             <h3 id="quality-assurance">Quality Assurance:</h3>
             <p>
-              <panel type="warning" src="/website\schedule\week2\outcome-testing._include_.html" header="`W2.5` **Can automate simple regression testing of text UIs** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+              <panel type="warning" src="/website-base\schedule\week2\outcome-testing._include_.html" header="`W2.5` **Can automate simple regression testing of text UIs** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
             </p>
             <h3 id="project-management">Project Management:</h3>
             <p>
-              <panel type="danger" src="/website\schedule\week2\outcome-git._include_.html" header="`W2.6` **Can use Git to save history** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
+              <panel type="danger" src="/website-base\schedule\week2\outcome-git._include_.html" header="`W2.6` **Can use Git to save history** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
             </p>
           </div>
         </panel>
@@ -507,20 +507,20 @@
           <div>
             <panel header="Admin info to read" expandable="" expanded="">
               <p>
-                <panel type="warning" src="/website\admin\appendixB-policies._include_.html#policy-techHelp" name="%%Admin »%% Policy on Tech Help :star::star:" fragment="policy-techHelp" header="%%Admin »%% Policy on Tech Help :star::star:" isOpen="false"
+                <panel type="warning" src="/website-base\admin\appendixB-policies._include_.html#policy-techHelp" name="%%Admin »%% Policy on Tech Help :star::star:" fragment="policy-techHelp" header="%%Admin »%% Policy on Tech Help :star::star:" isOpen="false"
                   no-close="true" no-switch="true"></panel>
               </p>
               <p>
-                <panel type="info" src="/website\admin\tools._include_.html" name="%%Admin »%% Module Tools :star::star::star:" header="%%Admin »%% Module Tools :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel type="info" src="/website-base\admin\tools._include_.html" name="%%Admin »%% Module Tools :star::star::star:" header="%%Admin »%% Module Tools :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
               <p>
-                <panel type="success" name="%%Admin »%% Module Principles :star::star::star::star:" src="/website\admin\appendixA-principles._include_.html" header="%%Admin »%% Module Principles :star::star::star::star:" isOpen="false" no-close="true"
+                <panel type="success" name="%%Admin »%% Module Principles :star::star::star::star:" src="/website-base\admin\appendixA-principles._include_.html" header="%%Admin »%% Module Principles :star::star::star::star:" isOpen="false" no-close="true"
                   no-switch="true"></panel>
-                <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" name="%%Admin »%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" fragment="admin-faq-separateWebsite"
+                <panel type="success" src="/website-base\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" name="%%Admin »%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" fragment="admin-faq-separateWebsite"
                   header="%%Admin »%% FAQ: Why you force me to visit a separate website instead of using IVLE? :star::star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-slideFormat" name="%%Admin »%% FAQ: Why slides are not detailed? :star::star::star::star:" fragment="admin-faq-slideFormat" header="%%Admin »%% FAQ: Why slides are not detailed? :star::star::star::star:"
+                <panel type="success" src="/website-base\admin\appendixC-faq._include_.html#admin-faq-slideFormat" name="%%Admin »%% FAQ: Why slides are not detailed? :star::star::star::star:" fragment="admin-faq-slideFormat" header="%%Admin »%% FAQ: Why slides are not detailed? :star::star::star::star:"
                   isOpen="false" no-close="true" no-switch="true"></panel>
-                <panel type="success" src="/website\admin\appendixC-faq._include_.html#admin-faq-selfStudy" name="%%Admin »%% FAQ: Why so much self-study? :star::star::star::star:" fragment="admin-faq-selfStudy" header="%%Admin »%% FAQ: Why so much self-study? :star::star::star::star:"
+                <panel type="success" src="/website-base\admin\appendixC-faq._include_.html#admin-faq-selfStudy" name="%%Admin »%% FAQ: Why so much self-study? :star::star::star::star:" fragment="admin-faq-selfStudy" header="%%Admin »%% FAQ: Why so much self-study? :star::star::star::star:"
                   isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
             </panel>
@@ -545,17 +545,17 @@
         </panel>
       </div>
     </panel>
-    <panel src="/website\schedule\week3\index._include_.html" name="Week 3 [Jan 29]" header="Week 3 [Jan 29]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week4\index._include_.html" name="Week 4 [Feb 5]" header="Week 4 [Feb 5]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week5\index._include_.html" name="Week 5 [Feb 12]" header="Week 5 [Feb 12]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week6\index._include_.html" name="Week 6 [Feb 19]" header="Week 6 [Feb 19]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week7\index._include_.html" name="Week 7 [Mar 5]" header="Week 7 [Mar 5]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week8\index._include_.html" name="Week 8 [Mar 12]" header="Week 8 [Mar 12]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week9\index._include_.html" name="Week 9 [Mar 19]" header="Week 9 [Mar 19]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week10\index._include_.html" name="Week 10 [Mar 26]" header="Week 10 [Mar 26]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week11\index._include_.html" name="Week 11 [Apr 2]" header="Week 11 [Apr 2]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week12\index._include_.html" name="Week 12 [Apr 9]" header="Week 12 [Apr 9]" isOpen="false" no-close="true" no-switch="true"></panel>
-    <panel src="/website\schedule\week13\index._include_.html" name="Week 13 [Apr 16]" header="Week 13 [Apr 16]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week3\index._include_.html" name="Week 3 [Jan 29]" header="Week 3 [Jan 29]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week4\index._include_.html" name="Week 4 [Feb 5]" header="Week 4 [Feb 5]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week5\index._include_.html" name="Week 5 [Feb 12]" header="Week 5 [Feb 12]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week6\index._include_.html" name="Week 6 [Feb 19]" header="Week 6 [Feb 19]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week7\index._include_.html" name="Week 7 [Mar 5]" header="Week 7 [Mar 5]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week8\index._include_.html" name="Week 8 [Mar 12]" header="Week 8 [Mar 12]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week9\index._include_.html" name="Week 9 [Mar 19]" header="Week 9 [Mar 19]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week10\index._include_.html" name="Week 10 [Mar 26]" header="Week 10 [Mar 26]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week11\index._include_.html" name="Week 11 [Apr 2]" header="Week 11 [Apr 2]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week12\index._include_.html" name="Week 12 [Apr 9]" header="Week 12 [Apr 9]" isOpen="false" no-close="true" no-switch="true"></panel>
+    <panel src="/website-base\schedule\week13\index._include_.html" name="Week 13 [Apr 16]" header="Week 13 [Apr 16]" isOpen="false" no-close="true" no-switch="true"></panel>
   </div>
 </div>
 </div>
@@ -563,7 +563,7 @@
 <script src="markbind\js\vue.min.js"></script>
 <script src="markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="markbind\js\setup.js"></script>
 </html>

@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="..\..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <div>
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
   <div class="website-content" id="all">
     <tip-box>
       <div>
@@ -49,28 +49,28 @@
                 use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
               <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
               <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
               <p></p>
               <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
               <p></p>
               <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
               <p></p>
               <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
               <p></p>
               <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
               <p></p>
               <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
               <p></p>
               <p>As UI consists of multiple views, the MVC pattern is applied here.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
               <p></p>
               <p>Some views need to be updated when the data change; apply the Observer pattern here.</p>
-              <img src="/website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
+              <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
               <p></p>
               <p>In addition, the Singleton pattern can be applied to the façade class.</p>
             </tip-box>
@@ -86,7 +86,7 @@
 <script src="..\..\..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\..\..\markbind\js\setup.js"></script>
 </html>

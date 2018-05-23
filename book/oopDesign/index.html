@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="icon" href="/website/favicon.ico">
+    <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
 <div class="website-content" id="all">
   <div id="title">
     <h1 id="oop-concepts">OOP - Concepts</h1>
@@ -499,12 +499,12 @@
 
                 <p>Let us use the UML notation to illustrate classes and objects under discussion.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
-                  <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
+                  <panel src="/website-base\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
                 </p>
                 <p></p>
                 <tip-box>
-                  <img src="/website/book/oopDesign/classes/basic/images/person.png" height="100">
+                  <img src="/website-base/book/oopDesign/classes/basic/images/person.png" height="100">
                   <p></p>
                   <p><code>Person</code> class and some example instances of the <code>Person</code> class.</p>
                 </tip-box>
@@ -586,7 +586,7 @@
                 </tip-box>
                 <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code>                  to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Class Level Members"
+                  <panel src="/website-base\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Class Level Members"
                     expanded="" fragment="title-and-body"></panel>
                   <p></p>
                 </p>
@@ -632,13 +632,13 @@
                 <p><strong>An <em>Enumeration</em> is a fixed set of values that can be considered as a data type.</strong></p>
                 <p>An enumeration is often useful when using a regular data type such as <code>int</code> or <code>String</code> would allow invalid values to be assigned to a variable. <span class="dimmed">e.g. if a variable can only take values <code>0</code> and <code>1</code>, declaring it as an <code>int</code> would allow invalid values such as <code>2</code> to be assigned to it. But if you define an enumeration called <code>Binary</code> that has values <code>0</code> and <code>1</code> only, a variable of type <code>Binary</code> will never be assigned an invalid value such as <code>2</code> because the compiler is able to catch the error.</span></p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\enumerations\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Enumerations" expanded=""></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\enumerations\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Enumerations" expanded=""></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 <code>Priority</code> can be considered an enumeration because it has only three values.</p>
                   <p><code>Priority</code>: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code></p>
-                  <img src="/website/book/oopDesign/classes/enumerations/images/priority.png" height="100">
+                  <img src="/website-base/book/oopDesign/classes/enumerations/images/priority.png" height="100">
                   <p></p>
                 </tip-box>
               </div>
@@ -676,33 +676,33 @@
               <div>
                 <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
                 <p>
-                  <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Object Diagrams → Associations → What"
+                  <panel src="/website-base\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Object Diagrams → Associations → What"
                     expanded="" fragment="title-and-body"></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 An object diagram example showing associations among objects. <span class="dimmed">For example, there is an association between the <code>AgeList</code> object and the <code>Main</code> object.</span></p>
-                  <img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
+                  <img src="/website-base/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
                 <p><strong>Associations in an object structure can change over time</strong>.</p>
                 <tip-box>
                   <p>📦 In this example, the associations in the object structure have changed <span class="dimmed">(from left to right) due to a new <code>Person</code> object being connected to the <code>Main</code> object.</span></p>
-                  <p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100">   →
-                    <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100"></p>
+                  <p><img src="/website-base/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100">   →
+                    <img src="/website-base/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100"></p>
                 </tip-box>
                 <p><strong>Associations among objects are reflected correspondingly in the class diagram too</strong>, as it is the class diagram that dictates the nature of the associations allowed in the object structures.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Associations → Basic"
+                  <panel src="/website-base\book\uml\classDiagrams\associations\basic\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Associations → Basic"
                     expanded="" fragment="title-and-body"></panel>
                 </p>
                 <tip-box>
                   <p>📦 An example class diagram showing associations between classes.</p>
-                  <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+                  <img src="/website-base/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
                   <p></p>
                 </tip-box>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Associations → Roles"
+                  <panel src="/website-base\book\uml\classDiagrams\associations\roles\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Associations → Roles"
                     expanded="" fragment="title-and-body"></panel>
-                  <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Associations → Labels" expanded=""
+                  <panel src="/website-base\book\uml\classDiagrams\associations\labels\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Associations → Labels" expanded=""
                     fragment="title-and-body"></panel>
                 </p>
               </div>
@@ -723,7 +723,7 @@
               <div>
                 <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Associations → Navigability"
+                  <panel src="/website-base\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Associations → Navigability"
                     expanded="" fragment="title-and-body"></panel>
                 </p>
                 <p></p>
@@ -734,7 +734,7 @@
                     <div>
                       <panel header=":lock::key: What does the navigability given by this diagram mean?">
                         <question>
-                          <img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
+                          <img src="/website-base/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                           <p></p>
                           <ul radio-group="8116c" class="radio-list">
                             <li class="radio-list-item"><label><input class="radio-list-input" name="8116c" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
@@ -768,9 +768,9 @@
                 <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
                 <tip-box>
                   <p>📦 This class diagram does not tell us multiplicities. For exaple, how many <code>Calculator</code> objects can be associated with one <code>Main</code> object? How many <code>Main</code> objects can be associated with one <code>Calculator</code>                    object? and so on.</p>
-                  <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
+                  <img src="/website-base/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Associations → Multiplicity"
+                  <panel src="/website-base\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Associations → Multiplicity"
                     expanded="" fragment="title-and-body"></panel>
                 </p>
                 <p></p>
@@ -781,7 +781,7 @@
                     <div>
                       <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
                         <question>
-                          <img src="/website/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
+                          <img src="/website-base/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
                           <p></p>
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
@@ -814,7 +814,7 @@
               <div>
                 <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Dependencies" expanded=""
+                  <panel src="/website-base\book\uml\classDiagrams\dependencies\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Dependencies" expanded=""
                     fragment="title-and-body"></panel>
                 </p>
                 <p></p>
@@ -836,19 +836,19 @@
               <div>
                 <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Composition" expanded=""
+                  <panel src="/website-base\book\uml\classDiagrams\composition\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Composition" expanded=""
                     fragment="title-and-body"></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 A <code>Board</code> (used for playing board games) consists of <code>Square</code> objects.</p>
-                  <img src="/website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+                  <img src="/website-base/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
                   <p></p>
                 </tip-box>
                 <p><strong>Composition also implies that there cannot be cyclical links</strong>.</p>
                 <tip-box>
                   <p>📦 In this ‘sub-folder’ association, a <code>Folder</code> cannot be a sub-folder of itself. If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be sub-folder of itself.</p>
-                  <img src="/website/book/oopDesign/associations/composition/images/folder.png" height="80">
+                  <img src="/website-base/book/oopDesign/associations/composition/images/folder.png" height="80">
                   <p></p>
                 </tip-box>
               </div>
@@ -869,13 +869,13 @@
               <div>
                 <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Aggregation" expanded=""
+                  <panel src="/website-base\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Aggregation" expanded=""
                     fragment="title-and-body"></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 <code>Club</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>Club</code> object.</p>
-                  <img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
+                  <img src="/website-base/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
                   <p></p>
                 </tip-box>
                 <tip-box type="tip">
@@ -921,9 +921,9 @@
                 <tip-box>
                   <p>📦 A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by
                     either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
-                  <img src="/website/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120"></tip-box>
+                  <img src="/website-base/book/oopDesign/associations/associationClasses/images/manWoman.png" height="120"></tip-box>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\associationClasses\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Association Classes" expanded=""></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\associationClasses\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Association Classes" expanded=""></panel>
                   <p></p>
                 </p>
               </div>
@@ -948,13 +948,13 @@
               <div>
                 <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code>                  class so that the <code>EvaluationReport</code> class does not have to duplicate code that is already implemented in the <code>Report</code> class.</p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance" expanded=""
+                  <panel src="/website-base\book\uml\classDiagrams\classInheritance\what\full._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance" expanded=""
                     fragment="title-and-body" isOpen="false" no-close="true" no-switch="true"></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 Example: The <code>EvaluationReport</code> inherits the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em> <code>Report</code>.</p>
-                  <img src="/website/book/oopDesign/inheritance/what/images/report.png" height="120">
+                  <img src="/website-base/book/oopDesign/inheritance/what/images/report.png" height="120">
                   <p></p>
                 </tip-box>
                 <ul>
@@ -966,7 +966,7 @@
                 <tip-box>
                   <p>📦 <code>Man</code> and <code>Woman</code> behaves the same way for the 'owes money' association. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish between
                     <code>Man</code> and <code>Woman</code> for the ‘marriage’ association. A solution is to add the <code>Person</code> class as a super class and let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code>.</p>
-                  <img src="/website/book/oopDesign/inheritance/what/images/manWoman.png" height="250">
+                  <img src="/website-base/book/oopDesign/inheritance/what/images/manWoman.png" height="250">
                   <p></p>
                 </tip-box>
                 <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
@@ -979,20 +979,20 @@
                     <li><code>SnakeHeadSquare</code> <em>is a</em> <code>Square</code> <span class="dimmed"> (a <code>SnakeHeadSquare</code> is a square in which the head of a snake appears)</span></li>
                     <li><code>SnakeTailSquare</code> <em>is a</em> <code>Square</code></li>
                   </ul>
-                  <img src="/website/book/oopDesign/inheritance/what/images/boardSquare.png" height="250">
+                  <img src="/website-base/book/oopDesign/inheritance/what/images/boardSquare.png" height="250">
                   <p></p>
                 </tip-box>
                 <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
                 <tip-box>
                   <p>📦 Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>.</p>
-                  <img src="/website/book/oopDesign/inheritance/what/images/inheritanceTreesExamples.png" width="500">
+                  <img src="/website-base/book/oopDesign/inheritance/what/images/inheritanceTreesExamples.png" width="500">
                   <p></p>
                 </tip-box>
                 <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g., Java,
                   C#).</p>
                 <tip-box>
                   <p>📦 The <code>TA</code> class inherits from the <code>Staff</code> class <em>and</em> the <code>Student</code>.</p>
-                  <img src="/website/book/oopDesign/inheritance/what/images/studentStaff.png" height="200">
+                  <img src="/website-base/book/oopDesign/inheritance/what/images/studentStaff.png" height="200">
                   <p></p>
                 </tip-box>
               </div>
@@ -1081,7 +1081,7 @@
                       </div>
                     </div>
                   </modal>
-                  <img src="/website/book/oopDesign/inheritance/overriding/images/report.png" height="150">
+                  <img src="/website-base/book/oopDesign/inheritance/overriding/images/report.png" height="150">
                   <p></p>
                 </tip-box>
               </div>
@@ -1166,12 +1166,12 @@
                   </p>
                 </blockquote>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\interfaces\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Interface" isOpen="false" no-close="true" no-switch="true"></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\interfaces\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Interface" isOpen="false" no-close="true" no-switch="true"></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 <code>SalariedStaff</code> is an interface that contains two methods <code>setSalary(int)</code> and <code>getSalary()</code>. <code>AcademicStaff</code> implements the <code>SalariedStaff</code> interface. <span class="dimmed"> That means an <code>AcademicStaff</code> object is able to support the behaviors <code>setSalary(int)</code> and <code>getSalary()</code>. That's why the same two methods also appear under the methods implemented by the <code>AcademicStaff</code> class (in blue)</span></p>
-                  <img src="/website/book/oopDesign/inheritance/interfaces/images/staff.png" height="250">
+                  <img src="/website-base/book/oopDesign/inheritance/interfaces/images/staff.png" height="250">
                   <p></p>
                 </tip-box>
                 <p><strong>A class implementing an interface results in an <em>is-a</em> relationship</strong>, just like in class inheritance.</p>
@@ -1204,13 +1204,13 @@
                 </tip-box>
                 <p><strong>An abstract method is simply the method interface without the implementation.</strong></p>
                 <p>
-                  <panel src="/website\book\uml\classDiagrams\abstractClasses\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span>UML → Class Diagrams → Abstract Classes" isOpen="false" no-close="true"
+                  <panel src="/website-base\book\uml\classDiagrams\abstractClasses\what\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span>UML → Class Diagrams → Abstract Classes" isOpen="false" no-close="true"
                     no-switch="true"></panel>
                 </p>
                 <p></p>
                 <tip-box>
                   <p>📦 The <code>Account</code> class has an abstract method (<code>addInterest()</code>).</p>
-                  <img src="/website/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
+                  <img src="/website-base/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
                   <p></p>
                 </tip-box>
               </div>
@@ -1244,7 +1244,7 @@
                   <div>
                     <div>
                       <p>
-                        <panel src="/website\book\oopDesign\inheritance\overriding\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → Overriding%%" isOpen="false" no-close="true"
+                        <panel src="/website-base\book\oopDesign\inheritance\overriding\full._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → Overriding%%" isOpen="false" no-close="true"
                           no-switch="true"></panel>
                       </p>
                     </div>
@@ -1373,7 +1373,7 @@ Ben is a student
                                 <panel header=":lock::key: Which methods override?">
                                   <question>
                                     <p>Which of these methods override another method?</p>
-                                    <img src="/website/book/oopImplementation/overriding/images/overriding.png" height="220">
+                                    <img src="/website-base/book/oopImplementation/overriding/images/overriding.png" height="220">
                                     <p></p>
                                     <ul class="task-list">
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
@@ -1398,7 +1398,7 @@ Ben is a student
                 </modal>
                 <tip-box>
                   <p>📦 Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked.</p>
-                  <img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
+                  <img src="/website-base/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
                   <p></p>
                   <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
     <span class="hljs-keyword">for</span> (Staff s: staff) {
@@ -1421,7 +1421,7 @@ Ben is a student
                   <div>
                     <div>
                       <p>
-                        <panel src="/website\book\oopDesign\inheritance\overloading\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Inheritance → Overloading%%" isOpen="false" no-close="true"
+                        <panel src="/website-base\book\oopDesign\inheritance\overloading\full._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Inheritance → Overloading%%" isOpen="false" no-close="true"
                           no-switch="true"></panel>
                       </p>
                     </div>
@@ -1525,7 +1525,7 @@ void calculateGrade (String matric) { ... }
                 <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent class object
                   is expected.</p>
                 <tip-box>
-                  <img src="/website/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
+                  <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
                   <p></p>
                   <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted by
                     an object of any of its subclasses.</p>
@@ -1571,7 +1571,7 @@ AcademicStaff academicStaff = staff; // Not OK
                   the <code>Payroll</code> system.</p>
                 <tip-box>
                   <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p>
-                  <img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
+                  <img src="/website-base/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                   <p></p>
                   <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
@@ -1722,8 +1722,8 @@ AcademicStaff academicStaff = staff; // Not OK
                   <div>
                     <panel header=":lock::key: In the context of OOP, what is the relationship between abstraction and encapsulation?">
                       <panel header="%%Prerequisites%%" expandable="" expanded="">
-                        <panel src="/website\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
-                        <panel src="/website\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
                       </panel>
                       <p></p>
                       <question>
@@ -1748,11 +1748,11 @@ AcademicStaff academicStaff = staff; // Not OK
                   <div>
                     <panel header=":lock::key: Which of these do not belong to four main OO principles?">
                       <panel header="%%Prerequisites%%" expandable="" expanded="">
-                        <panel src="/website\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
-                        <panel src="/website\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
-                        <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="OOP: Inheritance: Basic" isOpen="false" no-close="true" no-switch="true"></panel>
-                        <panel src="/website\book\oopDesign\inheritance\substitutability\full._include_.html" header="OOP: Inheritance: Substitutability" isOpen="false" no-close="true" no-switch="true"></panel>
-                        <panel src="/website\book\oopDesign\polymorphism\introduction\full._include_.html" header="OOP: Polymorphism: Introduction" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\objects\abstraction\full._include_.html" header="OOP: Objects: Abstraction" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\objects\encapsulation\full._include_.html" header="OOP: Objects: Encapsulation" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\inheritance\what\full._include_.html" header="OOP: Inheritance: Basic" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\inheritance\substitutability\full._include_.html" header="OOP: Inheritance: Substitutability" isOpen="false" no-close="true" no-switch="true"></panel>
+                        <panel src="/website-base\book\oopDesign\polymorphism\introduction\full._include_.html" header="OOP: Polymorphism: Introduction" isOpen="false" no-close="true" no-switch="true"></panel>
                       </panel>
                       <p></p>
                       <question>
@@ -1786,7 +1786,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
 <script>
-    const baseUrl = '/website'
+    const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 </html>
