@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/website",
+  "baseUrl": "/website-base",
   "ignore": [
     "_site/*",
     ".idea/*",
