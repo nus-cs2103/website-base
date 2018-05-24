@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Coding Best Practices: [Practice] Write to the Reader</title>
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\..\..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website-base/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <div>
+  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+  <div class="website-content">
+    <tip-box>
+      <div>
+        <p>🏆 Can improve code quality using technique: write to the reader <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+      </div>
+    </tip-box>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments → Basic →
+</span></strong>
+        </span>
+      </p>
+      <div id="title-and-body">
+        <div>
+          <h5 id="write-to-the-reader">Write to the Reader</h5>
+        </div>
+        <div id="main">
+          <div>
+            <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class
+              or an operation to explain its purpose.</p>
+            <tip-box>
+              <p>📦 Examples:</p>
+              <tabs>
+              
+                <tab header="Java">
+                  <div>
+                    <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                    <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
+    ....
+}
+</code></pre>
+                    <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
+                    <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
+    ....
+}
+</code></pre>
+                  </div>
+                </tab>
+              
+                <tab header="Python">
+                  <div>
+                    <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                    <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+    ...
+</code></pre>
+                    <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
+    ...
+</code></pre>
+                  </div>
+                </tab>
+              </tabs>
+            </tip-box>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website-base'
+</script>
+<script src="..\..\..\..\..\markbind\js\setup.js"></script>
+</html>

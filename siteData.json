@@ -157,11 +157,43 @@
       "src": "book/architecture/print.md"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Empty Catch Blocks",
+      "src": "book/codeQuality/avoidShortcuts/basic/avoidEmptyCatchBlocks/index.md"
+    },
+    {
+      "src": "book/codeQuality/avoidShortcuts/basic/avoidEmptyCatchBlocks/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Delete Dead Code",
+      "src": "book/codeQuality/avoidShortcuts/basic/deleteDeadCode/index.md"
+    },
+    {
+      "src": "book/codeQuality/avoidShortcuts/basic/deleteDeadCode/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Do Not Recycle Variables or Parameters",
+      "src": "book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams/index.md"
+    },
+    {
+      "src": "book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "title": "CS2103/T Website - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic",
       "src": "book/codeQuality/avoidShortcuts/basic/index.md"
     },
     {
       "src": "book/codeQuality/avoidShortcuts/basic/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Use Default Branch",
+      "src": "book/codeQuality/avoidShortcuts/basic/useDefaultBranch/index.md"
+    },
+    {
+      "src": "book/codeQuality/avoidShortcuts/basic/useDefaultBranch/outcomes.md",
       "title": "CS2103/T Website"
     },
     {
@@ -171,6 +203,22 @@
     {
       "title": "CS2103/T Website - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Intermediate",
       "src": "book/codeQuality/avoidShortcuts/intermediate/index.md"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Minimise Code Duplication",
+      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseCodeDuplication/index.md"
+    },
+    {
+      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseCodeDuplication/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Minimise Scope of Variables",
+      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope/index.md"
+    },
+    {
+      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope/outcomes.md",
+      "title": "CS2103/T Website"
     },
     {
       "src": "book/codeQuality/avoidShortcuts/intermediate/outcomes.md",
@@ -185,6 +233,14 @@
       "title": "CS2103/T Website"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Do Not Repeat the Obvious",
+      "src": "book/codeQuality/commentMinimally/basic/dontRepeatObvious/index.md"
+    },
+    {
+      "src": "book/codeQuality/commentMinimally/basic/dontRepeatObvious/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "title": "CS2103/T Website - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic",
       "src": "book/codeQuality/commentMinimally/basic/index.md"
     },
@@ -193,8 +249,24 @@
       "title": "CS2103/T Website"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Write to the Reader",
+      "src": "book/codeQuality/commentMinimally/basic/writeToReader/index.md"
+    },
+    {
+      "src": "book/codeQuality/commentMinimally/basic/writeToReader/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "title": "CS2103/T Website - Code Quality: [Guideline] Comment Minimally, but Sufficiently",
       "src": "book/codeQuality/commentMinimally/index.md"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Explain WHAT, WHY not HOW",
+      "src": "book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow/index.md"
+    },
+    {
+      "src": "book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow/outcomes.md",
+      "title": "CS2103/T Website"
     },
     {
       "title": "CS2103/T Website - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Intermediate",
@@ -261,12 +333,60 @@
       "src": "book/codeQuality/maximiseReadability/advanced/index.md"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Make the Happy Path Prominent",
+      "src": "book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "src": "book/codeQuality/maximiseReadability/advanced/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Complicated Expressions",
+      "src": "book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Deep Nesting",
+      "src": "book/codeQuality/maximiseReadability/basic/avoidDeepNesting/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/basic/avoidDeepNesting/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Long Methods",
+      "src": "book/codeQuality/maximiseReadability/basic/avoidLongMethods/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/basic/avoidLongMethods/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Magic Numbers",
+      "src": "book/codeQuality/maximiseReadability/basic/avoidMagicNumbers/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/basic/avoidMagicNumbers/outcomes.md",
       "title": "CS2103/T Website"
     },
     {
       "title": "CS2103/T Website - Code Quality: [Guideline] Maximise Readability: Basic",
       "src": "book/codeQuality/maximiseReadability/basic/index.md"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Make the Code Obvious",
+      "src": "book/codeQuality/maximiseReadability/basic/makeCodeObvious/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/basic/makeCodeObvious/outcomes.md",
+      "title": "CS2103/T Website"
     },
     {
       "src": "book/codeQuality/maximiseReadability/basic/outcomes.md",
@@ -277,11 +397,51 @@
       "src": "book/codeQuality/maximiseReadability/index.md"
     },
     {
+      "src": "book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations/index.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Do Not 'Trip Up' the Reader",
+      "src": "book/codeQuality/maximiseReadability/intermediate/dontTripReader/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/intermediate/dontTripReader/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "title": "CS2103/T Website - Code Quality: [Guideline] Maximise Readability: Intermediate",
       "src": "book/codeQuality/maximiseReadability/intermediate/index.md"
     },
     {
       "src": "book/codeQuality/maximiseReadability/intermediate/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Practice KISSing",
+      "src": "book/codeQuality/maximiseReadability/intermediate/practiceKISSing/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/intermediate/practiceKISSing/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] SLAP Hard",
+      "src": "book/codeQuality/maximiseReadability/intermediate/slapHard/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/intermediate/slapHard/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Structure Code Logically",
+      "src": "book/codeQuality/maximiseReadability/intermediate/structureCodeLogically/index.md"
+    },
+    {
+      "src": "book/codeQuality/maximiseReadability/intermediate/structureCodeLogically/outcomes.md",
       "title": "CS2103/T Website"
     },
     {
@@ -297,7 +457,23 @@
       "src": "book/codeQuality/nameWell/basic/index.md"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Nouns and Verbs as Names",
+      "src": "book/codeQuality/nameWell/basic/nounsAndVerbsAsNames/index.md"
+    },
+    {
+      "src": "book/codeQuality/nameWell/basic/nounsAndVerbsAsNames/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "src": "book/codeQuality/nameWell/basic/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Use Standard Words",
+      "src": "book/codeQuality/nameWell/basic/useStandardWords/index.md"
+    },
+    {
+      "src": "book/codeQuality/nameWell/basic/useStandardWords/outcomes.md",
       "title": "CS2103/T Website"
     },
     {
@@ -305,11 +481,35 @@
       "src": "book/codeQuality/nameWell/index.md"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Misleading Names",
+      "src": "book/codeQuality/nameWell/intermediate/avoidMisleadingNames/index.md"
+    },
+    {
+      "src": "book/codeQuality/nameWell/intermediate/avoidMisleadingNames/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "title": "CS2103/T Website - Code Quality: [Guideline] Name Well: Intermediate",
       "src": "book/codeQuality/nameWell/intermediate/index.md"
     },
     {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Not Too Long, Not Too Short",
+      "src": "book/codeQuality/nameWell/intermediate/notTooLongNorShort/index.md"
+    },
+    {
+      "src": "book/codeQuality/nameWell/intermediate/notTooLongNorShort/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
       "src": "book/codeQuality/nameWell/intermediate/outcomes.md",
+      "title": "CS2103/T Website"
+    },
+    {
+      "title": "CS2103/T Website - Coding Best Practices: [Practice] Use Name to Explain",
+      "src": "book/codeQuality/nameWell/intermediate/useNameExplain/index.md"
+    },
+    {
+      "src": "book/codeQuality/nameWell/intermediate/useNameExplain/outcomes.md",
       "title": "CS2103/T Website"
     },
     {
@@ -319,114 +519,6 @@
     {
       "src": "book/codeQuality/nameWell/introduction/outcomes.md",
       "title": "CS2103/T Website"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Complicated Expressions",
-      "src": "book/codeQuality/practices/avoidComplicatedExpressions/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Deep Nesting",
-      "src": "book/codeQuality/practices/avoidDeepNesting/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Empty Catch Blocks",
-      "src": "book/codeQuality/practices/avoidEmptyCatchBlocks/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Long Methods",
-      "src": "book/codeQuality/practices/avoidLongMethods/index.md"
-    },
-    {
-      "src": "book/codeQuality/practices/avoidLongMethods/outcomes.md",
-      "title": "CS2103/T Website"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Magic Numbers",
-      "src": "book/codeQuality/practices/avoidMagicNumbers/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Avoid Misleading Names",
-      "src": "book/codeQuality/practices/avoidMisleadingNames/index.md"
-    },
-    {
-      "src": "book/codeQuality/practices/avoidPrematureOptimizations/index.md",
-      "title": "CS2103/T Website"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Delete Dead Code",
-      "src": "book/codeQuality/practices/deleteDeadCode/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Do Not Recycle Variables or Parameters",
-      "src": "book/codeQuality/practices/dontRecycleVarsOrParams/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Do Not Repeat the Obvious",
-      "src": "book/codeQuality/practices/dontRepeatObvious/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Do Not 'Trip Up' the Reader",
-      "src": "book/codeQuality/practices/dontTripReader/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Explain WHAT, WHY not HOW",
-      "src": "book/codeQuality/practices/explainWhatWhyNotHow/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices",
-      "src": "book/codeQuality/practices/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Make the Code Obvious",
-      "src": "book/codeQuality/practices/makeCodeObvious/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Make the Happy Path Prominent",
-      "src": "book/codeQuality/practices/makeHappyPathProminent/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Minimise Code Duplication",
-      "src": "book/codeQuality/practices/minimiseCodeDuplication/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Minimise Scope of Variables",
-      "src": "book/codeQuality/practices/minimiseVariableScope/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Not Too Long, Not Too Short",
-      "src": "book/codeQuality/practices/notTooLongNorShort/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Nouns and Verbs as Names",
-      "src": "book/codeQuality/practices/nounsAndVerbsAsNames/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Practice KISSing",
-      "src": "book/codeQuality/practices/practiceKISSing/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] SLAP Hard",
-      "src": "book/codeQuality/practices/slapHard/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Structure Code Logically",
-      "src": "book/codeQuality/practices/structureCodeLogically/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Use Default Branch",
-      "src": "book/codeQuality/practices/useDefaultBranch/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Use Name to Explain",
-      "src": "book/codeQuality/practices/useNameExplain/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Use Standard Words",
-      "src": "book/codeQuality/practices/useStandardWords/index.md"
-    },
-    {
-      "title": "CS2103/T Website - Coding Best Practices: [Practice] Write to the Reader",
-      "src": "book/codeQuality/practices/writeToReader/index.md"
     },
     {
       "title": "CS2103/T Website - Code Quality [Printable]",
