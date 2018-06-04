@@ -1,5 +1,6 @@
 <frontmatter>
 title: "Admin"
+footer: footer.md
 </frontmatter>
 
 <link rel="stylesheet" href="../css/main.css">

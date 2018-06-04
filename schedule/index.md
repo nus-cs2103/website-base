@@ -1,5 +1,6 @@
 <frontmatter>
 title: "Schedule"
+footer: footer.md
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/css/main.css">

@@ -34,7 +34,7 @@
   </dropdown>
   <li slot="right">
     <form class="navbar-form">
-      <typeahead :data="searchData" placeholder="Search" :template="titleTemplate" template-name="title" :on-hit="searchCallback"></typeahead>  
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
     </form>
   </li>
 </navbar>
