@@ -12,33 +12,34 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <div>
-  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-  <div class="website-content" id="all">
-    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability →
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+<div class="website-content" id="all">
+  <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability →
 </span></strong>
-      </span>
-    </p>
-    <div id="title">
-      <div>
-        <h4 id="advanced-three">Advanced <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
+    </span>
+  </p>
+  <div id="title">
+    <div>
+      <h4 id="advanced-three">Advanced <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
     </div>
-    <div id="main">
+  </div>
+  <div id="main">
+    <div>
       <div>
-        <div>
-          <panel type="seamless" expanded="">
-            <span slot="header" class="panel-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="panel-title"><div>
 <div>
 <h5 id="make-the-happy-path-prominent">Make the Happy Path Prominent</h5></div></div></span>
+          <div>
             <div>
-              <div>
-                <p>The happy path (i.e. the execution path taken when everything goes well) should be clear and prominent in your code. Restructure the code to make the happy path unindented as much as possible. It is the ‘unusual’ cases that should be indented.
-                  Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
-                <tip-box>
-                  <p>Example:</p>
-                  <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
+              <p>The happy path (i.e. the execution path taken when everything goes well) should be clear and prominent in your code. Restructure the code to make the happy path unindented as much as possible. It is the ‘unusual’ cases that should be indented.
+                Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
+              <tip-box>
+                <p>Example:</p>
+                <p>
+                  <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Bad</strong></font>
+                </p>
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
         start();    <span class="hljs-comment">//main path</span>
         process();
@@ -51,13 +52,15 @@
     handleUnusualCase(); <span class="hljs-comment">//handling that unusual condition</span>
 }
 </code></pre>
-                  <p>In the code above,</p>
-                  <ul>
-                    <li>Unusual condition detection is separated from their handling.</li>
-                    <li>Main path is nested deeply.</li>
-                  </ul>
-                  <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
+                <p>In the code above,</p>
+                <ul>
+                  <li>Unusual condition detection is separated from their handling.</li>
+                  <li>Main path is nested deeply.</li>
+                </ul>
+                <p>
+                  <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Good</strong></font>
+                </p>
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
     <span class="hljs-keyword">return</span>;
 }
@@ -72,16 +75,15 @@ process();
 cleanup();
 exit();
 </code></pre>
-                  <p>In contrast, the above code</p>
-                  <ul>
-                    <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>
-                    <li>keeps the main path un-indented.</li>
-                  </ul>
-                </tip-box>
-              </div>
+                <p>In contrast, the above code</p>
+                <ul>
+                  <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>
+                  <li>keeps the main path un-indented.</li>
+                </ul>
+              </tip-box>
             </div>
-          </panel>
-        </div>
+          </div>
+        </panel>
       </div>
     </div>
   </div>

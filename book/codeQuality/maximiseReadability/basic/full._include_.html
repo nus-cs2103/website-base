@@ -57,10 +57,14 @@
                   <div>
                     <tip-box>
                       <p>📦 Example:</p>
-                      <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
+                      <p>
+                        <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Bad</strong></font>
+                      </p>
                       <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                      <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
+                      <p>
+                        <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Good</strong></font>
+                      </p>
                       <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
@@ -78,10 +82,14 @@
                   <div>
                     <tip-box>
                       <p>📦 Example:</p>
-                      <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
+                      <p>
+                        <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Bad</strong></font>
+                      </p>
                       <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                      <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
+                      <p>
+                        <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Good</strong></font>
+                      </p>
                       <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
@@ -121,7 +129,9 @@ is_urgent = type_code == URGENT
                         <tr>
                         
                           <td valign="top">
-                            <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
+                            <p>
+                              <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Bad</strong></font>
+                            </p>
                             <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
@@ -132,7 +142,9 @@ is_urgent = type_code == URGENT
                           <td>  <br><br></td>
                         
                           <td valign="top">
-                            <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
+                            <p>
+                              <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Good</strong></font>
+                            </p>
                             <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
@@ -154,7 +166,9 @@ is_urgent = type_code == URGENT
                         <tr>
                         
                           <td valign="top">
-                            <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
+                            <p>
+                              <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Bad</strong></font>
+                            </p>
                             <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
@@ -165,7 +179,9 @@ is_urgent = type_code == URGENT
                           <td>  <br><br></td>
                         
                           <td valign="top">
-                            <p><img src="/website-base/book/images/Good.png" alt="" title="Good"></p>
+                            <p>
+                              <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Good</strong></font>
+                            </p>
                             <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
@@ -184,7 +200,9 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </tip-box>
               <p>Similarly, we can have ‘magic’ values of other data types.</p>
               <tip-box>
-                <p><img src="/website-base/book/images/Bad.png" alt="" title="Bad"></p>
+                <p>
+                  <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Bad</strong></font>
+                </p>
                 <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
               </tip-box>
