@@ -2,18 +2,18 @@
 title: "Week 11"
 </frontmatter>
 
-<panel header=":trophy: Outcomes" ctrl-lvl="1" popup-url="{{baseUrl}}/schedule/week11/outcomes.html" expanded no-close>
+<panel header=":trophy: Outcomes" popup-url="{{baseUrl}}/schedule/week11/outcomes.html" expanded no-close>
   <include src="outcomes.md#main" />
 </panel>
 
-<panel header=":clipboard: Todo" ctrl-lvl="1" no-close>
+<panel header=":clipboard: Todo" no-close>
   <include src="todo.md" />
 </panel>
 
-<panel header=":raising_hand: Tutorial 11" ctrl-lvl="1" no-close>
+<panel header=":raising_hand: Tutorial 11" no-close>
   <include src="tutorial.md" />
 </panel>
 
-<panel header=":loudspeaker: Lecture 11" ctrl-lvl="1" no-close>
+<panel header=":loudspeaker: Lecture 11" no-close>
   <include src="lecture.md" />
 </panel>

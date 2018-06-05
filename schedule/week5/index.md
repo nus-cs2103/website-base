@@ -2,17 +2,17 @@
 title: "Week 5"
 </frontmatter>
 
-<panel header=":trophy: Outcomes" ctrl-lvl="1" popup-url="{{baseUrl}}/schedule/week5/outcomes.html" expanded no-close>
+<panel header=":trophy: Outcomes" popup-url="{{baseUrl}}/schedule/week5/outcomes.html" expanded no-close>
   <include src="outcomes.md#main" />
 </panel>
 
-<panel header=":clipboard: Todo" ctrl-lvl="1" no-close>
+<panel header=":clipboard: Todo" no-close>
   <include src="todo.md" />
 </panel>
 
-<panel header=":raising_hand: Tutorial 5" ctrl-lvl="1" no-close>
+<panel header=":raising_hand: Tutorial 5" no-close>
 </panel>
 
-<panel header=":loudspeaker: Lecture 5" ctrl-lvl="1" no-close>
+<panel header=":loudspeaker: Lecture 5" no-close>
   <include src="lecture.md" />
 </panel>
