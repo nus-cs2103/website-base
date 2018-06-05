@@ -2,7 +2,7 @@
 title: "Week 8"
 </frontmatter>
 
-<panel header=":trophy: Outcomes" popup-url="{{baseUrl}}/schedule/week8/outcomes.html" expanded no-close>
+<panel header="{{glyphicon_flag}} Outcomes" popup-url="{{baseUrl}}/schedule/week8/outcomes.html" expanded no-close>
   <include src="outcomes.md#main" />
 </panel>
 
