@@ -7,7 +7,7 @@ title: "Week 4"
 </panel>
 
 
-<panel header=":clipboard: Todo" no-close>
+<panel header="{{glyphicon_check}} Todo" no-close>
   <include src="todo.md" />
 </panel>
 

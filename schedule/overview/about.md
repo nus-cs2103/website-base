@@ -43,7 +43,7 @@ In addition to following the conventions used in the textbook, the remainder of 
 
 Icons:
 
-* :clipboard: tasks to do 
+* {{glyphicon_check}} tasks to do 
 * {{glyphicon_blackboard}} lecture
 * :raising_hand: tutorial 
 * :dart: : evidence you can use to prove you have achieved a learning outcome

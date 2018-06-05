@@ -8,7 +8,7 @@ title: "Week 9"
   <include src="outcomes.md#main" />
 </panel>
 
-<panel header=":clipboard: Todo" no-close>
+<panel header="{{glyphicon_check}} Todo" no-close>
   <include src="todo.md" />
 </panel>
 
