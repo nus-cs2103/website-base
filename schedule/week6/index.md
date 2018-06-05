@@ -10,7 +10,7 @@ title: "Week 6"
   <include src="todo.md" />
 </panel>
 
-<panel header=":raising_hand: Tutorial 6" no-close>
+<panel header="{{glyphicon_pencil}} Tutorial 6" no-close>
   <include src="tutorial.md" />
 </panel>
 

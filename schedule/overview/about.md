@@ -45,7 +45,7 @@ Icons:
 
 * {{glyphicon_check}} tasks to do 
 * {{glyphicon_blackboard}} lecture
-* :raising_hand: tutorial 
+* {{glyphicon_pencil}} tutorial 
 * :dart: : evidence you can use to prove you have achieved a learning outcome
 * :alarm_clock: : deadline
 
