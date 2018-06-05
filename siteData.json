@@ -5952,6 +5952,7 @@
         "project-management": "Project Management:"
       },
       "title": "Home",
+      "footer": "footer.md",
       "src": "index.md"
     },
     {
