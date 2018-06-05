@@ -10,7 +10,7 @@
 ### Requirements:
 
 <panel type="danger" header="**`W7.1` Can record requirements of a product** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Documentation' component of v1.0:
 
@@ -25,7 +25,7 @@ Covered by the 'Documentation' component of v1.0:
 
 <panel type="warning" header="**`W7.3` Can explain APIs** :star::star:" no-close>
   <include src="../../book/reuse/apis/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Know the API of the AddressBook component you are in charge of and the APIs of the other components your component depends on.
 
@@ -44,7 +44,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 
 <panel type="success" header="**`W7.7` Can use Java8 streams :star::star::star::star:**" no-close>
   <include src="../../book/javaTools/streamsBasic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 1. Your code (can be toy examples) that use some Java 8 features. 
 2. Explain some parts of [[AddressBook - Level 4](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/)] code that use Java 8 features. e.g. `AddressBook#syncMasterTagListWith(Person)`
@@ -59,7 +59,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 ### Other:
 
 <panel type="danger" header="**`W7.9` Can do local-impact changes to an existing software** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Product' component of v1.0:
 

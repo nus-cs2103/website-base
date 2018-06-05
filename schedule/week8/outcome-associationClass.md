@@ -1,6 +1,6 @@
 <panel type="info" header="`W8.6a` Can explain the meaning of association classes :star::star::star:" expanded no-close>
   <include src="../../book/oopDesign/associations/associationClasses/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Give more examples of association classes, preferably related to your project.
 
@@ -11,7 +11,7 @@ Give more examples of association classes, preferably related to your project.
 
 <panel type="info" header="`W8.6b` Can implement association classes :star::star::star:" expanded no-close>
   <include src="../../book/oopImplementation/associationClasses/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of implementing an association class. 
 

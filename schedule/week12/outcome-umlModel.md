@@ -1,6 +1,6 @@
 <panel type="info" header="`W12.1a` Can identify UML models :star::star::star:" expanded no-close>
   <include src="../../book/modeling/introduction/umlModels/full.md" boilerplate />
-<panel header=":dart: Evidence" expanded>
+<panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 Identify a few other UML models.
   

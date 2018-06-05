@@ -6,7 +6,7 @@
 
 <panel type="warning" header="`W5.8b` Can explain the need for early developer testing :star::star:" expanded no-close>
   <include src="../../book/testing/testingTypes/developerTesting/why/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/testing/testingTypes/developerTesting/why/q-essay-why.md" />
 
@@ -27,7 +27,7 @@
 
 <panel type="danger" header="`W5.8e` Can use simple JUnit tests :star:" expanded no-close>
   <include src="../../book/junit/basic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 **Acceptable**: Evidence of having written JUnit tests in some project.
 

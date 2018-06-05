@@ -43,10 +43,10 @@ In addition to following the conventions used in the textbook, the remainder of 
 
 Icons:
 
-* {{glyphicon_check}} tasks to do 
-* {{glyphicon_blackboard}} lecture
-* {{glyphicon_pencil}} tutorial 
-* :dart: : evidence you can use to prove you have achieved a learning outcome
+* {{glyphicon_check}} : tasks to do 
+* {{glyphicon_blackboard}} : lecture
+* {{glyphicon_pencil}} : tutorial 
+* {{glyphicon_folder_close}} : evidence you can use to prove you have achieved a learning outcome
 * :alarm_clock: : deadline
 
 </panel>

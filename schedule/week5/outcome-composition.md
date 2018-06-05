@@ -6,7 +6,7 @@
 
 <panel type="info" header="`W5.5b` Can implement composition :star::star::star:" expanded no-close>
   <include src="../../book/oopImplementation/composition/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 The exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)] also covers composition (note the &#9670; in the class diagram).
 

@@ -1,6 +1,6 @@
 <panel type="info" header="`W10.1a` Can explain the Law of Demeter :star::star::star:" expanded no-close>
   <include src="../../book/principles/lawOfDemeter/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify places where LoD is followed/violated in your project.
 

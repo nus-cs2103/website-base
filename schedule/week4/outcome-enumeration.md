@@ -1,6 +1,6 @@
 <panel type="info" header="`W4.6a` Can explain the meaning of enumerations :star::star::star:" expanded no-close>
   <include src="../../book/oopDesign/classes/enumerations/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/oopDesign/classes/enumerations/q-essay-defineWeekDays.md" />
 
@@ -11,7 +11,7 @@
 
 <panel type="info" header="`W4.6b` Can use Java enumerations :star::star::star:" expanded no-close>
   <include src="../../book/javaTools/enums/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 **Acceptable**: Any code you have written that uses Java enumerations.
 

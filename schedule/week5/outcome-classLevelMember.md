@@ -6,7 +6,7 @@
 
 <panel type="warning" header="`W5.4b` Can implement class-level members :star::star:" expanded no-close>
   <include src="../../book/oopImplementation/classLevelMembers/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of having used Java class-level members in some project.
 

@@ -2,7 +2,7 @@
 
 <panel type="danger" header="`W9.4a` Can explain the two types of developer docs :star:" expanded no-close>
   <include src="../../book/documentation/introduction/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Give examples of the two types of developer documents from the project.
 
@@ -22,7 +22,7 @@ Give examples of the two types of developer documents from the project.
 
 <panel type="danger" header="`W9.4c` Can write reasonably comprehensible developer documents :star:" expanded no-close>
   <include src="../../book/documentation/guidelines/aimForComprehensibility/how/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Follow the guideline when documenting the project.
 
@@ -42,7 +42,7 @@ Follow the guideline when documenting the project.
 
 <panel type="warning" header="`W9.4e` Can explain the advantages of top-down documentation :star::star:" expanded no-close>
   <include src="../../book/documentation/guidelines/goTopDown/why/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain advantages of top-down documents by using the project's Developer Guide as an example.
 
@@ -53,7 +53,7 @@ Explain advantages of top-down documents by using the project's Developer Guide 
 
 <panel type="warning" header="`W9.4f` Can write documentation in a top-down manner :star::star:" expanded no-close>
   <include src="../../book/documentation/guidelines/goTopDown/how/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Follow the guideline when documenting the project.
 
@@ -73,7 +73,7 @@ Follow the guideline when documenting the project.
 
 <panel type="info" header="`W9.4h` Can write minimal yet sufficient documentation :star::star::star:" expanded no-close>
   <include src="../../book/documentation/guidelines/documentMinimally/how/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Follow the guideline when documenting the project.
 
@@ -86,7 +86,7 @@ Follow the guideline when documenting the project.
 
 <panel type="info" header="`W9.4i` Can draw architecture diagrams :star::star::star:" expanded no-close>
   <include src="../../book/architecture/architectureDiagrams/drawing/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Follow the guidelines when documenting the project.
 

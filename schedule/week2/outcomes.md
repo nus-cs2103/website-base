@@ -11,7 +11,7 @@
 
 <panel type="success" header="`W2.1` **Can explain pros and cons of software engineering** :star::star::star::star:" no-close>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 To be able answer questions such as these:
 
@@ -28,7 +28,7 @@ To be able answer questions such as these:
 
 <panel type="warning" header="`W2.3` **Can use Java Collections** :star::star:" no-close>
   <include src="../../book/javaTools/collections/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Some code that you have written that uses some Java Collection classes.
 
@@ -43,7 +43,7 @@ To be able answer questions such as these:
 
 <panel type="info" header="`W2.4` **Can use Java varargs feature** :star::star::star:" no-close>
   <include src="../../book/javaTools/varargs/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Some code that you have written that uses the varargs feature.
 

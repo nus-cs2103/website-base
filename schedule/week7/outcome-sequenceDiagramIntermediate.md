@@ -35,7 +35,7 @@
 
 <panel type="info" header="`W7.4f` Can draw intermediate level sequence diagrams :star::star::star:" expanded no-close>
   <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" /><p/>
 

@@ -2,7 +2,7 @@
 
 <panel type="danger" header="`W10.2a` Can use basic activity diagram notations :star:" expanded no-close>
   <include src="../../book/modeling/modelingBehaviors/activityDiagrams/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Use activity diagram to model workflows in the project.
 

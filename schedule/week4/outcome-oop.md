@@ -7,7 +7,7 @@
 
 <panel type="danger" header="`W4.2b` Can describe how OOP relates to the real world :star:" expanded no-close>
   <include src="../../book/oopDesign/objects/basic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/oopDesign/objects/basic/q-essay-describeObjectInScenario.md" />
 
@@ -18,7 +18,7 @@
 
 <panel type="danger" header="`W4.2c` Can explain the relationship between classes and objects :star:" expanded no-close>
   <include src="../../book/oopDesign/classes/basic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/oopDesign/classes/basic/q-essay-identifyClassesAndObjects.md" />
 

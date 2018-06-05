@@ -20,7 +20,7 @@
 
 <panel type="info" header="`W11.4e` Can apply multiple test input combination techniques together :star::star::star:" expanded no-close>
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Apply the heuristics to design test cases for a simple method that takes two parameters.
 

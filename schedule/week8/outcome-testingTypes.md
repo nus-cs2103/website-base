@@ -2,7 +2,7 @@
 
 <panel type="danger" header="`W8.7a` Can explain unit testing :star:" expanded no-close>
 <include src="../../book/testing/testingTypes/unitTesting/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify some unit tests in AddressBook-Level4 (or your own project).
 
@@ -13,7 +13,7 @@ Identify some unit tests in AddressBook-Level4 (or your own project).
 
 <panel type="info" header="`W8.7b` Can use stubs to isolate an SUT from its dependencies :star::star::star:" expanded no-close>
 <include src="../../book/testing/testingTypes/unitTesting/stubs/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify some tests in AddressBook-Level4,
 1. that can be made pure unit tests by introducing stubs
@@ -42,7 +42,7 @@ Identify some tests in AddressBook-Level4,
 
 <panel type="warning" header="`W8.7c` Can explain integration testing :star::star:" expanded no-close>
   <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain the difference between unit tests and integration tests. 
 
@@ -53,7 +53,7 @@ Explain the difference between unit tests and integration tests.
 
 <panel type="info" header="`W8.7d` Can do integration testing :star::star::star:" expanded no-close>
   <include src="../../book/testing/testingTypes/integrationTesting/how/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Use tests from AddressBook-Level4 to illustrate the difference between unit testings and integration testing. Hint: good examples [`seedu.address.storage.StorageManagerTest`]({{module_org}}/addressbook-level4/blob/master/src/test/java/seedu/address/storage/StorageManagerTest.java),[`seedu.address.logic.commands.AddCommandTest`]({{module_org}}/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandTest.java),[`seedu.address.logic.commands.AddCommandIntegrationTest`]({{module_org}}/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandIntegrationTest.java)
 
@@ -66,7 +66,7 @@ Use tests from AddressBook-Level4 to illustrate the difference between unit test
 
 <panel type="danger" header="`W8.7e` Can explain system testing :star:" expanded no-close>
   <include src="../../book/testing/testingTypes/systemTesting/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain what system tests are. Give examples from your own project.
 
@@ -77,7 +77,7 @@ Explain what system tests are. Give examples from your own project.
 
 <panel type="info" header="`W8.7f` Can explain automated GUI testing :star::star::star:" expanded no-close>
   <include src="../../book/testing/testAutomation/testingGuis/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Why is automated testing of GUIs is hard? What can we do about it?
 
@@ -90,7 +90,7 @@ Why is automated testing of GUIs is hard? What can we do about it?
 
 <panel type="warning" header="`W8.7g` Can explain acceptance testing :star::star:" expanded no-close>
   <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain what acceptance tests are. Explain how acceptance testing of your project will be done. 
 
@@ -101,7 +101,7 @@ Explain what acceptance tests are. Explain how acceptance testing of your projec
 
 <panel type="info" header="`W8.7h` Can explain the differences between system testing and acceptance testing :star::star::star:" expanded no-close>
   <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain the difference between system tests and acceptance tests. Explain why both are needed.
 
@@ -115,7 +115,7 @@ Explain the difference between system tests and acceptance tests. Explain why bo
 
 <panel type="info" header="`W8.7i` Can explain alpha and beta testing :star::star::star:" expanded no-close>
   <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain alpha and beta testing. How can you do alpha and beta testing in your project?
 

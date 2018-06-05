@@ -10,7 +10,7 @@
 
 <panel type="info" header="`W10.6c` Can apply EP for OOP methods :star::star::star:" expanded no-close>
   <include src="../../book/testCaseDesign/equivalencePartitions/intermediate/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain equivalence partitioning using examples from the project.
 

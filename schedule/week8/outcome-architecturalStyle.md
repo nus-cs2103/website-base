@@ -21,7 +21,7 @@
 
 <panel type="info" header="`W8.3d` Can identify event-driven architectural style :star::star::star:" expanded no-close>
   <include src="../../book/architecture/architecturalStyles/eventDriven/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Developer Guide](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design) for more info).
 
@@ -53,7 +53,7 @@ Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Develo
 
 <panel type="info" header="`W8.3h` Can explain how architectural styles are combined :star::star::star:" expanded no-close>
   <include src="../../book/architecture/architecturalStyles/more/usingStyles/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain architectural styles currently used in AddressBook-Level4. Speculate under what circumstances other architectural styles can be used in it %%&nbsp;e.g. what kind of additional features can make a certain style applicable%%
 

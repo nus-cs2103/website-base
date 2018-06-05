@@ -6,7 +6,7 @@
 
 <panel type="danger" header="`W4.3b` Can use basic-level class diagrams :star:" expanded no-close>
   <include src="../../book/modeling/modelingStructures/classDiagramsBasic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/modeling/modelingStructures/classDiagramsBasic/q-essay-explainClassDiagram.md" />
 

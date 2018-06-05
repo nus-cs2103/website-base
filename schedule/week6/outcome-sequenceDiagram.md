@@ -34,7 +34,7 @@
 
 <panel type="warning" header="`W6.4f` Can draw basic sequence diagrams :star::star:" expanded no-close>
   <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsBasic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-essay-drawSequenceDiagramForPerson.md" />
 

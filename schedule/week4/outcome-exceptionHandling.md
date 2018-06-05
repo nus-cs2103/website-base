@@ -12,7 +12,7 @@
 
 <panel type="warning" header="`W4.5c` Can do exception handling in code :star::star:" expanded no-close>
   <include src="../../book/errorHandling/exceptions/how/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Some code you wrote that involves exception handling.
 

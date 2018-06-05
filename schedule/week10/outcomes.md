@@ -34,7 +34,7 @@
 ### Project Management:
 
 <panel type="danger" header="**`W10.8` Can release a product to end users** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by v1.3:
 

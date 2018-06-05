@@ -13,7 +13,7 @@
 
 No textbook section. To be covered during the lecture.
 
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Apply the discussed guidelines when designing the product (covered by v1.1 deliverables).
 
@@ -25,7 +25,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 <panel type="danger" header="**`W8.2` Can describe a product from the user's perspective** :star:" no-close>
 
 
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Documentation' of component v1.1:
 
@@ -53,7 +53,7 @@ Covered by the 'Documentation' of component v1.1:
 ### Other:
 
 <panel type="danger" header="**`W8.8` Can do global-impact changes to an existing software** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Product' component of v1.1:
 

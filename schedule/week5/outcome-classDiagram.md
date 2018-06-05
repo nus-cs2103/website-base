@@ -28,7 +28,7 @@
 
 <panel type="info" header="`W5.1e` Can use intermediate-level class diagrams :star::star::star:" expanded no-close>
   <include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Able to explain the class diagram of the [[AddressBook-Level2]({{module_org}}/addressbook-level2/blob/master/doc/DeveloperGuide.md#design)]. You may ignore the `ReadOnlyPerson` interface (we have not covered _interfaces_ yet)
 

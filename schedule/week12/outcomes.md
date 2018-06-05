@@ -20,7 +20,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="**`W12.3` Can describe contributions to a project** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Project Portfolio Page' component of v1.5rc:
 

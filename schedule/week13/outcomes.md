@@ -11,7 +11,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="**`W13.1` Can demo a product** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Demo' component of v1.5:
 
@@ -24,7 +24,7 @@ Covered by the 'Demo' component of v1.5:
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="**`W13.2` Can deliver a product iteratively** :star::star::star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by v1.0-v1.5:
 
@@ -34,7 +34,7 @@ Covered by v1.0-v1.5:
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="**`W13.3` Can work in an existing code base of small/medium size** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by v1.0-v1.5:
 
@@ -44,7 +44,7 @@ Covered by v1.0-v1.5:
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="**`W13.4` Can evaluate contributions from project members** :star::star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Peer Evaluations' component of the module:
 

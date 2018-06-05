@@ -9,7 +9,7 @@
 
 <panel type="danger" header="`W6.5b` Can implement overriding :star:" expanded no-close>
   <include src="../../book/oopImplementation/overriding/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Some evidence of using method overriding in some code you wrote.
 
@@ -29,7 +29,7 @@ Some evidence of using method overriding in some code you wrote.
 
 <panel type="danger" header="`W6.5d` Can implement polymorphism :star:" expanded no-close>
   <include src="../../book/oopImplementation/polymorphism/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 **Acceptable**: Using polymorphism in any past project.
 
@@ -52,7 +52,7 @@ Some evidence of using method overriding in some code you wrote.
 
 <panel type="warning" header="`W6.5f` Can implement abstract classes :star::star:" expanded no-close>
   <include src="../../book/oopImplementation/abstractClasses/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Using abstract classes in any past project.
 
@@ -75,7 +75,7 @@ Some evidence of using method overriding in some code you wrote.
 
 <panel type="info" header="`W6.5h` Can implement interfaces :star::star::star:" expanded no-close>
   <include src="../../book/oopImplementation/interfaces/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Using interfaces in any past project.
 

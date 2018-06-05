@@ -12,7 +12,7 @@
 
 <panel type="info" header="`W9.2c` Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism :star::star::star:" expanded no-close>
   <include src="../../book/oopDesign/polymorphism/mechanism/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain how substitutability operation overriding, and dynamic binding relates to polymorphism by taking a real example from the project.
 
@@ -39,7 +39,7 @@ Explain how substitutability operation overriding, and dynamic binding relates t
 
 <panel type="info" header="`W9.2f` Can explain Liskov Substitution Principle :star::star::star:" expanded no-close>
   <include src="../../book/principles/liskovSubstitutionPrinciple/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Give an example from the project where LSP is followed. Explain what kind of a change to that code will violate LSP %%&nbsp;e.g. Here, the superclass X and the subclass Y follow LSP. But if we change X in this way, or Y in this way, it will no longer follow LSP%%
 

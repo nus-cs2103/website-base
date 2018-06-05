@@ -7,7 +7,7 @@
 
 <panel type="warning" header="`W9.5b` Can explain test coverage :star::star:" expanded no-close>
   <include src="../../book/testing/testCoverage/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Explain what is test coverage and how it can be useful.
 
@@ -18,7 +18,7 @@ Explain what is test coverage and how it can be useful.
 
 <panel type="info" header="`W9.5c` Can explain how test coverage works :star::star::star:" expanded no-close>
   <include src="../../book/testing/testCoverage/how/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Measure test coverage in your project.
 
@@ -29,7 +29,7 @@ Measure test coverage in your project.
 
 <panel type="info" header="`W9.5d` Can use intermediate features of JUnit :star::star::star:" expanded no-close>
   <include src="../../book/junit/intermediate/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Use the mentioned features in the project.
 

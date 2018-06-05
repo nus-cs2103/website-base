@@ -15,7 +15,7 @@
 
 <panel type="info" header="**`W5.2` Can explain single responsibility principle** :star::star::star:" no-close>
   <include src="../../book/principles/singleResponsibilityPrinciple/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of having used SRP in some project.
 
@@ -53,7 +53,7 @@
 ### Other:
 
 <panel type="danger" header="**`W5.10` Can work with a 2KLoC code base** :star: ==[Compulsory]==" expandable>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
     <include src="2kloc.md" />
   </panel>
 </panel>

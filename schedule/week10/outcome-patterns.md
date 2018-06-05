@@ -17,7 +17,7 @@
 
 <panel type="danger" header="`W10.3c` Can explain the Singleton design pattern :star:" expanded no-close>
   <include src="../../book/designPatterns/singleton/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify where in the project Singleton pattern can be used.
 
@@ -26,7 +26,7 @@ Identify where in the project Singleton pattern can be used.
 
 <panel type="warning" header="`W10.3d` Can apply the Singleton design pattern :star::star:" expanded no-close>
   <include src="../../book/designPatterns/singleton/implementation/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify where in the project Singleton pattern has been used. Apply singleton pattern somewhere (in a toy example or in a project)
 
@@ -35,7 +35,7 @@ Identify where in the project Singleton pattern has been used. Apply singleton p
 
 <panel type="info" header="`W10.3e` Can decide when to apply Singleton design pattern :star::star::star:" expanded no-close>
   <include src="../../book/designPatterns/singleton/evaluation/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify places in the project where only a single object of a class is needed but there is no need to apply the Singleton pattern.
 
@@ -48,7 +48,7 @@ Identify places in the project where only a single object of a class is needed b
 
 <panel type="warning" header="`W10.3f` Can explain the Facade design pattern :star::star:" expanded no-close>
   <include src="../../book/designPatterns/facade/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Discuss the current/potential applications of the pattern in your project.
 
@@ -61,7 +61,7 @@ Discuss the current/potential applications of the pattern in your project.
 
 <panel type="info" header="`W10.3g` Can explain the Command design pattern :star::star::star:" expanded no-close>
   <include src="../../book/designPatterns/command/what/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Discuss the current/potential applications of the pattern in your project.
 

@@ -6,7 +6,7 @@
 
 <panel type="warning" header="`W5.9b` Can follow Forking Workflow :star::star:" expanded no-close>
   <include src="../../book/gitAndGithub/forkingWorkflow/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of following the forking workflow ==with the current team members== using _any_ repo.
 

@@ -9,7 +9,7 @@
 
 <panel type="danger" header="`W5.3b` Can implement inheritance :star:" expanded no-close>
   <include src="../../book/oopImplementation/inheritance/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of having used Java inheritance in some project.
 

@@ -1,6 +1,6 @@
 <panel type="info" header="`W11.7a` Can explain scrum :star::star::star:" expanded no-close>
   <include src="../../book/processModels/exampleProcessModels/scrum/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="evidence-relateProces.md" />
 
@@ -9,7 +9,7 @@
 
 <panel type="success" header="`W11.7b` Can explain XP :star::star::star::star:" expanded no-close>
   <include src="../../book/processModels/exampleProcessModels/xp/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="evidence-relateProces.md" />
 
@@ -18,7 +18,7 @@
 
 <panel type="success" header="`W11.7c` Can explain unified process :star::star::star::star:" expanded no-close>
   <include src="../../book/processModels/exampleProcessModels/unifiedProcess/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="evidence-relateProces.md" />
 

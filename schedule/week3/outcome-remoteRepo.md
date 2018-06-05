@@ -6,7 +6,7 @@
 
 <panel type="danger" header="`W3.8b` Can clone a remote repo :star:" expanded no-close>
   <include src="../../book/gitAndGithub/clone/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any remote repo cloned to your Computer.
 
@@ -21,7 +21,7 @@
 
 <panel type="danger" header="`W3.8c` Can pull changes from a repo :star:" expanded no-close>
   <include src="../../book/gitAndGithub/pull/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any evidence of pulling from a remote Git repo.
 
@@ -36,7 +36,7 @@
 
 <panel type="danger" header="`W3.8d` Can push to a remote repo :star:" expanded no-close>
   <include src="../../book/gitAndGithub/push/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any evidence of pushing to a remote Git repo.
 

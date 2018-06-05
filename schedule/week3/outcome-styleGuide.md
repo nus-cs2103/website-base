@@ -4,7 +4,7 @@
 
 <panel type="warning" header="`W3.2b` Can explain the need for following a standard :star::star:" expanded no-close>
   <include src="../../book/codeQuality/followStandard/introduction/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/codeQuality/followStandard/introduction/q-essay-explain.md" />
 
@@ -15,7 +15,7 @@
 
 <panel type="warning" header="`W3.2c` Can follow simple mechanical style rules :star::star:" expanded no-close>
   <include src="../../book/codeQuality/followStandard/basic/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of following a coding standard in any project.
 
@@ -28,7 +28,7 @@
 
 <panel type="info" header="`W3.2d` Can follow intermediate style rules :star::star::star:" expanded no-close>
   <include src="../../book/codeQuality/followStandard/intermediate/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Similar to [Can follow simple mechanical style rules] above, but also fix violations of _intermediate_ style rules.
 

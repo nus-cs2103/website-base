@@ -40,7 +40,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="**`W3.10` Can work with a 1KLoC code base :star: ==[Compulsory]==**" expandable no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <tip-box type="important"> 
 
@@ -48,7 +48,7 @@ This is a compulsory LO. If you miss this LO, your participation marks will be a
 
 <panel type="seamless" header="[For Reference] details of the Week 5 LO mentioned above">
 
-:dart: Evidence:
+{{glyphicon_folder_close}} Evidence:
 
 <include src="../week5/2kloc.md"/>
 

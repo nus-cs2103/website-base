@@ -18,7 +18,7 @@
 
 <panel type="danger" header="`W6.3c` Can write simple user stories :star::star:" expanded no-close>
   <include src="../../book/specifyingRequirements/userStories/introduction/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Using user stories in any past project.
 
@@ -40,7 +40,7 @@
 
 <panel type="info" header="`W6.3e` Can use user stories to manage requirements of project :star::star::star:" expanded no-close>
   <include src="../../book/specifyingRequirements/userStories/usage/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the final project.
 
@@ -65,7 +65,7 @@ Covered by the final project.
 
 <panel type="warning" header="`W6.3h` Can specify details of a use case in a structured format :star::star:" expanded no-close>
   <include src="../../book/specifyingRequirements/useCases/details/full.md" boilerplate />
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-UseCases]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases)]
    

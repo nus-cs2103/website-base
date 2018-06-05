@@ -24,7 +24,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="**`W11.5` Can do acceptance testing** :star:" no-close>
-  <panel header=":dart: Evidence" expanded>
+  <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Covered by the 'Acceptance Testing' component of v1.4:
 
