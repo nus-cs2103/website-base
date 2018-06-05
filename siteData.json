@@ -1049,7 +1049,7 @@
         "section-supplementary": "SECTION: SUPPLEMENTARY",
         "principles": "Principles"
       },
-      "title": "Book - Software Engineering for Self-Directed Learners",
+      "title": "SE Book [All-In-One-Page Big File!]",
       "src": "book/common/all.md"
     },
     {
@@ -1120,7 +1120,7 @@
         "se-principles": "SE Principles",
         "review": "Review"
       },
-      "title": "Learning Outcomes",
+      "title": "SE Book: Full List of Learning Outcomes",
       "src": "book/common/outcomes.md"
     },
     {
@@ -1311,7 +1311,7 @@
         "section-supplementary": "SECTION: SUPPLEMENTARY",
         "principles": "Principles"
       },
-      "title": "Textbook [Printable]",
+      "title": "SE Book [Printable, Big File!]",
       "src": "book/common/print.md"
     },
     {
@@ -4481,6 +4481,7 @@
     {
       "headings": {},
       "title": "Software Engineering: Pros and Cons",
+      "keywords": "Frederick P. Brooks, Mythical Man-Month",
       "src": "book/softwareEngineering/prosAndCons/index.md"
     },
     {
