@@ -13,5 +13,5 @@ title: "Week 13"
 <panel header=":raising_hand: Tutorial 13" no-close>
 </panel>
 
-<panel header=":loudspeaker: Lecture 13" no-close>
+<panel header="{{glyphicon_blackboard}} Lecture 13" no-close>
 </panel>

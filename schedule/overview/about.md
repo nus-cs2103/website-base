@@ -44,7 +44,7 @@ In addition to following the conventions used in the textbook, the remainder of 
 Icons:
 
 * :clipboard: tasks to do 
-* :loudspeaker: lecture
+* {{glyphicon_blackboard}} lecture
 * :raising_hand: tutorial 
 * :dart: : evidence you can use to prove you have achieved a learning outcome
 * :alarm_clock: : deadline

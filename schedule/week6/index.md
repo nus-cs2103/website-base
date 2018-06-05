@@ -14,6 +14,6 @@ title: "Week 6"
   <include src="tutorial.md" />
 </panel>
 
-<panel header=":loudspeaker: Lecture 6" no-close>
+<panel header="{{glyphicon_blackboard}} Lecture 6" no-close>
   <include src="lecture.md" />
 </panel>

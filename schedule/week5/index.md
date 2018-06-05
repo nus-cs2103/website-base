@@ -13,6 +13,6 @@ title: "Week 5"
 <panel header=":raising_hand: Tutorial 5" no-close>
 </panel>
 
-<panel header=":loudspeaker: Lecture 5" no-close>
+<panel header="{{glyphicon_blackboard}} Lecture 5" no-close>
   <include src="lecture.md" />
 </panel>

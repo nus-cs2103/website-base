@@ -8,6 +8,6 @@ title: "Week 1"
 <panel header=":raising_hand: Tutorial 1" no-close>
   <include src="tutorial.md" />
 </panel>
-<panel header=":loudspeaker: Lecture 1" no-close>
+<panel header="{{glyphicon_blackboard}} Lecture 1" no-close>
   <include src="lecture.md" />
 </panel>
