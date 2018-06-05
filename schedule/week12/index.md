@@ -2,9 +2,7 @@
 title: "Week 12"
 </frontmatter>
 
-<small>[<a href="{{baseUrl}}/schedule/week12/outcomes.html" target="_blank">Open _Outcomes_ in a new Window {{glyphicon_new_window}}</a>]</small>
-
-<panel header=":trophy: Outcomes" ctrl-lvl="1" no-close>
+<panel header=":trophy: Outcomes" ctrl-lvl="1" popup-url="{{baseUrl}}/schedule/week12/outcomes.html" expanded no-close>
   <include src="outcomes.md#main" />
 </panel>
 
