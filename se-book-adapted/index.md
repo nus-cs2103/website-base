@@ -31,19 +31,36 @@ title: "Software Engineering for Self-Directed Learners [CS2103/T Version]"
 
 <include src="../book/specifyingRequirements/topicToc.md" />
 
-### Design
 
-<include src="../book/design/topicToc.md" />
+{% import "se-book-adapted/config.md" as config %}
 
-<include src="../book/designFundamentals/topicToc.md" />
 
-<include src="../book/modeling/topicToc.md" />
+{% macro show_chapter(section, chapter) %}
 
-<include src="../book/architecture/topicToc.md" />
+* [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
+  <trigger for="pop:{{ chapter.name }}-preview">:mag:</trigger>[:scroll:]({{baseUrl}}/{{ chapter.name }}/print.html)
 
-<include src="../book/designPatterns/topicToc.md" />
+<popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} :mag:" placement="right">
+  <div slot="content">
+    <include src="../book/{{chapter.name}}/preview.md" />
+  </div>
+</popover>
 
-<include src="../book/designApproaches/topicToc.md" />
+{% endmacro %}
+
+
+{% macro show_section(section) %}
+### {{ section.heading}}
+{% for chapter in section.chapters %}
+  {{ show_chapter(section, chapter) }}
+{% endfor %}
+{% endmacro %}
+
+
+{% for section in config.topics %}
+  {{ show_section(section) }}
+{% endfor %}
+
 
 ### Implementation
 
