@@ -6,7 +6,11 @@
 {% set level_location =  location + "/" + topic.name %}
   <panel type="seamless" expanded>
     <span slot="header" class="panel-title"><include src="{{ level_location }}/text.md#title"/></span>
+    <tip-box>
+      <include src="{{ level_location }}/outcomes.md" />
+    </tip-box>
     <include src="{{ level_location }}/text.md#body" />
+    <include src="{{ level_location }}/text.md#extras" />
   </panel>
 {% endmacro %}
 
