@@ -50,10 +50,19 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one-2": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
+        "basic-one-4": "Basic ",
+        "intermediate-two-3": "Intermediate ",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one-5": "Basic ",
+        "intermediate-two-4": "Intermediate ",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one-6": "Basic ",
+        "intermediate-two-5": "Intermediate ",
         "v15rc-documentation": "v1.5rc Documentation",
         "v15rc-demo": "v1.5rc Demo",
         "v15-week-13": "v1.5 [week 13]",
@@ -476,7 +485,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "basic-one": "Basic "
+      },
       "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic",
       "src": "book/codeQuality/avoidShortcuts/basic/index.md"
     },
@@ -497,13 +508,17 @@
     },
     {
       "headings": {
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts"
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one": "Basic ",
+        "intermediate-two": "Intermediate "
       },
       "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts",
       "src": "book/codeQuality/avoidShortcuts/index.md"
     },
     {
-      "headings": {},
+      "headings": {
+        "intermediate-two": "Intermediate "
+      },
       "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Intermediate",
       "src": "book/codeQuality/avoidShortcuts/intermediate/index.md"
     },
@@ -553,7 +568,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "basic-one": "Basic "
+      },
       "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic",
       "src": "book/codeQuality/commentMinimally/basic/index.md"
     },
@@ -574,7 +591,9 @@
     },
     {
       "headings": {
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently"
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one": "Basic ",
+        "intermediate-two": "Intermediate "
       },
       "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently",
       "src": "book/codeQuality/commentMinimally/index.md"
@@ -590,7 +609,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "intermediate-two": "Intermediate "
+      },
       "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Intermediate",
       "src": "book/codeQuality/commentMinimally/intermediate/index.md"
     },
@@ -651,10 +672,19 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one-2": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
+        "basic-one-4": "Basic ",
+        "intermediate-two-3": "Intermediate ",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently"
+        "basic-one-5": "Basic ",
+        "intermediate-two-4": "Intermediate ",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one-6": "Basic ",
+        "intermediate-two-5": "Intermediate "
       },
       "title": "Code Quality",
       "src": "book/codeQuality/index.md"
@@ -677,7 +707,9 @@
       "src": "book/codeQuality/introduction/index.md"
     },
     {
-      "headings": {},
+      "headings": {
+        "advanced-three": "Advanced "
+      },
       "title": "Code Quality: [Guideline] Maximise Readability: Advanced",
       "src": "book/codeQuality/maximiseReadability/advanced/index.md"
     },
@@ -737,7 +769,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "basic-one": "Basic "
+      },
       "title": "Code Quality: [Guideline] Maximise Readability: Basic",
       "src": "book/codeQuality/maximiseReadability/basic/index.md"
     },
@@ -758,7 +792,10 @@
     },
     {
       "headings": {
-        "guideline-maximise-readability": "Guideline: Maximise Readability"
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced "
       },
       "title": "Code Quality: [Guideline] Maximise Readability",
       "src": "book/codeQuality/maximiseReadability/index.md"
@@ -784,7 +821,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "intermediate-two": "Intermediate "
+      },
       "title": "Code Quality: [Guideline] Maximise Readability: Intermediate",
       "src": "book/codeQuality/maximiseReadability/intermediate/index.md"
     },
@@ -834,7 +873,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "basic-one": "Basic "
+      },
       "title": "Code Quality: [Guideline] Name Well: Basic",
       "src": "book/codeQuality/nameWell/basic/index.md"
     },
@@ -865,7 +906,9 @@
     },
     {
       "headings": {
-        "guideline-name-well": "Guideline: Name Well"
+        "guideline-name-well": "Guideline: Name Well",
+        "basic-one": "Basic ",
+        "intermediate-two": "Intermediate "
       },
       "title": "Code Quality: [Guideline] Name Well",
       "src": "book/codeQuality/nameWell/index.md"
@@ -881,7 +924,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "intermediate-two": "Intermediate "
+      },
       "title": "Code Quality: [Guideline] Name Well: Intermediate",
       "src": "book/codeQuality/nameWell/intermediate/index.md"
     },
@@ -925,10 +970,19 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one-2": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
+        "basic-one-4": "Basic ",
+        "intermediate-two-3": "Intermediate ",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently"
+        "basic-one-5": "Basic ",
+        "intermediate-two-4": "Intermediate ",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently",
+        "basic-one-6": "Basic ",
+        "intermediate-two-5": "Intermediate "
       },
       "title": "Code Quality [Printable]",
       "src": "book/codeQuality/print.md"
@@ -968,10 +1022,19 @@
         "code-quality": "Code Quality",
         "introduction-3": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one-5": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
+        "basic-one-7": "Basic ",
+        "intermediate-two-3": "Intermediate ",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one-8": "Basic ",
+        "intermediate-two-4": "Intermediate ",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one-9": "Basic ",
+        "intermediate-two-5": "Intermediate ",
         "refactoring": "Refactoring",
         "documentation": "Documentation",
         "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
@@ -1188,10 +1251,19 @@
         "code-quality": "Code Quality",
         "introduction-8": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one-5": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
+        "basic-one-7": "Basic ",
+        "intermediate-two-3": "Intermediate ",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one-8": "Basic ",
+        "intermediate-two-4": "Intermediate ",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently",
+        "basic-one-9": "Basic ",
+        "intermediate-two-5": "Intermediate ",
         "refactoring": "Refactoring",
         "documentation": "Documentation",
         "introduction-9": "Introduction",
@@ -6277,6 +6349,67 @@
       },
       "src": "schedule/week9/outcomes.md",
       "title": ""
+    },
+    {
+      "headings": {
+        "software-architecture": "Software Architecture",
+        "introduction": "Introduction",
+        "architecture-diagrams": "Architecture Diagrams",
+        "architectural-styles": "Architectural Styles",
+        "introduction-2": "Introduction",
+        "n-tier-architectural-style": "N-tier Architectural Style",
+        "client-server-architectural-style": "Client-server Architectural Style",
+        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
+        "service-oriented-architectural-style": "Service-oriented Architectural Style",
+        "event-driven-architectural-style": "Event-driven Architectural Style",
+        "more": "More"
+      },
+      "title": "Architecture",
+      "src": "se-book-adapted/chapters/architecture.md"
+    },
+    {
+      "headings": {},
+      "src": "se-book-adapted/chapters/chapter.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "code-quality": "Code Quality",
+        "introduction": "Introduction",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one-2": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
+        "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "guideline-name-well": "Guideline: Name Well",
+        "basic-one-4": "Basic ",
+        "intermediate-two-3": "Intermediate ",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one-5": "Basic ",
+        "intermediate-two-4": "Intermediate ",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one-6": "Basic ",
+        "intermediate-two-5": "Intermediate "
+      },
+      "title": "Code Quality",
+      "src": "se-book-adapted/chapters/codeQuality.md"
+    },
+    {
+      "headings": {
+        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
+        "about-this-book": "About this Book",
+        "software-engineering": "Software Engineering",
+        "object-oriented-programming-with-uml": "Object-Oriented Programming (with UML)",
+        "requirements": "Requirements",
+        "design": "Design",
+        "implementation": "Implementation",
+        "quality-assurance": "Quality Assurance",
+        "project-management": "Project Management",
+        "tools": "Tools",
+        "supplementary": "Supplementary"
+      },
+      "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
+      "src": "se-book-adapted/index.md"
     }
   ]
 }

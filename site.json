@@ -44,6 +44,9 @@
     },
     {
       "glob": "**/references.md"
+    },
+    {
+      "glob": "se-book-adapted/chapters/*.md"
     }
   ],
   "titlePrefix": "CS2103/T Website"
