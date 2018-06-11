@@ -6,6 +6,8 @@ title: "Software Engineering for Self-Directed Learners [CS2103/T Version]"
 
 <div class="website-content" id="all">
 
+<include src="../common/header.md" />
+
 ## Software Engineering for Self-Directed Learners
 
 ### About this Book

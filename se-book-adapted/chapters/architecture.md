@@ -48,6 +48,8 @@ title: {{ chapter.heading }}
 
 <div class="website-content" id="all">
 
+<include src="../../common/header.md" />
+
 %%**<include src="{{ level_location }}/../path.md" inline />**%%
 
 <div id="title">
