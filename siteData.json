@@ -6395,6 +6395,11 @@
       "src": "se-book-adapted/chapters/codeQuality.md"
     },
     {
+      "headings": {},
+      "title": "Software Architecture: Introduction: What",
+      "src": "se-book-adapted/chapters/test.md"
+    },
+    {
       "headings": {
         "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
         "about-this-book": "About this Book",
