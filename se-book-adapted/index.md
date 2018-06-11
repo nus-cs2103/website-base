@@ -62,22 +62,6 @@ title: "Software Engineering for Self-Directed Learners [CS2103/T Version]"
 {% endfor %}
 
 
-### Implementation
-
-<include src="../book/ides/topicToc.md" />
-
-<include src="../book/codeQuality/topicToc.md" />
-
-<include src="../book/refactoring/topicToc.md" />
-
-<include src="../book/documentation/topicToc.md" />
-
-<include src="../book/errorHandling/topicToc.md" />
-
-<include src="../book/integration/topicToc.md" />
-
-<include src="../book/reuse/topicToc.md" />
-
 ### Quality Assurance
 
 <include src="../book/qualityAssurance/topicToc.md" />
