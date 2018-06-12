@@ -6364,7 +6364,8 @@
         "event-driven-architectural-style": "Event-driven Architectural Style",
         "more": "More"
       },
-      "title": "Architecture",
+      "title": "Text Book Chapter : Architecture",
+      "footer": "footer.md",
       "src": "se-book-adapted/chapters/architecture.md"
     },
     {
@@ -6391,7 +6392,8 @@
         "basic-one-6": "Basic ",
         "intermediate-two-5": "Intermediate "
       },
-      "title": "Code Quality",
+      "title": "Text Book Chapter : Code Quality",
+      "footer": "footer.md",
       "src": "se-book-adapted/chapters/codeQuality.md"
     },
     {
@@ -6414,6 +6416,7 @@
         "supplementary": "Supplementary"
       },
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
+      "footer": "footer.md",
       "src": "se-book-adapted/index.md"
     }
   ]
