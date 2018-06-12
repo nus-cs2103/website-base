@@ -1,5 +1,6 @@
 <frontmatter>
 title: "Software Engineering for Self-Directed Learners [CS2103/T Version]"
+footer: footer.md
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
