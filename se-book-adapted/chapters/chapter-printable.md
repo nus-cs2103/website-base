@@ -3,9 +3,13 @@ title: "Text Book Chapter [Printable] : {{ topic.heading }}"
 footer: footer.md
 {% endmacro %}
 
+{% from "se-book-adapted/chapters/chapter.md" import show_priority %}
+
 {% macro show_level_three(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}
-  <include src="{{ level_location }}/embed-inParent-printable.md" boilerplate />
+{% set title =  "#### " + topic.heading + " <small><small>" + show_priority(topic.priority) + "</small></small>" %}
+{{ title }}
+<include src="{{ level_location }}/text.md#body" />
 {% endmacro %}
 
 

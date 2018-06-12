@@ -3,9 +3,18 @@ title: "Text Book Chapter : {{ topic.heading }}"
 footer: footer.md
 {% endmacro %}
 
+{% macro show_priority(level) %}{% set stars = {"1": ":star:", "2": ":star::star:", "3": ":star::star::star:", "4": ":star::star::star::star:"} %}{{stars[level] }}{% endmacro %}
+
 {% macro show_level_three(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}
-  <include src="{{ level_location }}/embed-inParent.md" boilerplate />
+{% set title =  "#### " + topic.heading + " <small><small>" + show_priority(topic.priority) + "</small></small>" %}
+<panel type="seamless" header="{{ title }}" expanded>
+  <tip-box>
+    <include src="{{ level_location }}/outcomes.md" />
+  </tip-box>
+  <include src="{{ level_location }}/text.md#body" />
+  <include src="{{ level_location }}/text.md#extras" />
+</panel>
 {% endmacro %}
 
 
