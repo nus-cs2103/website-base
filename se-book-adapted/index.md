@@ -41,7 +41,7 @@ footer: footer.md
 {% macro show_chapter(section, chapter) %}
 
 * [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
-  <trigger for="pop:{{ chapter.name }}-preview">:mag:</trigger>[:scroll:]({{baseUrl}}/{{ chapter.name }}/print.html)
+  <trigger for="pop:{{ chapter.name }}-preview">:mag:</trigger>[:scroll:]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}-printable.html)
 
 <popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} :mag:" placement="right">
   <div slot="content">
