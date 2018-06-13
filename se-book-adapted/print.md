@@ -10,13 +10,13 @@ footer: footer.md
 {% import "se-book-adapted/config.md" as config %}
 {% import "se-book-adapted/chapters/chapter-printable.md" as chapter_template %}
 
-# Software Engineering for Self-Directed Learners 
+# <big>**Software Engineering for Self-Directed Learners**</big>
 
 <span id="printable-version-description"><small>%%{{ glyphicon_print }} This is a **printer-friendly** version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.%%</small></span>
 
 {% macro show_section(section) %}
 
-# SECTION: {{ section.heading | upper }}
+# **SECTION: {{ section.heading | upper }}**
 {% set is_first_chapter = true %}
 {% for chapter in section.chapters %}
   {% if is_first_chapter %}
