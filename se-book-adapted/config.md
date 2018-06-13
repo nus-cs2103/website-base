@@ -155,11 +155,23 @@
         ]
       }
     ]
+  },
+  design : {
+    name: "design", 
+    heading: "Software Design",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {name: "", level_three_topics: [{name: "what", heading: "What", priority: "1"}]}
+        ]
+      }
+    ]
   }
 } %}
 
 {% set topics = [
-  {heading: "Design", chapters: [chapters.architecture]},
+  {heading: "Design", chapters: [chapters.design, chapters.architecture]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
 %}
