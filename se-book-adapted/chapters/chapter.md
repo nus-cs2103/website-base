@@ -53,7 +53,7 @@ title: {{ chapter.heading }}
 {% set level_location =  "../../book/" + chapter.name %}
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
-<div class="website-content" id="all">
+<div class="website-content">
 
 <include src="../../common/header.md" />
 
@@ -63,13 +63,9 @@ title: {{ chapter.heading }}
   <include src="{{ level_location }}/text.md#title" />
 </div>
 
-<div id="main">
-
 {% for topic in chapter.level_one_topics %}
   {{show_level_one(level_location, topic) }}
 {% endfor %}
-
-</div>
 
 </div>
 {% endmacro %}

@@ -34,15 +34,30 @@ footer: footer.md
 {% endmacro %}
 
 
-{% macro show_chapter(chapter) %}
+{% macro embed_chapter(book_location, chapter) %}
+
+{% set level_location =  book_location + chapter.name %}
+
+<div id="title">
+  <include src="{{ level_location }}/text.md#title" />
+</div>
+
+{% for topic in chapter.level_one_topics %}
+  {{show_level_one(level_location, topic) }}
+{% endfor %}
+
+{% endmacro %}
+
+
+{% macro show_chapter(book_location, chapter) %}
 <frontmatter>
 title: {{ chapter.heading }}
 </frontmatter>
 
-{% set level_location =  "../../book/" + chapter.name %}
+{% set level_location =  book_location + chapter.name %}
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
-<div class="website-content" id="all">
+<div class="website-content">
 
 %%**<include src="{{ level_location }}/../path.md" inline />**%%
 
@@ -50,13 +65,9 @@ title: {{ chapter.heading }}
   <include src="{{ level_location }}/text.md#title" />
 </div>
 
-<div id="main">
-
 {% for topic in chapter.level_one_topics %}
   {{show_level_one(level_location, topic) }}
 {% endfor %}
-
-</div>
 
 </div>
 {% endmacro %}

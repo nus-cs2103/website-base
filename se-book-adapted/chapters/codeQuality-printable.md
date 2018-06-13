@@ -5,4 +5,4 @@
 {{ chapter_template.add_front_matter(chapter) }}
 </frontmatter>
 
-{{ chapter_template.show_chapter(chapter) }}
+{{ chapter_template.show_chapter("../../book/", chapter) }}

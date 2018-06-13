@@ -22,9 +22,6 @@
       "glob": "**/tutorialSchedule.md"
     },
     {
-      "glob": "**/index.html"
-    },
-    {
       "glob": "**/acknowledgements.md"
     },
     {
