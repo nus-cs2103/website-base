@@ -5,11 +5,14 @@ footer: footer.md
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
-<div class="website-content" id="main">
+<div class="website-content">
 
 {% import "se-book-adapted/config.md" as config %}
 {% import "se-book-adapted/chapters/chapter-printable.md" as chapter_template %}
 
+# Software Engineering for Self-Directed Learners
+
+<span id="printable-version-description"><small>%%This is a **printer-friendly** version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.%%</small></span>
 
 {% macro show_section(section) %}
 <hr>

@@ -20,7 +20,9 @@ footer: footer.md
   <include src="{{ level_location }}/text.md#title"/>
 {% endif %}
   {% for sub_topic in topic.level_three_topics %}
-    {{show_level_three(level_location , sub_topic) }}
+    {% if sub_topic.priority != "4" %}
+      {{show_level_three(level_location , sub_topic) }}
+    {% endif %}
   {% endfor %}
 {% endmacro %}
 
@@ -59,11 +61,11 @@ title: {{ chapter.heading }}
 
 <div class="website-content">
 
-%%**<include src="{{ level_location }}/../path.md" inline />**%%
-
 <div id="title">
   <include src="{{ level_location }}/text.md#title" />
 </div>
+
+<include src="../print.md#printable-version-description" />
 
 {% for topic in chapter.level_one_topics %}
   {{show_level_one(level_location, topic) }}
