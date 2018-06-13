@@ -11,3 +11,5 @@
 <span id="slack_team">https://nus-cs2103-ay1718s2.slack.com</span>
 
 <span id="java_coding_standard">https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html</span>
+
+<span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>

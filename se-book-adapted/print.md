@@ -15,16 +15,27 @@ footer: footer.md
 <span id="printable-version-description"><small>%%This is a **printer-friendly** version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.%%</small></span>
 
 {% macro show_section(section) %}
-<hr>
 
 # SECTION: {{ section.heading | upper }}
+{% set is_first_chapter = true %}
 {% for chapter in section.chapters %}
+  {% if is_first_chapter %}
+    {% set is_first_chapter = false %}
+  {% else %}
+{{ pagebreak }}
+  {% endif %}
   {{ chapter_template.embed_chapter("../book/", chapter) }}
 {% endfor %}
 {% endmacro %}
 
+{% set is_first_section = true %}
 
 {% for section in config.topics %}
+  {% if is_first_section %}
+    {% set is_first_section = false %}
+  {% else %}
+{{ pagebreak }}
+  {% endif %}
   {{ show_section(section) }}
 {% endfor %}
 
