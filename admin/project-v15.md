@@ -158,7 +158,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
    * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will not earn credit**.
      * Use a descriptive title
      * Give a good description of the bug with steps to reproduce and screenshots
-     * :mag: Note that we will **anonymize bug reports** before revealing it to the receiving team. 
+     * {{glyphicon_eye_close}} Note that we will **anonymize bug reports** before revealing it to the receiving team. 
    * Assign a severity to the bug report:
 
 <include src="appendixE-gitHub.md#bug-severity" />

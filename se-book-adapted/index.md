@@ -41,9 +41,9 @@ footer: footer.md
 {% macro show_chapter(section, chapter) %}
 
 * [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
-  <trigger for="pop:{{ chapter.name }}-preview">:mag:</trigger>[:scroll:]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}-printable.html)
+  <trigger for="pop:{{ chapter.name }}-preview">{{glyphicon_eye_open}}</trigger> [{{glyphicon_print}}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}-printable.html)
 
-<popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} :mag:" placement="right">
+<popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} {{glyphicon_eye_open}}" placement="right">
   <div slot="content">
     <include src="../book/{{chapter.name}}/preview.md" />
   </div>
@@ -104,6 +104,6 @@ footer: footer.md
 * [List of Definitions](common/definitions.html)
 * [List of References](common/references.html)
 * [List of Learning Outcomes](common/outcomes.html)
-* [Printable Version :scroll:](common/print.html)
+* [Printable Version {{glyphicon_print}}](common/print.html)
 
 </div>
