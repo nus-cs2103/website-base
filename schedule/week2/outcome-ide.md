@@ -1,5 +1,5 @@
 <panel type="danger" header="`W2.2a` Can explain IDEs :star:" expanded no-close>
-  <include src="../../book/ides/introduction/what/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/ides/introduction/what/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
     
 Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Either the _Community Edition_ (free) or the _Ultimate Edition_ (free for students) is fine.
@@ -10,7 +10,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W2.2b` Can setup a project in an IDE :star:" expanded no-close>
-  <include src="../../book/intellij/projectSetup/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/intellij/projectSetup/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any Java project set up in Intellij.
@@ -25,7 +25,7 @@ Install [Intellij IDEA](https://www.jetbrains.com/idea/) on your computer. Eithe
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W2.2c` Can navigate code effectively using IDE features :star::star:" expanded no-close>
-  <include src="../../book/intellij/codeNavigation/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/intellij/codeNavigation/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Use Intellij basic code navigation features to navigate the code of any java project.

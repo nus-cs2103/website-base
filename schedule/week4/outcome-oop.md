@@ -1,12 +1,12 @@
 <panel type="danger" header="`W4.2a` Can describe OOP at a higher level :star:" expanded no-close>
-  <include src="../../book/oopDesign/introduction/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/introduction/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W4.2b` Can describe how OOP relates to the real world :star:" expanded no-close>
-  <include src="../../book/oopDesign/objects/basic/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/objects/basic/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/oopDesign/objects/basic/q-essay-describeObjectInScenario.md" />
@@ -17,7 +17,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W4.2c` Can explain the relationship between classes and objects :star:" expanded no-close>
-  <include src="../../book/oopDesign/classes/basic/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/classes/basic/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/oopDesign/classes/basic/q-essay-identifyClassesAndObjects.md" />
@@ -28,11 +28,11 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W4.2d` Can explain the abstraction aspect of OOP :star::star::star:" expanded no-close>
-  <include src="../../book/oopDesign/objects/abstraction/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/objects/abstraction/unit-inElsewhere-asFlat.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W4.2e` Can explain the encapsulation aspect of OOP :star::star::star:" expanded no-close>
-  <include src="../../book/oopDesign/objects/encapsulation/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/objects/encapsulation/unit-inElsewhere-asFlat.md" boilerplate />
 </panel>

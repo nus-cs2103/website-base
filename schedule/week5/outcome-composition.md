@@ -1,11 +1,11 @@
 <panel type="info" header="`W5.5a` Can explain the meaning of composition :star::star::star:" expanded no-close>
-  <include src="../../book/oopDesign/associations/composition/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/associations/composition/unit-inElsewhere-asFlat.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W5.5b` Can implement composition :star::star::star:" expanded no-close>
-  <include src="../../book/oopImplementation/composition/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopImplementation/composition/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 The exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)] also covers composition (note the &#9670; in the class diagram).

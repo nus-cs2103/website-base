@@ -1,5 +1,5 @@
 <panel type="warning" header="`W3.1a`Can explain refactoring :star::star:" expanded no-close>
-  <include src="../../book/refactoring/what/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/refactoring/what/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/refactoring/what/q-essay-explain.md" />
@@ -10,7 +10,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W3.1b` Can use automated refactoring features of the IDE :star::star:" expanded no-close>
-  <include src="../../book/intellij/refactoring/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/intellij/refactoring/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Ability to do some automated refactoring in the IDE.
@@ -23,7 +23,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W3.1c` Can apply some basic refactoring :star::star::star:" expanded no-close>
-  <include src="../../book/refactoring/how/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/refactoring/how/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Some commits that show some refactorings (not necessarily the ones in the list above) you have done.
@@ -38,7 +38,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="success" header="`W3.1d` Can decide when to apply a given refactoring :star::star::star::star:" expanded no-close>
-  <include src="../../book/refactoring/when/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/refactoring/when/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Give an example from any project (e.g. addressbook-level1) where a refactoring can be applied but you decide against it because it is not worth it.

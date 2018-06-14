@@ -1,40 +1,40 @@
 <panel type="warning" header="`W7.4a` Can interpret sequence diagrams with object deletion :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/objectDeletion/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4b` Can interpret sequence diagrams with self invocation :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/selfInvocation/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4c` Can interpret sequence diagrams with alternative paths :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/alternativePaths/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4d` Can interpret sequence diagrams with optional paths :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/optionalPaths/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W7.4e` Can interpret sequence diagrams with reference frames :star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/referenceFrames/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/uml/sequenceDiagrams/referenceFrames/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W7.4f` Can draw intermediate level sequence diagrams :star::star::star:" expanded no-close>
-  <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" /><p/>
@@ -48,6 +48,6 @@
 <!-- ==================================================================================================== -->
 
 <panel type="success" header="`W7.4g` Can interpret sequence diagrams with parallel paths :star::star::star::star:" expanded no-close>
-  <include src="../../book/uml/sequenceDiagrams/parallelPaths/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/uml/sequenceDiagrams/parallelPaths/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>

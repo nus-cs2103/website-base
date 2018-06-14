@@ -1,11 +1,11 @@
 <panel type="warning" header="`W5.4a` Can explain class-level members :star::star:" expanded no-close>
-  <include src="../../book/oopDesign/classes/classLevelMembers/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopDesign/classes/classLevelMembers/unit-inElsewhere-asFlat.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W5.4b` Can implement class-level members :star::star:" expanded no-close>
-  <include src="../../book/oopImplementation/classLevelMembers/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/oopImplementation/classLevelMembers/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Evidence of having used Java class-level members in some project.

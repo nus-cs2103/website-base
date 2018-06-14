@@ -1,12 +1,12 @@
 <panel type="info" header="`W7.8a` Can explain integration :star::star::star:" expanded no-close>
-  <include src="../../book/integration/introduction/what/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/integration/introduction/what/unit-inElsewhere-asFlat.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W7.8b` Can explain build automation tools :star::star::star:" expanded no-close>
-  <include src="../../book/integration/buildAutomation/what/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/integration/buildAutomation/what/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 1. Explain what Gradle is and how it helps in the AddressBook project.
@@ -18,7 +18,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W7.8c` Can explain continuous integration and continuous deployment :star::star::star:" expanded no-close>
-  <include src="../../book/integration/buildAutomation/continuousIntegrationDeployment/embed-inOtherContext.md" boilerplate />
+  <include src="../../book/integration/buildAutomation/continuousIntegrationDeployment/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 1. Explain what Travis is and how it helps in the AddressBook project.
