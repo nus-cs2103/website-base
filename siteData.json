@@ -209,11 +209,6 @@
       "src": "admin/projectList.md"
     },
     {
-      "headings": {},
-      "src": "book/_markbind/boilerplates/print.md",
-      "title": ""
-    },
-    {
       "headings": {
         "acknowledgements": "Acknowledgements"
       },
@@ -1001,7 +996,6 @@
         "gathering-requirements": "Gathering Requirements",
         "specifying-requirements": "Specifying Requirements",
         "section-design": "SECTION: DESIGN",
-        "software-design": "Software Design",
         "design-fundamentals": "Design Fundamentals",
         "modeling": "Modeling",
         "software-architecture": "Software Architecture",
@@ -1019,22 +1013,6 @@
         "design-approaches": "Design Approaches",
         "section-implementation": "SECTION: IMPLEMENTATION",
         "ides": "IDEs",
-        "code-quality": "Code Quality",
-        "introduction-3": "Introduction",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one-5": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
-        "guideline-follow-a-standard": "Guideline: Follow a Standard",
-        "guideline-name-well": "Guideline: Name Well",
-        "basic-one-7": "Basic ",
-        "intermediate-two-3": "Intermediate ",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-8": "Basic ",
-        "intermediate-two-4": "Intermediate ",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-9": "Basic ",
-        "intermediate-two-5": "Intermediate ",
         "refactoring": "Refactoring",
         "documentation": "Documentation",
         "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
@@ -1066,7 +1044,7 @@
         "sdlc-process-models": "SDLC Process Models",
         "section-tools": "SECTION: TOOLS",
         "uml": "UML",
-        "introduction-4": "Introduction",
+        "introduction-3": "Introduction",
         "classes": "Classes",
         "associations": "Associations",
         "dependencies": "Dependencies",
@@ -1079,13 +1057,13 @@
         "class-inheritance": "Class Inheritance",
         "interfaces": "Interfaces",
         "abstract-classes": "Abstract Classes",
-        "introduction-5": "Introduction",
+        "introduction-4": "Introduction",
         "basic-notations": "Basic Notations",
         "intellij-idea": "Intellij IDEA",
         "git-and-github": "Git and Github",
         "java": "Java",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-6": "Introduction",
+        "introduction-5": "Introduction",
         "prerequisites": "Prerequisites",
         "intellij-configurations": "IntelliJ Configurations",
         "configuring-jdk-8": "Configuring JDK 8",
@@ -1098,7 +1076,7 @@
         "the-javafx-main-class": "The JavaFX Main Class",
         "possible-issues": "Possible Issues",
         "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-7": "Introduction",
+        "introduction-6": "Introduction",
         "create-the-model-class": "Create the Model class",
         "explanations": "Explanations",
         "a-list-of-persons": "A List of Persons",
@@ -1395,7 +1373,8 @@
     },
     {
       "headings": {
-        "software-design": "Software Design"
+        "software-design": "Software Design",
+        "introduction": "Introduction"
       },
       "title": "Software Design",
       "src": "book/design/index.md"
@@ -6364,9 +6343,32 @@
         "event-driven-architectural-style": "Event-driven Architectural Style",
         "more": "More"
       },
+      "title": "Text Book Chapter [Printable] : Architecture",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/architecture-printable.md"
+    },
+    {
+      "headings": {
+        "software-architecture": "Software Architecture",
+        "introduction": "Introduction",
+        "architecture-diagrams": "Architecture Diagrams",
+        "architectural-styles": "Architectural Styles",
+        "introduction-2": "Introduction",
+        "n-tier-architectural-style": "N-tier Architectural Style",
+        "client-server-architectural-style": "Client-server Architectural Style",
+        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
+        "service-oriented-architectural-style": "Service-oriented Architectural Style",
+        "event-driven-architectural-style": "Event-driven Architectural Style",
+        "more": "More"
+      },
       "title": "Text Book Chapter : Architecture",
       "footer": "footer.md",
       "src": "se-book-adapted/chapters/architecture.md"
+    },
+    {
+      "headings": {},
+      "src": "se-book-adapted/chapters/chapter-printable.md",
+      "title": ""
     },
     {
       "headings": {},
@@ -6378,23 +6380,64 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one-2": "Basic ",
+        "basic-one": "Basic ",
         "intermediate-two": "Intermediate ",
         "advanced-three": "Advanced ",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-4": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-one-2": "Basic ",
+        "intermediate-two-2": "Intermediate ",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-5": "Basic ",
-        "intermediate-two-4": "Intermediate ",
+        "basic-one-3": "Basic ",
+        "intermediate-two-3": "Intermediate ",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-6": "Basic ",
-        "intermediate-two-5": "Intermediate "
+        "basic-one-4": "Basic ",
+        "intermediate-two-4": "Intermediate "
+      },
+      "title": "Text Book Chapter [Printable] : Code Quality",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/codeQuality-printable.md"
+    },
+    {
+      "headings": {
+        "code-quality": "Code Quality",
+        "introduction": "Introduction",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
+        "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "guideline-name-well": "Guideline: Name Well",
+        "basic-one-2": "Basic ",
+        "intermediate-two-2": "Intermediate ",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one-3": "Basic ",
+        "intermediate-two-3": "Intermediate ",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one-4": "Basic ",
+        "intermediate-two-4": "Intermediate "
       },
       "title": "Text Book Chapter : Code Quality",
       "footer": "footer.md",
       "src": "se-book-adapted/chapters/codeQuality.md"
+    },
+    {
+      "headings": {
+        "software-design": "Software Design",
+        "introduction": "Introduction"
+      },
+      "title": "Text Book Chapter [Printable] : Software Design",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/design-printable.md"
+    },
+    {
+      "headings": {
+        "software-design": "Software Design",
+        "introduction": "Introduction"
+      },
+      "title": "Text Book Chapter : Software Design",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/design.md"
     },
     {
       "headings": {},
@@ -6418,6 +6461,45 @@
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
       "footer": "footer.md",
       "src": "se-book-adapted/index.md"
+    },
+    {
+      "headings": {
+        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
+        "section-design": "SECTION: DESIGN",
+        "software-design": "Software Design",
+        "introduction": "Introduction",
+        "software-architecture": "Software Architecture",
+        "introduction-2": "Introduction",
+        "architecture-diagrams": "Architecture Diagrams",
+        "architectural-styles": "Architectural Styles",
+        "introduction-3": "Introduction",
+        "n-tier-architectural-style": "N-tier Architectural Style",
+        "client-server-architectural-style": "Client-server Architectural Style",
+        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
+        "service-oriented-architectural-style": "Service-oriented Architectural Style",
+        "event-driven-architectural-style": "Event-driven Architectural Style",
+        "more": "More",
+        "section-implementation": "SECTION: IMPLEMENTATION",
+        "code-quality": "Code Quality",
+        "introduction-4": "Introduction",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-one": "Basic ",
+        "intermediate-two": "Intermediate ",
+        "advanced-three": "Advanced ",
+        "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "guideline-name-well": "Guideline: Name Well",
+        "basic-one-2": "Basic ",
+        "intermediate-two-2": "Intermediate ",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-one-3": "Basic ",
+        "intermediate-two-3": "Intermediate ",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-one-4": "Basic ",
+        "intermediate-two-4": "Intermediate "
+      },
+      "title": "Software Engineering for Self-Directed Learners [Printable Version for CS2103/T]",
+      "footer": "footer.md",
+      "src": "se-book-adapted/print.md"
     }
   ]
 }

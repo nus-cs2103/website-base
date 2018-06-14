@@ -27,13 +27,11 @@
           </div>
         </tip-box>
         <div>
-          <div>
-            <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
-            <tip-box>
-              <img src="/website-base/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
-          </div>
-          <div></div>
+          <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
+          <tip-box>
+            <img src="/website-base/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
         </div>
+        <div></div>
       </panel>
     </div>
     <div>
@@ -46,35 +44,34 @@
           </div>
         </tip-box>
         <div>
-          <div>
-            <p>Notation:</p>
-            <img src="/website-base/book/uml/objectDiagrams/objects/images/notation.png" height="85">
+          <p>Notation:</p>
+          <img src="/website-base/book/uml/objectDiagrams/objects/images/notation.png" height="85">
+          <p></p>
+          <p>Notes:</p>
+          <ul>
+            <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
+            <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
+            <li>Unlike classes, there is no compartment for methods.</li>
+            <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
+            <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
+          </ul>
+          <tip-box>
+            <p>📦 Some example objects:</p>
+            <img src="/website-base/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
             <p></p>
-            <p>Notes:</p>
-            <ul>
-              <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
-              <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
-              <li>Unlike classes, there is no compartment for methods.</li>
-              <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
-              <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
-            </ul>
-            <tip-box>
-              <p>📦 Some example objects:</p>
-              <img src="/website-base/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
-              <p></p>
-            </tip-box>
-          </div>
+          </tip-box>
+        </div>
+        <div>
           <div>
-            <div>
-              <panel header=":muscle: Exercises" expandable="">
-                <div>
-                  <panel header=":lock: Draw Car object">
-                    <question>
-                      <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
-                      <tabs>
-                      
-                        <tab header="Java">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock: Draw Car object">
+                  <question>
+                    <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
+                    <tabs>
+                    
+                      <tab header="Java">
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
     
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -88,10 +85,10 @@
 
 Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                        </tab>
-                      
-                        <tab header="Python">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                      </tab>
+                    
+                      <tab header="Python">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
     self.__price = price <span class="hljs-comment"># type: float</span>
@@ -101,14 +98,13 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
 <span class="hljs-comment"># somewhere else in the code</span>
 my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);  
 </code></pre>
-                        </tab>
-                      </tabs>
-                      <hr>
-                    </question>
-                  </panel>
-                </div>
-              </panel>
-            </div>
+                      </tab>
+                    </tabs>
+                    <hr>
+                  </question>
+                </panel>
+              </div>
+            </panel>
           </div>
         </div>
       </panel>
@@ -123,16 +119,14 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
           </div>
         </tip-box>
         <div>
-          <div>
-            <p>A solid line indicates an association between two objects.</p>
-            <img src="/website-base/book/uml/objectDiagrams/associations/what/images/notation.png" width="300">
-            <tip-box>
-              <p>📦 An example object diagram showing two associations:<br>
-                <img src="/website-base/book/uml/objectDiagrams/associations/what/images/example.png" width="300"></p>
-            </tip-box>
-          </div>
-          <div></div>
+          <p>A solid line indicates an association between two objects.</p>
+          <img src="/website-base/book/uml/objectDiagrams/associations/what/images/notation.png" width="300">
+          <tip-box>
+            <p>📦 An example object diagram showing two associations:<br>
+              <img src="/website-base/book/uml/objectDiagrams/associations/what/images/example.png" width="300"></p>
+          </tip-box>
         </div>
+        <div></div>
       </panel>
     </div>
   </div>
