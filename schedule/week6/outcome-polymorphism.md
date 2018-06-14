@@ -1,14 +1,14 @@
 %%**Method Overriding**%%
 
 <panel type="danger" header="`W6.5a` Can explain method overriding :star:" expanded no-close>
-  <include src="../../book/oopDesign/inheritance/overriding/full.md" boilerplate />
+  <include src="../../book/oopDesign/inheritance/overriding/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W6.5b` Can implement overriding :star:" expanded no-close>
-  <include src="../../book/oopImplementation/overriding/full.md" boilerplate />
+  <include src="../../book/oopImplementation/overriding/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Some evidence of using method overriding in some code you wrote.
@@ -21,14 +21,14 @@ Some evidence of using method overriding in some code you wrote.
 %%**Polymorphism**%%
 
 <panel type="danger" header="`W6.5c` Can explain OOP polymorphism :star:" expanded no-close>
-  <include src="../../book/oopDesign/polymorphism/introduction/full.md" boilerplate />
+  <include src="../../book/oopDesign/polymorphism/introduction/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W6.5d` Can implement polymorphism :star:" expanded no-close>
-  <include src="../../book/oopImplementation/polymorphism/full.md" boilerplate />
+  <include src="../../book/oopImplementation/polymorphism/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 **Acceptable**: Using polymorphism in any past project.
@@ -44,14 +44,14 @@ Some evidence of using method overriding in some code you wrote.
 %%**Abstract Classes**%%
 
 <panel type="warning" header="`W6.5e` Can explain abstract classes :star::star:" expanded no-close>
-  <include src="../../book/oopDesign/inheritance/abstractClasses/full.md" boilerplate />
+  <include src="../../book/oopDesign/inheritance/abstractClasses/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W6.5f` Can implement abstract classes :star::star:" expanded no-close>
-  <include src="../../book/oopImplementation/abstractClasses/full.md" boilerplate />
+  <include src="../../book/oopImplementation/abstractClasses/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Using abstract classes in any past project.
@@ -67,14 +67,14 @@ Some evidence of using method overriding in some code you wrote.
 %%**Interfaces**%%
 
 <panel type="info" header="`W6.5g` Can explain interfaces :star::star::star:" expanded no-close>
-  <include src="../../book/oopDesign/inheritance/interfaces/full.md" boilerplate />
+  <include src="../../book/oopDesign/inheritance/interfaces/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W6.5h` Can implement interfaces :star::star::star:" expanded no-close>
-  <include src="../../book/oopImplementation/interfaces/full.md" boilerplate />
+  <include src="../../book/oopImplementation/interfaces/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Using interfaces in any past project.

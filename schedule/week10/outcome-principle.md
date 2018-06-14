@@ -1,5 +1,5 @@
 <panel type="info" header="`W10.1a` Can explain the Law of Demeter :star::star::star:" expanded no-close>
-  <include src="../../book/principles/lawOfDemeter/full.md" boilerplate />
+  <include src="../../book/principles/lawOfDemeter/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Identify places where LoD is followed/violated in your project.
@@ -8,21 +8,21 @@ Identify places where LoD is followed/violated in your project.
 </panel>
 
 <panel type="success" header="`W10.1b` Can explain SOLID principles :star::star::star::star:" expanded no-close>
-  <include src="../../book/principles/solidPrinciples/full.md" boilerplate />
+  <include src="../../book/principles/solidPrinciples/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <panel type="success" header="`W10.1c` Can explain YAGNI principle :star::star::star::star:" expanded no-close>
-  <include src="../../book/principles/yagniPrinciple/full.md" boilerplate />
+  <include src="../../book/principles/yagniPrinciple/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <panel type="success" header="`W10.1d` Can explain DRY principle :star::star::star::star:" expanded no-close>
-  <include src="../../book/principles/dryPrinciple/full.md" boilerplate />
+  <include src="../../book/principles/dryPrinciple/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>
 
 <panel type="success" header="`W10.1e` Can explain Brooks' law :star::star::star::star:" expanded no-close>
-  <include src="../../book/principles/brooksLaw/full.md" boilerplate />
+  <include src="../../book/principles/brooksLaw/embed-inOtherContext.md" boilerplate />
 <!-- TODO: add evidence -->
 </panel>

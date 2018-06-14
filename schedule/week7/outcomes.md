@@ -24,7 +24,7 @@ Covered by the 'Documentation' component of v1.0:
 <dynamic-panel type="danger" src="outcome-architecture.md" header="**`W7.2` Can interpret an architecture diagram** :star:" no-close />
 
 <panel type="warning" header="**`W7.3` Can explain APIs** :star::star:" no-close>
-  <include src="../../book/reuse/apis/what/full.md" boilerplate />
+  <include src="../../book/reuse/apis/what/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 Know the API of the AddressBook component you are in charge of and the APIs of the other components your component depends on.
@@ -43,7 +43,7 @@ Know the API of the AddressBook component you are in charge of and the APIs of t
 <!-- ==================================================================================================== -->
 
 <panel type="success" header="**`W7.7` Can use Java8 streams :star::star::star::star:**" no-close>
-  <include src="../../book/javaTools/streamsBasic/full.md" boilerplate />
+  <include src="../../book/javaTools/streamsBasic/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 1. Your code (can be toy examples) that use some Java 8 features. 

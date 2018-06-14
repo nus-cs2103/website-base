@@ -1,11 +1,11 @@
 <panel type="danger" header="`W3.8a` Can explain remote repositories :star:" expanded no-close>
-  <include src="../../book/revisionControl/remoteRepositories/full.md" boilerplate />
+  <include src="../../book/revisionControl/remoteRepositories/embed-inOtherContext.md" boilerplate />
 </panel>
 
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W3.8b` Can clone a remote repo :star:" expanded no-close>
-  <include src="../../book/gitAndGithub/clone/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/clone/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any remote repo cloned to your Computer.
@@ -20,7 +20,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W3.8c` Can pull changes from a repo :star:" expanded no-close>
-  <include src="../../book/gitAndGithub/pull/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/pull/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any evidence of pulling from a remote Git repo.
@@ -35,7 +35,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W3.8d` Can push to a remote repo :star:" expanded no-close>
-  <include src="../../book/gitAndGithub/push/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/push/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Any evidence of pushing to a remote Git repo.

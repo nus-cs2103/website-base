@@ -1,5 +1,5 @@
 <panel type="danger" header="`W4.7a` Can explain branching :star:" expanded no-close>
-  <include src="../../book/revisionControl/branching/full.md" boilerplate />
+  <include src="../../book/revisionControl/branching/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 <include src="../../book/revisionControl/branching/q-essay-branching-definition.md" />
@@ -11,7 +11,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W4.7b` Can use Git branching :star:" expanded no-close>
-  <include src="../../book/gitAndGithub/branch/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/branch/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Git branches you have created in any repo.
@@ -26,7 +26,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="danger" header="`W4.7c` Can create PRs on GitHub :star:" expanded no-close>
-  <include src="../../book/gitAndGithub/createPRs/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/createPRs/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: PRs created in any repo.
@@ -41,7 +41,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="warning" header="`W4.7d` Can use Git to resolve merge conflicts :star::star:" expanded no-close>
-  <include src="../../book/gitAndGithub/mergeConflicts/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/mergeConflicts/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: Merge conflicts resolved in any repo.
@@ -56,7 +56,7 @@
 <!-- ==================================================================================================== -->
 
 <panel type="info" header="`W4.7e` Can review and merge PRs on GitHub :star::star::star:" expanded no-close>
-  <include src="../../book/gitAndGithub/managePRs/full.md" boilerplate />
+  <include src="../../book/gitAndGithub/managePRs/embed-inOtherContext.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
 **Acceptable**: PRs you merged in any repo.
