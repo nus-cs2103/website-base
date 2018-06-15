@@ -10,7 +10,7 @@ footer: footer.md
 {% set title =  "#### " + topic.heading + " <small><small>" + show_priority(topic.priority) + "</small></small>" %}
 <panel type="seamless" header="{{ title }}" expanded>
   <tip-box>
-    <include src="{{ level_location }}/outcomes.md" />
+    <include src="{{ level_location }}/text.md#outcomes" />
   </tip-box>
   <include src="{{ level_location }}/text.md#body" />
   <include src="{{ level_location }}/text.md#extras" />
