@@ -146,6 +146,26 @@
       }
     ]
   },
+  requirements : {
+    name: "requirements",
+    heading: "Requirements",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "nonFunctionalRequirements", heading: "Non-Functional Requirements", priority: "1"},
+              {name: "prioritizing", heading: "Prioritizing Requirements", priority: "1"},
+              {name: "quality", heading: "Quality of Requirements", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   design : {
     name: "design",
     heading: "Software Design",
@@ -625,6 +645,7 @@
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
+  {heading: "Requirements", chapters: [chapters.requirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
