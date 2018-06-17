@@ -5,9 +5,9 @@ footer: footer.md
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
-<div class="website-content" id="all">
-
 <include src="../common/header.md" />
+
+<div class="website-content" id="all">
 
 ## Software Engineering for Self-Directed Learners
 

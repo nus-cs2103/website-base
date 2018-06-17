@@ -130,31 +130,78 @@
     ]
   },
   architecture : {
-    name: "architecture", 
-    heading: "Architecture",
+    name: "architecture",
+    heading: "Software Architecture",
     level_one_topics: [
       {
         name: "introduction",
         level_two_topics: [
-          {name: "", level_three_topics: [{name: "what", heading: "What", priority: "1"}]}
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
         ]
       },
       {
         name: "architectureDiagrams",
         level_two_topics: [
-          {name: "", level_three_topics: [{name: "reading", heading: "Reading", priority: "2"}, {name: "drawing", heading: "Drawing", priority: "3"}]}
+          {
+            name: "",
+            level_three_topics: [
+              {name: "reading", heading: "Reading", priority: "1"},
+              {name: "drawing", heading: "Drawing", priority: "1"}
+            ]
+          }
         ]
       },
       {
         name: "architecturalStyles",
         level_two_topics: [
-          {name: "introduction", level_three_topics: [{name: "what", heading: "What", priority: "1"}]},
-          {name: "nTier", level_three_topics: [{name: "what", heading: "What", priority: "2"}]},
-          {name: "clientServer", level_three_topics: [{name: "what", heading: "What", priority: "2"}]},
-          {name: "transactionProcessing", level_three_topics: [{name: "what", heading: "What", priority: "2"}]},
-          {name: "serviceOriented", level_three_topics: [{name: "what", heading: "What", priority: "3"}]},
-          {name: "eventDriven", level_three_topics: [{name: "what", heading: "What", priority: "2"}]},
-          {name: "more", level_three_topics: [{name: "moreStyles", heading: "More styles", priority: "1"}, {name: "usingStyles", heading: "Using styles", priority: "4"}]}
+          {
+            name: "introduction",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "nTier",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "clientServer",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "transactionProcessing",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "serviceOriented",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "eventDriven",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "more",
+            level_three_topics: [
+              {name: "moreStyles", heading: "More Styles", priority: "1"},
+              {name: "usingStyles", heading: "Using Styles", priority: "1"}
+            ]
+          }
         ]
       }
     ]
