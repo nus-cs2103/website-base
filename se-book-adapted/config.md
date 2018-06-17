@@ -255,6 +255,45 @@
       }
     ]
   },
+  designApproaches : {
+    name: "designApproaches",
+    heading: "Design Approaches",
+    level_one_topics: [
+      {
+        name: "multilevelDesign",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "Multi-Level Design", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "topDownBottomUp",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "Top-Down and Bottom-Up Design", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "agileDesign",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "Agile Design", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   codeQuality : {
     name: "codeQuality", 
     heading: "Code Quality",
@@ -385,7 +424,7 @@
 } %}
 
 {% set topics = [
-  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns]},
+  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
 %}
