@@ -16,24 +16,6 @@ footer: footer.md
 * [Acknowledgements](about/acknowledgements.html)
 * [How to use this book](about/usage.html)
 
-### Software Engineering
-
-<include src="../book/softwareEngineering/topicToc.md" />
-
-### Object-Oriented Programming (with UML)
-
-<include src="../book/oopDesign/topicToc.md" />
-
-<include src="../book/oopImplementation/topicToc.md" />
-
-### Requirements
-
-<include src="../book/requirements/topicToc.md" />
-
-<include src="../book/gatheringRequirements/topicToc.md" />
-
-<include src="../book/specifyingRequirements/topicToc.md" />
-
 
 {% import "se-book-adapted/config.md" as config %}
 
@@ -64,24 +46,6 @@ footer: footer.md
   {{ show_section(section) }}
 {% endfor %}
 
-
-### Quality Assurance
-
-<include src="../book/qualityAssurance/topicToc.md" />
-
-<include src="../book/testing/topicToc.md" />
-
-<include src="../book/testCaseDesign/topicToc.md" />
-
-### Project Management
-
-<include src="../book/revisionControl/topicToc.md" />
-
-<include src="../book/projectPlanning/topicToc.md" />
-
-<include src="../book/teamwork/topicToc.md" />
-
-<include src="../book/processModels/topicToc.md" />
 
 ### Tools
 

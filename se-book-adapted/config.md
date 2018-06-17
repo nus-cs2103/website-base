@@ -1,4 +1,21 @@
 {% set chapters = { 
+  softwareEngineering : {
+    name: "softwareEngineering",
+    heading: "Software Engineering",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "prosAndCons", heading: "Pros and Cons", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   design : {
     name: "design",
     heading: "Software Design",
@@ -476,6 +493,7 @@
 } %}
 
 {% set topics = [
+  {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 

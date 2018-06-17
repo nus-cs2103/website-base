@@ -4,4 +4,3 @@ footer: footer.md
 </frontmatter>
 
 <include src="schedule/index.md" />
-

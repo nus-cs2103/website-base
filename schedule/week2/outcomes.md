@@ -10,12 +10,12 @@
 ### SE Intro:
 
 <panel type="success" header="`W2.1` **Can explain pros and cons of software engineering** :star::star::star::star:" no-close>
-  <include src="../../book/softwareEngineering/prosAndCons/unit-inElsewhere-asFlat.md" boilerplate />
+  <include src="../../book/softwareEngineering/introduction/prosAndCons/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
 To be able answer questions such as these:
 
-<include src="../../book/softwareEngineering/prosAndCons/q-essay-listProsAndCons.md"/>
+<include src="../../book/softwareEngineering/introduction/prosAndCons/q-essay-listProsAndCons.md"/>
 
   </panel>
 </panel>
