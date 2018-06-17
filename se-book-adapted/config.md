@@ -167,11 +167,82 @@
         ]
       }
     ]
+  },
+  modeling : {
+    name: "modeling",
+    heading: "Modeling",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"},
+              {name: "umlModels", heading: "UML Models", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "modelingStructures",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "ooStructures", heading: "OO Structures", priority: "1"},
+              {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "1"},
+              {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "1"},
+              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "1"},
+              {name: "objectDiagrams", heading: "Object Diagrams", priority: "1"},
+              {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "1"},
+              {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "1"},
+              {name: "componentDiagrams", heading: "Component Diagrams", priority: "1"},
+              {name: "packageDiagrams", heading: "Package Diagrams", priority: "1"},
+              {name: "compositeStructureDiagrams", heading: "Composite Structure Diagrams", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "modelingBehaviors",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "activityDiagrams", heading: "Activity Diagrams", priority: "1"},
+              {name: "sequenceDiagramsBasic", heading: "Sequence Diagrams - Basic", priority: "1"},
+              {name: "sequenceDiagramsIntermediate", heading: "Sequence Diagrams - Intermediate", priority: "1"},
+              {name: "sequenceDiagramsAdvanced", heading: "Sequence Diagrams - Advanced", priority: "1"},
+              {name: "useCaseDiagrams", heading: "Use Case Diagrams", priority: "1"},
+              {name: "timingDiagrams", heading: "Timing Diagrams", priority: "1"},
+              {name: "interactionOverviewDiagrams", heading: "Interaction Overview Diagrams", priority: "1"},
+              {name: "communicationDiagrams", heading: "Communication Diagrams", priority: "1"},
+              {name: "stateMachineDiagrams", heading: "State Machine Diagrams", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "modelingASolution",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "intermediate", heading: "Intermediate", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
 {% set topics = [
-  {heading: "Design", chapters: [chapters.design, chapters.architecture]},
+  {heading: "Design", chapters: [chapters.design, chapters.modeling, chapters.architecture]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
 %}
