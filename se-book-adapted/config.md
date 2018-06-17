@@ -280,11 +280,112 @@
         ]
       }
     ]
+  },
+  designPatterns : {
+    name: "designPatterns",
+    heading: "Software Design Patterns",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "format", heading: "Format", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "singleton",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "implementation", heading: "Implementation", priority: "1"},
+              {name: "evaluation", heading: "Evaluation", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "abstractionOccurrence",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "facade",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "command",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "modelViewController",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "observer",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "more",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "combiningDesignPatterns", heading: "Combining Design Patterns", priority: "1"},
+              {name: "otherDesignPatterns", heading: "Other Design Patterns", priority: "1"},
+              {name: "usingDesignPatterns", heading: "Using Design Patterns", priority: "1"},
+              {name: "otherTypesOfPatterns", heading: "Other Types of Patterns", priority: "1"},
+              {name: "vsPrinciples", heading: "Design Patterns vs Design Principles", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
 {% set topics = [
-  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture]},
+  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
 %}
