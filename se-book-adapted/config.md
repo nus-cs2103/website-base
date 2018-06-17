@@ -1,12 +1,17 @@
 {% set chapters = { 
   design : {
-    name: "design", 
+    name: "design",
     heading: "Software Design",
     level_one_topics: [
       {
         name: "introduction",
         level_two_topics: [
-          {name: "", level_three_topics: [{name: "what", heading: "What", priority: "1"}]}
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
         ]
       }
     ]
