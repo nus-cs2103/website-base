@@ -613,6 +613,34 @@
       }
     ]
   },
+  ides : {
+    name: "ides",
+    heading: "IDEs",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "debugging",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   codeQuality : {
     name: "codeQuality", 
     heading: "Code Quality",
@@ -747,6 +775,6 @@
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
-  {heading: "Implementation", chapters: [chapters.codeQuality]}
+  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality]}
   ] 
 %}
