@@ -166,6 +166,29 @@
       }
     ]
   },
+  gatheringRequirements : {
+    name: "gatheringRequirements",
+    heading: "Gathering Requirements",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "brainstorming", heading: "Brainstorming", priority: "1"},
+              {name: "userSurveys", heading: "User Surveys", priority: "1"},
+              {name: "observation", heading: "Observation", priority: "1"},
+              {name: "interviews", heading: "Interviews", priority: "1"},
+              {name: "focusGroups", heading: "Focus Groups", priority: "1"},
+              {name: "prototyping", heading: "Prototyping", priority: "1"},
+              {name: "productSurveys", heading: "Product Surveys", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   design : {
     name: "design",
     heading: "Software Design",
@@ -645,7 +668,7 @@
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
-  {heading: "Requirements", chapters: [chapters.requirements]},
+  {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
