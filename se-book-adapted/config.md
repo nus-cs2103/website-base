@@ -16,6 +16,107 @@
       }
     ]
   },
+  oopDesign : {
+    name: "oopDesign",
+    heading: "OOP - Concepts",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "Introduction", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "objects",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "abstraction", heading: "Objects as Abstractions", priority: "1"},
+              {name: "encapsulation", heading: "Encapsulation Of Objects", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "classes",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "classLevelMembers", heading: "Class Level Members", priority: "1"},
+              {name: "enumerations", heading: "Enumerations", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "associations",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "navigability", heading: "Navigability", priority: "1"},
+              {name: "multiplicity", heading: "Multiplicity", priority: "1"},
+              {name: "dependencies", heading: "Dependencies", priority: "1"},
+              {name: "composition", heading: "Composition", priority: "1"},
+              {name: "aggregation", heading: "Aggregation", priority: "1"},
+              {name: "associationClasses", heading: "Association Classes", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "inheritance",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "overriding", heading: "Overriding", priority: "1"},
+              {name: "overloading", heading: "Overloading", priority: "1"},
+              {name: "interfaces", heading: "Interfaces", priority: "1"},
+              {name: "abstractClasses", heading: "Abstract Classes", priority: "1"},
+              {name: "dynamicAndStaticBinding", heading: "Dynamic and Static Binding", priority: "1"},
+              {name: "substitutability", heading: "Substitutability", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "polymorphism",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "mechanism", heading: "Mechanism", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "more",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "miscellaneous", heading: "Miscellaneous", priority: "1"},
+              {name: "review", heading: "Review", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   design : {
     name: "design",
     heading: "Software Design",
@@ -494,6 +595,7 @@
 
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
+  {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
