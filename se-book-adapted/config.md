@@ -168,6 +168,48 @@
       }
     ]
   },
+  designFundamentals : {
+    name: "designFundamentals",
+    heading: "Design Fundamentals",
+    level_one_topics: [
+      {
+        name: "abstraction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "coupling",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"},
+              {name: "types", heading: "Types of Coupling", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "cohesion",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   modeling : {
     name: "modeling",
     heading: "Modeling",
@@ -242,7 +284,7 @@
 } %}
 
 {% set topics = [
-  {heading: "Design", chapters: [chapters.design, chapters.modeling, chapters.architecture]},
+  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
 %}
