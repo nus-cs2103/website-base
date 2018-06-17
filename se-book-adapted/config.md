@@ -189,6 +189,83 @@
       }
     ]
   },
+  specifyingRequirements : {
+    name: "specifyingRequirements",
+    heading: "Specifying Requirements",
+    level_one_topics: [
+      {
+        name: "prose",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "featureList",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "userStories",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "details", heading: "Details", priority: "1"},
+              {name: "usage", heading: "Usage", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "useCases",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "identifying", heading: "Identifying", priority: "1"},
+              {name: "details", heading: "Details", priority: "1"},
+              {name: "usage", heading: "Usage", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "glossary",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "supplementaryRequirements",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   design : {
     name: "design",
     heading: "Software Design",
@@ -668,7 +745,7 @@
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
-  {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements]},
+  {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
