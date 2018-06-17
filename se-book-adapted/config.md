@@ -117,6 +117,35 @@
       }
     ]
   },
+  oopImplementation : {
+    name: "oopImplementation",
+    heading: "OOP - Implementation",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "classes", heading: "Implementing Classes", priority: "1"},
+              {name: "classLevelMembers", heading: "Implementing Class-Level Members", priority: "1"},
+              {name: "associations", heading: "Implementing Associations", priority: "1"},
+              {name: "dependencies", heading: "Implementing Dependencies", priority: "1"},
+              {name: "composition", heading: "Implementing Composition", priority: "1"},
+              {name: "aggregation", heading: "Implementing Aggregation", priority: "1"},
+              {name: "associationClasses", heading: "Implementing Association Classes", priority: "1"},
+              {name: "inheritance", heading: "Implementing Inheritance", priority: "1"},
+              {name: "overriding", heading: "Implementing Overriding", priority: "1"},
+              {name: "overloading", heading: "Implementing Overloading", priority: "1"},
+              {name: "interfaces", heading: "Implementing Interfaces", priority: "1"},
+              {name: "abstractClasses", heading: "Implementing Abstract Classes", priority: "1"},
+              {name: "polymorphism", heading: "Implementing Polymorphism", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   design : {
     name: "design",
     heading: "Software Design",
@@ -595,7 +624,7 @@
 
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
-  {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign]},
+  {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.codeQuality]}
   ] 
