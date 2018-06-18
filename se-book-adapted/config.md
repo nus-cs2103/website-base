@@ -803,6 +803,75 @@
         ]
       }
     ]
+  },
+  documentation : {
+    name: "documentation",
+    heading: "Documentation",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "guidelines",
+        level_two_topics: [
+          {
+            name: "goTopDown",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "why", heading: "Why", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          },
+          {
+            name: "aimForComprehensibility",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          },
+          {
+            name: "documentMinimally",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "tools",
+        level_two_topics: [
+          {
+            name: "javaDoc",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          },
+          {
+            name: "markdown",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          },
+          {
+            name: "asciiDoc",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -811,6 +880,6 @@
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
-  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring]}
+  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation]}
   ] 
 %}
