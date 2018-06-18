@@ -1469,6 +1469,177 @@
         ]
       }
     ]
+  },
+  uml : {
+    name: "uml",
+    heading: "UML",
+    level_one_topics: [
+      {
+        name: "classDiagrams",
+        level_two_topics: [
+          {
+            name: "introduction",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "classes",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "associations",
+            level_three_topics: [
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "navigability", heading: "Navigability", priority: "1"},
+              {name: "roles", heading: "Roles", priority: "1"},
+              {name: "labels", heading: "Labels", priority: "1"},
+              {name: "multiplicity", heading: "Multiplicity", priority: "1"}
+            ]
+          },
+          {
+            name: "dependencies",
+            level_three_topics: [
+              {name: "what", heading: "Dependencies", priority: "1"}
+            ]
+          },
+          {
+            name: "associationsAsAttributes",
+            level_three_topics: [
+              {name: "what", heading: "Associations as Attributes", priority: "1"}
+            ]
+          },
+          {
+            name: "enumerations",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "classLevelMembers",
+            level_three_topics: [
+              {name: "what", heading: "Class-Level Members", priority: "1"}
+            ]
+          },
+          {
+            name: "associationClasses",
+            level_three_topics: [
+              {name: "what", heading: "Association Classes", priority: "1"}
+            ]
+          },
+          {
+            name: "composition",
+            level_three_topics: [
+              {name: "what", heading: "Composition", priority: "1"}
+            ]
+          },
+          {
+            name: "aggregation",
+            level_three_topics: [
+              {name: "what", heading: "Aggregation", priority: "1"}
+            ]
+          },
+          {
+            name: "classInheritance",
+            level_three_topics: [
+              {name: "what", heading: "Inheritance", priority: "1"}
+            ]
+          },
+          {
+            name: "interfaces",
+            level_three_topics: [
+              {name: "what", heading: "Interfaces", priority: "1"}
+            ]
+          },
+          {
+            name: "abstractClasses",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "sequenceDiagrams",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "objectCreation", heading: "Object Creation", priority: "1"},
+              {name: "objectDeletion", heading: "Object Deletion", priority: "1"},
+              {name: "loops", heading: "Loops", priority: "1"},
+              {name: "selfInvocation", heading: "Self Invocation", priority: "1"},
+              {name: "alternativePaths", heading: "Alternative Paths", priority: "1"},
+              {name: "optionalPaths", heading: "Optional Paths", priority: "1"},
+              {name: "parallelPaths", heading: "Parallel Paths", priority: "1"},
+              {name: "referenceFrames", heading: "Reference Frames", priority: "1"},
+              {name: "minimalNotation", heading: "Minimal Notation", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "objectDiagrams",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"},
+              {name: "objects", heading: "Objects", priority: "1"},
+              {name: "associations", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "activityDiagrams",
+        level_two_topics: [
+          {
+            name: "introduction",
+            level_three_topics: [
+              {name: "what", heading: "Introduction", priority: "1"}
+            ]
+          },
+          {
+            name: "basicNotations",
+            level_three_topics: [
+              {name: "linearPaths", heading: "Linear Paths", priority: "1"},
+              {name: "alternatePaths", heading: "Alternate Paths", priority: "1"},
+              {name: "parallelPaths", heading: "Parallel Paths", priority: "1"},
+              {name: "rakes", heading: "Rakes", priority: "1"},
+              {name: "swimlanes", heading: "Swimlanes", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "notes",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "notes", heading: "Notes", priority: "1"},
+              {name: "constraints", heading: "Constraints", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "miscellaneous",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "objectVsClassDiagrams", heading: "Object vs Class Diagrams", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1479,6 +1650,7 @@
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
-  {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]}
+  {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]},
+  {heading: "Tools", chapters: [chapters.uml]}
   ] 
 %}

@@ -47,18 +47,6 @@ footer: footer.md
 {% endfor %}
 
 
-### Tools
-
-<include src="../book/uml/topicToc.md" />
-
-<include src="../book/intellij/topicToc.md" />
-
-<include src="../book/gitAndGithub/topicToc.md" />
-
-<include src="../book/javaTools/topicToc.md" />
-
-<include src="../book/junit/topicToc.md" />
-
 ### Supplementary
 
 <include src="../book/principles/topicToc.md" />
