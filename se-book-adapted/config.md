@@ -642,45 +642,54 @@
     ]
   },
   codeQuality : {
-    name: "codeQuality", 
+    name: "codeQuality",
     heading: "Code Quality",
     level_one_topics: [
       {
         name: "introduction",
         level_two_topics: [
-          {name: "", level_three_topics: [{name: "basic", heading: "Basic", priority: "1"}]}
+          {
+            name: "",
+            level_three_topics: [
+              {name: "basic", heading: "Basic", priority: "1"}
+            ]
+          }
         ]
       },
       {
         name: "maximiseReadability",
         level_two_topics: [
           {
-            name: "", 
-            level_three_topics:[{name: "introduction", heading: "Introduction", priority: "1"}]
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"}
+            ]
           },
           {
-            name: "basic", 
-            level_three_topics:[
-              {name: "avoidLongMethods", heading: "Avoid Long Methods", priority: "1"}, 
-              {name: "avoidDeepNesting", heading: "Avoid Deep Nesting", priority: "1"}, 
-              {name: "avoidComplicatedExpressions", heading: "Avoid complicated expressions", priority: "1"}, 
-              {name: "avoidMagicNumbers", heading: "Avoid Magic Numbers", priority: "1"}, 
+            name: "basic",
+            level_three_topics: [
+              {name: "avoidLongMethods", heading: "Avoid Long Methods", priority: "1"},
+              {name: "avoidDeepNesting", heading: "Avoid Deep Nesting", priority: "1"},
+              {name: "avoidComplicatedExpressions", heading: "Avoid Complicated Expressions", priority: "1"},
+              {name: "avoidMagicNumbers", heading: "Avoid Magic Numbers", priority: "1"},
               {name: "makeCodeObvious", heading: "Make the Code Obvious", priority: "1"}
             ]
           },
           {
-            name: "intermediate", 
+            name: "intermediate",
             level_three_topics: [
-              {name:"structureCodeLogically", heading: "Structure code logically", priority: "2"},
-              {name:"dontTripReader", heading: "Do not 'trip up' the reader", priority: "2"},
-              {name:"practiceKISSing", heading: "Practice KISSing", priority: "2"},
-              {name:"avoidPrematureOptimizations", heading: "Avoid premature optimizations", priority: "2"},
-              {name:"slapHard", heading: "SLAP hard", priority: "2"}
+              {name: "structureCodeLogically", heading: "Structure Code Logically", priority: "1"},
+              {name: "dontTripReader", heading: "Do Not 'Trip Up' Reader", priority: "1"},
+              {name: "practiceKISSing", heading: "Practice KISSing", priority: "1"},
+              {name: "avoidPrematureOptimizations", heading: "Avoid Premature Optimizations", priority: "1"},
+              {name: "slapHard", heading: "SLAP Hard", priority: "1"}
             ]
           },
           {
-            name: "advanced", 
-            level_three_topics: [{name: "makeHappyPathProminent", heading: "Make the happy path prominent", priority: "3"}]
+            name: "advanced",
+            level_three_topics: [
+              {name: "makeHappyPathProminent", heading: "Make the Happy Path Prominent", priority: "1"}
+            ]
           }
         ]
       },
@@ -688,11 +697,11 @@
         name: "followStandard",
         level_two_topics: [
           {
-            name: "", 
-            level_three_topics:[
+            name: "",
+            level_three_topics: [
               {name: "introduction", heading: "Introduction", priority: "1"},
-              {name: "basic", heading: "What", Basic: "2"},
-              {name: "intermediate", heading: "Intermediate", priority: "3"}
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "intermediate", heading: "Intermediate", priority: "1"}
             ]
           }
         ]
@@ -701,22 +710,24 @@
         name: "nameWell",
         level_two_topics: [
           {
-            name: "", 
-            level_three_topics:[{name: "introduction", heading: "Introduction", priority: "1"}]
-          },
-          {
-            name: "basic", 
-            level_three_topics:[
-              {name: "nounsAndVerbsAsNames", heading: "Use nouns for things and verbs for actions", priority: "1"}, 
-              {name: "useStandardWords", heading: "Use standard words", priority: "1"}
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"}
             ]
           },
           {
-            name: "intermediate", 
+            name: "basic",
             level_three_topics: [
-              {name:"useNameExplain", heading: "Use the name to explain", priority: "1"},
-              {name:"notTooLongNorShort", heading: "Not too long, not too short", priority: "1"},
-              {name:"avoidMisleadingNames", heading: "Avoid misleading names", priority: "1"}
+              {name: "nounsAndVerbsAsNames", heading: "Use Nouns for Things and Verbs for Actions", priority: "1"},
+              {name: "useStandardWords", heading: "Use Standard Words", priority: "1"}
+            ]
+          },
+          {
+            name: "intermediate",
+            level_three_topics: [
+              {name: "useNameExplain", heading: "Use Name to Explain", priority: "1"},
+              {name: "notTooLongNorShort", heading: "Not Too Long, Not Too Short", priority: "1"},
+              {name: "avoidMisleadingNames", heading: "Avoid Misleading Names", priority: "1"}
             ]
           }
         ]
@@ -725,23 +736,25 @@
         name: "avoidShortcuts",
         level_two_topics: [
           {
-            name: "", 
-            level_three_topics:[{name: "introduction", heading: "Introduction", priority: "1"}]
-          },
-          {
-            name: "basic", 
-            level_three_topics:[
-              {name: "useDefaultBranch", heading: "Use the default branch", priority: "1"}, 
-              {name: "dontRecycleVarsOrParams", heading: "Don't recycle variables or parameters", priority: "1"}, 
-              {name: "avoidEmptyCatchBlocks", heading: "Avoid empty catch blocks", priority: "1"}, 
-              {name: "deleteDeadCode", heading: "Delete dead code", priority: "1"}
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"}
             ]
           },
           {
-            name: "intermediate", 
+            name: "basic",
             level_three_topics: [
-              {name:"minimiseVariableScope", heading: "Minimise variable scope", priority: "2"},
-              {name:"minimiseCodeDuplication", heading: "Minimise code duplication", priority: "2"}
+              {name: "useDefaultBranch", heading: "Use the Default Branch", priority: "1"},
+              {name: "dontRecycleVarsOrParams", heading: "Don't Recycle Variables or Parameters", priority: "1"},
+              {name: "avoidEmptyCatchBlocks", heading: "Avoid Empty Catch Blocks", priority: "1"},
+              {name: "deleteDeadCode", heading: "Delete Dead Code", priority: "1"}
+            ]
+          },
+          {
+            name: "intermediate",
+            level_three_topics: [
+              {name: "minimiseVariableScope", heading: "Minimise Scope of Variables", priority: "1"},
+              {name: "minimiseCodeDuplication", heading: "Minimise Code Duplication", priority: "1"}
             ]
           }
         ]
@@ -750,19 +763,23 @@
         name: "commentMinimally",
         level_two_topics: [
           {
-            name: "", 
-            level_three_topics:[{name: "introduction", heading: "Introduction", priority: "1"}]
-          },
-          {
-            name: "basic", 
-            level_three_topics:[
-              {name: "dontRepeatObvious", heading: "Don't repeat the obvious", priority: "1"}, 
-              {name: "writeToReader", heading: "Write to the reader", priority: "1"}
+            name: "",
+            level_three_topics: [
+              {name: "introduction", heading: "Introduction", priority: "1"}
             ]
           },
           {
-            name: "intermediate", 
-            level_three_topics: [{name:"explainWhatWhyNotHow", heading: "Explain WHAT and WHY, not HOW", priority: "2"}]
+            name: "basic",
+            level_three_topics: [
+              {name: "dontRepeatObvious", heading: "Do Not Repeat the Obvious", priority: "1"},
+              {name: "writeToReader", heading: "Write to the Reader", priority: "1"}
+            ]
+          },
+          {
+            name: "intermediate",
+            level_three_topics: [
+              {name: "explainWhatWhyNotHow", heading: "Explain WHAT and WHY, not HOW", priority: "1"}
+            ]
           }
         ]
       }
