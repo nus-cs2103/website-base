@@ -1134,6 +1134,139 @@
         ]
       }
     ]
+  },
+  testing : {
+    name: "testing",
+    heading: "Testing",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "testability", heading: "Testability", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "testingTypes",
+        level_two_topics: [
+          {
+            name: "unitTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "stubs", heading: "Stubs", priority: "1"}
+            ]
+          },
+          {
+            name: "integrationTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          },
+          {
+            name: "systemTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "alphaBetaTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "dogfooding",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          },
+          {
+            name: "developerTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "why", heading: "Why", priority: "1"}
+            ]
+          },
+          {
+            name: "exploratoryVsScriptedTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "when", heading: "When", priority: "1"}
+            ]
+          },
+          {
+            name: "acceptanceTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "acceptanceVsSystemTesting", heading: "Acceptance vs System Testing", priority: "1"}
+            ]
+          },
+          {
+            name: "regressionTesting",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "testAutomation",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "1"},
+              {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "1"},
+              {name: "tools", heading: "Test Automation Tools", priority: "1"},
+              {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "testCoverage",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "dependencyInjection",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "tdd",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1143,6 +1276,6 @@
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
-  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance]}
+  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing]}
   ] 
 %}
