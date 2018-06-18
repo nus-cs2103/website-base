@@ -1349,6 +1349,32 @@
         ]
       }
     ]
+  },
+  revisionControl : {
+    name: "revisionControl",
+    heading: "Revision Control",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "repositories", heading: "Repositories", priority: "1"},
+              {name: "savingHistory", heading: "Saving History", priority: "1"},
+              {name: "usingHistory", heading: "Using History", priority: "1"},
+              {name: "remoteRepositories", heading: "Remote Repositories", priority: "1"},
+              {name: "branching", heading: "Branching", priority: "1"},
+              {name: "drcsVsCrcs", heading: "DRCS vs CRCS", priority: "1"},
+              {name: "forkingWorkflow", heading: "Forking Flow", priority: "1"},
+              {name: "featureBranchFlow", heading: "Feature Branch Flow", priority: "1"},
+              {name: "centralizedFlow", heading: "Centralized Flow", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1358,6 +1384,7 @@
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
-  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]}
+  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
+  {heading: "Project Management", chapters: [chapters.revisionControl]}
   ] 
 %}
