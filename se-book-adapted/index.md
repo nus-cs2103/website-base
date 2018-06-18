@@ -17,7 +17,7 @@ footer: footer.md
 * [How to use this book](about/usage.html)
 
 
-{% import "se-book-adapted/config.md" as config %}
+{% import "se-book-adapted/config.md" as config with context %}
 
 
 {% macro show_chapter(section, chapter) %}
