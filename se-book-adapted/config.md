@@ -1267,6 +1267,88 @@
         ]
       }
     ]
+  },
+  testCaseDesign : {
+    name: "testCaseDesign",
+    heading: "Test Case Design",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "1"},
+              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "equivalencePartitions",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "intermediate", heading: "Intermediate", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "boundaryValueAnalysis",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "combiningTestInputs",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "why", heading: "Why", priority: "1"},
+              {name: "combinationStrategies", heading: "Test Input Combination Strategies", priority: "1"},
+              {name: "heuristicValid", heading: "Heuristic: Each Valid Input at Least Once in a Positive Test Case", priority: "1"},
+              {name: "heuristicInvalid", heading: "Heuristic: No More Than One Invalid Input In A Test Case", priority: "1"},
+              {name: "mix", heading: "Mix", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "more",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "summary",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "recap", heading: "Recap", priority: "1"},
+              {name: "exercises", heading: "Exercises", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1276,6 +1358,6 @@
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
-  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing]}
+  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]}
   ] 
 %}
