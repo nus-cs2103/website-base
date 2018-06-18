@@ -1397,6 +1397,78 @@
         ]
       }
     ]
+  },
+  teamwork : {
+    name: "teamwork",
+    heading: "Teamwork",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "teamStructures", heading: "Team Structures", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  processModels : {
+    name: "processModels",
+    heading: "SDLC Process Models",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "sequentialModels", heading: "Sequential Models", priority: "1"},
+              {name: "iterativeModels", heading: "Iterative Models", priority: "1"},
+              {name: "agileModels", heading: "Agile Models", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "exampleProcessModels",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "xp", heading: "XP", priority: "1"},
+              {name: "scrum", heading: "Scrum", priority: "1"},
+              {name: "unifiedProcess", heading: "Unified Process", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "more",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "cmmi", heading: "CMMI", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "summary",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "recap", heading: "Recap", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1407,6 +1479,6 @@
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
-  {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning]}
+  {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]}
   ] 
 %}
