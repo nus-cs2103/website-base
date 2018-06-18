@@ -1640,6 +1640,57 @@
         ]
       }
     ]
+  },
+  intellij : {
+    name: "intellij",
+    heading: "Intellij IDEA",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "projectSetup", heading: "Project Setup", priority: "1"},
+              {name: "codeNavigation", heading: "Code Navigation", priority: "1"},
+              {name: "productivityShortcuts", heading: "Productivity Shortcuts", priority: "1"},
+              {name: "debuggingBasic", heading: "Debugging: Basic", priority: "1"},
+              {name: "refactoring", heading: "Refactoring", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  gitAndGithub : {
+    name: "gitAndGithub",
+    heading: "Git and Github",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "init", heading: "Init", priority: "1"},
+              {name: "commit", heading: "Commit", priority: "1"},
+              {name: "ignore", heading: "Ignore", priority: "1"},
+              {name: "tag", heading: "Tag", priority: "1"},
+              {name: "checkout", heading: "Checkout", priority: "1"},
+              {name: "stash", heading: "Stash", priority: "1"},
+              {name: "clone", heading: "Clone", priority: "1"},
+              {name: "pull", heading: "Pull", priority: "1"},
+              {name: "push", heading: "Push", priority: "1"},
+              {name: "branch", heading: "Branch", priority: "1"},
+              {name: "mergeConflicts", heading: "Merge Conflicts", priority: "1"},
+              {name: "createPRs", heading: "Create PRs", priority: "1"},
+              {name: "managePRs", heading: "Manage PRs", priority: "1"},
+              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1651,6 +1702,6 @@
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
   {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]},
-  {heading: "Tools", chapters: [chapters.uml]}
+  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub]}
   ] 
 %}
