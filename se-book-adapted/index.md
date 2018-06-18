@@ -49,8 +49,6 @@ footer: footer.md
 
 ### Supplementary
 
-<include src="../book/principles/topicToc.md" />
-
 <!-- TODO: add review -->
 
 * [List of Definitions](common/definitions.html)

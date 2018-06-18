@@ -1730,6 +1730,34 @@
         ]
       }
     ]
+  },
+  principles : {
+    name: "principles",
+    heading: "Principles",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "1"},
+              {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "1"},
+              {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "1"},
+              {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "1"},
+              {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "1"},
+              {name: "solidPrinciples", heading: "SOLID Principles", priority: "1"},
+              {name: "separationOfConcernsPrinciple", heading: "Separation of Concerns Principle", priority: "1"},
+              {name: "lawOfDemeter", heading: "Law of Demeter", priority: "1"},
+              {name: "yagniPrinciple", heading: "YAGNI Principle", priority: "1"},
+              {name: "dryPrinciple", heading: "DRY Principle", priority: "1"},
+              {name: "brooksLaw", heading: "Brooks' Law", priority: "1"},
+              {name: "review", heading: "Review", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1741,6 +1769,7 @@
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
   {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]},
-  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub, chapters.javaTools, chapters.junit]}
+  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub, chapters.javaTools, chapters.junit]},
+  {heading: "Principles", chapters: [chapters.principles]}
   ] 
 %}
