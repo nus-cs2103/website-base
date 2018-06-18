@@ -1375,6 +1375,28 @@
         ]
       }
     ]
+  },
+  projectPlanning : {
+    name: "projectPlanning",
+    heading: "Project Planning",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "workBreakdownStructure", heading: "Work Breakdown Structure", priority: "1"},
+              {name: "milestones", heading: "Milestones", priority: "1"},
+              {name: "buffers", heading: "Buffers", priority: "1"},
+              {name: "issueTrackers", heading: "Issue Trackers", priority: "1"},
+              {name: "ganttCharts", heading: "GANTT Charts", priority: "1"},
+              {name: "pertCharts", heading: "PERT Charts", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1385,6 +1407,6 @@
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
-  {heading: "Project Management", chapters: [chapters.revisionControl]}
+  {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning]}
   ] 
 %}
