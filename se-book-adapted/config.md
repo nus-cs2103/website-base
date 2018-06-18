@@ -1083,6 +1083,57 @@
         ]
       }
     ]
+  },
+  qualityAssurance : {
+    name: "qualityAssurance",
+    heading: "Quality Assurance",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "validationVsVerification", heading: "Validation vs Verification", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "codeReviews",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "staticAnalysis",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "formalVerification",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1091,6 +1142,7 @@
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
-  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]}
+  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
+  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance]}
   ] 
 %}
