@@ -1691,6 +1691,45 @@
         ]
       }
     ]
+  },
+  javaTools : {
+    name: "javaTools",
+    heading: "Java",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "collections", heading: "Collections", priority: "1"},
+              {name: "enums", heading: "Enums", priority: "1"},
+              {name: "varargs", heading: "Varargs ", priority: "1"},
+              {name: "javaFXBasic", heading: "JavaFX: Basic", priority: "1"},
+              {name: "streamsBasic", heading: "Streams: Basic", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  junit : {
+    name: "junit",
+    heading: "JUnit",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "basic", heading: "JUnit: Basic", priority: "1"},
+              {name: "intermediate", heading: "JUnit: Intermediate", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -1702,6 +1741,6 @@
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
   {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]},
-  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub]}
+  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub, chapters.javaTools, chapters.junit]}
   ] 
 %}
