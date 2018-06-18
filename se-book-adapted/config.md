@@ -953,6 +953,59 @@
         ]
       }
     ]
+  },
+  integration : {
+    name: "integration",
+    heading: "Integration",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "approaches",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "lateVsEarly", heading: "'Late and One Time' vs 'Early and Frequent'", priority: "1"},
+              {name: "bigBangVsIncremental", heading: "Big-Bang vs Incremental Integration", priority: "1"},
+              {name: "topDownVsBottomUp", heading: "Top-Down vs Bottom-Up Integration", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "buildAutomation",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "continuousIntegrationDeployment", heading: "Continuous Integration and Continuous Deployment", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "more",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "review", heading: "Review", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -961,6 +1014,6 @@
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
-  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling]}
+  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration]}
   ] 
 %}
