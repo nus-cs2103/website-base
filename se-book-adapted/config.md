@@ -872,6 +872,87 @@
         ]
       }
     ]
+  },
+  errorHandling : {
+    name: "errorHandling",
+    heading: "Error Handling",
+    level_one_topics: [
+      {
+        name: "introduction",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "exceptions",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"},
+              {name: "when", heading: "When", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "assertions",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"},
+              {name: "when", heading: "When", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "logging",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "defensiveProgramming",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "compulsoryAssociations", heading: "Enforcing Compulsory Associations", priority: "1"},
+              {name: "1to1Associations", heading: "Enforcing 1-to-1 Associations", priority: "1"},
+              {name: "referentialIntegrity", heading: "Enforcing Referential Integrity", priority: "1"},
+              {name: "when", heading: "When", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "designByContract",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "Design by Contract", priority: "1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 } %}
 
@@ -880,6 +961,6 @@
   {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
-  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation]}
+  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling]}
   ] 
 %}
