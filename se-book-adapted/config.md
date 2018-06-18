@@ -1773,3 +1773,5 @@
   {heading: "Principles", chapters: [chapters.principles]}
   ] 
 %}
+
+{% set definitions = ["def-abstractClass"] %}
