@@ -50,19 +50,19 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one-2": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-4": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-5": "Basic ",
-        "intermediate-two-4": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-6": "Basic ",
-        "intermediate-two-5": "Intermediate ",
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate",
         "v15rc-documentation": "v1.5rc Documentation",
         "v15rc-demo": "v1.5rc Demo",
         "v15-week-13": "v1.5 [week 13]",
@@ -241,11 +241,6 @@
       "src": "book/architecture/architecturalStyles/clientServer/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/architecture/architecturalStyles/clientServer/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "event-driven-architectural-style": "Event-driven Architectural Style"
       },
@@ -256,11 +251,6 @@
       "headings": {},
       "title": "Architectural Styles: Event-Driven Architectural Style: What",
       "src": "book/architecture/architecturalStyles/eventDriven/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/architecture/architecturalStyles/eventDriven/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -289,11 +279,6 @@
       "src": "book/architecture/architecturalStyles/introduction/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/architecture/architecturalStyles/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "more": "More"
       },
@@ -307,18 +292,8 @@
     },
     {
       "headings": {},
-      "src": "book/architecture/architecturalStyles/more/moreStyles/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Architectural Styles: More: Using Architectural Styles",
       "src": "book/architecture/architecturalStyles/more/usingStyles/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/architecture/architecturalStyles/more/usingStyles/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -333,11 +308,6 @@
       "src": "book/architecture/architecturalStyles/nTier/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/architecture/architecturalStyles/nTier/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "service-oriented-architectural-style": "Service-oriented Architectural Style"
       },
@@ -348,11 +318,6 @@
       "headings": {},
       "title": "Architectural Styles: Service-Oriented Architectural Style: What",
       "src": "book/architecture/architecturalStyles/serviceOriented/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/architecture/architecturalStyles/serviceOriented/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -368,18 +333,8 @@
     },
     {
       "headings": {},
-      "src": "book/architecture/architecturalStyles/transactionProcessing/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Architecture: Architecture Diagrams: Drawing",
       "src": "book/architecture/architectureDiagrams/drawing/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/architecture/architectureDiagrams/drawing/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -392,11 +347,6 @@
       "headings": {},
       "title": "Software Architecture: Architecture Diagrams: Reading",
       "src": "book/architecture/architectureDiagrams/reading/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/architecture/architectureDiagrams/reading/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -428,11 +378,6 @@
       "src": "book/architecture/introduction/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/architecture/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "software-architecture": "Software Architecture",
         "introduction": "Introduction",
@@ -456,18 +401,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/basic/avoidEmptyCatchBlocks/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Delete Dead Code",
       "src": "book/codeQuality/avoidShortcuts/basic/deleteDeadCode/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/basic/deleteDeadCode/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -475,21 +410,11 @@
       "src": "book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "basic-one": "Basic "
+        "basic": "Basic"
       },
       "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic",
       "src": "book/codeQuality/avoidShortcuts/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -497,22 +422,17 @@
       "src": "book/codeQuality/avoidShortcuts/basic/useDefaultBranch/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/basic/useDefaultBranch/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate "
+        "basic": "Basic",
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts",
       "src": "book/codeQuality/avoidShortcuts/index.md"
     },
     {
       "headings": {
-        "intermediate-two": "Intermediate "
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Intermediate",
       "src": "book/codeQuality/avoidShortcuts/intermediate/index.md"
@@ -524,23 +444,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseCodeDuplication/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Minimise Scope of Variables",
       "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/intermediate/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -549,30 +454,15 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/avoidShortcuts/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Do Not Repeat the Obvious",
       "src": "book/codeQuality/commentMinimally/basic/dontRepeatObvious/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/commentMinimally/basic/dontRepeatObvious/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "basic-one": "Basic "
+        "basic": "Basic"
       },
       "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic",
       "src": "book/codeQuality/commentMinimally/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/commentMinimally/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -580,15 +470,10 @@
       "src": "book/codeQuality/commentMinimally/basic/writeToReader/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/commentMinimally/basic/writeToReader/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate "
+        "basic": "Basic",
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently",
       "src": "book/codeQuality/commentMinimally/index.md"
@@ -599,21 +484,11 @@
       "src": "book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "intermediate-two": "Intermediate "
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Intermediate",
       "src": "book/codeQuality/commentMinimally/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/commentMinimally/intermediate/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -622,18 +497,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/commentMinimally/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Code Quality: [Guideline] Follow a Standard: Basic",
       "src": "book/codeQuality/followStandard/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/followStandard/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -649,37 +514,27 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/followStandard/intermediate/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Code Quality: [Guideline] Follow a Standard: Introduction",
       "src": "book/codeQuality/followStandard/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/followStandard/introduction/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one-2": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-4": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-5": "Basic ",
-        "intermediate-two-4": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-6": "Basic ",
-        "intermediate-two-5": "Intermediate "
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate"
       },
       "title": "Code Quality",
       "src": "book/codeQuality/index.md"
@@ -690,11 +545,6 @@
       "src": "book/codeQuality/introduction/basic/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/introduction/basic/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "introduction": "Introduction"
       },
@@ -703,7 +553,7 @@
     },
     {
       "headings": {
-        "advanced-three": "Advanced "
+        "advanced": "Advanced"
       },
       "title": "Code Quality: [Guideline] Maximise Readability: Advanced",
       "src": "book/codeQuality/maximiseReadability/advanced/index.md"
@@ -715,23 +565,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/advanced/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Avoid Complicated Expressions",
       "src": "book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -740,18 +575,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/maximiseReadability/basic/avoidDeepNesting/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Avoid Long Methods",
       "src": "book/codeQuality/maximiseReadability/basic/avoidLongMethods/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/basic/avoidLongMethods/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -759,13 +584,8 @@
       "src": "book/codeQuality/maximiseReadability/basic/avoidMagicNumbers/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/basic/avoidMagicNumbers/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "basic-one": "Basic "
+        "basic": "Basic"
       },
       "title": "Code Quality: [Guideline] Maximise Readability: Basic",
       "src": "book/codeQuality/maximiseReadability/basic/index.md"
@@ -776,34 +596,19 @@
       "src": "book/codeQuality/maximiseReadability/basic/makeCodeObvious/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/basic/makeCodeObvious/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/basic/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced "
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
       },
       "title": "Code Quality: [Guideline] Maximise Readability",
       "src": "book/codeQuality/maximiseReadability/index.md"
     },
     {
       "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations/outcomes.md",
-      "title": ""
+      "title": "Coding Best Practices: [Practice] Avoid Premature Optimizations",
+      "src": "book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations/index.md"
     },
     {
       "headings": {},
@@ -811,21 +616,11 @@
       "src": "book/codeQuality/maximiseReadability/intermediate/dontTripReader/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/dontTripReader/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "intermediate-two": "Intermediate "
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Maximise Readability: Intermediate",
       "src": "book/codeQuality/maximiseReadability/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -834,18 +629,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/practiceKISSing/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] SLAP Hard",
       "src": "book/codeQuality/maximiseReadability/intermediate/slapHard/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/slapHard/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -854,22 +639,12 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/maximiseReadability/intermediate/structureCodeLogically/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Code Quality: [Guideline] Maximise Readability: Introduction",
       "src": "book/codeQuality/maximiseReadability/introduction/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/maximiseReadability/introduction/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "basic-one": "Basic "
+        "basic": "Basic"
       },
       "title": "Code Quality: [Guideline] Name Well: Basic",
       "src": "book/codeQuality/nameWell/basic/index.md"
@@ -881,29 +656,14 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/nameWell/basic/nounsAndVerbsAsNames/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/nameWell/basic/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Use Standard Words",
       "src": "book/codeQuality/nameWell/basic/useStandardWords/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/nameWell/basic/useStandardWords/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate "
+        "basic": "Basic",
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Name Well",
       "src": "book/codeQuality/nameWell/index.md"
@@ -914,13 +674,8 @@
       "src": "book/codeQuality/nameWell/intermediate/avoidMisleadingNames/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/nameWell/intermediate/avoidMisleadingNames/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "intermediate-two": "Intermediate "
+        "intermediate": "Intermediate"
       },
       "title": "Code Quality: [Guideline] Name Well: Intermediate",
       "src": "book/codeQuality/nameWell/intermediate/index.md"
@@ -932,23 +687,8 @@
     },
     {
       "headings": {},
-      "src": "book/codeQuality/nameWell/intermediate/notTooLongNorShort/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/nameWell/intermediate/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Coding Best Practices: [Practice] Use Name to Explain",
       "src": "book/codeQuality/nameWell/intermediate/useNameExplain/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/codeQuality/nameWell/intermediate/useNameExplain/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -956,28 +696,23 @@
       "src": "book/codeQuality/nameWell/introduction/index.md"
     },
     {
-      "headings": {},
-      "src": "book/codeQuality/nameWell/introduction/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one-2": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-4": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-5": "Basic ",
-        "intermediate-two-4": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently",
-        "basic-one-6": "Basic ",
-        "intermediate-two-5": "Intermediate "
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate"
       },
       "title": "Code Quality [Printable]",
       "src": "book/codeQuality/print.md"
@@ -987,17 +722,9 @@
         "book-software-engineering-for-self-directed-learners": "BOOK: SOFTWARE ENGINEERING FOR SELF-DIRECTED LEARNERS",
         "about-this-book": "About this Book",
         "section-introduction": "SECTION: INTRODUCTION",
-        "software-engineering": "Software Engineering",
         "section-oop-with-uml": "SECTION: OOP (with UML)",
-        "oop-concepts": "OOP - Concepts",
-        "oop-implementation": "OOP - Implementation",
         "section-requirements": "SECTION: REQUIREMENTS",
-        "requirements": "Requirements",
-        "gathering-requirements": "Gathering Requirements",
-        "specifying-requirements": "Specifying Requirements",
         "section-design": "SECTION: DESIGN",
-        "design-fundamentals": "Design Fundamentals",
-        "modeling": "Modeling",
         "software-architecture": "Software Architecture",
         "introduction": "Introduction",
         "architecture-diagrams": "Architecture Diagrams",
@@ -1009,34 +736,8 @@
         "service-oriented-architectural-style": "Service-oriented Architectural Style",
         "event-driven-architectural-style": "Event-driven Architectural Style",
         "more": "More",
-        "software-design-patterns": "Software Design Patterns",
-        "design-approaches": "Design Approaches",
         "section-implementation": "SECTION: IMPLEMENTATION",
-        "ides": "IDEs",
-        "refactoring": "Refactoring",
-        "documentation": "Documentation",
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
-        "javadoc": "JavaDoc",
-        "markdown": "Markdown",
-        "asciidoc": "AsciiDoc",
-        "error-handling": "Error Handling",
-        "integration": "Integration",
-        "reuse": "Reuse",
         "section-quality-assurance": "SECTION: QUALITY ASSURANCE",
-        "quality-assurance": "Quality Assurance",
-        "testing": "Testing",
-        "unit-testing": "Unit Testing",
-        "integration-testing": "Integration Testing",
-        "system-testing": "System Testing",
-        "alpha-and-beta-testing": "Alpha and Beta Testing",
-        "dogfooding": "Dogfooding",
-        "developer-testing": "Developer Testing",
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
-        "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing",
-        "test-case-design": "Test Case Design",
         "section-project-management": "SECTION: PROJECT MANAGEMENT",
         "revision-control": "Revision Control",
         "project-planning": "Project Planning",
@@ -1169,15 +870,16 @@
         "book-software-engineering-for-self-directed-learners": "BOOK: SOFTWARE ENGINEERING FOR SELF-DIRECTED LEARNERS",
         "section-introduction": "SECTION: INTRODUCTION",
         "software-engineering": "Software Engineering",
+        "introduction": "Introduction",
         "section-oop-with-uml": "SECTION: OOP (with UML)",
         "oop-concepts": "OOP - Concepts",
-        "introduction": "Introduction",
+        "introduction-2": "Introduction",
         "objects": "Objects",
         "classes": "Classes",
         "associations": "Associations",
         "inheritance": "Inheritance",
         "polymorphism": "Polymorphism",
-        "miscellaneous": "Miscellaneous",
+        "more": "More",
         "oop-implementation": "OOP - Implementation",
         "section-requirements": "SECTION: REQUIREMENTS",
         "requirements": "Requirements",
@@ -1191,60 +893,60 @@
         "supplementary-requirements": "Supplementary Requirements",
         "section-design": "SECTION: DESIGN",
         "design": "Design",
-        "introduction-2": "Introduction",
+        "introduction-3": "Introduction",
         "design-fundamentals": "Design Fundamentals",
         "abstraction": "Abstraction",
         "coupling": "Coupling",
         "cohesion": "Cohesion",
         "modeling": "Modeling",
-        "introduction-3": "Introduction",
+        "introduction-4": "Introduction",
         "modeling-structures": "Modeling Structures",
         "modeling-behaviors": "Modeling Behaviors",
         "modeling-a-solution": "Modeling a Solution",
         "software-architecture": "Software Architecture",
-        "introduction-4": "Introduction",
+        "introduction-5": "Introduction",
         "architecture-diagrams": "Architecture Diagrams",
         "architectural-styles": "Architectural Styles",
-        "introduction-5": "Introduction",
+        "introduction-6": "Introduction",
         "n-tier-architectural-style": "N-tier Architectural Style",
         "client-server-architectural-style": "Client-Server Architectural Style",
         "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
         "service-oriented-architectural-style": "Service-oriented Architectural Style",
         "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More",
+        "more-2": "More",
         "software-design-patterns": "Software Design Patterns",
-        "introduction-6": "Introduction",
+        "introduction-7": "Introduction",
         "singleton-pattern": "Singleton Pattern",
         "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
         "facade-pattern": "Facade Pattern",
         "command-pattern": "Command Pattern",
         "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
         "observer-pattern": "Observer Pattern",
-        "more-2": "More",
+        "more-3": "More",
         "design-approaches": "Design Approaches",
         "section-implementation": "SECTION: IMPLEMENTATION",
         "ides": "IDEs",
-        "introduction-7": "Introduction",
+        "introduction-8": "Introduction",
         "debugging": "Debugging",
         "code-quality": "Code Quality",
-        "introduction-8": "Introduction",
+        "introduction-9": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one-5": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-7": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-8": "Basic ",
-        "intermediate-two-4": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently",
-        "basic-one-9": "Basic ",
-        "intermediate-two-5": "Intermediate ",
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate",
         "refactoring": "Refactoring",
         "documentation": "Documentation",
-        "introduction-9": "Introduction",
+        "introduction-10": "Introduction",
         "guidelines": "Guidelines",
         "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
         "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
@@ -1254,18 +956,19 @@
         "markdown": "Markdown",
         "asciidoc": "AsciiDoc",
         "error-handling": "Error Handling",
-        "introduction-10": "Introduction",
+        "introduction-11": "Introduction",
         "exceptions": "Exceptions",
         "assertions": "Assertions",
         "logging": "Logging",
         "defensive-programming": "Defensive Programming",
         "design-by-contract-approach": "Design-by-Contract Approach",
         "integration": "Integration",
-        "introduction-11": "Introduction",
+        "introduction-12": "Introduction",
         "approaches": "Approaches",
         "build-automation": "Build Automation",
+        "build-automation-2": "Build Automation",
         "reuse": "Reuse",
-        "introduction-12": "Introduction",
+        "introduction-13": "Introduction",
         "apis": "APIs",
         "libraries": "Libraries",
         "frameworks": "Frameworks",
@@ -1273,12 +976,12 @@
         "cloud-computing": "Cloud Computing",
         "section-quality-assurance": "SECTION: QUALITY ASSURANCE",
         "quality-assurance": "Quality Assurance",
-        "introduction-13": "Introduction",
+        "introduction-14": "Introduction",
         "code-reviews": "Code Reviews",
         "static-analysis": "Static Analysis",
         "formal-verification": "Formal Verification",
         "testing": "Testing",
-        "introduction-14": "Introduction",
+        "introduction-15": "Introduction",
         "testing-types": "Testing Types",
         "unit-testing": "Unit Testing",
         "integration-testing": "Integration Testing",
@@ -1294,24 +997,24 @@
         "dependency-injection": "Dependency Injection",
         "tdd": "TDD",
         "test-case-design": "Test Case Design",
-        "introduction-15": "Introduction",
+        "introduction-16": "Introduction",
         "equivalence-partitions": "Equivalence Partitions",
         "boundary-value-analysis": "Boundary Value Analysis",
         "combining-test-inputs": "Combining Test Inputs",
-        "more-3": "More",
+        "more-4": "More",
         "summary": "Summary",
         "section-project-management": "SECTION: PROJECT MANAGEMENT",
         "revision-control": "Revision Control",
         "project-planning": "Project Planning",
         "teamwork": "Teamwork",
         "sdlc-process-models": "SDLC Process Models",
-        "introduction-16": "Introduction",
+        "introduction-17": "Introduction",
         "example-process-models": "Example Process Models",
-        "more-4": "More",
+        "more-5": "More",
         "section-tools": "SECTION: TOOLS",
         "uml": "UML",
         "class-diagrams": "Class Diagrams",
-        "introduction-17": "Introduction",
+        "introduction-18": "Introduction",
         "classes-2": "Classes",
         "associations-2": "Associations",
         "associations-as-attributes": "Associations as Attributes",
@@ -1326,15 +1029,15 @@
         "object-diagrams": "Object Diagrams",
         "sequence-diagrams": "Sequence Diagrams",
         "activity-diagrams": "Activity Diagrams",
-        "introduction-18": "Introduction",
+        "introduction-19": "Introduction",
         "basic-notations": "Basic Notations",
         "notes": "Notes",
-        "miscellaneous-2": "Miscellaneous",
+        "miscellaneous": "Miscellaneous",
         "intellij-idea": "Intellij IDEA",
         "git-and-github": "Git and GitHub",
         "java": "Java",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-19": "Introduction",
+        "introduction-20": "Introduction",
         "prerequisites": "Prerequisites",
         "intellij-configurations": "IntelliJ Configurations",
         "configuring-jdk-8": "Configuring JDK 8",
@@ -1347,7 +1050,7 @@
         "the-javafx-main-class": "The JavaFX Main Class",
         "possible-issues": "Possible Issues",
         "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-20": "Introduction",
+        "introduction-21": "Introduction",
         "create-the-model-class": "Create the Model class",
         "explanations": "Explanations",
         "a-list-of-persons": "A List of Persons",
@@ -1392,11 +1095,6 @@
       "src": "book/design/introduction/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/design/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "design": "Design",
         "introduction": "Introduction"
@@ -1408,8 +1106,8 @@
       "headings": {
         "agile-design": "Agile Design"
       },
-      "src": "book/designApproaches/agileDesign/index.md",
-      "title": ""
+      "title": "Design Approaches: Agile Design",
+      "src": "book/designApproaches/agileDesign/index.md"
     },
     {
       "headings": {},
@@ -1417,13 +1115,11 @@
       "src": "book/designApproaches/agileDesign/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/designApproaches/agileDesign/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "design-approaches": "Design Approaches"
+        "design-approaches": "Design Approaches",
+        "multi-level-design": "Multi-Level Design",
+        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
+        "agile-design": "Agile Design"
       },
       "title": "Design Approaches",
       "src": "book/designApproaches/index.md"
@@ -1432,18 +1128,13 @@
       "headings": {
         "multi-level-design": "Multi-Level Design"
       },
-      "src": "book/designApproaches/multilevelDesign/index.md",
-      "title": ""
+      "title": "Design Approaches: Multi-Level Design",
+      "src": "book/designApproaches/multilevelDesign/index.md"
     },
     {
       "headings": {},
       "title": "Design Approaches: Multi-Level Design",
       "src": "book/designApproaches/multilevelDesign/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designApproaches/multilevelDesign/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1456,18 +1147,13 @@
       "headings": {
         "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design"
       },
-      "src": "book/designApproaches/topDownBottomUp/index.md",
-      "title": ""
+      "title": "Design Approaches: Top-Down and Bottom-Up Design",
+      "src": "book/designApproaches/topDownBottomUp/index.md"
     },
     {
       "headings": {},
       "title": "Design Approaches: Top-Down and Bottom-Up Design",
       "src": "book/designApproaches/topDownBottomUp/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designApproaches/topDownBottomUp/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1483,18 +1169,8 @@
     },
     {
       "headings": {},
-      "src": "book/designFundamentals/abstraction/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Fundamentals: Cohesion: How",
       "src": "book/designFundamentals/cohesion/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designFundamentals/cohesion/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1510,18 +1186,8 @@
     },
     {
       "headings": {},
-      "src": "book/designFundamentals/cohesion/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Fundamentals: Coupling: How",
       "src": "book/designFundamentals/coupling/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designFundamentals/coupling/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1537,22 +1203,15 @@
     },
     {
       "headings": {},
-      "src": "book/designFundamentals/coupling/types/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Fundamentals: Coupling: What",
       "src": "book/designFundamentals/coupling/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/designFundamentals/coupling/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "design-fundamentals": "Design Fundamentals"
+        "design-fundamentals": "Design Fundamentals",
+        "abstraction": "Abstraction",
+        "coupling": "Coupling",
+        "cohesion": "Cohesion"
       },
       "title": "Software Design Fundamentals",
       "src": "book/designFundamentals/index.md"
@@ -1580,11 +1239,6 @@
       "src": "book/designPatterns/abstractionOccurrence/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/designPatterns/abstractionOccurrence/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "command-pattern": "Command Pattern"
       },
@@ -1595,11 +1249,6 @@
       "headings": {},
       "title": "Software Design Patterns: Command: What",
       "src": "book/designPatterns/command/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/command/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1614,13 +1263,16 @@
       "src": "book/designPatterns/facade/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/designPatterns/facade/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "software-design-patterns": "Software Design Patterns"
+        "software-design-patterns": "Software Design Patterns",
+        "introduction": "Introduction",
+        "singleton-pattern": "Singleton Pattern",
+        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
+        "facade-pattern": "Facade Pattern",
+        "command-pattern": "Command Pattern",
+        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
+        "observer-pattern": "Observer Pattern",
+        "more": "More"
       },
       "title": "Software Design Patterns",
       "src": "book/designPatterns/index.md"
@@ -1629,11 +1281,6 @@
       "headings": {},
       "title": "Software Design Patterns: Introduction: Format",
       "src": "book/designPatterns/introduction/format/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/introduction/format/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1646,11 +1293,6 @@
       "headings": {},
       "title": "Software Design Patterns: Introduction: What",
       "src": "book/designPatterns/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1666,18 +1308,8 @@
     },
     {
       "headings": {},
-      "src": "book/designPatterns/modelViewController/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Patterns: More: Combining Design Patterns",
       "src": "book/designPatterns/more/combiningDesignPatterns/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/more/combiningDesignPatterns/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1693,18 +1325,8 @@
     },
     {
       "headings": {},
-      "src": "book/designPatterns/more/otherDesignPatterns/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Patterns: More: Other Types of Patterns",
       "src": "book/designPatterns/more/otherTypesOfPatterns/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/more/otherTypesOfPatterns/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -1713,18 +1335,8 @@
     },
     {
       "headings": {},
-      "src": "book/designPatterns/more/usingDesignPatterns/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Patterns: More: Patterns vs Principles",
       "src": "book/designPatterns/more/vsPrinciples/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/more/vsPrinciples/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1737,11 +1349,6 @@
       "headings": {},
       "title": "Software Design Patterns: Observer: What",
       "src": "book/designPatterns/observer/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/observer/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1765,18 +1372,8 @@
     },
     {
       "headings": {},
-      "src": "book/designPatterns/singleton/evaluation/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Patterns: Singleton: Implementation",
       "src": "book/designPatterns/singleton/implementation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/designPatterns/singleton/implementation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1792,18 +1389,8 @@
     },
     {
       "headings": {},
-      "src": "book/designPatterns/singleton/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Documentation: Aim for Comprehensibility: How",
       "src": "book/documentation/guidelines/aimForComprehensibility/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/documentation/guidelines/aimForComprehensibility/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1819,18 +1406,8 @@
     },
     {
       "headings": {},
-      "src": "book/documentation/guidelines/aimForComprehensibility/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Documentation: Document Minimally, but Sufficiently: How",
       "src": "book/documentation/guidelines/documentMinimally/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/documentation/guidelines/documentMinimally/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1846,18 +1423,8 @@
     },
     {
       "headings": {},
-      "src": "book/documentation/guidelines/documentMinimally/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Documentation: Go Top-down, Not Bottom-up: How",
       "src": "book/documentation/guidelines/goTopDown/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/documentation/guidelines/goTopDown/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1873,18 +1440,8 @@
     },
     {
       "headings": {},
-      "src": "book/documentation/guidelines/goTopDown/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Documentation: Go Top-down, Not Bottom-up: Why",
       "src": "book/documentation/guidelines/goTopDown/why/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/documentation/guidelines/goTopDown/why/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1899,9 +1456,12 @@
     {
       "headings": {
         "documentation": "Documentation",
+        "introduction": "Introduction",
+        "guidelines": "Guidelines",
         "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
         "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
         "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
+        "tools": "Tools",
         "javadoc": "JavaDoc",
         "markdown": "Markdown",
         "asciidoc": "AsciiDoc"
@@ -1920,11 +1480,6 @@
       "headings": {},
       "title": "Documentation: Introduction: What",
       "src": "book/documentation/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/documentation/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -1955,11 +1510,6 @@
       "src": "book/documentation/tools/asciiDoc/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/documentation/tools/asciiDoc/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "tools": "Tools",
         "javadoc": "JavaDoc",
@@ -1975,11 +1525,6 @@
       "src": "book/documentation/tools/javaDoc/how/index.md"
     },
     {
-      "headings": {},
-      "src": "book/documentation/tools/javaDoc/how/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "javadoc": "JavaDoc"
       },
@@ -1993,18 +1538,8 @@
     },
     {
       "headings": {},
-      "src": "book/documentation/tools/javaDoc/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Documentation: Markdown: How",
       "src": "book/documentation/tools/markdown/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/documentation/tools/markdown/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2020,18 +1555,8 @@
     },
     {
       "headings": {},
-      "src": "book/documentation/tools/markdown/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Assertions: How",
       "src": "book/errorHandling/assertions/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/assertions/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2047,18 +1572,8 @@
     },
     {
       "headings": {},
-      "src": "book/errorHandling/assertions/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Assertions: When",
       "src": "book/errorHandling/assertions/when/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/assertions/when/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2067,18 +1582,8 @@
     },
     {
       "headings": {},
-      "src": "book/errorHandling/defensiveProgramming/1to1Associations/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Defensive Programming: Enforcing Compulsory Associations",
       "src": "book/errorHandling/defensiveProgramming/compulsoryAssociations/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/defensiveProgramming/compulsoryAssociations/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2094,28 +1599,13 @@
     },
     {
       "headings": {},
-      "src": "book/errorHandling/defensiveProgramming/referentialIntegrity/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Defensive Programming: What",
       "src": "book/errorHandling/defensiveProgramming/what/index.md"
     },
     {
       "headings": {},
-      "src": "book/errorHandling/defensiveProgramming/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Defensive Programming: When",
       "src": "book/errorHandling/defensiveProgramming/when/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/defensiveProgramming/when/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2131,18 +1621,8 @@
     },
     {
       "headings": {},
-      "src": "book/errorHandling/designByContract/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Exceptions: How",
       "src": "book/errorHandling/exceptions/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/exceptions/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2158,22 +1638,18 @@
     },
     {
       "headings": {},
-      "src": "book/errorHandling/exceptions/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Exceptions: When",
       "src": "book/errorHandling/exceptions/when/index.md"
     },
     {
-      "headings": {},
-      "src": "book/errorHandling/exceptions/when/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "error-handling": "Error Handling"
+        "error-handling": "Error Handling",
+        "introduction": "Introduction",
+        "exceptions": "Exceptions",
+        "assertions": "Assertions",
+        "logging": "Logging",
+        "defensive-programming": "Defensive Programming",
+        "design-by-contract-approach": "Design-by-Contract Approach"
       },
       "title": "Error Handling",
       "src": "book/errorHandling/index.md"
@@ -2192,18 +1668,8 @@
     },
     {
       "headings": {},
-      "src": "book/errorHandling/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Error Handling: Logging: How",
       "src": "book/errorHandling/logging/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/logging/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2216,11 +1682,6 @@
       "headings": {},
       "title": "Error Handling: Logging: What",
       "src": "book/errorHandling/logging/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/errorHandling/logging/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2242,18 +1703,8 @@
     },
     {
       "headings": {},
-      "src": "book/gatheringRequirements/brainstorming/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Gathering Requirements: Focus Groups",
       "src": "book/gatheringRequirements/focusGroups/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gatheringRequirements/focusGroups/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2269,18 +1720,8 @@
     },
     {
       "headings": {},
-      "src": "book/gatheringRequirements/interviews/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Gathering Requirements: Observation",
       "src": "book/gatheringRequirements/observation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gatheringRequirements/observation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2296,18 +1737,8 @@
     },
     {
       "headings": {},
-      "src": "book/gatheringRequirements/productSurveys/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Gathering Requirements: Prototyping",
       "src": "book/gatheringRequirements/prototyping/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gatheringRequirements/prototyping/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2316,18 +1747,8 @@
     },
     {
       "headings": {},
-      "src": "book/gatheringRequirements/userSurveys/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Branch",
       "src": "book/gitAndGithub/branch/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/branch/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2336,18 +1757,8 @@
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/checkout/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Clone",
       "src": "book/gitAndGithub/clone/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/clone/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2356,18 +1767,8 @@
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/commit/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Create PRs",
       "src": "book/gitAndGithub/createPRs/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/createPRs/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2376,18 +1777,8 @@
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/forkingWorkflow/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Ignore",
       "src": "book/gitAndGithub/ignore/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/ignore/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2403,28 +1794,13 @@
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/init/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Manage PRs",
       "src": "book/gitAndGithub/managePRs/index.md"
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/managePRs/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Merge Conflicts",
       "src": "book/gitAndGithub/mergeConflicts/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/mergeConflicts/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2440,18 +1816,8 @@
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/pull/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Push",
       "src": "book/gitAndGithub/push/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/push/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2460,18 +1826,8 @@
     },
     {
       "headings": {},
-      "src": "book/gitAndGithub/stash/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Git and Github: Tag",
       "src": "book/gitAndGithub/tag/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/gitAndGithub/tag/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2486,13 +1842,10 @@
       "src": "book/ides/debugging/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/ides/debugging/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "ides": "IDEs"
+        "ides": "IDEs",
+        "introduction": "Introduction",
+        "debugging": "Debugging"
       },
       "title": "IDEs",
       "src": "book/ides/index.md"
@@ -2508,11 +1861,6 @@
       "headings": {},
       "title": "IDEs: Introduction: What",
       "src": "book/ides/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/ides/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2546,11 +1894,6 @@
       "src": "book/integration/approaches/bigBangVsIncremental/index.md"
     },
     {
-      "headings": {},
-      "src": "book/integration/approaches/bigBangVsIncremental/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "approaches": "Approaches"
       },
@@ -2564,28 +1907,13 @@
     },
     {
       "headings": {},
-      "src": "book/integration/approaches/lateVsEarly/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Integration: Approaches: Top-Down vs Bottom-Up Integration",
       "src": "book/integration/approaches/topDownVsBottomUp/index.md"
     },
     {
       "headings": {},
-      "src": "book/integration/approaches/topDownVsBottomUp/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Integration: Build Automation: Continuous Integration/Continuous Deployment",
       "src": "book/integration/buildAutomation/continuousIntegrationDeployment/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/integration/buildAutomation/continuousIntegrationDeployment/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2600,13 +1928,12 @@
       "src": "book/integration/buildAutomation/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/integration/buildAutomation/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "integration": "Integration"
+        "integration": "Integration",
+        "introduction": "Introduction",
+        "approaches": "Approaches",
+        "build-automation": "Build Automation",
+        "approaches-2": "Approaches"
       },
       "title": "Integration",
       "src": "book/integration/index.md"
@@ -2624,29 +1951,27 @@
       "src": "book/integration/introduction/what/index.md"
     },
     {
+      "headings": {
+        "approaches": "Approaches"
+      },
+      "title": "Integration: More",
+      "src": "book/integration/more/index.md"
+    },
+    {
       "headings": {},
-      "src": "book/integration/introduction/what/outcomes.md",
-      "title": ""
+      "title": "Integration: More: Review",
+      "src": "book/integration/more/review/index.md"
     },
     {
       "headings": {
         "integration": "Integration",
         "introduction": "Introduction",
         "approaches": "Approaches",
-        "build-automation": "Build Automation"
+        "build-automation": "Build Automation",
+        "build-automation-2": "Build Automation"
       },
       "title": "Integration [Printable]",
       "src": "book/integration/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Review",
-      "src": "book/integration/review/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/integration/review/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2655,18 +1980,8 @@
     },
     {
       "headings": {},
-      "src": "book/intellij/codeNavigation/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Intellij IDEA: Debugging - Basic",
       "src": "book/intellij/debuggingBasic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/intellij/debuggingBasic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2689,28 +2004,13 @@
     },
     {
       "headings": {},
-      "src": "book/intellij/productivityShortcuts/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Intellij IDEA: Project Setup",
       "src": "book/intellij/projectSetup/index.md"
     },
     {
       "headings": {},
-      "src": "book/intellij/projectSetup/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Intellij IDEA: Refactoring",
       "src": "book/intellij/refactoring/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/intellij/refactoring/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2737,18 +2037,8 @@
     },
     {
       "headings": {},
-      "src": "book/javaTools/collections/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Java: Use Enums",
       "src": "book/javaTools/enums/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/javaTools/enums/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2812,11 +2102,6 @@
       "src": "book/javaTools/javaFXBasic/index.md"
     },
     {
-      "headings": {},
-      "src": "book/javaTools/javaFXBasic/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "java": "Java",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
@@ -2854,28 +2139,13 @@
     },
     {
       "headings": {},
-      "src": "book/javaTools/streamsBasic/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Java: Use Varargs",
       "src": "book/javaTools/varargs/index.md"
     },
     {
       "headings": {},
-      "src": "book/javaTools/varargs/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "JUnit: Basic",
       "src": "book/junit/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/junit/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2890,11 +2160,6 @@
       "src": "book/junit/intermediate/index.md"
     },
     {
-      "headings": {},
-      "src": "book/junit/intermediate/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "junit": "JUnit"
       },
@@ -2903,7 +2168,11 @@
     },
     {
       "headings": {
-        "modeling": "Modeling"
+        "modeling": "Modeling",
+        "introduction": "Introduction",
+        "modeling-structures": "Modeling Structures",
+        "modeling-behaviors": "Modeling Behaviors",
+        "modeling-a-solution": "Modeling a Solution"
       },
       "title": "Modeling",
       "src": "book/modeling/index.md"
@@ -2912,11 +2181,6 @@
       "headings": {},
       "title": "Modeling: Introduction: How",
       "src": "book/modeling/introduction/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/introduction/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2932,28 +2196,13 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/introduction/umlModels/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Introduction: What",
       "src": "book/modeling/introduction/what/index.md"
     },
     {
       "headings": {},
-      "src": "book/modeling/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling a Solution: Basic",
       "src": "book/modeling/modelingASolution/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingASolution/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -2969,18 +2218,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingASolution/intermediate/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling a Solution: Introduction",
       "src": "book/modeling/modelingASolution/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingASolution/introduction/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -2989,18 +2228,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingBehaviors/activityDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Behaviors: Communication Diagrams",
       "src": "book/modeling/modelingBehaviors/communicationDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingBehaviors/communicationDiagrams/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3016,18 +2245,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingBehaviors/interactionOverviewDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Behaviors: Sequence Diagrams - Advanced",
       "src": "book/modeling/modelingBehaviors/sequenceDiagramsAdvanced/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsAdvanced/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3036,18 +2255,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsBasic/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Behaviors: Sequence Diagrams - Intermediate",
       "src": "book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3056,18 +2265,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingBehaviors/stateMachineDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Behaviors: Timing Diagrams",
       "src": "book/modeling/modelingBehaviors/timingDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingBehaviors/timingDiagrams/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3076,17 +2275,7 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingBehaviors/useCaseDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "src": "book/modeling/modelingStructures/addingMoreInfo/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/addingMoreInfo/outcomes.md",
       "title": ""
     },
     {
@@ -3096,18 +2285,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingStructures/classDiagramsAdvanced/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Structures: Class Diagrams - Basic",
       "src": "book/modeling/modelingStructures/classDiagramsBasic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/classDiagramsBasic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3116,18 +2295,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingStructures/classDiagramsIntermediate/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Structures: Component Diagrams",
       "src": "book/modeling/modelingStructures/componentDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/componentDiagrams/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3136,18 +2305,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingStructures/compositeStructureDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Structures: Deployment Diagrams",
       "src": "book/modeling/modelingStructures/deploymentDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/deploymentDiagrams/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3163,38 +2322,18 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingStructures/objectDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Modeling: Modeling Structures: Object Oriented Domain Models",
       "src": "book/modeling/modelingStructures/objectOrientedDomainModels/index.md"
     },
     {
       "headings": {},
-      "src": "book/modeling/modelingStructures/objectOrientedDomainModels/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/ooStructures/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/ooStructures/outcomes.md",
-      "title": ""
+      "title": "Modeling: Modeling Structures: Object Oriented Structures",
+      "src": "book/modeling/modelingStructures/ooStructures/index.md"
     },
     {
       "headings": {},
       "title": "Modeling: Modeling Structures: Package Diagrams",
       "src": "book/modeling/modelingStructures/packageDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/packageDiagrams/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3214,18 +2353,8 @@
     },
     {
       "headings": {},
-      "src": "book/modeling/review/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Associations: Aggregation",
       "src": "book/oopDesign/associations/aggregation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/associations/aggregation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3234,18 +2363,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/associations/associationClasses/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Associations: Basic",
       "src": "book/oopDesign/associations/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/associations/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3254,18 +2373,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/associations/composition/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Associations: Dependencies",
       "src": "book/oopDesign/associations/dependencies/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/associations/dependencies/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3281,18 +2390,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/associations/multiplicity/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Associations: Navigability",
       "src": "book/oopDesign/associations/navigability/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/associations/navigability/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3301,28 +2400,13 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/classes/basic/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Classes: Class Level Members",
       "src": "book/oopDesign/classes/classLevelMembers/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopDesign/classes/classLevelMembers/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Classes: Enumerations",
       "src": "book/oopDesign/classes/enumerations/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/classes/enumerations/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3333,7 +2417,14 @@
     },
     {
       "headings": {
-        "oop-concepts": "OOP - Concepts"
+        "oop-concepts": "OOP - Concepts",
+        "introduction": "Introduction",
+        "objects": "Objects",
+        "classes": "Classes",
+        "associations": "Associations",
+        "inheritance": "Inheritance",
+        "polymorphism": "Polymorphism",
+        "more": "More"
       },
       "title": "Object Oriented Programming",
       "src": "book/oopDesign/index.md"
@@ -3345,18 +2436,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/inheritance/abstractClasses/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Inheritance: Dynamic and Static Binding",
       "src": "book/oopDesign/inheritance/dynamicAndStaticBinding/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/inheritance/dynamicAndStaticBinding/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3372,18 +2453,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/inheritance/interfaces/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Inheritance: Overloading",
       "src": "book/oopDesign/inheritance/overloading/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/inheritance/overloading/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3392,18 +2463,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/inheritance/overriding/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Inheritance: Substitutability",
       "src": "book/oopDesign/inheritance/substitutability/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/inheritance/substitutability/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3411,29 +2472,33 @@
       "src": "book/oopDesign/inheritance/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/oopDesign/inheritance/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
+      "headings": {
+        "introduction": "Introduction"
+      },
       "title": "Object Oriented Programming: Introduction",
       "src": "book/oopDesign/introduction/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopDesign/introduction/outcomes.md",
-      "title": ""
+      "title": "Object Oriented Programming: Introduction",
+      "src": "book/oopDesign/introduction/what/index.md"
+    },
+    {
+      "headings": {
+        "more": "More"
+      },
+      "title": "Object Oriented Programming: More",
+      "src": "book/oopDesign/more/index.md"
     },
     {
       "headings": {},
       "title": "Object Oriented Programming: Miscellaneous",
-      "src": "book/oopDesign/miscellaneous/index.md"
+      "src": "book/oopDesign/more/miscellaneous/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopDesign/miscellaneous/outcomes.md",
-      "title": ""
+      "title": "Object Oriented Programming: Review",
+      "src": "book/oopDesign/more/review/index.md"
     },
     {
       "headings": {},
@@ -3442,28 +2507,13 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/objects/abstraction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Objects: Basic",
       "src": "book/oopDesign/objects/basic/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopDesign/objects/basic/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Objects: Encapsulation",
       "src": "book/oopDesign/objects/encapsulation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/objects/encapsulation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3486,18 +2536,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopDesign/polymorphism/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Polymorphism: Mechanism",
       "src": "book/oopDesign/polymorphism/mechanism/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/polymorphism/mechanism/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3508,20 +2548,10 @@
         "associations": "Associations",
         "inheritance": "Inheritance",
         "polymorphism": "Polymorphism",
-        "miscellaneous": "Miscellaneous"
+        "more": "More"
       },
       "title": "Object Oriented Programming [Printable]",
       "src": "book/oopDesign/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Review",
-      "src": "book/oopDesign/review/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopDesign/review/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3530,18 +2560,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/abstractClasses/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Aggregation",
       "src": "book/oopImplementation/aggregation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopImplementation/aggregation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3550,28 +2570,13 @@
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/associationClasses/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Associations",
       "src": "book/oopImplementation/associations/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/associations/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/oopImplementation/classLevelMembers/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/oopImplementation/classLevelMembers/outcomes.md",
-      "title": ""
+      "title": "Object Oriented Programming: Class-Level Members",
+      "src": "book/oopImplementation/classLevelMembers/index.md"
     },
     {
       "headings": {},
@@ -3580,28 +2585,13 @@
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/classes/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Composition",
       "src": "book/oopImplementation/composition/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/composition/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Dependencies",
       "src": "book/oopImplementation/dependencies/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopImplementation/dependencies/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3617,18 +2607,8 @@
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/inheritance/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Interfaces",
       "src": "book/oopImplementation/interfaces/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopImplementation/interfaces/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3637,28 +2617,13 @@
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/overloading/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Overriding",
       "src": "book/oopImplementation/overriding/index.md"
     },
     {
       "headings": {},
-      "src": "book/oopImplementation/overriding/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Object Oriented Programming: Polymorphism",
       "src": "book/oopImplementation/polymorphism/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/oopImplementation/polymorphism/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3674,28 +2639,13 @@
     },
     {
       "headings": {},
-      "src": "book/principles/brooksLaw/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Principles: Dependency Inversion Principle",
       "src": "book/principles/dependencyInversionPrinciple/index.md"
     },
     {
       "headings": {},
-      "src": "book/principles/dependencyInversionPrinciple/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Principles: DRY Principle",
       "src": "book/principles/dryPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/principles/dryPrinciple/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3711,18 +2661,8 @@
     },
     {
       "headings": {},
-      "src": "book/principles/interfaceSegregationPrinciple/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Principles: Law of Demeter",
       "src": "book/principles/lawOfDemeter/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/principles/lawOfDemeter/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3731,18 +2671,8 @@
     },
     {
       "headings": {},
-      "src": "book/principles/liskovSubstitutionPrinciple/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Software Design Principles: Open-Closed Principle",
       "src": "book/principles/openClosedPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/principles/openClosedPrinciple/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3758,18 +2688,8 @@
     },
     {
       "headings": {},
-      "src": "book/principles/review/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Principles: Separation of Concerns Principle",
       "src": "book/principles/separationOfConcernsPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/principles/separationOfConcernsPrinciple/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3778,28 +2698,13 @@
     },
     {
       "headings": {},
-      "src": "book/principles/singleResponsibilityPrinciple/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Principles: SOLID Principles",
       "src": "book/principles/solidPrinciples/index.md"
     },
     {
       "headings": {},
-      "src": "book/principles/solidPrinciples/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Principles: YAGNI Principle",
       "src": "book/principles/yagniPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/principles/yagniPrinciple/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3815,28 +2720,13 @@
     },
     {
       "headings": {},
-      "src": "book/processModels/exampleProcessModels/scrum/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "SDLC Process Models: Exaxmple Process Models: Unified Process",
       "src": "book/processModels/exampleProcessModels/unifiedProcess/index.md"
     },
     {
       "headings": {},
-      "src": "book/processModels/exampleProcessModels/unifiedProcess/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "SDLC Process Models: Exaxmple Process Models: XP",
       "src": "book/processModels/exampleProcessModels/xp/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/processModels/exampleProcessModels/xp/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3849,11 +2739,6 @@
       "headings": {},
       "title": "SDLC Process Models: Introduction: Agile Models",
       "src": "book/processModels/introduction/agileModels/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/processModels/introduction/agileModels/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3869,18 +2754,8 @@
     },
     {
       "headings": {},
-      "src": "book/processModels/introduction/iterativeModels/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "SDLC Process Models: Introduction: Sequential Models",
       "src": "book/processModels/introduction/sequentialModels/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/processModels/introduction/sequentialModels/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -3889,18 +2764,8 @@
     },
     {
       "headings": {},
-      "src": "book/processModels/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "SDLC Process Models: More: CMMI",
       "src": "book/processModels/more/cmmi/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/processModels/more/cmmi/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3933,28 +2798,13 @@
     },
     {
       "headings": {},
-      "src": "book/processModels/summary/recap/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Project Planning: Buffers",
       "src": "book/projectPlanning/buffers/index.md"
     },
     {
       "headings": {},
-      "src": "book/projectPlanning/buffers/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Project Planning: GANTT Charts",
       "src": "book/projectPlanning/ganttCharts/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/projectPlanning/ganttCharts/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -3970,28 +2820,13 @@
     },
     {
       "headings": {},
-      "src": "book/projectPlanning/issueTrackers/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Project Planning: Milestones",
       "src": "book/projectPlanning/milestones/index.md"
     },
     {
       "headings": {},
-      "src": "book/projectPlanning/milestones/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Project Planning: PERT Charts",
       "src": "book/projectPlanning/pertCharts/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/projectPlanning/pertCharts/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4006,11 +2841,6 @@
       "src": "book/projectPlanning/workBreakdownStructure/index.md"
     },
     {
-      "headings": {},
-      "src": "book/projectPlanning/workBreakdownStructure/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "code-reviews": "Code Reviews"
       },
@@ -4021,11 +2851,6 @@
       "headings": {},
       "title": "Quality Assurance: Code Reviews: What",
       "src": "book/qualityAssurance/codeReviews/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/qualityAssurance/codeReviews/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4040,13 +2865,12 @@
       "src": "book/qualityAssurance/formalVerification/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/qualityAssurance/formalVerification/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "quality-assurance": "Quality Assurance"
+        "quality-assurance": "Quality Assurance",
+        "introduction": "Introduction",
+        "code-reviews": "Code Reviews",
+        "static-analysis": "Static Analysis",
+        "formal-verification": "Formal Verification"
       },
       "title": "Quality Assurance",
       "src": "book/qualityAssurance/index.md"
@@ -4065,18 +2889,8 @@
     },
     {
       "headings": {},
-      "src": "book/qualityAssurance/introduction/validationVsVerification/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Quality Assurance: Introduction: What",
       "src": "book/qualityAssurance/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/qualityAssurance/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4103,18 +2917,8 @@
     },
     {
       "headings": {},
-      "src": "book/qualityAssurance/staticAnalysis/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Refactoring: How",
       "src": "book/refactoring/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/refactoring/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4137,18 +2941,8 @@
     },
     {
       "headings": {},
-      "src": "book/refactoring/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Refactoring: When",
       "src": "book/refactoring/when/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/refactoring/when/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4164,18 +2958,8 @@
     },
     {
       "headings": {},
-      "src": "book/requirements/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Requirements: Non-Functional Requirements",
       "src": "book/requirements/nonFunctionalRequirements/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/requirements/nonFunctionalRequirements/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4191,28 +2975,13 @@
     },
     {
       "headings": {},
-      "src": "book/requirements/prioritizing/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Requirements: Quality of Requirements",
       "src": "book/requirements/quality/index.md"
     },
     {
       "headings": {},
-      "src": "book/requirements/quality/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Reuse: APIs: Designing APIs",
       "src": "book/reuse/apis/designingAPIs/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/reuse/apis/designingAPIs/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4225,11 +2994,6 @@
       "headings": {},
       "title": "Reuse: APIs: What",
       "src": "book/reuse/apis/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/reuse/apis/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4245,28 +3009,13 @@
     },
     {
       "headings": {},
-      "src": "book/reuse/cloudComputing/services/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Reuse: Cloud Computing: What",
       "src": "book/reuse/cloudComputing/what/index.md"
     },
     {
       "headings": {},
-      "src": "book/reuse/cloudComputing/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Reuse: Frameworks: Frameworks vs Libraries",
       "src": "book/reuse/frameworks/frameworksVsLibraries/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/reuse/frameworks/frameworksVsLibraries/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4281,13 +3030,14 @@
       "src": "book/reuse/frameworks/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/reuse/frameworks/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "reuse": "Reuse"
+        "reuse": "Reuse",
+        "introduction": "Introduction",
+        "apis": "APIs",
+        "libraries": "Libraries",
+        "frameworks": "Frameworks",
+        "platforms": "Platforms",
+        "cloud-computing": "Cloud Computing"
       },
       "title": "Reuse",
       "src": "book/reuse/index.md"
@@ -4306,28 +3056,13 @@
     },
     {
       "headings": {},
-      "src": "book/reuse/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Reuse: Introduction: When",
       "src": "book/reuse/introduction/when/index.md"
     },
     {
       "headings": {},
-      "src": "book/reuse/introduction/when/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Reuse: Libraries: How",
       "src": "book/reuse/libraries/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/reuse/libraries/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4342,11 +3077,6 @@
       "src": "book/reuse/libraries/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/reuse/libraries/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "platforms": "Platforms"
       },
@@ -4357,11 +3087,6 @@
       "headings": {},
       "title": "Reuse: Platforms: What",
       "src": "book/reuse/platforms/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/reuse/platforms/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4398,18 +3123,8 @@
     },
     {
       "headings": {},
-      "src": "book/review/review/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Revision Control: Branching",
       "src": "book/revisionControl/branching/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/revisionControl/branching/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -4418,18 +3133,8 @@
     },
     {
       "headings": {},
-      "src": "book/revisionControl/centralizedFlow/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Revision Control: DRCS vs CRCS",
       "src": "book/revisionControl/drcsVsCrcs/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/revisionControl/drcsVsCrcs/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -4438,18 +3143,8 @@
     },
     {
       "headings": {},
-      "src": "book/revisionControl/featureBranchFlow/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Revision Control: Forking Workflow",
       "src": "book/revisionControl/forkingWorkflow/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/revisionControl/forkingWorkflow/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4472,18 +3167,8 @@
     },
     {
       "headings": {},
-      "src": "book/revisionControl/remoteRepositories/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Revision Control: Repositories",
       "src": "book/revisionControl/repositories/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/revisionControl/repositories/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -4492,18 +3177,8 @@
     },
     {
       "headings": {},
-      "src": "book/revisionControl/savingHistory/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Revision Control: Using History",
       "src": "book/revisionControl/usingHistory/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/revisionControl/usingHistory/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -4511,51 +3186,45 @@
       "src": "book/revisionControl/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/revisionControl/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "software-engineering": "Software Engineering"
+        "software-engineering": "Software Engineering",
+        "introduction": "Introduction"
       },
       "title": "Software Engineering",
       "src": "book/softwareEngineering/index.md"
     },
     {
       "headings": {
-        "software-engineering": "Software Engineering"
+        "introduction": "Introduction"
+      },
+      "title": "Software Engineering: Introduction",
+      "src": "book/softwareEngineering/introduction/index.md"
+    },
+    {
+      "headings": {},
+      "title": "Software Engineering: Introduction: Pros and Cons",
+      "keywords": "Frederick P. Brooks, Mythical Man-Month",
+      "src": "book/softwareEngineering/introduction/prosAndCons/index.md"
+    },
+    {
+      "headings": {
+        "software-engineering": "Software Engineering",
+        "introduction": "Introduction"
       },
       "title": "Software Engineering [Printable]",
       "src": "book/softwareEngineering/print.md"
     },
     {
-      "headings": {},
-      "title": "Software Engineering: Pros and Cons",
-      "keywords": "Frederick P. Brooks, Mythical Man-Month",
-      "src": "book/softwareEngineering/prosAndCons/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/softwareEngineering/prosAndCons/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "prose": "Prose"
+        "feature-lists": "Feature Lists"
       },
-      "title": "Specifying Requirements: Feature List",
+      "title": "Specifying Requirements: Feature Lists",
       "src": "book/specifyingRequirements/featureList/index.md"
     },
     {
       "headings": {},
       "title": "Specifying Requirements: Feature List: What",
       "src": "book/specifyingRequirements/featureList/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/specifyingRequirements/featureList/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4570,13 +3239,14 @@
       "src": "book/specifyingRequirements/glossary/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/specifyingRequirements/glossary/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "specifying-requirements": "Specifying Requirements"
+        "specifying-requirements": "Specifying Requirements",
+        "prose": "Prose",
+        "feature-lists": "Feature Lists",
+        "user-stories": "User Stories",
+        "use-cases": "Use Cases",
+        "glossary": "Glossary",
+        "supplementary-requirements": "Supplementary Requirements"
       },
       "title": "Specifying Requirements",
       "src": "book/specifyingRequirements/index.md"
@@ -4607,11 +3277,6 @@
       "src": "book/specifyingRequirements/prose/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/specifyingRequirements/prose/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "supplementary-requirements": "Supplementary Requirements"
       },
@@ -4625,28 +3290,13 @@
     },
     {
       "headings": {},
-      "src": "book/specifyingRequirements/supplementaryRequirements/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Specifying Requirements: Use Cases: Writing Detailed Use Cases",
       "src": "book/specifyingRequirements/useCases/details/index.md"
     },
     {
       "headings": {},
-      "src": "book/specifyingRequirements/useCases/details/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Specifying Requirements: Use Cases: Identifying Use Cases for a System",
       "src": "book/specifyingRequirements/useCases/identifying/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/specifyingRequirements/useCases/identifying/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4662,28 +3312,13 @@
     },
     {
       "headings": {},
-      "src": "book/specifyingRequirements/useCases/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Specifying Requirements: Use Cases: Putting Use Cases into Good Use",
       "src": "book/specifyingRequirements/useCases/usage/index.md"
     },
     {
       "headings": {},
-      "src": "book/specifyingRequirements/useCases/usage/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Specifying Requirements: User Stories: More Detailed User Stories",
       "src": "book/specifyingRequirements/userStories/details/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/specifyingRequirements/userStories/details/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4699,18 +3334,8 @@
     },
     {
       "headings": {},
-      "src": "book/specifyingRequirements/userStories/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Specifying Requirements: User Stories: Putting User Stories to Good Use",
       "src": "book/specifyingRequirements/userStories/usage/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/specifyingRequirements/userStories/usage/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4733,18 +3358,8 @@
     },
     {
       "headings": {},
-      "src": "book/teamwork/teamStructures/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Test Case Design: Boundary Value Analysis: How",
       "src": "book/testCaseDesign/boundaryValueAnalysis/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/boundaryValueAnalysis/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4760,18 +3375,8 @@
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/boundaryValueAnalysis/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/combiningTestInputs/combinationStrategies/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/combiningTestInputs/combinationStrategies/outcomes.md",
-      "title": ""
+      "title": "Test Case Design: Combining Test Inputs: Test Input Combination Strategies",
+      "src": "book/testCaseDesign/combiningTestInputs/combinationStrategies/index.md"
     },
     {
       "headings": {},
@@ -4780,18 +3385,8 @@
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/combiningTestInputs/heuristicInvalid/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Test Case Design: Combining Test Inputs: Heuristic: Each valid input at least once in a positive test case",
       "src": "book/testCaseDesign/combiningTestInputs/heuristicValid/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/combiningTestInputs/heuristicValid/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4807,28 +3402,13 @@
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/combiningTestInputs/mix/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Test Case Design: Combining Test Inputs: Why",
       "src": "book/testCaseDesign/combiningTestInputs/why/index.md"
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/combiningTestInputs/why/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Test Case Design: Equivalence Partitions: Basic",
       "src": "book/testCaseDesign/equivalencePartitions/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/equivalencePartitions/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4844,22 +3424,18 @@
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/equivalencePartitions/intermediate/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Test Case Design: Equivalence Partitions: What",
       "src": "book/testCaseDesign/equivalencePartitions/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testCaseDesign/equivalencePartitions/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
-        "test-case-design": "Test Case Design"
+        "test-case-design": "Test Case Design",
+        "introduction": "Introduction",
+        "equivalence-partitions": "Equivalence Partitions",
+        "boundary-value-analysis": "Boundary Value Analysis",
+        "combining-test-inputs": "Combining Test Inputs",
+        "more": "More",
+        "recap": "Recap"
       },
       "title": "Test Case Design",
       "src": "book/testCaseDesign/index.md"
@@ -4868,11 +3444,6 @@
       "headings": {},
       "title": "Test Case Design: Introduction: Black Box vs Glass Box",
       "src": "book/testCaseDesign/introduction/blackVsGlass/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/introduction/blackVsGlass/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4888,18 +3459,8 @@
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/introduction/positiveVsNegative/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Test Case Design: Introduction: What",
       "src": "book/testCaseDesign/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4912,11 +3473,6 @@
       "headings": {},
       "title": "Test Case Design: More: Testing Use Cases",
       "src": "book/testCaseDesign/more/testingUseCases/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testCaseDesign/more/testingUseCases/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4937,11 +3493,6 @@
       "src": "book/testCaseDesign/summary/exercises/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testCaseDesign/summary/exercises/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "recap": "Recap"
       },
@@ -4955,18 +3506,8 @@
     },
     {
       "headings": {},
-      "src": "book/testCaseDesign/summary/recap/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing: Dependency Injection: How",
       "src": "book/testing/dependencyInjection/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/dependencyInjection/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -4981,13 +3522,10 @@
       "src": "book/testing/dependencyInjection/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testing/dependencyInjection/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "testing": "Testing",
+        "introduction": "Introduction",
+        "testing-types": "Testing Types",
         "unit-testing": "Unit Testing",
         "integration-testing": "Integration Testing",
         "system-testing": "System Testing",
@@ -4996,7 +3534,11 @@
         "developer-testing": "Developer Testing",
         "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
         "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing"
+        "regression-testing": "Regression Testing",
+        "test-automation": "Test Automation",
+        "test-coverage": "Test Coverage",
+        "dependency-injection": "Dependency Injection",
+        "tdd": "TDD"
       },
       "title": "Testing",
       "src": "book/testing/index.md"
@@ -5015,18 +3557,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/introduction/testability/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing: Introduction: What",
       "src": "book/testing/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5056,11 +3588,6 @@
       "src": "book/testing/tdd/how/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testing/tdd/how/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "tdd": "TDD"
       },
@@ -5071,11 +3598,6 @@
       "headings": {},
       "title": "Testing: TDD: What",
       "src": "book/testing/tdd/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/tdd/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5091,18 +3613,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testAutomation/testingGuis/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing: Test Automation: Automated Testing of Text UIs",
       "src": "book/testing/testAutomation/testingTextUis/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testAutomation/testingTextUis/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5111,18 +3623,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testAutomation/tools/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing: Test Automation: Test Automation Using Test Drivers",
       "src": "book/testing/testAutomation/usingTestDrivers/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testAutomation/usingTestDrivers/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5131,18 +3633,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testAutomation/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing: Test Coverage: How",
       "src": "book/testing/testCoverage/how/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testCoverage/how/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5158,18 +3650,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testCoverage/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing Types: Acceptance Testing: Acceptance vs System Testing",
       "src": "book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5184,11 +3666,6 @@
       "src": "book/testing/testingTypes/acceptanceTesting/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testing/testingTypes/acceptanceTesting/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "alpha-and-beta-testing": "Alpha and Beta Testing"
       },
@@ -5199,11 +3676,6 @@
       "headings": {},
       "title": "Testing Types: Alpha and Beta Testing: What",
       "src": "book/testing/testingTypes/alphaBetaTesting/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/alphaBetaTesting/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5219,18 +3691,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testingTypes/developerTesting/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing Types: Developer Testing: Why",
       "src": "book/testing/testingTypes/developerTesting/why/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/developerTesting/why/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5243,11 +3705,6 @@
       "headings": {},
       "title": "Testing Types: Dogfooding: What",
       "src": "book/testing/testingTypes/dogfooding/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/dogfooding/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5263,18 +3720,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing Types: Exploratory vs Scripted Testing: WWhen",
       "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/when/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/when/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5294,13 +3741,8 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testingTypes/integrationTesting/how/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/integrationTesting/how/outcomes.md",
-      "title": ""
+      "title": "Testing: Testing Types: Integration Testing: How",
+      "src": "book/testing/testingTypes/integrationTesting/how/index.md"
     },
     {
       "headings": {
@@ -5315,11 +3757,6 @@
       "src": "book/testing/testingTypes/integrationTesting/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testing/testingTypes/integrationTesting/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "regression-testing": "Regression Testing"
       },
@@ -5332,11 +3769,6 @@
       "src": "book/testing/testingTypes/regressionTesting/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/testing/testingTypes/regressionTesting/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "system-testing": "System Testing"
       },
@@ -5347,11 +3779,6 @@
       "headings": {},
       "title": "Testing Types: System Testing: What",
       "src": "book/testing/testingTypes/systemTesting/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/testing/testingTypes/systemTesting/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5367,28 +3794,13 @@
     },
     {
       "headings": {},
-      "src": "book/testing/testingTypes/unitTesting/stubs/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "Testing Types: Unit Testing: What",
       "src": "book/testing/testingTypes/unitTesting/what/index.md"
     },
     {
       "headings": {},
-      "src": "book/testing/testingTypes/unitTesting/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Activity Diagrams: Basic Notation: Alternate Paths",
       "src": "book/uml/activityDiagrams/basicNotations/alternatePaths/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5404,18 +3816,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Activity Diagrams: Basic Notation: Parallel Paths",
       "src": "book/uml/activityDiagrams/basicNotations/parallelPaths/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5424,18 +3826,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/activityDiagrams/basicNotations/rakes/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Activity Diagrams: Basic Notation: Swimlanes",
       "src": "book/uml/activityDiagrams/basicNotations/swimlanes/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5459,11 +3851,6 @@
       "src": "book/uml/activityDiagrams/introduction/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/uml/activityDiagrams/introduction/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "abstract-classes": "Abstract Classes"
       },
@@ -5476,11 +3863,6 @@
       "src": "book/uml/classDiagrams/abstractClasses/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/uml/classDiagrams/abstractClasses/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "aggregation": "Aggregation"
       },
@@ -5491,11 +3873,6 @@
       "headings": {},
       "title": "UML: Class Diagrams: Aggregation: What",
       "src": "book/uml/classDiagrams/aggregation/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/aggregation/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5511,18 +3888,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/classDiagrams/associationClasses/what/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Class Diagrams: Associations: Basic",
       "src": "book/uml/classDiagrams/associations/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/associations/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5538,18 +3905,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/classDiagrams/associations/labels/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Class Diagrams: Associations: Multiplicity",
       "src": "book/uml/classDiagrams/associations/multiplicity/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/associations/multiplicity/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5558,18 +3915,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/classDiagrams/associations/navigability/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Class Diagrams: Associations: Roles",
       "src": "book/uml/classDiagrams/associations/roles/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/associations/roles/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5582,11 +3929,6 @@
       "headings": {},
       "title": "UML: Class Diagrams: Associations as Attributes: What",
       "src": "book/uml/classDiagrams/associationsAsAttributes/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/associationsAsAttributes/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5606,11 +3948,6 @@
       "src": "book/uml/classDiagrams/classInheritance/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/uml/classDiagrams/classInheritance/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "class-level-members": "Class Level Members"
       },
@@ -5621,11 +3958,6 @@
       "headings": {},
       "title": "UML: Class Diagrams: Class Level Members: What",
       "src": "book/uml/classDiagrams/classLevelMembers/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/classLevelMembers/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5640,11 +3972,6 @@
       "src": "book/uml/classDiagrams/classes/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/uml/classDiagrams/classes/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "composition": "Composition"
       },
@@ -5655,11 +3982,6 @@
       "headings": {},
       "title": "UML: Class Diagrams: Composition: What",
       "src": "book/uml/classDiagrams/composition/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/composition/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5674,11 +3996,6 @@
       "src": "book/uml/classDiagrams/dependencies/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/uml/classDiagrams/dependencies/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "enumerations": "Enumerations"
       },
@@ -5689,11 +4006,6 @@
       "headings": {},
       "title": "UML: Class Diagrams: Enumerations: What",
       "src": "book/uml/classDiagrams/enumerations/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/enumerations/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5728,11 +4040,6 @@
       "src": "book/uml/classDiagrams/interfaces/what/index.md"
     },
     {
-      "headings": {},
-      "src": "book/uml/classDiagrams/interfaces/what/outcomes.md",
-      "title": ""
-    },
-    {
       "headings": {
         "introduction": "Introduction"
       },
@@ -5743,11 +4050,6 @@
       "headings": {},
       "title": "UML: Class Diagrams: Introduction: What",
       "src": "book/uml/classDiagrams/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/introduction/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5785,18 +4087,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/miscellaneous/objectVsClassDiagrams/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Notes: Constraints",
       "src": "book/uml/notes/constraints/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/notes/constraints/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5812,18 +4104,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/notes/notes/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Object Diagrams: Object Structures",
       "src": "book/uml/objectDiagrams/associations/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/objectDiagrams/associations/what/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5839,18 +4121,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/objectDiagrams/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Object Diagrams: Objects",
       "src": "book/uml/objectDiagrams/objects/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/objectDiagrams/objects/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5886,18 +4158,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/sequenceDiagrams/alternativePaths/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Sequence Diagrams: Basic Notation",
       "src": "book/uml/sequenceDiagrams/basic/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/sequenceDiagrams/basic/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -5913,18 +4175,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/sequenceDiagrams/introduction/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Sequence Diagrams: Loops",
       "src": "book/uml/sequenceDiagrams/loops/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/sequenceDiagrams/loops/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5933,18 +4185,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/sequenceDiagrams/minimalNotation/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Sequence Diagrams: Object Creation",
       "src": "book/uml/sequenceDiagrams/objectCreation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/sequenceDiagrams/objectCreation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5953,18 +4195,8 @@
     },
     {
       "headings": {},
-      "src": "book/uml/sequenceDiagrams/objectDeletion/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Sequence Diagrams: Optional Paths",
       "src": "book/uml/sequenceDiagrams/optionalPaths/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/sequenceDiagrams/optionalPaths/outcomes.md",
-      "title": ""
     },
     {
       "headings": {},
@@ -5973,28 +4205,13 @@
     },
     {
       "headings": {},
-      "src": "book/uml/sequenceDiagrams/parallelPaths/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Sequence Diagrams: Reference Frames",
       "src": "book/uml/sequenceDiagrams/referenceFrames/index.md"
     },
     {
       "headings": {},
-      "src": "book/uml/sequenceDiagrams/referenceFrames/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {},
       "title": "UML: Sequence Diagrams: Self Invocation",
       "src": "book/uml/sequenceDiagrams/selfInvocation/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/sequenceDiagrams/selfInvocation/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -6343,7 +4560,7 @@
         "event-driven-architectural-style": "Event-driven Architectural Style",
         "more": "More"
       },
-      "title": "Text Book Chapter [Printable] : Architecture",
+      "title": "Text Book Chapter [Printable] : Software Architecture",
       "footer": "footer.md",
       "src": "se-book-adapted/chapters/architecture-printable.md"
     },
@@ -6361,7 +4578,7 @@
         "event-driven-architectural-style": "Event-driven Architectural Style",
         "more": "More"
       },
-      "title": "Text Book Chapter : Architecture",
+      "title": "Text Book Chapter : Software Architecture",
       "footer": "footer.md",
       "src": "se-book-adapted/chapters/architecture.md"
     },
@@ -6380,19 +4597,19 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-2": "Basic ",
-        "intermediate-two-2": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-3": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-4": "Basic ",
-        "intermediate-two-4": "Intermediate "
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate"
       },
       "title": "Text Book Chapter [Printable] : Code Quality",
       "footer": "footer.md",
@@ -6403,19 +4620,19 @@
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-2": "Basic ",
-        "intermediate-two-2": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-3": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-4": "Basic ",
-        "intermediate-two-4": "Intermediate "
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate"
       },
       "title": "Text Book Chapter : Code Quality",
       "footer": "footer.md",
@@ -6440,9 +4657,485 @@
       "src": "se-book-adapted/chapters/design.md"
     },
     {
+      "headings": {
+        "design-approaches": "Design Approaches",
+        "multi-level-design": "Multi-Level Design",
+        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
+        "agile-design": "Agile Design"
+      },
+      "title": "Text Book Chapter [Printable] : Design Approaches",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/designApproaches-printable.md"
+    },
+    {
+      "headings": {
+        "design-approaches": "Design Approaches",
+        "multi-level-design": "Multi-Level Design",
+        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
+        "agile-design": "Agile Design"
+      },
+      "title": "Text Book Chapter : Design Approaches",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/designApproaches.md"
+    },
+    {
+      "headings": {
+        "design-fundamentals": "Design Fundamentals",
+        "abstraction": "Abstraction",
+        "coupling": "Coupling",
+        "cohesion": "Cohesion"
+      },
+      "title": "Text Book Chapter [Printable] : Design Fundamentals",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/designFundamentals-printable.md"
+    },
+    {
+      "headings": {
+        "design-fundamentals": "Design Fundamentals",
+        "abstraction": "Abstraction",
+        "coupling": "Coupling",
+        "cohesion": "Cohesion"
+      },
+      "title": "Text Book Chapter : Design Fundamentals",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/designFundamentals.md"
+    },
+    {
+      "headings": {
+        "software-design-patterns": "Software Design Patterns",
+        "introduction": "Introduction",
+        "singleton-pattern": "Singleton Pattern",
+        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
+        "facade-pattern": "Facade Pattern",
+        "command-pattern": "Command Pattern",
+        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
+        "observer-pattern": "Observer Pattern",
+        "more": "More"
+      },
+      "title": "Text Book Chapter [Printable] : Software Design Patterns",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/designPatterns-printable.md"
+    },
+    {
+      "headings": {
+        "software-design-patterns": "Software Design Patterns",
+        "introduction": "Introduction",
+        "singleton-pattern": "Singleton Pattern",
+        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
+        "facade-pattern": "Facade Pattern",
+        "command-pattern": "Command Pattern",
+        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
+        "observer-pattern": "Observer Pattern",
+        "more": "More"
+      },
+      "title": "Text Book Chapter : Software Design Patterns",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/designPatterns.md"
+    },
+    {
+      "headings": {
+        "documentation": "Documentation",
+        "introduction": "Introduction",
+        "guidelines": "Guidelines",
+        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
+        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
+        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
+        "tools": "Tools",
+        "javadoc": "JavaDoc",
+        "markdown": "Markdown",
+        "asciidoc": "AsciiDoc"
+      },
+      "title": "Text Book Chapter [Printable] : Documentation",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/documentation-printable.md"
+    },
+    {
+      "headings": {
+        "documentation": "Documentation",
+        "introduction": "Introduction",
+        "guidelines": "Guidelines",
+        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
+        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
+        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
+        "tools": "Tools",
+        "javadoc": "JavaDoc",
+        "markdown": "Markdown",
+        "asciidoc": "AsciiDoc"
+      },
+      "title": "Text Book Chapter : Documentation",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/documentation.md"
+    },
+    {
+      "headings": {
+        "error-handling": "Error Handling",
+        "introduction": "Introduction",
+        "exceptions": "Exceptions",
+        "assertions": "Assertions",
+        "logging": "Logging",
+        "defensive-programming": "Defensive Programming",
+        "design-by-contract-approach": "Design-by-Contract Approach"
+      },
+      "title": "Text Book Chapter [Printable] : Error Handling",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/errorHandling-printable.md"
+    },
+    {
+      "headings": {
+        "error-handling": "Error Handling",
+        "introduction": "Introduction",
+        "exceptions": "Exceptions",
+        "assertions": "Assertions",
+        "logging": "Logging",
+        "defensive-programming": "Defensive Programming",
+        "design-by-contract-approach": "Design-by-Contract Approach"
+      },
+      "title": "Text Book Chapter : Error Handling",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/errorHandling.md"
+    },
+    {
+      "headings": {
+        "gathering-requirements": "Gathering Requirements",
+        "gathering-requirements-2": "Gathering Requirements"
+      },
+      "title": "Text Book Chapter [Printable] : Gathering Requirements",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/gatheringRequirements-printable.md"
+    },
+    {
+      "headings": {
+        "gathering-requirements": "Gathering Requirements"
+      },
+      "title": "Text Book Chapter : Gathering Requirements",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/gatheringRequirements.md"
+    },
+    {
+      "headings": {
+        "ides": "IDEs",
+        "introduction": "Introduction",
+        "debugging": "Debugging"
+      },
+      "title": "Text Book Chapter [Printable] : IDEs",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/ides-printable.md"
+    },
+    {
+      "headings": {
+        "ides": "IDEs",
+        "introduction": "Introduction",
+        "debugging": "Debugging"
+      },
+      "title": "Text Book Chapter : IDEs",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/ides.md"
+    },
+    {
+      "headings": {
+        "integration": "Integration",
+        "introduction": "Introduction",
+        "approaches": "Approaches",
+        "build-automation": "Build Automation",
+        "approaches-2": "Approaches"
+      },
+      "title": "Text Book Chapter [Printable] : Integration",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/integration-printable.md"
+    },
+    {
+      "headings": {
+        "integration": "Integration",
+        "introduction": "Introduction",
+        "approaches": "Approaches",
+        "build-automation": "Build Automation",
+        "approaches-2": "Approaches"
+      },
+      "title": "Text Book Chapter : Integration",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/integration.md"
+    },
+    {
+      "headings": {
+        "modeling": "Modeling",
+        "introduction": "Introduction",
+        "modeling-structures": "Modeling Structures",
+        "modeling-behaviors": "Modeling Behaviors",
+        "modeling-a-solution": "Modeling a Solution"
+      },
+      "title": "Text Book Chapter [Printable] : Modeling",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/modeling-printable.md"
+    },
+    {
+      "headings": {
+        "modeling": "Modeling",
+        "introduction": "Introduction",
+        "modeling-structures": "Modeling Structures",
+        "modeling-behaviors": "Modeling Behaviors",
+        "modeling-a-solution": "Modeling a Solution"
+      },
+      "title": "Text Book Chapter : Modeling",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/modeling.md"
+    },
+    {
+      "headings": {
+        "oop-concepts": "OOP - Concepts",
+        "introduction": "Introduction",
+        "objects": "Objects",
+        "classes": "Classes",
+        "associations": "Associations",
+        "inheritance": "Inheritance",
+        "polymorphism": "Polymorphism",
+        "more": "More"
+      },
+      "title": "Text Book Chapter [Printable] : OOP - Concepts",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/oopDesign-printable.md"
+    },
+    {
+      "headings": {
+        "oop-concepts": "OOP - Concepts",
+        "introduction": "Introduction",
+        "objects": "Objects",
+        "classes": "Classes",
+        "associations": "Associations",
+        "inheritance": "Inheritance",
+        "polymorphism": "Polymorphism",
+        "more": "More"
+      },
+      "title": "Text Book Chapter : OOP - Concepts",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/oopDesign.md"
+    },
+    {
+      "headings": {
+        "oop-implementation": "OOP - Implementation",
+        "oop-implementation-2": "OOP - Implementation"
+      },
+      "title": "Text Book Chapter [Printable] : OOP - Implementation",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/oopImplementation-printable.md"
+    },
+    {
+      "headings": {
+        "oop-implementation": "OOP - Implementation"
+      },
+      "title": "Text Book Chapter : OOP - Implementation",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/oopImplementation.md"
+    },
+    {
+      "headings": {
+        "quality-assurance": "Quality Assurance",
+        "introduction": "Introduction",
+        "code-reviews": "Code Reviews",
+        "static-analysis": "Static Analysis",
+        "formal-verification": "Formal Verification"
+      },
+      "title": "Text Book Chapter [Printable] : Quality Assurance",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/qualityAssurance-printable.md"
+    },
+    {
+      "headings": {
+        "quality-assurance": "Quality Assurance",
+        "introduction": "Introduction",
+        "code-reviews": "Code Reviews",
+        "static-analysis": "Static Analysis",
+        "formal-verification": "Formal Verification"
+      },
+      "title": "Text Book Chapter : Quality Assurance",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/qualityAssurance.md"
+    },
+    {
+      "headings": {
+        "refactoring": "Refactoring",
+        "refactoring-2": "Refactoring"
+      },
+      "title": "Text Book Chapter [Printable] : Refactoring",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/refactoring-printable.md"
+    },
+    {
+      "headings": {
+        "refactoring": "Refactoring"
+      },
+      "title": "Text Book Chapter : Refactoring",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/refactoring.md"
+    },
+    {
+      "headings": {
+        "requirements": "Requirements",
+        "requirements-2": "Requirements"
+      },
+      "title": "Text Book Chapter [Printable] : Requirements",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/requirements-printable.md"
+    },
+    {
+      "headings": {
+        "requirements": "Requirements"
+      },
+      "title": "Text Book Chapter : Requirements",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/requirements.md"
+    },
+    {
+      "headings": {
+        "reuse": "Reuse",
+        "introduction": "Introduction",
+        "apis": "APIs",
+        "libraries": "Libraries",
+        "frameworks": "Frameworks",
+        "platforms": "Platforms",
+        "cloud-computing": "Cloud Computing"
+      },
+      "title": "Text Book Chapter [Printable] : Reuse",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/reuse-printable.md"
+    },
+    {
+      "headings": {
+        "reuse": "Reuse",
+        "introduction": "Introduction",
+        "apis": "APIs",
+        "libraries": "Libraries",
+        "frameworks": "Frameworks",
+        "platforms": "Platforms",
+        "cloud-computing": "Cloud Computing"
+      },
+      "title": "Text Book Chapter : Reuse",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/reuse.md"
+    },
+    {
+      "headings": {
+        "software-engineering": "Software Engineering",
+        "introduction": "Introduction"
+      },
+      "title": "Text Book Chapter [Printable] : Software Engineering",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/softwareEngineering-printable.md"
+    },
+    {
+      "headings": {
+        "software-engineering": "Software Engineering",
+        "introduction": "Introduction"
+      },
+      "title": "Text Book Chapter : Software Engineering",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/softwareEngineering.md"
+    },
+    {
+      "headings": {
+        "specifying-requirements": "Specifying Requirements",
+        "prose": "Prose",
+        "feature-lists": "Feature Lists",
+        "user-stories": "User Stories",
+        "use-cases": "Use Cases",
+        "glossary": "Glossary",
+        "supplementary-requirements": "Supplementary Requirements"
+      },
+      "title": "Text Book Chapter [Printable] : Specifying Requirements",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/specifyingRequirements-printable.md"
+    },
+    {
+      "headings": {
+        "specifying-requirements": "Specifying Requirements",
+        "prose": "Prose",
+        "feature-lists": "Feature Lists",
+        "user-stories": "User Stories",
+        "use-cases": "Use Cases",
+        "glossary": "Glossary",
+        "supplementary-requirements": "Supplementary Requirements"
+      },
+      "title": "Text Book Chapter : Specifying Requirements",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/specifyingRequirements.md"
+    },
+    {
       "headings": {},
       "title": "Software Architecture: Introduction: What",
       "src": "se-book-adapted/chapters/test.md"
+    },
+    {
+      "headings": {
+        "test-case-design": "Test Case Design",
+        "introduction": "Introduction",
+        "equivalence-partitions": "Equivalence Partitions",
+        "boundary-value-analysis": "Boundary Value Analysis",
+        "combining-test-inputs": "Combining Test Inputs",
+        "more": "More",
+        "recap": "Recap"
+      },
+      "title": "Text Book Chapter [Printable] : Test Case Design",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/testCaseDesign-printable.md"
+    },
+    {
+      "headings": {
+        "test-case-design": "Test Case Design",
+        "introduction": "Introduction",
+        "equivalence-partitions": "Equivalence Partitions",
+        "boundary-value-analysis": "Boundary Value Analysis",
+        "combining-test-inputs": "Combining Test Inputs",
+        "more": "More",
+        "recap": "Recap"
+      },
+      "title": "Text Book Chapter : Test Case Design",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/testCaseDesign.md"
+    },
+    {
+      "headings": {
+        "testing": "Testing",
+        "introduction": "Introduction",
+        "testing-types": "Testing Types",
+        "unit-testing": "Unit Testing",
+        "integration-testing": "Integration Testing",
+        "system-testing": "System Testing",
+        "alpha-and-beta-testing": "Alpha and Beta Testing",
+        "dogfooding": "Dogfooding",
+        "developer-testing": "Developer Testing",
+        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
+        "acceptance-testing": "Acceptance Testing",
+        "regression-testing": "Regression Testing",
+        "test-automation": "Test Automation",
+        "test-coverage": "Test Coverage",
+        "dependency-injection": "Dependency Injection",
+        "tdd": "TDD"
+      },
+      "title": "Text Book Chapter [Printable] : Testing",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/testing-printable.md"
+    },
+    {
+      "headings": {
+        "testing": "Testing",
+        "introduction": "Introduction",
+        "testing-types": "Testing Types",
+        "unit-testing": "Unit Testing",
+        "integration-testing": "Integration Testing",
+        "system-testing": "System Testing",
+        "alpha-and-beta-testing": "Alpha and Beta Testing",
+        "dogfooding": "Dogfooding",
+        "developer-testing": "Developer Testing",
+        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
+        "acceptance-testing": "Acceptance Testing",
+        "regression-testing": "Regression Testing",
+        "test-automation": "Test Automation",
+        "test-coverage": "Test Coverage",
+        "dependency-injection": "Dependency Injection",
+        "tdd": "TDD"
+      },
+      "title": "Text Book Chapter : Testing",
+      "footer": "footer.md",
+      "src": "se-book-adapted/chapters/testing.md"
     },
     {
       "headings": {
@@ -6454,7 +5147,6 @@
         "design": "Design",
         "implementation": "Implementation",
         "quality-assurance": "Quality Assurance",
-        "project-management": "Project Management",
         "tools": "Tools",
         "supplementary": "Supplementary"
       },
@@ -6465,37 +5157,148 @@
     {
       "headings": {
         "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
+        "section-software-engineering": "SECTION: SOFTWARE ENGINEERING",
+        "software-engineering": "Software Engineering",
+        "introduction": "Introduction",
+        "section-object-oriented-programming-with-uml": "SECTION: OBJECT-ORIENTED PROGRAMMING (WITH UML)",
+        "oop-concepts": "OOP - Concepts",
+        "introduction-2": "Introduction",
+        "objects": "Objects",
+        "classes": "Classes",
+        "associations": "Associations",
+        "inheritance": "Inheritance",
+        "polymorphism": "Polymorphism",
+        "more": "More",
+        "oop-implementation": "OOP - Implementation",
+        "oop-implementation-2": "OOP - Implementation",
+        "section-requirements": "SECTION: REQUIREMENTS",
+        "requirements": "Requirements",
+        "requirements-2": "Requirements",
+        "gathering-requirements": "Gathering Requirements",
+        "gathering-requirements-2": "Gathering Requirements",
+        "specifying-requirements": "Specifying Requirements",
+        "prose": "Prose",
+        "feature-lists": "Feature Lists",
+        "user-stories": "User Stories",
+        "use-cases": "Use Cases",
+        "glossary": "Glossary",
+        "supplementary-requirements": "Supplementary Requirements",
         "section-design": "SECTION: DESIGN",
         "software-design": "Software Design",
-        "introduction": "Introduction",
+        "introduction-3": "Introduction",
+        "design-fundamentals": "Design Fundamentals",
+        "abstraction": "Abstraction",
+        "coupling": "Coupling",
+        "cohesion": "Cohesion",
+        "modeling": "Modeling",
+        "introduction-4": "Introduction",
+        "modeling-structures": "Modeling Structures",
+        "modeling-behaviors": "Modeling Behaviors",
+        "modeling-a-solution": "Modeling a Solution",
         "software-architecture": "Software Architecture",
-        "introduction-2": "Introduction",
+        "introduction-5": "Introduction",
         "architecture-diagrams": "Architecture Diagrams",
         "architectural-styles": "Architectural Styles",
-        "introduction-3": "Introduction",
+        "introduction-6": "Introduction",
         "n-tier-architectural-style": "N-tier Architectural Style",
         "client-server-architectural-style": "Client-server Architectural Style",
         "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
         "service-oriented-architectural-style": "Service-oriented Architectural Style",
         "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More",
+        "more-2": "More",
+        "software-design-patterns": "Software Design Patterns",
+        "introduction-7": "Introduction",
+        "singleton-pattern": "Singleton Pattern",
+        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
+        "facade-pattern": "Facade Pattern",
+        "command-pattern": "Command Pattern",
+        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
+        "observer-pattern": "Observer Pattern",
+        "more-3": "More",
+        "design-approaches": "Design Approaches",
+        "multi-level-design": "Multi-Level Design",
+        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
+        "agile-design": "Agile Design",
         "section-implementation": "SECTION: IMPLEMENTATION",
+        "ides": "IDEs",
+        "introduction-8": "Introduction",
+        "debugging": "Debugging",
         "code-quality": "Code Quality",
-        "introduction-4": "Introduction",
+        "introduction-9": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-one": "Basic ",
-        "intermediate-two": "Intermediate ",
-        "advanced-three": "Advanced ",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
-        "basic-one-2": "Basic ",
-        "intermediate-two-2": "Intermediate ",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-one-3": "Basic ",
-        "intermediate-two-3": "Intermediate ",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-one-4": "Basic ",
-        "intermediate-two-4": "Intermediate "
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate",
+        "refactoring": "Refactoring",
+        "refactoring-2": "Refactoring",
+        "documentation": "Documentation",
+        "introduction-10": "Introduction",
+        "guidelines": "Guidelines",
+        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
+        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
+        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
+        "tools": "Tools",
+        "javadoc": "JavaDoc",
+        "markdown": "Markdown",
+        "asciidoc": "AsciiDoc",
+        "error-handling": "Error Handling",
+        "introduction-11": "Introduction",
+        "exceptions": "Exceptions",
+        "assertions": "Assertions",
+        "logging": "Logging",
+        "defensive-programming": "Defensive Programming",
+        "design-by-contract-approach": "Design-by-Contract Approach",
+        "integration": "Integration",
+        "introduction-12": "Introduction",
+        "approaches": "Approaches",
+        "build-automation": "Build Automation",
+        "approaches-2": "Approaches",
+        "reuse": "Reuse",
+        "introduction-13": "Introduction",
+        "apis": "APIs",
+        "libraries": "Libraries",
+        "frameworks": "Frameworks",
+        "platforms": "Platforms",
+        "cloud-computing": "Cloud Computing",
+        "section-quality-assurance": "SECTION: QUALITY ASSURANCE",
+        "quality-assurance": "Quality Assurance",
+        "introduction-14": "Introduction",
+        "code-reviews": "Code Reviews",
+        "static-analysis": "Static Analysis",
+        "formal-verification": "Formal Verification",
+        "testing": "Testing",
+        "introduction-15": "Introduction",
+        "testing-types": "Testing Types",
+        "unit-testing": "Unit Testing",
+        "integration-testing": "Integration Testing",
+        "system-testing": "System Testing",
+        "alpha-and-beta-testing": "Alpha and Beta Testing",
+        "dogfooding": "Dogfooding",
+        "developer-testing": "Developer Testing",
+        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
+        "acceptance-testing": "Acceptance Testing",
+        "regression-testing": "Regression Testing",
+        "test-automation": "Test Automation",
+        "test-coverage": "Test Coverage",
+        "dependency-injection": "Dependency Injection",
+        "tdd": "TDD",
+        "test-case-design": "Test Case Design",
+        "introduction-16": "Introduction",
+        "equivalence-partitions": "Equivalence Partitions",
+        "boundary-value-analysis": "Boundary Value Analysis",
+        "combining-test-inputs": "Combining Test Inputs",
+        "more-4": "More",
+        "recap": "Recap"
       },
       "title": "Software Engineering for Self-Directed Learners [Printable Version for CS2103/T]",
       "footer": "footer.md",
