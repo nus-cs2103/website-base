@@ -19,10 +19,8 @@
       <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
       <li><a href="/website-base/index.html">Schedule</a></li>
       <dropdown text="Textbook">
-        <li><a href="/website-base/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
-        <li><a href="/website-base/book/common/all.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> All as one page</a></li>
-        <li><a href="/website-base/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/se-book-adapted/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
       </dropdown>
       <li><a href="/website-base/admin/index.html">Admin</a></li>
       <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
@@ -65,12 +63,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="introduction">Introduction</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for deliberate test case design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for deliberate test case design</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number
           of test cases.</p>
@@ -187,12 +184,11 @@ Enter side 1:
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Positive vs Negative Test Cases <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain positive and negative test cases <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Positive vs Negative Test Cases" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain positive and negative test cases</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
         <tip-box>
@@ -205,12 +201,11 @@ Enter side 1:
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Black Box vs Glass Box <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain black box and glass box test case design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Black Box vs Glass Box" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain black box and glass box test case design</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
         <ul>
@@ -258,12 +253,11 @@ Enter side 1:
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="equivalence-partitions">Equivalence Partitions</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain equivalence partitions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain equivalence partitions</span></span></span></button>
+      <p></p>
       <div>
         <p>Consider the testing of the following operation.</p>
         <tip-box>
@@ -288,12 +282,11 @@ Enter side 1:
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Basic <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply EP for pure functions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Basic" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply EP for pure functions</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
         <tip-box>
@@ -416,12 +409,11 @@ Enter side 1:
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Intermediate <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply EP for OOP methods <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Intermediate" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply EP for OOP methods</span></span></span></button>
+      <p></p>
       <div>
         <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
         <ul>
@@ -479,12 +471,11 @@ Enter side 1:
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="boundary-value-analysis">Boundary Value Analysis</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain boundary value analysis <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain boundary value analysis</span></span></span></button>
+      <p></p>
       <div>
         <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points
           of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
@@ -516,12 +507,11 @@ Enter side 1:
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply boundary value analysis <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### How" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply boundary value analysis</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such
           as the cost of each test case.</p>
@@ -584,12 +574,11 @@ Enter side 1:
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="combining-test-inputs">Combining Test Inputs</h2></div></span>
-    <panel type="seamless" header="#### Why <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for strategies to combine test inputs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Why" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for strategies to combine test inputs</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>An SUT can take multiple inputs.</strong> You can select values for each input (using equivalence partitioning, boundary value analysis, or some other technique).</p>
         <tip-box>
@@ -636,12 +625,11 @@ Enter side 1:
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Test Input Combination Strategies <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain some basic test input combination strategies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Test Input Combination Strategies" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain some basic test input combination strategies</span></span></span></button>
+      <p></p>
       <div>
         <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
         <tip-box>
@@ -926,12 +914,11 @@ Enter side 1:
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Heuristic: Each Valid Input at Least Once in a Positive Test Case <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply heuristic ‘each valid input at least once in a positive test case’ <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Heuristic: Each Valid Input at Least Once in a Positive Test Case" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply heuristic ‘each valid input at least once in a positive test case’</span></span></span></button>
+      <p></p>
       <div>
         <p>Consider the following scenario.</p>
         <tip-box>
@@ -1084,12 +1071,11 @@ Enter side 1:
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Heuristic: No More Than One Invalid Input In A Test Case <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply heuristic ‘no more than one invalid input in a test case’ <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Heuristic: No More Than One Invalid Input In A Test Case" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply heuristic ‘no more than one invalid input in a test case’</span></span></span></button>
+      <p></p>
       <div>
         <p>Consider the
           <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
@@ -1218,12 +1204,11 @@ Enter side 1:
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Mix <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply multiple test input combination techniques together <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Mix" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply multiple test input combination techniques together</span></span></span></button>
+      <p></p>
       <div>
         <p>Consider the calculateGrade scenario given below:</p>
         <tip-box>
@@ -1607,12 +1592,11 @@ Enter side 1:
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="more">More</h2></div></span>
-    <panel type="seamless" header="#### Testing Based on Use Cases <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test case design for use case based testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Testing Based on Use Cases" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test case design for use case based testing</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do
           not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary
@@ -1647,7 +1631,7 @@ Enter side 1:
             </p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                <h4 id="what">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -1739,30 +1723,28 @@ Enter side 1:
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="recap">Recap</h2></div></span>
-    <panel type="seamless" header="#### Recap <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test case design techniques at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Recap" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test case design techniques at a higher level</span></span></span></button>
+      <p></p>
       <div>
         <p>{todo}</p>
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Exercises <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can combine test case design techniques <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Exercises" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can combine test case design techniques</span></span></span></button>
+      <p></p>
       <div>
         <div>
           <div id="extras">
             <div>
               <panel header=":muscle: Exercises" expandable="">
                 <div>
-                  <panel header=":lock::key: Matric numbers :two:">
+                  <panel header=":lock::key: Matric numbers">
                     <question has-input="true">
                       <p>Assume students are given matriculation number according to the following format:</p>
                       <p>[Faculty Alphabet] [Gender Alphabet] [Serial Number] [Check Alphabet]</p>
@@ -1803,7 +1785,7 @@ Enter side 1:
                   </panel>
                 </div>
                 <div>
-                  <panel header=":lock::key: isValidDate :two:">
+                  <panel header=":lock::key: isValidDate">
                     <question has-input="true">
                       <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the format
                         yyyy/mm/dd.</p>
@@ -1824,7 +1806,7 @@ Enter side 1:
                   </panel>
                 </div>
                 <div>
-                  <panel header=":lock::key: Dispatch resources :two:">
+                  <panel header=":lock::key: Dispatch resources">
                     <question has-input="true">
                       <p>Given below is the overview of the method dispatch(Resource, Task), from an emergency management system (e.g. a system used by those who handle emergency calls from the public about incidents such as fires, possible burglaries, domestic
                         disturbances, etc.). A task might need multiple resources of multiple types. For example, the task ‘fire at Clementi MRT’ might need two fire engines and one ambulance.</p>
@@ -1868,7 +1850,7 @@ Enter side 1:
                   </panel>
                 </div>
                 <div>
-                  <panel header=":lock::key: transferTable :three:">
+                  <panel header=":lock::key: transferTable">
                     <question has-input="true">
                       <p>Given below is an operation description taken from a restaurant booking system. Use equivalence partitions and boundary value analysis technique to design a set of test cases for it.</p>
                       <ul>
@@ -1965,7 +1947,7 @@ Enter side 1:
                   </panel>
                 </div>
                 <div>
-                  <panel header=":lock::key: add(Item) :three:">
+                  <panel header=":lock::key: add(Item)">
                     <question has-input="true">
                       <p>Assume you are testing the add(Item) method specified below.</p>
                       <img src="/website-base/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
@@ -2002,7 +1984,7 @@ Enter side 1:
                   </panel>
                 </div>
                 <div>
-                  <panel header=":lock::key: setWife :three:">
+                  <panel header=":lock::key: setWife">
                     <question has-input="true">
                       <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                       <img src="/website-base/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
@@ -2070,7 +2052,7 @@ Enter side 1:
         <div>
           <panel header=":muscle: Exercises" expandable="">
             <div>
-              <panel header=":lock::key: Matric numbers :two:">
+              <panel header=":lock::key: Matric numbers">
                 <question has-input="true">
                   <p>Assume students are given matriculation number according to the following format:</p>
                   <p>[Faculty Alphabet] [Gender Alphabet] [Serial Number] [Check Alphabet]</p>
@@ -2111,7 +2093,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: isValidDate :two:">
+              <panel header=":lock::key: isValidDate">
                 <question has-input="true">
                   <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the format
                     yyyy/mm/dd.</p>
@@ -2132,7 +2114,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: Dispatch resources :two:">
+              <panel header=":lock::key: Dispatch resources">
                 <question has-input="true">
                   <p>Given below is the overview of the method dispatch(Resource, Task), from an emergency management system (e.g. a system used by those who handle emergency calls from the public about incidents such as fires, possible burglaries, domestic
                     disturbances, etc.). A task might need multiple resources of multiple types. For example, the task ‘fire at Clementi MRT’ might need two fire engines and one ambulance.</p>
@@ -2176,7 +2158,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: transferTable :three:">
+              <panel header=":lock::key: transferTable">
                 <question has-input="true">
                   <p>Given below is an operation description taken from a restaurant booking system. Use equivalence partitions and boundary value analysis technique to design a set of test cases for it.</p>
                   <ul>
@@ -2273,7 +2255,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: add(Item) :three:">
+              <panel header=":lock::key: add(Item)">
                 <question has-input="true">
                   <p>Assume you are testing the add(Item) method specified below.</p>
                   <img src="/website-base/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
@@ -2310,7 +2292,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: setWife :three:">
+              <panel header=":lock::key: setWife">
                 <question has-input="true">
                   <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                   <img src="/website-base/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
@@ -2378,7 +2360,7 @@ Enter side 1:
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Mon, 18 Jun 2018 07:56:49 GMT]</small></div>
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
 </footer>
 </div>
 </body>

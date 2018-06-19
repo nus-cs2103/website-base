@@ -33,7 +33,7 @@
               <div>
                 <panel type="seamless" expanded="">
                   <span slot="header" class="panel-title"><div>
-<h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website-base/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+<h4 id="what">What <a href="/website-base/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
                   </h4>
               </div>
               </span>
@@ -54,7 +54,7 @@
                   </ul>
                 </tip-box>
                 <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
-                <panel header="%%Other details a test case can contain :two:%%" type="seamless">
+                <panel header="%%Other details a test case can contain%%" type="seamless">
                   <p>A more elaborate test case can have other details such as those given below.</p>
                   <ul>
                     <li>A unique identifier : <span class="dimmed">e.g. TC0034-a</span></li>
@@ -76,7 +76,7 @@
                 <tip-box>
                   <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing that failure could be an uninitialized variable.</p>
                 </tip-box>
-                <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
+                <panel header="%%A deeper look at the definition of testing%%" type="seamless">
                   <p>Here is another definition of testing:</p>
                   <blockquote>
                     <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain. <sub>-– source: <a href="https://www.computer.org/web/swebok/v3">Software Engineering Book of Knowledge V3</a></sub></p>
@@ -97,7 +97,7 @@
             <div>
               <panel type="seamless" expanded="">
                 <span slot="header" class="panel-title"><div>
-<h4 id="testability-three">Testability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="testability">Testability</h4></div></span>
                 <div>
                   <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software.
                     The higher the testability, the easier it is to achieve a better quality software.</p>
@@ -120,7 +120,7 @@
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+<h4 id="what-2">What</h4></div></span>
                       <div>
                         <p><strong><em>Unit testing</em> : testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly.</strong></p>
                         <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
@@ -196,7 +196,7 @@
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="stubs-two">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="stubs">Stubs</h4></div></span>
                       <div>
                         <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
                           <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
@@ -290,7 +290,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+<h4 id="what-3">What</h4></div></span>
                       <div>
                         <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components
                           interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
@@ -304,7 +304,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="how">How</h4></div></span>
                       <div>
                         <p><strong>Integration testing is not simply a repetition of the unit test cases but run using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that
                           focus on the interactions between the parts.</p>
@@ -336,7 +336,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-one-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+<h4 id="what-4">What</h4></div></span>
                       <div>
                         <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
                         <p>System testing is typically done by a testing team (also called a QA team).</p>
@@ -373,7 +373,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-three">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="what-5">What</h4></div></span>
                       <div>
                         <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
                         <p><strong><em>Beta testing</em> is performed by a selected subset of target users of the system in their natural work setting.</strong></p>
@@ -392,7 +392,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="what-6">What</h4></div></span>
                       <div>
                         <p><strong><em>Eating your own dog food</em> (aka dogfooding), is a creators of a product use their own product to test the product.</strong></p>
                       </div>
@@ -409,7 +409,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="what-7">What</h4></div></span>
                       <div>
                         <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
                       </div>
@@ -418,7 +418,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="why-two">Why <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="why">Why</h4></div></span>
                       <div>
                         <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
                         <ul>
@@ -449,7 +449,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="what-8">What</h4></div></span>
                       <div>
                         <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
                         <ol>
@@ -486,7 +486,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="when">When</h4></div></span>
                       <div>
                         <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
                         <p><strong>The success of exploratory testing depends on the tester’s prior experience and intuition.</strong> Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing
@@ -519,7 +519,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4></div></span>
+<h4 id="what-9">What</h4></div></span>
                       <div>
                         <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
                         <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful
@@ -530,7 +530,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="acceptance-vs-system-testing-two">Acceptance vs System Testing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="acceptance-vs-system-testing">Acceptance vs System Testing</h4></div></span>
                       <div>
                         <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
                         <p>Some differences between system testing and acceptance testing:</p>
@@ -607,7 +607,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <div>
                     <panel type="seamless" expanded="">
                       <span slot="header" class="panel-title"><div>
-<h4 id="what-one-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website-base/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+<h4 id="what-10">What <a href="/website-base/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
                       </h4>
                   </div>
                   </span>
@@ -632,7 +632,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <div>
             <panel type="seamless" expanded="">
               <span slot="header" class="panel-title"><div>
-<h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website-base/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+<h4 id="what-11">What <a href="/website-base/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
               </h4>
           </div>
           </span>
@@ -660,7 +660,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div>
           <panel type="seamless" expanded="">
             <span slot="header" class="panel-title"><div>
-<h4 id="automated-testing-of-cli-apps-one">Automated Testing of CLI Apps <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website-base/book/testing/testAutomation/testingTextUis/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+<h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps <a href="/website-base/book/testing/testAutomation/testingTextUis/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
             </h4>
         </div>
         </span>
@@ -704,7 +704,7 @@ Invalid command format: add
                   <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                 </li>
               </ul>
-              <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
+              <panel header="%%More on the `>` operator and the `<` operator. <span class='badge'>tangential</span>%%" alt="I/O redirection info" type="seamless">
                 <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
                   For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
                 <pre><code class="hljs sh">java AddressBook &gt; output.txt 
@@ -743,7 +743,7 @@ Invalid command format: add
     <div>
       <panel type="seamless" expanded="">
         <span slot="header" class="panel-title"><div>
-<h4 id="test-automation-using-test-drivers-two">Test Automation Using Test Drivers <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="test-automation-using-test-drivers">Test Automation Using Test Drivers</h4></div></span>
         <div>
           <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
           <tip-box>
@@ -780,7 +780,7 @@ Invalid command format: add
     <div>
       <panel type="seamless" expanded="">
         <span slot="header" class="panel-title"><div>
-<h4 id="test-automation-tools-two">Test Automation Tools <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="test-automation-tools">Test Automation Tools</h4></div></span>
         <div>
           <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
           <tip-box>
@@ -813,7 +813,7 @@ Invalid command format: add
     <div>
       <panel type="seamless" expanded="">
         <span slot="header" class="panel-title"><div>
-<h4 id="automated-testing-of-guis-two">Automated Testing of GUIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="automated-testing-of-guis">Automated Testing of GUIs</h4></div></span>
         <div>
           <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>,
             for the following reasons:</p>
@@ -861,7 +861,7 @@ Invalid command format: add
       <div>
         <panel type="seamless" expanded="">
           <span slot="header" class="panel-title"><div>
-<h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="what-12">What</h4></div></span>
           <div>
             <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
             <p>Here are some examples of different coverage criteria:</p>
@@ -896,7 +896,7 @@ Invalid command format: add
       <div>
         <panel type="seamless" expanded="">
           <span slot="header" class="panel-title"><div>
-<h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="how-2">How</h4></div></span>
           <div>
             <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
             <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
@@ -919,7 +919,7 @@ Invalid command format: add
       <div>
         <panel type="seamless" expanded="">
           <span slot="header" class="panel-title"><div>
-<h4 id="what-three-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="what-13">What</h4></div></span>
           <div>
             <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject
               <trigger trigger="click" for="modal:explainDi-stub">stubs</trigger> to isolate the
@@ -941,7 +941,7 @@ Invalid command format: add
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="stubs-two-2">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                    <h4 id="stubs-2">Stubs</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1063,7 +1063,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <div>
         <panel type="seamless" expanded="">
           <span slot="header" class="panel-title"><div>
-<h4 id="how-three-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="how-3">How</h4></div></span>
           <div>
             <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in
               <trigger trigger="click" for="modal:useDi-stub">[Quality Assurance → Testing → Unit Testing → Stubs]</trigger> where a stub is injected to replace a dependency.</p>
@@ -1083,7 +1083,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="stubs-two-3">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                    <h4 id="stubs-3">Stubs</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1274,7 +1274,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <div>
         <panel type="seamless" expanded="">
           <span slot="header" class="panel-title"><div>
-<h4 id="what-two-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4></div></span>
+<h4 id="what-14">What</h4></div></span>
           <div>
             <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then
               write the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
@@ -1284,7 +1284,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <div>
         <panel type="seamless" expanded="">
           <span slot="header" class="panel-title"><div>
-<h4 id="how-three-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4></div></span>
+<h4 id="how-4">How</h4></div></span>
           <div>
             <p>Note that TDD does not imply writing all the test cases first before writing functional code. Rather, proceed in small steps:</p>
             <ol>

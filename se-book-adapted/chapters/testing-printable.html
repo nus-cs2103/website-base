@@ -25,7 +25,7 @@
   <div>
     <h2 id="introduction">Introduction</h2>
   </div>
-  <h4 id="what-star">What <small><small>⭐️</small></small>
+  <h4 id="what">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <tip-box type="definition">
@@ -44,7 +44,7 @@
       </ul>
     </tip-box>
     <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
-    <panel header="%%Other details a test case can contain :two:%%" type="seamless">
+    <panel header="%%Other details a test case can contain%%" type="seamless">
       <p>A more elaborate test case can have other details such as those given below.</p>
       <ul>
         <li>A unique identifier : <span class="dimmed">e.g. TC0034-a</span></li>
@@ -66,7 +66,7 @@
     <tip-box>
       <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing that failure could be an uninitialized variable.</p>
     </tip-box>
-    <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
+    <panel header="%%A deeper look at the definition of testing%%" type="seamless">
       <p>Here is another definition of testing:</p>
       <blockquote>
         <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain. <sub>-– source: <a href="https://www.computer.org/web/swebok/v3">Software Engineering Book of Knowledge V3</a></sub></p>
@@ -82,7 +82,7 @@
     </panel>
     <p></p>
   </div>
-  <h4 id="testability-star">Testability <small><small>⭐️</small></small>
+  <h4 id="testability">Testability <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher
@@ -94,7 +94,7 @@
   <div>
     <h3 id="unit-testing">Unit Testing</h3>
   </div>
-  <h4 id="what-star-2">What <small><small>⭐️</small></small>
+  <h4 id="what-2">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Unit testing</em> : testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly.</strong></p>
@@ -166,7 +166,7 @@
       <hr>
     </tip-box>
   </div>
-  <h4 id="stubs-star">Stubs <small><small>⭐️</small></small>
+  <h4 id="stubs">Stubs <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
@@ -251,7 +251,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="integration-testing">Integration Testing</h3>
   </div>
-  <h4 id="what-star-3">What <small><small>⭐️</small></small>
+  <h4 id="what-3">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with
@@ -261,7 +261,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         the integration test that is supposed to uncover this discrepancy.</p>
     </tip-box>
   </div>
-  <h4 id="how-star">How <small><small>⭐️</small></small>
+  <h4 id="how">How <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Integration testing is not simply a repetition of the unit test cases but run using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus on the interactions
@@ -285,7 +285,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="system-testing">System Testing</h3>
   </div>
-  <h4 id="what-star-4">What <small><small>⭐️</small></small>
+  <h4 id="what-4">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
@@ -313,7 +313,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="alpha-and-beta-testing">Alpha and Beta Testing</h3>
   </div>
-  <h4 id="what-star-5">What <small><small>⭐️</small></small>
+  <h4 id="what-5">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
@@ -323,7 +323,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="dogfooding">Dogfooding</h3>
   </div>
-  <h4 id="what-star-6">What <small><small>⭐️</small></small>
+  <h4 id="what-6">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Eating your own dog food</em> (aka dogfooding), is a creators of a product use their own product to test the product.</strong></p>
@@ -331,12 +331,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="developer-testing">Developer Testing</h3>
   </div>
-  <h4 id="what-star-7">What <small><small>⭐️</small></small>
+  <h4 id="what-7">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
   </div>
-  <h4 id="why-star">Why <small><small>⭐️</small></small>
+  <h4 id="why">Why <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
@@ -358,7 +358,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="exploratory-vs-scripted-testing">Exploratory vs Scripted Testing</h3>
   </div>
-  <h4 id="what-star-8">What <small><small>⭐️</small></small>
+  <h4 id="what-8">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
@@ -390,7 +390,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </modal>
   </div>
-  <h4 id="when-star">When <small><small>⭐️</small></small>
+  <h4 id="when">When <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
@@ -414,14 +414,14 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="acceptance-testing">Acceptance Testing</h3>
   </div>
-  <h4 id="what-star-9">What <small><small>⭐️</small></small>
+  <h4 id="what-9">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>): test the delivered system to ensure it meets the user requirements.</strong></p>
     <p>Acceptance tests give an assurance to the customer that the system does what it is intended to do. Acceptance test cases are often defined at the beginning of the project, usually based on the use case specification. Successful completion of UAT is
       often a prerequisite to the project sign-off.</p>
   </div>
-  <h4 id="acceptance-vs-system-testing-star">Acceptance vs System Testing <small><small>⭐️</small></small>
+  <h4 id="acceptance-vs-system-testing">Acceptance vs System Testing <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
@@ -489,7 +489,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h3 id="regression-testing">Regression Testing</h3>
   </div>
-  <h4 id="what-star-10">What <small><small>⭐️</small></small>
+  <h4 id="what-10">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
@@ -499,7 +499,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h2 id="test-automation">Test Automation</h2>
   </div>
-  <h4 id="what-star-11">What <small><small>⭐️</small></small>
+  <h4 id="what-11">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <tabs>
@@ -520,7 +520,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </tab>
     </tabs>
   </div>
-  <h4 id="automated-testing-of-cli-apps-star">Automated Testing of CLI Apps <small><small>⭐️</small></small>
+  <h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
@@ -562,7 +562,7 @@ Invalid command format: add
             <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
           </li>
         </ul>
-        <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
+        <panel header="%%More on the `>` operator and the `<` operator. <span class='badge'>tangential</span>%%" alt="I/O redirection info" type="seamless">
           <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators. For
             example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
           <pre><code class="hljs sh">java AddressBook &gt; output.txt 
@@ -596,7 +596,7 @@ Invalid command format: add
       </popover>
     </div>
   </div>
-  <h4 id="test-automation-using-test-drivers-star">Test Automation Using Test Drivers <small><small>⭐️</small></small>
+  <h4 id="test-automation-using-test-drivers">Test Automation Using Test Drivers <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
@@ -629,7 +629,7 @@ Invalid command format: add
 </code></pre>
     </tip-box>
   </div>
-  <h4 id="test-automation-tools-star">Test Automation Tools <small><small>⭐️</small></small>
+  <h4 id="test-automation-tools">Test Automation Tools <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
@@ -658,7 +658,7 @@ Invalid command format: add
     <img src="/book/testing/testAutomation/tools/images/junit.png" height="190">
     <p></p>
   </div>
-  <h4 id="automated-testing-of-guis-star">Automated Testing of GUIs <small><small>⭐️</small></small>
+  <h4 id="automated-testing-of-guis">Automated Testing of GUIs <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>If a software product has a GUI component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>,
@@ -697,7 +697,7 @@ Invalid command format: add
   <div>
     <h2 id="test-coverage">Test Coverage</h2>
   </div>
-  <h4 id="what-star-12">What <small><small>⭐️</small></small>
+  <h4 id="what-12">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
@@ -727,7 +727,7 @@ Invalid command format: add
       <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
     </ul>
   </div>
-  <h4 id="how-star-2">How <small><small>⭐️</small></small>
+  <h4 id="how-2">How <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
@@ -741,7 +741,7 @@ Invalid command format: add
   <div>
     <h2 id="dependency-injection">Dependency Injection</h2>
   </div>
-  <h4 id="what-star-13">What <small><small>⭐️</small></small>
+  <h4 id="what-13">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject
@@ -764,7 +764,7 @@ Invalid command format: add
         </p>
         <div id="title-and-body">
           <div>
-            <h4 id="stubs-two">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            <h4 id="stubs-2">Stubs</h4>
           </div>
           <div id="main">
             <div>
@@ -881,7 +881,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <p>📦 A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer depends on a <code>Bar</code> object. Now we can test the <code>Foo</code>        object in isolation from the <code>Bar</code> object.</p>
       <img src="/book/testing/dependencyInjection/what/images/diagram.png" height="150"></tip-box>
   </div>
-  <h4 id="how-star-3">How <small><small>⭐️</small></small>
+  <h4 id="how-3">How <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in
@@ -902,7 +902,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </p>
         <div id="title-and-body">
           <div>
-            <h4 id="stubs-two-2">Stubs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            <h4 id="stubs-3">Stubs</h4>
           </div>
           <div id="main">
             <div>
@@ -1083,13 +1083,13 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   <div>
     <h2 id="tdd">TDD</h2>
   </div>
-  <h4 id="what-star-14">What <small><small>⭐️</small></small>
+  <h4 id="what-14">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then write
       the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
   </div>
-  <h4 id="how-star-4">How <small><small>⭐️</small></small>
+  <h4 id="how-4">How <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Note that TDD does not imply writing all the test cases first before writing functional code. Rather, proceed in small steps:</p>
@@ -1108,7 +1108,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Mon, 18 Jun 2018 07:56:49 GMT]</small></div>
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
 </footer>
 </div>
 </body>

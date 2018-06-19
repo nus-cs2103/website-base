@@ -19,10 +19,8 @@
       <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
       <li><a href="/website-base/index.html">Schedule</a></li>
       <dropdown text="Textbook">
-        <li><a href="/website-base/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
-        <li><a href="/website-base/book/common/all.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> All as one page</a></li>
-        <li><a href="/website-base/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/se-book-adapted/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
       </dropdown>
       <li><a href="/website-base/admin/index.html">Admin</a></li>
       <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
@@ -65,12 +63,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="introduction">Introduction</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the two types of developer docs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the two types of developer docs</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Developer-to-developer documentation can be in one of two forms:</strong></p>
         <ol>
@@ -142,35 +139,32 @@
     <panel type="seamless" expanded="">
       <span slot="header" class="panel-title"><div>
 <h3 id="guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up</h3></div></span>
-      <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can distinguish between top-down and bottom up documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can distinguish between top-down and bottom up documentation</span></span></span></button>
+        <p></p>
         <div>
           <p><strong>When writing project documents, a top-down breadth-first explanation is easier to understand than a bottom-up one.</strong></p>
         </div>
         <div></div>
       </panel>
-      <panel type="seamless" header="#### Why <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the advantages of top-down documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### Why" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the advantages of top-down documentation</span></span></span></button>
+        <p></p>
         <div>
           <p>The main advantage of the top-down approach is that the document is structured like an upside down tree (root at the top) and <strong>the reader can travel down a path she is interested in until she reaches the component she is interested to learn in-depth</strong>,
             without having to read the entire document or understand the whole system.</p>
         </div>
         <div></div>
       </panel>
-      <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write documentation in a top-down manner <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### How" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write documentation in a top-down manner</span></span></span></button>
+        <p></p>
         <div>
           <tip-box>
             <p>📦 To explain a system called <code>SystemFoo</code> with two sub-systems, <code>FrontEnd</code> and <code>BackEnd</code>, start by describing the system at the highest level of abstraction, and progressively drill down to lower level details.
@@ -205,23 +199,21 @@
     <panel type="seamless" expanded="">
       <span slot="header" class="panel-title"><div>
 <h3 id="guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility</h3></div></span>
-      <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for comprehensibility in documents <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for comprehensibility in documents</span></span></span></button>
+        <p></p>
         <div>
           <p>Technical documents exist to help others understand technical details. Therefore, <strong>it is not enough for the documentation to be accurate and comprehensive, it should also be comprehensible too</strong>.</p>
         </div>
         <div></div>
       </panel>
-      <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write reasonably comprehensible developer documents <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### How" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write reasonably comprehensible developer documents</span></span></span></button>
+        <p></p>
         <div>
           <p>Here are some tips on writing effective documentation.</p>
           <ul>
@@ -262,12 +254,11 @@
     <panel type="seamless" expanded="">
       <span slot="header" class="panel-title"><div>
 <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3></div></span>
-      <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain documentation should be minimal yet sufficient <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain documentation should be minimal yet sufficient</span></span></span></button>
+        <p></p>
         <div>
           <p><strong>Aim for 'just enough' developer documentation.</strong></p>
           <ul>
@@ -277,12 +268,11 @@
         </div>
         <div></div>
       </panel>
-      <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write minimal yet sufficient documentation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### How" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write minimal yet sufficient documentation</span></span></span></button>
+        <p></p>
         <div>
           <p>Anything that is already clear in the code need not be described in words. Instead, <strong>focus on providing higher level information that is not readily visible in the code or comments</strong>.</p>
           <p>Refrain from duplicating chunks or text. When describing several similar algorithms/designs/APIs, etc., do not simply duplicate large chunks of text. Instead, <strong>describe the similarity in one place and emphasize only the differences in other places.</strong>            It is very annoying to see pages and pages of similar text without any indication as to how they differ from each other.</p>
@@ -297,12 +287,11 @@
     <panel type="seamless" expanded="">
       <span slot="header" class="panel-title"><div>
 <h3 id="javadoc">JavaDoc</h3></div></span>
-      <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain JavaDoc <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain JavaDoc</span></span></span></button>
+        <p></p>
         <div>
           <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
           <tip-box>
@@ -342,12 +331,11 @@
         </div>
         <div></div>
       </panel>
-      <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write Javadoc comments <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### How" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write Javadoc comments</span></span></span></button>
+        <p></p>
         <div>
           <p>{to add}</p>
         </div>
@@ -357,23 +345,21 @@
     <panel type="seamless" expanded="">
       <span slot="header" class="panel-title"><div>
 <h3 id="markdown">Markdown</h3></div></span>
-      <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain Markdown <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain Markdown</span></span></span></button>
+        <p></p>
         <div>
           <p>Markdown is a lightweight markup language with plain text formatting syntax.</p>
         </div>
         <div></div>
       </panel>
-      <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write documents in Markdown format <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### How" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can write documents in Markdown format</span></span></span></button>
+        <p></p>
         <div>
           <p>...</p>
         </div>
@@ -383,12 +369,11 @@
     <panel type="seamless" expanded="">
       <span slot="header" class="panel-title"><div>
 <h3 id="asciidoc">AsciiDoc</h3></div></span>
-      <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-        <tip-box>
-          <div>
-            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain AsciiDoc <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-          </div>
-        </tip-box>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain AsciiDoc</span></span></span></button>
+        <p></p>
         <div>
           <p>AsciiDoc is similar to Markdown but has more powerful (but also more complex) syntax.</p>
         </div>
@@ -400,7 +385,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Mon, 18 Jun 2018 07:56:49 GMT]</small></div>
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
 </footer>
 </div>
 </body>

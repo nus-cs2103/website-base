@@ -19,10 +19,8 @@
       <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
       <li><a href="/website-base/index.html">Schedule</a></li>
       <dropdown text="Textbook">
-        <li><a href="/website-base/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
-        <li><a href="/website-base/book/common/all.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> All as one page</a></li>
-        <li><a href="/website-base/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/se-book-adapted/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
       </dropdown>
       <li><a href="/website-base/admin/index.html">Admin</a></li>
       <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
@@ -65,12 +63,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="introduction">Introduction</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain models</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>model</em> is a representation of something else.</strong></p>
         <tip-box>
@@ -93,7 +90,7 @@
             </p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                <h4 id="what">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -135,12 +132,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how models are used <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### How" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how models are used</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>In software development, models are useful in several ways:</strong></p>
         <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
@@ -219,7 +215,7 @@
         </tip-box>
         <tip-box>
 
-          <panel header="Model Driven Development :four:" type="seamless">
+          <panel header="Model Driven Development" type="seamless">
             <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints.</strong> MDD uses models as primary engineering artifacts
               when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation
               from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and maintain the link
@@ -267,12 +263,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### UML Models <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify UML models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### UML Models" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify UML models</span></span></span></button>
+      <p></p>
       <div>
         <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p>
         <tip-box>
@@ -286,12 +281,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="modeling-structures">Modeling Structures</h2></div></span>
-    <panel type="seamless" header="#### OO Structures <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain structure modelling of OO solutions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### OO Structures" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain structure modelling of OO solutions</span></span></span></button>
+      <p></p>
       <div>
         <p>An OO solution is basically a network of objects interacting with each other. Therefore, <strong>it is useful to be able to model how the relevant objects are 'networked' together</strong> inside a software <span class="dimmed"> i.e. how the objects are connect together</span>.</p>
         <tip-box>
@@ -335,12 +329,11 @@
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Class Diagrams (Basics) <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use basic-level class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Class Diagrams (Basics)" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use basic-level class diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
         <p>
@@ -409,12 +402,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Class Diagrams - Intermediate <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate-level class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Class Diagrams - Intermediate" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate-level class diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Compositions and Aggregations are stronger forms of associations while Dependencies are a weaker form of associations. Inheritance is another strong type of association between classes.</strong></p>
         <p>
@@ -430,12 +422,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Class Diagrams - Advanced <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use advanced class diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Class Diagrams - Advanced" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use advanced class diagrams</span></span></span></button>
+      <p></p>
       <div></div>
       <div>
         <div>
@@ -501,12 +492,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Object Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Object Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>An object diagrams shows the object structure (i.e., objects and their associations) at a specific time.</strong></p>
         <div>
@@ -517,18 +507,17 @@
         <p>
           <panel src="/website-base\book\uml\objectDiagrams\objects\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Objects" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Objects"
             minimized="" fragment="title-and-body"></panel>
-          <panel src="/website-base\book\uml\objectDiagrams\associations\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Associations → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Associations"
+          <panel src="/website-base\book\uml\objectDiagrams\associations\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Associations → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Associations"
             minimized="" fragment="title-and-body"></panel>
         </p>
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Object Oriented Domain Models <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object oriented domain models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Object Oriented Domain Models" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object oriented domain models</span></span></span></button>
+      <p></p>
       <div>
         <blockquote>
           <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development. <sub>--<a href="http://www.software-engin.com/">Ian Sommerville, in the book <em>Software Engineering</em></a></sub></p>
@@ -593,12 +582,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Deployment Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain deployment diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Deployment Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain deployment diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>deployment diagram</em> shows a system's physical layout, revealing which pieces of software run on which pieces of hardware.</strong></p>
         <tip-box>
@@ -610,12 +598,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Component Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain component diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Component Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain component diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>component diagram</em> is used to show how a system is divided into components and how they are connected to each other through interfaces.</strong></p>
         <tip-box>
@@ -626,12 +613,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Package Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain package diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Package Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain package diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>package diagram</em> shows packages and their dependencies.</strong> A package is a grouping construct for grouping UML elements (classes, use cases, etc.).</p>
         <tip-box>
@@ -642,12 +628,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Composite Structure Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain composite structure diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Composite Structure Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain composite structure diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>composite structure diagram</em> hierarchically decomposes a class into its internal structure.</strong></p>
         <tip-box>
@@ -663,12 +648,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="modeling-behaviors">Modeling Behaviors</h2></div></span>
-    <panel type="seamless" header="#### Activity Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use activity diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Activity Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use activity diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the
           <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
@@ -730,12 +714,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Sequence Diagrams - Basic <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw basic sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Sequence Diagrams - Basic" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw basic sequence diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Sequence diagrams model interactions between entities for a given scenario.</strong></p>
         <tip-box>
@@ -816,12 +799,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Sequence Diagrams - Intermediate <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw intermediate-level sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Sequence Diagrams - Intermediate" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw intermediate-level sequence diagrams</span></span></span></button>
+      <p></p>
       <div></div>
       <div>
         <div>
@@ -861,12 +843,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Sequence Diagrams - Advanced <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret advanced sequence diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Sequence Diagrams - Advanced" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret advanced sequence diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p>
           <panel src="/website-base\book\uml\sequenceDiagrams\parallelPaths\embed._include_.html" header="UML: Sequence Diagrams: Parallel Paths" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
@@ -874,12 +855,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Use Case Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain use case diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Use Case Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain use case diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
         <tip-box>
@@ -888,12 +868,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Timing Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain timing diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Timing Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain timing diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>timing diagram</em> focus on timing constraints.</strong></p>
         <tip-box>
@@ -905,12 +884,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Interaction Overview Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain interaction overview diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Interaction Overview Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain interaction overview diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>An <em>Interaction overview</em> diagrams is a combination of activity diagrams and sequence diagrams</strong>.</p>
         <tip-box>
@@ -922,12 +900,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Communication Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain communication diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Communication Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain communication diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>Communication diagrams</em> are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions.</strong></p>
         <tip-box>
@@ -939,12 +916,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### State Machine Diagrams <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain state machine diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### State Machine Diagrams" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain state machine diagrams</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>State Machine Diagram</em> models state-dependent behavior.</strong></p>
         <tip-box>
@@ -977,12 +953,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="modeling-a-solution">Modeling a Solution</h2></div></span>
-    <panel type="seamless" header="#### Introduction <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how modelling can be used before implementation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Introduction" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how modelling can be used before implementation</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
         <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
@@ -998,12 +973,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Basic <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use simple class diagrams and sequence diagrams to model an OO solution <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Basic" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use simple class diagrams and sequence diagrams to model an OO solution</span></span></span></button>
+      <p></p>
       <div>
         <p>As mentioned in [
           <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
@@ -1018,7 +992,7 @@
             </p>
             <div id="title-and-body">
               <div>
-                <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                <h4 id="introduction-2">Introduction</h4>
               </div>
               <div id="main">
                 <div>
@@ -1078,12 +1052,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Intermediate <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate class diagram and sequence diagram concepts to model an OO design <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Intermediate" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate class diagram and sequence diagram concepts to model an OO design</span></span></span></button>
+      <p></p>
       <div>
         <p>Continuing with the example in [
           <trigger trigger="click" for="modal:conceptualingIntermediate-basic">Design → Modeling → Modeling a Solution → Basic</trigger>], next let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
@@ -1105,7 +1078,7 @@
             </p>
             <div id="title-and-body">
               <div>
-                <h4 id="basic-two">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                <h4 id="basic">Basic</h4>
               </div>
               <div id="main">
                 <div>
@@ -1122,7 +1095,7 @@
                       </p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="introduction-one-2">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+                          <h4 id="introduction-3">Introduction</h4>
                         </div>
                         <div id="main">
                           <div>
@@ -1257,7 +1230,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Mon, 18 Jun 2018 07:56:49 GMT]</small></div>
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
 </footer>
 </div>
 </body>

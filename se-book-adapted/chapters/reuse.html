@@ -19,10 +19,8 @@
       <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
       <li><a href="/website-base/index.html">Schedule</a></li>
       <dropdown text="Textbook">
-        <li><a href="/website-base/book/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/book/common/outcomes.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> List of all LOs</a></li>
-        <li><a href="/website-base/book/common/all.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> All as one page</a></li>
-        <li><a href="/website-base/book/common/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/se-book-adapted/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
       </dropdown>
       <li><a href="/website-base/admin/index.html">Admin</a></li>
       <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
@@ -65,24 +63,22 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="introduction">Introduction</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain software reuse <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain software reuse</span></span></span></button>
+      <p></p>
       <div>
         <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come
           in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### When <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the costs and benefits of reuse <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### When" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the costs and benefits of reuse</span></span></span></button>
+      <p></p>
       <div>
         <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
         <ul>
@@ -129,12 +125,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="apis">APIs</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain APIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain APIs</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
         <tip-box>
@@ -184,12 +179,11 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Designing APIs <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can design reasonable quality APIs <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Designing APIs" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can design reasonable quality APIs</span></span></span></button>
+      <p></p>
       <div>
         <p>An API should be well-designed (i.e. should cater for the needs of its users) and well-documented.</p>
         <p>When we write software consisting of multiple components, we need to define the API of each component.</p>
@@ -231,12 +225,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="libraries">Libraries</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain libraries <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain libraries</span></span></span></button>
+      <p></p>
       <div>
         <p>A library is a collection of modular code that is general and can be used by other programs.</p>
         <tip-box>
@@ -257,12 +250,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### How <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can make use of a library <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### How" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can make use of a library</span></span></span></button>
+      <p></p>
       <div>
         <p>These are the typical steps required to use a library.</p>
         <ol>
@@ -279,12 +271,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="frameworks">Frameworks</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain frameworks <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain frameworks</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
         <tip-box>
@@ -320,12 +311,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Frameworks vs Libraries <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can differentiate between frameworks and libraries <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Frameworks vs Libraries" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can differentiate between frameworks and libraries</span></span></span></button>
+      <p></p>
       <div>
         <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
         <ul>
@@ -387,12 +377,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="platforms">Platforms</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain platforms <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain platforms</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
           of a software platform is the presence of a runtime environment.</p>
@@ -421,12 +410,11 @@
   <panel type="seamless" expanded="">
     <span slot="header" class="panel-title"><div>
 <h2 id="cloud-computing">Cloud Computing</h2></div></span>
-    <panel type="seamless" header="#### What <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain cloud computing <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### What" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain cloud computing</span></span></span></button>
+      <p></p>
       <div>
         <p><strong>Cloud computing is the delivery of computing as a service over the network</strong>, rather than a product running on a local machine. This means the actual hardware and software is located at a remote location, typically, at a large server
           farm, while users access them over the network. Maintenance of the hardware and software is managed by the cloud provider while users typically pay for only the amount of services they use. This model is similar to the consumption of electricity;
@@ -435,12 +423,11 @@
       </div>
       <div></div>
     </panel>
-    <panel type="seamless" header="#### Iaas, PaaS, and SaaS <small><small>:star:</small></small>" expanded="">
-      <tip-box>
-        <div>
-          <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can distinguish between IaaS, PaaS, and SaaS <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-        </div>
-      </tip-box>
+    <panel type="seamless" header="#### Iaas, PaaS, and SaaS" expanded="">
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can distinguish between IaaS, PaaS, and SaaS</span></span></span></button>
+      <p></p>
       <div>
         <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" height="500"><br></p>
         <p><sub>source:<a href="https://en.wikipedia.org/wiki/Cloud_computing">https://commons.wikimedia.org</a></sub></p>
@@ -487,7 +474,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Mon, 18 Jun 2018 07:56:49 GMT]</small></div>
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
 </footer>
 </div>
 </body>

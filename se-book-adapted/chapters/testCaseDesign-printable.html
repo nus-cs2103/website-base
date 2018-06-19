@@ -25,7 +25,7 @@
   <div>
     <h2 id="introduction">Introduction</h2>
   </div>
-  <h4 id="what-star">What <small><small>⭐️</small></small>
+  <h4 id="what">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of
@@ -63,7 +63,7 @@
         that can help us improve E&amp;E of testing.</p>
     </div>
   </div>
-  <h4 id="positive-vs-negative-test-cases-star">Positive vs Negative Test Cases <small><small>⭐️</small></small>
+  <h4 id="positive-vs-negative-test-cases">Positive vs Negative Test Cases <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
@@ -75,7 +75,7 @@
       </ul>
     </tip-box>
   </div>
-  <h4 id="black-box-vs-glass-box-star">Black Box vs Glass Box <small><small>⭐️</small></small>
+  <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
@@ -121,7 +121,7 @@
   <div>
     <h2 id="equivalence-partitions">Equivalence Partitions</h2>
   </div>
-  <h4 id="what-star-2">What <small><small>⭐️</small></small>
+  <h4 id="what-2">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Consider the testing of the following operation.</p>
@@ -145,7 +145,7 @@
       <li><strong>ensure all partitions are tested.</strong> Missing partitions can result in bugs going unnoticed. This increases the effectiveness of testing by increasing the chance of finding bugs.</li>
     </ul>
   </div>
-  <h4 id="basic-star">Basic <small><small>⭐️</small></small>
+  <h4 id="basic">Basic <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
@@ -230,7 +230,7 @@
       </table>
     </tip-box>
   </div>
-  <h4 id="intermediate-star">Intermediate <small><small>⭐️</small></small>
+  <h4 id="intermediate">Intermediate <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
@@ -286,7 +286,7 @@
   <div>
     <h2 id="boundary-value-analysis">Boundary Value Analysis</h2>
   </div>
-  <h4 id="what-star-3">What <small><small>⭐️</small></small>
+  <h4 id="what-3">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points
@@ -297,7 +297,7 @@
     <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
     <p>Boundary values are sometimes called <em>corner cases</em>.</p>
   </div>
-  <h4 id="how-star">How <small><small>⭐️</small></small>
+  <h4 id="how">How <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the
@@ -358,7 +358,7 @@
   <div>
     <h2 id="combining-test-inputs">Combining Test Inputs</h2>
   </div>
-  <h4 id="why-star">Why <small><small>⭐️</small></small>
+  <h4 id="why">Why <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>An SUT can take multiple inputs.</strong> You can select values for each input (using equivalence partitioning, boundary value analysis, or some other technique).</p>
@@ -404,7 +404,7 @@
     <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective) but
       the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
   </div>
-  <h4 id="test-input-combination-strategies-star">Test Input Combination Strategies <small><small>⭐️</small></small>
+  <h4 id="test-input-combination-strategies">Test Input Combination Strategies <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
@@ -688,7 +688,7 @@
     <p><strong>d) random:</strong> This strategy generates test cases using one of the other strategies and then pick a subset randomly (presumably because the original set of test cases is too big).</p>
     <p><strong>e) other</strong>: There are other strategies that can be used.</p>
   </div>
-  <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case-star">Heuristic: Each Valid Input at Least Once in a Positive Test Case <small><small>⭐️</small></small>
+  <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case">Heuristic: Each Valid Input at Least Once in a Positive Test Case <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Consider the following scenario.</p>
@@ -840,7 +840,7 @@
       </div>
     </tip-box>
   </div>
-  <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case-star">Heuristic: No More Than One Invalid Input In A Test Case <small><small>⭐️</small></small>
+  <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case">Heuristic: No More Than One Invalid Input In A Test Case <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Consider the
@@ -947,7 +947,7 @@
       <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
     </tip-box>
   </div>
-  <h4 id="mix-star">Mix <small><small>⭐️</small></small>
+  <h4 id="mix">Mix <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Consider the calculateGrade scenario given below:</p>
@@ -1306,7 +1306,7 @@
   <div>
     <h2 id="more">More</h2>
   </div>
-  <h4 id="testing-based-on-use-cases-star">Testing Based on Use Cases <small><small>⭐️</small></small>
+  <h4 id="testing-based-on-use-cases">Testing Based on Use Cases <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not
@@ -1342,7 +1342,7 @@
         </p>
         <div id="title-and-body">
           <div>
-            <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            <h4 id="what-4">What</h4>
           </div>
           <div id="main">
             <div>
@@ -1431,12 +1431,12 @@
   <div>
     <h2 id="recap">Recap</h2>
   </div>
-  <h4 id="recap-star">Recap <small><small>⭐️</small></small>
+  <h4 id="recap-2">Recap <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>{todo}</p>
   </div>
-  <h4 id="exercises-star">Exercises <small><small>⭐️</small></small>
+  <h4 id="exercises">Exercises <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <div>
@@ -1444,7 +1444,7 @@
         <div>
           <panel header=":muscle: Exercises" expandable="">
             <div>
-              <panel header=":lock::key: Matric numbers :two:">
+              <panel header=":lock::key: Matric numbers">
                 <question has-input="true">
                   <p>Assume students are given matriculation number according to the following format:</p>
                   <p>[Faculty Alphabet] [Gender Alphabet] [Serial Number] [Check Alphabet]</p>
@@ -1485,7 +1485,7 @@
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: isValidDate :two:">
+              <panel header=":lock::key: isValidDate">
                 <question has-input="true">
                   <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the format
                     yyyy/mm/dd.</p>
@@ -1506,7 +1506,7 @@
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: Dispatch resources :two:">
+              <panel header=":lock::key: Dispatch resources">
                 <question has-input="true">
                   <p>Given below is the overview of the method dispatch(Resource, Task), from an emergency management system (e.g. a system used by those who handle emergency calls from the public about incidents such as fires, possible burglaries, domestic
                     disturbances, etc.). A task might need multiple resources of multiple types. For example, the task ‘fire at Clementi MRT’ might need two fire engines and one ambulance.</p>
@@ -1550,7 +1550,7 @@
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: transferTable :three:">
+              <panel header=":lock::key: transferTable">
                 <question has-input="true">
                   <p>Given below is an operation description taken from a restaurant booking system. Use equivalence partitions and boundary value analysis technique to design a set of test cases for it.</p>
                   <ul>
@@ -1647,7 +1647,7 @@
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: add(Item) :three:">
+              <panel header=":lock::key: add(Item)">
                 <question has-input="true">
                   <p>Assume you are testing the add(Item) method specified below.</p>
                   <img src="/website-base/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
@@ -1684,7 +1684,7 @@
               </panel>
             </div>
             <div>
-              <panel header=":lock::key: setWife :three:">
+              <panel header=":lock::key: setWife">
                 <question has-input="true">
                   <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                   <img src="/website-base/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
@@ -1752,7 +1752,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Mon, 18 Jun 2018 07:56:49 GMT]</small></div>
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
 </footer>
 </div>
 </body>

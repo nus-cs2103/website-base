@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Text Book Chapter : JUnit</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="icon" href="/website-base/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+<div class="website-content">
+  <div>
+    <navbar placement="top" type="inverse">
+      <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+      <li><a href="/website-base/index.html">Schedule</a></li>
+      <dropdown text="Textbook">
+        <li><a href="/website-base/se-book-adapted/index.html" target="_blank"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+      </dropdown>
+      <li><a href="/website-base/admin/index.html">Admin</a></li>
+      <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+      <dropdown text="IVLE">
+        <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+      </dropdown>
+      <dropdown text="Discuss">
+        <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+      </dropdown>
+      <dropdown text="Links">
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+        <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+        <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+      </dropdown>
+      <li slot="right">
+        <form class="navbar-form">
+          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+        </form>
+      </li>
+    </navbar>
+  </div>
+  <p><span class="dimmed"><strong><span></span></strong>
+    </span>
+  </p>
+  <div id="title">
+    <div>
+      <h1 id="junit">JUnit</h1>
+    </div>
+  </div>
+  <panel type="seamless" header="#### JUnit: Basic" expanded="">
+    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use simple JUnit tests</span></span></span></button>
+    <p></p>
+    <div>
+      <div v-closeable="" alt="Junit tutorial video">
+        <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
+        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <panel header=":paperclip: Resources" expanded="">
+          <ul>
+            <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
+            <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
+            <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>              ]</li>
+          </ul>
+        </panel>
+      </div>
+    </div>
+  </panel>
+  <panel type="seamless" header="#### JUnit: Intermediate" expanded="">
+    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate features of JUnit</span></span></span></button>
+    <p></p>
+    <div>
+      <p>Some intermediate JUnit techniques that may be useful:</p>
+      <ul>
+        <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
+        <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by)
+          the test.</li>
+        <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
+        <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
+      </ul>
+    </div>
+    <div></div>
+  </panel>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 11:20:28 GMT]</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website-base'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>
