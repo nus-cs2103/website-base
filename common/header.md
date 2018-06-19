@@ -3,7 +3,7 @@
   <li><a href="{{baseUrl}}/index.html">Schedule</a></li>
   
   <dropdown text="Textbook">
-    <li><a href="{{baseUrl}}/se-book-adapted/index.html" target="_blank">{{glyphicon_th_list}} Table of Contents</a></li>
+    <li><a href="{{baseUrl}}/se-book-adapted/index.html" >{{glyphicon_th_list}} Table of Contents</a></li>
     <li><a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank">{{glyphicon_print}} Printer-Friendly(ish)</a></li>
   </dropdown> 
   
