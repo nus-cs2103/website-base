@@ -1774,4 +1774,22 @@
   ] 
 %}
 
-{% set definitions = ["def-abstractClass"] %}
+{% set definitions = [
+  {letter : "A", defs: ["def-abstraction", "def-actor", "def-architecture"]},
+  {letter : "B", defs: ["def-brainstorming", "def-brooks-law"]},
+  {letter : "C", defs: ["def-client-code", "def-cli", "def-commit", "def-coupling"  ]},
+  {letter : "D", defs: ["def-dependency-inversion-principle", "def-design-pattern", "def-domain-expert", "def-dry-principle", "def-dynamic-binding" ]},
+  {letter : "E", defs: ["def-enterprise-application", "def-exception", "def-equivalence-partition"  ]},
+  {letter : "F", defs: ["def-feature-list", "def-focus-group"]},
+  {letter : "G", defs: ["def-glossary"]},
+  {letter : "I", defs: ["def-interface-segregation-principle"]},
+  {letter : "L", defs: ["def-law-of-demeter", "def-liskov-substitution-principle"]},
+  {letter : "O", defs: ["def-open-closed-principle"  ]},
+  {letter : "P", defs: ["def-pair-programming", "def-prototyping", "def-polymorphism"]},
+  {letter : "R", defs: ["def-rcs", "def-repo"  ]},
+  {letter : "S", defs: ["def-separation-concerns-principle", "def-single-responsibility-principle", "def-se", "def-stage", "def-stakeholder", "def-static-analysis", "def-static-binding", "def-stub", "def-sut"]},
+  {letter : "T", defs: ["def-testing", "def-type-signature"]},
+  {letter : "U", defs: ["def-uml", "def-use-case", "def-user-story", "def-user-story-format"]},
+  {letter : "W", defs: ["def-working-directory"]},
+  {letter : "Y", defs: ["def-yagni-principle"]}
+] %}

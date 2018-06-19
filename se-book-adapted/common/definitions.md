@@ -7,11 +7,18 @@ title: "Definitions"
 
 <div class="website-content">
 
-{% for def in config.definitions %}
+# Definitions
+
+{% for letter in config.definitions %}
+
+## {{ letter.letter }}
+  {% for def in letter.defs %}
   <include src="../../book/common/definitions.md#{{ def }}" />
+  {% endfor %}
 {% endfor %}
 
 </div>
+
 
 
 

@@ -52,8 +52,5 @@ footer: footer.md
 <!-- TODO: add review -->
 * [Combined Exercises](combined/)
 * [List of Definitions](common/definitions.html)
-* [List of References](common/references.html)
-* [List of Learning Outcomes](common/outcomes.html)
-* [Printable Version {{glyphicon_print}}](common/print.html)
 
 </div>
