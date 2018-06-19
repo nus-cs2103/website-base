@@ -1793,3 +1793,9 @@
   {letter : "W", defs: ["def-working-directory"]},
   {letter : "Y", defs: ["def-yagni-principle"]}
 ] %}
+
+{% set combinedExercises = [
+  "chooseCorrectStatementAboutRequirements",
+  "oddStatementOnProjMgtTools",
+  "correctStatementAboutPrinciplesAndPatterns"
+] %}

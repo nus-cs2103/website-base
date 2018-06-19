@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Definitions"
+title: "Combined Exercises"
 </frontmatter>
 {% import "se-book-adapted/config.md" as config with context %}
 
@@ -9,19 +9,12 @@ title: "Definitions"
 
 <div class="website-content">
 
-# Definitions
+## Combined Exercises
 
-{% for letter in config.definitions %}
+Here are some exercises that combine multiple topics.
 
-## {{ letter.letter }}
-  {% for def in letter.defs %}
-  <include src="../../book/common/definitions.md#{{ def }}" />
-  {% endfor %}
+{% for exercise in config.combinedExercises %}
+  <include src="../../book/combined/exercises/{{ exercise }}.md" />
 {% endfor %}
 
 </div>
-
-
-
-
-

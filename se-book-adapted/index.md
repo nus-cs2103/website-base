@@ -49,8 +49,7 @@ footer: footer.md
 
 ### Supplementary
 
-<!-- TODO: add review -->
-* [Combined Exercises](combined/)
+* [Combined Exercises](common/exercises.html)
 * [List of Definitions](common/definitions.html)
 
 </div>
