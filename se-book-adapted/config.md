@@ -1796,6 +1796,8 @@
 
 {% set combinedExercises = [
   "chooseCorrectStatementAboutRequirements",
+  "correctStatementAboutClassObjectSequenceDiagrams",
+  "usefulModelToDescribeWorkflow",
   "oddStatementOnProjMgtTools",
   "correctStatementAboutPrinciplesAndPatterns"
 ] %}
