@@ -1971,24 +1971,6 @@
       "src": "book/intellij/refactoring/index.md"
     },
     {
-      "headings": {
-        "java-code-style": "Java Code Style",
-        "layout": "Layout"
-      },
-      "title": "Java: Code Style",
-      "src": "book/java/style/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Java: Code Style : [Rule] Basic Indentation",
-      "src": "book/java/style/rule-basicIndentation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Java: Code Style : [Rule] Line Length",
-      "src": "book/java/style/rule-lineLength/index.md"
-    },
-    {
       "headings": {},
       "title": "Java: Use Collections",
       "src": "book/javaTools/collections/index.md"
@@ -2303,11 +2285,6 @@
       },
       "title": "Modeling [Printable]",
       "src": "book/modeling/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Review",
-      "src": "book/modeling/review/index.md"
     },
     {
       "headings": {},
