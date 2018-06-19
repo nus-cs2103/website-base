@@ -13,8 +13,8 @@ footer: footer.md
 
 ### About this Book
 
-* [Acknowledgements](about/acknowledgements.html)
-* [How to use this book](about/usage.html)
+* [Acknowledgements]({{baseUrl}}/book/about/acknowledgements.html)
+* [How to use this book]({{baseUrl}}/book/about/usage.html)
 
 
 {% import "se-book-adapted/config.md" as config with context %}
