@@ -37,9 +37,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "basic", heading: "Basic", priority: "1"},
-              {name: "abstraction", heading: "Objects as Abstractions", priority: "1"},
-              {name: "encapsulation", heading: "Encapsulation Of Objects", priority: "1"}
+              {name: "basic", heading: "Basic", priority: "2"},
+              {name: "abstraction", heading: "Objects as Abstractions", priority: "3"},
+              {name: "encapsulation", heading: "Encapsulation Of Objects", priority: "4"}
             ]
           }
         ]

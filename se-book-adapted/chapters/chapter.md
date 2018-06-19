@@ -3,15 +3,15 @@ title: "Text Book Chapter : {{ topic.heading }}"
 footer: footer.md
 {% endmacro %}
 
-{% macro show_priority(level) %}{% set stars = {"1": ":star:", "2": ":star::star:", "3": ":star::star::star:", "4": ":star::star::star::star:"} %}{{stars[level] }}{% endmacro %}
+{% macro show_priority(level) %}{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}{% set empty = "<span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span>" %}{% set stars = {"1": star + empty + empty + empty, "2": star + star + empty + empty, "3": star + star + star + empty, "4": star + star + star + star} %}{{stars[level] }}{% endmacro %}
 
 {% macro show_level_three(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}
-{% set title =  "#### " + topic.heading + " <small><small>" + show_priority(topic.priority) + "</small></small>" %}
+{% set title =  "#### " + topic.heading %}
 <panel type="seamless" header="{{ title }}" expanded>
-  <tip-box>
-    <include src="{{ level_location }}/text.md#outcomes" />
-  </tip-box>
+  <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <md>%%{{ show_priority(topic.priority) |safe }}%%</md></button>
+  <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><md>%%<include src="{{ level_location }}/text.md#outcomes" inline />%%</md></button><p/>
   <include src="{{ level_location }}/text.md#body" />
   <include src="{{ level_location }}/text.md#extras" />
 </panel>
