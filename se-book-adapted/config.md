@@ -350,6 +350,7 @@
             level_three_topics: [
               {name: "ooStructures", heading: "OO Structures", priority: "1"},
               {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "1"},
+              {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "1"},
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "1"},
               {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "1"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "1"},
