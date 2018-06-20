@@ -12,30 +12,49 @@ footer: footer.md
 
 # Full Schedule of Module Activities
 
-<panel header="### {{glyphicon_calendar}} Tutorial Schedule" no-close>
+<panel header="### <small>**{{glyphicon_calendar}} Tutorial Timetable**</small>" no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
-<include src="overview/index.md" name="### :exclamation: For all weeks" dynamic />
+<include src="overview/index.md" name=":exclamation: **Info relevant to all weeks**" dynamic />
 <p/>
 
-<panel type="seamless" src="week1/index.md" dynamic >
-<span slot="header" class="panel-title week-inactive"> Week 1 [Jan 15]</span>
+
+{% set past_weeks = [
+    {num: "1", day:"Jan 15"}
+] %}
+
+{% for week in past_weeks %}
+<panel type="seamless" src="week{{ week.num }}/index.md" dynamic no-close>
+<span slot="header" class="panel-title week-past"> Week {{ week.num }} [{{ week.day }}]</span>
 </panel>
+{% endfor %}
 
 <panel type="seamless" expanded no-close>
-  <span slot="header" class="panel-title week"> Week 2 [Jan 22]</span>
+<span slot="header" class="panel-title week"> Week 2 [Jan 22]</span>
   <include src="week2/index.md"/>
 </panel>
 
-<include src="week3/index.md" name="### Week 3 [Jan 29]" dynamic />
-<include src="week4/index.md" name="### Week 4 [Feb 5]" dynamic />
-<include src="week5/index.md" name="### Week 5 [Feb 12]" dynamic />
-<include src="week6/index.md" name="### Week 6 [Feb 19]" dynamic />
-<include src="week7/index.md" name="### Week 7 [Mar 5]" dynamic />
-<include src="week8/index.md" name="### Week 8 [Mar 12]" dynamic />
-<include src="week9/index.md" name="### Week 9 [Mar 19]" dynamic />
-<include src="week10/index.md" name="### Week 10 [Mar 26]" dynamic />
-<include src="week11/index.md" name="### Week 11 [Apr 2]" dynamic />
-<include src="week12/index.md" name="### Week 12 [Apr 9]" dynamic />
-<include src="week13/index.md" name="### Week 13 [Apr 16]" dynamic />
+{% set future_weeks = [
+    {num: "3", day:"Jan 29"}, 
+    {num:"4", day:"Jan 29"},
+    {num:"5", day: "Feb 12" },
+    {num:"6", day: "Feb 19" },
+    {num:"7", day: "Mar 5" },
+    {num:"8", day: "Mar 12" },
+    {num:"9", day: "Mar 19" },
+    {num:"10", day: "Mar 26" },
+    {num:"11", day: "Apr 2" },
+    {num:"12", day: "Apr 9" },
+    {num:"13", day: "Apr 16" }
+] %}
+
+{% for week in future_weeks %}
+<panel type="seamless" src="week{{ week.num }}/index.md" dynamic no-close>
+<span slot="header" class="panel-title week-future"> Week {{ week.num }} [{{ week.day }}]</span>
+</panel>
+{% endfor %}
+
+
+
+
 </div>

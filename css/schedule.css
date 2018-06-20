@@ -29,11 +29,18 @@
     font-weight: bold;
 }
 
-.week-inactive {
+.week-future {
     background: linear-gradient(to right, #ababab, #ababab ,#ababab ,#ababab , white);
     color: white;
-    font-size: 200%;
+    font-size: 150%;
     width: 90%;
     padding: 5px;
-    font-weight: bold;
+}
+
+.week-past {
+    background: linear-gradient(to right, #c0cbe6, #c0cbe6 ,#c0cbe6 ,#c0cbe6 , white);
+    color: white;
+    font-size: 150%;
+    width: 90%;
+    padding: 5px;
 }

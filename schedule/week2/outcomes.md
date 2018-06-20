@@ -1,3 +1,5 @@
+{% import "schedule/config/macros.md" as macros with context %}
+
 <link rel="stylesheet" href="{{baseUrl}}/css/main.css">
 <link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
 
@@ -28,10 +30,8 @@ To be able answer questions such as these:
 <span class="activity-desc">Implementation:</span>
 <div class="indented">
 
-<panel no-close >
-<span slot="header" class="panel-title"><md>`W2.2` **Can use basic features of an IDE**</md> <span class="label label-danger">{{ glyphicon_star }}&nbsp;</span></span>
-  <include src="outcome-ide.md" />
-</panel>
+{{ macros.show_outcome("W2.2", "Can use basic features of an IDE", "1", "outcome-ide.md") }}
+
 
 <!-- ==================================================================================================== -->
 
@@ -71,21 +71,14 @@ To be able answer questions such as these:
 <p/><span class="activity-desc">Quality Assurance:</span>
 <div class="indented">
 
-<panel no-close >
-<span slot="header" class="panel-title"><md>`W2.5` **Can automate simple regression testing of text UIs**</md> <span class="label label-warning">{{ glyphicon_star }}{{ glyphicon_star }}</span>&nbsp;</span>
 
-  <include src="outcome-testing.md" />
-</panel>
+{{ macros.show_outcome("W2.5", "Can automate simple regression testing of text UIs", "2", "outcome-testing.md") }}
 
 </div>
 <p/><span class="activity-desc">Project Management:</span>
 <div class="indented">
 
-<panel no-close >
-<span slot="header" class="panel-title"><md>`W2.6` **Can use Git to save history**</md> <span class="label label-danger">{{ glyphicon_star }}</span>&nbsp;</span>
-
-  <include src="outcome-git.md" />
-</panel>
+{{ macros.show_outcome("W2.6", "Can use Git to save history", "1", "outcome-git.md") }}
 
 </div>
 </div>
