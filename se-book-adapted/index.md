@@ -11,7 +11,10 @@ footer: footer.md
 
 ## Software Engineering for Self-Directed Learners
 
-### About this Book
+<br/><big>
+
+**About this Book**
+</big>
 
 * [Acknowledgements]({{baseUrl}}/book/about/acknowledgements.html)
 * [How to use this book]({{baseUrl}}/book/about/usage.html)
@@ -35,7 +38,10 @@ footer: footer.md
 
 
 {% macro show_section(section) %}
-### {{ section.heading}}
+<br/><big>
+
+**{{ section.heading}}**
+</big>
 {% for chapter in section.chapters %}
   {{ show_chapter(section, chapter) }}
 {% endfor %}
@@ -46,8 +52,9 @@ footer: footer.md
   {{ show_section(section) }}
 {% endfor %}
 
+<br/><big>
 
-### Supplementary
+**Supplementary**</big>
 
 * [Combined Exercises](common/exercises.html)
 * [List of Definitions](common/definitions.html)

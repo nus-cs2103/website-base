@@ -12,45 +12,13 @@
     ".git/*"
   ],
   "pages": [
-    {
-      "glob": "**/index.md"
-    },
-    {
-      "glob": "**/projectList.md"
-    },
-    {
-      "glob": "**/tutorialSchedule.md"
-    },
-    {
-      "glob": "**/acknowledgements.md"
-    },
-    {
-      "glob": "**/usage.md"
-    },
-    {
-      "glob": "**/print.md"
-    },
-    {
-      "glob": "**/all.md"
-    },
-    {
-      "glob": "**/definitions.md"
-    },
-    {
-      "glob": "**/outcomes.md"
-    },
-    {
-      "glob": "**/references.md"
-    },
-    {
-      "glob": "se-book-adapted/chapters/*.md"
-    },
-    {
-      "glob": "se-book-adapted/common/*.md"
-    },
-    {
-      "glob": "book/combined/exercises.md"
-    }
+    {"glob": "index.md"},
+    {"glob": "schedule/**/index.md"},
+    {"glob": "admin/**/*.md"},
+    {"glob": "se-book-adapted/index.md"},
+    {"glob": "se-book-adapted/chapters/*.md"},
+    {"glob": "se-book-adapted/common/*.md"},
+    {"glob": "book/combined/exercises.md"}
   ],
   "titlePrefix": "CS2103/T Website"
 }
