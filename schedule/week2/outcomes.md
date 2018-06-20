@@ -7,9 +7,12 @@
 
 <div id="main">
 
-### SE Intro:
+<span class="activity-desc">SE Intro:</span>
+<div class="indented">
 
-<panel type="success" header="`W2.1` **Can explain pros and cons of software engineering** :star::star::star::star:" no-close>
+<panel no-close>
+  <span slot="header" class="panel-title"><md>`W2.1` **Can explain pros and cons of software engineering**</md> <span class="label label-success">{{ glyphicon_star }}{{ glyphicon_star }}{{ glyphicon_star }}{{ glyphicon_star }}</span>&nbsp;</span>
+
   <include src="../../book/softwareEngineering/introduction/prosAndCons/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
   
@@ -20,13 +23,21 @@ To be able answer questions such as these:
   </panel>
 </panel>
 
-### Implementation:
+</div>
+<p/>
+<span class="activity-desc">Implementation:</span>
+<div class="indented">
 
-<dynamic-panel type="danger" src="outcome-ide.md" header="`W2.2` **Can use basic features of an IDE** :star:" no-close />
+<panel no-close >
+<span slot="header" class="panel-title"><md>`W2.2` **Can use basic features of an IDE**</md> <span class="label label-danger">{{ glyphicon_star }}&nbsp;</span></span>
+  <include src="outcome-ide.md" />
+</panel>
 
 <!-- ==================================================================================================== -->
 
-<panel type="warning" header="`W2.3` **Can use Java Collections** :star::star:" no-close>
+<panel no-close>
+<span slot="header" class="panel-title"><md>`W2.3` **Can use Java Collections**</md> <span class="label label-warning">{{ glyphicon_star }}{{ glyphicon_star }}</span>&nbsp;</span>
+
   <include src="../../book/javaTools/collections/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
@@ -41,7 +52,9 @@ To be able answer questions such as these:
 
 <!-- ==================================================================================================== -->
 
-<panel type="info" header="`W2.4` **Can use Java varargs feature** :star::star::star:" no-close>
+<panel  no-close>
+<span slot="header" class="panel-title"><md>`W2.4` **Can use Java varargs feature**</md> <span class="label label-info">{{ glyphicon_star }}{{ glyphicon_star }}{{ glyphicon_star }}</span>&nbsp;</span>
+
   <include src="../../book/javaTools/varargs/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
 
@@ -54,13 +67,26 @@ To be able answer questions such as these:
   </panel>
 </panel>
 
-### Quality Assurance:
+</div>
+<p/><span class="activity-desc">Quality Assurance:</span>
+<div class="indented">
 
-<dynamic-panel type="warning" src="outcome-testing.md" header="`W2.5` **Can automate simple regression testing of text UIs** :star::star:" no-close />
+<panel no-close >
+<span slot="header" class="panel-title"><md>`W2.5` **Can automate simple regression testing of text UIs**</md> <span class="label label-warning">{{ glyphicon_star }}{{ glyphicon_star }}</span>&nbsp;</span>
 
-### Project Management:
+  <include src="outcome-testing.md" />
+</panel>
 
-<dynamic-panel type="danger" src="outcome-git.md" header="`W2.6` **Can use Git to save history** :star:" no-close />
+</div>
+<p/><span class="activity-desc">Project Management:</span>
+<div class="indented">
 
+<panel no-close >
+<span slot="header" class="panel-title"><md>`W2.6` **Can use Git to save history**</md> <span class="label label-danger">{{ glyphicon_star }}</span>&nbsp;</span>
+
+  <include src="outcome-git.md" />
+</panel>
+
+</div>
 </div>
 </div>

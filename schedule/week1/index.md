@@ -1,7 +1,3 @@
-<frontmatter>
-title: "Week 1"
-</frontmatter>
-
 <panel header="{{glyphicon_check}} Todo" no-close>
   <include src="todo.md" />
 </panel>

@@ -2,18 +2,30 @@
 title: "Week 2"
 </frontmatter>
 
-<panel header="{{glyphicon_flag}} Outcomes" popup-url="{{baseUrl}}/schedule/week2/outcomes.html" expanded no-close>
+<panel type="seamless" popup-url="{{baseUrl}}/schedule/week2/outcomes.html" expanded no-close>
+  <span slot="header" class="panel-title activity-type">{{glyphicon_flag}} Outcomes</span>
+  <div class="indented">
   <include src="outcomes.md#main" />
+  </div>
 </panel>
 
-<panel header="{{glyphicon_check}} Todo" no-close>
+<panel type="seamless" expanded no-close>
+  <span slot="header" class="panel-title activity-type">{{glyphicon_check}} Todo</span>
+  <div class="indented">
   <include src="todo.md" />
+  </div>
 </panel>
 
-<panel header="{{glyphicon_pencil}} Tutorial 2" no-close>
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title activity-type">{{glyphicon_pencil}} Tutorial</span>
+   <div class="indented">
    <include src="tutorial.md#main" />
+   </div>
 </panel>
 
-<panel header="{{glyphicon_blackboard}} Lecture 2" no-close>
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title activity-type">{{glyphicon_blackboard}} Lecture</span>
+  <div class="indented">
   <include src="lecture.md" />
+  </div>
 </panel>
