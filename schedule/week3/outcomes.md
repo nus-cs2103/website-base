@@ -5,33 +5,33 @@
     name: "Refactoring", 
     outcomes: 
       [
-        {id: "W3.1", heading: "Can refactor code at a basic level", priority: "2", file: "outcome-refactor.md"}
+        {heading: "Can refactor code at a basic level", priority: "2", file: "outcome-refactor.md"}
       ]
   },
   {
     name: "Code Quality", 
     outcomes: 
       [
-        {id: "W3.2", heading: "Can follow a simple style guide", priority: "2", file: "outcome-ide.md"},
-        {id: "W3.3", heading: "Can improve code readability", priority: "2", file: "outcome-readability.md"},
-        {id: "W3.4", heading: "Can use good naming", priority: "2", file: "outcome-naming.md"},
-        {id: "W3.5", heading: "Can avoid unsafe coding practices", priority: "2", file: "outcome-codingPractice.md"},
-        {id: "W3.6", heading: "Can write good code comments", priority: "3", file: "outcome-comment.md"}
+        {heading: "Can follow a simple style guide", priority: "2", file: "outcome-ide.md"},
+        {heading: "Can improve code readability", priority: "2", file: "outcome-readability.md"},
+        {heading: "Can use good naming", priority: "2", file: "outcome-naming.md"},
+        {heading: "Can avoid unsafe coding practices", priority: "2", file: "outcome-codingPractice.md"},
+        {heading: "Can write good code comments", priority: "3", file: "outcome-comment.md"}
       ]
   },
   {
     name: "IDEs", 
     outcomes: 
       [
-        {id: "W3.7", heading: "Can use intermediate level features of an IDE", priority: "3", file: "outcome-ide.md"}
+        {heading: "Can use intermediate level features of an IDE", priority: "3", file: "outcome-ide.md"}
       ]
   },
   {
     name: "Revision Control", 
     outcomes: 
       [
-        {id: "W3.8", heading: "Can communicate with a remote repo", priority: "1", file: "outcome-remoteRepo.md"},
-        {id: "W3.9", heading: "Can traverse Git history", priority: "3", file: "outcome-gitHistory.md"}
+        {heading: "Can communicate with a remote repo", priority: "1", file: "outcome-remoteRepo.md"},
+        {heading: "Can traverse Git history", priority: "3", file: "outcome-gitHistory.md"}
       ]
   },
   {

@@ -24,11 +24,13 @@
 ## Week {{ week_num }} - Outcomes 
 
 <div id="main">
+{% set i = 0 %}
 {% for outcome_group in outcome_groups %}
 <span class="activity-desc">{{ outcome_group.name }}</span>
 <div class="indented">
   {% for outcome in outcome_group.outcomes %}
-  {{ show_outcome(outcome.id, outcome.heading, outcome.priority, outcome.file) }}
+  {% set i = i + 1 %}
+  {{ show_outcome("W" + week_num + "." + i, outcome.heading, outcome.priority, outcome.file) }}
   {% endfor %}
 </div>
 <p/>
