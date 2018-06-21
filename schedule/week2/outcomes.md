@@ -1,14 +1,5 @@
 {% import "common/macros.md" as macros with context %}
 
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
-
-<div class="website-content">
-
-## Week 2 - Outcomes 
-
-<div id="main">
-
 {% set outcome_groups = [
   {
     name: "SE Intro", 
@@ -27,14 +18,14 @@
       ]
   },
   {
-    name: "Quality Assurance", 
+    name: "Testing", 
     outcomes: 
     [
       {id: "W2.5", heading: "Can automate simple regression testing of text UIs", priority: "2", file: "outcome-testing.md"}
     ]
    },
   {
-    name: "Project Management", 
+    name: "Revision Control", 
     outcomes: 
     [
       {id: "W2.6", heading: "Can use Git to save history", priority: "1", file: "outcome-git.md"}
@@ -42,7 +33,6 @@
    }
   ] %}
 
-{{ macros.show_outcome_groups(outcome_groups) }}
+{{ macros.show_outcome_groups("2", outcome_groups) }}
 
-</div>
-</div>
+

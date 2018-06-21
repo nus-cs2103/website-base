@@ -1,14 +1,14 @@
-<panel  header="Admin info to read" expandable expanded>
+{% import "common/macros.md" as macros with context %}
 
-<include type="danger" src="../../admin/project-assessment.md" name="%%Admin »%% Project: Assessment :star:" dynamic />
-<include type="danger" src="../../admin/appendixB-policies.md#policy-followingInstructions" name="%%Admin »%% Policy on following instructions :star:" dynamic />
+<span class="activity-desc">Admin info to read:<span>
+<div class="indented">
 
-<include type="warning" src="../../admin/peer-evaluations.md" name="%%Admin »%% Peer Evaluations :star::star:" dynamic />
-<include type="warning" src="../../admin/gradeBreakdown.md" name="%%Admin »%% Grade Breakdown :star::star:" dynamic />
-<include type="warning" src="../../admin/participation.md" name="%%Admin »%% Participation Marks :star::star:" dynamic />
+{{ macros.show_admin_section_to_read("Project: Assessment", "1", "../../admin/project-assessment.md") }}
+{{ macros.show_admin_section_to_read("Policy on following instructions", "1", "../../admin/appendixB-policies.md#policy-followingInstructions") }}
+{{ macros.show_admin_section_to_read("Peer Evaluations", "2", "../../admin/participation.md") }}
+{{ macros.show_admin_section_to_read("Grade Breakdown", "2", "../../admin/gradeBreakdown.md") }}
+{{ macros.show_admin_section_to_read("Participation Marks", "2", "../../admin/participation.md") }}
+{{ macros.show_admin_section_to_read("Supervision", "3", "../../admin/supervision.md") }}
+{{ macros.show_admin_section_to_read("FAQ: What if I don't carry around a laptop", "4", "../../admin/appendixC-faq.md#admin-faq-noLaptop") }}
 
-<include type="info" src="../../admin/supervision.md" name="%%Admin »%% Supervision :star::star::star:" dynamic />
-
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-noLaptop" name="%%Admin »%% FAQ: What if I don't carry around a laptop :star::star::star::star:" dynamic />
-
-</panel>
+</div>

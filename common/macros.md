@@ -15,7 +15,15 @@
 </panel>
 {% endmacro %}
 
-{% macro show_outcome_groups(outcome_groups) %}
+{% macro show_outcome_groups(week_num, outcome_groups) %}
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
+
+<div class="website-content">
+
+## Week {{ week_num }} - Outcomes 
+
+<div id="main">
 {% for outcome_group in outcome_groups %}
 <span class="activity-desc">{{ outcome_group.name }}</span>
 <div class="indented">
@@ -25,6 +33,8 @@
 </div>
 <p/>
 {% endfor %}
+</div>
+</div>
 {% endmacro %}
 
 
@@ -33,3 +43,35 @@
 <span slot="header" class="panel-title"><md>%%Admin »%% {{ heading }} {{ show_stars(priority) }}</span>
 </panel>
 {% endmacro %}
+
+{% macro show_week_schedule(week_num) %}
+<panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>
+  <span slot="header" class="panel-title activity-type">{{glyphicon_flag}} Outcomes</span>
+  <div class="indented">
+  <include src="outcomes.md#main" />
+  </div>
+</panel>
+
+<panel type="seamless" expanded no-close>
+  <span slot="header" class="panel-title activity-type">{{glyphicon_check}} Todo</span>
+  <div class="indented">
+  <include src="todo.md" />
+  </div>
+</panel>
+
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title activity-type">{{glyphicon_pencil}} Tutorial {{ week_num }}</span>
+   <div class="indented">
+   <include src="tutorial.md" />
+   </div>
+</panel>
+
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title activity-type">{{glyphicon_blackboard}} Lecture {{ week_num }}</span>
+  <div class="indented">
+  <include src="lecture.md" />
+  </div>
+</panel>
+
+{% endmacro %}
+
