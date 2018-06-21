@@ -44,6 +44,15 @@
 </panel>
 {% endmacro %}
 
+{% macro show_admin_sections_to_read(admin_sections) %}
+<span class="activity-desc">Admin info to read:<span>
+<div class="indented">
+{% for admin_section in admin_sections %}
+{{ show_admin_section_to_read(admin_section.heading, admin_section.priority, "../../admin/" + admin_section.source) }}
+{% endfor %}
+</div>
+{% endmacro %}
+
 {% macro show_week_schedule(week_num) %}
 <panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>
   <span slot="header" class="panel-title activity-type">{{glyphicon_flag}} Outcomes</span>

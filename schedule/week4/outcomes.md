@@ -1,31 +1,31 @@
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
+{% import "common/macros.md" as macros with context %}
 
-<div class="website-content">
+{% set outcome_groups = [
+  {
+    name: "Design", 
+    outcomes: 
+      [
+        {id: "W4.1", heading: "Can explain models", priority: "3", file: "outcome-model.md"},
+        {id: "W4.2", heading: "Can explain OOP", priority: "1", file: "outcome-oop.md"},
+        {id: "W4.3", heading: "Can explain basic object/class structures", priority: "1", file: "outcome-classStructure.md"}
+      ]
+  },
+  {
+    name: "Implementation", 
+    outcomes: 
+      [
+        {id: "W4.4", heading: "Can implement classes", priority: "1", file: "outcome-implementClassStructures.md"},
+        {id: "W4.5", heading: "Can do exception handling in code", priority: "2", file: "outcome-exceptionHandling.md"},
+        {id: "W4.6", heading: "Can use Java enumerations", priority: "3", file: "outcome-enumeration.md"}
+      ]
+  },
+  {
+    name: "Project Management", 
+    outcomes: 
+      [
+        {id: "W4.7", heading: "Can create PRs on GitHub", priority: "1", file: "outcome-pr.md"}
+      ]
+  }
+  ] %}
 
-## Week 4 - Outcomes
-
-<div id="main">
-
-### Design:
-
-<dynamic-panel type="info" src="outcome-model.md" header="**`W4.1` Can explain models** :star::star::star:" no-close />
-
-<dynamic-panel type="danger" src="outcome-oop.md" header="**`W4.2` Can explain OOP** :star:" no-close />
-
-<dynamic-panel type="danger" src="outcome-classStructure.md" header="**`W4.3` Can explain basic object/class structures** :star:" no-close />
-
-### Implementation:
-
-<dynamic-panel type="danger" src="outcome-implementClassStructures.md" header="**`W4.4` Can implement classes** :star:" no-close />
-
-<dynamic-panel type="warning" src="outcome-exceptionHandling.md" header="**`W4.5` Can do exception handling in code** :star::star:" no-close />
-
-<dynamic-panel type="info" src="outcome-enumeration.md" header="**`W4.6` Can use Java enumerations** :star::star::star:" no-close />
-
-### Project Management:
-
-<dynamic-panel type="danger" src="outcome-pr.md" header="**`W4.7` Can create PRs on GitHub** :star:" no-close />
-
-</div>
-</div>
+{{ macros.show_outcome_groups("4", outcome_groups) }}
