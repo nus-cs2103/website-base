@@ -15,6 +15,7 @@
     {"glob": "index.md"},
     {"glob": "schedule/**/index.md"},
     {"glob": "admin/**/*.md"},
+    {"glob": "schedule/**/outcomes.md"},
     {"glob": "se-book-adapted/index.md"},
     {"glob": "se-book-adapted/chapters/*.md"},
     {"glob": "se-book-adapted/common/*.md"},

@@ -1,6 +1,12 @@
-{% macro show_priority(level) %}
+{% macro priority_style(level) %}
 {% set label_style = {"1": "danger", "2": "warning", "3": "info", "4": "success"} %}
-{% set label_open = "<span class='label label-" + label_style[level] + "'>" %}
+{{ label_style[level] }}
+{% endmacro %}
+
+{% macro show_priority_style(level) %}{{ priority_style(level) | trim }}{% endmacro %}
+
+{% macro show_priority(level) %}
+{% set label_open = "<span class='label label-" + show_priority_style(level) + "'>" %}
 {% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}
 {% set label_close = "&nbsp;</span>" %}
 {% set stars = {"1": label_open + star + label_close, "2": label_open + star + star + label_close, "3": label_open + star + star + star + label_close, "4": label_open + star + star + star + star + label_close} %}{{stars[level] }}
