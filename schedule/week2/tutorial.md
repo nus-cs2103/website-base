@@ -1,3 +1,5 @@
+{% import "common/macros.md" as macros with context %}
+
 <link rel="stylesheet" href="{{baseUrl}}/css/main.css">
 <link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
 
@@ -17,7 +19,7 @@
 
 <big>****Show evidence of weekly learning outcomes****</big>
 
-* Starting with learning outcomes at :star: level, share/discuss/demo evidence of (as directed by the tutor) weekly learning outcomes.
+* Starting with learning outcomes at {{ macros.show_stars("1") }} level, share/discuss/demo evidence of (as directed by the tutor) weekly learning outcomes.
 
 
 </div>
