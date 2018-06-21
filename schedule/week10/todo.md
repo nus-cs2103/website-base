@@ -1,5 +1,7 @@
-<panel  header="Admin info to read" expandable expanded>
+{% import "common/macros.md" as macros with context %}
 
-<include type="danger" src="../../admin/project-v13.md" name="%%Admin »%% Project: v1.3 :star:" dynamic />
+{% set admin_sections = [
+  {heading: "Project: v1.3", priority: "1", source: "project-v13.md"}
+]%}
 
-</panel>
+{{ macros.show_admin_sections_to_read(admin_sections) }}

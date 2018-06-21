@@ -1,9 +1,10 @@
-<panel  header="Admin info to read" expandable expanded>
+{% import "common/macros.md" as macros with context %}
 
-<include type="danger" src="../../admin/project-v11.md" name="%%Admin »%% Project: v1.1 :star:" dynamic />
+{% set admin_sections = [
+  {heading: "Project: v1.1", priority: "1", source: "project-v11.md"},
+  {heading: "FAQ: Why aren't we allowed to build a new product from scratch?", priority: "4", source: "appendixC-faq.md#admin-faq-fromScratch"},
+  {heading: "FAQ: Why so many submissions?", priority: "4", source: "appendixC-faq.md#admin-faq-manySubmissions"},
+  {heading: "FAQ: Why submission requirements differ between CS2103T and CS2101?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2101Differences"}
+]%}
 
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-fromScratch" name="%%Admin »%% FAQ: Why aren't we allowed to build a new product from scratch? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-manySubmissions" name="%%Admin »%% FAQ: Why so many submissions? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-cs2101Differences" name="%%Admin »%% FAQ: Why submission requirements differ between CS2103T and CS2101? :star::star::star::star:" dynamic />
-
-</panel>
+{{ macros.show_admin_sections_to_read(admin_sections) }}

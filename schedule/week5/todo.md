@@ -1,10 +1,10 @@
-<panel  header="Admin info to read" expandable expanded>
+{% import "common/macros.md" as macros with context %}
 
-<include type="warning" src="../../admin/appendixB-policies.md#policy-workDistribution" name="%%Admin »%% Policy on project work distribution :star::star:" dynamic />
+{% set admin_sections = [
+  {heading: "Policy on project work distribution", priority: "2", source: "appendixB-policies.md#policy-workDistribution"},
+  {heading: "Policy on email response time", priority: "3", source: "appendixB-policies.md#policy-responseTime"},
+  {heading: "Policy on grading smaller/larger teams", priority: "4", source: "appendixB-policies.md#policy-teamSize"},
+  {heading: "FAQ: Why so much bean counting?", priority: "4", source: "appendixC-faq.md#admin-faq-beanCounting"}
+]%}
 
-<include type="info" src="../../admin/appendixB-policies.md#policy-responseTime" name="%%Admin »%% Policy on email response time :star::star::star:" dynamic />
-
-<include type="success" src="../../admin/appendixB-policies.md#policy-teamSize" name="%%Admin »%% Policy on grading smaller/larger teams :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-beanCounting" name="%%Admin »%% FAQ: Why so much bean counting? :star::star::star::star:" dynamic />
-
-</panel>
+{{ macros.show_admin_sections_to_read(admin_sections) }}
