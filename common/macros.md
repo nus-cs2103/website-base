@@ -19,9 +19,11 @@
 
 
 {% macro show_evidence(chapter, unit_location, file) %}
-<panel header="{{glyphicon_folder_close}} Evidence" expanded>
-  <include src="../evidence/{{ chapter }}.md#{{ unit_location | replace("/", "_")}}" />
-</panel>
+{{ dashed_line | safe}}
+{{glyphicon_folder_close}} Evidence:
+
+<include src="../evidence/{{ chapter }}.md#{{ unit_location | replace("/", "_")}}" />
+
 {% endmacro %}
 
 

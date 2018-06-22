@@ -14,5 +14,7 @@
 
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
 
+<span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
+
 <span id="icon_example">{{glyphicon_gift | safe}}</span>
 <span id="icon_prereq">{{glyphicon_education | safe}}</span>
