@@ -13,97 +13,251 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-<div class="website-content">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-      <li><a href="/website-base/index.html">Schedule</a></li>
-      <dropdown text="Textbook">
-        <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
-      </dropdown>
-      <li><a href="/website-base/admin/index.html">Admin</a></li>
-      <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-      <dropdown text="IVLE">
-        <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
-      </dropdown>
-      <dropdown text="Discuss">
-        <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-      </dropdown>
-      <dropdown text="Links">
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-        <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-        <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
-      </dropdown>
-      <li slot="right">
-        <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
-        </form>
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px">
+        <p><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></p>
       </li>
-    </navbar>
+      <li style="margin-top:10px">
+        <p><strong>Software Engineering</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Object-Oriented Programming (with UML)</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/oopDesign.html">OOP - Concepts</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/oopImplementation.html">OOP - Implementation</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Requirements</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Design</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Implementation</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Quality Assurance</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Project Management</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Tools</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Principles</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/principles.html">Principles</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div></div>
   </div>
-  <p><span class="dimmed"><strong><span></span></strong>
-    </span>
-  </p>
-  <div id="title">
-    <div>
-      <h1 id="refactoring">Refactoring</h1>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
     </div>
   </div>
-  <panel type="seamless" header="#### What" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain refactoring</span></span></span></button>
-    <p></p>
-    <div>
-      <p>The first version of the code you write may not be of production quality. It is OK to first concentrate on making the code work, rather than worry over the quality of the code, as long as you improve the quality later. This process of <strong>improving a program's internal structure in small steps without modifying its external behavior is called <em>refactoring</em>.</strong></p>
-      <ul>
-        <li><strong>Refactoring is not rewriting</strong>: Discarding poorly-written code entirely and re-writing it from scratch is not refactoring because refactoring needs to be done in small steps.</li>
-        <li><strong>Refactoring is not bug fixing</strong>: By definition, refactoring is different from bug fixing or any other modifications that alter the external behavior (e.g. adding a feature) of the component in concern.</li>
-      </ul>
-      <tip-box>
-        <p>💡 Improving code structure can have many secondary benefits: e.g.</p>
-        <ul>
-          <li>hidden bugs become easier to spot</li>
-          <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li>
-        </ul>
-      </tip-box>
-      <p>Given below are two common refactorings (
-        <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-      <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
+  <div id="page-content">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+    <div class="website-content">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+          <li><a href="/website-base/index.html">Schedule</a></li>
+          <dropdown text="Textbook">
+            <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+            <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+          </dropdown>
+          <li><a href="/website-base/admin/index.html">Admin</a></li>
+          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+          <dropdown text="IVLE">
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+          </dropdown>
+          <dropdown text="Discuss">
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          </dropdown>
+          <dropdown text="Links">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+          </dropdown>
+          <li slot="right">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <p><span class="dimmed"><strong><span></span></strong>
+        </span>
+      </p>
+      <div id="title">
         <div>
-          <ul>
-            <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring:
-              <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
-            <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
-          </ul>
+          <h1 id="refactoring">Refactoring</h1>
         </div>
-      </modal>
-      <tip-box>
-        <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
-        <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
-        <p>Method: Move it outside of the expression.</p>
-        <p>📦 Example:</p>
-        <tabs>
-        
-          <tab header="Java">
+      </div>
+      <panel type="seamless" header="#### What" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain refactoring</span></span></span></button>
+        <p></p>
+        <div>
+          <p>The first version of the code you write may not be of production quality. It is OK to first concentrate on making the code work, rather than worry over the quality of the code, as long as you improve the quality later. This process of <strong>improving a program's internal structure in small steps without modifying its external behavior is called <em>refactoring</em>.</strong></p>
+          <ul>
+            <li><strong>Refactoring is not rewriting</strong>: Discarding poorly-written code entirely and re-writing it from scratch is not refactoring because refactoring needs to be done in small steps.</li>
+            <li><strong>Refactoring is not bug fixing</strong>: By definition, refactoring is different from bug fixing or any other modifications that alter the external behavior (e.g. adding a feature) of the component in concern.</li>
+          </ul>
+          <tip-box>
+            <p>💡 Improving code structure can have many secondary benefits: e.g.</p>
+            <ul>
+              <li>hidden bugs become easier to spot</li>
+              <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li>
+            </ul>
+          </tip-box>
+          <p>Given below are two common refactorings (
+            <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
+          <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
             <div>
-              <table>
-                <tr>
-                
-                  <td valign="top">
-                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+              <ul>
+                <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on
+                  refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+                <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
+              </ul>
+            </div>
+          </modal>
+          <tip-box>
+            <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
+            <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
+            <p>Method: Move it outside of the expression.</p>
+            <p>📦 Example:</p>
+            <tabs>
+            
+              <tab header="Java">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
     total = price * <span class="hljs-number">0.95</span>;
     send();
 } <span class="hljs-keyword">else</span> {
@@ -111,13 +265,13 @@
     send();
 }
 </code></pre>
-                    <p></p>
-                  </td>
-                
-                  <td valign="center"> → </td>
-                
-                  <td valign="top">
-                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+                        <p></p>
+                      </td>
+                    
+                      <td valign="center"> → </td>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
     total = price * <span class="hljs-number">0.95</span>;
 } <span class="hljs-keyword">else</span> {
     total = price * <span class="hljs-number">0.98</span>;
@@ -125,58 +279,58 @@
 send();
 
 </code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </tab>
-        
-          <tab header="Python">
-            <div>
-              <table>
-                <tr>
-                
-                  <td valign="top">
-                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            
+              <tab header="Python">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
     send()
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     send()
 </code></pre>
-                    <p></p>
-                  </td>
-                
-                  <td valign="center"> → </td>
-                
-                  <td valign="top">
-                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                        <p></p>
+                      </td>
+                    
+                      <td valign="center"> → </td>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     
 send()
 </code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </tab>
-        </tabs>
-        <hr>
-      </tip-box>
-      <tip-box>
-        <p>Refactoring Name: <strong>Extract Method</strong></p>
-        <p>Situation: You have a code fragment that can be grouped together.</p>
-        <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
-        <p>📦 Example:</p>
-        <tabs>
-        
-          <tab header="Java">
-            <div>
-              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            </tabs>
+            <hr>
+          </tip-box>
+          <tip-box>
+            <p>Refactoring Name: <strong>Extract Method</strong></p>
+            <p>Situation: You have a code fragment that can be grouped together.</p>
+            <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
+            <p>📦 Example:</p>
+            <tabs>
+            
+              <tab header="Java">
+                <div>
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
     <span class="hljs-comment">//print details</span>
@@ -184,8 +338,8 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
 </code></pre>
-              <p>⤵️</p>
-              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                  <p>⤵️</p>
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
     printDetails(getOutstanding());
 }
@@ -195,20 +349,20 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
 }
 </code></pre>
-            </div>
-          </tab>
-        
-          <tab header="Python">
-            <div>
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                </div>
+              </tab>
+            
+              <tab header="Python">
+                <div>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
 
     //<span class="hljs-keyword">print</span> details
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + get_outstanding())
 </code></pre>
-              <p>⤵️</p>
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                  <p>⤵️</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
     print_details(get_outstanding())
 
@@ -216,139 +370,141 @@ send()
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + amount)
 </code></pre>
-            </div>
-          </tab>
-        </tabs>
-        <hr>
-      </tip-box>
-      <tip-box>
-        <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
-      </tip-box>
-      <tip-box type="important">
-        <p>Important: Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.</p>
-      </tip-box>
-    </div>
-    <div>
-      <div>
-        <panel header=":muscle: Exercises" expandable="">
-          <div>
-            <panel header=":lock::key: Results of Refactoring">
-              <question>
-                <p>Choose the correct statements</p>
-                <ul class="task-list">
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Refactoring can improve understandability</li>
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Refactoring can uncover bugs</li>
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
-                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
-                </ul>
-                <div slot="answer">
-                  <p>a, b, c, d</p>
-                  <p>Explanation:</p>
-                  <ul>
-                    <li>(a, b, c) Although the primary aim of refactoring is to improve internal code structure, there are other secondary benefits.</li>
-                    <li>(d) Some refactorings result in adding/removing methods/classes.</li>
-                  </ul>
                 </div>
-              </question>
-            </panel>
-          </div>
-          <div>
-            <panel header=":lock::key: Do you agree with the following statement? Refactoring and regression testing">
-              <question has-input="true">
-                <p>Do you agree with the following statement? Justify your answer.</p>
-                <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
-                <div slot="hint">
-                  <p>There are two flaws in the given statement.</p>
-                </div>
-                <div slot="answer">
-                  <p>DISAGREE.</p>
-                  <ol>
-                    <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
-                    <li>Fixing bugs is technically not refactoring.</li>
-                  </ol>
-                </div>
-              </question>
-            </panel>
-          </div>
-          <div>
-            <panel header=":lock: Explain Refactoring">
-              <question has-input="">
-                <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
-              </question>
-            </panel>
-          </div>
-        </panel>
-      </div>
-    </div>
-  </panel>
-  <panel type="seamless" header="#### How" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply some basic refactoring</span></span></span></button>
-    <p></p>
-    <div>
-      <p>Given below are some more commonly used refactorings. A more comprehensive list is available at
-        <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
-      <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how">
-        <div>
-          <ul>
-            <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring:
-              <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
-            <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
-          </ul>
+              </tab>
+            </tabs>
+            <hr>
+          </tip-box>
+          <tip-box>
+            <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
+          </tip-box>
+          <tip-box type="important">
+            <p>Important: Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.</p>
+          </tip-box>
         </div>
-      </modal>
-      <ol>
-        <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
-        <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>
-        <li><a href="https://refactoring.com/catalog/inlineMethod.html">Inline Method</a></li>
-        <li><a href="https://refactoring.com/catalog/removeDoubleNegative.html">Remove Double Negative</a></li>
-        <li><a href="https://refactoring.com/catalog/replaceMagicNumberWithSymbolicConstant.html">Replace Magic Number with Symbolic Constant</a></li>
-        <li><a href="https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html">Replace Nested Conditional with Guard Clauses</a></li>
-        <li><a href="https://refactoring.com/catalog/replaceParameterWithExplicitMethods.html">Replace Parameter with Explicit Methods</a></li>
-        <li><a href="https://refactoring.com/catalog/reverseConditional.html">Reverse Conditional</a></li>
-        <li><a href="https://refactoring.com/catalog/splitLoop.html">Split Loop</a></li>
-        <li><a href="https://refactoring.com/catalog/splitTemporaryVariable.html">Split Temporary Variable</a></li>
-      </ol>
-    </div>
-    <div>
-      <div></div>
-    </div>
-  </panel>
-  <panel type="seamless" header="#### When" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can decide when to apply a given refactoring</span></span></span></button>
-    <p></p>
-    <div>
-      <p>We know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong>        The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <a href="https://refactoring.com/catalog/extractMethod.html"><em>extract method</em></a> vs <a href="https://refactoring.com/catalog/inlineMethod.html"><em>inline method</em></a>).</p>
-    </div>
-    <div>
-      <div>
-        <panel header=":muscle: Exercises" expandable="">
+        <div>
           <div>
-            <panel header=":lock::key: ‘Extract method’ and ‘Inline method’ refactorings">
-              <question>
-                <p>‘Extract method’ and ‘Inline method’ refactorings</p>
-                <ul radio-group="93b6b" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> a. are opposites of each other.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sounds like opposites but they are not.</label></li>
-                </ul>
-                <div slot="answer">
-                  <p>a</p>
-                </div>
-              </question>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Results of Refactoring">
+                  <question>
+                    <p>Choose the correct statements</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Refactoring can improve understandability</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Refactoring can uncover bugs</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>a, b, c, d</p>
+                      <p>Explanation:</p>
+                      <ul>
+                        <li>(a, b, c) Although the primary aim of refactoring is to improve internal code structure, there are other secondary benefits.</li>
+                        <li>(d) Some refactorings result in adding/removing methods/classes.</li>
+                      </ul>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Do you agree with the following statement? Refactoring and regression testing">
+                  <question has-input="true">
+                    <p>Do you agree with the following statement? Justify your answer.</p>
+                    <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
+                    <div slot="hint">
+                      <p>There are two flaws in the given statement.</p>
+                    </div>
+                    <div slot="answer">
+                      <p>DISAGREE.</p>
+                      <ol>
+                        <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
+                        <li>Fixing bugs is technically not refactoring.</li>
+                      </ol>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock: Explain Refactoring">
+                  <question has-input="">
+                    <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
+                  </question>
+                </panel>
+              </div>
             </panel>
           </div>
-        </panel>
-      </div>
+        </div>
+      </panel>
+      <panel type="seamless" header="#### How" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply some basic refactoring</span></span></span></button>
+        <p></p>
+        <div>
+          <p>Given below are some more commonly used refactorings. A more comprehensive list is available at
+            <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
+          <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how">
+            <div>
+              <ul>
+                <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on
+                  refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+                <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
+              </ul>
+            </div>
+          </modal>
+          <ol>
+            <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
+            <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>
+            <li><a href="https://refactoring.com/catalog/inlineMethod.html">Inline Method</a></li>
+            <li><a href="https://refactoring.com/catalog/removeDoubleNegative.html">Remove Double Negative</a></li>
+            <li><a href="https://refactoring.com/catalog/replaceMagicNumberWithSymbolicConstant.html">Replace Magic Number with Symbolic Constant</a></li>
+            <li><a href="https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html">Replace Nested Conditional with Guard Clauses</a></li>
+            <li><a href="https://refactoring.com/catalog/replaceParameterWithExplicitMethods.html">Replace Parameter with Explicit Methods</a></li>
+            <li><a href="https://refactoring.com/catalog/reverseConditional.html">Reverse Conditional</a></li>
+            <li><a href="https://refactoring.com/catalog/splitLoop.html">Split Loop</a></li>
+            <li><a href="https://refactoring.com/catalog/splitTemporaryVariable.html">Split Temporary Variable</a></li>
+          </ol>
+        </div>
+        <div>
+          <div></div>
+        </div>
+      </panel>
+      <panel type="seamless" header="#### When" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can decide when to apply a given refactoring</span></span></span></button>
+        <p></p>
+        <div>
+          <p>We know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong>            The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <a href="https://refactoring.com/catalog/extractMethod.html"><em>extract method</em></a> vs <a href="https://refactoring.com/catalog/inlineMethod.html"><em>inline method</em></a>).</p>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: ‘Extract method’ and ‘Inline method’ refactorings">
+                  <question>
+                    <p>‘Extract method’ and ‘Inline method’ refactorings</p>
+                    <ul radio-group="93b6b" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> a. are opposites of each other.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sounds like opposites but they are not.</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>a</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </panel>
     </div>
-  </panel>
+  </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 05:57:23 GMT</small></div>
 </footer>
 </div>
 </body>

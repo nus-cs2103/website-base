@@ -13,81 +13,237 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-<div class="website-content">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-      <li><a href="/website-base/index.html">Schedule</a></li>
-      <dropdown text="Textbook">
-        <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
-      </dropdown>
-      <li><a href="/website-base/admin/index.html">Admin</a></li>
-      <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-      <dropdown text="IVLE">
-        <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
-      </dropdown>
-      <dropdown text="Discuss">
-        <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-      </dropdown>
-      <dropdown text="Links">
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-        <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-        <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
-      </dropdown>
-      <li slot="right">
-        <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
-        </form>
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px">
+        <p><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></p>
       </li>
-    </navbar>
+      <li style="margin-top:10px">
+        <p><strong>Software Engineering</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Object-Oriented Programming (with UML)</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/oopDesign.html">OOP - Concepts</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/oopImplementation.html">OOP - Implementation</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Requirements</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Design</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Implementation</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Quality Assurance</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Project Management</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Tools</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Principles</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/principles.html">Principles</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div></div>
   </div>
-  <p><span class="dimmed"><strong><span></span></strong>
-    </span>
-  </p>
-  <div id="title">
-    <div>
-      <h1 id="software-design">Software Design</h1>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
     </div>
   </div>
-  <panel type="seamless" expanded="">
-    <span slot="header" class="panel-title"><div>
-<h2 id="introduction">Introduction</h2></div></span>
-    <panel type="seamless" header="#### What" expanded="">
-      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-      <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain what is software design</span></span></span></button>
-      <p></p>
+  <div id="page-content">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+    <div class="website-content">
       <div>
-        <tip-box type="definition">
-          <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>,  Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
-        </tip-box>
-        <p><strong>Software design has two main aspects:</strong></p>
-        <ul>
-          <li><strong>Product/external design: designing the external behavior of the product to meet the users' requirements.</strong> This is usually done by product designers with the input from business analysts, user experience experts, user representatives,
-            etc.</li>
-          <li><strong>Implementation/internal design: designing how the product will be implemented to meet the required external behavior.</strong> This is usually done by software architects and software engineers.</li>
-        </ul>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+          <li><a href="/website-base/index.html">Schedule</a></li>
+          <dropdown text="Textbook">
+            <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+            <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+          </dropdown>
+          <li><a href="/website-base/admin/index.html">Admin</a></li>
+          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+          <dropdown text="IVLE">
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+          </dropdown>
+          <dropdown text="Discuss">
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          </dropdown>
+          <dropdown text="Links">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+          </dropdown>
+          <li slot="right">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+            </form>
+          </li>
+        </navbar>
       </div>
-      <div></div>
-    </panel>
-  </panel>
+      <p><span class="dimmed"><strong><span></span></strong>
+        </span>
+      </p>
+      <div id="title">
+        <div>
+          <h1 id="software-design">Software Design</h1>
+        </div>
+      </div>
+      <panel type="seamless" expanded="">
+        <span slot="header" class="panel-title"><div>
+<h2 id="introduction">Introduction</h2></div></span>
+        <panel type="seamless" header="#### What" expanded="">
+          <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+          <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain what is software design</span></span></span></button>
+          <p></p>
+          <div>
+            <tip-box type="definition">
+              <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>,  Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
+            </tip-box>
+            <p><strong>Software design has two main aspects:</strong></p>
+            <ul>
+              <li><strong>Product/external design: designing the external behavior of the product to meet the users' requirements.</strong> This is usually done by product designers with the input from business analysts, user experience experts, user representatives,
+                etc.</li>
+              <li><strong>Implementation/internal design: designing how the product will be implemented to meet the required external behavior.</strong> This is usually done by software architects and software engineers.</li>
+            </ul>
+          </div>
+          <div></div>
+        </panel>
+      </panel>
+    </div>
+  </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 05:57:23 GMT</small></div>
 </footer>
 </div>
 </body>

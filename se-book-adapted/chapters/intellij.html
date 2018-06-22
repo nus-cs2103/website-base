@@ -13,162 +13,318 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-<div class="website-content">
-  <div>
-    <navbar placement="top" type="inverse">
-      <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-      <li><a href="/website-base/index.html">Schedule</a></li>
-      <dropdown text="Textbook">
-        <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-        <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
-      </dropdown>
-      <li><a href="/website-base/admin/index.html">Admin</a></li>
-      <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-      <dropdown text="IVLE">
-        <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
-      </dropdown>
-      <dropdown text="Discuss">
-        <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-      </dropdown>
-      <dropdown text="Links">
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-        <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-        <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
-      </dropdown>
-      <li slot="right">
-        <form class="navbar-form">
-          <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
-        </form>
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px">
+        <p><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></p>
       </li>
-    </navbar>
+      <li style="margin-top:10px">
+        <p><strong>Software Engineering</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Object-Oriented Programming (with UML)</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/oopDesign.html">OOP - Concepts</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/oopImplementation.html">OOP - Implementation</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Requirements</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Design</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Implementation</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Quality Assurance</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Project Management</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Tools</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></p>
+          </li>
+          <li style="margin-top: 10px">
+            <p><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></p>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <p><strong>Principles</strong></p>
+        <ul style="list-style-type: none; margin-left:-1em">
+          <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/principles.html">Principles</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div></div>
   </div>
-  <p><span class="dimmed"><strong><span></span></strong>
-    </span>
-  </p>
-  <div id="title">
-    <div>
-      <h1 id="intellij-idea">Intellij IDEA</h1>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
     </div>
   </div>
-  <panel type="seamless" header="#### Project Setup" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <div id="page-content">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+    <div class="website-content">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+          <li><a href="/website-base/index.html">Schedule</a></li>
+          <dropdown text="Textbook">
+            <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+            <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+          </dropdown>
+          <li><a href="/website-base/admin/index.html">Admin</a></li>
+          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+          <dropdown text="IVLE">
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+          </dropdown>
+          <dropdown text="Discuss">
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          </dropdown>
+          <dropdown text="Links">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+          </dropdown>
+          <li slot="right">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <p><span class="dimmed"><strong><span></span></strong>
+        </span>
+      </p>
+      <div id="title">
+        <div>
+          <h1 id="intellij-idea">Intellij IDEA</h1>
+        </div>
+      </div>
+      <panel type="seamless" header="#### Project Setup" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
   <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can setup a project in an IDE</span></span></span></button>
-    <p></p>
-    <div>
-      <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
-      <tabs>
-      
-        <tab header=":abc:">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can setup a project in an IDE</span></span></span></button>
+        <p></p>
+        <div>
+          <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
+          <tabs>
+          
+            <tab header=":abc:">
+              <ul>
+                <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
+              </ul>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          
+            <tab header=":tv:">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          </tabs>
+          <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
+          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+        </div>
+        <div></div>
+      </panel>
+      <panel type="seamless" header="#### Code Navigation" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can navigate code effectively using IDE features</span></span></span></button>
+        <p></p>
+        <div>
+          <p>Some useful navigation shortcuts:</p>
+          <ol>
+            <li>Quickly locate a file by name.</li>
+            <li>Go to the definition of a method from where it is used.</li>
+            <li>Go back to the previous location.</li>
+            <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
+            <li>Find where a method/field is being used.</li>
+          </ol>
+          <panel header="Intellij IDEA Code Navigation (Basics)" alt="basics" expanded="">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/f885wy42IcM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </panel>
+          <panel header="Intellij IDEA Code Navigation (Advanced)" alt="basics">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/IiHZPvmVICg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </panel>
+        </div>
+        <div></div>
+      </panel>
+      <panel type="seamless" header="#### Productivity Shortcuts" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use some useful IDE productivity shortcuts</span></span></span></button>
+        <p></p>
+        <div>
+          <div v-closeable="" alt="video: Intellij shortcuts">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KsVWdGOnHZU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/EvXpgL2iho4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
+        </div>
+        <div></div>
+      </panel>
+      <panel type="seamless" header="#### Debugging: Basic" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can step through a program using a debugger</span></span></span></button>
+        <p></p>
+        <div>
+          <div v-closeable="" alt="video: debugging in Intellij">
+            <p>This video (from LaunchCode) gives a pretty good explanation of how to use the Intellij IDEA debugger.</p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
           <ul>
-            <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
+            <li><a href="https://www.jetbrains.com/help/idea/debugger-basics.html">Intellij IDEA Documentation: Debugging Basics</a> - Can be used as a reference document when you want to recall how to use a debugging feature.</li>
           </ul>
-          <p>
-            <hr>
-          </p>
-        </tab>
-      
-        <tab header=":tv:">
-          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
-          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          <p>
-            <hr>
-          </p>
-        </tab>
-      </tabs>
-      <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
-      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-    </div>
-    <div></div>
-  </panel>
-  <panel type="seamless" header="#### Code Navigation" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can navigate code effectively using IDE features</span></span></span></button>
-    <p></p>
-    <div>
-      <p>Some useful navigation shortcuts:</p>
-      <ol>
-        <li>Quickly locate a file by name.</li>
-        <li>Go to the definition of a method from where it is used.</li>
-        <li>Go back to the previous location.</li>
-        <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
-        <li>Find where a method/field is being used.</li>
-      </ol>
-      <panel header="Intellij IDEA Code Navigation (Basics)" alt="basics" expanded="">
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/f885wy42IcM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+        </div>
+        <div></div>
       </panel>
-      <panel header="Intellij IDEA Code Navigation (Advanced)" alt="basics">
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/IiHZPvmVICg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+      <panel type="seamless" header="#### Refactoring" expanded="">
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
+        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use automated refactoring features of the IDE</span></span></span></button>
+        <p></p>
+        <div>
+          <div v-closeable="" alt="Videos: Automated refactoring using IDE">
+            <p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code>select the code to refactor</code> → <code>find the refactoring in the context menu</code>              or <code>use the keyboard shortcut</code>.</p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/fg3Q5pt4E80" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <p>Here's another video explaining how to change a method signature as part of refactoring.</p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/p6Tsw_3cXow" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
+          <p></p>
+          <ul>
+            <li><a href="https://www.jetbrains.com/help/idea/introduction-to-refactoring.html">Introduction to Refactoring (in Intellij IDEA)</a> : An article on refactorings available in Intellij IDEA.</li>
+          </ul>
+        </div>
+        <div></div>
       </panel>
     </div>
-    <div></div>
-  </panel>
-  <panel type="seamless" header="#### Productivity Shortcuts" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use some useful IDE productivity shortcuts</span></span></span></button>
-    <p></p>
-    <div>
-      <div v-closeable="" alt="video: Intellij shortcuts">
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KsVWdGOnHZU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/EvXpgL2iho4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-      </div>
-    </div>
-    <div></div>
-  </panel>
-  <panel type="seamless" header="#### Debugging: Basic" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can step through a program using a debugger</span></span></span></button>
-    <p></p>
-    <div>
-      <div v-closeable="" alt="video: debugging in Intellij">
-        <p>This video (from LaunchCode) gives a pretty good explanation of how to use the Intellij IDEA debugger.</p>
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-      </div>
-      <ul>
-        <li><a href="https://www.jetbrains.com/help/idea/debugger-basics.html">Intellij IDEA Documentation: Debugging Basics</a> - Can be used as a reference document when you want to recall how to use a debugging feature.</li>
-      </ul>
-    </div>
-    <div></div>
-  </panel>
-  <panel type="seamless" header="#### Refactoring" expanded="">
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use automated refactoring features of the IDE</span></span></span></button>
-    <p></p>
-    <div>
-      <div v-closeable="" alt="Videos: Automated refactoring using IDE">
-        <p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code>select the code to refactor</code> → <code>find the refactoring in the context menu</code>          or <code>use the keyboard shortcut</code>.</p>
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/fg3Q5pt4E80" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-        <p>Here's another video explaining how to change a method signature as part of refactoring.</p>
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/p6Tsw_3cXow" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-      </div>
-      <p></p>
-      <ul>
-        <li><a href="https://www.jetbrains.com/help/idea/introduction-to-refactoring.html">Introduction to Refactoring (in Intellij IDEA)</a> : An article on refactorings available in Intellij IDEA.</li>
-      </ul>
-    </div>
-    <div></div>
-  </panel>
+  </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 05:57:23 GMT</small></div>
 </footer>
 </div>
 </body>
