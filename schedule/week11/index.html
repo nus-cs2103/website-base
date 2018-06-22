@@ -4,135 +4,153 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Week 11</title>
+    <title>CS2103/T Website</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <panel header="<span class='glyphicon glyphicon-flag' aria-hidden='true'></span> Outcomes" popup-url="/website-base/schedule/week11/outcomes.html" expanded="" no-close="">
-  <div>
-    <h3 id="requirements">Requirements:</h3>
-    <p>
-      <panel src="/website-base\schedule\week11\outcome-objectOrientedDomainModel._include_.html" type="info" header="**`W11.1` Can explain object oriented domain models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <h3 id="design">Design:</h3>
-    <p>
-      <panel src="/website-base\schedule\week11\outcome-explainDesignPattern._include_.html" type="warning" header="**`W11.2` Can apply some more design patterns** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <p>
-      <panel src="/website-base\schedule\week11\outcome-applyDesignPattern._include_.html" type="info" header="**`W11.3` Can optimize the use of design patterns** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <h3 id="quality-assurance">Quality Assurance:</h3>
-    <p>
-      <panel src="/website-base\schedule\week11\outcome-heuristic._include_.html" type="warning" header="**`W11.4` Can apply heuristics to combine multiple test inputs** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-
-    <panel type="danger" header="**`W11.5` Can do acceptance testing** :star:" no-close="">
-      <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
-        <p>Covered by the 'Acceptance Testing' component of v1.4:</p>
-        <p>
-          <panel src="/website-base\admin\project-v14._include_.html" name="%%Admin » Project → v1.4%%" header="%%Admin » Project → v1.4%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
-      </panel>
-    </panel>
-    <h3 id="project-management">Project Management:</h3>
-    <p>
-      <panel src="/website-base\schedule\week11\outcome-processModelTypes._include_.html" type="warning" header="**`W11.6` Can explain types of SDLC process models** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <p>
-      <panel src="/website-base\schedule\week11\outcome-popularProcessModels._include_.html" type="info" header="**`W11.7` Can explain some popular SDLC process models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-  </div>
-</panel>
-<panel header="<span class='glyphicon glyphicon-check' aria-hidden='true'></span> Todo" no-close="">
-  <div>
-    <panel header="Admin info to read" expandable="" expanded="">
+    <panel type="seamless" popup-url="/website-base/schedule/week11/outcomes.html" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Outcomes</span>
+  <div class="indented">
+    <div>
+      <h3 id="requirements">Requirements:</h3>
       <p>
-        <panel type="danger" src="/website-base\admin\project-v14._include_.html" name="%%Admin »%% Project: v1.4 :star:" header="%%Admin »%% Project: v1.4 :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website-base\schedule\week11\outcome-objectOrientedDomainModel._include_.html" type="info" header="**`W11.1` Can explain object oriented domain models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
       </p>
-    </panel>
+      <h3 id="design">Design:</h3>
+      <p>
+        <panel src="/website-base\schedule\week11\outcome-explainDesignPattern._include_.html" type="warning" header="**`W11.2` Can apply some more design patterns** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel src="/website-base\schedule\week11\outcome-applyDesignPattern._include_.html" type="info" header="**`W11.3` Can optimize the use of design patterns** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+      <h3 id="quality-assurance">Quality Assurance:</h3>
+      <p>
+        <panel src="/website-base\schedule\week11\outcome-heuristic._include_.html" type="warning" header="**`W11.4` Can apply heuristics to combine multiple test inputs** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+
+      <panel type="danger" header="**`W11.5` Can do acceptance testing** :star:" no-close="">
+        <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
+          <p>Covered by the 'Acceptance Testing' component of v1.4:</p>
+          <p>
+            <panel src="/website-base\admin\project-v14._include_.html" name="%%Admin » Project → v1.4%%" header="%%Admin » Project → v1.4%%" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+        </panel>
+      </panel>
+      <h3 id="project-management">Project Management:</h3>
+      <p>
+        <panel src="/website-base\schedule\week11\outcome-processModelTypes._include_.html" type="warning" header="**`W11.6` Can explain types of SDLC process models** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+      <p>
+        <panel src="/website-base\schedule\week11\outcome-popularProcessModels._include_.html" type="info" header="**`W11.7` Can explain some popular SDLC process models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+    </div>
   </div>
 </panel>
-<panel header="<span class='glyphicon glyphicon-pencil' aria-hidden='true'></span> Tutorial 11" no-close="">
-  <div>
-    <p><strong>Show evidence of achieving v1.4 team/individual milestone</strong></p>
-    <ul>
-      <li>[One member] Show the v1.4 release, the milestone, and collated code on GitHub</li>
-      <li>[Each member] Demo your contribution for v1.4 using the jar file</li>
-    </ul>
-    <p><strong>Questions to discuss during tutorial:</strong></p>
-    <p><mark>While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them</mark>.</p>
-    <ol>
-      <li>
-        <p>How does an <em>OO Domain Model</em> differ from a class diagram?</p>
-      </li>
-      <li>
-        <p>Draw an OODM for the description below, about how modules work in a certain university:</p>
-        <tip-box>
-          <p>A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a grade
-            and an optional feedback is given.</p>
-        </tip-box>
-      </li>
-      <li>
-        <p>Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. ✅ indicates valid values and ❗️ indicates invalid values. Point out where the heuristics are contradicted and
-          how to improve the test cases.</p>
-        <tip-box>
-          <p>SUT: <code>foo(x,y)</code></p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Test case</th>
-                <th>x</th>
-                <th>y</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>TC1</td>
-                <td>✅ x1-valid</td>
-                <td>✅ y1-valid</td>
-              </tr>
-              <tr>
-                <td>TC2</td>
-                <td>✅ x2-valid</td>
-                <td>❗️ y2-invalid</td>
-              </tr>
-              <tr>
-                <td>TC3</td>
-                <td>❗️ x3-invalid</td>
-                <td>❗️ y3-invalid</td>
-              </tr>
-            </tbody>
-          </table>
-        </tip-box>
-      </li>
-      <li>
-        <p>Distinguish between <em>sequential</em> and <em>iterative</em> processes. Which one are we using in the project?</p>
-      </li>
-      <li>
-        <p>Distinguish between <em>breadth-first</em> and <em>depth-first</em> iterative processes using your project as an example.</p>
-      </li>
-      <li>
-        <p>Describe how <em>agile process models</em> differ from traditional process models.</p>
-      </li>
-      <li>
-        <p>Describe some distinguishing features of Scrum. Relate those features to your project. <span class="dimmed"> i.e. are they applicable? are you doing something similar?</span></p>
-      </li>
-      <li>
-        <p>When do you use <em>MVC</em> pattern? Do we have MVC in AB4?</p>
-      </li>
-      <li>
-        <p>When do you use the <em>Observer</em> pattern? Do we have the Observer pattern in AB4?</p>
-      </li>
-    </ol>
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
+  <div class="indented">
+    <div>
+      <p><span class="activity-desc">Admin info to read:<span></span></span>
+      </p>
+      <div class="indented">
+        <panel src="/website-base\admin\project-v14._include_.html" dynamic="" no-close="">
+          <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: v1.4 <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+        </panel>
+      </div>
+      <p></p>
+    </div>
   </div>
 </panel>
-<panel header="<span class='glyphicon glyphicon-blackboard' aria-hidden='true'></span> Lecture 11" no-close="">
-  <div>
-    <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L11.pptx">slides</a>]</p>
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Tutorial 11</span>
+  <div class="indented">
+    <div>
+      <p><strong>Show evidence of achieving v1.4 team/individual milestone</strong></p>
+      <ul>
+        <li>[One member] Show the v1.4 release, the milestone, and collated code on GitHub</li>
+        <li>[Each member] Demo your contribution for v1.4 using the jar file</li>
+      </ul>
+      <p><strong>Questions to discuss during tutorial:</strong></p>
+      <p><mark>While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them</mark>.</p>
+      <ol>
+        <li>
+          <p>How does an <em>OO Domain Model</em> differ from a class diagram?</p>
+        </li>
+        <li>
+          <p>Draw an OODM for the description below, about how modules work in a certain university:</p>
+          <tip-box>
+            <p>A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a
+              grade and an optional feedback is given.</p>
+          </tip-box>
+        </li>
+        <li>
+          <p>Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. ✅ indicates valid values and ❗️ indicates invalid values. Point out where the heuristics are contradicted
+            and how to improve the test cases.</p>
+          <tip-box>
+            <p>SUT: <code>foo(x,y)</code></p>
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Test case</th>
+                  <th>x</th>
+                  <th>y</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TC1</td>
+                  <td>✅ x1-valid</td>
+                  <td>✅ y1-valid</td>
+                </tr>
+                <tr>
+                  <td>TC2</td>
+                  <td>✅ x2-valid</td>
+                  <td>❗️ y2-invalid</td>
+                </tr>
+                <tr>
+                  <td>TC3</td>
+                  <td>❗️ x3-invalid</td>
+                  <td>❗️ y3-invalid</td>
+                </tr>
+              </tbody>
+            </table>
+          </tip-box>
+        </li>
+        <li>
+          <p>Distinguish between <em>sequential</em> and <em>iterative</em> processes. Which one are we using in the project?</p>
+        </li>
+        <li>
+          <p>Distinguish between <em>breadth-first</em> and <em>depth-first</em> iterative processes using your project as an example.</p>
+        </li>
+        <li>
+          <p>Describe how <em>agile process models</em> differ from traditional process models.</p>
+        </li>
+        <li>
+          <p>Describe some distinguishing features of Scrum. Relate those features to your project. <span class="dimmed"> i.e. are they applicable? are you doing something similar?</span></p>
+        </li>
+        <li>
+          <p>When do you use <em>MVC</em> pattern? Do we have MVC in AB4?</p>
+        </li>
+        <li>
+          <p>When do you use the <em>Observer</em> pattern? Do we have the Observer pattern in AB4?</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</panel>
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 11</span>
+  <div class="indented">
+    <div>
+      <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L11.pptx">slides</a>]</p>
+    </div>
   </div>
 </panel>
 </div>
@@ -143,4 +161,5 @@
     const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\js\site-nav.js"></script>
 </html>

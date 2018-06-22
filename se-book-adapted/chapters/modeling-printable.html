@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -35,7 +36,7 @@
     </tip-box>
     <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
       <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br> 📦 An example class diagram:<br></p>
-      <img src="/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
+      <img src="/website-base/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
     <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
       <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
     <modal large="" title="%%Textbook »%%" id="modal:modellingIntro-abstraction">
@@ -200,14 +201,14 @@
     <p>An OO solution is basically a network of objects interacting with each other. Therefore, <strong>it is useful to be able to model how the relevant objects are 'networked' together</strong> inside a software <span class="dimmed"> i.e. how the objects are connect together</span>.</p>
     <tip-box>
       <p>📦 Given below is an illustration of some objects and how they are connected together. <span class="dimmed"> Note: the diagram uses an ad-hoc notation.</span></p>
-      <p><img src="/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc.png" width="500"></p>
+      <p><img src="/website-base/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc.png" width="500"></p>
       <p></p>
       <p></p>
     </tip-box>
     <p>Note that these <strong>object structures within the same software can change over time</strong>.</p>
     <tip-box>
       <p>📦 Given below is how the object structure in the previous example could have looked like at a different time.</p>
-      <p><img src="/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc2.png" width="500"></p>
+      <p><img src="/website-base/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc2.png" width="500"></p>
       <p></p>
       <p></p>
     </tip-box>
@@ -215,7 +216,7 @@
     <tip-box>
       <p>📦 Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure does not allow any connection between <code>Genre</code> objects and
         <code>Author</code> objects, a rule followed by the two object structures above.</p>
-      <p><img src="/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png" width="500"></p>
+      <p><img src="/website-base/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png" width="500"></p>
       <p></p>
       <p></p>
     </tip-box>
@@ -226,10 +227,10 @@
     </p>
     <tip-box>
       <p>📦 Here is an object diagram for the above example:</p>
-      <p><img src="/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" width="500">
+      <p><img src="/website-base/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" width="500">
         <p>📦 And here is the class diagram for it:</p>
       </p>
-      <p><img src="/book/modeling/modelingStructures/ooStructures/images/classDiagram.png" width="500"></p>
+      <p><img src="/website-base/book/modeling/modelingStructures/ooStructures/images/classDiagram.png" width="500"></p>
       <p></p>
       <p></p>
       <p></p>
@@ -250,7 +251,7 @@
     <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
     <tip-box>
       <p>📦 An example class diagram showing associations between classes.</p>
-      <p></p><img src="/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+      <p></p><img src="/website-base/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
       <p></p>
     </tip-box>
     <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
@@ -266,9 +267,17 @@
     </p>
     <tip-box>
       <p>📦 Here is the same class diagram shown earlier but with some additional information included:</p>
-      <p></p><img src="/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
+      <p></p><img src="/website-base/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
       <p></p>
     </tip-box>
+  </div>
+  <h4 id="adding-more-info-to-uml-models">Adding More Info to UML Models <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  </h4>
+  <div>
+    <p><strong>UML notes can be used to add more info to any UML model.</strong></p>
+    <p>
+      <panel src="/website-base\book\uml\notes\notes\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Notes" expanded="" fragment="title-and-body"></panel>
+    </p>
   </div>
   <h4 id="class-diagrams-intermediate">Class Diagrams - Intermediate <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
@@ -317,7 +326,7 @@
       <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the number of squares
         they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece can automatically move from
         a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
-      <img src="/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
+      <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
       <p></p>
       <p>The above OO domain model omits the ladder class for simplicity. It can be included in a similar fashion to the Snake class.</p>
     </tip-box>
@@ -332,7 +341,7 @@
     <p><strong>A <em>deployment diagram</em> shows a system's physical layout, revealing which pieces of software run on which pieces of hardware.</strong></p>
     <tip-box>
       <p>📦 An example deployment diagram:</p>
-      <img src="/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png" height="500">
+      <img src="/website-base/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png" height="500">
       <p></p>
       <p><sub>source:<a href="https://en.wikipedia.org/wiki/Deployment_diagram">https://commons.wikimedia.org</a></sub></p>
     </tip-box>
@@ -343,7 +352,7 @@
     <p><strong>A <em>component diagram</em> is used to show how a system is divided into components and how they are connected to each other through interfaces.</strong></p>
     <tip-box>
       <p>📦 An example component diagram:</p>
-      <p><img src="/book/modeling/modelingStructures/componentDiagrams/images/diagram.png" height="500"><br></p>
+      <p><img src="/website-base/book/modeling/modelingStructures/componentDiagrams/images/diagram.png" height="500"><br></p>
       <p><sub>source:<a href="https://en.wikipedia.org/wiki/Component_diagram">https://commons.wikimedia.org</a></sub></p>
     </tip-box>
   </div>
@@ -353,7 +362,7 @@
     <p><strong>A <em>package diagram</em> shows packages and their dependencies.</strong> A package is a grouping construct for grouping UML elements (classes, use cases, etc.).</p>
     <tip-box>
       <p>📦 Here is an example package diagram:</p>
-      <p><img src="/book/modeling/modelingStructures/packageDiagrams/images/diagram.png" height="450"><br>
+      <p><img src="/website-base/book/modeling/modelingStructures/packageDiagrams/images/diagram.png" height="450"><br>
         <sub>source:<a href="https://en.wikipedia.org/wiki/Package_diagram">https://commons.wikimedia.org</a></sub></p>
     </tip-box>
   </div>
@@ -363,7 +372,7 @@
     <p><strong>A <em>composite structure diagram</em> hierarchically decomposes a class into its internal structure.</strong></p>
     <tip-box>
       <p>📦 Here is an example composite structure diagram:</p>
-      <img src="/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png" height="150">
+      <img src="/website-base/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png" height="150">
       <br>
       <p><sub>source:<a href="https://en.wikipedia.org/wiki/Composite_structure_diagram">https://commons.wikimedia.org</a></sub></p>
     </tip-box>
@@ -434,7 +443,7 @@
 
 </code></pre>
       <p>Here is the sequence diagram to model the interactions for the method call <code>prouducePrototype()</code> on a <code>Machine</code> object.</p>
-      <img src="/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
+      <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
       <p></p>
     </tip-box>
   </div>
@@ -454,7 +463,7 @@
     <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
     <tip-box>
       <p>📦 A simple use case diagram:</p>
-      <img src="/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
+      <img src="/website-base/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
   </div>
   <h4 id="timing-diagrams">Timing Diagrams <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
@@ -462,7 +471,7 @@
     <p><strong>A <em>timing diagram</em> focus on timing constraints.</strong></p>
     <tip-box>
       <p>📦 Here is an example timing diagram:</p>
-      <img src="/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png" height="280">
+      <img src="/website-base/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png" height="280">
       <br>
       <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
     </tip-box>
@@ -473,7 +482,7 @@
     <p><strong>An <em>Interaction overview</em> diagrams is a combination of activity diagrams and sequence diagrams</strong>.</p>
     <tip-box>
       <p>📦 An example:</p>
-      <img src="/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png" height="420">
+      <img src="/website-base/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png" height="420">
       <p></p>
       <p><sub>source:<a href="https://en.wikipedia.org/wiki/Interaction_overview_diagram">https://commons.wikimedia.org</a></sub></p>
     </tip-box>
@@ -484,7 +493,7 @@
     <p><strong>A <em>Communication diagrams</em> are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions.</strong></p>
     <tip-box>
       <p>📦 An example:</p>
-      <img src="/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png" height="300">
+      <img src="/website-base/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png" height="300">
       <br>
       <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
     </tip-box>
@@ -512,7 +521,7 @@
       to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over its full life cycle.</p>
     <tip-box>
       <p>📦 An SMD for the Minesweeper game.</p>
-      <img src="/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
+      <img src="/website-base/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
       <p></p>
     </tip-box>
   </div>
@@ -524,7 +533,7 @@
   <div>
     <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
     <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-    <img src="/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+    <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
     <p></p>
     <p>Before jumping into coding, you may want to find out things such as,</p>
     <ul>
@@ -571,30 +580,30 @@
         </div>
       </div>
     </modal>
-    <img src="/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+    <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
     <p></p>
     <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+      <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
       <p></p>
       <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
     </tip-box>
     <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic, the <code>TextUi</code>      needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+      <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
       <p></p>
       <p>W = Width of the minefield; H = Height of the minefield</p>
     </tip-box>
     <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br> The <code>Logic</code>      methods we conceptualized in our modelling so far are:</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
     <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
     <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
     <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+      <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
       <p></p>
       <p></p>
     </tip-box>
@@ -712,9 +721,9 @@
       </div>
     </modal>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
       <p></p>
-      <img src="/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
     <p>This interaction adds the following methods to the <code>Logic</code> class</p>
     <ul>
       <li><code>clearCellAt(int x, int y)</code></li>
@@ -729,27 +738,27 @@
       or the entire Minefield can be passed directly to <code>TextUi</code>.</p>
     <p>Here is the updated class diagram:</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
     <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code> operation.
       We can model it like this:</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
     <p>Our current model assumes that the <code>Minefield</code> object has enough information (i.e. H, W, and mine locations) to create itself.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
       <p></p>
     </tip-box>
     <p>An alternative is to have a <code>ConfigGenerator</code> object that generates a string containing the minefield information as shown below.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
       <p></p>
     </tip-box>
     <p>In addition, <code>getWidth()</code>, <code>getHeight()</code>, <code>markCellAt(x,y)</code> and <code>clearCellAt(x,y)</code> can be handled like this.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
     <p>The updated class diagram:</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
     <p>How is <code>getGameState()</code> operation supported? Given below are two ways (there could be other ways):</p>
     <ol>
       <li><code>Minefield</code> class knows the state of the game at any time. <code>Logic</code> class retrieves it from the <code>Minefield</code> class as and when required.</li>
@@ -757,19 +766,19 @@
     </ol>
     <p>Here’s the SD for option 1.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
     <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
     <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
     <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
     <p>Updated class diagram:</p>
     <tip-box>
-      <img src="/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
+      <img src="/website-base/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
     <tip-box>
       <p>💡 When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations are required
         by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
@@ -779,7 +788,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 12:36:29 GMT]</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -789,4 +798,5 @@
     const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\js\site-nav.js"></script>
 </html>

@@ -4,66 +4,83 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Week 12</title>
+    <title>CS2103/T Website</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <panel header="<span class='glyphicon glyphicon-flag' aria-hidden='true'></span> Outcomes" popup-url="/website-base/schedule/week12/outcomes.html" expanded="" no-close="">
-  <div>
-    <br>
-    <h3 id="design">Design:</h3>
-    <p>
-      <panel src="/website-base\schedule\week12\outcome-umlModel._include_.html" type="info" header="**`W12.1` Can explain some UML models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <h3 id="implementation">Implementation:</h3>
-    <p>
-      <panel src="/website-base\schedule\week12\outcome-cloudComputing._include_.html" type="success" header="**`W12.2` Can explain cloud computing basics** :star::star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-
-    <panel type="danger" header="**`W12.3` Can describe contributions to a project** :star:" no-close="">
-      <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
-        <p>Covered by the 'Project Portfolio Page' component of v1.5rc:</p>
-        <p>
-          <panel src="/website-base\admin\project-v15rc._include_.html" name="%%Admin » Project → v1.5rc%%" header="%%Admin » Project → v1.5rc%%" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
-      </panel>
-    </panel>
-  </div>
-</panel>
-<panel header="<span class='glyphicon glyphicon-check' aria-hidden='true'></span> Todo" no-close="">
-  <div>
-    <panel header="Admin info to read" expandable="" expanded="">
+    <panel type="seamless" popup-url="/website-base/schedule/week12/outcomes.html" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Outcomes</span>
+  <div class="indented">
+    <div>
+      <br>
+      <h3 id="design">Design:</h3>
       <p>
-        <panel type="danger" src="/website-base\admin\project-v15rc._include_.html" name="%%Admin »%% Project: v1.5rc :star:" header="%%Admin »%% Project: v1.5rc :star:" isOpen="false" no-close="true" no-switch="true"></panel>
+        <panel src="/website-base\schedule\week12\outcome-umlModel._include_.html" type="info" header="**`W12.1` Can explain some UML models** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
       </p>
-    </panel>
+      <h3 id="implementation">Implementation:</h3>
+      <p>
+        <panel src="/website-base\schedule\week12\outcome-cloudComputing._include_.html" type="success" header="**`W12.2` Can explain cloud computing basics** :star::star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
+      </p>
+
+      <panel type="danger" header="**`W12.3` Can describe contributions to a project** :star:" no-close="">
+        <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
+          <p>Covered by the 'Project Portfolio Page' component of v1.5rc:</p>
+          <p>
+            <panel src="/website-base\admin\project-v15rc._include_.html" name="%%Admin » Project → v1.5rc%%" header="%%Admin » Project → v1.5rc%%" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+        </panel>
+      </panel>
+    </div>
   </div>
 </panel>
-<panel header="<span class='glyphicon glyphicon-pencil' aria-hidden='true'></span> Tutorial 12" no-close=""></panel>
-<panel header="<span class='glyphicon glyphicon-blackboard' aria-hidden='true'></span> Lecture 12" no-close="">
-  <div>
-    <p><mark>no webcast</mark></p>
-    <p><strong>Practice exam</strong></p>
-    <ul>
-      <li>
-        <p>Seating row assignment is <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&amp;single=true">here</a></p>
-      </li>
-      <li>
-        <p>Answers are given below. If you have any doubts about any of the question, please post in our forum to discuss.<br>
-          <strong>Q: <code>A</code></strong><br> A1: <code>A</code><br> A2: <code>A</code><br> A3: <code>A</code><br> A4: <code>E</code><br> A5: <code>E</code><br> A6: <code>A</code><br> A7: <code>E</code><br> A8: <code>A</code><br> A9: <code>E</code><br>          A10: <code>A</code><br> A11: <code>A</code><br> A12: <code>E</code><br> A13: <code>E</code><br> A14: <code>E</code><br> A15: <code>A</code><br> A16: <code>A</code><br> A17: <code>E</code><br> A18: <code>E</code><br> A19: <code>E</code><br> A20:
-          <code>E</code><br> A21: <code>A</code><br> A22: <code>E</code><br> A23: <code>A</code><br> A24: <code>A</code><br> A25: <code>E</code><br> A26: <code>A</code><br> A27: <code>E</code><br> A28: <code>A</code><br> A29: <code>E</code><br> A30: <code>A</code><br>          A31: <code>A</code><br> A32: <code>A</code><br> A33: <code>E</code><br> A34: <code>E</code><br> A35: <code>A</code><br> A36: <code>A</code><br> A37: <code>A</code><br> A38: <code>E</code><br> A39: <code>A</code><br> A40: <code>C</code> (This
-          is a nonsense question, put there to give you a chance to use the <code>C</code> option. No such deliberately incorrect questions in the actual exam paper though)<br> A41: <code>E</code><br> A42: <code>A</code><br> A43: <code>A</code><br> A44:
-          <code>A</code><br> A45: <code>A</code><br> A46: <code>A</code><br> A47: <code>A</code><br> A48: <code>A</code><br> A49: <code>E</code><br> A50: <code>E</code><br></p>
-      </li>
-    </ul>
-    <p><strong>Talk on getting ready for internships</strong></p>
-    <ul>
-      <li>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L12.pptx">slides</a>]</li>
-    </ul>
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
+  <div class="indented">
+    <div>
+      <p><span class="activity-desc">Admin info to read:<span></span></span>
+      </p>
+      <div class="indented">
+        <panel src="/website-base\admin\project-v15rc._include_.html" dynamic="" no-close="">
+          <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: v1.5rc <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+        </panel>
+      </div>
+      <p></p>
+    </div>
+  </div>
+</panel>
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Tutorial 12</span>
+  <div class="indented">
+    <div></div>
+  </div>
+</panel>
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 12</span>
+  <div class="indented">
+    <div>
+      <p><mark>no webcast</mark></p>
+      <p><strong>Practice exam</strong></p>
+      <ul>
+        <li>
+          <p>Seating row assignment is <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&amp;single=true">here</a></p>
+        </li>
+        <li>
+          <p>Answers are given below. If you have any doubts about any of the question, please post in our forum to discuss.<br>
+            <strong>Q: <code>A</code></strong><br> A1: <code>A</code><br> A2: <code>A</code><br> A3: <code>A</code><br> A4: <code>E</code><br> A5: <code>E</code><br> A6: <code>A</code><br> A7: <code>E</code><br> A8: <code>A</code><br> A9: <code>E</code><br>            A10: <code>A</code><br> A11: <code>A</code><br> A12: <code>E</code><br> A13: <code>E</code><br> A14: <code>E</code><br> A15: <code>A</code><br> A16: <code>A</code><br> A17: <code>E</code><br> A18: <code>E</code><br> A19: <code>E</code><br>            A20: <code>E</code><br> A21: <code>A</code><br> A22: <code>E</code><br> A23: <code>A</code><br> A24: <code>A</code><br> A25: <code>E</code><br> A26: <code>A</code><br> A27: <code>E</code><br> A28: <code>A</code><br> A29: <code>E</code><br>            A30: <code>A</code><br> A31: <code>A</code><br> A32: <code>A</code><br> A33: <code>E</code><br> A34: <code>E</code><br> A35: <code>A</code><br> A36: <code>A</code><br> A37: <code>A</code><br> A38: <code>E</code><br> A39: <code>A</code><br>            A40: <code>C</code> (This is a nonsense question, put there to give you a chance to use the <code>C</code> option. No such deliberately incorrect questions in the actual exam paper though)<br> A41: <code>E</code><br> A42: <code>A</code><br>            A43: <code>A</code><br> A44: <code>A</code><br> A45: <code>A</code><br> A46: <code>A</code><br> A47: <code>A</code><br> A48: <code>A</code><br> A49: <code>E</code><br> A50: <code>E</code><br></p>
+        </li>
+      </ul>
+      <p><strong>Talk on getting ready for internships</strong></p>
+      <ul>
+        <li>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L12.pptx">slides</a>]</li>
+      </ul>
+    </div>
   </div>
 </panel>
 </div>
@@ -74,4 +91,5 @@
     const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\js\site-nav.js"></script>
 </html>

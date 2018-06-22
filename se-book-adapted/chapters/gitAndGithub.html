@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -237,10 +238,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
       <p>Note the existence of something called the <code>master</code> branch. Git allows you to have multiple branches (i.e. it is a way to evolve the content in parallel) and Git creates a default branch named <code>master</code> on which the commits
         go on by default.</p>
       <p>Do some changes to <code>fruits.txt</code> (e.g. add some text and delete some text). Stage the changes, and commit the changes using the same steps we followed before. You should end up with something like this.</p>
-      <img src="/book/gitAndGithub/commit/images/sourcetree_6.png" height="180">
+      <img src="/website-base/book/gitAndGithub/commit/images/sourcetree_6.png" height="180">
       <p></p>
       <p>Next, add two more files <code>colors.txt</code> and <code>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p>
-      <img src="/book/gitAndGithub/commit/images/sourcetree_7.png" height="150">
+      <img src="/website-base/book/gitAndGithub/commit/images/sourcetree_7.png" height="150">
       <p></p>
     </div>
     <div>
@@ -396,8 +397,8 @@ index 15b57f7..17f4528 100644
           <hr>
         </tab>
       </tabs>
-      <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <a href="/book/gitAndGithub/stash/index.html">stash</a> them first to prevent them from being
-        overwritten.</p>
+      <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <a href="/website-base/book/gitAndGithub/stash/index.html">stash</a> them first to prevent
+        them from being overwritten.</p>
       <tabs>
         <tab header="SourceTree">
           <div>
@@ -597,7 +598,7 @@ index 15b57f7..17f4528 100644
         <li>
           <p>Fork the <a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
           <panel type="seamless" header="%%How to fork a repo?%%">
-            <p>Navigate to the on GitHub and click on the <img src="/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
+            <p>Navigate to the on GitHub and click on the <img src="/website-base/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
             <p></p>
           </panel>
           <p></p>
@@ -703,11 +704,11 @@ git checkout feature1
         </tab>
       </tabs>
       <p><strong>4. Add a commit to the master branch.</strong> Let’s imagine it’s a bug fix.</p>
-      <img src="/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
+      <img src="/website-base/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
       <p></p>
       <p><strong>5. Switch back to the <code>feature1</code> branch</strong> <span class="dimmed">(similar to step 3)</span>.</p>
       <p><strong>6. Merge the <code>master</code> branch to the <code>feature1</code> branch</strong>, giving an end-result like the below. Also note how Git has created a <em>merge commit</em>.</p>
-      <img src="/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
+      <img src="/website-base/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
       <p></p>
       <tabs>
         <tab header="SourceTree">
@@ -728,7 +729,7 @@ git checkout feature1
       <p><strong>7. Add another commit to the <code>feature1</code> branch.</strong></p>
       <p><strong>8. Switch to the <code>master</code> branch and add one more commit.</strong></p>
       <p><strong>9. Merge <code>feature1</code> to the master branch</strong>, giving and end-result like this:</p>
-      <img src="/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
+      <img src="/website-base/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
       <p></p>
       <tabs>
         <tab header="SourceTree">
@@ -742,14 +743,14 @@ git checkout feature1
         </tab>
       </tabs>
       <p><strong>10. Create a new branch called <code>add-countries</code>, switch to it, and add some commits to it</strong> <span class="dimmed">(similar to steps 1-2 above)</span>. You should have something like this now:</p>
-      <img src="/book/gitAndGithub/branch/images/addCountriesBranchBeforeMerging.png" height="80">
+      <img src="/website-base/book/gitAndGithub/branch/images/addCountriesBranchBeforeMerging.png" height="80">
       <p></p>
       <p><strong>11. Go back to the <code>master</code> branch and merge the <code>add-countries</code> branch onto the <code>master</code> branch</strong> <span class="dimmed">(similar to steps 8-9 above)</span>. While you might expect to see something
         like the below,</p>
-      <img src="/book/gitAndGithub/branch/images/addCountriesBranchNoFastForward.png" height="100">
+      <img src="/website-base/book/gitAndGithub/branch/images/addCountriesBranchNoFastForward.png" height="100">
       <p></p>
       <p>... you are likely to see something like this instead:</p>
-      <img src="/book/gitAndGithub/branch/images/addCountriesBranchAfterMerging.png" height="80">
+      <img src="/website-base/book/gitAndGithub/branch/images/addCountriesBranchAfterMerging.png" height="80">
       <p></p>
       <p>That is because <strong>Git does a <mark><em>fast forward</em> merge</mark> if possible</strong>. Seeing that the <code>master</code> branch has not changed since you started the <code>add-countries</code> branch, Git has decided it is simpler to
         just put the commits of the <code>add-countries</code> branch in front of the <code>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
@@ -783,7 +784,7 @@ git checkout feature1
     <div>
       <p><strong>1. Start a branch named <code>fix1</code> in a local repo. Create a commit</strong> that adds a line with some text to one of the files.</p>
       <p><strong>2. Switch back to <code>master</code> branch. Create a commit with a conflicting change</strong> i.e. it adds a line with some different text in the exact location the previous line was added.</p>
-      <img src="/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
+      <img src="/website-base/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
       <p></p>
       <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
       <pre class="hljs"><code>COLORS
@@ -841,7 +842,7 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
       <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
       <tabs>
         <tab header="SourceTree">
-          <img src="/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
+          <img src="/website-base/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
           <p></p>
           <hr>
         </tab>
@@ -854,24 +855,24 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
       <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>),
         as described below.</p>
       <p>4a. Go to the GitHub page of your fork (i.e. <code>https://github.com/{your_username}/samplerepo-pr-practice</code>), click on the <code>Pull Requests</code> tab, and then click on <code>New Pull Request</code> button.</p>
-      <img src="/book/gitAndGithub/createPRs/images/createPrButton.png" width="800">
+      <img src="/website-base/book/gitAndGithub/createPRs/images/createPrButton.png" width="800">
       <p></p>
       <p>4b. Select <code>base fork</code> and <code>head fork</code> as follows:</p>
       <ul>
         <li><code>base fork</code>: your own fork (i.e. <code>{your user name}/samplerepo-pr-practice</code>, <mark>NOT <code>nus-cs2103-AY1718S2/samplerepo-pr-practice</code></mark>)</li>
         <li><code>head fork</code>: your own fork.</li>
       </ul>
-      <img src="/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
+      <img src="/website-base/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
       <p></p>
       <tip-box type="info">
         <p>The <em>base fork</em> is where changes should be applied. The <em>head fork</em> contains the changes you would like to be applied.</p>
       </tip-box>
       <p>4c. (1) Set the base branch to <code>master</code> and head branch to <code>add-intro</code>, (2) confirm the <em>diff</em> contains the changes you propose to merge in this PR <span class="dimmed">(i.e. confirm that you did not accidentally include extra commits in the branch)</span>,
         and (3) click the <code>Create pull request</code> button.</p>
-      <img src="/book/gitAndGithub/createPRs/images/checkDiff.png" width="800">
+      <img src="/website-base/book/gitAndGithub/createPRs/images/checkDiff.png" width="800">
       <p></p>
       <p>4d. (1) Set PR name, (2) set PR description, and (3) Click the <code>Create pull request</code> button.</p>
-      <img src="/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
+      <img src="/website-base/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
       <p></p>
       <tip-box type="important">
         <p>A common newbie mistake when creating branch-based PRs is to mix commits of one PR with another. To learn how to avoid that mistake, you are encouraged to continue and create another PR as explained below.
@@ -883,7 +884,7 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
           the first PR in the second PR as well.</p>
       </tip-box>
       <p><strong>6. Add a commit in the <code>add-summary</code> branch</strong> that adds a <em>Summary</em> section to the <code>README.md</code>, in exactly the same place you added the <em>Introduction</em> section earlier.</p>
-      <img src="/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
+      <img src="/website-base/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
       <p></p>
       <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
       <panel header=":paperclip: Resources" expanded="">
@@ -900,24 +901,24 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
     <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can review and merge PRs on GitHub</span></span></span></button>
     <p></p>
     <div>
-      <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in <a href="/book/gitAndGithub/createPRs/index.html">Tools → Git &amp; GitHub → Create PRs</a> to simulate the PR being reviewed by
-        another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+      <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in <a href="/website-base/book/gitAndGithub/createPRs/index.html">Tools → Git &amp; GitHub → Create PRs</a> to simulate the PR being
+        reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
       <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <code>+</code> icon that appears on the left margin. That should create a text box for you to enter your
         comment.</p>
-      <img src="/book/gitAndGithub/managePRs/images/startReview.png" width="800">
+      <img src="/website-base/book/gitAndGithub/managePRs/images/startReview.png" width="800">
       <p></p>
       <p>1b. Enter some dummy comment and click on <code>Start a review</code> button.</p>
-      <img src="/book/gitAndGithub/managePRs/images/addComment.png" width="800">
+      <img src="/website-base/book/gitAndGithub/managePRs/images/addComment.png" width="800">
       <p></p>
       <p>1c. Add a few more comments in other places of the code.</p>
       <p>1d. Click on the <code>Review Changes</code> button, enter an overall comment, and click on the <code>Submit review</code> button.</p>
-      <img src="/book/gitAndGithub/managePRs/images/submitReview.png" width="500">
+      <img src="/website-base/book/gitAndGithub/managePRs/images/submitReview.png" width="500">
       <p></p>
       <p><strong>2. Update the PR</strong> to simulate revising the code based on reviewer comments. Add some more commits to the <code>add-intro</code> branch and push the new commits to the fork. Observe how the PR is updated automatically to reflect the
         new code.</p>
       <p><strong>3. Merge the PR.</strong> Go to the GitHub page of the respective PR, scroll to the bottom of the <code>Conversation</code> tab, and click on the <code>Merge pull request</code> button, followed by the <code>Confirm merge</code> button.
         You should see a <code>Pull request successfully merged and closed</code> message after the PR is merged.</p>
-      <img src="/book/gitAndGithub/managePRs/images/mergePr.png" width="800">
+      <img src="/website-base/book/gitAndGithub/managePRs/images/mergePr.png" width="800">
       <p></p>
       <p><strong>4. Sync the local repo with the remote repo.</strong> Because of the merge you did on the GitHub, the <code>master</code> branch of your fork is now ahead of your local repo by one commit. To sync the local repo with the remote repo, pull
         the <code>master</code> branch to the local repo.</p>
@@ -995,7 +996,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 12:36:29 GMT]</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1005,4 +1006,5 @@ git pull origin master
     const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\js\site-nav.js"></script>
 </html>

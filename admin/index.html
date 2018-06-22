@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -3005,6 +3006,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="basic">Basic</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of code quality</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <blockquote>
                                 <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
@@ -3017,6 +3022,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                                 </div>
                               </popover>
                             </div>
+                            <div></div>
                           </panel>
                         </div>
                       </div>
@@ -3031,6 +3037,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="introduction-3">Introduction</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of readability</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <blockquote>
                                 <p>Programs should be written and polished until they acquire publication quality. <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
@@ -3149,6 +3159,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                                 <hr>
                               </tip-box>
                             </div>
+                            <div></div>
                           </panel>
                         </div>
                         <div>
@@ -3160,15 +3171,24 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-long-methods">Avoid Long Methods</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid long methods </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-deep-nesting">Avoid Deep Nesting</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid deep nesting </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <blockquote>
                                       <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
@@ -3180,12 +3200,17 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                                       <p></p>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-complicated-expressions">Avoid Complicated Expressions</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid complicated expressions </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use
                                       them to calculate the final value).</p>
@@ -3246,12 +3271,17 @@ is_urgent = type_code == URGENT
                                         <sub>-- Edsger Dijkstra</sub></p>
                                     </blockquote>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-magic-numbers">Avoid Magic Numbers</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
                                       <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
@@ -3343,12 +3373,17 @@ MAX_SIZE = <span class="hljs-number">10</span>
 </code></pre>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="make-the-code-obvious">Make the Code Obvious</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the code obvious </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
                                     <ul>
@@ -3365,6 +3400,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                       </ul>
                                     </modal>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -3379,17 +3415,26 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="structure-code-logically">Structure Code Logically</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: structure code logically </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Lay out the code so that it adheres to the logical structure. The code should read like a story. Just like we use section breaks, chapters and paragraphs to organize a story, use classes, methods, indentation and line
                                       spacing in your code to group related segments of the code. For example, you can use blank lines to group related statements together. Sometimes, the correctness of your code does not depend on the order in which
                                       you perform certain intermediary steps. Nevertheless, this order may affect the clarity of the story you are trying to tell. Choose the order that makes the story most readable.</p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="do-not-trip-up-reader">Do Not 'Trip Up' Reader</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not 'trip up' reader </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Avoid things that would make the reader go ‘huh?’, such as,</p>
                                     <ul>
@@ -3400,12 +3445,17 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                       <li>data flow anomalies such as, pre-assigning values to variables and modifying it without any use of the pre-assigned value</li>
                                     </ul>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="practice-kissing">Practice KISSing</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: practice kissing </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>As the old adage goes, <strong>&quot;keep it simple, stupid” (KISS).  Do not try to write ‘clever’ code.</strong> For example, do not dismiss the brute-force yet simple solution in favor of a complicated one because
                                       of some ‘supposed benefits’ such as 'better reusability' unless you have a strong justification.</p>
@@ -3416,12 +3466,17 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                       <p>Programs must be written for people to read, and only incidentally for machines to execute. <sub>--Abelson and Sussman</sub></p>
                                     </blockquote>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-premature-optimizations">Avoid Premature Optimizations</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid premature optimizations </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p><strong>Optimizing code prematurely has several drawbacks</strong>:</p>
                                     <ul>
@@ -3439,12 +3494,17 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                     <p>Note that <strong>there are cases where optimizing takes priority over other things</strong> <span class="dimmed">e.g. when writing code for resource-constrained environments</span>. This guideline simply a caution
                                       that you should optimize only when it is really needed.</p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="slap-hard">SLAP Hard</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: slap hard </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Avoid varying the level of
                                       <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
@@ -3510,6 +3570,7 @@ displayResult();
                                       </div>
                                     </modal>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -3524,6 +3585,10 @@ displayResult();
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="make-the-happy-path-prominent">Make the Happy Path Prominent</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the happy path prominent </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>The happy path (i.e. the execution path taken when everything goes well) should be clear and prominent in your code. Restructure the code to make the happy path unindented as much as possible. It is the ‘unusual’ cases
                                       that should be indented. Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
@@ -3575,6 +3640,7 @@ exit();
                                       </ul>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -3592,6 +3658,10 @@ exit();
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="introduction-4">Introduction</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for following a standard</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
                               <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location
@@ -3601,12 +3671,45 @@ exit();
                                 <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
                               </tip-box>
                             </div>
+                            <div>
+                              <div>
+                                <panel header=":muscle: Exercises" expandable="">
+                                  <div>
+                                    <panel header=":lock::key: What is the recommended approach regarding coding standards?">
+                                      <question>
+                                        <p>What is the recommended approach regarding coding standards?</p>
+                                        <ul radio-group="5c5a1" class="radio-list">
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <p>c</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                  <div>
+                                    <panel header=":lock: What is the aim? What is the value?">
+                                      <question has-input="">
+                                        <p>What is the aim of using a coding standard? How does it help?</p>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                </panel>
+                              </div>
+                            </div>
                           </panel>
                         </div>
                         <div>
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="basic-3">Basic</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow simple mechanical style rules</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <p>Some coding standards you can adopt:</p>
                               <ul>
@@ -3614,14 +3717,43 @@ exit();
                                 <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
                               </ul>
                             </div>
+                            <div></div>
                           </panel>
                         </div>
                         <div>
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="intermediate-2">Intermediate</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow intermediate style rules</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <p>Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header=":muscle: Exercises" expandable="">
+                                  <div>
+                                    <panel header=":lock::key: Unsuitable variable name">
+                                      <question>
+                                        <p>According to the given Java coding standard, which one of these is not a good name?</p>
+                                        <ul radio-group="1c05d" class="radio-list">
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> a. integer variable name: totalPeople</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> e. String variable name: description</label></li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <p>b</p>
+                                          <p>Explanation: checkWeight is an action. Naming variables as actions makes the code harder to follow. isWeightValid may be a better name.</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                </panel>
+                              </div>
                             </div>
                           </panel>
                         </div>
@@ -3637,12 +3769,17 @@ exit();
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="introduction-5">Introduction</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for good names in code</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
                               <blockquote>
                                 <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
                               </blockquote>
                             </div>
+                            <div></div>
                           </panel>
                         </div>
                         <div>
@@ -3654,6 +3791,10 @@ exit();
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
                                     <tip-box>
@@ -3710,15 +3851,21 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                       <hr>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="use-standard-words">Use Standard Words</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use standard words </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -3733,6 +3880,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="use-name-to-explain">Use Name to Explain</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use name to explain </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
                                     <tip-box>
@@ -3813,21 +3964,31 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                       </table>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="not-too-long-not-too-short">Not Too Long, Not Too Short</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: not too long, not too short </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>While it is preferable not to have lengthy names, names that are 'too short' are even worse. If you must abbreviate or use acronyms, do it consistently. Explain their full meaning at an obvious location.</p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-misleading-names">Avoid Misleading Names</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid misleading names </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p><strong>Related things should be named similarly, while unrelated things should NOT.</strong></p>
                                     <tip-box>
@@ -3891,6 +4052,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                       </table>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -3908,9 +4070,14 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="introduction-6">Introduction</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for avoiding error-prone shortcuts</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <p>It is safer to use language constructs in the way they are meant to be used, even if the language allows shortcuts. Some such coding practices are common sources of bugs. Know them and avoid them.</p>
                             </div>
+                            <div></div>
                           </panel>
                         </div>
                         <div>
@@ -3922,6 +4089,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="use-the-default-branch">Use the Default Branch</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use the default branch </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Always include a default branch in <code>case</code> statements.</p>
                                     <p>Furthermore, use it for the intended default action and not just to execute the last option. If there is no default action, you can use the 'default' branch to detect errors (i.e. if execution reached the <code>default</code>                                      branch, throw an exception). This also applies to the final <code>else</code> of an <code>if-else</code> construct. That is, the final <code>else</code> should mean 'everything else', and not the final option. Do
@@ -3942,12 +4113,17 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
 </code></pre>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="dont-recycle-variables-or-parameters">Don't Recycle Variables or Parameters</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: don't recycle variables or parameters </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <ul>
                                       <li>Use one variable for one purpose. Do not reuse a variable for a different purpose other than its intended one, just because the data type is the same.</li>
@@ -3974,26 +4150,37 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
 </code></pre>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="avoid-empty-catch-blocks">Avoid Empty Catch Blocks</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid empty catch blocks </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Never write an empty <code>catch</code> statement. At least give a comment to explain why the <code>catch</code> block is left empty.</p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="delete-dead-code">Delete Dead Code</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: delete dead code </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>We all feel reluctant to delete code we have painstakingly written, even if we have no use for that code any more (&quot;I spent a lot of time writing that code; what if we need it again?&quot;). Consider all code as
                                       baggage you have to carry; get rid of unused code the moment it becomes redundant. If you need that code again, simply recover it from the revision control tool you are using. Deleting code you wrote previously is
                                       a sign that you are improving.</p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -4008,6 +4195,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="minimise-scope-of-variables">Minimise Scope of Variables</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise scope of variables </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p><strong>Minimize global variables</strong>. Global variables may be the most convenient way to pass information around, but they do create implicit links between code segments that use the global variable. Avoid them
                                       as much as possible.</p>
@@ -4020,12 +4211,17 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                       <li><a href="https://refactoring.com/catalog/reduceScopeOfVariable.html">Refactoring: Reduce Scope of Variable</a></li>
                                     </ul>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="minimise-code-duplication">Minimise Code Duplication</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise code duplication </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating
                                       code; most often there is a better alternative.</p>
@@ -4066,6 +4262,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                     </modal>
                                     <p></p>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -4083,12 +4280,17 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                           <panel type="seamless" expanded="">
                             <span slot="header" class="panel-title"><div>
 <h4 id="introduction-7">Introduction</h4></div></span>
+                            <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for commenting minimally but sufficiently</span></span></span></button>
+                              <p></p>
+                            </p>
+                            <p></p>
                             <div>
                               <blockquote>
                                 <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
                               </blockquote>
                               <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
                             </div>
+                            <div></div>
                           </panel>
                         </div>
                         <div>
@@ -4100,6 +4302,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="do-not-repeat-the-obvious">Do Not Repeat the Obvious</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
                                     <p>
@@ -4112,12 +4318,17 @@ x++;
 trimInput();
 </code></pre>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                               <div>
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="write-to-the-reader">Write to the Reader</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: write to the reader </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that
                                       you write for a class or an operation to explain its purpose.</p>
@@ -4165,6 +4376,7 @@ trimInput();
                                       </tabs>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -4179,6 +4391,10 @@ trimInput();
                                 <panel type="seamless" expanded="">
                                   <span slot="header" class="panel-title"><div>
 <h4 id="explain-what-and-why-not-how">Explain WHAT and WHY, not HOW</h4></div></span>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: explain what and why, not how </span></span></span></button>
+                                    <p></p>
+                                  </p>
+                                  <p></p>
                                   <div>
                                     <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
                                     <p>👍 <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
@@ -4213,6 +4429,7 @@ compact(input);
 </code></pre>
                                     </tip-box>
                                   </div>
+                                  <div></div>
                                 </panel>
                               </div>
                             </div>
@@ -7499,7 +7716,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 12:36:29 GMT]</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -7509,4 +7726,5 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     const baseUrl = '/website-base'
 </script>
 <script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\js\site-nav.js"></script>
 </html>

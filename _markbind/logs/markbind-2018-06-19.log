@@ -19443,3 +19443,8 @@ Missing reference in C:\repos\nus-cs2103\website-base\book\modelingBehaviors\use
 2018-06-19T12:33:22.856Z - info: Generate Site durationMs=73482
 2018-06-19T12:33:23.240Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-06-19T12:33:23.240Z - info: Press CTRL+C to stop ...
+2018-06-19T12:37:26.980Z - info: Pages built
+2018-06-19T12:37:27.043Z - info: Site data built
+2018-06-19T12:37:27.043Z - info: Build success!
+2018-06-19T12:37:27.043Z - info: Generate Site durationMs=67816
+2018-06-19T12:39:06.086Z - info: Deployed!

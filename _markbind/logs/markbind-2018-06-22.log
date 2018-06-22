@@ -1,0 +1,40 @@
+2018-06-22T02:44:21.701Z - info: Pages built
+2018-06-22T02:44:21.819Z - info: Site data built
+2018-06-22T02:44:21.828Z - info: Generate Site durationMs=101484
+2018-06-22T02:44:24.621Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T02:44:24.621Z - info: Press CTRL+C to stop ...
+2018-06-22T02:45:35.284Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:45:36.288Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:45:36.289Z - info: Rebuilding 0 pages
+2018-06-22T02:45:36.289Z - info: Pages rebuilt
+2018-06-22T02:45:36.308Z - info: Site data built
+2018-06-22T02:45:50.262Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:45:51.264Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:45:51.265Z - info: Rebuilding 0 pages
+2018-06-22T02:45:51.265Z - info: Pages rebuilt
+2018-06-22T02:45:51.284Z - info: Site data built
+2018-06-22T02:46:21.466Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:46:22.468Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:46:22.468Z - info: Rebuilding 0 pages
+2018-06-22T02:46:22.469Z - info: Pages rebuilt
+2018-06-22T02:46:22.487Z - info: Site data built
+2018-06-22T02:47:06.727Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:47:07.730Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:47:07.730Z - info: Rebuilding 0 pages
+2018-06-22T02:47:07.730Z - info: Pages rebuilt
+2018-06-22T02:47:07.741Z - info: Site data built
+2018-06-22T02:47:54.275Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:47:55.278Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:47:55.278Z - info: Rebuilding 0 pages
+2018-06-22T02:47:55.278Z - info: Pages rebuilt
+2018-06-22T02:47:55.297Z - info: Site data built
+2018-06-22T02:49:52.024Z - info: Pages built
+2018-06-22T02:49:52.107Z - info: Site data built
+2018-06-22T02:49:52.117Z - info: Generate Site durationMs=42054
+2018-06-22T02:49:52.511Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T02:49:52.511Z - info: Press CTRL+C to stop ...
+2018-06-22T02:50:16.612Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:50:17.614Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\footers\footer.md
+2018-06-22T02:50:17.615Z - info: Rebuilding 0 pages
+2018-06-22T02:50:17.616Z - info: Pages rebuilt
+2018-06-22T02:50:17.635Z - info: Site data built

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -122,14 +123,14 @@
             <tab header="Java">
               <p>📦 In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code> block
                 and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
-              <img src="/book/errorHandling/exceptions/how/images/processInput.png" width="400">
+              <img src="/website-base/book/errorHandling/exceptions/how/images/processInput.png" width="400">
               <p></p>
               <p></p>
             </tab>
           
             <tab header="Python">
               <p>📦 In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code> function inside a <code>try</code>                clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
-              <img src="/book/errorHandling/exceptions/how/images/example-python.png" width="400">
+              <img src="/website-base/book/errorHandling/exceptions/how/images/example-python.png" width="400">
               <p></p>
             </tab>
           </tabs>
@@ -456,7 +457,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         <p>Consider two classes, <code>Account</code> and <code>Guarantor</code>, with an association as shown in the following diagram:</p>
         <tip-box>
           <p>Example:</p>
-          <img src="/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+          <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
           <p></p>
           <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -649,7 +650,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
       <div>
         <p>Consider the association given below. A defensive implementation requires to ensure a <code>MinedCell</code> cannot exist without a <code>Mine</code> and vice versa which requires simultaneous object creation. However, Java can only create one
           object at a time. Given below are two alternatives implementations, both of which violate the multiplicity for a short period of time.</p>
-        <img src="/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
+        <img src="/website-base/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
         <p></p>
         <p>Option 1:</p>
         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
@@ -686,7 +687,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
       <p></p>
       <div>
         <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
-        <img src="/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+        <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
         <p></p>
         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
@@ -720,7 +721,7 @@ jean.setBoyfriend(yong);
 </code></pre>
         <p>Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not defensive enough to stop this &quot;love triangle&quot;. In such a situation, we say that <em>the referential integrity has been violated</em>.
           It simply means <em>there is an inconsistency in object references</em>.</p>
-        <img src="/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+        <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
         <p></p>
         <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
@@ -1085,7 +1086,7 @@ r1.setPlayer(p2);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>[Generated by <a href="https://markbind.github.io/markbind/">MarkBind 1.8.0</a> on Tue, 19 Jun 2018 12:36:29 GMT]</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 02:51:15 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1095,4 +1096,5 @@ r1.setPlayer(p2);
     const baseUrl = '/website-base'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
+<script src="..\..\markbind\js\site-nav.js"></script>
 </html>

@@ -1,6 +1,98 @@
 {
   "pages": [
     {
+      "headings": {},
+      "src": "admin/appendixA-principles.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "policy-on-following-instructions": "Policy on following instructions",
+        "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams",
+        "policy-on-project-work-distribution": "Policy on project work distribution",
+        "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events)",
+        "policy-on-email-response-time": "Policy on email response time",
+        "policy-on-tech-help": "Policy on tech help",
+        "policy-on-publishing-submissions": "Policy on publishing submissions",
+        "policy-on-plagiarism": "Policy on plagiarism",
+        "policy-on-reuse": "Policy on reuse",
+        "policy-on-help-from-outsiders": "Policy on help from outsiders",
+        "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions"
+      },
+      "src": "admin/appendixB-policies.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "where-is-everything": "Where is everything?",
+        "what-are-the-differences-between-cs2103-and-cs2103t": "What are the differences between CS2103 and CS2103T?",
+        "why-the-workload-is-so-high": "Why the workload is so high?",
+        "how-do-i-get-cs2103r-credit-for-optional-los": "How do I get CS2103R credit for optional LOs?",
+        "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+?",
+        "why-so-much-bean-counting": "Why so much bean counting?",
+        "why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle": "Why you force me to visit a separate website instead of using IVLE?",
+        "why-slides-are-not-detailed": "Why slides are not detailed?",
+        "why-so-much-self-study": "Why so much self-study?",
+        "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?",
+        "why-very-narrow-project-scope": "Why very narrow project scope?",
+        "why-project-requirements-are-so-vague": "Why project requirements are so vague?",
+        "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I'm not allowed to use my favorite tool/framework/language etc.?",
+        "why-so-many-submissions": "Why so many submissions?",
+        "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch?",
+        "why-submission-requirements-differ-between-cs2103t-and-cs2101": "Why submission requirements differ between CS2103T and CS2101?"
+      },
+      "src": "admin/appendixC-faq.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/appendixD-help.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "create-a-github-profile": "Create a GitHub profile",
+        "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
+        "submitting-pull-requests-as-evidence-of-an-lo": "Submitting Pull Requests as evidence of an LO",
+        "organization-setup": "Organization setup",
+        "repo-setup": "Repo setup",
+        "issue-tracker-setup": "Issue tracker setup",
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:",
+        "workflow": "Workflow"
+      },
+      "title": "Tutorial Schedule",
+      "src": "admin/appendixE-gitHub.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/appendixF-teamworkIssues.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/collate.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
+        "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)"
+      },
+      "src": "admin/exams.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
+        "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)",
+        "v15-practical-exam": "v1.5 Practical Exam"
+      },
+      "src": "admin/gradeBreakdown.md",
+      "title": ""
+    },
+    {
       "headings": {
         "preliminaries": "Preliminaries",
         "learning-outcomes": "Learning Outcomes",
@@ -133,6 +225,169 @@
       "src": "admin/index.md"
     },
     {
+      "headings": {},
+      "src": "admin/learningOutcomes.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/lectures.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/participation.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/peer-evaluations.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/preliminaries.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/profilePhoto.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/programming-languages.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "v15-practical-exam": "v1.5 Practical Exam"
+      },
+      "src": "admin/project-assessment.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/project-constraints.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/project-deliverables.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/project-product.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/project-scope.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/project-testing.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
+        "organization-setup": "Organization setup",
+        "repo-setup": "Repo setup",
+        "v10-product": "v1.0 Product"
+      },
+      "src": "admin/project-v10.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "v11-product": "v1.1 Product",
+        "v11-documentation": "v1.1 Documentation"
+      },
+      "src": "admin/project-v11.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "v12-project-management": "v1.2 Project Management",
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:",
+        "v12-product": "v1.2 Product",
+        "v12-documentation": "v1.2 Documentation",
+        "v12-demo": "v1.2 Demo"
+      },
+      "src": "admin/project-v12.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:",
+        "v13-project-management": "v1.3 Project Management",
+        "v13-product": "v1.3 Product",
+        "v13-documentation": "v1.3 Documentation",
+        "v13-demo": "v1.3 Demo"
+      },
+      "src": "admin/project-v13.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "v14-project-management": "v1.4 Project Management",
+        "v14-product": "v1.4 Product",
+        "v14-documentation": "v1.4 Documentation",
+        "v14-demo": "v1.4 Demo",
+        "v14-testing": "v1.4 Testing"
+      },
+      "src": "admin/project-v14.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "v15-product": "v1.5 Product",
+        "v15-documentation": "v1.5 Documentation",
+        "v15-demo": "v1.5 Demo",
+        "v15-practical-exam": "v1.5 Practical Exam"
+      },
+      "src": "admin/project-v15.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "v15rc-project-management": "v1.5rc Project Management",
+        "v15rc-product": "v1.5rc Product",
+        "code-quality": "Code Quality",
+        "introduction": "Introduction",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-2": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "guideline-name-well": "Guideline: Name Well",
+        "basic-4": "Basic",
+        "intermediate-3": "Intermediate",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-5": "Basic",
+        "intermediate-4": "Intermediate",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-6": "Basic",
+        "intermediate-5": "Intermediate",
+        "v15rc-documentation": "v1.5rc Documentation",
+        "v15rc-demo": "v1.5rc Demo"
+      },
+      "title": "Code Quality",
+      "src": "admin/project-v15rc.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/project.md",
+      "title": ""
+    },
+    {
       "headings": {
         "b1": "B1",
         "b2": "B2",
@@ -209,513 +464,39 @@
       "src": "admin/projectList.md"
     },
     {
-      "headings": {
-        "acknowledgements": "Acknowledgements"
-      },
-      "title": "About: Acknowledgements",
-      "src": "book/about/acknowledgements.md"
-    },
-    {
-      "headings": {
-        "using-this-book": "Using This Book",
-        "browser-compatibility": "Browser Compatibility",
-        "information-layers": "Information Layers",
-        "conventions-used": "Conventions Used",
-        "searching": "Searching",
-        "saving-as-pdf-files": "Saving as PDF Files",
-        "printing": "Printing"
-      },
-      "title": "About: Usage",
-      "src": "book/about/usage.md"
-    },
-    {
-      "headings": {
-        "client-server-architectural-style": "Client-server Architectural Style"
-      },
-      "title": "Architectural Styles: Client-Server Architectural Style",
-      "src": "book/architecture/architecturalStyles/clientServer/index.md"
+      "headings": {},
+      "src": "admin/projectPortfolioPage.md",
+      "title": ""
     },
     {
       "headings": {},
-      "title": "Architectural Styles: Client-Server Architectural Style: What",
-      "src": "book/architecture/architecturalStyles/clientServer/what/index.md"
-    },
-    {
-      "headings": {
-        "event-driven-architectural-style": "Event-driven Architectural Style"
-      },
-      "title": "Architectural Styles: Event-Driven Architectural Style",
-      "src": "book/architecture/architecturalStyles/eventDriven/index.md"
+      "src": "admin/ratingSystem.md",
+      "title": ""
     },
     {
       "headings": {},
-      "title": "Architectural Styles: Event-Driven Architectural Style: What",
-      "src": "book/architecture/architecturalStyles/eventDriven/what/index.md"
-    },
-    {
-      "headings": {
-        "architectural-styles": "Architectural Styles",
-        "introduction": "Introduction",
-        "n-tier-architectural-style": "N-tier Architectural Style",
-        "client-server-architectural-style": "Client-server Architectural Style",
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
-        "service-oriented-architectural-style": "Service-oriented Architectural Style",
-        "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More"
-      },
-      "title": "Software Architecture: Architectural Styles",
-      "src": "book/architecture/architecturalStyles/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Architectural Styles: Introduction",
-      "src": "book/architecture/architecturalStyles/introduction/index.md"
+      "src": "admin/supervision.md",
+      "title": ""
     },
     {
       "headings": {},
-      "title": "Architectural Styles: Introduction: What",
-      "src": "book/architecture/architecturalStyles/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "more": "More"
-      },
-      "title": "Architectural Styles: More",
-      "src": "book/architecture/architecturalStyles/more/index.md"
+      "title": "Tutorial Schedule",
+      "src": "admin/teams.md"
     },
     {
       "headings": {},
-      "title": "Architectural Styles: More: More Architectural Styles",
-      "src": "book/architecture/architecturalStyles/more/moreStyles/index.md"
+      "src": "admin/textbooks.md",
+      "title": ""
     },
     {
       "headings": {},
-      "title": "Architectural Styles: More: Using Architectural Styles",
-      "src": "book/architecture/architecturalStyles/more/usingStyles/index.md"
-    },
-    {
-      "headings": {
-        "n-tier-architectural-style": "N-tier Architectural Style"
-      },
-      "title": "Architectural Styles: n-tier Architectural Style",
-      "src": "book/architecture/architecturalStyles/nTier/index.md"
+      "src": "admin/tools.md",
+      "title": ""
     },
     {
       "headings": {},
-      "title": "Architectural Styles: n-tier Architectural Style: What",
-      "src": "book/architecture/architecturalStyles/nTier/what/index.md"
-    },
-    {
-      "headings": {
-        "service-oriented-architectural-style": "Service-oriented Architectural Style"
-      },
-      "title": "Architectural Styles: Service-Oriented Architectural Style",
-      "src": "book/architecture/architecturalStyles/serviceOriented/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Architectural Styles: Service-Oriented Architectural Style: What",
-      "src": "book/architecture/architecturalStyles/serviceOriented/what/index.md"
-    },
-    {
-      "headings": {
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style"
-      },
-      "title": "Architectural Styles: Transaction Processing Architectural Style",
-      "src": "book/architecture/architecturalStyles/transactionProcessing/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Architectural Styles: Transaction Processing Architectural Style: What",
-      "src": "book/architecture/architecturalStyles/transactionProcessing/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Architecture: Architecture Diagrams: Drawing",
-      "src": "book/architecture/architectureDiagrams/drawing/index.md"
-    },
-    {
-      "headings": {
-        "architecture-diagrams": "Architecture Diagrams"
-      },
-      "title": "Software Architecture: Architecture Diagrams",
-      "src": "book/architecture/architectureDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Architecture: Architecture Diagrams: Reading",
-      "src": "book/architecture/architectureDiagrams/reading/index.md"
-    },
-    {
-      "headings": {
-        "software-architecture": "Software Architecture",
-        "introduction": "Introduction",
-        "architecture-diagrams": "Architecture Diagrams",
-        "architectural-styles": "Architectural Styles",
-        "introduction-2": "Introduction",
-        "n-tier-architectural-style": "N-tier Architectural Style",
-        "client-server-architectural-style": "Client-server Architectural Style",
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
-        "service-oriented-architectural-style": "Service-oriented Architectural Style",
-        "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More"
-      },
-      "title": "Software Architecture",
-      "src": "book/architecture/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Software Architecture: Introduction",
-      "src": "book/architecture/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Architecture: Introduction: What",
-      "src": "book/architecture/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "software-architecture": "Software Architecture",
-        "introduction": "Introduction",
-        "architecture-diagrams": "Architecture Diagrams",
-        "architectural-styles": "Architectural Styles",
-        "introduction-2": "Introduction",
-        "n-tier-architectural-style": "N-tier Architectural Style",
-        "client-server-architectural-style": "Client-Server Architectural Style",
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
-        "service-oriented-architectural-style": "Service-oriented Architectural Style",
-        "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More"
-      },
-      "title": "Software Architecture [Printable]",
-      "src": "book/architecture/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Empty Catch Blocks",
-      "src": "book/codeQuality/avoidShortcuts/basic/avoidEmptyCatchBlocks/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Delete Dead Code",
-      "src": "book/codeQuality/avoidShortcuts/basic/deleteDeadCode/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Do Not Recycle Variables or Parameters",
-      "src": "book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams/index.md"
-    },
-    {
-      "headings": {
-        "basic": "Basic"
-      },
-      "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic",
-      "src": "book/codeQuality/avoidShortcuts/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Use Default Branch",
-      "src": "book/codeQuality/avoidShortcuts/basic/useDefaultBranch/index.md"
-    },
-    {
-      "headings": {
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic": "Basic",
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts",
-      "src": "book/codeQuality/avoidShortcuts/index.md"
-    },
-    {
-      "headings": {
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Intermediate",
-      "src": "book/codeQuality/avoidShortcuts/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Minimise Code Duplication",
-      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseCodeDuplication/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Minimise Scope of Variables",
-      "src": "book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Avoid Unsafe Shortcuts: Introduction",
-      "src": "book/codeQuality/avoidShortcuts/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Do Not Repeat the Obvious",
-      "src": "book/codeQuality/commentMinimally/basic/dontRepeatObvious/index.md"
-    },
-    {
-      "headings": {
-        "basic": "Basic"
-      },
-      "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic",
-      "src": "book/codeQuality/commentMinimally/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Write to the Reader",
-      "src": "book/codeQuality/commentMinimally/basic/writeToReader/index.md"
-    },
-    {
-      "headings": {
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic": "Basic",
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently",
-      "src": "book/codeQuality/commentMinimally/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Explain WHAT, WHY not HOW",
-      "src": "book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow/index.md"
-    },
-    {
-      "headings": {
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Intermediate",
-      "src": "book/codeQuality/commentMinimally/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Comment Minimally, but Sufficiently: Introduction",
-      "src": "book/codeQuality/commentMinimally/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Follow a Standard: Basic",
-      "src": "book/codeQuality/followStandard/basic/index.md"
-    },
-    {
-      "headings": {
-        "guideline-follow-a-standard": "Guideline: Follow a Standard"
-      },
-      "title": "Code Quality: [Guideline] Follow a Standard",
-      "src": "book/codeQuality/followStandard/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Follow a Standard: Intermediate",
-      "src": "book/codeQuality/followStandard/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Follow a Standard: Introduction",
-      "src": "book/codeQuality/followStandard/introduction/index.md"
-    },
-    {
-      "headings": {
-        "code-quality": "Code Quality",
-        "introduction": "Introduction",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-2": "Basic",
-        "intermediate": "Intermediate",
-        "advanced": "Advanced",
-        "guideline-follow-a-standard": "Guideline: Follow a Standard",
-        "guideline-name-well": "Guideline: Name Well",
-        "basic-4": "Basic",
-        "intermediate-3": "Intermediate",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-5": "Basic",
-        "intermediate-4": "Intermediate",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-6": "Basic",
-        "intermediate-5": "Intermediate"
-      },
-      "title": "Code Quality",
-      "src": "book/codeQuality/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: Introduction: Basic",
-      "src": "book/codeQuality/introduction/basic/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Code Quality: Introduction",
-      "src": "book/codeQuality/introduction/index.md"
-    },
-    {
-      "headings": {
-        "advanced": "Advanced"
-      },
-      "title": "Code Quality: [Guideline] Maximise Readability: Advanced",
-      "src": "book/codeQuality/maximiseReadability/advanced/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Make the Happy Path Prominent",
-      "src": "book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Complicated Expressions",
-      "src": "book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Deep Nesting",
-      "src": "book/codeQuality/maximiseReadability/basic/avoidDeepNesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Long Methods",
-      "src": "book/codeQuality/maximiseReadability/basic/avoidLongMethods/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Magic Numbers",
-      "src": "book/codeQuality/maximiseReadability/basic/avoidMagicNumbers/index.md"
-    },
-    {
-      "headings": {
-        "basic": "Basic"
-      },
-      "title": "Code Quality: [Guideline] Maximise Readability: Basic",
-      "src": "book/codeQuality/maximiseReadability/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Make the Code Obvious",
-      "src": "book/codeQuality/maximiseReadability/basic/makeCodeObvious/index.md"
-    },
-    {
-      "headings": {
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic": "Basic",
-        "intermediate": "Intermediate",
-        "advanced": "Advanced"
-      },
-      "title": "Code Quality: [Guideline] Maximise Readability",
-      "src": "book/codeQuality/maximiseReadability/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Premature Optimizations",
-      "src": "book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Do Not 'Trip Up' the Reader",
-      "src": "book/codeQuality/maximiseReadability/intermediate/dontTripReader/index.md"
-    },
-    {
-      "headings": {
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Maximise Readability: Intermediate",
-      "src": "book/codeQuality/maximiseReadability/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Practice KISSing",
-      "src": "book/codeQuality/maximiseReadability/intermediate/practiceKISSing/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] SLAP Hard",
-      "src": "book/codeQuality/maximiseReadability/intermediate/slapHard/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Structure Code Logically",
-      "src": "book/codeQuality/maximiseReadability/intermediate/structureCodeLogically/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Maximise Readability: Introduction",
-      "src": "book/codeQuality/maximiseReadability/introduction/index.md"
-    },
-    {
-      "headings": {
-        "basic": "Basic"
-      },
-      "title": "Code Quality: [Guideline] Name Well: Basic",
-      "src": "book/codeQuality/nameWell/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Nouns and Verbs as Names",
-      "src": "book/codeQuality/nameWell/basic/nounsAndVerbsAsNames/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Use Standard Words",
-      "src": "book/codeQuality/nameWell/basic/useStandardWords/index.md"
-    },
-    {
-      "headings": {
-        "guideline-name-well": "Guideline: Name Well",
-        "basic": "Basic",
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Name Well",
-      "src": "book/codeQuality/nameWell/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Avoid Misleading Names",
-      "src": "book/codeQuality/nameWell/intermediate/avoidMisleadingNames/index.md"
-    },
-    {
-      "headings": {
-        "intermediate": "Intermediate"
-      },
-      "title": "Code Quality: [Guideline] Name Well: Intermediate",
-      "src": "book/codeQuality/nameWell/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Not Too Long, Not Too Short",
-      "src": "book/codeQuality/nameWell/intermediate/notTooLongNorShort/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Coding Best Practices: [Practice] Use Name to Explain",
-      "src": "book/codeQuality/nameWell/intermediate/useNameExplain/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Code Quality: [Guideline] Name Well: Introduction",
-      "src": "book/codeQuality/nameWell/introduction/index.md"
-    },
-    {
-      "headings": {
-        "code-quality": "Code Quality",
-        "introduction": "Introduction",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-2": "Basic",
-        "intermediate": "Intermediate",
-        "advanced": "Advanced",
-        "guideline-follow-a-standard": "Guideline: Follow a Standard",
-        "guideline-name-well": "Guideline: Name Well",
-        "basic-4": "Basic",
-        "intermediate-3": "Intermediate",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-5": "Basic",
-        "intermediate-4": "Intermediate",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently",
-        "basic-6": "Basic",
-        "intermediate-5": "Intermediate"
-      },
-      "title": "Code Quality [Printable]",
-      "src": "book/codeQuality/print.md"
+      "title": "Tutorial Schedule",
+      "src": "admin/tutorials.md"
     },
     {
       "headings": {
@@ -726,3424 +507,7 @@
     },
     {
       "headings": {
-        "book-software-engineering-for-self-directed-learners": "BOOK: SOFTWARE ENGINEERING FOR SELF-DIRECTED LEARNERS",
-        "about-this-book": "About this Book",
-        "section-introduction": "SECTION: INTRODUCTION",
-        "section-oop-with-uml": "SECTION: OOP (with UML)",
-        "section-requirements": "SECTION: REQUIREMENTS",
-        "section-design": "SECTION: DESIGN",
-        "software-architecture": "Software Architecture",
-        "introduction": "Introduction",
-        "architecture-diagrams": "Architecture Diagrams",
-        "architectural-styles": "Architectural Styles",
-        "introduction-2": "Introduction",
-        "n-tier-architectural-style": "N-tier Architectural Style",
-        "client-server-architectural-style": "Client-server Architectural Style",
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
-        "service-oriented-architectural-style": "Service-oriented Architectural Style",
-        "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More",
-        "section-implementation": "SECTION: IMPLEMENTATION",
-        "section-quality-assurance": "SECTION: QUALITY ASSURANCE",
-        "section-project-management": "SECTION: PROJECT MANAGEMENT",
-        "section-tools": "SECTION: TOOLS",
-        "section-supplementary": "SECTION: SUPPLEMENTARY"
-      },
-      "title": "SE Book [All-In-One-Page Big File!]",
-      "src": "book/common/all.md"
-    },
-    {
-      "headings": {
-        "definitions": "Definitions",
-        "a": "A",
-        "b": "B",
-        "c": "C",
-        "d": "D",
-        "e": "E",
-        "f": "F",
-        "g": "G",
-        "i": "I",
-        "l": "L",
-        "o": "O",
-        "p": "P",
-        "r": "R",
-        "s": "S",
-        "t": "T",
-        "u": "U",
-        "w": "W",
-        "y": "Y"
-      },
-      "title": "Definitions",
-      "src": "book/common/definitions.md"
-    },
-    {
-      "headings": {
-        "learning-outcomes": "Learning Outcomes",
-        "software-engineering": "Software Engineering",
-        "requirements": "Requirements",
-        "requirements-2": "Requirements",
-        "gathering": "Gathering",
-        "specifying": "Specifying",
-        "design": "Design",
-        "software-design": "Software Design",
-        "design-fundamentals": "Design Fundamentals",
-        "object-oriented-programming": "Object Oriented Programming",
-        "modeling": "Modeling",
-        "architecture": "Architecture",
-        "design-patterns": "Design Patterns",
-        "design-approaches": "Design Approaches",
-        "implementation": "Implementation",
-        "ides": "IDEs",
-        "code-quality": "Code Quality",
-        "refactoring": "Refactoring",
-        "documentation": "Documentation",
-        "error-handling": "Error Handling",
-        "integration": "Integration",
-        "oop-implementation": "OOP Implementation",
-        "reuse": "Reuse",
-        "quality-assurance": "Quality Assurance",
-        "quality-assurance-2": "Quality Assurance",
-        "testing": "Testing",
-        "test-case-design": "Test Case Design",
-        "project-management": "Project Management",
-        "revision-control": "Revision Control",
-        "project-planning": "Project Planning",
-        "teamwork": "Teamwork",
-        "process-models": "Process Models",
-        "tools": "Tools",
-        "uml": "UML",
-        "intellij-idea": "Intellij IDEA",
-        "git-and-github": "Git and GitHub",
-        "java": "Java",
-        "junit": "JUnit",
-        "principles": "Principles",
-        "se-principles": "SE Principles"
-      },
-      "title": "SE Book: Full List of Learning Outcomes",
-      "src": "book/common/outcomes.md"
-    },
-    {
-      "headings": {
-        "book-software-engineering-for-self-directed-learners": "BOOK: SOFTWARE ENGINEERING FOR SELF-DIRECTED LEARNERS",
-        "section-introduction": "SECTION: INTRODUCTION",
-        "software-engineering": "Software Engineering",
-        "introduction": "Introduction",
-        "section-oop-with-uml": "SECTION: OOP (with UML)",
-        "oop-concepts": "OOP - Concepts",
-        "introduction-2": "Introduction",
-        "objects": "Objects",
-        "classes": "Classes",
-        "associations": "Associations",
-        "inheritance": "Inheritance",
-        "polymorphism": "Polymorphism",
-        "more": "More",
-        "oop-implementation": "OOP - Implementation",
-        "section-requirements": "SECTION: REQUIREMENTS",
-        "requirements": "Requirements",
-        "gathering-requirements": "Gathering Requirements",
-        "specifying-requirements": "Specifying Requirements",
-        "prose": "Prose",
-        "feature-list": "Feature List",
-        "user-stories": "User Stories",
-        "use-cases": "Use Cases",
-        "glossary": "Glossary",
-        "supplementary-requirements": "Supplementary Requirements",
-        "section-design": "SECTION: DESIGN",
-        "design": "Design",
-        "introduction-8": "Introduction",
-        "design-fundamentals": "Design Fundamentals",
-        "abstraction": "Abstraction",
-        "coupling": "Coupling",
-        "cohesion": "Cohesion",
-        "modeling": "Modeling",
-        "introduction-9": "Introduction",
-        "modeling-structures": "Modeling Structures",
-        "modeling-behaviors": "Modeling Behaviors",
-        "modeling-a-solution": "Modeling a Solution",
-        "software-architecture": "Software Architecture",
-        "introduction-13": "Introduction",
-        "architecture-diagrams": "Architecture Diagrams",
-        "architectural-styles": "Architectural Styles",
-        "introduction-14": "Introduction",
-        "n-tier-architectural-style": "N-tier Architectural Style",
-        "client-server-architectural-style": "Client-Server Architectural Style",
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
-        "service-oriented-architectural-style": "Service-oriented Architectural Style",
-        "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more-2": "More",
-        "software-design-patterns": "Software Design Patterns",
-        "introduction-15": "Introduction",
-        "singleton-pattern": "Singleton Pattern",
-        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
-        "facade-pattern": "Facade Pattern",
-        "command-pattern": "Command Pattern",
-        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
-        "observer-pattern": "Observer Pattern",
-        "more-3": "More",
-        "design-approaches": "Design Approaches",
-        "section-implementation": "SECTION: IMPLEMENTATION",
-        "ides": "IDEs",
-        "introduction-16": "Introduction",
-        "debugging": "Debugging",
-        "code-quality": "Code Quality",
-        "introduction-17": "Introduction",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-7": "Basic",
-        "intermediate-2": "Intermediate",
-        "advanced": "Advanced",
-        "guideline-follow-a-standard": "Guideline: Follow a Standard",
-        "guideline-name-well": "Guideline: Name Well",
-        "basic-9": "Basic",
-        "intermediate-4": "Intermediate",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-10": "Basic",
-        "intermediate-5": "Intermediate",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, But Sufficiently",
-        "basic-11": "Basic",
-        "intermediate-6": "Intermediate",
-        "refactoring": "Refactoring",
-        "documentation": "Documentation",
-        "introduction-23": "Introduction",
-        "guidelines": "Guidelines",
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
-        "tools": "Tools",
-        "javadoc": "JavaDoc",
-        "markdown": "Markdown",
-        "asciidoc": "AsciiDoc",
-        "error-handling": "Error Handling",
-        "introduction-24": "Introduction",
-        "exceptions": "Exceptions",
-        "assertions": "Assertions",
-        "logging": "Logging",
-        "defensive-programming": "Defensive Programming",
-        "design-by-contract-approach": "Design-by-Contract Approach",
-        "integration": "Integration",
-        "introduction-25": "Introduction",
-        "approaches": "Approaches",
-        "build-automation": "Build Automation",
-        "build-automation-2": "Build Automation",
-        "reuse": "Reuse",
-        "introduction-26": "Introduction",
-        "apis": "APIs",
-        "libraries": "Libraries",
-        "frameworks": "Frameworks",
-        "platforms": "Platforms",
-        "cloud-computing": "Cloud Computing",
-        "section-quality-assurance": "SECTION: QUALITY ASSURANCE",
-        "quality-assurance": "Quality Assurance",
-        "introduction-27": "Introduction",
-        "code-reviews": "Code Reviews",
-        "static-analysis": "Static Analysis",
-        "formal-verification": "Formal Verification",
-        "testing": "Testing",
-        "introduction-28": "Introduction",
-        "testing-types": "Testing Types",
-        "unit-testing": "Unit Testing",
-        "integration-testing": "Integration Testing",
-        "system-testing": "System Testing",
-        "alpha-beta-testing": "Alpha-Beta Testing",
-        "dogfooding": "Dogfooding",
-        "developer-testing": "Developer Testing",
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
-        "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing",
-        "test-automation": "Test Automation",
-        "test-coverage": "Test Coverage",
-        "dependency-injection": "Dependency Injection",
-        "tdd": "TDD",
-        "test-case-design": "Test Case Design",
-        "introduction-29": "Introduction",
-        "equivalence-partitions": "Equivalence Partitions",
-        "boundary-value-analysis": "Boundary Value Analysis",
-        "combining-test-inputs": "Combining Test Inputs",
-        "more-4": "More",
-        "summary": "Summary",
-        "section-project-management": "SECTION: PROJECT MANAGEMENT",
-        "revision-control": "Revision Control",
-        "project-planning": "Project Planning",
-        "teamwork": "Teamwork",
-        "sdlc-process-models": "SDLC Process Models",
-        "introduction-30": "Introduction",
-        "example-process-models": "Example Process Models",
-        "more-5": "More",
-        "section-tools": "SECTION: TOOLS",
-        "uml": "UML",
-        "class-diagrams": "Class Diagrams",
-        "introduction-31": "Introduction",
-        "classes-2": "Classes",
-        "associations-2": "Associations",
-        "associations-as-attributes": "Associations as Attributes",
-        "enumerations-2": "Enumerations",
-        "class-level-members-2": "Class Level Members",
-        "association-classes-2": "Association Classes",
-        "composition-2": "Composition",
-        "aggregation-2": "Aggregation",
-        "class-inheritance": "Class Inheritance",
-        "interfaces-2": "Interfaces",
-        "abstract-classes-2": "Abstract Classes",
-        "object-diagrams-2": "Object Diagrams",
-        "sequence-diagrams": "Sequence Diagrams",
-        "activity-diagrams-2": "Activity Diagrams",
-        "introduction-34": "Introduction",
-        "basic-notations": "Basic Notations",
-        "notes": "Notes",
-        "miscellaneous-2": "Miscellaneous",
-        "intellij-idea": "Intellij IDEA",
-        "git-and-github": "Git and GitHub",
-        "java": "Java",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-36": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-37": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application",
-        "junit": "JUnit",
-        "section-supplementary": "SECTION: SUPPLEMENTARY",
-        "principles": "Principles"
-      },
-      "title": "SE Book [Printable, Big File!]",
-      "src": "book/common/print.md"
-    },
-    {
-      "headings": {
-        "references": "References"
-      },
-      "title": "References",
-      "src": "book/common/references.md"
-    },
-    {
-      "headings": {
-        "software-design": "Software Design",
-        "introduction": "Introduction"
-      },
-      "title": "Software Design",
-      "src": "book/design/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Software Design: Introduction",
-      "src": "book/design/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design: Introduction: Basic",
-      "src": "book/design/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "design": "Design",
-        "introduction": "Introduction"
-      },
-      "title": "Software Design [Printable]",
-      "src": "book/design/print.md"
-    },
-    {
-      "headings": {
-        "agile-design": "Agile Design"
-      },
-      "title": "Design Approaches: Agile Design",
-      "src": "book/designApproaches/agileDesign/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Design Approaches: Agile Design",
-      "src": "book/designApproaches/agileDesign/what/index.md"
-    },
-    {
-      "headings": {
-        "design-approaches": "Design Approaches",
-        "multi-level-design": "Multi-Level Design",
-        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
-        "agile-design": "Agile Design"
-      },
-      "title": "Design Approaches",
-      "src": "book/designApproaches/index.md"
-    },
-    {
-      "headings": {
-        "multi-level-design": "Multi-Level Design"
-      },
-      "title": "Design Approaches: Multi-Level Design",
-      "src": "book/designApproaches/multilevelDesign/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Design Approaches: Multi-Level Design",
-      "src": "book/designApproaches/multilevelDesign/what/index.md"
-    },
-    {
-      "headings": {
-        "design-approaches": "Design Approaches"
-      },
-      "src": "book/designApproaches/print.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design"
-      },
-      "title": "Design Approaches: Top-Down and Bottom-Up Design",
-      "src": "book/designApproaches/topDownBottomUp/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Design Approaches: Top-Down and Bottom-Up Design",
-      "src": "book/designApproaches/topDownBottomUp/what/index.md"
-    },
-    {
-      "headings": {
-        "abstraction": "Abstraction"
-      },
-      "title": "Software Design Fundamentals: Abstraction",
-      "src": "book/designFundamentals/abstraction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Fundamentals: Abstraction: What",
-      "src": "book/designFundamentals/abstraction/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Fundamentals: Cohesion: How",
-      "src": "book/designFundamentals/cohesion/how/index.md"
-    },
-    {
-      "headings": {
-        "cohesion": "Cohesion"
-      },
-      "title": "Software Design Fundamentals: Cohesion",
-      "src": "book/designFundamentals/cohesion/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Fundamentals: Cohesion: What",
-      "src": "book/designFundamentals/cohesion/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Fundamentals: Coupling: How",
-      "src": "book/designFundamentals/coupling/how/index.md"
-    },
-    {
-      "headings": {
-        "coupling": "Coupling"
-      },
-      "title": "Software Design Fundamentals: Coupling",
-      "src": "book/designFundamentals/coupling/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Fundamentals: Coupling: Types of Coupling",
-      "src": "book/designFundamentals/coupling/types/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Fundamentals: Coupling: What",
-      "src": "book/designFundamentals/coupling/what/index.md"
-    },
-    {
-      "headings": {
-        "design-fundamentals": "Design Fundamentals",
-        "abstraction": "Abstraction",
-        "coupling": "Coupling",
-        "cohesion": "Cohesion"
-      },
-      "title": "Software Design Fundamentals",
-      "src": "book/designFundamentals/index.md"
-    },
-    {
-      "headings": {
-        "design-fundamentals": "Design Fundamentals",
-        "abstraction": "Abstraction",
-        "coupling": "Coupling",
-        "cohesion": "Cohesion"
-      },
-      "title": "Software Design Fundamentals [Printable]",
-      "src": "book/designFundamentals/print.md"
-    },
-    {
-      "headings": {
-        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern"
-      },
-      "title": "Software Design Patterns: Abstraction Occurrence",
-      "src": "book/designPatterns/abstractionOccurrence/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Abstraction Occurrence: What",
-      "src": "book/designPatterns/abstractionOccurrence/what/index.md"
-    },
-    {
-      "headings": {
-        "command-pattern": "Command Pattern"
-      },
-      "title": "Software Design Patterns: Command",
-      "src": "book/designPatterns/command/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Command: What",
-      "src": "book/designPatterns/command/what/index.md"
-    },
-    {
-      "headings": {
-        "facade-pattern": "Facade Pattern"
-      },
-      "title": "Software Design Patterns: Facade",
-      "src": "book/designPatterns/facade/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Facade: What",
-      "src": "book/designPatterns/facade/what/index.md"
-    },
-    {
-      "headings": {
-        "software-design-patterns": "Software Design Patterns",
-        "introduction": "Introduction",
-        "singleton-pattern": "Singleton Pattern",
-        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
-        "facade-pattern": "Facade Pattern",
-        "command-pattern": "Command Pattern",
-        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
-        "observer-pattern": "Observer Pattern",
-        "more": "More"
-      },
-      "title": "Software Design Patterns",
-      "src": "book/designPatterns/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Introduction: Format",
-      "src": "book/designPatterns/introduction/format/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Software Design Patterns: Introduction",
-      "src": "book/designPatterns/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Introduction: What",
-      "src": "book/designPatterns/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern"
-      },
-      "title": "Software Design Patterns: Model View Controller",
-      "src": "book/designPatterns/modelViewController/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Model View Controller: What",
-      "src": "book/designPatterns/modelViewController/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: More: Combining Design Patterns",
-      "src": "book/designPatterns/more/combiningDesignPatterns/index.md"
-    },
-    {
-      "headings": {
-        "more": "More"
-      },
-      "title": "Software Design Patterns: More",
-      "src": "book/designPatterns/more/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: More: Other Design Patterns",
-      "src": "book/designPatterns/more/otherDesignPatterns/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: More: Other Types of Patterns",
-      "src": "book/designPatterns/more/otherTypesOfPatterns/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: More: Using Design Patterns",
-      "src": "book/designPatterns/more/usingDesignPatterns/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: More: Patterns vs Principles",
-      "src": "book/designPatterns/more/vsPrinciples/index.md"
-    },
-    {
-      "headings": {
-        "observer-pattern": "Observer Pattern"
-      },
-      "title": "Software Design Patterns: Observer",
-      "src": "book/designPatterns/observer/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Observer: What",
-      "src": "book/designPatterns/observer/what/index.md"
-    },
-    {
-      "headings": {
-        "software-design-patterns": "Software Design Patterns",
-        "introduction": "Introduction",
-        "singleton-pattern": "Singleton Pattern",
-        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
-        "facade-pattern": "Facade Pattern",
-        "command-pattern": "Command Pattern",
-        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
-        "observer-pattern": "Observer Pattern",
-        "more": "More"
-      },
-      "title": "Software Design Patterns [Printable]",
-      "src": "book/designPatterns/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Singleton: Evaluation",
-      "src": "book/designPatterns/singleton/evaluation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Singleton: Implementation",
-      "src": "book/designPatterns/singleton/implementation/index.md"
-    },
-    {
-      "headings": {
-        "singleton-pattern": "Singleton Pattern"
-      },
-      "title": "Software Design Patterns: Singleton",
-      "src": "book/designPatterns/singleton/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Patterns: Singleton: What",
-      "src": "book/designPatterns/singleton/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Aim for Comprehensibility: How",
-      "src": "book/documentation/guidelines/aimForComprehensibility/how/index.md"
-    },
-    {
-      "headings": {
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility"
-      },
-      "title": "Documentation: Guidelines: Aim for Comprehensibility",
-      "src": "book/documentation/guidelines/aimForComprehensibility/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Aim for Comprehensibility: What",
-      "src": "book/documentation/guidelines/aimForComprehensibility/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Document Minimally, but Sufficiently: How",
-      "src": "book/documentation/guidelines/documentMinimally/how/index.md"
-    },
-    {
-      "headings": {
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently"
-      },
-      "title": "Documentation: Guidelines: Document Minimally, but Sufficiently",
-      "src": "book/documentation/guidelines/documentMinimally/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Document Minimally, but Sufficiently: What",
-      "src": "book/documentation/guidelines/documentMinimally/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Go Top-down, Not Bottom-up: How",
-      "src": "book/documentation/guidelines/goTopDown/how/index.md"
-    },
-    {
-      "headings": {
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up"
-      },
-      "title": "Documentation: Guidelines: Go Top-down, Not Bottom-up",
-      "src": "book/documentation/guidelines/goTopDown/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Go Top-down, Not Bottom-up: What",
-      "src": "book/documentation/guidelines/goTopDown/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Go Top-down, Not Bottom-up: Why",
-      "src": "book/documentation/guidelines/goTopDown/why/index.md"
-    },
-    {
-      "headings": {
-        "guidelines": "Guidelines",
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently"
-      },
-      "title": "Documentation: Guidelines",
-      "src": "book/documentation/guidelines/index.md"
-    },
-    {
-      "headings": {
-        "documentation": "Documentation",
-        "introduction": "Introduction",
-        "guidelines": "Guidelines",
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
-        "tools": "Tools",
-        "javadoc": "JavaDoc",
-        "markdown": "Markdown",
-        "asciidoc": "AsciiDoc"
-      },
-      "title": "Documentation",
-      "src": "book/documentation/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Documentation: Introduction",
-      "src": "book/documentation/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Introduction: What",
-      "src": "book/documentation/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "documentation": "Documentation",
-        "introduction": "Introduction",
-        "guidelines": "Guidelines",
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
-        "tools": "Tools",
-        "javadoc": "JavaDoc",
-        "markdown": "Markdown",
-        "asciidoc": "AsciiDoc"
-      },
-      "title": "Documentation [Printable]",
-      "src": "book/documentation/print.md"
-    },
-    {
-      "headings": {
-        "asciidoc": "AsciiDoc"
-      },
-      "title": "Documentation: Tools: AsciiDoc",
-      "src": "book/documentation/tools/asciiDoc/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: AsciiDoc: What",
-      "src": "book/documentation/tools/asciiDoc/what/index.md"
-    },
-    {
-      "headings": {
-        "tools": "Tools",
-        "javadoc": "JavaDoc",
-        "markdown": "Markdown",
-        "asciidoc": "AsciiDoc"
-      },
-      "title": "Documentation: Tools",
-      "src": "book/documentation/tools/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: JavaDoc: How",
-      "src": "book/documentation/tools/javaDoc/how/index.md"
-    },
-    {
-      "headings": {
-        "javadoc": "JavaDoc"
-      },
-      "title": "Documentation: Tools: JavaDoc",
-      "src": "book/documentation/tools/javaDoc/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: JavaDoc: What",
-      "src": "book/documentation/tools/javaDoc/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Markdown: How",
-      "src": "book/documentation/tools/markdown/how/index.md"
-    },
-    {
-      "headings": {
-        "markdown": "Markdown"
-      },
-      "title": "Documentation: Tools: Markdown",
-      "src": "book/documentation/tools/markdown/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Documentation: Markdown: What",
-      "src": "book/documentation/tools/markdown/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Assertions: How",
-      "src": "book/errorHandling/assertions/how/index.md"
-    },
-    {
-      "headings": {
-        "assertions": "Assertions"
-      },
-      "title": "Error Handling: Assertions",
-      "src": "book/errorHandling/assertions/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Assertions: What",
-      "src": "book/errorHandling/assertions/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Assertions: When",
-      "src": "book/errorHandling/assertions/when/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Defensive Programming: Enforcing 1-to-1 Associations",
-      "src": "book/errorHandling/defensiveProgramming/1to1Associations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Defensive Programming: Enforcing Compulsory Associations",
-      "src": "book/errorHandling/defensiveProgramming/compulsoryAssociations/index.md"
-    },
-    {
-      "headings": {
-        "defensive-programming": "Defensive Programming"
-      },
-      "title": "Error Handling: Defensive Programming",
-      "src": "book/errorHandling/defensiveProgramming/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Defensive Programming: Enforcing Referential Integrity",
-      "src": "book/errorHandling/defensiveProgramming/referentialIntegrity/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Defensive Programming: What",
-      "src": "book/errorHandling/defensiveProgramming/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Defensive Programming: When",
-      "src": "book/errorHandling/defensiveProgramming/when/index.md"
-    },
-    {
-      "headings": {
-        "design-by-contract-approach": "Design-by-Contract Approach"
-      },
-      "title": "Error Handling: Design-by-Contract Approach",
-      "src": "book/errorHandling/designByContract/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Design-by-Contract Approach: What",
-      "src": "book/errorHandling/designByContract/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Exceptions: How",
-      "src": "book/errorHandling/exceptions/how/index.md"
-    },
-    {
-      "headings": {
-        "exceptions": "Exceptions"
-      },
-      "title": "Error Handling: Exceptions",
-      "src": "book/errorHandling/exceptions/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Exceptions: What",
-      "src": "book/errorHandling/exceptions/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Exceptions: When",
-      "src": "book/errorHandling/exceptions/when/index.md"
-    },
-    {
-      "headings": {
-        "error-handling": "Error Handling",
-        "introduction": "Introduction",
-        "exceptions": "Exceptions",
-        "assertions": "Assertions",
-        "logging": "Logging",
-        "defensive-programming": "Defensive Programming",
-        "design-by-contract-approach": "Design-by-Contract Approach"
-      },
-      "title": "Error Handling",
-      "src": "book/errorHandling/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Error Handling: Introduction",
-      "src": "book/errorHandling/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Introduction: What",
-      "src": "book/errorHandling/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Logging: How",
-      "src": "book/errorHandling/logging/how/index.md"
-    },
-    {
-      "headings": {
-        "logging": "Logging"
-      },
-      "title": "Error Handling: Logging",
-      "src": "book/errorHandling/logging/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Error Handling: Logging: What",
-      "src": "book/errorHandling/logging/what/index.md"
-    },
-    {
-      "headings": {
-        "error-handling": "Error Handling",
-        "introduction": "Introduction",
-        "exceptions": "Exceptions",
-        "assertions": "Assertions",
-        "logging": "Logging",
-        "defensive-programming": "Defensive Programming",
-        "design-by-contract-approach": "Design-by-Contract Approach"
-      },
-      "title": "Error Handling [Printable]",
-      "src": "book/errorHandling/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: Brainstorming",
-      "src": "book/gatheringRequirements/brainstorming/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: Focus Groups",
-      "src": "book/gatheringRequirements/focusGroups/index.md"
-    },
-    {
-      "headings": {
-        "gathering-requirements": "Gathering Requirements"
-      },
-      "title": "Gathering Requirements",
-      "src": "book/gatheringRequirements/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: Interviews",
-      "src": "book/gatheringRequirements/interviews/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: Observation",
-      "src": "book/gatheringRequirements/observation/index.md"
-    },
-    {
-      "headings": {
-        "gathering-requirements": "Gathering Requirements"
-      },
-      "title": "Gathering Requirements [Printable]",
-      "src": "book/gatheringRequirements/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: Product Surveys",
-      "src": "book/gatheringRequirements/productSurveys/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: Prototyping",
-      "src": "book/gatheringRequirements/prototyping/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Gathering Requirements: User Surveys",
-      "src": "book/gatheringRequirements/userSurveys/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Branch",
-      "src": "book/gitAndGithub/branch/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Checkout",
-      "src": "book/gitAndGithub/checkout/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Clone",
-      "src": "book/gitAndGithub/clone/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Commit",
-      "src": "book/gitAndGithub/commit/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Create PRs",
-      "src": "book/gitAndGithub/createPRs/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Forking Workflow",
-      "src": "book/gitAndGithub/forkingWorkflow/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Ignore",
-      "src": "book/gitAndGithub/ignore/index.md"
-    },
-    {
-      "headings": {
-        "git-and-github": "Git and Github"
-      },
-      "title": "Git and Github",
-      "src": "book/gitAndGithub/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Init",
-      "src": "book/gitAndGithub/init/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Manage PRs",
-      "src": "book/gitAndGithub/managePRs/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Merge Conflicts",
-      "src": "book/gitAndGithub/mergeConflicts/index.md"
-    },
-    {
-      "headings": {
-        "git-and-github": "Git and GitHub"
-      },
-      "title": "Git and Github [Printable]",
-      "src": "book/gitAndGithub/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Pull",
-      "src": "book/gitAndGithub/pull/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Push",
-      "src": "book/gitAndGithub/push/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Stash",
-      "src": "book/gitAndGithub/stash/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Git and Github: Tag",
-      "src": "book/gitAndGithub/tag/index.md"
-    },
-    {
-      "headings": {
-        "debugging": "Debugging"
-      },
-      "title": "IDEs: Debugging",
-      "src": "book/ides/debugging/index.md"
-    },
-    {
-      "headings": {},
-      "title": "IDEs: Debugging: What",
-      "src": "book/ides/debugging/what/index.md"
-    },
-    {
-      "headings": {
-        "ides": "IDEs",
-        "introduction": "Introduction",
-        "debugging": "Debugging"
-      },
-      "title": "IDEs",
-      "src": "book/ides/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "IDEs: Introduction",
-      "src": "book/ides/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "IDEs: Introduction: What",
-      "src": "book/ides/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "ides": "IDEs",
-        "introduction": "Introduction",
-        "debugging": "Debugging"
-      },
-      "title": "IDEs [Printable]",
-      "src": "book/ides/print.md"
-    },
-    {
-      "headings": {
-        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
-        "about-this-book": "About this Book",
-        "software-engineering": "Software Engineering",
-        "object-oriented-programming-with-uml": "Object-Oriented Programming (with UML)",
-        "requirements": "Requirements",
-        "design": "Design",
-        "implementation": "Implementation",
-        "quality-assurance": "Quality Assurance",
-        "project-management": "Project Management",
-        "tools": "Tools",
-        "principles": "Principles",
-        "supplementary": "Supplementary"
-      },
-      "title": "Book - Software Engineering for Self-Directed Learners",
-      "src": "book/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Approaches: Big Bang vs Incremental Integration",
-      "src": "book/integration/approaches/bigBangVsIncremental/index.md"
-    },
-    {
-      "headings": {
-        "approaches": "Approaches"
-      },
-      "title": "Integration: Approaches",
-      "src": "book/integration/approaches/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Approaches: 'Late and One Time' vs 'Early and Frequent'",
-      "src": "book/integration/approaches/lateVsEarly/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Approaches: Top-Down vs Bottom-Up Integration",
-      "src": "book/integration/approaches/topDownVsBottomUp/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Build Automation: Continuous Integration/Continuous Deployment",
-      "src": "book/integration/buildAutomation/continuousIntegrationDeployment/index.md"
-    },
-    {
-      "headings": {
-        "build-automation": "Build Automation"
-      },
-      "title": "Integration: Build Automation",
-      "src": "book/integration/buildAutomation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Build Automation: What",
-      "src": "book/integration/buildAutomation/what/index.md"
-    },
-    {
-      "headings": {
-        "integration": "Integration",
-        "introduction": "Introduction",
-        "approaches": "Approaches",
-        "build-automation": "Build Automation",
-        "approaches-2": "Approaches"
-      },
-      "title": "Integration",
-      "src": "book/integration/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Integration: Introduction",
-      "src": "book/integration/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: Introduction: What",
-      "src": "book/integration/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "approaches": "Approaches"
-      },
-      "title": "Integration: More",
-      "src": "book/integration/more/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Integration: More: Review",
-      "src": "book/integration/more/review/index.md"
-    },
-    {
-      "headings": {
-        "integration": "Integration",
-        "introduction": "Introduction",
-        "approaches": "Approaches",
-        "build-automation": "Build Automation",
-        "build-automation-2": "Build Automation"
-      },
-      "title": "Integration [Printable]",
-      "src": "book/integration/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Intellij IDEA: Code Navigation",
-      "src": "book/intellij/codeNavigation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Intellij IDEA: Debugging - Basic",
-      "src": "book/intellij/debuggingBasic/index.md"
-    },
-    {
-      "headings": {
-        "intellij-idea": "Intellij IDEA"
-      },
-      "title": "Intellij IDEA",
-      "src": "book/intellij/index.md"
-    },
-    {
-      "headings": {
-        "intellij-idea": "Intellij IDEA"
-      },
-      "title": "Intellij IDEA [Printable]",
-      "src": "book/intellij/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Intellij IDEA: Productivity Shortcuts",
-      "src": "book/intellij/productivityShortcuts/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Intellij IDEA: Project Setup",
-      "src": "book/intellij/projectSetup/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Intellij IDEA: Refactoring",
-      "src": "book/intellij/refactoring/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Java: Use Collections",
-      "src": "book/javaTools/collections/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Java: Use Enums",
-      "src": "book/javaTools/enums/index.md"
-    },
-    {
-      "headings": {
-        "java": "Java",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-2": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application"
-      },
-      "title": "Java",
-      "src": "book/javaTools/index.md"
-    },
-    {
-      "headings": {
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-2": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application"
-      },
-      "title": "Java: JavaFX - Basic",
-      "src": "book/javaTools/javaFXBasic/index.md"
-    },
-    {
-      "headings": {
-        "java": "Java",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-2": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application"
-      },
-      "title": "Java [Printable]",
-      "src": "book/javaTools/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Java: Streams - Basic",
-      "src": "book/javaTools/streamsBasic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Java: Use Varargs",
-      "src": "book/javaTools/varargs/index.md"
-    },
-    {
-      "headings": {},
-      "title": "JUnit: Basic",
-      "src": "book/junit/basic/index.md"
-    },
-    {
-      "headings": {
-        "junit": "JUnit"
-      },
-      "title": "JUnit",
-      "src": "book/junit/index.md"
-    },
-    {
-      "headings": {},
-      "title": "JUnit: Intermediate",
-      "src": "book/junit/intermediate/index.md"
-    },
-    {
-      "headings": {
-        "junit": "JUnit"
-      },
-      "title": "JUnit [Printable]",
-      "src": "book/junit/print.md"
-    },
-    {
-      "headings": {
-        "modeling": "Modeling",
-        "introduction": "Introduction",
-        "modeling-structures": "Modeling Structures",
-        "modeling-behaviors": "Modeling Behaviors",
-        "modeling-a-solution": "Modeling a Solution"
-      },
-      "title": "Modeling",
-      "src": "book/modeling/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Introduction: How",
-      "src": "book/modeling/introduction/how/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Modeling: Introduction",
-      "src": "book/modeling/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Introduction: UML Models",
-      "src": "book/modeling/introduction/umlModels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Introduction: What",
-      "src": "book/modeling/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling a Solution: Basic",
-      "src": "book/modeling/modelingASolution/basic/index.md"
-    },
-    {
-      "headings": {
-        "modeling-a-solution": "Modeling a Solution"
-      },
-      "title": "Modeling: Modeling a Solution",
-      "src": "book/modeling/modelingASolution/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling a Solution: Intermediate",
-      "src": "book/modeling/modelingASolution/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling a Solution: Introduction",
-      "src": "book/modeling/modelingASolution/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Activity Diagrams",
-      "src": "book/modeling/modelingBehaviors/activityDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Communication Diagrams",
-      "src": "book/modeling/modelingBehaviors/communicationDiagrams/index.md"
-    },
-    {
-      "headings": {
-        "modeling-behaviors": "Modeling Behaviors"
-      },
-      "title": "Modeling: Modeling Behaviors",
-      "src": "book/modeling/modelingBehaviors/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Interaction Overview Diagrams",
-      "src": "book/modeling/modelingBehaviors/interactionOverviewDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Sequence Diagrams - Advanced",
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsAdvanced/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Sequence Diagrams - Basic",
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsBasic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Sequence Diagrams - Intermediate",
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: State Machine Diagrams",
-      "src": "book/modeling/modelingBehaviors/stateMachineDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Timing Diagrams",
-      "src": "book/modeling/modelingBehaviors/timingDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Behaviors: Use Case Diagrams",
-      "src": "book/modeling/modelingBehaviors/useCaseDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/modeling/modelingStructures/addingMoreInfo/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Class Diagrams - Advanced",
-      "src": "book/modeling/modelingStructures/classDiagramsAdvanced/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Class Diagrams - Basic",
-      "src": "book/modeling/modelingStructures/classDiagramsBasic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Class Diagrams - Intermediate",
-      "src": "book/modeling/modelingStructures/classDiagramsIntermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Component Diagrams",
-      "src": "book/modeling/modelingStructures/componentDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Composite Structure Diagrams",
-      "src": "book/modeling/modelingStructures/compositeStructureDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Deployment Diagrams",
-      "src": "book/modeling/modelingStructures/deploymentDiagrams/index.md"
-    },
-    {
-      "headings": {
-        "modeling-structures": "Modeling Structures"
-      },
-      "title": "Modeling: Modeling Structures",
-      "src": "book/modeling/modelingStructures/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Object Diagrams",
-      "src": "book/modeling/modelingStructures/objectDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Object Oriented Domain Models",
-      "src": "book/modeling/modelingStructures/objectOrientedDomainModels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Object Oriented Structures",
-      "src": "book/modeling/modelingStructures/ooStructures/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Modeling: Modeling Structures: Package Diagrams",
-      "src": "book/modeling/modelingStructures/packageDiagrams/index.md"
-    },
-    {
-      "headings": {
-        "modeling": "Modeling",
-        "introduction": "Introduction",
-        "modeling-structures": "Modeling Structures",
-        "modeling-behaviors": "Modeling Behaviors",
-        "modeling-a-solution": "Modeling a Solution"
-      },
-      "title": "Modeling [Printable]",
-      "src": "book/modeling/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Aggregation",
-      "src": "book/oopDesign/associations/aggregation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Association Classes",
-      "src": "book/oopDesign/associations/associationClasses/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Basic",
-      "src": "book/oopDesign/associations/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Composition",
-      "src": "book/oopDesign/associations/composition/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Dependencies",
-      "src": "book/oopDesign/associations/dependencies/index.md"
-    },
-    {
-      "headings": {
-        "associations": "Associations"
-      },
-      "title": "Object Oriented Programming: Associations",
-      "src": "book/oopDesign/associations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Multiplicity",
-      "src": "book/oopDesign/associations/multiplicity/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations: Navigability",
-      "src": "book/oopDesign/associations/navigability/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Classes: Basic",
-      "src": "book/oopDesign/classes/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Classes: Class Level Members",
-      "src": "book/oopDesign/classes/classLevelMembers/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Classes: Enumerations",
-      "src": "book/oopDesign/classes/enumerations/index.md"
-    },
-    {
-      "headings": {
-        "classes": "Classes"
-      },
-      "title": "Object Oriented Programming: Classes",
-      "src": "book/oopDesign/classes/index.md"
-    },
-    {
-      "headings": {
-        "oop-concepts": "OOP - Concepts",
-        "introduction": "Introduction",
-        "objects": "Objects",
-        "classes": "Classes",
-        "associations": "Associations",
-        "inheritance": "Inheritance",
-        "polymorphism": "Polymorphism",
-        "more": "More"
-      },
-      "title": "Object Oriented Programming",
-      "src": "book/oopDesign/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Abstract Classes",
-      "src": "book/oopDesign/inheritance/abstractClasses/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Dynamic and Static Binding",
-      "src": "book/oopDesign/inheritance/dynamicAndStaticBinding/index.md"
-    },
-    {
-      "headings": {
-        "inheritance": "Inheritance"
-      },
-      "title": "Object Oriented Programming: Inheritance",
-      "src": "book/oopDesign/inheritance/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Interfaces",
-      "src": "book/oopDesign/inheritance/interfaces/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Overloading",
-      "src": "book/oopDesign/inheritance/overloading/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Overriding",
-      "src": "book/oopDesign/inheritance/overriding/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Substitutability",
-      "src": "book/oopDesign/inheritance/substitutability/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance: Basic",
-      "src": "book/oopDesign/inheritance/what/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Object Oriented Programming: Introduction",
-      "src": "book/oopDesign/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Introduction",
-      "src": "book/oopDesign/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "more": "More"
-      },
-      "title": "Object Oriented Programming: More",
-      "src": "book/oopDesign/more/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Miscellaneous",
-      "src": "book/oopDesign/more/miscellaneous/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Review",
-      "src": "book/oopDesign/more/review/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Objects: Abstraction",
-      "src": "book/oopDesign/objects/abstraction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Objects: Basic",
-      "src": "book/oopDesign/objects/basic/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Objects: Encapsulation",
-      "src": "book/oopDesign/objects/encapsulation/index.md"
-    },
-    {
-      "headings": {
-        "objects": "Objects"
-      },
-      "title": "Object Oriented Programming: Objects",
-      "src": "book/oopDesign/objects/index.md"
-    },
-    {
-      "headings": {
-        "polymorphism": "Polymorphism"
-      },
-      "title": "Object Oriented Programming: Polymorphism",
-      "src": "book/oopDesign/polymorphism/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Polymorphism: Introduction",
-      "src": "book/oopDesign/polymorphism/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Polymorphism: Mechanism",
-      "src": "book/oopDesign/polymorphism/mechanism/index.md"
-    },
-    {
-      "headings": {
-        "oop-concepts": "OOP - Concepts",
-        "introduction": "Introduction",
-        "objects": "Objects",
-        "classes": "Classes",
-        "associations": "Associations",
-        "inheritance": "Inheritance",
-        "polymorphism": "Polymorphism",
-        "more": "More"
-      },
-      "title": "Object Oriented Programming [Printable]",
-      "src": "book/oopDesign/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Abstract Classes",
-      "src": "book/oopImplementation/abstractClasses/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Aggregation",
-      "src": "book/oopImplementation/aggregation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Association Classes",
-      "src": "book/oopImplementation/associationClasses/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Associations",
-      "src": "book/oopImplementation/associations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Class-Level Members",
-      "src": "book/oopImplementation/classLevelMembers/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Classes",
-      "src": "book/oopImplementation/classes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Composition",
-      "src": "book/oopImplementation/composition/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Dependencies",
-      "src": "book/oopImplementation/dependencies/index.md"
-    },
-    {
-      "headings": {
-        "oop-implementation": "OOP - Implementation"
-      },
-      "title": "Object Oriented Programming",
-      "src": "book/oopImplementation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Inheritance",
-      "src": "book/oopImplementation/inheritance/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Interfaces",
-      "src": "book/oopImplementation/interfaces/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Overloading",
-      "src": "book/oopImplementation/overloading/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Overriding",
-      "src": "book/oopImplementation/overriding/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Object Oriented Programming: Polymorphism",
-      "src": "book/oopImplementation/polymorphism/index.md"
-    },
-    {
-      "headings": {
-        "oop-implementation": "OOP - Implementation"
-      },
-      "title": "Object Oriented Programming [Printable]",
-      "src": "book/oopImplementation/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Brooks' Law",
-      "src": "book/principles/brooksLaw/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Dependency Inversion Principle",
-      "src": "book/principles/dependencyInversionPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: DRY Principle",
-      "src": "book/principles/dryPrinciple/index.md"
-    },
-    {
-      "headings": {
-        "principles": "Principles"
-      },
-      "title": "Principles",
-      "src": "book/principles/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Interface Segregation Principle",
-      "src": "book/principles/interfaceSegregationPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Law of Demeter",
-      "src": "book/principles/lawOfDemeter/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Liskov Substitution Principle",
-      "src": "book/principles/liskovSubstitutionPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Design Principles: Open-Closed Principle",
-      "src": "book/principles/openClosedPrinciple/index.md"
-    },
-    {
-      "headings": {
-        "principles": "Principles"
-      },
-      "title": "Principles [Printable]",
-      "src": "book/principles/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Review",
-      "src": "book/principles/review/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Separation of Concerns Principle",
-      "src": "book/principles/separationOfConcernsPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: Single Responsibility Principle",
-      "src": "book/principles/singleResponsibilityPrinciple/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: SOLID Principles",
-      "src": "book/principles/solidPrinciples/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Principles: YAGNI Principle",
-      "src": "book/principles/yagniPrinciple/index.md"
-    },
-    {
-      "headings": {
-        "example-process-models": "Example Process Models"
-      },
-      "title": "SDLC Process Models: Exaxmple Process Models",
-      "src": "book/processModels/exampleProcessModels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Exaxmple Process Models: SCRUM",
-      "src": "book/processModels/exampleProcessModels/scrum/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Exaxmple Process Models: Unified Process",
-      "src": "book/processModels/exampleProcessModels/unifiedProcess/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Exaxmple Process Models: XP",
-      "src": "book/processModels/exampleProcessModels/xp/index.md"
-    },
-    {
-      "headings": {
-        "sdlc-process-models": "SDLC Process Models",
-        "introduction": "Introduction",
-        "example-process-models": "Example Process Models",
-        "more": "More",
-        "summary": "Summary"
-      },
-      "title": "SDLC Process Models",
-      "src": "book/processModels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Introduction: Agile Models",
-      "src": "book/processModels/introduction/agileModels/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "SDLC Process Models: Introduction",
-      "src": "book/processModels/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Introduction: Iterative Models",
-      "src": "book/processModels/introduction/iterativeModels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Introduction: Sequential Models",
-      "src": "book/processModels/introduction/sequentialModels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Introduction: What",
-      "src": "book/processModels/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: More: CMMI",
-      "src": "book/processModels/more/cmmi/index.md"
-    },
-    {
-      "headings": {
-        "more": "More"
-      },
-      "title": "SDLC Process Models: More",
-      "src": "book/processModels/more/index.md"
-    },
-    {
-      "headings": {
-        "sdlc-process-models": "SDLC Process Models",
-        "introduction": "Introduction",
-        "example-process-models": "Example Process Models",
-        "more": "More"
-      },
-      "title": "SDLC Process Models [Printable]",
-      "src": "book/processModels/print.md"
-    },
-    {
-      "headings": {
-        "summary": "Summary"
-      },
-      "title": "SDLC Process Models: Summary",
-      "src": "book/processModels/summary/index.md"
-    },
-    {
-      "headings": {},
-      "title": "SDLC Process Models: Summary: Recap",
-      "src": "book/processModels/summary/recap/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Project Planning: Buffers",
-      "src": "book/projectPlanning/buffers/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Project Planning: GANTT Charts",
-      "src": "book/projectPlanning/ganttCharts/index.md"
-    },
-    {
-      "headings": {
-        "project-planning": "Project Planning"
-      },
-      "title": "Project Planning",
-      "src": "book/projectPlanning/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Project Planning: Issue Trackers",
-      "src": "book/projectPlanning/issueTrackers/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Project Planning: Milestones",
-      "src": "book/projectPlanning/milestones/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Project Planning: PERT Charts",
-      "src": "book/projectPlanning/pertCharts/index.md"
-    },
-    {
-      "headings": {
-        "project-planning": "Project Planning"
-      },
-      "title": "Project Planning [Printable]",
-      "src": "book/projectPlanning/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Project Planning: Work Breakdown Structure",
-      "src": "book/projectPlanning/workBreakdownStructure/index.md"
-    },
-    {
-      "headings": {
-        "code-reviews": "Code Reviews"
-      },
-      "title": "Quality Assurance: Code Reviews",
-      "src": "book/qualityAssurance/codeReviews/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Quality Assurance: Code Reviews: What",
-      "src": "book/qualityAssurance/codeReviews/what/index.md"
-    },
-    {
-      "headings": {
-        "formal-verification": "Formal Verification"
-      },
-      "title": "Quality Assurance: Formal Veerification",
-      "src": "book/qualityAssurance/formalVerification/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Quality Assurance: Formal Veerification: What",
-      "src": "book/qualityAssurance/formalVerification/what/index.md"
-    },
-    {
-      "headings": {
-        "quality-assurance": "Quality Assurance",
-        "introduction": "Introduction",
-        "code-reviews": "Code Reviews",
-        "static-analysis": "Static Analysis",
-        "formal-verification": "Formal Verification"
-      },
-      "title": "Quality Assurance",
-      "src": "book/qualityAssurance/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Quality Assurance: Introduction",
-      "src": "book/qualityAssurance/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Quality Assurance: Introduction: Validation vs Verification",
-      "src": "book/qualityAssurance/introduction/validationVsVerification/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Quality Assurance: Introduction: What",
-      "src": "book/qualityAssurance/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "quality-assurance": "Quality Assurance",
-        "introduction": "Introduction",
-        "code-reviews": "Code Reviews",
-        "static-analysis": "Static Analysis",
-        "formal-verification": "Formal Verification"
-      },
-      "title": "Quality Assurance [Printable]",
-      "src": "book/qualityAssurance/print.md"
-    },
-    {
-      "headings": {
-        "static-analysis": "Static Analysis"
-      },
-      "title": "Quality Assurance: Static Analysis",
-      "src": "book/qualityAssurance/staticAnalysis/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Quality Assurance: Static Analysis: What",
-      "src": "book/qualityAssurance/staticAnalysis/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Refactoring: How",
-      "src": "book/refactoring/how/index.md"
-    },
-    {
-      "headings": {
-        "refactoring": "Refactoring"
-      },
-      "title": "Refactoring",
-      "src": "book/refactoring/index.md"
-    },
-    {
-      "headings": {
-        "refactoring": "Refactoring"
-      },
-      "title": "Refactoring [Printable]",
-      "src": "book/refactoring/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Refactoring: What",
-      "src": "book/refactoring/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Refactoring: When",
-      "src": "book/refactoring/when/index.md"
-    },
-    {
-      "headings": {
-        "requirements": "Requirements"
-      },
-      "title": "Requirements",
-      "src": "book/requirements/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Requirements: Introduction",
-      "src": "book/requirements/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Requirements: Non-Functional Requirements",
-      "src": "book/requirements/nonFunctionalRequirements/index.md"
-    },
-    {
-      "headings": {
-        "requirements": "Requirements"
-      },
-      "title": "Requirements [Printable]",
-      "src": "book/requirements/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Requirements: Prioritizing Requirements",
-      "src": "book/requirements/prioritizing/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Requirements: Quality of Requirements",
-      "src": "book/requirements/quality/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: APIs: Designing APIs",
-      "src": "book/reuse/apis/designingAPIs/index.md"
-    },
-    {
-      "headings": {
-        "apis": "APIs"
-      },
-      "title": "Reuse: APIs",
-      "src": "book/reuse/apis/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: APIs: What",
-      "src": "book/reuse/apis/what/index.md"
-    },
-    {
-      "headings": {
-        "cloud-computing": "Cloud Computing"
-      },
-      "title": "Reuse: Cloud Computing",
-      "src": "book/reuse/cloudComputing/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Cloud Computing: IaaS, PaaS and SaaS",
-      "src": "book/reuse/cloudComputing/services/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Cloud Computing: What",
-      "src": "book/reuse/cloudComputing/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Frameworks: Frameworks vs Libraries",
-      "src": "book/reuse/frameworks/frameworksVsLibraries/index.md"
-    },
-    {
-      "headings": {
-        "frameworks": "Frameworks"
-      },
-      "title": "Reuse: Frameworks",
-      "src": "book/reuse/frameworks/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Frameworks: What",
-      "src": "book/reuse/frameworks/what/index.md"
-    },
-    {
-      "headings": {
-        "reuse": "Reuse",
-        "introduction": "Introduction",
-        "apis": "APIs",
-        "libraries": "Libraries",
-        "frameworks": "Frameworks",
-        "platforms": "Platforms",
-        "cloud-computing": "Cloud Computing"
-      },
-      "title": "Reuse",
-      "src": "book/reuse/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Reuse: Introduction",
-      "src": "book/reuse/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Introduction: What",
-      "src": "book/reuse/introduction/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Introduction: When",
-      "src": "book/reuse/introduction/when/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Libraries: How",
-      "src": "book/reuse/libraries/how/index.md"
-    },
-    {
-      "headings": {
-        "libraries": "Libraries"
-      },
-      "title": "Reuse: Libraries",
-      "src": "book/reuse/libraries/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Libraries: What",
-      "src": "book/reuse/libraries/what/index.md"
-    },
-    {
-      "headings": {
-        "platforms": "Platforms"
-      },
-      "title": "Reuse: Platforms",
-      "src": "book/reuse/platforms/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Reuse: Platforms: What",
-      "src": "book/reuse/platforms/what/index.md"
-    },
-    {
-      "headings": {
-        "reuse": "Reuse",
-        "introduction": "Introduction",
-        "apis": "APIs",
-        "libraries": "Libraries",
-        "frameworks": "Frameworks",
-        "platforms": "Platforms",
-        "cloud-computing": "Cloud Computing"
-      },
-      "title": "Reuse [Printable]",
-      "src": "book/reuse/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Branching",
-      "src": "book/revisionControl/branching/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Centralized Flow",
-      "src": "book/revisionControl/centralizedFlow/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: DRCS vs CRCS",
-      "src": "book/revisionControl/drcsVsCrcs/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Feature Branch Flow",
-      "src": "book/revisionControl/featureBranchFlow/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Forking Workflow",
-      "src": "book/revisionControl/forkingWorkflow/index.md"
-    },
-    {
-      "headings": {
-        "revision-control": "Revision Control"
-      },
-      "title": "Revision Control",
-      "src": "book/revisionControl/index.md"
-    },
-    {
-      "headings": {
-        "revision-control": "Revision Control"
-      },
-      "title": "Revision Control [Printable]",
-      "src": "book/revisionControl/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Remote Repositories",
-      "src": "book/revisionControl/remoteRepositories/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Repositories",
-      "src": "book/revisionControl/repositories/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Saving History",
-      "src": "book/revisionControl/savingHistory/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: Using History",
-      "src": "book/revisionControl/usingHistory/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Revision Control: What",
-      "src": "book/revisionControl/what/index.md"
-    },
-    {
-      "headings": {
-        "software-engineering": "Software Engineering",
-        "introduction": "Introduction"
-      },
-      "title": "Software Engineering",
-      "src": "book/softwareEngineering/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Software Engineering: Introduction",
-      "src": "book/softwareEngineering/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Software Engineering: Introduction: Pros and Cons",
-      "keywords": "Frederick P. Brooks, Mythical Man-Month",
-      "src": "book/softwareEngineering/introduction/prosAndCons/index.md"
-    },
-    {
-      "headings": {
-        "software-engineering": "Software Engineering",
-        "introduction": "Introduction"
-      },
-      "title": "Software Engineering [Printable]",
-      "src": "book/softwareEngineering/print.md"
-    },
-    {
-      "headings": {
-        "feature-lists": "Feature Lists"
-      },
-      "title": "Specifying Requirements: Feature Lists",
-      "src": "book/specifyingRequirements/featureList/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Feature List: What",
-      "src": "book/specifyingRequirements/featureList/what/index.md"
-    },
-    {
-      "headings": {
-        "glossary": "Glossary"
-      },
-      "title": "Specifying Requirements: Glossary",
-      "src": "book/specifyingRequirements/glossary/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Glossary: What",
-      "src": "book/specifyingRequirements/glossary/what/index.md"
-    },
-    {
-      "headings": {
-        "specifying-requirements": "Specifying Requirements",
-        "prose": "Prose",
-        "feature-lists": "Feature Lists",
-        "user-stories": "User Stories",
-        "use-cases": "Use Cases",
-        "glossary": "Glossary",
-        "supplementary-requirements": "Supplementary Requirements"
-      },
-      "title": "Specifying Requirements",
-      "src": "book/specifyingRequirements/index.md"
-    },
-    {
-      "headings": {
-        "specifying-requirements": "Specifying Requirements",
-        "prose": "Prose",
-        "feature-list": "Feature List",
-        "user-stories": "User Stories",
-        "use-cases": "Use Cases",
-        "glossary": "Glossary",
-        "supplementary-requirements": "Supplementary Requirements"
-      },
-      "title": "Specifying Requirements [Printable]",
-      "src": "book/specifyingRequirements/print.md"
-    },
-    {
-      "headings": {
-        "prose": "Prose"
-      },
-      "title": "Specifying Requirements: Prose",
-      "src": "book/specifyingRequirements/prose/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Prose: What",
-      "src": "book/specifyingRequirements/prose/what/index.md"
-    },
-    {
-      "headings": {
-        "supplementary-requirements": "Supplementary Requirements"
-      },
-      "title": "Specifying Requirements: Supplementary Requirements",
-      "src": "book/specifyingRequirements/supplementaryRequirements/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Supplementary Requirements: What",
-      "src": "book/specifyingRequirements/supplementaryRequirements/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Use Cases: Writing Detailed Use Cases",
-      "src": "book/specifyingRequirements/useCases/details/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Use Cases: Identifying Use Cases for a System",
-      "src": "book/specifyingRequirements/useCases/identifying/index.md"
-    },
-    {
-      "headings": {
-        "use-cases": "Use Cases"
-      },
-      "title": "Specifying Requirements: Use Cases",
-      "src": "book/specifyingRequirements/useCases/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Use Cases: Introduction",
-      "src": "book/specifyingRequirements/useCases/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: Use Cases: Putting Use Cases into Good Use",
-      "src": "book/specifyingRequirements/useCases/usage/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: User Stories: More Detailed User Stories",
-      "src": "book/specifyingRequirements/userStories/details/index.md"
-    },
-    {
-      "headings": {
-        "user-stories": "User Stories"
-      },
-      "title": "Specifying Requirements: User Stories",
-      "src": "book/specifyingRequirements/userStories/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: User Stories: Introduction",
-      "src": "book/specifyingRequirements/userStories/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Specifying Requirements: User Stories: Putting User Stories to Good Use",
-      "src": "book/specifyingRequirements/userStories/usage/index.md"
-    },
-    {
-      "headings": {
-        "teamwork": "Teamwork"
-      },
-      "title": "Teamwork",
-      "src": "book/teamwork/index.md"
-    },
-    {
-      "headings": {
-        "teamwork": "Teamwork"
-      },
-      "title": "Teamwork [Printable]",
-      "src": "book/teamwork/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Teamwork: Team Structures",
-      "src": "book/teamwork/teamStructures/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Boundary Value Analysis: How",
-      "src": "book/testCaseDesign/boundaryValueAnalysis/how/index.md"
-    },
-    {
-      "headings": {
-        "boundary-value-analysis": "Boundary Value Analysis"
-      },
-      "title": "Test Case Design: Boundary Value Analysis",
-      "src": "book/testCaseDesign/boundaryValueAnalysis/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Boundary Value Analysis: What",
-      "src": "book/testCaseDesign/boundaryValueAnalysis/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Combining Test Inputs: Test Input Combination Strategies",
-      "src": "book/testCaseDesign/combiningTestInputs/combinationStrategies/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Combining Test Inputs: Heuristic: No more than one invalid input in a test case",
-      "src": "book/testCaseDesign/combiningTestInputs/heuristicInvalid/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Combining Test Inputs: Heuristic: Each valid input at least once in a positive test case",
-      "src": "book/testCaseDesign/combiningTestInputs/heuristicValid/index.md"
-    },
-    {
-      "headings": {
-        "combining-test-inputs": "Combining Test Inputs"
-      },
-      "title": "Test Case Design: Combining Test Inputs",
-      "src": "book/testCaseDesign/combiningTestInputs/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Combining Test Inputs: Mix",
-      "src": "book/testCaseDesign/combiningTestInputs/mix/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Combining Test Inputs: Why",
-      "src": "book/testCaseDesign/combiningTestInputs/why/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Equivalence Partitions: Basic",
-      "src": "book/testCaseDesign/equivalencePartitions/basic/index.md"
-    },
-    {
-      "headings": {
-        "equivalence-partitions": "Equivalence Partitions"
-      },
-      "title": "Test Case Design: Equivalence Partitions",
-      "src": "book/testCaseDesign/equivalencePartitions/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Equivalence Partitions: Intermediate",
-      "src": "book/testCaseDesign/equivalencePartitions/intermediate/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Equivalence Partitions: What",
-      "src": "book/testCaseDesign/equivalencePartitions/what/index.md"
-    },
-    {
-      "headings": {
-        "test-case-design": "Test Case Design",
-        "introduction": "Introduction",
-        "equivalence-partitions": "Equivalence Partitions",
-        "boundary-value-analysis": "Boundary Value Analysis",
-        "combining-test-inputs": "Combining Test Inputs",
-        "more": "More",
-        "recap": "Recap"
-      },
-      "title": "Test Case Design",
-      "src": "book/testCaseDesign/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Introduction: Black Box vs Glass Box",
-      "src": "book/testCaseDesign/introduction/blackVsGlass/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Test Case Design: Introduction",
-      "src": "book/testCaseDesign/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Introduction: Positive vs Negative Test Cases",
-      "src": "book/testCaseDesign/introduction/positiveVsNegative/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Introduction: What",
-      "src": "book/testCaseDesign/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "more": "More"
-      },
-      "title": "Test Case Design: More",
-      "src": "book/testCaseDesign/more/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: More: Testing Use Cases",
-      "src": "book/testCaseDesign/more/testingUseCases/index.md"
-    },
-    {
-      "headings": {
-        "test-case-design": "Test Case Design",
-        "introduction": "Introduction",
-        "equivalence-partitions": "Equivalence Partitions",
-        "boundary-value-analysis": "Boundary Value Analysis",
-        "combining-test-inputs": "Combining Test Inputs",
-        "more": "More",
-        "summary": "Summary"
-      },
-      "title": "Test Case Design [Printable]",
-      "src": "book/testCaseDesign/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Summary: Exercises",
-      "src": "book/testCaseDesign/summary/exercises/index.md"
-    },
-    {
-      "headings": {
-        "recap": "Recap"
-      },
-      "title": "Test Case Design: Summary",
-      "src": "book/testCaseDesign/summary/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Test Case Design: Summary: Recap",
-      "src": "book/testCaseDesign/summary/recap/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Dependency Injection: How",
-      "src": "book/testing/dependencyInjection/how/index.md"
-    },
-    {
-      "headings": {
-        "dependency-injection": "Dependency Injection"
-      },
-      "title": "Testing: Dependency Injection",
-      "src": "book/testing/dependencyInjection/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Dependency Injection: What",
-      "src": "book/testing/dependencyInjection/what/index.md"
-    },
-    {
-      "headings": {
-        "testing": "Testing",
-        "introduction": "Introduction",
-        "testing-types": "Testing Types",
-        "unit-testing": "Unit Testing",
-        "integration-testing": "Integration Testing",
-        "system-testing": "System Testing",
-        "alpha-and-beta-testing": "Alpha and Beta Testing",
-        "dogfooding": "Dogfooding",
-        "developer-testing": "Developer Testing",
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
-        "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing",
-        "test-automation": "Test Automation",
-        "test-coverage": "Test Coverage",
-        "dependency-injection": "Dependency Injection",
-        "tdd": "TDD"
-      },
-      "title": "Testing",
-      "src": "book/testing/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "Testing: Introduction",
-      "src": "book/testing/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Introduction: Testability",
-      "src": "book/testing/introduction/testability/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Introduction: What",
-      "src": "book/testing/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "testing": "Testing",
-        "introduction": "Introduction",
-        "testing-types": "Testing Types",
-        "unit-testing": "Unit Testing",
-        "integration-testing": "Integration Testing",
-        "system-testing": "System Testing",
-        "alpha-beta-testing": "Alpha-Beta Testing",
-        "dogfooding": "Dogfooding",
-        "developer-testing": "Developer Testing",
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
-        "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing",
-        "test-automation": "Test Automation",
-        "test-coverage": "Test Coverage",
-        "dependency-injection": "Dependency Injection",
-        "tdd": "TDD"
-      },
-      "title": "Testing [Printable]",
-      "src": "book/testing/print.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: TDD: How",
-      "src": "book/testing/tdd/how/index.md"
-    },
-    {
-      "headings": {
-        "tdd": "TDD"
-      },
-      "title": "Testing: TDD",
-      "src": "book/testing/tdd/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: TDD: What",
-      "src": "book/testing/tdd/what/index.md"
-    },
-    {
-      "headings": {
-        "test-automation": "Test Automation"
-      },
-      "title": "Testing: Test Automation",
-      "src": "book/testing/testAutomation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Automation: Automated Testing of GUIs",
-      "src": "book/testing/testAutomation/testingGuis/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Automation: Automated Testing of Text UIs",
-      "src": "book/testing/testAutomation/testingTextUis/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Automation: Test Automation Tools",
-      "src": "book/testing/testAutomation/tools/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Automation: Test Automation Using Test Drivers",
-      "src": "book/testing/testAutomation/usingTestDrivers/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Automation: What",
-      "src": "book/testing/testAutomation/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Coverage: How",
-      "src": "book/testing/testCoverage/how/index.md"
-    },
-    {
-      "headings": {
-        "test-coverage": "Test Coverage"
-      },
-      "title": "Testing: Test Coverage",
-      "src": "book/testing/testCoverage/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Test Coverage: What",
-      "src": "book/testing/testCoverage/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Acceptance Testing: Acceptance vs System Testing",
-      "src": "book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/index.md"
-    },
-    {
-      "headings": {
-        "acceptance-testing": "Acceptance Testing"
-      },
-      "title": "Testing: Testing Types: Acceptance Testing",
-      "src": "book/testing/testingTypes/acceptanceTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Acceptance Testing: What",
-      "src": "book/testing/testingTypes/acceptanceTesting/what/index.md"
-    },
-    {
-      "headings": {
-        "alpha-and-beta-testing": "Alpha and Beta Testing"
-      },
-      "title": "Testing: Testing Types: Alpha and Beta Testing",
-      "src": "book/testing/testingTypes/alphaBetaTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Alpha and Beta Testing: What",
-      "src": "book/testing/testingTypes/alphaBetaTesting/what/index.md"
-    },
-    {
-      "headings": {
-        "developer-testing": "Developer Testing"
-      },
-      "title": "Testing: Testing Types: Developer Testing",
-      "src": "book/testing/testingTypes/developerTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Developer Testing: What",
-      "src": "book/testing/testingTypes/developerTesting/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Developer Testing: Why",
-      "src": "book/testing/testingTypes/developerTesting/why/index.md"
-    },
-    {
-      "headings": {
-        "dogfooding": "Dogfooding"
-      },
-      "title": "Testing: Testing Types: Dogfooding",
-      "src": "book/testing/testingTypes/dogfooding/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Dogfooding: What",
-      "src": "book/testing/testingTypes/dogfooding/what/index.md"
-    },
-    {
-      "headings": {
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing"
-      },
-      "title": "Testing: Testing Types: Exploratory vs Scripted Testing",
-      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Exploratory vs Scripted Testing: What",
-      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Exploratory vs Scripted Testing: WWhen",
-      "src": "book/testing/testingTypes/exploratoryVsScriptedTesting/when/index.md"
-    },
-    {
-      "headings": {
-        "testing-types": "Testing Types",
-        "unit-testing": "Unit Testing",
-        "integration-testing": "Integration Testing",
-        "system-testing": "System Testing",
-        "alpha-and-beta-testing": "Alpha and Beta Testing",
-        "dogfooding": "Dogfooding",
-        "developer-testing": "Developer Testing",
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
-        "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing"
-      },
-      "title": "Testing: Testing Types",
-      "src": "book/testing/testingTypes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing: Testing Types: Integration Testing: How",
-      "src": "book/testing/testingTypes/integrationTesting/how/index.md"
-    },
-    {
-      "headings": {
-        "integration-testing": "Integration Testing"
-      },
-      "title": "Testing: Testing Types: Integration Testing",
-      "src": "book/testing/testingTypes/integrationTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Integration Testing: What",
-      "src": "book/testing/testingTypes/integrationTesting/what/index.md"
-    },
-    {
-      "headings": {
-        "regression-testing": "Regression Testing"
-      },
-      "title": "Testing: Testing Types: Regression Testing",
-      "src": "book/testing/testingTypes/regressionTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Regression Testing: What",
-      "src": "book/testing/testingTypes/regressionTesting/what/index.md"
-    },
-    {
-      "headings": {
-        "system-testing": "System Testing"
-      },
-      "title": "Testing: Testing Types: System Testing",
-      "src": "book/testing/testingTypes/systemTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: System Testing: What",
-      "src": "book/testing/testingTypes/systemTesting/what/index.md"
-    },
-    {
-      "headings": {
-        "unit-testing": "Unit Testing"
-      },
-      "title": "Testing: Testing Types: Unit Testing",
-      "src": "book/testing/testingTypes/unitTesting/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Unit Testing: Stubs",
-      "src": "book/testing/testingTypes/unitTesting/stubs/index.md"
-    },
-    {
-      "headings": {},
-      "title": "Testing Types: Unit Testing: What",
-      "src": "book/testing/testingTypes/unitTesting/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Activity Diagrams: Basic Notation: Alternate Paths",
-      "src": "book/uml/activityDiagrams/basicNotations/alternatePaths/index.md"
-    },
-    {
-      "headings": {
-        "basic-notations": "Basic Notations"
-      },
-      "title": "UML: Activity Diagrams: Basic Notation",
-      "src": "book/uml/activityDiagrams/basicNotations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Activity Diagrams: Basic Notation: Linear Paths",
-      "src": "book/uml/activityDiagrams/basicNotations/linearPaths/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Activity Diagrams: Basic Notation: Parallel Paths",
-      "src": "book/uml/activityDiagrams/basicNotations/parallelPaths/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Activity Diagrams: Basic Notation: Rakes",
-      "src": "book/uml/activityDiagrams/basicNotations/rakes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Activity Diagrams: Basic Notation: Swimlanes",
-      "src": "book/uml/activityDiagrams/basicNotations/swimlanes/index.md"
-    },
-    {
-      "headings": {
-        "activity-diagrams": "Activity Diagrams",
-        "introduction": "Introduction",
-        "basic-notations": "Basic Notations"
-      },
-      "title": "UML: Activity Diagrams",
-      "src": "book/uml/activityDiagrams/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "UML: Activity Diagrams: Introduction",
-      "src": "book/uml/activityDiagrams/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Activity Diagrams: Introduction: What",
-      "src": "book/uml/activityDiagrams/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "abstract-classes": "Abstract Classes"
-      },
-      "title": "UML: Class Diagrams: Abstract Classes",
-      "src": "book/uml/classDiagrams/abstractClasses/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Abstract Classes: What",
-      "src": "book/uml/classDiagrams/abstractClasses/what/index.md"
-    },
-    {
-      "headings": {
-        "aggregation": "Aggregation"
-      },
-      "title": "UML: Class Diagrams: Aggregation",
-      "src": "book/uml/classDiagrams/aggregation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Aggregation: What",
-      "src": "book/uml/classDiagrams/aggregation/what/index.md"
-    },
-    {
-      "headings": {
-        "association-classes": "Association Classes"
-      },
-      "title": "UML: Class Diagrams: Association Classes",
-      "src": "book/uml/classDiagrams/associationClasses/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Association Classes: What",
-      "src": "book/uml/classDiagrams/associationClasses/what/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Associations: Basic",
-      "src": "book/uml/classDiagrams/associations/basic/index.md"
-    },
-    {
-      "headings": {
-        "associations": "Associations"
-      },
-      "title": "UML: Class Diagrams: Associations",
-      "src": "book/uml/classDiagrams/associations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Associations: Labels",
-      "src": "book/uml/classDiagrams/associations/labels/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Associations: Multiplicity",
-      "src": "book/uml/classDiagrams/associations/multiplicity/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Associations: Navigability",
-      "src": "book/uml/classDiagrams/associations/navigability/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Associations: Roles",
-      "src": "book/uml/classDiagrams/associations/roles/index.md"
-    },
-    {
-      "headings": {
-        "associations-as-attributes": "Associations as Attributes"
-      },
-      "title": "UML: Class Diagrams: Associations as Attributes",
-      "src": "book/uml/classDiagrams/associationsAsAttributes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Associations as Attributes: What",
-      "src": "book/uml/classDiagrams/associationsAsAttributes/what/index.md"
-    },
-    {
-      "headings": {},
-      "src": "book/uml/classDiagrams/associationsAsAttributes/what/print.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "class-inheritance": "Class Inheritance"
-      },
-      "title": "UML: Class Diagrams: Class Inheritance",
-      "src": "book/uml/classDiagrams/classInheritance/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Class Inheritance: What",
-      "src": "book/uml/classDiagrams/classInheritance/what/index.md"
-    },
-    {
-      "headings": {
-        "class-level-members": "Class Level Members"
-      },
-      "title": "UML: Class Diagrams: Class Level Members",
-      "src": "book/uml/classDiagrams/classLevelMembers/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Class Level Members: What",
-      "src": "book/uml/classDiagrams/classLevelMembers/what/index.md"
-    },
-    {
-      "headings": {
-        "classes": "Classes"
-      },
-      "title": "UML: Class Diagrams: Classes",
-      "src": "book/uml/classDiagrams/classes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Classes: What",
-      "src": "book/uml/classDiagrams/classes/what/index.md"
-    },
-    {
-      "headings": {
-        "composition": "Composition"
-      },
-      "title": "UML: Class Diagrams: Composition",
-      "src": "book/uml/classDiagrams/composition/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Composition: What",
-      "src": "book/uml/classDiagrams/composition/what/index.md"
-    },
-    {
-      "headings": {
-        "dependencies": "Dependencies"
-      },
-      "title": "UML: Class Diagrams: Dependencies",
-      "src": "book/uml/classDiagrams/dependencies/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Dependencies: What",
-      "src": "book/uml/classDiagrams/dependencies/what/index.md"
-    },
-    {
-      "headings": {
-        "enumerations": "Enumerations"
-      },
-      "title": "UML: Class Diagrams: Enumerations",
-      "src": "book/uml/classDiagrams/enumerations/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Enumerations: What",
-      "src": "book/uml/classDiagrams/enumerations/what/index.md"
-    },
-    {
-      "headings": {
-        "class-diagrams": "Class Diagrams",
-        "introduction": "Introduction",
-        "classes": "Classes",
-        "associations": "Associations",
-        "dependencies": "Dependencies",
-        "associations-as-attributes": "Associations as Attributes",
-        "enumerations": "Enumerations",
-        "class-level-members": "Class Level Members",
-        "association-classes": "Association Classes",
-        "composition": "Composition",
-        "aggregation": "Aggregation",
-        "class-inheritance": "Class Inheritance",
-        "interfaces": "Interfaces",
-        "abstract-classes": "Abstract Classes"
-      },
-      "title": "UML: Class Diagrams",
-      "src": "book/uml/classDiagrams/index.md"
-    },
-    {
-      "headings": {
-        "interfaces": "Interfaces"
-      },
-      "title": "UML: Class Diagrams: Interfaces",
-      "src": "book/uml/classDiagrams/interfaces/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Interfaces: What",
-      "src": "book/uml/classDiagrams/interfaces/what/index.md"
-    },
-    {
-      "headings": {
-        "introduction": "Introduction"
-      },
-      "title": "UML: Class Diagrams: Introduction",
-      "src": "book/uml/classDiagrams/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Class Diagrams: Introduction: What",
-      "src": "book/uml/classDiagrams/introduction/what/index.md"
-    },
-    {
-      "headings": {
-        "uml": "UML",
-        "class-diagrams": "Class Diagrams",
-        "introduction": "Introduction",
-        "classes": "Classes",
-        "associations": "Associations",
-        "dependencies": "Dependencies",
-        "associations-as-attributes": "Associations as Attributes",
-        "enumerations": "Enumerations",
-        "class-level-members": "Class Level Members",
-        "association-classes": "Association Classes",
-        "composition": "Composition",
-        "aggregation": "Aggregation",
-        "class-inheritance": "Class Inheritance",
-        "interfaces": "Interfaces",
-        "abstract-classes": "Abstract Classes",
-        "sequence-diagrams": "Sequence Diagrams",
-        "object-diagrams": "Object Diagrams",
-        "activity-diagrams": "Activity Diagrams",
-        "introduction-4": "Introduction",
-        "basic-notations": "Basic Notations",
-        "notes": "Notes",
-        "miscellaneous": "Miscellaneous"
-      },
-      "title": "UML",
-      "src": "book/uml/index.md"
-    },
-    {
-      "headings": {
-        "miscellaneous": "Miscellaneous"
-      },
-      "title": "UML: Miscellaneous",
-      "src": "book/uml/miscellaneous/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Miscellaneous: Object Diagrams vs Class Diagrams",
-      "src": "book/uml/miscellaneous/objectVsClassDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Notes: Constraints",
-      "src": "book/uml/notes/constraints/index.md"
-    },
-    {
-      "headings": {
-        "notes": "Notes"
-      },
-      "title": "UML: Notes",
-      "src": "book/uml/notes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Notes: Notes",
-      "src": "book/uml/notes/notes/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Object Diagrams: Associations",
-      "src": "book/uml/objectDiagrams/associations/index.md"
-    },
-    {
-      "headings": {
-        "object-diagrams": "Object Diagrams"
-      },
-      "title": "UML: Object Diagrams",
-      "src": "book/uml/objectDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Object Diagrams: Introduction",
-      "src": "book/uml/objectDiagrams/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Object Diagrams: Objects",
-      "src": "book/uml/objectDiagrams/objects/index.md"
-    },
-    {
-      "headings": {
-        "uml": "UML",
-        "class-diagrams": "Class Diagrams",
-        "introduction": "Introduction",
-        "classes": "Classes",
-        "associations": "Associations",
-        "associations-as-attributes": "Associations as Attributes",
-        "enumerations": "Enumerations",
-        "class-level-members": "Class Level Members",
-        "association-classes": "Association Classes",
-        "composition": "Composition",
-        "aggregation": "Aggregation",
-        "class-inheritance": "Class Inheritance",
-        "interfaces": "Interfaces",
-        "abstract-classes": "Abstract Classes",
-        "object-diagrams": "Object Diagrams",
-        "sequence-diagrams": "Sequence Diagrams",
-        "activity-diagrams": "Activity Diagrams",
-        "introduction-4": "Introduction",
-        "basic-notations": "Basic Notations",
-        "notes": "Notes",
-        "miscellaneous": "Miscellaneous"
-      },
-      "title": "UML [Printable]",
-      "src": "book/uml/print.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Alternative Paths",
-      "src": "book/uml/sequenceDiagrams/alternativePaths/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Basic Notation",
-      "src": "book/uml/sequenceDiagrams/basic/index.md"
-    },
-    {
-      "headings": {
-        "sequence-diagrams": "Sequence Diagrams"
-      },
-      "title": "UML: Sequence Diagrams",
-      "src": "book/uml/sequenceDiagrams/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Introduction",
-      "src": "book/uml/sequenceDiagrams/introduction/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Loops",
-      "src": "book/uml/sequenceDiagrams/loops/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Minimal Notation",
-      "src": "book/uml/sequenceDiagrams/minimalNotation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Object Creation",
-      "src": "book/uml/sequenceDiagrams/objectCreation/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Object Deletion",
-      "src": "book/uml/sequenceDiagrams/objectDeletion/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Optional Paths",
-      "src": "book/uml/sequenceDiagrams/optionalPaths/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Parallel Paths",
-      "src": "book/uml/sequenceDiagrams/parallelPaths/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Reference Frames",
-      "src": "book/uml/sequenceDiagrams/referenceFrames/index.md"
-    },
-    {
-      "headings": {},
-      "title": "UML: Sequence Diagrams: Self Invocation",
-      "src": "book/uml/sequenceDiagrams/selfInvocation/index.md"
-    },
-    {
-      "headings": {
-        "se-intro": "SE Intro:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
+        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -4151,12 +515,9 @@
     },
     {
       "headings": {
-        "se-intro": "SE Intro:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
+        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
       },
-      "title": "Schedule",
+      "title": "Full Schedule of Module Activities",
       "footer": "footer.md",
       "src": "schedule/index.md"
     },
@@ -4170,13 +531,8 @@
     },
     {
       "headings": {},
-      "title": "Tutorial Schedule",
-      "src": "schedule/overview/tutorialSchedule.md"
-    },
-    {
-      "headings": {},
-      "title": "Week 1",
-      "src": "schedule/week1/index.md"
+      "src": "schedule/week1/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4187,8 +543,8 @@
         "quality-assurance": "Quality Assurance:",
         "project-management": "Project Management:"
       },
-      "title": "Week 10",
-      "src": "schedule/week10/index.md"
+      "src": "schedule/week10/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4210,8 +566,8 @@
         "quality-assurance": "Quality Assurance:",
         "project-management": "Project Management:"
       },
-      "title": "Week 11",
-      "src": "schedule/week11/index.md"
+      "src": "schedule/week11/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4229,8 +585,8 @@
         "design": "Design:",
         "implementation": "Implementation:"
       },
-      "title": "Week 12",
-      "src": "schedule/week12/index.md"
+      "src": "schedule/week12/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4243,8 +599,8 @@
     },
     {
       "headings": {},
-      "title": "Week 13",
-      "src": "schedule/week13/index.md"
+      "src": "schedule/week13/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4254,60 +610,56 @@
       "title": ""
     },
     {
-      "headings": {
-        "se-intro": "SE Intro:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
-      },
-      "title": "Week 2",
-      "src": "schedule/week2/index.md"
+      "headings": {},
+      "src": "schedule/week2/index.md",
+      "title": ""
     },
     {
       "headings": {
-        "week-2-outcomes": "Week 2 - Outcomes",
-        "se-intro": "SE Intro:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
+        "week-2-outcomes": "Week 2 - Outcomes"
       },
       "src": "schedule/week2/outcomes.md",
       "title": ""
     },
     {
       "headings": {
-        "implementation": "Implementation:",
-        "project-management": "Project Management:",
-        "other": "Other:"
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate"
       },
-      "title": "Week 3",
-      "src": "schedule/week3/index.md"
+      "src": "schedule/week3/index.md",
+      "title": ""
     },
     {
       "headings": {
         "week-3-outcomes": "Week 3 - Outcomes",
-        "implementation": "Implementation:",
-        "project-management": "Project Management:",
-        "other": "Other:"
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "basic-2": "Basic",
+        "intermediate-2": "Intermediate",
+        "basic-3": "Basic",
+        "intermediate-3": "Intermediate",
+        "basic-4": "Basic",
+        "intermediate-4": "Intermediate"
       },
       "src": "schedule/week3/outcomes.md",
       "title": ""
     },
     {
-      "headings": {
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "project-management": "Project Management:"
-      },
-      "title": "Week 4",
-      "src": "schedule/week4/index.md"
+      "headings": {},
+      "src": "schedule/week4/index.md",
+      "title": ""
     },
     {
       "headings": {
-        "week-4-outcomes": "Week 4 - Outcomes",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "project-management": "Project Management:"
+        "week-4-outcomes": "Week 4 - Outcomes"
       },
       "src": "schedule/week4/outcomes.md",
       "title": ""
@@ -4320,8 +672,8 @@
         "project-management": "Project Management:",
         "other": "Other:"
       },
-      "title": "Week 5",
-      "src": "schedule/week5/index.md"
+      "src": "schedule/week5/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4365,8 +717,8 @@
         "hook-the-view-to-the-controller": "Hook the View to the controller",
         "start-the-application": "Start the Application"
       },
-      "title": "Week 6",
-      "src": "schedule/week6/index.md"
+      "src": "schedule/week6/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4410,8 +762,8 @@
         "project-management": "Project Management:",
         "other": "Other:"
       },
-      "title": "Week 7",
-      "src": "schedule/week7/index.md"
+      "src": "schedule/week7/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4433,8 +785,8 @@
         "quality-assurance": "Quality Assurance:",
         "other": "Other:"
       },
-      "title": "Week 8",
-      "src": "schedule/week8/index.md"
+      "src": "schedule/week8/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -4456,8 +808,8 @@
         "documentation": "Documentation:",
         "project-management": "Project Management:"
       },
-      "title": "Week 9",
-      "src": "schedule/week9/index.md"
+      "src": "schedule/week9/index.md",
+      "title": ""
     },
     {
       "headings": {
@@ -5349,230 +1701,11 @@
     },
     {
       "headings": {
-        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
-        "about-this-book": "About this Book",
-        "software-engineering": "Software Engineering",
-        "object-oriented-programming-with-uml": "Object-Oriented Programming (with UML)",
-        "requirements": "Requirements",
-        "design": "Design",
-        "implementation": "Implementation",
-        "quality-assurance": "Quality Assurance",
-        "project-management": "Project Management",
-        "tools": "Tools",
-        "principles": "Principles",
-        "supplementary": "Supplementary"
+        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners"
       },
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
       "footer": "footer.md",
       "src": "se-book-adapted/index.md"
-    },
-    {
-      "headings": {
-        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
-        "section-software-engineering": "SECTION: SOFTWARE ENGINEERING",
-        "software-engineering": "Software Engineering",
-        "introduction": "Introduction",
-        "section-object-oriented-programming-with-uml": "SECTION: OBJECT-ORIENTED PROGRAMMING (WITH UML)",
-        "oop-concepts": "OOP - Concepts",
-        "introduction-2": "Introduction",
-        "objects": "Objects",
-        "classes": "Classes",
-        "associations": "Associations",
-        "inheritance": "Inheritance",
-        "polymorphism": "Polymorphism",
-        "more": "More",
-        "oop-implementation": "OOP - Implementation",
-        "section-requirements": "SECTION: REQUIREMENTS",
-        "requirements": "Requirements",
-        "gathering-requirements": "Gathering Requirements",
-        "specifying-requirements": "Specifying Requirements",
-        "prose": "Prose",
-        "feature-lists": "Feature Lists",
-        "user-stories": "User Stories",
-        "use-cases": "Use Cases",
-        "glossary": "Glossary",
-        "supplementary-requirements": "Supplementary Requirements",
-        "section-design": "SECTION: DESIGN",
-        "software-design": "Software Design",
-        "introduction-9": "Introduction",
-        "design-fundamentals": "Design Fundamentals",
-        "abstraction": "Abstraction",
-        "coupling": "Coupling",
-        "cohesion": "Cohesion",
-        "modeling": "Modeling",
-        "introduction-10": "Introduction",
-        "modeling-structures": "Modeling Structures",
-        "modeling-behaviors": "Modeling Behaviors",
-        "modeling-a-solution": "Modeling a Solution",
-        "software-architecture": "Software Architecture",
-        "introduction-14": "Introduction",
-        "architecture-diagrams": "Architecture Diagrams",
-        "architectural-styles": "Architectural Styles",
-        "introduction-15": "Introduction",
-        "n-tier-architectural-style": "N-tier Architectural Style",
-        "client-server-architectural-style": "Client-server Architectural Style",
-        "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
-        "service-oriented-architectural-style": "Service-oriented Architectural Style",
-        "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more-2": "More",
-        "software-design-patterns": "Software Design Patterns",
-        "introduction-16": "Introduction",
-        "singleton-pattern": "Singleton Pattern",
-        "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
-        "facade-pattern": "Facade Pattern",
-        "command-pattern": "Command Pattern",
-        "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
-        "observer-pattern": "Observer Pattern",
-        "more-3": "More",
-        "design-approaches": "Design Approaches",
-        "multi-level-design": "Multi-Level Design",
-        "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
-        "agile-design": "Agile Design",
-        "section-implementation": "SECTION: IMPLEMENTATION",
-        "ides": "IDEs",
-        "introduction-17": "Introduction",
-        "debugging": "Debugging",
-        "code-quality": "Code Quality",
-        "introduction-18": "Introduction",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
-        "basic-7": "Basic",
-        "intermediate-2": "Intermediate",
-        "advanced": "Advanced",
-        "guideline-follow-a-standard": "Guideline: Follow a Standard",
-        "guideline-name-well": "Guideline: Name Well",
-        "basic-9": "Basic",
-        "intermediate-4": "Intermediate",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
-        "basic-10": "Basic",
-        "intermediate-5": "Intermediate",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
-        "basic-11": "Basic",
-        "intermediate-6": "Intermediate",
-        "refactoring": "Refactoring",
-        "documentation": "Documentation",
-        "introduction-24": "Introduction",
-        "guidelines": "Guidelines",
-        "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
-        "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
-        "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
-        "tools": "Tools",
-        "javadoc": "JavaDoc",
-        "markdown": "Markdown",
-        "asciidoc": "AsciiDoc",
-        "error-handling": "Error Handling",
-        "introduction-25": "Introduction",
-        "exceptions": "Exceptions",
-        "assertions": "Assertions",
-        "logging": "Logging",
-        "defensive-programming": "Defensive Programming",
-        "design-by-contract-approach": "Design-by-Contract Approach",
-        "integration": "Integration",
-        "introduction-26": "Introduction",
-        "approaches": "Approaches",
-        "build-automation": "Build Automation",
-        "approaches-2": "Approaches",
-        "reuse": "Reuse",
-        "introduction-27": "Introduction",
-        "apis": "APIs",
-        "libraries": "Libraries",
-        "frameworks": "Frameworks",
-        "platforms": "Platforms",
-        "cloud-computing": "Cloud Computing",
-        "section-quality-assurance": "SECTION: QUALITY ASSURANCE",
-        "quality-assurance": "Quality Assurance",
-        "introduction-28": "Introduction",
-        "code-reviews": "Code Reviews",
-        "static-analysis": "Static Analysis",
-        "formal-verification": "Formal Verification",
-        "testing": "Testing",
-        "introduction-29": "Introduction",
-        "testing-types": "Testing Types",
-        "unit-testing": "Unit Testing",
-        "integration-testing": "Integration Testing",
-        "system-testing": "System Testing",
-        "alpha-and-beta-testing": "Alpha and Beta Testing",
-        "dogfooding": "Dogfooding",
-        "developer-testing": "Developer Testing",
-        "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
-        "acceptance-testing": "Acceptance Testing",
-        "regression-testing": "Regression Testing",
-        "test-automation": "Test Automation",
-        "test-coverage": "Test Coverage",
-        "dependency-injection": "Dependency Injection",
-        "tdd": "TDD",
-        "test-case-design": "Test Case Design",
-        "introduction-30": "Introduction",
-        "equivalence-partitions": "Equivalence Partitions",
-        "boundary-value-analysis": "Boundary Value Analysis",
-        "combining-test-inputs": "Combining Test Inputs",
-        "more-4": "More",
-        "recap": "Recap",
-        "section-project-management": "SECTION: PROJECT MANAGEMENT",
-        "revision-control": "Revision Control",
-        "project-planning": "Project Planning",
-        "teamwork": "Teamwork",
-        "sdlc-process-models": "SDLC Process Models",
-        "introduction-31": "Introduction",
-        "example-process-models": "Example Process Models",
-        "more-5": "More",
-        "summary": "Summary",
-        "section-tools": "SECTION: TOOLS",
-        "uml": "UML",
-        "class-diagrams": "Class Diagrams",
-        "introduction-32": "Introduction",
-        "classes-2": "Classes",
-        "associations-2": "Associations",
-        "dependencies-2": "Dependencies",
-        "associations-as-attributes": "Associations as Attributes",
-        "enumerations-2": "Enumerations",
-        "class-level-members-2": "Class Level Members",
-        "association-classes-2": "Association Classes",
-        "composition-2": "Composition",
-        "aggregation-2": "Aggregation",
-        "class-inheritance": "Class Inheritance",
-        "interfaces-2": "Interfaces",
-        "abstract-classes-2": "Abstract Classes",
-        "sequence-diagrams": "Sequence Diagrams",
-        "object-diagrams-2": "Object Diagrams",
-        "activity-diagrams-2": "Activity Diagrams",
-        "introduction-35": "Introduction",
-        "basic-notations": "Basic Notations",
-        "notes": "Notes",
-        "miscellaneous-2": "Miscellaneous",
-        "intellij-idea": "Intellij IDEA",
-        "git-and-github": "Git and Github",
-        "java": "Java",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-37": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-38": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application",
-        "junit": "JUnit",
-        "section-principles": "SECTION: PRINCIPLES",
-        "principles": "Principles"
-      },
-      "title": "Software Engineering for Self-Directed Learners [Printable Version for CS2103/T]",
-      "footer": "footer.md",
-      "src": "se-book-adapted/print.md"
     }
   ]
 }
