@@ -72,7 +72,7 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
   <include src="../book/specifyingRequirements/userStories/usage/text.md#usageTips"/>
 </modal>
 
-<panel header="%%:package: User Story examples (from a different product)%%">
+<panel header="%%{{ icon_example }} User Story examples (from a different product)%%">
 
 `As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`  
 `As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`  

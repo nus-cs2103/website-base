@@ -12,7 +12,7 @@ Each MCQ question gives you a statement to evaluate.
 
 <tip-box> 
 
-:package: An example statement
+{{ icon_example }} An example statement
 
 >Testing is a Q&A activity
 
@@ -55,9 +55,9 @@ To save space, we use the following notation in MCQ question.
 
 <tip-box> 
 
-:package: SE is [boring | ++useful++ | ++fun++] means _SE is not boring_ AND _SE is useful_ AND _SE is fun_.
+{{ icon_example }} SE is [boring | ++useful++ | ++fun++] means _SE is not boring_ AND _SE is useful_ AND _SE is fun_.
 
-:package: Consider the following statement:
+{{ icon_example }} Consider the following statement:
 
 * IDEs can help with [++writing++ | debugging | ++testing++] code.
 
@@ -69,7 +69,7 @@ Some questions will use ++underlines++ or ==highlighting== to draw your attentio
 
 <tip-box> 
 
-:package: Consider the statement below:
+{{ icon_example }} Consider the statement below:
   
 > Technique ABC ++can++ be used to generate more test cases. 
 

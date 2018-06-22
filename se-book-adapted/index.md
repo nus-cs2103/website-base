@@ -19,7 +19,7 @@ siteNav: se-book-adapted-sitenav.md
 
 * [Acknowledgements]({{baseUrl}}/book/about/acknowledgements.html)
 * [How to use this book]({{baseUrl}}/book/about/usage.html)
-* [All chapters as one printer-friendly page (huge file!) {{ glyphicon_print }}]
+* [All chapters as one printer-friendly page (huge file!) {{ glyphicon_print }}]({{baseUrl}}/se-book-adapted/print.html)
 
 
 {% import "se-book-adapted/config.md" as config with context %}

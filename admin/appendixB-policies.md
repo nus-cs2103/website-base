@@ -134,7 +134,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 **referred code in another software** or<br>
 **referred project code by current/past student**:
 * If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
-  :package: Example:
+  {{ icon_example }} Example:
   ```java
   //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implmentation of the reused solution here ...}
@@ -149,7 +149,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 
   //@@author
   ```
-  :package: Example of reusing a code snipped (with minor modifications):
+  {{ icon_example }} Example of reusing a code snipped (with minor modifications):
   ```java
   persons = getList()
   //@@author johndoe-reused

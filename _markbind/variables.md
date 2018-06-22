@@ -13,3 +13,5 @@
 <span id="java_coding_standard">https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html</span>
 
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
+
+<span id="icon_example">{{ glyphicon_gift | safe }}</span>
