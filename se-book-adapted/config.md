@@ -9,7 +9,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "prosAndCons", heading: "Pros and Cons", priority: "1"}
+              {name: "prosAndCons", heading: "Pros and Cons", priority: "4"}
             ]
           }
         ]
@@ -1705,7 +1705,7 @@
             level_three_topics: [
               {name: "collections", heading: "Collections", priority: "1"},
               {name: "enums", heading: "Enums", priority: "1"},
-              {name: "varargs", heading: "Varargs ", priority: "1"},
+              {name: "varargs", heading: "Varargs ", priority: "3"},
               {name: "javaFXBasic", heading: "JavaFX: Basic", priority: "1"},
               {name: "streamsBasic", heading: "Streams: Basic", priority: "1"}
             ]
