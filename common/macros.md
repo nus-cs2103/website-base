@@ -3,7 +3,9 @@
 {{ label_style[level] }}
 {% endmacro %}
 
+
 {% macro show_priority_style(level) %}{{ priority_style(level) | trim }}{% endmacro %}
+
 
 {% macro show_priority(level) %}
 {% set label_open = "<span class='label label-" + show_priority_style(level) + "'>" %}
@@ -12,14 +14,32 @@
 {% set stars = {"1": label_open + star + label_close, "2": label_open + star + star + label_close, "3": label_open + star + star + star + label_close, "4": label_open + star + star + star + star + label_close} %}{{stars[level] }}
 {% endmacro %}
 
+
 {% macro show_stars(level) %}{{ show_priority(level) | trim }}{% endmacro %}
 
-{% macro show_outcome(id, heading, priority, file) %}
+
+{% macro show_unit_outcome(unit_outcomes, id_prefix) %}
+{% set letters = "abcdefghijklmnop" | list %}
+{% for unit in unit_outcomes %}
+<panel type="{{ show_priority_style(unit.priority) }}" expanded no-close >
+<span slot="header" class="panel-title"><md>`{{ id_prefix }}{{ letters[loop.index-1] }}` <include src="../../book/{{  unit.location }}/text.md#outcomes" inline/> {{ show_stars(unit.priority) }}</md></span>
+  <include src="../../book/{{ unit.location }}/unit-inElsewhere-asFlat.md" boilerplate />
+</panel>
+{% endfor %}
+{% endmacro %}
+
+
+{% macro show_outcome(id, heading, priority, file, units) %}
 <panel no-close >
 <span slot="header" class="panel-title"><md>`{{ id }}` **{{ heading }}**</md> {{ show_stars(priority) }}</span>
+  {% if units %}
+  {{ show_unit_outcome(units, id)}}
+  {% else %}
   <include src="{{ file }}" />
+  {% endif %}
 </panel>
 {% endmacro %}
+
 
 {% macro show_outcome_groups(week_num, outcome_groups) %}
 <link rel="stylesheet" href="{{baseUrl}}/css/main.css">
@@ -36,7 +56,7 @@
 <div class="indented">
   {% for outcome in outcome_group.outcomes %}
   {% set i = i + 1 %}
-  {{ show_outcome("W" + week_num + "." + i, outcome.heading, outcome.priority, outcome.file) }}
+  {{ show_outcome("W" + week_num + "." + i, outcome.heading, outcome.priority, outcome.file, outcome.units) }}
   {% endfor %}
 </div>
 <p/>
@@ -52,6 +72,7 @@
 </panel>
 {% endmacro %}
 
+
 {% macro show_admin_sections_to_read(admin_sections) %}
 <span class="activity-desc">Admin info to read:<span>
 <div class="indented">
@@ -60,6 +81,7 @@
 {% endfor %}
 </div>
 {% endmacro %}
+
 
 {% macro show_week_schedule(week_num) %}
 <panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>

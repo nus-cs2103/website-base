@@ -1,27 +1,3 @@
-{% import "common/macros.md" as macros with context %}
-
-{% macro show_unit_outcome(unit_outcomes, id_prefix) %}
-{% set letters = "abcdefghijklmnop" | list %}
-{% for unit in unit_outcomes %}
-<panel type="{{ macros.show_priority_style(unit.priority) }}" expanded no-close >
-<span slot="header" class="panel-title"><md>`{{ id_prefix }}{{ letters[loop.index-1] }}` <include src="../../book/{{  unit.location }}/text.md#outcomes" inline/> {{ macros.show_stars(unit.priority) }}</md></span>
-  <include src="../../book/{{ unit.location }}/unit-inElsewhere-asFlat.md" boilerplate />
-</panel>
-{% endfor %}
-{% endmacro %}
-
-{% set unit_outcomes = [
-  {location: "revisionControl/what", priority: "1"},
-  {location: "revisionControl/repositories", priority: "1"},
-  {location: "gitAndGithub/init", priority: "1"},
-  {location: "revisionControl/savingHistory", priority: "1"},
-  {location: "gitAndGithub/commit", priority: "1"},
-  {location: "gitAndGithub/ignore", priority: "2"}
-] %}
-
-{{ show_unit_outcome(unit_outcomes, "W2.6") }}
-
-
 <panel type="danger" header="`W2.6a` Can explain revision control :star:" expanded no-close>
   <include src="../../book/revisionControl/what/unit-inElsewhere-asFlat.md" boilerplate />
   <panel header="{{glyphicon_folder_close}} Evidence" expanded>
