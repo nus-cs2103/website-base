@@ -18,7 +18,7 @@
        {location: "revisionControl/repositories", priority: "1"},
        {location: "gitAndGithub/init", priority: "1"},
        {location: "revisionControl/savingHistory", priority: "1"},
-       {location: "gitAndGithub/commit", priority: "1"},
+       {location: "gitAndGithub/commit", priority: "1", omit_evidence: true},
        {location: "gitAndGithub/ignore", priority: "2"}]
      }]
   }] 

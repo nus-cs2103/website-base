@@ -18,12 +18,22 @@
 {% macro show_stars(level) %}{{ show_priority(level) | trim }}{% endmacro %}
 
 
-{% macro show_unit_outcome(unit_outcomes, id_prefix) %}
+{% macro show_evidence(unit_location, file) %}
+<panel header="{{glyphicon_folder_close}} Evidence" expanded>
+  <include src="{{ file }}#{{ unit_location | replace("/", "_")}}" />
+</panel>
+{% endmacro %}
+
+
+{% macro show_unit_outcome(unit_outcomes, id_prefix, file) %}
 {% set letters = "abcdefghijklmnop" | list %}
 {% for unit in unit_outcomes %}
 <panel type="{{ show_priority_style(unit.priority) }}" expanded no-close >
 <span slot="header" class="panel-title"><md>`{{ id_prefix }}{{ letters[loop.index-1] }}` <include src="../../book/{{  unit.location }}/text.md#outcomes" inline/> {{ show_stars(unit.priority) }}</md></span>
   <include src="../../book/{{ unit.location }}/unit-inElsewhere-asFlat.md" boilerplate />
+  {% if not unit.omit_evidence %}
+  {{ show_evidence(unit.location, file) }}
+  {% endif %}
 </panel>
 {% endfor %}
 {% endmacro %}
@@ -33,7 +43,7 @@
 <panel no-close >
 <span slot="header" class="panel-title"><md>`{{ id }}` **{{ heading }}**</md> {{ show_stars(priority) }}</span>
   {% if units %}
-  {{ show_unit_outcome(units, id)}}
+  {{ show_unit_outcome(units, id, file)}}
   {% else %}
   <include src="{{ file }}" />
   {% endif %}
