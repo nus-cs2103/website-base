@@ -1,6 +1,7 @@
 <frontmatter>
 title: "Software Engineering for Self-Directed Learners [CS2103/T Version]"
 footer: footer.md
+siteNav: se-book-adapted-sitenav.md
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
@@ -18,6 +19,7 @@ footer: footer.md
 
 * [Acknowledgements]({{baseUrl}}/book/about/acknowledgements.html)
 * [How to use this book]({{baseUrl}}/book/about/usage.html)
+* [All chapters as one printer-friendly page (huge file!) {{ glyphicon_print }}]
 
 
 {% import "se-book-adapted/config.md" as config with context %}

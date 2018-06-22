@@ -1,6 +1,7 @@
 {% macro add_front_matter(topic) %}
 title: "Text Book Chapter : {{ topic.heading }}"
 footer: footer.md
+siteNav: se-book-adapted-sitenav.md
 {% endmacro %}
 
 {% macro show_priority(level) %}{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}{% set empty = "<span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span>" %}{% set stars = {"1": star + empty + empty + empty, "2": star + star + empty + empty, "3": star + star + star + empty, "4": star + star + star + star} %}{{stars[level] }}{% endmacro %}
