@@ -22,8 +22,8 @@
           <tip-box>
             <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
             <p></p>
-            <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted by an object
-              of any of its subclasses.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object
+              of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
             <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
             <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -89,7 +89,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <tab header="Java">
                         <div>
                           <tip-box>
-                            <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
                             <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
@@ -130,7 +130,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <tab header="Python">
                         <div>
                           <tip-box>
-                            <p>📦 In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
                             <table>
                               <tr>
                               
@@ -221,7 +221,7 @@ Ben is a student
             </div>
           </modal>
           <tip-box>
-            <p>📦 Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code>              class is invoked.</p>
             <img src="/website-base/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
             <p></p>
             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
@@ -266,7 +266,7 @@ Ben is a student
                       <tab header="Java">
                         <div>
                           <tip-box>
-                            <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code>                              method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code>                              and <code>(String, String, double)</code>. Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
@@ -312,7 +312,7 @@ Ben is a student
             </div>
           </modal>
           <tip-box>
-            <p>📦 Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         <span class="hljs-comment">// Signature: ()</span>
@@ -324,7 +324,8 @@ Ben is a student
     }
 }
 </code></pre>
-            <p>📦 Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation, at compile time.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation,
+              at compile time.</p>
             <pre class="hljs"><code>void calculateGrade (int[] averages) { ... }
 void calculateGrade (String matric) { ... }
 </code></pre>
@@ -541,8 +542,8 @@ void calculateGrade (String matric) { ... }
                     <tip-box>
                       <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
                       <p></p>
-                      <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted
-                        by an object of any of its subclasses.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever
+                        an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                       <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
                       <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -559,8 +560,8 @@ AcademicStaff academicStaff = staff; // Not OK
             </div>
           </modal>
           <tip-box>
-            <p>📦 Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will work
-              for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class
+              states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
             <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
             <p></p>
             <p>Now consider the following:</p>
@@ -576,8 +577,7 @@ AcademicStaff academicStaff = staff; // Not OK
                 break the <code>Payroll</code> class functionality.</li>
             </ul>
             <panel type="seamless" header="%%Another example%%">
-              <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is
-                different from the <code>width</code>.</p>
+              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
               <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
               <p></p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
@@ -656,7 +656,8 @@ AcademicStaff academicStaff = staff; // Not OK
             </div>
           </tip-box>
           <tip-box>
-            <p>📦 The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend
+              on the <code>SalariedStaff</code> interface.</p>
             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>

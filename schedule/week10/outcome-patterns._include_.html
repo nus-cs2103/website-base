@@ -20,7 +20,7 @@
           </tip-box>
           <p>In software development, there are certain problems that recur in a certain context.</p>
           <tip-box>
-            <p>📦 Some examples of recurring design problems:</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of recurring design problems:</p>
             <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
@@ -283,7 +283,7 @@
           <p><strong>Context</strong></p>
           <p>Components need to access functionality deep inside other components.</p>
           <tip-box>
-            <p>📦 The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
             <img src="/website-base/book/designPatterns/facade/what/images/textBook.png" height="120">
             <p></p>
           </tip-box>
@@ -293,7 +293,7 @@
           <p>Include a
             <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
           <tip-box>
-            <p>📦 The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
             <img src="/website-base/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
             <p></p>
           </tip-box>
@@ -352,8 +352,7 @@
           <p>The essential element of this pattern is to have a general <code>&lt;&lt; Command &gt;&gt;</code> object that can be passed around, stored, executed, etc without knowing the type of command (i.e. via polymorphism).</p>
           <p>Let us examine an example application of the pattern first:</p>
           <tip-box>
-            <p>📦 In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The <code>CommandQueue</code> object
-              treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code> object will access the <code>DataStore</code>              object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code>              object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code>              object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
             <img src="/website-base/book/designPatterns/command/what/images/commandCreator.png" height="150">
             <p></p>
           </tip-box>

@@ -582,7 +582,7 @@ item2.add_previous_box(box2);
         <div>
           <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
           <tip-box>
-            <p>📦 In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
               <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
             <table>
               <tr>
@@ -680,7 +680,7 @@ item2.add_previous_box(box2);
         <div>
           <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
           <tip-box>
-            <p>📦 Example:</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
             <img src="/website-base/book/oopImplementation/aggregation/images/carPerson.png" height="40">
             <table>
               <tr>
@@ -810,7 +810,7 @@ item2.add_previous_box(box2);
             <tab header="Java">
               <div>
                 <tip-box>
-                  <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
                   <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
@@ -851,7 +851,7 @@ item2.add_previous_box(box2);
             <tab header="Python">
               <div>
                 <tip-box>
-                  <p>📦 In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
                   <table>
                     <tr>
                     
@@ -950,7 +950,8 @@ Ben is a student
             <tab header="Java">
               <div>
                 <tip-box>
-                  <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code>                    method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                    Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
@@ -999,7 +1000,7 @@ Ben is a student
         <div>
           <p><strong>Java allows multiple inheritance among interfaces. A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
           <tip-box>
-            <p>📦 The design below is allowed by Java.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The design below is allowed by Java.</p>
             <img src="/website-base/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
             <p></p>
             <ol>
@@ -1012,7 +1013,7 @@ Ben is a student
           <p><strong>Java uses the <code>interface</code> keyword to declare interfaces and <code>implements</code> keyword to indicate that a class implements a given interface.</strong> Inheritance among interfaces uses the <code>extends</code> keyword,
             just like inheritance among classes.</p>
           <tip-box>
-            <p>📦 The code for the example design given in the previous example:</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The code for the example design given in the previous example:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">TaxPayer</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">payTax</span><span class="hljs-params">()</span></span>;
 }
@@ -1072,7 +1073,7 @@ Ben is a student
         <div>
           <p><strong>Use the <code>abstract</code> keyword to identify abstract classes/methods.</strong></p>
           <tip-box>
-            <p>📦 Partial code below gives an example of how to declare abstract classes/methods.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Partial code below gives an example of how to declare abstract classes/methods.</p>
             <img src="/website-base/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
             <p></p>
             <pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -1137,7 +1138,7 @@ Ben is a student
         <div>
           <p><strong>We can use inheritance to achieve polymorphism</strong>.</p>
           <tip-box>
-            <p>📦 Continuing with the example given in [
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Continuing with the example given in [
               <trigger trigger="click" for="modal:oopImpl-polymorphism"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> OOP → Polymorphism → Introduction </trigger>], given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes that achieves
               the desired polymorphism.</p>
             <modal title="" id="modal:oopImpl-polymorphism">
@@ -1167,7 +1168,7 @@ Ben is a student
                         will be executed whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing the
                         classes in the <code>Payroll</code> system.</p>
                       <tip-box>
-                        <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Calling <code>adjustSalary()</code> method for each Staff type:</p>
                         <img src="/website-base/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                         <p></p>
                         <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
@@ -1288,7 +1289,7 @@ Ben is a student
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 06:32:32 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Sat, 23 Jun 2018 12:30:20 GMT</small></div>
 </footer>
 </div>
 </body>

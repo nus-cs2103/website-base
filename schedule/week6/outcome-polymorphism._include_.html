@@ -19,7 +19,7 @@
         <div>
           <p><strong>Method <em>overriding</em> is when a sub-class changes the behavior inherited from the parent class</strong> by re-implementing the method. Overridden methods have the same name, same type signature, and same return type.</p>
           <tip-box>
-            <p>📦 In the diagram below,</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the diagram below,</p>
             <ul>
               <li><code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method.</li>
               <li><code>Report#write(String)</code> method is overridden by <code>EvaluationReport#write(String)</code> method.</li>
@@ -74,7 +74,7 @@
                         </div>
                       </tip-box>
                       <tip-box>
-                        <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code>                          and <code>(int)</code></p>
                         <ul>
                           <li><code>calculate(String): void</code></li>
                           <li><code>calculate(int): void</code></li>
@@ -121,7 +121,7 @@
             <tab header="Java">
               <div>
                 <tip-box>
-                  <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
                   <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
@@ -162,7 +162,7 @@
             <tab header="Python">
               <div>
                 <tip-box>
-                  <p>📦 In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
                   <table>
                     <tr>
                     
@@ -282,7 +282,7 @@ Ben is a student
           <p>Take the example of writing a payroll application for a university to facilitate payroll processing of university staff. Suppose an <code>adjustSalary(int)</code> operation adjusts the salaries of all staff members. This operation will be executed
             whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing the classes in the <code>Payroll</code>            system.</p>
           <tip-box>
-            <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Calling <code>adjustSalary()</code> method for each Staff type:</p>
             <img src="/website-base/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
             <p></p>
             <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
@@ -363,7 +363,7 @@ Ben is a student
         <div>
           <p><strong>We can use inheritance to achieve polymorphism</strong>.</p>
           <tip-box>
-            <p>📦 Continuing with the example given in [
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Continuing with the example given in [
               <trigger trigger="click" for="modal:oopImpl-polymorphism"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> OOP → Polymorphism → Introduction </trigger>], given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes that achieves
               the desired polymorphism.</p>
             <modal title="" id="modal:oopImpl-polymorphism">
@@ -393,7 +393,7 @@ Ben is a student
                         will be executed whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing the
                         classes in the <code>Payroll</code> system.</p>
                       <tip-box>
-                        <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Calling <code>adjustSalary()</code> method for each Staff type:</p>
                         <img src="/website-base/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                         <p></p>
                         <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
@@ -551,7 +551,7 @@ Ben is a student
           </p>
           <p></p>
           <tip-box>
-            <p>📦 The <code>Account</code> class has an abstract method (<code>addInterest()</code>).</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Account</code> class has an abstract method (<code>addInterest()</code>).</p>
             <img src="/website-base/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
             <p></p>
           </tip-box>
@@ -583,7 +583,7 @@ Ben is a student
         <div>
           <p><strong>Use the <code>abstract</code> keyword to identify abstract classes/methods.</strong></p>
           <tip-box>
-            <p>📦 Partial code below gives an example of how to declare abstract classes/methods.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Partial code below gives an example of how to declare abstract classes/methods.</p>
             <img src="/website-base/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
             <p></p>
             <pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -684,13 +684,13 @@ Ben is a student
           </p>
           <p></p>
           <tip-box>
-            <p>📦 <code>SalariedStaff</code> is an interface that contains two methods <code>setSalary(int)</code> and <code>getSalary()</code>. <code>AcademicStaff</code> implements the <code>SalariedStaff</code> interface. <span class="dimmed"> That means an <code>AcademicStaff</code> object is able to support the behaviors <code>setSalary(int)</code> and <code>getSalary()</code>. That's why the same two methods also appear under the methods implemented by the <code>AcademicStaff</code> class (in blue)</span></p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>SalariedStaff</code> is an interface that contains two methods <code>setSalary(int)</code> and <code>getSalary()</code>. <code>AcademicStaff</code> implements the <code>SalariedStaff</code>              interface. <span class="dimmed"> That means an <code>AcademicStaff</code> object is able to support the behaviors <code>setSalary(int)</code> and <code>getSalary()</code>. That's why the same two methods also appear under the methods implemented by the <code>AcademicStaff</code> class (in blue)</span></p>
             <img src="/website-base/book/oopDesign/inheritance/interfaces/images/staff.png" height="250">
             <p></p>
           </tip-box>
           <p><strong>A class implementing an interface results in an <em>is-a</em> relationship</strong>, just like in class inheritance.</p>
           <tip-box>
-            <p>📦 In the example above, <code>AcademicStaff</code> <em>is a</em> <code>SalariedStaff</code>. An <code>AcademicStaff</code> object can be used anywhere a <code>SalariedStaff</code> object is expected e.g. <code>SalariedStaff ss = new AcademicStaff()</code>.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example above, <code>AcademicStaff</code> <em>is a</em> <code>SalariedStaff</code>. An <code>AcademicStaff</code> object can be used anywhere a <code>SalariedStaff</code>              object is expected e.g. <code>SalariedStaff ss = new AcademicStaff()</code>.</p>
             <p><span class="dimmed"> Similarly, <code>AdminStaff</code> <em>is a</em> <code>SalariedStaff</code> too.</span></p>
           </tip-box>
           <p></p>
@@ -722,7 +722,7 @@ Ben is a student
         <div>
           <p><strong>Java allows multiple inheritance among interfaces. A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
           <tip-box>
-            <p>📦 The design below is allowed by Java.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The design below is allowed by Java.</p>
             <img src="/website-base/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
             <p></p>
             <ol>
@@ -735,7 +735,7 @@ Ben is a student
           <p><strong>Java uses the <code>interface</code> keyword to declare interfaces and <code>implements</code> keyword to indicate that a class implements a given interface.</strong> Inheritance among interfaces uses the <code>extends</code> keyword,
             just like inheritance among classes.</p>
           <tip-box>
-            <p>📦 The code for the example design given in the previous example:</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The code for the example design given in the previous example:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">TaxPayer</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">payTax</span><span class="hljs-params">()</span></span>;
 }

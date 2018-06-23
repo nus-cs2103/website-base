@@ -4354,3 +4354,888 @@
 2018-06-22T06:30:07.500Z - info: Generate Site durationMs=42006
 2018-06-22T06:30:07.852Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-06-22T06:30:07.852Z - info: Press CTRL+C to stop ...
+2018-06-22T06:33:00.795Z - info: Pages built
+2018-06-22T06:33:00.883Z - info: Site data built
+2018-06-22T06:33:00.883Z - info: Build success!
+2018-06-22T06:33:00.884Z - info: Generate Site durationMs=35795
+2018-06-22T06:33:47.963Z - info: Deployed!
+2018-06-22T08:14:43.446Z - info: Pages built
+2018-06-22T08:14:43.541Z - info: Site data built
+2018-06-22T08:14:43.551Z - info: Generate Site durationMs=49499
+2018-06-22T08:14:43.907Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T08:14:43.908Z - info: Press CTRL+C to stop ...
+2018-06-22T08:16:06.072Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\_markbind\variables.md
+2018-06-22T08:16:07.074Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\_markbind\variables.md
+2018-06-22T08:16:07.075Z - info: Rebuilding 0 pages
+2018-06-22T08:16:07.075Z - info: Pages rebuilt
+2018-06-22T08:16:07.084Z - info: Site data built
+2018-06-22T08:18:03.840Z - info: Pages built
+2018-06-22T08:18:03.933Z - info: Site data built
+2018-06-22T08:18:03.943Z - info: Generate Site durationMs=39078
+2018-06-22T08:18:04.279Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T08:18:04.279Z - info: Press CTRL+C to stop ...
+2018-06-22T08:24:45.914Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T08:26:52.087Z - info: Pages built
+2018-06-22T08:26:52.198Z - info: Site data built
+2018-06-22T08:26:52.207Z - info: Generate Site durationMs=36745
+2018-06-22T08:26:52.543Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T08:26:52.544Z - info: Press CTRL+C to stop ...
+2018-06-22T08:30:05.815Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\se-book-adapted\index.md
+2018-06-22T08:30:06.818Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\se-book-adapted\index.md
+2018-06-22T08:30:06.820Z - info: Rebuilding 1 pages
+2018-06-22T08:30:07.100Z - info: Pages rebuilt
+2018-06-22T08:30:07.108Z - info: Site data built
+2018-06-22T08:32:21.887Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\site.json
+2018-06-22T08:32:21.936Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\se-book-adapted\index.md
+2018-06-22T08:32:22.907Z - info: Assets built
+2018-06-22T08:32:22.937Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\se-book-adapted\index.md
+2018-06-22T08:32:22.937Z - info: Rebuilding 1 pages
+2018-06-22T08:32:23.208Z - info: Pages rebuilt
+2018-06-22T08:32:23.218Z - info: Site data built
+2018-06-22T08:39:03.597Z - info: Pages built
+2018-06-22T08:39:03.692Z - info: Site data built
+2018-06-22T08:39:03.702Z - info: Generate Site durationMs=44725
+2018-06-22T08:39:04.053Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T08:39:04.053Z - info: Press CTRL+C to stop ...
+2018-06-22T09:18:31.228Z - info: Pages built
+2018-06-22T09:18:31.358Z - info: Site data built
+2018-06-22T09:18:31.367Z - info: Generate Site durationMs=48464
+2018-06-22T09:18:31.692Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T09:18:31.692Z - info: Press CTRL+C to stop ...
+2018-06-22T09:23:58.513Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T09:23:59.530Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T09:23:59.530Z - info: Rebuilding 2 pages
+2018-06-22T09:24:10.526Z - info: Pages rebuilt
+2018-06-22T09:24:10.553Z - info: Site data built
+2018-06-22T09:24:28.911Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T09:24:29.912Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T09:24:29.913Z - info: Rebuilding 2 pages
+2018-06-22T09:24:40.382Z - info: Pages rebuilt
+2018-06-22T09:24:40.399Z - info: Site data built
+2018-06-22T09:28:39.497Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\macros.md
+2018-06-22T09:28:40.498Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\common\macros.md
+2018-06-22T09:28:40.500Z - info: Rebuilding 0 pages
+2018-06-22T09:28:40.500Z - info: Pages rebuilt
+2018-06-22T09:28:40.512Z - info: Site data built
+2018-06-22T09:29:41.248Z - info: Pages built
+2018-06-22T09:29:41.365Z - info: Site data built
+2018-06-22T09:29:41.375Z - info: Generate Site durationMs=43492
+2018-06-22T09:29:41.720Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T09:29:41.721Z - info: Press CTRL+C to stop ...
+2018-06-22T09:35:52.979Z - info: Pages built
+2018-06-22T09:35:53.071Z - info: Site data built
+2018-06-22T09:35:53.082Z - info: Generate Site durationMs=41754
+2018-06-22T09:35:53.456Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T09:35:53.456Z - info: Press CTRL+C to stop ...
+2018-06-22T09:53:39.199Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.222Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.242Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.254Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.310Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.346Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.549Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.561Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.571Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.578Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.610Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.620Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.867Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.880Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.890Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.901Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.927Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:39.936Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:40.973Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:40.992Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:41.002Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:41.009Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:41.031Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:53:41.040Z - error:  Error: No such file: C:\repos\nus-cs2103\website-base\schedule\week2\null
+Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\outcomes.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-06-22T09:56:34.577Z - info: Pages built
+2018-06-22T09:56:34.659Z - info: Site data built
+2018-06-22T09:56:34.668Z - info: Generate Site durationMs=40562
+2018-06-22T09:56:35.021Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T09:56:35.021Z - info: Press CTRL+C to stop ...
+2018-06-22T10:00:28.155Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\macros.md
+2018-06-22T10:00:29.158Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\common\macros.md
+2018-06-22T10:00:29.159Z - info: Rebuilding 0 pages
+2018-06-22T10:00:29.160Z - info: Pages rebuilt
+2018-06-22T10:00:29.180Z - info: Site data built
+2018-06-22T10:01:28.511Z - info: Pages built
+2018-06-22T10:01:28.606Z - info: Site data built
+2018-06-22T10:01:28.615Z - info: Generate Site durationMs=43591
+2018-06-22T10:01:28.975Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T10:01:28.975Z - info: Press CTRL+C to stop ...
+2018-06-22T10:12:10.461Z - info: Pages built
+2018-06-22T10:12:10.536Z - info: Site data built
+2018-06-22T10:12:10.545Z - info: Generate Site durationMs=50193
+2018-06-22T10:12:10.893Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T10:12:10.893Z - info: Press CTRL+C to stop ...
+2018-06-22T10:34:00.855Z - info: Pages built
+2018-06-22T10:34:00.950Z - info: Site data built
+2018-06-22T10:34:00.956Z - info: Generate Site durationMs=47133
+2018-06-22T10:34:01.294Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T10:34:01.294Z - info: Press CTRL+C to stop ...
+2018-06-22T11:26:26.194Z - info: Pages built
+2018-06-22T11:26:26.298Z - info: Site data built
+2018-06-22T11:26:26.306Z - info: Generate Site durationMs=42935
+2018-06-22T11:26:26.677Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T11:26:26.677Z - info: Press CTRL+C to stop ...
+2018-06-22T11:28:27.994Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\evidence\testing.md
+2018-06-22T11:28:28.996Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\evidence\testing.md
+2018-06-22T11:28:28.998Z - info: Rebuilding 4 pages
+2018-06-22T11:28:30.335Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\evidence\revisionControl.md
+2018-06-22T11:28:30.337Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\evidence\gitAndGithub.md
+2018-06-22T11:28:40.760Z - info: Pages rebuilt
+2018-06-22T11:28:40.782Z - info: Site data built
+2018-06-22T11:28:41.179Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\evidence\revisionControl.md,C:\repos\nus-cs2103\website-base\schedule\evidence\gitAndGithub.md
+2018-06-22T11:28:41.180Z - info: Rebuilding 4 pages
+2018-06-22T11:28:53.165Z - info: Pages rebuilt
+2018-06-22T11:28:53.185Z - info: Site data built
+2018-06-22T11:37:30.649Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:37:30.716Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:37:31.042Z - error: uncaughtException: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression date=Fri Jun 22 2018 19:37:30 GMT+0800 (Malay Peninsula Standard Time), pid=13804, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=109285376, heapTotal=88526848, heapUsed=65655968, external=445522, loadavg=[0, 0, 0], uptime=279291.5420388
+Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:418:36)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-06-22T11:37:31.053Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week2\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:386:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:383:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+2018-06-22T11:38:21.574Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:38:21.587Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:38:21.677Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week2\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:386:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:383:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+2018-06-22T11:38:23.218Z - error: uncaughtException: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression date=Fri Jun 22 2018 19:38:23 GMT+0800 (Malay Peninsula Standard Time), pid=14684, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=136667136, heapTotal=115400704, heapUsed=82423416, external=271269, loadavg=[0, 0, 0], uptime=279343.7212377
+Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:418:36)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-06-22T11:39:26.263Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:39:26.282Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:39:26.381Z - error:  Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week2\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:386:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:383:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+2018-06-22T11:39:27.930Z - error: uncaughtException: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression date=Fri Jun 22 2018 19:39:27 GMT+0800 (Malay Peninsula Standard Time), pid=17484, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=130019328, heapTotal=108974080, heapUsed=80441296, external=245567, loadavg=[0, 0, 0], uptime=279408.4324604
+Template render error: (unknown path) [Line 10, Column 5]
+  parseAggregate: expected comma after expression
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:418:36)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-06-22T11:41:21.945Z - info: Pages built
+2018-06-22T11:41:22.037Z - info: Site data built
+2018-06-22T11:41:22.046Z - info: Generate Site durationMs=41096
+2018-06-22T11:41:22.399Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T11:41:22.399Z - info: Press CTRL+C to stop ...
+2018-06-22T11:43:35.729Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T11:43:36.734Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T11:43:36.737Z - info: Rebuilding 2 pages
+2018-06-22T11:43:47.845Z - info: Pages rebuilt
+2018-06-22T11:43:47.879Z - info: Site data built
+2018-06-22T11:44:19.632Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T11:44:20.634Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T11:44:20.635Z - info: Rebuilding 2 pages
+2018-06-22T11:44:31.300Z - info: Pages rebuilt
+2018-06-22T11:44:31.328Z - info: Site data built
+2018-06-22T11:44:57.547Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T11:44:58.549Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\index.md
+2018-06-22T11:44:58.550Z - info: Rebuilding 2 pages
+2018-06-22T11:45:08.726Z - info: Pages rebuilt
+2018-06-22T11:45:08.746Z - info: Site data built
+2018-06-22T11:45:45.103Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:45:46.104Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:45:46.104Z - info: Rebuilding 0 pages
+2018-06-22T11:45:46.104Z - info: Pages rebuilt
+2018-06-22T11:45:46.114Z - info: Site data built
+2018-06-22T11:48:35.462Z - info: Pages built
+2018-06-22T11:48:35.533Z - info: Site data built
+2018-06-22T11:48:35.542Z - info: Generate Site durationMs=41334
+2018-06-22T11:48:35.876Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T11:48:35.876Z - info: Press CTRL+C to stop ...
+2018-06-22T11:50:14.999Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:50:16.001Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:50:16.002Z - info: Rebuilding 0 pages
+2018-06-22T11:50:16.002Z - info: Pages rebuilt
+2018-06-22T11:50:16.012Z - info: Site data built
+2018-06-22T11:51:35.131Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:51:36.132Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:51:36.132Z - info: Rebuilding 0 pages
+2018-06-22T11:51:36.132Z - info: Pages rebuilt
+2018-06-22T11:51:36.151Z - info: Site data built
+2018-06-22T11:52:40.133Z - info: Pages built
+2018-06-22T11:52:40.223Z - info: Site data built
+2018-06-22T11:52:40.231Z - info: Generate Site durationMs=43025
+2018-06-22T11:52:40.568Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T11:52:40.568Z - info: Press CTRL+C to stop ...
+2018-06-22T11:53:33.967Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:53:34.970Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:53:34.972Z - info: Rebuilding 0 pages
+2018-06-22T11:53:34.972Z - info: Pages rebuilt
+2018-06-22T11:53:34.992Z - info: Site data built
+2018-06-22T11:54:15.894Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\macros.md
+2018-06-22T11:54:15.918Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:54:16.896Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\common\macros.md,C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-06-22T11:54:16.896Z - info: Rebuilding 0 pages
+2018-06-22T11:54:16.897Z - info: Pages rebuilt
+2018-06-22T11:54:16.910Z - info: Site data built
+2018-06-22T11:58:56.685Z - error:  Template render error: (unknown path) [Line 10, Column 7]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:58:57.366Z - error:  Template render error: (unknown path) [Line 10, Column 7]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+2018-06-22T11:58:58.832Z - error:  Template render error: (unknown path) [Line 10, Column 7]
+  parseAggregate: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week2\index.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:190:28)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:386:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:383:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+2018-06-22T11:58:58.933Z - error: uncaughtException: (unknown path) [Line 10, Column 7]
+  parseAggregate: expected comma after expression date=Fri Jun 22 2018 19:58:58 GMT+0800 (Malay Peninsula Standard Time), pid=8232, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=142643200, heapTotal=121692160, heapUsed=87841056, external=240381, loadavg=[0, 0, 0], uptime=280579.4356352
+Template render error: (unknown path) [Line 10, Column 7]
+  parseAggregate: expected comma after expression
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:418:36)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-06-22T12:00:00.140Z - info: Pages built
+2018-06-22T12:00:00.229Z - info: Site data built
+2018-06-22T12:00:00.238Z - info: Generate Site durationMs=39294
+2018-06-22T12:00:00.578Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T12:00:00.578Z - info: Press CTRL+C to stop ...
+2018-06-22T12:10:49.231Z - info: Pages built
+2018-06-22T12:10:49.302Z - info: Site data built
+2018-06-22T12:10:49.312Z - info: Generate Site durationMs=42570
+2018-06-22T12:10:49.652Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T12:10:49.652Z - info: Press CTRL+C to stop ...
+2018-06-22T12:16:07.682Z - info: Pages built
+2018-06-22T12:16:07.781Z - info: Site data built
+2018-06-22T12:16:07.790Z - info: Generate Site durationMs=38783
+2018-06-22T12:16:08.127Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-06-22T12:16:08.127Z - info: Press CTRL+C to stop ...

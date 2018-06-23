@@ -228,8 +228,8 @@
           </tip-box>
           <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
           <tip-box>
-            <p>📦 Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence,
-              such a class does not follow the SRP.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes
+              as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
           </tip-box>
         </div>
         <div>
@@ -259,15 +259,16 @@
           </tip-box>
           <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
           <tip-box>
-            <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>,
-              and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to
-              modification.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including
+              a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without
+              having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
             <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
             <p></p>
           </tip-box>
           <tip-box>
-            <p>📦 The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of
-              <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container
+              of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its
+              code.</p>
             <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
 ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
 </code></pre>
@@ -336,8 +337,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <tip-box>
                       <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
                       <p></p>
-                      <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted
-                        by an object of any of its subclasses.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever
+                        an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                       <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
                       <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -354,8 +355,8 @@ AcademicStaff academicStaff = staff; // Not OK
             </div>
           </modal>
           <tip-box>
-            <p>📦 Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will work
-              for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class
+              states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
             <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
             <p></p>
             <p>Now consider the following:</p>
@@ -371,8 +372,7 @@ AcademicStaff academicStaff = staff; // Not OK
                 break the <code>Payroll</code> class functionality.</li>
             </ul>
             <panel type="seamless" header="%%Another example%%">
-              <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is
-                different from the <code>width</code>.</p>
+              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
               <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
               <p></p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
@@ -437,7 +437,8 @@ AcademicStaff academicStaff = staff; // Not OK
             </div>
           </tip-box>
           <tip-box>
-            <p>📦 The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend
+              on the <code>SalariedStaff</code> interface.</p>
             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
@@ -537,8 +538,8 @@ AcademicStaff academicStaff = staff; // Not OK
                     </tip-box>
                     <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
                     <tip-box>
-                      <p>📦 Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command
-                        changes. Hence, such a class does not follow the SRP.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of
+                        the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
                     </tip-box>
                   </div>
                   <div>
@@ -580,15 +581,16 @@ AcademicStaff academicStaff = staff; // Not OK
                     </tip-box>
                     <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
                     <tip-box>
-                      <p>📦 In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>,
-                        <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open
-                        to extensions, but closed to modification.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example,
+                        by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior
+                        was extended without having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
                       <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
                       <p></p>
                     </tip-box>
                     <tip-box>
-                      <p>📦 The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container
-                        of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as
+                        a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended
+                        without modifying its code.</p>
                       <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
 ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
 </code></pre>
@@ -668,8 +670,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                               <tip-box>
                                 <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
                                 <p></p>
-                                <p>📦 an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted
-                                  by an object of any of its subclasses.</p>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e.
+                                  wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                                 <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
                                 <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -686,8 +688,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       </div>
                     </modal>
                     <tip-box>
-                      <p>📦 Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method
-                        will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code>                        class states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
                       <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                       <p></p>
                       <p>Now consider the following:</p>
@@ -703,7 +704,7 @@ AcademicStaff academicStaff = staff; // Not OK
                           can potentially break the <code>Payroll</code> class functionality.</li>
                       </ul>
                       <panel type="seamless" header="%%Another example%%">
-                        <p>📦 The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code>                          that is different from the <code>width</code>.</p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                          because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
                         <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                         <p></p>
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
@@ -779,7 +780,8 @@ AcademicStaff academicStaff = staff; // Not OK
                       </div>
                     </tip-box>
                     <tip-box>
-                      <p>📦 The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it
+                        should depend on the <code>SalariedStaff</code> interface.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
@@ -881,7 +883,7 @@ AcademicStaff academicStaff = staff; // Not OK
           </tip-box>
           <p>A <em>concern</em> in this context is a set of information that affects the code of a computer program.</p>
           <tip-box>
-            <p>📦 Examples for <em>concerns</em>:</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Examples for <em>concerns</em>:</p>
             <ul>
               <li>A specific feature, such as the code related to <code>add employee</code> feature</li>
               <li>A specific aspect, such as the code related to <code>persistence</code> or <code>security</code></li>
@@ -890,11 +892,12 @@ AcademicStaff academicStaff = staff; // Not OK
           </tip-box>
           <p><strong>Applying <tooltip content="Separation of Concerns">SoC</tooltip> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
           <tip-box>
-            <p>📦 If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the
+              security is implemented.</p>
           </tip-box>
           <p><strong>This principle can be applied at the class level, as well as on higher levels.</strong></p>
           <tip-box>
-            <p>📦 The
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The
               <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p>
           </tip-box>
           <modal title="TextBook »" id="modal:soc-nTier">
@@ -915,7 +918,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
                     <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
                     <tip-box>
-                      <p>📦 Operating systems and network communication software often use n-tier style.
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Operating systems and network communication software often use n-tier style.
                         <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
                     </tip-box>
                     <p></p>
@@ -948,7 +951,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li>
                     </ul>
                     <tip-box>
-                      <p>📦 In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example below, design <code>A</code> appears to have a more coupling between the components than design <code>B</code>.</p>
                       <img src="/website-base/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
                       <p></p>
                     </tip-box>
@@ -1103,8 +1106,8 @@ AcademicStaff academicStaff = staff; // Not OK
               <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
           </ul>
           <tip-box>
-            <p>📦 The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’),
-              and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is
+              a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
     Goo g = b.getGoo();
     g.doSomething();
@@ -1113,9 +1116,9 @@ AcademicStaff academicStaff = staff; // Not OK
           </tip-box>
           <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
           <tip-box>
-            <p>📦 In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
-            <p>📦 An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend and Adam is Jake’s friend, you should not
-              be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If
+              Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
           </tip-box>
         </div>
         <div>
@@ -1218,8 +1221,8 @@ AcademicStaff academicStaff = staff; // Not OK
           </tip-box>
           <p>This principle guards against duplication of information.</p>
           <tip-box>
-            <p>📦 The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-            <p>📦 The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
           </tip-box>
         </div>
         <div></div>
@@ -1317,7 +1320,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 06:32:32 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Sat, 23 Jun 2018 12:30:20 GMT</small></div>
 </footer>
 </div>
 </body>

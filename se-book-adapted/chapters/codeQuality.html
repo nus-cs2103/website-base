@@ -252,7 +252,7 @@
             <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood,
               and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
             <tip-box>
-              <p>📦 The two code samples given below achieve the same functionality, but one is easier to read.</p>
+              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
               <tabs>
               
                 <tab header="Java">
@@ -409,7 +409,7 @@
                 <tab header="Java">
                   <div>
                     <tip-box>
-                      <p>📦 Example:</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
                       <p>
                         <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
                       </p>
@@ -434,7 +434,7 @@
                 <tab header="Python">
                   <div>
                     <tip-box>
-                      <p>📦 Example:</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
                       <p>
                         <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
                       </p>
@@ -471,7 +471,7 @@ is_urgent = type_code == URGENT
               <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
                 <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
               <tip-box>
-                <p>📦 Example:</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
                 <tabs>
                 
                   <tab header="Java">
@@ -708,17 +708,19 @@ displayResult();
                           only details that are relevant to the current perspective or the task at hand.</p>
                         <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
                         <tip-box>
-                          <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted
-                            away’ as they do not affect the task of that software component.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>,
+                            and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
                         </tip-box>
                         <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
                         <tip-box>
-                          <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
                         </tip-box>
                         <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
                         <tip-box>
-                          <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-                          <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level
+                            than a bit.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than
+                            an Assembly language instruction <code>MOV</code>.</p>
                         </tip-box>
                       </div>
                       <div></div>
@@ -944,7 +946,7 @@ exit();
               </tip-box>
               <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
               <tip-box>
-                <p>📦 Examples:</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Examples:</p>
                 <tabs>
                 
                   <tab header="Java">
@@ -1306,8 +1308,8 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                         </tip-box>
                         <p>This principle guards against duplication of information.</p>
                         <tip-box>
-                          <p>📦 The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-                          <p>📦 The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
                         </tip-box>
                       </div>
                       <div></div>
@@ -1368,7 +1370,7 @@ trimInput();
               <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class
                 or an operation to explain its purpose.</p>
               <tip-box>
-                <p>📦 Examples:</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Examples:</p>
                 <tabs>
                 
                   <tab header="Java">
@@ -1426,7 +1428,7 @@ trimInput();
               <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
               <p>👍 <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
               <tip-box>
-                <p>📦 Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
                 <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{
     input.trim();
@@ -1435,14 +1437,14 @@ trimInput();
               </tip-box>
               <p>👍 <strong>Why</strong> : The rationale for the current implementation.</p>
               <tip-box>
-                <p>📦 Example: Without this comment, the reader will not know the reason for calling this method.</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
                 <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
 compact(input);
 </code></pre>
               </tip-box>
               <p>👎 <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
               <tip-box>
-                <p>📦 Example:</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
                 <p>
                   <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
                 <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
@@ -1466,7 +1468,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Fri, 22 Jun 2018 06:32:32 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Sat, 23 Jun 2018 12:30:20 GMT</small></div>
 </footer>
 </div>
 </body>

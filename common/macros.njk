@@ -1,0 +1,161 @@
+{% import "se-book-adapted/config.njk" as config with context %}
+
+{% macro priority_style(level) %}
+{% set label_style = {"1": "danger", "2": "warning", "3": "info", "4": "success"} %}
+{{ label_style[level] }}
+{% endmacro %}
+
+
+{% macro show_priority_style(level) %}{{ priority_style(level) | trim }}{% endmacro %}
+
+
+{% macro show_priority(level) %}
+{% set label_open = "<span class='label label-" + show_priority_style(level) + "'>" %}
+{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}
+{% set label_close = "&nbsp;</span>" %}
+{% set stars = {"1": label_open + star + label_close, "2": label_open + star + star + label_close, "3": label_open + star + star + star + label_close, "4": label_open + star + star + star + star + label_close} %}{{stars[level] }}
+{% endmacro %}
+
+
+{% macro show_stars(level) %}{{ show_priority(level) | trim }}{% endmacro %}
+
+
+{% macro show_evidence(chapter, unit_location, file) %}
+{{ dashed_line | safe}}
+
+{{evidence}}
+
+<include src="../evidence/{{ chapter }}.md#{{ unit_location | replace("/", "_")}}" />
+
+{% endmacro %}
+
+
+{% macro show_unit_outcome(unit_outcomes, id_prefix, file) %}
+{% set letters = "abcdefghijklmnop" | list %}
+{% for unit in unit_outcomes %}
+  {% set chapter = unit.location[0] %}
+  {% set path_as_array = unit.location.slice(1,4) %}
+  {% set path = path_as_array.join("/") %}
+  {% set full_path = unit.location.join("/") %}
+  {% if not unit.priority %}
+    {% set priority = config.get_priority(chapter, path_as_array) %}
+  {% else %}
+    {% set priority = unit.priority %}
+  {% endif %}
+<panel type="{{ show_priority_style(priority) }}" expanded no-close >
+<span slot="header" class="panel-title"><md>`{{ id_prefix }}{{ letters[loop.index-1] }}` <include src="../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
+  <include src="../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
+  {% if not unit.omit_evidence %}
+  {{ show_evidence(chapter, path, file) }}
+  {% endif %}
+</panel>
+{% endfor %}
+{% endmacro %}
+
+
+{% macro show_outcome(id, heading, priority, file, units) %}
+<panel no-close >
+<span slot="header" class="panel-title"><md>`{{ id }}` **{{ heading }}**</md> {{ show_stars(priority) }}</span>
+  {% if units %}
+  {{ show_unit_outcome(units, id, file)}}
+  {% else %}
+  <include src="{{ file }}" />
+  {% endif %}
+</panel>
+{% endmacro %}
+
+
+{% macro show_outcome_groups(week_num, outcome_groups) %}
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
+
+<div class="website-content">
+
+## Week {{ week_num }} - Outcomes 
+
+<div id="main">
+{% set i = 0 %}
+{% for outcome_group in outcome_groups %}
+<span class="activity-desc">{{ outcome_group.name }}</span>
+<div class="indented">
+  {% for outcome in outcome_group.outcomes %}
+  {% set i = i + 1 %}
+  {{ show_outcome("W" + week_num + "." + i, outcome.heading, outcome.priority, outcome.file, outcome.units) }}
+  {% endfor %}
+</div>
+<p/>
+{% endfor %}
+</div>
+</div>
+{% endmacro %}
+
+
+{% macro show_admin_section_to_read(heading, priority, source) %}
+<panel src="{{ source }}" dynamic no-close >
+<span slot="header" class="panel-title"><md>%%Admin »%% {{ heading }} {{ show_stars(priority) }}</span>
+</panel>
+{% endmacro %}
+
+
+{% macro show_admin_sections_to_read(admin_sections) %}
+<span class="activity-desc">Admin info to read:<span>
+<div class="indented">
+{% for admin_section in admin_sections %}
+{{ show_admin_section_to_read(admin_section.heading, admin_section.priority, "../../admin/" + admin_section.source) }}
+{% endfor %}
+</div>
+{% endmacro %}
+
+
+{% macro show_week_outcomes(week_num) %}
+<panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>
+  <span slot="header" class="panel-title activity-type">{{glyphicon_flag}} Outcomes</span>
+  <div class="indented">
+  <include src="outcomes.md#main" />
+  </div>
+</panel>
+{% endmacro %}
+
+
+{% macro show_week_todos(week_num) %}
+<panel type="seamless" expanded no-close>
+  <span slot="header" class="panel-title activity-type">{{glyphicon_check}} Todo</span>
+  <div class="indented">
+  <include src="todo.md" />
+  </div>
+</panel>
+{% endmacro %}
+
+
+{% macro show_week_tutorial(week_num) %}
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title activity-type">{{glyphicon_pencil}} Tutorial {{ week_num }}</span>
+   <div class="indented">
+   <include src="tutorial.md" />
+   </div>
+</panel>
+{% endmacro %}
+
+
+{% macro show_week_lecture(week_num) %}
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title activity-type">{{glyphicon_blackboard}} Lecture {{ week_num }}</span>
+  <div class="indented">
+  <include src="lecture.md" />
+  </div>
+</panel>
+{% endmacro %}
+
+
+{% macro show_week_schedule(week_num) %}
+
+{{ show_week_outcomes(week_num) }}
+
+{{ show_week_todos(week_num) }}
+
+{{ show_week_tutorial(week_num) }}
+
+{{ show_week_lecture(week_num) }}
+
+{% endmacro %}
+
