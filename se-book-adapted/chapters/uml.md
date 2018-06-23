@@ -1,6 +1,6 @@
 <frontmatter>
-{% import "se-book-adapted/config.md" as config with context %}
-{% import "se-book-adapted/chapters/chapter.md" as chapter_template with context %}
+{% import "se-book-adapted/config.njk" as config with context %}
+{% import "se-book-adapted/chapters/chapter.njk" as chapter_template with context %}
 {% set chapter = config.chapters.uml %}
 {{ chapter_template.add_front_matter(chapter) }}
 </frontmatter>

@@ -1,4 +1,4 @@
-{% import "common/macros.md" as macros with context %}
+{% import "common/macros.njk" as macros with context %}
 
 {% set admin_sections = [
   {heading: "Policy on plagiarism", priority: "1", source: "appendixB-policies.md#policy-plagiarism"},

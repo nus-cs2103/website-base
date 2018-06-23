@@ -1,4 +1,4 @@
-{% import "common/macros.md" as macros with context %}
+{% import "common/macros.njk" as macros with context %}
 
 {% set admin_sections = [
   {heading: "Project: v1.5", priority: "1", source: "project-v15.md"}

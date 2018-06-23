@@ -1,5 +1,5 @@
 <markdown>
-{% import "se-book-adapted/config.md" as config with context %}
+{% import "se-book-adapted/config.njk" as config with context %}
 
 * [Home {{ glyphicon_home }}, printable versions {{ glyphicon_print }}]({{baseUrl}}/se-book-adapted/index.html)
 {% for section in config.topics %}

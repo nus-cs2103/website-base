@@ -1,4 +1,4 @@
-{% import "common/macros.md" as macros with context %}
+{% import "common/macros.njk" as macros with context %}
 
 {% set admin_sections = [
   {heading: "Policy on project work distribution", priority: "2", source: "appendixB-policies.md#policy-workDistribution"},

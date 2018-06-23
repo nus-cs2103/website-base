@@ -1,7 +1,7 @@
 <frontmatter>
 title: "Definitions"
 </frontmatter>
-{% import "se-book-adapted/config.md" as config with context %}
+{% import "se-book-adapted/config.njk" as config with context %}
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 

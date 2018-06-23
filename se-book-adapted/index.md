@@ -22,7 +22,7 @@ siteNav: se-book-adapted-sitenav.md
 * [All chapters as one printer-friendly page (huge file!) {{ glyphicon_print }}]({{baseUrl}}/se-book-adapted/print.html)
 
 
-{% import "se-book-adapted/config.md" as config with context %}
+{% import "se-book-adapted/config.njk" as config with context %}
 
 
 {% macro show_chapter(section, chapter) %}

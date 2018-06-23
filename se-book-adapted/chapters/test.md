@@ -1,4 +1,4 @@
-{% import "se-book-adapted/config.md" as config with context %}
+{% import "se-book-adapted/config.njk" as config with context %}
 
 {% macro find_level_three(topics, path) %}
 {% for topic in topics %}
