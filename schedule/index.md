@@ -18,43 +18,59 @@ footer: footer.md
 <include src="overview/index.md" name=":exclamation: **Info relevant to all weeks**" dynamic />
 <p/>
 
-
-{% set past_weeks = [
-    {num: "1", day:"Jan 15"}
+{% set weeks = [
+    {num: "1", day:"Aug 13"},
+    {num: "2", day:"Aug 20"},
+    {num: "3", day:"Aug 27"}, 
+    {num: "4", day:"Sep 3"},
+    {num: "5", day: "Sep 10" },
+    {num: "6", day: "Sep 17" },
+    {num: "7", day: "Oct 1" },
+    {num: "8", day: "Oct 8" },
+    {num: "9", day: "Oct 15" },
+    {num: "10", day: "Oct 22" },
+    {num: "11", day: "Oct 29" },
+    {num: "12", day: "Nov 5" },
+    {num: "13", day: "Nov 12" }
 ] %}
 
-{% for week in past_weeks %}
+
+{% set current_weeks = ["1"] %}
+
+
+{% macro show_past_week(week) %}
 <panel type="seamless" src="week{{ week.num }}/index.md" dynamic no-close>
 <span slot="header" class="panel-title week-past"> Week {{ week.num }} [{{ week.day }}]</span>
 </panel>
-{% endfor %}
+{% endmacro %}
 
-<panel type="seamless" expanded no-close>
-<span slot="header" class="panel-title week"> Week 2 [Jan 22]</span>
-  <include src="week2/index.md"/>
-</panel>
 
-{% set future_weeks = [
-    {num: "3", day:"Jan 29"}, 
-    {num:"4", day:"Jan 29"},
-    {num:"5", day: "Feb 12" },
-    {num:"6", day: "Feb 19" },
-    {num:"7", day: "Mar 5" },
-    {num:"8", day: "Mar 12" },
-    {num:"9", day: "Mar 19" },
-    {num:"10", day: "Mar 26" },
-    {num:"11", day: "Apr 2" },
-    {num:"12", day: "Apr 9" },
-    {num:"13", day: "Apr 16" }
-] %}
-
-{% for week in future_weeks %}
+{% macro show_future_week(week) %}
 <panel type="seamless" src="week{{ week.num }}/index.md" dynamic no-close>
 <span slot="header" class="panel-title week-future"> Week {{ week.num }} [{{ week.day }}]</span>
 </panel>
+{% endmacro %}
+
+
+{% macro show_current_week(week) %}
+<panel type="seamless" expanded no-close>
+<span slot="header" class="panel-title week"> Week {{ week.num }} [{{ week.day }}]</span>
+  <include src="week{{ week.num }}/index.md"/>
+</panel>
+{% endmacro %}
+
+
+{% for week in weeks %}
+{% set current_week_num = current_weeks[0] | int %}
+{% set week_num = week.num | int %}
+{% if week.num in current_weeks %} 
+  {{ show_current_week(week) }}
+{% elseif week_num < current_week_num %}
+  {{ show_past_week(week) }}
+{% else %}
+  {{ show_future_week(week) }}
+{% endif %}
 {% endfor %}
-
-
 
 
 </div>
