@@ -16,3 +16,23 @@
 
 **Submission**: Demo the test during the tutorial.
 </div>
+
+<div id="refactoring">
+
+**Acceptable**: Ability to do some automated refactoring in the IDE.
+
+**Submission**: Demo during the tutorial.
+
+</div>
+
+<div id="debuggingBasic">
+
+**Submission**: Demo debugging features of Intellij during the tutorial.
+
+</div>
+
+<div id="productivityShortcuts">
+
+**Submission**: Demo some Intellij productivity shortcuts during the tutorial.
+
+</div>

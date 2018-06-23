@@ -22,7 +22,8 @@
 
 {% macro show_evidence(chapter, unit_location, file) %}
 {{ dashed_line | safe}}
-{{glyphicon_folder_close}} Evidence:
+
+{{evidence}}
 
 <include src="../evidence/{{ chapter }}.md#{{ unit_location | replace("/", "_")}}" />
 

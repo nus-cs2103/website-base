@@ -17,4 +17,8 @@
 <span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
 
 <span id="icon_example">{{glyphicon_gift | safe}}</span>
+<span id="icon_important_big_red"><font color="red"><big>{{ glyphicon_exclamation_sign |safe }}</big></font></span>
 <span id="icon_prereq">{{glyphicon_education | safe}}</span>
+
+
+<span id="evidence"><big>{{glyphicon_folder_close | safe}} Evidence:</big></span>

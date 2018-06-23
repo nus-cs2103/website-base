@@ -1,18 +1,16 @@
-<panel header="{{glyphicon_folder_close}} Evidence" expanded>
+{{ icon_important_big_red }} This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO **(in Week 5)**:
 
-<tip-box type="important"> 
+<panel header="[For Reference] details of the Week 5 LO mentioned above">
 
-This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO **(in Week 5)**:
-
-<panel type="seamless" header="[For Reference] details of the Week 5 LO mentioned above">
-
-{{glyphicon_folder_close}} Evidence:
+{{evidence}}
 
 <include src="../week5/2kloc.md"/>
 
 </panel>
 
-</tip-box>
+{{ dashed_line | safe}}
+
+{{evidence}}
 
 **Acceptable**: Evidence that you have worked with a code base larger than 1KLoC. %%e.g. a project in a previous module or a pet project%%
 
@@ -32,5 +30,3 @@ This is a compulsory LO. If you miss this LO, your participation marks will be a
   </tip-box>
 
 **Submission**: demo during tutorial.
-
-</panel>
