@@ -1146,7 +1146,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"},
+              {name: "what", heading: "What", priority: "2"},
               {name: "testability", heading: "Testability", priority: "1"}
             ]
           }
@@ -1211,7 +1211,7 @@
           {
             name: "regressionTesting",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           }
         ]
@@ -1222,8 +1222,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"},
-              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "1"},
+              {name: "what", heading: "What", priority: "2"},
+              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "2"},
               {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "1"},
               {name: "tools", heading: "Test Automation Tools", priority: "1"},
               {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "1"}
@@ -1653,7 +1653,7 @@
             name: "",
             level_three_topics: [
               {name: "projectSetup", heading: "Project Setup", priority: "1"},
-              {name: "codeNavigation", heading: "Code Navigation", priority: "1"},
+              {name: "codeNavigation", heading: "Code Navigation", priority: "2"},
               {name: "productivityShortcuts", heading: "Productivity Shortcuts", priority: "1"},
               {name: "debuggingBasic", heading: "Debugging: Basic", priority: "1"},
               {name: "refactoring", heading: "Refactoring", priority: "1"}
@@ -1675,7 +1675,7 @@
             level_three_topics: [
               {name: "init", heading: "Init", priority: "1"},
               {name: "commit", heading: "Commit", priority: "1"},
-              {name: "ignore", heading: "Ignore", priority: "1"},
+              {name: "ignore", heading: "Ignore", priority: "2"},
               {name: "tag", heading: "Tag", priority: "1"},
               {name: "checkout", heading: "Checkout", priority: "1"},
               {name: "stash", heading: "Stash", priority: "1"},
@@ -1703,7 +1703,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "collections", heading: "Collections", priority: "1"},
+              {name: "collections", heading: "Collections", priority: "2"},
               {name: "enums", heading: "Enums", priority: "1"},
               {name: "varargs", heading: "Varargs ", priority: "3"},
               {name: "javaFXBasic", heading: "JavaFX: Basic", priority: "1"},
@@ -1802,3 +1802,41 @@
   "oddStatementOnProjMgtTools",
   "correctStatementAboutPrinciplesAndPatterns"
 ] %}
+
+
+{% macro find_level_three(topics, path) -%}
+{% for topic in topics %}
+  {% if topic.name === path[2] %}
+  {{ topic.priority }}
+  {% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{% macro find_level_two(topics, path) -%}
+{% for topic in topics %}
+  {% if topic.name === path[1] %}
+    {{ find_level_three(topic.level_three_topics, path) }}
+  {% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{% macro find_level_one(topics, path) -%}
+{% for topic in topics %}
+  {% if topic.name === path[0] %}
+    {{find_level_two(topic.level_two_topics, path)}}
+  {% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{# path should be without chapter #}
+{% macro find_priority(chapter_name, path) -%}
+{% if (path | length) == 3 %}
+  {{find_level_one(chapters[chapter_name].level_one_topics, path)}}
+{% elseif (path | length) == 2 %}
+  {{find_level_one(chapters[chapter_name].level_one_topics, [path[0], "", path[1]])}}
+{% elseif (path | length) == 1 %}
+  {{find_level_one(chapters[chapter_name].level_one_topics, ["", "", path[0]])}}
+{% endif %}
+{%- endmacro %}
+
+{% macro get_priority(chapter_name, path)%}{{find_priority(chapter_name, path) | trim }}{% endmacro %}

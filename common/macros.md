@@ -1,3 +1,5 @@
+{% import "se-book-adapted/config.md" as config with context %}
+
 {% macro priority_style(level) %}
 {% set label_style = {"1": "danger", "2": "warning", "3": "info", "4": "success"} %}
 {{ label_style[level] }}
@@ -30,11 +32,20 @@
 {% macro show_unit_outcome(unit_outcomes, id_prefix, file) %}
 {% set letters = "abcdefghijklmnop" | list %}
 {% for unit in unit_outcomes %}
-<panel type="{{ show_priority_style(unit.priority) }}" expanded no-close >
-<span slot="header" class="panel-title"><md>`{{ id_prefix }}{{ letters[loop.index-1] }}` <include src="../../book/{{  unit.location | join("/") }}/text.md#outcomes" inline/> {{ show_stars(unit.priority) }}</md></span>
-  <include src="../../book/{{ unit.location | join("/") }}/unit-inElsewhere-asFlat.md" boilerplate />
+  {% set chapter = unit.location[0] %}
+  {% set path_as_array = unit.location.slice(1,4) %}
+  {% set path = path_as_array.join("/") %}
+  {% set full_path = unit.location.join("/") %}
+  {% if not unit.priority %}
+    {% set priority = config.get_priority(chapter, path_as_array) %}
+  {% else %}
+    {% set priority = unit.priority %}
+  {% endif %}
+<panel type="{{ show_priority_style(priority) }}" expanded no-close >
+<span slot="header" class="panel-title"><md>`{{ id_prefix }}{{ letters[loop.index-1] }}` <include src="../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
+  <include src="../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
   {% if not unit.omit_evidence %}
-  {{ show_evidence(unit.location[0], unit.location[1], file) }}
+  {{ show_evidence(chapter, path, file) }}
   {% endif %}
 </panel>
 {% endfor %}
