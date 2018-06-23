@@ -107,34 +107,55 @@
 {% endmacro %}
 
 
-{% macro show_week_schedule(week_num) %}
+{% macro show_week_outcomes(week_num) %}
 <panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>
   <span slot="header" class="panel-title activity-type">{{glyphicon_flag}} Outcomes</span>
   <div class="indented">
   <include src="outcomes.md#main" />
   </div>
 </panel>
+{% endmacro %}
 
+
+{% macro show_week_todos(week_num) %}
 <panel type="seamless" expanded no-close>
   <span slot="header" class="panel-title activity-type">{{glyphicon_check}} Todo</span>
   <div class="indented">
   <include src="todo.md" />
   </div>
 </panel>
+{% endmacro %}
 
+
+{% macro show_week_tutorial(week_num) %}
 <panel type="seamless" expanded no-close>
 <span slot="header" class="panel-title activity-type">{{glyphicon_pencil}} Tutorial {{ week_num }}</span>
    <div class="indented">
    <include src="tutorial.md" />
    </div>
 </panel>
+{% endmacro %}
 
+
+{% macro show_week_lecture(week_num) %}
 <panel type="seamless" expanded no-close>
 <span slot="header" class="panel-title activity-type">{{glyphicon_blackboard}} Lecture {{ week_num }}</span>
   <div class="indented">
   <include src="lecture.md" />
   </div>
 </panel>
+{% endmacro %}
+
+
+{% macro show_week_schedule(week_num) %}
+
+{{ show_week_outcomes(week_num) }}
+
+{{ show_week_todos(week_num) }}
+
+{{ show_week_tutorial(week_num) }}
+
+{{ show_week_lecture(week_num) }}
 
 {% endmacro %}
 

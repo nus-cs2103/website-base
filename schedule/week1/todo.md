@@ -31,26 +31,27 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 
 </panel>
 
-<panel  header="Admin info to read" expandable expanded>
 
 Here are some module admin info to read around this time:    
 
-<include type="danger" name="%%Admin »%% FAQ: Where is everything? :star:" src="../../admin/appendixC-faq.md#admin-faq-whereIsEverything"  dynamic />
-<include type="danger" name="%%Admin »%% Project: Overview :star:" src="../../admin/project.md"  dynamic />
-<include type="danger" name="%%Admin »%% Project: The Product :star:" src="../../admin/project-product.md"  dynamic />
-<include type="danger" src="../../admin/project-scope.md" name="%%Admin »%% Project: Scope :star:" dynamic />
+{% import "common/macros.njk" as macros with context %}
 
-<include type="warning" src="../../admin/textBooks.md" name="%%Admin »%% Text Books :star::star:" dynamic />
-<include type="warning" src="../../admin/programming-languages.md" name="%%Admin »%% Programming Language :star::star:" dynamic />
-<include type="warning" src="../../admin/project-constraints.md" name="%%Admin »%% Project: Constraints :star::star:"  dynamic />
-<include type="warning" src="../../admin/project-deliverables.md" name="%%Admin »%% Project: Deliverables :star::star:"  dynamic />
+{% set admin_sections = [
+  {heading: "FAQ: Where is everything?", priority: "1", source: "appendixC-faq.md#admin-faq-whereIsEverything"},
+  {heading: "Project: Overview", priority: "1", source: "project.md"},
+  {heading: "Project: The Product", priority: "1", source: "project-product.md"},
+  {heading: "Project: Scope", priority: "1", source: "project-scope.md"},
+  {heading: "Text Books", priority: "2", source: "textBooks.md"},
+  {heading: "Programming Language", priority: "2", source: "programming-languages.md"},
+  {heading: "Project: Constraints", priority: "2", source: "project-constraints.md"},
+  {heading: "Project: Deliverables", priority: "2", source: "project-deliverables.md"},
+  {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103VsCs2103t"},
+  {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
+  {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"},
+  {heading: "FAQ: How do I get CS2103R credit for optional LOs?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103r"}]
+%}
 
-<include type="success" name="%%Admin »%% FAQ: What's different between CS2103 and CS2103T? :star::star::star::star:" src="../../admin/appendixC-faq.md#admin-faq-cs2103VsCs2103t"  dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-highWorkload" name="%%Admin »%% FAQ: Why the workload is so high? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-aPlus" name="%%Admin »%% FAQ: What are the extra requirements to get an A+? :star::star::star::star:" dynamic />
-<include type="success" src="../../admin/appendixC-faq.md#admin-faq-cs2103r" name="%%Admin »%% FAQ: How do I get CS2103R credit for optional LOs? :star::star::star::star:" dynamic />
-
-</panel>
+{{ macros.show_admin_sections_to_read(admin_sections) }}
 
 <panel type="warning" header="Brush up your Java :star::star:" expandable>
 
