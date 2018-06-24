@@ -1,4 +1,4 @@
-<img src="{{baseUrl}}/admin/images/Lecture photo.png" style="width: 900px;">
+<img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
 
 **Timing/venue**: 
 

@@ -7,9 +7,9 @@ siteNav: adminSiteNav.md
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/admin.css">
 
-<include src="../common/header.md" />
-
 <div class="website-content">
+
+<include src="../common/header.md" />
 
 # Preliminaries
 <div id="admin-preliminaries">
@@ -20,6 +20,7 @@ siteNav: adminSiteNav.md
 <div id="admin-learning-outcomes">
   <include src="learningOutcomes.md" />
 </div>
+
 
 # Lectures
 <div id="admin-lectures">
@@ -35,6 +36,7 @@ siteNav: adminSiteNav.md
 <div id="admin-textBooks">
   <include src="textbooks.md" />
 </div>
+
 
 # Programming Language
 <div id="admin-programmingLanguages">
@@ -148,7 +150,6 @@ siteNav: adminSiteNav.md
 # Appendix B: Module Policies
 <div id="admin-appendixB-policies">
 <include src="appendixB-policies.md" /></div>
-<div id="admin-policy"></div>
 
 # Appendix C: Frequently Asked Questions
 <div id="admin-appendixC-faq">

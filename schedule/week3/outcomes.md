@@ -81,7 +81,7 @@
   },
   {name: "Other", 
     outcomes: [
-      {id: "W3.10", heading: "Can work with a 1KLoC code base ==[Compulsory]==", priority: "1", file: "outcome-1kloc.md"}]
+      {heading: "Can work with a 1KLoC code base ==[Compulsory]==", priority: "1", file: "outcome-1kloc.md"}]
   }] 
 %}
 
