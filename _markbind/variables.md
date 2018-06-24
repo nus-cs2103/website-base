@@ -17,8 +17,19 @@
 <span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
 
 <span id="icon_example">{{glyphicon_gift | safe}}</span>
+<span id="icon_embedding">{{glyphicon_log_in | safe}}</span>
 <span id="icon_important_big_red"><font color="red"><big>{{ glyphicon_exclamation_sign |safe }}</big></font></span>
 <span id="icon_prereq">{{glyphicon_education | safe}}</span>
 
 
 <span id="evidence"><big>{{glyphicon_folder_close | safe}} Evidence:</big></span>
+
+<span id="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></span>
+
+<span id="one_star"><span class='label label-danger'>{{ star | safe }} </span></span>
+
+<span id="two_stars"><span class='label label-warning'>{{ star | safe }}{{ star | safe }} </span></span>
+
+<span id="three_stars"><span class='label label-info'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+
+<span id="four_stars"><span class='label label-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
