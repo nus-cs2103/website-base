@@ -1,22 +1,22 @@
-### Policy on following instructions
-
 <div id="policy-followingInstructions">
+
+### Policy on following instructions
 
 When working with others, especially in a large class such as CS2103,  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
 
 </div>
 
-### Policy on grading smaller/larger teams
-
 <div id="policy-teamSize">
+
+### Policy on grading smaller/larger teams
 
 As most of the work is graded individually, team sizes of 3, 4, or 5 is not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other.
 
 </div>
 
-### Policy on project work distribution
-
 <div id="policy-workDistribution">
+
+### Policy on project work distribution
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
@@ -26,18 +26,18 @@ As most of the work is graded individually, it is OK to do less or more than equ
 
 </div>
 
-### Policy on absence due to valid reasons (e.g. MC, LOA, University events)
-
 <div id="policy-validAbsences">
+
+### Policy on absence due to valid reasons (e.g. MC, LOA, University events)
 
 There is no need to inform us. If you miss a lecture/tutorial for a valid reason, just do your best to catch up. We'll be happy to help if required. An occasional absence or two is not expected to affect your participation marks.   
 Only if you fail to earn full marks for participation we will consider giving an alternative avenue to earn marks missed due to the absences.   
 
 </div>
 
-### Policy on email response time
-
 <div id="policy-responseTime">
+
+### Policy on email response time
 
 **Normally, the prof will respond within 24 hours** if it was an email sent to the prof or a forum post directed at the prof. If you don't get a response within that time, **please feel free to remind the prof**. It is likely that the prof did not notice your post or the email got stuck somewhere.
 
@@ -53,9 +53,9 @@ The promptness of a reply is even more important when the email is requesting yo
 
 </div>
 
-### Policy on tech help
-
 <div id="policy-techHelp">
+
+### Policy on tech help
 
 **Do not expect your project tutor to code or debug for you**. We strongly discourage tutors from giving technical help directly to their own teams because we want to train you in troubleshooting tech problems yourselves. Allowing direct tech help from tutors transfers the troubleshooting responsibility to tutors.
 
@@ -69,18 +69,18 @@ The promptness of a reply is even more important when the email is requesting yo
 
 </div>
 
-### Policy on publishing submissions
-
 <div id="policy-publishingSubmissions">
+
+### Policy on publishing submissions
 
 The source code are publicly available and are available for reuse by others without any restrictions.   
 Is publishing submissions unfair to the team? We don't think so. If you were the first to think of something your peers are willing to adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.
 
 </div>
 
-### Policy on plagiarism
-
 <div id="policy-plagiarism">
+
+### Policy on plagiarism
 
 **We encourage sharing, but you should share with everyone in the class**, not just a selected group. That is,
 
@@ -103,9 +103,9 @@ Penalties:
 
 </div>
 
-### Policy on reuse
-
 <div id="policy-reuse">
+
+### Policy on reuse
 
 **Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for using work done by others.
 
@@ -176,17 +176,17 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 
 </div>
 
-### Policy on help from outsiders
-
 <div id="policy-outsiderHelp">
+
+### Policy on help from outsiders
 
 In general, you are **not allowed to involve outsiders** in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback. It is also OK to learn from others as long as they don't do your project work themselves.
 
 </div>
 
-### Policy on suggested length for submissions
-
 <div id="policy-submissionLength">
+
+### Policy on suggested length for submissions
 
 We don't usually give a strict page limit for documents such as User Guide and the Developer Guide. You need to decide yourself how long the document should be based on the purpose and the intended audience. You can determine the level of details required based on the samples we provide.
 

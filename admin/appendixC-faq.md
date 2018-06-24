@@ -1,24 +1,24 @@
 <img src="{{baseUrl}}/admin/images/Why you....png" width="300" height="200"/>
 
-### Where is everything? 
-
 <div id="admin-faq-whereIsEverything">
+
+### Where is everything? 
 
 The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ]({{baseUrl}}/admin/index.html) and the [**Textbook** page]({{baseUrl}}/book/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. In sum, the Schedule page organizes the content chronologically while the other two pages has some of the same content but organized by topic.
 
 </div>
 
-### What are the differences between CS2103 and CS2103T?
-
 <div id="admin-faq-cs2103VsCs2103t">
+
+### What are the differences between CS2103 and CS2103T?
  
 Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
 
 </div>
 
-### Why the workload is so high?
-
 <div id="admin-faq-highWorkload">
+
+### Why the workload is so high?
 
 <img src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
 
@@ -32,9 +32,9 @@ Also, consider this a gradual introduction to 'heavy' modules; most project modu
 
 </div>
 
-### How do I get CS2103R credit for optional LOs?
-
 <div id="admin-faq-cs2103r">
+
+### How do I get CS2103R credit for optional LOs?
 
 General info on R modules are [here](https://docs.comp.nus.edu.sg/node/3699).
 
@@ -47,9 +47,9 @@ To get CS2103R credit you should,
 
 </div>
 
-### What are the extra requirements to get an A+?
-
 <div id="admin-faq-aPlus">
+
+### What are the extra requirements to get an A+?
 
 In CS2103/T, A+ is not given simply based on the final score. To get an A+ you should,
 
@@ -62,9 +62,9 @@ In CS2103/T, A+ is not given simply based on the final score. To get an A+ you s
 
 </div>
 
-### Why so much bean counting?
-
 <div id="admin-faq-beanCounting">
+
+### Why so much bean counting?
 
 <img src="{{baseUrl}}/admin/images/small things matter.png" width="600" height="300"/>
 
@@ -76,9 +76,9 @@ Related article: [This Is The Personality Trait That Most Often Predicts Success
 
 </div>
 
-### Why you force me to visit a separate website instead of using IVLE?
-
 <div id="admin-faq-separateWebsite">
+
+### Why you force me to visit a separate website instead of using IVLE?
 
 <img src="{{baseUrl}}/admin/images/Forces me to visit a separate website.png" width="655" height="271"/>
 
@@ -88,9 +88,9 @@ On a related note, keep in mind that 'hunting and gathering' of relevant informa
 
 </div>
 
-### Why slides are not detailed?
-
 <div id="admin-faq-slideFormat">
+
+### Why slides are not detailed?
 
 <img src="{{baseUrl}}/admin/images/slides not detailed enough.png" width="733" height="221"/>
 
@@ -98,9 +98,9 @@ Slides are not meant to be documents to print and study for exams. Their purpose
 
 </div>
 
-### Why so much self-study?
-
 <div id="admin-faq-selfStudy">
+
+### Why so much self-study?
 
 <img src="{{baseUrl}}/admin/images/so much self study.png" width="763" height="307"/>
 
@@ -108,9 +108,9 @@ Self-study is a critical survival skill in SE industry. Lectures will show you t
 
 </div>
 
-### What if I don't carry around a laptop?
-
 <div id="admin-faq-noLaptop">
+
+### What if I don't carry around a laptop?
 
 If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), *without* requiring extra time/effort from the tutor or team members.
 
@@ -118,9 +118,9 @@ If you do not have a laptop or prefer not to bring the laptop, it is up to you t
 
 </div>
 
-### Why very narrow project scope?
-
 <div id="admin-faq-narrowScope">
+
+### Why very narrow project scope?
 
 Defining your own unique project is more fun.
 
@@ -134,9 +134,9 @@ Also note: **The freedom to do 'anything' is not a necessary condition for creat
 
 </div>
 
-### Why project requirements are so vague?
-
 <div id="admin-faq-vagueRequirements">
+
+### Why project requirements are so vague?
 
 <img src="{{baseUrl}}/admin/images/vague requirement.png" width="737" height="210"/>
 
@@ -146,9 +146,9 @@ For example, the best way to communicate something often depends on what is bein
 
 </div>
 
-### Why I'm not allowed to use my favorite tool/framework/language etc.?
-
 <div id="admin-faq-favoriteTool">
+
+### Why I'm not allowed to use my favorite tool/framework/language etc.?
 
 <img src="{{baseUrl}}/admin/images/I'm not allowed to use my favorite tool.png" width="750" height="287"/>
 
@@ -170,9 +170,9 @@ Meanwhile, feel free to share with peers your experience of using other tools.
 
 </div>
 
-### Why so many submissions?
-
 <div id="admin-faq-manySubmissions">
+
+### Why so many submissions?
 
 <img src="{{baseUrl}}/admin/images/frequent submissions.png" width="759" height="359"/>
 
@@ -180,17 +180,17 @@ The high number of submissions is not meant to increase workload but to spread i
 
 </div>
 
-### Why aren't we allowed to build a new product from scratch?
-
 <div id="admin-faq-fromScratch">
+
+### Why aren't we allowed to build a new product from scratch?
 
 There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use CS2103/T to train you to work in existing code bases.
 
 </div>
 
-### Why submission requirements differ between CS2103T and CS2101?
-
 <div id="admin-faq-cs2101Differences">
+
+### Why submission requirements differ between CS2103T and CS2101?
 
 <img src="{{baseUrl}}/admin/images/Submission requirements differ.png" width="300"/>
 
