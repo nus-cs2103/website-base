@@ -10,10 +10,15 @@
 
 
 {% macro show_priority(level) %}
-{% set label_open = "<span class='label label-" + show_priority_style(level) + "'>" %}
-{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}
-{% set label_close = "&nbsp;</span>" %}
-{% set stars = {"1": label_open + star + label_close, "2": label_open + star + star + label_close, "3": label_open + star + star + star + label_close, "4": label_open + star + star + star + star + label_close} %}{{stars[level] }}
+{% if level === "1" %}
+  {{ one_star }}
+{% elseif level === "2" %}
+  {{ two_stars }}
+{% elseif level === "3" %}
+  {{ three_stars }}
+{% elseif level === "4" %}
+  {{ four_stars }}
+{% endif %}
 {% endmacro %}
 
 
@@ -92,7 +97,7 @@
 
 {% macro show_admin_section_to_read(heading, priority, source) %}
 <panel src="{{ source }}" dynamic no-close >
-<span slot="header" class="panel-title"><md>%%Admin »%% {{ heading }} {{ show_stars(priority) }}</span>
+<span slot="header" class="panel-title"><md>%%Admin {{ icon_embedding | safe }}%% &nbsp; {{ heading }} {{ show_stars(priority) }}</span>
 </panel>
 {% endmacro %}
 

@@ -212,152 +212,186 @@
           <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
           <div class="indented">
             <div>
-              <panel type="danger" header="[CS2103 students only] Forming teams :star:" expandable="">
-                <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
-                <p>
-                  <panel type="danger" src="/website-base\admin\teams._include_.html" name="%%Admin »%% Team Forming :star:" header="%%Admin »%% Team Forming :star:" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-              </panel>
-              <panel type="info" header="[Exchange students only] Signing up for tutorials :star::star::star:" expandable="">
-                <p>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your
-                  appeal on ORATUT, we can allocate you to the tutorial slot.</p>
-              </panel>
-              <panel type="danger" header="Create a GitHub Account :star:" expandable="">
-                <div type="danger">
-                  <p>Create a personal GitHub account if you don't have one yet.</p>
-                  <ol>
-                    <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
-                    <li>Strongly recommended: Complete your GitHub profile. In particular,
+              <p><span class="dimmed">Given below are some <em>setting up</em> tasks you can do as you wait for the module to start:</span></p>
+              <p><span class="activity-desc">Getting ready for the module:<span></span></span>
+              </p>
+              <div class="indented">
+
+                <panel no-close="">
+                  <span slot="header" class="panel-title">[CS2103 students only] Forming teams <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
+                  <p>
+                    <panel type="danger" src="/website-base\admin\teams._include_.html" name="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Team Forming :star:" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Team Forming :star:"
+                      isOpen="false" no-close="true" no-switch="true"></panel>
+                  </p>
+                </panel>
+
+                <panel no-close="">
+                  <span slot="header" class="panel-title">[Exchange students only] Signing up for tutorial <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span
+                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </span>
+                    </span>
+                    <p>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see
+                      your appeal on ORATUT, we can allocate you to the tutorial slot.<br></p>
+                </panel>
+
+                <panel no-close="">
+                  <span slot="header" class="panel-title">Create a GitHub Account <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  <div type="danger">
+                    <p>Create a personal GitHub account if you don't have one yet.</p>
+                    <ol>
+                      <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
+                      <li>Strongly recommended: Complete your GitHub profile. In particular,
+                        <ul>
+                          <li>Specify your full name.</li>
+                          <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+                        </ul>
+                      </li>
+                    </ol>
+                    <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
+                      <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub
+                        account just for the module.</p>
+                    </panel>
+                    <panel header="%%Admin » Choosing a profile photo%%" expandable="">
+                      <div>
+                        <ul>
+                          <li>
+                            <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below
+                              are some examples of good and bad profile photos.<br>
+                              <img src="/website-base/admin/images/profilephotos.png" style="width: 365.33px"></p>
+                          </li>
+                          <li>
+                            <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you
+                              can request permission to omit your photo from the page by writing to prof.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+
+                <panel no-close="">
+                  <span slot="header" class="panel-title"><span>Submit Pre-Module Survey <mark>(Compulsory)</mark> ⏰</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub ID.</span></p>
+                </panel>
+
+                <panel no-close="">
+                  <span slot="header" class="panel-title">Join the Slack Channel <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  <panel header="%%**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tools → Communication**%%" expanded="">
+                    <div type="danger">
+                      <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker)
+                        to practice how to communicate technical things in written form.</p>
                       <ul>
-                        <li>Specify your full name.</li>
-                        <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
-                      </ul>
-                    </li>
-                  </ol>
-                  <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
-                    <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub
-                      account just for the module.</p>
-                  </panel>
-                  <panel header="%%Admin » Choosing a profile photo%%" expandable="">
-                    <div>
-                      <ul>
-                        <li>
-                          <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are
-                            some examples of good and bad profile photos.<br>
-                            <img src="/website-base/admin/images/profilephotos.png" style="width: 365.33px"></p>
-                        </li>
-                        <li>
-                          <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misused that image for fraudulent purposes. If you are concerned about privacy, you
-                            can request permission to omit your photo from the page by writing to prof.</p>
-                        </li>
+                        <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">github/nus-cs2103-AY1718S2/forum</a></mark>.</li>
+                        <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103-ay1718s2.slack.com">https://nus-cs2103-ay1718s2.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email
+                          address ending in <code>@nus.edu.sg</code>, <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
+                        <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
+                        <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct
+                          emails. <span class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
                       </ul>
                     </div>
                   </panel>
-                </div>
-              </panel>
-              <panel type="danger" header="Submit Pre-Module Survey ==(Compulsory)== :alarm_clock: :star:" expandable="">
-                <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub ID.</span></p>
-              </panel>
-              <panel type="warning" header="Join the Slack Channel :star::star:" expandable="">
-                <panel header="%%**Admin » Tools → Communication**%%" expanded="">
-                  <div type="danger">
-                    <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker)
-                      to practice how to communicate technical things in written form.</p>
-                    <ul>
-                      <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">github/nus-cs2103-AY1718S2/forum</a></mark>.</li>
-                      <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103-ay1718s2.slack.com">https://nus-cs2103-ay1718s2.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email
-                        address ending in <code>@nus.edu.sg</code>, <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
-                      <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
-                      <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct
-                        emails. <span class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
-                    </ul>
-                  </div>
                 </panel>
-              </panel>
-              <p>Here are some module admin info to read around this time:</p>
+
+                <panel no-close="">
+                  <span slot="header" class="panel-title">Brush up your Java <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
+                  <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <code>streams</code>, <code>lambdas</code>, <code>Optionals</code>, that may not have been covered in previous Java modules.
+                  </p>
+                </panel>
+              </div>
+              <br>
+              <p><span class="dimmed">Given below are some module <em>admin info</em> to read around this time:</span></p>
               <p><span class="activity-desc">Admin info to read:<span></span></span>
               </p>
               <div class="indented">
                 <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" dynamic="" no-close="" fragment="admin-faq-whereIsEverything">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> FAQ: Where is everything? <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Where is everything? <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
                 </panel>
                 <panel src="/website-base\admin\project._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: Overview <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Overview <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
                 </panel>
                 <panel src="/website-base\admin\project-product._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: The Product <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: The Product <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
                 </panel>
                 <panel src="/website-base\admin\project-scope._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: Scope <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Scope <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
                 </panel>
                 <panel src="/website-base\admin\textBooks._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Text Books <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  </span>
-                  </span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Text Books <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span
+                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </span>
+                    </span>
+                    </span>
                 </panel>
                 <panel src="/website-base\admin\programming-languages._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Programming Language <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                    aria-hidden="true"></span></span>
-                  </span>
-                  </span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Programming Language <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span
+                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </span>
+                    </span>
+                    </span>
                 </panel>
                 <panel src="/website-base\admin\project-constraints._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: Constraints <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                    aria-hidden="true"></span></span>
-                  </span>
-                  </span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Constraints <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span
+                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </span>
+                    </span>
+                    </span>
                 </panel>
                 <panel src="/website-base\admin\project-deliverables._include_.html" dynamic="" no-close="">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> Project: Deliverables <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                    aria-hidden="true"></span></span>
-                  </span>
-                  </span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Deliverables <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span
+                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </span>
+                    </span>
+                    </span>
                 </panel>
                 <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103VsCs2103t" dynamic="" no-close="" fragment="admin-faq-cs2103VsCs2103t">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> FAQ: What's different between CS2103 and CS2103T? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What's different between CS2103 and CS2103T? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span
                     class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                     </span>
                     </span>
                 </panel>
                 <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-highWorkload" dynamic="" no-close="" fragment="admin-faq-highWorkload">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> FAQ: Why the workload is so high? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                    aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  </span>
-                  </span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why the workload is so high? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span
+                    class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                    </span>
+                    </span>
                 </panel>
                 <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-aPlus" dynamic="" no-close="" fragment="admin-faq-aPlus">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> FAQ: What are the extra requirements to get an A+? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What are the extra requirements to get an A+? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span
                     class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                     </span>
                     </span>
                 </panel>
                 <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103r" dynamic="" no-close="" fragment="admin-faq-cs2103r">
-                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin »</span> FAQ: How do I get CS2103R credit for optional LOs? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: How do I get CS2103R credit for optional LOs? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span
                     class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                     </span>
                     </span>
                 </panel>
               </div>
-              <panel type="warning" header="Brush up your Java :star::star:" expandable="">
-                <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
-                <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <code>streams</code>, <code>lambdas</code>, <code>Optionals</code>, that may not have been covered in previous Java modules.</p>
-              </panel>
-              <panel type="danger" header="Attend Lecture 1 ==(compulsory)== :star:" expandable="">
-                <p>
-                  <panel type="info" src="/website-base\admin\lectures._include_.html" name="%%Admin »%% Lectures :star::star::star:" header="%%Admin »%% Lectures :star::star::star:" isOpen="false" no-close="true" no-switch="true"></panel>
-                </p>
-              </panel>
               <p></p>
             </div>
           </div>
@@ -375,6 +409,7 @@
           <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture </span>
           <div class="indented">
             <div>
+              <p><mark>This lecture is compulsory</mark> to attend.</p>
               <p><strong>Slides</strong>: [<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L1P1.%20Module%20Intro.pptx">Part 1</a>][<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L1P2.%20RCS,%20IDEs,%20CLI%20testing.pptx">Part 2</a>]</p>
             </div>
           </div>
@@ -410,7 +445,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Sat, 23 Jun 2018 12:30:20 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Sun, 24 Jun 2018 06:59:47 GMT</small></div>
 </footer>
 </div>
 </body>
