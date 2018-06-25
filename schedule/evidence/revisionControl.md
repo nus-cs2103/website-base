@@ -17,3 +17,9 @@ Have a local repo that has commits you created.
 </div>
 
 
+<div id="branching">
+
+<include src="../../book/revisionControl/branching/q-essay-branching-definition.md" />
+<include src="../../book/revisionControl/branching/q-essay-merging-definition.md" />
+
+</div>

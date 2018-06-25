@@ -72,3 +72,47 @@ Have a local repo that has git-ignored files.
 **Submission**: Demo stashing.
 
 </div>
+
+
+<div id="branch">
+
+**Acceptable**: Git branches you have created in any repo.
+
+**Suggested**: Results of following the steps in the LO. 
+
+**Submission**: Show your branches during the tutorial.
+
+</div>
+
+
+<div id="createPRs">
+
+**Acceptable**: PRs created in any repo.
+
+**Suggested**: PRs created by following the steps in the LO. 
+
+**Submission**: Show your PRs during the tutorial.
+
+</div>
+
+
+<div id="mergeConflicts">
+
+**Acceptable**: Merge conflicts resolved in any repo.
+
+**Suggested**: Evidence of following the steps in the LO. 
+
+**Submission**: Show your merge commit during the tutorial.
+
+</div>
+
+
+<div id="managePRs">
+
+**Acceptable**: PRs you merged in any repo.
+
+**Suggested**: Evidence of following the steps in the LO. 
+
+**Submission**: Show your merged PRs during the tutorial.
+
+</div>

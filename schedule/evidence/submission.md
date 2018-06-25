@@ -4,6 +4,4 @@
 
 <include src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" dynamic />
 
-If you choose option 2, we recommend that you complete the following LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in that LOs. 
-
-<dynamic-panel type="danger" src="outcome-pr.md" header="**`W4.8` Can create PRs on GitHub** :star:" no-close />
+If you choose option 2, we recommend that you complete this week's _Project Management_ LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in the LOs. 

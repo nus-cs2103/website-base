@@ -35,7 +35,7 @@ footer: footer.md
 ] %}
 
 
-{% set current_weeks = ["1"] %}
+{% set current_weeks = ["4"] %}
 
 
 {% macro show_past_week(week) %}

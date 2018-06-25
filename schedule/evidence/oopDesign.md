@@ -1,0 +1,19 @@
+<div id="objects_basic">
+
+<include src="../../book/oopDesign/objects/basic/q-essay-describeObjectInScenario.md" />
+
+</div>
+
+
+<div id="classes_basic">
+
+<include src="../../book/oopDesign/classes/basic/q-essay-identifyClassesAndObjects.md" />
+
+</div>
+
+
+<div id="classes_enumerations">
+
+<include src="../../book/oopDesign/classes/enumerations/q-essay-defineWeekDays.md" />
+
+</div>
