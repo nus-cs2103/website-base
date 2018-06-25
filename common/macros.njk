@@ -10,14 +10,16 @@
 
 
 {% macro show_priority(level) %}
-{% if level === "1" %}
+{% if level == "1" %}
   {{ one_star }}
-{% elseif level === "2" %}
+{% elseif level == "2" %}
   {{ two_stars }}
-{% elseif level === "3" %}
+{% elseif level == "3" %}
   {{ three_stars }}
-{% elseif level === "4" %}
+{% elseif level == "4" %}
   {{ four_stars }}
+{% else %}
+  Unknown level !!! {{ level }}
 {% endif %}
 {% endmacro %}
 

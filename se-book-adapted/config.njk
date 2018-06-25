@@ -1806,7 +1806,7 @@
 
 {% macro find_level_three(topics, path) -%}
 {% for topic in topics %}
-  {% if topic.name === path[2] %}
+  {% if topic.name == path[2] %}
   {{ topic.priority }}
   {% endif %}
 {% endfor %}
@@ -1814,7 +1814,7 @@
 
 {% macro find_level_two(topics, path) -%}
 {% for topic in topics %}
-  {% if topic.name === path[1] %}
+  {% if topic.name == path[1] %}
     {{ find_level_three(topic.level_three_topics, path) }}
   {% endif %}
 {% endfor %}
@@ -1822,7 +1822,7 @@
 
 {% macro find_level_one(topics, path) -%}
 {% for topic in topics %}
-  {% if topic.name === path[0] %}
+  {% if topic.name == path[0] %}
     {{find_level_two(topic.level_two_topics, path)}}
   {% endif %}
 {% endfor %}
