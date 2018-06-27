@@ -24,3 +24,13 @@ Able to explain the class diagram of the [[AddressBook-Level2]({{module_org}}/ad
 **Submission**: Show during tutorial.
 
 </div>
+
+
+<div id="modelingBehaviors_sequenceDiagramsIntermediate">
+
+<include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" /><p/>
+
+1. Explain the sequence diagrams given [[AddressBook Level4: Developer Guide](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html)]
+2. Add more sequence diagrams to project documentation (to be done in future weeks)
+
+</div>

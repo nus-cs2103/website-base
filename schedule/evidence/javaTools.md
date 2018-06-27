@@ -37,3 +37,11 @@
 <include src="submission-AB3.md" />
 
 </div>
+
+
+<div id="streamsBasic">
+
+1. Your code (can be toy examples) that use some Java 8 features. 
+2. Explain some parts of [[AddressBook - Level 4](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/)] code that use Java 8 features. e.g. `AddressBook#syncMasterTagListWith(Person)`
+
+</div>
