@@ -306,35 +306,21 @@
       "title": ""
     },
     {
-      "headings": {
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:",
-        "other": "Other:"
-      },
+      "headings": {},
       "src": "schedule/week5/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-5-outcomes": "Week 5 - Outcomes",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:",
-        "other": "Other:"
+        "week-5-outcomes": "Week 5 - Outcomes"
       },
       "src": "schedule/week5/outcomes.md",
       "title": ""
     },
     {
       "headings": {
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction": "Introduction",
+        "introduction-7": "Introduction",
         "prerequisites": "Prerequisites",
         "intellij-configurations": "IntelliJ Configurations",
         "configuring-jdk-8": "Configuring JDK 8",
@@ -347,7 +333,7 @@
         "the-javafx-main-class": "The JavaFX Main Class",
         "possible-issues": "Possible Issues",
         "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-2": "Introduction",
+        "introduction-8": "Introduction",
         "create-the-model-class": "Create the Model class",
         "explanations": "Explanations",
         "a-list-of-persons": "A List of Persons",
@@ -364,11 +350,8 @@
     {
       "headings": {
         "week-6-outcomes": "Week 6 - Outcomes",
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction": "Introduction",
+        "introduction-7": "Introduction",
         "prerequisites": "Prerequisites",
         "intellij-configurations": "IntelliJ Configurations",
         "configuring-jdk-8": "Configuring JDK 8",
@@ -381,7 +364,7 @@
         "the-javafx-main-class": "The JavaFX Main Class",
         "possible-issues": "Possible Issues",
         "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-2": "Introduction",
+        "introduction-8": "Introduction",
         "create-the-model-class": "Create the Model class",
         "explanations": "Explanations",
         "a-list-of-persons": "A List of Persons",
@@ -396,47 +379,25 @@
       "title": ""
     },
     {
-      "headings": {
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "project-management": "Project Management:",
-        "other": "Other:"
-      },
+      "headings": {},
       "src": "schedule/week7/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-7-outcomes": "Week 7 - Outcomes",
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "project-management": "Project Management:",
-        "other": "Other:"
+        "week-7-outcomes": "Week 7 - Outcomes"
       },
       "src": "schedule/week7/outcomes.md",
       "title": ""
     },
     {
-      "headings": {
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "other": "Other:"
-      },
+      "headings": {},
       "src": "schedule/week8/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-8-outcomes": "Week 8 - Outcomes",
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "other": "Other:"
+        "week-8-outcomes": "Week 8 - Outcomes"
       },
       "src": "schedule/week8/outcomes.md",
       "title": ""

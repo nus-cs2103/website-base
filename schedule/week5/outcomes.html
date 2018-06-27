@@ -18,90 +18,1477 @@
 <div class="website-content">
   <h2 id="week-5-outcomes">Week 5 - Outcomes</h2>
   <div id="main">
-    <h3 id="design">Design:</h3>
-    <p>
-      <panel type="info" src="/website-base\schedule\week5\outcome-classDiagram._include_.html" header="**`W5.1` Can use intermediate-level class diagrams** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-
-    <panel type="info" header="**`W5.2` Can explain single responsibility principle** :star::star::star:" no-close="">
-      <div>
-        <div></div>
-        <p></p>
-        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-</span></strong>
+    <p><span class="activity-desc">Design</span></p>
+    <div class="indented">
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.1</code> <strong>Can use intermediate-level class diagrams</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.1a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use dependencies in a class diagram</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
-        </p>
-        <div id="title-and-body">
+          </span>
           <div>
-            <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
-          </div>
-          <div id="main">
-            <div>
-              <tip-box type="primary">
-                <div>
-                  <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
-                </div>
-              </tip-box>
-              <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI
-                  changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
-              </tip-box>
-            </div>
-            <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Dependencies →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
               <div>
-                <panel header=":paperclip:  Resources" expanded="">
-                  <ul>
-                    <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
-                    <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
-                    <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
-                  </ul>
-                </panel>
+                <h4 id="dependencies">Dependencies</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>In a UML class diagram, a <strong>dependency is a weaker form of an association where there is an interactions between objects that do not result in a long-term relationship</strong> between the said objects.</p>
+                  <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
+                  <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Two examples of dependencies:</p>
+                    <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
-        <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
-        <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp">Addressbook-Level2: LO-SRP</a>]</p>
-        <div>
-          <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
-          <p>
-            <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
-              isOpen="false" no-close="true" no-switch="true"></panel>
-          </p>
-        </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.1b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use UML notes</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="notes">Notes</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>UML notes can augment UML diagrams with additional information.</strong> These notes can be shown connected to a particular element in the diagram or can be shown without a connection. The diagram below shows examples of both.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                    <img src="/website-base/book/uml/notes/notes/images/adminProfessor.png" height="120">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.1c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can specify constraints in UML diagrams</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\uml\notes\notes\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Notes%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="constraints">Constraints</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>A <em>constraint</em>  can be given inside a note, within curly braces</strong>. Natural language or a formal notation such as <em>OCL (Object Constraint Language)</em> may be used to specify constraints.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                    <img src="/website-base/book/uml/notes/constraints/images/playerTurn.png" height="120">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.1d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can show an association as an attribute</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="associations-as-attributes">Associations as Attributes</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
+                  <p>Association multiplicities and the default value too can be shown as part of the attribute using the following notation. Both are optional.</p>
+                  <p><code>name: type [multiplicity] = default value</code></p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number
+                      of pieces, each belonging to a certain player.</p>
+                    <p>A <code>Piece</code> may or may not be on a <code>Square</code>. Note how that association can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. The <code>isOn</code> attribute can either be <code>null</code>                      or hold a reference to a <code>Square</code> object, matching the <code>0..1</code> multiplicity of the association it replaces. The default value is <code>null</code>.</p>
+                    <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
+                    <p></p>
+                    <p>The association that a <code>Board</code> has 100 <code>Sqaure</code>s can be shown in either of these two ways:</p>
+                    <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.1e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate-level class diagrams</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\oopDesign\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Inheritance → What%%" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/website-base\book\oopDesign\classes\classLevelMembers\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Classes → Class Level Members%%" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/website-base\book\oopDesign\classes\enumerations\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Classes → Enumerations%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="/website-base\book\uml\classDiagrams\dependencies\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Class Diagrams → Dependencies%%" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/website-base\book\oopDesign\associations\composition\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Associations → Composition%%" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+                <panel src="/website-base\book\oopDesign\associations\aggregation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Associations → Aggregation%%" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="class-diagrams-intermediate">Class Diagrams - Intermediate</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Compositions and Aggregations are stronger forms of associations while Dependencies are a weaker form of associations. Inheritance is another strong type of association between classes.</strong></p>
+                  <p>
+                    <panel src="/website-base\book\uml\classDiagrams\composition\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Composition → What"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Composition" minimized="" fragment="title-and-body"></panel>
+                    <panel src="/website-base\book\uml\classDiagrams\aggregation\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Aggregation → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Aggregation"
+                      minimized="" fragment="title-and-body"></panel>
+                    <panel src="/website-base\book\uml\classDiagrams\dependencies\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Dependencies → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Dependencies"
+                      minimized="" fragment="title-and-body"></panel>
+                    <panel src="/website-base\book\uml\classDiagrams\classInheritance\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Inheritance"
+                      minimized="" fragment="title-and-body"></panel>
+                  </p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
       </panel>
-    </panel>
-    <h3 id="implementation">Implementation:</h3>
-    <p>
-      <panel type="danger" src="/website-base\schedule\week5\outcome-inheritance._include_.html" header="**`W5.3` Can implement inheritance** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <p>
-      <panel type="warning" src="/website-base\schedule\week5\outcome-classLevelMember._include_.html" header="**`W5.4` Can implement class-level members** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <p>
-      <panel type="info" src="/website-base\schedule\week5\outcome-composition._include_.html" header="**`W5.5` Can implement composition** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <p>
-      <panel type="info" src="/website-base\schedule\week5\outcome-aggregation._include_.html" header="**`W5.6` Can implement aggregation** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <p>
-      <panel type="info" src="/website-base\schedule\week5\outcome-overloading._include_.html" header="**`W5.7` Can implement overloading** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.2</code> <strong>Can explain single responsibility principle</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.2a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain single responsibility principle</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="primary">
+                    <div>
+                      <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                    </div>
+                  </tip-box>
+                  <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the
+                      UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":paperclip:  Resources" expanded="">
+                      <ul>
+                        <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                        <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                        <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                      </ul>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+          <div>
+            <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+            <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp">Addressbook-Level2: LO-SRP</a>]</p>
+            <div>
+              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+              <p>
+                <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+          </div>
+        </panel>
+      </panel>
+    </div>
+    <p></p>
+    <p><span class="activity-desc">Implementation</span></p>
+    <div class="indented">
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.3</code> <strong>Can implement inheritance</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.3a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the meaning of inheritance</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Inheritance →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="what">What</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code>                    class so that the <code>EvaluationReport</code> class does not have to duplicate code that is already implemented in the <code>Report</code> class.</p>
+                  <p>
+                    <panel src="/website-base\book\uml\classDiagrams\classInheritance\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance"
+                      expanded="" fragment="title-and-body" isOpen="false" no-close="true" no-switch="true"></panel>
+                  </p>
+                  <p></p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: The <code>EvaluationReport</code> inherits the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em> <code>Report</code>.</p>
+                    <img src="/website-base/book/oopDesign/inheritance/what/images/report.png" height="120">
+                    <p></p>
+                  </tip-box>
+                  <ul>
+                    <li>Other names for Base class: <em>Parent</em> class, <em>Super</em> class</li>
+                    <li>Other names for Derived class: <em>Child</em> class, <em>Sub</em> class, <em>Extended</em> class</li>
+                  </ul>
+                  <p><strong>A super class is said to be <em>more general</em> than the sub class.</strong> Conversely, a sub class is said to be more <em>specialized</em> than the super class.</p>
+                  <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Man</code> and <code>Woman</code> behaves the same way for the 'owes money' association. However, the two classes cannot be simply replaced with a more general
+                      class <code>Person</code> because of the need to distinguish between <code>Man</code> and <code>Woman</code> for the ‘marriage’ association. A solution is to add the <code>Person</code> class as a super class and let <code>Man</code>                      and <code>Woman</code> inherit from <code>Person</code>.</p>
+                    <img src="/website-base/book/oopDesign/inheritance/what/images/manWoman.png" height="250">
+                    <p></p>
+                  </tip-box>
+                  <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
+                  <tip-box type="info">
+                    <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
+                  </tip-box>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In this class diagrams of a <em>Snakes and Ladders</em> board game,</p>
+                    <ul>
+                      <li><code>SnakeHeadSquare</code> <em>is a</em> <code>Square</code> <span class="dimmed"> (a <code>SnakeHeadSquare</code> is a square in which the head of a snake appears)</span></li>
+                      <li><code>SnakeTailSquare</code> <em>is a</em> <code>Square</code></li>
+                    </ul>
+                    <img src="/website-base/book/oopDesign/inheritance/what/images/boardSquare.png" height="250">
+                    <p></p>
+                  </tip-box>
+                  <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>.</p>
+                    <img src="/website-base/book/oopDesign/inheritance/what/images/inheritanceTreesExamples.png" width="500">
+                    <p></p>
+                  </tip-box>
+                  <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g., Java,
+                    C#).</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>TA</code> class inherits from the <code>Staff</code> class <em>and</em> the <code>Student</code>.</p>
+                    <img src="/website-base/book/oopDesign/inheritance/what/images/studentStaff.png" height="200">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.3b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement basic inheritance</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\oopDesign\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Inheritance → What%%" isOpen="false" no-close="true"
+                  no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="implementing-inheritance">Implementing Inheritance</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
+                      <panel type="seamless" header=":tv: A very beginner-friendly video about implementing Java inheritance.">
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                        <p></p>
+                      </panel>
+                      <p></p>
+                      <p>💡 Java requires all classes to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.</p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <ul>
+                        <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#inheritance">Python Programming Basics: OOP: Inheritance</a></li>
+                      </ul>
+                      <p>💡 Python automatically assigns the <code>object</code> class as the parent class.</p>
+                      <p>
+                        <hr>
+                      </p>
+                    </tab>
+                  </tabs>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.4</code> <strong>Can implement class-level members</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.4a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain class-level members</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Classes →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="class-level-members">Class Level Members</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>While all objects of a class has the same attributes, each object has its own copy of the attribute value.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
+                  </tip-box>
+                  <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class. Such
+                    <strong>variables whose value is shared by all instances of a class are called <mark><em>class level attributes</em></mark></strong>.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
+                  </tip-box>
+                  <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the <code>Beth</code>                      object gets the response <code>&quot;Beth&quot;</code>.</p>
+                  </tip-box>
+                  <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Such <strong>methods that are called using the class instead of a specific instance are called <mark><em>class-level methods</em></mark></strong>.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
+                  </tip-box>
+                  <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code>                    to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
+                  <p>
+                    <panel src="/website-base\book\uml\classDiagrams\classLevelMembers\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Class Level Members"
+                      expanded="" fragment="title-and-body"></panel>
+                    <p></p>
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: Suitable as a class-level variables">
+                          <question>
+                            <p>Which of these are suitable as class-level variables?</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pac Man game, Class: <code>Player</code>, variable: <code>totalScore</code></li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: <code>Course</code>, variable: <code>totalStudents</code></li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(c)</p>
+                              <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance
+                                level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.4b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement class-level members</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\oopDesign\classes\classLevelMembers\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Classes → Class-Level Members%%"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="implementing-class-level-members">Implementing Class-Level Members</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>Some resources to learn how to implement class-level members:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <ul>
+                        <li>
+                          <p><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Oracle’s official Java tutorial on class-level members</a></p>
+                        </li>
+                      </ul>
+                    </tab>
+                  
+                    <tab header="Python">
 
-    <h3 id="quality-assurance">Quality Assurance:</h3>
-    <p>
-      <panel type="danger" src="/website-base\schedule\week5\outcome-junit._include_.html" header="**`W5.8` Can use simple JUnit tests** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <h3 id="project-management">Project Management:</h3>
-    <p>
-      <panel type="danger" src="/website-base\schedule\week5\outcome-forkingWorkflow._include_.html" header="**`W5.9` Can follow Forking Workflow** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-    </p>
-    <h3 id="other">Other:</h3>
-    <panel type="danger" header="**`W5.10` Can work with a 2KLoC code base** :star: ==[Compulsory]==" expandable="">
-      <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
+                      <li>
+                        <p><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#class-level-members">Python Programming Basics: OOP: Class-Level Members</a></p>
+                      </li>
+
+                      <p></p>
+                    </tab>
+                  </tabs>
+                  <hr>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+          <div>
+            <p><strong>Acceptable</strong>: Evidence of having used Java class-level members in some project.</p>
+            <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-class-level-members-lo-classlevel">Addressbook-Level2: LO-ClassLevel</a>]</p>
+            <div>
+              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+              <p>
+                <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+          </div>
+        </panel>
+      </panel>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.5</code> <strong>Can implement composition</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.5a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the meaning of composition</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="composition">Composition</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
+                  <p>
+                    <panel src="/website-base\book\uml\classDiagrams\composition\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Composition"
+                      expanded="" fragment="title-and-body"></panel>
+                  </p>
+                  <p></p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A <code>Board</code> (used for playing board games) consists of <code>Square</code> objects.</p>
+                    <img src="/website-base/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+                    <p></p>
+                  </tip-box>
+                  <p><strong>Composition also implies that there cannot be cyclical links</strong>.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In this ‘sub-folder’ association, a <code>Folder</code> cannot be a sub-folder of itself. If the diamond is removed, it is no longer a composition relationship and technically,
+                      allows a folder to be sub-folder of itself.</p>
+                    <img src="/website-base/book/oopDesign/associations/composition/images/folder.png" height="80">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.5b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement composition</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="implementing-composition">Implementing Composition</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of
+                    the ‘whole’ object.</p>
+                  <tip-box>
+                    <p>Example:</p>
+                    <img src="/website-base/book/oopImplementation/composition/images/carEngine.png" height="40">
+                    <p></p>
+                    <table>
+                      <tr>
+                      
+                        <td valign="top">
+                          <p>Java ⤵️</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+    <span class="hljs-keyword">private</span> Engine engine;
+  ...
+}
+</code></pre>
+                          <p></p>
+                        </td>
+                      
+                        <td>  <br><br></td>
+                      
+                        <td valign="top">
+                          <p>Python ⤵️</p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.__engine = Engine()
+</code></pre>
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+          <div>
+            <p>The exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass">addressbook-level2: LO-ImplementClasses</a>] also covers composition (note the ◆ in
+              the class diagram).</p>
+          </div>
+        </panel>
+      </panel>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.6</code> <strong>Can implement aggregation</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.6a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the meaning of aggregations</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="aggregation">Aggregation</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
+                  <p>
+                    <panel src="/website-base\book\uml\classDiagrams\aggregation\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Tools → UML → Class Diagrams → Aggregation"
+                      expanded="" fragment="title-and-body"></panel>
+                  </p>
+                  <p></p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Club</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>Club</code> object.</p>
+                    <img src="/website-base/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
+                    <p></p>
+                  </tip-box>
+                  <tip-box type="tip">
+                    <p><strong>Aggregation vs Composition</strong></p>
+                    <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: Which one is not recommended to use?">
+                          <question>
+                            <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                            <ul radio-group="29b56" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(b)</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.6b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement aggregation</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\oopDesign\associations\aggregation\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Associations → Aggregation%%" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="implementing-aggregation">Implementing Aggregation</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                    <img src="/website-base/book/oopImplementation/aggregation/images/carPerson.png" height="40">
+                    <table>
+                      <tr>
+                      
+                        <td valign="top">
+                          <p>Java ⤵️</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+    Person driver;
+    ...
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(Person p)</span> </span>{
+        driver = p;
+    }
+}
+</code></pre>
+                          <p></p>
+                        </td>
+                      
+                        <td>  <br><br></td>
+                      
+                        <td valign="top">
+                          <p>Python ⤵️</p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.__driver = <span class="hljs-keyword">None</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, person)</span>:</span>
+    self.__driver = person
+</code></pre>
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.7</code> <strong>Can implement overloading</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.7a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain method overloading</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Inheritance →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="overloading">Overloading</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
+                  <tip-box type="primary">
+                    <div>
+                      <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                      <panel type="seamless" header="%%Examples%%">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th style="text-align:center">Method</th>
+                              <th style="text-align:center">Type Signature</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                              <td style="text-align:center"><code>(int, int)</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                              <td style="text-align:center"><code>(int, int)</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                              <td style="text-align:center"><code>(int, double)</code></td>
+                            </tr>
+                            <tr>
+                              <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                              <td style="text-align:center"><code>(double, int)</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </panel>
+                    </div>
+                  </tip-box>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and
+                      <code>(int)</code></p>
+                    <ul>
+                      <li><code>calculate(String): void</code></li>
+                      <li><code>calculate(int): void</code></li>
+                    </ul>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.7b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement overloading</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\oopDesign\inheritance\overloading\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Inheritance → Overloading%%" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="implementing-overloading">Implementing Overloading</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <tip-box>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and
+                            <code>(String, String, double)</code>. Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    Account () {
+        ...
+    }
+    
+    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
+        ...
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(<span class="hljs-keyword">int</span> amount)</span></span>{
+        ...
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SavingAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(Double amount)</span></span>{
+        ...
+    }
+}
+</code></pre>
+                        </tip-box>
+                        <p>📎 Resources:</p>
+                        <ul>
+                          <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javatpoint.com">javatpoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+                        </ul>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <p>❗️ Python does not have direct support for method overloading.</p>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <hr>
+                  <p></p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.8</code> <strong>Can make use of a library</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.8a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain libraries</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="what-2">What</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>A library is a collection of modular code that is general and can be used by other programs.</p>
+                  <tip-box>
+                    <tabs>
+                    
+                      <tab header="Java">
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the
+                          default Java distribution.</p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+                      </tab>
+                    
+                      <tab header="Python">
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python
+                          distribution. Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+                      </tab>
+                    </tabs>
+                    <hr>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+    </div>
+    <p></p>
+    <p><span class="activity-desc">Quality Assurance</span></p>
+    <div class="indented">
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.9</code> <strong>Can use simple JUnit tests</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.9a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain developer testing</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="what-3">What</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.9b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for early developer testing</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="why">Why</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
+                  <ul>
+                    <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also
+                      be due to multiple inter-related bugs.</li>
+                    <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
+                    <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
+                    <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
+                  </ul>
+                  <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
+                  <blockquote>
+                    <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
+                  </blockquote>
+                  <img src="/website-base/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+                  <p></p>
+                  <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: implications of developers testing their own code">
+                          <question has-input="true">
+                            <p>Discuss pros and cons of developers testing their own code.</p>
+                            <div slot="answer">
+                              <p>Pros:</p>
+                              <ul>
+                                <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
+                                <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
+                                <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
+                                <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
+                              </ul>
+                              <p>Cons:</p>
+                              <ul>
+                                <li>A developer may unconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
+                                <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
+                                <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
+                                <li>A developer may lack the testing expertise.</li>
+                              </ul>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock::key: Cost of bug fixing over time">
+                          <question>
+                            <p>The cost of fixing a bug goes down as we reach the product release.</p>
+                            <ul radio-group="37242" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <p>False. The cost goes up over time.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header=":lock: Why early testing?">
+                          <question has-input="true">
+                            <p>Explain why early testing by developers is important.</p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+          <div>
+            <div>
+              <panel header=":lock: Why early testing?">
+                <question has-input="true">
+                  <p>Explain why early testing by developers is important.</p>
+                </question>
+              </panel>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.9c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test drivers</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="test-automation-using-test-drivers">Test Automation Using Test Drivers</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+
+        <span class="hljs-comment">//test setup</span>
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        <span class="hljs-comment">// automatically verify the response</span>
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);
+        }
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);
+        }
+
+        <span class="hljs-comment">//more tests...</span>
+
+        System.out.println(<span class="hljs-string">"All tests passed"</span>);
+    }
+}
+</code></pre>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.9d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test automation tools</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="test-automation-tools">Test Automation Tools</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
+        Payroll p = <span class="hljs-keyword">new</span> Payroll();
+
+        <span class="hljs-comment">//test case 1</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
+        assertEquals(p.totalSalary(), <span class="hljs-number">6400</span>);
+
+        <span class="hljs-comment">//test case 2</span>
+        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
+        assertEquals(p.totalSalary(), <span class="hljs-number">2300</span>);
+
+        <span class="hljs-comment">//more tests...</span>
+    }
+}
+</code></pre>
+                  </tip-box>
+                  <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
+                  <img src="/website-base/book/testing/testAutomation/tools/images/junit.png" height="190">
+                  <p></p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.9e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use simple JUnit tests</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → JUnit →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="junit-basic">JUnit: Basic</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <div v-closeable="" alt="Junit tutorial video">
+                    <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":paperclip: Resources" expanded="">
+                      <ul>
+                        <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
+                        <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
+                        <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                          ]</li>
+                      </ul>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+          <div>
+            <p><strong>Acceptable</strong>: Evidence of having written JUnit tests in some project.</p>
+            <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-junit-to-implement-unit-tests-lo-junit">Addressbook-Level2: LO-JUnit</a>]</p>
+            <div>
+              <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+              <p>
+                <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+          </div>
+        </panel>
+      </panel>
+    </div>
+    <p></p>
+    <p><span class="activity-desc">Project Management</span></p>
+    <div class="indented">
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.10</code> <strong>Can follow Forking Workflow</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.10a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain forking workflow</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="forking-flow">Forking Flow</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <img src="/website-base/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                  <p></p>
+                  <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
+                  <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+                  <ol>
+                    <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                    <li>Jean pushes the branch to her fork.</li>
+                    <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                    <li>Other members review Jean’s pull request.</li>
+                    <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                    <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                    <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own
+                      fork.</li>
+                  </ol>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":paperclip: Resources" expanded="">
+                      <ul>
+                        <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                      </ul>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.10b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow Forking Workflow</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\revisionControl\forkingWorkflow\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control → Forking Workflow%%" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="forking-workflow">Forking Workflow</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p></p>
+                  <ol>
+                    <li>
+                      <p><strong>One member: set up the team org and the team repo.</strong></p>
+                      <ul>
+                        <li><strong><a href="https://help.github.com/articles/creating-a-new-organization-from-scratch/">Create a GitHub organization</a></strong> for your team. The org name is up to you. We'll refer to this organization as <em>team org</em>                          from now on.</li>
+                        <li><strong><a href="https://help.github.com/enterprise/2.10/admin/guides/user-management/creating-teams/">Add a team </a></strong> called <code>developers</code> to your team org.</li>
+                        <li><strong><a href="https://help.github.com/enterprise/2.0/admin/guides/user-management/adding-or-inviting-people-to-teams/">Add your team members</a></strong> to the <code>developers</code> team.</li>
+                        <li><strong>Fork <a href="https://github.com/se-edu/samplerepo-workflow-practice">se-edu/samplerepo-workflow-practice</a> to your team org</strong>. We'll refer to this as the <em>team repo</em>.</li>
+                        <li><strong><a href="https://help.github.com/articles/managing-team-access-to-an-organization-repository/">Add the forked repo</a> to the <code>developers</code> team.</strong> Give write access.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Each team member: create PRs via own fork</strong></p>
+                      <ul>
+                        <li><strong>Fork that repo</strong> from your team org to your own GitHub account.</li>
+                        <li><strong>Create a PR</strong> to add a file <code>yourName.md</code> <span class="dimmed"> (e.g. <code>jonhDoe.md</code>) </span> containing a brief resume of yourself <span class="dimmed"> (branch → commit → push → create PR)</span></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>For each PR: review, update, and merge.</strong></p>
+                      <ul>
+                        <li>A team member (not the PR author): Review the PR by adding comments (can be just dummy comments).</li>
+                        <li>PR author: Update the PR by pushing more commits to it, to simulate updating the PR based on review comments.</li>
+                        <li>Another team member: Merge the PR using the GitHub interface.</li>
+                        <li>All members: <a href="https://help.github.com/articles/syncing-a-fork/">Sync your local repo (and your fork) with upstream repo</a>. In this case, your <em>upstream repo</em> is the repo in your team org.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Create conflicting PRs.</strong></p>
+                      <ul>
+                        <li>Each team member: Create a PR to add yourself under the <code>Team Members</code> section in the <code>README.md</code>.</li>
+                        <li>One member: in the <code>master</code> branch, remove John Doe and Jane Doe from the <code>README.md</code>, commit, and push to the main repo.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Merge conflicting PRs one at a time.</strong> Before merging a PR, you’ll have to resolve conflicts. Steps:</p>
+                      <ul>
+                        <li>[Optional] A member can inform the PR author (by posting a comment) that there is a conflict in the PR.</li>
+                        <li>PR author: Pull the <code>master</code> branch from the repo in your team org. Merge the pulled <code>master</code> branch to your PR branch. Resolve the merge conflict that crops up during the merge. Push the updated PR branch
+                          to your fork.</li>
+                        <li>Another member or the PR author: When GitHub does not indicate a conflict anymore, you can go ahead and merge the PR.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+          <div>
+            <p><strong>Acceptable</strong>: Evidence of following the forking workflow <mark>with the current team members</mark> using <em>any</em> repo.</p>
+            <p><strong>Suggested</strong>: Evidence of following the steps in the LO with current team members.</p>
+            <p><strong>Submission</strong>: Show during the tutorial.</p>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.10c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain DRCS vs CRCS</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="drcs-vs-crcs">DRCS vs CRCS</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
+                  <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older
+                    RCS tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
+                  <pic src="/website-base/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" height="180">
+                    <strong>The centralized RCS approach without any local repos (e.g., CVS, SVN)</strong></pic>
+                  <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For
+                    example, every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
+                  <pic src="/website-base/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" height="240">
+                    <strong>The decentralized RCS approach</strong></pic>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.10d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain feature branch flow</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\revisionControl\forkingWorkflow\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control → Forking Workflow%%" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="feature-branch-flow">Feature Branch Flow</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks or PRs.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature
+                    (or bug fix, or any other modification) is done in a separate branch.</p>
+                  <img src="/website-base/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+                  <p></p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":paperclip: Resources" expanded="">
+                      <ul>
+                        <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
+                      </ul>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W5.10e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain centralized flow</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/website-base\book\revisionControl\featureBranchFlow\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control → Feature Branch Workflow%%" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="centralized-flow">Centralized Flow</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the master branch.</strong></p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":paperclip: Resources" expanded="">
+                      <ul>
+                        <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
+                      </ul>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+    </div>
+    <p></p>
+    <p><span class="activity-desc">Other</span></p>
+    <div class="indented">
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W5.11</code> <strong>Can work with a 2KLoC code base <mark>[Compulsory]</mark></strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
         <div>
           <tip-box type="important">
             This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
@@ -136,11 +1523,16 @@
             <li>Update the Developer Guide</li>
           </ul>
           <div>
-            <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
+            <p><strong>Submission</strong>:</p>
+            <ul>
+              <li>Options 1 (discouraged): Show the relevant code during the tutorial.</li>
+              <li>Options 2 (preferred): Create a pull request by following the instructions below.</li>
+            </ul>
             <p>
               <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" name="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions" header="%%Admin » Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
                 isOpen="false" no-close="true" no-switch="true"></panel>
             </p>
+            <p>If you choose option 2, we recommend that you complete this week's <em>Project Management</em> LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in the LOs.</p>
           </div>
           <h4 id="team-component">Team component:</h4>
           <p>The team component is <mark>to be done by all members</mark>, including those who were allowed to omit the individual component.</p>
@@ -158,7 +1550,8 @@
           </ul>
         </div>
       </panel>
-    </panel>
+    </div>
+    <p></p>
   </div>
 </div>
 </div>
