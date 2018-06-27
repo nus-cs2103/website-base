@@ -7,3 +7,17 @@
 <include src="submission-PR.md" />
 
 </div>
+
+
+<div id="separationOfConcernsPrinciple">
+
+Explain SoC with examples from AddressBook-Level4 (or your own project).
+
+</div>
+
+
+<div id="openClosedPrinciple">
+
+Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).
+
+</div>

@@ -17,3 +17,10 @@
 <include src="../../book/oopDesign/classes/enumerations/q-essay-defineWeekDays.md" />
 
 </div>
+
+
+<div id="associations_associationClasses">
+
+Give more examples of association classes, preferably related to your project.
+
+</div>

@@ -81,3 +81,12 @@ Some evidence of using method overriding in some code you wrote.
 <include src="submission-AB3.md" />
 
 </div>
+
+
+<div id="associationClasses">
+
+**Acceptable**: Evidence of implementing an association class. 
+
+**Suggested**: Do the exercise in [[AddressBook - Level 2: LO-AssociationClass]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass)] and create a PR against [[AddressBook - Level 2]({{module_org}}/addressbook-level2)]
+
+</div>

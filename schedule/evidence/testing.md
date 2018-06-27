@@ -23,3 +23,68 @@
 <include src="../../book/testing/testingTypes/developerTesting/why/q-essay-why.md" />
 
 </div>
+
+
+<div id="testingTypes_unitTesting_what">
+
+Identify some unit tests in AddressBook-Level4 (or your own project).
+
+</div>
+
+
+<div id="testingTypes_unitTesting_stubs">
+
+Identify some tests in AddressBook-Level4,
+1. that can be made pure unit tests by introducing stubs
+2. that are using stubs to isolate the SUT from its dependencies
+
+</div>
+
+
+<div id="testingTypes_integrationTesting_what">
+
+Explain the difference between unit tests and integration tests. 
+
+</div>
+
+
+<div id="testingTypes_integrationTesting_how">
+
+Use tests from AddressBook-Level4 to illustrate the difference between unit testings and integration testing. Hint: good examples [`seedu.address.storage.StorageManagerTest`]({{module_org}}/addressbook-level4/blob/master/src/test/java/seedu/address/storage/StorageManagerTest.java),[`seedu.address.logic.commands.AddCommandTest`]({{module_org}}/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandTest.java),[`seedu.address.logic.commands.AddCommandIntegrationTest`]({{module_org}}/addressbook-level4/blob/master/src/test/java/seedu/address/logic/commands/AddCommandIntegrationTest.java) 
+
+</div>
+
+
+<div id="testingTypes_systemTesting_what">
+
+Explain what system tests are. Give examples from your own project.
+
+</div>
+
+
+<div id="testAutomation_testingGuis">
+
+Why is automated testing of GUIs is hard? What can we do about it?
+
+</div>
+
+
+<div id="testingTypes_acceptanceTesting_what">
+
+Explain what acceptance tests are. Explain how acceptance testing of your project will be done. 
+
+</div>
+
+
+<div id="testingTypes_acceptanceTesting_acceptanceVsSystemTesting">
+
+Explain the difference between system tests and acceptance tests. Explain why both are needed.
+
+</div>
+
+
+<div id="testingTypes_alphaBetaTesting_what">
+
+Explain alpha and beta testing. How can you do alpha and beta testing in your project?
+
+</div>
