@@ -183,7 +183,7 @@ siteNav: adminSiteNav.md
 
 # Grade Breakdown
 <div id="admin-gradeBreakdown">
-<include src="gradeBreakdown.md" /></div>
+<include src="gradeBreakdown.md#body" /></div>
 
 <div id="admin-exams-anchor"></div>
 
