@@ -125,7 +125,7 @@
 <panel no-close >
 <span slot="header" class="panel-title"><md>`{{ prefix | trim }}` **{{ params.outcome.heading }}** {{ show_stars(priority) }}</md> </span>
 {% if params.outcome.file %}
-  <include src="{{ params.outcome.file }}" />
+  <include src="../evidence/{{ params.outcome.file }}" />
 {% else %}
   {% for entry in entries  %}
     {% if entry.location %}
@@ -286,7 +286,7 @@
       {location: ["gitAndGithub", "tag"]},
       {location: ["gitAndGithub", "stash"]},
   {name: "Other"},
-    {heading: "Can work with a 1KLoC code base ==[Compulsory]==", priority: "1", file: "../evidence/1kloc.md"},
+    {heading: "Can work with a 1KLoC code base ==[Compulsory]==", priority: "1", file: "1kloc.md"},
 {week: "4"},
   {name: "Design"},
     {heading: "Can explain models"},
@@ -364,7 +364,7 @@
       {location: ["revisionControl", "featureBranchFlow"], omit_evidence: true},
       {location: ["revisionControl", "centralizedFlow"], omit_evidence: true},
   {name: "Other"},
-    {heading: "Can work with a 2KLoC code base ==[Compulsory]==", priority: "1", file: "../evidence/2kloc.md"},
+    {heading: "Can work with a 2KLoC code base ==[Compulsory]==", priority: "1", file: "2kloc.md"},
 {week: "6"},
   {name: "Requirements"},
     {heading: "Can explain requirements"},
@@ -424,7 +424,7 @@
       {location: ["javaTools", "javaFXBasic"]},
 {week: "7"},
   {name: "Requirements"},
-    {heading: "Can record requirements of a product", priority: "2", file: "../evidence/project.md#requirements"},
+    {heading: "Can record requirements of a product", priority: "2", file: "project.md#requirements"},
   {name: "Design"},
     {heading: "Can interpret an architecture diagram"},
       {location: ["design", "introduction", "what"], omit_evidence: true},
@@ -456,7 +456,7 @@
       {location: ["integration", "buildAutomation", "what"]},
       {location: ["integration", "buildAutomation", "continuousIntegrationDeployment"]},
   {name: "Other"},
-    {heading: "Can do local-impact changes to an existing software", priority: "1", file: "../evidence/project.md#local_impact_changes"}
+    {heading: "Can do local-impact changes to an existing software", priority: "1", file: "project.md#local_impact_changes"}
 ]%}
 
 
