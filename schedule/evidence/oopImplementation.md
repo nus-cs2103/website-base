@@ -41,3 +41,43 @@
 The exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)] also covers composition (note the &#9670; in the class diagram).
 
 </div>
+
+
+<div id="overriding">
+
+Some evidence of using method overriding in some code you wrote.
+
+</div>
+
+
+<div id="polymorphism">
+
+**Acceptable**: Using polymorphism in any past project.
+
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Polymorphism]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-polymorphism-lo-polymorphism)]
+   
+<include src="submission-AB3.md" />
+
+</div>
+
+
+<div id="abstractClasses">
+
+**Acceptable**: Using abstract classes in any past project.
+
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Abstract]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-abstract-classesmethods-lo-abstract)]
+   
+<include src="submission-AB3.md" />
+
+</div>
+
+
+<div id="interfaces">
+
+**Acceptable**: Using interfaces in any past project.
+
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Interfaces]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-interfaces-lo-interfaces)]
+   
+<include src="submission-AB3.md" />
+
+</div>

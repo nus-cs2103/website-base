@@ -26,3 +26,14 @@
 **Submission**: Show your code during tutorial
 
 </div>
+
+
+<div id="javaFXBasic">
+
+**Acceptable**: Using JavaFX in any past project.
+
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-JavaFX]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-java-fx-for-gui-programming-lo-javafx)]
+   
+<include src="submission-AB3.md" />
+
+</div>
