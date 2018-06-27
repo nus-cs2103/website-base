@@ -2,6 +2,17 @@
   "pages": [
     {
       "headings": {
+        "module-grading": "Module Grading",
+        "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
+        "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)",
+        "v15-practical-exam": "v1.5 Practical Exam"
+      },
+      "title": "Admin: Module Grading",
+      "keywords": "grading, asessment",
+      "src": "admin/gradeBreakdown.md"
+    },
+    {
+      "headings": {
         "preliminaries": "Preliminaries",
         "where-is-everything": "Where is everything?",
         "what-are-the-differences-between-cs2103-and-cs2103t": "What are the differences between CS2103 and CS2103T?",
