@@ -116,3 +116,14 @@ Have a local repo that has git-ignored files.
 **Submission**: Show your merged PRs during the tutorial.
 
 </div>
+
+
+<div id="forkingWorkflow">
+
+**Acceptable**: Evidence of following the forking workflow ==with the current team members== using _any_ repo.
+
+**Suggested**: Evidence of following the steps in the LO with current team members.
+
+**Submission**: Show during the tutorial.
+
+</div>

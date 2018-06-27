@@ -16,3 +16,10 @@
 
 **Submission**: Demo the test during the tutorial.
 </div>
+
+
+<div id="testingTypes_developerTesting_why">
+
+<include src="../../book/testing/testingTypes/developerTesting/why/q-essay-why.md" />
+
+</div>

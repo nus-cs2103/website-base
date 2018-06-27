@@ -4,7 +4,7 @@
 
 {{evidence}}
 
-<include src="../week5/2kloc.md"/>
+<include src="2kloc.md"/>
 
 </panel>
 
