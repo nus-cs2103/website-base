@@ -106,6 +106,13 @@
 {% endmacro %}
 
 
+{% macro show_subheading(subheading) %}
+<br/>
+
+%%**{{ subheading }}**%%
+{% endmacro %}
+
+
 {% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a"}) %}
 {% if not params.outcome.priority %}
   {% set priority = get_collective_priority(entries) | trim %}
@@ -124,6 +131,8 @@
     {% if entry.location %}
 {{ show_unit(prefix + letters[letter_index], entry) }}
       {% set letter_index = letter_index + 1 %}
+    {% elseif entry.subheading %}
+{{  show_subheading(entry.subheading) }}
     {% endif %}
   {% endfor %}
 {% endif %}
@@ -372,17 +381,23 @@
       {location: ["gatheringRequirements", "focusGroups"], omit_evidence: true},
       {location: ["gatheringRequirements", "prototyping"], omit_evidence: true},
     {heading: "Can use some techniques for specifying requirements"},
-      {location: ["specifyingRequirements", "prose", "what"], omit_evidence: true},
-      {location: ["specifyingRequirements", "featureList", "what"], omit_evidence: true},
-      {location: ["specifyingRequirements", "userStories", "introduction"]},
-      {location: ["specifyingRequirements", "userStories", "details"], omit_evidence: true},
-      {location: ["specifyingRequirements", "userStories", "usage"]},
-      {location: ["specifyingRequirements", "useCases", "introduction"], omit_evidence: true},
-      {location: ["specifyingRequirements", "useCases", "identifying"], omit_evidence: true},
-      {location: ["specifyingRequirements", "useCases", "details"]},
-      {location: ["specifyingRequirements", "useCases", "usage"], omit_evidence: true},
-      {location: ["specifyingRequirements", "glossary", "what"], omit_evidence: true},
-      {location: ["specifyingRequirements", "supplementaryRequirements", "what"], omit_evidence: true},
+      {subheading: "Prose"},
+        {location: ["specifyingRequirements", "prose", "what"], omit_evidence: true},
+      {subheading: "Feature Lists"},
+        {location: ["specifyingRequirements", "featureList", "what"], omit_evidence: true},
+      {subheading: "User Stories"},
+        {location: ["specifyingRequirements", "userStories", "introduction"]},
+        {location: ["specifyingRequirements", "userStories", "details"], omit_evidence: true},
+        {location: ["specifyingRequirements", "userStories", "usage"]},
+      {subheading: "Use Cases"},
+        {location: ["specifyingRequirements", "useCases", "introduction"], omit_evidence: true},
+        {location: ["specifyingRequirements", "useCases", "identifying"], omit_evidence: true},
+        {location: ["specifyingRequirements", "useCases", "details"]},
+        {location: ["specifyingRequirements", "useCases", "usage"], omit_evidence: true},
+      {subheading: "Glossary"},
+        {location: ["specifyingRequirements", "glossary", "what"], omit_evidence: true},
+      {subheading: "Supplementary Requirements"},
+        {location: ["specifyingRequirements", "supplementaryRequirements", "what"], omit_evidence: true},
   {name: "Design"},
     {heading: "Can interpret basic sequence diagrams"},
       {location: ["uml", "sequenceDiagrams", "introduction"], omit_evidence: true},
@@ -393,14 +408,18 @@
       {location: ["modeling", "modelingBehaviors", "sequenceDiagramsBasic"]},
   {name: "Implementation"},
     {heading: "Can implement polymorphism"},
-      {location: ["oopDesign", "inheritance", "overriding"], omit_evidence: true},
-      {location: ["oopImplementation", "overriding"]},
-      {location: ["oopDesign", "polymorphism", "introduction"], omit_evidence: true},
-      {location: ["oopImplementation", "polymorphism"]},
-      {location: ["oopDesign", "inheritance", "abstractClasses"], omit_evidence: true},
-      {location: ["oopImplementation", "abstractClasses"]},
-      {location: ["oopDesign", "inheritance", "interfaces"], omit_evidence: true},
-      {location: ["oopImplementation", "interfaces"]},
+      {subheading: "Method Overriding"},
+        {location: ["oopDesign", "inheritance", "overriding"], omit_evidence: true},
+        {location: ["oopImplementation", "overriding"]},
+      {subheading: "Polymorphism"},
+        {location: ["oopDesign", "polymorphism", "introduction"], omit_evidence: true},
+        {location: ["oopImplementation", "polymorphism"]},
+      {subheading: "Abstract Classes"},
+        {location: ["oopDesign", "inheritance", "abstractClasses"], omit_evidence: true},
+        {location: ["oopImplementation", "abstractClasses"]},
+      {subheading: "Interfaces"},
+        {location: ["oopDesign", "inheritance", "interfaces"], omit_evidence: true},
+        {location: ["oopImplementation", "interfaces"]},
     {heading: "Can use JavaFX to build a simple GUI"},
       {location: ["javaTools", "javaFXBasic"]}
 ]%}
