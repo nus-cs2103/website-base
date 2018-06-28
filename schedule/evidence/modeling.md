@@ -69,3 +69,10 @@ Use activity diagram to model workflows in the project.
 Draw an OODM for the problem domain of your project.
 
 </div>
+
+
+<div id="introduction_umlModels">
+
+Identify a few other UML models.
+
+</div>

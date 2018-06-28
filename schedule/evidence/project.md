@@ -87,3 +87,12 @@ Covered by the 'Acceptance Testing' component of v1.4:
 Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you doing something similar? Will it help if you adopt those practices? If they are not applicable, why?%%
 
 </div>
+
+
+<div id="describe_contribution">
+
+Covered by the 'Project Portfolio Page' component of v1.5rc:
+
+<include src="../../admin/project-v15rc.md" name="%%Admin » Project → v1.5rc%%" dynamic />
+
+</div>
