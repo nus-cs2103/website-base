@@ -70,3 +70,20 @@ Covered by v1.3:
 <include src="../../admin/project-v13.md" name="%%Admin » Project → v1.3%%" dynamic no-close/>
 
 </div>
+
+
+<div id="acceptance_testing">
+
+
+Covered by the 'Acceptance Testing' component of v1.4:
+
+<include src="../../admin/project-v14.md" name="%%Admin » Project → v1.4%%" dynamic />
+
+</div>
+
+
+<div id="relate_process">
+
+Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you doing something similar? Will it help if you adopt those practices? If they are not applicable, why?%%
+
+</div>

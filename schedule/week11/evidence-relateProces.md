@@ -1,1 +1,0 @@
-Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you doing something similar? Will it help if you adopt those practices? If they are not applicable, why?%%

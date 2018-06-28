@@ -52,13 +52,25 @@
 {{ op(entries.slice(start, end), params) }}
 {% endmacro %}
 
-{% macro show_evidence(chapter, unit_location) %}
+
+{% macro show_evidence(evidence_location_full) %}
 {{ dashed_line | safe}}
 
 {{evidence}}
 
-<include src="../evidence/{{ chapter }}.md#{{ unit_location | replace("/", "_")}}" />
+<include src="{{ evidence_location_full }}" />
 
+{% endmacro %}
+
+{% macro show_default_evidence(chapter, unit_location) %}
+{% set evidence_location_full =  "../evidence/" + chapter + ".md#" + (unit_location | replace("/", "_")) %}
+{{ show_evidence(evidence_location_full)}}
+{% endmacro %}
+
+
+{% macro show_specific_evidence(evidence_location) %}
+{% set evidence_location_full =  "../evidence/" + evidence_location %}
+{{ show_evidence(evidence_location_full)}}
 {% endmacro %}
 
 
@@ -75,8 +87,12 @@
 <panel type="{{ show_priority_style(priority) }}" expanded no-close >
 <span slot="header" class="panel-title"><md>`{{ id_prefix }}` <include src="../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
   <include src="../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
-  {% if not unit.omit_evidence %}
-  {{ show_evidence(chapter, path) }}
+  {% if unit.omit_evidence %}
+    {# no need to show evidence #}
+  {% elseif unit.evidence %}
+{{ show_specific_evidence(unit.evidence) }}
+  {% else %}
+{{ show_default_evidence(chapter, path) }}
   {% endif %}
 </panel>
 {% endmacro %}
@@ -644,7 +660,42 @@
     {heading: "Can use Boundary Value Analysis for test case design"},
       {location: ["testCaseDesign", "boundaryValueAnalysis", "what"], omit_evidence: true},
       {location: ["testCaseDesign", "boundaryValueAnalysis", "how"], omit_evidence: true},
-    {heading: "Can release a product to end users", priority: "1", file: "project.md#release_product"}
+    {heading: "Can release a product to end users", priority: "1", file: "project.md#release_product"},
+{week: "11"},
+  {name: "Requirements"},
+    {heading: "Can explain object oriented domain models"},
+      {location: ["modeling", "modelingStructures", "objectOrientedDomainModels"], omit_evidence: true},
+  {name: "Design"},
+    {heading: "Can apply some more design patterns"},
+      {location: ["designPatterns", "modelViewController", "what"]},
+      {location: ["designPatterns", "observer", "what"]},
+      {location: ["designPatterns", "abstractionOccurrence", "what"]},
+      {location: ["designPatterns", "more", "otherDesignPatterns"]},
+    {heading: "Can optimize the use of design patterns"},
+      {location: ["designPatterns", "more", "combiningDesignPatterns"]},
+      {location: ["designPatterns", "more", "usingDesignPatterns"]},
+      {location: ["designPatterns", "more", "vsPrinciples"], omit_evidence: true},
+      {location: ["designPatterns", "more", "otherTypesOfPatterns"]},
+  {name: "Quality Assurance"},
+    {heading: "Can apply heuristics to combine multiple test inputs"},
+      {location: ["testCaseDesign", "combiningTestInputs", "why"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "combinationStrategies"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "heuristicValid"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "heuristicInvalid"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "mix"]},
+    {heading: "Can do acceptance testing", priority: "1", file: "project.md#acceptance_testing"},
+  {name: "Project Management"},
+    {heading: "Can explain types of SDLC process models"},
+      {location: ["processModels", "introduction", "what"], omit_evidence: true},
+      {location: ["processModels", "introduction", "sequentialModels"]},
+      {location: ["processModels", "introduction", "iterativeModels"]},
+      {location: ["processModels", "introduction", "agileModels"]},
+    {heading: "Can explain some popular SDLC process models"},
+      {location: ["processModels", "exampleProcessModels", "scrum"], evidence: "project.md#relate_process"},
+      {location: ["processModels", "exampleProcessModels", "xp"], evidence: "project.md#relate_process"},
+      {location: ["processModels", "exampleProcessModels", "unifiedProcess"], evidence: "project.md#relate_process"},
+      {location: ["processModels", "more", "cmmi"], omit_evidence: true},
+      {location: ["processModels", "summary", "recap"], omit_evidence: true}
 ]%}
 
 

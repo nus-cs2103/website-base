@@ -38,3 +38,10 @@ Explain equivalence partitioning using examples from the project.
 Apply BVA when writing test cases in the project.
 
 </div>
+
+
+<div id="combiningTestInputs_mix">
+
+Apply the heuristics to design test cases for a simple method that takes two parameters.
+
+</div>

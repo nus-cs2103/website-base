@@ -38,3 +38,10 @@ Identify frameworks used (or potentially usable) in your project.
 Explain the difference between libraries and frameworks using frameworks and libraries in your project as examples.
 
 </div>
+
+
+<div id="platforms_what">
+
+Identify platforms used (or potentially usable) in your project.
+
+</div>

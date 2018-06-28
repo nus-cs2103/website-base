@@ -33,8 +33,51 @@ Discuss the current/potential applications of the pattern in your project.
 </div>
 
 
-<div id="platforms_what">
+<div id="modelViewController_what">
 
-Identify platforms used (or potentially usable) in your project.
+Explain relevance of the pattern to the project.
+
+</div>
+
+
+<div id="observer_what">
+
+Explain relevance of the pattern to the project.
+
+</div>
+
+
+<div id="abstractionOccurrence_what">
+
+Explain relevance of the pattern to the project.
+
+</div>
+
+
+<div id="more_otherDesignPatterns">
+
+Name a few GoF patterns not covered in the module.
+
+</div>
+
+
+
+<div id="more_combiningDesignPatterns">
+
+Give an example of combining patterns.
+
+</div>
+
+
+<div id="more_usingDesignPatterns">
+
+Take an example patterns in the project and explain its benefits and costs.
+
+</div>
+
+
+<div id="more_otherTypesOfPatterns">
+
+Give example patterns from other domains.
 
 </div>

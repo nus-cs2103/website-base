@@ -62,3 +62,10 @@ Use these notations in your project.
 Use activity diagram to model workflows in the project.
 
 </div>
+
+
+<div id="modelingStructures_objectOrientedDomainModels">
+
+Draw an OODM for the problem domain of your project.
+
+</div>
