@@ -101,7 +101,7 @@ Evaluates: how much you contributed to common team-based tasks
 
 Based on: peer evaluations and tutor observations
 
-<panel type="seamless" header="Admin » Project Scope → Examples of team tasks">
+<panel type="seamless" header="Admin {{ icon_embedding }} Project Scope → Examples of team tasks">
   <include src="project-scope.md#example-team-tasks"/>
 </panel>
 

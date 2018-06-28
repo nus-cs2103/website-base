@@ -37,7 +37,7 @@ This is as a ‘production release’. It should be at least ‘near production 
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin » Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
 
 ### v1.5 Documentation
 
@@ -62,7 +62,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin » Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
 
 
 ### v1.5 Demo
@@ -111,7 +111,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin » Project: Assessment%%" dynamic />
+<include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
 
 <div id=v15-practicalExam>
 

@@ -6,7 +6,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 :bust_in_silhouette: Contributed code to the product | some code merged
 :bust_in_silhouette: Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
-:busts_in_silhouette: v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version tagged `v1.2` is in your repo. There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin » Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
+:busts_in_silhouette: v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version tagged `v1.2` is in your repo. There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
 
 </tip-box>
 
@@ -15,13 +15,13 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 <tip-box type="important">
 
-Starting from this version, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin » Appendix E: GitHub: Project Schedule Tracking]</trigger>.
+Starting from this version, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
 </tip-box>
 
 As before, you are _recommended_ (but not required) to **follow the forking workflow** when evolving the product.
 
-<modal large title="Admin » Appendix E: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
+<modal large title="Admin {{ icon_embedding }} Appendix E: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
 
@@ -44,7 +44,7 @@ If you find tests too big a burden, it is OK to get rid of some of the troubleso
 
 Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>. 
 
-<modal title="Admin » Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
+<modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
   <include src="project-testing.md#expectations"/>
 </modal>
 

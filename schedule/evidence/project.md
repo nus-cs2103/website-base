@@ -2,7 +2,7 @@
 
 Covered by the 'Documentation' component of v1.0:
 
-<dynamic-panel src="../../admin/project-v10.md" header="%%Admin » Project → v1.0%%" no-close />
+<dynamic-panel src="../../admin/project-v10.md" header="%%Admin {{ icon_embedding }} Project → v1.0%%" no-close />
 
 </div>
 
@@ -11,7 +11,7 @@ Covered by the 'Documentation' component of v1.0:
 
 Covered by the 'Product' component of v1.0:
 
-<dynamic-panel src="../../admin/project-v10.md" header="%%Admin » Project → v1.0%%" no-close />
+<dynamic-panel src="../../admin/project-v10.md" header="%%Admin {{ icon_embedding }} Project → v1.0%%" no-close />
 
 </div>
 
@@ -31,7 +31,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 Covered by the 'Documentation' of component v1.1:
 
-<dynamic-panel src="../../admin/project-v11.md" header="%%Admin » Project → v1.1%%" no-close />
+<dynamic-panel src="../../admin/project-v11.md" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
 
 </div>
 
@@ -40,7 +40,7 @@ Covered by the 'Documentation' of component v1.1:
 
 Covered by the 'Product' component of v1.1:
 
-<dynamic-panel src="../../admin/project-v11.md" header="%%Admin » Project → v1.1%%" no-close />
+<dynamic-panel src="../../admin/project-v11.md" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
 
 </div>
 
@@ -49,7 +49,7 @@ Covered by the 'Product' component of v1.1:
 
 Covered by 'Documentation' component of v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
 
 </div>
 
@@ -58,7 +58,7 @@ Covered by 'Documentation' component of v1.2:
 
 Covered by the 'Project Management' component of v1.2:
 
-<include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
+<include src="../../admin/project-v12.md" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
 
 </div>
 
@@ -67,7 +67,7 @@ Covered by the 'Project Management' component of v1.2:
 
 Covered by v1.3:
 
-<include src="../../admin/project-v13.md" name="%%Admin » Project → v1.3%%" dynamic no-close/>
+<include src="../../admin/project-v13.md" name="%%Admin {{ icon_embedding }} Project → v1.3%%" dynamic no-close/>
 
 </div>
 
@@ -77,7 +77,7 @@ Covered by v1.3:
 
 Covered by the 'Acceptance Testing' component of v1.4:
 
-<include src="../../admin/project-v14.md" name="%%Admin » Project → v1.4%%" dynamic />
+<include src="../../admin/project-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
 
 </div>
 
@@ -93,7 +93,7 @@ Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you
 
 Covered by the 'Project Portfolio Page' component of v1.5rc:
 
-<include src="../../admin/project-v15rc.md" name="%%Admin » Project → v1.5rc%%" dynamic />
+<include src="../../admin/project-v15rc.md" name="%%Admin {{ icon_embedding }} Project → v1.5rc%%" dynamic />
 
 </div>
 
@@ -102,7 +102,7 @@ Covered by the 'Project Portfolio Page' component of v1.5rc:
 
 Covered by the 'Demo' component of v1.5:
 
-<include src="../../admin/project-v15.md" name="%%Admin » Project → v1.5%%" dynamic />
+<include src="../../admin/project-v15.md" name="%%Admin {{ icon_embedding }} Project → v1.5%%" dynamic />
 
 </div>
 
@@ -125,10 +125,10 @@ Covered by v1.0-v1.5:
 
 Covered by the 'Peer Evaluations' component of the module:
 
-<include src="../../admin/peer-evaluations.md" name="%%Admin » Peer Evaluations%%" dynamic />
+<include src="../../admin/peer-evaluations.md" name="%%Admin {{ icon_embedding }} Peer Evaluations%%" dynamic />
 
 Also covered by the 'Practical Exam' of v1.5:
 
-<include src="../../admin/project-v15.md" name="%%Admin » Project → v1.5%%" dynamic />
+<include src="../../admin/project-v15.md" name="%%Admin {{ icon_embedding }} Project → v1.5%%" dynamic />
 
 </div>

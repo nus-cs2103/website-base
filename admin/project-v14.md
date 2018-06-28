@@ -93,7 +93,7 @@ v1.4 is subjected to a round of _peer testing_.
 * Considered for phase B participation. In addition, issues you created can be include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger> to show how you contributed to another project.
 * There is **no penalty for bugs reported** in your product.
   
-<modal large title="Admin » Project →" id="modal:v1.4-ppp">
+<modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.4-ppp">
   <include src="projectPortfolioPage.md"/>
 </modal>
   

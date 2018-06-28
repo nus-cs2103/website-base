@@ -13,7 +13,7 @@ Create a personal GitHub account if you don't have one yet.
 The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.
 
 </panel>
-<panel header="%%Admin » Choosing a profile photo%%" expandable>
+<panel header="%%Admin {{ icon_embedding }} Choosing a profile photo%%" expandable>
   <include src="profilePhoto.md" />
 </panel>
 
@@ -55,7 +55,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
    Your Team ID can be found in [this page](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). 
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
    
-<panel header="%%Schedule » Tutorial Schedule%%">
+<panel header="%%Schedule {{ icon_embedding }} Tutorial Schedule%%">
   <include src="../schedule/overview/tutorialSchedule.md" />
 </panel><p/>
     
@@ -230,6 +230,6 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 We recommend using the _Forking Workflow_.
 
-<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate header="%%Textbook »%% Git and GitHub: Forking Workflow" />
+<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate header="%%Textbook {{ icon_embedding }}%% Git and GitHub: Forking Workflow" />
 
 </div>

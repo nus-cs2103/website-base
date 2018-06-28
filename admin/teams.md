@@ -23,7 +23,7 @@ Phase A (Weeks 1 - 5) is the period for strengthening individual competencies. B
 
 **Team ID**: This will be given to you after forming teams in each Phase . It has the form `TUTORIAL_ID-PHASE+TEAM_NUMBER` e.g, `W14-A2` means you are in tutorial W14 (i.e., Wed 1400-1500), Phase A, team 2.
 
-<panel header="%%Schedule » Tutorial IDs%%">
+<panel header="%%Schedule {{ icon_embedding }} Tutorial IDs%%">
   <include src="../schedule/overview/tutorialSchedule.md" />
 </panel><p/>
 
