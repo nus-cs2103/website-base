@@ -206,64 +206,37 @@
       "title": ""
     },
     {
-      "headings": {
-        "se": "SE:",
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
-      },
+      "headings": {},
       "src": "schedule/week10/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-10-outcomes": "Week 10 - Outcomes",
-        "se": "SE:",
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
+        "week-10-outcomes": "Week 10 - Outcomes"
       },
       "src": "schedule/week10/outcomes.md",
       "title": ""
     },
     {
-      "headings": {
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
-      },
+      "headings": {},
       "src": "schedule/week11/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-11-outcomes": "Week 11 - Outcomes",
-        "requirements": "Requirements:",
-        "design": "Design:",
-        "quality-assurance": "Quality Assurance:",
-        "project-management": "Project Management:"
+        "week-11-outcomes": "Week 11 - Outcomes"
       },
       "src": "schedule/week11/outcomes.md",
       "title": ""
     },
     {
-      "headings": {
-        "design": "Design:",
-        "implementation": "Implementation:"
-      },
+      "headings": {},
       "src": "schedule/week12/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-12-outcomes": "Week 12 - Outcomes",
-        "design": "Design:",
-        "implementation": "Implementation:"
+        "week-12-outcomes": "Week 12 - Outcomes"
       },
       "src": "schedule/week12/outcomes.md",
       "title": ""
@@ -414,24 +387,13 @@
       "title": ""
     },
     {
-      "headings": {
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "documentation": "Documentation:",
-        "project-management": "Project Management:"
-      },
+      "headings": {},
       "src": "schedule/week9/index.md",
       "title": ""
     },
     {
       "headings": {
-        "week-9-outcomes": "Week 9 - Outcomes",
-        "design": "Design:",
-        "implementation": "Implementation:",
-        "quality-assurance": "Quality Assurance:",
-        "documentation": "Documentation:",
-        "project-management": "Project Management:"
+        "week-9-outcomes": "Week 9 - Outcomes"
       },
       "src": "schedule/week9/outcomes.md",
       "title": ""

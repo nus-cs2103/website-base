@@ -2,41 +2,2569 @@
   <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Outcomes</span>
   <div class="indented">
     <div>
-      <h3 id="se">SE:</h3>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-principle._include_.html" type="info" header="**`W10.1` Can explain SE principles** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <h3 id="requirements">Requirements:</h3>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-activityDiagram._include_.html" type="danger" header="**`W10.2` Can use activity diagrams** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <h3 id="design">Design:</h3>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-patterns._include_.html" type="danger" header="**`W10.3` Can use some basic design patterns** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <h3 id="implementation">Implementation:</h3>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-frameworkLibraryPlatform._include_.html" type="info" header="**`W10.4` Can get reuse benefits from frameworks, libraries, and platforms** :star::star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <h3 id="quality-assurance">Quality Assurance:</h3>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-testCaseDesign._include_.html" type="warning" header="**`W10.5` Can explain test case design** :star::star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-ep._include_.html" type="danger" header="**`W10.6` Can use EP for test case design** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <p>
-        <panel src="/website-base\schedule\week10\outcome-boundaryValueAnalysis._include_.html" type="danger" header="**`W10.7` Can apply boundary value analysis** :star:" no-close="true" isOpen="false" no-switch="true"></panel>
-      </p>
-      <h3 id="project-management">Project Management:</h3>
-      <panel type="danger" header="**`W10.8` Can release a product to end users** :star:" no-close="">
-        <panel header="<span class='glyphicon glyphicon-folder-close' aria-hidden='true'></span> Evidence" expanded="">
-          <p>Covered by v1.3:</p>
-          <p>
-            <panel src="/website-base\admin\project-v13._include_.html" name="%%Admin » Project → v1.3%%" no-close="true" header="%%Admin » Project → v1.3%%" isOpen="false" no-switch="true"></panel>
-          </p>
+      <p><span class="activity-desc">SE</span></p>
+      <div class="indented">
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.1</code> <strong>Can explain SE principles</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.1a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the Law of Demeter</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="law-of-demeter">Law of Demeter</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>Law of Demeter (LoD)</strong>:</p>
+                        <ul>
+                          <li>An object should have limited knowledge of another object.</li>
+                          <li>An object should only interact with objects that are closely related to it.</li>
+                        </ul>
+                        <p>Also known as</p>
+                        <ul>
+                          <li>Don’t talk to strangers.</li>
+                          <li>Principle of least knowledge</li>
+                        </ul>
+                      </div>
+                    </tip-box>
+                    <p>More concretely, a method <code>m</code> of an object <code>O</code> should invoke only the methods of the following kinds of objects:</p>
+                    <ul>
+                      <li>The object <code>O</code> itself</li>
+                      <li>Objects passed as parameters of <code>m</code></li>
+                      <li>Objects created/instantiated in <code>m</code></li>
+                      <li>Objects from the
+                        <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
+                    </ul>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code>                        is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
+    Goo g = b.getGoo();
+    g.doSomething();
+}
+</code></pre>
+                    </tip-box>
+                    <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends
+                        as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Examples for LoD">
+                            <question has-input="true">
+                              <p>Explain the Law of Demeter using code examples. You are to make up your own code examples. Take Minesweeper as the basis for your code examples.</p>
+                              <div slot="answer">
+                                <p>Let us take the <code>Logic</code> class as an example. Assume that it has the following operation.</p>
+                                <p><code>setMinefield(Minefiled mf):void</code></p>
+                                <p>Consider the following that can happen inside this operation.</p>
+                                <ul>
+                                  <li><code>mf.init();</code>: this does not violate LoD since LoD allows calling operations of parameters received.</li>
+                                  <li><code>mf.getCell(1,3).clear();</code>: //this violates LoD because <code>Logic</code> is handling <code>Cell</code> objects deep inside <code>Minefield</code>. Instead, it should be <code>mf.clearCellAt(1,3);</code></li>
+                                  <li><code>timer.start();</code>: //this does not violate LoD because <code>timer</code> appears to be an internal component (i.e. a variable) of <code>Logic</code> itself.</li>
+                                  <li><code>Cell c = new Cell();</code> <code>c.init();</code>: // this does not violate LoD because <code>c</code> was created inside the operation.</li>
+                                </ul>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: LoD violation?">
+                            <question>
+                              <p>This violates Law of Demeter.</p>
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
+    Goo g =  <span class="hljs-keyword">new</span> Goo();
+    g.doSomething();
+}
+</code></pre>
+                              <ul radio-group="3cf8e" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>False</p>
+                                <p>Explanation: The line <code>g.doSomething()</code> does not violate LoD because it is OK to invoke methods of objects created within a method.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Odd one out">
+                            <question>
+                              <p>Pick the odd one out.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Law of Demeter.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Don’t add people to a late project.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Don’t talk to strangers.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Principle of least knowledge.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Coupling.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(b)</p>
+                                <p>Explanation: Law of Demeter, which aims to reduce coupling, is also known as ‘Don’t talk to strangers’ and ‘Principle of least knowledge’.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify places where LoD is followed/violated in your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.1b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain SOLID Principles</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="solid-principles">SOLID Principles</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>The five OOP principles given below are known as <em>SOLID Principles</em> (an acronym made up of the first letter of each principle):</p>
+                    <panel type="seamless" header="**S**ingle Responsibility Principle (SRP)">
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <tip-box type="primary">
+                                <div>
+                                  <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                                </div>
+                              </tip-box>
+                              <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                              <tip-box>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting
+                                  of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                              </tip-box>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header=":paperclip:  Resources" expanded="">
+                                  <ul>
+                                    <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                                    <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                                    <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                                  </ul>
+                                </panel>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" header="**O**pen-Closed Principle (OCP)">
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="open-closed-principle">Open-Closed Principle</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <p>While it is possible to isolate the functionalities of a software system into modules, there is no way to remove interaction between modules. When modules interact with each other, coupling naturally increases. Consequently,
+                                it is harder to localize any changes to the software system. The Open-Close Principle aims to alleviate this problem.</p>
+                              <tip-box type="definition">
+                                <div>
+                                  <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them
+                                    to be modified. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p>
+                                </div>
+                              </tip-box>
+                              <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
+                              <tip-box>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For
+                                  example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all.
+                                  That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
+                                <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
+                                <p></p>
+                              </tip-box>
+                              <tip-box>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves
+                                  as a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class
+                                  is extended without modifying its code.</p>
+                                <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
+ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
+</code></pre>
+                              </tip-box>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header=":muscle: Exercises" expandable="">
+                                  <div>
+                                    <panel header=":lock::key: Meaning of OCP">
+                                      <question>
+                                        <p>Which of these is closest to the meaning of the open-closed principle?</p>
+                                        <ul radio-group="6906e" class="radio-list">
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <p>(a)</p>
+                                          <p>Explanation: Please refer the handout for the definition of OCP.</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                </panel>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" header="**L**iskov Substitution Principle (LSP)">
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="liskov-substitution-principle">Liskov Substitution Principle</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <tip-box type="definition">
+                                <div>
+                                  <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a></sub></p>
+                                </div>
+                              </tip-box>
+                              <p>LSP sounds same as
+                                <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support
+                                for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
+                              <modal large="" title="Textbook »" id="modal:lsp-substitutability">
+                              
+                                <div>
+                                  <div>
+                                    <p>
+                                      <panel src="/website-base\book\oopDesign\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"
+                                        isOpen="false" no-close="true" no-switch="true"></panel>
+                                    </p>
+                                  </div>
+                                  <p></p>
+                                  <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Inheritance →
+</span></strong>
+                                    </span>
+                                  </p>
+                                  <div id="title-and-body">
+                                    <div>
+                                      <h4 id="substitutability">Substitutability</h4>
+                                    </div>
+                                    <div id="main">
+                                      <div>
+                                        <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where
+                                          a parent class object is expected.</p>
+                                        <tip-box>
+                                          <img src="/website-base/book/oopDesign/inheritance/substitutability/images/staff.png" height="80">
+                                          <p></p>
+                                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.
+                                            i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
+                                          <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
+                                          <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
+</code></pre>
+                                          <p>But the following code is not valid <span class="dimmed"> because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
+                                          <pre class="hljs"><code>Staff staff;
+...
+AcademicStaff academicStaff = staff; // Not OK
+</code></pre>
+                                        </tip-box>
+                                      </div>
+                                      <div></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </modal>
+                              <tip-box>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code>                                  class states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
+                                <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                                <p></p>
+                                <p>Now consider the following:</p>
+                                <ul>
+                                  <li><code>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
+                                  <li><code>Academic#adjustMySalary</code> method works for percent values <code>1..100</code> only.</li>
+                                </ul>
+                                <p>In the above scenario,</p>
+                                <ul>
+                                  <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects
+                                    will not break the <code>Payroll</code> class functionality.</li>
+                                  <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code>                                    objects can potentially break the <code>Payroll</code> class functionality.</li>
+                                </ul>
+                                <panel type="seamless" header="%%Another example%%">
+                                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                                    because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
+                                  <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
+                                  <p></p>
+                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
+    ...
+    <span class="hljs-comment">/** sets the size to given height and width*/</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
+        ...
+    }
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Rectangle</span> </span>{
+    
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
+        <span class="hljs-keyword">if</span> (height != width) {
+            <span class="hljs-comment">//error</span>
+       }
+    }
+}
+</code></pre>
+                                  <p>Now consider the following method that is written to work with the <code>Rectangle</code> class.</p>
+                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">makeSameSize</span><span class="hljs-params">(Rectangle original, Rectangle toResize)</span></span>{
+    toResize.resize(original.getHeight(), original.getWidth());
+}
+</code></pre>
+                                  <p>This code will fail if it is called as <code>maekSameSize(new Rectangle(12,8), new Square(4, 4))</code> That is, <code>Square</code> class is not substitutable for the <code>Rectangle</code> class.</p>
+                                </panel>
+                              </tip-box>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header=":muscle: Exercises" expandable="">
+                                  <div>
+                                    <panel header=":lock::key: Is this LSP?">
+                                      <question>
+                                        <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
+                                        <ul radio-group="55ada" class="radio-list">
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> True</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> False</label></li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <p>True.</p>
+                                          <p>Explanation: If the subclass is more restrictive than the parent class, code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and LSP has been violated.</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                </panel>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" header="**I**nterface Segregation Principle (ISP)">
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="interface-segregation-principle">Interface Segregation Principle</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <tip-box type="definition">
+                                <div>
+                                  <p><strong>Interface Segregation Principle (ISP)</strong>: No client should be forced to depend on methods it does not use.</p>
+                                </div>
+                              </tip-box>
+                              <tip-box>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead,
+                                  it should depend on the <code>SalariedStaff</code> interface.</p>
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+    <span class="hljs-comment">//...    </span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
+        <span class="hljs-comment">//...</span>
+    }
+
+}
+</code></pre>
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+    <span class="hljs-comment">//...    </span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(SalariedStaff staff)</span></span>{ <span class="hljs-comment">//does not violate ISP</span>
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                                <img src="/website-base/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+                                <p></p>
+                              </tip-box>
+                            </div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                    <panel type="seamless" header="**D**ependency Inversion Principle (DIP)">
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="dependency-inversion-principle">Dependency Inversion Principle</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <p>The <em>Dependency Inversion Principle</em> states that,</p>
+                              <ol>
+                                <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
+                                <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
+                              </ol>
+                              <tip-box>
+                                <p>Example:</p>
+                                <img src="/website-base/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
+                                <p></p>
+                                <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the Payee
+                                  interface (note that inheritance is a dependency).</p>
+                                <p>Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes.</p>
+                              </tip-box>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header=":muscle: Exercises" expandable="">
+                                  <div>
+                                    <panel header=":lock::key: Which of these statements is true about the Dependency Inversion Principle.">
+                                      <question>
+                                        <p>Which of these statements is true about the Dependency Inversion Principle.</p>
+                                        <ul class="task-list">
+                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
+                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
+                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
+                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <ul class="task-list">
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
+                                          </ul>
+                                          <p>Explanation: Replacing dependencies with mocks is Dependency Injection, not DIP. DIP does not reduce dependencies, rather, it changes the direction of dependencies. Yes, it can introduce extra abstractions but
+                                            often the benefit can outweigh the extra complications.</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                </panel>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </panel>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.1c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain YAGNI principle</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="yagni-principle">YAGNI Principle</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>YAGNI (You Aren't Gonna Need It!) Principle</strong>: Do not add code simply because ‘you might need it in the future’.</p>
+                      </div>
+                    </tip-box>
+                    <p>The principle says that some capability we presume our software needs in the future should not be built now because the chances are &quot;you aren't gonna need it&quot;. The rationale is that we do not have perfect information about
+                      the future and therefore some of the extra work we do to fulfill a potential future need might go to waste when some of our predictions fail to materialize.</p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":paperclip: Resources" expanded="">
+                        <ul>
+                          <li><a href="https://martinfowler.com/bliki/Yagni.html"><strong>Yagni</strong></a> -- A detailed article explaining YAGNI, written by Martin Fowler.</li>
+                        </ul>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.1d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain DRY principle</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="dry-principle">DRY Principle</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>DRY (Don't Repeat Yourself) Principle</strong>: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system <sub><em>The Pragmatic Programmer</em>, by Andy Hunt and Dave Thomas</sub></p>
+                      </div>
+                    </tip-box>
+                    <p>This principle guards against duplication of information.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.1e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain Brooks' law</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="brooks-law">Brooks' Law</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>Brooks' Law</strong>: Adding people to a late project will make it later. -- Fred Brooks (author of <em>The Mythical Man-Month</em>)</p>
+                      </div>
+                    </tip-box>
+                    <p>Explanation: The additional communication overhead will outweigh the benefit of adding extra manpower, especially if done near to a deadline.</p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Brook’s Law vs school project">
+                            <question has-input="true">
+                              <p>Do the Brook’s Law apply to a school project? Justify.</p>
+                              <div slot="answer">
+                                <p>Yes. Adding a new student to a project team can result in a slow-down of the project for a short period. This is because the new member needs time to learn the project and existing members will have to spend time helping
+                                  the new guy get up to speed. If the project is already behind schedule and near a deadline, this could delay the delivery even further.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Which one is related to Brook's law">
+                            <question>
+                              <p>Which one of these (all attributed to Fred Brooks, the author of the famous SE book <em>The Mythical Man-Month</em>), is called the Brook’s law?</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. All programmers are optimists.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Good judgement comes from experience, and experience comes from bad judgement.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The bearing of a child takes nine months, no matter how many women are assigned.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Adding more manpower to an already late project makes it even later.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(d)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
+      </div>
+      <p></p>
+      <p><span class="activity-desc">Requirements</span></p>
+      <div class="indented">
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.2</code> <strong>Can use activity diagrams</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <br>
+          <p><span class="dimmed"><strong>Basic notations</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.2a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use activity diagrams</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="activity-diagrams">Activity Diagrams</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the
+                      <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
+                    <tip-box>
+                      <p>Some examples in which a certain workflow is relevant to software project:</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
+                    </tip-box>
+                    <p>Understanding such workflows is important for the success of the software project. <strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
+                    <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
+                      <div>
+                        <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
+                          Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term
+                          ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+                      </div>
+                    </modal>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
+                    <p>The most basic activity diagram is simply a linear sequence of actions.</p>
+                    <p>
+                      <panel src="/website-base\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths"
+                        expanded=""></panel>
+                    </p>
+                    <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
+                    <p>
+                      <panel src="/website-base\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths"
+                        expanded=""></panel>
+                    </p>
+                    <p>In some workflows, multiple paths happen in parallel.</p>
+                    <p>
+                      <panel src="/website-base\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths"
+                        expanded=""></panel>
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Which sequences are not allowed?">
+                            <question>
+                              <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                              </ul>
+                              <img src="/website-base/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                              <p></p>
+                              <div slot="answer">
+                                <p>(iv)</p>
+                                <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Use activity diagram to model workflows in the project.</p>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Intermediate notations</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.2b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use rakes in activity diagrams</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="rakes">Rakes</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
+                      <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
+                      <p></p>
+                      <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p>
+                      <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png" height="230">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.2c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain swimlanes in activity diagrams</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="swimlanes">Swimlanes</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example of a swimlane diagram:</p>
+                      <img src="/website-base/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </panel>
+      </div>
+      <p></p>
+      <p><span class="activity-desc">Design</span></p>
+      <div class="indented">
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.3</code> <strong>Can use some basic design patterns</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <br>
+          <p><span class="dimmed"><strong>Introduction</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain design patterns</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>Design Pattern</strong> : An <em>elegant reusable solution</em> to a <em>commonly recurring problem</em> within a <em>given context</em> in software design.</p>
+                      </div>
+                    </tip-box>
+                    <p>In software development, there are certain problems that recur in a certain context.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of recurring design problems:</p>
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Design Context</th>
+                            <th>Recurring Problem</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Assembling a system that makes use of other existing systems implemented using different technologies</td>
+                            <td>What is the best architecture?</td>
+                          </tr>
+                          <tr>
+                            <td>UI needs to be updated when the data in application backend changes</td>
+                            <td>How to initiate an update to the UI when data changes without coupling the backend to the UI?</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </tip-box>
+                    <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, **a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>                      by the so-called <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot;** (GoF) book written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</a></p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Definition of design patterns">
+                            <question>
+                              <p>Which one of these describes the ‘software design patterns’ concept best?</p>
+                              <ul radio-group="a7255" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> a. Designs that appear repetitively in software.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> b. Elegant solutions to recurring problems in software design.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> c. Architectural styles used in applications.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> d. Some good design techniques proposed by the Gang of Four</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(b)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain design patterns format</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="format">Format</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>The common format to describe a pattern consists of the following components:</p>
+                    <ul>
+                      <li><strong>Context</strong>: The situation or scenario where the design problem is encountered.</li>
+                      <li><strong>Problem</strong>: The main difficulty to be resolved.</li>
+                      <li><strong>Solution</strong>: The core of the solution. It is important to note that the solution presented only includes the most general details, which may need further refinement for a specific context.</li>
+                      <li><strong>Anti-patterns</strong> (optional): Commonly used solutions, which are usually incorrect and/or inferior to the Design Pattern.</li>
+                      <li><strong>Consequences</strong> (optional): Identifying the pros and cons of applying the pattern.</li>
+                      <li><strong>Other useful information</strong> (optional): Code examples, known uses, other related patterns, etc.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Anti-patterns required?">
+                            <question>
+                              <p>When we describe a pattern, we must also specify anti-patterns.</p>
+                              <ul radio-group="2350f" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="2350f" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="2350f" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>False.</p>
+                                <p>Explanation: Anti-patterns are related to patterns, but they are not a ‘must have’ component of a pattern description.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Singleton pattern</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the Singleton design pattern</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Singleton →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-2">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Context</strong></p>
+                    <p>A certain classes should have no more than just one instance (e.g. the main controller class of the system). These single instances are commonly known as <em>singletons</em>.</p>
+                    <p><strong>Problem</strong></p>
+                    <p>A normal class can be instantiated multiple times by invoking the constructor.</p>
+                    <p><strong>Solution</strong></p>
+                    <p>Make the constructor of the singleton class <code>private</code>, <span class="dimmed"> because a <code>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code>public</code> class-level
+                      method to access the <em>single instance</em>.</p>
+                    <tip-box>
+                      <p>Example:</p>
+                      <img src="/website-base/book/designPatterns/singleton/what/images/singleton.png" height="130">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Statements about the Singleton pattern">
+                            <question>
+                              <p>We use the Singleton pattern when</p>
+                              <ul radio-group="d9393" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> a. we want an a class with a private constructor.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> b. we want a single class to hold all functionality of the system.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> c. we want a class with no more than one instance.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> d. we want to hide internal structure of a component from its clients.</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(c)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify where in the project Singleton pattern can be used.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply the Singleton design pattern</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Singleton →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="implementation">Implementation</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Here is the typical implementation of how the Singleton pattern is applied to a class:</p>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{
+        ...
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Logic <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (theOne == <span class="hljs-keyword">null</span>) {
+            theOne = <span class="hljs-keyword">new</span> Logic();
+        }
+        <span class="hljs-keyword">return</span> theOne;
+    }
+}
+</code></pre>
+                    <p>Notes:</p>
+                    <ul>
+                      <li>The constructor is <code>private</code>, which prevents instantiation from outside the class.</li>
+                      <li>The single instance of the singleton class is maintained by a <code>private</code> class-level variable.</li>
+                      <li>Access to this object is provided by a <code>public</code> class-level operation <code>getInstance()</code> which instantiates a single copy of the singleton class when it is executed for the first time. Subsequent calls to this
+                        operation return the single instance of the class.</li>
+                    </ul>
+                    <p>If <code>Logic</code> was not a Singleton class, an object is created like this:</p>
+                    <pre><code class="hljs java">Logic m = <span class="hljs-keyword">new</span> Logic();
+</code></pre>
+                    <p>But now, the <code>Logic</code> object needs to be accessed like this:</p>
+                    <pre><code class="hljs java">Logic m = Logic.getInstance();
+</code></pre>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify where in the project Singleton pattern has been used. Apply singleton pattern somewhere (in a toy example or in a project)</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can decide when to apply Singleton design pattern</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Singleton →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="evaluation">Evaluation</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                      <li>easy to apply</li>
+                      <li>effective in achieving its goal with minimal extra work</li>
+                      <li>provides an easy way to access the singleton object from anywhere in the code base</li>
+                    </ul>
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                      <li>The singleton object acts like a global variable that increases coupling across the code base.</li>
+                      <li>In testing, it is difficult to replace Singleton objects with stubs (static methods cannot be overridden)</li>
+                      <li>In testing, singleton objects carry data from one test to another even when we want each test to be independent of the others.</li>
+                    </ul>
+                    <p>Given there are some significant cons, it is recommended that you apply the Singleton pattern when, in addition to requiring only one instance of a class, there is a risk of creating multiple objects by mistake, and creating such multiple
+                      objects has real negative consequences.</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify places in the project where only a single object of a class is needed but there is no need to apply the Singleton pattern.</p>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Facade pattern</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the Facade design pattern</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Facade Pattern →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-3">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Context</strong></p>
+                    <p>Components need to access functionality deep inside other components.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code>                        component.</p>
+                      <img src="/website-base/book/designPatterns/facade/what/images/textBook.png" height="120">
+                      <p></p>
+                    </tip-box>
+                    <p><strong>Problem</strong></p>
+                    <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
+                    <p><strong>Solution</strong></p>
+                    <p>Include a
+                      <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
+                      <img src="/website-base/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Is this Facade?">
+                            <question>
+                              <p>Does the design below likely to use the Facade pattern?</p>
+                              <img src="/website-base/book/designPatterns/facade/what/images/textStorage.png" height="150">
+                              <p></p>
+                              <ul radio-group="ac766" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="ac766" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="ac766" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>True.</p>
+                                <p>Facade is clearly visible (Storage is the &lt;&lt; Facade &gt;&gt; class).</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Discuss the current/potential applications of the pattern in your project.</p>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Command pattern</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.3g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the Command design pattern</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Patterns → Command Pattern →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-4">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Context</strong></p>
+                    <p>A system is required to execute a number of commands, each doing a different task. For example, a system might have to support <code>Sort</code>, <code>List</code>, <code>Reset</code> commands.</p>
+                    <p><strong>Problem</strong></p>
+                    <p>It is preferable that some part of the code executes these commands without having to know each command type. <span class="dimmed"> e.g., there can be a <code>CommandQueue</code> object that is responsible for queuing commands and executing them without knowledge of what each command does.</span></p>
+                    <p><strong>Solution</strong></p>
+                    <p>The essential element of this pattern is to have a general <code>&lt;&lt; Command &gt;&gt;</code> object that can be passed around, stored, executed, etc without knowing the type of command (i.e. via polymorphism).</p>
+                    <p>Let us examine an example application of the pattern first:</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to
+                        the <code>CommandQueue</code> object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code>                        type. When executed, each <code>Command</code> object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
+                      <img src="/website-base/book/designPatterns/command/what/images/commandCreator.png" height="150">
+                      <p></p>
+                    </tip-box>
+                    <p>The general form of the solution is as follows.</p>
+                    <img src="/website-base/book/designPatterns/command/what/images/clientInvoker.png" height="200">
+                    <p></p>
+                    <p>The <code>&lt;&lt; Client &gt;&gt;</code> creates a <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object, and passes it to the <code>&lt;&lt; Invoker &gt;&gt;</code>. The <code>&lt;&lt; Invoker &gt;&gt;</code> object treats all commands
+                      as a general <code>&lt;&lt; Command &gt;&gt;</code> type. <code>&lt;&lt; Invoker &gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt; ConcreteCommand &gt;&gt;</code>                      will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code> of
+                      the command (
+                      <tooltip content="the object the command will operate on, in case different commands operate on different objects">?</tooltip>) before it is passed to the <code>&lt;&lt; Invoker &gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Discuss the current/potential applications of the pattern in your project.</p>
+            </div>
+          </panel>
+        </panel>
+      </div>
+      <p></p>
+      <p><span class="activity-desc">Implementation</span></p>
+      <div class="indented">
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.4</code> <strong>Can get reuse benefits from frameworks, libraries, and platforms</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <br>
+          <p><span class="dimmed"><strong>Reuse</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain software reuse</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-5">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components
+                      come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the costs and benefits of reuse</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="when">When</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
+                    <ul>
+                      <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
+                      <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
+                      <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
+                      <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
+                      <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get
+                        fixed as fast as you need them to.</li>
+                      <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Using a cool UI framework">
+                            <question has-input="true">
+                              <p>One of your teammates is proposing to use a recently-released “cool” UI framework for your class project. List the pros and cons of this idea.</p>
+                              <div slot="answer">
+                                <p>Pros</p>
+                                <ul>
+                                  <li>The potential to create a much better product by reusing the framework.</li>
+                                  <li>Learning a new framework is good for the future job prospects.</li>
+                                </ul>
+                                <p>Cons</p>
+                                <ul>
+                                  <li>Learning curve may be steep.</li>
+                                  <li>May not be stable (it was recently released).</li>
+                                  <li>May not allow us to do exactly what we want. While frameworks allow customization, such customization can be limited.</li>
+                                  <li>Performance penalties.</li>
+                                  <li>Might interfere with learning objectives of the module.</li>
+                                </ul>
+                                <p>Note that having more cons does not mean we should not use this framework. Further investigation is required before we can make a final decision.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Have reused software. Can explain general costs and benefits of the code you have reused.</p>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Libraries</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain libraries</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-6">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>A library is a collection of modular code that is general and can be used by other programs.</p>
+                    <tip-box>
+                      <tabs>
+                      
+                        <tab header="Java">
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the
+                            default Java distribution.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+                        </tab>
+                      
+                        <tab header="Python">
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python
+                            distribution. Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+                        </tab>
+                      </tabs>
+                      <hr>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify libraries used (or potentially usable) in your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can make use of a library</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="how">How</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>These are the typical steps required to use a library.</p>
+                    <ol>
+                      <li>Read the documentation to confirm that its functionality fits your needs</li>
+                      <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
+                      <li>Download the library and make it accessible to your project. Alternatively, you can configure your
+                        <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
+                      <li>Call the library API from your code where you need to use the library functionality.</li>
+                    </ol>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Have used libraries (or reused code from elsewhere) in your project.</p>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Frameworks</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain frameworks</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-7">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
+                    </tip-box>
+                    <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
+                    </tip-box>
+                    <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
+                    </tip-box>
+                    <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
+                    </tip-box>
+                    <p>Some frameworks cover only a specific components or an aspect.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> More examples of frameworks</p>
+                      <ul>
+                        <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
+                        <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
+                      </ul>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify frameworks used (or potentially usable) in your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can differentiate between frameworks and libraries</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="frameworks-vs-libraries">Frameworks vs Libraries</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
+                    <ul>
+                      <li>
+                        <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
+                          <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
+                      </li>
+                      <li>
+                        <p><strong>Your code calls the library code while the framework code calls your code.</strong>
+                          <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span>                          In the case of libraries, your code calls libraries.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Statement about software frameworks">
+                            <question>
+                              <p>Choose correct statements about software frameworks.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
+                                <p>Explanation: While both libraries and frameworks are reuse mechanisms, and both more concrete than principles and patterns, libraries differ from frameworks in some key ways. One of them is the ‘inversion of control’ used
+                                  by frameworks but not libraries. Furthermore, frameworks do not have to be bigger than libraries all the time.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Which are frameworks?">
+                            <question>
+                              <p>Which one of these are frameworks ?</p>
+                              <ul radio-group="58823" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> a. JUnit</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> b. Eclipse</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> c. Drupal</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> d. Ruby on Rails</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(a)(b)(c)(d)</p>
+                                <p>Explanation: These are frameworks.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain the difference between libraries and frameworks using frameworks and libraries in your project as examples.</p>
+            </div>
+          </panel>
+          <br>
+          <p><span class="dimmed"><strong>Platforms</strong></span></p>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.4g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain platforms</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Reuse → Platforms →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-8">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
+                      of a software platform is the presence of a runtime environment.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
+                        <trigger for="modal:enterprise-application"
+                          trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise
+                        applications. Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+                      <ul>
+                        <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
+                        <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
+                      </ul>
+                    </tip-box>
+                    <modal title="**Enterprise Applications**" id="modal:enterprise-application">
+                      <div>
+                        <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness)
+                          than software meant for individual use.</p>
+                      </div>
+                    </modal>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Identify platforms used (or potentially usable) in your project.</p>
+            </div>
+          </panel>
+        </panel>
+      </div>
+      <p></p>
+      <p><span class="activity-desc">Quality Assurance</span></p>
+      <div class="indented">
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.5</code> <strong>Can explain test case design</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.5a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for deliberate test case design</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-9">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite
+                      number of test cases.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the test cases for adding a string object to a
+                        <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
+                      <ul>
+                        <li>Add an item to an empty collection.</li>
+                        <li>Add an item when there is one item in the collection.</li>
+                        <li>Add an item when there are 2, 3, .... n items in the collection.</li>
+                        <li>Add an item that has an English, a French, a Spanish, ... word.</li>
+                        <li>Add an item that is the same as an existing item.</li>
+                        <li>Add an item immediately after adding another item.</li>
+                        <li>Add an item immediately after system startup.</li>
+                        <li>...</li>
+                      </ul>
+                      <p>Exhaustive testing of this operation can take many more test cases.</p>
+                    </tip-box>
+                    <blockquote>
+                      <p>Program testing can be used to show the presence of bugs, but never to show their absence!<br>
+                        <sub>--Edsger Dijkstra</sub></p>
+                    </blockquote>
+                    <div id="e-and-e">
+                      <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                        In particular:</p>
+                      <ul>
+                        <li>
+                          <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
+                        </li>
+                        <li>
+                          <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
+                        </li>
+                      </ul>
+                      <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case
+                        design techniques that can help us improve E&amp;E of testing.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Test cases for `TriangleDetector`">
+                            <question has-input="true">
+                              <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test
+                                this software. Two sample test cases are given below.</p>
+                              <pre class="hljs"><code>C:\&gt; java TriangleDetector
+Enter side 1: 34
+Enter side 2: 34
+Enter side 3: 32
+Can this be a triangle?:  Yes
+Enter side 1:
+</code></pre>
+                              <p>Sample test cases,</p>
+                              <pre class="hljs"><code>34,34,34: Yes
+0, any valid, any valid: No
+</code></pre>
+                              <div slot="answer">
+                                <p>In addition to obvious test cases such as</p>
+                                <ul>
+                                  <li>sum of two sides == third,</li>
+                                  <li>sum of two sides &lt; third ...</li>
+                                </ul>
+                                <p>We may also devise some interesting test cases such as the ones depicted below.</p>
+                                <p>Note that their applicability depends on the context in which the software is operating.</p>
+                                <ul>
+                                  <li>Non-integer number, negative numbers, <code>0</code>, numbers formatted differently (e.g. <code>13F</code>), very large numbers (e.g. <code>MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
+                                  <li>Check many triangles one after the other (will the system run out of memory?)</li>
+                                  <li><kbd>Backspace</kbd>, <kbd>tab</kbd>, <kbd>CTRL+C</kbd> , …</li>
+                                  <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid
+                                    inputs (the system may perform error handling differently for the very first test case), …</li>
+                                  <li>Test on different locale.</li>
+                                </ul>
+                                <p>The main point to note is how difficult it is to test exhaustively, even on a trivial system.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Exhaustive testing in Minesweeper">
+                            <question has-input="true">
+                              <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
+                              <div slot="answer">
+                                <p>Consider this sequence of test cases:</p>
+                                <ul>
+                                  <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
+                                  <li>Test case 2. Start Minesweeper. Activate <code>newGame()</code>. Activate <code>newGame()</code> again and see if it works.</li>
+                                  <li>Test case 3. Start Minesweeper. Activate <code>newGame()</code> three times consecutively and see if it works.</li>
+                                  <li>…</li>
+                                  <li>Test case 267. Start Minesweeper. Activate <code>newGame()</code> 267 times consecutively and see if it works.</li>
+                                </ul>
+                                <p>Well, you get the idea. Exhaustive testing of <code>newGame()</code> is not practical.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Statements about E&E of testing">
+                            <question>
+                              <p>Improving efficiency and effectiveness of test case design can,</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. improve the quality of the SUT.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. save money.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. save time spent on test execution.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. save effort on writing and maintaining tests.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(a)(b)(c)(d)(e)(f)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain why testing needs to be E&amp;E, using examples from your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.5b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain exploratory testing and scripted testing</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-10">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
+                    <ol>
+                      <li>
+                        <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
+                      </li>
+                      <li>
+                        <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
+                      </li>
+                    </ol>
+                    <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
+                      <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                      because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
+                      operations where more faults are found.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
+                      <blockquote>
+                        <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if
+                          feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                      </blockquote>
+                    </tip-box>
+                    <tip-box>
+                      <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
+                    </tip-box>
+                    <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
+                      <div>
+                        <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
+                          thought leader in software testing).</p>
+                      </div>
+                    </modal>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: statements about exploratory and scripted testing">
+                            <question>
+                              <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                              <ul radio-group="db31a" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>A) False</p>
+                                <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Which testing technique is better?">
+                            <question>
+                              <p>Which testing technique is better?</p>
+                              <ul radio-group="9fd35" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(e)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
+                            <question has-input="true">
+                              <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
+                              <div slot="answer">
+                                <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain exploratory and scripted testing in the context of your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.5c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the choice between exploratory testing and scripted testing</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="when-2">When</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Which approach is better – <strong>scripted or exploratory? A mix is better.</strong></p>
+                    <p><strong>The success of exploratory testing depends on the tester’s prior experience and intuition.</strong> Exploratory testing should be done by experienced testers, using a clear strategy/plan/framework. Ad-hoc exploratory testing
+                      by unskilled or inexperienced testers without a clear strategy is not recommended for real-world non-trivial systems. While <strong>exploratory testing may allow us to detect some problems in a relatively short time, it is not prudent to use exploratory testing as the sole means of testing a critical system</strong>.</p>
+                    <p><strong>Scripted testing is more systematic, and hence, likely to discover more bugs given sufficient time</strong>, while exploratory testing would aid in quick error discovery, especially if the tester has a lot of experience in
+                      testing similar systems.</p>
+                    <blockquote>
+                      <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most
+                        situations benefit from a mix of scripted and exploratory approaches. --
+                        <trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
+                      </p>
+                    </blockquote>
+                    <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
+                      <div>
+                        <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
+                          thought leader in software testing).</p>
+                      </div>
+                    </modal>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Which is better?">
+                            <question>
+                              <p>Scripted testing is better than exploratory testing.</p>
+                              <ul radio-group="7d3ff" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>B) False</p>
+                                <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.5d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain positive and negative test cases</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="positive-vs-negative-test-cases">Positive vs Negative Test Cases</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
+                      <ul>
+                        <li>A positive test case: <code>i == new Integer(50)</code></li>
+                        <li>A negative test case: <code>i == null;</code></li>
+                      </ul>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Give examples of positive and negative test cases from your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.5e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain black box and glass box test case design</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="black-box-vs-glass-box">Black Box vs Glass Box</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
+                    <ul>
+                      <li>
+                        <p><strong><em>Black-box</em> (aka <em>specification-based or responsibility-based</em>) approach</strong>: test cases are designed exclusively based on the SUT’s specified external behavior.</p>
+                      </li>
+                      <li>
+                        <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
+                      </li>
+                      <li>
+                        <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter
+                          than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
+                      </li>
+                    </ul>
+                    <panel type="seamless" header=":tv: %%Black-box and white-box testing%%">
+                      <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
+                      <tabs>
+                      
+                        <tab header=":tv: Black-box vs White-box testing">
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      
+                        <tab header=":tv: Black-box testing example">
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      
+                        <tab header=":tv: White-box testing example">
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      </tabs>
+                    </panel>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain black/white/grey box testing using examples from your project.</p>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.5f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test case design for use case based testing</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="testing-based-on-use-cases">Testing Based on Use Cases</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use
+                      cases do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions
+                      and boundary values. The combinations of these could result in one use case producing many test cases.</p>
+                    <p>To increase
+                      <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
+                      <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
+                    <modal large="" title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE">
+                    
+                      <div>
+                        <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                          In particular:</p>
+                        <ul>
+                          <li>
+                            <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
+                          </li>
+                          <li>
+                            <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
+                          </li>
+                        </ul>
+                        <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case
+                          design techniques that can help us improve E&amp;E of testing.</p>
+                      </div>
+                    </modal>
+                    <modal large="" title="Textbook »" id="modal:usecaseBased-scripted">
+                    
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="what-11">What</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
+                              <ol>
+                                <li>
+                                  <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
+                                </li>
+                                <li>
+                                  <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
+                                </li>
+                              </ol>
+                              <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
+                                <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is
+                                called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems.
+                                One tends to conduct more tests for those operations where more faults are found.</p>
+                              <tip-box>
+                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
+                                <blockquote>
+                                  <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product
+                                    if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                                </blockquote>
+                              </tip-box>
+                              <tip-box>
+                                <p>💡 <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
+                              </tip-box>
+                              <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
+                                <div>
+                                  <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an
+                                    industry thought leader in software testing).</p>
+                                </div>
+                              </modal>
+                            </div>
+                            <div>
+                              <div>
+                                <panel header=":muscle: Exercises" expandable="">
+                                  <div>
+                                    <panel header=":lock::key: statements about exploratory and scripted testing">
+                                      <question>
+                                        <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                                        <ul radio-group="db31a" class="radio-list">
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <p>A) False</p>
+                                          <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                  <div>
+                                    <panel header=":lock::key: Which testing technique is better?">
+                                      <question>
+                                        <p>Which testing technique is better?</p>
+                                        <ul radio-group="9fd35" class="radio-list">
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
+                                          <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                                        </ul>
+                                        <div slot="answer">
+                                          <p>(e)</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                  <div>
+                                    <panel header=":lock::key: Explain the concept of exploratory testing using Minesweeper as an example.">
+                                      <question has-input="true">
+                                        <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
+                                        <div slot="answer">
+                                          <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
+                                        </div>
+                                      </question>
+                                    </panel>
+                                  </div>
+                                </panel>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </modal>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain use case based test case design using examples from your project.</p>
+            </div>
+          </panel>
+        </panel>
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.6</code> <strong>Can use EP for test case design</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.6a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain equivalence partitions</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Equivalence Partitions →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-12">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Consider the testing of the following operation.</p>
+                    <tip-box>
+                      <div id="isValidMonth">
+                        <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                      </div>
+                    </tip-box>
+                    <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed
+                      to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+                    <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
+                      <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
+                      </div>
+                    </tip-box>
+                    <p><strong>By dividing possible inputs into equivalence partitions we can,</strong></p>
+                    <ul>
+                      <li><strong>avoid testing too many inputs from one partition.</strong> Testing too many inputs from the same partition is unlikely to find new bugs. This increases the efficiency of testing by reducing redundant test cases.</li>
+                      <li><strong>ensure all partitions are tested.</strong> Missing partitions can result in bugs going unnoticed. This increases the effectiveness of testing by increasing the chance of finding bugs.</li>
+                    </ul>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.6b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply EP for pure functions</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Equivalence Partitions →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="basic">Basic</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> These could be EPs for the
+                        <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
+                      <ul>
+                        <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code></li>
+                        <li>[1 … 12] : the range that produces <code>true</code></li>
+                        <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code></li>
+                      </ul>
+                    </tip-box>
+                    <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
+                    
+                      <div slot="content">
+                        <div>
+                          <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                        </div>
+                      </div>
+                    </popover>
+                    <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
+                      <p>Example EPs for <code>s</code>:</p>
+                      <ul>
+                        <li>zero-length strings</li>
+                        <li>string containing whitespaces</li>
+                        <li>...</li>
+                      </ul>
+                      <p>Example EPs for <code>n</code>:</p>
+                      <ul>
+                        <li><code>0</code></li>
+                        <li>negative values</li>
+                        <li>...</li>
+                      </ul>
+                    </tip-box>
+                    <p>An EP may not have adjacent values.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method <code>isPrime(int i): boolean</code> that returns true if <code>i</code> is a prime number.</p>
+                      <p>EPs for <code>i</code>:</p>
+                      <ul>
+                        <li>prime numbers</li>
+                        <li>non-prime numbers</li>
+                      </ul>
+                    </tip-box>
+                    <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code>                        is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+                    </tip-box>
+                    <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’
+                      the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
+                      <ul>
+                        <li>[1 … 12] : the range that produces <code>true</code></li>
+                        <li>[all other integers] : the range that produces <code>false</code></li>
+                      </ul>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some more examples:</p>
+                      <table class="table">
+                        <tr>
+                          <th>Specification</th>
+                          <th>Equivalence partitions</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><code>isValidFlag(String s): boolean</code><br> Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
+                          </td>
+                          <td>
+                            <p>[<code>&quot;F&quot;</code>] [<code>&quot;T&quot;</code>] [<code>&quot;D&quot;</code>] [<code>&quot;f&quot;</code>, <code>&quot;t&quot;</code>, <code>&quot;d&quot;</code>] [any other string][null]</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><code>squareRoot(String s): int</code><br> Pre-conditions: s represents a positive integer<br> Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
+                          </td>
+                          <td>
+                            <p>[<code>s</code> is not a valid number] [<code>s</code> is a negative integer] [<code>s</code> has an integer square root] [<code>s</code> does not have an integer square root]</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: EPs for `isValidName` method">
+                            <question>
+                              <p>Consider this SUT:</p>
+                              <tip-box>
+                                <p><code>isValidName (String s): boolean</code></p>
+                                <p>Description: returns true if <code>s</code> is not <code>null</code> and not longer than 50 characters.</p>
+                              </tip-box>
+                              <p>A. Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?</p>
+                              <ul radio-group="4c6ed" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> a. null.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> b. strings having more than 50 characters.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> c. strings having 50 or fewer characters.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="4c6ed" type="radio"> d. strings consisting of numbers instead of letters.</label></li>
+                              </ul>
+                              <p>B. If you had to choose 3 test cases from the 4 given below, which one will you leave out based on the EP technique?</p>
+                              <ul radio-group="f35e9" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> a. A string that is 50 characters long</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> b. A string that is 51 characters long</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> c. A string that is 40 characters long</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> d. null</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>A. (d)</p>
+                                <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
+                                <p>B. (a) or (c)</p>
+                                <p>Explanation: both belong to the same EP</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.6c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply EP for OOP methods</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Equivalence Partitions →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="intermediate">Intermediate</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
+                    <ul>
+                      <li>the target object of the method call</li>
+                      <li>input parameters of the method call</li>
+                      <li>other data/objects accessed by the method such as global variables. This category may not be applicable if using the black box approach (because the test case designer using the black box approach will not know how the method is
+                        implemented)</li>
+                    </ul>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider this method in the <code>DataStack</code> class:
+                        <code>push(Object o): boolean</code></p>
+                      <ul>
+                        <li>Adds o to the top of the stack if the stack is not full.</li>
+                        <li>returns <code>true</code> if the push operation was a success.</li>
+                        <li>throws
+                          <ul>
+                            <li><code>MutabilityException</code> if the global flag <code>FREEZE==true</code>.</li>
+                            <li><code>InvalidValueException</code> if o is null.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>EPs:</p>
+                      <ul>
+                        <li><code>DataStack</code> object: [full] [not full]</li>
+                        <li><code>o</code>: [null] [not null]</li>
+                        <li><code>FREEZE</code>: [true][false]</li>
+                      </ul>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
+                      <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
+                      <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another
+                        participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
+                      <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave
+                        differently based on the game state. Therefore, the equivalence partitions are:</p>
+                      <ul>
+                        <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
+                        <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
+                        <li><code>IN_PLAY</code> : the current minefield is already in use</li>
+                        <li><code>WON</code>, <code>LOST</code> : let us assume the <code>newGame</code> behaves the same way for these two values</li>
+                      </ul>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in
+                        <strong>bold</strong> represent valid inputs.</p>
+                      <ul>
+                        <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
+                        <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(we assume a minefield size of WxH)</span></li>
+                        <li><code>y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
+                        <li><code>Cell</code> at <code>(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
+                      </ul>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain equivalence partitioning using examples from the project.</p>
+            </div>
+          </panel>
+        </panel>
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.7</code> <strong>Can use Boundary Value Analysis for test case design</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.7a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain boundary value analysis</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Boundary Value Analysis →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-13">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising,
+                      as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence
+                        partitions.</p>
+                    </tip-box>
+                    <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
+                    <p>Boundary values are sometimes called <em>corner cases</em>.</p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: What BVA recommends">
+                            <question>
+                              <p>Boundary value analysis recommends testing <em>only</em> values that reside on the equivalence class boundary.</p>
+                              <ul radio-group="f8ff4" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>False</p>
+                                <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="danger" expanded="" no-close="">
+            <span slot="header" class="panel-title"><span><code>W10.7b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can apply boundary value analysis</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Boundary Value Analysis →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="how-2">How</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors,
+                      such as the cost of each test case.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples:</p>
+                      <table class="table">
+                        <tr>
+                          <th>Equivalence partition</th>
+                          <th>Some possible boundary values</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>[1-12]</p>
+                          </td>
+                          <td>
+                            <p>0,1,2, 11,12,13</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>[MIN_INT, 0]<br>
+                              <span class="dimmed">(MIN_INT is the minimum possible integer value allowed by the environment)</span></p>
+                          </td>
+                          <td>
+                            <p>MIN_INT, MIN_INT+1, -1, 0 , 1</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>[any non-null String]</p>
+                          </td>
+                          <td>
+                            <p>Empty String, a String of maximum possible length</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>[prime numbers]<br> [“F”]
+                              <br> [“A”, “D”, “X”]</p>
+                          </td>
+                          <td>
+                            <p>No specific boundary<br> No specific boundary<br> No specific boundary</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>[non-empty Stack]<br>
+                              <span class="dimmed">(we assume a fixed size stack)</span></p>
+                          </td>
+                          <td>
+                            <p>Stack with: one element, two elements, no empty spaces, only one empty space</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </panel>
+        <panel no-close="">
+          <span slot="header" class="panel-title"><span><code>W10.8</code> <strong>Can release a product to end users</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <p>null</p>
+          </div>
+        </panel>
+      </div>
+      <p></p>
     </div>
   </div>
 </panel>

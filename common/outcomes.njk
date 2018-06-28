@@ -52,13 +52,25 @@
 {{ op(entries.slice(start, end), params) }}
 {% endmacro %}
 
-{% macro show_evidence(chapter, unit_location) %}
+
+{% macro show_evidence(evidence_location_full) %}
 {{ dashed_line | safe}}
 
 {{evidence}}
 
-<include src="../evidence/{{ chapter }}.md#{{ unit_location | replace("/", "_")}}" />
+<include src="{{ evidence_location_full }}" />
 
+{% endmacro %}
+
+{% macro show_default_evidence(chapter, unit_location) %}
+{% set evidence_location_full =  "../evidence/" + chapter + ".md#" + (unit_location | replace("/", "_")) %}
+{{ show_evidence(evidence_location_full)}}
+{% endmacro %}
+
+
+{% macro show_specific_evidence(evidence_location) %}
+{% set evidence_location_full =  "../evidence/" + evidence_location %}
+{{ show_evidence(evidence_location_full)}}
 {% endmacro %}
 
 
@@ -75,8 +87,12 @@
 <panel type="{{ show_priority_style(priority) }}" expanded no-close >
 <span slot="header" class="panel-title"><md>`{{ id_prefix }}` <include src="../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
   <include src="../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
-  {% if not unit.omit_evidence %}
-  {{ show_evidence(chapter, path) }}
+  {% if unit.omit_evidence %}
+    {# no need to show evidence #}
+  {% elseif unit.evidence %}
+{{ show_specific_evidence(unit.evidence) }}
+  {% else %}
+{{ show_default_evidence(chapter, path) }}
   {% endif %}
 </panel>
 {% endmacro %}
@@ -511,7 +527,201 @@
       {subheading: "Alpha/Beta Testing"},
         {location: ["testing", "testingTypes", "alphaBetaTesting", "what"]},
   {name: "Other"},
-    {heading: "Can do global-impact changes to an existing software", priority: "2", file: "project.md#global_impact_change"}
+    {heading: "Can do global-impact changes to an existing software", priority: "2", file: "project.md#global_impact_change"},
+{week: "9"},
+  {name: "Design"},
+    {heading: "Can use models to conceptualize an OO solution"},
+      {location: ["modeling", "modelingASolution", "introduction"], omit_evidence: true},
+      {location: ["modeling", "modelingASolution", "basic"]},
+      {location: ["modeling", "modelingASolution", "intermediate"]},
+      {location: ["modeling", "modelingStructures", "classDiagramsAdvanced"]},
+    {heading: "Can use intermediate-level design principles"},
+      {subheading: "How Polymorphism Works"},
+        {location: ["oopDesign", "inheritance", "substitutability"], omit_evidence: true},
+        {location: ["oopDesign", "inheritance", "dynamicAndStaticBinding"], omit_evidence: true},
+        {location: ["oopDesign", "polymorphism", "mechanism"]},
+      {subheading: "Design Approaches"},
+        {location: ["designApproaches", "topDownBottomUp", "what"], omit_evidence: true},
+        {location: ["designApproaches", "agileDesign", "what"], omit_evidence: true},
+      {subheading: "More Design Principles"},
+        {location: ["principles", "liskovSubstitutionPrinciple"]},
+        {location: ["principles", "interfaceSegregationPrinciple"], omit_evidence: true},
+        {location: ["principles", "dependencyInversionPrinciple"], omit_evidence: true},
+  {name: "Implementation"},
+    {heading: "Can use defensive programming"},
+      {location: ["errorHandling", "defensiveProgramming", "what"], omit_evidence: true},
+      {location: ["errorHandling", "defensiveProgramming", "compulsoryAssociations"], omit_evidence: true},
+      {location: ["errorHandling", "defensiveProgramming", "1to1Associations"], omit_evidence: true},
+      {location: ["errorHandling", "defensiveProgramming", "referentialIntegrity"], omit_evidence: true},
+      {location: ["errorHandling", "defensiveProgramming", "when"], omit_evidence: true},
+      {location: ["errorHandling", "designByContract", "what"], omit_evidence: true},
+  {name: "Quality Assurance"},
+    {heading: "Can use intermediate-level testing techniques"},
+      {location: ["testing", "introduction", "testability"], omit_evidence: true},
+      {location: ["testing", "testCoverage", "what"]},
+      {location: ["testing", "testCoverage", "how"]},
+      {location: ["junit", "intermediate"]},
+      {location: ["testing", "tdd", "what"], omit_evidence: true},
+    {heading: "Can explain some QA techniques complementary to testing"},
+      {location: ["qualityAssurance", "introduction", "what"], omit_evidence: true},
+      {location: ["qualityAssurance", "introduction", "validationVsVerification"]},
+      {location: ["qualityAssurance", "codeReviews", "what"]},
+      {location: ["qualityAssurance", "staticAnalysis", "what"]},
+      {location: ["qualityAssurance", "formalVerification", "what"], omit_evidence: true},
+  {name: "Documentation"},
+    {heading: "Can apply best practices when writing developer documents"},
+      {subheading: "Type of Developer Docs"},
+        {location: ["documentation", "introduction", "what"]},
+      {subheading: "Guideline: Aim for Comprehensibility"},
+        {location: ["documentation", "guidelines", "aimForComprehensibility", "what"], omit_evidence: true},
+        {location: ["documentation", "guidelines", "aimForComprehensibility", "how"]},
+      {subheading: "Guideline: Describe Top-Down"},
+        {location: ["documentation", "guidelines", "goTopDown", "what"], omit_evidence: true},
+        {location: ["documentation", "guidelines", "goTopDown", "why"]},
+        {location: ["documentation", "guidelines", "goTopDown", "how"]},
+      {subheading: "Guideline: Minimal but Sufficient"},
+        {location: ["documentation", "guidelines", "documentMinimally", "what"], omit_evidence: true},
+        {location: ["documentation", "guidelines", "documentMinimally", "how"], omit_evidence: true},
+      {subheading: "Drawing Architecture Diagrams"},
+        {location: ["architecture", "architectureDiagrams", "drawing"], omit_evidence: true},
+    {heading: "Can use some common documentation tools"},
+      {subheading: "Javadoc"},
+        {location: ["documentation", "tools", "javaDoc", "what"], omit_evidence: true},
+        {location: ["documentation", "tools", "javaDoc", "how"], omit_evidence: true},
+      {subheading: "Markdown"},
+        {location: ["documentation", "tools", "markdown", "what"], omit_evidence: true},
+        {location: ["documentation", "tools", "markdown", "how"], omit_evidence: true},
+      {subheading: "AsciiDoc"},
+        {location: ["documentation", "tools", "asciiDoc", "what"], omit_evidence: true},
+    {heading: "Can describe the implementation from a developer's perspective", priority: "1", file:"project.md#dev_guide"},
+  {name: "Project Management"},
+    {heading: "Can use basic scheduling and tracking tools"},
+      {location: ["projectPlanning", "milestones"]},
+      {location: ["projectPlanning", "buffers"]},
+      {location: ["projectPlanning", "issueTrackers"]},
+      {location: ["projectPlanning", "workBreakdownStructure"]},
+      {location: ["projectPlanning", "ganttCharts"], omit_evidence: true},
+      {location: ["projectPlanning", "pertCharts"], omit_evidence: true},
+      {location: ["teamwork", "teamStructures"]},
+    {heading: "Can use milestones to schedule/track project progress", priority: "1", file: "project.md#track_progress"},
+{week: "10"},
+  {name: "SE"},
+    {heading: "Can explain SE principles"},
+      {location: ["principles", "lawOfDemeter"]},
+      {location: ["principles", "solidPrinciples"], omit_evidence: true},
+      {location: ["principles", "yagniPrinciple"], omit_evidence: true},
+      {location: ["principles", "dryPrinciple"], omit_evidence: true},
+      {location: ["principles", "brooksLaw"], omit_evidence: true},
+  {name: "Requirements"},
+    {heading: "Can use activity diagrams"},
+      {subheading: "Basic notations"},
+        {location: ["modeling", "modelingBehaviors", "activityDiagrams"]},
+      {subheading: "Intermediate notations"},
+        {location: ["uml", "activityDiagrams", "basicNotations", "rakes"], omit_evidence: true},
+        {location: ["uml", "activityDiagrams", "basicNotations", "swimlanes"], omit_evidence: true},
+  {name: "Design"},
+    {heading: "Can use some basic design patterns"},
+      {subheading: "Introduction"},
+        {location: ["designPatterns", "introduction", "what"], omit_evidence: true},
+        {location: ["designPatterns", "introduction", "format"], omit_evidence: true},
+      {subheading: "Singleton pattern"},
+        {location: ["designPatterns", "singleton", "what"]},
+        {location: ["designPatterns", "singleton", "implementation"]},
+        {location: ["designPatterns", "singleton", "evaluation"]},
+      {subheading: "Facade pattern"},
+        {location: ["designPatterns", "facade", "what"]},
+      {subheading: "Command pattern"},
+        {location: ["designPatterns", "command", "what"]},
+  {name: "Implementation"},
+    {heading: "Can get reuse benefits from frameworks, libraries, and platforms"},
+      {subheading: "Reuse"},
+        {location: ["reuse", "introduction", "what"], omit_evidence: true},
+        {location: ["reuse", "introduction", "when"]},
+      {subheading: "Libraries"},
+        {location: ["reuse", "libraries", "what"]},
+        {location: ["reuse", "libraries", "how"]},
+      {subheading: "Frameworks"},
+        {location: ["reuse", "frameworks", "what"]},
+        {location: ["reuse", "frameworks", "frameworksVsLibraries"]},
+      {subheading: "Platforms"},
+        {location: ["reuse", "platforms", "what"]},
+  {name: "Quality Assurance"},
+    {heading: "Can explain test case design"},
+      {location: ["testCaseDesign", "introduction", "what"]},
+      {location: ["testing", "testingTypes", "exploratoryVsScriptedTesting", "what"]},
+      {location: ["testing", "testingTypes", "exploratoryVsScriptedTesting", "when"], omit_evidence: true},
+      {location: ["testCaseDesign", "introduction", "positiveVsNegative"]},
+      {location: ["testCaseDesign", "introduction", "blackVsGlass"]},
+      {location: ["testCaseDesign", "more", "testingUseCases"]},
+    {heading: "Can use EP for test case design"},
+      {location: ["testCaseDesign", "equivalencePartitions", "what"], omit_evidence: true},
+      {location: ["testCaseDesign", "equivalencePartitions", "basic"], omit_evidence: true},
+      {location: ["testCaseDesign", "equivalencePartitions", "intermediate"]},
+    {heading: "Can use Boundary Value Analysis for test case design"},
+      {location: ["testCaseDesign", "boundaryValueAnalysis", "what"], omit_evidence: true},
+      {location: ["testCaseDesign", "boundaryValueAnalysis", "how"], omit_evidence: true},
+    {heading: "Can release a product to end users", priority: "1", file: "project.md#release_product"},
+{week: "11"},
+  {name: "Requirements"},
+    {heading: "Can explain object oriented domain models"},
+      {location: ["modeling", "modelingStructures", "objectOrientedDomainModels"], omit_evidence: true},
+  {name: "Design"},
+    {heading: "Can apply some more design patterns"},
+      {location: ["designPatterns", "modelViewController", "what"]},
+      {location: ["designPatterns", "observer", "what"]},
+      {location: ["designPatterns", "abstractionOccurrence", "what"]},
+      {location: ["designPatterns", "more", "otherDesignPatterns"]},
+    {heading: "Can optimize the use of design patterns"},
+      {location: ["designPatterns", "more", "combiningDesignPatterns"]},
+      {location: ["designPatterns", "more", "usingDesignPatterns"]},
+      {location: ["designPatterns", "more", "vsPrinciples"], omit_evidence: true},
+      {location: ["designPatterns", "more", "otherTypesOfPatterns"]},
+  {name: "Quality Assurance"},
+    {heading: "Can apply heuristics to combine multiple test inputs"},
+      {location: ["testCaseDesign", "combiningTestInputs", "why"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "combinationStrategies"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "heuristicValid"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "heuristicInvalid"], omit_evidence: true},
+      {location: ["testCaseDesign", "combiningTestInputs", "mix"]},
+    {heading: "Can explain test case design techniques at a higher level"},
+      {location: ["testCaseDesign", "summary", "recap"], omit_evidence: true},
+    {heading: "Can do acceptance testing", priority: "1", file: "project.md#acceptance_testing"},
+  {name: "Project Management"},
+    {heading: "Can explain types of SDLC process models"},
+      {location: ["processModels", "introduction", "what"], omit_evidence: true},
+      {location: ["processModels", "introduction", "sequentialModels"]},
+      {location: ["processModels", "introduction", "iterativeModels"]},
+      {location: ["processModels", "introduction", "agileModels"]},
+    {heading: "Can explain some popular SDLC process models"},
+      {location: ["processModels", "exampleProcessModels", "scrum"], evidence: "project.md#relate_process"},
+      {location: ["processModels", "exampleProcessModels", "xp"], evidence: "project.md#relate_process"},
+      {location: ["processModels", "exampleProcessModels", "unifiedProcess"], evidence: "project.md#relate_process"},
+      {location: ["processModels", "more", "cmmi"], omit_evidence: true},
+      {location: ["processModels", "summary", "recap"], omit_evidence: true},
+{week: "12"},
+  {name: "Design"},
+    {heading: "Can explain some UML models"},
+      {location: ["modeling", "modelingStructures", "deploymentDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingStructures", "componentDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingStructures", "packageDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingStructures", "compositeStructureDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingBehaviors", "timingDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingBehaviors", "interactionOverviewDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingBehaviors", "communicationDiagrams"], omit_evidence: true},
+      {location: ["modeling", "modelingBehaviors", "stateMachineDiagrams"], omit_evidence: true},
+  {name: "Implementation"},
+    {heading: "Can explain cloud computing basics"},
+      {location: ["reuse", "cloudComputing", "what"], omit_evidence: true},
+      {location: ["reuse", "cloudComputing", "services"], omit_evidence: true},
+    {heading: "Can describe contributions to a project", priority: "1", file: "project.md#describe_contribution"},
+{week: "13"},
+  {name: "Communication"},
+    {heading: "Can demo a product", priority: "1", file: "project.md#demo"},
+  {name: "Implementation"},
+    {heading: "Can work in an existing code base of small/medium size", priority: "2", file: "project.md#brownfield"},
+  {name: "Project Management"},
+    {heading: "Can deliver a product iteratively", priority: "3", file: "project.md#iterative_delivery"},
+    {heading: "Can evaluate contributions from project members", priority: "3", file: "project.md#evaluate_peers"}
 ]%}
 
 
