@@ -96,3 +96,39 @@ Covered by the 'Project Portfolio Page' component of v1.5rc:
 <include src="../../admin/project-v15rc.md" name="%%Admin » Project → v1.5rc%%" dynamic />
 
 </div>
+
+
+<div id="demo">
+
+Covered by the 'Demo' component of v1.5:
+
+<include src="../../admin/project-v15.md" name="%%Admin » Project → v1.5%%" dynamic />
+
+</div>
+
+
+<div id="iterative_delivery">
+
+Covered by v1.0-v1.5:
+
+</div>
+
+
+<div id="brownfield">
+
+Covered by v1.0-v1.5:
+
+</div>
+
+
+<div id="evaluate_peers">
+
+Covered by the 'Peer Evaluations' component of the module:
+
+<include src="../../admin/peer-evaluations.md" name="%%Admin » Peer Evaluations%%" dynamic />
+
+Also covered by the 'Practical Exam' of v1.5:
+
+<include src="../../admin/project-v15.md" name="%%Admin » Project → v1.5%%" dynamic />
+
+</div>
