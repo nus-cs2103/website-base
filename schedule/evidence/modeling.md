@@ -34,3 +34,24 @@ Able to explain the class diagram of the [[AddressBook-Level2]({{module_org}}/ad
 2. Add more sequence diagrams to project documentation (to be done in future weeks)
 
 </div>
+
+
+<div id="modelingASolution_basic">
+
+Use models to design/document future features of your project.
+
+</div>
+
+
+<div id="modelingASolution_intermediate">
+
+Use models to design/document future features of your project.
+
+</div>
+
+
+<div id="modelingStructures_classDiagramsAdvanced">
+
+Use these notations in your project.
+
+</div>

@@ -10,3 +10,10 @@ Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Develo
 Explain architectural styles currently used in AddressBook-Level4. Speculate under what circumstances other architectural styles can be used in it %%&nbsp;e.g. what kind of additional features can make a certain style applicable%%
 
 </div>
+
+
+<div id="architectureDiagrams_drawing">
+
+Follow the guidelines when documenting the project.
+
+</div>

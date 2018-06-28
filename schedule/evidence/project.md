@@ -43,3 +43,21 @@ Covered by the 'Product' component of v1.1:
 <dynamic-panel src="../../admin/project-v11.md" header="%%Admin » Project → v1.1%%" no-close />
 
 </div>
+
+
+<div id="dev_guide">
+
+Covered by 'Documentation' component of v1.2:
+
+<include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
+
+</div>
+
+
+<div id="track_progress">
+
+Covered by the 'Project Management' component of v1.2:
+
+<include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
+
+</div>

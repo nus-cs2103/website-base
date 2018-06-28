@@ -88,3 +88,17 @@ Explain the difference between system tests and acceptance tests. Explain why bo
 Explain alpha and beta testing. How can you do alpha and beta testing in your project?
 
 </div>
+
+
+<div id="testCoverage_what">
+
+Explain what is test coverage and how it can be useful.
+
+</div>
+
+
+<div id="testCoverage_how">
+
+Measure test coverage in your project.
+
+</div>

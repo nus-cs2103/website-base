@@ -24,3 +24,10 @@
 Give more examples of association classes, preferably related to your project.
 
 </div>
+
+
+<div id="polymorphism_mechanism">
+
+Explain how substitutability operation overriding, and dynamic binding relates to polymorphism by taking a real example from the project.
+
+</div>

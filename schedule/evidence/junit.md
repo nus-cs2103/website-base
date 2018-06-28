@@ -7,3 +7,10 @@
 <include src="submission-PR.md" />
 
 </div>
+
+
+<div id="intermediate">
+
+Use the mentioned features in the project.
+
+</div>
