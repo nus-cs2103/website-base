@@ -102,3 +102,10 @@ Explain what is test coverage and how it can be useful.
 Measure test coverage in your project.
 
 </div>
+
+
+<div id="testingTypes_exploratoryVsScriptedTesting_what">
+
+Explain exploratory and scripted testing in the context of your project.
+
+</div>

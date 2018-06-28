@@ -61,3 +61,12 @@ Covered by the 'Project Management' component of v1.2:
 <include src="../../admin/project-v12.md" name="%%Admin » Project → v1.2%%" dynamic />
 
 </div>
+
+
+<div id="release_produt">
+
+Covered by v1.3:
+
+<include src="../../admin/project-v13.md" name="%%Admin » Project → v1.3%%" dynamic no-close/>
+
+</div>

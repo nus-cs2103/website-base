@@ -55,3 +55,10 @@ Use models to design/document future features of your project.
 Use these notations in your project.
 
 </div>
+
+
+<div id="modelingBehaviors_activityDiagrams">
+
+Use activity diagram to model workflows in the project.
+
+</div>
