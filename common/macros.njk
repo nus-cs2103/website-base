@@ -1,7 +1,7 @@
 {% import "se-book-adapted/config.njk" as config with context %}
 
 {% macro show_priority_style_untrimmed(level) %}
-{% set label_style = {"1": "danger", "2": "warning", "3": "info", "4": "success"} %}
+{% set label_style = {"0": "default", "0:1": "default", "0:2": "default", "0:3": "default", "0:4": "default", "1": "danger", "2": "warning", "3": "info", "4": "success"} %}
 {{ label_style[level] }}
 {% endmacro %}
 
@@ -9,7 +9,17 @@
 {% macro show_priority_style(level) %}{{ show_priority_style_untrimmed(level) | trim }}{% endmacro %}
 
 {% macro show_stars_untrimmed(level) %}
-{% if level == "1" %}
+{% if level == "0" %}
+  {{ prereq_no_stars }}
+{% elseif level == "0:1" %}
+  {{ prereq_one_star }}
+{% elseif level == "0:2" %}
+  {{ prereq_two_stars }}
+{% elseif level == "0:3" %}
+  {{ prereq_three_stars }}
+{% elseif level == "0:4" %}
+  {{ prereq_four_stars }}
+{% elseif level == "1" %}
   {{ one_star }}
 {% elseif level == "2" %}
   {{ two_stars }}

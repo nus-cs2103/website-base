@@ -111,13 +111,17 @@
 {% endmacro %}
 
 {% macro get_collective_priority(entries)%}
-{% set priority = 4 %}
+{% set priority = 5 %}
 {% for entry in entries %}
   {% set entry_priority = get_unit_priority(entry) | trim | int %}
-  {% if (entry_priority) < priority %}
+  {% if entry_priority != 0 and entry_priority < priority %}
     {% set priority = entry_priority %}
   {% endif %}
 {% endfor %}
+{% if priority == 5 %}
+  {# none of the entries have priorities 1-4 #}
+  {% set priority = 0 %}
+{% endif %}
 {{ priority }}
 {% endmacro %}
 

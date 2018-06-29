@@ -4,7 +4,7 @@ footer: footer.md
 siteNav: se-book-adapted-sitenav.md
 {% endmacro %}
 
-{% macro show_priority(level) %}{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}{% set empty = "<span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span>" %}{% set stars = {"1": star + empty + empty + empty, "2": star + star + empty + empty, "3": star + star + star + empty, "4": star + star + star + star} %}{{stars[level] }}{% endmacro %}
+{% macro show_priority(level) %}{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}{% set empty = "<span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span>" %}{% set prereq = "<span class='glyphicon glyphicon-education' aria-hidden='true'></span><span class='glyphicon glyphicon-education' aria-hidden='true'></span> : " %}{% set stars = {"0:1": prereq + star + empty + empty + empty, "1": star + empty + empty + empty, "0:2": prereq + star + star + empty + empty, "2": star + star + empty + empty, "0:3": prereq + star + star + star + empty, "3": star + star + star + empty, "0:4": prereq + star + star + star + star, "4": star + star + star + star} %}{{stars[level] }}{% endmacro %}
 
 {% macro show_level_three(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}

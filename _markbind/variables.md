@@ -29,8 +29,18 @@
 
 <span id="one_star"><span class='label label-danger'>{{ star | safe }} </span></span>
 
+<span id="prereq_no_stars"><span class='label label-default'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></span>
+
+<span id="prereq_one_star"><span class='label label-default'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></span>
+
 <span id="two_stars"><span class='label label-warning'>{{ star | safe }}{{ star | safe }} </span></span>
+
+<span id="prereq_two_stars"><span class='label label-default'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></span>
 
 <span id="three_stars"><span class='label label-info'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 
+<span id="prereq_three_stars"><span class='label label-default'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+
 <span id="four_stars"><span class='label label-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+
+<span id="prereq_four_stars"><span class='label label-default'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
