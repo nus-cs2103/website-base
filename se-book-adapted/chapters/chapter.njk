@@ -27,7 +27,9 @@ siteNav: se-book-adapted-sitenav.md
     <span slot="header" class="panel-title"><include src="{{ level_location }}/text.md#title"/></span>
 {% endif %}
   {% for sub_topic in topic.level_three_topics %}
-    {{show_level_three(level_location , sub_topic) }}
+    {% if sub_topic.priority != "-1" %}
+      {{show_level_three(level_location , sub_topic) }}
+    {% endif %}
   {% endfor %}
 {% if not level_is_empty %}
   </panel>
