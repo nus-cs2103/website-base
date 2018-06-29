@@ -4,7 +4,7 @@
 
 **Suggested**: Do the exercise in [[Addressbook-Level2: LO-SRP]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp)]
 
-<include src="submission-PR.md" />
+<include src="project.md#PR_to_AB2" />
 
 </div>
 

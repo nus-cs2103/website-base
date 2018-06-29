@@ -4,7 +4,7 @@
 
 **Suggested**: Do the exercise in [[addressbook-level2: LO-Exceptions]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions)].
 
-<include src="submission.md" />
+<include src="project.md#submission_PR_optional" />
 
 </div>
 

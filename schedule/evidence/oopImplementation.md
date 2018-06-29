@@ -11,7 +11,7 @@
 
 **Suggested**: Do the exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)]. Update I/O tests (i.e. `expected.txt` etc.) and the User Guide (if applicable) but you may ignore JUnit tests (we have not covered that topic yet).
 
-<include src="submission.md" />
+<include src="project.md#submission_PR_optional" />
 
 </div>
 
@@ -21,7 +21,7 @@
 
 **Suggested**: Do the exercise in [[Addressbook-Level2: LO-Inheritance]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-inheritance-to-achieve-code-reuse-lo-inheritance)]
 
-<include src="submission-PR.md" />
+<include src="project.md#PR_to_AB2" />
 
 </div>
 
@@ -31,7 +31,7 @@
 
 **Suggested**: Do the exercise in [[Addressbook-Level2: LO-ClassLevel]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-class-level-members-lo-classlevel)]
 
-<include src="submission-PR.md" />
+<include src="project.md#PR_to_AB2" />
 
 </div>
 
@@ -56,7 +56,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-Polymorphism]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-polymorphism-lo-polymorphism)]
    
-<include src="submission-AB3.md" />
+<include src="project.md#PR_to_AB3" />
 
 </div>
 
@@ -67,7 +67,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-Abstract]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-abstract-classesmethods-lo-abstract)]
    
-<include src="submission-AB3.md" />
+<include src="project.md#PR_to_AB3" />
 
 </div>
 
@@ -78,7 +78,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-Interfaces]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-interfaces-lo-interfaces)]
    
-<include src="submission-AB3.md" />
+<include src="project.md#PR_to_AB3" />
 
 </div>
 

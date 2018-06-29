@@ -4,7 +4,7 @@
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-UesrStories]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-user-stories-lo-userstories)]
    
-<include src="submission-AB3.md" />
+<include src="project.md#PR_to_AB3" />
 
 </div>
 
@@ -20,6 +20,6 @@ Covered by the final project.
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-UseCases]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases)]
    
-<include src="submission-AB3.md" />
+<include src="project.md#PR_to_AB3" />
 
 </div>
