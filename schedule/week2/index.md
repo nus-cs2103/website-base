@@ -1,2 +1,2 @@
-{% import "common/macros.njk" as macros with context %}
-{{ macros.show_week_schedule(2) }}
+{% from "schedule/index.md" import show_week_schedule with context%}
+{{ show_week_schedule(2) }}

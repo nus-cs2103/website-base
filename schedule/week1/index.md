@@ -1,7 +1,7 @@
-{% import "common/macros.njk" as macros with context %}
+{% from "schedule/index.md" import show_week_todos, show_week_tutorial, show_week_lecture with context%}
 
-{{ macros.show_week_todos(week_num) }}
+{{ show_week_todos(1) }}
 
-{{ macros.show_week_tutorial(week_num) }}
+{{ show_week_tutorial(1) }}
 
-{{ macros.show_week_lecture(week_num) }}
+{{ show_week_lecture(1) }}
