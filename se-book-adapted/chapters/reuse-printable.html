@@ -26,13 +26,13 @@
   <div>
     <h2 id="introduction">Introduction</h2>
   </div>
-  <h4 id="what">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="what">What <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come in
       many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
   </div>
-  <h4 id="when">When <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="when">When <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
@@ -49,7 +49,7 @@
   <div>
     <h2 id="apis">APIs</h2>
   </div>
-  <h4 id="what-2">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="what-2">What <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
@@ -61,46 +61,10 @@
     </tip-box>
     <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
   </div>
-  <h4 id="designing-apis">Designing APIs <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p>An API should be well-designed (i.e. should cater for the needs of its users) and well-documented.</p>
-    <p>When we write software consisting of multiple components, we need to define the API of each component.</p>
-    <p>One approach is to let the API emerge and evolve over time as we write code.</p>
-    <p>Another approach is to define the API up-front. Doing so allows us to develop the components in parallel.</p>
-    <p>We can use UML <em>sequence diagrams</em> to analyze the required interactions between components in order to discover the required API. Given below is an example.</p>
-    <tip-box>
-      <p>Example:</p>
-      <img src="/website-base/book/reuse/apis/designingAPIs/images/textLogic.png" height="500">
-      <p></p>
-      <p>As we analyze the interactions between components using sequence diagrams, we discover the API of those components. For example, the diagram above tells us that the MSLogic component API should have the methods:</p>
-      <ul>
-        <li><code>new()</code></li>
-        <li><code>getWidth:int</code></li>
-        <li><code>getHeight():int</code></li>
-        <li><code>getRemainingMineCount():int</code></li>
-      </ul>
-      <p>More details can be included to increase the precision of the method definitions before coding. Such precision is important to avoid misunderstandings between the developer of the class and developers of other classes that interact with this class.</p>
-      <ul>
-        <li><strong>Operation</strong>: <em>newGame(): void</em></li>
-        <li><strong>Description</strong>: Generates a new <em>WxH</em> minefield with <em>M</em> mines. Any existing minefield will be overwritten.</li>
-        <li><strong>Preconditions</strong>: None</li>
-        <li><strong>Postconditions</strong>: A new minefield is created. Game state is READY.</li>
-      </ul>
-      <p>Preconditions are the conditions that must be true before calling this operation. Postconditions describe the system after the operation is complete. Note that post conditions do not say what happens during the operation. Here is another example:</p>
-      <ul>
-        <li><strong>Operation</strong>: <em>clearCellAt(int x, int y): void</em></li>
-        <li><strong>Description</strong>: Records the cell at x,y as cleared.</li>
-        <li><strong>Parameters</strong>: x, y coordinates of the cell</li>
-        <li><strong>Preconditions</strong>: game state is READY or IN_PLAY. x and y are in 0..(H-1) and 0..(W-1), respectively.</li>
-        <li><strong>Postconditions</strong>: Cell at x,y changes state to ZERO, ONE, TWO, THREE, …, EIGHT, or INCORRECTLY_CLEARED. Game state changes to IN_PLAY, WON or LOST as appropriate.</li>
-      </ul>
-    </tip-box>
-  </div>
   <div>
     <h2 id="libraries">Libraries</h2>
   </div>
-  <h4 id="what-3">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="what-3">What <small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>A library is a collection of modular code that is general and can be used by other programs.</p>
@@ -121,7 +85,7 @@
       <hr>
     </tip-box>
   </div>
-  <h4 id="how">How <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="how">How <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>These are the typical steps required to use a library.</p>
@@ -136,7 +100,7 @@
   <div>
     <h2 id="frameworks">Frameworks</h2>
   </div>
-  <h4 id="what-4">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="what-4">What <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
@@ -171,7 +135,7 @@
       </ul>
     </tip-box>
   </div>
-  <h4 id="frameworks-vs-libraries">Frameworks vs Libraries <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="frameworks-vs-libraries">Frameworks vs Libraries <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
@@ -189,7 +153,7 @@
   <div>
     <h2 id="platforms">Platforms</h2>
   </div>
-  <h4 id="what-5">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
+  <h4 id="what-5">What <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
     <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic of a
@@ -217,39 +181,11 @@
   <div>
     <h2 id="cloud-computing">Cloud Computing</h2>
   </div>
-  <h4 id="what-6">What <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p><strong>Cloud computing is the delivery of computing as a service over the network</strong>, rather than a product running on a local machine. This means the actual hardware and software is located at a remote location, typically, at a large server
-      farm, while users access them over the network. Maintenance of the hardware and software is managed by the cloud provider while users typically pay for only the amount of services they use. This model is similar to the consumption of electricity;
-      the power company manages the power plant, while the consumers pay them only for the electricity used. The cloud computing model optimizes hardware and software utilization and reduces the cost to consumers. Furthermore, users can scale up/down
-      their utilization at will without having to upgrade their hardware and software. The traditional non-cloud model of computing is similar to everyone buying their own generators to create electricity for their own use.</p>
-  </div>
-  <h4 id="iaas-paas-and-saas">Iaas, PaaS, and SaaS <small><small><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" height="500"><br></p>
-    <p><sub>source:<a href="https://en.wikipedia.org/wiki/Cloud_computing">https://commons.wikimedia.org</a></sub></p>
-    <p>Cloud computing can deliver computing services at three levels:</p>
-    <ol>
-      <li>
-        <p><strong>Infrastructure as a service (IaaS) delivers computer infrastructure as a service.</strong> For example, a user can deploy virtual servers on the cloud instead of buying physical hardware and installing server software on them. Another
-          example would be a customer using storage space on the cloud for off-site storage of data. <span class="dimmed"> Rackspace is an example of an IaaS cloud provider. Amazon Elastic Compute Cloud (Amazon EC2) is another one.</span></p>
-      </li>
-      <li>
-        <p><strong>Platform as a service (PaaS) provides a platform on which developers can build applications.</strong> Developers do not have to worry about infrastructure issues such as deploying servers or load balancing as is required when using IaaS.
-          Those aspects are automatically taken care of by the platform. The price to pay is reduced flexibility; applications written on PaaS are limited to facilities provided by the platform. <span class="dimmed"> A PaaS example is the Google App Engine where developers can build applications using Java, Python, PHP, or Go whereas Amazon EC2 allows users to deploy application written in any language on their virtual servers.</span></p>
-      </li>
-      <li>
-        <p><strong>Software as a service (SaaS) allows applications to be accessed over the network</strong> instead of installing them on a local machine. <span class="dimmed"> For example, Google Docs is an SaaS word processing software, while Microsoft Word is a traditional word processing software.</span></p>
-      </li>
-    </ol>
-  </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Thu, 28 Jun 2018 15:14:32 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Sat, 30 Jun 2018 11:27:09 GMT</small></div>
 </footer>
 </div>
 </body>

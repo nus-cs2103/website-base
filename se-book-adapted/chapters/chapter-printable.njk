@@ -20,7 +20,8 @@ footer: footer.md
   <include src="{{ level_location }}/text.md#title"/>
 {% endif %}
   {% for sub_topic in topic.level_three_topics %}
-    {% if sub_topic.priority != "4" %}
+    {# omit if priority is 4 or 0:4  #}
+    {% if not "4" in sub_topic.priority  %}
       {{show_level_three(level_location , sub_topic) }}
     {% endif %}
   {% endfor %}
