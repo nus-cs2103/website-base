@@ -96,52 +96,45 @@ siteNav: adminSiteNav.md
 </div>
 
 <div id="admin-project-v10-anchor"></div>
-
-## Project → v1.0 [week 7]
+<include src="project-v10.md#title" />
 <div id="admin-project-v10">
-<include src="project-v10.md" />
+<include src="project-v10.md#body" />
 </div>
 
 <div id="admin-project-v11-anchor"></div>
-
-## Project → v1.1 [week 8]
+<include src="project-v11.md#title" />
 <div id="admin-project-v11">
-<include src="project-v11.md" />
+<include src="project-v11.md#body" />
 </div>
 
 <div id="admin-project-v12-anchor"></div>
-
-## Project → v1.2 [week 9]
+<include src="project-v12.md#title" />
 <div id="admin-project-v12">
-<include src="project-v12.md" />
+<include src="project-v12.md#body" />
 </div>
 
 <div id="admin-project-v13-anchor"></div>
-
-## Project → v1.3 [week 10]
+<include src="project-v13.md#title" />
 <div id="admin-project-v13">
-<include src="project-v13.md" />
+<include src="project-v13.md#body" />
 </div>
 
 <div id="admin-project-v14-anchor"></div>
-
-## Project → v1.4 [week 11]
+<include src="project-v14.md#title" />
 <div id="admin-project-v14">
-<include src="project-v14.md" />
+<include src="project-v14.md#body" />
 </div>
 
 <div id="admin-project-v15rc-anchor"></div>
-
-## Project → v1.5rc [week 12]
+<include src="project-v15rc.md#title" />
 <div id="admin-project-v15rc">
-<include src="project-v15rc.md" />
+<include src="project-v15rc.md#body" />
 </div>
 
 <div id="admin-project-v15-anchor"></div>
-
-## Project → v1.5 [week 13]
+<include src="project-v15.md#title" />
 <div id="admin-project-v15">
-<include src="project-v15.md" />
+<include src="project-v15.md#body" />
 </div>
 
 <div id="admin-project-assessment-anchor"></div>

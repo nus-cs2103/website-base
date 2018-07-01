@@ -1,22 +1,28 @@
+<div id="title">
+
+## Project → v1.3 [week 11]
+</div>
+<div id="body">
+
 <tip-box> 
 
-**v1.4 Summary of Milestone**
+**v1.3 Summary of Milestone**
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
-:bust_in_silhouette: Contributed code to v1.4 | code merged
+:bust_in_silhouette: Contributed code to v1.3 | code merged
 :bust_in_silhouette: Code collated | as stated
-:busts_in_silhouette: v1.4 jar file released properly on GitHub | as stated
-:busts_in_silhouette: v1.4 milestone properly wrapped up on GitHub | as stated
-:busts_in_silhouette: Documentation updated to match v1.4 | at least the User Guide and the `README.adoc` is updated
+:busts_in_silhouette: v1.3 jar file released properly on GitHub | as stated
+:busts_in_silhouette: v1.3 milestone properly wrapped up on GitHub | as stated
+:busts_in_silhouette: Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
 
 </tip-box>
 
-### v1.4 Project Management
+### v1.3 Project Management
 
 <tip-box type="important">
 
-You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collated code at your final submission. As an early preparation for that, we require you to collate code once at v1.4 so that you can iron out any code collation glitches early.%% 
+You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collated code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.%% 
 
 </tip-box>
 
@@ -24,17 +30,17 @@ You are required to <tooltip content="extract your own code and put in one file"
   <include src="collate.md" />
 </panel><p/>
 
-### v1.4 Product
+### v1.3 Product
 
 As before, move the product towards v2.0.
 
 **Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub.
 
-### v1.4 Documentation
+### v1.3 Documentation
 
 <tip-box type="important"> 
 
-v1.4 user guide should be updated to match the current version of the product. %%&nbsp;Reason: v1.4 will be subjected to a trial _acceptance testing_ session%%
+v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: v1.3 will be subjected to a trial _acceptance testing_ session%%
   
 </tip-box>
 
@@ -45,36 +51,36 @@ v1.4 user guide should be updated to match the current version of the product. %
   
 * **User Guide**: ==This document will be used by acceptance testers==. Update to match the current version. In particular,
   * Clearly indicate which features are not implemented yet %%&nbsp;e.g. tag those features with a `Coming in v2.0`%%. 
-  * For those features already implemented, ensure their description match the exact behavior of the product %%&nbsp;e.g. replace mockups with actual screenshots%% 
+  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%&nbsp;e.g. replace mockups with actual screenshots%% 
  
 * **Developer Guide**: As before, update if necessary.
   
 * **AboutUs page**: Update to reflect current state of roles and responsibilities.  
 
-**Submission**: Must be included in the version tagged `v1.4`.
+**Submission**: Must be included in the version tagged `v1.3`.
 
 
-### v1.4 Demo
+### v1.3 Demo
 
-As before.
+Optional. If you want feedback on your features, you can demo the feature and get feedback from the tutor.
 
 
-### v1.4 Testing
+### v1.3 Testing
 
 <tip-box type="important"> 
   
-Taking part in v1.4 is compulsory and counts for participation marks.
+Taking part in v1.3 testing is compulsory and counts for participation marks.
 
 </tip-box>
 
-v1.4 is subjected to a round of _peer testing_.
+v1.3 is subjected to a round of peer _acceptance/system testing_.
 
 **Objectives**:
 * **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users, evaluating products etc. 
 * **To help you improve your product** before the final submission.
   
 **When, where**: 
-* To be done **during Lecture 11** (but you can do it from anywhere, not necessarily lecture venue). Suggested duration: **30 minutes** (we'll stop the lecture for a 30 minute block for you do do the testing).
+* To be done **during Lecture 11**. Duration: **30 minutes** (we'll stop the lecture for a 30 minute block for you do do the testing).
 
 **During the session**:
 * Each student will be assigned a product from another team to test.
@@ -90,10 +96,10 @@ v1.4 is subjected to a round of _peer testing_.
   * :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
   
 **Grading**:
-* Considered for phase B participation. In addition, issues you created can be include it in your <trigger trigger="click" for="modal:v1.4-ppp">project portfolio page</trigger> to show how you contributed to another project.
+* Considered for participation. In addition, issues you created can be included in your <trigger trigger="click" for="modal:v1.3-ppp">project portfolio page</trigger> to show how you contributed to another project.
 * There is **no penalty for bugs reported** in your product.
   
-<modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.4-ppp">
+<modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
   <include src="projectPortfolioPage.md"/>
 </modal>
   

@@ -1,3 +1,9 @@
+<div id="title">
+
+## Project → v1.4 [week 13]
+</div>
+<div id="body">
+
 <tip-box> 
 
 * :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a 1-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis. 
@@ -6,13 +12,13 @@
 * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
 * :exclamation: Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
 * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%&nbsp;e.g. broken links, outdated diagrams/instructions etc.%%.
-* **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that one-week _freeze_ period. You can continue to evolve your repo after that. 
+* **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that. 
 
 **Summary of submissions**:
 
 Team/Individual Item | Name format | Upload to
 -------------------- | ----------- | ---------
-:busts_in_silhouette: Source code |  tag as `v1.5` | GitHub
+:busts_in_silhouette: Source code |  tag as `v1.4` | GitHub
 :busts_in_silhouette: Jar file |  `[team][product name].jar`<br>%%e.g. [T09-B1][ContactsPlus].jar%% | IVLE
 :busts_in_silhouette: User Guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%% | IVLE
 :busts_in_silhouette: Developer Guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
@@ -23,13 +29,13 @@ Team/Individual Item | Name format | Upload to
 </tip-box>
 
 
-### v1.5 Product
+### v1.4 Product
 
-This is as a ‘production release’. It should be at least ‘near production quality’.
+Ideally, this version should be a <tooltip content=" i.e., it can be used by end-users">_releasable_</tooltip> product. However, in the interest of lowering your workload, we do not penalize if the product is <tooltip content="i.e., the product is not usable by end-users because some essential features are missing">not releasable</tooltip>, ==as long as the product is <tooltip content="i.e., the features it has can be tested from an end-user perspective">_acceptance testable_</tooltip>==.
 
 **Submission**:
 
-* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission) Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
+* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
 * **Executable**: See summary of submissions above 
     
 
@@ -39,14 +45,14 @@ This is as a ‘production release’. It should be at least ‘near production 
 
 <include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
 
-### v1.5 Documentation
+### v1.4 Documentation
 
 **Submission**:
 
 First, update following pages on GitHub: 
 * User Guide, Developer Guide: Ensure these two docs match the product precisely, as these docs will be used by peer testers (and ==any inaccuracy in the content will be considered bugs==).
   * :exclamation: in particular, **update the appendix named _Instructions for Manual Testing_** of the Developer Guide to include testing instructions to **cover all your major and minor enhancements**. There is no need to add testing instructions for existing features if you did not touch them.<br>
-    :bulb: What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provided some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
+    :bulb: What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
 * README : ==Ensure the `Ui.png` matches the current product==
 * AboutUs : Ensure the following:
   * Contains a ==link to each person's Project Portfolio page== 
@@ -58,14 +64,14 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 * Developer Guide
 * Project Portfolio Pages
 
-**Deadline**: Same as v1.5 product.
+**Deadline**: Same as v1.4 product.
 
 **Grading**: 
 
 <include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
 
 
-### v1.5 Demo
+### v1.4 Demo
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
@@ -115,7 +121,7 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 
 <div id=v15-practicalExam>
 
-### v1.5 Practical Exam
+### v1.4 Practical Exam
 
 <tip-box type="important"> 
 
@@ -270,4 +276,6 @@ Bug Type Labels:
 
 * Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
 * You will be graded based on many bugs in the product you tested and how far off your evaluation/estimates are from the evaluator consensus. %%&nbsp;Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
-* The bugs found in your product by others will affect your v1.5 marks. You will be given a chance to reject false-positive bug reports.
+* The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.
+
+</div>

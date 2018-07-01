@@ -1,3 +1,8 @@
+<div id="title">
+
+## Project → v1.1 [week 7]
+</div>
+<div id="body"> 
 <tip-box type="important"> 
   
 Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
@@ -7,6 +12,8 @@ Before you do any coding for the project, please ensure you have set the Git use
 </panel>
 
 </tip-box>
+
+
 
 <tip-box> 
 
@@ -20,7 +27,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 :busts_in_silhouette: Team org/repo set up | as stated
 :busts_in_silhouette: All project documents updated as required | at least have a full draft version of the required document updates in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo
 
-:exclamation: ==Reaching weekly individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
+:exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 
 <panel type="seamless" header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%">
   <include src="project-assessment.md#project-management-grading" />
@@ -167,5 +174,7 @@ Update the following pages of the Developer Guide:
 </panel><p/>
 
 **Submission**: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.
+
+</div>
 
 </div>
