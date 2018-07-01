@@ -52,9 +52,9 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 Evaluates: How good is your Quality Assurance? 
 
-Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.5 Practical Exam, 4. bugs found during PE. 
+Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 Practical Exam, 4. bugs found during PE. 
 
-<panel type="seamless" header="%%Click here for more info on v1.5 practical exam%%">
+<panel type="seamless" header="%%Click here for more info on v1.4 practical exam%%">
   <include src="project-v14.md#v15-practicalExam"/>
 </panel>
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
@@ -81,8 +81,8 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
 Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 
 
 Based on: Supervisor observations of weekly milestones and GitHub data. ==Marks will be deducted== if,
- * if you missed more than two individual milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%% (only the team member loses marks)
- * if your team missed more than two team milestones %%&nbsp;out of the six milestones v1.0 - v1.5rc%% (all team members lose marks)
+ * if you missed more than two individual milestones %%&nbsp;out of the six milestones v1.0 - v1.3%% (only the team member loses marks)
+ * if your team missed more than two team milestones %%&nbsp;out of the six milestones v1.0 - v1.3%% (all team members lose marks)
  
 Milestones ==need to be reached _before_ the start of the tutorial==. If you reach the milestone _during_ the tutorial, it will be considered as missed.
   

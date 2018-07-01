@@ -74,7 +74,7 @@ Given below are some recommended progress for you to achieve in the various aspe
   * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
   * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
   * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
-  * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.5.
+  * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.4.
 
   You may define additional roles.
 

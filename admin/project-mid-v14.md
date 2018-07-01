@@ -43,13 +43,13 @@ Given below are some recommended progress for you to achieve in the various aspe
 
 **Demo:**
 
-Do a product demo to serve as a rehearsal for the final project demo at v1.5
+Do a product demo to serve as a rehearsal for the final project demo at v1.4
 
 * ==Follow <trigger trigger="click" for="modal:mid-v14-demo-instructions">final demo instructions</trigger>== as much as possible.
 * **Cover all features**, not just the ones added in the recent iteration.
 * It **should be a 'well prepared' demo**. You should know in advance exactly what you'll do in the demo.
 
-<modal large title="Admin {{ icon_embedding }} Project → v1.5 Demo (extract)" id="modal:mid-v14-demo-instructions">
+<modal large title="Admin {{ icon_embedding }} Project → v1.4 Demo (extract)" id="modal:mid-v14-demo-instructions">
   <include src="project-v14.md#v15-demo-instructions"/>
 </modal> 
 

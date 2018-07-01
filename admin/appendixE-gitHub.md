@@ -157,7 +157,7 @@ Bug Severity labels:
 
 </span>
 
-* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `v1.3`, `v1.4`, `v1.5rc`, `v1.5`
+* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `v1.3`, `v1.4`,
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -178,7 +178,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
 
 * **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.%%   
-  * %%:+1: Good: Update class diagram in the project manual for v1.5%% 
+  * %%:+1: Good: Update class diagram in the project manual for v1.4%% 
   * %%:-1: Bad (reasons: not a one-person task, not small enough): Write the project manual%%
 
 * **Write a descriptive title for the issue.** %%e.g. Add support for the 'undo' command to the parser.%%

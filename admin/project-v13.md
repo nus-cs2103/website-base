@@ -106,6 +106,6 @@ v1.3 is subjected to a round of peer _acceptance/system testing_.
 <include src="project-testing.md#testingPreparations" />
   
 **After the session**:
-* It is up to you to decide whether you will act on reported issues before the final submission v1.5. For some issues, the correct decision could be to reject or postpone.
+* It is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone.
 * You can post in the issue thread to communicate with the tester %%&nbsp;e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
   * :bulb: Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.

@@ -166,7 +166,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 
 </tip-box>
 
-<modal large title="Admin {{ icon_embedding }} Project v1.4 → Colalte Tool" id="modal:reusePolicy-collateSyntax">
+<modal large title="Admin {{ icon_embedding }} Project v1.3 → Colalte Tool" id="modal:reusePolicy-collateSyntax">
   <include src="collate.md"/>
 </modal>
 

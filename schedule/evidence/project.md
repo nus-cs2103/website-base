@@ -208,32 +208,32 @@ Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you
 
 <div id="describe_contribution">
 
-Covered by the 'Project Portfolio Page' component of v1.5rc:
+Covered by the 'Project Portfolio Page' component of mid-v1.4:
 
-<include src="../../admin/project-mid-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.5rc%%" dynamic />
+<include src="../../admin/project-mid-v14.md" name="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" dynamic />
 
 </div>
 
 
 <div id="demo">
 
-Covered by the 'Demo' component of v1.5:
+Covered by the 'Demo' component of v1.4:
 
-<include src="../../admin/project-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.5%%" dynamic />
+<include src="../../admin/project-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
 
 </div>
 
 
 <div id="iterative_delivery">
 
-Covered by v1.0-v1.5:
+Covered by v1.0-v1.4:
 
 </div>
 
 
 <div id="brownfield">
 
-Covered by v1.0-v1.5:
+Covered by v1.0-v1.4:
 
 </div>
 
@@ -244,8 +244,8 @@ Covered by the 'Peer Evaluations' component of the module:
 
 <include src="../../admin/peer-evaluations.md" name="%%Admin {{ icon_embedding }} Peer Evaluations%%" dynamic />
 
-Also covered by the 'Practical Exam' of v1.5:
+Also covered by the 'Practical Exam' of v1.4:
 
-<include src="../../admin/project-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.5%%" dynamic />
+<include src="../../admin/project-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
 
 </div>
