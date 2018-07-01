@@ -1,6 +1,6 @@
-**Show evidence of achieving v1.3 team/individual milestone**
-* [One member] Show the v1.3 release and the milestone on GitHub
-* [Each member] Demo your contribution for v1.3 using the jar file 
+**Show evidence of achieving mid-v1.3 team/individual milestone**
+* [One member] Show the mid-v1.3 release and the milestone on GitHub
+* [Each member] Demo your contribution for mid-v1.3 using the jar file 
 
 **Questions to discuss during tutorial:**
 

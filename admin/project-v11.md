@@ -17,9 +17,9 @@ Before you do any coding for the project, please ensure you have set the Git use
 
 <tip-box> 
 
-**v1.0 Summary of Milestone**
+**v1.1 Summary of Milestone**
 
-Here is a summary of items you need to deliver to _reach_ v1.0 individual (:bust_in_silhouette:) and team (:busts_in_silhouette:) milestones. See sections below for more details of each item. 
+Here is a summary of items you need to deliver to _reach_ v1.1 individual (:bust_in_silhouette:) and team (:busts_in_silhouette:) milestones. See sections below for more details of each item. 
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
@@ -37,7 +37,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 <div id="documentation">
 
-#### v1.0 Documentation
+#### v1.1 Documentation
 
 **Objective**: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.
 
@@ -161,7 +161,7 @@ Update the following pages of the Developer Guide:
 </div>
 <div id="product">
 
-### v1.0 Product
+### v1.1 Product
 
 **Objective**: To familiarize yourself with at least one component the code.
 
