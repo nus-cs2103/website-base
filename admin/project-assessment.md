@@ -55,7 +55,7 @@ Evaluates: How good is your Quality Assurance?
 Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.5 Practical Exam, 4. bugs found during PE. 
 
 <panel type="seamless" header="%%Click here for more info on v1.5 practical exam%%">
-  <include src="project-v15.md#v15-practicalExam"/>
+  <include src="project-v14.md#v15-practicalExam"/>
 </panel>
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
   <include src="project-testing.md#expectations"/>

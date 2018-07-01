@@ -12,10 +12,10 @@ Given below are some recommended progress for you to achieve in the various aspe
 
 **Product:**
 
-* Consider increasing code coverage by adding more tests if it is lower than the level you would like it to be. Take note of <trigger trigger="click" for="modal:v15rc-testingExpectations">our expectation on test code</trigger>. 
+* Consider increasing code coverage by adding more tests if it is lower than the level you would like it to be. Take note of <trigger trigger="click" for="modal:mid-v14-testingExpectations">our expectation on test code</trigger>. 
 * After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.
 
-<modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v15rc-testingExpectations">
+<modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:mid-v14-testingExpectations">
   <include src="project-testing.md#expectations"/>
 </modal>
 
@@ -45,12 +45,12 @@ Given below are some recommended progress for you to achieve in the various aspe
 
 Do a product demo to serve as a rehearsal for the final project demo at v1.5
 
-* ==Follow <trigger trigger="click" for="modal:v15rc-demo-instructions">final demo instructions</trigger>== as much as possible.
+* ==Follow <trigger trigger="click" for="modal:mid-v14-demo-instructions">final demo instructions</trigger>== as much as possible.
 * **Cover all features**, not just the ones added in the recent iteration.
 * It **should be a 'well prepared' demo**. You should know in advance exactly what you'll do in the demo.
 
-<modal large title="Admin {{ icon_embedding }} Project → v1.5 Demo (extract)" id="modal:v15rc-demo-instructions">
-  <include src="project-v15.md#v15-demo-instructions"/>
+<modal large title="Admin {{ icon_embedding }} Project → v1.5 Demo (extract)" id="modal:mid-v14-demo-instructions">
+  <include src="project-v14.md#v15-demo-instructions"/>
 </modal> 
 
 </div>

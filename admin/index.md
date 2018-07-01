@@ -95,16 +95,16 @@ siteNav: adminSiteNav.md
 <include src="project-deliverables.md" />
 </div>
 
-<div id="admin-project-v10-anchor"></div>
-<include src="project-v10.md#title" />
-<div id="admin-project-v10">
-<include src="project-v10.md#body" />
-</div>
-
 <div id="admin-project-v11-anchor"></div>
 <include src="project-v11.md#title" />
 <div id="admin-project-v11">
 <include src="project-v11.md#body" />
+</div>
+
+<div id="admin-project-mid-v12-anchor"></div>
+<include src="project-mid-v12.md#title" />
+<div id="admin-project-mid-v12">
+<include src="project-mid-v12.md#body" />
 </div>
 
 <div id="admin-project-v12-anchor"></div>
@@ -113,28 +113,28 @@ siteNav: adminSiteNav.md
 <include src="project-v12.md#body" />
 </div>
 
+<div id="admin-project-mid-v13-anchor"></div>
+<include src="project-mid-v13.md#title" />
+<div id="admin-project-mid-v13">
+<include src="project-mid-v13.md#body" />
+</div>
+
 <div id="admin-project-v13-anchor"></div>
 <include src="project-v13.md#title" />
 <div id="admin-project-v13">
 <include src="project-v13.md#body" />
 </div>
 
+<div id="admin-project-mid-v14-anchor"></div>
+<include src="project-mid-v14.md#title" />
+<div id="admin-project-mid-v14">
+<include src="project-mid-v14.md#body" />
+</div>
+
 <div id="admin-project-v14-anchor"></div>
 <include src="project-v14.md#title" />
 <div id="admin-project-v14">
 <include src="project-v14.md#body" />
-</div>
-
-<div id="admin-project-v15rc-anchor"></div>
-<include src="project-v15rc.md#title" />
-<div id="admin-project-v15rc">
-<include src="project-v15rc.md#body" />
-</div>
-
-<div id="admin-project-v15-anchor"></div>
-<include src="project-v15.md#title" />
-<div id="admin-project-v15">
-<include src="project-v15.md#body" />
 </div>
 
 <div id="admin-project-assessment-anchor"></div>

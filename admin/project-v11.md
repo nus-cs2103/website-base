@@ -1,93 +1,179 @@
 <div id="title">
 
-## Project → mid-v1.2 [week 8]
+## Project → v1.1 [week 7]
 </div>
-<div id="body">
+<div id="body"> 
+<tip-box type="important"> 
+  
+Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
 
-Given below are some recommended progress for you to achieve in the various aspects of the project.
+<panel header="%%Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username%%">
+  <include src="appendixE-gitHub.md#git-username" />
+</panel>
 
-<div id="product">
+</tip-box>
 
-**Project Management:**
 
-* :busts_in_silhouette: Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
 
-* Set up [auto-publishing of docs](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation)
+<tip-box> 
 
-* **If tests are causing too much pain ...**
+**v1.0 Summary of Milestone**
 
-  Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.
-  
-  It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated test coverage you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much. There is no direct penalty for removing GUI tests.
-  
-  Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>. 
+Here is a summary of items you need to deliver to _reach_ v1.0 individual (:bust_in_silhouette:) and team (:busts_in_silhouette:) milestones. See sections below for more details of each item. 
 
-<modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
-  <include src="project-testing.md#expectations"/>
-</modal>
+Milestone | Minimum acceptable performance to consider as 'reached'
+--------- | -------------------------------------------------------
+:bust_in_silhouette: Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
+:busts_in_silhouette: Team org/repo set up | as stated
+:busts_in_silhouette: All project documents updated as required | at least have a full draft version of the required document updates in some format (e.g. GoogleDoc), even if you did not have time to update the documents in the repo
 
-**Product:**
+:exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 
-* Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these enhancements ==should go beyond the component you are in charge of==, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
+<panel type="seamless" header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%">
+  <include src="project-assessment.md#project-management-grading" />
+</panel>
 
-</div>
+</tip-box>
+
 <div id="documentation">
 
-**Documentation:** Update the following pages in your project repo:  
+#### v1.0 Documentation
 
-* **User Guide**:  
-    Update the user guide to describe what the product would be like when it is at 2.0.  Mark features not implemented yet as `Coming in v2.0`. You may use UI mockups where necessary. 
+**Objective**: To analyze requirements, conceptualize the next version of the product (i.e. v2.0), and document it.
 
-  <tip-box> 
-  
-  :bulb: It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%&nbsp;e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%. For features that are not planned to be implemented by v1.4, you can divide them based on who will be implementing them _if_ the project were to continue until v2.0 (hypothetically).
-  
-  %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
-    
-  </tip-box>
+#### Step 1 : Decide project direction, target user profile, and problem addressed
 
-* **About Us page**:  
-  This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
-  * Replace info of SE-EDU developers with info of your team, including a ==suitable photo== as described <trigger trigger="click" for="modal:v11-photo">here</trigger>.  
-  * Including the name/photo of the supervisor/lecturer is optional. 
-  * The photo of a team member should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%.
+Discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in <trigger trigger="click" for="modal:v10-scope">[Admin {{ icon_embedding }} Project Scope]</trigger> 
 
-<modal large title="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:v11-photo">
-  <include src="profilePhoto.md"/>
+<modal large title="Admin {{ icon_embedding }} Project Scope (Extract)" id="modal:v10-scope">
+  <include src="project-scope.md#project-direction"/>
 </modal>
 
-  * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
+#### Step 2 : Brainstorm user stories
 
-<div class="indented-twice">
+<img src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
-<panel header="More info on _roles and responsibilities_">
+Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the v2.0 of the product**. Note that in the module project you will deliver only up to v1.5 but here you should consider up to v2.0 (i.e. beyond the module).
 
-  **Roles indicate aspects you are in charge of and responsible for.** %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%  
+* It is ok to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
+
+* Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.
+
+* You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
   
-  Here are some example roles:
+* Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%&nbsp;Reason: an important aspect of brainstorming is not judging the ideas generated.%%  
 
-  * _Team lead_: Responsible for overall project coordination.
-  * _Documentation_ (short for ‘in charge of documentation’): Responsible for the quality of various project documents.
-  * _Testing_: Ensures the testing of the project is done properly and on time.
-  * _Code quality_: Looks after code quality, ensures adherence to coding standards, etc.
-  * _Deliverables and deadlines_: Ensure project deliverables are done on time and in the right format.
-  * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
-  * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
-  * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
-  * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.5.
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
+  <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
 
-  You may define additional roles.
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-userstories">
+  <include src="../book/specifyingRequirements/userStories/introduction/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal> 
 
-  Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**.
-    
-</panel><p/>
+<modal large title="Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
+  <include src="../book/specifyingRequirements/userStories/usage/tools.md"/>
+</modal>
+
+<modal large title="Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips">
+  <include src="../book/specifyingRequirements/userStories/usage/text.md#usageTips"/>
+</modal>
+
+<panel header="%%{{ icon_example }} User Story examples (from a different product)%%">
+
+`As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`  
+`As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`  
+`As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.`  
+`As a new user I can view more information about a particular command, so that I can learn how to use various commands.`  
+`As an advanced user I can use shorter versions of a command, so that type a command faster.`  
+
+</panel>
+
+#### Step 3: Prioritize the user stories
+
+<img src="{{baseUrl}}/admin/images/userstories.png" width="250px">
+
+Suggested workflow:
+
+* Take one user story at a time and get team member opinions about it.
+* Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
+
+  * `Must-Have` : The product will be practically useless to the target user without this feature.
+  * `Nice-To-Have` : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.
+  * `Not-Useful` : No significant benefit to the target user, or does not fit into the product vision.
+
+* %%If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
+
+
+#### Step 4: Record v2.0 Requirements in the Developer Guide 
+
+Based on your user story categorization in step 1, given project requirements, and the current state of the product, select which user stories you are likely to include in v2.0.
+
+Update the following pages of the Developer Guide:
+
+* **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
+* <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%   
+* <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:  
+  Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
+* <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth defining.
+*  [Optional]<trigger trigger="click" for="modal:v10-prodsurveys">**Product survey**</trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view). 
+
+<modal large title="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
+  <include src="../book/specifyingRequirements/useCases/index.md#main"/>
+</modal>
+
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-nfr">
+  <include src="../book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+<modal title="Textbook {{ icon_embedding }}" id="modal:v10-glossary">
+  <include src="../book/specifyingRequirements/glossary/what/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+<modal title="Textbook {{ icon_embedding }}" id="modal:v10-prodsurveys">
+  <include src="../book/gatheringRequirements/productSurveys/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+
+**Suggested length**: Follow the existing user guide and developer guides in terms of the level of details.
+
+**Submission**: 
+
+1. One team member: <trigger trigger="click" for="modal:v10-setuporg">Set up the team org</trigger> and <trigger trigger="click" for="modal:v10-setuprepo">team repo</trigger> for your phase B team if you haven't done that already.
+
+<modal large title="Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Organization Setup" id="modal:v10-setuporg">
+  <include src="appendixE-gitHub.md#organization-setup"/>
+</modal>
+
+<modal large title="Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Repo Setup" id="modal:v10-setuprepo">
+  <include src="appendixE-gitHub.md#repo-setup"/>
+</modal>
+
+2. Divide among yourselves who will update which parts of the Developer guide.
+3. Update the team repo. Recommended: follow the <trigger trigger="click" for="modal:v10-forkingworkflow">forking workflow</trigger>.
+
+<modal large title="TextBook {{ icon_embedding }}" id="modal:v10-forkingworkflow">
+  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+4. One member: create a PR from your ==team repo `master` branch== to [[nus-cs2103-AY1718S2/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[v1.x][Team ID] Product Name` e.g., `[v1.x][T09-B2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use `v1.x` instead of `v1.0` in the PR title).%% In the PR description <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+
 </div>
+<div id="product">
 
-* **README.adoc** page: Update it to match your project. 
-  * Add a UI mockup of your intended final product.   
-    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
-  * The original `README.adoc` file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should ==restructure this page to look like the home page of a real product== (not a school project) targeting real users %%&nbsp;e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.%% On a related note, also remove `Learning Outcomes` link and related pages.
-  * Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
+### v1.0 Product
+
+**Objective**: To familiarize yourself with at least one component the code.
+
+**Description**: Divide the <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the [AddressBook-Level4 developer guide](https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component).
+
+:exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
+
+<panel type="seamless" header="%%Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse%%">
+  <include src="appendixB-policies.md#policy-reuse" />
+</panel><p/>
+
+**Submission**: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.
 
 </div>
 
