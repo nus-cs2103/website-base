@@ -1,10 +1,8 @@
 <div id="title">
 
-## Project → mid-v1.0 progress guide [week 4]
+## Project → mid-v1.0 [week 4]
 </div>
 <div id="body"> 
-
-Given below are some recommended progress for you to achieve at this point of the project.
 
 This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).
 
@@ -71,7 +69,7 @@ This is a good time to analyze requirements with a view to conceptualizing the n
 
   Based on your user story categorization in the step above, given module requirements/constraints for the project, and the current state of the product, select which user stories you are likely to include in v2.0.
 
-  Update the following sections of the Developer Guide:
+  Document the following items using a convenient format (e.g., a GoogleDoc). %%Do not spend time on formatting the content nicely; reason: these can be ported to the actual Developer Guide in your project repo later.%%:
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%   
@@ -79,16 +77,6 @@ This is a good time to analyze requirements with a view to conceptualizing the n
     Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth defining.
   *  [Optional]<trigger trigger="click" for="modal:v10-prodsurveys">**Product survey**</trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view). 
-
-<div class="indented-level3">
-
-<tip-box>
-
-:bulb: When documenting the above items, you can use either one of these options:
-  * Recommended: Use a convenient format (e.g., a GoogleDoc) to draft the things you came up with above. Do not spend time on formatting the content nicely; reason: these can be ported to the actual Developer Guide in your project repo later. 
-  * Update the Developer Guide in your project repo with the above items.
-</tip-box>
-</div>
 
 <modal large title="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
   <include src="../book/specifyingRequirements/useCases/index.md#main"/>

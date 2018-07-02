@@ -4,48 +4,51 @@
 </div>
 <div id="body">
 
-Given below are some recommended progress for you to achieve in the various aspects of the project.
-
 <div id="product">
 
 **Project Management:**
 
-* :busts_in_silhouette: Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
+* One team member: <trigger trigger="click" for="modal:v10-setuporg">Set up the team org</trigger> and <trigger trigger="click" for="modal:v10-setuprepo">team repo</trigger> for your team if you haven't done that already.
+  * Set up [auto-publishing of docs](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation)
 
-* Set up [auto-publishing of docs](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation)
-
-* **If tests are causing too much pain ...**
-
-  Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.
-  
-  It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated test coverage you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much. There is no direct penalty for removing GUI tests.
-  
-  Also note <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>. 
-
-<modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
-  <include src="project-testing.md#expectations"/>
+<modal large title="Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Organization Setup" id="modal:v10-setuporg">
+  <include src="appendixE-gitHub.md#organization-setup"/>
+</modal>
+<modal large title="Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Repo Setup" id="modal:v10-setuprepo">
+  <include src="appendixE-gitHub.md#repo-setup"/>
 </modal>
 
-**Product:**
+* All members: Set up your own forks of the team repo, so that you can submit PRs to your team repo using the forking workflow.
 
-* Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these enhancements ==should go beyond the component you are in charge of==, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
+<tip-box type="important"> 
+  
+Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
+
+<panel header="%%Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username%%">
+  <include src="appendixE-gitHub.md#git-username" />
+</panel>
+
+</tip-box>
 
 </div>
 <div id="documentation">
 
-**Documentation:** Update the following pages in your project repo:  
+<tip-box>
 
-* **User Guide**:  
-    Update the user guide to describe what the product would be like when it is at 2.0.  Mark features not implemented yet as `Coming in v2.0`. You may use UI mockups where necessary. 
+**Recommended procedure for updating docs**:
 
-  <tip-box> 
-  
-  :bulb: It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%&nbsp;e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%. For features that are not planned to be implemented by v1.4, you can divide them based on who will be implementing them _if_ the project were to continue until v2.0 (hypothetically).
-  
-  %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
-    
-  </tip-box>
+1. Divide among yourselves who will update which parts of the document(s).
+1. Update the team repo by following the <trigger trigger="click" for="modal:v10-forkingworkflow">forking workflow</trigger>.
+1. One member: create a PR from your ==team repo `master` branch== to [[nus-cs2103-AY1718S2/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[v1.x][Team ID] Product Name` e.g., `[v1.x][T09-B2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use `v1.x` instead of `v1.0` in the PR title).%% In the PR description <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
+<modal large title="TextBook {{ icon_embedding }}" id="modal:v10-forkingworkflow">
+  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+</tip-box>
+
+**Documentation:** Update the following pages in your project repo: 
+ 
 * **About Us page**:  
   This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
   * Replace info of SE-EDU developers with info of your team, including a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.  
@@ -88,6 +91,14 @@ Given below are some recommended progress for you to achieve in the various aspe
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
   * The original `README.adoc` file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should ==restructure this page to look like the home page of a real product== (not a school project) targeting real users %%&nbsp;e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.%% On a related note, also remove `Learning Outcomes` link and related pages.
   * Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
+
+* **User Guide**: Start moving the content from your User Guide (draft created in previous weeks) into the User Guide page in your repository.
+
+* **Developer Guide**: Similar to the User Guide, start moving the content from your Developer Guide (draft created in previous weeks) into the Developer Guide page in your team repository.
+
+**Product:**
+
+* Each member can attempt to do a <tooltip content="a change impacting only one component">local-impact</tooltip> change to the code base.
 
 </div>
 
