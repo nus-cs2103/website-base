@@ -19,7 +19,7 @@ Given below are some recommended progress for you to achieve in the various aspe
   <include src="project-testing.md#expectations"/>
 </modal>
 
-<div class="indented-twice">
+<div class="indented-level2">
 <include src="project-assessment.md#code-quality-tips" />
 </div>
 
@@ -33,7 +33,7 @@ Given below are some recommended progress for you to achieve in the various aspe
 
 * Create the first version of your _Project Portfolio Page (PPP)_. Reason: **Each member needs to create a PPP** to describe your contribution to the project. Creating a PPP takes a significant effort; it is ==too risky to leave it to the last week of the project==. 
 
-<div class="indented-twice">
+<div class="indented-level2">
 
 <tip-box> 
   <include src="projectPortfolioPage.md" />

@@ -95,6 +95,30 @@ siteNav: adminSiteNav.md
 <include src="project-deliverables.md" />
 </div>
 
+<div id="admin-project-w03-inception-anchor"></div>
+<include src="project-w03-inception.md#title" />
+<div id="admin-project-w03-inception">
+<include src="project-w03-inception.md#body" />
+</div>
+
+<div id="admin-project-mid-v10-anchor"></div>
+<include src="project-mid-v10.md#title" />
+<div id="admin-project-mid-v10">
+<include src="project-mid-v10.md#body" />
+</div>
+
+<div id="admin-project-v10-anchor"></div>
+<include src="project-v10.md#title" />
+<div id="admin-project-v10">
+<include src="project-v10.md#body" />
+</div>
+
+<div id="admin-project-mid-v11-anchor"></div>
+<include src="project-mid-v11.md#title" />
+<div id="admin-project-mid-v11">
+<include src="project-mid-v11.md#body" />
+</div>
+
 <div id="admin-project-v11-anchor"></div>
 <include src="project-v11.md#title" />
 <div id="admin-project-v11">

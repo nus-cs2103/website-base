@@ -1,6 +1,6 @@
 <div id="title">
 
-## Project → mid-v1.2 [week 8]
+## Project → mid-v1.1 [week 6]
 </div>
 <div id="body">
 

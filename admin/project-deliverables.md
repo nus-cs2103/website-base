@@ -5,4 +5,20 @@ To expedite your project implementation, you will be given some sample code (Add
 
 `AB4` is the version you will use as the starting point for your final project. Some of the work you do in `AB1` to `AB3` can be ported over to `AB4` and can be used to claim credit in the final project. 
 
+Given below is the high-level time line of the project.
+
+Week         | Activities
+-------------|-----------
+3            | decide on a overall project direction (user profile, optimize or morph?, problem addressed)
+4 (mid-v1.0) | decide on requirements (user stories, use cases, non-functional requirements)
+5 (v1.0)     | document requirements in Developer Guide (draft), conceptualize product
+6 (mid-v1.1) | set up project repo minimally, document product as a User Guide (draft)
+7 (v1.1)     | update UG and DG in the repo
+8 (mid-v1.2) | adjust project rigor as needed, complete repo set up, start proper milestone management
+9 (v1.2)     | enhance code in small steps
+10 (mid-v1.3)| update DG to explain design/implementation of new features 
+11 (v1.3)    | release as a jar file, release updated user guide, peer-testing of released products, verify code authorship 
+12 (mid-v1.4)| tweak as per peer-testing results, draft Project Portfolio Page, practice product demo 
+13 (v1.4)    | final tweaks to docs/product, release product, demo product, test/evaluate peer products
+
 The sub-sections further down explain each project deliverable in detail.
