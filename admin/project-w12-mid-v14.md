@@ -52,7 +52,7 @@ Overview: <include src="project-deliverables.md#mid-v14-overview" inline />
   * Try to make it **a 'well prepared' demo** i.e., know in advance exactly what you'll do in the demo.
 
 <modal large title="Admin {{ icon_embedding }} Project → v1.4 Demo (extract)" id="modal:mid-v14-demo-instructions">
-  <include src="project-v14.md#v15-demo-instructions"/>
+  <include src="project-w13-v14.md#v15-demo-instructions"/>
 </modal> 
 
 </div>
