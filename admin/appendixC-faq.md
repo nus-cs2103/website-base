@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Appendix C: Frequently Asked Questions"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Appendix C: Frequently Asked Questions
+
 <img src="{{baseUrl}}/admin/images/Why you....png" width="300" height="200"/>
 
 <div id="admin-faq-whereIsEverything">
@@ -197,5 +212,7 @@ There are many reasons. One of them is that most of you will be working with exi
 They do, and they should.
 
 CS2103T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some of the stuff across the two modules, submissions are not intended to be exactly the same.
+
+</div>
 
 </div>

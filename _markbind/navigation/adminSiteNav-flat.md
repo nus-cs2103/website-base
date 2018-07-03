@@ -1,5 +1,4 @@
 <markdown>
-* [One-topic-per-page version](index.html)
 * [Preliminaries](#admin-preliminaries-anchor)
 * [Learning Outcomes](#admin-learning-outcomes-anchor)
 * [Lectures](#admin-lectures-anchor)

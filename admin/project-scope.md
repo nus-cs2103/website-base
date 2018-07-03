@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Project → Scope"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+## Project → Scope
+
 <div id="project-direction">
 In general, each team is expected to take one of these two directions:
 
@@ -140,3 +155,5 @@ For either direction, you need to define a target user profile and a value propo
 1. **Manage the project smoothly**: i.e. ensure PR workflow, repo maintenance, integration, releases, etc. are done smoothly.
 
 </span>
+
+</div>

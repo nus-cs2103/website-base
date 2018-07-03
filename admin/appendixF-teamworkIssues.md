@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Appendix F: Handling teamwork issues"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Appendix F: Handling teamwork issues
+
 If your team is facing difficulties due to differences in skill/motivation /availability among team members,
 
 * **First, do not expect everyone to have the same skill/motivation level as you.** It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone is entitled to have their own priorities.
@@ -20,3 +35,5 @@ Given below are some suggestions you can adopt if the project work is not going 
 * However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute any time they wish to.
 * Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.
 * Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
+
+</div>

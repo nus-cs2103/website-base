@@ -1,3 +1,17 @@
+<frontmatter>
+title: "Admin: Project → Deliverables"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+## Project → Deliverables
 
 [<img src="{{baseUrl}}/admin/images/timeline.png" width="100%">](images/timeline.png)
 
@@ -22,3 +36,5 @@ Week         | Activities
 13 (v1.4)    | <span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span>
 
 The sub-sections further down explain each project deliverable in detail and states some recommended progress for you to achieve at that point of the project.
+
+</div>

@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Appendix E: Using GitHub Project Hosting"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Appendix E: Using GitHub Project Hosting
+
 ## Create a GitHub profile
 
 <div id="githubAccount">
@@ -231,5 +246,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 We recommend using the _Forking Workflow_.
 
 <dynamic-panel src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate header="%%Textbook {{ icon_embedding }}%% Git and GitHub: Forking Workflow" />
+
+</div>
 
 </div>

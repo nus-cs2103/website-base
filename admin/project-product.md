@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Project → The Product"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+## Project → The Product
+
 In this semester, we are going to enhance [an AddressBook application](https://se-edu.github.io/addressbook-level4/).
 
 <img src="{{module_org}}/addressbook-level4/raw/master/docs/images/Ui.png" width="600"/>
@@ -10,3 +25,5 @@ This product is meant for users who can type fast, and prefer typing over mouse/
 </panel>
 <p/>
 
+
+</div>

@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → v1.4 [week 13]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → v1.4 [week 13]
@@ -282,4 +295,5 @@ Bug Type Labels:
 * You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. %%&nbsp;Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
 * The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.
 
+</div>
 </div>

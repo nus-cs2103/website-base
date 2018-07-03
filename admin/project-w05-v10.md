@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → v1.0 [week 5]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → v1.0 [week 5]
@@ -46,4 +59,5 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 **Submission**: Show to the tutor during the tutorial.
 
+</div>
 </div>

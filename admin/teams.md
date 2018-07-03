@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Forming Teams"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Forming Teams
+
 <img src="{{baseUrl}}/admin/images/team.png" width="300px"><br>
 %%[Picture: The team that was at the top of early Google]%%
 <p/>
@@ -36,3 +51,5 @@ We allow some freedom in choosing team members, subject to these constraints:
 * No more than one exchange students per team %%Rationale: to increase interaction between exchange students and NUS students.%%
 
 * Also note that **we may modify teams when circumstances call for it**. There is no avenue for you to object. Staying with your preferred team is not guaranteed.
+
+</div>

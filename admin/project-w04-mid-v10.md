@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → mid-v1.0 [week 4]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → mid-v1.0 [week 4]
@@ -99,4 +112,5 @@ This is a good time to analyze requirements with a view to conceptualizing the n
   <include src="../book/gatheringRequirements/productSurveys/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
+</div>
 </div>

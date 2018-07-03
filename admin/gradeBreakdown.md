@@ -1,20 +1,18 @@
 <frontmatter>
 title: "Admin: Module Grading"
 keywords: grading, asessment
+footer: footer.md
+siteNav: adminSiteNav.md
 </frontmatter>
 
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/admin.css">
 
-<div class="website-content">
-
 <include src="../common/header.md" />
 
-<div id="title">
+<div class="website-content" id="main">
 
-# Module Grading
-</div>
-<div id="body">
+# Grade Breakdown
 
 <img src="{{baseUrl}}/admin/images/gradeBreakdown.png" width="600"/>
 <p/>
@@ -28,7 +26,5 @@ keywords: grading, asessment
 <panel header="[50%] Project" minmized>
   <include src="project-assessment.md" />
 </panel>
-
-</div>
 
 </div>

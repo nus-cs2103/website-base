@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → mid-v1.4 [week 12]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → mid-v1.4 [week 12]
@@ -55,4 +68,5 @@ Overview: <include src="project-deliverables.md#mid-v14-overview" inline />
   <include src="project-w13-v14.md#v15-demo-instructions"/>
 </modal> 
 
+</div>
 </div>

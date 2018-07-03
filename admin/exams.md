@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Exams"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Exams
+
 There is no midterm.  
 
 The final exam has two parts: 
@@ -104,5 +119,6 @@ Yes, **you may use pencils** when answering part 2.
 [[Sample paper](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf)]
 [[Answers to the sample paper](http://www.comp.nus.edu.sg/~cs2103/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf)]
 
+</div>
   
 

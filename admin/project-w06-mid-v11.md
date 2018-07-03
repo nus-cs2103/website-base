@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → mid-v1.1 [week 6]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → mid-v1.1 [week 6]
@@ -127,4 +140,5 @@ Before you do any coding for the project, please ensure you have set the Git use
 
 </div>
 
+</div>
 </div>

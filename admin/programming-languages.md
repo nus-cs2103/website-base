@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Programming Language"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Programming Language
+
 <table class="two-column-content">
 <tr>
 <td width="160px">
@@ -17,3 +32,5 @@ Our ==Java coding standard== is [here]({{java_coding_standard}}).
 </tr>
 </table>
 
+
+</div>

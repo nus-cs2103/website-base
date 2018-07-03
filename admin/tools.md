@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Tools"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Tools
+
 <img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px">
 
 **Collaboration platform**: You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See [Appendix E]({{baseUrl}}/admin/index.html#admin-appendixE-github) for more info on how to setup and use GitHub for your project.
@@ -22,3 +37,5 @@ The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com
 <panel header="More info on the Collate tool">
   <include src="collate.md" />
 </panel>
+
+</div>

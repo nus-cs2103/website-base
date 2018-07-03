@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Lectures"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Lectures
+
 <img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
 
 **Timing/venue**: 
@@ -28,3 +43,5 @@ Each lecture is a mixture of:
 
 **Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded *after* the lecture (link available in the [Schedule Page]({{baseUrl}}/schedule/index.html)).
 
+
+</div>

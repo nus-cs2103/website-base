@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → mid-v1.3 [week 10]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → mid-v1.3 [week 10]
@@ -29,4 +42,5 @@ Overview: <include src="project-deliverables.md#mid-v13-overview" inline />
 
 * Optional. If you want feedback on your features, you can demo the feature and get feedback from the tutor.
 
+</div>
 </div>

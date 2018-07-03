@@ -1,3 +1,16 @@
+<frontmatter>
+title: "Admin: Project → inception [week 3]"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
 <div id="title">
 
 ## Project → inception [week 3]
@@ -21,4 +34,5 @@ This is a good time to analyze requirements with a view to conceptualizing the n
   <include src="project-scope.md#project-direction"/>
 </modal>
 
+</div>
 </div>

@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Appendix B: Module Policies"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Appendix B: Module Policies
+
 <div id="policy-followingInstructions">
 
 ### Policy on following instructions
@@ -189,5 +204,7 @@ In general, you are **not allowed to involve outsiders** in your project excep
 ### Policy on suggested length for submissions
 
 We don't usually give a strict page limit for documents such as User Guide and the Developer Guide. You need to decide yourself how long the document should be based on the purpose and the intended audience. You can determine the level of details required based on the samples we provide.
+
+</div>
 
 </div>

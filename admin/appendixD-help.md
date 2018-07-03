@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: How to get help in CS2103/T"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Appendix D: How to get help in CS2103/T
+
 <img src="{{baseUrl}}/admin/images/how to get help.png" width="200px"><br/>
 
 
@@ -67,3 +82,5 @@ Resources
 
 * [lifehacker article]  [Google Tips and Tricks Every Student Should Know](http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671)
 * [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond
+
+</div>

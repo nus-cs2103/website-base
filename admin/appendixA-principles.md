@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Appendix A: Module Principles"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Appendix A: Module Principles
+
 These are some of the main principles underlying the module structure.
 
 <tip-box type="important">
@@ -148,3 +163,5 @@ In this module, last minute heroics will not earn you a good project grade, and 
 **Where you reach at the end matters, NOT what you knew at the beginning.**
 
 When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables are within the reach of everyone in the class irrespective of their prior knowledge.
+
+</div>

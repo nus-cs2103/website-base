@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Tutorials"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Tutorials
+
 ==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
 
 <panel header="%%Schedule {{ icon_embedding }} Overview → Tutorial Schedule%%">
@@ -51,3 +66,5 @@ Consider these two questions you might want to ask a tutor:
 **Grading:**
 
 Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.
+
+</div>

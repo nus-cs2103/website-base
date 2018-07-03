@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Project → Constraints"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+## Project → Constraints
+
 Your project should comply with the following constraints.
 %%**Reason**: to increase comparability among submissions and to maximize applicability of module content in the project.%%
 
@@ -39,3 +54,5 @@ Your project should comply with the following constraints.
   Please ==post in the [forum]({{module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
   %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 
+
+</div>

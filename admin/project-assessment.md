@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Project → Assessment"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+## Project → Assessment
+
 Note that project grading is ==not competitive (not bell curved)==. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
 **Total**: 50 marks (:bust_in_silhouette: 40 individual marks + :busts_in_silhouette: 10 team marks)
@@ -108,3 +123,5 @@ Based on: peer evaluations and tutor observations
 </div>
 </panel>
 <p/>
+
+</div>

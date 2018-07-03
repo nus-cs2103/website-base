@@ -1,3 +1,18 @@
+<frontmatter>
+title: "Admin: Participation Marks"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+# Participation Marks
+
 Participation marks for each phase is ==given on a 'all or nothing' basis== %%&nbsp;i.e., you get either `5` or `0` marks%%.
 
 To get the full marks allocated for participation you should meet a minimal bar on all the following criteria, ==evaluated based on peer evaluations and tutor observations==. We will also take into account data recorded in other systems e.g. GitHub, IVLE.
@@ -32,3 +47,5 @@ The following criteria will be assessed but **considered only for pushing a stud
   
 
 
+
+</div>
