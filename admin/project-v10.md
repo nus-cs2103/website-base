@@ -2,7 +2,12 @@
 
 ## Project → v1.0 [week 5]
 </div>
-<div id="body"> 
+<div id="body">
+
+<tip-box>
+
+Overview: <include src="project-deliverables.md#v10-overview" inline />
+</tip-box>
 
 **v1.0 Summary of Milestone**
 

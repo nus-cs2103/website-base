@@ -4,9 +4,14 @@
 </div>
 <div id="body">
 
+<tip-box>
+
+Overview: <include src="project-deliverables.md#mid-v11-overview" inline />
+</tip-box>
+
 <div id="product">
 
-**Project Management:**
+**<big>Project Management:</big>**
 
 * One team member: <trigger trigger="click" for="modal:v10-setuporg">Set up the team org</trigger> and <trigger trigger="click" for="modal:v10-setuprepo">team repo</trigger> for your team if you haven't done that already.
   * Set up [auto-publishing of docs](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation)
@@ -47,7 +52,12 @@ Before you do any coding for the project, please ensure you have set the Git use
 
 </tip-box>
 
-**Documentation:** Update the following pages in your project repo: 
+**<big>Documentation:</big>** 
+
+<div class="indented">
+
+  Update the following pages in your project repo:
+</div> 
  
 * **About Us page**:  
   This page is used for module admin purposes. ==Please follow the format closely to avoid penalties==. 
@@ -96,9 +106,24 @@ Before you do any coding for the project, please ensure you have set the Git use
 
 * **Developer Guide**: Similar to the User Guide, start moving the content from your Developer Guide (draft created in previous weeks) into the Developer Guide page in your team repository.
 
-**Product:**
+**<big>Product:</big>**
 
 * Each member can attempt to do a <tooltip content="a change impacting only one component">local-impact</tooltip> change to the code base.
+
+  **Objective**: To familiarize yourself with at least one component the code.
+
+  **Description**: Divide the <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the [AddressBook-Level4 developer guide](https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component).
+
+  **Submission**: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.
+  
+  :exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
+
+<div class="indented-level2">
+<panel type="seamless" header="%%Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse%%">
+  <include src="appendixB-policies.md#policy-reuse" />
+</panel><p/>
+</div>
+
 
 </div>
 

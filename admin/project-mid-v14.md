@@ -4,13 +4,16 @@
 </div>
 <div id="body">
 
-Given below are some recommended progress for you to achieve in the various aspects of the project.
+<tip-box>
 
-**Project Management:**
+Overview: <include src="project-deliverables.md#mid-v14-overview" inline />
+</tip-box>
+
+**<big>Project Management:</big>**
 
 * **Freeze features** around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.  
 
-**Product:**
+**<big>Product:</big>**
 
 * Consider increasing code coverage by adding more tests if it is lower than the level you would like it to be. Take note of <trigger trigger="click" for="modal:mid-v14-testingExpectations">our expectation on test code</trigger>. 
 * After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.
@@ -27,7 +30,7 @@ Given below are some recommended progress for you to achieve in the various aspe
   <include src="../book/codeQuality/index.md"/>
 </modal>
 
-**Documentation:**
+**<big>Documentation:</big>**
 
 * Update documentation to match the product.
 
@@ -41,13 +44,12 @@ Given below are some recommended progress for you to achieve in the various aspe
 
 </div>
 
-**Demo:**
+**<big>Demo:</big>**
 
-Do a product demo to serve as a rehearsal for the final project demo at v1.4
-
-* ==Follow <trigger trigger="click" for="modal:mid-v14-demo-instructions">final demo instructions</trigger>== as much as possible.
-* **Cover all features**, not just the ones added in the recent iteration.
-* It **should be a 'well prepared' demo**. You should know in advance exactly what you'll do in the demo.
+* Do a product demo to serve as a rehearsal for the final project demo at v1.4
+  * ==Follow <trigger trigger="click" for="modal:mid-v14-demo-instructions">final demo instructions</trigger>== as much as possible.
+  * **Cover all features**, not just the ones added in the recent iteration.
+  * Try to make it **a 'well prepared' demo** i.e., know in advance exactly what you'll do in the demo.
 
 <modal large title="Admin {{ icon_embedding }} Project → v1.4 Demo (extract)" id="modal:mid-v14-demo-instructions">
   <include src="project-v14.md#v15-demo-instructions"/>

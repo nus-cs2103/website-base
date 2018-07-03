@@ -4,6 +4,11 @@
 </div>
 <div id="body"> 
 
+<tip-box>
+
+Overview: <include src="project-deliverables.md#v11-overview" inline />
+</tip-box>
+
 **v1.1 Summary of Milestone**
 
 Milestone | Minimum acceptable performance to consider as 'reached'
@@ -29,9 +34,9 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.1 Documentation
 
-Update User Guide, Developer Guide, README, and About Us pages as described earlier.
+* Update User Guide, Developer Guide, README, and About Us pages as described earlier.
 
-**Submission**: merge your changes to the master branch of your repo.
+  **Submission**: merge your changes to the master branch of your repo.
 
 </div>
 <div id="product">

@@ -4,7 +4,10 @@
 </div>
 <div id="body">
 
-<tip-box> 
+<tip-box>
+
+Overview: <include src="project-deliverables.md#v13-overview" inline />
+</tip-box>
 
 **v1.3 Summary of Milestone**
 
@@ -15,8 +18,6 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 :busts_in_silhouette: v1.3 jar file released properly on GitHub | as stated
 :busts_in_silhouette: v1.3 milestone properly wrapped up on GitHub | as stated
 :busts_in_silhouette: Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
-
-</tip-box>
 
 ### v1.3 Project Management
 
@@ -32,9 +33,9 @@ You are required to <tooltip content="extract your own code and put in one file"
 
 ### v1.3 Product
 
-As before, move the product towards v2.0.
+* As before, move the product towards v2.0.
 
-**Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub.
+  **Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub.
 
 ### v1.3 Documentation
 
@@ -62,7 +63,7 @@ v1.3 user guide should be updated to match the current version of the product. %
 
 ### v1.3 Demo
 
-Optional. If you want feedback on your features, you can demo the feature and get feedback from the tutor.
+* Optional. If you want feedback on your features, you can demo the feature and get feedback from the tutor.
 
 
 ### v1.3 Testing

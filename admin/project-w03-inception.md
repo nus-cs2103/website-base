@@ -2,7 +2,12 @@
 
 ## Project → inception [week 3]
 </div>
-<div id="body"> 
+<div id="body">
+
+<tip-box>
+
+Overview: <include src="project-deliverables.md#inception-overview" inline />
+</tip-box>
 
 This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).
 

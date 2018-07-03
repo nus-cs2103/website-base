@@ -4,6 +4,11 @@
 </div>
 <div id="body">
 
+<tip-box>
+
+Overview: <include src="project-deliverables.md#v14-overview" inline />
+</tip-box>
+
 <tip-box> 
 
 * :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a 1-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis. 
@@ -13,6 +18,7 @@
 * :exclamation: Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
 * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%&nbsp;e.g. broken links, outdated diagrams/instructions etc.%%.
 * **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that. 
+</tip-box>
 
 **Summary of submissions**:
 
@@ -25,8 +31,6 @@ Team/Individual Item | Name format | Upload to
 :busts_in_silhouette: `README.adoc`, `Ui.png`, `AboutUs.adoc` | | GitHub
 :bust_in_silhouette: Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
 :bust_in_silhouette: Collated files | | GitHub
-
-</tip-box>
 
 
 ### v1.4 Product
@@ -77,14 +81,14 @@ Next, convert the following documents to pdf (AB4 dev guide has some instruction
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.  
-    Starting times: `Team B1: 00 minutes, B2: 15 minutes, B3: 30 minutes, B4: 45 minutes`<br>
+    Starting times: `Team B1: 00 minutes, B2: 20 minutes, B3: 40 minutes, B4: TBA`<br>
     At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.<br> 
     There is an ==automatic penalty if you are not ready to start on time.==<br>
     Wait outside the venue until you are called in.
     
 <div id="v15-demo-instructions">
 
-* **Duration:** Strictly `(teamSize x 3) + 1` minutes %%&nbsp;e.g. 13 minutes for a 4-person team.%% Exceeding this limit will be penalized. The extra minute is for the first speaker to give an overview of the product.
+* **Duration:** Strictly `(teamSize x 3) + 1` minutes %%&nbsp;e.g. 17 minutes for a 5-person team.%% Exceeding this limit will be penalized. The extra minute is for the first speaker to give an overview of the product.
 
 * **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product.
 
@@ -275,7 +279,7 @@ Bug Type Labels:
 **Grading:** 
 
 * Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
-* You will be graded based on many bugs in the product you tested and how far off your evaluation/estimates are from the evaluator consensus. %%&nbsp;Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
+* You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. %%&nbsp;Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.%%
 * The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.
 
 </div>
