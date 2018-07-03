@@ -14,7 +14,7 @@
   "pages": [
     {"glob": "index.md"},
     {"glob": "schedule/**/index.md"},
-    {"glob": "admin/index.md"},
+    {"glob": "admin/*.md"},
     {"glob": "admin/gradeBreakdown.md"},
     {"glob": "schedule/**/outcomes.md"},
     {"glob": "book/about/*.md"},

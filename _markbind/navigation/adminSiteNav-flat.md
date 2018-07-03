@@ -1,6 +1,7 @@
 <markdown>
-* [Preliminaries](preliminaries.html)
-* [Learning Outcomes](learningOutcomes.html)
+* [One-topic-per-page version](index.html)
+* [Preliminaries](#admin-preliminaries-anchor)
+* [Learning Outcomes](#admin-learning-outcomes-anchor)
 * [Lectures](#admin-lectures-anchor)
 * [Tutorials](#admin-tutorials-anchor)
 * [Text Books](#admin-textBooks-anchor)
