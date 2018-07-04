@@ -13,7 +13,7 @@
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
-<include type="danger" src="../../admin/teams.md" name="%%Admin {{ icon_embedding }}%% Team Forming :star:" dynamic />
+<include type="danger" src="../../admin/teams.md#main" name="%%Admin {{ icon_embedding }}%% Team Forming :star:" dynamic />
 </panel>
 
 <!-- --------------------------------------------------------------------------------------------- -->
@@ -72,13 +72,13 @@ In particular, you may want to **have a look at the new Java 8 features** such a
 
 {% set admin_sections = [
   {heading: "FAQ: Where is everything?", priority: "1", source: "appendixC-faq.md#admin-faq-whereIsEverything"},
-  {heading: "Project: Overview", priority: "1", source: "project.md"},
-  {heading: "Project: The Product", priority: "1", source: "project-product.md"},
-  {heading: "Project: Scope", priority: "1", source: "project-scope.md"},
-  {heading: "Text Books", priority: "2", source: "textBooks.md"},
-  {heading: "Programming Language", priority: "2", source: "programming-languages.md"},
-  {heading: "Project: Constraints", priority: "2", source: "project-constraints.md"},
-  {heading: "Project: Deliverables", priority: "2", source: "project-deliverables.md"},
+  {heading: "Project: Overview", priority: "1", source: "project.md#main"},
+  {heading: "Project: The Product", priority: "1", source: "project-product.md#main"},
+  {heading: "Project: Scope", priority: "1", source: "project-scope.md#main"},
+  {heading: "Text Books", priority: "2", source: "textBooks.md#main"},
+  {heading: "Programming Language", priority: "2", source: "programming-languages.md#main"},
+  {heading: "Project: Constraints", priority: "2", source: "project-constraints.md#main"},
+  {heading: "Project: Deliverables", priority: "2", source: "project-deliverables.md#main"},
   {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103VsCs2103t"},
   {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
   {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"},

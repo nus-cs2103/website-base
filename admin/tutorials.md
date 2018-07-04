@@ -38,7 +38,7 @@ siteNav: adminSiteNav.md
 * **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%    
   
 <panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in CS2103/T%%">
-<include src="appendixD-help.md" />
+<include src="appendixD-help.md#main" />
 </panel>
 <p/>
 

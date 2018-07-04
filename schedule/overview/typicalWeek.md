@@ -5,7 +5,7 @@ Attend the lecture for,
 * an introduction to the current week's LOs
 
 <panel type="info" header="%%Admin {{ icon_embedding }}%% Lectures :star::star::star:">
-  <include src="../../admin/lectures.md" />
+  <include src="../../admin/lectures.md#main" />
 </panel> 
 
 <p/>
@@ -17,7 +17,7 @@ Attend the lecture for,
  * If you don't have time to achieve all LOs assigned to the week, use the star rating system to decide which ones to do first.
 
 <panel type="warning" header="%%Admin {{ icon_embedding }}%% Learning Outcomes :star::star:">
-  <include src="../../admin/learningOutcomes.md" />
+  <include src="../../admin/learningOutcomes.md#main" />
 </panel> 
 
 <p/>
@@ -30,5 +30,5 @@ Attend the tutorial to,
 * learn from peer demos of their own LO evidence
 
 <panel type="info" header="%%Admin {{ icon_embedding }}%% Tutorials :star::star::star:">
-  <include src="../../admin/tutorials.md" />
+  <include src="../../admin/tutorials.md#main" />
 </panel> 

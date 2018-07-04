@@ -1,8 +1,8 @@
 {% import "common/macros.njk" as macros with context %}
 
 {% set admin_sections = [
-  {heading: "Project: v1.1", priority: "1", source: "project-w07-v11.md"},
-  {heading: "Appedix F: Handling Teamwork Issues", priority: "3", source: "appendixF-teamworkIssues.md"},
+  {heading: "Project: v1.1", priority: "1", source: "project-w07-v11.md#main"},
+  {heading: "Appedix F: Handling Teamwork Issues", priority: "3", source: "appendixF-teamworkIssues.md#main"},
   {heading: "FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.?", priority: "4", source: "appendixC-faq.md#admin-faq-favoriteTool"}
 ]%}
 

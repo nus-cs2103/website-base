@@ -119,7 +119,7 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 Covered by the 'Documentation' component of v1.1:
 
-<dynamic-panel src="../../admin/project-w07-v11.md" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
+<dynamic-panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
 
 </div>
 
@@ -128,7 +128,7 @@ Covered by the 'Documentation' component of v1.1:
 
 Covered by the 'Product' component of v1.1:
 
-<dynamic-panel src="../../admin/project-w07-v11.md" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
+<dynamic-panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
 
 </div>
 
@@ -148,7 +148,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 Covered by the 'Documentation' of component v1.1:
 
-<dynamic-panel src="../../admin/project-w08-mid-v12.md" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
+<dynamic-panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
 
 </div>
 
@@ -157,7 +157,7 @@ Covered by the 'Documentation' of component v1.1:
 
 Covered by the 'Product' component of mid-v1.2:
 
-<dynamic-panel src="../../admin/project-w08-mid-v12.md" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
+<dynamic-panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
 
 </div>
 
@@ -166,7 +166,7 @@ Covered by the 'Product' component of mid-v1.2:
 
 Covered by 'Documentation' component of v1.2:
 
-<include src="../../admin/project-w09-v12.md" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
+<include src="../../admin/project-w09-v12.md#main" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
 
 </div>
 
@@ -175,7 +175,7 @@ Covered by 'Documentation' component of v1.2:
 
 Covered by the 'Project Management' component of v1.2:
 
-<include src="../../admin/project-w09-v12.md" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
+<include src="../../admin/project-w09-v12.md#main" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
 
 </div>
 
@@ -184,7 +184,7 @@ Covered by the 'Project Management' component of v1.2:
 
 Covered by v1.3:
 
-<include src="../../admin/project-w10-mid-v13.md" name="%%Admin {{ icon_embedding }} Project → v1.3%%" dynamic no-close/>
+<include src="../../admin/project-w10-mid-v13.md#main" name="%%Admin {{ icon_embedding }} Project → v1.3%%" dynamic no-close/>
 
 </div>
 
@@ -194,7 +194,7 @@ Covered by v1.3:
 
 Covered by the 'Acceptance Testing' component of v1.4:
 
-<include src="../../admin/project-w11-v13.md" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
+<include src="../../admin/project-w11-v13.md#main" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
 
 </div>
 
@@ -210,7 +210,7 @@ Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you
 
 Covered by the 'Project Portfolio Page' component of mid-v1.4:
 
-<include src="../../admin/project-w12-mid-v14.md" name="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" dynamic />
+<include src="../../admin/project-w12-mid-v14.md#main" name="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" dynamic />
 
 </div>
 
@@ -219,7 +219,7 @@ Covered by the 'Project Portfolio Page' component of mid-v1.4:
 
 Covered by the 'Demo' component of v1.4:
 
-<include src="../../admin/project-w13-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
+<include src="../../admin/project-w13-v14.md#main" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
 
 </div>
 
@@ -242,10 +242,10 @@ Covered by v1.0-v1.4:
 
 Covered by the 'Peer Evaluations' component of the module:
 
-<include src="../../admin/peer-evaluations.md" name="%%Admin {{ icon_embedding }} Peer Evaluations%%" dynamic />
+<include src="../../admin/peer-evaluations.md#main" name="%%Admin {{ icon_embedding }} Peer Evaluations%%" dynamic />
 
 Also covered by the 'Practical Exam' of v1.4:
 
-<include src="../../admin/project-w13-v14.md" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
+<include src="../../admin/project-w13-v14.md#main" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
 
 </div>
