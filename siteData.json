@@ -2,13 +2,126 @@
   "pages": [
     {
       "headings": {
-        "module-grading": "Module Grading",
+        "appendix-a-module-principles": "Appendix A: Module Principles"
+      },
+      "title": "Admin: Appendix A: Module Principles",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/appendixA-principles.md"
+    },
+    {
+      "headings": {
+        "appendix-b-module-policies": "Appendix B: Module Policies",
+        "policy-on-following-instructions": "Policy on following instructions",
+        "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams",
+        "policy-on-project-work-distribution": "Policy on project work distribution",
+        "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events)",
+        "policy-on-email-response-time": "Policy on email response time",
+        "policy-on-tech-help": "Policy on tech help",
+        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T",
+        "policy-on-publishing-submissions": "Policy on publishing submissions",
+        "policy-on-plagiarism": "Policy on plagiarism",
+        "policy-on-reuse": "Policy on reuse",
+        "policy-on-help-from-outsiders": "Policy on help from outsiders",
+        "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions"
+      },
+      "title": "Admin: Appendix B: Module Policies",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/appendixB-policies.md"
+    },
+    {
+      "headings": {
+        "appendix-c-frequently-asked-questions": "Appendix C: Frequently Asked Questions",
+        "where-is-everything": "Where is everything?",
+        "what-are-the-differences-between-cs2103-and-cs2103t": "What are the differences between CS2103 and CS2103T?",
+        "why-the-workload-is-so-high": "Why the workload is so high?",
+        "how-do-i-get-cs2103r-credit-for-optional-los": "How do I get CS2103R credit for optional LOs?",
+        "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+?",
+        "why-so-much-bean-counting": "Why so much bean counting?",
+        "why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle": "Why you force me to visit a separate website instead of using IVLE?",
+        "why-slides-are-not-detailed": "Why slides are not detailed?",
+        "why-so-much-self-study": "Why so much self-study?",
+        "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?",
+        "why-very-narrow-project-scope": "Why very narrow project scope?",
+        "why-project-requirements-are-so-vague": "Why project requirements are so vague?",
+        "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I'm not allowed to use my favorite tool/framework/language etc.?",
+        "why-so-many-submissions": "Why so many submissions?",
+        "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch?",
+        "why-submission-requirements-differ-between-cs2103t-and-cs2101": "Why submission requirements differ between CS2103T and CS2101?"
+      },
+      "title": "Admin: Appendix C: Frequently Asked Questions",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/appendixC-faq.md"
+    },
+    {
+      "headings": {
+        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T"
+      },
+      "title": "Admin: How to get help in CS2103/T",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/appendixD-help.md"
+    },
+    {
+      "headings": {
+        "appendix-e-using-github-project-hosting": "Appendix E: Using GitHub Project Hosting",
+        "create-a-github-profile": "Create a GitHub profile",
+        "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
+        "submitting-pull-requests-as-evidence-of-an-lo": "Submitting Pull Requests as evidence of an LO",
+        "organization-setup": "Organization setup",
+        "repo-setup": "Repo setup",
+        "issue-tracker-setup": "Issue tracker setup",
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:",
+        "workflow": "Workflow"
+      },
+      "title": "Admin: Appendix E: Using GitHub Project Hosting",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/appendixE-gitHub.md"
+    },
+    {
+      "headings": {
+        "appendix-f-handling-teamwork-issues": "Appendix F: Handling teamwork issues"
+      },
+      "title": "Admin: Appendix F: Handling teamwork issues",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/appendixF-teamworkIssues.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/collate.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "exams": "Exams",
+        "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
+        "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)"
+      },
+      "title": "Admin: Exams",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/exams.md"
+    },
+    {
+      "headings": {
+        "grade-breakdown": "Grade Breakdown",
+        "participation-marks": "Participation Marks",
+        "exams": "Exams",
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)",
-        "v15-practical-exam": "v1.5 Practical Exam"
+        "project-assessment": "Project → Assessment",
+        "v14-practical-exam": "v1.4 Practical Exam"
       },
       "title": "Admin: Module Grading",
       "keywords": "grading, asessment",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
       "src": "admin/gradeBreakdown.md"
     },
     {
@@ -20,48 +133,44 @@
         "lectures": "Lectures",
         "tutorials": "Tutorials",
         "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?",
+        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T",
         "text-books": "Text Books",
         "programming-language": "Programming Language",
-        "project": "Project",
         "project-overview": "Project → Overview",
         "project-the-product": "Project → The Product",
         "project-scope": "Project → Scope",
         "project-constraints": "Project → Constraints",
         "project-deliverables": "Project → Deliverables",
-        "project-v10-week-7": "Project → v1.0 [week 7]",
-        "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
+        "project-inception-week-3": "Project → inception [week 3]",
+        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]",
+        "project-v10-week-5": "Project → v1.0 [week 5]",
+        "v10-documentation": "v1.0 Documentation",
+        "project-mid-v11-week-6": "Project → mid-v1.1 [week 6]",
         "organization-setup": "Organization setup",
         "repo-setup": "Repo setup",
-        "v10-product": "v1.0 Product",
+        "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
         "policy-on-reuse": "Policy on reuse",
-        "project-v11-week-8": "Project → v1.1 [week 8]",
-        "v11-product": "v1.1 Product",
+        "project-v11-week-7": "Project → v1.1 [week 7]",
+        "v11-project-management": "v1.1 Project Management",
         "v11-documentation": "v1.1 Documentation",
-        "project-v12-week-9": "Project → v1.2 [week 9]",
-        "v12-project-management": "v1.2 Project Management",
+        "v11-product": "v1.1 Product",
+        "project-mid-v12-week-8": "Project → mid-v1.2 [week 8]",
         "project-schedule-tracking": "Project Schedule Tracking",
         "using-issues": "Using Issues:",
         "using-milestones": "Using Milestones:",
+        "project-v12-week-9": "Project → v1.2 [week 9]",
+        "v12-project-management": "v1.2 Project Management",
         "v12-product": "v1.2 Product",
         "v12-documentation": "v1.2 Documentation",
         "v12-demo": "v1.2 Demo",
-        "project-v13-week-10": "Project → v1.3 [week 10]",
-        "project-schedule-tracking-2": "Project Schedule Tracking",
-        "using-issues-2": "Using Issues:",
-        "using-milestones-2": "Using Milestones:",
+        "project-mid-v13-week-10": "Project → mid-v1.3 [week 10]",
+        "project-v13-week-11": "Project → v1.3 [week 11]",
         "v13-project-management": "v1.3 Project Management",
         "v13-product": "v1.3 Product",
         "v13-documentation": "v1.3 Documentation",
         "v13-demo": "v1.3 Demo",
-        "project-v14-week-11": "Project → v1.4 [week 11]",
-        "v14-project-management": "v1.4 Project Management",
-        "v14-product": "v1.4 Product",
-        "v14-documentation": "v1.4 Documentation",
-        "v14-demo": "v1.4 Demo",
-        "v14-testing": "v1.4 Testing",
-        "project-v15rc-week-12": "Project → v1.5rc [week 12]",
-        "v15rc-project-management": "v1.5rc Project Management",
-        "v15rc-product": "v1.5rc Product",
+        "v13-testing": "v1.3 Testing",
+        "project-mid-v14-week-12": "Project → mid-v1.4 [week 12]",
         "code-quality": "Code Quality",
         "introduction-2": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
@@ -78,27 +187,28 @@
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
         "basic-6": "Basic",
         "intermediate-5": "Intermediate",
-        "v15rc-documentation": "v1.5rc Documentation",
-        "v15rc-demo": "v1.5rc Demo",
-        "project-v15-week-13": "Project → v1.5 [week 13]",
-        "v15-product": "v1.5 Product",
-        "v15-documentation": "v1.5 Documentation",
-        "v15-demo": "v1.5 Demo",
-        "v15-practical-exam": "v1.5 Practical Exam",
+        "project-v14-week-13": "Project → v1.4 [week 13]",
+        "v14-product": "v1.4 Product",
+        "v14-documentation": "v1.4 Documentation",
+        "v14-demo": "v1.4 Demo",
+        "v14-practical-exam": "v1.4 Practical Exam",
         "project-assessment": "Project → Assessment",
-        "v15-practical-exam-2": "v1.5 Practical Exam",
+        "v14-practical-exam-2": "v1.4 Practical Exam",
         "supervision": "Supervision",
         "forming-teams": "Forming Teams",
         "peer-evaluations": "Peer Evaluations",
         "tools": "Tools",
         "grade-breakdown": "Grade Breakdown",
+        "participation-marks": "Participation Marks",
+        "exams": "Exams",
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)",
-        "v15-practical-exam-3": "v1.5 Practical Exam",
-        "exams": "Exams",
+        "project-assessment-2": "Project → Assessment",
+        "v14-practical-exam-3": "v1.4 Practical Exam",
+        "exams-2": "Exams",
         "final-exam-part-1-mcq-2": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay-2": "Final Exam: Part 2 (Essay)",
-        "participation-marks": "Participation Marks",
+        "participation-marks-2": "Participation Marks",
         "appendix-a-module-principles": "Appendix A: Module Principles",
         "appendix-b-module-policies": "Appendix B: Module Policies",
         "policy-on-following-instructions": "Policy on following instructions",
@@ -107,6 +217,7 @@
         "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events)",
         "policy-on-email-response-time": "Policy on email response time",
         "policy-on-tech-help": "Policy on tech help",
+        "appendix-d-how-to-get-help-in-cs2103t-2": "Appendix D: How to get help in CS2103/T",
         "policy-on-publishing-submissions": "Policy on publishing submissions",
         "policy-on-plagiarism": "Policy on plagiarism",
         "policy-on-reuse-2": "Policy on reuse",
@@ -129,7 +240,7 @@
         "why-so-many-submissions": "Why so many submissions?",
         "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch?",
         "why-submission-requirements-differ-between-cs2103t-and-cs2101": "Why submission requirements differ between CS2103T and CS2101?",
-        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T",
+        "appendix-d-how-to-get-help-in-cs2103t-3": "Appendix D: How to get help in CS2103/T",
         "appendix-e-using-github-project-hosting": "Appendix E: Using GitHub Project Hosting",
         "create-a-github-profile": "Create a GitHub profile",
         "setting-git-username-to-match-github-username-2": "Setting Git Username to Match GitHub Username",
@@ -137,16 +248,420 @@
         "organization-setup-2": "Organization setup",
         "repo-setup-2": "Repo setup",
         "issue-tracker-setup": "Issue tracker setup",
-        "project-schedule-tracking-3": "Project Schedule Tracking",
-        "using-issues-3": "Using Issues:",
-        "using-milestones-3": "Using Milestones:",
+        "project-schedule-tracking-2": "Project Schedule Tracking",
+        "using-issues-2": "Using Issues:",
+        "using-milestones-2": "Using Milestones:",
         "workflow": "Workflow",
         "appendix-f-handling-teamwork-issues": "Appendix F: Handling teamwork issues"
       },
       "title": "Admin",
       "footer": "footer.md",
+      "siteNav": "adminSiteNav-flat.md",
+      "src": "admin/index-flat.md"
+    },
+    {
+      "headings": {
+        "preliminaries": "Preliminaries",
+        "where-is-everything": "Where is everything?",
+        "what-are-the-differences-between-cs2103-and-cs2103t": "What are the differences between CS2103 and CS2103T?"
+      },
+      "title": "Admin",
+      "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/index.md"
+    },
+    {
+      "headings": {
+        "learning-outcomes": "Learning Outcomes"
+      },
+      "title": "Admin: Learning Outcomes",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/learningOutcomes.md"
+    },
+    {
+      "headings": {
+        "lectures": "Lectures"
+      },
+      "title": "Admin: Lectures",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/lectures.md"
+    },
+    {
+      "headings": {
+        "participation-marks": "Participation Marks"
+      },
+      "title": "Admin: Participation Marks",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/participation.md"
+    },
+    {
+      "headings": {
+        "peer-evaluations": "Peer Evaluations"
+      },
+      "title": "Admin: Peer Evaluations",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/peer-evaluations.md"
+    },
+    {
+      "headings": {
+        "preliminaries": "Preliminaries",
+        "where-is-everything": "Where is everything?",
+        "what-are-the-differences-between-cs2103-and-cs2103t": "What are the differences between CS2103 and CS2103T?"
+      },
+      "title": "Admin: Preliminaries",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/preliminaries.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/profilePhoto.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "programming-language": "Programming Language"
+      },
+      "title": "Admin: Programming Language",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/programming-languages.md"
+    },
+    {
+      "headings": {
+        "project-assessment": "Project → Assessment",
+        "v14-practical-exam": "v1.4 Practical Exam"
+      },
+      "title": "Admin: Project → Assessment",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-assessment.md"
+    },
+    {
+      "headings": {
+        "project-constraints": "Project → Constraints"
+      },
+      "title": "Admin: Project → Constraints",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-constraints.md"
+    },
+    {
+      "headings": {
+        "project-deliverables": "Project → Deliverables"
+      },
+      "title": "Admin: Project → Deliverables",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-deliverables.md"
+    },
+    {
+      "headings": {
+        "project-the-product": "Project → The Product"
+      },
+      "title": "Admin: Project → The Product",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-product.md"
+    },
+    {
+      "headings": {
+        "project-scope": "Project → Scope"
+      },
+      "title": "Admin: Project → Scope",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-scope.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/project-testing.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "project-inception-week-3": "Project → inception [week 3]"
+      },
+      "title": "Admin: Project → inception [week 3]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w03-inception.md"
+    },
+    {
+      "headings": {
+        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]"
+      },
+      "title": "Admin: Project → mid-v1.0 [week 4]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w04-mid-v10.md"
+    },
+    {
+      "headings": {
+        "project-v10-week-5": "Project → v1.0 [week 5]",
+        "v10-documentation": "v1.0 Documentation"
+      },
+      "title": "Admin: Project → v1.0 [week 5]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w05-v10.md"
+    },
+    {
+      "headings": {
+        "project-mid-v11-week-6": "Project → mid-v1.1 [week 6]",
+        "organization-setup": "Organization setup",
+        "repo-setup": "Repo setup",
+        "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
+        "policy-on-reuse": "Policy on reuse"
+      },
+      "title": "Admin: Project → mid-v1.1 [week 6]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w06-mid-v11.md"
+    },
+    {
+      "headings": {
+        "project-v11-week-7": "Project → v1.1 [week 7]",
+        "v11-project-management": "v1.1 Project Management",
+        "v11-documentation": "v1.1 Documentation",
+        "v11-product": "v1.1 Product"
+      },
+      "title": "Admin: Project → v1.1 [week 7]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w07-v11.md"
+    },
+    {
+      "headings": {
+        "project-mid-v12-week-8": "Project → mid-v1.2 [week 8]",
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:"
+      },
+      "title": "Admin: Project → mid-v1.2 [week 8]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w08-mid-v12.md"
+    },
+    {
+      "headings": {
+        "project-v12-week-9": "Project → v1.2 [week 9]",
+        "v12-project-management": "v1.2 Project Management",
+        "v12-product": "v1.2 Product",
+        "v12-documentation": "v1.2 Documentation",
+        "v12-demo": "v1.2 Demo"
+      },
+      "title": "Admin: Project → v1.2 [week 9]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w09-v12.md"
+    },
+    {
+      "headings": {
+        "project-mid-v13-week-10": "Project → mid-v1.3 [week 10]"
+      },
+      "title": "Admin: Project → mid-v1.3 [week 10]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w10-mid-v13.md"
+    },
+    {
+      "headings": {
+        "project-v13-week-11": "Project → v1.3 [week 11]",
+        "v13-project-management": "v1.3 Project Management",
+        "v13-product": "v1.3 Product",
+        "v13-documentation": "v1.3 Documentation",
+        "v13-demo": "v1.3 Demo",
+        "v13-testing": "v1.3 Testing"
+      },
+      "title": "Admin: Project → v1.3 [week 11]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w11-v13.md"
+    },
+    {
+      "headings": {
+        "project-mid-v14-week-12": "Project → mid-v1.4 [week 12]",
+        "code-quality": "Code Quality",
+        "introduction": "Introduction",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "basic-2": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "guideline-name-well": "Guideline: Name Well",
+        "basic-4": "Basic",
+        "intermediate-3": "Intermediate",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "basic-5": "Basic",
+        "intermediate-4": "Intermediate",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "basic-6": "Basic",
+        "intermediate-5": "Intermediate"
+      },
+      "title": "Admin: Project → mid-v1.4 [week 12]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w12-mid-v14.md"
+    },
+    {
+      "headings": {
+        "project-v14-week-13": "Project → v1.4 [week 13]",
+        "v14-product": "v1.4 Product",
+        "v14-documentation": "v1.4 Documentation",
+        "v14-demo": "v1.4 Demo",
+        "v14-practical-exam": "v1.4 Practical Exam"
+      },
+      "title": "Admin: Project → v1.4 [week 13]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w13-v14.md"
+    },
+    {
+      "headings": {
+        "project-overview": "Project → Overview"
+      },
+      "title": "Admin: Project → Overview",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project.md"
+    },
+    {
+      "headings": {
+        "b1": "B1",
+        "b2": "B2",
+        "b3": "B3",
+        "b4": "B4",
+        "b1-2": "B1",
+        "b2-2": "B2",
+        "b3-2": "B3",
+        "b4-2": "B4",
+        "b1-3": "B1",
+        "b2-3": "B2",
+        "b3-3": "B3",
+        "b4-3": "B4",
+        "b1-4": "B1",
+        "b2-4": "B2",
+        "b3-4": "B3",
+        "b4-4": "B4",
+        "b1-5": "B1",
+        "b2-5": "B2",
+        "b3-5": "B3",
+        "b4-5": "B4",
+        "b1-6": "B1",
+        "b2-6": "B2",
+        "b3-6": "B3",
+        "b4-6": "B4",
+        "b1-7": "B1",
+        "b2-7": "B2",
+        "b3-7": "B3",
+        "b4-7": "B4",
+        "b1-8": "B1",
+        "b2-8": "B2",
+        "b3-8": "B3",
+        "b4-8": "B4",
+        "b1-9": "B1",
+        "b2-9": "B2",
+        "b3-9": "B3",
+        "b4-9": "B4",
+        "b1-10": "B1",
+        "b2-10": "B2",
+        "b3-10": "B3",
+        "b4-10": "B4",
+        "b1-11": "B1",
+        "b2-11": "B2",
+        "b1-12": "B1",
+        "b2-12": "B2",
+        "b3-11": "B3",
+        "b4-11": "B4",
+        "b1-13": "B1",
+        "b2-13": "B2",
+        "b3-12": "B3",
+        "b4-12": "B4",
+        "b1-14": "B1",
+        "b2-14": "B2",
+        "b3-13": "B3",
+        "b4-13": "B4",
+        "b1-15": "B1",
+        "b2-15": "B2",
+        "b3-14": "B3",
+        "b4-14": "B4",
+        "b1-16": "B1",
+        "b2-16": "B2",
+        "b3-15": "B3",
+        "b4-15": "B4",
+        "b1-17": "B1",
+        "b2-17": "B2",
+        "b3-16": "B3",
+        "b4-16": "B4",
+        "b1-18": "B1",
+        "b2-18": "B2",
+        "b3-17": "B3",
+        "b4-17": "B4"
+      },
+      "title": "Project List",
+      "src": "admin/projectList.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/projectPortfolioPage.md",
+      "title": ""
+    },
+    {
+      "headings": {},
+      "src": "admin/ratingSystem.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "supervision": "Supervision"
+      },
+      "title": "Admin: Supervision",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/supervision.md"
+    },
+    {
+      "headings": {
+        "forming-teams": "Forming Teams"
+      },
+      "title": "Admin: Forming Teams",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/teams.md"
+    },
+    {
+      "headings": {
+        "text-books": "Text Books"
+      },
+      "title": "Admin: Text Books",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/textbooks.md"
+    },
+    {
+      "headings": {
+        "tools": "Tools"
+      },
+      "title": "Admin: Tools",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/tools.md"
+    },
+    {
+      "headings": {
+        "tutorials": "Tutorials",
+        "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?",
+        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T"
+      },
+      "title": "Admin: Tutorials",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/tutorials.md"
     },
     {
       "headings": {
@@ -195,7 +710,11 @@
       "headings": {
         "browser-compatibility": "Browser Compatibility",
         "information-layers": "Information Layers",
-        "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?"
+        "lectures": "Lectures",
+        "learning-outcomes": "Learning Outcomes",
+        "tutorials": "Tutorials",
+        "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?",
+        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T"
       },
       "title": "Tutorial Schedule",
       "src": "schedule/overview/index.md"

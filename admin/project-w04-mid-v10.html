@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Admin: Project → mid-v1.0 [week 4]</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="icon" href="/website-base/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="index-flat.html">See all in one page (slow!)</a></li>
+      <li style="margin-top: 10px"><a href="preliminaries.html">Preliminaries</a></li>
+      <li style="margin-top: 10px"><a href="learningOutcomes.html">Learning Outcomes</a></li>
+      <li style="margin-top: 10px"><a href="lectures.html">Lectures</a></li>
+      <li style="margin-top: 10px"><a href="tutorials.html">Tutorials</a></li>
+      <li style="margin-top: 10px"><a href="textbooks.html">Text Books</a></li>
+      <li style="margin-top: 10px"><a href="programming-languages.html">Programming Language</a></li>
+      <li style="margin-top: 10px">Project</li>
+      <li style="margin-top: 10px"><a href="project.html"><span class="dimmed">→</span> Overview</a></li>
+      <li style="margin-top: 10px"><a href="project-product.html"><span class="dimmed">→</span> The product</a></li>
+      <li style="margin-top: 10px"><a href="project-scope.html"><span class="dimmed">→</span> Scope</a></li>
+      <li style="margin-top: 10px"><a href="project-constraints.html"><span class="dimmed">→</span> Constraints</a></li>
+      <li style="margin-top: 10px"><a href="project-deliverables.html"><span class="dimmed">→</span> Deliverables</a></li>
+      <li style="margin-top: 10px"><a href="project-w03-inception.html"><span class="dimmed">→</span> inception [week 3]</a></li>
+      <li style="margin-top: 10px"><a href="project-w04-mid-v10.html"><span class="dimmed">→</span> mid-v1.0 [week 4]</a></li>
+      <li style="margin-top: 10px"><a href="project-w05-v10.html"><span class="dimmed">→</span> v1.0 [week 5]</a></li>
+      <li style="margin-top: 10px"><a href="project-w06-mid-v11.html"><span class="dimmed">→</span> mid-v1.1 [week 6]</a></li>
+      <li style="margin-top: 10px"><a href="project-w07-v11.html"><span class="dimmed">→</span> v1.1 [week 7]</a></li>
+      <li style="margin-top: 10px"><a href="project-w08-mid-v12.html"><span class="dimmed">→</span> mid-v1.2 [week 8]</a></li>
+      <li style="margin-top: 10px"><a href="project-w09-v12.html"><span class="dimmed">→</span> v1.2 [week 9]</a></li>
+      <li style="margin-top: 10px"><a href="project-w10-mid-v13.html"><span class="dimmed">→</span> mid-v1.3 [week 10]</a></li>
+      <li style="margin-top: 10px"><a href="project-w11-v13.html"><span class="dimmed">→</span> v1.3 [week 11]</a></li>
+      <li style="margin-top: 10px"><a href="project-w12-mid-v14.html"><span class="dimmed">→</span> mid-v1.4 [week 12]</a></li>
+      <li style="margin-top: 10px"><a href="project-w13-v14.html"><span class="dimmed">→</span> v1.4 [week 13]</a></li>
+      <li style="margin-top: 10px"><a href="project-assessment.html"><span class="dimmed">→</span> Assessment</a></li>
+      <li style="margin-top: 10px"><a href="supervision.html">Supervision</a></li>
+      <li style="margin-top: 10px"><a href="teams.html">Forming Teams</a></li>
+      <li style="margin-top: 10px"><a href="peer-evaluations.html">Peer Evaluations</a></li>
+      <li style="margin-top: 10px"><a href="tools.html">Tools</a></li>
+      <li style="margin-top: 10px"><a href="gradeBreakdown.html">Grade Breakdown</a></li>
+      <li style="margin-top: 10px"><a href="exams.html">Exams</a></li>
+      <li style="margin-top: 10px"><a href="participation.html">Participation Marks</a></li>
+      <li style="margin-top: 10px"><a href="appendixA-principles.html">Appendix A: Module Principles</a></li>
+      <li style="margin-top: 10px"><a href="appendixB-policies.html">Appendix B: Module Policies</a></li>
+      <li style="margin-top: 10px"><a href="appendixC-faq.html">Appendix C: Frequently Asked Questions</a></li>
+      <li style="margin-top: 10px"><a href="appendixD-help.html">Appendix D: How to get help in CS2103/T</a></li>
+      <li style="margin-top: 10px"><a href="appendixE-gitHub.html">Appendix E: Using GitHub Project Hosting</a></li>
+      <li style="margin-top: 10px"><a href="appendixF-teamworkIssues.html">Appendix F: Handling teamwork issues</a></li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <div>
+      <navbar placement="top" type="inverse">
+        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+        <li><a href="/website-base/index.html">Schedule</a></li>
+        <dropdown text="Textbook">
+          <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+          <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        </dropdown>
+        <li><a href="/website-base/admin/index.html">Admin</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+        <dropdown text="IVLE">
+          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+        </dropdown>
+        <dropdown text="Discuss">
+          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+        </dropdown>
+        <dropdown text="Links">
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+          <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+        </dropdown>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </div>
+    <div class="website-content" id="main">
+      <div id="title">
+        <h2 id="project-mid-v10-week-4">Project → mid-v1.0 [week 4]</h2>
+      </div>
+      <div id="body">
+        <p>Given below are some guidance on the recommended progress at this point of the project <span class="dimmed">(i.e., at week 4, which is the midway point of the milestone v1.0)</span></p>
+        <tip-box>
+          <p>Overview: <span>decide on requirements <span class="dimmed">(user stories, use cases, non-functional requirements)</span></span>
+          </p>
+        </tip-box>
+        <p>This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).</p>
+        <ul>
+          <li>
+            <p><strong>Step 1 : Brainstorm user stories</strong></p>
+            <img src="/website-base/admin/images/v00.png" width="250px">
+            <p>Get together with your team members and
+              <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for
+              <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the v2.0 of the product</strong>. Note that in the module project you will deliver only up to v1.4 but here you should consider up to v2.0 (i.e. beyond the module).</p>
+            <ul>
+              <li>
+                <p>It is ok to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></p>
+              </li>
+              <li>
+                <p>Refer
+                  <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Specifying Requirements → UserStories → Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.</p>
+              </li>
+              <li>
+                <p>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in
+                  <trigger trigger="click"
+                    for="modal:v10-onlinetools">[Textbook <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br></p>
+              </li>
+              <li>
+                <p>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. <span class="dimmed"> Reason: an important aspect of brainstorming is not judging the ideas generated.</span></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-brainstorming">
+        
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Requirements → Gathering Requirements →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="brainstorming">Brainstorming</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Brainstorming</strong>: A group activity designed to <em>generate a large number of diverse and creative ideas</em> for the <em>solution</em> of a problem.</p>
+                    </div>
+                  </tip-box>
+                  <p><strong>In a brainstorming session there are no &quot;bad&quot; ideas. The aim is to <em>generate ideas; not to validate</em> them.</strong> Brainstorming encourages you to &quot;think outside the box&quot; and put &quot;crazy&quot;
+                    ideas on the table without fear of rejection.</p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: Characteristic of brainstorming">
+                          <question>
+                            <p>What is the key characteristic about brainstorming?</p>
+                            <ul radio-group="11d89" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> a. There should be at least 5 participants.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> c. Only the best people in the team should take part.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(b)</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </modal>
+        <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-userstories">
+        
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → User Stories →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="introduction">Introduction</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
+                    </div>
+                  </tip-box>
+                  <p><strong>A common format</strong> for writing user stories is:</p>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
+                    </div>
+                  </tip-box>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Examples (from a <em>Learning Management System</em>):</p>
+                    <ol>
+                      <li>As a student, I can download files uploaded by lecturers, so that I can get my own copy of the files</li>
+                      <li>As a lecturer, I can create discussion forums, so that students can discuss things online</li>
+                      <li>As a tutor, I can print attendance sheets, so that I can take attendance during the class</li>
+                    </ol>
+                  </tip-box>
+                  <p></p>
+                  <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
+                    Trello, Google Docs, ...) to manage user stories digitally.</p>
+                  <panel header="%%User stories in use%%" expanded="">
+                    <panel header="With sticky notes" type="seamless" expanded="">
+                      <img src="/website-base/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
+                      <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
+                    </panel>
+                    <panel header="With paper" type="seamless">
+                      <img src="/website-base/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
+                      <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
+                    </panel>
+                    <panel header="With software" type="seamless">
+                      <img src="/website-base/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
+                      <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
+                    </panel>
+                  </panel>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header="Q: Which of these are true about user stories?">
+                          <question>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They are written from the user/customer perspective</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are always written in some physical medium such as index cards or sticky notes</li>
+                            </ul>
+                            <div slot="answer">
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Reason: Despite the name, user stories are not related to 'stories' about the software.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Reason: It is possible to use software to record user stories. When the team members are not co-located this may be the only option.</li>
+                              </ul>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="Q: What's wrong with this user story?">
+                          <question has-input="true">
+                            <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
+                            <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
+                            <div slot="hint">
+                              <p>Refer to the definition of a user story.</p>
+                              <span>
+<p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p></span></div>
+                            <div slot="answer">
+                              <p>This user story is not written from the perspective of the user/customer.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="Q: Extract user stories from customer statement">
+                          <question has-input="true">
+                            <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>.
+                              What are the user stories you can extract from that statement?</p>
+                            <div slot="hint">
+                              <p>Remember to follow the correct format when writing user stories.</p>
+                              <div>
+                                <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
+                              </div>
+                            </div>
+                            <div slot="answer">
+                              <p><code>As an employee, I can view my leave balance, so that I can know how many leave days I have left.</code></p>
+                              <p><span class="dimmed">Note: the <code>{benefit}</code> part may vary as it is not specifically mentioned in the question.</span></p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </modal>
+        <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
+        
+          <div>
+            <tabs>
+            
+              <tab header="GitHub Project Boards">
+                <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example Project Board:</p>
+                <p><img src="/website-base/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png" width="800">
+                  <p></p>
+                </p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example Issue to represent a user story:</p>
+                <p><img src="/website-base/book/specifyingRequirements/userStories/usage/images/userStoryAsGitHubIssue.png" width="800">
+                  <p></p>
+                </p>
+                <p>A video on GitHub Project Boards:</p>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <p>
+                  <hr>
+                </p>
+              </tab>
+            
+              <tab header="Google Sheets">
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example Google Sheet for recording user stories:</p>
+                <p><img src="/website-base/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800">
+                  <p></p>
+                </p>
+                <p>
+                  <hr>
+                </p>
+              </tab>
+              <tab header="Trello">
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
+                <p><img src="/website-base/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800">
+                  <p></p>
+                </p>
+                <p>
+                  <hr>
+                </p>
+              </tab>
+            </tabs>
+          </div>
+        </modal>
+        <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips">
+        
+          <div>
+            <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early requirements gathering</strong>.</p>
+            <tip-box>
+              <p>💡 Here are some tips for using user stories for early stages of requirement gathering:</p>
+              <ul>
+                <li><strong>Define the <em>target user</em>:</strong><br> Decide your target user's profile (e.g. a student, office worker, programmer, sales person) and work patterns (e.g. Does he work in groups or alone? Does he share his computer with
+                  others?). A clear understanding of the target user will help when deciding the importance of a user story. You can even give this user a name. <span class="dimmed"> e.g. Target user Jean is a university student studying in a non-IT field. She interacts with a lot of people due to her involvement in university clubs/societies. ...</span></li>
+                <li><strong>Define the <em>problem scope</em>:</strong> Decide that exact problem you are going to solve for the target user. <span class="dimmed"> e.g. Help Jean keep track of all her school contacts</span></li>
+                <li><strong>Don't be too hasty to discard 'unusual' user stories:</strong><br> Those might make your product unique and stand out from the rest, at least for the target users.</li>
+                <li><strong>Don't go into too much details:</strong><br> For example, consider this user story: <code>As a user, I want to see a list of tasks that needs my attention most at the present time, so that I pay attention to them first.</code><br>                  When discussing this user story, don't worry about what tasks should be considered <em>needs my attention most at the present time</em>. Those details can be worked out later.</li>
+                <li><strong>Don't be biased by preconceived product ideas:</strong><br> When you are at the stage of identifying user needs, clear your mind of ideas you have about what your end product will look like.</li>
+                <li><strong>Don't discuss implementation details or whether you are actually going to implement it:</strong><br> When gathering requirements, your decision is whether the user's need is important enough for you to want to fulfil it. Implementation
+                  details can be discussed later. If a user story turns out to be too difficult to implement later, you can always omit it from the implementation plan.</li>
+              </ul>
+            </tip-box>
+          </div>
+        </modal>
+        <div class="indented-level3">
+          <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> User Story examples (from a different product)%%">
+            <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br>
+              <code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br>
+              <code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br>
+              <code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br>
+              <code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
+          </panel>
+        </div>
+        <br>
+        <ul>
+          <li>
+            <p><strong>Step 2: Prioritize the user stories</strong></p>
+            <img src="/website-base/admin/images/userstories.png" width="250px">
+            <p>Suggested workflow:</p>
+            <ul>
+              <li>
+                <p>Take one user story at a time and get team member opinions about it.</p>
+              </li>
+              <li>
+                <p>Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:</p>
+                <ul>
+                  <li><code>Must-Have</code> : The product will be practically useless to the target user without this feature.</li>
+                  <li><code>Nice-To-Have</code> : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.</li>
+                  <li><code>Not-Useful</code> : No significant benefit to the target user, or does not fit into the product vision.</li>
+                </ul>
+              </li>
+              <li>
+                <p><span class="dimmed">If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.</span></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Step 3: Document requirements of the product</strong></p>
+            <p>Based on your user story categorization in the step above, given module requirements/constraints for the project, and the current state of the product, select which user stories you are likely to include in v2.0.</p>
+            <p>Document the following items using a convenient format (e.g., a GoogleDoc). <span class="dimmed">Do not spend time on formatting the content nicely; reason: these will be ported to the actual Developer Guide in your project repo later.</span>:</p>
+            <ul>
+              <li><strong>Target user profile</strong>, <strong>value proposition</strong>, and
+                <trigger trigger="click" for="modal:v10-userstories"><strong>user stories</strong></trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including
+                priorities. This can include user stories considered but will not be included in the final product.</li>
+              <li>
+                <trigger trigger="click" for="modal:v10-usecases"><strong>Use cases</strong></trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
+              <li>
+                <trigger trigger="click" for="modal:v10-nfr"><strong>Non-functional requirements</strong></trigger>:<br> Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
+              <li>
+                <trigger trigger="click" for="modal:v10-glossary"><strong>Glossary</strong></trigger>: Define terms that are worth defining.</li>
+              <li>[Optional]
+                <trigger trigger="click" for="modal:v10-prodsurveys"><strong>Product survey</strong></trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).</li>
+            </ul>
+          </li>
+        </ul>
+        <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Specifying Requirements → Use Cases" id="modal:v10-usecases">
+        
+          <div>
+            <p>null</p>
+          </div>
+        </modal>
+        <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-nfr">
+        
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Requirements → Requirements →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="non-functional-requirements">Non-Functional Requirements</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>There are two kinds of requirements:</p>
+                  <ol>
+                    <li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
+                    <li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li>
+                  </ol>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of non-functional requirement categories:</p>
+                    <ul>
+                      <li>Data requirements e.g. size,
+                        <tooltip content="how often do data change">volatility</tooltip>,
+                        <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                      <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+                      <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
+                        Scalability, Security, Stability, Testability, and more ...</li>
+                    </ul>
+                    <panel type="seamless" header="<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Some concrete examples of NFRs" expanded="">
+                      <ul>
+                        <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
+                        <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5
+                          million.</li>
+                        <li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
+                        <li>Performance requirements: e.g. the system should respond within two seconds.</li>
+                        <li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
+                        <li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
+                        <li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
+                        <li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
+                        </li>
+                      </ul>
+                    </panel>
+                  </tip-box>
+                  <p>We should spend extra effort in digging NFRs out as early as possible because <strong>NFRs are easier to miss</strong> <span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span> and sometimes <strong>they are critical to the success of the software.</strong>                    <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></p>
+                </div>
+                <div>
+                  <div>
+                    <panel header=":muscle: Exercises" expandable="">
+                      <div>
+                        <panel header=":lock::key: TEAMMATES NFRs">
+                          <question>
+                            <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(a)(c)(d)(f)(g)</p>
+                              <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project
+                                is done, both of which are considered non-functional requirements.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </modal>
+        <modal title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-glossary">
+        
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Glossary →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="what">What</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Glossary</strong>: A glossary serves to ensure that <em>all stakeholders have a common understanding</em> of the noteworthy terms, abbreviation, acronyms etc.</p>
+                    </div>
+                  </tip-box>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
+                    <ul>
+                      <li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
+                      <li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li>
+                    </ul>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </modal>
+        <modal title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-prodsurveys">
+        
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Requirements → Gathering Requirements →
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="product-surveys">Product Surveys</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Studying existing products can unearth shortcomings of existing solutions that can be addressed by a new product.</strong> Product manuals and other forms of technical documentation of an existing system can be a good way to
+                    learn about how the existing solutions work.</p>
+                  <tip-box>
+                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> When developing a game for a mobile device, a look at a similar PC game can give insight into the kind of features and interactions the mobile game can offer.</p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </modal>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Wed, 04 Jul 2018 11:44:42 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script>
+    const baseUrl = '/website-base'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\js\site-nav.js"></script>
+</html>

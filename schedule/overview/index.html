@@ -112,6 +112,7 @@
     </ul>
     <panel type="info" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Lectures :star::star::star:">
       <div>
+        <h1 id="lectures">Lectures</h1>
         <img src="/website-base/admin/images/Lecture photo.png" width="100%">
         <p><strong>Timing/venue</strong>:</p>
         <table class="markbind-table table table-bordered table-striped">
@@ -126,7 +127,7 @@
             <tr>
               <td>Semester 1 (Aug-Nov)</td>
               <td>ICube Auditorium</td>
-              <td><strong>1400</strong>-1600</td>
+              <td><strong>1600</strong>-1800</td>
             </tr>
             <tr>
               <td>Semester 2 (Jan-April)</td>
@@ -141,15 +142,9 @@
           <p></p>
         </panel>
         <p></p>
-        <p>Each lecture is a mixture of:</p>
-        <ul>
-          <li>A <em>flipped classroom</em> format activities covering learning outcomes of the <em>current</em> week.</li>
-          <li>A preview of the learning outcomes for the <em>following</em> week.</li>
-        </ul>
         <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
         <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
-        <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website-base/book/index.html">Textbook</a> section
-          and are also hyperlinked from the <a href="/website-base/schedule/index.html">Schedule Page</a>.</p>
+        <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website-base/se-book-adapted/index.html">Textbook</a>          section and are also hyperlinked from the <a href="/website-base/schedule/index.html">Schedule Page</a>.</p>
         <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture (link available in the <a href="/website-base/schedule/index.html">Schedule Page</a>).</p>
       </div>
     </panel>
@@ -162,23 +157,37 @@
     </ul>
     <panel type="warning" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Learning Outcomes :star::star:">
       <div>
+        <h1 id="learning-outcomes">Learning Outcomes</h1>
         <p>This module is organized primarily around a list of Learning Outcomes.</p>
         <p>Each week has a suggested list of LOs. They are categorized using the following star-rating system:</p>
         <div>
-          <panel type="danger" header=":star:" expanded="" no-close="" no-switch="">
-            <p>The LOs you need to achieve just to keep up with the module. We recommend you to <mark>achieve these LOs if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).
-            </p>
-          </panel>
-          <panel type="warning" header=":star::star:" expanded="" no-close="" no-switch="">
-            <p>Can get you up to a <strong>B+</strong>.</p>
-          </panel>
-          <panel type="info" header=":star::star::star:" expanded="" no-close="" no-switch="">
-            <p>Can get you up to an <strong>A</strong>.</p>
-          </panel>
-          <panel type="success" header=":star::star::star::star:" expanded="" no-close="" no-switch="">
-            <p>These are meant for self-driven students who aims for a SE career in a high-end SE company.</p>
-            <p>Required for an <strong>A+</strong> and can be used <strong>for CS2103R credit</strong>.</p>
-          </panel>
+          <p><strong><big>Star rating system</big></strong></p>
+          <div class="indented">
+            <tip-box>
+              <p>TLDR: Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.</p>
+            </tip-box>
+            <ul>
+              <li><strong>One-star LOs</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you to <mark>achieve these LOs if you want to pass the module</mark>                (i.e. up to a <strong>C</strong> grade).</li>
+              <li><strong>Two-stars LOs</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can get you up to a <strong>B+</strong>.</li>
+              <li><strong>Three-stars LOs</strong> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>:
+                Can get you up to an <strong>A</strong>.</li>
+              <li><strong>Four-stars LOs</strong> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span
+                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>.
+                  Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</li>
+            </ul>
+            <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="label label-default"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="label label-default"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="label label-default"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="label label-default"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <span
+                  class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                    aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star
+                  rating system above i.e., one-star prerequisite LOs are the most basic and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
+            <p>Note that we use the a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>              without affecting your ability to follow the module.</p>
+          </div>
         </div>
       </div>
     </panel>
@@ -191,9 +200,10 @@
     </ul>
     <panel type="info" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Tutorials :star::star::star:">
       <div>
+        <h1 id="tutorials">Tutorials</h1>
         <p><mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure
           to do so in due course.</p>
-        <panel header="%%Schedule <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Overview → Tutorial Schedule%%">
+        <panel header="%%Schedule <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Overview → Tutorial Schedule%%" minimized="">
           <div>
             <tip-box type="important">
               <p>Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
@@ -349,108 +359,136 @@
           <li>The tutor will observe, and give feedback on, how well you are achieving required LOs.</li>
           <li>Please <mark>bring your laptop to tutorials.</mark> You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
         </ul>
-        <panel header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> FAQ: What if I don't carry around a laptop?%%">
-          <div>
-            <h3 id="what-if-i-dont-carry-around-a-laptop">What if I don't carry around a laptop?</h3>
-            <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort from the tutor or team members.</p>
-            <p><span class="dimmed">Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.</span></p>
-          </div>
-        </panel>
-        <p></p>
+        <div class="indented-level2">
+          <panel header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> FAQ: What if I don't carry around a laptop?%%" minimized="">
+            <div>
+              <h3 id="what-if-i-dont-carry-around-a-laptop">What if I don't carry around a laptop?</h3>
+              <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort from the tutor or team
+                members.</p>
+              <p><span class="dimmed">Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.</span></p>
+            </div>
+          </panel>
+        </div>
+        <br>
         <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
         <ul>
           <li><strong>No direct tech help</strong>: Tutors are prohibited from giving technical help. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
         </ul>
-        <panel header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T%%">
-          <div>
-            <p><img src="/website-base/admin/images/how to get help.png" width="200px"><br></p>
-            <p><strong>We want to move you away from 'hand holding' and make you learn how to solve problems on your own.</strong> This is a vital survival skill in the industry and it needs practice.</p>
-            <p>Whether it is a technical problem <span class="dimmed">(e.g. error when using the IDE)</span> or a doubt about a concept <span class="dimmed">(e.g. what is the difference between scripted testing and exploratory testing?) </span> <strong>we the teaching team are happy to work <em>with</em> you when you look for a solution/answer, but we do not do it <em>for</em> you.</strong>              We discourage unconditional direct help from tutors because we want you to learn to help yourself. Yes, we believe in ‘tough love’😝.</p>
-            <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p>
-            <img src="/website-base/admin/images/the good reasons to get home early.png" width="300">
-            <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>refactoring</em> and <em>rewriting</em>?</p>
-            <p>What not to do:</p>
-            <p>When faced with a technical problem or a doubt about a concept, don'f fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know. Instead, here
-              are some things you can do:</p>
-            <ul>
-              <li>
-                <p><strong>Check what is given</strong>: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that
-                  shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.</p>
-              </li>
-              <li>
-                <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't give
-                  an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on
-                  the error message is a good starting point.  <br>
-                  <img src="/website-base/admin/images/how to google it.png" width="460" height="268"></p>
-              </li>
-              <li>
-                <p><strong>Ask peers</strong>:</p>
-                <p>Ask your team members.</p>
-                <p>Ask classmates using the module forum or the slack channel. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing
-                  similar problems too. If you are really shy to ask questions in the forum, you may use <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a> to submit your question anonymously
-                  which we will then post in the forum.</p>
-                <panel header="Rubber Duck Debugging">
-                  <p><img src="/website-base/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
-                  <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around
-                    a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
-                  <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+        <div class="indented-level2">
+          <panel header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T%%" minimized="">
+            <div>
+              <h1 id="appendix-d-how-to-get-help-in-cs2103t">Appendix D: How to get help in CS2103/T</h1>
+              <p><img src="/website-base/admin/images/how to get help.png" width="200px"><br></p>
+              <p><strong>We want to move you away from 'hand holding' and make you learn how to solve problems on your own.</strong> This is a vital survival skill in the industry and it needs practice.</p>
+              <p>Whether it is a technical problem <span class="dimmed">(e.g. error when using the IDE)</span> or a doubt about a concept <span class="dimmed">(e.g. what is the difference between scripted testing and exploratory testing?) </span> <strong>we the teaching team are happy to work <em>with</em> you when you look for a solution/answer, but we do not do it <em>for</em> you.</strong>                We discourage unconditional direct help from tutors because we want you to learn to help yourself. Yes, we believe in ‘tough love’😝.</p>
+              <p>The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?'</p>
+              <img src="/website-base/admin/images/the good reasons to get home early.png" width="300">
+              <p>Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between <em>refactoring</em> and <em>rewriting</em>?</p>
+              <p>What not to do:</p>
+              <p>When faced with a technical problem or a doubt about a concept, don'f fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know. Instead, here
+                are some things you can do:</p>
+              <ul>
+                <li>
+                  <p><strong>Check what is given</strong>: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that
+                    shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.</p>
+                </li>
+                <li>
+                  <p><strong>Search</strong>: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like <a href="http://stackoverflow.com/">stackoverflow</a>. Don't
+                    give an opportunity for someone to ask you to <a href="http://www.jibble.org/stfw/">STFW</a>.<br> Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search
+                    on the error message is a good starting point.  <br>
+                    <img src="/website-base/admin/images/how to google it.png" width="460" height="268"></p>
+                </li>
+                <li>
+                  <p><strong>Ask peers</strong>:</p>
+                  <p>Ask your team members.</p>
+                  <p>Ask classmates using the module forum or the slack channel. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing
+                    similar problems too. If you are really shy to ask questions in the forum, you may use <a href="https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform">this form</a> to submit your question anonymously
+                    which we will then post in the forum.</p>
+                  <panel header="Rubber Duck Debugging">
+                    <p><img src="/website-base/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
+                    <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around
+                      a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
+                    <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]</p>
+                    <p></p>
+                  </panel>
                   <p></p>
-                </panel>
-                <p></p>
+                </li>
+                <li>
+                  <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
+                  <p>Here are some tips for posting help request:</p>
+                  <ul>
+                    <li>
+                      <p>PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.</p>
+                    </li>
+                    <li>
+                      <p>Learn to isolate the problem. &quot;My code doesn't work&quot; isn't going to help even if you post the whole code online. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down
+                        to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself. If not, at least it increases the chance of someone else being able to help you.</p>
+                      <tip-box>
+                        <p>💡 How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.</p>
+                      </tip-box>
+                    </li>
+                    <li>
+                      <p>Generalize the problem. &quot;How to write tasks to a text file using Java&quot; is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) &quot;How to write to a file
+                        using Java&quot;.</p>
+                    </li>
+                    <li>
+                      <p>Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they
+                        can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.</p>
+                      <tip-box>
+                        <p>💡 Know what these stand for: <strong>RTFM</strong>, <strong>STFW</strong>, <strong>GIYF</strong></p>
+                      </tip-box>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <span id="questions-for-tutros">
+<ul>
+<li><strong>Raise your question during a tutorial</strong>. Some questions can be discussed with the tutor and tutorial-mates.
+What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask a tutor:
+<ul>
+<li>✅ <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span></li>
+              <li>🚫 <em>What is coupling?</em> - Such questions are discouraged. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span></li>
+              </ul>
               </li>
-              <li>
-                <p><strong>Ask the world</strong> using programming forums such as stackoverflow.</p>
-                <p>Here are some tips for posting help request:</p>
-                <ul>
-                  <li>
-                    <p>PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.</p>
-                  </li>
-                  <li>
-                    <p>Learn to isolate the problem. &quot;My code doesn't work&quot; isn't going to help even if you post the whole code online. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down
-                      to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself. If not, at least it increases the chance of someone else being able to help you.</p>
-                    <tip-box>
-                      <p>💡 How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.</p>
-                    </tip-box>
-                  </li>
-                  <li>
-                    <p>Generalize the problem. &quot;How to write tasks to a text file using Java&quot; is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) &quot;How to write to a file
-                      using Java&quot;.</p>
-                  </li>
-                  <li>
-                    <p>Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can
-                      help you, it will take longer. But this doesn't mean you dump too much information into the thread either.</p>
-                    <tip-box>
-                      <p>💡 Know what these stand for: <strong>RTFM</strong>, <strong>STFW</strong>, <strong>GIYF</strong></p>
-                    </tip-box>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p><strong>Talk to the lecturer</strong> before or after the lecture. The lecturer will be at the lecture venue from 30 minutes before the start of the lecture.</p>
-              </li>
-              <li>
-                <p><strong>Request our help</strong>: Failing all above, you can always request for help by emailing the lecturer.</p>
-              </li>
-            </ul>
-            <p>Resources</p>
-            <ul>
-              <li>[lifehacker article]  <a href="http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671">Google Tips and Tricks Every Student Should Know</a></li>
-              <li>[Article] <a href="http://catb.org/esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond</li>
-            </ul>
-          </div>
-        </panel>
-        <p></p>
+              </ul>
+              </span>
+              <ul>
+                <li>
+                  <p><strong>Talk to the lecturer</strong> before or after the lecture. The lecturer will be at the lecture venue from 30 minutes before the start of the lecture.</p>
+                </li>
+                <li>
+                  <p><strong>Request our help</strong>: Failing all above, you can always request for help by emailing the lecturer.</p>
+                </li>
+              </ul>
+              <p>Resources</p>
+              <ul>
+                <li>[lifehacker article]  <a href="http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671">Google Tips and Tricks Every Student Should Know</a></li>
+                <li>[Article] <a href="http://catb.org/esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a> by Eric Steven Raymond</li>
+              </ul>
+            </div>
+          </panel>
+        </div>
+        <br>
         <ul>
-          <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But tutors may help you clarify doubts.</li>
+          <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts
+            under the right circumstances.</li>
         </ul>
-        <panel header="What kind of questions can I ask from tutors?">
-          <p>Consider these two questions you might want to ask a tutor:</p>
-          <ul>
-            <li>✅ <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span></li>
-            <li>🚫 <em>What is coupling?</em> - Such questions will not be entertained. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span></li>
-          </ul>
-        </panel>
-        <p></p>
+        <div class="indented-level2">
+          <panel header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor%%" minimized="">
+            <div>
+              <ul>
+                <li><strong>Raise your question during a tutorial</strong>. Some questions can be discussed with the tutor and tutorial-mates. What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask
+                  a tutor:
+                  <ul>
+                    <li>✅ <em>This is how I understood/applied coupling. Is that correct?</em> - Such questions are welcome. <span class="dimmed"><strong>Reason</strong>:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.</span></li>
+                    <li>🚫 <em>What is coupling?</em> - Such questions are discouraged. <span class="dimmed"><strong>Reason</strong>: This question implies you haven’t done what you could to learn the topic in concern.</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </panel>
+        </div>
+        <br>
         <ul>
           <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback
             on how you are doing (or have done) project tasks so that you can improve further.</li>

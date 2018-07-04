@@ -1,0 +1,430 @@
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+<div>
+  <navbar placement="top" type="inverse">
+    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+    <li><a href="/website-base/index.html">Schedule</a></li>
+    <dropdown text="Textbook">
+      <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+      <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+    </dropdown>
+    <li><a href="/website-base/admin/index.html">Admin</a></li>
+    <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+    <dropdown text="IVLE">
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+    </dropdown>
+    <dropdown text="Discuss">
+      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+    </dropdown>
+    <dropdown text="Links">
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+      <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+      <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+    </dropdown>
+    <li slot="right">
+      <form class="navbar-form">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+      </form>
+    </li>
+  </navbar>
+</div>
+<div class="website-content" id="main">
+  <div id="title">
+    <h2 id="project-v13-week-11">Project → v1.3 [week 11]</h2>
+  </div>
+  <div id="body">
+    <tip-box>
+      <p>Overview: <span>release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></p>
+    </tip-box>
+    <p><strong>v1.3 Summary of Milestone</strong></p>
+    <table class="markbind-table table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Milestone</th>
+          <th>Minimum acceptable performance to consider as 'reached'</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>👤 Contributed code to v1.3</td>
+          <td>code merged</td>
+        </tr>
+        <tr>
+          <td>👤 Code collated</td>
+          <td>as stated</td>
+        </tr>
+        <tr>
+          <td>👥 v1.3 jar file released properly on GitHub</td>
+          <td>as stated</td>
+        </tr>
+        <tr>
+          <td>👥 v1.3 milestone properly wrapped up on GitHub</td>
+          <td>as stated</td>
+        </tr>
+        <tr>
+          <td>👥 Documentation updated to match v1.3</td>
+          <td>at least the User Guide and the <code>README.adoc</code> is updated</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="v13-project-management">v1.3 Project Management</h3>
+    <tip-box type="important">
+      <p>You are required to
+        <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. <span class="dimmed"> Reason: You will be required to collated code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.</span></p>
+    </tip-box>
+    <panel header="**How to collate code for grading**">
+      <div>
+        <p>Collate is a tool for collating code written by different developers.</p>
+        <p>Steps to use Collate:</p>
+        <ol>
+          <li>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a></li>
+          <li>Annotate your code to indicate who wrote which part of the code (instructions given below)</li>
+          <li>Run the Collate tool to collate code written by each person into separate files (instructions given below)</li>
+        </ol>
+        <h4 id="annotating-code-to-indicate-authorship">Annotating code to indicate authorship</h4>
+        <ul>
+          <li>
+            <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code>              tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
+            <pre class="hljs"><code>//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author sarahkhoo
+method 3 ...
+//@@author johndoe
+method 4 ...
+</code></pre>
+          </li>
+          <li>
+            <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the
+              GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
+            <pre class="hljs"><code>method 0 ...
+//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author
+method 3 ...
+method 4 ...
+</code></pre>
+          </li>
+          <li>
+            <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml file.</p>
+            <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
+&lt;textbox&gt;
+  &lt;label&gt;...&lt;/label&gt;
+  &lt;input&gt;...&lt;/input&gt;
+&lt;/textbox&gt;
+...
+</code></pre>
+          </li>
+          <li>
+            <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎⤵️
+            </p>
+            <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author johndoe
+  */
+</code></pre>
+            <p>👍⤵️</p>
+            <pre class="hljs"><code>//@@author johndoe
+/**
+  * Returns true if ...
+  */
+</code></pre>
+          </li>
+        </ul>
+        <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate</h4>
+        <ul>
+          <li>
+            <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
+          </li>
+          <li>
+            <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>              but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
+            <ul>
+              <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+              <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+              <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+              <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks
+              within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member claiming
+              credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+          </li>
+          <li>
+            <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+            <ul>
+              <li>Create a folder called <code>{project root}/unused</code></li>
+              <li>Move unused files (or copies of files containing unused code) to that folder</li>
+              <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
+              </li>
+            </ul>
+            <pre class="hljs"><code>//@@author johndoe-unused
+method 1 ...
+method 2 ...
+</code></pre>
+            <p>Please put a comment in the code to explain why it was not used.</p>
+          </li>
+          <li>
+            <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
+            </p>
+            <pre class="hljs"><code>//@@author johndoe-reused
+method 1 ...
+method 2 ...
+</code></pre>
+          </li>
+          <li>
+            <p><strong>For code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+          </li>
+          <li>
+            <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
+          </li>
+        </ul>
+        <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
+        <p>You need to put the collated code in the following folders</p>
+        <table class="markbind-table table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Code Type</th>
+              <th>Folder</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>functional code</td>
+              <td><code>collated/functional</code></td>
+            </tr>
+            <tr>
+              <td>test code</td>
+              <td><code>collated/test</code></td>
+            </tr>
+            <tr>
+              <td>unused code</td>
+              <td><code>collated/unused</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
+        <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+        <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
+
+java -jar Collate-TUI.jar collate from src/test to collated/test include java
+
+java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
+</code></pre>
+        <p>The output should be something like the structure given below.</p>
+        <pre class="hljs"><code>collated/
+    functional/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+        ravikumarreused.md
+    test/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+    unused/
+        johndoe.md
+</code></pre>
+        <ul>
+          <li>
+            <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+          </li>
+          <li>
+            <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
+          </li>
+        </ul>
+      </div>
+    </panel>
+    <p></p>
+    <h3 id="v13-product">v1.3 Product</h3>
+    <ul>
+      <li>
+        <p>As before, move the product towards v2.0.</p>
+        <p><strong>Submission</strong>: Push the code (<mark>including the <code>collated</code> folder</mark> and files created above) to GitHub.</p>
+      </li>
+    </ul>
+    <h3 id="v13-documentation">v1.3 Documentation</h3>
+    <tip-box type="important">
+      <p>v1.3 user guide should be updated to match the current version of the product. <span class="dimmed"> Reason: v1.3 will be subjected to a trial <em>acceptance testing</em> session</span></p>
+    </tip-box>
+    <ul>
+      <li>
+        <p><strong>README page</strong>: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular,</p>
+        <ul>
+          <li><mark>Describe the profile of the target user</mark></li>
+          <li>Remove irrelevant content such as <em>Learning Outcomes</em></li>
+          <li><mark>Update the <code>Ui.png</code> to match the current product</mark></li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>User Guide</strong>: <mark>This document will be used by acceptance testers</mark>. Update to match the current version. In particular,</p>
+        <ul>
+          <li>Clearly indicate which features are not implemented yet <span class="dimmed"> e.g. tag those features with a <code>Coming in v2.0</code></span>.</li>
+          <li>For those features already implemented, ensure their descriptions match the exact behavior of the product <span class="dimmed"> e.g. replace mockups with actual screenshots</span></li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Developer Guide</strong>: As before, update if necessary.</p>
+      </li>
+      <li>
+        <p><strong>AboutUs page</strong>: Update to reflect current state of roles and responsibilities.</p>
+      </li>
+    </ul>
+    <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
+    <h3 id="v13-demo">v1.3 Demo</h3>
+    <ul>
+      <li>Optional. If you want feedback on your features, you can demo the feature and get feedback from the tutor.</li>
+    </ul>
+    <h3 id="v13-testing">v1.3 Testing</h3>
+    <tip-box type="important">
+      Taking part in v1.3 testing is compulsory and counts for participation marks.
+    </tip-box>
+    <p>v1.3 is subjected to a round of peer <em>acceptance/system testing</em>.</p>
+    <p><strong>Objectives</strong>:</p>
+    <ul>
+      <li><strong>To train you</strong> to do manual testing, bug reporting, bug
+        <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users, evaluating products etc.</li>
+      <li><strong>To help you improve your product</strong> before the final submission.</li>
+    </ul>
+    <p><strong>When, where</strong>:</p>
+    <ul>
+      <li>To be done <strong>during Lecture 11</strong>. Duration: <strong>30 minutes</strong> (we'll stop the lecture for a 30 minute block for you do do the testing).</li>
+    </ul>
+    <p><strong>During the session</strong>:</p>
+    <ul>
+      <li>Each student will be assigned a product from another team to test.</li>
+      <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
+      <li>Test the product based on the user guide. First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</li>
+      <li>Post bugs you find in the team's issue tracker.
+        <ul>
+          <li>Each bug should be a separate issue.</li>
+          <li>Even problems in the user guide <span class="dimmed"> e.g. lack of explanations</span> can be posted as issues.</li>
+          <li>Feel free to <mark>post other suggestions for improvements</mark> too <span class="dimmed"> e.g. ways to improve the command format</span>.</li>
+        </ul>
+      </li>
+      <li><mark>Do not use the session time to read bug reports your team is receiving.</mark></li>
+      <li>Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.</li>
+      <li>Use descriptive titles for the issues. Give a good description of the bug/suggestion, including steps required to reproduce.
+        <ul>
+          <li>💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>Grading</strong>:</p>
+    <ul>
+      <li>Considered for participation. In addition, issues you created can be included in your
+        <trigger trigger="click" for="modal:v1.3-ppp">project portfolio page</trigger> to show how you contributed to another project.</li>
+      <li>There is <strong>no penalty for bugs reported</strong> in your product.</li>
+    </ul>
+    <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project →" id="modal:v1.3-ppp">
+    
+      <div>
+        <h4 id="project-portfolio-page-ppp">Project Portfolio Page (PPP)</h4>
+        <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
+        <ul>
+          <li>
+            <p><strong>Objective:</strong></p>
+            <ul>
+              <li>For you to use <span class="dimmed"> (e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
+              <li>For us to use as a data point to evaluate your,
+                <ul>
+                  <li>contributions to the project</li>
+                  <li>your documentation skills</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>What to include:</strong></p>
+            <ul>
+              <li>Main things to include:
+                <ul>
+                  <li>links to collated code</li>
+                  <li>features you implemented <span class="dimmed"> (include relevant extracts from the user guide and the developer guide)</span></li>
+                  <li>features you propose to implement in future <span class="dimmed"> (include relevant extracts from the user guide and the developer guide if applicable)</span><br> Note: the purpose of allowing you to include <em>proposed</em> features
+                    is to provide you more flexibility to show your documentation skills. <span class="dimmed"> e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></li>
+                  <li>other significant contributions to the project <span class="dimmed"> e.g. tweaks to existing features, setting up project tools</span></li>
+                </ul>
+              </li>
+              <li>Other things you can include:
+                <ul>
+                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
+                  <li>Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span></li>
+                </ul>
+              </li>
+              <li>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Format</strong>:</p>
+            <ul>
+              <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>.
+                The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Content</th>
+                      <th>Limit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Description in point form</td>
+                      <td>0.5-1</td>
+                    </tr>
+                    <tr>
+                      <td>Extracts from the User Guide</td>
+                      <td>1-3</td>
+                    </tr>
+                    <tr>
+                      <td>Extracts from the Developer Guide</td>
+                      <td>3-6</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>5-10</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Follow the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
+              <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example
+                in the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
+              <li><mark>❗️ It is assumed that all contents in the PPP were written primarily by you.</mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
+                clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </modal>
+    <div>
+      <p><strong>Preparation</strong>:</p>
+      <ul>
+        <li>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</li>
+        <li><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</li>
+        <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
+      </ul>
+    </div>
+    <p><strong>After the session</strong>:</p>
+    <ul>
+      <li>It is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone.</li>
+      <li>You can post in the issue thread to communicate with the tester <span class="dimmed"> e.g. to ask for more info</span>, etc. However, the tester is not obliged to respond.
+        <ul>
+          <li>💡 Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you
+            think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

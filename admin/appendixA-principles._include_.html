@@ -1,80 +1,123 @@
-<p>These are some of the main principles underlying the module structure.</p>
-<tip-box type="important">
-  The product is you, NOT what you build.
-</tip-box>
-<p>The software product you build is a side effect only. You are the product of this module. This means,</p>
-<ul>
-  <li>We may not take the most efficient route to building the software product. <strong>We take the route that allows you to learn the most</strong>.</li>
-  <li>Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). <strong>Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority</strong>.</li>
-</ul>
-<p>Following from that, we evaluate you on not just how much you've done, but also, how well you've done those things. Here are some of the aspects in which we focus on:</p>
-<table class="table table-bordered" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p><strong>We appreciate ...</strong></p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p><strong>But we value more ...</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p>Ability to deal with low-level details</p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p>Ability to abstract over details, generalize, see the big picture</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p>A drive to learn latest and greatest technologies</p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p>Ability to make the best of given tools</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p>Ability to find problems that interest you and solve them</p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p>Ability to solve the given problem to the best of your ability</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p>Ability to burn the midnight oil to meet a deadline</p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p>Ability to schedule work so that the need for 'last minute heroics' is minimal</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p>Preference to do things you like or things you are good at</p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p>Ability to buckle down and deliver on important things that you don't necessarily like or aren't good at</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="1" rowspan="1">
-        <p>Ability to deliver desired end results</p>
-      </td>
-      <td colspan="1" rowspan="1">
-        <p>Ability to deliver in a way that shows how well you delivered (i.e. visibility of your work)</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p><strong>We learn together, NOT compete against each other.</strong></p>
-<p>You are not in a competition. Our grading is not forced on a bell curve.</p>
-<p>Learn from each other. That is why we open-source your submissions.</p>
-<p>Teach each other, even those in other teams. Those who do it well can become tutors next time.</p>
-<p><strong>Continuously engage, NOT last minute heroics.</strong></p>
-<p>We want to train you to do software engineering in a steady and repeatable manner that does not require 'last minute heroics'.</p>
-<p>In this module, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.</p>
-<p><strong>Where you reach at the end matters, NOT what you knew at the beginning.</strong></p>
-<p>When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables
-  are within the reach of everyone in the class irrespective of their prior knowledge.</p>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+<div>
+  <navbar placement="top" type="inverse">
+    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+    <li><a href="/website-base/index.html">Schedule</a></li>
+    <dropdown text="Textbook">
+      <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+      <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+    </dropdown>
+    <li><a href="/website-base/admin/index.html">Admin</a></li>
+    <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+    <dropdown text="IVLE">
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+    </dropdown>
+    <dropdown text="Discuss">
+      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+    </dropdown>
+    <dropdown text="Links">
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+      <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+      <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+    </dropdown>
+    <li slot="right">
+      <form class="navbar-form">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+      </form>
+    </li>
+  </navbar>
+</div>
+<div class="website-content" id="main">
+  <h1 id="appendix-a-module-principles">Appendix A: Module Principles</h1>
+  <p>These are some of the main principles underlying the module structure.</p>
+  <tip-box type="important">
+    The product is you, NOT what you build.
+  </tip-box>
+  <p>The software product you build is a side effect only. You are the product of this module. This means,</p>
+  <ul>
+    <li>We may not take the most efficient route to building the software product. <strong>We take the route that allows you to learn the most</strong>.</li>
+    <li>Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). <strong>Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority</strong>.</li>
+  </ul>
+  <p>Following from that, we evaluate you on not just how much you've done, but also, how well you've done those things. Here are some of the aspects in which we focus on:</p>
+  <table class="table table-bordered" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p><strong>We appreciate ...</strong></p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p><strong>But we value more ...</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Ability to deal with low-level details</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Ability to abstract over details, generalize, see the big picture</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>A drive to learn latest and greatest technologies</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Ability to make the best of given tools</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Ability to find problems that interest you and solve them</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Ability to solve the given problem to the best of your ability</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Ability to burn the midnight oil to meet a deadline</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Ability to schedule work so that the need for 'last minute heroics' is minimal</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Preference to do things you like or things you are good at</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Ability to buckle down and deliver on important things that you don't necessarily like or aren't good at</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="1">
+          <p>Ability to deliver desired end results</p>
+        </td>
+        <td colspan="1" rowspan="1">
+          <p>Ability to deliver in a way that shows how well you delivered (i.e. visibility of your work)</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>We learn together, NOT compete against each other.</strong></p>
+  <p>You are not in a competition. Our grading is not forced on a bell curve.</p>
+  <p>Learn from each other. That is why we open-source your submissions.</p>
+  <p>Teach each other, even those in other teams. Those who do it well can become tutors next time.</p>
+  <p><strong>Continuously engage, NOT last minute heroics.</strong></p>
+  <p>We want to train you to do software engineering in a steady and repeatable manner that does not require 'last minute heroics'.</p>
+  <p>In this module, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.</p>
+  <p><strong>Where you reach at the end matters, NOT what you knew at the beginning.</strong></p>
+  <p>When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables
+    are within the reach of everyone in the class irrespective of their prior knowledge.</p>
+</div>

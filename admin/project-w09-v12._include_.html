@@ -1,0 +1,279 @@
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+<div>
+  <navbar placement="top" type="inverse">
+    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+    <li><a href="/website-base/index.html">Schedule</a></li>
+    <dropdown text="Textbook">
+      <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+      <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+    </dropdown>
+    <li><a href="/website-base/admin/index.html">Admin</a></li>
+    <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
+    <dropdown text="IVLE">
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+    </dropdown>
+    <dropdown text="Discuss">
+      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+    </dropdown>
+    <dropdown text="Links">
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+      <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+      <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+    </dropdown>
+    <li slot="right">
+      <form class="navbar-form">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+      </form>
+    </li>
+  </navbar>
+</div>
+<div class="website-content" id="main">
+  <div id="title">
+    <h2 id="project-v12-week-9">Project → v1.2 [week 9]</h2>
+  </div>
+  <div id="body">
+    <tip-box>
+      <p>Overview: <span>move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></p>
+    </tip-box>
+    <p><strong>v1.2 Summary of Milestone</strong></p>
+    <table class="markbind-table table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Milestone</th>
+          <th>Minimum acceptable performance to consider as 'reached'</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>👤 Contributed code to the product as described in mid-v1.2 progress guide</td>
+          <td>some code merged</td>
+        </tr>
+        <tr>
+          <td>👤 Described implementation details in the Developer Guide</td>
+          <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
+        </tr>
+        <tr>
+          <td>👥 v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
+          <td>A new version git tagged <code>v1.2</code> is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in
+            <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="v12-project-management">v1.2 Project Management</h3>
+    <ul>
+      <li>👥 Manage, and close, the v1.2 milestone using GitHub.</li>
+    </ul>
+    <h3 id="v12-product">v1.2 Product</h3>
+    <ul>
+      <li>👤 Merge some code into master (in the team repo).</li>
+    </ul>
+    <tip-box>
+      <p>💡 We use a tool called <em>Collate</em> to extract out code written by each member in your final project submission. The tool requires you to annotate code with special tags to mark code written by you. Adding those annotations is usually done
+        at v1.3 but you are welcome to start early.</p>
+      <panel header="**How to collate code for grading**" no-close="">
+        <div>
+          <p>Collate is a tool for collating code written by different developers.</p>
+          <p>Steps to use Collate:</p>
+          <ol>
+            <li>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate">Collate Tool project</a></li>
+            <li>Annotate your code to indicate who wrote which part of the code (instructions given below)</li>
+            <li>Run the Collate tool to collate code written by each person into separate files (instructions given below)</li>
+          </ol>
+          <h4 id="annotating-code-to-indicate-authorship">Annotating code to indicate authorship</h4>
+          <ul>
+            <li>
+              <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code>                tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
+              <pre class="hljs"><code>//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author sarahkhoo
+method 3 ...
+//@@author johndoe
+method 4 ...
+</code></pre>
+            </li>
+            <li>
+              <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the
+                GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
+              <pre class="hljs"><code>method 0 ...
+//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author
+method 3 ...
+method 4 ...
+</code></pre>
+            </li>
+            <li>
+              <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml file.</p>
+              <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
+&lt;textbox&gt;
+  &lt;label&gt;...&lt;/label&gt;
+  &lt;input&gt;...&lt;/input&gt;
+&lt;/textbox&gt;
+...
+</code></pre>
+            </li>
+            <li>
+              <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎⤵️
+              </p>
+              <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author johndoe
+  */
+</code></pre>
+              <p>👍⤵️</p>
+              <pre class="hljs"><code>//@@author johndoe
+/**
+  * Returns true if ...
+  */
+</code></pre>
+            </li>
+          </ul>
+          <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate</h4>
+          <ul>
+            <li>
+              <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
+            </li>
+            <li>
+              <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>                but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
+              <ul>
+                <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+                <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+                <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+                <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code
+                blocks within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice a team member
+                claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+            </li>
+            <li>
+              <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+              <ul>
+                <li>Create a folder called <code>{project root}/unused</code></li>
+                <li>Move unused files (or copies of files containing unused code) to that folder</li>
+                <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
+                </li>
+              </ul>
+              <pre class="hljs"><code>//@@author johndoe-unused
+method 1 ...
+method 2 ...
+</code></pre>
+              <p>Please put a comment in the code to explain why it was not used.</p>
+            </li>
+            <li>
+              <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
+              </p>
+              <pre class="hljs"><code>//@@author johndoe-reused
+method 1 ...
+method 2 ...
+</code></pre>
+            </li>
+            <li>
+              <p><strong>For code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+            </li>
+            <li>
+              <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
+            </li>
+          </ul>
+          <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
+          <p>You need to put the collated code in the following folders</p>
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Code Type</th>
+                <th>Folder</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>functional code</td>
+                <td><code>collated/functional</code></td>
+              </tr>
+              <tr>
+                <td>test code</td>
+                <td><code>collated/test</code></td>
+              </tr>
+              <tr>
+                <td>unused code</td>
+                <td><code>collated/unused</code></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
+          <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+          <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
+
+java -jar Collate-TUI.jar collate from src/test to collated/test include java
+
+java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
+</code></pre>
+          <p>The output should be something like the structure given below.</p>
+          <pre class="hljs"><code>collated/
+    functional/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+        ravikumarreused.md
+    test/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+    unused/
+        johndoe.md
+</code></pre>
+          <ul>
+            <li>
+              <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+            </li>
+            <li>
+              <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
+            </li>
+          </ul>
+        </div>
+      </panel>
+      <p></p>
+    </tip-box>
+    <h3 id="v12-documentation">v1.2 Documentation</h3>
+    <ul>
+      <li>
+        <p><strong>User Guide</strong>: Update as necessary.</p>
+        <ul>
+          <li>If a feature has been released in this version, replace the <code>Coming in v2.0</code> annotation with a <code>Since v1.2</code>. Also replace UI mock-ups with actual screenshots.</li>
+          <li>If a feature design has changed, update the descriptions accordingly.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Developer Guide</strong>:</p>
+        <ul>
+          <li><mark>Each member should describe the implementation of at least one enhancement she has added</mark> (or planning to add). <br> Expected length: 1+ page per person</li>
+          <li>The description can contain things such as,
+            <ul>
+              <li>How the feature is implemented.</li>
+              <li>Why it is implemented that way.</li>
+              <li>Alternatives considered.</li>
+            </ul>
+          </li>
+          <li>The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that
+            end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).</li>
+          <li>For an example, see <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-mechanism">the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide</a>.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="v12-demo">v1.2 Demo</h3>
+    <p>Do an informal demo of the new feature during the tutorial. <mark>Each team member should demo their own work, using commit tagged as <code>v1.2</code> in the <code>master</code> branch</mark> <span class="dimmed"> i.e. only features included in the current release should be demoed</span>.</p>
+  </div>
+</div>
