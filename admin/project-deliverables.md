@@ -15,25 +15,25 @@ siteNav: adminSiteNav.md
 
 [<img src="{{baseUrl}}/admin/images/timeline.png" width="100%">](images/timeline.png)
 
-To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as `AB1` to `AB4` in the diagram above) that you can use as the basis for improving your individual skills during Phases A and as the basis for your project in Phase B.
+To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as `AB1` to `AB4` in the diagram above).  You can use `AB1` to `AB3` to ramp up your tech skills in preparation for the project. `AB4` is to be used as the basis for your project.
 
 `AB4` is the version you will use as the starting point for your final project. Some of the work you do in `AB1` to `AB3` can be ported over to `AB4` and can be used to claim credit in the final project. 
 
 Given below is the high-level time line of the project.
 
-Week         | Activities
--------------|-----------
-3            | <span id="inception-overview">decide on a overall project direction (user profile, optimize or morph?, problem addressed)</span>
-4 (mid-v1.0) | <span id="mid-v10-overview">decide on requirements (user stories, use cases, non-functional requirements)</span>
-5 (v1.0)     | <span id="v10-overview">conceptualize product and document it as a user guide(draft)</span>
-6 (mid-v1.1) | <span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span>
-7 (v1.1)     | <span id="v11-overview">update UG and DG in the repo, attempt to do global-impact changes to the code base</span>
-8 (mid-v1.2) | <span id="mid-v12-overview">adjust project rigor as needed, complete repo set up, start proper milestone management</span>
-9 (v1.2)     | <span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span>
-10 (mid-v1.3)| <span id="mid-v13-overview">continue to enhance features</span>
-11 (v1.3)    | <span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span>
-12 (mid-v1.4)| <span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span>
-13 (v1.4)    | <span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span>
+Week  | Stage     | Activities
+------|-----------|-----------
+**3** |inception| <span id="inception-overview">decide on a overall project direction %%(user profile, optimize or morph?, problem addressed)%%</span>
+**4** |mid-v1.0 | <span id="mid-v10-overview">decide on requirements %%(user stories, use cases, non-functional requirements)%%</span>
+**5** |v1.0     | <span id="v10-overview">conceptualize product and document it as a user guide(draft)</span>
+**6** |mid-v1.1 | <span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span>
+**7** |v1.1     | <span id="v11-overview">update UG and DG in the repo, attempt to do global-impact changes to the code base</span>
+**8** |mid-v1.2 | <span id="mid-v12-overview">adjust project rigor as needed, complete repo set up, start proper milestone management</span>
+**9** |v1.2     | <span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span>
+**10**|mid-v1.3 | <span id="mid-v13-overview">continue to enhance features</span>
+**11**|v1.3     | <span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span>
+**12**|mid-v1.4 | <span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span>
+**13**|v1.4     | <span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span>
 
 The sub-sections further down explain each project deliverable in detail and states some recommended progress for you to achieve at that point of the project.
 

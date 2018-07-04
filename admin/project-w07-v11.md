@@ -30,9 +30,9 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 :bust_in_silhouette: Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
 :busts_in_silhouette: All project documents updated as required | updated docs are merged to the master branch
 
-:exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
+:exclamation: Reminder: Reaching individual and team milestones are considered for grading the _project management_ component of your project grade (expand the panel below for more info).
 
-<panel type="seamless" header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%">
+<panel header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%" minimized >
   <include src="project-assessment.md#project-management-grading" />
 </panel>
 

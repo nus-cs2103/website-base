@@ -85,29 +85,11 @@ Before you do any coding for the project, please ensure you have set the Git use
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
 <div class="indented-level2">
-
-<panel header="More info on _roles and responsibilities_">
-
-  **Roles indicate aspects you are in charge of and responsible for.** %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%  
-  
-  Here are some example roles:
-
-  * _Team lead_: Responsible for overall project coordination.
-  * _Documentation_ (short for ‘in charge of documentation’): Responsible for the quality of various project documents.
-  * _Testing_: Ensures the testing of the project is done properly and on time.
-  * _Code quality_: Looks after code quality, ensures adherence to coding standards, etc.
-  * _Deliverables and deadlines_: Ensure project deliverables are done on time and in the right format.
-  * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
-  * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
-  * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
-  * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.4.
-
-  You may define additional roles.
-
-  Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**.
-    
-</panel><p/>
+<panel header="%%Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities%%" minimized>
+  <include src="project-scope.md#roles" />
+</panel>
 </div>
+<p/>
 
 * **README.adoc** page: Update it to match your project. 
   * Add a UI mockup of your intended final product.   
@@ -132,7 +114,7 @@ Before you do any coding for the project, please ensure you have set the Git use
   :exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
 
 <div class="indented-level2">
-<panel type="seamless" header="%%Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse%%">
+<panel header="%%Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse%%" minimized>
   <include src="appendixB-policies.md#policy-reuse" />
 </panel><p/>
 </div>

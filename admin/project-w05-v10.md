@@ -29,22 +29,22 @@ Here is a summary of items you need to deliver to _reach_ v1.1 individual (:bust
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 :busts_in_silhouette: requirements documented | a draft of v2.0 requirements in some form
+:bust_in_silhouette: [optional] product survey documented | none
 :busts_in_silhouette: v2.0 conceptualized | a draft of v2.0 user guide in some form
 
 :exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 
-<panel type="seamless" header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%">
+<panel header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%" minimized>
   <include src="project-assessment.md#project-management-grading" />
 </panel>
 
-
-#### v1.0 Documentation
+### v1.0 Documentation
 
 * **Developer Guide**:
   Have a draft of the requirements of your project, as described in mid-v1.0 progress guide.
   
 * **User Guide**:  
-  Write a user guide to describe what the product would be like when it is at 2.0.  We recommend that ou follow the existing <tooltip content="AddressBook-Level4">AB4</tooltip> User Guide in terms of structure and format.
+  Draft a user guide in a convenient format (e.g., a GoogleDoc) to describe what the product would be like when it is at 2.0.  We recommend that ou follow the existing <tooltip content="AddressBook-Level4">AB4</tooltip> User Guide in terms of structure and format.
 
   <tip-box> 
   

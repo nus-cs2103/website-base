@@ -25,12 +25,13 @@ Java for all programming activities, the project, and exam answers.
 
 The module doesn’t “teach” Java. We assume you already know Java basics.
 We expect you to learn on your own any Java constructs not covered in your previous modules.
-    
-Our ==Java coding standard== is [here]({{java_coding_standard}}).
 
 </td>
 </tr>
 </table>
 
+#### Java coding standard
+    
+This module follows the ==[OSS-NUS Java coding standard]({{java_coding_standard}})==.
 
 </div>

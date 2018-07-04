@@ -10,7 +10,9 @@ siteNav: se-book-adapted-sitenav.md
 
 <div class="website-content" id="all">
 
-## Software Engineering for Self-Directed Learners
+## Software Engineering for Self-Directed Learners 
+
+<big><span class='badge'>CS2103/T edition - 2018</span></big>
 
 <br/><big>
 

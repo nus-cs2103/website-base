@@ -14,12 +14,12 @@ siteNav: adminSiteNav.md
 ## Project → Constraints
 
 Your project should comply with the following constraints.
-%%**Reason**: to increase comparability among submissions and to maximize applicability of module content in the project.%%
+%%**Reason**: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.%%
 
 * **Constraint-Morph**: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
   %%**Reason:** To ensure your code has a decent quality level from the start.%%
   
-* **Constraint-Incremental**: The product needs to be developed incrementally over the project duration (week 6-13). While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. %%&nbsp;Reasons: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
+* **Constraint-Incremental**: The product needs to be developed incrementally over the project duration. While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. %%Reasons: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
 
 <span id="constraint-cli">
 
@@ -31,14 +31,16 @@ Your project should comply with the following constraints.
 
 </span>
 
-* **Constraint-Human-Editable-File**: The data should be stored locally and should be in a human editable text file. Use of relational or No-SQL databases are not allowed.<br/> 
+* **Constraint-Human-Editable-File**: The data should be stored locally and should be in a human editable text file.<br/> 
   %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%
 
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/> 
-  %%**Reason:** For you to practice OOP that you learned in the course.%%
+  %%**Reason:** For you to practice OOP that you learned in the course.%%  
+    
+* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. %%**Reason:** Using a DBMS to store data will reduce the room to handle OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103 module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
 
 * **Constraint-Platform-Independent**: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
-  %%**Reason:** Peer testers can use any of these platforms.%%
+  %%**Reason:** Peer testers should be able to use any of these platforms.%%
 
 * **Constraint-No-Installer**: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.  
   %%**Reason:** We do not want to install all your projects on our testing machines when we test them for grading.%%

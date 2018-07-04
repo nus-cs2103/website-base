@@ -15,7 +15,7 @@ siteNav: adminSiteNav.md
 
 ==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
 
-<panel header="%%Schedule {{ icon_embedding }} Overview → Tutorial Schedule%%">
+<panel header="%%Schedule {{ icon_embedding }} Overview → Tutorial Schedule%%" minimized>
 <include src="../schedule/overview/tutorialSchedule.md" />
 </panel>
 <p/>
@@ -28,30 +28,35 @@ siteNav: adminSiteNav.md
 * The tutor will observe, and give feedback on, how well you are achieving required LOs.
 * Please ==bring your laptop to tutorials.== You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
 
-<panel header="%%Admin {{ icon_embedding }} FAQ: What if I don't carry around a laptop?%%">
+<div class="indented-level2">
+<panel header="%%Admin {{ icon_embedding }} FAQ: What if I don't carry around a laptop?%%" minimized>
 <include src="appendixC-faq.md#admin-faq-noLaptop" />
 </panel>
-<p/>
+</div>
+
+<br/>
 
 **The role of our tutors** is different from tutors in other modules.
 
 * **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%    
-  
-<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in CS2103/T%%">
+
+<div class="indented-level2">
+<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in CS2103/T%%" minimized>
 <include src="appendixD-help.md#main" />
 </panel>
-<p/>
+</div>
 
-* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But tutors may help you clarify doubts. 
+<br/>
 
-<panel header="What kind of questions can I ask from tutors?" >
+* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts under the right circumstances. 
 
-Consider these two questions you might want to ask a tutor:
-* :white_check_mark: *This is how I understood/applied coupling. Is that correct?* - Such questions are welcome. %%**Reason**:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
-* :no_entry_sign: *What is coupling?* - Such questions will not be entertained. %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%
-
+<div class="indented-level2">
+<panel header="%%Admin {{ icon_embedding }} Appendix D (extract): Questions suitable for tutor%%" minimized>
+<include src="appendixD-help.md#questions-for-tutros" />
 </panel>
-<p/>
+</div>
+
+<br/>
 
 * **No leading from the front**: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback on how you are doing (or have done) project tasks so that you can improve further.   
 
