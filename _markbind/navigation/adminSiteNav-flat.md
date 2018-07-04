@@ -22,6 +22,7 @@
   * [v1.3 [week 11]](#admin-project-v13-anchor)
   * [mid-v1.4 [week 12]](#admin-project-mid-v14-anchor)
   * [v1.4 [week 13]](#admin-project-v14-anchor)
+  * [Deliverables](#admin-project-deliverables-anchor)
   * [Assessment](#admin-project-assessment-anchor)
 * [Supervision](#admin-supervision-anchor)
 * [Forming Teams](#admin-teams-anchor)

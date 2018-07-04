@@ -23,6 +23,7 @@
 * [%%→%% v1.3 [week 11]](project-w11-v13.html)
 * [%%→%% mid-v1.4 [week 12]](project-w12-mid-v14.html)
 * [%%→%% v1.4 [week 13]](project-w13-v14.html)
+* [%%→%% Deliverables](project-deliverables.html)
 * [%%→%% Assessment](project-assessment.html)
 * [Supervision](supervision.html)
 * [Forming Teams](teams.html)

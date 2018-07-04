@@ -1,4 +1,21 @@
-#### Project Portfolio Page (PPP)
+<frontmatter>
+title: "Admin: Project → Timeline"
+footer: footer.md
+siteNav: adminSiteNav.md
+</frontmatter>
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+
+<include src="../common/header.md" />
+
+<div class="website-content" id="main">
+
+## Project → Deliverables
+
+<span id="ppp">
+
+### Project Portfolio Page (PPP)
 
 At the end of the project each student is required to submit a _Project Portfolio Page_.
 
@@ -31,3 +48,7 @@ At the end of the project each student is required to submit a _Project Portfoli
   * {{ icon_example }} Follow the [example in the AddressBook-Level4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html).
   * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html). 
   * ==:exclamation: It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
+  
+</span>
+
+</div>

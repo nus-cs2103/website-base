@@ -51,13 +51,13 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 
 * Create the first version of your _Project Portfolio Page (PPP)_. Reason: **Each member needs to create a PPP** to describe your contribution to the project. Creating a PPP takes a significant effort; it is ==too risky to leave it to the last week of the project==. 
 
+
 <div class="indented-level2">
-
-<tip-box> 
-  <include src="projectPortfolioPage.md" />
-</tip-box>
-
+<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page%%" minimized>
+  <include src="project-deliverables.md#ppp" />
+</panel>
 </div>
+
 
 **<big>Demo:</big>**
 
