@@ -45,22 +45,27 @@ Team/Individual Item | Name format | Upload to
 :bust_in_silhouette: Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
 :bust_in_silhouette: Collated files | | GitHub
 
-
-### v1.4 Product
-
-Ideally, this version should be a <tooltip content=" i.e., it can be used by end-users">_releasable_</tooltip> product. However, in the interest of lowering your workload, we do not penalize if the product is <tooltip content="i.e., the product is not usable by end-users because some essential features are missing">not releasable</tooltip>, ==as long as the product is <tooltip content="i.e., the features it has can be tested from an end-user perspective">_acceptance testable_</tooltip>==.
-
-**Submission**:
-
-* **Source code**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
-* **Executable**: See summary of submissions above 
-    
-
-**Deadline**: Week 13 Monday 23.59.
+**Deadline** for all v1.4 submisions is Week 13 Monday 23.59 unless stated otherwise.
 
 **Grading**: 
 
 <include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
+
+
+### v1.4 Product
+
+<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Product%%">
+  <include src="project-deliverables.md#product" />
+</panel>
+<p/>
+
+**Submission**: See summary of submissions above 
+
+
+### v1.4 Source Code
+
+**Submission**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
+
 
 ### v1.4 Documentation
 
