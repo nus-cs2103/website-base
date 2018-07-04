@@ -36,7 +36,9 @@ Overview: <include src="project-deliverables.md#mid-v14-overview" inline />
 </modal>
 
 <div class="indented-level2">
-<include src="project-assessment.md#code-quality-tips" />
+<panel header="%%Admin {{ icon_embedding }} Project Asessement → Code Quality Tips%%" minimized>
+  <include src="project-assessment.md#code-quality-tips" />
+</panel>
 </div>
 
 <modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">

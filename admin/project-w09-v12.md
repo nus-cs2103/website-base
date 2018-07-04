@@ -52,7 +52,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 ### v1.2 Documentation
 
 * **User Guide**: Update as necessary.
-  * If a feature has been released in this version, replace the `Coming in v2.0` annotation with a `Since v1.2`. Also replace UI mock-ups with actual screenshots.
+  * If a feature has been released in this version, remove the `Coming in v2.0` annotation from that feature. Also replace UI mock-ups with actual screenshots.
   * If a feature design has changed, update the descriptions accordingly.
 
 * **Developer Guide**:
@@ -63,7 +63,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
     * Why it is implemented that way.
     * Alternatives considered.
   * The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).
-  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-mechanism).
+  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide](https://nus-cs2103-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-feature).
   
 
 ### v1.2 Demo

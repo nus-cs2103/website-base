@@ -1,6 +1,6 @@
 <div id="architecturalStyles_eventDriven_what">
 
-Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Developer Guide](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design) for more info).
+Explain how the AddressBook-Level4 uses Event-Driven style (refer to the [Developer Guide](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design) for more info).
 
 </div>
 

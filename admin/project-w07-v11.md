@@ -56,7 +56,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.1 Product
 
-* Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these ==should be <tooltip content="should go beyond the component you are in charge of">_global-impact_</tooltip> enhancements==, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
+* Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these ==should be <tooltip content="should go beyond the component you are in charge of">_global-impact_</tooltip> enhancements==, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
 
 </div>
 

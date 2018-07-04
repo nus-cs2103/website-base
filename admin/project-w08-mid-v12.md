@@ -28,7 +28,7 @@ Overview: <include src="project-deliverables.md#mid-v12-overview" inline />
 
 * Complete the repo set up
   * Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
-  * Set up [auto-publishing of docs](https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation) if you haven't done so already
+  * Set up [auto-publishing of docs](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation) if you haven't done so already
 
 * Adjust project rigor to suit your team's pace
 

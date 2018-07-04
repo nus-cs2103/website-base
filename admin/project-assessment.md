@@ -37,9 +37,9 @@ How good your implementation is, in terms of the quality and the quantity of the
 
 Based on: an inspection of the collated code (submitted in your `/collated/*.md` files).
 
-<span id="code-quality-tips">
-
 <panel header=":bulb: Tips: how to score high for code quality" no-close>
+
+<span id="code-quality-tips">
 
 * Ensure your code has at least some evidence of these (see [here](../book/errorHandling/index.html) for more info)
   * logging
@@ -55,9 +55,9 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 * In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
 
-</panel><p>
-
 </span>
+
+</panel><p>
 
 **B. Depth and completeness of the major feature**
 

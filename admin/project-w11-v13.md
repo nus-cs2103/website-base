@@ -36,7 +36,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 <tip-box type="important">
 
-You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collated code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.%% 
+You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collate code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.%% 
 
 </tip-box>
 
