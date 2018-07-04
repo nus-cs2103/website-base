@@ -19,7 +19,7 @@ siteNav: adminSiteNav.md
 
 <tip-box>
 
-Overview: <include src="project-deliverables.md#inception-overview" inline />
+Overview: <include src="project-timeline.md#inception-overview" inline />
 </tip-box>
 
 This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).

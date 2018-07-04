@@ -21,7 +21,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <tip-box>
 
-Overview: <include src="project-deliverables.md#mid-v10-overview" inline />
+Overview: <include src="project-timeline.md#mid-v10-overview" inline />
 </tip-box>
 
 This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).

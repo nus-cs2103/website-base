@@ -78,7 +78,7 @@ In particular, you may want to **have a look at the new Java 8 features** such a
   {heading: "Text Books", priority: "2", source: "textBooks.md#main"},
   {heading: "Programming Language", priority: "2", source: "programming-languages.md#main"},
   {heading: "Project: Constraints", priority: "2", source: "project-constraints.md#main"},
-  {heading: "Project: Deliverables", priority: "2", source: "project-deliverables.md#main"},
+  {heading: "Project: Timeline", priority: "2", source: "project-timeline.md#main"},
   {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103VsCs2103t"},
   {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
   {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"},

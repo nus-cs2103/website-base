@@ -19,7 +19,7 @@ siteNav: adminSiteNav.md
 
 <tip-box>
 
-Overview: <include src="project-deliverables.md#mid-v11-overview" inline />
+Overview: <include src="project-timeline.md#mid-v11-overview" inline />
 </tip-box>
 
 <div id="product">

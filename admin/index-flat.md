@@ -72,9 +72,9 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
-<div id="admin-project-deliverables-anchor"></div>
-<div id="admin-project-deliverables">
-<include src="project-deliverables.md#main" />
+<div id="admin-project-timeline-anchor"></div>
+<div id="admin-project-timeline">
+<include src="project-timeline.md#main" />
 </div>
 
 

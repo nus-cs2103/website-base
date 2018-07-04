@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Admin: Project → Deliverables"
+title: "Admin: Project → Timeline"
 footer: footer.md
 siteNav: adminSiteNav.md
 </frontmatter>
@@ -11,7 +11,7 @@ siteNav: adminSiteNav.md
 
 <div class="website-content" id="main">
 
-## Project → Deliverables
+## Project → Timeline
 
 [<img src="{{baseUrl}}/admin/images/timeline.png" width="100%">](images/timeline.png)
 

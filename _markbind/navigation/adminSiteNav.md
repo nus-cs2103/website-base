@@ -11,7 +11,7 @@
 * [%%→%% The product](project-product.html)
 * [%%→%% Scope](project-scope.html)
 * [%%→%% Constraints](project-constraints.html)
-* [%%→%% Deliverables](project-deliverables.html)
+* [%%→%% Timeline](project-timeline.html)
 * [%%→%% inception [week 3]](project-w03-inception.html)
 * [%%→%% mid-v1.0 [week 4]](project-w04-mid-v10.html)
 * [%%→%% v1.0 [week 5]](project-w05-v10.html)

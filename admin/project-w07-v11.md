@@ -19,7 +19,7 @@ siteNav: adminSiteNav.md
 
 <tip-box>
 
-Overview: <include src="project-deliverables.md#v11-overview" inline />
+Overview: <include src="project-timeline.md#v11-overview" inline />
 </tip-box>
 
 **v1.1 Summary of Milestone**

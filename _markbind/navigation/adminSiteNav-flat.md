@@ -10,7 +10,7 @@
   * [The product](#admin-project-product-anchor)
   * [Scope](#admin-project-scope-anchor)
   * [Constraints](#admin-project-constraints-anchor)
-  * [Deliverables](#admin-project-deliverables-anchor)
+  * [Timeline](#admin-project-timeline-anchor)
   * [inception [week 3]](#admin-project-w03-inception-anchor)
   * [mid-v1.0 [week 4]](#admin-project-mid-v10-anchor)
   * [v1.0 [week 5]](#admin-project-v10-anchor)
