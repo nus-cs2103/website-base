@@ -63,7 +63,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
     * Why it is implemented that way.
     * Alternatives considered.
   * The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).
-  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide](https://nus-cs2103-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-feature).
+  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-feature).
   
 
 ### v1.2 Demo

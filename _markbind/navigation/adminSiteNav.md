@@ -35,7 +35,7 @@
 * [Appendix A: Module Principles](appendixA-principles.html)
 * [Appendix B: Module Policies](appendixB-policies.html)
 * [Appendix C: Frequently Asked Questions](appendixC-faq.html)
-* [Appendix D: How to get help in CS2103/T](appendixD-help.html)
+* [Appendix D: How to get help in {{ module }}/T](appendixD-help.html)
 * [Appendix E: Using GitHub Project Hosting](appendixE-gitHub.html)
 * [Appendix F: Handling teamwork issues](appendixF-teamworkIssues.html)
 </markdown>

@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Admin: How to get help in CS2103/T"
+title: "Admin: How to get help in {{ module }}/T"
 footer: footer.md
 siteNav: adminSiteNav.md
 </frontmatter>
@@ -11,7 +11,7 @@ siteNav: adminSiteNav.md
 
 <div class="website-content" id="main">
 
-# Appendix D: How to get help in CS2103/T
+# Appendix D: How to get help in {{ module }}/T
 
 <img src="{{baseUrl}}/admin/images/how to get help.png" width="200px"><br/>
 

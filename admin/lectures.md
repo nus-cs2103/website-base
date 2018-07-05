@@ -24,9 +24,9 @@ Semester 2 (Jan-April) | ICube Auditorium | **1600**-1800
 
 Lectures start on time sharp and end around 15 minutes before official end time.
 
-<panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%"> 
+<panel header="**Clarification: {{ module }}T Lecture Timinig** :exclamation: %%(not applicable to {{ module }})%%"> 
 
-CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. %%The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.%%
+{{ module }}T lectures are same as that for {{ module }}. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. %%The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.%%
   
 </panel><p/>
 

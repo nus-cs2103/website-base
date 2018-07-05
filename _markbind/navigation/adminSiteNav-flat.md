@@ -46,9 +46,8 @@
   * [Policy on suggested length for submissions](#policy-submissionLength)
 * Appendix C: Frequently Asked Questions
   * [Where is everything?](#admin-faq-whereIsEverything)
-  * [What are the differences between CS2103 and CS2103T?](#admin-faq-cs2103VsCs2103t)
+  * [What are the differences between {{ module }} and {{ module }}T?](#admin-faq-{{ module | lower }}Vs{{ module | lower }}t)
   * [Why the workload is so high?](#admin-faq-highWorkload)
-  * [How do I get CS2103R credit for optional LOs?](#admin-faq-cs2103r)
   * [What are the extra requirements to get an A+?](#admin-faq-aPlus)
   * [Why so much bean counting?](#admin-faq-beanCounting)
   * [Why you force me to visit a separate website instead of using IVLE?](#admin-faq-separateWebsite)
@@ -60,8 +59,8 @@
   * [Why I’m not allowed to use my favorite tool/framework/language etc.?](#admin-faq-favoriteTool)
   * [Why so many submissions?](#admin-faq-manySubmissions)
   * [Why aren't we allowed to build a new product from scratch?](#admin-faq-fromScratch)
-  * [Why submission requirements differ between CS2103T and CS2101?](#admin-faq-cs2101Differences)
-* [Appendix D: How to get help in CS2103/T](#admin-appendixD-help)
+  * [Why submission requirements differ between {{ module }}T and CS2101?](#admin-faq-cs2101Differences)
+* [Appendix D: How to get help in {{ module }}/T](#admin-appendixD-help)
 * [Appendix E: Using GitHub Project Hosting](#admin-appendixE-github)
 * [Appendix F: Handling teamwork issues](#admin-appendixF-teamworkIssues)
 </markdown>

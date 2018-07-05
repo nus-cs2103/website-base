@@ -38,4 +38,4 @@ One class you can have is `Route`
 
 </panel>
 
-[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L4.pptx)]
+[[slides](http://www.comp.nus.edu.sg/~{{ module | lower }}/{{ semester }}/slides/L4.pptx)]

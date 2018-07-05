@@ -13,7 +13,7 @@ siteNav: adminSiteNav.md
 
 # Tutorials
 
-==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
+==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. {{ module }} (not {{ module }}T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
 
 <panel header="%%Schedule {{ icon_embedding }} Overview → Tutorial Schedule%%" minimized>
 <include src="../schedule/overview/tutorialSchedule.md" />
@@ -41,7 +41,7 @@ siteNav: adminSiteNav.md
 * **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%    
 
 <div class="indented-level2">
-<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in CS2103/T%%" minimized>
+<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T%%" minimized>
 <include src="appendixD-help.md#main" />
 </panel>
 </div>

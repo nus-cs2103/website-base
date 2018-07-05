@@ -94,7 +94,7 @@ The instructions below are for setting up a GitHub organization for your team, w
 You can create your GitHub account after receiving your Phase B team ID. Here are the instructions (==please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
 
 * One team member (e.g. team leader) should create an organization with the following details:
-* ==Organization name : `CS2103JAN2018-TEAM_ID`==. e.g.  `CS2103JAN2018-W09-B3`
+* ==Organization name : `{{ semester }}JAN2018-TEAM_ID`==. e.g.  `{{ semester }}JAN2018-W09-B3`
 * Plan:  Open Source ($0/month) 
 * After that, the same person can add members to the organization:
 * Create a team called `developers` to your organization.

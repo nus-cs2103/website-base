@@ -1,4 +1,4 @@
-**CS2103 students only**: Form Phase A teams at the beginning of the tutorial. Be sure to conform to team forming constrains.
+**{{ module }} students only**: Form Phase A teams at the beginning of the tutorial. Be sure to conform to team forming constrains.
 
 <include type="danger" src="../../admin/teams.md#main" name="%%Admin {{ icon_embedding }}%% Team Forming :star:" dynamic />
 

@@ -23,9 +23,9 @@ The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you
 
 </div>
 
-<div id="admin-faq-cs2103VsCs2103t">
+<div id="admin-faq-{{ module | lower }}Vs{{ module | lower }}t">
 
-### What are the differences between CS2103 and CS2103T?
+### What are the differences between {{ module }} and {{ module }}T?
  
 Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
 
@@ -37,28 +37,13 @@ Same lectures, same exam. Separate tutorials, separate project grading. Unless s
 
 <img src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
 
-CS2103/T prepares you for many higher-level project modules (CS3216/7, CS3201/2, CS3281/2, CG3002, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
+{{ module }}/T prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
 Remember, everything you learn here is going to be useful in a SE-related career.
 
 Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier :stuck_out_tongue:  
 
-==How to reduce the workload?== You can omit Learning Outcomes rated :star::star::star::star: They are counted for CS2103R and for A+ grades only.
-
-</div>
-
-<div id="admin-faq-cs2103r">
-
-### How do I get CS2103R credit for optional LOs?
-
-General info on R modules are [here](https://docs.comp.nus.edu.sg/node/3699).
-
-To get CS2103R credit you should, 
-
-* Achieve _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs during the semester.
-* Inform prof your interest to do CS2103 at the end of the semester. 
-* Achieve the missed 3-:star: and 4-:star: LOs during the vacation. 
-* Register for CS2103R in the subsequent semester.
+==How to reduce the workload?== You can omit Learning Outcomes rated {{ four_stars }}. Furthermore, control the project workload by using no more than a fixed amount of time weekly on the project (e.g., 1 day).
 
 </div>
 
@@ -66,14 +51,13 @@ To get CS2103R credit you should,
 
 ### What are the extra requirements to get an A+?
 
-In CS2103/T, A+ is not given simply based on the final score. To get an A+ you should,
+In {{ module }}/T, A+ is not given simply based on the final score. To get an A+ you should,
 
 * score enough to get an A
 * be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
 * be considered helpful by peers (based on peer evaluations and tutor observations)
   * In particular, you are encouraged to be active on the slack channel and our [forum]({{module_org}}/forum/issues) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
   * Whenever you can, go out of your way to review PRs created by other class members (as part of weekly LOs), even if they are not in your team.
-* achieve _most_ of the 3-:star: LOs and _some_ of the 4-:star: LOs.
 
 </div>
 
@@ -199,19 +183,19 @@ The high number of submissions is not meant to increase workload but to spread i
 
 ### Why aren't we allowed to build a new product from scratch?
 
-There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use CS2103/T to train you to work in existing code bases.
+There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use {{ module }}/T to train you to work in existing code bases.
 
 </div>
 
 <div id="admin-faq-cs2101Differences">
 
-### Why submission requirements differ between CS2103T and CS2101?
+### Why submission requirements differ between {{ module }}T and CS2101?
 
 <img src="{{baseUrl}}/admin/images/Submission requirements differ.png" width="300"/>
 
 They do, and they should.
 
-CS2103T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some of the stuff across the two modules, submissions are not intended to be exactly the same.
+{{ module }}T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some of the stuff across the two modules, submissions are not intended to be exactly the same.
 
 </div>
 

@@ -4,7 +4,7 @@
 <panel type="info" header="**More info about using this website** :star::star::star:" expandable>
   <include src="about.md#more"/>
 </panel>
-<panel type="danger" header="**A typical CS2103/T week** :star:" expandable>
+<panel type="danger" header="**A typical {{ module }}/T week** :star:" expandable>
   <include src="typicalWeek.md"/>
 </panel>
 

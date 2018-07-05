@@ -37,7 +37,7 @@ Your project should comply with the following constraints.
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/> 
   %%**Reason:** For you to practice OOP that you learned in the course.%%  
     
-* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. %%**Reason:** Using a DBMS to store data will reduce the room to handle OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103 module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
+* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. %%**Reason:** Using a DBMS to store data will reduce the room to handle OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module }} module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
 
 * **Constraint-Platform-Independent**: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
   %%**Reason:** Peer testers should be able to use any of these platforms.%%

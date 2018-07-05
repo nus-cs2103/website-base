@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Software Engineering for Self-Directed Learners [CS2103/T Version]"
+title: "Software Engineering for Self-Directed Learners [{{ module }}/T Version]"
 footer: footer.md
 siteNav: se-book-adapted-sitenav.md
 </frontmatter>
@@ -12,7 +12,7 @@ siteNav: se-book-adapted-sitenav.md
 
 ## Software Engineering for Self-Directed Learners 
 
-<big><span class='badge'>CS2103/T edition - 2018</span></big>
+<big><span class='badge'>{{ module }}/T edition - 2018</span></big>
 
 <br/><big>
 

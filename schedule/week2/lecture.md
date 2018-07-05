@@ -1,3 +1,3 @@
-[[slides](http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L2.pptx)]
+[[slides](http://www.comp.nus.edu.sg/~{{ module | lower }}/{{ semester }}/slides/L2.pptx)]
 
 

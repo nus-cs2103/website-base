@@ -19,8 +19,8 @@ siteNav: adminSiteNav.md
 
 **When to form teams**
 
-* CS2103T: Your team will be formed by CS2101 side in week 1.
-* CS2103: Your team will be formed in week 3 tutorial.
+* {{ module }}T: Your team will be formed by CS2101 side in week 1.
+* {{ module }}: Your team will be formed in week 3 tutorial.
 
 **Team size**: The default ==team size is five==. 
 

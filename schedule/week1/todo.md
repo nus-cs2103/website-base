@@ -9,7 +9,7 @@
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close >
-<span slot="header" class="panel-title">[CS2103 students only] Forming teams {{ one_star }}</span>
+<span slot="header" class="panel-title">[{{ module }} students only] Forming teams {{ one_star }}</span>
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
@@ -79,10 +79,9 @@ In particular, you may want to **have a look at the new Java 8 features** such a
   {heading: "Programming Language", priority: "2", source: "programming-languages.md#main"},
   {heading: "Project: Constraints", priority: "2", source: "project-constraints.md#main"},
   {heading: "Project: Timeline", priority: "2", source: "project-timeline.md#main"},
-  {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103VsCs2103t"},
+  {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103Vscs2103t"},
   {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
-  {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"},
-  {heading: "FAQ: How do I get CS2103R credit for optional LOs?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103r"}]
+  {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"}]
 %}
 
 {{ macros.show_admin_sections_to_read(admin_sections) }}

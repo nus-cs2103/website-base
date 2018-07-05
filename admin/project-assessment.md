@@ -13,7 +13,7 @@ siteNav: adminSiteNav.md
 
 ## Project → Assessment
 
-Note that project grading is ==not competitive (not bell curved)==. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
+Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
 **Total**: 50 marks (:bust_in_silhouette: 40 individual marks + :busts_in_silhouette: 10 team marks)
 

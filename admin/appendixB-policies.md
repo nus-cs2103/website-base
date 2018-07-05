@@ -17,7 +17,7 @@ siteNav: adminSiteNav.md
 
 ### Policy on following instructions
 
-When working with others, especially in a large class such as CS2103,  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
+When working with others, especially in a large class such as {{ module }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
 
 </div>
 
@@ -35,7 +35,7 @@ As most of the work is graded individually, team sizes of 3, 4, or 5 is not expe
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
-<panel header="%%Admin {{ icon_embedding }} Project scope: Expectations from each student%%" expandable>
+<panel header="%%Admin {{ icon_embedding }} Project → Scope: Expectations from each student%%" minimized>
 <include src="project-scope.md#individual-expectations" />
 </panel>
 
@@ -78,7 +78,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 **We encourage you to give tech help to each other**, but do it in a way that the other person learns from it.
 
-<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in CS2103/T%%">
+<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T%%" minimized >
 <include src="appendixD-help.md" />
 </panel>
 
@@ -164,7 +164,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 
   //@@author
   ```
-  {{ icon_example }} Example of reusing a code snipped (with minor modifications):
+  {{ icon_example }} Example of reusing a code snippet (with minor modifications):
   ```java
   persons = getList()
   //@@author johndoe-reused
