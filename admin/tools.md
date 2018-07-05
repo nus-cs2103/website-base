@@ -35,7 +35,7 @@ The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com
 **Collating code**: To extract out code written by each person, we use a custom-built tool called Collate.
 
 <panel header="More info on the Collate tool">
-  <include src="collate.md" />
+  <include src="collate.fr" />
 </panel>
 
 </div>

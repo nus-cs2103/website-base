@@ -41,7 +41,7 @@ You are required to <tooltip content="extract your own code and put in one file"
 </tip-box>
 
 <panel header="**How to collate code for grading**">
-  <include src="collate.md" />
+  <include src="collate.fr" />
 </panel><p/>
 
 ### v1.3 Product
@@ -117,7 +117,7 @@ v1.3 is subjected to a round of peer _acceptance/system testing_.
   <include src="project-deliverables.md#project-deliverables-ppp"/>
 </modal>
   
-<include src="project-testing.md#testingPreparations" />
+<include src="project-testing.fr#testingPreparations" />
   
 **After the session**:
 * It is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone.

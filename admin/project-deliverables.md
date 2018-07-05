@@ -178,7 +178,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 </tip-box>
 
 
-<include src="project-testing.md#testingPreparations" />
+<include src="project-testing.fr#testingPreparations" />
 
 **During:** 
 

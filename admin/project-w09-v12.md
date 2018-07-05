@@ -44,7 +44,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 :bulb: We use a tool called _Collate_ to extract out code written by each member in your final project submission. The tool requires you to annotate code with special tags to mark code written by you. Adding those annotations is usually done at v1.3 but you are welcome to start early. 
 
 <panel header="**How to collate code for grading**" no-close>
-  <include src="collate.md" />
+  <include src="collate.fr" />
 </panel><p/>
 
 </tip-box>

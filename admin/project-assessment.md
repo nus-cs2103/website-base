@@ -73,7 +73,7 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
   <include src="project-deliverables.md#project-deliverables-practicalexam"/>
 </panel>
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
-  <include src="project-testing.md#expectations"/>
+  <include src="project-testing.fr#expectations"/>
 </panel>
   
 </panel>

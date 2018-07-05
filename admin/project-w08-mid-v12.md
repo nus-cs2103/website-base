@@ -42,7 +42,7 @@ Overview: <include src="project-timeline.md#mid-v12-overview" inline />
   * Another thing you can do is to switch to a simpler workflow if the forking workflow is slowing you down. 
 
 <modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
-  <include src="project-testing.md#expectations"/>
+  <include src="project-testing.fr#expectations"/>
 </modal>
 
 * **Start proper milestone management**
