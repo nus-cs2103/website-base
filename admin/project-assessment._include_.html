@@ -52,8 +52,8 @@
     <p><strong>A. Code quality/quantity:</strong></p>
     <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
     <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
-    <span id="code-quality-tips">
-<panel header=":bulb: Tips: how to score high for code quality" no-close="">
+    <panel header=":bulb: Tips: how to score high for code quality" no-close="">
+      <span id="code-quality-tips">
 <ul>
 <li>
 <p>Ensure your code has at least some evidence of these (see <a href="../book/errorHandling/index.html">here</a> for more info)</p>
@@ -64,34 +64,30 @@
 <li>defensive coding</li></ul></li>
 <li>
 <p>Ensure there are no <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent
-    only <em>some</em> coding standard violations; others need to be checked manually.</p>
-    </li>
-    <li>
-      <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.</p>
-    </li>
-    <li>
-      <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
-    </li>
-    <li>
-      <p>In addition, tyr to apply as many of the
-        <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
-    </li>
-    </ul>
+      only <em>some</em> coding standard violations; others need to be checked manually.</p>
+      </li>
+      <li>
+        <p>Ensure <a href="../book/codeQuality/maximiseReadability/intermediate/index.html">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.</p>
+      </li>
+      <li>
+        <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+      </li>
+      <li>
+        <p>In addition, tyr to apply as many of the
+          <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
+      </li>
+      </ul>
+      </span>
+      <p></p>
+    </panel>
     <p></p>
-  </panel>
-  <p></p>
-  </span>
-  <p><strong>B. Depth and completeness of the major feature</strong></p>
+    <p><strong>B. Depth and completeness of the major feature</strong></p>
   </panel>
   <panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
     <p>Evaluates: How good is your Quality Assurance?</p>
     <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 Practical Exam, 4. bugs found during PE.</p>
     <panel type="seamless" header="%%Click here for more info on v1.4 practical exam%%">
       <div>
-        <h3 id="v14-practical-exam">v1.4 Practical Exam</h3>
-        <tip-box type="important">
-          <p><strong>Compulsory. Graded <mark>(accounting for about 10 marks in total)</mark></strong>.</p>
-        </tip-box>
         <p><strong>Objectives:</strong></p>
         <ul>
           <li>Evaluate your,
@@ -109,7 +105,13 @@
             </ul>
           </li>
         </ul>
-        <p><strong>Time/venue:</strong> week 13 lecture slot, but not in the lecture venue (you can do it anywhere)</p>
+        <tip-box>
+          <ul>
+            <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
+            <li>You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed"> Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
+            <li>The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.</li>
+          </ul>
+        </tip-box>
         <div>
           <p><strong>Preparation</strong>:</p>
           <ul>
@@ -131,7 +133,7 @@
               <li>The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to
                 have bugs.</li>
               <li>You can do <em>acceptance</em> testing as well as <em>system</em> testing.</li>
-              <li>Omit feature that existed in AB4. Instead, test features the team has added.</li>
+              <li>Omit feature that existed in AB4. Instead, test features added by the team.</li>
               <li>Report bugs in the <a href="https://github.com/nus-cs2103-AY1718S2/pe/issues">practical exam issue tracker</a>, <mark>not in the team's repo</mark>.
                 <ul>
                   <li>Issue title format: <code>[Tester ID] Issue description</code> <span class="dimmed"> e.g. <code>[26] Empty name crashes app</code></span></li>
@@ -171,7 +173,7 @@
             <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
             <ul>
               <li>
-                <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the major features fit together and match the stated target user and the value proposition?</p>
+                <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the stated target user and the value proposition?</p>
                 <ul>
                   <li><code>low</code>: One of these
                     <ul>
@@ -316,12 +318,6 @@
             </li>
           </ul>
         </tip-box>
-        <p><strong>Grading:</strong></p>
-        <ul>
-          <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
-          <li>You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed"> Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem be be based on a sincere effort to test/evaluate.</span></li>
-          <li>The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.</li>
-        </ul>
       </div>
     </panel>
     <panel type="seamless" header="Expectations for writing automated tests:" expanded="">

@@ -3526,3 +3526,8 @@
 2018-07-04T11:40:36.389Z - info: Generate Site durationMs=47626
 2018-07-04T11:40:36.742Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-04T11:40:36.742Z - info: Press CTRL+C to stop ...
+2018-07-04T11:45:25.606Z - info: Pages built
+2018-07-04T11:45:25.691Z - info: Site data built
+2018-07-04T11:45:25.692Z - info: Build success!
+2018-07-04T11:45:25.692Z - info: Generate Site durationMs=50386
+2018-07-04T11:46:33.639Z - info: Deployed!

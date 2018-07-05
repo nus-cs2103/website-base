@@ -93,11 +93,6 @@
       "src": "admin/appendixF-teamworkIssues.md"
     },
     {
-      "headings": {},
-      "src": "admin/collate.md",
-      "title": ""
-    },
-    {
       "headings": {
         "exams": "Exams",
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
@@ -115,8 +110,7 @@
         "exams": "Exams",
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)",
-        "project-assessment": "Project → Assessment",
-        "v14-practical-exam": "v1.4 Practical Exam"
+        "project-assessment": "Project → Assessment"
       },
       "title": "Admin: Module Grading",
       "keywords": "grading, asessment",
@@ -140,7 +134,7 @@
         "project-the-product": "Project → The Product",
         "project-scope": "Project → Scope",
         "project-constraints": "Project → Constraints",
-        "project-deliverables": "Project → Deliverables",
+        "project-timeline": "Project → Timeline",
         "project-inception-week-3": "Project → inception [week 3]",
         "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]",
         "project-v10-week-5": "Project → v1.0 [week 5]",
@@ -189,11 +183,22 @@
         "intermediate-5": "Intermediate",
         "project-v14-week-13": "Project → v1.4 [week 13]",
         "v14-product": "v1.4 Product",
-        "v14-documentation": "v1.4 Documentation",
+        "v14-source-code": "v1.4 Source Code",
+        "v14-user-guide": "v1.4 User Guide",
+        "v14-developer-guide": "v1.4 Developer Guide",
+        "v14-product-website": "v1.4 Product Website",
         "v14-demo": "v1.4 Demo",
         "v14-practical-exam": "v1.4 Practical Exam",
+        "project-deliverables": "Project → Deliverables",
+        "deliverable-executable": "Deliverable: Executable",
+        "deliverable-source-code": "Deliverable: Source code",
+        "deliverable-user-guide-ug": "Deliverable: User Guide (UG)",
+        "deliverable-developer-guide-ug": "Deliverable: Developer Guide (UG)",
+        "deliverable-product-website": "Deliverable: Product Website",
+        "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
+        "deliverable-demo": "Deliverable: Demo",
+        "deliverable-practical-exam": "Deliverable: Practical Exam",
         "project-assessment": "Project → Assessment",
-        "v14-practical-exam-2": "v1.4 Practical Exam",
         "supervision": "Supervision",
         "forming-teams": "Forming Teams",
         "peer-evaluations": "Peer Evaluations",
@@ -204,7 +209,6 @@
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)",
         "project-assessment-2": "Project → Assessment",
-        "v14-practical-exam-3": "v1.4 Practical Exam",
         "exams-2": "Exams",
         "final-exam-part-1-mcq-2": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay-2": "Final Exam: Part 2 (Essay)",
@@ -318,11 +322,6 @@
       "src": "admin/preliminaries.md"
     },
     {
-      "headings": {},
-      "src": "admin/profilePhoto.md",
-      "title": ""
-    },
-    {
       "headings": {
         "programming-language": "Programming Language"
       },
@@ -333,8 +332,7 @@
     },
     {
       "headings": {
-        "project-assessment": "Project → Assessment",
-        "v14-practical-exam": "v1.4 Practical Exam"
+        "project-assessment": "Project → Assessment"
       },
       "title": "Admin: Project → Assessment",
       "footer": "footer.md",
@@ -352,9 +350,17 @@
     },
     {
       "headings": {
-        "project-deliverables": "Project → Deliverables"
+        "project-deliverables": "Project → Deliverables",
+        "deliverable-executable": "Deliverable: Executable",
+        "deliverable-source-code": "Deliverable: Source code",
+        "deliverable-user-guide-ug": "Deliverable: User Guide (UG)",
+        "deliverable-developer-guide-ug": "Deliverable: Developer Guide (UG)",
+        "deliverable-product-website": "Deliverable: Product Website",
+        "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
+        "deliverable-demo": "Deliverable: Demo",
+        "deliverable-practical-exam": "Deliverable: Practical Exam"
       },
-      "title": "Admin: Project → Deliverables",
+      "title": "Admin: Project → Timeline",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project-deliverables.md"
@@ -378,9 +384,13 @@
       "src": "admin/project-scope.md"
     },
     {
-      "headings": {},
-      "src": "admin/project-testing.md",
-      "title": ""
+      "headings": {
+        "project-timeline": "Project → Timeline"
+      },
+      "title": "Admin: Project → Timeline",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-timeline.md"
     },
     {
       "headings": {
@@ -512,7 +522,10 @@
       "headings": {
         "project-v14-week-13": "Project → v1.4 [week 13]",
         "v14-product": "v1.4 Product",
-        "v14-documentation": "v1.4 Documentation",
+        "v14-source-code": "v1.4 Source Code",
+        "v14-user-guide": "v1.4 User Guide",
+        "v14-developer-guide": "v1.4 Developer Guide",
+        "v14-product-website": "v1.4 Product Website",
         "v14-demo": "v1.4 Demo",
         "v14-practical-exam": "v1.4 Practical Exam"
       },
@@ -605,16 +618,6 @@
       },
       "title": "Project List",
       "src": "admin/projectList.md"
-    },
-    {
-      "headings": {},
-      "src": "admin/projectPortfolioPage.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "admin/ratingSystem.md",
-      "title": ""
     },
     {
       "headings": {
