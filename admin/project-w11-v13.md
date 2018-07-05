@@ -114,7 +114,7 @@ v1.3 is subjected to a round of peer _acceptance/system testing_.
 * There is **no penalty for bugs reported** in your product.
   
 <modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
-  <include src="project-deliverables.md#ppp"/>
+  <include src="project-deliverables.md#project-deliverables-ppp"/>
 </modal>
   
 <include src="project-testing.md#testingPreparations" />

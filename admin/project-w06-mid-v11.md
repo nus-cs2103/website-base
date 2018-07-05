@@ -79,7 +79,7 @@ Before you do any coding for the project, please ensure you have set the Git use
   * The photo of a team member should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%.
 
 <modal large title="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
-  <include src="profilePhoto.md"/>
+  <include src="project-deliverables.md#profile-photo"/>
 </modal>
 
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  

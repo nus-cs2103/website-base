@@ -29,7 +29,7 @@ The GitHub profile is useful for the tutors and classmates to identify you. If y
 
 </panel>
 <panel header="%%Admin {{ icon_embedding }} Choosing a profile photo%%" expandable>
-  <include src="profilePhoto.md" />
+  <include src="project-deliverables.md#profile-photo" />
 </panel>
 
 </div>

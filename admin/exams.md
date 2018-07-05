@@ -16,8 +16,8 @@ siteNav: adminSiteNav.md
 There is no midterm.  
 
 The final exam has two parts: 
-* Part 1: MCQ questions (1 hour, 24 marks) 
-* Part 2: Essay questions (1 hour, 16 marks)
+* Part 1: MCQ questions (1 hour, 20 marks) 
+* Part 2: Essay questions (1 hour, 20 marks)
 
 Both papers will be given to you at the start but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
 
@@ -41,18 +41,6 @@ Unless stated otherwise, the meaning of answer options are<br>
 **D.** Option not used<br>
 **E.** `False`
 
-
-**Incorrect answers receive negative marks.** Here is an example marking scheme:
-
-Answer correct **(+0.24)**<br>
-Option `C`  **(0)**<br>
-No answer  **(0)**<br>
-Answer incorrect **(-0.24)**<br>
-
-%%&nbsp;Negative marks are necessary because all questions are True/False type. Without negative marks, anyone can score roughly half the marks by simply choosing the same option for all questions.%%
-
-**All questions carry equal marks.**
- 
 The exam paper has 100 questions.  
 
 Note that you have **slightly more than ½ minute for each question**, which means you need to go through the questions fairly quickly.

@@ -20,12 +20,12 @@ All peer evaluations will be taken into account when determining your participat
 
 **Extra Requirements:** [considered for participation marks]
 
-* :exclamation: Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you forfeit your participation marks.==
-* :bulb: TEAMMATES normally allows students to access it without using Google login. In this module, we encourage you to login to TEAMMATES using your Google account and complete your profile with a suitable profile photo. %%&nbsp;Reason:CS2103 is a big class. This profile helps us to remember you better, even after the module is over.%%
+* :exclamation: Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
+* :bulb: TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%&nbsp;Reason:CS2103 is a big class. This profile helps us to remember you better, even after the module is over.%%
 
-<panel header="Choosing a profile photo" expandable>
-  <include src="profilePhoto.md" />
-</panel>
+<modal title="%%Admin {{ icon_embedding }} Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
+  <include src="project-deliverables.md#profile-photo" />
+</modal>
 
 </span>
 
@@ -41,7 +41,7 @@ Here are some things to keep in mind:
 
 </span>
 
-The final peer evaluation (in week 13) is graded. In that peer-evaluation you will be asked to evaluate the work of your team members. The quality and accuracy of your evaluation will affect your grade and your evaluations will be considered as a data point in determining the grade of the team members.
+The final peer evaluation (in week 13) is graded. In that peer-evaluation you will be asked to evaluate the work of your team members and another team. The quality and accuracy of your evaluation will affect your grade and your evaluations will be considered as a data point in determining the grade of the team members.
 
 <img src="{{baseUrl}}/admin/images/peer evaluations.png" width="600px">
 

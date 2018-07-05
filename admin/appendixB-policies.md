@@ -186,7 +186,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 </modal>
 
 <modal large title="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
-  <include src="project-deliverables.md#ppp"/>
+  <include src="project-deliverables.md#project-deliverables-ppp"/>
 </modal>
 
 </div>
