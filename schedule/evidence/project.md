@@ -114,12 +114,29 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 </div>
 
+<div id="inception">
+
+Covered by the following:
+
+<panel src="../../admin/project-w03-inception.md#main" header="%%Admin {{ icon_embedding }} Project → Inception%%" no-close />
+
+</div>
+
 
 <div id="requirements">
 
-Covered by the 'Documentation' component of v1.1:
+Covered by the following:
 
-<panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
+<panel src="../../admin/project-w04-mid-v10.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.0%%" no-close />
+
+</div>
+
+
+<div id="conceptualize">
+
+Covered by the following:
+
+<panel src="../../admin/project-w05-v10.md#main" header="%%Admin {{ icon_embedding }} Project → v1.0%%" no-close />
 
 </div>
 
