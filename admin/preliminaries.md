@@ -38,8 +38,8 @@ Given below is a summary of what the module covers and does not cover %%(i.e., u
 - [ ] those specific to start-ups</md></td>
 
 **Modeling:**
-- [x] <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">ome UML notations</tooltip>S (sufficient to be able to describe SE artifacts using models, such as seen in [this Developer Guide of AB4](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design))
-- [ ] heavy pre-implementation design modeling
+- [x] <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in [this Developer Guide of AB4](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design))
+- [ ] intensive <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
 
 **Requirements:**
 - [x] <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements
@@ -64,12 +64,12 @@ Given below is a summary of what the module covers and does not cover %%(i.e., u
 </div>
 <br>
  
-<panel header="%%Admin {{ icon_embedding }}%% **FAQ: Where is everything?**" type="seamless" minimized>
+<panel header="==%%Admin {{ icon_embedding }}%% **FAQ: Where is everything?**== _aka_ How to find stuff in this website" minimized>
   <include src="appendixC-faq.md#admin-faq-whereIsEverything" />
 </panel>
 <p/>
 
-<panel header="%%Admin {{ icon_embedding }}%% **FAQ: What are the differences between {{ module }} and {{ module }}T?**" type="seamless" minimized>
+<panel header="%%Admin {{ icon_embedding }}%% **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized>
   <include src="appendixC-faq.md#admin-faq-{{ module | lower }}Vs{{ module | lower }}t" />
 </panel>
 
