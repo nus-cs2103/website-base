@@ -1,3 +1,10 @@
+.website-content {
+    margin: 12px auto 40px auto;
+    max-width: 800px;
+    overflow: hidden;
+    text-align:justify
+}
+
 h1{
     color:purple;
 }

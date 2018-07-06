@@ -203,7 +203,7 @@
       <p><span class="dimmed">*ALL: Active Learning Room</span></p>
     </div>
   </panel>
-  <panel src="/website-base\schedule\overview\index._include_.html" name=":exclamation: **Info relevant to all weeks**" header=":exclamation: **Info relevant to all weeks**" isOpen="false" no-close="true" no-switch="true"></panel>
+  <panel src="/website-base\schedule\overview\index._include_.html" header=":exclamation: **Info relevant to all weeks**"></panel>
   <p></p>
   <panel type="seamless" expanded="" no-close="">
     <span slot="header" class="panel-title week"> Week 1 [Aug 13]</span>
@@ -221,8 +221,7 @@
               </span>
               <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
               <p>
-                <panel type="danger" src="/website-base\admin\teams._include_.html#main" name="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Team Forming :star:" fragment="main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Team Forming :star:"
-                  isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel type="danger" src="/website-base\admin\teams._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Team Forming :star:" fragment="main"></panel>
               </p>
             </panel>
 
@@ -310,27 +309,27 @@
           <p><span class="activity-desc">Admin info to read:<span></span></span>
           </p>
           <div class="indented">
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" dynamic="" no-close="" fragment="admin-faq-whereIsEverything">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" no-close="" fragment="admin-faq-whereIsEverything">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Where is everything? <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
             </panel>
-            <panel src="/website-base\admin\project._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\project._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Overview <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
             </panel>
-            <panel src="/website-base\admin\project-product._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\project-product._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: The Product <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
             </panel>
-            <panel src="/website-base\admin\project-scope._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\project-scope._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Scope <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
             </panel>
-            <panel src="/website-base\admin\textBooks._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\textBooks._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Text Books <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -338,7 +337,7 @@
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\programming-languages._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\programming-languages._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Programming Language <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -346,7 +345,7 @@
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\project-constraints._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\project-constraints._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Constraints <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -354,7 +353,7 @@
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\project-timeline._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\project-timeline._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Timeline <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -362,29 +361,22 @@
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103VsCs2103t" dynamic="" no-close="" fragment="admin-faq-cs2103VsCs2103t">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" no-close="" fragment="admin-faq-cs2103Vscs2103t">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What's different between CS2103 and CS2103T? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-highWorkload" dynamic="" no-close="" fragment="admin-faq-highWorkload">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-highWorkload" no-close="" fragment="admin-faq-highWorkload">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why the workload is so high? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-aPlus" dynamic="" no-close="" fragment="admin-faq-aPlus">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-aPlus" no-close="" fragment="admin-faq-aPlus">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What are the extra requirements to get an A+? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-            </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103r" dynamic="" no-close="" fragment="admin-faq-cs2103r">
-              <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: How do I get CS2103R credit for optional LOs? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1460,8 +1452,7 @@ Invalid command format: add
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\revisionControl\repositories\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Project Management → Revision Control → Repositories%%"
-                      isOpen="false" no-close="true" no-switch="true"></panel>
+                    <panel src="/website-base\book\revisionControl\repositories\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Project Management → Revision Control → Repositories%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -1593,7 +1584,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\gitAndGithub\init\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Git & GitHub → Init%%" isOpen="false" no-close="true" no-switch="true"></panel>
+                    <panel src="/website-base\book\gitAndGithub\init\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Git & GitHub → Init%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -1749,8 +1740,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 <div>
                   <div>
                     <p>
-                      <panel src="/website-base\book\revisionControl\savingHistory\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control: Saving History" isOpen="false"
-                        no-close="true" no-switch="true"></panel>
+                      <panel src="/website-base\book\revisionControl\savingHistory\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Revision Control: Saving History"></panel>
                     </p>
                   </div>
                   <p></p>
@@ -1812,7 +1802,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           <p><span class="activity-desc">Admin info to read:<span></span></span>
           </p>
           <div class="indented">
-            <panel src="/website-base\admin\appendixB-policies._include_.html#policy-techHelp" dynamic="" no-close="" fragment="policy-techHelp">
+            <panel src="/website-base\admin\appendixB-policies._include_.html#policy-techHelp" no-close="" fragment="policy-techHelp">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Policy on Tech Help <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1820,35 +1810,35 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\tools._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\tools._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Module Tools <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixA-principles._include_.html#main" dynamic="" no-close="" fragment="main">
+            <panel src="/website-base\admin\appendixA-principles._include_.html#main" no-close="" fragment="main">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Module Principles <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" dynamic="" no-close="" fragment="admin-faq-separateWebsite">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" no-close="" fragment="admin-faq-separateWebsite">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why you force me to visit a separate website instead of using IVLE? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-slideFormat" dynamic="" no-close="" fragment="admin-faq-slideFormat">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-slideFormat" no-close="" fragment="admin-faq-slideFormat">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why slides are not detailed? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
             </panel>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-selfStudy" dynamic="" no-close="" fragment="admin-faq-selfStudy">
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-selfStudy" no-close="" fragment="admin-faq-selfStudy">
               <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why so much self-study? <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1887,33 +1877,33 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
       </div>
     </panel>
   </panel>
-  <panel type="seamless" src="/website-base\schedule\week3\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week3\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 3 [Aug 27]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week4\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week4\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 4 [Sep 3]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week5\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week5\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 5 [Sep 10]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week6\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week6\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 6 [Sep 17]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week7\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week7\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 7 [Oct 1]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week8\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week8\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 8 [Oct 8]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week9\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week9\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 9 [Oct 15]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week10\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week10\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 10 [Oct 22]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week11\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week11\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 11 [Oct 29]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week12\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week12\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 12 [Nov 5]</span></panel>
-  <panel type="seamless" src="/website-base\schedule\week13\index._include_.html" dynamic="" no-close="">
+  <panel type="seamless" src="/website-base\schedule\week13\index._include_.html" no-close="">
     <span slot="header" class="panel-title week-future"> Week 13 [Nov 12]</span></panel>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.2</a> at Thu, 05 Jul 2018 11:38:08 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Fri, 06 Jul 2018 12:37:12 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -1923,5 +1913,4 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
     const baseUrl = '/website-base'
 </script>
 <script src="..\markbind\js\setup.js"></script>
-<script src="..\markbind\js\site-nav.js"></script>
 </html>

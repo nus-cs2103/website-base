@@ -3698,3 +3698,13 @@ Missing reference in C:\repos\nus-cs2103\website-base\admin\project-assessment.m
 2018-07-05T11:36:20.217Z - info: Generate Site durationMs=45560
 2018-07-05T11:36:20.543Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-05T11:36:20.543Z - info: Press CTRL+C to stop ...
+2018-07-05T11:38:56.277Z - info: Pages built
+2018-07-05T11:38:56.360Z - info: Site data built
+2018-07-05T11:38:56.361Z - info: Build success!
+2018-07-05T11:38:56.361Z - info: Generate Site durationMs=55644
+2018-07-05T11:40:08.225Z - info: Deployed!
+2018-07-05T12:00:49.709Z - info: Pages built
+2018-07-05T12:00:49.774Z - info: Site data built
+2018-07-05T12:00:49.783Z - info: Generate Site durationMs=55947
+2018-07-05T12:00:50.170Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-05T12:00:50.170Z - info: Press CTRL+C to stop ...
