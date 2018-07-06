@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Admin"
+title: "Admin (All admin info in one page!)"
 footer: footer.md
 siteNav: adminSiteNav-flat.md
 </frontmatter>

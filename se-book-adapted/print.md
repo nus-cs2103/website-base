@@ -8,7 +8,7 @@ footer: footer.md
 <div class="website-content">
 
 {% import "se-book-adapted/config.njk" as config with context %}
-{% import "se-book-adapted/chapters/chapter-printable.njk" as chapter_template with context %}
+{% import "se-book-adapted/chapters-printable/chapter-printable.njk" as chapter_template with context %}
 
 # <big>**Software Engineering for Self-Directed Learners**</big>
 
