@@ -591,14 +591,14 @@ footer: footer.md
 
 
 {% macro show_past_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" dynamic no-close>
+<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
 <span slot="header" class="panel-title week-past"> Week {{ week.num }} [{{ week.day }}]</span>
 </panel>
 {% endmacro %}
 
 
 {% macro show_future_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" dynamic no-close>
+<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
 <span slot="header" class="panel-title week-future"> Week {{ week.num }} [{{ week.day }}]</span>
 </panel>
 {% endmacro %}
@@ -625,7 +625,7 @@ footer: footer.md
 <panel header="### <small>**{{glyphicon_calendar}} Tutorial Timetable**</small>" no-close>
   <include src="overview/tutorialSchedule.md"/>
 </panel>
-<include src="overview/index.md" name=":exclamation: **Info relevant to all weeks**" dynamic />
+<panel src="overview/index.md" header=":exclamation: **Info relevant to all weeks**" />
 <p/>
 
 

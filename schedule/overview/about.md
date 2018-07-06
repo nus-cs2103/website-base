@@ -31,10 +31,10 @@ This _Schedule Page_ is your main source of information for {{ module }}/T. You 
 <div id="more">
 
 <panel header="More info about using the textbook" expanded>
-  <include src="../../book/about/usage.md#conventions" name="Conventions Used" dynamic/>
-  <include src="../../book/about/usage.md#searching" name="Searching for Keywords" dynamic/>
-  <include src="../../book/about/usage.md#saving" name="Saving as PDF" dynamic/>
-  <include src="../../book/about/usage.md#printing" name="Printing" dynamic/>
+  <include src="../../book/about/usage.md#conventions" name="Conventions Used" />
+  <include src="../../book/about/usage.md#searching" name="Searching for Keywords" />
+  <include src="../../book/about/usage.md#saving" name="Saving as PDF" />
+  <include src="../../book/about/usage.md#printing" name="Printing" />
 </panel>
 
 <panel header="Additional conventions used in the website" expanded>

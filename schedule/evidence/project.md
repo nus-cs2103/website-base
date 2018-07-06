@@ -90,7 +90,7 @@ The team component is ==to be done by all members==, including those who were al
 * Options 1 (discouraged): Show the relevant code during the tutorial.
 * Options 2 (preferred): Create a pull request by following the instructions below.
 
-<include src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" name="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" dynamic />
+<panel src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" header="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" />
 
 If you choose option 2, we recommend that you complete this week's _Project Management_ LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in the LOs. 
 
@@ -101,7 +101,7 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 **Submission**: Create a PR against [Addressbook-Level2]({{module_org}}/addressbook-level2).  ==Only clean PRs== (i.e. free of unrelated code modifications) will be accepted. 
 
-<include src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" name="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" dynamic />
+<panel src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" header="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" />
 
 </div>
 
@@ -110,7 +110,7 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 **Submission**: Create a PR against [Addressbook-Level3]({{module_org}}/addressbook-level3).  ==Remember to use phase B team ID== (e.g. _W09-==B==2_) in your PR name. 
 
-<include src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" name="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" dynamic />
+<panel src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" header="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" />
 
 </div>
 
@@ -119,7 +119,7 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 Covered by the 'Documentation' component of v1.1:
 
-<dynamic-panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
+<panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
 
 </div>
 
@@ -128,7 +128,7 @@ Covered by the 'Documentation' component of v1.1:
 
 Covered by the 'Product' component of v1.1:
 
-<dynamic-panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
+<panel src="../../admin/project-w07-v11.md#main" header="%%Admin {{ icon_embedding }} Project → v1.1%%" no-close />
 
 </div>
 
@@ -148,7 +148,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 Covered by the 'Documentation' of component v1.1:
 
-<dynamic-panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
+<panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
 
 </div>
 
@@ -157,7 +157,7 @@ Covered by the 'Documentation' of component v1.1:
 
 Covered by the 'Product' component of mid-v1.2:
 
-<dynamic-panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
+<panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
 
 </div>
 
@@ -166,7 +166,7 @@ Covered by the 'Product' component of mid-v1.2:
 
 Covered by 'Documentation' component of v1.2:
 
-<include src="../../admin/project-w09-v12.md#main" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
+<panel src="../../admin/project-w09-v12.md#main" header="%%Admin {{ icon_embedding }} Project → v1.2%%" />
 
 </div>
 
@@ -175,7 +175,7 @@ Covered by 'Documentation' component of v1.2:
 
 Covered by the 'Project Management' component of v1.2:
 
-<include src="../../admin/project-w09-v12.md#main" name="%%Admin {{ icon_embedding }} Project → v1.2%%" dynamic />
+<panel src="../../admin/project-w09-v12.md#main" header="%%Admin {{ icon_embedding }} Project → v1.2%%" />
 
 </div>
 
@@ -194,7 +194,7 @@ Covered by v1.3:
 
 Covered by the 'Acceptance Testing' component of v1.4:
 
-<include src="../../admin/project-w11-v13.md#main" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
+<panel src="../../admin/project-w11-v13.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
 
 </div>
 
@@ -210,7 +210,7 @@ Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you
 
 Covered by the 'Project Portfolio Page' component of mid-v1.4:
 
-<include src="../../admin/project-w12-mid-v14.md#main" name="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" dynamic />
+<panel src="../../admin/project-w12-mid-v14.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" />
 
 </div>
 
@@ -219,7 +219,7 @@ Covered by the 'Project Portfolio Page' component of mid-v1.4:
 
 Covered by the 'Demo' component of v1.4:
 
-<include src="../../admin/project-w13-v14.md#main" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
+<panel src="../../admin/project-w13-v14.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
 
 </div>
 
@@ -242,10 +242,10 @@ Covered by v1.0-v1.4:
 
 Covered by the 'Peer Evaluations' component of the module:
 
-<include src="../../admin/peer-evaluations.md#main" name="%%Admin {{ icon_embedding }} Peer Evaluations%%" dynamic />
+<panel src="../../admin/peer-evaluations.md#main" header="%%Admin {{ icon_embedding }} Peer Evaluations%%" />
 
 Also covered by the 'Practical Exam' of v1.4:
 
-<include src="../../admin/project-w13-v14.md#main" name="%%Admin {{ icon_embedding }} Project → v1.4%%" dynamic />
+<panel src="../../admin/project-w13-v14.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
 
 </div>

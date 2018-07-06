@@ -79,7 +79,7 @@ The promptness of a reply is even more important when the email is requesting yo
 **We encourage you to give tech help to each other**, but do it in a way that the other person learns from it.
 
 <panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T%%" minimized >
-<include src="appendixD-help.md" />
+<include src="appendixD-help.md#main" />
 </panel>
 
 </div>

@@ -245,7 +245,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 We recommend using the _Forking Workflow_.
 
-<dynamic-panel src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate header="%%Textbook {{ icon_embedding }}%% Git and GitHub: Forking Workflow" />
+<panel src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate header="%%Textbook {{ icon_embedding }}%% Git and GitHub: Forking Workflow" />
 
 </div>
 

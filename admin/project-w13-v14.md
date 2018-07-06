@@ -49,7 +49,7 @@ Team/Individual Item | Name format | Upload to
 
 **Grading**: 
 
-<include src="project-assessment.md" name="%%Admin {{ icon_embedding }} Project: Assessment%%" dynamic />
+<panel src="project-assessment.md" header="%%Admin {{ icon_embedding }} Project: Assessment%%" />
 
 
 ### v1.4 Product
