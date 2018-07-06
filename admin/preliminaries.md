@@ -64,13 +64,9 @@ Given below is a summary of what the module covers and does not cover %%(i.e., u
 </div>
 <br>
  
-<panel header="==%%Admin {{ icon_embedding }}%% **FAQ: Where is everything?**== _aka_ How to find stuff in this website" minimized>
-  <include src="appendixC-faq.md#admin-faq-whereIsEverything" />
-</panel>
+<panel src="appendixC-faq.md#admin-faq-whereIsEverything" header="==%%Admin {{ icon_embedding }}%% **FAQ: Where is everything?**== _aka_ How to find stuff in this website" minimized />
 <p/>
 
-<panel header="%%Admin {{ icon_embedding }}%% **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized>
-  <include src="appendixC-faq.md#admin-faq-{{ module | lower }}Vs{{ module | lower }}t" />
-</panel>
+<panel src="appendixC-faq.md#admin-faq-{{ module | lower }}Vs{{ module | lower }}t" header="%%Admin {{ icon_embedding }}%% **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
 
 </div>

@@ -42,9 +42,7 @@ Overview: <include src="project-timeline.md#mid-v11-overview" inline />
   
 Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
 
-<panel header="%%Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username%%">
-  <include src="appendixE-gitHub.md#git-username" />
-</panel>
+<panel src="appendixE-gitHub.md#git-username" header="%%Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username%%" />
 
 </tip-box>
 
@@ -85,9 +83,7 @@ Before you do any coding for the project, please ensure you have set the Git use
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
 <div class="indented-level2">
-<panel header="%%Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities%%" minimized>
-  <include src="project-scope.md#roles" />
-</panel>
+<panel src="project-scope.md#roles" header="%%Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities%%" minimized />
 </div>
 <p/>
 
@@ -114,9 +110,7 @@ Before you do any coding for the project, please ensure you have set the Git use
   :exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
 
 <div class="indented-level2">
-<panel header="%%Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse%%" minimized>
-  <include src="appendixB-policies.md#policy-reuse" />
-</panel><p/>
+<panel src="appendixB-policies.md#policy-reuse" header="%%Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse%%" minimized /><p/>
 </div>
 
 

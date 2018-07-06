@@ -4,9 +4,7 @@ Attend the lecture for,
 * a recap of the preceding week's Learning Outcomes (LOs)
 * an introduction to the current week's LOs
 
-<panel type="info" header="%%Admin {{ icon_embedding }}%% Lectures :star::star::star:">
-  <include src="../../admin/lectures.md#main" />
-</panel> 
+<panel src="../../admin/lectures.md#main" type="info" header="%%Admin {{ icon_embedding }}%% Lectures :star::star::star:" /> 
 
 <p/>
 
@@ -16,9 +14,7 @@ Attend the lecture for,
  * Self-test your knowledge using exercises given in the learning resources. 
  * If you don't have time to achieve all LOs assigned to the week, use the star rating system to decide which ones to do first.
 
-<panel type="warning" header="%%Admin {{ icon_embedding }}%% Learning Outcomes :star::star:">
-  <include src="../../admin/learningOutcomes.md#main" />
-</panel> 
+<panel src="../../admin/learningOutcomes.md#main" type="warning" header="%%Admin {{ icon_embedding }}%% Learning Outcomes :star::star:" /> 
 
 <p/>
 
@@ -29,6 +25,4 @@ Attend the tutorial to,
 * demonstrate evidence of your achieving weekly LOs to the tutor
 * learn from peer demos of their own LO evidence
 
-<panel type="info" header="%%Admin {{ icon_embedding }}%% Tutorials :star::star::star:">
-  <include src="../../admin/tutorials.md#main" />
-</panel> 
+<panel src="../../admin/tutorials.md#main" type="info" header="%%Admin {{ icon_embedding }}%% Tutorials :star::star::star:" /> 

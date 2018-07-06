@@ -35,9 +35,7 @@ As most of the work is graded individually, team sizes of 3, 4, or 5 is not expe
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
-<panel header="%%Admin {{ icon_embedding }} Project → Scope: Expectations from each student%%" minimized>
-<include src="project-scope.md#individual-expectations" />
-</panel>
+<panel src="project-scope.md#individual-expectations" header="%%Admin {{ icon_embedding }} Project → Scope: Expectations from each student%%" minimized />
 
 </div>
 
@@ -78,9 +76,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 **We encourage you to give tech help to each other**, but do it in a way that the other person learns from it.
 
-<panel header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T%%" minimized >
-<include src="appendixD-help.md#main" />
-</panel>
+<panel src="appendixD-help.md#main" header="%%Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T%%" minimized  />
 
 </div>
 

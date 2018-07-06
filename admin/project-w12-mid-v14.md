@@ -36,9 +36,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 </modal>
 
 <div class="indented-level2">
-<panel header="%%Admin {{ icon_embedding }} Project Asessement → Code Quality Tips%%" minimized>
-  <include src="project-assessment.md#code-quality-tips" />
-</panel>
+<panel src="project-assessment.md#code-quality-tips" header="%%Admin {{ icon_embedding }} Project Asessement → Code Quality Tips%%" minimized />
 </div>
 
 <modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">
@@ -53,9 +51,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 
 
 <div class="indented-level2">
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page%%" minimized>
-  <include src="project-deliverables.md#project-deliverables-ppp" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-ppp" header="%%Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page%%" minimized />
 </div>
 
 

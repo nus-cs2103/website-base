@@ -28,9 +28,7 @@ Create a personal GitHub account if you don't have one yet.
 The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.
 
 </panel>
-<panel header="%%Admin {{ icon_embedding }} Choosing a profile photo%%" expandable>
-  <include src="project-deliverables.md#profile-photo" />
-</panel>
+<panel src="project-deliverables.md#profile-photo" header="%%Admin {{ icon_embedding }} Choosing a profile photo%%" expandable />
 
 </div>
 
@@ -70,9 +68,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
    Your Team ID can be found in [this page](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). 
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
    
-<panel header="%%Schedule {{ icon_embedding }} Tutorial Schedule%%">
-  <include src="../schedule/overview/tutorialSchedule.md" />
-</panel><p/>
+<panel src="../schedule/overview/tutorialSchedule.md" header="%%Schedule {{ icon_embedding }} Tutorial Schedule%%" /><p/>
     
 5. Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br/> 
     ![](images/FilesChangedTab.png)

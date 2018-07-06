@@ -34,9 +34,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 :exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 
-<panel header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%" minimized>
-  <include src="project-assessment.md#project-management-grading" />
-</panel>
+<panel src="project-assessment.md#project-management-grading" header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%" minimized />
 
 ### v1.0 Documentation
 

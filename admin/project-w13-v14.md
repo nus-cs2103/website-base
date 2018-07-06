@@ -54,9 +54,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Product
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Executable%%">
-  <include src="project-deliverables.md#project-deliverables-executable" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-executable" header="%%Admin {{ icon_embedding }} Project → Deliverables → Executable%%" />
 <p/>
 
 **Submission**: See summary of submissions above 
@@ -64,9 +62,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Source Code
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Source Code%%">
-  <include src="project-deliverables.md#project-deliverables-sourcecode" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-sourcecode" header="%%Admin {{ icon_embedding }} Project → Deliverables → Source Code%%" />
 <p/>
 
 **Submission**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
@@ -74,9 +70,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 User Guide
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → User Guide%%">
-  <include src="project-deliverables.md#project-deliverables-ug" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-ug" header="%%Admin {{ icon_embedding }} Project → Deliverables → User Guide%%" />
 <p/>
 
 **Submission**: Convert the pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE. See _summary of submissions_ above for the file name format.
@@ -84,9 +78,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Developer Guide
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Developer Guide%%">
-  <include src="project-deliverables.md#project-deliverables-dg" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-dg" header="%%Admin {{ icon_embedding }} Project → Deliverables → Developer Guide%%" />
 <p/>
 
 **Submission**: Similar to UG
@@ -94,9 +86,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Product Website
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Product Website%%">
-  <include src="project-deliverables.md#project-deliverables-website" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-website" header="%%Admin {{ icon_embedding }} Project → Deliverables → Product Website%%" />
 <p/>
 
 **Submission**: Push the code to GitHub
@@ -106,9 +96,7 @@ Team/Individual Item | Name format | Upload to
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Demo%%">
-  <include src="project-deliverables.md#project-deliverables-demo" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-demo" header="%%Admin {{ icon_embedding }} Project → Deliverables → Demo%%" />
 <p/>
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
@@ -121,9 +109,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Practical Exam
 
-<panel header="%%Admin {{ icon_embedding }} Project → Deliverables → Practical Exam%%">
-  <include src="project-deliverables.md#project-deliverables-practicalexam" />
-</panel>
+<panel src="project-deliverables.md#project-deliverables-practicalexam" header="%%Admin {{ icon_embedding }} Project → Deliverables → Practical Exam%%" />
 <p/>
 
 **Time/venue:** week 13 lecture slot

@@ -26,9 +26,7 @@ siteNav: adminSiteNav.md
 
 **Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `W14-2` means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.
 
-<panel header="%%Schedule {{ icon_embedding }} Tutorial IDs%%">
-  <include src="../schedule/overview/tutorialSchedule.md" />
-</panel><p/>
+<panel src="../schedule/overview/tutorialSchedule.md" header="%%Schedule {{ icon_embedding }} Tutorial IDs%%" /><p/>
 
 **Team composition**
 

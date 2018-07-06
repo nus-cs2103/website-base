@@ -17,14 +17,8 @@ siteNav: adminSiteNav.md
 <img src="{{baseUrl}}/admin/images/gradeBreakdown.png" width="600"/>
 <p/>
 
-<panel header="%%Admin {{ icon_embedding }} Participation%%" minimized >
-  <include src="participation.md#main" />
-</panel>
-<panel header="%%Admin {{ icon_embedding }} Exams%%" minimized >
-  <include src="exams.md#main" />
-</panel>
-<panel header="%%Admin {{ icon_embedding }} Project%%" minimized >
-  <include src="project-assessment.md#main" />
-</panel>
+<panel src="participation.md#main" header="%%Admin {{ icon_embedding }} Participation%%" minimized  />
+<panel src="exams.md#main" header="%%Admin {{ icon_embedding }} Exams%%" minimized  />
+<panel src="project-assessment.md#main" header="%%Admin {{ icon_embedding }} Project%%" minimized  />
 
 </div>
