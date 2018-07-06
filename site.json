@@ -19,10 +19,18 @@
     {"glob": "schedule/**/outcomes.md"},
     {"glob": "book/about/*.md"},
     {"glob": "se-book-adapted/index.md"},
-    {"glob": "se-book-adapted/print.md"},
     {"glob": "se-book-adapted/chapters/*.md"},
+    {"glob": "se-book-adapted/chapters-printable/*.md",
+      "searchable": "no"
+    },
     {"glob": "se-book-adapted/common/*.md"},
-    {"glob": "book/combined/exercises.md"}
+    {"glob": "book/combined/exercises.md"},
+    {"src": "se-book-adapted/print.md",
+      "searchable": "no"
+    },
+    {"src": "admin/index-flat.md",
+      "searchable": "no"
+    }
   ],
   "titlePrefix": "CS2103/T Website"
 }
