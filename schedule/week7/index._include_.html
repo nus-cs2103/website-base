@@ -4,11 +4,333 @@
     <p><span class="activity-desc">Design</span></p>
     <div class="indented">
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.1</code> <strong>Can explain APIs</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="panel-title"><span><code>W7.1</code> <strong>Can explain architectural styles</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="info" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain architectural styles</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div>
+                <p>
+                  <panel src="/website-base\book\architecture\introduction\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Architecture → Introduction → What%%"></panel>
+                </p>
+              </div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
+                      <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker
+                        style, ...</p>
+                    </tip-box>
+                    <modal title="" id="modal:archiStyles-buildingArchitectures">
+                      <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br>
+                        <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
+                    </modal>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="warning" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify n-tier architectural style</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-2">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
+                    <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Operating systems and network communication software often use n-tier style.
+                        <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                    </tip-box>
+                    <p></p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="info" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify the client-server architectural style</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Client-Server Style
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-3">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
+                      applications.</p>
+                    <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+                    <p></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The online game and the Web application below uses the client-server style.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="warning" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify event-driven architectural style</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Event-Driven Style
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-4">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                      This architectural style is often used in GUIs.</p>
+                    <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected
+                        at a Printer port can be transmitted to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain how the AddressBook-Level4 uses Event-Driven style (refer to the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design">Developer Guide</a> for more info).</p>
+            </div>
+        </panel>
+        <panel type="info" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify transaction processing architectural style</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Transaction Processing Style
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-5">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong>                      Task queuing, ordering, undo etc. are handled by the dispatcher.</p>
+                    <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In this example from a Banking system, transactions are generated by the terminals used by
+                        <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="info" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify service-oriented architectural style</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Service-Oriented Style
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-6">What</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
+                      services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and
+                      XML is used as the language of communication between service providers and service users.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants
+                        to charge HSBC credit cards. Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and
+                        HSBC services follow the SOA architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="success" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can name several other architecture styles</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="more-styles">More Styles</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</strong></p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":paperclip: Resources" expanded="">
+                        <ul>
+                          <li>
+                            <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
+                          </li>
+                          <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Broker_pattern"><strong>Broker pattern</strong></a> -- Wikipedia article on the broker architectural style</p>
+                          </li>
+                          <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Peer-to-peer"><strong>Peer-to-peer pattern</strong></a> -- Wikipedia article on the P2P architectural style</p>
+                          </li>
+                          <li>
+                            <p><a href="http://searchmicroservices.techtarget.com/definition/message-driven-processing"><strong>Message-driven processing</strong></a> -- a post by <em>Margaret Rouse</em></p>
+                          </li>
+                        </ul>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="info" expanded="" no-close="">
+          <span slot="header" class="panel-title"><span><code>W7.1h</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how architectural styles are combined</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="using-styles">Using Styles</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Most applications use a mix of these architectural styles.</strong></p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header="Q: Comment on how to use architecture styles in Minesweeper.">
+                            <question has-input="true">
+                              <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before
+                                any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
+                              <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
+                              <ol>
+                                <li>Client-server</li>
+                                <li>Transaction-processing</li>
+                                <li>SOA (Service Oriented Architecture)</li>
+                                <li>multi-layer (n-tier)</li>
+                              </ol>
+                              <div slot="answer">
+                                <ol>
+                                  <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
+                                  <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
+                                  <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
+                                  <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
+                                </ol>
+                                <img src="/website-base/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
+                                <p></p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+            <div>
+              <p>Explain architectural styles currently used in AddressBook-Level4. Speculate under what circumstances other architectural styles can be used in it <span class="dimmed"> e.g. what kind of additional features can make a certain style applicable</span></p>
+            </div>
+        </panel>
+      </panel>
+      <panel no-close="">
+        <span slot="header" class="panel-title"><span><code>W7.2</code> <strong>Can explain APIs</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.1a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain APIs</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.2a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain APIs</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -23,7 +345,7 @@
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what">What</h4>
+                  <h4 id="what-7">What</h4>
                 </div>
                 <div id="main">
                   <div>
@@ -86,12 +408,12 @@
         </panel>
       </panel>
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.2</code> <strong>Can use intermediate-level sequence diagrams</strong> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <span slot="header" class="panel-title"><span><code>W7.3</code> <strong>Can use intermediate-level sequence diagrams</strong> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with object deletion</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with object deletion</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -128,7 +450,7 @@
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with self invocation</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with self invocation</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -166,7 +488,7 @@
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with alternative paths</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with alternative paths</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -200,7 +522,7 @@
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with optional paths</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with optional paths</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -234,7 +556,7 @@
             </div>
         </panel>
         <panel type="success" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with reference frames</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with reference frames</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -272,7 +594,7 @@
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw intermediate-level sequence diagrams</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw intermediate-level sequence diagrams</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -361,7 +683,7 @@
             </div>
         </panel>
         <panel type="success" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.2g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with parallel paths</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.3g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can interpret sequence diagrams with parallel paths</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -403,12 +725,12 @@
     <p><span class="activity-desc">Implementation</span></p>
     <div class="indented">
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.3</code> <strong>Can follow a simple style guide</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <span slot="header" class="panel-title"><span><code>W7.4</code> <strong>Can follow a simple style guide</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.3a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of code quality</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.4a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of code quality</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -442,7 +764,7 @@
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.3b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for following a standard</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.4b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for following a standard</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -514,7 +836,7 @@
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.3c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow simple mechanical style rules</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.4c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow simple mechanical style rules</span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -552,7 +874,7 @@
             </div>
         </panel>
         <panel type="success" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.3d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow intermediate style rules</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.4d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow intermediate style rules</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -607,11 +929,11 @@
         </panel>
       </panel>
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.4</code> <strong>Can improve code readability</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="panel-title"><span><code>W7.5</code> <strong>Can improve code readability</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="danger" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of readability</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="panel-title"><span><code>W7.5a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of readability</span> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -750,7 +1072,7 @@
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid long methods </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid long methods </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -777,7 +1099,7 @@
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid deep nesting </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid deep nesting </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -812,7 +1134,7 @@
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid complicated expressions </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid complicated expressions </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -895,7 +1217,7 @@ is_urgent = type_code == URGENT
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid magic numbers </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid magic numbers </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1010,7 +1332,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the code obvious </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the code obvious </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1050,7 +1372,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: structure code logically </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: structure code logically </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1078,7 +1400,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4h</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not 'trip up' reader </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5h</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not 'trip up' reader </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1111,7 +1433,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4i</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: practice kissing </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5i</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: practice kissing </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1144,7 +1466,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4j</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid premature optimizations </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5j</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid premature optimizations </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1184,7 +1506,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4k</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: slap hard </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5k</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: slap hard </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1233,7 +1555,7 @@ displayResult();
                         </p>
                         <div id="title-and-body">
                           <div>
-                            <h4 id="what-2">What</h4>
+                            <h4 id="what-8">What</h4>
                           </div>
                           <div id="main">
                             <div>
@@ -1274,7 +1596,7 @@ displayResult();
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.4l</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the happy path prominent </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.5l</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the happy path prominent </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1349,11 +1671,11 @@ exit();
         </panel>
       </panel>
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.5</code> <strong>Can use good naming</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="panel-title"><span><code>W7.6</code> <strong>Can use good naming</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.5a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for good names in code</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.6a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for good names in code</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1383,7 +1705,7 @@ exit();
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.5b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.6b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1463,7 +1785,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.5c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use standard words </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.6c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use standard words </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1489,7 +1811,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.5d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use name to explain </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.6d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use name to explain </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1592,7 +1914,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.5e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: not too long, not too short </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.6e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: not too long, not too short </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1618,7 +1940,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.5f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid misleading names </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.6f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid misleading names </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1705,12 +2027,12 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
         </panel>
       </panel>
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.6</code> <strong>Can avoid unsafe coding practices</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <span slot="header" class="panel-title"><span><code>W7.7</code> <strong>Can avoid unsafe coding practices</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for avoiding error-prone shortcuts</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for avoiding error-prone shortcuts</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1737,7 +2059,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use the default branch </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use the default branch </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1781,7 +2103,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: don't recycle variables or parameters </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: don't recycle variables or parameters </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1831,7 +2153,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid empty catch blocks </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid empty catch blocks </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1858,7 +2180,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: delete dead code </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: delete dead code </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1886,7 +2208,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise scope of variables </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise scope of variables </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1920,7 +2242,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.6g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise code duplication </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.7g</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise code duplication </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1984,12 +2306,12 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
         </panel>
       </panel>
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.7</code> <strong>Can write good code comments</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <span slot="header" class="panel-title"><span><code>W7.8</code> <strong>Can write good code comments</strong> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.7a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for commenting minimally but sufficiently</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.8a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for commenting minimally but sufficiently</span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -2019,7 +2341,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.7b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not repeat the obvious </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.8b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not repeat the obvious </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -2055,7 +2377,7 @@ trimInput();
             </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.7c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: write to the reader </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.8c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: write to the reader </span> <span class="label label-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -2126,7 +2448,7 @@ trimInput();
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W7.7d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: explain what and why, not how </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="panel-title"><span><code>W7.8d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: explain what and why, not how </span> <span class="label label-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -2189,7 +2511,7 @@ compact(input);
     <p><span class="activity-desc">🅿️ Project</span></p>
     <div class="indented">
       <panel no-close="">
-        <span slot="header" class="panel-title"><span><code>W7.8</code> <strong>Can do small changes to an existing software</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="panel-title"><span><code>W7.9</code> <strong>Can do small changes to an existing software</strong> <span class="label label-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <div>
