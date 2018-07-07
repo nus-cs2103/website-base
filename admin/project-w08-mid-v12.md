@@ -26,11 +26,11 @@ Overview: <include src="project-timeline.md#mid-v12-overview" inline />
 
 **<big>Project Management:</big>**
 
-* Complete the repo set up
+* **Complete the repo set up.**
   * Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
   * Set up [auto-publishing of docs](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation) if you haven't done so already
 
-* Adjust project rigor to suit your team's pace
+* **Adjust project rigor to suit your team's pace**, as explained below. Note that you are free to do similar adjustments at any future time in the project.
 
   * Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.
   
@@ -44,6 +44,10 @@ Overview: <include src="project-timeline.md#mid-v12-overview" inline />
 <modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
   <include src="project-testing.fr#expectations"/>
 </modal>
+
+
+* **Adjust project plan if necessary**, as explained below. Note that you are free to do similar adjustments at any future time in the project.
+  * Now that you have a some idea about the code base, revisit the feature release plan and adjust it if necessary. The adjustment can be done using GitHub issue tracker. 
 
 * **Start proper milestone management**
 

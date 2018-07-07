@@ -25,10 +25,10 @@ Week  | Stage     | Activities
 ------|-----------|-----------
 **3** |inception| <span id="inception-overview">decide on a overall project direction %%(user profile, optimize or morph?, problem addressed)%%</span>
 **4** |mid-v1.0 | <span id="mid-v10-overview">decide on requirements %%(user stories, use cases, non-functional requirements)%%</span>
-**5** |v1.0     | <span id="v10-overview">conceptualize product and document it as a user guide(draft)</span>
+**5** |v1.0     | <span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span>
 **6** |mid-v1.1 | <span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span>
-**7** |v1.1     | <span id="v11-overview">update UG and DG in the repo, attempt to do global-impact changes to the code base</span>
-**8** |mid-v1.2 | <span id="mid-v12-overview">adjust project rigor as needed, complete repo set up, start proper milestone management</span>
+**7** |v1.1     | <span id="v11-overview">update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span>
+**8** |mid-v1.2 | <span id="mid-v12-overview">adjust project schedule/rigor as needed, complete repo set up, start proper milestone management</span>
 **9** |v1.2     | <span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span>
 **10**|mid-v1.3 | <span id="mid-v13-overview">continue to enhance features</span>
 **11**|v1.3     | <span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span>

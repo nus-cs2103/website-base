@@ -22,7 +22,7 @@ footer: footer.md
 ] %}
 
 
-{% set current_weeks = ["1", "2"] %}
+{% set current_weeks = ["13", "11", "12"] %}
 
 
 {% set all_outcomes = [
@@ -256,6 +256,8 @@ footer: footer.md
         {location: ["oopImplementation", "interfaces"]},
     {heading: "Can use JavaFX to build a simple GUI"},
       {location: ["javaTools", "javaFXBasic"]},
+  {name: ":parking: Project"},
+    {heading: "Can contribute to project documentation", priority: "1", file: "project.md#mid-v11"},
 {week: "7"},
   {name: "Requirements"},
     {heading: "Can record requirements of a product", priority: "2", file: "project.md#requirements"},
@@ -289,12 +291,11 @@ footer: footer.md
       {location: ["integration", "introduction", "what"], omit_evidence: true},
       {location: ["integration", "buildAutomation", "what"]},
       {location: ["integration", "buildAutomation", "continuousIntegrationDeployment"]},
-  {name: "Other"},
-    {heading: "Can do local-impact changes to an existing software", priority: "1", file: "project.md#local_impact_changes"},
+  {name: ":parking: Project"},
+    {heading: "Can do small changes to an existing software", priority: "1", file: "project.md#v11"},
 {week: "8"},
   {name: "Requirements"},
     {heading: "Can apply basic product design guidelines", priority: "3", file: "project.md#product_design"},
-    {heading: "Can describe a product from the user's perspective", priority: "3", file: "project.md#user_guide"},
   {name: "Design"},
     {heading: "Can explain architectural styles"},
       {location: ["architecture", "architecturalStyles", "introduction", "what"], omit_evidence: true},
@@ -344,8 +345,8 @@ footer: footer.md
         {location: ["testing", "testingTypes", "acceptanceTesting", "acceptanceVsSystemTesting"]},
       {subheading: "Alpha/Beta Testing"},
         {location: ["testing", "testingTypes", "alphaBetaTesting", "what"]},
-  {name: "Other"},
-    {heading: "Can do global-impact changes to an existing software", priority: "2", file: "project.md#global_impact_change"},
+  {name: ":parking: Project"},
+    {heading: "Can plan/track project schedule", priority: "1", file: "project.md#mid-v12"},
 {week: "9"},
   {name: "Design"},
     {heading: "Can use models to conceptualize an OO solution"},
@@ -420,7 +421,8 @@ footer: footer.md
       {location: ["projectPlanning", "ganttCharts"], omit_evidence: true},
       {location: ["projectPlanning", "pertCharts"], omit_evidence: true},
       {location: ["teamwork", "teamStructures"]},
-    {heading: "Can use milestones to schedule/track project progress", priority: "1", file: "project.md#track_progress"},
+  {name: ":parking: Project"},
+    {heading: "Can write developer documentation", priority: "1", file: "project.md#v12"},
 {week: "10"},
   {name: "SE"},
     {heading: "Can explain SE principles"},
@@ -478,6 +480,8 @@ footer: footer.md
       {location: ["testCaseDesign", "boundaryValueAnalysis", "what"], omit_evidence: true},
       {location: ["testCaseDesign", "boundaryValueAnalysis", "how"], omit_evidence: true},
     {heading: "Can release a product to end users", priority: "1", file: "project.md#release_product"},
+  {name: ":parking: Project"},
+    {heading: "Can evolve a product incrementally", priority: "1", file: "project.md#mid-v13"},
 {week: "11"},
   {name: "Requirements"},
     {heading: "Can explain object oriented domain models"},
@@ -513,6 +517,8 @@ footer: footer.md
       {location: ["processModels", "exampleProcessModels", "unifiedProcess"], evidence: "project.md#relate_process"},
       {location: ["processModels", "more", "cmmi"], omit_evidence: true},
       {location: ["processModels", "summary", "recap"], omit_evidence: true},
+  {name: ":parking: Project"},
+    {heading: "Can release a product incrementally", priority: "1", file: "project.md#v13"},
 {week: "12"},
   {name: "Design"},
     {heading: "Can explain some UML models"},
@@ -528,15 +534,13 @@ footer: footer.md
     {heading: "Can explain cloud computing basics"},
       {location: ["reuse", "cloudComputing", "what"], omit_evidence: true},
       {location: ["reuse", "cloudComputing", "services"], omit_evidence: true},
-    {heading: "Can describe contributions to a project", priority: "1", file: "project.md#describe_contribution"},
+  {name: ":parking: Project"},
+    {heading: "Can describe a technical contribution", priority: "1", file: "project.md#mid-v14"},
 {week: "13"},
-  {name: "Communication"},
-    {heading: "Can demo a product", priority: "1", file: "project.md#demo"},
-  {name: "Implementation"},
-    {heading: "Can work in an existing code base of small/medium size", priority: "2", file: "project.md#brownfield"},
-  {name: "Project Management"},
-    {heading: "Can deliver a product iteratively", priority: "3", file: "project.md#iterative_delivery"},
-    {heading: "Can evaluate contributions from project members", priority: "3", file: "project.md#evaluate_peers"}
+  {name: ":parking: Project"},
+    {heading: "Can acceptance-test a product", priority: "1", file: "project.md#v14"},
+    {heading: "Can evaluate a technical effort", priority: "1", file: "project.md#v14"},
+    {heading: "Can demo a product", priority: "1", file: "project.md#v14"}
 ]%}
 
 

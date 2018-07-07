@@ -141,7 +141,16 @@ Covered by the following:
 </div>
 
 
-<div id="local_impact_changes">
+<div id="mid-v11">
+
+Covered by the following:
+
+<panel src="../../admin/project-w06-mid-v11.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.1%%" no-close />
+
+</div>
+
+
+<div id="v11">
 
 Covered by the 'Product' component of v1.1:
 
@@ -161,57 +170,56 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 </div>
 
 
-<div id="user_guide">
+<div id="mid-v12">
 
-Covered by the 'Documentation' of component v1.1:
-
-<panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
-
-</div>
-
-
-<div id="global_impact_change">
-
-Covered by the 'Product' component of mid-v1.2:
+Covered by :
 
 <panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
 
 </div>
 
 
-<div id="dev_guide">
+<div id="v12">
 
-Covered by 'Documentation' component of v1.2:
-
-<panel src="../../admin/project-w09-v12.md#main" header="%%Admin {{ icon_embedding }} Project → v1.2%%" />
-
-</div>
-
-
-<div id="track_progress">
-
-Covered by the 'Project Management' component of v1.2:
+Covered by:
 
 <panel src="../../admin/project-w09-v12.md#main" header="%%Admin {{ icon_embedding }} Project → v1.2%%" />
 
 </div>
 
 
-<div id="release_produt">
+<div id="mid-v13">
 
-Covered by v1.3:
+Covered by:
 
-<include src="../../admin/project-w10-mid-v13.md#main" name="%%Admin {{ icon_embedding }} Project → v1.3%%" dynamic no-close/>
+<panel src="../../admin/project-w10-mid-v13.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.3%%" />
 
 </div>
 
 
-<div id="acceptance_testing">
+<div id="v13">
+
+Covered by:
+
+<panel src="../../admin/project-w11-v13.md#main" header="%%Admin {{ icon_embedding }} Project → v1.3%%" no-close/>
+
+</div>
 
 
-Covered by the 'Acceptance Testing' component of v1.4:
+<div id="mid-v14">
 
-<panel src="../../admin/project-w11-v13.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
+Covered by:
+
+<panel src="../../admin/project-w12-mid-v14.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" />
+
+</div>
+
+
+<div id="v14">
+
+Covered by:
+
+<panel src="../../admin/project-w13-v14.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
 
 </div>
 
@@ -223,45 +231,9 @@ Relate this model and some of its practices to the project. %%&nbsp;e.g. Are you
 </div>
 
 
-<div id="describe_contribution">
-
-Covered by the 'Project Portfolio Page' component of mid-v1.4:
-
-<panel src="../../admin/project-w12-mid-v14.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.4%%" />
-
-</div>
-
-
 <div id="demo">
 
 Covered by the 'Demo' component of v1.4:
-
-<panel src="../../admin/project-w13-v14.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
-
-</div>
-
-
-<div id="iterative_delivery">
-
-Covered by v1.0-v1.4:
-
-</div>
-
-
-<div id="brownfield">
-
-Covered by v1.0-v1.4:
-
-</div>
-
-
-<div id="evaluate_peers">
-
-Covered by the 'Peer Evaluations' component of the module:
-
-<panel src="../../admin/peer-evaluations.md#main" header="%%Admin {{ icon_embedding }} Peer Evaluations%%" />
-
-Also covered by the 'Practical Exam' of v1.4:
 
 <panel src="../../admin/project-w13-v14.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
 

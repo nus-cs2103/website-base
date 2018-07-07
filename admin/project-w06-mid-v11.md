@@ -49,6 +49,8 @@ Before you do any coding for the project, please ensure you have set the Git use
 </div>
 <div id="documentation">
 
+**<big>Documentation:</big>** 
+
 <tip-box>
 
 **Recommended procedure for updating docs**:
@@ -62,8 +64,6 @@ Before you do any coding for the project, please ensure you have set the Git use
 </modal>
 
 </tip-box>
-
-**<big>Documentation:</big>** 
 
 <div class="indented">
 
