@@ -2,7 +2,33 @@
   "pages": [
     {
       "headings": {
-        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
+        "full-schedule-of-module-activities": "Full Schedule of Module Activities",
+        "participation-marks": "Participation Marks",
+        "v11-product": "v1.1 Product",
+        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
+        "introduction-7": "Introduction",
+        "prerequisites": "Prerequisites",
+        "intellij-configurations": "IntelliJ Configurations",
+        "configuring-jdk-8": "Configuring JDK 8",
+        "configuring-scene-builder": "Configuring Scene Builder",
+        "create-a-new-javafx-project": "Create a new JavaFX Project",
+        "create-the-packages": "Create the Packages",
+        "create-the-fxml-layout-file": "Create the FXML Layout File",
+        "design-with-scene-builder": "Design with Scene Builder",
+        "create-the-main-application": "Create the Main Application",
+        "the-javafx-main-class": "The JavaFX Main Class",
+        "possible-issues": "Possible Issues",
+        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
+        "introduction-8": "Introduction",
+        "create-the-model-class": "Create the Model class",
+        "explanations": "Explanations",
+        "a-list-of-persons": "A List of Persons",
+        "observablelist": "ObservableList",
+        "the-personoverviewcontroller": "The PersonOverviewController",
+        "explanations-2": "Explanations",
+        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
+        "hook-the-view-to-the-controller": "Hook the View to the controller",
+        "start-the-application": "Start the Application"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -10,7 +36,33 @@
     },
     {
       "headings": {
-        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
+        "full-schedule-of-module-activities": "Full Schedule of Module Activities",
+        "participation-marks": "Participation Marks",
+        "v11-product": "v1.1 Product",
+        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
+        "introduction-7": "Introduction",
+        "prerequisites": "Prerequisites",
+        "intellij-configurations": "IntelliJ Configurations",
+        "configuring-jdk-8": "Configuring JDK 8",
+        "configuring-scene-builder": "Configuring Scene Builder",
+        "create-a-new-javafx-project": "Create a new JavaFX Project",
+        "create-the-packages": "Create the Packages",
+        "create-the-fxml-layout-file": "Create the FXML Layout File",
+        "design-with-scene-builder": "Design with Scene Builder",
+        "create-the-main-application": "Create the Main Application",
+        "the-javafx-main-class": "The JavaFX Main Class",
+        "possible-issues": "Possible Issues",
+        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
+        "introduction-8": "Introduction",
+        "create-the-model-class": "Create the Model class",
+        "explanations": "Explanations",
+        "a-list-of-persons": "A List of Persons",
+        "observablelist": "ObservableList",
+        "the-personoverviewcontroller": "The PersonOverviewController",
+        "explanations-2": "Explanations",
+        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
+        "hook-the-view-to-the-controller": "Hook the View to the controller",
+        "start-the-application": "Start the Application"
       },
       "title": "Full Schedule of Module Activities",
       "footer": "footer.md",
@@ -59,7 +111,9 @@
       "title": ""
     },
     {
-      "headings": {},
+      "headings": {
+        "participation-marks": "Participation Marks"
+      },
       "src": "schedule/week3/index.md",
       "title": ""
     },
@@ -75,8 +129,9 @@
     },
     {
       "headings": {
+        "v11-product": "v1.1 Product",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-7": "Introduction",
+        "introduction-2": "Introduction",
         "prerequisites": "Prerequisites",
         "intellij-configurations": "IntelliJ Configurations",
         "configuring-jdk-8": "Configuring JDK 8",
@@ -89,7 +144,7 @@
         "the-javafx-main-class": "The JavaFX Main Class",
         "possible-issues": "Possible Issues",
         "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-8": "Introduction",
+        "introduction-3": "Introduction",
         "create-the-model-class": "Create the Model class",
         "explanations": "Explanations",
         "a-list-of-persons": "A List of Persons",
@@ -104,9 +159,7 @@
       "title": ""
     },
     {
-      "headings": {
-        "v11-product": "v1.1 Product"
-      },
+      "headings": {},
       "src": "schedule/week7/index.md",
       "title": ""
     },
@@ -377,7 +430,8 @@
     {
       "headings": {
         "project-v10-week-5": "Project → v1.0 [week 5]",
-        "v10-documentation": "v1.0 Documentation"
+        "v10-documentation": "v1.0 Documentation",
+        "v10-project-management": "v1.0 Project Management"
       },
       "title": "Admin: Project → v1.0 [week 5]",
       "footer": "footer.md",
@@ -663,7 +717,8 @@
     },
     {
       "headings": {
-        "week-3-outcomes": "Week 3 - Outcomes"
+        "week-3-outcomes": "Week 3 - Outcomes",
+        "participation-marks": "Participation Marks"
       },
       "src": "schedule/week3/outcomes.md",
       "title": ""
@@ -685,8 +740,9 @@
     {
       "headings": {
         "week-6-outcomes": "Week 6 - Outcomes",
+        "v11-product": "v1.1 Product",
         "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-7": "Introduction",
+        "introduction-2": "Introduction",
         "prerequisites": "Prerequisites",
         "intellij-configurations": "IntelliJ Configurations",
         "configuring-jdk-8": "Configuring JDK 8",
@@ -699,7 +755,7 @@
         "the-javafx-main-class": "The JavaFX Main Class",
         "possible-issues": "Possible Issues",
         "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-8": "Introduction",
+        "introduction-3": "Introduction",
         "create-the-model-class": "Create the Model class",
         "explanations": "Explanations",
         "a-list-of-persons": "A List of Persons",
@@ -715,8 +771,7 @@
     },
     {
       "headings": {
-        "week-7-outcomes": "Week 7 - Outcomes",
-        "v11-product": "v1.1 Product"
+        "week-7-outcomes": "Week 7 - Outcomes"
       },
       "src": "schedule/week7/outcomes.md",
       "title": ""
