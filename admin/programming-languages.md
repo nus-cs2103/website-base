@@ -34,4 +34,6 @@ We expect you to learn on your own any Java constructs not covered in your previ
     
 This module follows the ==[OSS-NUS Java coding standard]({{java_coding_standard}})==.
 
+==**In the project you are required to follow basic and intermediate guidelines**== (those marked as :star: and :star::star:). In other programming activities in the module, we recommend (but not require) you to the coding standard.
+
 </div>

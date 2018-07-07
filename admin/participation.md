@@ -13,7 +13,7 @@ siteNav: adminSiteNav.md
 
 # Participation Marks
 
-10 marks allocated for participation can be earned in the following ways:
+10 marks allocated for participation can be earned in the following ways (there are ~28 available marks to choose from):
 
 * <tooltip content="No `Below Average`/`Poor` ratings">Good peer ratings</tooltip>
   * Criteria for professional conduct (1 mark for each criterion, max 7)
@@ -24,6 +24,7 @@ siteNav: adminSiteNav.md
 * Module admin tasks done _on time_ and _as instructed_
   * Peer evaluations (1 marks each)
   * Pre-module survey (0.5 marks)
+* Enhanced AB1-AB3: 1 mark each
 
 
 **Peer evaluation criteria: professional conduct**

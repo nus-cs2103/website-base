@@ -1,28 +1,23 @@
 <div id="1kloc">
 
-{{ icon_important_big_red }} This is a compulsory LO. If you miss this LO, your participation marks will be affected. However, you can make up for missing this LO by doing double work for the following LO **(in Week 5)**:
-
-<panel header="[For Reference] details of the Week 5 LO mentioned above">
-
-{{evidence}}
-
-<include src="project.md#2kloc"/>
-
-</panel>
+{{ icon_important_big_red }} This LO can earn you <trigger trigger="click" for="modal:project1kloc-participation">1 participation mark</trigger>. 
+ 
+<modal large title="%%Admin {{ icon_embedding }} Participation Marks%%" id="modal:project1kloc-participation">
+  <include src="../../admin/participation.md#main"/>
+</modal>
 
 {{ dashed_line | safe}}
 
 {{evidence}}
 
-**Acceptable**: Evidence that you have worked with a code base larger than 1KLoC. %%e.g. a project in a previous module or a pet project%%
-
-**Suggested**: Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]  %%e.g. add a new command%%
+Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]  %%e.g. add a new command%%
 
 * The size of the enhancement does not matter.
 * Change the code in small steps and commit after each significant change.
-* Remember to update all relevant documentation and tests.
-* Try to follow the coding standard in your new code.
-* Try to stay within the procedural (not OOP) style of the code base.
+* Try to stay within the procedural (not OOP) style of the code base. %%Reason: in this LO, we try to stretch ourselves to the limits of the procedural approach%%.
+* Update all relevant tests.
+* [Optional] Update all relevant documentation.
+* [Optional] Try to follow [our coding standard]({{baseUrl}}/admin/programming-languages.html#java-coding-standard) in your new code.
 * [Optional] Fork address [AddressBook - Level1]({{module_org}}/addressbook-level1) to your GitHub account and push your changes to your fork.
 
   <tip-box type="tip">
@@ -42,7 +37,7 @@
   This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
 </tip-box>
 
-:bulb: **Those who failed to produce working code at 1KLoC milestone** (in week 3) can recover the lost marks by doing _two_ enhancements at this milestone.
+This LO can earn you 2 participation marks, 1 mark for the individual component and 1 for the team component.
 
 :bulb: When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
 1. Teach the app to accept a `sort` command but ignore it.
@@ -54,11 +49,6 @@
  
 
 #### Individual component:
-
-**You can omit this individual component if** you have worked with a code base that meets the following criteria:
-* more than 2KLoC of the code base was written by other developers
-* your code included automated tests
-* your code was contributed via a proper revision control workflow e.g. pull requests
 
 **Requirements**: Do an enhancement to [[AddressBook - Level2]({{module_org}}/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you did to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,
 * update the User Guide
@@ -108,7 +98,7 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 <div id="PR_to_AB3">
 
-**Submission**: Create a PR against [Addressbook-Level3]({{module_org}}/addressbook-level3).  ==Remember to use phase B team ID== (e.g. _W09-==B==2_) in your PR name. 
+**Submission**: Create a PR against [Addressbook-Level3]({{module_org}}/addressbook-level3).  ==Remember to use team ID== (e.g. _W09-2_) in your PR name. 
 
 <panel src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" header="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" />
 
@@ -116,25 +106,25 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 <div id="inception">
 
-Covered by the following:
+Covered by:
 
 <panel src="../../admin/project-w03-inception.md#main" header="%%Admin {{ icon_embedding }} Project → Inception%%" no-close />
 
 </div>
 
 
-<div id="requirements">
+<div id="mid-v10">
 
-Covered by the following:
+Covered by:
 
 <panel src="../../admin/project-w04-mid-v10.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.0%%" no-close />
 
 </div>
 
 
-<div id="conceptualize">
+<div id="v10">
 
-Covered by the following:
+Covered by:
 
 <panel src="../../admin/project-w05-v10.md#main" header="%%Admin {{ icon_embedding }} Project → v1.0%%" no-close />
 
@@ -143,7 +133,7 @@ Covered by the following:
 
 <div id="mid-v11">
 
-Covered by the following:
+Covered by:
 
 <panel src="../../admin/project-w06-mid-v11.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.1%%" no-close />
 
@@ -172,7 +162,7 @@ Apply the discussed guidelines when designing the product (covered by v1.1 deliv
 
 <div id="mid-v12">
 
-Covered by :
+Covered by:
 
 <panel src="../../admin/project-w08-mid-v12.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.2%%" no-close />
 

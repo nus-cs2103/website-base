@@ -85,9 +85,9 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 ## Organization setup
 
-The instructions below are for setting up a GitHub organization for your team, which you should do at the start of Phase B.
+The instructions below are for setting up a GitHub organization for your team.
 
-You can create your GitHub account after receiving your Phase B team ID. Here are the instructions (==please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
+You can create your GitHub account after receiving your team ID. Here are the instructions (==please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
 
 * One team member (e.g. team leader) should create an organization with the following details:
 * ==Organization name : `{{ semester }}JAN2018-TEAM_ID`==. e.g.  `{{ semester }}JAN2018-W09-B3`
