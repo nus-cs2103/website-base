@@ -37,7 +37,7 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
   This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
 </tip-box>
 
-This LO can earn you 2 participation marks, 1 mark for the individual component and 1 for the team component.
+This LO can earn you 2 participation marks, 1 mark for the individual component and 1 for the team component. You can omit either one of them.
 
 :bulb: When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
 1. Teach the app to accept a `sort` command but ignore it.
@@ -63,7 +63,7 @@ Optional but encouraged:
 
 #### Team component:
 
-The team component is ==to be done by all members==, including those who were allowed to omit the individual component.
+The team component is ==to be done by all members==, including those who didn't do the individual component.
 
 * Review PRs created by team members in the _Individual Component_ above %%i.e. add review comments in the PR created against module repo%%. You can either give suggestions to improve, or ask questions to understand, the code written by the team member. 
 

@@ -23,7 +23,7 @@ Evaluates: How well do your features fit together to form a cohesive product (no
 
 Based on: user guide and the product demo. The **quality of the demo will be factored in** as well.
 
-:exclamation: ‘Half-baked’ (i.e. not production quality) or 'ill-fitting' (feature does not go well with the other features) features will not earn marks at all. It may be better to remove such features before submission.
+:exclamation: Feature that fit well with the other features will earn more marks. 
 
 </panel>
 
@@ -95,11 +95,9 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
 
 Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 
 
-Based on: Supervisor observations of weekly milestones and GitHub data. ==Marks will be deducted== if,
- * if you missed more than two individual milestones %%&nbsp;out of the six milestones v1.0 - v1.3%% (only the team member loses marks)
- * if your team missed more than two team milestones %%&nbsp;out of the six milestones v1.0 - v1.3%% (all team members lose marks)
+Based on: Supervisor observations of project milestones and GitHub data. 
  
-Milestones ==need to be reached _before_ the start of the tutorial==. If you reach the milestone _during_ the tutorial, it will be considered as missed.
+Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.
   
 Other criteria:
 * Good use of GitHub milestones
