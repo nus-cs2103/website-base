@@ -26,20 +26,35 @@ siteNav: adminSiteNav.md
 {% endmacro %}
 
 
-{% macro show_next_previous(topics, current_topic_id)%}
+{% macro show_previous(topic)-%}
+<span style="float:left"><md>{{ glyphicon_chevron_left }} [{{ topic.title }}]({{ topic.link }})</md></span>
+{%- endmacro %}
+
+
+{% macro show_next(topic)-%}
+<span style="float:right"><md>[{{ topic.title }} {{ glyphicon_chevron_right }}]({{ topic.link }})</md></span>
+{%- endmacro %}
+
+{# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. #}
+{% macro show_next_previous(topics, current_topic_id) -%}
 {% for topic in topics %}
 {% if topic.id == current_topic_id %}
   {% if not loop.first %}
     {% set  previous_topic = topics[loop.index0 - 1] %}
-<span style="float:left"><md>{{ glyphicon_chevron_left }} [{{ previous_topic.title }}]({{ previous_topic.link }})</md></span>
   {% endif %}
   {% if not loop.last %}
     {% set  next_topic = topics[loop.index0 + 1] %}
-<span style="float:right"><md>[{{ next_topic.title }} {{ glyphicon_chevron_right }}]({{ next_topic.link }})</md></span>
   {% endif %}
+{% if loop.first %}
+{{ show_next(next_topic) }}
+{% elseif loop.last %}
+{{ show_previous(previous_topic) }}
+{% else %}
+{{ show_previous(previous_topic) }}{{ show_next(next_topic) }}
+{% endif %}
 {% endif %}
 {% endfor %}
-{% endmacro %}
+{%- endmacro %}
 
 {% macro show_admin_pagebottom(topics, current_topic_id)%}
 <br>

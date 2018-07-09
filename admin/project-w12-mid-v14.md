@@ -25,10 +25,6 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 <panel src="project-assessment.md#code-quality-tips" header="%%Admin {{ icon_embedding }} Project Asessement → Code Quality Tips%%" minimized />
 </div>
 
-<modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">
-  <include src="../book/codeQuality/index.md"/>
-</modal>
-
 **<big>Documentation:</big>**
 
 * Update documentation to match the product.

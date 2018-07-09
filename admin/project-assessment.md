@@ -49,6 +49,11 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 </panel><p>
 
+
+<modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">
+  <include src="../book/codeQuality/container-inElsewhere-asFlat.md" boilerplate />
+</modal>
+
 **B. Depth and completeness of the major feature**
 
 </panel>

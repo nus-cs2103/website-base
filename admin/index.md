@@ -1,15 +1,4 @@
-<frontmatter>
-title: "Admin"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<div class="website-content">
-
-<include src="../common/header.md" />
+{% macro show_main_text() %} 
 
 
 <div id="admin-preliminaries-anchor"></div>
@@ -17,5 +6,7 @@ siteNav: adminSiteNav.md
   <include src="preliminaries.md#main" />
 </div>
 
+{% endmacro %} 
 
-</div>
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("preliminaries", show_main_text) }}
