@@ -38,198 +38,212 @@
     </li>
   </navbar>
 </div>
-<div class="website-content" id="main">
-  <div id="title">
-    <h2 id="project-mid-v11-week-6">Project → mid-v1.1 [week 6]</h2>
-  </div>
-  <div id="body">
-    <tip-box>
-      <p>Overview: <span>set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></p>
-    </tip-box>
-    <div id="product">
-      <p><strong><big>Project Management:</big></strong></p>
-      <ul>
-        <li>One team member:
-          <trigger trigger="click" for="modal:v10-setuporg">Set up the team org</trigger> and
-          <trigger trigger="click" for="modal:v10-setuprepo">team repo</trigger> for your team if you haven't done that already.
-          <ul>
-            <li>Set up <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation">auto-publishing of docs</a></li>
-          </ul>
-        </li>
-      </ul>
-      <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Organization Setup" id="modal:v10-setuporg">
-      
-        <div>
-          <h2 id="organization-setup">Organization setup</h2>
-          <p>The instructions below are for setting up a GitHub organization for your team.</p>
-          <p>You can create your GitHub account after receiving your team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
-          <ul>
-            <li>One team member (e.g. team leader) should create an organization with the following details:</li>
-            <li><mark>Organization name : <code>AY1718S2JAN2018-TEAM_ID</code></mark>. e.g.  <code>AY1718S2JAN2018-W09-B3</code></li>
-            <li>Plan:  Open Source ($0/month)</li>
-            <li>After that, the same person can add members to the organization:</li>
-            <li>Create a team called <code>developers</code> to your organization.</li>
-            <li>Add your team members to the developers team.</li>
-          </ul>
-        </div>
-      </modal>
-      <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Repo Setup" id="modal:v10-setuprepo">
-      
-        <div>
-          <h2 id="repo-setup">Repo setup</h2>
-          <p>Only one team member:</p>
-          <ol>
-            <li>Fork <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4">Address Book Level 4</a> to your team org.</li>
-            <li>Rename the forked repo as <code>main</code>. This repo is to be used as the repo for your project.</li>
-            <li>Ensure your team members have the desired level of access to your team repo</li>
-          </ol>
-          <p>All team members:</p>
-          <ol>
-            <li>Fork the <code>main</code> repo (created above) to your personal GitHub account.</li>
-            <li>Clone the fork to your Computer.</li>
-            <li>Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
-          </ol>
-          <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.</p>
-          <ul>
-            <li><code>/src/main</code></li>
-            <li><code>/src/test</code></li>
-            <li><code>/docs</code></li>
-          </ul>
-        </div>
-      </modal>
-      <ul>
-        <li>All members: Set up your own forks of the team repo, so that you can submit PRs to your team repo using the forking workflow.</li>
-      </ul>
-      <tip-box type="important">
-        Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
-        <p>
-          <panel src="/website-base\admin\appendixE-gitHub._include_.html#git-username" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E → Setting Git Username to Match GitHub Username%%" fragment="git-username"></panel>
-        </p>
-      </tip-box>
+<div class="website-content">
+  <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w05-v10.html">Project: v1.0 [week 5]</a></span>
+    </span><span style="float:right"><span><a href="project-w07-v11.html">Project: v1.1 [week 7] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </span>
+    </span>
+  </p>
+  <br>
+  <div id="main">
+    <div id="title">
+      <h2 id="project-mid-v11-week-6">Project → mid-v1.1 [week 6]</h2>
     </div>
-    <div id="documentation">
-      <p><strong><big>Documentation:</big></strong></p>
+    <div id="body">
       <tip-box>
-        <p><strong>Recommended procedure for updating docs</strong>:</p>
-        <ol>
-          <li>Divide among yourselves who will update which parts of the document(s).</li>
-          <li>Update the team repo by following the
-            <trigger trigger="click" for="modal:v10-forkingworkflow">forking workflow</trigger>.</li>
-          <li>One member: create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4">nus-cs2103-AY1718S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[v1.x][Team ID] Product Name</code>            e.g., <code>[v1.x][T09-B2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use <code>v1.x</code> instead of <code>v1.0</code> in the PR title).</span>            In the PR description
-            <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
-        </ol>
-        <modal large="" title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-forkingworkflow">
+        <p>Overview: <span>set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></p>
+      </tip-box>
+      <div id="product">
+        <p><strong><big>Project Management:</big></strong></p>
+        <ul>
+          <li>One team member:
+            <trigger trigger="click" for="modal:v10-setuporg">Set up the team org</trigger> and
+            <trigger trigger="click" for="modal:v10-setuprepo">team repo</trigger> for your team if you haven't done that already.
+            <ul>
+              <li>Set up <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation">auto-publishing of docs</a></li>
+            </ul>
+          </li>
+        </ul>
+        <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Organization Setup" id="modal:v10-setuporg">
         
           <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+            <h2 id="organization-setup">Organization setup</h2>
+            <p>The instructions below are for setting up a GitHub organization for your team.</p>
+            <p>You can create your GitHub account after receiving your team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
+            <ul>
+              <li>One team member (e.g. team leader) should create an organization with the following details:</li>
+              <li><mark>Organization name : <code>AY1718S2JAN2018-TEAM_ID</code></mark>. e.g.  <code>AY1718S2JAN2018-W09-B3</code></li>
+              <li>Plan:  Open Source ($0/month)</li>
+              <li>After that, the same person can add members to the organization:</li>
+              <li>Create a team called <code>developers</code> to your organization.</li>
+              <li>Add your team members to the developers team.</li>
+            </ul>
+          </div>
+        </modal>
+        <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Repo Setup" id="modal:v10-setuprepo">
+        
+          <div>
+            <h2 id="repo-setup">Repo setup</h2>
+            <p>Only one team member:</p>
+            <ol>
+              <li>Fork <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4">Address Book Level 4</a> to your team org.</li>
+              <li>Rename the forked repo as <code>main</code>. This repo is to be used as the repo for your project.</li>
+              <li>Ensure your team members have the desired level of access to your team repo</li>
+            </ol>
+            <p>All team members:</p>
+            <ol>
+              <li>Fork the <code>main</code> repo (created above) to your personal GitHub account.</li>
+              <li>Clone the fork to your Computer.</li>
+              <li>Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
+            </ol>
+            <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.</p>
+            <ul>
+              <li><code>/src/main</code></li>
+              <li><code>/src/test</code></li>
+              <li><code>/docs</code></li>
+            </ul>
+          </div>
+        </modal>
+        <ul>
+          <li>All members: Set up your own forks of the team repo, so that you can submit PRs to your team repo using the forking workflow.</li>
+        </ul>
+        <tip-box type="important">
+          Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
+          <p>
+            <panel src="/website-base\admin\appendixE-gitHub._include_.html#git-username" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E → Setting Git Username to Match GitHub Username%%" fragment="git-username"></panel>
+          </p>
+        </tip-box>
+      </div>
+      <div id="documentation">
+        <p><strong><big>Documentation:</big></strong></p>
+        <tip-box>
+          <p><strong>Recommended procedure for updating docs</strong>:</p>
+          <ol>
+            <li>Divide among yourselves who will update which parts of the document(s).</li>
+            <li>Update the team repo by following the
+              <trigger trigger="click" for="modal:v10-forkingworkflow">forking workflow</trigger>.</li>
+            <li>One member: create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4">nus-cs2103-AY1718S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[v1.x][Team ID] Product Name</code>              e.g., <code>[v1.x][T09-B2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use <code>v1.x</code> instead of <code>v1.0</code> in the PR title).</span>              In the PR description
+              <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+          </ol>
+          <modal large="" title="TextBook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-forkingworkflow">
+          
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Project Management → Revision Control →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="forking-flow">Forking Flow</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <img src="/website-base/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
-                  <p></p>
-                  <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
-                  <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
-                  <ol>
-                    <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
-                    <li>Jean pushes the branch to her fork.</li>
-                    <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
-                    <li>Other members review Jean’s pull request.</li>
-                    <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
-                    <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
-                    <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own
-                      fork.</li>
-                  </ol>
+                  <h4 id="forking-flow">Forking Flow</h4>
                 </div>
-                <div>
+                <div id="main">
                   <div>
-                    <panel header=":paperclip: Resources" expanded="">
-                      <ul>
-                        <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
-                      </ul>
-                    </panel>
+                    <img src="/website-base/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                    <p></p>
+                    <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
+                    <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+                    <ol>
+                      <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                      <li>Jean pushes the branch to her fork.</li>
+                      <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                      <li>Other members review Jean’s pull request.</li>
+                      <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                      <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                      <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their
+                        own fork.</li>
+                    </ol>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":paperclip: Resources" expanded="">
+                        <ul>
+                          <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                        </ul>
+                      </panel>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </modal>
+        </tip-box>
+        <div class="indented">
+          <p>Update the following pages in your project repo:</p>
+        </div>
+        <ul>
+          <li><strong>About Us page</strong>:<br> This page is used for module admin purposes. <mark>Please follow the format closely to avoid penalties</mark>.
+            <ul>
+              <li>Replace info of SE-EDU developers with info of your team, including a <mark>suitable photo</mark> as described
+                <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.</li>
+              <li>Including the name/photo of the supervisor/lecturer is optional.</li>
+              <li>The photo of a team member should be <code>doc/images/githbub_username_in_lower_case.png</code> <span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
+            </ul>
+          </li>
+        </ul>
+        <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" id="modal:mid-v12-photo">
+        
+          <div>
+            <ul>
+              <li>
+                <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
+                  of good and bad profile photos.<br>
+                  <img src="/website-base/admin/images/profilephotos.png" style="width: 365.33px"></p>
+              </li>
+              <li>
+                <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you can request
+                  permission to omit your photo from the page by writing to prof.</p>
+              </li>
+            </ul>
           </div>
         </modal>
-      </tip-box>
-      <div class="indented">
-        <p>Update the following pages in your project repo:</p>
-      </div>
-      <ul>
-        <li><strong>About Us page</strong>:<br> This page is used for module admin purposes. <mark>Please follow the format closely to avoid penalties</mark>.
-          <ul>
-            <li>Replace info of SE-EDU developers with info of your team, including a <mark>suitable photo</mark> as described
-              <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.</li>
-            <li>Including the name/photo of the supervisor/lecturer is optional.</li>
-            <li>The photo of a team member should be <code>doc/images/githbub_username_in_lower_case.png</code> <span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>.</li>
-          </ul>
-        </li>
-      </ul>
-      <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" id="modal:mid-v12-photo">
-      
-        <div>
-          <ul>
-            <li>
-              <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly. Some examples can be seen in the 'Teaching team' page. Given below are some examples
-                of good and bad profile photos.<br>
-                <img src="/website-base/admin/images/profilephotos.png" style="width: 365.33px"></p>
-            </li>
-            <li>
-              <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you can request permission
-                to omit your photo from the page by writing to prof.</p>
-            </li>
-          </ul>
+        <ul>
+          <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
+        </ul>
+        <div class="indented-level2">
+          <panel src="/website-base\admin\project-scope._include_.html#roles" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (extract): roles and responsibilities%%" minimized="" fragment="roles"></panel>
         </div>
-      </modal>
-      <ul>
-        <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.</li>
-      </ul>
-      <div class="indented-level2">
-        <panel src="/website-base\admin\project-scope._include_.html#roles" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (extract): roles and responsibilities%%" minimized="" fragment="roles"></panel>
-      </div>
-      <p></p>
-      <ul>
-        <li>
-          <p><strong>README.adoc</strong> page: Update it to match your project.</p>
-          <ul>
-            <li>Add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts.</li>
-            <li>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark>              (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code>              link and related pages.</li>
-            <li>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
-          </ul>
-        </li>
-        <li>
-          <p><strong>User Guide</strong>: Start moving the content from your User Guide (draft created in previous weeks) into the User Guide page in your repository.</p>
-        </li>
-        <li>
-          <p><strong>Developer Guide</strong>: Similar to the User Guide, start moving the content from your Developer Guide (draft created in previous weeks) into the Developer Guide page in your team repository.</p>
-        </li>
-      </ul>
-      <p><strong><big>Product:</big></strong></p>
-      <ul>
-        <li>
-          <p>Each member can attempt to do a
-            <tooltip content="a change impacting only one component">local-impact</tooltip> change to the code base.</p>
-          <p><strong>Objective</strong>: To familiarize yourself with at least one component the code.</p>
-          <p><strong>Description</strong>: Divide the
-            <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the <a href="https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component">AddressBook-Level4 developer guide</a>.</p>
-          <p><strong>Submission</strong>: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.</p>
-          <p>❗️ Before you start coding, please read our reuse policy given below, in particular, <mark>how to give credit when you reuse code from Internet or classmates</mark>:</p>
-        </li>
-      </ul>
-      <div class="indented-level2">
-        <panel src="/website-base\admin\appendixB-policies._include_.html#policy-reuse" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix B: Policies → Policy on Reuse%%" minimized="" fragment="policy-reuse"></panel>
         <p></p>
+        <ul>
+          <li>
+            <p><strong>README.adoc</strong> page: Update it to match your project.</p>
+            <ul>
+              <li>Add a UI mockup of your intended final product.<br> Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts.</li>
+              <li>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark>                (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code>                link and related pages.</li>
+              <li>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>User Guide</strong>: Start moving the content from your User Guide (draft created in previous weeks) into the User Guide page in your repository.</p>
+          </li>
+          <li>
+            <p><strong>Developer Guide</strong>: Similar to the User Guide, start moving the content from your Developer Guide (draft created in previous weeks) into the Developer Guide page in your team repository.</p>
+          </li>
+        </ul>
+        <p><strong><big>Product:</big></strong></p>
+        <ul>
+          <li>
+            <p>Each member can attempt to do a
+              <tooltip content="a change impacting only one component">local-impact</tooltip> change to the code base.</p>
+            <p><strong>Objective</strong>: To familiarize yourself with at least one component the code.</p>
+            <p><strong>Description</strong>: Divide the
+              <tooltip content="components as stated in the [Developer Guide: Architecture]">components</tooltip> among yourselves. Each member can do some small enhancements to their component(s) to learn the code of that component. Some suggested enhancements are given in the <a href="https://nus-cs2103-AY1718S2.github.io/addressbook-level4/DeveloperGuide.html#improving-each-component">AddressBook-Level4 developer guide</a>.</p>
+            <p><strong>Submission</strong>: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.</p>
+            <p>❗️ Before you start coding, please read our reuse policy given below, in particular, <mark>how to give credit when you reuse code from Internet or classmates</mark>:</p>
+          </li>
+        </ul>
+        <div class="indented-level2">
+          <panel src="/website-base\admin\appendixB-policies._include_.html#policy-reuse" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix B: Policies → Policy on Reuse%%" minimized="" fragment="policy-reuse"></panel>
+          <p></p>
+        </div>
       </div>
     </div>
   </div>
+  <br>
+  <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-w05-v10.html">Project: v1.0 [week 5]</a></span>
+    </span><span style="float:right"><span><a href="project-w07-v11.html">Project: v1.1 [week 7] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </span>
+    </span>
+  </p>
 </div>

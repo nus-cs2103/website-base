@@ -1,0 +1,544 @@
+2018-07-09T13:58:21.180Z - info: Pages built
+2018-07-09T13:58:21.248Z - info: Site data built
+2018-07-09T13:58:21.256Z - info: Generate Site durationMs=68891
+2018-07-09T13:58:21.296Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-09T13:58:21.296Z - info: Press CTRL+C to stop ...
+2018-07-09T14:01:21.603Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\index.md
+2018-07-09T14:01:22.653Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\index.md
+2018-07-09T14:01:22.657Z - info: Rebuilding 1 pages
+2018-07-09T14:01:22.705Z - error: uncaughtException: (unknown path)
+  unexpected end of file date=Mon Jul 09 2018 22:01:22 GMT+0800 (Malay Peninsula Standard Time), pid=3320, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=160186368, heapTotal=91181056, heapUsed=80019720, external=214762, loadavg=[0, 0, 0], uptime=22930.2287911
+Template render error: (unknown path)
+  unexpected end of file
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:419:36)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T14:02:51.912Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\index.md
+2018-07-09T14:04:25.665Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:04:54.293Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:04:59.498Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:05:46.884Z - error: uncaughtException: (unknown path)
+  unexpected end of file date=Mon Jul 09 2018 22:05:46 GMT+0800 (Malay Peninsula Standard Time), pid=14560, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=180047872, heapTotal=157208576, heapUsed=82593960, external=383086, loadavg=[0, 0, 0], uptime=23194.4091914
+Template render error: (unknown path)
+  unexpected end of file
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:524:21)
+    at Environment.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:362:17)
+    at Object.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:98:14)
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:419:36)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T14:08:35.518Z - info: Pages built
+2018-07-09T14:08:35.554Z - info: Site data built
+2018-07-09T14:08:35.570Z - info: Generate Site durationMs=65385
+2018-07-09T14:08:35.590Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-09T14:08:35.590Z - info: Press CTRL+C to stop ...
+2018-07-09T14:19:05.207Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:19:06.215Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:19:06.222Z - info: Rebuilding 5 pages
+2018-07-09T14:19:19.024Z - info: Pages rebuilt
+2018-07-09T14:19:19.050Z - info: Site data built
+2018-07-09T14:19:21.199Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:19:22.203Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:19:22.207Z - info: Rebuilding 5 pages
+2018-07-09T14:19:36.161Z - info: Pages rebuilt
+2018-07-09T14:19:36.197Z - info: Site data built
+2018-07-09T14:19:48.158Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:19:49.160Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:19:49.162Z - info: Rebuilding 5 pages
+2018-07-09T14:20:00.386Z - info: Pages rebuilt
+2018-07-09T14:20:00.418Z - info: Site data built
+2018-07-09T14:20:06.561Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:20:07.562Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:20:07.563Z - info: Rebuilding 5 pages
+2018-07-09T14:20:18.773Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:20:21.517Z - info: Pages rebuilt
+2018-07-09T14:20:21.550Z - info: Site data built
+2018-07-09T14:20:21.793Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:20:21.794Z - info: Rebuilding 5 pages
+2018-07-09T14:20:36.308Z - info: Pages rebuilt
+2018-07-09T14:20:36.348Z - info: Site data built
+2018-07-09T14:20:48.957Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:20:49.965Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:20:49.970Z - info: Rebuilding 5 pages
+2018-07-09T14:21:03.302Z - info: Pages rebuilt
+2018-07-09T14:21:03.341Z - info: Site data built
+2018-07-09T14:21:22.124Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:21:23.136Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:21:23.155Z - info: Rebuilding 5 pages
+2018-07-09T14:21:39.075Z - info: Pages rebuilt
+2018-07-09T14:21:39.122Z - info: Site data built
+2018-07-09T14:21:46.892Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:21:47.894Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:21:47.899Z - info: Rebuilding 5 pages
+2018-07-09T14:22:01.448Z - info: Pages rebuilt
+2018-07-09T14:22:01.521Z - info: Site data built
+2018-07-09T14:22:29.500Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:22:30.505Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:22:30.509Z - info: Rebuilding 5 pages
+2018-07-09T14:22:45.694Z - info: Pages rebuilt
+2018-07-09T14:22:45.739Z - info: Site data built
+2018-07-09T14:23:10.419Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:23:11.424Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:23:11.425Z - info: Rebuilding 5 pages
+2018-07-09T14:23:20.112Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:23:25.267Z - info: Pages rebuilt
+2018-07-09T14:23:25.309Z - info: Site data built
+2018-07-09T14:23:25.492Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:23:25.493Z - info: Rebuilding 5 pages
+2018-07-09T14:23:38.761Z - info: Pages rebuilt
+2018-07-09T14:23:38.793Z - info: Site data built
+2018-07-09T14:23:48.001Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:23:49.007Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:23:49.011Z - info: Rebuilding 5 pages
+2018-07-09T14:24:03.725Z - info: Pages rebuilt
+2018-07-09T14:24:03.786Z - info: Site data built
+2018-07-09T14:27:04.829Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md
+2018-07-09T14:27:04.856Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:27:05.853Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-w12-mid-v14.md,C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:27:05.863Z - info: Rebuilding 14 pages
+2018-07-09T14:27:22.347Z - info: Pages rebuilt
+2018-07-09T14:27:22.397Z - info: Site data built
+2018-07-09T14:30:41.814Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:30:42.832Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:30:42.840Z - info: Rebuilding 13 pages
+2018-07-09T14:30:58.282Z - info: Pages rebuilt
+2018-07-09T14:30:58.302Z - info: Site data built
+2018-07-09T14:32:35.007Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:32:36.024Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:32:36.048Z - info: Rebuilding 13 pages
+2018-07-09T14:32:53.038Z - info: Pages rebuilt
+2018-07-09T14:32:53.070Z - info: Site data built
+2018-07-09T14:34:41.706Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\book\_markbind\boilerplates\container-inElsewhere-asFlat.md
+2018-07-09T14:34:42.708Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\_markbind\boilerplates\container-inElsewhere-asFlat.md
+2018-07-09T14:34:42.708Z - info: Rebuilding 0 pages
+2018-07-09T14:34:42.708Z - info: Pages rebuilt
+2018-07-09T14:34:42.716Z - info: Site data built
+2018-07-09T14:35:00.286Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\project-assessment.md
+2018-07-09T14:35:00.286Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\_markbind\boilerplates\container-inElsewhere-asFlat.md
+2018-07-09T14:35:01.292Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\project-assessment.md,C:\repos\nus-cs2103\website-base\book\_markbind\boilerplates\container-inElsewhere-asFlat.md
+2018-07-09T14:35:01.316Z - info: Rebuilding 13 pages
+2018-07-09T14:35:18.106Z - info: Pages rebuilt
+2018-07-09T14:35:18.130Z - info: Site data built
+2018-07-09T14:54:41.334Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\admin.njk
+2018-07-09T14:54:42.363Z - info: Assets built
+2018-07-09T14:55:59.341Z - info: Pages built
+2018-07-09T14:55:59.385Z - info: Site data built
+2018-07-09T14:55:59.397Z - info: Generate Site durationMs=68391
+2018-07-09T14:55:59.421Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-09T14:55:59.421Z - info: Press CTRL+C to stop ...
+2018-07-09T15:05:20.687Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\common\admin.njk
+2018-07-09T15:05:21.696Z - info: Assets removed
+2018-07-09T15:05:46.984Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\index.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:48.919Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\admin\index-flat.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:49.929Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\index.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:49.949Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week1\index.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:52.656Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week3\index.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:53.699Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week6\index.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:54.465Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:54 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=155418624, heapTotal=132476928, heapUsed=66242168, external=435651, loadavg=[0, 0, 0], uptime=26801.9884937
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:54.477Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:54 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=156086272, heapTotal=132476928, heapUsed=66976000, external=435675, loadavg=[0, 0, 0], uptime=26802.0020303
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:54.485Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:54 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=156147712, heapTotal=132476928, heapUsed=67897296, external=435675, loadavg=[0, 0, 0], uptime=26802.0110538
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:54.493Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:54 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=156168192, heapTotal=132476928, heapUsed=69370528, external=443867, loadavg=[0, 0, 0], uptime=26802.0196054
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.219Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=158466048, heapTotal=134049792, heapUsed=79857536, external=459041, loadavg=[0, 0, 0], uptime=26802.7468779
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.223Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=158478336, heapTotal=134049792, heapUsed=80521088, external=459041, loadavg=[0, 0, 0], uptime=26802.7508883
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.240Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=159019008, heapTotal=134574080, heapUsed=68468408, external=434944, loadavg=[0, 0, 0], uptime=26802.7659013
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.246Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=159027200, heapTotal=134574080, heapUsed=68985232, external=434944, loadavg=[0, 0, 0], uptime=26802.7729205
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.254Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=159031296, heapTotal=134574080, heapUsed=69508328, external=443136, loadavg=[0, 0, 0], uptime=26802.7809439
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.796Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=82627120, external=459041, loadavg=[0, 0, 0], uptime=26803.3235981
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.800Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=83236272, external=459041, loadavg=[0, 0, 0], uptime=26803.3271066
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.804Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=84060280, external=459041, loadavg=[0, 0, 0], uptime=26803.3311177
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.808Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=84627456, external=467233, loadavg=[0, 0, 0], uptime=26803.3351287
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.812Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=85310392, external=467233, loadavg=[0, 0, 0], uptime=26803.3391097
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.816Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=86129416, external=467233, loadavg=[0, 0, 0], uptime=26803.343149
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.820Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=86911424, external=467233, loadavg=[0, 0, 0], uptime=26803.34716
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.823Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=87483192, external=467233, loadavg=[0, 0, 0], uptime=26803.350672
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.829Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=89369968, external=467233, loadavg=[0, 0, 0], uptime=26803.3561831
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.833Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=90009472, external=467233, loadavg=[0, 0, 0], uptime=26803.3606924
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.838Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=90616616, external=467233, loadavg=[0, 0, 0], uptime=26803.364702
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.843Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=162729984, heapTotal=138244096, heapUsed=91650376, external=467233, loadavg=[0, 0, 0], uptime=26803.3697158
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.853Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=79044224, external=459520, loadavg=[0, 0, 0], uptime=26803.3802189
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.863Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=80065128, external=467712, loadavg=[0, 0, 0], uptime=26803.3862405
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.881Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=80744024, external=467712, loadavg=[0, 0, 0], uptime=26803.4037815
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.898Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=81501944, external=467712, loadavg=[0, 0, 0], uptime=26803.420834
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.915Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=82224160, external=467712, loadavg=[0, 0, 0], uptime=26803.4383806
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.934Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=83417936, external=467712, loadavg=[0, 0, 0], uptime=26803.4584766
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.950Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=84100184, external=467712, loadavg=[0, 0, 0], uptime=26803.4734657
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.965Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=84668960, external=467712, loadavg=[0, 0, 0], uptime=26803.4880122
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:55.983Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=85563912, external=467712, loadavg=[0, 0, 0], uptime=26803.5066134
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:56.001Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:55 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=86417232, external=467712, loadavg=[0, 0, 0], uptime=26803.5230986
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:56.011Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:56 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=86958408, external=467712, loadavg=[0, 0, 0], uptime=26803.5376385
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:56.017Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:56 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=87498808, external=475904, loadavg=[0, 0, 0], uptime=26803.543682
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:56.030Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:56 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=89479704, external=475904, loadavg=[0, 0, 0], uptime=26803.5562168
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:56.036Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:56 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=90185856, external=475904, loadavg=[0, 0, 0], uptime=26803.562736
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:56.041Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:56 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=163254272, heapTotal=138768384, heapUsed=90719280, external=475904, loadavg=[0, 0, 0], uptime=26803.567746
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:57.598Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week3\outcomes.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:57.660Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week6\outcomes.md'
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:198:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:228:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:250:43)
+2018-07-09T15:05:57.664Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:57 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=180584448, heapTotal=157118464, heapUsed=115327640, external=500480, loadavg=[0, 0, 0], uptime=26805.1918924
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:05:59.602Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:05:59 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=198303744, heapTotal=173371392, heapUsed=111641472, external=329341, loadavg=[0, 0, 0], uptime=26807.1298202
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:17.853Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:17 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=233684992, heapTotal=206749696, heapUsed=109031184, external=3566068, loadavg=[0, 0, 0], uptime=26825.3806198
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.083Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=234991616, heapTotal=208322560, heapUsed=125599784, external=3526253, loadavg=[0, 0, 0], uptime=26825.6108139
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.139Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=238596096, heapTotal=209371136, heapUsed=123481296, external=3529510, loadavg=[0, 0, 0], uptime=26825.6669629
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.194Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=239132672, heapTotal=209895424, heapUsed=120510640, external=3520766, loadavg=[0, 0, 0], uptime=26825.721108
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.198Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=239132672, heapTotal=209895424, heapUsed=121689200, external=3520766, loadavg=[0, 0, 0], uptime=26825.7256194
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.202Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=239132672, heapTotal=209895424, heapUsed=123134432, external=3520766, loadavg=[0, 0, 0], uptime=26825.7301315
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.206Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=239132672, heapTotal=209895424, heapUsed=124029296, external=3520766, loadavg=[0, 0, 0], uptime=26825.7336407
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.209Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=239136768, heapTotal=209895424, heapUsed=124711392, external=3520766, loadavg=[0, 0, 0], uptime=26825.7366489
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.253Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240070656, heapTotal=210944000, heapUsed=119031456, external=3520766, loadavg=[0, 0, 0], uptime=26825.7807352
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.274Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240164864, heapTotal=210944000, heapUsed=122461488, external=3528958, loadavg=[0, 0, 0], uptime=26825.8017903
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.283Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240189440, heapTotal=210944000, heapUsed=123986544, external=3537150, loadavg=[0, 0, 0], uptime=26825.8107792
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.302Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240189440, heapTotal=210944000, heapUsed=127032376, external=3537150, loadavg=[0, 0, 0], uptime=26825.8293643
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.305Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240189440, heapTotal=210944000, heapUsed=127820984, external=3537150, loadavg=[0, 0, 0], uptime=26825.8328742
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.359Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240713728, heapTotal=211468288, heapUsed=123364096, external=3557906, loadavg=[0, 0, 0], uptime=26825.8869816
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.363Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240713728, heapTotal=211468288, heapUsed=124183264, external=3557906, loadavg=[0, 0, 0], uptime=26825.8905218
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.366Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240713728, heapTotal=211468288, heapUsed=124791112, external=3557906, loadavg=[0, 0, 0], uptime=26825.8940015
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.369Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240713728, heapTotal=211468288, heapUsed=125357904, external=3557906, loadavg=[0, 0, 0], uptime=26825.8970089
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.385Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240713728, heapTotal=211468288, heapUsed=127667376, external=3566098, loadavg=[0, 0, 0], uptime=26825.9120495
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.443Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=240726016, heapTotal=211468288, heapUsed=124076008, external=3561726, loadavg=[0, 0, 0], uptime=26825.9697323
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.518Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=241545216, heapTotal=212516864, heapUsed=125915784, external=3569918, loadavg=[0, 0, 0], uptime=26826.0459354
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.619Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=242487296, heapTotal=213041152, heapUsed=131669768, external=3586302, loadavg=[0, 0, 0], uptime=26826.1461707
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.624Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=242487296, heapTotal=213041152, heapUsed=132239672, external=3586302, loadavg=[0, 0, 0], uptime=26826.1506828
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.629Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=242487296, heapTotal=213041152, heapUsed=132945560, external=3586302, loadavg=[0, 0, 0], uptime=26826.1561973
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:06:18.632Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Jul 09 2018 23:06:18 GMT+0800 (Malay Peninsula Standard Time), pid=2720, uid=null, gid=null, cwd=C:\repos\nus-cs2103\website-base, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=242487296, heapTotal=213041152, heapUsed=133628536, external=3586302, loadavg=[0, 0, 0], uptime=26826.1597373
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:423:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-07-09T15:10:02.099Z - info: Pages built
+2018-07-09T15:10:02.137Z - info: Site data built
+2018-07-09T15:10:02.150Z - info: Generate Site durationMs=53349
+2018-07-09T15:10:02.172Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-09T15:10:02.172Z - info: Press CTRL+C to stop ...
+2018-07-09T15:15:05.979Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\admin.njk
+2018-07-09T15:15:06.997Z - info: Assets built
+2018-07-09T15:16:04.969Z - info: Pages built
+2018-07-09T15:16:05.002Z - info: Site data built
+2018-07-09T15:16:05.013Z - info: Generate Site durationMs=48657
+2018-07-09T15:16:05.036Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-09T15:16:05.036Z - info: Press CTRL+C to stop ...
+2018-07-09T15:16:45.543Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\admin.njk
+2018-07-09T15:16:46.573Z - info: Assets built
+2018-07-09T15:17:49.647Z - info: Pages built
+2018-07-09T15:17:49.681Z - info: Site data built
+2018-07-09T15:17:49.697Z - info: Generate Site durationMs=46974
+2018-07-09T15:17:49.715Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-09T15:17:49.715Z - info: Press CTRL+C to stop ...

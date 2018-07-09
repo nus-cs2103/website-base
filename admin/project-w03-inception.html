@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Admin: Project → inception [week 3]</title>
+    <title>CS2103/T Website - Admin: Project: inception [week 3]</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
@@ -105,98 +105,112 @@
         </li>
       </navbar>
     </div>
-    <div class="website-content" id="main">
-      <div id="title">
-        <h2 id="project-inception-week-3">Project → inception [week 3]</h2>
-      </div>
-      <div id="body">
-        <tip-box>
-          <p>Overview: <span>decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
-          </p>
-        </tip-box>
-        <p>This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).</p>
-        <ul>
-          <li>
-            <p><strong>Set up a weekly project meeting time/venue with your team members</strong></p>
-            <p>We recommend at least one face-to-face project meeting per week. <span class="dimmed">The project meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).</span></p>
-          </li>
-          <li>
-            <p><strong>Play around with AB4</strong></p>
-            <p>Download the latest released version <span class="dimmed">(i.e., the jar file)</span> of AB4 from <a href="https://se-edu.github.io/addressbook-level4/">its upstream repo</a> and play around with it to familiarize with its current features.</p>
-          </li>
-          <li>
-            <p><strong>Decide project direction, target user profile, and problem addressed</strong></p>
-            <p>Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in
-              <trigger trigger="click" for="modal:v10-scope">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope]</trigger>
+    <div class="website-content">
+      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-timeline.html">Project: Timeline</a></span>
+        </span><span style="float:right"><span><a href="project-w04-mid-v10.html">Project: mid-v1.0 [week 4] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </span>
+        </span>
+      </p>
+      <br>
+      <div id="main">
+        <div id="title">
+          <h2 id="project-inception-week-3">Project → inception [week 3]</h2>
+        </div>
+        <div id="body">
+          <tip-box>
+            <p>Overview: <span>decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
             </p>
-          </li>
-        </ul>
-        <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (Extract)" id="modal:v10-scope">
-        
-          <div>
-            <p>In general, each team is expected to take one of these two directions:</p>
-            <ul>
-              <li>
-                <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
-                <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _optimize_ direction%%" minimized="">
-                  <p>An AddressBook,</p>
-                  <ul>
-                    <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
-                    <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
-                    <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
-                  </ul>
+          </tip-box>
+          <p>This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).</p>
+          <ul>
+            <li>
+              <p><strong>Set up a weekly project meeting time/venue with your team members</strong></p>
+              <p>We recommend at least one face-to-face project meeting per week. <span class="dimmed">The project meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).</span></p>
+            </li>
+            <li>
+              <p><strong>Play around with AB4</strong></p>
+              <p>Download the latest released version <span class="dimmed">(i.e., the jar file)</span> of AB4 from <a href="https://se-edu.github.io/addressbook-level4/">its upstream repo</a> and play around with it to familiarize with its current features.</p>
+            </li>
+            <li>
+              <p><strong>Decide project direction, target user profile, and problem addressed</strong></p>
+              <p>Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in
+                <trigger trigger="click" for="modal:v10-scope">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope]</trigger>
+              </p>
+            </li>
+          </ul>
+          <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (Extract)" id="modal:v10-scope">
+          
+            <div>
+              <p>In general, each team is expected to take one of these two directions:</p>
+              <ul>
+                <li>
+                  <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
+                  <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _optimize_ direction%%" minimized="">
+                    <p>An AddressBook,</p>
+                    <ul>
+                      <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+                      <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+                      <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+                    </ul>
+                    <p></p>
+                  </panel>
                   <p></p>
-                </panel>
-                <p></p>
-              </li>
-              <li>
-                <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages
-                  something else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
-                <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _morph_ direction%%" minimized="">
-                  <p>An app to manage,</p>
-                  <ul>
-                    <li>Bookmarks of websites</li>
-                    <li>Tasks/Schedule</li>
-                    <li>Location info</li>
-                    <li>Thing to memorize i.e. flash cards, trivia</li>
-                    <li>Forum posts, news feeds, Social media feeds</li>
-                    <li>Online projects or issue trackers that the user is interested in</li>
-                    <li>Emails, possibly from different accounts</li>
-                    <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
-                  </ul>
+                </li>
+                <li>
+                  <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages
+                    something else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
+                  <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _morph_ direction%%" minimized="">
+                    <p>An app to manage,</p>
+                    <ul>
+                      <li>Bookmarks of websites</li>
+                      <li>Tasks/Schedule</li>
+                      <li>Location info</li>
+                      <li>Thing to memorize i.e. flash cards, trivia</li>
+                      <li>Forum posts, news feeds, Social media feeds</li>
+                      <li>Online projects or issue trackers that the user is interested in</li>
+                      <li>Emails, possibly from different accounts</li>
+                      <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+                    </ul>
+                    <p></p>
+                  </panel>
                   <p></p>
+                </li>
+              </ul>
+              <p>For either direction, you need to define a target user profile and a value proposition:</p>
+              <ul>
+                <li><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>                  ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+                  <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>                  💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel header="%%Why the need to narrow down the user profile?%%" minimized="">
+                  <ul>
+                    <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+                    <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
+                      a better job of implementing that feature.</li>
+                  </ul>
                 </panel>
-                <p></p>
-              </li>
-            </ul>
-            <p>For either direction, you need to define a target user profile and a value proposition:</p>
-            <ul>
-              <li><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>                ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
-                <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>                💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</li>
-            </ul>
-            <div class="indented-level2">
-              <panel header="%%Why the need to narrow down the user profile?%%" minimized="">
-                <ul>
-                  <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
-                  <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
-                    a better job of implementing that feature.</li>
-                </ul>
-              </panel>
+              </div>
+              <br>
+              <ul>
+                <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
+              </ul>
             </div>
-            <br>
-            <ul>
-              <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
-            </ul>
-          </div>
-        </modal>
+          </modal>
+        </div>
       </div>
+      <br>
+      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-timeline.html">Project: Timeline</a></span>
+        </span><span style="float:right"><span><a href="project-w04-mid-v10.html">Project: mid-v1.0 [week 4] <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </span>
+        </span>
+      </p>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Sat, 07 Jul 2018 14:49:04 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Mon, 09 Jul 2018 15:22:13 GMT</small></div>
 </footer>
 </div>
 </body>

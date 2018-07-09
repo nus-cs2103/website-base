@@ -105,85 +105,97 @@
         </li>
       </navbar>
     </div>
-    <div class="website-content" id="main">
-      <h1 id="cs2103t-at-a-glance">CS2103/T at a Glance</h1>
-      <p>CS2103/T is an introductory Software Engineering module. It covers basic SE theory and practices that a student needs to know before doing SE internships in the industry or taking
-        <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>.</p>
-      <p>On the theory side, this module is supported by a customized online text book <a href="http://127.0.0.1:8080/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
-      <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
-      <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
-        (10 KLoC) generic product -- and enhance it into a better product or evolve into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
-        size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
-      <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
-      <div class="indented-level2">
-        <p><strong>Java:</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used heavily, but not taught</li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
-        </ul>
-        <p><strong>OOP:</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used in a non-trivial project,
-            <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
-          </li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
-        </ul>
-        <p><strong>SE tools/practices:</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-            <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
-          </li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> those specific to start-ups</li>
-        </ul>
-        <p><strong>Modeling:</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-            <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> intensive
-            <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
-          </li>
-        </ul>
-        <p><strong>Requirements:</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-            <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> rapid prototyping, heavy UI design, designing a product from scratch</li>
-        </ul>
-        <p><strong>Documentation</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Marketing materials</li>
-        </ul>
-        <p><strong>Project Management</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Setting up project infrastructure from scratch</li>
-        </ul>
-        <p><strong>Testing</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-            <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
-            <tooltip content="e.g., acceptance testing">user testing</tooltip>
-          </li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox">
-            <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
-          </li>
-        </ul>
-        <p><strong>Applications domains:</strong></p>
-        <ul class="task-list">
-          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Cross-platform desktop applications</li>
-          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Web programming, Mobile programming, Database programming</li>
-        </ul>
+    <div class="website-content">
+      <p><span style="float:right"><span><a href="learningOutcomes.html">Learning Outcomes <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </span>
+        </span>
+      </p>
+      <br>
+      <div id="main">
+        <h1 id="cs2103t-at-a-glance">CS2103/T at a Glance</h1>
+        <p>CS2103/T is an introductory Software Engineering module. It covers basic SE theory and practices that a student needs to know before doing SE internships in the industry or taking
+          <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>.</p>
+        <p>On the theory side, this module is supported by a customized online text book <a href="http://127.0.0.1:8080/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
+        <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
+        <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
+          (10 KLoC) generic product -- and enhance it into a better product or evolve into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
+          size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
+        <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
+        <div class="indented-level2">
+          <p><strong>Java:</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used heavily, but not taught</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
+          </ul>
+          <p><strong>OOP:</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used in a non-trivial project,
+              <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
+            </li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
+          </ul>
+          <p><strong>SE tools/practices:</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
+              <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
+            </li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> those specific to start-ups</li>
+          </ul>
+          <p><strong>Modeling:</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
+              <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> intensive
+              <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
+            </li>
+          </ul>
+          <p><strong>Requirements:</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
+              <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> rapid prototyping, heavy UI design, designing a product from scratch</li>
+          </ul>
+          <p><strong>Documentation</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Marketing materials</li>
+          </ul>
+          <p><strong>Project Management</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Setting up project infrastructure from scratch</li>
+          </ul>
+          <p><strong>Testing</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
+              <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
+              <tooltip content="e.g., acceptance testing">user testing</tooltip>
+            </li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox">
+              <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
+            </li>
+          </ul>
+          <p><strong>Applications domains:</strong></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Cross-platform desktop applications</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Web programming, Mobile programming, Database programming</li>
+          </ul>
+        </div>
+        <br>
+        <p>
+          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" header="==%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: Where is everything?**== _aka_ How to find stuff in this website"
+            minimized="" fragment="admin-faq-whereIsEverything"></panel>
+        </p>
+        <p></p>
+        <p>
+          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: What are the differences between CS2103 and CS2103T?**" minimized=""
+            fragment="admin-faq-cs2103Vscs2103t"></panel>
+        </p>
       </div>
       <br>
-      <p>
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" header="==%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: Where is everything?**== _aka_ How to find stuff in this website"
-          minimized="" fragment="admin-faq-whereIsEverything"></panel>
-      </p>
-      <p></p>
-      <p>
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: What are the differences between CS2103 and CS2103T?**" minimized=""
-          fragment="admin-faq-cs2103Vscs2103t"></panel>
+      <p><span style="float:right"><span><a href="learningOutcomes.html">Learning Outcomes <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </span>
+        </span>
       </p>
     </div>
   </div>
@@ -191,7 +203,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Sat, 07 Jul 2018 14:49:04 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Mon, 09 Jul 2018 15:22:13 GMT</small></div>
 </footer>
 </div>
 </body>

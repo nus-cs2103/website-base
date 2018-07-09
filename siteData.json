@@ -178,7 +178,7 @@
       "headings": {
         "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T"
       },
-      "title": "Admin: How to get help in CS2103/T",
+      "title": "Admin: Appendix D: How to get help in this module",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixD-help.md"
@@ -226,8 +226,7 @@
       "headings": {
         "grade-breakdown": "Grade Breakdown"
       },
-      "title": "Admin: Module Grading",
-      "keywords": "grading, asessment",
+      "title": "Admin: Grade Breakdown",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/gradeBreakdown.md"
@@ -236,7 +235,7 @@
       "headings": {
         "cs2103t-at-a-glance": "CS2103/T at a Glance"
       },
-      "title": "Admin",
+      "title": "Admin: Preliminaries",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/index.md"
@@ -297,169 +296,7 @@
     },
     {
       "headings": {
-        "project-assessment": "Project → Assessment"
-      },
-      "title": "Admin: Project → Assessment",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-assessment.md"
-    },
-    {
-      "headings": {
-        "project-constraints": "Project → Constraints"
-      },
-      "title": "Admin: Project → Constraints",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-constraints.md"
-    },
-    {
-      "headings": {
-        "project-deliverables": "Project → Deliverables",
-        "deliverable-executable": "Deliverable: Executable",
-        "deliverable-source-code": "Deliverable: Source code",
-        "deliverable-user-guide-ug": "Deliverable: User Guide (UG)",
-        "deliverable-developer-guide-ug": "Deliverable: Developer Guide (UG)",
-        "deliverable-product-website": "Deliverable: Product Website",
-        "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
-        "deliverable-demo": "Deliverable: Demo",
-        "deliverable-practical-exam": "Deliverable: Practical Exam"
-      },
-      "title": "Admin: Project → Timeline",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-deliverables.md"
-    },
-    {
-      "headings": {
-        "project-the-product": "Project → The Product"
-      },
-      "title": "Admin: Project → The Product",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-product.md"
-    },
-    {
-      "headings": {
-        "project-scope": "Project → Scope"
-      },
-      "title": "Admin: Project → Scope",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-scope.md"
-    },
-    {
-      "headings": {
-        "project-timeline": "Project → Timeline"
-      },
-      "title": "Admin: Project → Timeline",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-timeline.md"
-    },
-    {
-      "headings": {
-        "project-inception-week-3": "Project → inception [week 3]"
-      },
-      "title": "Admin: Project → inception [week 3]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w03-inception.md"
-    },
-    {
-      "headings": {
-        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]"
-      },
-      "title": "Admin: Project → mid-v1.0 [week 4]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w04-mid-v10.md"
-    },
-    {
-      "headings": {
-        "project-v10-week-5": "Project → v1.0 [week 5]",
-        "v10-documentation": "v1.0 Documentation",
-        "v10-project-management": "v1.0 Project Management"
-      },
-      "title": "Admin: Project → v1.0 [week 5]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w05-v10.md"
-    },
-    {
-      "headings": {
-        "project-mid-v11-week-6": "Project → mid-v1.1 [week 6]",
-        "organization-setup": "Organization setup",
-        "repo-setup": "Repo setup"
-      },
-      "title": "Admin: Project → mid-v1.1 [week 6]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w06-mid-v11.md"
-    },
-    {
-      "headings": {
-        "project-v11-week-7": "Project → v1.1 [week 7]",
-        "v11-project-management": "v1.1 Project Management",
-        "v11-documentation": "v1.1 Documentation",
-        "v11-product": "v1.1 Product"
-      },
-      "title": "Admin: Project → v1.1 [week 7]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w07-v11.md"
-    },
-    {
-      "headings": {
-        "project-mid-v12-week-8": "Project → mid-v1.2 [week 8]",
-        "project-schedule-tracking": "Project Schedule Tracking",
-        "using-issues": "Using Issues:",
-        "using-milestones": "Using Milestones:"
-      },
-      "title": "Admin: Project → mid-v1.2 [week 8]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w08-mid-v12.md"
-    },
-    {
-      "headings": {
-        "project-v12-week-9": "Project → v1.2 [week 9]",
-        "v12-project-management": "v1.2 Project Management",
-        "v12-product": "v1.2 Product",
-        "v12-documentation": "v1.2 Documentation",
-        "v12-demo": "v1.2 Demo"
-      },
-      "title": "Admin: Project → v1.2 [week 9]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w09-v12.md"
-    },
-    {
-      "headings": {
-        "project-mid-v13-week-10": "Project → mid-v1.3 [week 10]"
-      },
-      "title": "Admin: Project → mid-v1.3 [week 10]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w10-mid-v13.md"
-    },
-    {
-      "headings": {
-        "project-v13-week-11": "Project → v1.3 [week 11]",
-        "v13-project-management": "v1.3 Project Management",
-        "v13-product": "v1.3 Product",
-        "v13-documentation": "v1.3 Documentation",
-        "v13-demo": "v1.3 Demo",
-        "v13-testing": "v1.3 Testing"
-      },
-      "title": "Admin: Project → v1.3 [week 11]",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project-w11-v13.md"
-    },
-    {
-      "headings": {
-        "project-mid-v14-week-12": "Project → mid-v1.4 [week 12]",
+        "project-assessment": "Project → Assessment",
         "code-quality": "Code Quality",
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
@@ -477,7 +314,169 @@
         "basic-6": "Basic",
         "intermediate-5": "Intermediate"
       },
-      "title": "Admin: Project → mid-v1.4 [week 12]",
+      "title": "Admin: %%→%% Assessment",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-assessment.md"
+    },
+    {
+      "headings": {
+        "project-constraints": "Project → Constraints"
+      },
+      "title": "Admin: Project: Constraints",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-constraints.md"
+    },
+    {
+      "headings": {
+        "project-deliverables": "Project → Deliverables",
+        "deliverable-executable": "Deliverable: Executable",
+        "deliverable-source-code": "Deliverable: Source code",
+        "deliverable-user-guide-ug": "Deliverable: User Guide (UG)",
+        "deliverable-developer-guide-ug": "Deliverable: Developer Guide (UG)",
+        "deliverable-product-website": "Deliverable: Product Website",
+        "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
+        "deliverable-demo": "Deliverable: Demo",
+        "deliverable-practical-exam": "Deliverable: Practical Exam"
+      },
+      "title": "Admin: Project: Deliverables",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-deliverables.md"
+    },
+    {
+      "headings": {
+        "project-the-product": "Project → The Product"
+      },
+      "title": "Admin: Project: The product",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-product.md"
+    },
+    {
+      "headings": {
+        "project-scope": "Project → Scope"
+      },
+      "title": "Admin: Project: Scope",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-scope.md"
+    },
+    {
+      "headings": {
+        "project-timeline": "Project → Timeline"
+      },
+      "title": "Admin: Project: Timeline",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-timeline.md"
+    },
+    {
+      "headings": {
+        "project-inception-week-3": "Project → inception [week 3]"
+      },
+      "title": "Admin: Project: inception [week 3]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w03-inception.md"
+    },
+    {
+      "headings": {
+        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]"
+      },
+      "title": "Admin: Project: mid-v1.0 [week 4]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w04-mid-v10.md"
+    },
+    {
+      "headings": {
+        "project-v10-week-5": "Project → v1.0 [week 5]",
+        "v10-documentation": "v1.0 Documentation",
+        "v10-project-management": "v1.0 Project Management"
+      },
+      "title": "Admin: Project: v1.0 [week 5]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w05-v10.md"
+    },
+    {
+      "headings": {
+        "project-mid-v11-week-6": "Project → mid-v1.1 [week 6]",
+        "organization-setup": "Organization setup",
+        "repo-setup": "Repo setup"
+      },
+      "title": "Admin: Project: mid-v1.1 [week 6]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w06-mid-v11.md"
+    },
+    {
+      "headings": {
+        "project-v11-week-7": "Project → v1.1 [week 7]",
+        "v11-project-management": "v1.1 Project Management",
+        "v11-documentation": "v1.1 Documentation",
+        "v11-product": "v1.1 Product"
+      },
+      "title": "Admin: Project: v1.1 [week 7]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w07-v11.md"
+    },
+    {
+      "headings": {
+        "project-mid-v12-week-8": "Project → mid-v1.2 [week 8]",
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:"
+      },
+      "title": "Admin: Project: mid-v1.2 [week 8]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w08-mid-v12.md"
+    },
+    {
+      "headings": {
+        "project-v12-week-9": "Project → v1.2 [week 9]",
+        "v12-project-management": "v1.2 Project Management",
+        "v12-product": "v1.2 Product",
+        "v12-documentation": "v1.2 Documentation",
+        "v12-demo": "v1.2 Demo"
+      },
+      "title": "Admin: Project: v1.2 [week 9]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w09-v12.md"
+    },
+    {
+      "headings": {
+        "project-mid-v13-week-10": "Project → mid-v1.3 [week 10]"
+      },
+      "title": "Admin: Project: mid-v1.3 [week 10]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w10-mid-v13.md"
+    },
+    {
+      "headings": {
+        "project-v13-week-11": "Project → v1.3 [week 11]",
+        "v13-project-management": "v1.3 Project Management",
+        "v13-product": "v1.3 Product",
+        "v13-documentation": "v1.3 Documentation",
+        "v13-demo": "v1.3 Demo",
+        "v13-testing": "v1.3 Testing"
+      },
+      "title": "Admin: Project: v1.3 [week 11]",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-w11-v13.md"
+    },
+    {
+      "headings": {
+        "project-mid-v14-week-12": "Project → mid-v1.4 [week 12]"
+      },
+      "title": "Admin: Project: mid-v1.4 [week 12]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project-w12-mid-v14.md"
@@ -493,7 +492,7 @@
         "v14-demo": "v1.4 Demo",
         "v14-practical-exam": "v1.4 Practical Exam"
       },
-      "title": "Admin: Project → v1.4 [week 13]",
+      "title": "Admin: Project: v1.4 [week 13]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project-w13-v14.md"
@@ -502,7 +501,7 @@
       "headings": {
         "project-overview": "Project → Overview"
       },
-      "title": "Admin: Project → Overview",
+      "title": "Admin: Project: Overview",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project.md"

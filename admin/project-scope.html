@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Admin: Project → Scope</title>
+    <title>CS2103/T Website - Admin: Project: Scope</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
@@ -105,64 +105,71 @@
         </li>
       </navbar>
     </div>
-    <div class="website-content" id="main">
-      <h2 id="project-scope">Project → Scope</h2>
-      <div id="project-direction">
-        In general, each team is expected to take one of these two directions:
-        <ul>
-          <li>
-            <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
-            <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _optimize_ direction%%" minimized="">
-              <p>An AddressBook,</p>
-              <ul>
-                <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
-                <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
-                <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
-              </ul>
+    <div class="website-content">
+      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-product.html">Project: The product</a></span>
+        </span><span style="float:right"><span><a href="project-constraints.html">Project: Constraints <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </span>
+        </span>
+      </p>
+      <br>
+      <div id="main">
+        <h2 id="project-scope">Project → Scope</h2>
+        <div id="project-direction">
+          In general, each team is expected to take one of these two directions:
+          <ul>
+            <li>
+              <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
+              <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _optimize_ direction%%" minimized="">
+                <p>An AddressBook,</p>
+                <ul>
+                  <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+                  <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+                  <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+                </ul>
+                <p></p>
+              </panel>
               <p></p>
-            </panel>
-            <p></p>
-          </li>
-          <li>
-            <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something
-              else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
-            <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _morph_ direction%%" minimized="">
-              <p>An app to manage,</p>
-              <ul>
-                <li>Bookmarks of websites</li>
-                <li>Tasks/Schedule</li>
-                <li>Location info</li>
-                <li>Thing to memorize i.e. flash cards, trivia</li>
-                <li>Forum posts, news feeds, Social media feeds</li>
-                <li>Online projects or issue trackers that the user is interested in</li>
-                <li>Emails, possibly from different accounts</li>
-                <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
-              </ul>
+            </li>
+            <li>
+              <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages
+                something else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
+              <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples for the _morph_ direction%%" minimized="">
+                <p>An app to manage,</p>
+                <ul>
+                  <li>Bookmarks of websites</li>
+                  <li>Tasks/Schedule</li>
+                  <li>Location info</li>
+                  <li>Thing to memorize i.e. flash cards, trivia</li>
+                  <li>Forum posts, news feeds, Social media feeds</li>
+                  <li>Online projects or issue trackers that the user is interested in</li>
+                  <li>Emails, possibly from different accounts</li>
+                  <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+                </ul>
+                <p></p>
+              </panel>
               <p></p>
+            </li>
+          </ul>
+          <p>For either direction, you need to define a target user profile and a value proposition:</p>
+          <ul>
+            <li><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>              ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+              <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>              💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</li>
+          </ul>
+          <div class="indented-level2">
+            <panel header="%%Why the need to narrow down the user profile?%%" minimized="">
+              <ul>
+                <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+                <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a
+                  better job of implementing that feature.</li>
+              </ul>
             </panel>
-            <p></p>
-          </li>
-        </ul>
-        <p>For either direction, you need to define a target user profile and a value proposition:</p>
-        <ul>
-          <li><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>            ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
-            <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>            💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</li>
-        </ul>
-        <div class="indented-level2">
-          <panel header="%%Why the need to narrow down the user profile?%%" minimized="">
-            <ul>
-              <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
-              <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better
-                job of implementing that feature.</li>
-            </ul>
-          </panel>
+          </div>
+          <br>
+          <ul>
+            <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
+          </ul>
         </div>
-        <br>
-        <ul>
-          <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
-        </ul>
-      </div>
-      <span id="individual-expectations">
+        <span id="individual-expectations">
 <p>👤 <strong>Individually</strong>, each student is expected to,</p>
 <ol>
 <li>
@@ -174,57 +181,57 @@
 <li>should fit with the rest of the software (and the target user profile),</li>
 <li>and should have the consent of the team members.</li></ul></li></ul>
 <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of suitable enhancements%%" minimized="">
-      <ol>
-        <li>Add a new feature</li>
-        <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
-        <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
-        <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
-      </ol>
-      <p></p>
-      </panel>
-      <p></p>
-      <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Enhancements vs Grade: Examples%%" minimized="">
-        <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
-        <ul>
-          <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
-          <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
-        </ul>
-        <p></p>
-      </panel>
-      <p></p>
-      <p>In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project.</p>
-      <ul>
-        <li>These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on thm enhancement.</li>
-      </ul>
-      <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of minor enhancements%%" minimized="">
-        <p>Here is a non-exhaustive list of minor enhancements:</p>
         <ol>
-          <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
-          <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
-          <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
-          <li>Sort items</li>
-          <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
-          <li>Marking some items as favorites</li>
-          <li>Ability to search by labels</li>
-          <li>Ability to specify colors for labels</li>
+          <li>Add a new feature</li>
+          <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+          <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
+          <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
         </ol>
         <p></p>
-      </panel>
-      <p></p>
-      </li>
-      <li>
-        <p><strong>Recommended: contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated
-          for the aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
+        </panel>
+        <p></p>
+        <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Enhancements vs Grade: Examples%%" minimized="">
+          <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+          <ul>
+            <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+            <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+          </ul>
+          <p></p>
+        </panel>
+        <p></p>
+        <p>In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project.</p>
         <ul>
-          <li>By the end of this project (i.e. by v1.4) each team member is expected to have implemented an enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
-          <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
-            for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>            and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+          <li>These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on thm enhancement.</li>
         </ul>
-      </li>
-      <li>
-        <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-        <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of team-tasks%%" minimized="">
-          <span id="example-team-tasks">
+        <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of minor enhancements%%" minimized="">
+          <p>Here is a non-exhaustive list of minor enhancements:</p>
+          <ol>
+            <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+            <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+            <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
+            <li>Sort items</li>
+            <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+            <li>Marking some items as favorites</li>
+            <li>Ability to search by labels</li>
+            <li>Ability to specify colors for labels</li>
+          </ol>
+          <p></p>
+        </panel>
+        <p></p>
+        </li>
+        <li>
+          <p><strong>Recommended: contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated
+            for the aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
+          <ul>
+            <li>By the end of this project (i.e. by v1.4) each team member is expected to have implemented an enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+            <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
+              for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>              and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+          <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of team-tasks%%" minimized="">
+            <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
 <li>Necessary general code enhancements e.g.,
@@ -236,43 +243,43 @@
 <li>Maintaining the issue tracker</li>
 <li>Release management</li>
 <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
-      <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-      </ol>
-      </span>
-      <p></p>
-      </panel>
-      <p></p>
-      </li>
-      <li>
-        <p><strong>Share roles and responsibilities of the project</strong>.</p>
-        <span id="roles">
-<p>Roles indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-        <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Recommended roles and responsibilities%%" minimized="">
-          <p>This is a non-exhaustive list; you may define additional roles.</p>
-          <ul>
-            <li><em>Team lead</em>: Responsible for overall project coordination.</li>
-            <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
-            <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
-            <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
-            <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
-            <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
-            <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
-            <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
-            <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well, and review
-              changes done to that component in v1.3-v1.4.</li>
-          </ul>
+        <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+        </ol>
+        </span>
+        <p></p>
         </panel>
         <p></p>
-        <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.
-        </p>
+        </li>
+        <li>
+          <p><strong>Share roles and responsibilities of the project</strong>.</p>
+          <span id="roles">
+<p>Roles indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+          <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Recommended roles and responsibilities%%" minimized="">
+            <p>This is a non-exhaustive list; you may define additional roles.</p>
+            <ul>
+              <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+              <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+              <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+              <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+              <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+              <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+              <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+              <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
+              <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well, and review
+                changes done to that component in v1.3-v1.4.</li>
+            </ul>
+          </panel>
+          <p></p>
+          <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.
+          </p>
+          </span>
+        </li>
+        <li>
+          <p><mark>Write <strong>~300-500 LoC of code</strong>, on average.</mark></p>
+        </li>
+        </ol>
         </span>
-      </li>
-      <li>
-        <p><mark>Write <strong>~300-500 LoC of code</strong>, on average.</mark></p>
-      </li>
-      </ol>
-      </span>
-      <span id="team-expectations">
+        <span id="team-expectations">
 <p>👥 <strong>As a team</strong>, you are expected to work together to,</p>
 <ol>
 <li><strong>Preserve product integrity</strong>: i.e.
@@ -282,12 +289,19 @@
 <li>Final project demo presents a cohesive picture to the audience.</li></ol></li>
 <li><strong>Maintain product quality</strong>: i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li>
 <li><strong>Manage the project smoothly</strong>: i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.</li></ol></span></div>
+      <br>
+      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="project-product.html">Project: The product</a></span>
+        </span><span style="float:right"><span><a href="project-constraints.html">Project: Constraints <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </span>
+        </span>
+      </p>
+    </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Sat, 07 Jul 2018 14:49:04 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Mon, 09 Jul 2018 15:22:13 GMT</small></div>
 </footer>
 </div>
 </body>
