@@ -35,6 +35,8 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 :exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 
+:exclamation: The deadline for reaching a milestone is ==the midnight before your tutorial== %%e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.%%
+
 <panel src="project-assessment.md#project-management-grading" header="%%Admin {{ icon_embedding }} Project Assessment → Project Management%%" minimized />
 
 ### v1.0 Documentation
@@ -43,7 +45,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
   Have a draft of the requirements of your project, as described in mid-v1.0 progress guide.
   
 * **User Guide**:  
-  Draft a user guide in a convenient format (e.g., a GoogleDoc) to describe what the product would be like when it is at 2.0.  We recommend that ou follow the existing <tooltip content="AddressBook-Level4">AB4</tooltip> User Guide in terms of structure and format.
+  Draft a user guide in a convenient format (e.g., a GoogleDoc) to describe what the product would be like when it is at 2.0.  We recommend that you follow the existing <tooltip content="AddressBook-Level4">AB4</tooltip> User Guide in terms of structure and format.
 
   <tip-box> 
   
@@ -56,7 +58,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 **Suggested length**: Follow the existing user guide and developer guides in terms of the level of details.
 
-**Submission**: Show to the tutor during the tutorial.
+**Submission**: Save your draft a single pdf file, name it `{Your Team ID}.pdf` %%e.g., `W09-3.pdf`%% and upload to IVLE.
 
 ### v1.0 Project Management
 
@@ -64,7 +66,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 * Divide each of those features into three increments, to be released at v1.1, v1.2, v1.3 (v1.4 omitted deliberately as a buffer). Ideally, each increment should deliver a end-user testable enhancement.
 * Document the above two items somewhere e.g., in a Google doc/sheet
 
-**Submission**: Show to the tutor during the tutorial.
+**Submission**: Include in the pdf file you upload to IVLE.
 
 </div>
 </div>
