@@ -1,21 +1,7 @@
-<frontmatter>
-title: "Admin: Project → mid-v1.4 [week 12]"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
-
-<div id="title">
+{% macro show_main_text() %}
+<div id="main">
 
 ## Project → mid-v1.4 [week 12]
-</div>
-<div id="body">
 
 <tip-box>
 
@@ -67,4 +53,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 </modal> 
 
 </div>
-</div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-w12-mid-v14", show_main_text) }}

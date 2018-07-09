@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Project → v1.2 [week 9]"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 <div id="title">
 
@@ -72,3 +62,7 @@ Do an informal demo of the new feature during the tutorial. ==Each team member s
 
 </div>
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-w09-v12", show_main_text) }}

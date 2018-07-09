@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Supervision"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Supervision
 
@@ -22,3 +12,7 @@ Tutorial time is the main avenue for meeting your supervisor. In addition, you c
 Note that **it is not the supervisor’s job to chase you down and give help**. It is up to you to get as much feedback from the as you need. You are free to request more feedback from the supervisor as necessary. Similarly, it is not the job of the supervisor to lead your project to success. 
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("supervision", show_main_text) }}

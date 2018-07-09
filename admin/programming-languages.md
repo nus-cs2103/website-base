@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Programming Language"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Programming Language
 
@@ -37,3 +27,7 @@ This module follows the ==[OSS-NUS Java coding standard]({{java_coding_standard}
 ==**In the project you are required to follow basic and intermediate guidelines**== (those marked as :star: and :star::star:). In other programming activities in the module, we recommend (but not require) you to the coding standard.
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("programming-languages", show_main_text) }}

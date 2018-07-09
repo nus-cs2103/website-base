@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Tools"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Tools
 
@@ -39,3 +29,7 @@ The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com
 </panel>
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("tools", show_main_text) }}

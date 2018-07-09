@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Tutorials"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Tutorials
 
@@ -65,3 +55,7 @@ siteNav: adminSiteNav.md
 Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("tutorials", show_main_text) }}

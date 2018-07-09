@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Project → mid-v1.2 [week 8]"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 <div id="title">
 
@@ -70,3 +60,7 @@ Overview: <include src="project-timeline.md#mid-v12-overview" inline />
 </div>
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-w08-mid-v12", show_main_text) }}

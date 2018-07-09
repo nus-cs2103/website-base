@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Appendix B: Module Policies"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Appendix B: Module Policies
 
@@ -204,3 +194,7 @@ We don't usually give a strict page limit for documents such as User Guide and t
 </div>
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("appendixB-policies", show_main_text) }}

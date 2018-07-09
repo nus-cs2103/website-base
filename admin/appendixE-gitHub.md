@@ -1,15 +1,6 @@
-<frontmatter>
-title: "Admin: Appendix E: Using GitHub Project Hosting"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
+{% macro show_main_text() %}
+<div id="main">
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
 
 # Appendix E: Using GitHub Project Hosting
 
@@ -245,4 +236,7 @@ We recommend using the _Forking Workflow_.
 
 </div>
 
-</div>
+</div>{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("appendixE-gitHub", show_main_text) }}

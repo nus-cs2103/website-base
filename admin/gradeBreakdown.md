@@ -1,16 +1,5 @@
-<frontmatter>
-title: "Admin: Module Grading"
-keywords: grading, asessment
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Grade Breakdown
 
@@ -22,3 +11,7 @@ siteNav: adminSiteNav.md
 <panel src="project-assessment.md#main" header="%%Admin {{ icon_embedding }} Project Assessment%%" minimized  />
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("gradeBreakdown", show_main_text) }}

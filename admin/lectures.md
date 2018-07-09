@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Lectures"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Lectures
 
@@ -40,3 +30,7 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("lectures", show_main_text) }}

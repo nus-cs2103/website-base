@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Appendix F: Handling teamwork issues"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Appendix F: Handling teamwork issues
 
@@ -37,3 +27,7 @@ Given below are some suggestions you can adopt if the project work is not going 
 * Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("appendixF-teamworkIssues", show_main_text) }}

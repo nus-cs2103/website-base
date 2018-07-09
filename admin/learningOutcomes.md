@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Learning Outcomes"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Learning Outcomes
 
@@ -20,3 +10,8 @@ Each week has a suggested list of LOs. They are categorized using the following 
 <include src="ratingSystem.fr" />
 
 </div>
+
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("learningOutcomes", show_main_text) }}

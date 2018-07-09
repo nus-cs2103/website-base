@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Preliminaries"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %} 
+<div id="main">
 
 # {{ module }}/T at a Glance
 
@@ -70,3 +60,8 @@ Given below is a summary of what the module covers and does not cover %%(i.e., u
 <panel src="appendixC-faq.md#admin-faq-{{ module | lower }}Vs{{ module | lower }}t" header="%%Admin {{ icon_embedding }}%% **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
 
 </div>
+{% endmacro %} 
+
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("preliminaries", show_main_text) }}

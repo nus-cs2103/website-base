@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Project → The Product"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %} 
+<div id="main">
 
 ## Project → The Product
 
@@ -23,5 +13,9 @@ This product is meant for users who can type fast, and prefer typing over mouse/
 <panel src="project-constraints.md#constraint-cli" header="%%Admin {{ icon_embedding }} Admin: Project Contstraints: More info about the 'CLI app' requirement%%" minimized />
 <p/>
 
-
 </div>
+{% endmacro %} 
+
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-product", show_main_text) }}

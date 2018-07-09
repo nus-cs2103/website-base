@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Project → v1.0 [week 5]"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 <div id="title">
 
@@ -70,3 +60,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 </div>
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-w05-v10", show_main_text) }}

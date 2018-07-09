@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Project → v1.3 [week 11]"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 <div id="title">
 
@@ -124,3 +114,7 @@ v1.3 is subjected to a round of peer _acceptance/system testing_.
 * You can post in the issue thread to communicate with the tester %%&nbsp;e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
   * :bulb: Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-w11-v13", show_main_text) }}

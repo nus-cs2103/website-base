@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: How to get help in {{ module }}/T"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Appendix D: How to get help in {{ module }}/T
 
@@ -93,3 +83,7 @@ Resources
 * [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("appendixD-help", show_main_text) }}

@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Text Books"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 # Text Books
 
@@ -17,3 +7,7 @@ The main text book is [here]({{baseUrl}}/se-book-adapted/index.html). While it i
 
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("textbooks", show_main_text) }}

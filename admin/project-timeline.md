@@ -1,15 +1,5 @@
-<frontmatter>
-title: "Admin: Project → Timeline"
-footer: footer.md
-siteNav: adminSiteNav.md
-</frontmatter>
-
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
-
-<include src="../common/header.md" />
-
-<div class="website-content" id="main">
+{% macro show_main_text() %}
+<div id="main">
 
 ## Project → Timeline
 
@@ -38,3 +28,7 @@ Week  | Stage     | Activities
 The sub-sections further down explain each project deliverable in detail and states some recommended progress for you to achieve at that point of the project.
 
 </div>
+{% endmacro %}
+
+{% from "common/admin.njk" import show_admin_page with context %}
+{{ show_admin_page("project-timeline", show_main_text) }}
