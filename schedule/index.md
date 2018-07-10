@@ -129,7 +129,7 @@ footer: footer.md
     {heading: "Can explain OOP"},
       {location: ["oopDesign", "introduction", "what"], omit_evidence: true},
       {location: ["oopDesign", "objects", "basic"]},
-      {location: ["oopDesign", "classes", "basic"]},
+      {location: ["oopDesign", "classes", "what"]},
       {location: ["oopDesign", "objects", "abstraction"], omit_evidence: true},
       {location: ["oopDesign", "objects", "encapsulation"], omit_evidence: true},
     {heading: "Can explain basic object/class structures"},
