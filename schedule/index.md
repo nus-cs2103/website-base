@@ -128,7 +128,7 @@ footer: footer.md
       {location: ["modeling", "introduction", "how"]},
     {heading: "Can explain OOP"},
       {location: ["oopDesign", "introduction", "what"], omit_evidence: true},
-      {location: ["oopDesign", "objects", "basic"]},
+      {location: ["oopDesign", "objects", "what"]},
       {location: ["oopDesign", "classes", "what"]},
       {location: ["oopDesign", "objects", "abstraction"], omit_evidence: true},
       {location: ["oopDesign", "objects", "encapsulation"], omit_evidence: true},

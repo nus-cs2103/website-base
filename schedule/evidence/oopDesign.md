@@ -1,6 +1,6 @@
 <div id="objects_basic">
 
-<include src="../../book/oopDesign/objects/basic/q-essay-describeObjectInScenario.md" />
+<include src="../../book/oopDesign/objects/what/q-essay-describeObjectInScenario.md" />
 
 </div>
 
