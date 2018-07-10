@@ -475,11 +475,11 @@
             <p></p>
             <div>
               <p>We use a solid line to show an association between two classes.</p>
-              <img src="/website-base/book/uml/classDiagrams/associations/basic/images/notation.png" width="300">
+              <img src="/website-base/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
               <p></p>
               <tip-box>
                 <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
-                  <img src="/website-base/book/uml/classDiagrams/associations/basic/images/example.png" width="300"></p>
+                  <img src="/website-base/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
               </tip-box>
             </div>
             <div></div>
@@ -543,7 +543,29 @@
                 <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> According to this object diagram the given <code>Logic</code> object is associated with and aware of two <code>MineField</code> objects.</p>
                 <img src="/website-base/book/uml/classDiagrams/associations/navigability/images/logicMinefieldObjects.png" height="80"></tip-box>
             </div>
-            <div></div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: What does the navigability given by this diagram mean?">
+                      <question>
+                        <img src="/website-base/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
+                        <p></p>
+                        <ul radio-group="19ec4" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="19ec4" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="19ec4" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="19ec4" type="radio"> c. Depends on the programming language</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(a)</p>
+                          <p>Explanation: The diagram indicates that <code>Unit</code> object should know about the <code>Item</code> object. In the implementation, the <code>Unit</code> object will hold a <code>Unit</code> object in one of its variables.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
           </panel>
           <panel type="seamless" header="#### Roles" expanded="">
             <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
@@ -673,7 +695,29 @@
                 </ul>
                 <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
             </div>
-            <div></div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
+                      <question>
+                        <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
+                        <p></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An <code>Item</code> object must be linked 1,2,3 or 4 <code>Unit</code> objects.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(c)(d)</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
           </panel>
         </panel>
         <panel type="seamless" expanded="">
@@ -822,8 +866,31 @@
                 <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
                 <p></p>
               </tip-box>
+              <tip-box type="tip">
+                <p><strong>Aggregation vs Composition</strong></p>
+                <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
+              </tip-box>
             </div>
-            <div></div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which one is not recommended to use?">
+                      <question>
+                        <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                        <ul radio-group="29b56" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
+                        </ul>
+                        <div slot="answer">
+                          <p>(b)</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
           </panel>
         </panel>
         <panel type="seamless" expanded="">
@@ -1124,7 +1191,7 @@
           <div>
             <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
             <tip-box>
-              <img src="/website-base/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
+              <img src="/website-base/book/oopDesign/associations/what/images/completeStructure.png" height="120"></tip-box>
           </div>
           <div></div>
         </panel>
@@ -1517,7 +1584,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Mon, 09 Jul 2018 15:22:13 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Tue, 10 Jul 2018 11:53:35 GMT</small></div>
 </footer>
 </div>
 </body>

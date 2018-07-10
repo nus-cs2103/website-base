@@ -347,6 +347,15 @@
     },
     {
       "headings": {
+        "project-overview": "Project → Overview"
+      },
+      "title": "Admin: Project: Overview",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-overview.md"
+    },
+    {
+      "headings": {
         "project-the-product": "Project → The Product"
       },
       "title": "Admin: Project: The product",
@@ -496,15 +505,6 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project-w13-v14.md"
-    },
-    {
-      "headings": {
-        "project-overview": "Project → Overview"
-      },
-      "title": "Admin: Project: Overview",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/project.md"
     },
     {
       "headings": {
