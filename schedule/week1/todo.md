@@ -72,7 +72,7 @@ In particular, you may want to **have a look at the new Java 8 features** such a
 
 {% set admin_sections = [
   {heading: "FAQ: Where is everything?", priority: "1", source: "appendixC-faq.md#admin-faq-whereIsEverything"},
-  {heading: "Project: Overview", priority: "1", source: "project.md#main"},
+  {heading: "Project: Overview", priority: "1", source: "project-overview.md#main"},
   {heading: "Project: The Product", priority: "1", source: "project-product.md#main"},
   {heading: "Project: Scope", priority: "1", source: "project-scope.md#main"},
   {heading: "Text Books", priority: "2", source: "textBooks.md#main"},
