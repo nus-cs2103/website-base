@@ -19,7 +19,6 @@ After that, draw a class diagram to match the code. Then, draw an object diagram
 Here are some sample diagrams to use as references:<br>
 <img src="{{baseUrl}}/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="500"/>
 <img src="{{baseUrl}}/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400"/><br>
-<img src="{{baseUrl}}/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="500"/>
 
 </tip-box>
 
