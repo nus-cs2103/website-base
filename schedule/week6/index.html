@@ -357,12 +357,12 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website-base\book\oopDesign\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Inheritance → What%%"></panel>
-                  <panel src="/website-base\book\oopDesign\classes\classLevelMembers\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Classes → Class Level Members%%"></panel>
-                  <panel src="/website-base\book\oopDesign\classes\enumerations\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Classes → Enumerations%%"></panel>
+                  <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Inheritance → What%%"></panel>
+                  <panel src="/website-base\book\oop\classes\classLevelMembers\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Classes → Class Level Members%%"></panel>
+                  <panel src="/website-base\book\oop\classes\enumerations\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Classes → Enumerations%%"></panel>
                   <panel src="/website-base\book\uml\classDiagrams\dependencies\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Class Diagrams → Dependencies%%"></panel>
-                  <panel src="/website-base\book\oopDesign\associations\composition\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Associations → Composition%%"></panel>
-                  <panel src="/website-base\book\oopDesign\associations\aggregation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Associations → Aggregation%%"></panel>
+                  <panel src="/website-base\book\oop\associations\composition\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Associations → Composition%%"></panel>
+                  <panel src="/website-base\book\oop\associations\aggregation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%OOP → Associations → Aggregation%%"></panel>
                 </p>
               </div>
               <p></p>
@@ -767,44 +767,18 @@
                       <tip-box>
                         <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code>                          is a sub folder of <code>Folder</code> object <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
                       </tip-box>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-          </panel>
-          <panel type="default" expanded="" no-close="">
-            <span slot="header" class="panel-title"><span><code>W6.4b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement composition</span> <span class="label label-default"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="implementing-composition">Implementing Composition</h4>
-                  </div>
-                  <div id="main">
-                    <div>
+                      <h5 id="implementing-composition"><big>Implementing composition</big></h5>
                       <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients
                         of the ‘whole’ object.</p>
                       <tip-box>
-                        <p>Example:</p>
-                        <img src="/website-base/book/oopImplementation/composition/images/carEngine.png" height="40">
-                        <p></p>
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the code below, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
                         <table>
                           <tr>
                           
                             <td valign="top">
                               <p>Java ⤵️</p>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
-    <span class="hljs-keyword">private</span> Engine engine;
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
+    <span class="hljs-keyword">private</span> Subject subject;
   ...
 }
 </code></pre>
@@ -815,10 +789,10 @@
                           
                             <td valign="top">
                               <p>Python ⤵️</p>
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.__engine = Engine()
+    self.__subject = Subject()
 </code></pre>
                               <p></p>
                             </td>
@@ -829,12 +803,6 @@
                     <div></div>
                   </div>
                 </div>
-              </div>
-              <hr style="border-top: dashed 1px; border-color:grey">
-              <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
-              <div>
-                <p>The exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass">addressbook-level2: LO-ImplementClasses</a>] also covers composition (note the
-                  ◆ in the class diagram).</p>
               </div>
           </panel>
       </panel>
@@ -868,49 +836,20 @@
                       <tip-box>
                         <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>SportsClub</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
                       </tip-box>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-          </panel>
-          <panel type="default" expanded="" no-close="">
-            <span slot="header" class="panel-title"><span><code>W6.5b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement aggregation</span> <span class="label label-default"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <div>
-                <div>
-                  <p>
-                    <panel src="/website-base\book\oopDesign\associations\aggregation\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → OOP → Associations → Aggregation%%"></panel>
-                  </p>
-                </div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="implementing-aggregation">Implementing Aggregation</h4>
-                  </div>
-                  <div id="main">
-                    <div>
+                      <h5 id="implementing-aggregation"><strong>Implementing aggregation</strong></h5>
                       <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
-                        <img src="/website-base/book/oopImplementation/aggregation/images/carPerson.png" height="40">
+                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code>                          a object who is the leader of the team.</p>
                         <table>
                           <tr>
                           
                             <td valign="top">
                               <p>Java ⤵️</p>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
-    Person driver;
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
+    Person leader;
     ...
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(Person p)</span> </span>{
-        driver = p;
+        leader = p;
     }
 }
 </code></pre>
@@ -921,13 +860,13 @@
                           
                             <td valign="top">
                               <p>Python ⤵️</p>
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.__driver = <span class="hljs-keyword">None</span>
+    self.__leader = <span class="hljs-keyword">None</span>
     
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, person)</span>:</span>
-    self.__driver = person
+    self.__leader = person
 </code></pre>
                               <p></p>
                             </td>
@@ -2332,8 +2271,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             <tip-box>
               <p>Here are some sample diagrams to use as references:<br>
                 <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="500">
-                <img src="/website-base/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400"><br>
-                <img src="/website-base/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="500"></p>
+                <img src="/website-base/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400"><br></p>
             </tip-box>
           </td>
           <tr></tr>

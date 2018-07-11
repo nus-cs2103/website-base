@@ -1009,6 +1009,25 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                       <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that
                         data is related to the association rather than specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code>                        class, to store such information.</p>
                     </tip-box>
+                    <h5 id="implementing-association-classes"><big>Implementing association classes</big></h5>
+                    <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another
+                        <code>Person</code> who is the buyer.</p>
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
+    
+    <span class="hljs-comment">//all fields are compulsory</span>
+    Person seller;
+    Person buyer;
+    Date date;
+    String receiptNumber;
+    
+    Marriage (Person seller, Person buyer, Date date, String receiptNumber){
+        <span class="hljs-comment">//set fields</span>
+    }
+}
+</code></pre>
+                    </tip-box>
                   </div>
                   <div></div>
                 </div>
@@ -1018,79 +1037,6 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
             <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
             <div>
               <p>Give more examples of association classes, preferably related to your project.</p>
-            </div>
-        </panel>
-        <panel type="success" expanded="" no-close="">
-          <span slot="header" class="panel-title"><span><code>W8.3b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can implement association classes</span> <span class="label label-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <div>
-              <div>
-                <p>
-                  <panel src="/website-base\book\oopDesign\associations\associationClasses\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Associations → Association Classes%%"></panel>
-                </p>
-              </div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="implementing-association-classes">Implementing Association Classes</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
-                    <tip-box>
-                      <p>Example:</p>
-                      <img src="/website-base/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
-                      <p></p>
-                      <p>At implementation level, an association class is most likely implemented as follows.</p>
-                      <img src="/website-base/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
-                      <p></p>
-                      <p>
-                        <panel type="seamless" src="/website-base\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%"></panel>
-                      </p>
-                    </tip-box>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header=":muscle: Exercises" expandable="">
-                        <div>
-                          <panel header=":lock::key: Which are suitable as an Association Class?">
-                            <question>
-                              <p>Which one of these is the suitable as an Association Class?</p>
-                              <img src="/website-base/book/oopImplementation/associationClasses/images/exerciseDiagram.png" height="330">
-                              <p></p>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(a)(b)<s>(c)</s>(d)</p>
-                                <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would
-                                  be suitable as an association class.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
-            <div>
-              <p><strong>Acceptable</strong>: Evidence of implementing an association class.</p>
-              <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass">AddressBook - Level 2: LO-AssociationClass</a>]
-                and create a PR against [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2">AddressBook - Level 2</a>]</p>
             </div>
         </panel>
       </panel>

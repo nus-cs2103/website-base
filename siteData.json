@@ -1001,7 +1001,7 @@
     },
     {
       "headings": {
-        "oop-concepts": "OOP - Concepts",
+        "object-oriented-programming": "Object-Oriented Programming",
         "introduction": "Introduction",
         "objects": "Objects",
         "classes": "Classes",
@@ -1010,19 +1010,10 @@
         "polymorphism": "Polymorphism",
         "more": "More"
       },
-      "title": "Text Book Chapter : OOP - Concepts",
+      "title": "Text Book Chapter : Object-Oriented Programming",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
-      "src": "se-book-adapted/chapters/oopDesign.md"
-    },
-    {
-      "headings": {
-        "oop-implementation": "OOP - Implementation"
-      },
-      "title": "Text Book Chapter : OOP - Implementation",
-      "footer": "footer.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "src": "se-book-adapted/chapters/oopImplementation.md"
+      "src": "se-book-adapted/chapters/oop.md"
     },
     {
       "headings": {

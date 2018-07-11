@@ -2091,3 +2091,8 @@ Missing reference in C:\repos\nus-cs2103\website-base\book\oopDesign\classes\bas
 2018-07-10T11:51:02.452Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-10T11:51:02.452Z - info: Press CTRL+C to stop ...
 2018-07-10T11:51:42.382Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\se-book-adapted\config.njk
+2018-07-10T11:54:19.044Z - info: Pages built
+2018-07-10T11:54:19.108Z - info: Site data built
+2018-07-10T11:54:19.108Z - info: Build success!
+2018-07-10T11:54:19.108Z - info: Generate Site durationMs=52984
+2018-07-10T12:00:31.311Z - info: Deployed!

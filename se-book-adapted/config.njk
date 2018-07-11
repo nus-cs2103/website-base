@@ -16,9 +16,9 @@
       }
     ]
   },
-  oopDesign : {
-    name: "oopDesign",
-    heading: "OOP - Concepts",
+  oop : {
+    name: "oop",
+    heading: "Object-Oriented Programming",
     level_one_topics: [
       {
         name: "introduction",
@@ -85,8 +85,8 @@
               {name: "overloading", heading: "Overloading", priority: "0:2"},
               {name: "interfaces", heading: "Interfaces", priority: "0:3"},
               {name: "abstractClasses", heading: "Abstract Classes", priority: "0:3"},
-              {name: "dynamicAndStaticBinding", heading: "Dynamic and Static Binding", priority: "0:3"},
-              {name: "substitutability", heading: "Substitutability", priority: "0:3"}
+              {name: "substitutability", heading: "Substitutability", priority: "0:3"},
+              {name: "dynamicAndStaticBinding", heading: "Dynamic and Static Binding", priority: "0:3"}
             ]
           }
         ]
@@ -97,8 +97,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "introduction", heading: "Introduction", priority: "0:3"},
-              {name: "mechanism", heading: "Mechanism", priority: "0:3"}
+              {name: "what", heading: "What", priority: "0:3"},
+              {name: "how", heading: "How", priority: "0:3"}
             ]
           }
         ]
@@ -111,35 +111,6 @@
             level_three_topics: [
               {name: "miscellaneous", heading: "Miscellaneous", priority: "3"},
               {name: "review", heading: "Review", priority: "4"}
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  oopImplementation : {
-    name: "oopImplementation",
-    heading: "OOP - Implementation",
-    level_one_topics: [
-      {
-        name: "",
-        level_two_topics: [
-          {
-            name: "",
-            level_three_topics: [
-              {name: "classes", heading: "Implementing Classes", priority: "0:1"},
-              {name: "classLevelMembers", heading: "Implementing Class-Level Members", priority: "0:2"},
-              {name: "associations", heading: "Implementing Associations", priority: "0:3"},
-              {name: "dependencies", heading: "Implementing Dependencies", priority: "0:3"},
-              {name: "composition", heading: "Implementing Composition", priority: "0:3"},
-              {name: "aggregation", heading: "Implementing Aggregation", priority: "0:3"},
-              {name: "associationClasses", heading: "Implementing Association Classes", priority: "4"},
-              {name: "inheritance", heading: "Implementing Inheritance", priority: "0:1"},
-              {name: "overriding", heading: "Implementing Overriding", priority: "0:2"},
-              {name: "overloading", heading: "Implementing Overloading", priority: "0:2"},
-              {name: "interfaces", heading: "Implementing Interfaces", priority: "0:3"},
-              {name: "abstractClasses", heading: "Implementing Abstract Classes", priority: "0:3"},
-              {name: "polymorphism", heading: "Implementing Polymorphism", priority: "0:3"}
             ]
           }
         ]
@@ -1493,7 +1464,7 @@
           {
             name: "associations",
             level_three_topics: [
-              {name: "basic", heading: "Basic", priority: "1"},
+              {name: "what", heading: "What", priority: "1"},
               {name: "navigability", heading: "Navigability", priority: "2"},
               {name: "roles", heading: "Roles", priority: "3"},
               {name: "labels", heading: "Labels", priority: "2"},
@@ -1764,7 +1735,7 @@
 
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
-  {heading: "Object-Oriented Programming (with UML)", chapters: [chapters.oopDesign, chapters.oopImplementation]},
+  {heading: "Programming Paradigms", chapters: [chapters.oop]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
   {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
