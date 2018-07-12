@@ -1196,6 +1196,7 @@
         "class-inheritance": "Class Inheritance",
         "interfaces": "Interfaces",
         "abstract-classes": "Abstract Classes",
+        "combine": "Combine",
         "sequence-diagrams": "Sequence Diagrams",
         "object-diagrams": "Object Diagrams",
         "activity-diagrams": "Activity Diagrams",

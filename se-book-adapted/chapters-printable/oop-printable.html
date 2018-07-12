@@ -88,7 +88,7 @@
       <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A real world scenario viewed as a network of interacting objects:</p>
       <p>You are asked to find out the average age of a group of people Adam, Beth, Charlie, and Daisy. You take a piece of paper and pen, go to each person, ask for their age, and note it down. After collecting the age of all four, you enter it into a calculator
         to find the total. And then, use the same calculator to divide the total by four, to get the average age. This can be viewed as the objects <code>You</code>, <code>Pen</code>, <code>Paper</code>, <code>Calculator</code>, <code>Adam</code>, <code>Beth</code>,
-        <code>Charlie</code>, and <code>Daisy</code> interacting to accomplish to achieve the end result of calculating the average age of the four persons. These objects can be considered as connected in a certain network of certain structure.</p>
+        <code>Charlie</code>, and <code>Daisy</code> interacting to accomplish the end result of calculating the average age of the four persons. These objects can be considered as connected in a certain network of certain structure.</p>
     </tip-box>
     <p><strong>OOP solutions try to create a similar object network inside the computer’s memory</strong> – a sort of a virtual simulation of the corresponding real world scenario – <strong>so that a similar result can be achieved programmatically.</strong></p>
 
@@ -224,7 +224,7 @@
   <h4 id="objects-as-abstractions">Objects as Abstractions <small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
   <div>
-    <p>The concept of <strong><em>Objects</em> in OOP is an abstraction mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details data formats and the method implementation
+    <p>The concept of <strong><em>Objects</em> in OOP is an abstraction mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details of data formats and the method implementation
       details and work at the level of objects.</p>
     <tip-box>
       <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> We can deal with a <code>Person</code> object that represents the person Adam and query the object for Adam's age instead of dealing with details such as Adam’s date of birth (DoB),
@@ -279,8 +279,6 @@
         <p></p>
       </tab>
     </tabs>
-    <hr>
-    <tip-box></tip-box>
   </div>
   <h4 id="class-level-members">Class Level Members <small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
@@ -324,7 +322,6 @@
         <p></p>
       </tab>
     </tabs>
-    <hr>
   </div>
   <h4 id="enumerations">Enumerations <small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
@@ -440,7 +437,6 @@
           <p></p>
         </tab>
       </tabs>
-      <hr>
     </tip-box>
     <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
     <tip-box>
@@ -845,7 +841,6 @@
                   </p>
                   <div><span>❗️ Python does not have direct support for method overloading.</span></div>
                 </tabs>
-                <hr>
                 <p></p>
               </div>
               <div></div>
@@ -961,7 +956,6 @@ Ben is a student
         </div>
       </tab>
     </tabs>
-    <hr>
   </div>
   <h4 id="overloading-2">Overloading <small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
   </h4>
@@ -1053,7 +1047,6 @@ Ben is a student
       </p>
       <div><span>❗️ Python does not have direct support for method overloading.</span></div>
     </tabs>
-    <hr>
     <p></p>
   </div>
   <h4 id="interfaces">Interfaces <small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
@@ -1337,7 +1330,6 @@ AcademicStaff academicStaff = staff; // Not OK
                             </p>
                             <div><span>❗️ Python does not have direct support for method overloading.</span></div>
                           </tabs>
-                          <hr>
                           <p></p>
                         </div>
                         <div></div>
@@ -1453,9 +1445,33 @@ Ben is a student
                   </div>
                 </tab>
               </tabs>
-              <hr>
             </div>
-            <div></div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which methods override?">
+                      <question>
+                        <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
+                        <img src="/website-base/book/oop/inheritance/overriding/images/overriding.png" height="220">
+                        <p></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>d</p>
+                          <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1581,7 +1597,6 @@ Ben is a student
                 </p>
                 <div><span>❗️ Python does not have direct support for method overloading.</span></div>
               </tabs>
-              <hr>
               <p></p>
             </div>
             <div></div>
@@ -1830,7 +1845,7 @@ void calculateGrade (String matric) { ... }
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Wed, 11 Jul 2018 11:54:44 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
 </footer>
 </div>
 </body>

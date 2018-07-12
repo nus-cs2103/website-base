@@ -9525,3 +9525,8 @@ Missing reference in C:\repos\nus-cs2103\website-base\se-book-adapted\chapters-p
 2018-07-11T11:30:54.484Z - info: Generate Site durationMs=90438
 2018-07-11T11:30:55.045Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-11T11:30:55.046Z - info: Press CTRL+C to stop ...
+2018-07-11T11:55:49.098Z - info: Pages built
+2018-07-11T11:55:50.724Z - info: Site data built
+2018-07-11T11:55:50.724Z - info: Build success!
+2018-07-11T11:55:50.724Z - info: Generate Site durationMs=252960
+2018-07-11T11:57:06.541Z - info: Deployed!

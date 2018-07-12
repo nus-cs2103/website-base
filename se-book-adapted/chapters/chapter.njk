@@ -10,11 +10,13 @@ siteNav: se-book-adapted-sitenav.md
 {% set level_location =  location + "/" + topic.name %}
 {% set title =  "#### " + topic.heading %}
 <panel type="seamless" header="{{ title }}" expanded>
+  <div class="indented">
   <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
   <md>%%{{ show_priority(topic.priority) |safe }}%%</md></button>
   <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><md>%%<include src="{{ level_location }}/text.md#outcomes" inline />%%</md></button><p/>
   <include src="{{ level_location }}/text.md#body" />
   <include src="{{ level_location }}/text.md#extras" />
+  </div>
 </panel>
 {% endmacro %}
 

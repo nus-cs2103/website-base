@@ -200,7 +200,6 @@
                         <p></p>
                       </tab>
                     </tabs>
-                    <hr>
                   </div>
                   <div>
                     <div>
@@ -337,7 +336,6 @@
                       </p>
                       <div><span>❗️ Python does not have direct support for method overloading.</span></div>
                     </tabs>
-                    <hr>
                     <p></p>
                   </div>
                   <div></div>
@@ -492,7 +490,6 @@
                                   </p>
                                   <div><span>❗️ Python does not have direct support for method overloading.</span></div>
                                 </tabs>
-                                <hr>
                                 <p></p>
                               </div>
                               <div></div>
@@ -608,9 +605,33 @@ Ben is a student
                         </div>
                       </tab>
                     </tabs>
-                    <hr>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Which methods override?">
+                            <question>
+                              <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
+                              <img src="/website-base/book/oop/inheritance/overriding/images/overriding.png" height="220">
+                              <p></p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>d</p>
+                                <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -763,6 +784,28 @@ Ben is a student
                         <ul>
                           <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></li>
                         </ul>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":muscle: Exercises" expandable="">
+                        <div>
+                          <panel header=":lock::key: Statements about abstract classes">
+                            <question>
+                              <p>Choose the correct statements about Java abstract classes and
+                                <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A concrete class can contain an abstract method.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An abstract class can contain concrete methods.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An abstract class need not contain any concrete methods.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An abstract class cannot be instantiated.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(b)(c)(d)</p>
+                                <p>Explanation: A concrete class cannot contain even a single abstract method.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
                       </panel>
                     </div>
                   </div>
