@@ -1,4 +1,4 @@
-<markdown>
+<navigation>
 * [Preliminaries](#admin-preliminaries-anchor)
 * [Learning Outcomes](#admin-learning-outcomes-anchor)
 * [Lectures](#admin-lectures-anchor)
@@ -63,4 +63,4 @@
 * [Appendix D: How to get help in {{ module }}/T](#admin-appendixD-help)
 * [Appendix E: Using GitHub Project Hosting](#admin-appendixE-github)
 * [Appendix F: Handling teamwork issues](#admin-appendixF-teamworkIssues)
-</markdown>
+</navigation>

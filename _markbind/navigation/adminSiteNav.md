@@ -1,4 +1,4 @@
-<markdown>
+<navigation>
 * [See all in one page (slow!)](index-flat.html)
 * [Preliminaries](preliminaries.html)
 * [Learning Outcomes](learningOutcomes.html)
@@ -38,4 +38,4 @@
 * [Appendix D: How to get help in {{ module }}/T](appendixD-help.html)
 * [Appendix E: Using GitHub Project Hosting](appendixE-gitHub.html)
 * [Appendix F: Handling teamwork issues](appendixF-teamworkIssues.html)
-</markdown>
+</navigation>
