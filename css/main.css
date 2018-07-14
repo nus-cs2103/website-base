@@ -10,7 +10,10 @@
 }
 
 mark {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.38);
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .important {
