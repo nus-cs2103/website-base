@@ -22,10 +22,11 @@
 
 <span id="icon_example">{{glyphicon_gift | safe}}</span>
 <span id="icon_embedding">{{glyphicon_log_in | safe}}</span>
+<span id="icon_info">{{fas_info_circle | safe}}</span>
+<span id="icon_individual">{{fas_user | safe}}</span>
 <span id="icon_important_big_red"><font color="red"><big>{{ glyphicon_exclamation_sign |safe }}</big></font></span>
 <span id="icon_prereq">{{glyphicon_education | safe}}</span>
 <span id="icon_video">{{glyphicon_facetime_video | safe}}</span>
-<span id="icon_individual">{{fas_user | safe}}</span>
 <span id="icon_team">{{fas_users | safe}}</span>
 
 

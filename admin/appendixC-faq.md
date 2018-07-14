@@ -9,7 +9,10 @@
 
 ### Where is everything? 
 
-The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ]({{baseUrl}}/admin/index.html) and the [**Textbook** page]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title. In sum, the Schedule page organizes the content chronologically while the other two pages has some of the same content but organized by topic.
+<p class="lead">The Schedule page present all you need to know in chronological order while the other pages have some of the same content organized by topic.
+</p>
+
+The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ]({{baseUrl}}/admin/index.html) and the [**Textbook** page]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title. 
 
 </div>
 
@@ -47,7 +50,7 @@ In {{ module }}/T, A+ is not given simply based on the final score. To get an A+
 * be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
 * be considered helpful by peers (based on peer evaluations and tutor observations)
   * In particular, you are encouraged to be active on the slack channel and our [forum]({{module_org}}/forum/issues) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
-  * Whenever you can, go out of your way to review PRs created by other class members (as part of weekly LOs), even if they are not in your team.
+  * Whenever you can, go out of your way to review PRs created by other team members.
 
 </div>
 

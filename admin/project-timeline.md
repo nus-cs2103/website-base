@@ -9,7 +9,7 @@ To expedite your project implementation, you will be given some sample code (Add
 
 `AB4` is the version you will use as the starting point for your final project. Some of the work you do in `AB1` to `AB3` can be ported over to `AB4` and can be used to claim credit in the final project. 
 
-Given below is the high-level time line of the project.
+Given below is the high-level timeline of the project.
 
 Week  | Stage     | Activities
 ------|-----------|-----------
@@ -25,7 +25,7 @@ Week  | Stage     | Activities
 **12**|mid-v1.4 | <span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span>
 **13**|v1.4     | <span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span>
 
-The sub-sections further down explain each project deliverable in detail and states some recommended progress for you to achieve at that point of the project.
+More details of each stage is provided elsewhere is this website.
 
 </div>
 {% endmacro %}

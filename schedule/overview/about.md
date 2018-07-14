@@ -2,25 +2,15 @@
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-<tip-box type="important"> 
+{{ icon_important_big_red }} This _Schedule Page_ is your main source of information for {{ module }}/T. You will need to refer to it weekly. 
 
-This _Schedule Page_ is your main source of information for {{ module }}/T. You will need to refer to it weekly. **More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress**; don't print/save content related to future weeks marked as :construction:.
+More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
-</tip-box>
 
-<tip-box type="tip"> 
+:bulb: **For those who don't like the nested-info style used by this website**, we have also provided flat all-in-one versions of the textbook and the admin info.
 
-**If you don't like the click-to-see-more style used by this website**, you can use an all-in-one version of the textbook in the [printable version]({{baseUrl}}/book/common/print.html) page and a similar version of admin info in the [Admin Page]({{baseUrl}}/admin/index.html).
 
-**If you don't like the Web version at all**, a partial solution is to use the pdf version (available on IVLE) of the textbook used in the previous semesters. Caution: That file has not been updated since AY1617 and is slightly behind the Web version.
-
-</tip-box>
-
-<tip-box> 
-
-:information_source: This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [here]({{module_org}}/website/issues).
-
-</tip-box>
+{{ icon_info }} This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [here]({{module_org}}/website/issues).
 
 <panel header="Using the textbook" expanded>
  <include src="../../book/about/usage.md#browsers" />

@@ -25,14 +25,14 @@ Your project should comply with the following constraints.
   %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%
 
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/> 
-  %%**Reason:** For you to practice OOP that you learned in the course.%%  
+  %%**Reason:** For you to practice using OOP in a non-trivial project.%%  
     
-* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. %%**Reason:** Using a DBMS to store data will reduce the room to handle OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module }} module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
+* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module }} module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
 
 * **Constraint-Platform-Independent**: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
   %%**Reason:** Peer testers should be able to use any of these platforms.%%
 
-* **Constraint-No-Installer**: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.  
+* **Constraint-No-Installer**: The software should work without requiring an installer. Having an optional installer is OK as long as the portable (non-installed) version has all the critical functionality.  
   %%**Reason:** We do not want to install all your projects on our testing machines when we test them for grading.%%
 
 * **Constraint-External-Software**: The use of third-party frameworks/libraries is allowed but only if they,
@@ -40,7 +40,7 @@ Your project should comply with the following constraints.
     *   do not require any installation by the user of your software.
     *   do not violate other constraints.
 
-  and is subjected to prior approval by us.<br> 
+  and is subjected to prior approval by the teaching team.<br> 
   %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
   Please ==post in the [forum]({{module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>

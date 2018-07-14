@@ -39,18 +39,13 @@ For either direction, you need to define a target user profile and a value propo
 
 * **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module }} instructors.%%<br><br>
  :exclamation: Be careful not to contradict given project constraints when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.<br><br>
-  **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module }} instructors only, such as the ability to navigate to a student's project on GitHub%%
- :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
-
-<div class="indented-level2">
-<panel header="Why the need to narrow down the user profile?" minimized> 
- 
-* It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
-* It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.   
- 
-</panel>
-</div>
-<br/>
+  **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module }} instructors only, such as the ability to navigate to a student's project on GitHub%% :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
+  
+  <panel header="Why the need to narrow down the user profile?" minimized>
+  
+  * It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
+  * It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
+  </panel>
 
 * **Value proposition**: Define a clear _value proposition_ %%(what problem does the product solve? how does it make the the user's life easier?)%% that matches the target user profile.
 
@@ -61,10 +56,10 @@ For either direction, you need to define a target user profile and a value propo
 {{ icon_individual }} **Individually**, each student is expected to,
 
 1. **Contribute ==one enhancement== to the product**<br>
-   * Each enhancement should be stand-alone but,
-     * it should be end-user visible and end-user testable.
-     * should fit with the rest of the software (and the target user profile),
-     * and should have the consent of the team members.
+   Each enhancement should be stand-alone but,
+   * it should be end-user visible and end-user testable.
+   * should fit with the rest of the software (and the target user profile),
+   * and should have the consent of the team members.
   
    <panel header="{{ icon_example }} Examples of suitable enhancements" minimized>
    
@@ -84,7 +79,7 @@ For either direction, you need to define a target user profile and a value propo
    </panel><p/>
 
    In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project.
-   * These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on thm enhancement.
+   These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on minor enhancements.
    
    <panel header="{{ icon_example }} Examples of minor enhancements" minimized>
    
@@ -103,8 +98,8 @@ For either direction, you need to define a target user profile and a value propo
  
 1. **Recommended: contribute to all aspects of the project**: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.<br>
   In particular, ==you are required to divide work based on features rather than components==:
-   * By the end of this project (i.e. by v1.4) each team member is expected to have implemented an enhancement/feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
-   * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%&nbsp;(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
+   * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented an enhancement end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
+   * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
 
 1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
 

@@ -58,6 +58,9 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 
 
 In particular, you may want to **have a look at the new Java 8 features** such as `streams`, `lambdas`, `Optionals`, that may not have been covered in previous Java modules.
+
+CS2103 students: ==This module assumes a reasonable prior knowledge of Java and OOP== because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering & Object-Oriented Programming) instead.
+ 
 </panel>
 
 <!-- --------------------------------------------------------------------------------------------- -->
