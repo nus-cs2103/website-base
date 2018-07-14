@@ -1,5 +1,6 @@
 {
   "baseUrl": "/website-base",
+  "titlePrefix": "CS2103/T Website",
   "ignore": [
     "_site/*",
     ".idea/*",
@@ -32,6 +33,5 @@
       "searchable": "no"
     }
   ],
-  "titlePrefix": "CS2103/T Website",
   "headingIndexingLevel": 4
 }

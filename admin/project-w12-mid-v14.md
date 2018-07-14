@@ -22,7 +22,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 </modal>
 
 <div class="indented-level2">
-<panel src="project-assessment.md#code-quality-tips" header="%%Admin {{ icon_embedding }} Project Asessement → Code Quality Tips%%" minimized />
+<panel src="project-assessment.md#code-quality-tips" header="Admin {{ icon_embedding }} Project Asessement → Code Quality Tips" minimized />
 </div>
 
 **<big>Documentation:</big>**
@@ -33,7 +33,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 
 
 <div class="indented-level2">
-<panel src="project-deliverables.md#project-deliverables-ppp" header="%%Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page%%" minimized />
+<panel src="project-deliverables.md#project-deliverables-ppp" header="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" minimized />
 </div>
 
 

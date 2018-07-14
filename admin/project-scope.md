@@ -8,7 +8,7 @@ In general, each team is expected to take one of these two directions:
 
 * **[Direction 1]  _Optimize_** AddressBook for a more specific target user group:
    
-  <panel header="%%{{ icon_example }} Examples for the _optimize_ direction%%" minimized> 
+  <panel header="{{ icon_example }} Examples for the _optimize_ direction" minimized> 
      
   An AddressBook,
      * for users in a specific profession %%&nbsp;e.g. doctors, salesmen, teachers, etc.%%
@@ -21,7 +21,7 @@ In general, each team is expected to take one of these two directions:
 * **[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.<br>
   :exclamation: This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.
    
-  <panel header="%%{{ icon_example }} Examples for the _morph_ direction%%" minimized> 
+  <panel header="{{ icon_example }} Examples for the _morph_ direction" minimized> 
      
   An app to manage, 
   * Bookmarks of websites
@@ -43,7 +43,7 @@ For either direction, you need to define a target user profile and a value propo
  :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
 
 <div class="indented-level2">
-<panel header="%%Why the need to narrow down the user profile?%%" minimized> 
+<panel header="Why the need to narrow down the user profile?" minimized> 
  
 * It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
 * It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.   
@@ -66,7 +66,7 @@ For either direction, you need to define a target user profile and a value propo
      * should fit with the rest of the software (and the target user profile),
      * and should have the consent of the team members.
   
-   <panel header="%%{{ icon_example }} Examples of suitable enhancements%%" minimized>
+   <panel header="{{ icon_example }} Examples of suitable enhancements" minimized>
    
    1. Add a new feature
    1. Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
@@ -75,7 +75,7 @@ For either direction, you need to define a target user profile and a value propo
    
    </panel><p/>
    
-   <panel header="%%{{ icon_example }} Enhancements vs Grade: Examples%%" minimized> 
+   <panel header="{{ icon_example }} Enhancements vs Grade: Examples" minimized> 
    
    Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.
    * Example 1 (Expected grade: `A`) : [Add support for undo/redo](https://github.com/se-edu/addressbook-level4/pull/610/files)
@@ -86,7 +86,7 @@ For either direction, you need to define a target user profile and a value propo
    In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project.
    * These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on thm enhancement.
    
-   <panel header="%%{{ icon_example }} Examples of minor enhancements%%" minimized>
+   <panel header="{{ icon_example }} Examples of minor enhancements" minimized>
    
    Here is a non-exhaustive list of minor enhancements:
    
@@ -108,7 +108,7 @@ For either direction, you need to define a target user profile and a value propo
 
 1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
 
-   <panel header="%%{{ icon_example }} Examples of team-tasks%%" minimized>
+   <panel header="{{ icon_example }} Examples of team-tasks" minimized>
    
    <span id="example-team-tasks">
    
@@ -134,7 +134,7 @@ For either direction, you need to define a target user profile and a value propo
 
    Roles indicate aspects you are in charge of and responsible for. %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%  
      
-   <panel header="%%{{ icon_example }} Recommended roles and responsibilities%%" minimized>
+   <panel header="{{ icon_example }} Recommended roles and responsibilities" minimized>
    
    This is a non-exhaustive list; you may define additional roles.
    

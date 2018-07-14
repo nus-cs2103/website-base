@@ -20,6 +20,10 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 {{ icon_individual }} Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
 {{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version git tagged `v1.2` is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
 
+<modal large title="Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
+  <include src="appendixE-gitHub.md#project-schedule-tracking"/>
+</modal>
+
   
 ### v1.2 Project Management
 

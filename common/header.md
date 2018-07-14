@@ -32,7 +32,7 @@
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right ></searchbar>
     </form>
   </li>
 </navbar>

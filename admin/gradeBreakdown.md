@@ -6,9 +6,9 @@
 <img src="{{baseUrl}}/admin/images/gradeBreakdown.png" width="600"/>
 <p/>
 
-<panel src="participation.md#main" header="%%Admin {{ icon_embedding }} Participation Marks%%" minimized  />
-<panel src="exams.md#main" header="%%Admin {{ icon_embedding }} Exams%%" minimized  />
-<panel src="project-assessment.md#main" header="%%Admin {{ icon_embedding }} Project Assessment%%" minimized  />
+<panel src="participation.md#main" header="Admin {{ icon_embedding }} Participation Marks" minimized  />
+<panel src="exams.md#main" header="Admin {{ icon_embedding }} Exams" minimized  />
+<panel src="project-assessment.md#main" header="Admin {{ icon_embedding }} Project Assessment" minimized  />
 
 </div>
 {% endmacro %}

@@ -47,7 +47,7 @@ This is a good time to analyze requirements with a view to conceptualizing the n
 </modal>
 
 <div class="indented-level3">
-  <panel header="%%{{ icon_example }} User Story examples (from a different product)%%">
+  <panel header="{{ icon_example }} User Story examples (from a different product)" minimized>
   
   `As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`  
   `As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`  
@@ -90,7 +90,7 @@ This is a good time to analyze requirements with a view to conceptualizing the n
   *  [Optional]<trigger trigger="click" for="modal:v10-prodsurveys">**Product survey**</trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view). 
 
 <modal large title="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
-  <include src="../book/specifyingRequirements/useCases/index.md#main"/>
+  <include src="../book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat.md" boilerplate />
 </modal>
 
 <modal large title="Textbook {{ icon_embedding }}" id="modal:v10-nfr">
