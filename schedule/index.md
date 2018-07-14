@@ -612,12 +612,10 @@ footer: footer.md
 
 # Full Schedule of Module Activities
 
-<panel header="### <small>**{{glyphicon_calendar}} Tutorial Timetable**</small>" no-close>
-  <include src="overview/tutorialSchedule.md"/>
-</panel>
-<panel src="overview/index.md" header=":exclamation: **Info relevant to all weeks**" />
-<p/>
+<panel src="overview/index.md" header=":exclamation: **Info relevant to all weeks**"  />
+<panel src="overview/tutorialSchedule.md" header="**{{glyphicon_calendar}} Tutorial Timetable**" />
 
+<p/>
 
 {% for week in weeks %}
 {% set current_week_num = current_weeks[0] | int %}

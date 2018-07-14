@@ -3,6 +3,8 @@
 
 # {{ module }}/T at a Glance
 
+<img src="{{baseUrl}}/images/growingPlant.png" width="700">
+
 {{ module }}/T is an introductory Software Engineering module. It covers basic SE theory and practices that a student needs to know before doing SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>.
 
 On the theory side, this module is supported by a customized online text book [_Software Engineering for Self-Directed Learners_](http://127.0.0.1:8080/website-base/se-book-adapted/index.html), integrated into this module website.

@@ -18,6 +18,12 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
+<div id="admin-usingThisWebsite-anchor"></div>
+<div id="admin-usingThisWebsite">
+  <include src="usingThisWebsite.md#main" />
+</div>
+
+
 <div id="admin-learning-outcomes-anchor"></div>
 <div id="admin-learning-outcomes">
   <include src="learningOutcomes.md#main" />
