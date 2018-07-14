@@ -16,10 +16,10 @@ Overview: <include src="project-timeline.md#v11-overview" inline />
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
-:busts_in_silhouette: Team org/repo set up | as stated
-:busts_in_silhouette: Project plan formalized | as stated
-:bust_in_silhouette: Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
-:busts_in_silhouette: All project documents updated as required | updated docs are merged to the master branch
+{{ icon_team }} Team org/repo set up | as stated
+{{ icon_team }} Project plan formalized | as stated
+{{ icon_individual }} Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
+{{ icon_team }} All project documents updated as required | updated docs are merged to the master branch
 
 :exclamation: Reminder: Reaching individual and team milestones are considered for grading the _project management_ component of your project grade (expand the panel below for more info).
 
@@ -29,7 +29,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.1 Project Management
 
-* :busts_in_silhouette: Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
+* {{ icon_team }} Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
 
 * When all changes intended for v1.1 is merged to the master branch, use `git tag` feature to tag the current version as `v1.1`
 

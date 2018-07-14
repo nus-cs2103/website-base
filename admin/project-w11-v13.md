@@ -16,11 +16,11 @@ Overview: <include src="project-timeline.md#v13-overview" inline />
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
-:bust_in_silhouette: Contributed code to v1.3 | code merged
-:bust_in_silhouette: Code collated | as stated
-:busts_in_silhouette: v1.3 jar file released properly on GitHub | as stated
-:busts_in_silhouette: v1.3 milestone properly wrapped up on GitHub | as stated
-:busts_in_silhouette: Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
+{{ icon_individual }} Contributed code to v1.3 | code merged
+{{ icon_individual }} Code collated | as stated
+{{ icon_team }} v1.3 jar file released properly on GitHub | as stated
+{{ icon_team }} v1.3 milestone properly wrapped up on GitHub | as stated
+{{ icon_team }} Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
 
 ### v1.3 Project Management
 

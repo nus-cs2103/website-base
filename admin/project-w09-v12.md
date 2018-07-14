@@ -16,18 +16,18 @@ Overview: <include src="project-timeline.md#v12-overview" inline />
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
-:bust_in_silhouette: Contributed code to the product as described in mid-v1.2 progress guide | some code merged
-:bust_in_silhouette: Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
-:busts_in_silhouette: v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version git tagged `v1.2` is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
+{{ icon_individual }} Contributed code to the product as described in mid-v1.2 progress guide | some code merged
+{{ icon_individual }} Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
+{{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version git tagged `v1.2` is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
 
   
 ### v1.2 Project Management
 
-* :busts_in_silhouette: Manage, and close, the v1.2 milestone using GitHub.
+* {{ icon_team }} Manage, and close, the v1.2 milestone using GitHub.
 
 ### v1.2 Product
 
-* :bust_in_silhouette: Merge some code into master (in the team repo).  
+* {{ icon_individual }} Merge some code into master (in the team repo).  
 
 <tip-box> 
 

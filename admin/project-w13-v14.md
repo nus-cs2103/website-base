@@ -16,13 +16,13 @@ Overview: <include src="project-timeline.md#v14-overview" inline />
 
 Team/Individual Item | Name format | Upload to
 -------------------- | ----------- | ---------
-:busts_in_silhouette: Source code |  tag as `v1.4` | GitHub
-:busts_in_silhouette: Jar file |  `[team][product name].jar`<br>%%e.g. [T09-B1][ContactsPlus].jar%% | IVLE
-:busts_in_silhouette: User Guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%% | IVLE
-:busts_in_silhouette: Developer Guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
-:busts_in_silhouette: Product Website | `README.adoc`, `Ui.png`, `AboutUs.adoc` | GitHub
-:bust_in_silhouette: Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
-:bust_in_silhouette: Collated files | | GitHub
+{{ icon_team }} Source code |  tag as `v1.4` | GitHub
+{{ icon_team }} Jar file |  `[team][product name].jar`<br>%%e.g. [T09-B1][ContactsPlus].jar%% | IVLE
+{{ icon_team }} User Guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%% | IVLE
+{{ icon_team }} Developer Guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
+{{ icon_team }} Product Website | `README.adoc`, `Ui.png`, `AboutUs.adoc` | GitHub
+{{ icon_individual }} Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
+{{ icon_individual }} Collated files | | GitHub
 
 **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.
 

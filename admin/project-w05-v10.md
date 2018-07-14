@@ -14,14 +14,14 @@ Overview: <include src="project-timeline.md#v10-overview" inline />
 
 **v1.0 Summary of Milestone**
 
-Here is a summary of items you need to deliver to _reach_ v1.1 individual (:bust_in_silhouette:) and team (:busts_in_silhouette:) milestones. See sections below for more details of each item. 
+Here is a summary of items you need to deliver to _reach_ v1.1 individual ({{ icon_individual }}) and team ({{ icon_team }}) milestones. See sections below for more details of each item. 
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
-:busts_in_silhouette: requirements documented | a draft of v2.0 requirements in some form
-:bust_in_silhouette: [optional] product survey documented | none
-:busts_in_silhouette: v2.0 conceptualized | a draft of v2.0 user guide in some form
-:busts_in_silhouette: feature releases planned | a rough feature release plan
+{{ icon_team }} requirements documented | a draft of v2.0 requirements in some form
+{{ icon_individual }} [optional] product survey documented | none
+{{ icon_team }} v2.0 conceptualized | a draft of v2.0 user guide in some form
+{{ icon_team }} feature releases planned | a rough feature release plan
 
 :exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 

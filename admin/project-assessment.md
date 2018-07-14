@@ -5,9 +5,9 @@
 
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
-**Total**: 50 marks (:bust_in_silhouette: 40 individual marks + :busts_in_silhouette: 10 team marks)
+**Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)
 
-<panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded>
+<panel header="1. **Product features** %%[{{ icon_team }} 5 marks]%%" expanded>
 
 Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?
 
@@ -17,7 +17,7 @@ Based on: user guide and the product demo. The **quality of the demo will be fac
 
 </panel>
 
-<panel header="2. **Implementation** [:bust_in_silhouette:][15 marks]" expanded>
+<panel header="2. **Implementation** %%[{{ icon_individual }} 15 marks]%%" expanded>
 
 Evaluates: 
 
@@ -58,7 +58,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 </panel>
 
-<panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded>
+<panel header="3. **QA** %%[{{ icon_individual }} 10 marks]%%" expanded>
 
 Evaluates: How good is your Quality Assurance? 
 
@@ -73,7 +73,7 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
   
 </panel>
 
-<panel header="4. **Documentation** [:bust_in_silhouette:][10 marks]" expanded>
+<panel header="4. **Documentation** %%[{{ icon_individual }} 10 marks]%%" expanded>
 
 Evaluates: How well does your user guide achieves its objectives? 
 
@@ -83,7 +83,7 @@ Based on: the relevant sections of your project portfolio. Criteria considered:
     
 </panel>
   
-<panel header="5. **Project management** [:busts_in_silhouette: 5 + :bust_in_silhouette: 5 = 10 marks]" expanded>
+<panel header="5. **Project management** %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%" expanded>
 <div id="project-management-grading"> 
 
 **A. Process:** 

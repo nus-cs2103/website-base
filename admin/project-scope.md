@@ -58,7 +58,7 @@ For either direction, you need to define a target user profile and a value propo
    
 <span id="individual-expectations">
 
-:bust_in_silhouette: **Individually**, each student is expected to,
+{{ icon_individual }} **Individually**, each student is expected to,
 
 1. **Contribute ==one enhancement== to the product**<br>
    * Each enhancement should be stand-alone but,
@@ -159,7 +159,7 @@ For either direction, you need to define a target user profile and a value propo
 </span>
 <span id="team-expectations">
 
-:busts_in_silhouette: **As a team**, you are expected to work together to,
+{{ icon_team }} **As a team**, you are expected to work together to,
 
 1. **Preserve product integrity**: i.e.
    1. Enhancements added fit together to form a cohesive product.
