@@ -613,7 +613,7 @@ footer: footer.md
 # Full Schedule of Module Activities
 
 <panel src="overview/index.md" header=":exclamation: **Info relevant to all weeks**"  />
-<panel src="overview/tutorialSchedule.md" header="**{{glyphicon_calendar}} Tutorial Timetable**" />
+<panel src="../admin/tutorials.md#tutorialTimetable" header="**{{glyphicon_calendar}} Tutorial Timetable**" />
 
 <p/>
 

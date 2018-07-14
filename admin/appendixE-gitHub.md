@@ -59,7 +59,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
    Your Team ID can be found in [this page](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). 
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
    
-<panel src="../schedule/overview/tutorialSchedule.md" header="%%Schedule {{ icon_embedding }} Tutorial Schedule%%" /><p/>
+<panel src="../admin/tutorials.md#tutorialTimetable" header="%%Admin {{ icon_embedding }} Tutorials → Tutorial Timetable%%" /><p/>
     
 5. Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br/> 
     ![](images/FilesChangedTab.png)
