@@ -19,7 +19,8 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="#admin-preliminaries-anchor">Preliminaries</a></li>
+      <li style="margin-top: 10px"><a href="#admin-moduleOverview-anchor">Module Overview</a></li>
+      <li style="margin-top: 10px"><a href="#admin-usingThisWebsite-anchor"><mark>Using this Website</mark></a></li>
       <li style="margin-top: 10px"><a href="#admin-learning-outcomes-anchor">Learning Outcomes</a></li>
       <li style="margin-top: 10px"><a href="#admin-lectures-anchor">Lectures</a></li>
       <li style="margin-top: 10px"><a href="#admin-tutorials-anchor">Tutorials</a></li>
@@ -155,10 +156,11 @@
           </li>
         </navbar>
       </div>
-      <div id="admin-preliminaries-anchor"></div>
-      <div id="admin-preliminaries">
+      <div id="admin-moduleOverview-anchor"></div>
+      <div id="admin-moduleOverview">
         <div>
           <h1 id="cs2103t-at-a-glance">CS2103/T at a Glance</h1>
+          <img src="/website-base/images/growingPlant.png" width="700">
           <p>CS2103/T is an introductory Software Engineering module. It covers basic SE theory and practices that a student needs to know before doing SE internships in the industry or taking
             <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>.</p>
           <p>On the theory side, this module is supported by a customized online text book <a href="http://127.0.0.1:8080/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
@@ -237,6 +239,174 @@
             <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: What are the differences between CS2103 and CS2103T?**" minimized=""
               fragment="admin-faq-cs2103Vscs2103t"></panel>
           </p>
+        </div>
+      </div>
+      <div id="admin-usingThisWebsite-anchor"></div>
+      <div id="admin-usingThisWebsite">
+        <div>
+          <div id="essential">
+            <h1 id="using-this-website">Using this Website</h1>
+            <p>
+              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> This <em>Schedule Page</em> is your main source of information for CS2103/T. You will need to refer to it weekly.</p>
+            <p><span class="fas fa-info-circle"></span> More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress. In general, <mark>information given for more than 1 week into the future should be treated as <em>tentative</em></mark>.</p>
+            <p>💡 <strong>For those who don't like the nested-info style used by this website</strong>, we have also provided flat all-in-one versions of the textbook and the admin info.</p>
+            <div>
+              <h3 id="browser-compatibility">Browser Compatibility</h3>
+              <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
+            </div>
+            <div>
+              <h3 id="information-layers">Information Layers</h3>
+              <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
+              <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
+              <tip-box>
+                <panel header="Some less important info in a minimized panel" minimized="">
+                  <p>Less important info</p>
+                  <p></p>
+                </panel>
+                <p></p>
+                <panel header="%%Some less important info in a boarder-less panel%%" type="seamless">
+                  <p>Less important info</p>
+                  <p></p>
+                </panel>
+                <p></p>
+                <panel header="%%Some less important info in a panel%%">
+                  <p>Less important info</p>
+                  <p></p>
+                </panel>
+                <p></p>
+              </tip-box>
+              <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
+              <tip-box>
+                <tabs>
+                
+                  <tab header=":abc:">
+                    Some textual description of X
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
+                    <p>Video describing X</p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                </tabs>
+              </tip-box>
+              <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>                (activated by clicking) containing additional information.</p>
+              <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
+                <div slot="content">
+                  Additional information
+                </div>
+              </popover>
+              <modal title="Modal Example" id="modal:modal-example">
+                Additional information
+              </modal>
+            </div>
+          </div>
+          <div id="more">
+            <div name="Conventions Used">
+              <h3 id="conventions-used">Conventions Used</h3>
+              <h4 id="shorthand-headings">Shorthand Headings</h4>
+              <p>Meaning of some shortened headings:</p>
+              <ul>
+                <li>
+                  <p><strong>What</strong> : the <strong>meaning</strong> of the concept in concern</p>
+                  <p>
+                    <panel header="%%Example%%" src="/website-base\book\refactoring\what\unit-inElsewhere-asFlat._include_.html"></panel>
+                  </p>
+                </li>
+                <li>
+                  <p><strong>Why</strong> : the <strong>motivation</strong> behind the concept in concern</p>
+                  <p>
+                    <panel header="%%Example%%" src="/website-base\book\documentation\guidelines\goTopDown\why\unit-inElsewhere-asFlat._include_.html"></panel>
+                  </p>
+                </li>
+                <li>
+                  <p><strong>How</strong> : the <strong>usage</strong> of the concept in concern</p>
+                  <p>
+                    <panel header="%%Example%%" src="/website-base\book\refactoring\how\unit-inElsewhere-asFlat._include_.html"></panel>
+                  </p>
+                </li>
+                <li>
+                  <p><strong>When</strong> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
+                  <p>
+                    <panel header="%%Example%%" src="/website-base\book\refactoring\when\unit-inElsewhere-asFlat._include_.html"></panel>
+                  </p>
+                </li>
+              </ul>
+              <h4 id="boxed-text-styles">Boxed-Text Styles</h4>
+              <tip-box type="info">
+                additional info
+              </tip-box>
+              <tip-box type="warning">
+                warning
+              </tip-box>
+              <tip-box type="success">
+                positive message
+              </tip-box>
+              <tip-box type="important">
+                important message
+              </tip-box>
+              <tip-box type="wrong">
+                an error to avoid
+              </tip-box>
+              <tip-box type="tip">
+                tip
+              </tip-box>
+              <tip-box type="definition">
+                definition
+              </tip-box>
+              <h4 id="meaning-of-icons">Meaning of Icons</h4>
+              <ul>
+                <li><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested</li>
+                <li><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <code>Ctrl+Click</code> to open the LO in new window/tab.</li>
+                <li><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> : learning outcomes</li>
+                <li><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome</li>
+                <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> : examples</li>
+                <li>📎 : resources</li>
+                <li><span class="fas fa-dumbbell"></span> : exercises</li>
+                <li><span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version</li>
+                <li><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info</li>
+                <li><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video</li>
+                <li>🔤 : textual description</li>
+                <li>📊 : slides</li>
+                <li>⤵️ : output produced by running code</li>
+                <li>🔒 question without answer</li>
+                <li>🔒🔑 question with answer</li>
+              </ul>
+            </div>
+            <ul>
+              <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do</li>
+              <li><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture</li>
+              <li><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> : tutorial</li>
+              <li><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> : evidence you can use to prove you have achieved a learning outcome</li>
+              <li>⏰ : deadline</li>
+            </ul>
+            <h3 id="searching-for-keywords">Searching for keywords</h3>
+            <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2103-AY1718S2/website/issues">in the website issue tracker</a>              so that we can add the missing keyword into our search index.</p>
+            <div>
+              <h3 id="saving-as-pdf-files">Saving as PDF Files</h3>
+              <ol>
+                <li>
+                  <p>Use Chrome to load the page you want to save as pdf.</p>
+                </li>
+                <li>
+                  <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                </li>
+                <li>
+                  <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                    <img src="/website-base/book/about/images/chromeSaveAsPdf.png"></p>
+                </li>
+              </ol>
+            </div>
+            <h3 id="printing-textbook-content">Printing Textbook Content</h3>
+            <p>Printer-friendly version <span class="dimmed">(indicated by <span class="glyphicon glyphicon-print" aria-hidden="true"></span> icon)</span> have been provided for each chapter and the whole book. You can use them for saving as pdf files or
+              printing.</p>
+            <h3 id="contributing-to-make-this-website-better">Contributing to Make this Website Better</h3>
+            <p>This website was generated using the <a href="https://markbind.github.io/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-cs2103-AY1718S2/website/issues">at the website issue tracker</a>.</p>
+          </div>
         </div>
       </div>
       <div id="admin-learning-outcomes-anchor"></div>
@@ -319,62 +489,213 @@
       <div id="admin-tutorials">
         <div>
           <h1 id="tutorials">Tutorials</h1>
-          <p><mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure
-            to do so in due course.</p>
-          <p>
-            <panel src="/website-base\schedule\overview\tutorialSchedule._include_.html" header="Schedule <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Overview → Tutorial Schedule" minimized=""></panel>
-          </p>
-          <p></p>
-          <p><strong>What happens during the tutorial</strong>:</p>
-          <ul>
-            <li>A tutorial group is handled by two tutors. Each tutor will work with two teams.</li>
-            <li>The tutor will direct students to share/discuss evidence of achieving the weekly learning outcomes (LO).</li>
-            <li>If some students have met with difficulties while achieving an LO, the tutor can direct those students to get help from those who have achieved the LO. <strong>The number of LOs that can be covered in the tutorial session depends on how well-prepared you are.</strong></li>
-            <li>The tutor will observe, and give feedback on, how well you are achieving required LOs.</li>
-            <li>Please <mark>bring your laptop to tutorials.</mark> You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
-          </ul>
-          <div class="indented-level2">
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> FAQ: What if I don't carry around a laptop?" minimized="" fragment="admin-faq-noLaptop"></panel>
-          </div>
-          <br>
-          <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
-          <ul>
-            <li><strong>No direct tech help</strong>: Tutors are prohibited from giving technical help. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
-          </ul>
-          <div class="indented-level2">
-            <panel src="/website-base\admin\appendixD-help._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T" minimized="" fragment="main"></panel>
-          </div>
-          <br>
-          <ul>
-            <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts
-              under the right circumstances.</li>
-          </ul>
-          <div class="indented-level2">
-            <panel src="/website-base\admin\appendixD-help._include_.html#questions-for-tutros" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor" minimized="" fragment="questions-for-tutros"></panel>
-          </div>
-          <br>
-          <ul>
-            <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you
-              feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
-          </ul>
-          <p><strong>Timing/venue:</strong></p>
-          <ul>
-            <li>Please refer to the <a href="/website-base/schedule/index.html">Schedule page</a> for further details on each tutorial.</li>
-            <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
-            <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.</li>
-            <li>Please make sure you <mark>vacate the table 5 minutes before the hour</mark> so that the next group can start on time.</li>
-            <li>In the past many students have suggested to increase the tutorial duration because 1 hour is barely enough to get through all weekly LOs. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to
-              make the best of the one hour available by coming well prepared and starting on time.</li>
-          </ul>
-          <p><strong>Grading:</strong></p>
-          <p>Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.</p>
+          <panel type="seamless" header="### Tutorial Timetable" expanded="">
+            <div id="tutorialTimetable">
+              <tip-box>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T)
+                  students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.</p>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
+              </tip-box>
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Module</th>
+                    <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                    <th>Tutors (<a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">contact details</a>)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CS2103T (CS)</td>
+                    <td>W09 <span class="dimmed">(T1)</span></td>
+                    <td><strong>W</strong>ed <strong>09</strong>00</td>
+                    <td>COM1-B103 (ALL<sup>*</sup>)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CS)</td>
+                    <td>W10 <span class="dimmed">(T2)</span></td>
+                    <td><strong>W</strong>ed <strong>10</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CS)</td>
+                    <td>W11 <span class="dimmed">(T3)</span></td>
+                    <td><strong>W</strong>ed <strong>11</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CS)</td>
+                    <td>W13 <span class="dimmed">(T4)</span></td>
+                    <td><strong>W</strong>ed <strong>13</strong>00</td>
+                    <td>COM1-0201 (SR5)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CS)</td>
+                    <td>W14 <span class="dimmed">(T5)</span></td>
+                    <td><strong>W</strong>ed <strong>14</strong>00</td>
+                    <td>COM1-0201 (SR5)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CS)</td>
+                    <td>W15 <span class="dimmed">(T6)</span></td>
+                    <td><strong>W</strong>ed <strong>15</strong>00</td>
+                    <td>COM1-0201 (SR5)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CEG)</td>
+                    <td>T09 <span class="dimmed">(C01)</span></td>
+                    <td><strong>T</strong>hu <strong>09</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CEG)</td>
+                    <td>T10 <span class="dimmed">(C04)</span></td>
+                    <td><strong>T</strong>hu <strong>10</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CEG)</td>
+                    <td>T11 <span class="dimmed">(C03)</span></td>
+                    <td><strong>T</strong>hu <strong>11</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103</td>
+                    <td>T12 <span class="dimmed">(5)</span></td>
+                    <td><strong>T</strong>hu <strong>12</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103</td>
+                    <td>T13 <span class="dimmed">(6)</span></td>
+                    <td><strong>T</strong>hu <strong>13</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103</td>
+                    <td>T14 <span class="dimmed">(4)</span></td>
+                    <td><strong>T</strong>hu <strong>14</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CEG)</td>
+                    <td>T15 <span class="dimmed">(C02)</span></td>
+                    <td><strong>T</strong>hu <strong>15</strong>00</td>
+                    <td>COM1-0210 (SR10)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CEG)</td>
+                    <td>T16 <span class="dimmed">(C06)</span></td>
+                    <td><strong>T</strong>hu <strong>16</strong>00</td>
+                    <td>COM1-0201 (SR5)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103T (CEG)</td>
+                    <td>T17 <span class="dimmed">(C05)</span></td>
+                    <td><strong>T</strong>hu <strong>17</strong>00</td>
+                    <td>COM1-0210 (SR10)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103</td>
+                    <td>F09 <span class="dimmed">(1)</span></td>
+                    <td><strong>F</strong>ri <strong>09</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103</td>
+                    <td>F10 <span class="dimmed">(2)</span></td>
+                    <td><strong>F</strong>ri <strong>10</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>CS2103</td>
+                    <td>F11 <span class="dimmed">(3)</span></td>
+                    <td><strong>F</strong>ri <strong>11</strong>00</td>
+                    <td>COM1-B103 (ALL)</td>
+                    <td>TBD</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p><span class="dimmed">*ALL: Active Learning Room</span></p>
+            </div>
+          </panel>
+          <panel type="seamless" header="### Tutorial Structure" expanded="">
+            <div id="tutorialStructure">
+              <p><strong>What happens during the tutorial</strong>:</p>
+              <ul>
+                <li>A tutorial group is handled by two tutors. Each tutor will work with two teams.</li>
+                <li>The tutor will direct students to share/discuss evidence of achieving the weekly learning outcomes (LO).</li>
+                <li>If some students have met with difficulties while achieving an LO, the tutor can direct those students to get help from those who have achieved the LO. <strong>The number of LOs that can be covered in the tutorial session depends on how well-prepared you are.</strong></li>
+                <li>The tutor will observe, and give feedback on, how well you are achieving required LOs.</li>
+                <li>Please <mark>bring your laptop to tutorials.</mark> You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> FAQ: What if I don't carry around a laptop?" minimized="" fragment="admin-faq-noLaptop"></panel>
+              </div>
+              <br>
+              <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
+              <ul>
+                <li><strong>No direct tech help</strong>: Tutors are prohibited from giving technical help. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
+              </ul>
+              <div class="indented-level2">
+                <panel src="/website-base\admin\appendixD-help._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T" minimized="" fragment="main"></panel>
+              </div>
+              <br>
+              <ul>
+                <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify
+                  doubts under the right circumstances.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel src="/website-base\admin\appendixD-help._include_.html#questions-for-tutros" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor" minimized="" fragment="questions-for-tutros"></panel>
+              </div>
+              <br>
+              <ul>
+                <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give
+                  you feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
+              </ul>
+              <p><strong>Timing/venue:</strong></p>
+              <ul>
+                <li>Please refer to the <a href="/website-base/schedule/index.html">Schedule page</a> for further details on each tutorial.</li>
+                <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
+                <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is
+                  dismissed.</li>
+                <li>Please make sure you <mark>vacate the table 5 minutes before the hour</mark> so that the next group can start on time.</li>
+                <li>In the past many students have suggested to increase the tutorial duration because 1 hour is barely enough to get through all weekly LOs. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try
+                  to make the best of the one hour available by coming well prepared and starting on time.</li>
+              </ul>
+              <p><strong>Grading:</strong></p>
+              <p>Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.</p>
+            </div>
+          </panel>
         </div>
       </div>
       <div id="admin-textBooks-anchor"></div>
       <div id="admin-textBooks">
         <div>
           <h1 id="text-books">Text Books</h1>
-          <p>The main text book is <a href="/website-base/se-book-adapted/index.html">here</a>. While it is in a dynamic Web page format, <a href="/website-base/book/about/usage.html#saving">there is a way to save the main text as pdf files</a>.</p>
+          <p>The main text book is <a href="/website-base/se-book-adapted/index.html">here</a>. While it is in a dynamic Web page format, <a href="/website-base/book/about/usage.html#saving">there is a way to save the main text as pdf files</a>. Printer-friendly
+            versions have been provided too.</p>
         </div>
       </div>
       <div id="admin-programmingLanguages-anchor"></div>
@@ -393,7 +714,7 @@
           </table>
           <h4 id="java-coding-standard">Java coding standard</h4>
           <p>This module follows the <mark><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">OSS-NUS Java coding standard</a></mark>.</p>
-          <p><mark><strong>In the project you are required to follow basic and intermediate guidelines</strong></mark> (those marked as ⭐️ and ⭐️⭐️). In other programming activities in the module, we recommend (but not require) you to the coding standard.</p>
+          <p><mark><strong>In the project you are required to follow basic and intermediate guidelines</strong></mark> (those marked as ⭐️ and ⭐️⭐️). In other programming activities in the module, we recommend (but not require) you to follow the coding standard.</p>
         </div>
       </div>
       <div id="admin-project-anchor"></div>
@@ -468,36 +789,33 @@
             </ul>
             <p>For either direction, you need to define a target user profile and a value proposition:</p>
             <ul>
-              <li><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>                ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
-                <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>                💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</li>
+              <li>
+                <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>                  ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+                  <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>                  💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
+                <panel header="Why the need to narrow down the user profile?" minimized="">
+                  <ul>
+                    <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+                    <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
+                      a better job of implementing that feature.
+                    </li>
+                  </ul>
+                </panel>
+              </li>
             </ul>
-            <div class="indented-level2">
-              <panel header="Why the need to narrow down the user profile?" minimized="">
-                <ul>
-                  <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
-                  <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
-                    a better job of implementing that feature.</li>
-                </ul>
-              </panel>
-            </div>
-            <br>
-            <ul>
-              <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
-            </ul>
+
+            <li>
+              <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</p>
+            </li>
           </div>
           <span id="individual-expectations">
 <p><span class="fas fa-user"></span> <strong>Individually</strong>, each student is expected to,</p>
           <ol>
             <li>
-              <p><strong>Contribute <mark>one enhancement</mark> to the product</strong><br></p>
+              <p><strong>Contribute <mark>one enhancement</mark> to the product</strong><br> Each enhancement should be stand-alone but,</p>
               <ul>
-                <li>Each enhancement should be stand-alone but,
-                  <ul>
-                    <li>it should be end-user visible and end-user testable.</li>
-                    <li>should fit with the rest of the software (and the target user profile),</li>
-                    <li>and should have the consent of the team members.</li>
-                  </ul>
-                </li>
+                <li>it should be end-user visible and end-user testable.</li>
+                <li>should fit with the rest of the software (and the target user profile),</li>
+                <li>and should have the consent of the team members.</li>
               </ul>
               <panel header="<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of suitable enhancements" minimized="">
                 <ol>
@@ -518,10 +836,7 @@
                 <p></p>
               </panel>
               <p></p>
-              <p>In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project.</p>
-              <ul>
-                <li>These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on thm enhancement.</li>
-              </ul>
+              <p>In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project. These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on minor enhancements.</p>
               <panel header="<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Examples of minor enhancements" minimized="">
                 <p>Here is a non-exhaustive list of minor enhancements:</p>
                 <ol>
@@ -542,9 +857,10 @@
               <p><strong>Recommended: contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks
                 allocated for the aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
               <ul>
-                <li>By the end of this project (i.e. by v1.4) each team member is expected to have implemented an enhancement/feature end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+                <li>By the
+                  <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented an enhancement end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
                 <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components as necessary
-                  for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed"> (reason: you are supposed to be the most knowledgeable about that component)</span>                  and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+                  for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed">(reason: you are supposed to be the most knowledgeable about that component)</span>                  and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
               </ul>
             </li>
             <li>
@@ -652,11 +968,11 @@
             </li>
             <li>
               <p><strong>Constraint-OO</strong>: The software should follow the Object-oriented paradigm.<br>
-                <span class="dimmed"><strong>Reason:</strong> For you to practice OOP that you learned in the course.</span></p>
+                <span class="dimmed"><strong>Reason:</strong> For you to practice using OOP in a non-trivial project.</span></p>
             </li>
             <li>
               <p><strong>Constraint-No-DBSM</strong>: Do not use a
-                <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to handle OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103 module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.</span></p>
+                <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103 module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.</span></p>
             </li>
             <li>
               <p><strong>Constraint-Platform-Independent</strong>: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries
@@ -664,7 +980,7 @@
                 <span class="dimmed"><strong>Reason:</strong> Peer testers should be able to use any of these platforms.</span></p>
             </li>
             <li>
-              <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as longs as the portable (non-installed) version has all the critical functionality.<br>
+              <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as long as the portable (non-installed) version has all the critical functionality.<br>
                 <span class="dimmed"><strong>Reason:</strong> We do not want to install all your projects on our testing machines when we test them for grading.</span></p>
             </li>
             <li>
@@ -674,7 +990,7 @@
                 <li>do not require any installation by the user of your software.</li>
                 <li>do not violate other constraints.</li>
               </ul>
-              <p>and is subjected to prior approval by us.<br>
+              <p>and is subjected to prior approval by the teaching team.<br>
                 <span class="dimmed"><strong>Reason:</strong> We will not allow third-party software that can interfere with the learning objectives of the module.</span></p>
               <p>Please <mark>post in the <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">forum</a> your request to use a third-party libraries</mark> <em>before</em> you start using the library. Once a specific library has been approved for
                 one team, other teams may use it without requesting permission again.<br>
@@ -691,7 +1007,7 @@
           <p>To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as <code>AB1</code> to <code>AB4</code> in the diagram above). You can use <code>AB1</code> to <code>AB3</code> to ramp
             up your tech skills in preparation for the project. <code>AB4</code> is to be used as the basis for your project.</p>
           <p><code>AB4</code> is the version you will use as the starting point for your final project. Some of the work you do in <code>AB1</code> to <code>AB3</code> can be ported over to <code>AB4</code> and can be used to claim credit in the final project.</p>
-          <p>Given below is the high-level time line of the project.</p>
+          <p>Given below is the high-level timeline of the project.</p>
           <table class="markbind-table table table-bordered table-striped">
             <thead>
               <tr>
@@ -760,7 +1076,7 @@
               </tr>
             </tbody>
           </table>
-          <p>The sub-sections further down explain each project deliverable in detail and states some recommended progress for you to achieve at that point of the project.</p>
+          <p>More details of each stage is provided elsewhere is this website.</p>
         </div>
       </div>
       <div id="admin-project-w03-inception-anchor"></div>
@@ -830,22 +1146,23 @@
               </ul>
               <p>For either direction, you need to define a target user profile and a value proposition:</p>
               <ul>
-                <li><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>                  ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
-                  <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>                  💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</li>
+                <li>
+                  <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103 instructors.</span><br><br>                    ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+                    <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103 instructors only, such as the ability to navigate to a student's project on GitHub</span>                    💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
+                  <panel header="Why the need to narrow down the user profile?" minimized="">
+                    <ul>
+                      <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+                      <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
+                        a better job of implementing that feature.
+                      </li>
+                    </ul>
+                  </panel>
+                </li>
               </ul>
-              <div class="indented-level2">
-                <panel header="Why the need to narrow down the user profile?" minimized="">
-                  <ul>
-                    <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
-                    <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
-                      a better job of implementing that feature.</li>
-                  </ul>
-                </panel>
-              </div>
-              <br>
-              <ul>
-                <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
-              </ul>
+
+              <li>
+                <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</p>
+              </li>
             </div>
           </modal>
         </div>
@@ -5099,7 +5416,7 @@ compact(input);
           <p><strong>Team size</strong>: The default <mark>team size is five</mark>.</p>
           <p><strong>Team ID</strong>: This will be given to you after forming teams. It has the form <code>TUTORIAL_ID-TEAM_NUMBER</code> e.g, <code>W14-2</code> means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.</p>
           <p>
-            <panel src="/website-base\schedule\overview\tutorialSchedule._include_.html" header="%%Schedule <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorial IDs%%"></panel>
+            <panel src="/website-base\admin\tutorials._include_.html#tutorialTimetable" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials → Tutorial IDs%%" fragment="tutorialTimetable"></panel>
             <p></p>
           </p>
           <p><strong>Team composition</strong></p>
@@ -5981,9 +6298,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           <img src="/website-base/admin/images/Why you....png" width="300" height="200">
           <div id="admin-faq-whereIsEverything">
             <h3 id="where-is-everything">Where is everything?</h3>
+            <p class="lead">The Schedule page present all you need to know in chronological order while the other pages have some of the same content organized by topic.
+            </p>
             <p>The <a href="/website-base/schedule/index.html"><strong>Schedule</strong> page</a> is <mark><em>the</em> one page you need to refer weekly</mark>. Although there is a lot of content in the <a href="/website-base/admin/index.html"><strong>Admin</strong> page </a>              and the <a href="/website-base/se-book-adapted/index.html"><strong>Textbook</strong> page</a> -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded
-              extracts usually appear in expandable panels and can be identified by the symbol <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> in the panel title. In sum, the Schedule page organizes the content chronologically while
-              the other two pages has some of the same content but organized by topic.</p>
+              extracts usually appear in expandable panels and can be identified by the symbol <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> in the panel title.</p>
           </div>
           <div id="admin-faq-cs2103Vscs2103t">
             <h3 id="what-are-the-differences-between-cs2103-and-cs2103t">What are the differences between CS2103 and CS2103T?</h3>
@@ -6010,7 +6328,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                 <ul>
                   <li>In particular, you are encouraged to be active on the slack channel and our <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">forum</a> and give your inputs to ongoing discussions so that other students can benefit from your
                     relatively higher expertise that makes you deserve an A+.</li>
-                  <li>Whenever you can, go out of your way to review PRs created by other class members (as part of weekly LOs), even if they are not in your team.</li>
+                  <li>Whenever you can, go out of your way to review PRs created by other team members.</li>
                 </ul>
               </li>
             </ul>
@@ -6258,7 +6576,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
               </li>
             </ol>
             <p>
-              <panel src="/website-base\schedule\overview\tutorialSchedule._include_.html" header="%%Schedule <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorial Schedule%%"></panel>
+              <panel src="/website-base\admin\tutorials._include_.html#tutorialTimetable" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials → Tutorial Timetable%%" fragment="tutorialTimetable"></panel>
               <p></p>
             </p>
             <ol start="5">
@@ -6507,7 +6825,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 11:50:30 GMT</small></div>
 </footer>
 </div>
 </body>

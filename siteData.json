@@ -142,7 +142,7 @@
       "headings": {
         "cs2103t-at-a-glance": "CS2103/T at a Glance"
       },
-      "title": "Admin: Preliminaries",
+      "title": "Admin: Module Overview",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/index.md"
@@ -167,6 +167,15 @@
     },
     {
       "headings": {
+        "cs2103t-at-a-glance": "CS2103/T at a Glance"
+      },
+      "title": "Admin: Module Overview",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/moduleOverview.md"
+    },
+    {
+      "headings": {
         "participation-marks": "Participation Marks"
       },
       "title": "Admin: Participation Marks",
@@ -182,15 +191,6 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/peer-evaluations.md"
-    },
-    {
-      "headings": {
-        "cs2103t-at-a-glance": "CS2103/T at a Glance"
-      },
-      "title": "Admin: Preliminaries",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/preliminaries.md"
     },
     {
       "headings": {
@@ -591,6 +591,25 @@
     },
     {
       "headings": {
+        "using-this-website": "Using this Website",
+        "browser-compatibility": "Browser Compatibility",
+        "information-layers": "Information Layers",
+        "conventions-used": "Conventions Used",
+        "shorthand-headings": "Shorthand Headings",
+        "boxed-text-styles": "Boxed-Text Styles",
+        "meaning-of-icons": "Meaning of Icons",
+        "searching-for-keywords": "Searching for keywords",
+        "saving-as-pdf-files": "Saving as PDF Files",
+        "printing-textbook-content": "Printing Textbook Content",
+        "contributing-to-make-this-website-better": "Contributing to Make this Website Better"
+      },
+      "title": "Admin: Using this Website",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/usingThisWebsite.md"
+    },
+    {
+      "headings": {
         "acknowledgements": "Acknowledgements"
       },
       "title": "About: Acknowledgements",
@@ -602,6 +621,9 @@
         "browser-compatibility": "Browser Compatibility",
         "information-layers": "Information Layers",
         "conventions-used": "Conventions Used",
+        "shorthand-headings": "Shorthand Headings",
+        "boxed-text-styles": "Boxed-Text Styles",
+        "meaning-of-icons": "Meaning of Icons",
         "searching": "Searching",
         "saving-as-pdf-files": "Saving as PDF Files",
         "printing": "Printing"
