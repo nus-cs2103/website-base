@@ -754,3 +754,8 @@ Missing reference in C:\repos\nus-cs2103\website-base\schedule\week4\tutorial.md
 2018-07-12T10:49:23.167Z - info: Generate Site durationMs=49426
 2018-07-12T10:49:23.517Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-12T10:49:23.517Z - info: Press CTRL+C to stop ...
+2018-07-12T10:57:17.854Z - info: Pages built
+2018-07-12T10:57:17.954Z - info: Site data built
+2018-07-12T10:57:17.954Z - info: Build success!
+2018-07-12T10:57:17.954Z - info: Generate Site durationMs=50760
+2018-07-12T10:58:27.820Z - info: Deployed!

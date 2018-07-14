@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Text Book Chapter [Printable] : Reuse</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
@@ -26,170 +29,240 @@
   <div>
     <h2 id="introduction">Introduction</h2>
   </div>
-  <h4 id="what">What <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come in
-      many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
-  </div>
-  <h4 id="when">When <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
-    <ul>
-      <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
-      <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
-      <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
-      <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
-      <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as fast as
-        you need them to.</li>
-      <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
-    </ul>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components
+            come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="when">When <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
+          <ul>
+            <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
+            <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
+            <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
+            <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
+            <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as
+              fast as you need them to.</li>
+            <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
     <h2 id="apis">APIs</h2>
   </div>
-  <h4 id="what-2">What <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code>str</code> class</a>)
-        which is a collection of public methods that you can invoke to make use of the class.</p>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program
-        that interacts with GitHub through that API.</p>
-    </tip-box>
-    <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what-2">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code>str</code> class</a>)
+              which is a collection of public methods that you can invoke to make use of the class.</p>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program
+              that interacts with GitHub through that API.</p>
+          </tip-box>
+          <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
     <h2 id="libraries">Libraries</h2>
   </div>
-  <h4 id="what-3">What <small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p>A library is a collection of modular code that is general and can be used by other programs.</p>
-    <tip-box>
-      <tabs>
-      
-        <tab header="Java">
-          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
-        </tab>
-      
-        <tab header="Python">
-          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution.
-            Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
-          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
-        </tab>
-      </tabs>
-    </tip-box>
-  </div>
-  <h4 id="how">How <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p>These are the typical steps required to use a library.</p>
-    <ol>
-      <li>Read the documentation to confirm that its functionality fits your needs</li>
-      <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
-      <li>Download the library and make it accessible to your project. Alternatively, you can configure your
-        <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
-      <li>Call the library API from your code where you need to use the library functionality.</li>
-    </ol>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what-3">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>A library is a collection of modular code that is general and can be used by other programs.</p>
+          <tip-box>
+            <tabs>
+            
+              <tab header="Java">
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default
+                  Java distribution.</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+              </tab>
+            
+              <tab header="Python">
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution.
+                  Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+              </tab>
+            </tabs>
+          </tip-box>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="how">How <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>These are the typical steps required to use a library.</p>
+          <ol>
+            <li>Read the documentation to confirm that its functionality fits your needs</li>
+            <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
+            <li>Download the library and make it accessible to your project. Alternatively, you can configure your
+              <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
+            <li>Call the library API from your code where you need to use the library functionality.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
     <h2 id="frameworks">Frameworks</h2>
   </div>
-  <h4 id="what-4">What <small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
-      <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
-    </tip-box>
-    <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
-      <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
-    </tip-box>
-    <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
-      <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
-    </tip-box>
-    <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
-      <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
-    </tip-box>
-    <p>Some frameworks cover only a specific components or an aspect.</p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
-    </tip-box>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> More examples of frameworks</p>
-      <ul>
-        <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
-        <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
-      </ul>
-    </tip-box>
-  </div>
-  <h4 id="frameworks-vs-libraries">Frameworks vs Libraries <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
-    <ul>
-      <li>
-        <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
-          <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
-      </li>
-      <li>
-        <p><strong>Your code calls the library code while the framework code calls your code.</strong>
-          <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span>          In the case of libraries, your code calls libraries.</p>
-      </li>
-    </ul>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what-4">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+            <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
+          </tip-box>
+          <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+            <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
+          </tip-box>
+          <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+            <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
+          </tip-box>
+          <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+            <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
+          </tip-box>
+          <p>Some frameworks cover only a specific components or an aspect.</p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
+          </tip-box>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> More examples of frameworks</p>
+            <ul>
+              <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
+              <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
+            </ul>
+          </tip-box>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="frameworks-vs-libraries">Frameworks vs Libraries <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
+          <ul>
+            <li>
+              <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
+                <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
+            </li>
+            <li>
+              <p><strong>Your code calls the library code while the framework code calls your code.</strong>
+                <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span>                In the case of libraries, your code calls libraries.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
     <h2 id="platforms">Platforms</h2>
   </div>
-  <h4 id="what-5">What <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic of a
-      software platform is the presence of a runtime environment.</p>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
-    </tip-box>
-    <tip-box>
-      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
-        <trigger for="modal:enterprise-application"
-          trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications.
-        Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
-      <ul>
-        <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
-        <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
-      </ul>
-    </tip-box>
-    <modal title="**Enterprise Applications**" id="modal:enterprise-application">
-      <div>
-        <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than software
-          meant for individual use.</p>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what-5">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
+            of a software platform is the presence of a runtime environment.</p>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+          </tip-box>
+          <tip-box>
+            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
+              <trigger for="modal:enterprise-application"
+                trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications.
+              Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+            <ul>
+              <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
+              <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
+            </ul>
+          </tip-box>
+          <modal title="**Enterprise Applications**" id="modal:enterprise-application">
+            <div>
+              <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than
+                software meant for individual use.</p>
+            </div>
+          </modal>
+        </div>
       </div>
-    </modal>
+    </div>
   </div>
   <div>
     <h2 id="cloud-computing">Cloud Computing</h2>
   </div>
+  <div class="indented-less"></div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>

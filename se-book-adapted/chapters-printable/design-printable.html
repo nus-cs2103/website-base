@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Text Book Chapter [Printable] : Software Design</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
@@ -26,29 +29,40 @@
   <div>
     <h2 id="introduction">Introduction</h2>
   </div>
-  <h4 id="what">What <small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small></small>
-  </h4>
-  <div>
-    <tip-box type="definition">
-      <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>,  Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
-    </tip-box>
-    <p><strong>Software design has two main aspects:</strong></p>
-    <ul>
-      <li><strong>Product/external design: designing the external behavior of the product to meet the users' requirements.</strong> This is usually done by product designers with the input from business analysts, user experience experts, user representatives,
-        etc.</li>
-      <li><strong>Implementation/internal design: designing how the product will be implemented to meet the required external behavior.</strong> This is usually done by software architects and software engineers.</li>
-    </ul>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <tip-box type="definition">
+            <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>,  Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
+          </tip-box>
+          <p><strong>Software design has two main aspects:</strong></p>
+          <ul>
+            <li><strong>Product/external design: designing the external behavior of the product to meet the users' requirements.</strong> This is usually done by product designers with the input from business analysts, user experience experts, user representatives,
+              etc.</li>
+            <li><strong>Implementation/internal design: designing how the product will be implemented to meet the required external behavior.</strong> This is usually done by software architects and software engineers.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>

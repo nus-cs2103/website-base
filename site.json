@@ -1,5 +1,6 @@
 {
   "baseUrl": "/website-base",
+  "titlePrefix": "CS2103/T Website",
   "ignore": [
     "_site/*",
     ".idea/*",
@@ -13,10 +14,10 @@
   ],
   "pages": [
     {"glob": "index.md"},
-    {"glob": "schedule/**/index.md"},
     {"glob": "admin/*.md"},
     {"glob": "admin/gradeBreakdown.md"},
-    {"glob": "schedule/**/outcomes.md"},
+    {"glob": "schedule/**/outcomes.md",
+      "searchable": "no"},
     {"glob": "book/about/*.md"},
     {"glob": "se-book-adapted/index.md"},
     {"glob": "se-book-adapted/chapters/*.md"},
@@ -32,5 +33,5 @@
       "searchable": "no"
     }
   ],
-  "titlePrefix": "CS2103/T Website"
+  "headingIndexingLevel": 4
 }

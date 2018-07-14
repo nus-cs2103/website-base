@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Text Book Chapter : Quality Assurance</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
@@ -16,11 +19,8 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px">
-        <p><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></p>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Software Engineering</strong></p>
+      <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
@@ -29,8 +29,7 @@
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Programming Paradigms</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
@@ -39,146 +38,83 @@
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Requirements</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Design</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Implementation</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Quality Assurance</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Project Management</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Tools</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Principles</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
@@ -188,7 +124,6 @@
         </div>
       </li>
     </ul>
-    <div></div>
   </div>
   <div id="site-nav-btn-wrap">
     <div id="site-nav-btn">
@@ -203,37 +138,37 @@
       <div>
         <navbar placement="top" type="inverse">
           <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-          <li><a href="/website-base/index.html">Schedule</a></li>
-          <dropdown text="Textbook">
-            <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-            <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+          <li><a href="/website-base/index.html" class="nav-link">Schedule</a></li>
+          <dropdown text="Textbook" class="nav-link">
+            <li><a href="/website-base/se-book-adapted/index.html" class="dropdown-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+            <li><a href="/website-base/se-book-adapted/print.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
           </dropdown>
-          <li><a href="/website-base/admin/index.html">Admin</a></li>
-          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-          <dropdown text="IVLE">
-            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+          <li><a href="/website-base/admin/index.html" class="nav-link">Admin</a></li>
+          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" class="nav-link">Instructors</a></li>
+          <dropdown text="IVLE" class="nav-link">
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
           </dropdown>
-          <dropdown text="Discuss">
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          <dropdown text="Discuss" class="nav-link">
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
           </dropdown>
-          <dropdown text="Links">
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-            <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
           </dropdown>
-          <li slot="right">
+          <li slot="right" class="nav-link">
             <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
             </form>
           </li>
         </navbar>
@@ -251,61 +186,77 @@
 <h2 id="introduction">Introduction</h2></div></span>
         <panel type="seamless" header="#### What" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain software quality assurance</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Software <em>Quality Assurance</em> (QA) is the process of ensuring that the software being built has the required levels of quality.</strong></p>
-              <p>While testing is the most common activity used in QA, there are other complementary techniques such as <em>static analysis, code reviews,</em> and <em>formal verification</em>.</p>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain software quality assurance</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Software <em>Quality Assurance</em> (QA) is the process of ensuring that the software being built has the required levels of quality.</strong></p>
+                <p>While testing is the most common activity used in QA, there are other complementary techniques such as <em>static analysis, code reviews,</em> and <em>formal verification</em>.</p>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Validation vs Verification" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain validation and verification</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Quality Assurance = Validation + Verification</strong></p>
-              <p>QA involves checking two aspects:</p>
-              <ol>
-                <li>Validation: are we <em>building the right system</em> i.e., are the requirements correct?</li>
-                <li>Verification: are we <em>building the system right</em> i.e., are the requirements implemented correctly?</li>
-              </ol>
-              <p>Whether something belongs under validation or verification is not that important. What is more important is both are done, instead of limiting to verification (i.e., remember that the requirements can be wrong too).</p>
-            </div>
-            <div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain validation and verification</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: statements about validation and verification.">
-                      <question>
-                        <p>Choose the correct statements about validation and verification.</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Validation: Are we building the right product?, Verification: Are we building the product right?</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is very important to clearly distinguish between validation and verification.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The important thing about validation and verification is to remember to pay adequate attention to both.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Developer-testing is more about verification than validation.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. QA covers both validation and verification.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A system crash is more likely to be a verification failure than a validation failure.</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>(a)<s>(b)</s>(c)(d)(e)(f)</p>
-                          <p>Explanation:</p>
-                          <p>Whether something belongs under validation or verification is not that important. What is more important is that we do both.</p>
-                          <p>Developer testing is more about bugs in code, rather than bugs in the requirements.</p>
-                          <p>In QA, system testing is more about verification (does the system follow the specification?) and acceptance testings is more about validation (does the system solve the user’s problem?).</p>
-                          <p>A system crash is more likely to be a bug in the code, not in the requirements.</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                <p><strong>Quality Assurance = Validation + Verification</strong></p>
+                <p>QA involves checking two aspects:</p>
+                <ol>
+                  <li>Validation: are we <em>building the right system</em> i.e., are the requirements correct?</li>
+                  <li>Verification: are we <em>building the system right</em> i.e., are the requirements implemented correctly?</li>
+                </ol>
+                <p>Whether something belongs under validation or verification is not that important. What is more important is both are done, instead of limiting to verification (i.e., remember that the requirements can be wrong too).</p>
               </div>
-            </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: statements about validation and verification.">
+                        <question>
+                          <p>Choose the correct statements about validation and verification.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Validation: Are we building the right product?, Verification: Are we building the product right?</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is very important to clearly distinguish between validation and verification.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The important thing about validation and verification is to remember to pay adequate attention to both.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Developer-testing is more about verification than validation.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. QA covers both validation and verification.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A system crash is more likely to be a verification failure than a validation failure.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)<s>(b)</s>(c)(d)(e)(f)</p>
+                            <p>Explanation:</p>
+                            <p>Whether something belongs under validation or verification is not that important. What is more important is that we do both.</p>
+                            <p>Developer testing is more about bugs in code, rather than bugs in the requirements.</p>
+                            <p>In QA, system testing is more about verification (does the system follow the specification?) and acceptance testings is more about validation (does the system solve the user’s problem?).</p>
+                            <p>A system crash is more likely to be a bug in the code, not in the requirements.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
           </div>
         </panel>
       </panel>
@@ -314,70 +265,78 @@
 <h2 id="code-reviews">Code Reviews</h2></div></span>
         <panel type="seamless" header="#### What" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain code reviews</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Code review is the systematic examination code with the intention of finding where the code can be improved.</strong></p>
-              <p>Reviews can be done in various forms. Some examples below:</p>
-              <ul>
-                <li>
-                  <p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
-                  <ul>
-                    <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
-                  </ul>
-                </li>
-              </ul>
-              <modal large="" title="Pair Programming" id="modal:codeReview-pairProgramming">
-                <tip-box type="definition">
-                  <div>
-                    <p><strong>Pair Programming</strong>:</p>
-                    <blockquote>
-                      <p>Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed
-                        in. The two programmers switch roles frequently. <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">source: Wikipedia</a>]</sub></p>
-                    </blockquote>
-                  </div>
-                </tip-box>
-                <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg" width="400"><br>
-                  <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
-                <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> A good introduction to pair programming:</p>
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              </modal>
-              <ul>
-                <li>
-                  <p><strong>Pull Request reviews</strong></p>
-                  <ul>
-                    <li>Project Management Platforms such as GitHub and BitBucket allows the new code to be proposed as Pull Requests and provides the ability for others to review the code in the PR.</li>
-                  </ul>
-                </li>
-                <li>
-                  <p><strong>Formal inspections</strong></p>
-                  <ul>
-                    <li>
-                      <p>Inspections involve a group of people systematically examining a project artifacts to discover defects. Members of the inspection team play various roles during the process, such as:</p>
-                      <ul>
-                        <li>the author - the creator of the artifact</li>
-                        <li>the moderator - the planner and executor of the inspection meeting</li>
-                        <li>the secretary - the recorder of the findings of the inspection</li>
-                        <li>the inspector/reviewer - the one who inspects/reviews the artifact.</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <p>Advantages of code reviews over testing:</p>
-              <ul>
-                <li>It can detect functionality defects as well as other problems such as coding standard violations.</li>
-                <li>Can verify non-code artifacts and incomplete code</li>
-                <li>Do not require test drivers or stubs.</li>
-              </ul>
-              <p>Disadvantages:</p>
-              <ul>
-                <li>It is a manual process and therefore, error prone.</li>
-              </ul>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain code reviews</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Code review is the systematic examination code with the intention of finding where the code can be improved.</strong></p>
+                <p>Reviews can be done in various forms. Some examples below:</p>
+                <ul>
+                  <li>
+                    <p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
+                    <ul>
+                      <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <modal large="" title="Pair Programming" id="modal:codeReview-pairProgramming">
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Pair Programming</strong>:</p>
+                      <blockquote>
+                        <p>Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is
+                          typed in. The two programmers switch roles frequently. <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">source: Wikipedia</a>]</sub></p>
+                      </blockquote>
+                    </div>
+                  </tip-box>
+                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg" width="400"><br>
+                    <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
+                  <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> A good introduction to pair programming:</p>
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                </modal>
+                <ul>
+                  <li>
+                    <p><strong>Pull Request reviews</strong></p>
+                    <ul>
+                      <li>Project Management Platforms such as GitHub and BitBucket allows the new code to be proposed as Pull Requests and provides the ability for others to review the code in the PR.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Formal inspections</strong></p>
+                    <ul>
+                      <li>
+                        <p>Inspections involve a group of people systematically examining a project artifacts to discover defects. Members of the inspection team play various roles during the process, such as:</p>
+                        <ul>
+                          <li>the author - the creator of the artifact</li>
+                          <li>the moderator - the planner and executor of the inspection meeting</li>
+                          <li>the secretary - the recorder of the findings of the inspection</li>
+                          <li>the inspector/reviewer - the one who inspects/reviews the artifact.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>Advantages of code reviews over testing:</p>
+                <ul>
+                  <li>It can detect functionality defects as well as other problems such as coding standard violations.</li>
+                  <li>Can verify non-code artifacts and incomplete code</li>
+                  <li>Do not require test drivers or stubs.</li>
+                </ul>
+                <p>Disadvantages:</p>
+                <ul>
+                  <li>It is a manual process and therefore, error prone.</li>
+                </ul>
+              </div>
+              <div></div>
           </div>
         </panel>
       </panel>
@@ -386,30 +345,38 @@
 <h2 id="static-analysis">Static Analysis</h2></div></span>
         <panel type="seamless" header="#### What" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain static analysis</span></span></span></button>
-            <p></p>
-            <div>
-              <tip-box type="definition">
-                <div>
-                  <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
-                </div>
-              </tip-box>
-              <p>Static analysis of code can find useful information such unused variables, unhandled exceptions, style errors, and statistics. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an IDE can highlight unused
-                variables as you type the code into the editor.</p>
-              <p>Higher-end static analyzer tools can perform for more complex analysis such as locating potential bugs, memory leaks, inefficient code structures etc.</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some example static analyzer for Java:</p>
-                <ul>
-                  <li><a href="http://checkstyle.sourceforge.net/">CheckStyle</a></li>
-                  <li><a href="http://findbugs.sourceforge.net/">PMD</a></li>
-                  <li><a href="https://pmd.github.io/">FindBugs</a></li>
-                </ul>
-              </tip-box>
-              <p><em>Linters</em> are a subset of static analyzers that specifically aim to locate areas where the code can be made 'cleaner'.</p>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain static analysis</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <tip-box type="definition">
+                  <div>
+                    <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
+                  </div>
+                </tip-box>
+                <p>Static analysis of code can find useful information such unused variables, unhandled exceptions, style errors, and statistics. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an IDE can highlight unused
+                  variables as you type the code into the editor.</p>
+                <p>Higher-end static analyzer tools can perform for more complex analysis such as locating potential bugs, memory leaks, inefficient code structures etc.</p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some example static analyzer for Java:</p>
+                  <ul>
+                    <li><a href="http://checkstyle.sourceforge.net/">CheckStyle</a></li>
+                    <li><a href="http://findbugs.sourceforge.net/">PMD</a></li>
+                    <li><a href="https://pmd.github.io/">FindBugs</a></li>
+                  </ul>
+                </tip-box>
+                <p><em>Linters</em> are a subset of static analyzers that specifically aim to locate areas where the code can be made 'cleaner'.</p>
+              </div>
+              <div></div>
           </div>
         </panel>
       </panel>
@@ -418,50 +385,58 @@
 <h2 id="formal-verification">Formal Verification</h2></div></span>
         <panel type="seamless" header="#### What" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain formal verification</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-              <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> An introduction to Formal Methods">
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
-                <p></p>
-              </panel>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain formal verification</span>
+              </span>
+              </span>
+              </span>
               <p></p>
-              <p>Advantages:</p>
-              <ul>
-                <li><strong>Formal verification can be used to prove the absence of errors</strong>. In contrast, testing can only prove the presence of error, not their absence.</li>
-              </ul>
-              <p>Disadvantages:</p>
-              <ul>
-                <li>It only proves the compliance with the specification, but not the actual utility of the software.</li>
-                <li>It requires highly specialized notations and knowledge which makes it an expensive technique to administer. Therefore, <strong>formal verifications are more commonly used in safety-critical software such as flight control systems</strong>.</li>
-              </ul>
-            </div>
-            <div>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: Absence of errors">
-                      <question>
-                        <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
-                        <ul radio-group="cefed" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> False</label></li>
-                        </ul>
-                        <div slot="answer">
-                          <p>True</p>
-                          <p>Explanation: While using formal methods is more expensive than testing, it indeed can prove the correctness of a piece of software conclusively, in certain contexts. Getting such proof via testing requires exhaustive testing,
-                            which is not practical to do in most cases.</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
+                <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
+                <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> An introduction to Formal Methods">
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
+                  <p></p>
                 </panel>
+                <p></p>
+                <p>Advantages:</p>
+                <ul>
+                  <li><strong>Formal verification can be used to prove the absence of errors</strong>. In contrast, testing can only prove the presence of error, not their absence.</li>
+                </ul>
+                <p>Disadvantages:</p>
+                <ul>
+                  <li>It only proves the compliance with the specification, but not the actual utility of the software.</li>
+                  <li>It requires highly specialized notations and knowledge which makes it an expensive technique to administer. Therefore, <strong>formal verifications are more commonly used in safety-critical software such as flight control systems</strong>.</li>
+                </ul>
               </div>
-            </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Absence of errors">
+                        <question>
+                          <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
+                          <ul radio-group="cefed" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> False</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>True</p>
+                            <p>Explanation: While using formal methods is more expensive than testing, it indeed can prove the correctness of a piece of software conclusively, in certain contexts. Getting such proof via testing requires exhaustive testing,
+                              which is not practical to do in most cases.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
           </div>
         </panel>
       </panel>
@@ -471,12 +446,14 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>

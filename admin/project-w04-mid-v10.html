@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Admin: Project: mid-v1.0 [week 4]</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
@@ -70,37 +73,37 @@
     <div>
       <navbar placement="top" type="inverse">
         <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-        <li><a href="/website-base/index.html">Schedule</a></li>
-        <dropdown text="Textbook">
-          <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-          <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/index.html" class="nav-link">Schedule</a></li>
+        <dropdown text="Textbook" class="nav-link">
+          <li><a href="/website-base/se-book-adapted/index.html" class="dropdown-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+          <li><a href="/website-base/se-book-adapted/print.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
         </dropdown>
-        <li><a href="/website-base/admin/index.html">Admin</a></li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-        <dropdown text="IVLE">
-          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+        <li><a href="/website-base/admin/index.html" class="nav-link">Admin</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" class="nav-link">Instructors</a></li>
+        <dropdown text="IVLE" class="nav-link">
+          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
         </dropdown>
-        <dropdown text="Discuss">
-          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+        <dropdown text="Discuss" class="nav-link">
+          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
         </dropdown>
-        <dropdown text="Links">
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-          <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-          <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+        <dropdown text="Links" class="nav-link">
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+          <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
         </dropdown>
-        <li slot="right">
+        <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -174,7 +177,7 @@
                   </div>
                   <div>
                     <div>
-                      <panel header=":muscle: Exercises" expandable="">
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
                           <panel header=":lock::key: Characteristic of brainstorming">
                             <question>
@@ -252,7 +255,7 @@
                   </div>
                   <div>
                     <div>
-                      <panel header=":muscle: Exercises" expandable="">
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
                           <panel header="Q: Which of these are true about user stories?">
                             <question>
@@ -374,7 +377,7 @@
             </div>
           </modal>
           <div class="indented-level3">
-            <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> User Story examples (from a different product)%%">
+            <panel header="<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> User Story examples (from a different product)" minimized="">
               <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br>
                 <code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br>
                 <code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br>
@@ -427,7 +430,88 @@
           <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Specifying Requirements → Use Cases" id="modal:v10-usecases">
           
             <div>
-              <p>null</p>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="introduction-2">Introduction</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
+                          <trigger for="pop:actor">actor</trigger>.[ 📖 :
+                          <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                          </popover>]</p>
+                        <popover id="pop:actor" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="top">
+                          <div slot="content">
+                            <div>
+                              <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+                            </div>
+                          </div>
+                        </popover>
+                      </div>
+                    </tip-box>
+                    <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
+                    <tip-box>
+                      <panel header="<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example 1: ‘check account balance’ use case for an ATM" type="seamless" expanded="">
+                        <ul>
+                          <li>System:
+                            <popover effect="fade" placement="right" content="Automated Teller Machine">
+                              ATM </popover>
+                          </li>
+                          <li>Actor: Customer</li>
+                          <li>Use Case: Check account balance
+                            <ol>
+                              <li>User inserts an ATM card</li>
+                              <li>ATM prompts for PIN</li>
+                              <li>User enters PIN</li>
+                              <li>ATM prompts for withdrawal amount</li>
+                              <li>User enters the amount</li>
+                              <li>ATM ejects the ATM card and issues cash</li>
+                              <li>User collects the card and the cash.</li>
+                            </ol>
+                          </li>
+                        </ul>
+                      </panel>
+                      <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+                        <ul>
+                          <li>System: A Learning Management System (LMS)</li>
+                          <li>Actor: Student</li>
+                          <li>Use Case: Upload file
+                            <ol>
+                              <li>Student requests to upload file</li>
+                              <li>LMS requests for the file location</li>
+                              <li>Student specifies the file location</li>
+                              <li>LMS uploads the file</li>
+                            </ol>
+                          </li>
+                        </ul>
+                      </panel>
+                    </tip-box>
+                    <p></p>
+                    <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of
+                      a system. In the example below, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
+                    <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                      <div>
+                        <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
+                          Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term
+                          ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+                      </div>
+                    </modal>
+                    <p></p>
+                    <img src="/website-base/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250">
+                    <p></p>
+                    <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
             </div>
           </modal>
           <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:v10-nfr">
@@ -479,7 +563,7 @@
                   </div>
                   <div>
                     <div>
-                      <panel header=":muscle: Exercises" expandable="">
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
                           <panel header=":lock::key: TEAMMATES NFRs">
                             <question>
@@ -581,12 +665,14 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\markbind\js\vue.min.js"></script>
 <script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>

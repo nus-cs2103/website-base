@@ -1,4 +1,4 @@
-**<big>Star rating system</big>**
+<md>**<big>Star rating system</big>**</md>
 
 <div class="indented">
 

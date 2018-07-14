@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Admin: %%→%% Assessment</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
@@ -70,37 +73,37 @@
     <div>
       <navbar placement="top" type="inverse">
         <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-        <li><a href="/website-base/index.html">Schedule</a></li>
-        <dropdown text="Textbook">
-          <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-          <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        <li><a href="/website-base/index.html" class="nav-link">Schedule</a></li>
+        <dropdown text="Textbook" class="nav-link">
+          <li><a href="/website-base/se-book-adapted/index.html" class="dropdown-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+          <li><a href="/website-base/se-book-adapted/print.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
         </dropdown>
-        <li><a href="/website-base/admin/index.html">Admin</a></li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-        <dropdown text="IVLE">
-          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+        <li><a href="/website-base/admin/index.html" class="nav-link">Admin</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" class="nav-link">Instructors</a></li>
+        <dropdown text="IVLE" class="nav-link">
+          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
         </dropdown>
-        <dropdown text="Discuss">
-          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+        <dropdown text="Discuss" class="nav-link">
+          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
         </dropdown>
-        <dropdown text="Links">
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-          <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-          <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+        <dropdown text="Links" class="nav-link">
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+          <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
         </dropdown>
-        <li slot="right">
+        <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -115,13 +118,13 @@
       <div id="main">
         <h2 id="project-assessment">Project → Assessment</h2>
         <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
-        <p><strong>Total</strong>: 50 marks (👤 40 individual marks + 👥 10 team marks)</p>
-        <panel header="1. **Product features** [:busts_in_silhouette:][5 marks]" expanded="">
+        <p><strong>Total</strong>: 50 marks (<span class="fas fa-user"></span> 40 individual marks + <span class="fas fa-users"></span> 10 team marks)</p>
+        <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
           <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
           <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
           <p>❗️ Feature that fit well with the other features will earn more marks.</p>
         </panel>
-        <panel header="2. **Implementation** [:bust_in_silhouette:][15 marks]" expanded="">
+        <panel header="2. **Implementation** %%[<span class='fas fa-user'></span> 15 marks]%%" expanded="">
           <p>Evaluates:</p>
           <p><strong>A. Code quality/quantity:</strong></p>
           <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
@@ -869,7 +872,7 @@ exit();
                                 </div>
                                 <div>
                                   <div>
-                                    <panel header=":muscle: Exercises" expandable="">
+                                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                       <div>
                                         <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                                           <question>
@@ -933,7 +936,7 @@ exit();
                                 </div>
                                 <div>
                                   <div>
-                                    <panel header=":muscle: Exercises" expandable="">
+                                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                       <div>
                                         <panel header=":lock::key: Unsuitable variable name">
                                           <question>
@@ -1683,7 +1686,7 @@ compact(input);
           </modal>
           <p><strong>B. Depth and completeness of the major feature</strong></p>
         </panel>
-        <panel header="3. **QA** [:bust_in_silhouette:][10 marks]" expanded="">
+        <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
           <p>Evaluates: How good is your Quality Assurance?</p>
           <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 Practical Exam, 4. bugs found during PE.</p>
           <panel type="seamless" header="%%Click here for more info on v1.4 practical exam%%">
@@ -1699,9 +1702,9 @@ compact(input);
                 </li>
                 <li>Peer-evaluate your
                   <ul>
-                    <li>product design 👥</li>
-                    <li>implementation effort 👤</li>
-                    <li>documentation quality 👤</li>
+                    <li>product design <span class="fas fa-users"></span></li>
+                    <li>implementation effort <span class="fas fa-user"></span></li>
+                    <li>documentation quality <span class="fas fa-user"></span></li>
                   </ul>
                 </li>
               </ul>
@@ -1773,7 +1776,7 @@ compact(input);
                   <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                   <ul>
                     <li>
-                      <p><strong>A. Cohesiveness of product features</strong> [👥]: Do the features fit together and match the stated target user and the value proposition?</p>
+                      <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
                       <ul>
                         <li><code>low</code>: One of these
                           <ul>
@@ -1789,7 +1792,7 @@ compact(input);
                       </ul>
                     </li>
                     <li>
-                      <p><strong>B. Quality of user docs</strong> [👤]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+                      <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
                       <ul>
                         <li><code>low</code>: Hard to understand, often inaccurate or missing important information</li>
                         <li><code>medium</code>:</li>
@@ -1799,7 +1802,7 @@ compact(input);
                       </ul>
                     </li>
                     <li>
-                      <p><strong>C. Amount of work</strong> [👤]: Evaluate the amount of work on a scale of 0 to 30</p>
+                      <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
                       <ul>
                         <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a>                          is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be
                           have efforts lower than 20.</li>
@@ -1810,7 +1813,8 @@ compact(input);
                       </ul>
                     </li>
                     <li>
-                      <p><strong>D. Depth of feature (major feature)</strong> [👤]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have commands<code>edit</code>                        <code>undo</code> <code>redo</code></p>
+                      <p><strong>D. Depth of feature (major feature)</strong> [<span class="fas fa-user"></span>]: Evaluate <mark>the major feature</mark> done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4
+                        did not have commands<code>edit</code> <code>undo</code> <code>redo</code></p>
                       <ul>
                         <li><code>low</code> : an easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span></li>
                         <li><code>medium</code> : moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span></li>
@@ -1826,7 +1830,7 @@ compact(input);
                       </ul>
                     </li>
                     <li>
-                      <p><strong>E. Quality of developer docs</strong> [👤]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                      <p><strong>E. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
                       <ul>
                         <li><code>low</code>: One of these
                           <ul>
@@ -1934,7 +1938,7 @@ compact(input);
             </div>
           </panel>
         </panel>
-        <panel header="4. **Documentation** [:bust_in_silhouette:][10 marks]" expanded="">
+        <panel header="4. **Documentation** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
           <p>Evaluates: How well does your user guide achieves its objectives?</p>
           <p>Based on: the relevant sections of your project portfolio. Criteria considered:</p>
           <ul>
@@ -1942,7 +1946,7 @@ compact(input);
             <li>Good use of visuals to complement text.</li>
           </ul>
         </panel>
-        <panel header="5. **Project management** [:busts_in_silhouette: 5 + :bust_in_silhouette: 5 = 10 marks]" expanded="">
+        <panel header="5. **Project management** %%[<span class='fas fa-users'></span> 5 + <span class='fas fa-user'></span> 5 = 10 marks]%%" expanded="">
           <div id="project-management-grading">
             <p><strong>A. Process:</strong></p>
             <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
@@ -1980,12 +1984,14 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\markbind\js\vue.min.js"></script>
 <script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>

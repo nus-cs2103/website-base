@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Text Book Chapter : Modeling</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
@@ -16,11 +19,8 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px">
-        <p><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></p>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Software Engineering</strong></p>
+      <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
@@ -29,8 +29,7 @@
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Programming Paradigms</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
@@ -39,146 +38,83 @@
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Requirements</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Design</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Implementation</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Quality Assurance</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Project Management</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Tools</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></p>
-            </li>
-            <li style="margin-top: 10px">
-              <p><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></p>
-            </li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">
-<p><strong>Principles</strong></p>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
  <i class="dropdown-btn-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
         <div class="dropdown-container">
@@ -188,7 +124,6 @@
         </div>
       </li>
     </ul>
-    <div></div>
   </div>
   <div id="site-nav-btn-wrap">
     <div id="site-nav-btn">
@@ -203,37 +138,37 @@
       <div>
         <navbar placement="top" type="inverse">
           <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
-          <li><a href="/website-base/index.html">Schedule</a></li>
-          <dropdown text="Textbook">
-            <li><a href="/website-base/se-book-adapted/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
-            <li><a href="/website-base/se-book-adapted/print.html" target="_blank"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+          <li><a href="/website-base/index.html" class="nav-link">Schedule</a></li>
+          <dropdown text="Textbook" class="nav-link">
+            <li><a href="/website-base/se-book-adapted/index.html" class="dropdown-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+            <li><a href="/website-base/se-book-adapted/print.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
           </dropdown>
-          <li><a href="/website-base/admin/index.html">Admin</a></li>
-          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true">Instructors</a></li>
-          <dropdown text="IVLE">
-            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+          <li><a href="/website-base/admin/index.html" class="nav-link">Admin</a></li>
+          <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" class="nav-link">Instructors</a></li>
+          <dropdown text="IVLE" class="nav-link">
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
           </dropdown>
-          <dropdown text="Discuss">
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          <dropdown text="Discuss" class="nav-link">
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
           </dropdown>
-          <dropdown text="Links">
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
-            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
-            <li><a href="/website-base/admin/projectList.html" target="_blank"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+            <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
           </dropdown>
-          <li slot="right">
+          <li slot="right" class="nav-link">
             <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback"></searchbar>
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
             </form>
           </li>
         </navbar>
@@ -251,225 +186,249 @@
 <h2 id="introduction">Introduction</h2></div></span>
         <panel type="seamless" header="#### What" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain models</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>model</em> is a representation of something else.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A
-                  <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
-              </tip-box>
-              <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
-                <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
-                  <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example class diagram:<br></p>
-                <img src="/website-base/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
-              <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
-                <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-              <modal large="" title="%%Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%%" id="modal:modellingIntro-abstraction">
-              
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain models</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>model</em> is a representation of something else.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A
+                    <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
+                </tip-box>
+                <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
+                  <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
+                    <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example class diagram:<br></p>
+                  <img src="/website-base/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
+                <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
+                  <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
+                <modal large="" title="%%Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%%" id="modal:modellingIntro-abstraction">
+                
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
 </span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="what">What</h4>
-                    </div>
-                    <div id="main">
+                      </span>
+                    </p>
+                    <div id="title-and-body">
                       <div>
-                        <tip-box type="definition">
-                          <div>
-                            <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant
-                              to that aspect).</p>
-                          </div>
-                        </tip-box>
-                        <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture
-                          only details that are relevant to the current perspective or the task at hand.</p>
-                        <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
-                        <tip-box>
-                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>,
-                            and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
-                        </tip-box>
-                        <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
-                        <tip-box>
-                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                        </tip-box>
-                        <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
-                        <tip-box>
-                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level
-                            than a bit.</p>
-                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than
-                            an Assembly language instruction <code>MOV</code>.</p>
-                        </tip-box>
+                        <h4 id="what">What</h4>
                       </div>
-                      <div></div>
+                      <div id="main">
+                        <div>
+                          <tip-box type="definition">
+                            <div>
+                              <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant
+                                to that aspect).</p>
+                            </div>
+                          </tip-box>
+                          <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture
+                            only details that are relevant to the current perspective or the task at hand.</p>
+                          <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                          <tip-box>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>,
+                              and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
+                          </tip-box>
+                          <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                          <tip-box>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                          </tip-box>
+                          <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                          <tip-box>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level
+                              than a bit.</p>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than
+                              an Assembly language instruction <code>MOV</code>.</p>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </modal>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A class diagram captures the structure of the software design but not the behavior.</p>
-              </tip-box>
-              <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In addition to a class diagram (or even multiple class diagrams), a number of other diagrams may be needed to capture various interesting aspects of the software.</p>
-              </tip-box>
-            </div>
-            <div></div>
+                </modal>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A class diagram captures the structure of the software design but not the behavior.</p>
+                </tip-box>
+                <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In addition to a class diagram (or even multiple class diagrams), a number of other diagrams may be needed to capture various interesting aspects of the software.</p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### How" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how models are used</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>In software development, models are useful in several ways:</strong></p>
-              <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of using models for analysis:</p>
-                <ol>
-                  <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
-                  <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
-                </ol>
-              </tip-box>
-              <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of using models to communicate:</p>
-                <ol>
-                  <li>We can use an
-                    <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
-                  <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
-                  <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
-                </ol>
-              </tip-box>
-              <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
-                <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
-                <div>
-                  <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some example architecture diagrams:</p>
-                    <tabs>
-                    
-                      <tab header="TEAMMATES">
-                        <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                    
-                      <tab header="se-edu/addressbook-level4">
-                        <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                    
-                      <tab header="Example 1">
-                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
-                          <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                    
-                      <tab header="Example 2">
-                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
-                          <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                    
-                      <tab header="Example 3">
-                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
-                          <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                    </tabs>
-                  </tip-box>
-                </div>
-              </modal>
-              <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of using models to as blueprints:</p>
-                <ol>
-                  <li>A senior developer draws a class diagram to propose a design for an OOP software and passes it to a junior programmer to implement.</li>
-                  <li>A software tool allows users to draw UML models using its interface and the tool automatically generates the code based on the model.</li>
-                </ol>
-              </tip-box>
-              <tip-box>
-
-                <panel header="Model Driven Development <span class='badge'>tangential</span>" type="seamless">
-                  <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints.</strong> MDD uses models as primary engineering artifacts
-                    when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual
-                    translation from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and
-                    maintain the link between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
-                  <p>Further reading:</p>
-                  <ul>
-                    <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
-                    <li><a href="http://www.theenterprisearchitect.eu/blog/2009/03/31/5-types-of-model-driven-software-development/">5 types of Model Driven Software Development</a> - A more optimistic view, although an old article</li>
-                  </ul>
-                </panel>
-              </tip-box>
-            </div>
-            <div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how models are used</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
+                <p><strong>In software development, models are useful in several ways:</strong></p>
+                <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of using models for analysis:</p>
+                  <ol>
+                    <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
+                    <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
+                  </ol>
+                </tip-box>
+                <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of using models to communicate:</p>
+                  <ol>
+                    <li>We can use an
+                      <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
+                    <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
+                    <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
+                  </ol>
+                </tip-box>
+                <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+                  <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                   <div>
-                    <panel header=":lock::key: Statements about models">
-                      <question>
-                        <p>Choose the correct statements about models.</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Models are abstractions.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Models can be used for communication.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Models can be used for analysis of a problem.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>(a) (b) (c) (e)</p>
-                          <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
-                        </div>
-                      </question>
-                    </panel>
+                    <tip-box>
+                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some example architecture diagrams:</p>
+                      <tabs>
+                      
+                        <tab header="TEAMMATES">
+                          <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      
+                        <tab header="se-edu/addressbook-level4">
+                          <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      
+                        <tab header="Example 1">
+                          <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                            <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      
+                        <tab header="Example 2">
+                          <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                            <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      
+                        <tab header="Example 3">
+                          <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                            <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      </tabs>
+                    </tip-box>
                   </div>
-                  <div>
-                    <panel header=":lock: Explain usage of models in a class project">
-                      <question>
-                        <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
-                        <div slot="hint">
-                          <p>Can models be useful in evaluating the design quality of a software written by students?</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                </modal>
+                <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of using models to as blueprints:</p>
+                  <ol>
+                    <li>A senior developer draws a class diagram to propose a design for an OOP software and passes it to a junior programmer to implement.</li>
+                    <li>A software tool allows users to draw UML models using its interface and the tool automatically generates the code based on the model.</li>
+                  </ol>
+                </tip-box>
+                <tip-box>
+
+                  <panel header="Model Driven Development <span class='badge'>tangential</span>" type="seamless">
+                    <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints.</strong> MDD uses models as primary engineering artifacts
+                      when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual
+                      translation from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and
+                      maintain the link between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
+                    <p>Further reading:</p>
+                    <ul>
+                      <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
+                      <li><a href="http://www.theenterprisearchitect.eu/blog/2009/03/31/5-types-of-model-driven-software-development/">5 types of Model Driven Software Development</a> - A more optimistic view, although an old article</li>
+                    </ul>
+                  </panel>
+                </tip-box>
               </div>
-            </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Statements about models">
+                        <question>
+                          <p>Choose the correct statements about models.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Models are abstractions.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Models can be used for communication.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Models can be used for analysis of a problem.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a) (b) (c) (e)</p>
+                            <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock: Explain usage of models in a class project">
+                        <question>
+                          <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
+                          <div slot="hint">
+                            <p>Can models be useful in evaluating the design quality of a software written by students?</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
           </div>
         </panel>
         <panel type="seamless" header="#### UML Models" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify UML models</span></span></span></button>
-            <p></p>
-            <div>
-              <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p>
-              <tip-box>
-                <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
-                  <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can identify UML models</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p>
+                <tip-box>
+                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
+                    <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
       </panel>
@@ -478,9 +437,15 @@
 <h2 id="modeling-structures">Modeling Structures</h2></div></span>
         <panel type="seamless" header="#### OO Structures" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain structure modelling of OO solutions</span></span></span></button>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain structure modelling of OO solutions</span>
+            </span>
+            </span>
+            </span>
             <p></p>
             <div>
               <p>An OO solution is basically a network of objects interacting with each other. Therefore, <strong>it is useful to be able to model how the relevant objects are 'networked' together</strong> inside a software <span class="dimmed"> i.e. how the objects are connect together</span>.</p>
@@ -528,9 +493,15 @@
         </panel>
         <panel type="seamless" header="#### Class Diagrams (Basics)" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use basic-level class diagrams</span></span></span></button>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use basic-level class diagrams</span>
+            </span>
+            </span>
+            </span>
             <p></p>
             <div>
               <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
@@ -567,7 +538,7 @@
             </div>
             <div>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
+                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                   <div>
                     <panel header=":lock::key: Which association notations are shown?">
                       <question>
@@ -603,46 +574,68 @@
         </panel>
         <panel type="seamless" header="#### Adding More Info to UML Models" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can add more info to UML models</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>UML notes can be used to add more info to any UML model.</strong></p>
-              <p>
-                <panel src="/website-base\book\uml\notes\notes\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Notes" expanded="" fragment="title-and-body"></panel>
-              </p>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can add more info to UML models</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>UML notes can be used to add more info to any UML model.</strong></p>
+                <p>
+                  <panel src="/website-base\book\uml\notes\notes\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Notes" expanded="" fragment="title-and-body"></panel>
+                </p>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Class Diagrams - Intermediate" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate-level class diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Compositions and Aggregations are stronger forms of associations while Dependencies are a weaker form of associations. Inheritance is another strong type of association between classes.</strong></p>
-              <p>
-                <panel src="/website-base\book\uml\classDiagrams\composition\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Composition → What"
-                  alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Composition" minimized="" fragment="title-and-body"></panel>
-                <panel src="/website-base\book\uml\classDiagrams\aggregation\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Aggregation → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Aggregation"
-                  minimized="" fragment="title-and-body"></panel>
-                <panel src="/website-base\book\uml\classDiagrams\dependencies\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Dependencies → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Dependencies"
-                  minimized="" fragment="title-and-body"></panel>
-                <panel src="/website-base\book\uml\classDiagrams\classInheritance\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Inheritance"
-                  minimized="" fragment="title-and-body"></panel>
-              </p>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate-level class diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Compositions and Aggregations are stronger forms of associations while Dependencies are a weaker form of associations. Inheritance is another strong type of association between classes.</strong></p>
+                <p>
+                  <panel src="/website-base\book\uml\classDiagrams\composition\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Composition → What"
+                    alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Composition" minimized="" fragment="title-and-body"></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\aggregation\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Aggregation → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Aggregation"
+                    minimized="" fragment="title-and-body"></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\dependencies\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Dependencies → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Dependencies"
+                    minimized="" fragment="title-and-body"></panel>
+                  <panel src="/website-base\book\uml\classDiagrams\classInheritance\what\unit-inElsewhere-asFlat._include_.html#title-and-body" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Class Diagrams → Inheritance → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Inheritance"
+                    minimized="" fragment="title-and-body"></panel>
+                </p>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Object Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object diagrams</span></span></span></button>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object diagrams</span>
+            </span>
+            </span>
+            </span>
             <p></p>
             <div>
               <p><strong>An object diagrams shows the object structure (i.e., objects and their associations) at a specific time.</strong></p>
@@ -663,143 +656,187 @@
         </panel>
         <panel type="seamless" header="#### Object Oriented Domain Models" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object oriented domain models</span></span></span></button>
-            <p></p>
-            <div>
-              <blockquote>
-                <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development. <sub>--<a href="http://www.software-engin.com/">Ian Sommerville, in the book <em>Software Engineering</em></a></sub></p>
-              </blockquote>
-              <p>Class diagrams can also be used to model objects in the
-                <tooltip content="the relevant information that needs to be examined to understand a problem">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> OO domain model of a snakes and ladders game is given below.</p>
-                <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the number
-                  of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece can
-                  automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
-                <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
-                <p></p>
-                <p>The above OO domain model omits the ladder class for simplicity. It can be included in a similar fashion to the Snake class.</p>
-              </tip-box>
-              <p><strong>OODMs do not contain solution-specific classes</strong> (i.e. classes that are used in the solution domain but do not exist in the problem domain). For example, a class called DatabaseConnection could appear in a class diagram but
-                not usually in an OO domain model because DatabaseConnection is something related to a software solution but not an entity in the problem domain.</p>
-              <p><strong>OODMs represents the class <em>structure</em> of the problem domain</strong> and not their behavior, just like class diagrams. To show behavior, use other diagrams such as sequence diagrams.</p>
-              <p><strong>OODM notation is similar to class diagram notation but typically omit methods and navigability.</strong></p>
-            </div>
-            <div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain object oriented domain models</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: This diagram is,...">
-                      <question>
-                        <p>This diagram is,</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A class diagram.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object diagram.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An OO domain model, also known as a conceptual class diagram.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Can be either a class diagram or an OO domain model.</li>
-                        </ul>
-                        <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
-                        <p></p>
-                        <div slot="answer">
-                          <p>(a)</p>
-                          <p>Explanation: The diagram shows navigability which is not shown in an OO domain model. Hence, it has to be a class diagram.</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header=":lock::key: Difference between a class diagram and and an OO domain model?">
-                      <question>
-                        <p>What is the main difference between a class diagram and and an OO domain model?</p>
-                        <ul radio-group="88436" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> b. One has more classes than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> c. One shows more details than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
-                        </ul>
-                        <div slot="answer">
-                          <p>(a)</p>
-                          <p>Explanation: Both are UML diagrams, and use the class diagram notation. While it is true that often a class diagram may have more classes and more details, the main difference is that the OO domain model describes the problem
-                            domain while the class diagram describes the solution.</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                <blockquote>
+                  <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development. <sub>--<a href="http://www.software-engin.com/">Ian Sommerville, in the book <em>Software Engineering</em></a></sub></p>
+                </blockquote>
+                <p>Class diagrams can also be used to model objects in the
+                  <tooltip content="the relevant information that needs to be examined to understand a problem">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> OO domain model of a snakes and ladders game is given below.</p>
+                  <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the
+                    number of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece
+                    can automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
+                  <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
+                  <p></p>
+                  <p>The above OO domain model omits the ladder class for simplicity. It can be included in a similar fashion to the Snake class.</p>
+                </tip-box>
+                <p><strong>OODMs do not contain solution-specific classes</strong> (i.e. classes that are used in the solution domain but do not exist in the problem domain). For example, a class called DatabaseConnection could appear in a class diagram
+                  but not usually in an OO domain model because DatabaseConnection is something related to a software solution but not an entity in the problem domain.</p>
+                <p><strong>OODMs represents the class <em>structure</em> of the problem domain</strong> and not their behavior, just like class diagrams. To show behavior, use other diagrams such as sequence diagrams.</p>
+                <p><strong>OODM notation is similar to class diagram notation but typically omit methods and navigability.</strong></p>
               </div>
-            </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: This diagram is,...">
+                        <question>
+                          <p>This diagram is,</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A class diagram.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object diagram.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An OO domain model, also known as a conceptual class diagram.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Can be either a class diagram or an OO domain model.</li>
+                          </ul>
+                          <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
+                          <p></p>
+                          <div slot="answer">
+                            <p>(a)</p>
+                            <p>Explanation: The diagram shows navigability which is not shown in an OO domain model. Hence, it has to be a class diagram.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock::key: Difference between a class diagram and and an OO domain model?">
+                        <question>
+                          <p>What is the main difference between a class diagram and and an OO domain model?</p>
+                          <ul radio-group="88436" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> b. One has more classes than the other.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> c. One shows more details than the other.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)</p>
+                            <p>Explanation: Both are UML diagrams, and use the class diagram notation. While it is true that often a class diagram may have more classes and more details, the main difference is that the OO domain model describes the problem
+                              domain while the class diagram describes the solution.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
           </div>
         </panel>
         <panel type="seamless" header="#### Deployment Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain deployment diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>deployment diagram</em> shows a system's physical layout, revealing which pieces of software run on which pieces of hardware.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example deployment diagram:</p>
-                <img src="/website-base/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png" height="500">
-                <p></p>
-                <p><sub>source:<a href="https://en.wikipedia.org/wiki/Deployment_diagram">https://commons.wikimedia.org</a></sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain deployment diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>deployment diagram</em> shows a system's physical layout, revealing which pieces of software run on which pieces of hardware.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example deployment diagram:</p>
+                  <img src="/website-base/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png" height="500">
+                  <p></p>
+                  <p><sub>source:<a href="https://en.wikipedia.org/wiki/Deployment_diagram">https://commons.wikimedia.org</a></sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Component Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain component diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>component diagram</em> is used to show how a system is divided into components and how they are connected to each other through interfaces.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example component diagram:</p>
-                <p><img src="/website-base/book/modeling/modelingStructures/componentDiagrams/images/diagram.png" height="500"><br></p>
-                <p><sub>source:<a href="https://en.wikipedia.org/wiki/Component_diagram">https://commons.wikimedia.org</a></sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain component diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>component diagram</em> is used to show how a system is divided into components and how they are connected to each other through interfaces.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example component diagram:</p>
+                  <p><img src="/website-base/book/modeling/modelingStructures/componentDiagrams/images/diagram.png" height="500"><br></p>
+                  <p><sub>source:<a href="https://en.wikipedia.org/wiki/Component_diagram">https://commons.wikimedia.org</a></sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Package Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain package diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>package diagram</em> shows packages and their dependencies.</strong> A package is a grouping construct for grouping UML elements (classes, use cases, etc.).</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example package diagram:</p>
-                <p><img src="/website-base/book/modeling/modelingStructures/packageDiagrams/images/diagram.png" height="450"><br>
-                  <sub>source:<a href="https://en.wikipedia.org/wiki/Package_diagram">https://commons.wikimedia.org</a></sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain package diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>package diagram</em> shows packages and their dependencies.</strong> A package is a grouping construct for grouping UML elements (classes, use cases, etc.).</p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example package diagram:</p>
+                  <p><img src="/website-base/book/modeling/modelingStructures/packageDiagrams/images/diagram.png" height="450"><br>
+                    <sub>source:<a href="https://en.wikipedia.org/wiki/Package_diagram">https://commons.wikimedia.org</a></sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Composite Structure Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain composite structure diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>composite structure diagram</em> hierarchically decomposes a class into its internal structure.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example composite structure diagram:</p>
-                <img src="/website-base/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png" height="150">
-                <br>
-                <p><sub>source:<a href="https://en.wikipedia.org/wiki/Composite_structure_diagram">https://commons.wikimedia.org</a></sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain composite structure diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>composite structure diagram</em> hierarchically decomposes a class into its internal structure.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example composite structure diagram:</p>
+                  <img src="/website-base/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png" height="150">
+                  <br>
+                  <p><sub>source:<a href="https://en.wikipedia.org/wiki/Composite_structure_diagram">https://commons.wikimedia.org</a></sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
       </panel>
@@ -808,83 +845,99 @@
 <h2 id="modeling-behaviors">Modeling Behaviors</h2></div></span>
         <panel type="seamless" header="#### Activity Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use activity diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the
-                <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
-              <tip-box>
-                <p>Some examples in which a certain workflow is relevant to software project:</p>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
-              </tip-box>
-              <p>Understanding such workflows is important for the success of the software project. <strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-              <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
-                <div>
-                  <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
-                    Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
-                    UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
-                </div>
-              </modal>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
-              <p>The most basic activity diagram is simply a linear sequence of actions.</p>
-              <p>
-                <panel src="/website-base\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths"
-                  expanded=""></panel>
-              </p>
-              <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
-              <p>
-                <panel src="/website-base\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths"
-                  expanded=""></panel>
-              </p>
-              <p>In some workflows, multiple paths happen in parallel.</p>
-              <p>
-                <panel src="/website-base\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths"
-                  expanded=""></panel>
-              </p>
-            </div>
-            <div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use activity diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
+                <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the
+                  <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
+                <tip-box>
+                  <p>Some examples in which a certain workflow is relevant to software project:</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
+                </tip-box>
+                <p>Understanding such workflows is important for the success of the software project. <strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
+                <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
                   <div>
-                    <panel header=":lock::key: Which sequences are not allowed?">
-                      <question>
-                        <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
-                        </ul>
-                        <img src="/website-base/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
-                        <p></p>
-                        <div slot="answer">
-                          <p>(iv)</p>
-                          <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
-                        </div>
-                      </question>
-                    </panel>
+                    <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
+                      Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
+                      in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                   </div>
-                </panel>
+                </modal>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
+                <p>The most basic activity diagram is simply a linear sequence of actions.</p>
+                <p>
+                  <panel src="/website-base\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths"
+                    expanded=""></panel>
+                </p>
+                <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
+                <p>
+                  <panel src="/website-base\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths"
+                    expanded=""></panel>
+                </p>
+                <p>In some workflows, multiple paths happen in parallel.</p>
+                <p>
+                  <panel src="/website-base\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths"
+                    expanded=""></panel>
+                </p>
               </div>
-            </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which sequences are not allowed?">
+                        <question>
+                          <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                          </ul>
+                          <img src="/website-base/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                          <p></p>
+                          <div slot="answer">
+                            <p>(iv)</p>
+                            <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
           </div>
         </panel>
         <panel type="seamless" header="#### Sequence Diagrams - Basic" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw basic sequence diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Sequence diagrams model interactions between entities for a given scenario.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below.</p>
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw basic sequence diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Sequence diagrams model interactions between entities for a given scenario.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
 
     <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{
         Unit prototype = <span class="hljs-keyword">new</span> Unit();
@@ -903,20 +956,20 @@
 }
 
 </code></pre>
-                <p>Here is the sequence diagram to model the interactions for the method call <code>prouducePrototype()</code> on a <code>Machine</code> object.</p>
-                <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
-                <p></p>
-              </tip-box>
-            </div>
-            <div>
+                  <p>Here is the sequence diagram to model the interactions for the method call <code>prouducePrototype()</code> on a <code>Machine</code> object.</p>
+                  <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
+                  <p></p>
+                </tip-box>
+              </div>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock: Draw a Sequence Diagram for code snippet">
-                      <question>
-                        <div>
-                          <p>Consider the code below:</p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock: Draw a Sequence Diagram for code snippet">
+                        <question>
+                          <div>
+                            <p>Consider the code below:</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -938,177 +991,229 @@
     }
 }
 </code></pre>
-                          <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                          <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                            <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                            <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header=":lock: Find notation errors in sequence diagram">
-                      <question>
-                        <p>Find notation mistakes in the sequence diagram below:</p>
-                        <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="700"></question>
-                    </panel>
-                  </div>
-                </panel>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock: Find notation errors in sequence diagram">
+                        <question>
+                          <p>Find notation mistakes in the sequence diagram below:</p>
+                          <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="700"></question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
               </div>
-            </div>
           </div>
         </panel>
         <panel type="seamless" header="#### Sequence Diagrams - Intermediate" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw intermediate-level sequence diagrams</span></span></span></button>
-            <p></p>
-            <div></div>
-            <div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can draw intermediate-level sequence diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div></div>
               <div>
-                <panel header=":muscle: Exercises" expandable="">
-                  <div>
-                    <panel header=":lock::key: What’s going on here?">
-                      <question>
-                        <p>What’s going on here?</p>
-                        <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
-                        <p></p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>(d)</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
-                      <question>
-                        <p>Explain the interactions depicted in this sequence diagram.</p>
-                        <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
-                        <p></p>
-                        <div slot="hint">
-                          <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: What’s going on here?">
+                        <question>
+                          <p>What’s going on here?</p>
+                          <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(d)</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock: Explain Sequence Diagram (ParserFactory)">
+                        <question>
+                          <p>Explain the interactions depicted in this sequence diagram.</p>
+                          <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+                          <p></p>
+                          <div slot="hint">
+                            <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
               </div>
-            </div>
           </div>
         </panel>
         <panel type="seamless" header="#### Use Case Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain use case diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple use case diagram:</p>
-                <img src="/website-base/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain use case diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple use case diagram:</p>
+                  <img src="/website-base/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Timing Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain timing diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>timing diagram</em> focus on timing constraints.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example timing diagram:</p>
-                <img src="/website-base/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png" height="280">
-                <br>
-                <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain timing diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>timing diagram</em> focus on timing constraints.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example timing diagram:</p>
+                  <img src="/website-base/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png" height="280">
+                  <br>
+                  <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Interaction Overview Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain interaction overview diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>An <em>Interaction overview</em> diagrams is a combination of activity diagrams and sequence diagrams</strong>.</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example:</p>
-                <img src="/website-base/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png" height="420">
-                <p></p>
-                <p><sub>source:<a href="https://en.wikipedia.org/wiki/Interaction_overview_diagram">https://commons.wikimedia.org</a></sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain interaction overview diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>An <em>Interaction overview</em> diagrams is a combination of activity diagrams and sequence diagrams</strong>.</p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example:</p>
+                  <img src="/website-base/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png" height="420">
+                  <p></p>
+                  <p><sub>source:<a href="https://en.wikipedia.org/wiki/Interaction_overview_diagram">https://commons.wikimedia.org</a></sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Communication Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain communication diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>Communication diagrams</em> are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example:</p>
-                <img src="/website-base/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png" height="300">
-                <br>
-                <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain communication diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>Communication diagrams</em> are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example:</p>
+                  <img src="/website-base/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png" height="300">
+                  <br>
+                  <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### State Machine Diagrams" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain state machine diagrams</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>A <em>State Machine Diagram</em> models state-dependent behavior.</strong></p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider how a CD player responds when the “eject CD” button is pushed:</p>
-                <ul>
-                  <li>If the CD tray is already open, it does nothing.</li>
-                  <li>If the CD tray is already in the process of opening (opened half-way), it continues to open the CD tray.</li>
-                  <li>If the CD tray is closed and the CD is being played, it stops playing and opens the CD tray.</li>
-                  <li>If the CD tray is closed and CD is not being played, it simply opens the CD tray.</li>
-                  <li>If the CD tray is already in the process of closing (closed half-way), it waits until the CD tray is fully closed and opens it immediately afterwards.</li>
-                </ul>
-                <p>What this means is that the CD player’s response to pushing the “eject CD” button depends on what it was doing at the time of the event. More generally, the CD player’s response to the event received depends on its internal state. Such
-                  a behavior is called a <em>state-dependent behavior</em>.</p>
-              </tip-box>
-              <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code>if x&gt;y, then x=x-y</code>. Occasionally,
-                objects may exhibit state-dependent behavior that is complex enough such that it needs to be captured into a separate model. Such state-dependent behavior can be modelled using UML <em>state machine diagrams</em> (SMD for short, sometimes
-                also called ‘state charts’, ‘state diagrams’ or ‘state machines’).</p>
-              <p>An SMD views the life-cycle of an object as consisting of a finite number of states where each state displays a unique behavior pattern. An SMD captures information such as the states an object can be in, during its lifetime, and how the
-                object responds to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over
-                its full life cycle.</p>
-              <tip-box>
-                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An SMD for the Minesweeper game.</p>
-                <img src="/website-base/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
-                <p></p>
-              </tip-box>
-            </div>
-            <div></div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain state machine diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A <em>State Machine Diagram</em> models state-dependent behavior.</strong></p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider how a CD player responds when the “eject CD” button is pushed:</p>
+                  <ul>
+                    <li>If the CD tray is already open, it does nothing.</li>
+                    <li>If the CD tray is already in the process of opening (opened half-way), it continues to open the CD tray.</li>
+                    <li>If the CD tray is closed and the CD is being played, it stops playing and opens the CD tray.</li>
+                    <li>If the CD tray is closed and CD is not being played, it simply opens the CD tray.</li>
+                    <li>If the CD tray is already in the process of closing (closed half-way), it waits until the CD tray is fully closed and opens it immediately afterwards.</li>
+                  </ul>
+                  <p>What this means is that the CD player’s response to pushing the “eject CD” button depends on what it was doing at the time of the event. More generally, the CD player’s response to the event received depends on its internal state. Such
+                    a behavior is called a <em>state-dependent behavior</em>.</p>
+                </tip-box>
+                <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code>if x&gt;y, then x=x-y</code>. Occasionally,
+                  objects may exhibit state-dependent behavior that is complex enough such that it needs to be captured into a separate model. Such state-dependent behavior can be modelled using UML <em>state machine diagrams</em> (SMD for short, sometimes
+                  also called ‘state charts’, ‘state diagrams’ or ‘state machines’).</p>
+                <p>An SMD views the life-cycle of an object as consisting of a finite number of states where each state displays a unique behavior pattern. An SMD captures information such as the states an object can be in, during its lifetime, and how the
+                  object responds to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over
+                  its full life cycle.</p>
+                <tip-box>
+                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An SMD for the Minesweeper game.</p>
+                  <img src="/website-base/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
       </panel>
@@ -1117,277 +1222,302 @@
 <h2 id="modeling-a-solution">Modeling a Solution</h2></div></span>
         <panel type="seamless" header="#### Introduction" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how modelling can be used before implementation</span></span></span></button>
-            <p></p>
-            <div>
-              <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
-              <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-              <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain how modelling can be used before implementation</span>
+              </span>
+              </span>
+              </span>
               <p></p>
-              <p>Before jumping into coding, you may want to find out things such as,</p>
-              <ul>
-                <li>Is this class structure is able to produce the behavior we want?</li>
-                <li>What API should each class have?</li>
-                <li>Do we need more classes?</li>
-              </ul>
-              <p>To answer those questions, you can analyze the how the objects of these classes will interact with each other to produce the behavior you want.</p>
-            </div>
-            <div></div>
+              <div>
+                <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
+                <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
+                <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                <p></p>
+                <p>Before jumping into coding, you may want to find out things such as,</p>
+                <ul>
+                  <li>Is this class structure is able to produce the behavior we want?</li>
+                  <li>What API should each class have?</li>
+                  <li>Do we need more classes?</li>
+                </ul>
+                <p>To answer those questions, you can analyze the how the objects of these classes will interact with each other to produce the behavior you want.</p>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Basic" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use simple class diagrams and sequence diagrams to model an OO solution</span></span></span></button>
-            <p></p>
-            <div>
-              <p>As mentioned in [
-                <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
-              <modal title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:basicModelling-modelingIntro">
-              
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Design → Modeling → Modeling a Solution →
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use simple class diagrams and sequence diagrams to model an OO solution</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p>As mentioned in [
+                  <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
+                <modal title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:basicModelling-modelingIntro">
+                
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Modeling → Modeling a Solution →
 </span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="introduction-2">Introduction</h4>
-                    </div>
-                    <div id="main">
+                      </span>
+                    </p>
+                    <div id="title-and-body">
                       <div>
-                        <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
-                        <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                        <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
-                        <p></p>
-                        <p>Before jumping into coding, you may want to find out things such as,</p>
-                        <ul>
-                          <li>Is this class structure is able to produce the behavior we want?</li>
-                          <li>What API should each class have?</li>
-                          <li>Do we need more classes?</li>
-                        </ul>
-                        <p>To answer those questions, you can analyze the how the objects of these classes will interact with each other to produce the behavior you want.</p>
+                        <h4 id="introduction-2">Introduction</h4>
                       </div>
-                      <div></div>
+                      <div id="main">
+                        <div>
+                          <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
+                          <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
+                          <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                          <p></p>
+                          <p>Before jumping into coding, you may want to find out things such as,</p>
+                          <ul>
+                            <li>Is this class structure is able to produce the behavior we want?</li>
+                            <li>What API should each class have?</li>
+                            <li>Do we need more classes?</li>
+                          </ul>
+                          <p>To answer those questions, you can analyze the how the objects of these classes will interact with each other to produce the behavior you want.</p>
+                        </div>
+                        <div></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </modal>
-              <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
-              <p></p>
-              <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                </modal>
+                <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                 <p></p>
-                <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
-              </tip-box>
-              <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic, the <code>TextUi</code>                needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                  <p></p>
+                  <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
+                </tip-box>
+                <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic, the <code>TextUi</code>                  needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                  <p></p>
+                  <p>W = Width of the minefield; H = Height of the minefield</p>
+                </tip-box>
+                <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br> The <code>Logic</code>                  methods we conceptualized in our modelling so far are:</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+                <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+                <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
+                <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+                  <p></p>
+                  <p></p>
+                </tip-box>
                 <p></p>
-                <p>W = Width of the minefield; H = Height of the minefield</p>
-              </tip-box>
-              <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br> The <code>Logic</code>                methods we conceptualized in our modelling so far are:</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
-              <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
-              <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
-              <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
-                <p></p>
-                <p></p>
-              </tip-box>
-              <p></p>
-              <tip-box>
-                <p>💡 Note that
-                  <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
-                <div v-closeable="" alt="Tic-Tac-Toe Video">
-                  <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                </div>
-              </tip-box>
-            </div>
-            <div></div>
+                <tip-box>
+                  <p>💡 Note that
+                    <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                  <div v-closeable="" alt="Tic-Tac-Toe Video">
+                    <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                  </div>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
         <panel type="seamless" header="#### Intermediate" expanded="">
           <div class="indented">
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font></span></span></button>
-            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate class diagram and sequence diagram concepts to model an OO design</span></span></span></button>
-            <p></p>
-            <div>
-              <p>Continuing with the example in [
-                <trigger trigger="click" for="modal:conceptualingIntermediate-basic">Design → Modeling → Modeling a Solution → Basic</trigger>], next let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
-              <modal large="" title="" id="modal:conceptualingIntermediate-basic">
-              
-                <div>
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use intermediate class diagram and sequence diagram concepts to model an OO design</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p>Continuing with the example in [
+                  <trigger trigger="click" for="modal:conceptualingIntermediate-basic">Design → Modeling → Modeling a Solution → Basic</trigger>], next let us model how the TextUi interacts with the Logic to support the mark or clear operations until the game is won or lost.</p>
+                <modal large="" title="" id="modal:conceptualingIntermediate-basic">
+                
                   <div>
-                    <p>
-                      <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
-                      <panel src="/website-base\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
-                    </p>
-                  </div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Design → Modeling → Modeling a Solution →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
                     <div>
-                      <h4 id="basic">Basic</h4>
+                      <p>
+                        <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
+                        <panel src="/website-base\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
+                      </p>
                     </div>
-                    <div id="main">
-                      <div>
-                        <p>As mentioned in [
-                          <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
-                        <modal title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:basicModelling-modelingIntro">
-                        
-                          <div>
-                            <div></div>
-                            <p></p>
-                            <p><span class="dimmed"><strong><span>Design → Modeling → Modeling a Solution →
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Design → Modeling → Modeling a Solution →
 </span></strong>
-                              </span>
-                            </p>
-                            <div id="title-and-body">
-                              <div>
-                                <h4 id="introduction-3">Introduction</h4>
-                              </div>
-                              <div id="main">
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="basic">Basic</h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <p>As mentioned in [
+                            <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
+                          <modal title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:basicModelling-modelingIntro">
+                          
+                            <div>
+                              <div></div>
+                              <p></p>
+                              <p><span class="dimmed"><strong><span>Design → Modeling → Modeling a Solution →
+</span></strong>
+                                </span>
+                              </p>
+                              <div id="title-and-body">
                                 <div>
-                                  <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
-                                  <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                                  <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
-                                  <p></p>
-                                  <p>Before jumping into coding, you may want to find out things such as,</p>
-                                  <ul>
-                                    <li>Is this class structure is able to produce the behavior we want?</li>
-                                    <li>What API should each class have?</li>
-                                    <li>Do we need more classes?</li>
-                                  </ul>
-                                  <p>To answer those questions, you can analyze the how the objects of these classes will interact with each other to produce the behavior you want.</p>
+                                  <h4 id="introduction-3">Introduction</h4>
                                 </div>
-                                <div></div>
+                                <div id="main">
+                                  <div>
+                                    <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
+                                    <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
+                                    <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                                    <p></p>
+                                    <p>Before jumping into coding, you may want to find out things such as,</p>
+                                    <ul>
+                                      <li>Is this class structure is able to produce the behavior we want?</li>
+                                      <li>What API should each class have?</li>
+                                      <li>Do we need more classes?</li>
+                                    </ul>
+                                    <p>To answer those questions, you can analyze the how the objects of these classes will interact with each other to produce the behavior you want.</p>
+                                  </div>
+                                  <div></div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </modal>
-                        <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
-                        <p></p>
-                        <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
-                        <tip-box>
-                          <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                          </modal>
+                          <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                           <p></p>
-                          <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
-                        </tip-box>
-                        <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic,
-                          the <code>TextUi</code> needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
-                        <tip-box>
-                          <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                          <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
+                          <tip-box>
+                            <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                            <p></p>
+                            <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
+                          </tip-box>
+                          <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic,
+                            the <code>TextUi</code> needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
+                          <tip-box>
+                            <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                            <p></p>
+                            <p>W = Width of the minefield; H = Height of the minefield</p>
+                          </tip-box>
+                          <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br>                            The <code>Logic</code> methods we conceptualized in our modelling so far are:</p>
+                          <tip-box>
+                            <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+                          <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
+                          <tip-box>
+                            <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+                          <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
+                          <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
+                          <tip-box>
+                            <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+                            <p></p>
+                            <p></p>
+                          </tip-box>
                           <p></p>
-                          <p>W = Width of the minefield; H = Height of the minefield</p>
-                        </tip-box>
-                        <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br>                          The <code>Logic</code> methods we conceptualized in our modelling so far are:</p>
-                        <tip-box>
-                          <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
-                        <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
-                        <tip-box>
-                          <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
-                        <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
-                        <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
-                        <tip-box>
-                          <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
-                          <p></p>
-                          <p></p>
-                        </tip-box>
-                        <p></p>
-                        <tip-box>
-                          <p>💡 Note that
-                            <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
-                          <div v-closeable="" alt="Tic-Tac-Toe Video">
-                            <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                          </div>
-                        </tip-box>
+                          <tip-box>
+                            <p>💡 Note that
+                              <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                            <div v-closeable="" alt="Tic-Tac-Toe Video">
+                              <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                            </div>
+                          </tip-box>
+                        </div>
+                        <div></div>
                       </div>
-                      <div></div>
                     </div>
                   </div>
-                </div>
-              </modal>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
-                <p></p>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
-              <p>This interaction adds the following methods to the <code>Logic</code> class</p>
-              <ul>
-                <li><code>clearCellAt(int x, int y)</code></li>
-                <li><code>markCellAt(int x, int y)</code></li>
-                <li><code>getGameState() :GAME_STATE (GAME_STATE: READY, IN_PLAY, WON, LOST, …)</code></li>
-              </ul>
-              <p>And it adds the following operation to Logic API:</p>
-              <ul>
-                <li><code>getAppearanceOfCellAt(int,int):CELL_APPEARANCE (CELL_APPEARANCE: HIDDEN, ZERO, ONE, TWO, THREE, …, MARKED, INCORRECTLY_MARKED, INCORRECTLY_CLEARED)</code></li>
-              </ul>
-              <p>In the above design, <code>TextUi</code> does not access <code>Cell</code> objects directly. Instead, it gets values of type <code>CELL_APPEARANCE</code> from <code>Logic</code> to be displayed as a minefield to the player. Alternatively,
-                each cell or the entire Minefield can be passed directly to <code>TextUi</code>.</p>
-              <p>Here is the updated class diagram:</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
-              <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code>                operation. We can model it like this:</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
-              <p>Our current model assumes that the <code>Minefield</code> object has enough information (i.e. H, W, and mine locations) to create itself.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
-                <p></p>
-              </tip-box>
-              <p>An alternative is to have a <code>ConfigGenerator</code> object that generates a string containing the minefield information as shown below.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
-                <p></p>
-              </tip-box>
-              <p>In addition, <code>getWidth()</code>, <code>getHeight()</code>, <code>markCellAt(x,y)</code> and <code>clearCellAt(x,y)</code> can be handled like this.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
-              <p>The updated class diagram:</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
-              <p>How is <code>getGameState()</code> operation supported? Given below are two ways (there could be other ways):</p>
-              <ol>
-                <li><code>Minefield</code> class knows the state of the game at any time. <code>Logic</code> class retrieves it from the <code>Minefield</code> class as and when required.</li>
-                <li><code>Logic</code> class maintains the state of the game at all times.</li>
-              </ol>
-              <p>Here’s the SD for option 1.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
-              <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
-              <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
-              <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
-              <p>Updated class diagram:</p>
-              <tip-box>
-                <img src="/website-base/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
-              <tip-box>
-                <p>💡 When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations are
-                  required by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
-              </tip-box>
-            </div>
-            <div></div>
+                </modal>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
+                  <p></p>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
+                <p>This interaction adds the following methods to the <code>Logic</code> class</p>
+                <ul>
+                  <li><code>clearCellAt(int x, int y)</code></li>
+                  <li><code>markCellAt(int x, int y)</code></li>
+                  <li><code>getGameState() :GAME_STATE (GAME_STATE: READY, IN_PLAY, WON, LOST, …)</code></li>
+                </ul>
+                <p>And it adds the following operation to Logic API:</p>
+                <ul>
+                  <li><code>getAppearanceOfCellAt(int,int):CELL_APPEARANCE (CELL_APPEARANCE: HIDDEN, ZERO, ONE, TWO, THREE, …, MARKED, INCORRECTLY_MARKED, INCORRECTLY_CLEARED)</code></li>
+                </ul>
+                <p>In the above design, <code>TextUi</code> does not access <code>Cell</code> objects directly. Instead, it gets values of type <code>CELL_APPEARANCE</code> from <code>Logic</code> to be displayed as a minefield to the player. Alternatively,
+                  each cell or the entire Minefield can be passed directly to <code>TextUi</code>.</p>
+                <p>Here is the updated class diagram:</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
+                <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code>                  operation. We can model it like this:</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
+                <p>Our current model assumes that the <code>Minefield</code> object has enough information (i.e. H, W, and mine locations) to create itself.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
+                  <p></p>
+                </tip-box>
+                <p>An alternative is to have a <code>ConfigGenerator</code> object that generates a string containing the minefield information as shown below.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
+                  <p></p>
+                </tip-box>
+                <p>In addition, <code>getWidth()</code>, <code>getHeight()</code>, <code>markCellAt(x,y)</code> and <code>clearCellAt(x,y)</code> can be handled like this.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
+                <p>The updated class diagram:</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
+                <p>How is <code>getGameState()</code> operation supported? Given below are two ways (there could be other ways):</p>
+                <ol>
+                  <li><code>Minefield</code> class knows the state of the game at any time. <code>Logic</code> class retrieves it from the <code>Minefield</code> class as and when required.</li>
+                  <li><code>Logic</code> class maintains the state of the game at all times.</li>
+                </ol>
+                <p>Here’s the SD for option 1.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
+                <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
+                <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
+                <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
+                <p>Updated class diagram:</p>
+                <tip-box>
+                  <img src="/website-base/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
+                <tip-box>
+                  <p>💡 When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations
+                    are required by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
+                </tip-box>
+              </div>
+              <div></div>
           </div>
         </panel>
       </panel>
@@ -1397,12 +1527,14 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.8.4</a> at Thu, 12 Jul 2018 10:56:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 05:27:22 GMT</small></div>
 </footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>
 <script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>

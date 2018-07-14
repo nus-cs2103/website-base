@@ -2,124 +2,27 @@
   "pages": [
     {
       "headings": {
-        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
+        "full-schedule-of-module-activities": "Full Schedule of Module Activities",
+        "pros-and-cons": "Pros and Cons",
+        "what": "What",
+        "project-setup": "Project Setup",
+        "code-navigation": "Code Navigation",
+        "collections": "Collections",
+        "varargs": "Varargs",
+        "what-2": "What",
+        "what-3": "What",
+        "what-4": "What",
+        "automated-testing-of-cli-apps": "Automated Testing of CLI Apps",
+        "what-5": "What",
+        "repositories": "Repositories",
+        "init": "Init",
+        "saving-history": "Saving History",
+        "commit": "Commit",
+        "ignore": "Ignore"
       },
       "title": "Home",
       "footer": "footer.md",
       "src": "index.md"
-    },
-    {
-      "headings": {
-        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
-      },
-      "title": "Full Schedule of Module Activities",
-      "footer": "footer.md",
-      "src": "schedule/index.md"
-    },
-    {
-      "headings": {
-        "browser-compatibility": "Browser Compatibility",
-        "information-layers": "Information Layers",
-        "conventions-used": "Conventions Used",
-        "searching": "Searching",
-        "saving-as-pdf-files": "Saving as PDF Files",
-        "printing": "Printing"
-      },
-      "src": "schedule/overview/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week1/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week10/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week11/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week12/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week13/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week2/index.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "participation-marks": "Participation Marks"
-      },
-      "src": "schedule/week3/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week4/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week5/index.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "v11-product": "v1.1 Product",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-2": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-3": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application"
-      },
-      "src": "schedule/week6/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week7/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week8/index.md",
-      "title": ""
-    },
-    {
-      "headings": {},
-      "src": "schedule/week9/index.md",
-      "title": ""
     },
     {
       "headings": {
@@ -142,6 +45,10 @@
         "policy-on-publishing-submissions": "Policy on publishing submissions",
         "policy-on-plagiarism": "Policy on plagiarism",
         "policy-on-reuse": "Policy on reuse",
+        "giving-credit-for-reused-work": "Giving credit for reused work",
+        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
+        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
+        "collating-the-annotated-code": "Collating the annotated code",
         "policy-on-help-from-outsiders": "Policy on help from outsiders",
         "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions"
       },
@@ -287,7 +194,8 @@
     },
     {
       "headings": {
-        "programming-language": "Programming Language"
+        "programming-language": "Programming Language",
+        "java-coding-standard": "Java coding standard"
       },
       "title": "Admin: Programming Language",
       "footer": "footer.md",
@@ -299,20 +207,55 @@
         "project-assessment": "Project → Assessment",
         "code-quality": "Code Quality",
         "introduction": "Introduction",
+        "basic": "Basic",
         "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "introduction-2": "Introduction",
         "basic-2": "Basic",
+        "avoid-long-methods": "Avoid Long Methods",
+        "avoid-deep-nesting": "Avoid Deep Nesting",
+        "avoid-complicated-expressions": "Avoid Complicated Expressions",
+        "avoid-magic-numbers": "Avoid Magic Numbers",
+        "make-the-code-obvious": "Make the Code Obvious",
         "intermediate": "Intermediate",
+        "structure-code-logically": "Structure Code Logically",
+        "do-not-trip-up-reader": "Do Not 'Trip Up' Reader",
+        "practice-kissing": "Practice KISSing",
+        "avoid-premature-optimizations": "Avoid Premature Optimizations",
+        "slap-hard": "SLAP Hard",
+        "what": "What",
         "advanced": "Advanced",
+        "make-the-happy-path-prominent": "Make the Happy Path Prominent",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "introduction-3": "Introduction",
+        "basic-3": "Basic",
+        "intermediate-2": "Intermediate",
         "guideline-name-well": "Guideline: Name Well",
+        "introduction-4": "Introduction",
         "basic-4": "Basic",
+        "use-nouns-for-things-and-verbs-for-actions": "Use Nouns for Things and Verbs for Actions",
+        "use-standard-words": "Use Standard Words",
         "intermediate-3": "Intermediate",
+        "use-name-to-explain": "Use Name to Explain",
+        "not-too-long-not-too-short": "Not Too Long, Not Too Short",
+        "avoid-misleading-names": "Avoid Misleading Names",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "introduction-5": "Introduction",
         "basic-5": "Basic",
+        "use-the-default-branch": "Use the Default Branch",
+        "dont-recycle-variables-or-parameters": "Don't Recycle Variables or Parameters",
+        "avoid-empty-catch-blocks": "Avoid Empty Catch Blocks",
+        "delete-dead-code": "Delete Dead Code",
         "intermediate-4": "Intermediate",
+        "minimise-scope-of-variables": "Minimise Scope of Variables",
+        "minimise-code-duplication": "Minimise Code Duplication",
+        "dry-principle": "DRY Principle",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "introduction-6": "Introduction",
         "basic-6": "Basic",
-        "intermediate-5": "Intermediate"
+        "do-not-repeat-the-obvious": "Do Not Repeat the Obvious",
+        "write-to-the-reader": "Write to the Reader",
+        "intermediate-5": "Intermediate",
+        "explain-what-and-why-not-how": "Explain WHAT and WHY, not HOW"
       },
       "title": "Admin: %%→%% Assessment",
       "footer": "footer.md",
@@ -392,7 +335,13 @@
     },
     {
       "headings": {
-        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]"
+        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]",
+        "brainstorming": "Brainstorming",
+        "introduction": "Introduction",
+        "introduction-2": "Introduction",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "what": "What",
+        "product-surveys": "Product Surveys"
       },
       "title": "Admin: Project: mid-v1.0 [week 4]",
       "footer": "footer.md",
@@ -414,7 +363,8 @@
       "headings": {
         "project-mid-v11-week-6": "Project → mid-v1.1 [week 6]",
         "organization-setup": "Organization setup",
-        "repo-setup": "Repo setup"
+        "repo-setup": "Repo setup",
+        "forking-flow": "Forking Flow"
       },
       "title": "Admin: Project: mid-v1.1 [week 6]",
       "footer": "footer.md",
@@ -448,8 +398,14 @@
     {
       "headings": {
         "project-v12-week-9": "Project → v1.2 [week 9]",
+        "project-schedule-tracking": "Project Schedule Tracking",
+        "using-issues": "Using Issues:",
+        "using-milestones": "Using Milestones:",
         "v12-project-management": "v1.2 Project Management",
         "v12-product": "v1.2 Product",
+        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
+        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
+        "collating-the-annotated-code": "Collating the annotated code",
         "v12-documentation": "v1.2 Documentation",
         "v12-demo": "v1.2 Demo"
       },
@@ -471,6 +427,9 @@
       "headings": {
         "project-v13-week-11": "Project → v1.3 [week 11]",
         "v13-project-management": "v1.3 Project Management",
+        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
+        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
+        "collating-the-annotated-code": "Collating the annotated code",
         "v13-product": "v1.3 Product",
         "v13-documentation": "v1.3 Documentation",
         "v13-demo": "v1.3 Demo",
@@ -611,7 +570,10 @@
     },
     {
       "headings": {
-        "tools": "Tools"
+        "tools": "Tools",
+        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
+        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
+        "collating-the-annotated-code": "Collating the annotated code"
       },
       "title": "Admin: Tools",
       "footer": "footer.md",
@@ -626,116 +588,6 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/tutorials.md"
-    },
-    {
-      "headings": {
-        "week-10-outcomes": "Week 10 - Outcomes"
-      },
-      "src": "schedule/week10/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-11-outcomes": "Week 11 - Outcomes"
-      },
-      "src": "schedule/week11/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-12-outcomes": "Week 12 - Outcomes"
-      },
-      "src": "schedule/week12/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-13-outcomes": "Week 13 - Outcomes"
-      },
-      "src": "schedule/week13/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-2-outcomes": "Week 2 - Outcomes"
-      },
-      "src": "schedule/week2/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-3-outcomes": "Week 3 - Outcomes",
-        "participation-marks": "Participation Marks"
-      },
-      "src": "schedule/week3/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-4-outcomes": "Week 4 - Outcomes"
-      },
-      "src": "schedule/week4/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-5-outcomes": "Week 5 - Outcomes"
-      },
-      "src": "schedule/week5/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-6-outcomes": "Week 6 - Outcomes",
-        "v11-product": "v1.1 Product",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction-2": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-3": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application"
-      },
-      "src": "schedule/week6/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-7-outcomes": "Week 7 - Outcomes"
-      },
-      "src": "schedule/week7/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-8-outcomes": "Week 8 - Outcomes"
-      },
-      "src": "schedule/week8/outcomes.md",
-      "title": ""
-    },
-    {
-      "headings": {
-        "week-9-outcomes": "Week 9 - Outcomes"
-      },
-      "src": "schedule/week9/outcomes.md",
-      "title": ""
     },
     {
       "headings": {
@@ -792,6 +644,7 @@
         "guideline-maximise-readability": "Guideline: Maximise Readability",
         "basic": "Basic",
         "intermediate": "Intermediate",
+        "what": "What",
         "advanced": "Advanced",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "guideline-name-well": "Guideline: Name Well",
@@ -800,6 +653,7 @@
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
         "basic-3": "Basic",
         "intermediate-3": "Intermediate",
+        "dry-principle": "DRY Principle",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
         "basic-4": "Basic",
         "intermediate-4": "Intermediate"
@@ -904,7 +758,8 @@
     },
     {
       "headings": {
-        "git-and-github": "Git and Github"
+        "git-and-github": "Git and Github",
+        "clone": "Clone"
       },
       "title": "Text Book Chapter : Git and Github",
       "footer": "footer.md",
@@ -990,9 +845,13 @@
       "headings": {
         "modeling": "Modeling",
         "introduction": "Introduction",
+        "what": "What",
         "modeling-structures": "Modeling Structures",
         "modeling-behaviors": "Modeling Behaviors",
-        "modeling-a-solution": "Modeling a Solution"
+        "modeling-a-solution": "Modeling a Solution",
+        "introduction-2": "Introduction",
+        "basic": "Basic",
+        "introduction-3": "Introduction"
       },
       "title": "Text Book Chapter : Modeling",
       "footer": "footer.md",
@@ -1007,7 +866,12 @@
         "classes": "Classes",
         "associations": "Associations",
         "inheritance": "Inheritance",
+        "overloading": "Overloading",
+        "overriding": "Overriding",
+        "overloading-2": "Overloading",
+        "overloading-3": "Overloading",
         "polymorphism": "Polymorphism",
+        "what": "What",
         "more": "More"
       },
       "title": "Text Book Chapter : Object-Oriented Programming",
@@ -1017,7 +881,17 @@
     },
     {
       "headings": {
-        "principles": "Principles"
+        "principles": "Principles",
+        "substitutability": "Substitutability",
+        "single-responsibility-principle": "Single Responsibility Principle",
+        "open-closed-principle": "Open-Closed Principle",
+        "liskov-substitution-principle": "Liskov Substitution Principle",
+        "substitutability-2": "Substitutability",
+        "interface-segregation-principle": "Interface Segregation Principle",
+        "dependency-inversion-principle": "Dependency Inversion Principle",
+        "what": "What",
+        "what-2": "What",
+        "what-3": "What"
       },
       "title": "Text Book Chapter : Principles",
       "footer": "footer.md",
@@ -1119,7 +993,8 @@
         "user-stories": "User Stories",
         "use-cases": "Use Cases",
         "glossary": "Glossary",
-        "supplementary-requirements": "Supplementary Requirements"
+        "supplementary-requirements": "Supplementary Requirements",
+        "non-functional-requirements": "Non-Functional Requirements"
       },
       "title": "Text Book Chapter : Specifying Requirements",
       "footer": "footer.md",
@@ -1148,6 +1023,7 @@
         "boundary-value-analysis": "Boundary Value Analysis",
         "combining-test-inputs": "Combining Test Inputs",
         "more": "More",
+        "what": "What",
         "recap": "Recap"
       },
       "title": "Text Book Chapter : Test Case Design",
@@ -1172,6 +1048,8 @@
         "test-automation": "Test Automation",
         "test-coverage": "Test Coverage",
         "dependency-injection": "Dependency Injection",
+        "stubs": "Stubs",
+        "stubs-2": "Stubs",
         "tdd": "TDD"
       },
       "title": "Text Book Chapter : Testing",
