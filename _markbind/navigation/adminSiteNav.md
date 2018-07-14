@@ -1,6 +1,6 @@
 <navigation>
 * [See all in one page (slow!)](index-flat.html)
-* [Module Overview](preliminaries.html)
+* [Module Overview](moduleOverview.html)
 * [==Using this Website==](usingThisWebsite.html)
 * [Learning Outcomes](learningOutcomes.html)
 * [Lectures](lectures.html)

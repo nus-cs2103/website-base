@@ -66,4 +66,4 @@ Given below is a summary of what the module covers and does not cover %%(i.e., u
 
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("preliminaries", show_main_text) }}
+{{ show_admin_page("moduleOverview", show_main_text) }}
