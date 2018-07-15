@@ -62,7 +62,7 @@ Given below is a summary of what the module covers and does not cover %%(i.e., u
 </div>
 <br>
 
-<panel src="appendixC-faq.md#admin-faq-{{ module | lower }}Vs{{ module | lower }}t" header="%%Admin {{ icon_embedding }}%% **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
+<panel src="appendixC-faq.md#admin-faq-{{ module | lower }}Vs{{ module | lower }}t" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
 
 </div>
 {% endmacro %} 

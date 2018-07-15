@@ -2,12 +2,14 @@
 * [See all in one page (slow!)](index-flat.html)
 * [Module Overview](moduleOverview.html)
 * [==Using this Website==](usingThisWebsite.html)
-* [Learning Outcomes](learningOutcomes.html)
-* [Lectures](lectures.html)
-* [Tutorials](tutorials.html)
+* %%Module Structure%%
+* [%%→%% Weekly Schedule](weeklySchedule.html)
+* [%%→%% Learning Outcomes](learningOutcomes.html)
+* [%%→%% Lectures](lectures.html)
+* [%%→%% Tutorials](tutorials.html)
 * [Text Books](textbooks.html)
 * [Programming Language](programming-languages.html)
-* Project
+* %%Project%%
 * [%%→%% Overview](project.html)
 * [%%→%% The product](project-product.html)
 * [%%→%% Scope](project-scope.html)
