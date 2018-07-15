@@ -1,6 +1,6 @@
 **Questions to discuss during the lecture:**
 
-<panel header=":lock: TeamFormer requirements">
+<panel header="{{ icon_Q }} TeamFormer requirements">
 <question has-input="true">
 
 Imagine you are building an online system called TeamFormer. A brief description of it is given below.

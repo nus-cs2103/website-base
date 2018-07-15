@@ -20,15 +20,15 @@
 
 <include src="../book/about/usage.md#conventions" name="Conventions Used" />
 
-* {{glyphicon_check}} : tasks to do 
-* {{glyphicon_blackboard}} : lecture
-* {{glyphicon_pencil}} : tutorial 
-* {{glyphicon_folder_close}} : evidence you can use to prove you have achieved a learning outcome
+* {{ icon_todo }} : tasks to do 
+* {{ icon_lecture }} : lecture
+* {{ icon_tutorial }} : tutorial 
+* {{ icon_evidence }} : evidence you can use to prove you have achieved a learning outcome
 * :alarm_clock: : deadline
 
 ### Searching for keywords
 
-Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting [in the website issue tracker]({{module_org}}/website/issues) so that we can add the missing keyword into our search index.
+Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting [in the website issue tracker]({{module_org}}/website/issues) so that we can add the missing keyword to our search index.
 
 <include src="../book/about/usage.md#saving" />
 

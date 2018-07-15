@@ -1,6 +1,6 @@
 **Questions to discuss during the lecture:**
 
-<panel header=":lock: Review code for quality">
+<panel header="{{ icon_Q }} Review code for quality">
 <question has-input="true">
 
 Suggest ways to improve the quality of the code below. 

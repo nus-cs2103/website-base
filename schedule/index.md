@@ -528,7 +528,7 @@ footer: footer.md
 
 {% macro show_week_outcomes(week_num, path="") %}
 <panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>
-  <span slot="header" class="card-title activity-type">{{glyphicon_flag}} Outcomes</span>
+  <span slot="header" class="card-title activity-type">{{ icon_outcome }} Outcomes</span>
   <div class="indented">
   {{ outcomes.show_week_schedule_main(week_num, all_outcomes, path) }}
   </div>
@@ -538,7 +538,7 @@ footer: footer.md
 
 {% macro show_week_todos(week_num, path="") %}
 <panel type="seamless" expanded no-close>
-  <span slot="header" class="card-title activity-type">{{glyphicon_check}} Todo</span>
+  <span slot="header" class="card-title activity-type">{{ icon_todo }} Todo</span>
   <div class="indented">
   <include src="{{ path }}todo.md" />
   </div>
@@ -548,7 +548,7 @@ footer: footer.md
 
 {% macro show_week_tutorial(week_num, path="") %}
 <panel type="seamless" expanded no-close>
-<span slot="header" class="card-title activity-type">{{glyphicon_pencil}} Tutorial {{ week_num }}</span>
+<span slot="header" class="card-title activity-type">{{ icon_tutorial }} Tutorial {{ week_num }}</span>
    <div class="indented">
    <include src="{{ path }}tutorial.md" />
    </div>
@@ -558,7 +558,7 @@ footer: footer.md
 
 {% macro show_week_lecture(week_num, path="") %}
 <panel type="seamless" expanded no-close>
-<span slot="header" class="card-title activity-type">{{glyphicon_blackboard}} Lecture {{ week_num }}</span>
+<span slot="header" class="card-title activity-type">{{ icon_lecture }} Lecture {{ week_num }}</span>
   <div class="indented">
   <include src="{{ path }}lecture.md" />
   </div>

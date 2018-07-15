@@ -44,14 +44,14 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
    ```
    
 *  **Do not put the `//@@author` inside java header comments** as only the content below that tag will be collated.<br>
-   :-1::arrow_heading_down:
+   :-1:{{ icon_output }}
    ```
    /**
      * Returns true if ...
      * @@author johndoe
      */
    ```
-   :+1::arrow_heading_down:
+   :+1:{{ icon_output }}
    ```
    //@@author johndoe
    /**
