@@ -20,11 +20,14 @@
 
 <include src="../book/about/usage.md#conventions" name="Conventions Used" />
 
-* {{ icon_todo }} : tasks to do 
-* {{ icon_lecture }} : lecture
-* {{ icon_tutorial }} : tutorial 
-* {{ icon_evidence }} : evidence you can use to prove you have achieved a learning outcome
-* :alarm_clock: : deadline
+<div class="indented">
+
+{{ icon_todo }} : tasks to do<br> 
+{{ icon_lecture }} : lecture<br>
+{{ icon_tutorial }} : tutorial<br> 
+{{ icon_evidence }} : evidence you can use to prove you have achieved a learning outcome<br>
+:alarm_clock: : deadline<br>
+</div>
 
 ### Searching for keywords
 
