@@ -38,7 +38,7 @@
 
 {% macro show_admin_section_to_read(heading, priority, source) %}
 <panel src="{{ source }}"  no-close >
-<span slot="header" class="panel-title"><md>%%Admin {{ icon_embedding | safe }}%% &nbsp; {{ heading }} {{ show_stars(priority) }}</span>
+<span slot="header" class="card-title"><md>%%Admin {{ icon_embedding | safe }}%% &nbsp; {{ heading }} {{ show_stars(priority) }}</span>
 </panel>
 {% endmacro %}
 

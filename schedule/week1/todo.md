@@ -9,7 +9,7 @@
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close >
-<span slot="header" class="panel-title">Learn how to form project teams {{ one_star }}</span>
+<span slot="header" class="card-title">Learn how to form project teams {{ one_star }}</span>
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
@@ -19,7 +19,7 @@
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel  no-close >
-<span slot="header" class="panel-title">[Exchange students only] Know how to sign up for tutorials {{ three_stars }}</span>
+<span slot="header" class="card-title">[Exchange students only] Know how to sign up for tutorials {{ three_stars }}</span>
 
 Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.  
 </panel>
@@ -27,7 +27,7 @@ Exchange students need to use the ORATUT system to register for the tutorials. Y
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close > 
-<span slot="header" class="panel-title">Create a GitHub account {{ one_star }}</span>
+<span slot="header" class="card-title">Create a GitHub account {{ one_star }}</span>
 <panel header="Admin {{ icon_embedding }} Appendix E (Using GitHub) → Creating a GitHub account" expanded >
   <include type="danger" src="../../admin/appendixE-gitHub.md#githubAccount"/>
 </panel>
@@ -36,7 +36,7 @@ Exchange students need to use the ORATUT system to register for the tutorials. Y
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close > 
-<span slot="header" class="panel-title"><md>Submit the pre-module survey ==(Compulsory)== :alarm_clock:</md> {{ one_star }}</span>
+<span slot="header" class="card-title"><md>Submit the pre-module survey ==(Compulsory)== :alarm_clock:</md> {{ one_star }}</span>
 
 _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :alarm_clock:**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
 </panel>
@@ -44,7 +44,7 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close > 
-<span slot="header" class="panel-title">Join the Slack channel {{ two_stars }}</span>
+<span slot="header" class="card-title">Join the Slack channel {{ two_stars }}</span>
 
 <panel header="%%**Admin {{ icon_embedding }} Tools → Communication**%%" expanded>
   <include type="danger" src="../../admin/tools.md#communication" />
@@ -55,7 +55,7 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close >
-<span slot="header" class="panel-title">Prepare to meet module expectations {{ two_stars }}</span>
+<span slot="header" class="card-title">Prepare to meet module expectations {{ two_stars }}</span>
 
 <panel header="%%**Admin {{ icon_embedding }} Module Expectations**%%" expanded>
   <include type="danger" src="../../admin/moduleExpectations.md#main" />
