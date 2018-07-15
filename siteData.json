@@ -140,7 +140,7 @@
     },
     {
       "headings": {
-        "cs2103t-at-a-glance": "CS2103/T at a Glance"
+        "cs2103t-software-engineering": "CS2103/T Software Engineering"
       },
       "title": "Admin: Module Overview",
       "footer": "footer.md",
@@ -167,7 +167,7 @@
     },
     {
       "headings": {
-        "cs2103t-at-a-glance": "CS2103/T at a Glance"
+        "cs2103t-software-engineering": "CS2103/T Software Engineering"
       },
       "title": "Admin: Module Overview",
       "footer": "footer.md",
@@ -601,12 +601,21 @@
         "searching-for-keywords": "Searching for keywords",
         "saving-as-pdf-files": "Saving as PDF Files",
         "printing-textbook-content": "Printing Textbook Content",
-        "contributing-to-make-this-website-better": "Contributing to Make this Website Better"
+        "making-this-website-better": "Making this Website Better"
       },
       "title": "Admin: Using this Website",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/usingThisWebsite.md"
+    },
+    {
+      "headings": {
+        "weekly-schedule": "Weekly Schedule"
+      },
+      "title": "Admin: Weekly Schedule",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/weeklySchedule.md"
     },
     {
       "headings": {

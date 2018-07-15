@@ -1,0 +1,208 @@
+2018-07-15T03:04:09.512Z - info: Pages built
+2018-07-15T03:04:09.584Z - info: Site data built
+2018-07-15T03:04:09.596Z - info: Generate Site durationMs=62443
+2018-07-15T03:04:09.616Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-15T03:04:09.616Z - info: Press CTRL+C to stop ...
+2018-07-15T03:04:10.415Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:04:11.448Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:04:11.448Z - info: Rebuilding 3 pages
+2018-07-15T03:04:24.056Z - info: Pages rebuilt
+2018-07-15T03:04:24.404Z - info: Site data built
+2018-07-15T03:06:41.063Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:06:42.077Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:06:42.077Z - info: Rebuilding 3 pages
+2018-07-15T03:06:46.107Z - info: Pages rebuilt
+2018-07-15T03:06:46.111Z - info: Site data built
+2018-07-15T03:08:08.913Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:08:09.914Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:08:09.918Z - info: Rebuilding 3 pages
+2018-07-15T03:08:13.706Z - info: Pages rebuilt
+2018-07-15T03:08:13.710Z - info: Site data built
+2018-07-15T03:08:25.941Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:08:26.958Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:08:26.958Z - info: Rebuilding 3 pages
+2018-07-15T03:08:32.021Z - info: Pages rebuilt
+2018-07-15T03:08:32.025Z - info: Site data built
+2018-07-15T03:08:42.295Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:08:43.296Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:08:43.300Z - info: Rebuilding 3 pages
+2018-07-15T03:08:46.610Z - info: Pages rebuilt
+2018-07-15T03:08:46.614Z - info: Site data built
+2018-07-15T03:09:23.333Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:09:24.334Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:09:24.338Z - info: Rebuilding 3 pages
+2018-07-15T03:09:27.941Z - info: Pages rebuilt
+2018-07-15T03:09:27.945Z - info: Site data built
+2018-07-15T03:11:29.913Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:11:30.927Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:11:30.931Z - info: Rebuilding 3 pages
+2018-07-15T03:11:36.121Z - info: Pages rebuilt
+2018-07-15T03:11:36.125Z - info: Site data built
+2018-07-15T03:12:27.822Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:12:28.827Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:12:28.827Z - info: Rebuilding 3 pages
+2018-07-15T03:12:32.676Z - info: Pages rebuilt
+2018-07-15T03:12:32.680Z - info: Site data built
+2018-07-15T03:14:16.087Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:14:17.092Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:14:17.096Z - info: Rebuilding 3 pages
+2018-07-15T03:14:20.801Z - info: Pages rebuilt
+2018-07-15T03:14:20.805Z - info: Site data built
+2018-07-15T03:18:02.865Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:18:03.874Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:18:03.882Z - info: Rebuilding 3 pages
+2018-07-15T03:18:07.416Z - info: Pages rebuilt
+2018-07-15T03:18:07.420Z - info: Site data built
+2018-07-15T03:20:42.562Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:20:43.568Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:20:43.568Z - info: Rebuilding 3 pages
+2018-07-15T03:20:47.113Z - info: Pages rebuilt
+2018-07-15T03:20:47.117Z - info: Site data built
+2018-07-15T03:21:25.353Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:21:26.367Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:21:26.367Z - info: Rebuilding 3 pages
+2018-07-15T03:21:30.595Z - info: Pages rebuilt
+2018-07-15T03:21:30.599Z - info: Site data built
+2018-07-15T03:22:08.459Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:22:09.469Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:22:09.473Z - info: Rebuilding 3 pages
+2018-07-15T03:22:14.332Z - info: Pages rebuilt
+2018-07-15T03:22:14.332Z - info: Site data built
+2018-07-15T03:22:38.361Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:22:39.367Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:22:39.371Z - info: Rebuilding 3 pages
+2018-07-15T03:22:45.538Z - info: Pages rebuilt
+2018-07-15T03:22:45.542Z - info: Site data built
+2018-07-15T03:22:59.487Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:23:00.504Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:23:00.504Z - info: Rebuilding 3 pages
+2018-07-15T03:23:07.653Z - info: Pages rebuilt
+2018-07-15T03:23:07.657Z - info: Site data built
+2018-07-15T03:30:12.032Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:30:13.054Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:30:13.054Z - info: Rebuilding 3 pages
+2018-07-15T03:30:18.611Z - info: Pages rebuilt
+2018-07-15T03:30:18.615Z - info: Site data built
+2018-07-15T03:30:51.374Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:30:52.377Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:30:52.377Z - info: Rebuilding 3 pages
+2018-07-15T03:30:57.481Z - info: Pages rebuilt
+2018-07-15T03:30:57.489Z - info: Site data built
+2018-07-15T03:31:52.770Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:31:53.776Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:31:53.776Z - info: Rebuilding 3 pages
+2018-07-15T03:31:59.417Z - info: Pages rebuilt
+2018-07-15T03:31:59.417Z - info: Site data built
+2018-07-15T03:32:38.224Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:32:39.230Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:32:39.234Z - info: Rebuilding 3 pages
+2018-07-15T03:32:44.749Z - info: Pages rebuilt
+2018-07-15T03:32:44.753Z - info: Site data built
+2018-07-15T03:33:26.071Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:33:27.076Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:33:27.076Z - info: Rebuilding 3 pages
+2018-07-15T03:33:32.404Z - info: Pages rebuilt
+2018-07-15T03:33:32.408Z - info: Site data built
+2018-07-15T03:34:05.832Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:34:06.845Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:34:06.849Z - info: Rebuilding 3 pages
+2018-07-15T03:34:11.488Z - info: Pages rebuilt
+2018-07-15T03:34:11.492Z - info: Site data built
+2018-07-15T03:34:22.682Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:34:23.688Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:34:23.688Z - info: Rebuilding 3 pages
+2018-07-15T03:34:28.395Z - info: Pages rebuilt
+2018-07-15T03:34:28.399Z - info: Site data built
+2018-07-15T03:34:43.363Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:34:44.377Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:34:44.377Z - info: Rebuilding 3 pages
+2018-07-15T03:34:48.735Z - info: Pages rebuilt
+2018-07-15T03:34:48.739Z - info: Site data built
+2018-07-15T03:35:50.932Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:35:51.946Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:35:51.950Z - info: Rebuilding 3 pages
+2018-07-15T03:35:56.513Z - info: Pages rebuilt
+2018-07-15T03:35:56.517Z - info: Site data built
+2018-07-15T03:38:47.525Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:38:48.527Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:38:48.527Z - info: Rebuilding 3 pages
+2018-07-15T03:38:52.810Z - info: Pages rebuilt
+2018-07-15T03:38:52.818Z - info: Site data built
+2018-07-15T03:40:51.563Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:40:52.565Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T03:40:52.569Z - info: Rebuilding 3 pages
+2018-07-15T03:40:56.973Z - info: Pages rebuilt
+2018-07-15T03:40:56.977Z - info: Site data built
+2018-07-15T03:43:04.845Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\usingThisWebsite.md
+2018-07-15T03:43:05.861Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\usingThisWebsite.md
+2018-07-15T03:43:05.865Z - info: Rebuilding 3 pages
+2018-07-15T03:43:22.498Z - info: Pages rebuilt
+2018-07-15T03:43:22.526Z - info: Site data built
+2018-07-15T03:52:49.010Z - info: Pages built
+2018-07-15T03:52:49.083Z - info: Site data built
+2018-07-15T03:52:49.096Z - info: Generate Site durationMs=55357
+2018-07-15T03:52:49.123Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-15T03:52:49.123Z - info: Press CTRL+C to stop ...
+2018-07-15T03:54:43.513Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-15T03:54:44.523Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-15T03:54:44.559Z - info: Rebuilding 39 pages
+2018-07-15T03:54:49.098Z - info: Pages rebuilt
+2018-07-15T03:54:49.102Z - info: Site data built
+2018-07-15T03:56:22.751Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\typicalWeek.md
+2018-07-15T03:56:23.754Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\typicalWeek.md
+2018-07-15T03:56:23.755Z - info: Rebuilding 0 pages
+2018-07-15T03:56:23.756Z - info: Pages rebuilt
+2018-07-15T03:56:23.784Z - info: Site data built
+2018-07-15T03:58:55.127Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md
+2018-07-15T03:58:55.210Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\admin\typicalWeek.md
+2018-07-15T03:58:56.128Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md,C:\repos\nus-cs2103\website-base\admin\typicalWeek.md
+2018-07-15T03:58:56.130Z - info: Rebuilding 0 pages
+2018-07-15T03:58:56.133Z - info: Pages rebuilt
+2018-07-15T03:58:56.157Z - info: Site data built
+2018-07-15T04:03:00.708Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\admin.njk
+2018-07-15T04:03:00.769Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\overview\typicalWeek.md
+2018-07-15T04:03:00.785Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md
+2018-07-15T04:03:00.786Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-15T04:03:00.798Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav-flat.md
+2018-07-15T04:03:01.726Z - info: Assets built
+2018-07-15T04:03:01.769Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\overview\typicalWeek.md,C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md,C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md,C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav-flat.md
+2018-07-15T04:03:01.815Z - info: Rebuilding 41 pages
+2018-07-15T04:03:18.324Z - info: Pages rebuilt
+2018-07-15T04:03:18.335Z - info: Site data built
+2018-07-15T04:04:33.524Z - info: Pages built
+2018-07-15T04:04:33.596Z - info: Site data built
+2018-07-15T04:04:33.609Z - info: Generate Site durationMs=61629
+2018-07-15T04:04:33.628Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-15T04:04:33.628Z - info: Press CTRL+C to stop ...
+2018-07-15T04:06:59.219Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md
+2018-07-15T04:07:00.236Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md
+2018-07-15T04:07:00.244Z - info: Rebuilding 1 pages
+2018-07-15T04:07:01.021Z - info: Pages rebuilt
+2018-07-15T04:07:01.029Z - info: Site data built
+2018-07-15T04:07:43.778Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md
+2018-07-15T04:07:44.788Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\weeklySchedule.md
+2018-07-15T04:07:44.788Z - info: Rebuilding 1 pages
+2018-07-15T04:07:45.277Z - info: Pages rebuilt
+2018-07-15T04:07:45.292Z - info: Site data built
+2018-07-15T04:09:59.345Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\overview\index.md
+2018-07-15T04:10:00.350Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\overview\index.md
+2018-07-15T04:10:00.350Z - info: Rebuilding 1 pages
+2018-07-15T04:10:15.154Z - info: Pages rebuilt
+2018-07-15T04:10:15.166Z - info: Site data built
+2018-07-15T04:11:07.521Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\schedule\overview\typicalWeek.md
+2018-07-15T04:11:08.527Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\overview\typicalWeek.md
+2018-07-15T04:11:08.527Z - info: Rebuilding 0 pages
+2018-07-15T04:11:08.527Z - info: Pages rebuilt
+2018-07-15T04:11:08.535Z - info: Site data built
+2018-07-15T04:11:17.778Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\schedule\overview\index.md
+2018-07-15T04:11:18.783Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\schedule\overview\index.md
+2018-07-15T04:11:18.783Z - info: Rebuilding 1 pages
+2018-07-15T04:11:35.238Z - info: Pages rebuilt
+2018-07-15T04:11:35.269Z - info: Site data built
+2018-07-15T04:15:30.331Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\common\admin.njk
+2018-07-15T04:15:31.360Z - info: Assets built
+2018-07-15T04:18:12.902Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T04:18:13.916Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\moduleOverview.md
+2018-07-15T04:18:13.924Z - info: Rebuilding 3 pages
+2018-07-15T04:18:17.341Z - info: Pages rebuilt
+2018-07-15T04:18:17.344Z - info: Site data built

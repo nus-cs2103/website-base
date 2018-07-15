@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Admin: Lectures</title>
+    <title>CS2103/T Website - Admin: Weekly Schedule</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
@@ -112,51 +112,50 @@
       </navbar>
     </div>
     <div class="website-content">
-      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="learningOutcomes.html">Learning Outcomes</a></span>
-        </span><span style="float:right"><span><a href="tutorials.html">Tutorials <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="usingThisWebsite.html">Using this Website</a></span>
+        </span><span style="float:right"><span><a href="learningOutcomes.html">Learning Outcomes <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
         </span>
         </span>
       </p>
       <br>
       <div id="main">
-        <h1 id="lectures">Lectures</h1>
-        <img src="/website-base/admin/images/Lecture photo.png" width="100%">
-        <p><strong>Timing/venue</strong>:</p>
-        <table class="markbind-table table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th>Semester</th>
-              <th>Venue</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Semester 1 (Aug-Nov)</td>
-              <td>ICube Auditorium</td>
-              <td><strong>1600</strong>-1800</td>
-            </tr>
-            <tr>
-              <td>Semester 2 (Jan-April)</td>
-              <td>ICube Auditorium</td>
-              <td><strong>1600</strong>-1800</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
-        <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%">
-          <p>CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>
-          <p></p>
-        </panel>
+        <h1 id="weekly-schedule">Weekly Schedule</h1>
+        <p>📆 <strong>[Friday (previous week)]</strong><br></p>
+        <p>Attend the lecture for,</p>
+        <ul>
+          <li>a recap of the preceding week's Learning Outcomes (LOs)</li>
+          <li>an introduction to the current week's LOs</li>
+        </ul>
+        <p>
+          <panel src="/website-base\admin\lectures._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Lectures <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+            minimized="" fragment="main"></panel>
+        </p>
         <p></p>
-        <p><strong>Attendance</strong>: Attendance for the <mark>first lecture is compulsory</mark>.</p>
-        <p><strong>Webcast</strong>: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture.</p>
-        <p><strong>Handouts</strong>: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the <a href="/website-base/se-book-adapted/index.html">Textbook</a>          section and are also hyperlinked from the <a href="/website-base/schedule/index.html">Schedule Page</a>.</p>
-        <p><strong>Slides</strong>: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded <em>after</em> the lecture (link available in the <a href="/website-base/schedule/index.html">Schedule Page</a>).</p>
+        <p>📆 <strong>[Saturday (previous week) - Tuesday]</strong><br></p>
+        <ul>
+          <li>Use the relevant learning resources to achieve the LOs.</li>
+          <li>Self-test your knowledge using exercises given in the learning resources.</li>
+          <li>If you don't have time to achieve all LOs assigned to the week, use the star rating system to decide which ones to do first.</li>
+        </ul>
+        <p>
+          <panel src="/website-base\admin\learningOutcomes._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Learning Outcomes <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+            minimized="" fragment="main"></panel>
+        </p>
+        <p></p>
+        <p>📆 <strong>[Wednesday - Friday]</strong><br></p>
+        <p>Attend the tutorial to,</p>
+        <ul>
+          <li>demonstrate evidence of your achieving weekly LOs to the tutor</li>
+          <li>learn from peer demos of their own LO evidence</li>
+        </ul>
+        <p>
+          <panel src="/website-base\admin\tutorials._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+            minimized="" fragment="main"></panel>
+        </p>
       </div>
       <br>
-      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="learningOutcomes.html">Learning Outcomes</a></span>
-        </span><span style="float:right"><span><a href="tutorials.html">Tutorials <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="usingThisWebsite.html">Using this Website</a></span>
+        </span><span style="float:right"><span><a href="learningOutcomes.html">Learning Outcomes <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
         </span>
         </span>
       </p>

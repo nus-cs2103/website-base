@@ -22,12 +22,14 @@
       <li style="margin-top: 10px"><a href="index-flat.html">See all in one page (slow!)</a></li>
       <li style="margin-top: 10px"><a href="moduleOverview.html">Module Overview</a></li>
       <li style="margin-top: 10px"><a href="usingThisWebsite.html"><mark>Using this Website</mark></a></li>
-      <li style="margin-top: 10px"><a href="learningOutcomes.html">Learning Outcomes</a></li>
-      <li style="margin-top: 10px"><a href="lectures.html">Lectures</a></li>
-      <li style="margin-top: 10px"><a href="tutorials.html">Tutorials</a></li>
+      <li style="margin-top: 10px"><span class="dimmed">Module Structure</span></li>
+      <li style="margin-top: 10px"><a href="weeklySchedule.html"><span class="dimmed">→</span> Weekly Schedule</a></li>
+      <li style="margin-top: 10px"><a href="learningOutcomes.html"><span class="dimmed">→</span> Learning Outcomes</a></li>
+      <li style="margin-top: 10px"><a href="lectures.html"><span class="dimmed">→</span> Lectures</a></li>
+      <li style="margin-top: 10px"><a href="tutorials.html"><span class="dimmed">→</span> Tutorials</a></li>
       <li style="margin-top: 10px"><a href="textbooks.html">Text Books</a></li>
       <li style="margin-top: 10px"><a href="programming-languages.html">Programming Language</a></li>
-      <li style="margin-top: 10px">Project</li>
+      <li style="margin-top: 10px"><span class="dimmed">Project</span></li>
       <li style="margin-top: 10px"><a href="project.html"><span class="dimmed">→</span> Overview</a></li>
       <li style="margin-top: 10px"><a href="project-product.html"><span class="dimmed">→</span> The product</a></li>
       <li style="margin-top: 10px"><a href="project-scope.html"><span class="dimmed">→</span> Scope</a></li>
@@ -118,14 +120,19 @@
       <div id="admin-moduleOverview-anchor"></div>
       <div id="admin-moduleOverview">
         <div>
-          <h1 id="cs2103t-at-a-glance">CS2103/T at a Glance</h1>
+          <h1 id="cs2103t-software-engineering">CS2103/T Software Engineering</h1>
+          <p><big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big></p>
           <img src="/website-base/images/growingPlant.png" width="700">
-          <p>CS2103/T is an introductory Software Engineering module. It covers basic SE theory and practices that a student needs to know before doing SE internships in the industry or taking
-            <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>.</p>
-          <p>On the theory side, this module is supported by a customized online text book <a href="http://127.0.0.1:8080/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
+          <box border-color="white">
+            <p>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking
+              <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an
+              <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a
+              <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</p>
+          </box>
+          <p>On the theory side, this module is supported by a customized online text book <a href="/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
           <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
           <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
-            (10 KLoC) generic product -- and enhance it into a better product or evolve into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
+            (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
             size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
           <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
           <div class="indented-level2">
@@ -190,12 +197,7 @@
           </div>
           <br>
           <p>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" header="==%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: Where is everything?**== _aka_ How to find stuff in this website"
-              minimized="" fragment="admin-faq-whereIsEverything"></panel>
-          </p>
-          <p></p>
-          <p>
-            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% **FAQ: What are the differences between CS2103 and CS2103T?**" minimized=""
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> **FAQ: What are the differences between CS2103 and CS2103T?**" minimized=""
               fragment="admin-faq-cs2103Vscs2103t"></panel>
           </p>
         </div>
@@ -211,7 +213,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sat, 14 Jul 2018 11:50:30 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 04:21:00 GMT</small></div>
 </footer>
 </div>
 </body>
