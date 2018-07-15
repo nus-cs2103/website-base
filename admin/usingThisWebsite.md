@@ -36,7 +36,7 @@ Use the search box in the top navigation bar to search for keywords in the websi
 
 Printer-friendly version %%(indicated by {{glyphicon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
 
-### Contributing to Make this Website Better
+### Making this Website Better
 
 This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [at the website issue tracker]({{module_org}}/website/issues).
 
