@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Forming Teams
+# Project → Forming Teams
 
 <img src="{{baseUrl}}/admin/images/team.png" width="300px"><br>
 %%[Picture: The team that was at the top of early Google]%%
@@ -33,4 +33,4 @@ We allow some freedom in choosing team members, subject to these constraints:
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("teams", show_main_text) }}
+{{ show_admin_page("project-teams", show_main_text) }}

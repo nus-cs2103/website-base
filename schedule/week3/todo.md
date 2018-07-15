@@ -6,7 +6,7 @@
   {heading: "Peer Evaluations", priority: "2", source: "participation.md#main"},
   {heading: "Grade Breakdown", priority: "2", source: "gradeBreakdown.md#main"},
   {heading: "Participation Marks", priority: "2", source: "participation.md#main"},
-  {heading: "Supervision", priority: "3", source: "supervision.md#main"},
+  {heading: "Supervision", priority: "3", source: "project-supervision.md#main"},
   {heading: "FAQ: What if I don't carry around a laptop", priority: "4", source: "appendixC-faq.md#admin-faq-noLaptop"}
 ]%}
 

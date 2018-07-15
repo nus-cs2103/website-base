@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Supervision
+# Project → Supervision
 
 Your tutor will serve as your _project supervisor_ too.
 
@@ -15,4 +15,4 @@ Note that **it is not the supervisor’s job to chase you down and give help**. 
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("supervision", show_main_text) }}
+{{ show_admin_page("project-supervision", show_main_text) }}

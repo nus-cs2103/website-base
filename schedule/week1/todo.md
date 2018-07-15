@@ -13,7 +13,7 @@
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
-<panel type="danger" src="../../admin/teams.md#main" header="%%Admin {{ icon_embedding }}%% Team Forming :star:" />
+<panel type="danger" src="../../admin/project-teams.md#main" header="%%Admin {{ icon_embedding }}%% Team Forming :star:" />
 </panel>
 
 <!-- --------------------------------------------------------------------------------------------- -->

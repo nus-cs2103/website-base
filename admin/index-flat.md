@@ -24,6 +24,12 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
+<div id="admin-weeklySchedule-anchor"></div>
+<div id="admin-weeklySchedule">
+  <include src="weeklySchedule.md#main" />
+</div>
+
+
 <div id="admin-learning-outcomes-anchor"></div>
 <div id="admin-learning-outcomes">
   <include src="learningOutcomes.md#main" />
@@ -75,6 +81,12 @@ siteNav: adminSiteNav-flat.md
 <div id="admin-project-constraints-anchor"></div>
 <div id="admin-project-constraints">
 <include src="project-constraints.md#main" />
+</div>
+
+
+<div id="admin-project-teams-anchor"></div>
+<div id="admin-project-teams">
+<include src="project-teams.md#main" />
 </div>
 
 
@@ -167,21 +179,15 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
+<div id="admin-project-supervision-anchor"></div>
+<div id="admin-project-supervision">
+<include src="project-supervision.md#main" />
+</div>
+
+
 <div id="admin-project-assessment-anchor"></div>
 <div id="admin-project-assessment">
 <include src="project-assessment.md#main" />
-</div>
-
-
-<div id="admin-project-supervision-anchor"></div>
-<div id="admin-project-supervision">
-<include src="supervision.md#main" />
-</div>
-
-
-<div id="admin-teams-anchor"></div>
-<div id="admin-teams">
-<include src="teams.md#main" />
 </div>
 
 
