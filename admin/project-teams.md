@@ -4,7 +4,7 @@
 # Project → Forming Teams
 
 <img src="{{baseUrl}}/admin/images/team.png" width="300px"><br>
-%%[Picture: The team that was at the top of early Google]%%
+<small>%%[Picture: The team that was at the top of early Google]%%</small>
 <p/>
 
 **When to form teams**
@@ -16,7 +16,7 @@
 
 **Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `W14-2` means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.
 
-<panel src="../admin/tutorials.md#tutorialTimetable" header="%%Admin {{ icon_embedding }} Tutorials → Tutorial IDs%%" /><p/>
+<panel src="../admin/tutorials.md#tutorialTimetable" header="Admin {{ icon_embedding }} Tutorials → Tutorial IDs" minimized /><p/>
 
 **Team composition**
 

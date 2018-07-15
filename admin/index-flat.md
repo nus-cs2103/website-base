@@ -24,6 +24,12 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
+<div id="admin-moduleExpectations-anchor"></div>
+<div id="admin-moduleExpectations">
+  <include src="moduleExpectations.md#main" />
+</div>
+
+
 <div id="admin-weeklySchedule-anchor"></div>
 <div id="admin-weeklySchedule">
   <include src="weeklySchedule.md#main" />

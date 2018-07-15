@@ -9,17 +9,17 @@
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close >
-<span slot="header" class="panel-title">[{{ module }} students only] Forming teams {{ one_star }}</span>
+<span slot="header" class="panel-title">Learn how to form project teams {{ one_star }}</span>
 
 ==Delay forming teams== until your place in a tutorial is confirmed. 
 
-<panel type="danger" src="../../admin/project-teams.md#main" header="%%Admin {{ icon_embedding }}%% Team Forming :star:" />
+<panel type="danger" src="../../admin/project-teams.md#main" header="Admin {{ icon_embedding }} Team Forming :star:" expanded />
 </panel>
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel  no-close >
-<span slot="header" class="panel-title">[Exchange students only] Signing up for tutorial {{ three_stars }}</span>
+<span slot="header" class="panel-title">[Exchange students only] Know how to sign up for tutorials {{ three_stars }}</span>
 
 Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.  
 </panel>
@@ -27,22 +27,24 @@ Exchange students need to use the ORATUT system to register for the tutorials. Y
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close > 
-<span slot="header" class="panel-title">Create a GitHub Account {{ one_star }}</span>
-<include type="danger" src="../../admin/appendixE-gitHub.md#githubAccount"/>
+<span slot="header" class="panel-title">Create a GitHub account {{ one_star }}</span>
+<panel header="Admin {{ icon_embedding }} Appendix E (Using GitHub) → Creating a GitHub account" expanded >
+  <include type="danger" src="../../admin/appendixE-gitHub.md#githubAccount"/>
+</panel>
 </panel>
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close > 
-<span slot="header" class="panel-title"><md>Submit Pre-Module Survey ==(Compulsory)== :alarm_clock:</md> {{ one_star }}</span>
+<span slot="header" class="panel-title"><md>Submit the pre-module survey ==(Compulsory)== :alarm_clock:</md> {{ one_star }}</span>
 
-_Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :alarm_clock:**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub ID.%%
+_Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :alarm_clock:**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
 </panel>
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close > 
-<span slot="header" class="panel-title">Join the Slack Channel {{ two_stars }}</span>
+<span slot="header" class="panel-title">Join the Slack channel {{ two_stars }}</span>
 
 <panel header="%%**Admin {{ icon_embedding }} Tools → Communication**%%" expanded>
   <include type="danger" src="../../admin/tools.md#communication" />
@@ -53,13 +55,11 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <panel no-close >
-<span slot="header" class="panel-title">Brush up your Java {{ two_stars }}</span>
+<span slot="header" class="panel-title">Prepare to meet module expectations {{ two_stars }}</span>
 
-This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 
-
-In particular, you may want to **have a look at the new Java 8 features** such as `streams`, `lambdas`, `Optionals`, that may not have been covered in previous Java modules.
-
-CS2103 students: ==This module assumes a reasonable prior knowledge of Java and OOP== because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering & Object-Oriented Programming) instead.
+<panel header="%%**Admin {{ icon_embedding }} Module Expectations**%%" expanded>
+  <include type="danger" src="../../admin/moduleExpectations.md#main" />
+</panel>
  
 </panel>
 

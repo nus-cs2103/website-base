@@ -1,6 +1,7 @@
 <navigation>
 * [Module Overview](#admin-moduleOverview-anchor)
 * [==Using this Website==](#admin-usingThisWebsite-anchor)
+* [Module Expectations](#admin-moduleExpectations-anchor)
 * Module Structure
   * [Weekly Schedule](#admin-weeklySchedule-anchor)
   * [Learning Outcomes](#admin-learning-outcomes-anchor)

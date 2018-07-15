@@ -2,6 +2,7 @@
 * [See all in one page (slow!)](index-flat.html)
 * [Module Overview](moduleOverview.html)
 * [==Using this Website==](usingThisWebsite.html)
+* [Module Expectations](moduleExpectations.html)
 * %%Module Structure%%
 * [%%→%% Weekly Schedule](weeklySchedule.html)
 * [%%→%% Learning Outcomes](learningOutcomes.html)

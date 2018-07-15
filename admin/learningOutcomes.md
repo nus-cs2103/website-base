@@ -5,9 +5,9 @@
 
 This module is organized primarily around a list of Learning Outcomes.
 
-Each week has a suggested list of LOs. They are categorized using the following star-rating system:
+Each week has a suggested list of LOs. They are categorized using a star-rating system.
 
-<include src="ratingSystem.fr" />
+<panel  src="moduleExpectations.md#starRatingSystem" header="Admin {{ icon_embedding }} Module Expectations → Star Rating System" minimized />
 
 </div>
 
