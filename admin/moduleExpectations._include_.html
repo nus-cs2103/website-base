@@ -1,0 +1,111 @@
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/admin.css">
+<div>
+  <navbar placement="top" type="inverse">
+    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+    <li><a href="/website-base/index.html" class="nav-link">Schedule</a></li>
+    <dropdown text="Textbook" class="nav-link">
+      <li><a href="/website-base/se-book-adapted/index.html" class="dropdown-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+      <li><a href="/website-base/se-book-adapted/print.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+    </dropdown>
+    <li><a href="/website-base/admin/index.html" class="nav-link">Admin</a></li>
+    <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" class="nav-link">Instructors</a></li>
+    <dropdown text="IVLE" class="nav-link">
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+    </dropdown>
+    <dropdown text="Discuss" class="nav-link">
+      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+    </dropdown>
+    <dropdown text="Links" class="nav-link">
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+      <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+      <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+    </dropdown>
+    <li slot="right" class="nav-link">
+      <form class="navbar-form">
+        <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+      </form>
+    </li>
+  </navbar>
+</div>
+<div class="website-content">
+  <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="usingThisWebsite.html">Using this Website</a></span>
+    </span><span style="float:right"><span><a href="weeklySchedule.html">Weekly Schedule <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </span>
+    </span>
+  </p>
+  <br>
+  <div id="main">
+    <h1 id="module-expectations">Module Expectations</h1>
+    <h3 id="prior-knowledge-java-and-oop">Prior Knowledge: Java and OOP</h3>
+    <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
+    <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <em>streams</em>, <em>lambdas</em>, <em>Optionals</em>, that may not have been covered in previous Java modules.</p>
+    <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software
+      Engineering &amp; Object-Oriented Programming) instead.</p>
+    <h3 id="workload">Workload</h3>
+    <p>Given 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its peer modules</strong> <span class="dimmed">(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)</span>.</p>
+    <ul>
+      <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
+      <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
+      <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
+    </ul>
+    <div id="starRatingSystem">
+      <h4 id="star-rating-system">Star rating system</h4>
+      <div class="indented">
+        <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
+        </p>
+        <p><strong>Star ratings for Learning Outcomes</strong> (and text book sections):</p>
+        <ul>
+          <li>
+            <p><strong>One-star LOs</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you to <mark>achieve these LOs if you want to pass the module</mark>              (i.e. up to a <strong>C</strong> grade).</p>
+          </li>
+          <li>
+            <p><strong>Two-stars LOs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>: Can get you up to a <strong>B+</strong>.</p>
+          </li>
+          <li>
+            <p><strong>Three-stars LOs</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
+          </li>
+          <li>
+            <p><strong>Four-stars LOs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry requirements
+              (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
+          </li>
+          <li>
+            <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <span
+                  class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                    aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star
+                  rating system above i.e., one-star prerequisite LOs are the most basic and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
+          </li>
+        </ul>
+        <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+        <ul>
+          <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark> without
+            affecting your ability to follow the module.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="usingThisWebsite.html">Using this Website</a></span>
+    </span><span style="float:right"><span><a href="weeklySchedule.html">Weekly Schedule <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </span>
+    </span>
+  </p>
+</div>

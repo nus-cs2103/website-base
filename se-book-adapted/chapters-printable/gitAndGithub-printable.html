@@ -35,7 +35,7 @@
       </h4>
       <div class="indented-less">
         <div>
-          <panel header="%%:paperclip: Git Overview%%">
+          <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%">
             <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
             <p></p>
@@ -73,7 +73,7 @@ Initialized empty Git repository in c:/repos/things/.git/
                 <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
                 <pre class="hljs"><code>git status
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre class="hljs"><code># On branch master
 #
 # Initial commit
@@ -117,7 +117,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                 <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
                 <pre><code class="hljs sh">git status
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
@@ -161,7 +161,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                 <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
@@ -194,7 +194,7 @@ git status
                 <p>You can use the <code>log</code> command to see the commit history</p>
                 <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
 Author: … &lt; … @... &gt;
 Date:   Wed Jul 5 16:06:28 2017 +0800
@@ -315,7 +315,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 <p>Example:</p>
                 <pre class="hljs"><code>git show 251b4cf
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
 Author: … &lt; … &gt;
 Date:   Sat Jul 8 16:50:27 2017 +0800
@@ -357,7 +357,7 @@ index 15b57f7..17f4528 100644
                   <li><code>git diff 0023cdd..fcd6199</code>: shows the changes between the points indicated by by commit hashes</li>
                   <li><code>git diff v1.0..HEAD</code>: shows changes that happened from the commit tagged as <code>v1.0</code> to the most recent commit.</li>
                 </ul>
-                <panel header=":paperclip: Resources" expanded="">
+                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
                   <ul>
                     <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs">Git-Tower Tutorial: Inspecting Changes with Diffs</a></li>
                     <li><a href="https://stackoverflow.com/questions/8640838/how-do-i-navigate-in-the-results-of-diff">How to view the next page of a <code>git</code> command result</a></li>
@@ -452,9 +452,9 @@ index 15b57f7..17f4528 100644
           <modal title="**Clone Repository**" id="modal:clone-repository">
             <div>
               <panel type="seamless" expanded="">
-                <span slot="header" class="panel-title"><div>
+                <span slot="header" class="card-title"><div>
 <h4 id="clone-2">Clone</h4></div></span>
-                <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can clone a remote repo</span></span></span></button>
+                <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can clone a remote repo</span></span></span></button>
                   <p></p>
                 </p>
                 <p></p>
@@ -602,7 +602,7 @@ index 15b57f7..17f4528 100644
               <div>
                 <pre class="hljs"><code>git status
 </code></pre>
-                <p>⤵️</p>
+                <p><span class="fas fa-arrow-down"></span></p>
                 <pre class="hljs"><code>on branch master
 </code></pre>
               </div>
@@ -843,7 +843,7 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
           <img src="/website-base/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
           <p></p>
           <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-          <panel header=":paperclip: Resources" expanded="">
+          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
             <ul>
               <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
             </ul>
@@ -959,7 +959,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 04:21:00 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 15:39:04 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -21,11 +21,19 @@
     <ul style="list-style-type: none; margin-left:-1em">
       <li style="margin-top: 10px"><a href="#admin-moduleOverview-anchor">Module Overview</a></li>
       <li style="margin-top: 10px"><a href="#admin-usingThisWebsite-anchor"><mark>Using this Website</mark></a></li>
-      <li style="margin-top: 10px">Module Structure</li>
-      <li style="margin-top: 10px"><a href="#admin-weeklySchedule-anchor">Weekly Schedule</a></li>
-      <li style="margin-top: 10px"><a href="#admin-learning-outcomes-anchor">Learning Outcomes</a></li>
-      <li style="margin-top: 10px"><a href="#admin-lectures-anchor">Lectures</a></li>
-      <li style="margin-top: 10px"><a href="#admin-tutorials-anchor">Tutorials</a></li>
+      <li style="margin-top: 10px"><a href="#admin-moduleExpectations-anchor">Module Expectations</a></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn">Module Structure
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="#admin-weeklySchedule-anchor">Weekly Schedule</a></li>
+            <li style="margin-top: 10px"><a href="#admin-learning-outcomes-anchor">Learning Outcomes</a></li>
+            <li style="margin-top: 10px"><a href="#admin-lectures-anchor">Lectures</a></li>
+            <li style="margin-top: 10px"><a href="#admin-tutorials-anchor">Tutorials</a></li>
+          </ul>
+        </div>
+      </li>
       <li style="margin-top: 10px"><a href="#admin-textBooks-anchor">Text Books</a></li>
       <li style="margin-top: 10px"><a href="#admin-programmingLanguages-anchor">Programming Language</a></li>
       <li style="margin-top: 10px"><button class="dropdown-btn">Project
@@ -37,6 +45,7 @@
             <li style="margin-top: 10px"><a href="#admin-project-product-anchor">The product</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-scope-anchor">Scope</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-constraints-anchor">Constraints</a></li>
+            <li style="margin-top: 10px"><a href="#admin-project-teams-anchor">Forming Teams</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-timeline-anchor">Timeline</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-w03-inception-anchor">inception [week 3]</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-mid-v10-anchor">mid-v1.0 [week 4]</a></li>
@@ -50,12 +59,11 @@
             <li style="margin-top: 10px"><a href="#admin-project-mid-v14-anchor">mid-v1.4 [week 12]</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-v14-anchor">v1.4 [week 13]</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-deliverables-anchor">Deliverables</a></li>
+            <li style="margin-top: 10px"><a href="#admin-project-supervision-anchor">Supervision</a></li>
             <li style="margin-top: 10px"><a href="#admin-project-assessment-anchor">Assessment</a></li>
           </ul>
         </div>
       </li>
-      <li style="margin-top: 10px"><a href="#admin-supervision-anchor">Supervision</a></li>
-      <li style="margin-top: 10px"><a href="#admin-teams-anchor">Forming Teams</a></li>
       <li style="margin-top: 10px"><a href="#admin-peerEvaluations-anchor">Peer Evaluations</a></li>
       <li style="margin-top: 10px"><a href="#admin-tools-anchor">Tools</a></li>
       <li style="margin-top: 10px"><a href="#admin-gradeBreakdown-anchor">Grade Breakdown</a></li>
@@ -281,7 +289,7 @@
               <tip-box>
                 <tabs>
                 
-                  <tab header=":abc:">
+                  <tab header="<span class='far fa-file-alt'></span>">
                     Some textual description of X
                     <p>
                       <hr>
@@ -314,25 +322,25 @@
               <p>Meaning of some shortened headings:</p>
               <ul>
                 <li>
-                  <p><strong>What</strong> : the <strong>meaning</strong> of the concept in concern</p>
+                  <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
                   <p>
                     <panel header="%%Example%%" src="/website-base\book\refactoring\what\unit-inElsewhere-asFlat._include_.html"></panel>
                   </p>
                 </li>
                 <li>
-                  <p><strong>Why</strong> : the <strong>motivation</strong> behind the concept in concern</p>
+                  <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
                   <p>
                     <panel header="%%Example%%" src="/website-base\book\documentation\guidelines\goTopDown\why\unit-inElsewhere-asFlat._include_.html"></panel>
                   </p>
                 </li>
                 <li>
-                  <p><strong>How</strong> : the <strong>usage</strong> of the concept in concern</p>
+                  <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
                   <p>
                     <panel header="%%Example%%" src="/website-base\book\refactoring\how\unit-inElsewhere-asFlat._include_.html"></panel>
                   </p>
                 </li>
                 <li>
-                  <p><strong>When</strong> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
+                  <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
                   <p>
                     <panel header="%%Example%%" src="/website-base\book\refactoring\when\unit-inElsewhere-asFlat._include_.html"></panel>
                   </p>
@@ -361,33 +369,32 @@
                 definition
               </tip-box>
               <h4 id="meaning-of-icons">Meaning of Icons</h4>
-              <ul>
-                <li><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested</li>
-                <li><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <code>Ctrl+Click</code> to open the LO in new window/tab.</li>
-                <li><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> : learning outcomes</li>
-                <li><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome</li>
-                <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> : examples</li>
-                <li>📎 : resources</li>
-                <li><span class="fas fa-dumbbell"></span> : exercises</li>
-                <li><span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version</li>
-                <li><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info</li>
-                <li><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video</li>
-                <li>🔤 : textual description</li>
-                <li>📊 : slides</li>
-                <li>⤵️ : output produced by running code</li>
-                <li>🔒 question without answer</li>
-                <li>🔒🔑 question with answer</li>
-              </ul>
+              <div class="indented">
+                <p><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested<br>
+                  <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <code>Ctrl+Click</code> to open the LO in new window/tab.<br>
+                  <span class="fas fa-trophy"></span> : learning outcomes<br>
+                  <span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome<br>
+                  <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> : examples<br>
+                  <span class="fas fa-paperclip"></span> : resources<br>
+                  <span class="fas fa-dumbbell"></span> : exercises<br>
+                  <span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version<br>
+                  <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info<br>
+                  <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video<br>
+                  <span class="far fa-file-alt"></span> : textual description<br>
+                  <span class="far fa-images"></span> : slides<br>
+                  <span class="fas fa-arrow-down"></span> : output produced by running code<br>
+                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> question without answer<br>
+                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> question with answer<br></p>
+              </div>
             </div>
-            <ul>
-              <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do</li>
-              <li><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture</li>
-              <li><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> : tutorial</li>
-              <li><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> : evidence you can use to prove you have achieved a learning outcome</li>
-              <li>⏰ : deadline</li>
-            </ul>
+            <div class="indented">
+              <p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do<br>
+                <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture<br>
+                <span class="fas fa-chalkboard-teacher"></span> : tutorial<br>
+                <span class="fas fa-briefcase"></span> : evidence you can use to prove you have achieved a learning outcome<br> ⏰ : deadline<br></p>
+            </div>
             <h3 id="searching-for-keywords">Searching for keywords</h3>
-            <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2103-AY1718S2/website/issues">in the website issue tracker</a>              so that we can add the missing keyword into our search index.</p>
+            <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2103-AY1718S2/website/issues">in the website issue tracker</a>              so that we can add the missing keyword to our search index.</p>
             <div>
               <h3 id="saving-as-pdf-files">Saving as PDF Files</h3>
               <ol>
@@ -411,39 +418,112 @@
           </div>
         </div>
       </div>
+      <div id="admin-moduleExpectations-anchor"></div>
+      <div id="admin-moduleExpectations">
+        <div>
+          <h1 id="module-expectations">Module Expectations</h1>
+          <h3 id="prior-knowledge-java-and-oop">Prior Knowledge: Java and OOP</h3>
+          <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
+          <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <em>streams</em>, <em>lambdas</em>, <em>Optionals</em>, that may not have been covered in previous Java modules.</p>
+          <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113
+            (Software Engineering &amp; Object-Oriented Programming) instead.</p>
+          <h3 id="workload">Workload</h3>
+          <p>Given 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its peer modules</strong> <span class="dimmed">(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)</span>.</p>
+          <ul>
+            <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
+            <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
+            <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
+          </ul>
+          <div id="starRatingSystem">
+            <h4 id="star-rating-system">Star rating system</h4>
+            <div class="indented">
+              <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
+              </p>
+              <p><strong>Star ratings for Learning Outcomes</strong> (and text book sections):</p>
+              <ul>
+                <li>
+                  <p><strong>One-star LOs</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you to <mark>achieve these LOs if you want to pass the module</mark>                    (i.e. up to a <strong>C</strong> grade).</p>
+                </li>
+                <li>
+                  <p><strong>Two-stars LOs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                    </span>: Can get you up to a <strong>B+</strong>.</p>
+                </li>
+                <li>
+                  <p><strong>Three-stars LOs</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                      aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
+                </li>
+                <li>
+                  <p><strong>Four-stars LOs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                      aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry
+                    requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
+                </li>
+                <li>
+                  <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                      aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                      aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                    <span
+                      class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                      <span
+                        class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                          aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the
+                        star rating system above i.e., one-star prerequisite LOs are the most basic and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
+                </li>
+              </ul>
+              <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+              <ul>
+                <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                  without affecting your ability to follow the module.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="admin-weeklySchedule-anchor"></div>
+      <div id="admin-weeklySchedule">
+        <div>
+          <h1 id="weekly-schedule">Weekly Schedule</h1>
+          <p>📆 <strong>[Friday (previous week)]</strong><br></p>
+          <p>Attend the lecture for,</p>
+          <ul>
+            <li>a recap of the preceding week's Learning Outcomes (LOs)</li>
+            <li>an introduction to the current week's LOs</li>
+          </ul>
+          <p>
+            <panel src="/website-base\admin\lectures._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Lectures <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+              minimized="" fragment="main"></panel>
+          </p>
+          <p></p>
+          <p>📆 <strong>[Saturday (previous week) - Tuesday]</strong><br></p>
+          <ul>
+            <li>Use the relevant learning resources to achieve the LOs.</li>
+            <li>Self-test your knowledge using exercises given in the learning resources.</li>
+            <li>If you don't have time to achieve all LOs assigned to the week, use the star rating system to decide which ones to do first.</li>
+          </ul>
+          <p>
+            <panel src="/website-base\admin\learningOutcomes._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Learning Outcomes <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+              minimized="" fragment="main"></panel>
+          </p>
+          <p></p>
+          <p>📆 <strong>[Wednesday - Friday]</strong><br></p>
+          <p>Attend the tutorial to,</p>
+          <ul>
+            <li>demonstrate evidence of your achieving weekly LOs to the tutor</li>
+            <li>learn from peer demos of their own LO evidence</li>
+          </ul>
+          <p>
+            <panel src="/website-base\admin\tutorials._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+              minimized="" fragment="main"></panel>
+          </p>
+        </div>
+      </div>
       <div id="admin-learning-outcomes-anchor"></div>
       <div id="admin-learning-outcomes">
         <div>
           <h1 id="learning-outcomes">Learning Outcomes</h1>
           <p>This module is organized primarily around a list of Learning Outcomes.</p>
-          <p>Each week has a suggested list of LOs. They are categorized using the following star-rating system:</p>
-          <div><span><strong><big>Star rating system</big></strong></span>
-            <div class="indented">
-              <tip-box>
-                <p>TLDR: Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.</p>
-              </tip-box>
-              <ul>
-                <li><strong>One-star LOs</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you to <mark>achieve these LOs if you want to pass the module</mark>                  (i.e. up to a <strong>C</strong> grade).</li>
-                <li><strong>Two-stars LOs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  </span>: Can get you up to a <strong>B+</strong>.</li>
-                <li><strong>Three-stars LOs</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                    aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</li>
-                <li><strong>Four-stars LOs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                    aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive entry
-                  requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</li>
-              </ul>
-              <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
-                  aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
-                  aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                <span
-                  class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                  <span
-                    class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                      aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star
-                    rating system above i.e., one-star prerequisite LOs are the most basic and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
-              <p>Note that we use the a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                without affecting your ability to follow the module.</p>
-            </div>
-          </div>
+          <p>Each week has a suggested list of LOs. They are categorized using a star-rating system.</p>
+          <p>
+            <panel src="/website-base\admin\moduleExpectations._include_.html#starRatingSystem" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations → Star Rating System" minimized="" fragment="starRatingSystem"></panel>
+          </p>
         </div>
       </div>
       <div id="admin-lectures-anchor"></div>
@@ -678,7 +758,7 @@
               </ul>
               <p><strong>Timing/venue:</strong></p>
               <ul>
-                <li>Please refer to the <a href="/website-base/schedule/index.html">Schedule page</a> for further details on each tutorial.</li>
+                <li>Please refer to the <a href="/website-base/index.html">Schedule page</a> for further details on each tutorial.</li>
                 <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
                 <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is
                   dismissed.</li>
@@ -725,7 +805,7 @@
           <h2 id="project-overview">Project → Overview</h2>
           <p>The high-level learning outcome of the project (and to a large degree, the entire module):</p>
           <p>
-            <tip-box> <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can contribute production quality SE work to a small/medium software project </tip-box>
+            <tip-box> <span class="fas fa-trophy"></span> Can contribute production quality SE work to a small/medium software project </tip-box>
           </p>
           <p>Accordingly, the module project is structured to resemble an intermediate stage of a non-trivial real-life software project. In this project you will,</p>
           <ol>
@@ -1001,6 +1081,46 @@
           </ul>
         </div>
       </div>
+      <div id="admin-project-teams-anchor"></div>
+      <div id="admin-project-teams">
+        <div>
+          <h1 id="project-forming-teams">Project → Forming Teams</h1>
+          <p><img src="/website-base/admin/images/team.png" width="300px"><br>
+            <small><span class="dimmed">[Picture: The team that was at the top of early Google]</span></small></p>
+          <p></p>
+          <p><strong>When to form teams</strong></p>
+          <ul>
+            <li>CS2103T: Your team will be formed by CS2101 side in week 1.</li>
+            <li>CS2103: Your team will be formed in week 3 tutorial.</li>
+          </ul>
+          <p><strong>Team size</strong>: The default <mark>team size is five</mark>.</p>
+          <p><strong>Team ID</strong>: This will be given to you after forming teams. It has the form <code>TUTORIAL_ID-TEAM_NUMBER</code> e.g, <code>W14-2</code> means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.</p>
+          <p>
+            <panel src="/website-base\admin\tutorials._include_.html#tutorialTimetable" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials → Tutorial IDs" minimized="" fragment="tutorialTimetable"></panel>
+            <p></p>
+          </p>
+          <p><strong>Team composition</strong></p>
+          <p>We allow some freedom in choosing team members, subject to these constraints:</p>
+          <ul>
+            <li>
+              <p>All team members should be in the same tutorial. <mark>Delay forming teams until your place in a tutorial is confirmed.</mark> We do not allow changing tutorials to team up with your preferred team mates.</p>
+            </li>
+            <li>
+              <p>Teams of <mark>single nationality are not allowed</mark> <span class="dimmed"> Rationale: to train you to work in multicultural teams.</span> However, we allow same nationality teams if the only language common among all team members is
+                English. e.g. an all-Singaporean team that include both Chinese and Malay students.</p>
+            </li>
+            <li>
+              <p>No more than one exchange students per team <span class="dimmed">Rationale: to increase interaction between exchange students and NUS students.</span></p>
+            </li>
+            <li>
+              <p>Gender balanced teams are encouraged. While all-male teams may be unavoidable at times (due to high male percentage in the cohort), all-female teams are highly discouraged.</p>
+            </li>
+            <li>
+              <p>Also note that <mark><strong>we may modify teams when circumstances call for it</strong></mark>. There is no avenue for you to object. Staying with your preferred team is not guaranteed.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div id="admin-project-timeline-anchor"></div>
       <div id="admin-project-timeline">
         <div>
@@ -1234,7 +1354,7 @@
                     <div>
                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
-                          <panel header=":lock::key: Characteristic of brainstorming">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Characteristic of brainstorming">
                             <question>
                               <p>What is the key characteristic about brainstorming?</p>
                               <ul radio-group="11d89" class="radio-list">
@@ -1620,7 +1740,7 @@
                     <div>
                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
-                          <panel header=":lock::key: TEAMMATES NFRs">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> TEAMMATES NFRs">
                             <question>
                               <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                               <ul class="task-list">
@@ -1890,7 +2010,7 @@
                       </div>
                       <div>
                         <div>
-                          <panel header=":paperclip: Resources" expanded="">
+                          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
                             <ul>
                               <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
                             </ul>
@@ -2389,14 +2509,14 @@ method 4 ...
 </code></pre>
                   </li>
                   <li>
-                    <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎⤵️
-                    </p>
+                    <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎
+                      <span class="fas fa-arrow-down"></span></p>
                     <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author johndoe
   */
 </code></pre>
-                    <p>👍⤵️</p>
+                    <p>👍<span class="fas fa-arrow-down"></span></p>
                     <pre class="hljs"><code>//@@author johndoe
 /**
   * Returns true if ...
@@ -2659,14 +2779,14 @@ method 4 ...
 </code></pre>
                 </li>
                 <li>
-                  <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎⤵️
-                  </p>
+                  <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎
+                    <span class="fas fa-arrow-down"></span></p>
                   <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author johndoe
   */
 </code></pre>
-                  <p>👍⤵️</p>
+                  <p>👍<span class="fas fa-arrow-down"></span></p>
                   <pre class="hljs"><code>//@@author johndoe
 /**
   * Returns true if ...
@@ -3530,6 +3650,17 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           </span>
         </div>
       </div>
+      <div id="admin-project-supervision-anchor"></div>
+      <div id="admin-project-supervision">
+        <div>
+          <h1 id="project-supervision">Project → Supervision</h1>
+          <p>Your tutor will serve as your <em>project supervisor</em> too.</p>
+          <p><strong>The supervisor's main job is to observe, facilitate self/peer learning, evaluate, and give feedback.</strong></p>
+          <p>Tutorial time is the main avenue for meeting your supervisor. In addition, you can meet the supervisor before/after the tutorial, or any other time, as many times you need, subject to availability in his/her schedule.</p>
+          <p>Note that <strong>it is not the supervisor’s job to chase you down and give help</strong>. It is up to you to get as much feedback from the as you need. You are free to request more feedback from the supervisor as necessary. Similarly, it is
+            not the job of the supervisor to lead your project to success.</p>
+        </div>
+      </div>
       <div id="admin-project-assessment-anchor"></div>
       <div id="admin-project-assessment">
         <div>
@@ -3589,15 +3720,15 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                     <div>
                       <div>
                         <panel type="seamless" expanded="">
-                          <span slot="header" class="panel-title"><div>
+                          <span slot="header" class="card-title"><div>
 <h3 id="introduction-3">Introduction</h3></div></span>
                           <div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="basic">Basic</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of code quality</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -3622,15 +3753,15 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                       </div>
                       <div>
                         <panel type="seamless" expanded="">
-                          <span slot="header" class="panel-title"><div>
+                          <span slot="header" class="card-title"><div>
 <h2 id="guideline-maximise-readability">Guideline: Maximise Readability</h2></div></span>
                           <div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="introduction-4">Introduction</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the importance of readability</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of readability</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -3758,15 +3889,15 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="basic-2">Basic</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-long-methods">Avoid Long Methods</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid long methods </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -3779,10 +3910,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-deep-nesting">Avoid Deep Nesting</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid deep nesting </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -3803,10 +3934,10 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-complicated-expressions">Avoid Complicated Expressions</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid complicated expressions </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -3875,10 +4006,10 @@ is_urgent = type_code == URGENT
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-magic-numbers">Avoid Magic Numbers</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -3978,10 +4109,10 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="make-the-code-obvious">Make the Code Obvious</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the code obvious </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4011,15 +4142,15 @@ MAX_SIZE = <span class="hljs-number">10</span>
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="intermediate">Intermediate</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="structure-code-logically">Structure Code Logically</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: structure code logically </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: structure code logically </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4034,10 +4165,10 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="do-not-trip-up-reader">Do Not 'Trip Up' Reader</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not 'trip up' reader </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not 'trip up' reader </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4057,10 +4188,10 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="practice-kissing">Practice KISSing</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: practice kissing </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: practice kissing </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4080,10 +4211,10 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-premature-optimizations">Avoid Premature Optimizations</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid premature optimizations </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid premature optimizations </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4110,10 +4241,10 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="slap-hard">SLAP Hard</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: slap hard </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: slap hard </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4192,15 +4323,15 @@ displayResult();
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="advanced">Advanced</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="make-the-happy-path-prominent">Make the Happy Path Prominent</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: make the happy path prominent </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the happy path prominent </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4267,15 +4398,15 @@ exit();
                       </div>
                       <div>
                         <panel type="seamless" expanded="">
-                          <span slot="header" class="panel-title"><div>
+                          <span slot="header" class="card-title"><div>
 <h2 id="guideline-follow-a-standard">Guideline: Follow a Standard</h2></div></span>
                           <div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="introduction-5">Introduction</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for following a standard</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -4292,7 +4423,7 @@ exit();
                                     <div>
                                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                         <div>
-                                          <panel header=":lock::key: What is the recommended approach regarding coding standards?">
+                                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
                                             <question>
                                               <p>What is the recommended approach regarding coding standards?</p>
                                               <ul radio-group="5c5a1" class="radio-list">
@@ -4308,7 +4439,7 @@ exit();
                                           </panel>
                                         </div>
                                         <div>
-                                          <panel header=":lock: What is the aim? What is the value?">
+                                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
                                             <question has-input="">
                                               <p>What is the aim of using a coding standard? How does it help?</p>
                                             </question>
@@ -4322,10 +4453,10 @@ exit();
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="basic-3">Basic</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow simple mechanical style rules</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -4342,10 +4473,10 @@ exit();
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="intermediate-2">Intermediate</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can follow intermediate style rules</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -4356,7 +4487,7 @@ exit();
                                     <div>
                                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                         <div>
-                                          <panel header=":lock::key: Unsuitable variable name">
+                                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Unsuitable variable name">
                                             <question>
                                               <p>According to the given Java coding standard, which one of these is not a good name?</p>
                                               <ul radio-group="1c05d" class="radio-list">
@@ -4384,15 +4515,15 @@ exit();
                       </div>
                       <div>
                         <panel type="seamless" expanded="">
-                          <span slot="header" class="panel-title"><div>
+                          <span slot="header" class="card-title"><div>
 <h2 id="guideline-name-well">Guideline: Name Well</h2></div></span>
                           <div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="introduction-6">Introduction</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for good names in code</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -4408,15 +4539,15 @@ exit();
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="basic-4">Basic</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4481,10 +4612,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="use-standard-words">Use Standard Words</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use standard words </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4500,15 +4631,15 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="intermediate-3">Intermediate</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="use-name-to-explain">Use Name to Explain</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use name to explain </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use name to explain </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4598,10 +4729,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="not-too-long-not-too-short">Not Too Long, Not Too Short</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: not too long, not too short </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: not too long, not too short </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4614,10 +4745,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-misleading-names">Avoid Misleading Names</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid misleading names </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid misleading names </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4696,15 +4827,15 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       </div>
                       <div>
                         <panel type="seamless" expanded="">
-                          <span slot="header" class="panel-title"><div>
+                          <span slot="header" class="card-title"><div>
 <h2 id="guideline-avoid-unsafe-shortcuts">Guideline: Avoid Unsafe Shortcuts</h2></div></span>
                           <div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="introduction-7">Introduction</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for avoiding error-prone shortcuts</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for avoiding error-prone shortcuts</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -4717,15 +4848,15 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="basic-5">Basic</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="use-the-default-branch">Use the Default Branch</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: use the default branch </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use the default branch </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4755,10 +4886,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="dont-recycle-variables-or-parameters">Don't Recycle Variables or Parameters</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: don't recycle variables or parameters </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: don't recycle variables or parameters </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4794,10 +4925,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="avoid-empty-catch-blocks">Avoid Empty Catch Blocks</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: avoid empty catch blocks </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid empty catch blocks </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4810,10 +4941,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="delete-dead-code">Delete Dead Code</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: delete dead code </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: delete dead code </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4831,15 +4962,15 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="intermediate-4">Intermediate</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="minimise-scope-of-variables">Minimise Scope of Variables</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise scope of variables </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise scope of variables </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4850,7 +4981,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                           <blockquote>
                                             <p><strong>The most powerful technique for minimizing the scope of a local variable is to declare it where it is first used.</strong> <sub>-- <em>Effective Java</em>, by Joshua Bloch</sub></p>
                                           </blockquote>
-                                          <p>📎 Resources:</p>
+                                          <p><span class="fas fa-paperclip"></span> Resources:</p>
                                           <ul>
                                             <li><a href="https://refactoring.com/catalog/reduceScopeOfVariable.html">Refactoring: Reduce Scope of Variable</a></li>
                                           </ul>
@@ -4861,10 +4992,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="minimise-code-duplication">Minimise Code Duplication</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: minimise code duplication </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise code duplication </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4920,15 +5051,15 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       </div>
                       <div>
                         <panel type="seamless" expanded="">
-                          <span slot="header" class="panel-title"><div>
+                          <span slot="header" class="card-title"><div>
 <h2 id="guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently</h2></div></span>
                           <div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h4 id="introduction-8">Introduction</h4></div></span>
                                 <div class="indented">
-                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain the need for commenting minimally but sufficiently</span></span></span></button>
+                                  <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span></span></span></button>
                                     <p></p>
                                   </p>
                                   <p></p>
@@ -4945,15 +5076,15 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="basic-6">Basic</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="do-not-repeat-the-obvious">Do Not Repeat the Obvious</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -4975,10 +5106,10 @@ trimInput();
                                   </div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="write-to-the-reader">Write to the Reader</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: write to the reader </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -5037,15 +5168,15 @@ trimInput();
                             </div>
                             <div>
                               <panel type="seamless" expanded="">
-                                <span slot="header" class="panel-title"><div>
+                                <span slot="header" class="card-title"><div>
 <h3 id="intermediate-5">Intermediate</h3></div></span>
                                 <div>
                                   <div>
                                     <panel type="seamless" expanded="">
-                                      <span slot="header" class="panel-title"><div>
+                                      <span slot="header" class="card-title"><div>
 <h4 id="explain-what-and-why-not-how">Explain WHAT and WHY, not HOW</h4></div></span>
                                       <div class="indented">
-                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can improve code quality using technique: explain what and why, not how </span></span></span></button>
+                                        <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: explain what and why, not how </span></span></span></button>
                                           <p></p>
                                         </p>
                                         <p></p>
@@ -5392,57 +5523,6 @@ compact(input);
           <p></p>
         </div>
       </div>
-      <div id="admin-project-supervision-anchor"></div>
-      <div id="admin-project-supervision">
-        <div>
-          <h1 id="supervision">Supervision</h1>
-          <p>Your tutor will serve as your <em>project supervisor</em> too.</p>
-          <p><strong>The supervisor's main job is to observe, facilitate self/peer learning, evaluate, and give feedback.</strong></p>
-          <p>Tutorial time is the main avenue for meeting your supervisor. In addition, you can meet the supervisor before/after the tutorial, or any other time, as many times you need, subject to availability in his/her schedule.</p>
-          <p>Note that <strong>it is not the supervisor’s job to chase you down and give help</strong>. It is up to you to get as much feedback from the as you need. You are free to request more feedback from the supervisor as necessary. Similarly, it is
-            not the job of the supervisor to lead your project to success.</p>
-        </div>
-      </div>
-      <div id="admin-teams-anchor"></div>
-      <div id="admin-teams">
-        <div>
-          <h1 id="forming-teams">Forming Teams</h1>
-          <p><img src="/website-base/admin/images/team.png" width="300px"><br>
-            <span class="dimmed">[Picture: The team that was at the top of early Google]</span></p>
-          <p></p>
-          <p><strong>When to form teams</strong></p>
-          <ul>
-            <li>CS2103T: Your team will be formed by CS2101 side in week 1.</li>
-            <li>CS2103: Your team will be formed in week 3 tutorial.</li>
-          </ul>
-          <p><strong>Team size</strong>: The default <mark>team size is five</mark>.</p>
-          <p><strong>Team ID</strong>: This will be given to you after forming teams. It has the form <code>TUTORIAL_ID-TEAM_NUMBER</code> e.g, <code>W14-2</code> means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.</p>
-          <p>
-            <panel src="/website-base\admin\tutorials._include_.html#tutorialTimetable" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tutorials → Tutorial IDs%%" fragment="tutorialTimetable"></panel>
-            <p></p>
-          </p>
-          <p><strong>Team composition</strong></p>
-          <p>We allow some freedom in choosing team members, subject to these constraints:</p>
-          <ul>
-            <li>
-              <p>All team members should be in the same tutorial. <mark>Delay forming teams until your place in a tutorial is confirmed.</mark> We do not allow changing tutorials to team up with your preferred team mates.</p>
-            </li>
-            <li>
-              <p>Teams of <mark>single nationality are not allowed</mark> <span class="dimmed"> Rationale: to train you to work in multicultural teams.</span> However, we allow same nationality teams if the only language common among all team members is
-                English. e.g. an all-Singaporean team that include both Chinese and Malay students.</p>
-            </li>
-            <li>
-              <p>No more than one exchange students per team <span class="dimmed">Rationale: to increase interaction between exchange students and NUS students.</span></p>
-            </li>
-            <li>
-              <p>Gender balanced teams are encouraged. While all-male teams may be unavoidable at times (due to high male percentage in the cohort), all-female teams are highly discouraged.</p>
-            </li>
-            <li>
-              <p>Also note that <mark><strong>we may modify teams when circumstances call for it</strong></mark>. There is no avenue for you to object. Staying with your preferred team is not guaranteed.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div id="admin-peerEvaluations-anchor"></div>
       <div id="admin-peerEvaluations">
         <div>
@@ -5550,14 +5630,14 @@ method 4 ...
 </code></pre>
                 </li>
                 <li>
-                  <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎⤵️
-                  </p>
+                  <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎
+                    <span class="fas fa-arrow-down"></span></p>
                   <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author johndoe
   */
 </code></pre>
-                  <p>👍⤵️</p>
+                  <p>👍<span class="fas fa-arrow-down"></span></p>
                   <pre class="hljs"><code>//@@author johndoe
 /**
   * Returns true if ...
@@ -6082,14 +6162,14 @@ method 4 ...
 </code></pre>
                   </li>
                   <li>
-                    <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎⤵️
-                    </p>
+                    <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎
+                      <span class="fas fa-arrow-down"></span></p>
                     <pre class="hljs"><code>/**
   * Returns true if ...
   * @@author johndoe
   */
 </code></pre>
-                    <p>👍⤵️</p>
+                    <p>👍<span class="fas fa-arrow-down"></span></p>
                     <pre class="hljs"><code>//@@author johndoe
 /**
   * Returns true if ...
@@ -6526,24 +6606,29 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
       <div id="admin-appendixE-github">
         <div>
           <h1 id="appendix-e-using-github-project-hosting">Appendix E: Using GitHub Project Hosting</h1>
-          <h2 id="create-a-github-profile">Create a GitHub profile</h2>
+          <h2 id="creating-a-github-account">Creating a GitHub account</h2>
           <div id="githubAccount">
             <p>Create a personal GitHub account if you don't have one yet.</p>
             <ol>
-              <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
-              <li>Strongly recommended: Complete your GitHub profile. In particular,
+              <li>
+                <p>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</p>
+              </li>
+              <li>
+                <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
                 <ul>
                   <li>Specify your full name.</li>
                   <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
                 </ul>
+                <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%">
+                  <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account
+                    just for the module.</p>
+                </panel>
+                <panel src="/website-base\admin\project-deliverables._include_.html#profile-photo" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" minimized="" fragment="profile-photo"></panel>
               </li>
             </ol>
-            <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
-              <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account
-                just for the module.</p>
-            </panel>
-            <panel src="/website-base\admin\project-deliverables._include_.html#profile-photo" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo%%" expandable="" fragment="profile-photo"></panel>
           </div>
+
+
           <div id="git-username">
             <h2 id="setting-git-username-to-match-github-username">Setting Git Username to Match GitHub Username</h2>
             <p>We use various tools to analyze your code. <mark>For us to be able to identify your commits, you should use the GitHub username as your Git username as well. If there is a mismatch, or if you use multiple user names for Git,</mark> our tools
@@ -6827,7 +6912,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 04:21:00 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 15:39:04 GMT</small></div>
 </footer>
 </div>
 </body>

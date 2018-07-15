@@ -66,9 +66,9 @@
     </p>
     <p></p>
     <panel type="seamless" expanded="" no-close="">
-      <span slot="header" class="panel-title week"> Week 1 [Aug 13]</span>
+      <span slot="header" class="card-title week"> Week 1 [Aug 13]</span>
       <panel type="seamless" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
+        <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
         <div class="indented">
           <div>
             <p><span class="dimmed">Given below are some <em>setting up</em> tasks you can do as you wait for the module to start:</span></p>
@@ -77,16 +77,16 @@
             <div class="indented">
 
               <panel no-close="">
-                <span slot="header" class="panel-title">[CS2103 students only] Forming teams <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title">Learn how to form project teams <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
                 <p>
-                  <panel type="danger" src="/website-base\admin\teams._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%% Team Forming :star:" fragment="main"></panel>
+                  <panel type="danger" src="/website-base\admin\project-teams._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Team Forming :star:" expanded="" fragment="main"></panel>
                 </p>
               </panel>
 
               <panel no-close="">
-                <span slot="header" class="panel-title">[Exchange students only] Signing up for tutorial <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                <span slot="header" class="card-title">[Exchange students only] Know how to sign up for tutorials <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
                   aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 <p>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your
@@ -94,35 +94,40 @@
               </panel>
 
               <panel no-close="">
-                <span slot="header" class="panel-title">Create a GitHub Account <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title">Create a GitHub account <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
-                <div type="danger">
-                  <p>Create a personal GitHub account if you don't have one yet.</p>
-                  <ol>
-                    <li>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</li>
-                    <li>Strongly recommended: Complete your GitHub profile. In particular,
-                      <ul>
-                        <li>Specify your full name.</li>
-                        <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
-                      </ul>
-                    </li>
-                  </ol>
-                  <panel header="%%Why am I being pushed to complete my GitHub profile?%%" expandable="">
-                    <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub
-                      account just for the module.</p>
-                  </panel>
-                  <panel src="/website-base\admin\project-deliverables._include_.html#profile-photo" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo%%" expandable="" fragment="profile-photo"></panel>
-                </div>
+                <panel header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E (Using GitHub) → Creating a GitHub account" expanded="">
+                  <div type="danger">
+                    <p>Create a personal GitHub account if you don't have one yet.</p>
+                    <ol>
+                      <li>
+                        <p>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</p>
+                      </li>
+                      <li>
+                        <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
+                        <ul>
+                          <li>Specify your full name.</li>
+                          <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+                        </ul>
+                        <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%">
+                          <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate
+                            GitHub account just for the module.</p>
+                        </panel>
+                        <panel src="/website-base\admin\project-deliverables._include_.html#profile-photo" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" minimized="" fragment="profile-photo"></panel>
+                      </li>
+                    </ol>
+                  </div>
+                </panel>
               </panel>
 
               <panel no-close="">
-                <span slot="header" class="panel-title"><span>Submit Pre-Module Survey <mark>(Compulsory)</mark> ⏰</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span>Submit the pre-module survey <mark>(Compulsory)</mark> ⏰</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
-                <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub ID.</span></p>
+                <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub username.</span></p>
               </panel>
 
               <panel no-close="">
-                <span slot="header" class="panel-title">Join the Slack Channel <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                <span slot="header" class="card-title">Join the Slack channel <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
                   aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -143,13 +148,71 @@
               </panel>
 
               <panel no-close="">
-                <span slot="header" class="panel-title">Brush up your Java <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title">Prepare to meet module expectations <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                  aria-hidden="true"></span></span>
                 </span>
                 </span>
-                <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
-                <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <code>streams</code>, <code>lambdas</code>, <code>Optionals</code>, that may not have been covered in previous Java modules.</p>
-                <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching
-                  to CS2113 (Software Engineering &amp; Object-Oriented Programming) instead.</p>
+                <panel header="%%**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations**%%" expanded="">
+                  <div type="danger">
+                    <h1 id="module-expectations">Module Expectations</h1>
+                    <h3 id="prior-knowledge-java-and-oop">Prior Knowledge: Java and OOP</h3>
+                    <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
+                    <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <em>streams</em>, <em>lambdas</em>, <em>Optionals</em>, that may not have been covered in previous Java modules.</p>
+                    <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching
+                      to CS2113 (Software Engineering &amp; Object-Oriented Programming) instead.</p>
+                    <h3 id="workload">Workload</h3>
+                    <p>Given 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its peer modules</strong> <span class="dimmed">(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)</span>.</p>
+                    <ul>
+                      <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
+                      <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
+                      <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
+                    </ul>
+                    <div id="starRatingSystem">
+                      <h4 id="star-rating-system">Star rating system</h4>
+                      <div class="indented">
+                        <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
+                        </p>
+                        <p><strong>Star ratings for Learning Outcomes</strong> (and text book sections):</p>
+                        <ul>
+                          <li>
+                            <p><strong>One-star LOs</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you
+                              to <mark>achieve these LOs if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
+                          </li>
+                          <li>
+                            <p><strong>Two-stars LOs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                              </span>: Can get you up to a <strong>B+</strong>.</p>
+                          </li>
+                          <li>
+                            <p><strong>Three-stars LOs</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                                aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
+                          </li>
+                          <li>
+                            <p><strong>Four-stars LOs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive
+                              entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
+                          </li>
+                          <li>
+                            <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                              <span
+                                class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                                  aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                                <span
+                                  class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,
+                                  <span
+                                    class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                                      aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in
+                                    prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star rating system above i.e., one-star prerequisite LOs are the most basic
+                                    and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
+                          </li>
+                        </ul>
+                        <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+                        <ul>
+                          <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                            without affecting your ability to follow the module.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </panel>
               </panel>
             </div>
             <br>
@@ -158,27 +221,27 @@
             </p>
             <div class="indented">
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" no-close="" fragment="admin-faq-whereIsEverything">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Where is everything? <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Where is everything? <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
               </panel>
               <panel src="/website-base\admin\project-overview._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Overview <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Overview <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
               </panel>
               <panel src="/website-base\admin\project-product._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: The Product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: The Product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
               </panel>
               <panel src="/website-base\admin\project-scope._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Scope <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Scope <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
               </panel>
               <panel src="/website-base\admin\textBooks._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Text Books <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Text Books <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   </span>
@@ -187,7 +250,7 @@
                   </span>
               </panel>
               <panel src="/website-base\admin\programming-languages._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Programming Language <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Programming Language <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   </span>
@@ -196,7 +259,7 @@
                   </span>
               </panel>
               <panel src="/website-base\admin\project-constraints._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Constraints <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Constraints <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   </span>
@@ -205,7 +268,7 @@
                   </span>
               </panel>
               <panel src="/website-base\admin\project-timeline._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Timeline <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: Timeline <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   </span>
@@ -214,21 +277,21 @@
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2103Vscs2103t" no-close="" fragment="admin-faq-cs2103Vscs2103t">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What's different between CS2103 and CS2103T? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What's different between CS2103 and CS2103T? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-highWorkload" no-close="" fragment="admin-faq-highWorkload">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why the workload is so high? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why the workload is so high? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-aPlus" no-close="" fragment="admin-faq-aPlus">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What are the extra requirements to get an A+? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: What are the extra requirements to get an A+? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
@@ -240,7 +303,7 @@
         </div>
       </panel>
       <panel type="seamless" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Tutorial 1</span>
+        <span slot="header" class="card-title activity-type"><span class="fas fa-chalkboard-teacher"></span> Tutorial 1</span>
         <div class="indented">
           <div>
             <p>Note: We use <code>Tutorial 1</code> to mean <code>the tutorial in week 1</code>.<br>
@@ -249,7 +312,7 @@
         </div>
       </panel>
       <panel type="seamless" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 1</span>
+        <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 1</span>
         <div class="indented">
           <div>
             <p><mark>This lecture is compulsory</mark> to attend.</p>
@@ -259,241 +322,241 @@
       </panel>
     </panel>
     <panel type="seamless" expanded="" no-close="">
-      <span slot="header" class="panel-title week"> Week 2 [Aug 20]</span>
+      <span slot="header" class="card-title week"> Week 2 [Aug 20]</span>
       <panel type="seamless" popup-url="/website-base/schedule/week2/outcomes.html" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Outcomes</span>
+        <span slot="header" class="card-title activity-type"><span class="fas fa-trophy"></span> Outcomes</span>
         <div class="indented">
           <p><span class="activity-desc">SE Intro</span></p>
           <div class="indented">
             <panel no-close="">
-              <span slot="header" class="panel-title"><span><code>W2.1</code> <strong>Can explain pros and cons of software engineering</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><code>W2.1</code> <strong>Can explain pros and cons of software engineering</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <panel type="info" expanded="" no-close="">
-                  <span slot="header" class="panel-title"><span><code>W2.1a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain pros and cons of software engineering</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  <span
-                    class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                    </span>
-                    </span>
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Software Engineering → Introduction →
+                  <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.1a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain pros and cons of software engineering</span>
+                  <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  </span>
+                  </span>
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Software Engineering → Introduction →
 </span></strong>
-                        </span>
-                      </p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="pros-and-cons">Pros and Cons</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <tip-box type="definition">
-                            
-                              <div>
-                                <p><strong>Software Engineering</strong>: Software Engineering is the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software&quot; <sub>-- IEEE Standard Glossary of Software Engineering Terminology</sub></p>
-                              </div>
-                            </tip-box>
-                            <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book
-                              <trigger for="modal:mmm" trigger="click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</trigger>.</p>
-                            <blockquote>
-                              <p><strong>Why is programming fun? What delights may its practitioner expect as his reward?</strong></p>
-                              <p>First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things, especially things of his own design. I think this delight must be an image of God's delight in making things,
-                                a delight shown in the distinctness and newness of each leaf and each snowflake.</p>
-                              <p>Second is the pleasure of making things that are useful to other people. Deep within, we want others to use our work and to find it helpful. In this respect the programming system is not essentially different from the child's
-                                first clay pencil holder &quot;for Daddy's office.&quot;</p>
-                              <p>Third is the fascination of fashioning complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning. The programmed
-                                computer has all the fascination of the pinball machine or the jukebox mechanism, carried to the ultimate.</p>
-                              <p>Fourth is the joy of always learning, which springs from the nonrepeating nature of the task. In one way or another the problem is ever new, and its solver learns something: sometimes practical, sometimes theoretical, and
-                                sometimes both.</p>
-                              <p>Finally, there is the delight of working in such a tractable medium. The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by the exertion
-                                of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures....</p>
-                              <p>Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms.
-                                The magic of myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life, showing things that never were nor could be.</p>
-                              <p>Programming then is fun because it gratifies creative longings built deep within us and delights sensibilities we have in common with all men.</p>
-                            </blockquote>
-                            <blockquote>
-                              <p><strong>Not all is delight, however, and knowing the inherent woes makes it easier to bear them when they appear.</strong></p>
-                              <p>First, one must perform perfectly. The computer resembles the magic of legend in this respect, too. If one character, one pause, of the incantation is not strictly in proper form, the magic doesn't work. Human beings are
-                                not accustomed to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.</p>
-                              <p>Next, other people set one's objectives, provide one's resources, and furnish one's information. One rarely controls the circumstances of his work, or even its goal. In management terms, one's authority is not sufficient
-                                for his responsibility. It seems that in all fields, however, the jobs where things get done never have formal authority commensurate with responsibility. In practice, actual (as opposed to formal) authority is acquired
-                                from the very momentum of accomplishment.</p>
-                              <p>The dependence upon others has a particular case that is especially painful for the system programmer. He depends upon other people's programs. These are often maldesigned, poorly implemented, incompletely delivered (no source
-                                code or test cases), and poorly documented. So he must spend hours studying and fixing things that in an ideal world would be complete, available, and usable.</p>
-                              <p>The next woe is that designing grand concepts is fun; finding nitty little bugs is just work. With any creative activity come dreary hours of tedious, painstaking labor, and programming is no exception.</p>
-                              <p>Next, one finds that debugging has a linear convergence, or worse, where one somehow expects a quadratic sort of approach to the end. So testing drags on and on, the last difficult bugs taking more time to find than the first.</p>
-                              <p>The last woe, and sometimes the last straw, is that the product over which one has labored so long appears to be obsolete upon (or before) completion. Already colleagues and competitors are in hot pursuit of new and better
-                                ideas. Already the displacement of one's thought-child is not only conceived, but scheduled.</p>
-                              <p>This always seems worse than it really is. The new and better product is generally not available when one completes his own; it is only talked about. It, too, will require months of development. The real tiger is never a
-                                match for the paper one, unless actual use is wanted. Then the virtues of reality have a satisfaction all their own.</p>
-                              <p>Of course the technological base on which one builds is always advancing. As soon as one freezes a design, it becomes obsolete in terms of its concepts. But implementation of real products demands phasing and quantizing.
-                                The obsolescence of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules
-                                with available resources.</p>
-                              <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
-                            </blockquote>
-                            <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
-                              <table>
-                                <tr>
-                                  <td>
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Mythical_man-month_%28book_cover%29.jpg" height="250"></td>
-                                  <td>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fred_Brooks.jpg/800px-Fred_Brooks.jpg" height="250"></td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <p><sub>[<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Text and book cover source: Wikipedia</a>]</sub></p>
-                                  </td>
-                                  <td>
-                                    <p><sub>[<a href="https://commons.wikimedia.org/wiki/File:Fred_Brooks.jpg">Fred Brooks photo source</a>]</sub></p>
-                                  </td>
-                                </tr>
-                              </table>
-                              <p><em>The Mythical Man-Month: Essays on Software Engineering</em> is a book on software engineering and project management by Fred Brooks, whose central theme is that &quot;adding manpower to a late software project makes it
-                                later&quot;. This idea is known as Brooks's law, and is presented along with the second-system effect and advocacy of prototyping.</p>
-                            </modal>
-                          </div>
-                          <div>
-                            <div>
-                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                                <div>
-                                  <panel header=":lock::key: SE vs Civil Engineering">
-                                    <question has-input="true">
-                                      <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
-                                      <div slot="answer">
-                                        <table class="markbind-table table table-bordered table-striped">
-                                          <thead>
-                                            <tr>
-                                              <th style="text-align:center">Buildings</th>
-                                              <th style="text-align:center">Software</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td style="text-align:center">Visible, tangible</td>
-                                              <td style="text-align:center">Invisible, intangible</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Wears out over time</td>
-                                              <td style="text-align:center">Does not wear out</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Change is limited by physical restrictions (e.g. difficult to remove a floor from a high rise building)</td>
-                                              <td style="text-align:center">Change is not limited by such restrictions. Just change the code and recompile.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Creating an exact copy of a building is impossible. Creating a near copy is almost as costly as creating the original.</td>
-                                              <td style="text-align:center">Any number of exact copies can be made with near zero cost.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Difficult to move.</td>
-                                              <td style="text-align:center">Easily delivered from one place to another.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Many low-skilled workers following tried-and-tested procedures.</td>
-                                              <td style="text-align:center">No low-skilled workers involved. Workers have more freedom to follow their own procedures.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Easier to assure quality (just follow accepted procedure).</td>
-                                              <td style="text-align:center">Not easy to assure quality.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Majority of the work force has to be on location.</td>
-                                              <td style="text-align:center">Can be built by people who are not even in the same country.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Raw materials are costly, costly equipment required.</td>
-                                              <td style="text-align:center">Almost free raw materials and relatively cheap equipment.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Once construction is started, it is hard to do drastic changes to the design.</td>
-                                              <td style="text-align:center">Building process is very flexible. Drastic design changes can be done, although costly</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">A lot of manual and menial labor involved.</td>
-                                              <td style="text-align:center">Most work involves highly-skilled labor.</td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center">Generally robust. E.g. removing a single brick is unlikely to destroy a building.</td>
-                                              <td style="text-align:center">More fragile than buildings. A single misplaced semicolon can render the whole system useless.</td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header=":lock::key: Software vs Bridges">
-                                    <question has-input="true">
-                                      <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
-                                      <div slot="answer">
-                                        <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month)
-                                          with a just a PC and a few days of work!</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header=":lock::key: Coding as a manufacturing activity">
-                                    <question has-input="true">
-                                      <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
-                                      <div slot="answer">
-                                        <p>Arguments to support this statement:</p>
-                                        <ul>
-                                          <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
-                                          <li>If coding is a manufacturing activity, we wouldn’t be changing it so much after we code software. But if the code is in fact a ‘design’, yes, we would fiddle with it until we get it right.</li>
-                                          <li>Manufacturing is the process of building a finished product based on the design. Code is the design. Manufacturing is what is done by the compiler (fully automated).</li>
-                                        </ul>
-                                        <p>However, the type of ‘design’ that occurs during coding is at a much lower level than the ‘design’ that occurs before coding.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header=":lock: List pros and cons of SE">
-                                    <question has-input="true">
-                                      <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header=":lock::key: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
-                                    <question>
-                                      <ul class="task-list">
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <p>(c)</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr style="border-top: dashed 1px; border-color:grey">
-                    <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
-                    <div>
-                      <p>To be able answer questions such as these:</p>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
                       <div>
-                        <panel header=":lock: List pros and cons of SE">
-                          <question has-input="true">
-                            <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
-                          </question>
-                        </panel>
+                        <h4 id="pros-and-cons">Pros and Cons</h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <tip-box type="definition">
+                          
+                            <div>
+                              <p><strong>Software Engineering</strong>: Software Engineering is the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software&quot; <sub>-- IEEE Standard Glossary of Software Engineering Terminology</sub></p>
+                            </div>
+                          </tip-box>
+                          <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book
+                            <trigger for="modal:mmm" trigger="click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</trigger>.</p>
+                          <blockquote>
+                            <p><strong>Why is programming fun? What delights may its practitioner expect as his reward?</strong></p>
+                            <p>First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things, especially things of his own design. I think this delight must be an image of God's delight in making things,
+                              a delight shown in the distinctness and newness of each leaf and each snowflake.</p>
+                            <p>Second is the pleasure of making things that are useful to other people. Deep within, we want others to use our work and to find it helpful. In this respect the programming system is not essentially different from the child's
+                              first clay pencil holder &quot;for Daddy's office.&quot;</p>
+                            <p>Third is the fascination of fashioning complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning. The programmed
+                              computer has all the fascination of the pinball machine or the jukebox mechanism, carried to the ultimate.</p>
+                            <p>Fourth is the joy of always learning, which springs from the nonrepeating nature of the task. In one way or another the problem is ever new, and its solver learns something: sometimes practical, sometimes theoretical, and sometimes
+                              both.</p>
+                            <p>Finally, there is the delight of working in such a tractable medium. The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by the exertion of
+                              the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures....</p>
+                            <p>Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms.
+                              The magic of myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life, showing things that never were nor could be.</p>
+                            <p>Programming then is fun because it gratifies creative longings built deep within us and delights sensibilities we have in common with all men.</p>
+                          </blockquote>
+                          <blockquote>
+                            <p><strong>Not all is delight, however, and knowing the inherent woes makes it easier to bear them when they appear.</strong></p>
+                            <p>First, one must perform perfectly. The computer resembles the magic of legend in this respect, too. If one character, one pause, of the incantation is not strictly in proper form, the magic doesn't work. Human beings are not
+                              accustomed to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.</p>
+                            <p>Next, other people set one's objectives, provide one's resources, and furnish one's information. One rarely controls the circumstances of his work, or even its goal. In management terms, one's authority is not sufficient for
+                              his responsibility. It seems that in all fields, however, the jobs where things get done never have formal authority commensurate with responsibility. In practice, actual (as opposed to formal) authority is acquired from
+                              the very momentum of accomplishment.</p>
+                            <p>The dependence upon others has a particular case that is especially painful for the system programmer. He depends upon other people's programs. These are often maldesigned, poorly implemented, incompletely delivered (no source
+                              code or test cases), and poorly documented. So he must spend hours studying and fixing things that in an ideal world would be complete, available, and usable.</p>
+                            <p>The next woe is that designing grand concepts is fun; finding nitty little bugs is just work. With any creative activity come dreary hours of tedious, painstaking labor, and programming is no exception.</p>
+                            <p>Next, one finds that debugging has a linear convergence, or worse, where one somehow expects a quadratic sort of approach to the end. So testing drags on and on, the last difficult bugs taking more time to find than the first.</p>
+                            <p>The last woe, and sometimes the last straw, is that the product over which one has labored so long appears to be obsolete upon (or before) completion. Already colleagues and competitors are in hot pursuit of new and better
+                              ideas. Already the displacement of one's thought-child is not only conceived, but scheduled.</p>
+                            <p>This always seems worse than it really is. The new and better product is generally not available when one completes his own; it is only talked about. It, too, will require months of development. The real tiger is never a match
+                              for the paper one, unless actual use is wanted. Then the virtues of reality have a satisfaction all their own.</p>
+                            <p>Of course the technological base on which one builds is always advancing. As soon as one freezes a design, it becomes obsolete in terms of its concepts. But implementation of real products demands phasing and quantizing. The
+                              obsolescence of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with
+                              available resources.</p>
+                            <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
+                          </blockquote>
+                          <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
+                            <table>
+                              <tr>
+                                <td>
+                                  <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Mythical_man-month_%28book_cover%29.jpg" height="250"></td>
+                                <td>
+                                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fred_Brooks.jpg/800px-Fred_Brooks.jpg" height="250"></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p><sub>[<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Text and book cover source: Wikipedia</a>]</sub></p>
+                                </td>
+                                <td>
+                                  <p><sub>[<a href="https://commons.wikimedia.org/wiki/File:Fred_Brooks.jpg">Fred Brooks photo source</a>]</sub></p>
+                                </td>
+                              </tr>
+                            </table>
+                            <p><em>The Mythical Man-Month: Essays on Software Engineering</em> is a book on software engineering and project management by Fred Brooks, whose central theme is that &quot;adding manpower to a late software project makes it
+                              later&quot;. This idea is known as Brooks's law, and is presented along with the second-system effect and advocacy of prototyping.</p>
+                          </modal>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> SE vs Civil Engineering">
+                                  <question has-input="true">
+                                    <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
+                                    <div slot="answer">
+                                      <table class="markbind-table table table-bordered table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th style="text-align:center">Buildings</th>
+                                            <th style="text-align:center">Software</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td style="text-align:center">Visible, tangible</td>
+                                            <td style="text-align:center">Invisible, intangible</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Wears out over time</td>
+                                            <td style="text-align:center">Does not wear out</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Change is limited by physical restrictions (e.g. difficult to remove a floor from a high rise building)</td>
+                                            <td style="text-align:center">Change is not limited by such restrictions. Just change the code and recompile.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Creating an exact copy of a building is impossible. Creating a near copy is almost as costly as creating the original.</td>
+                                            <td style="text-align:center">Any number of exact copies can be made with near zero cost.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Difficult to move.</td>
+                                            <td style="text-align:center">Easily delivered from one place to another.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Many low-skilled workers following tried-and-tested procedures.</td>
+                                            <td style="text-align:center">No low-skilled workers involved. Workers have more freedom to follow their own procedures.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Easier to assure quality (just follow accepted procedure).</td>
+                                            <td style="text-align:center">Not easy to assure quality.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Majority of the work force has to be on location.</td>
+                                            <td style="text-align:center">Can be built by people who are not even in the same country.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Raw materials are costly, costly equipment required.</td>
+                                            <td style="text-align:center">Almost free raw materials and relatively cheap equipment.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Once construction is started, it is hard to do drastic changes to the design.</td>
+                                            <td style="text-align:center">Building process is very flexible. Drastic design changes can be done, although costly</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">A lot of manual and menial labor involved.</td>
+                                            <td style="text-align:center">Most work involves highly-skilled labor.</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="text-align:center">Generally robust. E.g. removing a single brick is unlikely to destroy a building.</td>
+                                            <td style="text-align:center">More fragile than buildings. A single misplaced semicolon can render the whole system useless.</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Software vs Bridges">
+                                  <question has-input="true">
+                                    <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
+                                    <div slot="answer">
+                                      <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with
+                                        a just a PC and a few days of work!</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Coding as a manufacturing activity">
+                                  <question has-input="true">
+                                    <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
+                                    <div slot="answer">
+                                      <p>Arguments to support this statement:</p>
+                                      <ul>
+                                        <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
+                                        <li>If coding is a manufacturing activity, we wouldn’t be changing it so much after we code software. But if the code is in fact a ‘design’, yes, we would fiddle with it until we get it right.</li>
+                                        <li>Manufacturing is the process of building a finished product based on the design. Code is the design. Manufacturing is what is done by the compiler (fully automated).</li>
+                                      </ul>
+                                      <p>However, the type of ‘design’ that occurs during coding is at a much lower level than the ‘design’ that occurs before coding.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> List pros and cons of SE">
+                                  <question has-input="true">
+                                    <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
+                                  <question>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Requiring some amount of tedious, painstaking labor</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Ease of copying and transporting software makes it difficult to keep track of versions</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. High dependence on others</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(c)</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                  <hr style="border-top: dashed 1px; border-color:grey">
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+                  <div>
+                    <p>To be able answer questions such as these:</p>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> List pros and cons of SE">
+                        <question has-input="true">
+                          <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
+                        </question>
+                      </panel>
+                    </div>
+                  </div>
                 </panel>
             </panel>
           </div>
@@ -501,11 +564,12 @@
           <p><span class="activity-desc">Implementation</span></p>
           <div class="indented">
             <panel no-close="">
-              <span slot="header" class="panel-title"><span><code>W2.2</code> <strong>Can use basic features of an IDE</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              <span slot="header" class="card-title"><span><code>W2.2</code> <strong>Can use basic features of an IDE</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <panel type="danger" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.2a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain IDEs</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.2a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain IDEs</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
                 </span>
                 </span>
                 <div>
@@ -543,7 +607,7 @@
                         <div>
                           <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                             <div>
-                              <panel header=":lock::key: Which one of these is not a feature available in IDEs?">
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one of these is not a feature available in IDEs?">
                                 <question>
                                   <ul class="task-list">
                                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling.</li>
@@ -572,69 +636,15 @@
                   </div>
                 </div>
                 <hr style="border-top: dashed 1px; border-color:grey">
-                <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p>Install <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> on your computer. Either the <em>Community Edition</em> (free) or the <em>Ultimate Edition</em> (free for students) is fine.</p>
                 </div>
               </panel>
               <panel type="danger" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.2b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can setup a project in an IDE</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → Intellij IDEA →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="project-setup">Project Setup</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
-                        <tabs>
-                        
-                          <tab header=":abc:">
-                            <ul>
-                              <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
-                            </ul>
-                            <p>
-                              <hr>
-                            </p>
-                          </tab>
-                        
-                          <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                            <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                            <p>
-                              <hr>
-                            </p>
-                          </tab>
-                        </tabs>
-                        <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <hr style="border-top: dashed 1px; border-color:grey">
-                <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
-                <div>
-                  <p><strong>Acceptable</strong>: Any Java project set up in Intellij.</p>
-                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#set-up-a-project-in-an-ide-lo-idesetup">AddressBook - Level1 : LO-IdeSetup</a></p>
-                  <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
-                </div>
-              </panel>
-              <panel type="warning" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.2c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can navigate code effectively using IDE features</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.2b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can setup a project in an IDE</span>
                 <span
-                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  </span>
+                  class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
                   </span>
@@ -647,47 +657,104 @@
                     </p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="code-navigation">Code Navigation</h4>
+                        <h4 id="project-setup">Project Setup</h4>
                       </div>
                       <div id="main">
                         <div>
-                          <p>Some useful navigation shortcuts:</p>
-                          <ol>
-                            <li>Quickly locate a file by name.</li>
-                            <li>Go to the definition of a method from where it is used.</li>
-                            <li>Go back to the previous location.</li>
-                            <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
-                            <li>Find where a method/field is being used.</li>
-                          </ol>
-                          <panel header="Intellij IDEA Code Navigation (Basics)" alt="basics" expanded="">
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/f885wy42IcM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                          </panel>
-                          <panel header="Intellij IDEA Code Navigation (Advanced)" alt="basics">
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/IiHZPvmVICg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                          </panel>
+                          <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
+                          <tabs>
+                          
+                            <tab header="<span class='far fa-file-alt'></span>">
+                              <ul>
+                                <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
+                              </ul>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          
+                            <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                              <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          </tabs>
+                          <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                         </div>
                         <div></div>
                       </div>
                     </div>
                   </div>
                   <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
-                    <p><strong>Acceptable</strong>: Use Intellij basic code navigation features to navigate the code of any java project.</p>
-                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#navigate-code-efficiently-lo-codenavigation">AddressBook - Level1 : LO-CodeNavigation</a></p>
+                    <p><strong>Acceptable</strong>: Any Java project set up in Intellij.</p>
+                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#set-up-a-project-in-an-ide-lo-idesetup">AddressBook - Level1 : LO-IdeSetup</a></p>
                     <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
                   </div>
               </panel>
+              <panel type="warning" expanded="" no-close="">
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.2c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can navigate code effectively using IDE features</span>
+                <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
+                </span>
+                </span>
+                </span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Tools → Intellij IDEA →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="code-navigation">Code Navigation</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p>Some useful navigation shortcuts:</p>
+                        <ol>
+                          <li>Quickly locate a file by name.</li>
+                          <li>Go to the definition of a method from where it is used.</li>
+                          <li>Go back to the previous location.</li>
+                          <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
+                          <li>Find where a method/field is being used.</li>
+                        </ol>
+                        <panel header="Intellij IDEA Code Navigation (Basics)" alt="basics" expanded="">
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/f885wy42IcM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                        </panel>
+                        <panel header="Intellij IDEA Code Navigation (Advanced)" alt="basics">
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/IiHZPvmVICg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                        </panel>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <hr style="border-top: dashed 1px; border-color:grey">
+                <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+                <div>
+                  <p><strong>Acceptable</strong>: Use Intellij basic code navigation features to navigate the code of any java project.</p>
+                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#navigate-code-efficiently-lo-codenavigation">AddressBook - Level1 : LO-CodeNavigation</a></p>
+                  <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
+                </div>
+              </panel>
             </panel>
             <panel no-close="">
-              <span slot="header" class="panel-title"><span><code>W2.3</code> <strong>Can use Java Collections</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+              <span slot="header" class="card-title"><span><code>W2.3</code> <strong>Can use Java Collections</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
                 aria-hidden="true"></span></span>
               </span>
               </span>
               <panel type="default" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.3a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use Java Collections</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.3a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can use Java Collections</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
                   </span>
                   </span>
                   <div>
@@ -703,7 +770,7 @@
                       </div>
                       <div id="main">
                         <div>
-                          <p>📎 Resources:</p>
+                          <p><span class="fas fa-paperclip"></span> Resources:</p>
                           <ul>
                             <li><a href="http://www.javatpoint.com/ArrayList-in-collection-framework">ArrayList class tutorial (from javaTpoint.com)</a></li>
                             <li><a href="http://beginnersbook.com/2013/12/hashmap-in-java-with-example/">HashMap tutorial (from beginnersbook.com)</a></li>
@@ -714,7 +781,7 @@
                     </div>
                   </div>
                   <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
                     <p><strong>Acceptable</strong>: Some code that you have written that uses some Java Collection classes.</p>
                     <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#use-collections-lo-collections">AddressBook - Level1 : LO-Collections</a></p>
@@ -723,14 +790,16 @@
               </panel>
             </panel>
             <panel no-close="">
-              <span slot="header" class="panel-title"><span><code>W2.4</code> <strong>Can use Java varargs feature</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+              <span slot="header" class="card-title"><span><code>W2.4</code> <strong>Can use Java varargs feature</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
                 aria-hidden="true"></span></span>
               </span>
               </span>
               <panel type="default" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.4a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can use Java varargs feature</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.4a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can use Java varargs feature</span>
                 <span
-                  class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                    aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
                   </span>
                   </span>
                   <div>
@@ -746,7 +815,7 @@
                       </div>
                       <div id="main">
                         <div>
-                          <p>📎 Resources:</p>
+                          <p><span class="fas fa-paperclip"></span> Resources:</p>
                           <ul>
                             <li><a href="http://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html">Java Varargs feature (from Oracle.com)</a></li>
                             <li><a href="https://www.javatpoint.com/varargs">Java Varargs tutorial (for javaTpoint.com)</a></li>
@@ -757,7 +826,7 @@
                     </div>
                   </div>
                   <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
                     <p><strong>Acceptable</strong>: Some code that you have written that uses the varargs feature.</p>
                     <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#use-varargs-lo-varargss">AddressBook - Level1 : LO-Varargs</a></p>
@@ -770,7 +839,7 @@
           <p><span class="activity-desc">Testing</span></p>
           <div class="indented">
             <panel no-close="">
-              <span slot="header" class="panel-title"><span><code>W2.5</code> <strong>Can automate simple regression testing of text UIs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><code>W2.5</code> <strong>Can automate simple regression testing of text UIs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 </span>
@@ -778,9 +847,10 @@
                 </span>
                 </span>
                 <panel type="warning" expanded="" no-close="">
-                  <span slot="header" class="panel-title"><span><code>W2.5a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain testing</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.5a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain testing</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span
                     class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </span>
                     </span>
                     </span>
                     </span>
@@ -858,7 +928,7 @@
                             <div>
                               <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                 <div>
-                                  <panel header=":lock: Relate testing, test cases, failure, and defect">
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Relate testing, test cases, failure, and defect">
                                     <question has-input="">
                                       <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                                     </question>
@@ -871,10 +941,10 @@
                       </div>
                     </div>
                     <hr style="border-top: dashed 1px; border-color:grey">
-                    <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                    <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                     <div>
                       <div>
-                        <panel header=":lock: Relate testing, test cases, failure, and defect">
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Relate testing, test cases, failure, and defect">
                           <question has-input="">
                             <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                           </question>
@@ -883,9 +953,9 @@
                     </div>
                 </panel>
                 <panel type="warning" expanded="" no-close="">
-                  <span slot="header" class="panel-title"><span><code>W2.5b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain regression testing</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.5b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain regression testing</span>
                   <span
-                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                     </span>
                     </span>
                     </span>
@@ -911,7 +981,7 @@
                             <div>
                               <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                 <div>
-                                  <panel header=":lock::key: Regression Testing defintion T/F?">
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Regression Testing defintion T/F?">
                                     <question>
                                       <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
                                       <ul radio-group="63d56" class="radio-list">
@@ -927,7 +997,7 @@
                                   </panel>
                                 </div>
                                 <div>
-                                  <panel header=":lock: Explain regression testing">
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain regression testing">
                                     <question has-input="">
                                       <p>Explain why and when you would do regression testing in a software project.</p>
                                     </question>
@@ -940,10 +1010,10 @@
                       </div>
                     </div>
                     <hr style="border-top: dashed 1px; border-color:grey">
-                    <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                    <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                     <div>
                       <div>
-                        <panel header=":lock: Explain regression testing">
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain regression testing">
                           <question has-input="">
                             <p>Explain why and when you would do regression testing in a software project.</p>
                           </question>
@@ -952,9 +1022,9 @@
                     </div>
                 </panel>
                 <panel type="warning" expanded="" no-close="">
-                  <span slot="header" class="panel-title"><span><code>W2.5c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain test automation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.5c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain test automation</span>
                   <span
-                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                     </span>
                     </span>
                     </span>
@@ -974,7 +1044,7 @@
                           <div>
                             <tabs>
                             
-                              <tab header=":abc:">
+                              <tab header="<span class='far fa-file-alt'></span>">
                                 <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required
                                   to run tests repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
                                 <p>
@@ -992,7 +1062,7 @@
                           </div>
                           <div>
                             <div>
-                              <panel header=":paperclip: Resources">
+                              <panel header="<span class='fas fa-paperclip'></span> Resources">
                                 <p><strong>Side readings:</strong></p>
                                 <ul>
                                   <li>[Quora post] <a href="href=%22http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
@@ -1006,112 +1076,111 @@
                     </div>
                 </panel>
                 <panel type="warning" expanded="" no-close="">
-                  <span slot="header" class="panel-title"><span><code>W2.5d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can semi-automate testing of CLIs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  <span
-                    class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                    </span>
-                    </span>
-                    </span>
-                    </span>
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+                  <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.5d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can semi-automate testing of CLIs</span>
+                  <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  </span>
+                  </span>
+                  </span>
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
 </span></strong>
-                        </span>
-                      </p>
-                      <div id="title-and-body">
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps</h4>
+                      </div>
+                      <div id="main">
                         <div>
-                          <h4 id="automated-testing-of-cli-apps">Automated Testing of CLI Apps</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
-                            <ul>
-                              <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
-                              <li>Next, we compare the actual output file with another file containing the expected output.</li>
-                            </ul>
-                            <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
-                            <ol>
-                              <li>
-                                <p>Store the test input in the text file <code>input.txt</code>.</p>
-                                <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `input.txt`%%" type="seamless">
-                                  <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
+                          <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
+                          <ul>
+                            <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
+                            <li>Next, we compare the actual output file with another file containing the expected output.</li>
+                          </ul>
+                          <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
+                          <ol>
+                            <li>
+                              <p>Store the test input in the text file <code>input.txt</code>.</p>
+                              <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `input.txt`%%" type="seamless">
+                                <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
-                                </panel>
-                              </li>
-                              <li>
-                                <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                                <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `expected.txt`%%" type="seamless">
-                                  <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
+                              </panel>
+                            </li>
+                            <li>
+                              <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
+                              <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `expected.txt`%%" type="seamless">
+                                <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
 Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
 Invalid command format: add 
 </code></pre>
-                                </panel>
-                              </li>
-                              <li>
-                                <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>.
-                                  <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-                                <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+                              </panel>
+                            </li>
+                            <li>
+                              <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>.
+                                <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
+                              <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
 </code></pre>
-                                <ul>
-                                  <li>
-                                    <p>💡 The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
-                                      <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
-                                  </li>
-                                  <li>
-                                    <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
-                                  </li>
-                                </ul>
-                                <panel header="" minimized="">
-                                  <span slot="header" class="panel-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span>
-                                  </span>
-                                  <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code>                                    operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                                  <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+                              <ul>
+                                <li>
+                                  <p>💡 The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
+                                    <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
+                                </li>
+                                <li>
+                                  <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
+                                </li>
+                              </ul>
+                              <panel header="" minimized="">
+                                <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator. <span class="badge badge-pill badge-secondary">tangential</span></span>
+                                </span>
+                                <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code>                                  operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
+                                <pre><code class="hljs sh">java AddressBook &gt; output.txt 
 </code></pre>
-                                  <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code>                                    (or any other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
-                                  <tip-box>
-                                    <p>📎 Resources:</p>
-                                    <ul>
-                                      <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
-                                    </ul>
-                                  </tip-box>
-                                  <p></p>
-                                </panel>
+                                <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code>                                  (or any other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
+                                <tip-box>
+                                  <p><span class="fas fa-paperclip"></span> Resources:</p>
+                                  <ul>
+                                    <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
+                                  </ul>
+                                </tip-box>
                                 <p></p>
-                              </li>
-                              <li>
-                                <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such
-                                  as <em>WinMerge</em>.</p>
-                                <pre class="hljs"><code>FC output.txt expected.txt
+                              </panel>
+                              <p></p>
+                            </li>
+                            <li>
+                              <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such
+                                as <em>WinMerge</em>.</p>
+                              <pre class="hljs"><code>FC output.txt expected.txt
 </code></pre>
-                              </li>
-                            </ol>
-                            <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
-                            <div>
-                              <popover id="pop:cli" placement="top">
-                                <div slot="content">
-                                  <div>
-                                    <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
-                                  </div>
+                            </li>
+                          </ol>
+                          <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
+                          <div>
+                            <popover id="pop:cli" placement="top">
+                              <div slot="content">
+                                <div>
+                                  <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
                                 </div>
-                              </popover>
-                            </div>
+                              </div>
+                            </popover>
                           </div>
-                          <div></div>
                         </div>
+                        <div></div>
                       </div>
                     </div>
-                    <hr style="border-top: dashed 1px; border-color:grey">
-                    <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
-                    <div>
-                      <p><strong>Acceptable</strong>: Any project where you use the I/O redirection method to test a CLI.</p>
-                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#automate-cli-testing-lo-automatedclitesting">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
-                      <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
-                    </div>
+                  </div>
+                  <hr style="border-top: dashed 1px; border-color:grey">
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+                  <div>
+                    <p><strong>Acceptable</strong>: Any project where you use the I/O redirection method to test a CLI.</p>
+                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1#automate-cli-testing-lo-automatedclitesting">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
+                    <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
+                  </div>
                 </panel>
             </panel>
           </div>
@@ -1119,13 +1188,13 @@ Invalid command format: add
           <p><span class="activity-desc">Revision Control</span></p>
           <div class="indented">
             <panel no-close="">
-              <span slot="header" class="panel-title"><span><code>W2.6</code> <strong>Can use Git to save history</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              <span slot="header" class="card-title"><span><code>W2.6</code> <strong>Can use Git to save history</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <panel type="warning" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.6a</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain revision control</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.6a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain revision control</span>
                 <span
-                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
                   </span>
@@ -1146,7 +1215,7 @@ Invalid command format: add
                           <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
                           <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
                           <tabs>
-                            <tab header=":abc:">
+                            <tab header="<span class='far fa-file-alt'></span>">
                               <blockquote>
                                 <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name
                                   that contains a number, each one higher than the number of the preceding version.</p>
@@ -1183,7 +1252,7 @@ Invalid command format: add
                           <div>
                             <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                               <div>
-                                <panel header=":lock::key: What does RCS stand for?">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does RCS stand for?">
                                   <question has-input="true">
                                     <div slot="answer">
                                       <p>Revision Control Software</p>
@@ -1192,7 +1261,7 @@ Invalid command format: add
                                 </panel>
                               </div>
                               <div>
-                                <panel header=":lock::key: What is a Revision?">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is a Revision?">
                                   <question has-input="true">
                                     <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
                                     <div slot="answer">
@@ -1202,7 +1271,7 @@ Invalid command format: add
                                 </panel>
                               </div>
                               <div>
-                                <panel header=":lock::key: Which of these is not considered a benefit of a typical RCS?">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these is not considered a benefit of a typical RCS?">
                                   <question>
                                     <ul class="task-list">
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
@@ -1219,7 +1288,7 @@ Invalid command format: add
                                 </panel>
                               </div>
                               <div>
-                                <panel header=":lock: Explain RCS in a team project context">
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain RCS in a team project context">
                                   <question has-input="true">
                                     <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
                                   </question>
@@ -1232,11 +1301,11 @@ Invalid command format: add
                     </div>
                   </div>
                   <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
                     <p>Be able to answer questions such as these:</p>
                     <div>
-                      <panel header=":lock: Explain RCS in a team project context">
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain RCS in a team project context">
                         <question has-input="true">
                           <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
                         </question>
@@ -1245,7 +1314,8 @@ Invalid command format: add
                   </div>
               </panel>
               <panel type="danger" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.6b</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain repositories</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.6b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain repositories</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
                 </span>
                 </span>
                 <div>
@@ -1267,7 +1337,7 @@ Invalid command format: add
                           </div>
                         </tip-box>
                         <tabs>
-                          <tab header=":abc:">
+                          <tab header="<span class='far fa-file-alt'></span>">
                             <p>Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred
                               to as the <em>working directory</em> of the repo. The repository is the database where the meta-data about the revision history are stored. For example, Git uses a hidden folder named <code>.git</code> inside the working
                               directory.</p>
@@ -1284,7 +1354,7 @@ Invalid command format: add
                         <div>
                           <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                             <div>
-                              <panel header=":lock: What is a repo?">
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is a repo?">
                                 <question has-input="true">
                                   <p>In the context of RCS, what is a <em>repo</em>?</p>
                                 </question>
@@ -1297,11 +1367,11 @@ Invalid command format: add
                   </div>
                 </div>
                 <hr style="border-top: dashed 1px; border-color:grey">
-                <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p>Be able to answer questions such as these:</p>
                   <div>
-                    <panel header=":lock: What is a repo?">
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is a repo?">
                       <question has-input="true">
                         <p>In the context of RCS, what is a <em>repo</em>?</p>
                       </question>
@@ -1310,7 +1380,8 @@ Invalid command format: add
                 </div>
               </panel>
               <panel type="danger" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.6c</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can create a local Git repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.6c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can create a local Git repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
                 </span>
                 </span>
                 <div>
@@ -1330,7 +1401,7 @@ Invalid command format: add
                     </div>
                     <div id="main">
                       <div>
-                        <panel header="%%:paperclip: Git Overview%%">
+                        <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%">
                           <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           <p></p>
@@ -1368,7 +1439,7 @@ Initialized empty Git repository in c:/repos/things/.git/
                               <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
                               <pre class="hljs"><code>git status
 </code></pre>
-                              <p>⤵️</p>
+                              <p><span class="fas fa-arrow-down"></span></p>
                               <pre class="hljs"><code># On branch master
 #
 # Initial commit
@@ -1385,13 +1456,14 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                   </div>
                 </div>
                 <hr style="border-top: dashed 1px; border-color:grey">
-                <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p>Have a local repo that you created.</p>
                 </div>
               </panel>
               <panel type="danger" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.6d</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can explain saving history</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.6d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain saving history</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
                 </span>
                 </span>
                 <div>
@@ -1412,7 +1484,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                         <h5 id="staging-and-committing">Staging and Committing</h5>
                         <tabs>
                         
-                          <tab header=":abc:">
+                          <tab header="<span class='far fa-file-alt'></span>">
                             <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                             <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
                             <p>
@@ -1436,13 +1508,14 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                   </div>
                 </div>
                 <hr style="border-top: dashed 1px; border-color:grey">
-                <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p>Have a local repo that has commits you created.</p>
                 </div>
               </panel>
               <panel type="danger" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.6e</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can commit using Git</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.6e</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can commit using Git</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
                 </span>
                 </span>
                 <div>
@@ -1484,7 +1557,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                               <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
                               <pre><code class="hljs sh">git status
 </code></pre>
-                              <p>⤵️</p>
+                              <p><span class="fas fa-arrow-down"></span></p>
                               <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
@@ -1528,7 +1601,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                               <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-                              <p>⤵️</p>
+                              <p><span class="fas fa-arrow-down"></span></p>
                               <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
@@ -1561,7 +1634,7 @@ git status
                               <p>You can use the <code>log</code> command to see the commit history</p>
                               <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-                              <p>⤵️</p>
+                              <p><span class="fas fa-arrow-down"></span></p>
                               <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
 Author: … &lt; … @... &gt;
 Date:   Wed Jul 5 16:06:28 2017 +0800
@@ -1583,7 +1656,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                       </div>
                       <div>
                         <div>
-                          <panel header=":paperclip: Resources" expanded="">
+                          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
                             <ul>
                               <li><a href="https://try.github.io/levels/1/challenges/4"><strong>Try Git</strong></a> is an online simulation/tutorial of Git basics. You can try its first few steps to solidify what you learned in this LO.</li>
                             </ul>
@@ -1595,9 +1668,10 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 </div>
               </panel>
               <panel type="warning" expanded="" no-close="">
-                <span slot="header" class="panel-title"><span><code>W2.6f</code> <span><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Can set Git to ignore files</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W2.6f</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can set Git to ignore files</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </span>
                   </span>
                   </span>
                   </span>
@@ -1650,7 +1724,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                     </div>
                   </div>
                   <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Evidence:</big></p>
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
                     <p>Have a local repo that has git-ignored files.</p>
                   </div>
@@ -1661,14 +1735,14 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         </div>
       </panel>
       <panel type="seamless" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
+        <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
         <div class="indented">
           <div>
             <p><span class="activity-desc">Admin info to read:<span></span></span>
             </p>
             <div class="indented">
               <panel src="/website-base\admin\appendixB-policies._include_.html#policy-techHelp" no-close="" fragment="policy-techHelp">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Policy on Tech Help <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Policy on Tech Help <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   </span>
@@ -1677,35 +1751,35 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   </span>
               </panel>
               <panel src="/website-base\admin\tools._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Module Tools <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Module Tools <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixA-principles._include_.html#main" no-close="" fragment="main">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Module Principles <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Module Principles <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" no-close="" fragment="admin-faq-separateWebsite">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why you force me to visit a separate website instead of using IVLE? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why you force me to visit a separate website instead of using IVLE? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-slideFormat" no-close="" fragment="admin-faq-slideFormat">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why slides are not detailed? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why slides are not detailed? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
                   </span>
               </panel>
               <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-selfStudy" no-close="" fragment="admin-faq-selfStudy">
-                <span slot="header" class="panel-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why so much self-study? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why so much self-study? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
@@ -1717,7 +1791,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         </div>
       </panel>
       <panel type="seamless" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Tutorial 2</span>
+        <span slot="header" class="card-title activity-type"><span class="fas fa-chalkboard-teacher"></span> Tutorial 2</span>
         <div class="indented">
           <div>
             <p><big><strong>Tutorial selection and seating arrangement</strong></big></p>
@@ -1735,7 +1809,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         </div>
       </panel>
       <panel type="seamless" expanded="" no-close="">
-        <span slot="header" class="panel-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 2</span>
+        <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 2</span>
         <div class="indented">
           <div>
             <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L2.pptx">slides</a>]</p>
@@ -1744,33 +1818,33 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
       </panel>
     </panel>
     <panel type="seamless" src="/website-base\schedule\week3\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 3 [Aug 27]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 3 [Aug 27]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week4\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 4 [Sep 3]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 4 [Sep 3]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week5\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 5 [Sep 10]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 5 [Sep 10]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week6\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 6 [Sep 17]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 6 [Sep 17]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week7\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 7 [Oct 1]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 7 [Oct 1]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week8\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 8 [Oct 8]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 8 [Oct 8]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week9\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 9 [Oct 15]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 9 [Oct 15]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week10\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 10 [Oct 22]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 10 [Oct 22]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week11\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 11 [Oct 29]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 11 [Oct 29]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week12\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 12 [Nov 5]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 12 [Nov 5]</span></panel>
     <panel type="seamless" src="/website-base\schedule\week13\index._include_.html" no-close="">
-      <span slot="header" class="panel-title week-future"> Week 13 [Nov 12]</span></panel>
+      <span slot="header" class="card-title week-future"> Week 13 [Nov 12]</span></panel>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 04:21:00 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 15 Jul 2018 15:39:04 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -34,7 +34,7 @@
       <tip-box>
         <tabs>
         
-          <tab header=":abc:">
+          <tab header="<span class='far fa-file-alt'></span>">
             Some textual description of X
             <p>
               <hr>
@@ -70,25 +70,25 @@
       <p>Meaning of some shortened headings:</p>
       <ul>
         <li>
-          <p><strong>What</strong> : the <strong>meaning</strong> of the concept in concern</p>
+          <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
           <p>
             <panel header="%%Example%%" src="/website-base\book\refactoring\what\unit-inElsewhere-asFlat._include_.html"></panel>
           </p>
         </li>
         <li>
-          <p><strong>Why</strong> : the <strong>motivation</strong> behind the concept in concern</p>
+          <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
           <p>
             <panel header="%%Example%%" src="/website-base\book\documentation\guidelines\goTopDown\why\unit-inElsewhere-asFlat._include_.html"></panel>
           </p>
         </li>
         <li>
-          <p><strong>How</strong> : the <strong>usage</strong> of the concept in concern</p>
+          <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
           <p>
             <panel header="%%Example%%" src="/website-base\book\refactoring\how\unit-inElsewhere-asFlat._include_.html"></panel>
           </p>
         </li>
         <li>
-          <p><strong>When</strong> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
+          <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
           <p>
             <panel header="%%Example%%" src="/website-base\book\refactoring\when\unit-inElsewhere-asFlat._include_.html"></panel>
           </p>
@@ -117,33 +117,32 @@
         definition
       </tip-box>
       <h4 id="meaning-of-icons">Meaning of Icons</h4>
-      <ul>
-        <li><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested</li>
-        <li><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <code>Ctrl+Click</code> to open the LO in new window/tab.</li>
-        <li><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> : learning outcomes</li>
-        <li><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome</li>
-        <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> : examples</li>
-        <li>📎 : resources</li>
-        <li><span class="fas fa-dumbbell"></span> : exercises</li>
-        <li><span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version</li>
-        <li><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info</li>
-        <li><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video</li>
-        <li>🔤 : textual description</li>
-        <li>📊 : slides</li>
-        <li>⤵️ : output produced by running code</li>
-        <li>🔒 question without answer</li>
-        <li>🔒🔑 question with answer</li>
-      </ul>
+      <div class="indented">
+        <p><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested<br>
+          <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> : direct link to the LO. <code>Ctrl+Click</code> to open the LO in new window/tab.<br>
+          <span class="fas fa-trophy"></span> : learning outcomes<br>
+          <span class="glyphicon glyphicon-education" aria-hidden="true"></span> : prerequisite learning outcome<br>
+          <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> : examples<br>
+          <span class="fas fa-paperclip"></span> : resources<br>
+          <span class="fas fa-dumbbell"></span> : exercises<br>
+          <span class="glyphicon glyphicon-print" aria-hidden="true"></span> : printable version<br>
+          <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> : preview/more info<br>
+          <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> : video<br>
+          <span class="far fa-file-alt"></span> : textual description<br>
+          <span class="far fa-images"></span> : slides<br>
+          <span class="fas fa-arrow-down"></span> : output produced by running code<br>
+          <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> question without answer<br>
+          <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> question with answer<br></p>
+      </div>
     </div>
-    <ul>
-      <li><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do</li>
-      <li><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture</li>
-      <li><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> : tutorial</li>
-      <li><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> : evidence you can use to prove you have achieved a learning outcome</li>
-      <li>⏰ : deadline</li>
-    </ul>
+    <div class="indented">
+      <p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> : tasks to do<br>
+        <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> : lecture<br>
+        <span class="fas fa-chalkboard-teacher"></span> : tutorial<br>
+        <span class="fas fa-briefcase"></span> : evidence you can use to prove you have achieved a learning outcome<br> ⏰ : deadline<br></p>
+    </div>
     <h3 id="searching-for-keywords">Searching for keywords</h3>
-    <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2103-AY1718S2/website/issues">in the website issue tracker</a>      so that we can add the missing keyword into our search index.</p>
+    <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-cs2103-AY1718S2/website/issues">in the website issue tracker</a>      so that we can add the missing keyword to our search index.</p>
     <div>
       <h3 id="saving-as-pdf-files">Saving as PDF Files</h3>
       <ol>

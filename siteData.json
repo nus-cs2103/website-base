@@ -3,6 +3,10 @@
     {
       "headings": {
         "full-schedule-of-module-activities": "Full Schedule of Module Activities",
+        "module-expectations": "Module Expectations",
+        "prior-knowledge-java-and-oop": "Prior Knowledge: Java and OOP",
+        "workload": "Workload",
+        "star-rating-system": "Star rating system",
         "pros-and-cons": "Pros and Cons",
         "what": "What",
         "project-setup": "Project Setup",
@@ -93,7 +97,7 @@
     {
       "headings": {
         "appendix-e-using-github-project-hosting": "Appendix E: Using GitHub Project Hosting",
-        "create-a-github-profile": "Create a GitHub profile",
+        "creating-a-github-account": "Creating a GitHub account",
         "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
         "submitting-pull-requests-as-evidence-of-an-lo": "Submitting Pull Requests as evidence of an LO",
         "organization-setup": "Organization setup",
@@ -164,6 +168,18 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/lectures.md"
+    },
+    {
+      "headings": {
+        "module-expectations": "Module Expectations",
+        "prior-knowledge-java-and-oop": "Prior Knowledge: Java and OOP",
+        "workload": "Workload",
+        "star-rating-system": "Star rating system"
+      },
+      "title": "Admin: Module Expectations",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/moduleExpectations.md"
     },
     {
       "headings": {
@@ -257,7 +273,7 @@
         "intermediate-5": "Intermediate",
         "explain-what-and-why-not-how": "Explain WHAT and WHY, not HOW"
       },
-      "title": "Admin: %%→%% Assessment",
+      "title": "Admin: Project: Assessment",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project-assessment.md"
@@ -314,6 +330,24 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/project-scope.md"
+    },
+    {
+      "headings": {
+        "project-supervision": "Project → Supervision"
+      },
+      "title": "Admin: Project: Supervision",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-supervision.md"
+    },
+    {
+      "headings": {
+        "project-forming-teams": "Project → Forming Teams"
+      },
+      "title": "Admin: Forming Teams",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/project-teams.md"
     },
     {
       "headings": {
@@ -540,24 +574,6 @@
       },
       "title": "Project List",
       "src": "admin/projectList.md"
-    },
-    {
-      "headings": {
-        "supervision": "Supervision"
-      },
-      "title": "Admin: Supervision",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/supervision.md"
-    },
-    {
-      "headings": {
-        "forming-teams": "Forming Teams"
-      },
-      "title": "Admin: Forming Teams",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "src": "admin/teams.md"
     },
     {
       "headings": {

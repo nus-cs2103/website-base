@@ -26,7 +26,7 @@ siteNav: se-book-adapted-sitenav.md
 {% set level_is_empty =  (topic.name == "") %}
 {% if not level_is_empty %}
   <panel type="seamless" expanded>
-    <span slot="header" class="panel-title"><include src="{{ level_location }}/text.md#title"/></span>
+    <span slot="header" class="card-title"><include src="{{ level_location }}/text.md#title"/></span>
 {% endif %}
   {% for sub_topic in topic.level_three_topics %}
     {% if sub_topic.priority != "-1" %}
@@ -44,7 +44,7 @@ siteNav: se-book-adapted-sitenav.md
 {% set level_is_empty =  (topic.name == "") %}
 {% if not level_is_empty %}
 <panel type="seamless" expanded>
-  <span slot="header" class="panel-title"><include src="{{ level_location }}/text.md#title" /></span>
+  <span slot="header" class="card-title"><include src="{{ level_location }}/text.md#title" /></span>
 {% endif %}
   {% for sub_topic in topic.level_two_topics %}
     {{show_level_two(level_location , sub_topic) }}
