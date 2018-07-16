@@ -45,7 +45,7 @@
           </tip-box>
           <p>In software development, there are certain problems that recur in a certain context.</p>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of recurring design problems:</p>
+            <p><span class="fas fa-cube"></span> Some examples of recurring design problems:</p>
             <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
@@ -202,7 +202,7 @@
           <p><strong>Context</strong></p>
           <p>Components need to access functionality deep inside other components.</p>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
+            <p><span class="fas fa-cube"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
             <img src="/website-base/book/designPatterns/facade/what/images/textBook.png" height="120">
             <p></p>
           </tip-box>
@@ -212,7 +212,7 @@
           <p>Include a
             <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
+            <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
             <img src="/website-base/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
             <p></p>
           </tip-box>
@@ -240,7 +240,8 @@
           <p>The essential element of this pattern is to have a general <code>&lt;&lt; Command &gt;&gt;</code> object that can be passed around, stored, executed, etc without knowing the type of command (i.e. via polymorphism).</p>
           <p>Let us examine an example application of the pattern first:</p>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code>              object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code>              object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
+            <p><span class="fas fa-cube"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The
+              <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code>              object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
             <img src="/website-base/book/designPatterns/command/what/images/commandCreator.png" height="150">
             <p></p>
           </tip-box>
@@ -283,7 +284,7 @@
           <img src="/website-base/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
           <p></p>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
+            <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
             <img src="/website-base/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
             <p></p>
             <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
@@ -307,7 +308,7 @@
       <div class="indented-less">
         <div>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
+            <p><span class="fas fa-cube"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
             <img src="/website-base/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
             <p></p>
             <p>Now, assume the system has two additional views used in parallel by different users:</p>
@@ -330,7 +331,7 @@
           <img src="/website-base/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
           <p></p>
           <tip-box>
-            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>Here is the Observer pattern applied to the student management system.</p>
+            <p><span class="fas fa-cube"></span>Here is the Observer pattern applied to the student management system.</p>
             <p>During initialization of the system,</p>
             <ol>
               <li>First, create the relevant objects.</li>
@@ -388,7 +389,7 @@ studentList.addUi(statusUi);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 04:47:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 11:36:19 GMT</small></div>
 </footer>
 </div>
 </body>

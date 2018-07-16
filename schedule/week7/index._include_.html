@@ -1,3 +1,34 @@
+<panel type="seamless" expanded="" no-close="">
+  <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
+  <div class="indented">
+    <div>
+      <p><span class="activity-desc">Admin info to read:<span></span></span>
+      </p>
+      <div class="indented">
+        <panel src="/website-base\admin\project-w07-v11._include_.html#main" no-close="" fragment="main">
+          <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: v1.1 <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+        </panel>
+        <panel src="/website-base\admin\appendixF-teamworkIssues._include_.html#main" no-close="" fragment="main">
+          <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Appedix F: Handling Teamwork Issues <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+        </panel>
+        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-favoriteTool" no-close="" fragment="admin-faq-favoriteTool">
+          <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+        </panel>
+      </div>
+      <p></p>
+    </div>
+  </div>
+</panel>
 <panel type="seamless" popup-url="/website-base/schedule/week7/outcomes.html" expanded="" no-close="">
   <span slot="header" class="card-title activity-type"><span class="fas fa-trophy"></span> Outcomes</span>
   <div class="indented">
@@ -38,8 +69,7 @@
                       <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
                         <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker
-                          style, ...</p>
+                        <p><span class="fas fa-cube"></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
                       </tip-box>
                       <modal title="" id="modal:archiStyles-buildingArchitectures">
                         <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br>
@@ -74,7 +104,7 @@
                     <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
                     <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Operating systems and network communication software often use n-tier style.
+                      <p><span class="fas fa-cube"></span> Operating systems and network communication software often use n-tier style.
                         <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
                     </tip-box>
                     <p></p>
@@ -108,7 +138,7 @@
                     <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
                     <p></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The online game and the Web application below uses the client-server style.</p>
+                      <p><span class="fas fa-cube"></span> The online game and the Web application below uses the client-server style.</p>
                       <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
                   </div>
                   <div></div>
@@ -139,8 +169,8 @@
                     <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                      This architectural style is often used in GUIs.</p>
                     <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected
-                        at a Printer port can be transmitted to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
+                      <p><span class="fas fa-cube"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted
+                        to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
                       <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
                   </div>
                   <div></div>
@@ -175,7 +205,7 @@
                     <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong>                      Task queuing, ordering, undo etc. are handled by the dispatcher.</p>
                     <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In this example from a Banking system, transactions are generated by the terminals used by
+                      <p><span class="fas fa-cube"></span> In this example from a Banking system, transactions are generated by the terminals used by
                         <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
                       <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
                   </div>
@@ -207,9 +237,9 @@
                       services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and
                       XML is used as the language of communication between service providers and service users.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants
-                        to charge HSBC credit cards. Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and
-                        HSBC services follow the SOA architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
+                      <p><span class="fas fa-cube"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards.
+                        Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA
+                        architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
                       <img src="/website-base/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
                       <p></p>
                     </tip-box>
@@ -288,7 +318,7 @@
                   <div>
                     <p><strong>Most applications use a mix of these architectural styles.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
+                      <p><span class="fas fa-cube"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
                     </tip-box>
                   </div>
                   <div>
@@ -362,10 +392,10 @@
                   <div>
                     <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code>str</code> class</a>)
+                      <p><span class="fas fa-cube"></span> A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code>str</code> class</a>)
                         which is a collection of public methods that you can invoke to make use of the class.</p>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can
-                        write a program that interacts with GitHub through that API.</p>
+                      <p><span class="fas fa-cube"></span> The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with
+                        GitHub through that API.</p>
                     </tip-box>
                     <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
                   </div>
@@ -450,7 +480,7 @@
                   <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
                   <p></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
+                    <p><span class="fas fa-cube"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
                     <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
                     <p></p>
                   </tip-box>
@@ -484,10 +514,11 @@
                   <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
                   <p></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
+                    <p><span class="fas fa-cube"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
                     <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
                     <p></p>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code>                      method of the calling object.</p>
+                    <p><span class="fas fa-cube"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method of
+                      the calling object.</p>
                     <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
                     <p></p>
                   </tip-box>
@@ -521,7 +552,7 @@
                   <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
                   <p></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
+                    <p><span class="fas fa-cube"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
                     <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
                     <p></p>
                   </tip-box>
@@ -555,7 +586,7 @@
                   <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
                   <p></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
+                    <p><span class="fas fa-cube"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
                     <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
                     <p></p>
                   </tip-box>
@@ -593,7 +624,7 @@
                     <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
                     <p></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
+                      <p><span class="fas fa-cube"></span> The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
                       <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
                       <p></p>
                       <p>Those details are shown in a separate sequence diagram given below.<br>
@@ -722,7 +753,7 @@
                     <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
                     <p></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Logic</code> is calling methods <code>CloudServer#poll()</code> and <code>LocalServer#poll()</code> in parallel.</p>
+                      <p><span class="fas fa-cube"></span> <code>Logic</code> is calling methods <code>CloudServer#poll()</code> and <code>LocalServer#poll()</code> in parallel.</p>
                       <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
                       <p></p>
                       <tip-box>
@@ -977,7 +1008,7 @@
                   <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read,
                     understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
+                    <p><span class="fas fa-cube"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
                     <tabs>
                     
                       <tab header="Java">
@@ -987,7 +1018,7 @@
                             
                               <td>
                                 <p>
-                                  <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                                  <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                                 </p>
                                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
@@ -1014,7 +1045,7 @@
                             
                               <td valign="top">
                                 <p>
-                                  <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                                  <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                                 </p>
                                 <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
@@ -1044,7 +1075,7 @@
                             
                               <td>
                                 <p>
-                                  <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                                  <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                                 </p>
                                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
@@ -1066,7 +1097,7 @@
                             
                               <td valign="top">
                                 <p>
-                                  <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                                  <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                                 </p>
                                 <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
@@ -1181,14 +1212,14 @@
                     <tab header="Java">
                       <div>
                         <tip-box>
-                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                          <p><span class="fas fa-cube"></span> Example:</p>
                           <p>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </p>
                           <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
                           <p>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </p>
                           <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
@@ -1206,14 +1237,14 @@
                     <tab header="Python">
                       <div>
                         <tip-box>
-                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                          <p><span class="fas fa-cube"></span> Example:</p>
                           <p>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </p>
                           <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
                           <p>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </p>
                           <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
@@ -1259,7 +1290,7 @@ is_urgent = type_code == URGENT
                   <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
                     <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                    <p><span class="fas fa-cube"></span> Example:</p>
                     <tabs>
                     
                       <tab header="Java">
@@ -1269,7 +1300,7 @@ is_urgent = type_code == URGENT
                             
                               <td valign="top">
                                 <p>
-                                  <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                                  <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                                 </p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
@@ -1282,7 +1313,7 @@ is_urgent = type_code == URGENT
                             
                               <td valign="top">
                                 <p>
-                                  <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                                  <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                                 </p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
@@ -1306,7 +1337,7 @@ is_urgent = type_code == URGENT
                             
                               <td valign="top">
                                 <p>
-                                  <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                                  <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                                 </p>
                                 <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
@@ -1319,7 +1350,7 @@ is_urgent = type_code == URGENT
                             
                               <td valign="top">
                                 <p>
-                                  <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                                  <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                                 </p>
                                 <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
@@ -1339,7 +1370,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                   <p>Similarly, we can have ‘magic’ values of other data types.</p>
                   <tip-box>
                     <p>
-                      <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                      <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                     </p>
                     <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
@@ -1549,7 +1580,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                   <tip-box>
                     <p>Example:</p>
                     <p>
-                      <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                      <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                     </p>
                     <pre><code class="hljs java">readData();
 salary = basic*rise+<span class="hljs-number">1000</span>;
@@ -1557,7 +1588,7 @@ tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-nu
 displayResult();
 </code></pre>
                     <p>
-                      <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                      <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                     </p>
                     <pre><code class="hljs java">readData();
 processData();
@@ -1589,19 +1620,18 @@ displayResult();
                               only details that are relevant to the current perspective or the task at hand.</p>
                             <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
                             <tip-box>
-                              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>,
-                                and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
+                              <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>.
+                                These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
                             </tip-box>
                             <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
                             <tip-box>
-                              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                              <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
                             </tip-box>
                             <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
                             <tip-box>
-                              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher
-                                level than a bit.</p>
-                              <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than
-                                an Assembly language instruction <code>MOV</code>.</p>
+                              <p><span class="fas fa-cube"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                              <p><span class="fas fa-cube"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction
+                                <code>MOV</code>.</p>
                             </tip-box>
                           </div>
                           <div></div>
@@ -1639,7 +1669,7 @@ displayResult();
                   <tip-box>
                     <p>Example:</p>
                     <p>
-                      <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                      <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                     </p>
                     <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
@@ -1660,7 +1690,7 @@ displayResult();
                       <li>Main path is nested deeply.</li>
                     </ul>
                     <p>
-                      <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                      <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                     </p>
                     <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
@@ -1754,10 +1784,10 @@ exit();
                         <tr>
                           <th>Name for a</th>
                           <th>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </th>
                           <th>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </th>
                         </tr>
                       </thead>
@@ -1777,12 +1807,12 @@ exit();
                   </tip-box>
                   <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Examples:</p>
+                    <p><span class="fas fa-cube"></span> Examples:</p>
                     <tabs>
                     
                       <tab header="Java">
                         <p>
-                          <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                          <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                         </p>
                         <pre><code class="hljs java">Person student;
 ArrayList&lt;Person&gt; students;
@@ -1791,7 +1821,7 @@ ArrayList&lt;Person&gt; students;
                     
                       <tab header="Python">
                         <p>
-                          <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                          <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                         </p>
                         <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
 students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
@@ -1857,10 +1887,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       <thead>
                         <tr>
                           <th>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </th>
                           <th>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </th>
                         </tr>
                       </thead>
@@ -1887,10 +1917,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       <thead>
                         <tr>
                           <th>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </th>
                           <th>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </th>
                         </tr>
                       </thead>
@@ -1909,13 +1939,13 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       <thead>
                         <tr>
                           <th>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </th>
                           <th>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </th>
                           <th>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </th>
                         </tr>
                       </thead>
@@ -2003,10 +2033,10 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       <thead>
                         <tr>
                           <th>
-                            <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                           </th>
                           <th>
-                            <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                            <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                           </th>
                           <th>Reason</th>
                         </tr>
@@ -2107,13 +2137,13 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                       throw an exception). This also applies to the final <code>else</code> of an <code>if-else</code> construct. That is, the final <code>else</code> should mean 'everything else', and not the final option. Do not use <code>else</code>                      when an <code>if</code> condition can be explicitly specified, unless there is absolutely no other possibility.</p>
                     <tip-box>
                       <p>
-                        <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                        <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                       </p>
                       <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
 </code></pre>
                       <p>
-                        <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                        <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                       </p>
                       <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
@@ -2152,7 +2182,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                     </ul>
                     <tip-box>
                       <p>
-                        <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                        <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                       </p>
                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
@@ -2161,7 +2191,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
 
 </code></pre>
                       <p>
-                        <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                        <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                       </p>
                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
@@ -2312,8 +2342,8 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                               </tip-box>
                               <p>This principle guards against duplication of information.</p>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
+                                <p><span class="fas fa-cube"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
+                                <p><span class="fas fa-cube"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
                               </tip-box>
                             </div>
                             <div></div>
@@ -2389,7 +2419,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                   <div>
                     <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
                     <p>
-                      <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font>
+                      <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
                     </p>
                     <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
 x++;
@@ -2426,20 +2456,20 @@ trimInput();
                     <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for
                       a class or an operation to explain its purpose.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Examples:</p>
+                      <p><span class="fas fa-cube"></span> Examples:</p>
                       <tabs>
                       
                         <tab header="Java">
                           <div>
                             <p>
-                              <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
                             <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
                             <p>
-                              <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                             </p>
                             <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
@@ -2452,13 +2482,13 @@ trimInput();
                         <tab header="Python">
                           <div>
                             <p>
-                              <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
                             <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
                             <p>
-                              <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font>
+                              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
                             </p>
                             <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
@@ -2497,8 +2527,7 @@ trimInput();
                     <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
                     <p>👍 <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the
-                        bug.</p>
+                      <p><span class="fas fa-cube"></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
                       <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{
     input.trim();
@@ -2507,21 +2536,21 @@ trimInput();
                     </tip-box>
                     <p>👍 <strong>Why</strong> : The rationale for the current implementation.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
+                      <p><span class="fas fa-cube"></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
                       <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
 compact(input);
 </code></pre>
                     </tip-box>
                     <p>👎 <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example:</p>
+                      <p><span class="fas fa-cube"></span> Example:</p>
                       <p>
-                        <font color="red"><strong><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"> Bad</span></strong></font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
+                        <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
                       <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
 <span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
 </code></pre>
                       <p>
-                        <font color="green"><strong><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> Good</span></strong></font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
+                        <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
                       <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
 <span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
@@ -2551,37 +2580,6 @@ compact(input);
       </panel>
     </div>
     <p></p>
-  </div>
-</panel>
-<panel type="seamless" expanded="" no-close="">
-  <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</span>
-  <div class="indented">
-    <div>
-      <p><span class="activity-desc">Admin info to read:<span></span></span>
-      </p>
-      <div class="indented">
-        <panel src="/website-base\admin\project-w07-v11._include_.html#main" no-close="" fragment="main">
-          <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Project: v1.1 <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-        </panel>
-        <panel src="/website-base\admin\appendixF-teamworkIssues._include_.html#main" no-close="" fragment="main">
-          <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   Appedix F: Handling Teamwork Issues <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-        </panel>
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-favoriteTool" no-close="" fragment="admin-faq-favoriteTool">
-          <span slot="header" class="card-title"><span><span class="dimmed">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></span>   FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-        </panel>
-      </div>
-      <p></p>
-    </div>
   </div>
 </panel>
 <panel type="seamless" expanded="" no-close="">

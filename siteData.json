@@ -658,7 +658,7 @@
     },
     {
       "headings": {
-        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners"
+        "software-engineering-for-self-directed-learners-cs2103t-edition-2018": "Software Engineering for Self-Directed Learners CS2103/T edition - 2018"
       },
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
       "footer": "footer.md",
@@ -806,6 +806,7 @@
     {
       "headings": {
         "git-and-github": "Git and Github",
+        "stash": "Stash",
         "clone": "Clone"
       },
       "title": "Text Book Chapter : Git and Github",

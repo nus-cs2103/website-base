@@ -411,8 +411,8 @@
                     <tip-box>
                       <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
                       <p></p>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever
-                        an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
+                      <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is
+                        expected, it can be substituted by an object of any of its subclasses.</p>
                       <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
                       <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -481,7 +481,7 @@ AcademicStaff academicStaff = staff; // Not OK
                               <p><strong>Method <em>overriding</em> is when a sub-class changes the behavior inherited from the parent class</strong> by re-implementing the method. Overridden methods have the same name, same type signature, and same return
                                 type.</p>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In a case where <code>EvaluationReport</code> class inherits the <code>Report</code> class,</p>
+                                <p><span class="fas fa-cube"></span> In a case where <code>EvaluationReport</code> class inherits the <code>Report</code> class,</p>
                                 <ul>
                                   <li><code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method.</li>
                                   <li><code>Report#write(String)</code> method is overridden by <code>EvaluationReport#write(String)</code> method.</li>
@@ -538,7 +538,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                             </div>
                                           </tip-box>
                                           <tip-box>
-                                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code>                                              and <code>(int)</code></p>
+                                            <p><span class="fas fa-cube"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
                                             <ul>
                                               <li><code>calculate(String): void</code></li>
                                               <li><code>calculate(int): void</code></li>
@@ -551,8 +551,8 @@ AcademicStaff academicStaff = staff; // Not OK
                                             <tab header="Java">
                                               <div>
                                                 <tip-box>
-                                                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures:
-                                                    <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                                                  <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                                                    Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
                                                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
@@ -606,7 +606,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                 <tab header="Java">
                                   <div>
                                     <tip-box>
-                                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                                      <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
                                       <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
@@ -647,7 +647,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                 <tab header="Python">
                                   <div>
                                     <tip-box>
-                                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                                      <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
                                       <table>
                                         <tr>
                                         
@@ -738,7 +738,7 @@ Ben is a student
                       </div>
                     </modal>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code>                        class is invoked.</p>
+                      <p><span class="fas fa-cube"></span> Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked.</p>
                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
     <span class="hljs-keyword">for</span> (Staff s: staff) {
         s.adjustSalary(byPercent);
@@ -806,7 +806,7 @@ Ben is a student
                                 </div>
                               </tip-box>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code>                                  and <code>(int)</code></p>
+                                <p><span class="fas fa-cube"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
                                 <ul>
                                   <li><code>calculate(String): void</code></li>
                                   <li><code>calculate(int): void</code></li>
@@ -819,7 +819,8 @@ Ben is a student
                                 <tab header="Java">
                                   <div>
                                     <tip-box>
-                                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code>                                        and <code>(String, String, double)</code>. Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                                      <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                                        Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
                                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
@@ -866,7 +867,7 @@ Ben is a student
                       </div>
                     </modal>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
+                      <p><span class="fas fa-cube"></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         <span class="hljs-comment">// Signature: ()</span>
@@ -878,8 +879,8 @@ Ben is a student
     }
 }
 </code></pre>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the
-                        second implementation, at compile time.</p>
+                      <p><span class="fas fa-cube"></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation, at compile
+                        time.</p>
                       <pre class="hljs"><code>void calculateGrade (int[] averages) { ... }
 void calculateGrade (String matric) { ... }
 </code></pre>
@@ -925,7 +926,7 @@ void calculateGrade (String matric) { ... }
                   <h5 id="implementing-polymorphism"><big>Implementing polymorphism</big></h5>
                   <p><strong>We can use inheritance to achieve polymorphism</strong>.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Continuing with the example given in [
+                    <p><span class="fas fa-cube"></span> Continuing with the example given in [
                       <trigger trigger="click" for="modal:oopImpl-polymorphism"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> OOP → Polymorphism → Introduction </trigger>], given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes that
                       achieves the desired polymorphism.</p>
                     <modal large="" title="" id="modal:oopImpl-polymorphism">
@@ -1253,8 +1254,8 @@ void calculateGrade (String matric) { ... }
                               <tip-box>
                                 <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
                                 <p></p>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e.
-                                  wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
+                                <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass
+                                  is expected, it can be substituted by an object of any of its subclasses.</p>
                                 <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
                                 <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -1271,7 +1272,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       </div>
                     </modal>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code>                        class states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
+                      <p><span class="fas fa-cube"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code>                        method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
                       <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                       <p></p>
                       <p>Now consider the following:</p>
@@ -1287,7 +1288,8 @@ AcademicStaff academicStaff = staff; // Not OK
                           can potentially break the <code>Payroll</code> class functionality.</li>
                       </ul>
                       <panel type="seamless" header="%%Another example%%">
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                          because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
+                        <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does
+                          not accept a <code>height</code> that is different from the <code>width</code>.</p>
                         <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                         <p></p>
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
@@ -1376,8 +1378,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       </div>
                     </tip-box>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it
-                        should depend on the <code>SalariedStaff</code> interface.</p>
+                      <p><span class="fas fa-cube"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code>                        interface.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
@@ -1508,7 +1509,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <p><strong>A defensive programmer codes under the assumption &quot;if we leave room for things to go wrong, they <em>will</em> go wrong&quot;.</strong> Therefore, a defensive programmer proactively tries to eliminate any room for things
                         to go wrong.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>MainApp#getConfig()</code> a method that returns a <code>Config</code> object containing configuration data. A typical implementation is given below:</p>
+                        <p><span class="fas fa-cube"></span> Consider a <code>MainApp#getConfig()</code> a method that returns a <code>Config</code> object containing configuration data. A typical implementation is given below:</p>
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainApp</span></span>{
     Config config;
     
@@ -2336,7 +2337,7 @@ r1.setPlayer(p2);
                         <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
                       </ul>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
+                        <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
                         <p>For 100% branch or decision coverage, two test cases are required:</p>
                         <ul>
                           <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
@@ -2740,7 +2741,7 @@ r1.setPlayer(p2);
                         unused variables as you type the code into the editor.</p>
                       <p>Higher-end static analyzer tools can perform for more complex analysis such as locating potential bugs, memory leaks, inefficient code structures etc.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some example static analyzer for Java:</p>
+                        <p><span class="fas fa-cube"></span> Some example static analyzer for Java:</p>
                         <ul>
                           <li><a href="http://checkstyle.sourceforge.net/">CheckStyle</a></li>
                           <li><a href="http://findbugs.sourceforge.net/">PMD</a></li>
@@ -2868,16 +2869,16 @@ r1.setPlayer(p2);
                     
                       <tab header="Java">
                         <ul>
-                          <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
-                          <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
+                          <li><span class="fas fa-cube"></span> Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
+                          <li><span class="fas fa-cube"></span> Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
                         </ul>
                         <p></p>
                       </tab>
                     
                       <tab header="Python">
                         <ul>
-                          <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
-                          <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
+                          <li><span class="fas fa-cube"></span> Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
+                          <li><span class="fas fa-cube"></span> Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
                         </ul>
                         <p></p>
                       </tab>
@@ -2890,7 +2891,7 @@ r1.setPlayer(p2);
                   </ol>
                   <tip-box>
                     <ul>
-                      <li><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example: <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">se-edu/addressbook-level4 Developer Guide</a>.</li>
+                      <li><span class="fas fa-cube"></span> An example: <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">se-edu/addressbook-level4 Developer Guide</a>.</li>
                     </ul>
                   </tip-box>
                 </div>
@@ -3097,8 +3098,8 @@ r1.setPlayer(p2);
               <div id="main">
                 <div>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> To explain a system called <code>SystemFoo</code> with two sub-systems, <code>FrontEnd</code> and <code>BackEnd</code>, start by describing the system at the highest
-                      level of abstraction, and progressively drill down to lower level details. An outline for such a description is given below.</p>
+                    <p><span class="fas fa-cube"></span> To explain a system called <code>SystemFoo</code> with two sub-systems, <code>FrontEnd</code> and <code>BackEnd</code>, start by describing the system at the highest level of abstraction, and progressively
+                      drill down to lower level details. An outline for such a description is given below.</p>
                     <p>[First, explain what the system is, in a black-box fashion (no internal details, only the external view).]</p>
                     <blockquote>
                       <p><code>SystemFoo</code> is a ....</p>
@@ -3223,8 +3224,8 @@ r1.setPlayer(p2);
                     </li>
                   </ul>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional
-                      dependency with the Logic component is no longer captured.</p>
+                    <p><span class="fas fa-cube"></span>Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the
+                      Logic component is no longer captured.</p>
                     <img src="/website-base/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
                     <p></p>
                   </tip-box>

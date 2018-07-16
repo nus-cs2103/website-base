@@ -566,8 +566,47 @@ index 15b57f7..17f4528 100644
                   <hr>
                 </tab>
               </tabs>
-              <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <a href="/website-base/book/gitAndGithub/stash/index.html">stash</a> them first to
-                prevent them from being overwritten.</p>
+              <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to
+                <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
+              <modal large="" title="%%Extract%%" id="modal:checkout-stash">
+              
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="stash">Stash</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed
+                          changes later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
+                        <tabs>
+                        
+                          <tab header="Source Tree">
+                            <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
+                            <p>
+                              <hr>
+                            </p>
+                          </tab>
+                        
+                          <tab header="CLI">
+                            <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
+                            <p>
+                              <hr>
+                            </p>
+                          </tab>
+                        </tabs>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </modal>
               <tabs>
                 <tab header="SourceTree">
                   <div>
@@ -659,11 +698,11 @@ index 15b57f7..17f4528 100644
             </span>
             <p></p>
             <div>
-              <p>Clone the sample repo <a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things">samplerepo-things</a> to your computer.</p>
+              <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
               <tip-box type="error">
                 <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                 </p>
-                <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S2/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S2/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
+                <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
               </tip-box>
               <tabs>
                 <tab header="SourceTree">
@@ -707,16 +746,19 @@ index 15b57f7..17f4528 100644
                   <panel type="seamless" expanded="">
                     <span slot="header" class="card-title"><div>
 <h4 id="clone">Clone</h4></div></span>
-                    <p><button type="button" class="btn btn-default btn-sm" aria-label="Left Align"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can clone a remote repo</span></span></span></button>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can clone a remote repo</span>
+                      </span>
+                      </span>
+                      </span>
                       <p></p>
                     </p>
                     <p></p>
                     <div>
-                      <p>Clone the sample repo <a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things">samplerepo-things</a> to your computer.</p>
+                      <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
                       <tip-box type="error">
                         <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                         </p>
-                        <p>Github project URL: <code>https://github.com/nus-cs2103-AY1718S2/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/nus-cs2103-AY1718S2/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
+                        <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
                       </tip-box>
                       <tabs>
                         <tab header="SourceTree">
@@ -806,7 +848,7 @@ index 15b57f7..17f4528 100644
             <div>
               <ol>
                 <li>
-                  <p>Fork the <a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
+                  <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
                   <panel type="seamless" header="%%How to fork a repo?%%">
                     <p>Navigate to the on GitHub and click on the <img src="/website-base/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                     <p></p>
@@ -858,7 +900,7 @@ index 15b57f7..17f4528 100644
             </span>
             <p></p>
             <div>
-              <p><strong>0. Observe that you are normally in the branch called <code>master</code>.</strong> For this, you can take any repo you have on your computer (e.g. a clone of the <a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things">samplerepo-things</a>).</p>
+              <p><strong>0. Observe that you are normally in the branch called <code>master</code>.</strong> For this, you can take any repo you have on your computer (e.g. a clone of the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a>).</p>
               <tabs>
                 <tab header="SourceTree">
                   <div>
@@ -1073,11 +1115,12 @@ white
             </span>
             <p></p>
             <div>
-              <p><strong>1. Fork the <a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
-              <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <a href="http://README.md">README.md</a>. Example:</p>
+              <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
+              <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
               <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
-Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects. This repo can be used to practice creating PRs.
+Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
+This repo can be used to practice creating PRs.
 
 </code></pre>
               <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
@@ -1100,7 +1143,7 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
               <p></p>
               <p>4b. Select <code>base fork</code> and <code>head fork</code> as follows:</p>
               <ul>
-                <li><code>base fork</code>: your own fork (i.e. <code>{your user name}/samplerepo-pr-practice</code>, <mark>NOT <code>nus-cs2103-AY1718S2/samplerepo-pr-practice</code></mark>)</li>
+                <li><code>base fork</code>: your own fork (i.e. <code>{your user name}/samplerepo-pr-practice</code>, <mark>NOT <code>se-edu/samplerepo-pr-practice</code></mark>)</li>
                 <li><code>head fork</code>: your own fork.</li>
               </ul>
               <img src="/website-base/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
@@ -1154,8 +1197,8 @@ Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
             <div>
               <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in <a href="/website-base/book/gitAndGithub/createPRs/index.html">Tools → Git &amp; GitHub → Create PRs</a> to simulate
                 the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-              <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <code>+</code> icon that appears on the left margin. That should create a text box for you to enter
-                your comment.</p>
+              <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span class="fas fa-plus-square"></span></span> icon that appears on
+                the left margin. That should create a text box for you to enter your comment.</p>
               <img src="/website-base/book/gitAndGithub/managePRs/images/startReview.png" width="800">
               <p></p>
               <p>1b. Enter some dummy comment and click on <code>Start a review</code> button.</p>
@@ -1205,7 +1248,7 @@ git pull origin master
             </span>
             <p></p>
             <div>
-              <p></p>
+              <p><span class="fas fa-info-circle"></span> This activity is best done as a team. If you are learning this alone, you can simulate a team by using two different browsers to log into GitHub using two different accounts.</p>
               <ol>
                 <li>
                   <p><strong>One member: set up the team org and the team repo.</strong></p>
@@ -1260,7 +1303,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 04:47:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 11:36:19 GMT</small></div>
 </footer>
 </div>
 </body>

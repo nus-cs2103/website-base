@@ -53,7 +53,7 @@
                   <p>Class diagrams can also be used to model objects in the
                     <tooltip content="the relevant information that needs to be examined to understand a problem">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> OO domain model of a snakes and ladders game is given below.</p>
+                    <p><span class="fas fa-cube"></span> OO domain model of a snakes and ladders game is given below.</p>
                     <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the
                       number of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a
                       piece can automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
@@ -161,7 +161,7 @@
                     <img src="/website-base/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
                     <p></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
+                      <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
                       <img src="/website-base/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
                       <p></p>
                       <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
@@ -199,7 +199,7 @@
                 <div id="main">
                   <div>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
+                      <p><span class="fas fa-cube"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
                       <img src="/website-base/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
                       <p></p>
                       <p>Now, assume the system has two additional views used in parallel by different users:</p>
@@ -222,7 +222,7 @@
                     <img src="/website-base/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
                     <p></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>Here is the Observer pattern applied to the student management system.</p>
+                      <p><span class="fas fa-cube"></span>Here is the Observer pattern applied to the student management system.</p>
                       <p>During initialization of the system,</p>
                       <ol>
                         <li>First, create the relevant objects.</li>
@@ -341,8 +341,8 @@ studentList.addUi(statusUi);
                       <p><strong>Context</strong></p>
                       <p>There is a group of similar entities that appears to be ‘occurrences’ (or ‘copies’) of the same thing, sharing lots of common information, but also differing in significant ways.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also
-                          significant differences like purchase date and barcode number (assumed to be unique for each copy of the book).</p>
+                        <p><span class="fas fa-cube"></span> In a library, there can be multiple copies of same book title. Each copy shares common information such as book title, author, ISBN etc. However, there are also significant differences like purchase
+                          date and barcode number (assumed to be unique for each copy of the book).</p>
                         <p>Other examples:</p>
                         <ul>
                           <li>Episodes of the same TV series</li>
@@ -352,8 +352,7 @@ studentList.addUi(statusUi);
                       <p><strong>Problem</strong></p>
                       <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but
-                          different serial numbers.</p>
+                        <p><span class="fas fa-cube"></span> Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p>
                         <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
                         <p></p>
                         <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the
@@ -362,7 +361,7 @@ studentList.addUi(statusUi);
                       </tip-box>
                       <p><strong>Anti-pattern</strong></p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Refer to the same Library example given above.</p>
+                        <p><span class="fas fa-cube"></span> Refer to the same Library example given above.</p>
                         <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
                         <p></p>
                         <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is
@@ -371,10 +370,10 @@ studentList.addUi(statusUi);
                       <p><strong>Solution</strong></p>
                       <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Given below is how the pattern is applied to the Library example:</p>
+                        <p><span class="fas fa-cube"></span> Given below is how the pattern is applied to the Library example:</p>
                         <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
                         <p></p>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here's a more generic example:</p>
+                        <p><span class="fas fa-cube"></span> Here's a more generic example:</p>
                         <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
                         <p></p>
                       </tip-box>
@@ -527,8 +526,8 @@ studentList.addUi(statusUi);
                   <div>
                     <p><strong>Design patterns are usually embedded in a larger design and sometimes applied in combination with other design patterns.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells
-                        appliances, and accessories for the appliances. SIS simply stores information about each item in the store.</p>
+                      <p><span class="fas fa-cube"></span> Let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells appliances, and accessories for
+                        the appliances. SIS simply stores information about each item in the store.</p>
                       <p><strong>Use Cases</strong>:</p>
                       <ul>
                         <li>Create a new item</li>
@@ -601,7 +600,7 @@ studentList.addUi(statusUi);
                   <div>
                     <p><strong>Design pattern provides a high-level vocabulary to talk about design.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Someone can say 'apply Observer pattern here' instead of having to describe the mechanics of the solution in detail.</p>
+                      <p><span class="fas fa-cube"></span> Someone can say 'apply Observer pattern here' instead of having to describe the mechanics of the solution in detail.</p>
                     </tip-box>
                     <p><strong>Knowing more patterns is a way to become more ‘experienced’.</strong> Aim to learn at least the context and the problem of patterns <span class="dimmed"> so that when you encounter those problems you know where to look for a solution</span>.</p>
                     <p><strong>Some patterns are domain-specific</strong> <span class="dimmed"> e.g. patterns for distributed applications</span>, <strong>some are created in-house</strong> <span class="dimmed"> e.g. patterns in the company/project</span>                      and <strong>some can be self-created</strong> <span class="dimmed"> e.g. from past experience</span>.</p>
@@ -751,7 +750,7 @@ studentList.addUi(statusUi);
                   <div>
                     <p><strong>An SUT can take multiple inputs.</strong> You can select values for each input (using equivalence partitioning, boundary value analysis, or some other technique).</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an SUT that takes multiple inputs and some values chosen as values for each input:</p>
+                      <p><span class="fas fa-cube"></span> an SUT that takes multiple inputs and some values chosen as values for each input:</p>
                       <ul>
                         <li>Scenario: calculateGrade</li>
                         <li>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</li>
@@ -819,7 +818,7 @@ studentList.addUi(statusUi);
                   <div>
                     <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
+                      <p><span class="fas fa-cube"></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
                       <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
                       <p>Selected values for each input:</p>
                       <table class="markbind-table table table-bordered table-striped">
@@ -847,7 +846,7 @@ studentList.addUi(statusUi);
                     </tip-box>
                     <p><strong>all combinations</strong>: generate test cases for each unique combination of test inputs</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> the strategy generates 3x3x2=18 test cases</p>
+                      <p><span class="fas fa-cube"></span> the strategy generates 3x3x2=18 test cases</p>
                       <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>
@@ -893,7 +892,7 @@ studentList.addUi(statusUi);
                     </tip-box>
                     <p><strong>at least once</strong>: include each test input at least once.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> this strategy generates 3 test cases.</p>
+                      <p><span class="fas fa-cube"></span> this strategy generates 3 test cases.</p>
                       <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>
@@ -929,7 +928,7 @@ studentList.addUi(statusUi);
                     <p><strong>all pairs</strong>: This strategy creates test cases so that for any given pair of inputs, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting
                       factors. The resulting number of test cases is lower than the &quot;all combinations&quot; strategy, but higher than the &quot;at least once&quot; approach.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> this strategy generates 9 test cases:</p>
+                      <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
                       <panel type="seamless" header="see steps">
                         <p>Let's first consider inputs p1 and p2:</p>
                         <table class="markbind-table table table-bordered table-striped">
@@ -1045,7 +1044,7 @@ studentList.addUi(statusUi);
                     </tip-box>
                     <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
+                      <p><span class="fas fa-cube"></span> Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
                       <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>

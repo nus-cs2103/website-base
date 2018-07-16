@@ -568,7 +568,7 @@
                       <p></p>
                       <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: A minimal test case for testing a browser:</p>
+                        <p><span class="fas fa-cube"></span> Example: A minimal test case for testing a browser:</p>
                         <ul>
                           <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load <code>longfile.html</code> located in the <code>test data</code> folder.</li>
                           <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading <code>longfile.html</code>.</li>
@@ -595,8 +595,8 @@
                       </ol>
                       <p><strong>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</strong></p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug
-                          causing that failure could be an uninitialized variable.</p>
+                        <p><span class="fas fa-cube"></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing that failure could be an
+                          uninitialized variable.</p>
                       </tip-box>
                       <panel header="%%A deeper look at the definition of testing%%" type="seamless">
                         <p>Here is another definition of testing:</p>
@@ -798,7 +798,7 @@
                       <ol>
                         <li>
                           <p>Store the test input in the text file <code>input.txt</code>.</p>
-                          <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `input.txt`%%" type="seamless">
+                          <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
                             <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -806,7 +806,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                         </li>
                         <li>
                           <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                          <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `expected.txt`%%" type="seamless">
+                          <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
                             <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -1177,7 +1177,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
               <div id="main">
                 <div>
                   <h5 id="tracking-and-ignoring">Tracking and Ignoring</h5>
-                  <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such a temporary log files created during the build/test process should not be revision-controlled.</p>
+                  <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such as temporary log files created during the build/test process should not be revision-controlled.</p>
                   <h5 id="staging-and-committing">Staging and Committing</h5>
                   <tabs>
                   

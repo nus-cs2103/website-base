@@ -65,8 +65,8 @@
                   <div>
                     <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code> class so that the <code>EvaluationReport</code>                        class does not have to duplicate code that is already implemented in the <code>Report</code> class. The <code>EvaluationReport</code> can inherit the <code>wordCount</code> attribute and the <code>print()</code> method from the
-                        <em>base class</em> <code>Report</code>.</p>
+                      <p><span class="fas fa-cube"></span> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code> class so that the <code>EvaluationReport</code> class does not have
+                        to duplicate code that is already implemented in the <code>Report</code> class. The <code>EvaluationReport</code> can inherit the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em>                        <code>Report</code>.</p>
                     </tip-box>
                     <ul>
                       <li>Other names for Base class: <em>Parent</em> class, <em>Super</em> class</li>
@@ -75,15 +75,15 @@
                     <p><strong>A super class is said to be <em>more general</em> than the sub class.</strong> Conversely, a sub class is said to be more <em>specialized</em> than the super class.</p>
                     <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code>                        because of the need to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a super class (to contain the code common to men and woment) and
-                        let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code> class.</p>
+                      <p><span class="fas fa-cube"></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need
+                        to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a super class (to contain the code common to men and woment) and let <code>Man</code>                        and <code>Woman</code> inherit from <code>Person</code> class.</p>
                     </tip-box>
                     <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
                     <tip-box type="info">
                       <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
                     </tip-box>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> To continue the previous example,</p>
+                      <p><span class="fas fa-cube"></span> To continue the previous example,</p>
                       <ul>
                         <li><code>Woman</code> <em>is a</em> <code>Person</code></li>
                         <li><code>Man</code> <em>is a</em> <code>Person</code></li>
@@ -91,15 +91,15 @@
                     </tip-box>
                     <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>.
-                        Note that the triangle points to the parent class.</p>
+                      <p><span class="fas fa-cube"></span> Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>. Note that the triangle points to
+                        the parent class.</p>
                       <img src="/website-base/book/oop/inheritance/what/images/inheritanceTreesExamples.png" width="500">
                       <p></p>
                     </tip-box>
                     <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g.,
                       Java, C#).</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.</p>
+                      <p><span class="fas fa-cube"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.</p>
                     </tip-box>
                     <h5 id="implementing-inheritance"><big>Implementing inheritance</big></h5>
                     <tabs>
@@ -184,21 +184,21 @@
                   <div>
                     <p>While all objects of a class has the same attributes, each object has its own copy of the attribute value.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
+                      <p><span class="fas fa-cube"></span> All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
                     </tip-box>
                     <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class.
                       Such <strong>variables whose value is shared by all instances of a class are called <mark><em>class level attributes</em></mark></strong>.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code>                        object.</p>
+                      <p><span class="fas fa-cube"></span> The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
                     </tip-box>
                     <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the
-                        <code>Beth</code> object gets the response <code>&quot;Beth&quot;</code>.</p>
+                      <p><span class="fas fa-cube"></span> Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the <code>Beth</code> object gets the
+                        response <code>&quot;Beth&quot;</code>.</p>
                     </tip-box>
                     <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Such <strong>methods that are called using the class instead of a specific instance are called <mark><em>class-level methods</em></mark></strong>.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
+                      <p><span class="fas fa-cube"></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
                     </tip-box>
                     <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code>                      to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
                     <h5 id="implementing-class-level-members"><big>Implementing class-level members</big></h5>
@@ -306,8 +306,7 @@
                       </div>
                     </tip-box>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and
-                        <code>(int)</code></p>
+                      <p><span class="fas fa-cube"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
                       <ul>
                         <li><code>calculate(String): void</code></li>
                         <li><code>calculate(int): void</code></li>
@@ -320,7 +319,8 @@
                       <tab header="Java">
                         <div>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code>                              and <code>(String, String, double)</code>. Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                            <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                              Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
@@ -406,7 +406,7 @@
                   <div>
                     <p><strong>Method <em>overriding</em> is when a sub-class changes the behavior inherited from the parent class</strong> by re-implementing the method. Overridden methods have the same name, same type signature, and same return type.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In a case where <code>EvaluationReport</code> class inherits the <code>Report</code> class,</p>
+                      <p><span class="fas fa-cube"></span> In a case where <code>EvaluationReport</code> class inherits the <code>Report</code> class,</p>
                       <ul>
                         <li><code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method.</li>
                         <li><code>Report#write(String)</code> method is overridden by <code>EvaluationReport#write(String)</code> method.</li>
@@ -462,7 +462,7 @@
                                   </div>
                                 </tip-box>
                                 <tip-box>
-                                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code>                                    and <code>(int)</code></p>
+                                  <p><span class="fas fa-cube"></span> In the case below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
                                   <ul>
                                     <li><code>calculate(String): void</code></li>
                                     <li><code>calculate(int): void</code></li>
@@ -475,7 +475,8 @@
                                   <tab header="Java">
                                     <div>
                                       <tip-box>
-                                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code>                                          and <code>(String, String, double)</code>. Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                                        <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                                          Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
                                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
@@ -529,7 +530,7 @@
                       <tab header="Java">
                         <div>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                            <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
                             <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
@@ -570,7 +571,7 @@
                       <tab header="Python">
                         <div>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                            <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
                             <table>
                               <tr>
                               
@@ -774,14 +775,13 @@ Ben is a student
                     </tip-box>
                     <p><strong>An abstract method is simply the method interface without the implementation.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Account</code> class has an abstract method (<code>addInterest()</code>).</p>
+                      <p><span class="fas fa-cube"></span> The <code>Account</code> class has an abstract method (<code>addInterest()</code>).</p>
                     </tip-box>
                     <p><strong>A class that has an abstract method becomes an abstract class</strong>. Evan a class that does not have any abstract method can be declared as an abstract class. Abstract classes cannot be instantiated.</p>
                     <h5 id="implementing-abstract-classes"><big>Implementing abstract classes</big></h5>
                     <p><strong>Use the <code>abstract</code> keyword to identify abstract classes/methods.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Partial code below gives an example of how to declare abstract classes/methods. The <code>addInterest()</code> method in the <code>Account</code> class is abstract
-                        and therefore the <code>Account</code> class itself is abstract. The <code>CurrentAccount</code> class need not be abstract because it overrides the abstract method inherited from the parent class.</p>
+                      <p><span class="fas fa-cube"></span> Partial code below gives an example of how to declare abstract classes/methods. The <code>addInterest()</code> method in the <code>Account</code> class is abstract and therefore the <code>Account</code>                        class itself is abstract. The <code>CurrentAccount</code> class need not be abstract because it overrides the abstract method inherited from the parent class.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     
     <span class="hljs-keyword">int</span> number;
@@ -870,17 +870,17 @@ Ben is a student
                       </p>
                     </blockquote>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose <code>SalariedStaff</code> is an interface that contains two methods <code>setSalary(int)</code> and <code>getSalary()</code>. <code>AcademicStaff</code> can
-                        declare itself as <em>implementing</em> the <code>SalariedStaff</code> interface, which means the <code>AcademicStaff</code> class must implement all the methods specified by the <code>SalariedStaff</code> interface i.e., <code>setSalary(int)</code>                        and <code>getSalary()</code>.</p>
+                      <p><span class="fas fa-cube"></span> Suppose <code>SalariedStaff</code> is an interface that contains two methods <code>setSalary(int)</code> and <code>getSalary()</code>. <code>AcademicStaff</code> can declare itself as <em>implementing</em>                        the <code>SalariedStaff</code> interface, which means the <code>AcademicStaff</code> class must implement all the methods specified by the <code>SalariedStaff</code> interface i.e., <code>setSalary(int)</code> and <code>getSalary()</code>.</p>
                     </tip-box>
                     <p><strong>A class implementing an interface results in an <em>is-a</em> relationship</strong>, just like in class inheritance.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example above, <code>AcademicStaff</code> <em>is a</em> <code>SalariedStaff</code>. An <code>AcademicStaff</code> object can be used anywhere a <code>SalariedStaff</code>                        object is expected e.g. <code>SalariedStaff ss = new AcademicStaff()</code>.</p>
+                      <p><span class="fas fa-cube"></span> In the example above, <code>AcademicStaff</code> <em>is a</em> <code>SalariedStaff</code>. An <code>AcademicStaff</code> object can be used anywhere a <code>SalariedStaff</code> object is expected
+                        e.g. <code>SalariedStaff ss = new AcademicStaff()</code>.</p>
                     </tip-box>
                     <h5 id="implementing-interfaces"><big>Implementing interfaces</big></h5>
                     <p><strong>Java allows multiple inheritance among interfaces. A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The design below is allowed by Java. <span class="dimmed">In case you are not familiar with UML notation used: solid lines indicate normal inheritance; dashed lines indicate interface inheritance; the triangle points to pare parent.</span></p>
+                      <p><span class="fas fa-cube"></span> The design below is allowed by Java. <span class="dimmed">In case you are not familiar with UML notation used: solid lines indicate normal inheritance; dashed lines indicate interface inheritance; the triangle points to pare parent.</span></p>
                       <img src="/website-base/book/oop/inheritance/interfaces/images/studentStaff.png" height="250">
                       <p></p>
                       <ol>
@@ -892,7 +892,7 @@ Ben is a student
                     </tip-box>
                     <p><strong>Java uses the <code>interface</code> keyword to declare interfaces and <code>implements</code> keyword to indicate that a class implements a given interface.</strong> Inheritance among interfaces uses the <code>extends</code>                      keyword, just like inheritance among classes.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The code for the example design given in the previous example:</p>
+                      <p><span class="fas fa-cube"></span> The code for the example design given in the previous example:</p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">TaxPayer</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">payTax</span><span class="hljs-params">()</span></span>;
 }
@@ -1112,7 +1112,7 @@ Ben is a student
                     <div>
                       <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+                        <p><span class="fas fa-cube"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
 
@@ -1167,7 +1167,7 @@ Ben is a student
                     <div>
                       <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+                        <p><span class="fas fa-cube"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
 
     <span class="hljs-meta">@Test</span>
@@ -1372,8 +1372,8 @@ white
                     <div>
                       <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in <a href="/website-base/book/gitAndGithub/createPRs/index.html">Tools → Git &amp; GitHub → Create PRs</a> to simulate
                         the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                      <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <code>+</code> icon that appears on the left margin. That should create a text box for
-                        you to enter your comment.</p>
+                      <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span class="fas fa-plus-square"></span></span> icon that appears
+                        on the left margin. That should create a text box for you to enter your comment.</p>
                       <img src="/website-base/book/gitAndGithub/managePRs/images/startReview.png" width="800">
                       <p></p>
                       <p>1b. Enter some dummy comment and click on <code>Start a review</code> button.</p>
@@ -1501,7 +1501,7 @@ git pull origin master
                   </div>
                   <div id="main">
                     <div>
-                      <p></p>
+                      <p><span class="fas fa-info-circle"></span> This activity is best done as a team. If you are learning this alone, you can simulate a team by using two different browsers to log into GitHub using two different accounts.</p>
                       <ol>
                         <li>
                           <p><strong>One member: set up the team org and the team repo.</strong></p>

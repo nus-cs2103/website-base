@@ -208,7 +208,7 @@
                 <p></p>
                 <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: A minimal test case for testing a browser:</p>
+                  <p><span class="fas fa-cube"></span> Example: A minimal test case for testing a browser:</p>
                   <ul>
                     <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load <code>longfile.html</code> located in the <code>test data</code> folder.</li>
                     <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading <code>longfile.html</code>.</li>
@@ -235,8 +235,8 @@
                 </ol>
                 <p><strong>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</strong></p>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing
-                    that failure could be an uninitialized variable.</p>
+                  <p><span class="fas fa-cube"></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing that failure could be an uninitialized
+                    variable.</p>
                 </tip-box>
                 <panel header="%%A deeper look at the definition of testing%%" type="seamless">
                   <p>Here is another definition of testing:</p>
@@ -313,7 +313,7 @@
                 <p><strong><em>Unit testing</em> : testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly.</strong></p>
                 <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
+                  <p><span class="fas fa-cube"></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
                   <tabs>
                   
                     <tab header="Java">
@@ -409,8 +409,7 @@
                   <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
                     <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from
-                      the <code>Storage</code> class.</p>
+                    <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code> class.</p>
                   </tip-box>
                   <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
                   <tip-box type="definition">
@@ -420,7 +419,7 @@
                     </div>
                   </tip-box>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below:</p>
+                    <p><span class="fas fa-cube"></span> Consider the code below:</p>
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Storage s;
 
@@ -536,8 +535,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components
                     interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200
-                      mph speed but the actual <code>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
+                    <p><span class="fas fa-cube"></span> Suppose a class <code>Car</code> users classes <code>Engine</code> and <code>Wheel</code>. If the <code>Car</code> class assumed a <code>Wheel</code> can support 200 mph speed but the actual <code>Wheel</code>                      can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p>
                   </tip-box>
                 </div>
                 <div></div>
@@ -561,12 +559,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <p><strong>Integration testing is not simply a repetition of the unit test cases but run using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus
                     on the interactions between the parts.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
+                    <p><span class="fas fa-cube"></span> Suppose a class <code>Car</code> uses classes <code>Engine</code> and <code>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
                     <p>a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br> b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, <mark>using stubs for <code>Engine</code> and <code>Wheel</code></mark>.<br>                      c) After that, do an integration test for <code>Car</code> using it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>.</p>
                   </tip-box>
                   <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
+                    <p><span class="fas fa-cube"></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
                     <p>(a) First, unit test <code>Engine</code> and <code>Wheel</code>.<br>
                       <s>(b) Next, unit test <code>Car</code> in isolation of <code>Engine</code> and <code>Wheel</code>, using stubs for <code>Engine</code> and <code>Wheel</code>.</s><br> (c) After that, do an integration test for <code>Car</code> using
                       it together with the <code>Engine</code> and <code>Wheel</code> classes to ensure the <code>Car</code> integrates properly with the <code>Engine</code> and the <code>Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code>Car</code></mark>                      (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code>Car</code> with <code>Wheel</code> and <code>Engine</code> (i.e. pure integration test cases used of
@@ -602,8 +600,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully'
                     having pushed beyond its limits.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully
-                      if pushed beyond its limits.</p>
+                    <p><span class="fas fa-cube"></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
                     <pre class="hljs"><code>Test case: load a web page that is too big
 * Input: load a web page containing more than 5000 characters. 
 * Expected behavior: abort the loading of the page and show a meaningful error message. 
@@ -831,7 +828,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                    because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
                     operations where more faults are found.</p>
                   <tip-box>
-                    <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
+                    <p><span class="fas fa-cube"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                     <blockquote>
                       <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if feature
                         y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
@@ -1214,7 +1211,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 <ol>
                   <li>
                     <p>Store the test input in the text file <code>input.txt</code>.</p>
-                    <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `input.txt`%%" type="seamless">
+                    <panel header="%%<span class='fas fa-cube'></span> Example `input.txt`%%" type="seamless">
                       <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -1222,7 +1219,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                   </li>
                   <li>
                     <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                    <panel header="%%<span class='glyphicon glyphicon-gift' aria-hidden='true'></span> Example `expected.txt`%%" type="seamless">
+                    <panel header="%%<span class='fas fa-cube'></span> Example `expected.txt`%%" type="seamless">
                       <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -1299,7 +1296,7 @@ Invalid command format: add
               <div>
                 <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+                  <p><span class="fas fa-cube"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
 
@@ -1347,7 +1344,7 @@ Invalid command format: add
               <div>
                 <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+                  <p><span class="fas fa-cube"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
 
     <span class="hljs-meta">@Test</span>
@@ -1404,7 +1401,7 @@ Invalid command format: add
                   tested manually, the number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
                 <p><strong>There are testing tools that can automate GUI testing.</strong></p>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some tools used for automated GUI testing:</p>
+                  <p><span class="fas fa-cube"></span> Some tools used for automated GUI testing:</p>
                   <ul>
                     <li>
                       <p><strong>TestFx</strong> can do automated testing of JavaFX GUIs<br></p>
@@ -1472,7 +1469,7 @@ Invalid command format: add
                   <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
                 </ul>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
+                  <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
                   <p>For 100% branch or decision coverage, two test cases are required:</p>
                   <ul>
                     <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
@@ -1589,8 +1586,7 @@ Invalid command format: add
                           <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
                             <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class
-                              from the <code>Storage</code> class.</p>
+                            <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code>                              class.</p>
                           </tip-box>
                           <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
                           <tip-box type="definition">
@@ -1600,7 +1596,7 @@ Invalid command format: add
                             </div>
                           </tip-box>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below:</p>
+                            <p><span class="fas fa-cube"></span> Consider the code below:</p>
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Storage s;
 
@@ -1698,8 +1694,8 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                 </modal>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer
-                    depends on a <code>Bar</code> object. Now we can test the <code>Foo</code> object in isolation from the <code>Bar</code> object.</p>
+                  <p><span class="fas fa-cube"></span> A <code>Foo</code> object normally depends on a <code>Bar</code> object, but we can inject a <code>BarStub</code> object so that the <code>Foo</code> object no longer depends on a <code>Bar</code> object.
+                    Now we can test the <code>Foo</code> object in isolation from the <code>Bar</code> object.</p>
                   <img src="/website-base/book/testing/dependencyInjection/what/images/diagram.png" height="150"></tip-box>
               </div>
               <div></div>
@@ -1745,8 +1741,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                           <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
                             <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed"> i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class
-                              from the <code>Storage</code> class.</p>
+                            <p><span class="fas fa-cube"></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the <code>Storage</code>                              class.</p>
                           </tip-box>
                           <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
                           <tip-box type="definition">
@@ -1756,7 +1751,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                             </div>
                           </tip-box>
                           <tip-box>
-                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the code below:</p>
+                            <p><span class="fas fa-cube"></span> Consider the code below:</p>
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Storage s;
 
@@ -1854,7 +1849,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </div>
                 </modal>
                 <tip-box>
-                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is another example of using polymorphism to implement dependency injection:</p>
+                  <p><span class="fas fa-cube"></span> Here is another example of using polymorphism to implement dependency injection:</p>
                   <p>Suppose we want to unit test the <code>Payroll#totalSalary()</code> given below. The method depends on the <code>SalaryManager</code> object to calculate the return value. Note how the <code>setSalaryManager(SalaryManager)</code> can
                     be used to inject a <code>SalaryManager</code> object to replace the current <code>SalaryManager</code> object.</p>
                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
@@ -2035,7 +2030,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 04:47:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 11:36:19 GMT</small></div>
 </footer>
 </div>
 </body>

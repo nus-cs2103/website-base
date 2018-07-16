@@ -71,7 +71,8 @@
                         <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
                     </ul>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code>                        is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
+                      <p><span class="fas fa-cube"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is a ‘friend of a friend’
+                        (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
     Goo g = b.getGoo();
     g.doSomething();
@@ -80,9 +81,9 @@
                     </tip-box>
                     <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends
-                        as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
+                      <p><span class="fas fa-cube"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
+                      <p><span class="fas fa-cube"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend
+                        and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
                     </tip-box>
                   </div>
                   <div>
@@ -198,8 +199,8 @@
                               </tip-box>
                               <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting
-                                  of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                                <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well
+                                  as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
                               </tip-box>
                             </div>
                             <div>
@@ -241,16 +242,13 @@
                               </tip-box>
                               <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For
-                                  example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all.
-                                  That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
+                                <p><span class="fas fa-cube"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code>                                  class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without
+                                  having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
                                 <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
                                 <p></p>
                               </tip-box>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves
-                                  as a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class
-                                  is extended without modifying its code.</p>
+                                <p><span class="fas fa-cube"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code>                                  in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
                                 <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
 ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
 </code></pre>
@@ -329,8 +327,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                                         <tip-box>
                                           <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
                                           <p></p>
-                                          <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.
-                                            i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
+                                          <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of
+                                            the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                                           <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
                                           <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
@@ -347,7 +345,8 @@ AcademicStaff academicStaff = staff; // Not OK
                                 </div>
                               </modal>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code>                                  class states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
+                                <p><span class="fas fa-cube"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that
+                                  the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
                                 <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                                 <p></p>
                                 <p>Now consider the following:</p>
@@ -362,7 +361,8 @@ AcademicStaff academicStaff = staff; // Not OK
                                   <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code>                                    objects can potentially break the <code>Payroll</code> class functionality.</li>
                                 </ul>
                                 <panel type="seamless" header="%%Another example%%">
-                                  <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                                    because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
+                                  <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because
+                                    it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
                                   <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                                   <p></p>
                                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
@@ -438,8 +438,8 @@ AcademicStaff academicStaff = staff; // Not OK
                                 </div>
                               </tip-box>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead,
-                                  it should depend on the <code>SalariedStaff</code> interface.</p>
+                                <p><span class="fas fa-cube"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the
+                                  <code>SalariedStaff</code> interface.</p>
                                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
@@ -599,8 +599,8 @@ AcademicStaff academicStaff = staff; // Not OK
                     </tip-box>
                     <p>This principle guards against duplication of information.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
+                      <p><span class="fas fa-cube"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
+                      <p><span class="fas fa-cube"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
                     </tip-box>
                   </div>
                   <div></div>
@@ -708,8 +708,8 @@ AcademicStaff academicStaff = staff; // Not OK
                       <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
                     <tip-box>
                       <p>Some examples in which a certain workflow is relevant to software project:</p>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
+                      <p><span class="fas fa-cube"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
+                      <p><span class="fas fa-cube"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
                     </tip-box>
                     <p>Understanding such workflows is important for the success of the software project. <strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
                     <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
@@ -720,7 +720,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       </div>
                     </modal>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
+                      <p><span class="fas fa-cube"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
                       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
                     <p>The most basic activity diagram is simply a linear sequence of actions.</p>
                     <p>
@@ -796,7 +796,7 @@ AcademicStaff academicStaff = staff; // Not OK
                   <div>
                     <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
+                      <p><span class="fas fa-cube"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
                       <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
                       <p></p>
                       <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p>
@@ -833,7 +833,7 @@ AcademicStaff academicStaff = staff; // Not OK
                   <div>
                     <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> A simple example of a swimlane diagram:</p>
+                      <p><span class="fas fa-cube"></span> A simple example of a swimlane diagram:</p>
                       <img src="/website-base/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
                       <p></p>
                     </tip-box>
@@ -887,7 +887,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       </tip-box>
                       <p>In software development, there are certain problems that recur in a certain context.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples of recurring design problems:</p>
+                        <p><span class="fas fa-cube"></span> Some examples of recurring design problems:</p>
                         <table class="markbind-table table table-bordered table-striped">
                           <thead>
                             <tr>
@@ -1185,7 +1185,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     <p><strong>Context</strong></p>
                     <p>Components need to access functionality deep inside other components.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code>                        component.</p>
+                      <p><span class="fas fa-cube"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
                       <img src="/website-base/book/designPatterns/facade/what/images/textBook.png" height="120">
                       <p></p>
                     </tip-box>
@@ -1195,7 +1195,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     <p>Include a
                       <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
+                      <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                       <img src="/website-base/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
                       <p></p>
                     </tip-box>
@@ -1261,8 +1261,8 @@ AcademicStaff academicStaff = staff; // Not OK
                     <p>The essential element of this pattern is to have a general <code>&lt;&lt; Command &gt;&gt;</code> object that can be passed around, stored, executed, etc without knowing the type of command (i.e. via polymorphism).</p>
                     <p>Let us examine an example application of the pattern first:</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to
-                        the <code>CommandQueue</code> object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code>                        type. When executed, each <code>Command</code> object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
+                      <p><span class="fas fa-cube"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code>                        object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each
+                        <code>Command</code> object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
                       <img src="/website-base/book/designPatterns/command/what/images/commandCreator.png" height="150">
                       <p></p>
                     </tip-box>
@@ -1418,15 +1418,14 @@ AcademicStaff academicStaff = staff; // Not OK
                     <tabs>
                     
                       <tab header="Java">
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the
-                          default Java distribution.</p>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+                        <p><span class="fas fa-cube"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+                        <p><span class="fas fa-cube"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
                       </tab>
                     
                       <tab header="Python">
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python
-                          distribution. Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+                        <p><span class="fas fa-cube"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as
+                          <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+                        <p><span class="fas fa-cube"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
                       </tab>
                     </tabs>
                   </tip-box>
@@ -1508,30 +1507,30 @@ AcademicStaff academicStaff = staff; // Not OK
                   <div>
                     <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p><span class="fas fa-cube"></span> Running example:</p>
                       <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
                     </tip-box>
                     <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p><span class="fas fa-cube"></span> Running example:</p>
                       <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
                     </tip-box>
                     <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p><span class="fas fa-cube"></span> Running example:</p>
                       <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
                     </tip-box>
                     <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Running example:</p>
+                      <p><span class="fas fa-cube"></span> Running example:</p>
                       <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
                     </tip-box>
                     <p>Some frameworks cover only a specific components or an aspect.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
+                      <p><span class="fas fa-cube"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
                     </tip-box>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> More examples of frameworks</p>
+                      <p><span class="fas fa-cube"></span> More examples of frameworks</p>
                       <ul>
                         <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
                         <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
@@ -1656,12 +1655,11 @@ AcademicStaff academicStaff = staff; // Not OK
                     <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
                       of a software platform is the presence of a runtime environment.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+                      <p><span class="fas fa-cube"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
                     </tip-box>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
-                        <trigger for="modal:enterprise-application"
-                          trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise
+                      <p><span class="fas fa-cube"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
+                        <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise
                         applications. Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
                       <ul>
                         <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
@@ -1720,7 +1718,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite
                       number of test cases.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the test cases for adding a string object to a
+                      <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a
                         <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
                       <ul>
                         <li>Add an item to an empty collection.</li>
@@ -1872,7 +1870,7 @@ Enter side 1:
                       <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                      because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
                       operations where more faults are found.</p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
+                      <p><span class="fas fa-cube"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                       <blockquote>
                         <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if
                           feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
@@ -2030,7 +2028,7 @@ Enter side 1:
                   <div>
                     <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
                     <tip-box>
-                      <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
+                      <p><span class="fas fa-cube"></span> Consider testing of the method <code>print(Integer i)</code> which prints the value of <code>i</code>.</p>
                       <ul>
                         <li>A positive test case: <code>i == new Integer(50)</code></li>
                         <li>A negative test case: <code>i == null;</code></li>
@@ -2187,7 +2185,7 @@ Enter side 1:
                                 called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems.
                                 One tends to conduct more tests for those operations where more faults are found.</p>
                               <tip-box>
-                                <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
+                                <p><span class="fas fa-cube"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                                 <blockquote>
                                   <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product
                                     if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
@@ -2345,7 +2343,7 @@ Enter side 1:
                     <div>
                       <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> These could be EPs for the
+                        <p><span class="fas fa-cube"></span> These could be EPs for the
                           <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
                         <ul>
                           <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code></li>
@@ -2363,7 +2361,7 @@ Enter side 1:
                       </popover>
                       <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
+                        <p><span class="fas fa-cube"></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
                         <p>Example EPs for <code>s</code>:</p>
                         <ul>
                           <li>zero-length strings</li>
@@ -2379,7 +2377,7 @@ Enter side 1:
                       </tip-box>
                       <p>An EP may not have adjacent values.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method <code>isPrime(int i): boolean</code> that returns true if <code>i</code> is a prime number.</p>
+                        <p><span class="fas fa-cube"></span> Consider the method <code>isPrime(int i): boolean</code> that returns true if <code>i</code> is a prime number.</p>
                         <p>EPs for <code>i</code>:</p>
                         <ul>
                           <li>prime numbers</li>
@@ -2388,19 +2386,20 @@ Enter side 1:
                       </tip-box>
                       <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code>                          is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+                        <p><span class="fas fa-cube"></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>).
+                          In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
                       </tip-box>
                       <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’
                         the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
+                        <p><span class="fas fa-cube"></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
                         <ul>
                           <li>[1 … 12] : the range that produces <code>true</code></li>
                           <li>[all other integers] : the range that produces <code>false</code></li>
                         </ul>
                       </tip-box>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some more examples:</p>
+                        <p><span class="fas fa-cube"></span> Some more examples:</p>
                         <table class="table">
                           <tr>
                             <th>Specification</th>
@@ -2494,7 +2493,7 @@ Enter side 1:
                           implemented)</li>
                       </ul>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider this method in the <code>DataStack</code> class:
+                        <p><span class="fas fa-cube"></span> Consider this method in the <code>DataStack</code> class:
                           <code>push(Object o): boolean</code></p>
                         <ul>
                           <li>Adds o to the top of the stack if the stack is not full.</li>
@@ -2514,7 +2513,7 @@ Enter side 1:
                         </ul>
                       </tip-box>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
+                        <p><span class="fas fa-cube"></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
                         <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
                         <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another
                           participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
@@ -2528,8 +2527,8 @@ Enter side 1:
                         </ul>
                       </tip-box>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions
-                          in <strong>bold</strong> represent valid inputs.</p>
+                        <p><span class="fas fa-cube"></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent
+                          valid inputs.</p>
                         <ul>
                           <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
                           <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(we assume a minefield size of WxH)</span></li>
@@ -2581,8 +2580,7 @@ Enter side 1:
                       <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising,
                         as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence
-                          partitions.</p>
+                        <p><span class="fas fa-cube"></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
                       </tip-box>
                       <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
                       <p>Boundary values are sometimes called <em>corner cases</em>.</p>
@@ -2635,7 +2633,7 @@ Enter side 1:
                       <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other
                         factors, such as the cost of each test case.</p>
                       <tip-box>
-                        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Some examples:</p>
+                        <p><span class="fas fa-cube"></span> Some examples:</p>
                         <table class="table">
                           <tr>
                             <th>Equivalence partition</th>

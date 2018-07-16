@@ -12,8 +12,8 @@
     <div>
       <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong></p>
       <tip-box>
-        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code> class so that the <code>EvaluationReport</code> class
-          does not have to duplicate code that is already implemented in the <code>Report</code> class. The <code>EvaluationReport</code> can inherit the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em>          <code>Report</code>.</p>
+        <p><span class="fas fa-cube"></span> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code> class so that the <code>EvaluationReport</code> class does not have to duplicate code
+          that is already implemented in the <code>Report</code> class. The <code>EvaluationReport</code> can inherit the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em> <code>Report</code>.</p>
       </tip-box>
       <ul>
         <li>Other names for Base class: <em>Parent</em> class, <em>Super</em> class</li>
@@ -22,14 +22,16 @@
       <p><strong>A super class is said to be <em>more general</em> than the sub class.</strong> Conversely, a sub class is said to be more <em>specialized</em> than the super class.</p>
       <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
       <tip-box>
-        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code>          because of the need to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a super class (to contain the code common to men and woment) and let <code>Man</code>          and <code>Woman</code> inherit from <code>Person</code> class.</p>
+        <p><span class="fas fa-cube"></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish
+          between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a super class (to contain the code common to men and woment) and let <code>Man</code> and <code>Woman</code> inherit
+          from <code>Person</code> class.</p>
       </tip-box>
       <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
       <tip-box type="info">
         <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
       </tip-box>
       <tip-box>
-        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> To continue the previous example,</p>
+        <p><span class="fas fa-cube"></span> To continue the previous example,</p>
         <ul>
           <li><code>Woman</code> <em>is a</em> <code>Person</code></li>
           <li><code>Man</code> <em>is a</em> <code>Person</code></li>
@@ -37,14 +39,13 @@
       </tip-box>
       <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
       <tip-box>
-        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>. Note that the
-          triangle points to the parent class.</p>
+        <p><span class="fas fa-cube"></span> Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>. Note that the triangle points to the parent class.</p>
         <img src="/website-base/book/oop/inheritance/what/images/inheritanceTreesExamples.png" width="500">
         <p></p>
       </tip-box>
       <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g., Java, C#).</p>
       <tip-box>
-        <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.</p>
+        <p><span class="fas fa-cube"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.</p>
       </tip-box>
       <h5 id="implementing-inheritance"><big>Implementing inheritance</big></h5>
       <tabs>
