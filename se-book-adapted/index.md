@@ -10,18 +10,9 @@ siteNav: se-book-adapted-sitenav.md
 
 <div class="website-content" id="all">
 
-## Software Engineering for Self-Directed Learners 
+## Software Engineering for Self-Directed Learners <small><small><small><span class='badge badge-pill badge-success'>{{ module }}/T edition - 2018</span></small></small></small>
 
-<big><span class='badge'>{{ module }}/T edition - 2018</span></big>
-
-<br/><big>
-
-**About this Book**
-</big>
-
-* [Acknowledgements]({{baseUrl}}/book/about/acknowledgements.html)
-* [How to use this book]({{baseUrl}}/book/about/usage.html)
-* [All chapters as one printer-friendly page (huge file!) {{ glyphicon_print }}]({{baseUrl}}/se-book-adapted/print.html)
+<a href="{{baseUrl}}/book/about/acknowledgements.html" target="_blank">Acknowledgements</a> | <a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank"><md>All chapters as one **printer-friendly page** (huge file!) {{ glyphicon_print }}</md></a>
 
 
 {% import "se-book-adapted/config.njk" as config with context %}
@@ -42,7 +33,7 @@ siteNav: se-book-adapted-sitenav.md
 
 
 {% macro show_section(section) %}
-<br/><big>
+<big>
 
 **{{ section.heading}}**
 </big>
@@ -56,7 +47,7 @@ siteNav: se-book-adapted-sitenav.md
   {{ show_section(section) }}
 {% endfor %}
 
-<br/><big>
+<big>
 
 **Supplementary**</big>
 
