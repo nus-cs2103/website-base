@@ -37,7 +37,7 @@ Use the search box in the top navigation bar to search for keywords in the websi
 
 ### Printing Textbook Content
 
-Printer-friendly version %%(indicated by {{glyphicon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
+Printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
 
 ### Making this Website Better
 

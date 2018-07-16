@@ -12,7 +12,7 @@ siteNav: se-book-adapted-sitenav.md
 
 ## Software Engineering for Self-Directed Learners <small><small><small><span class='badge badge-pill badge-success'>{{ module }}/T edition - 2018</span></small></small></small>
 
-<a href="{{baseUrl}}/book/about/acknowledgements.html" target="_blank">Acknowledgements</a> | <a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank"><md>All chapters as one **printer-friendly page** (huge file!) {{ glyphicon_print }}</md></a>
+<a href="{{baseUrl}}/book/about/acknowledgements.html" target="_blank">Acknowledgements</a> | <a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank"><md>All chapters as one **printer-friendly page** (huge file!) {{ icon_print }}</md></a>
 
 
 {% import "se-book-adapted/config.njk" as config with context %}
@@ -21,9 +21,9 @@ siteNav: se-book-adapted-sitenav.md
 {% macro show_chapter(section, chapter) %}
 
 * [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
-  <trigger for="pop:{{ chapter.name }}-preview">{{glyphicon_eye_open}}</trigger> [{{glyphicon_print}}]({{baseUrl}}/se-book-adapted/chapters-printable/{{ chapter.name }}-printable.html)
+  <trigger for="pop:{{ chapter.name }}-preview">{{icon_preview}}</trigger> [{{icon_print}}]({{baseUrl}}/se-book-adapted/chapters-printable/{{ chapter.name }}-printable.html)
 
-<popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} {{glyphicon_eye_open}}" placement="right">
+<popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} {{icon_preview}}" placement="right">
   <div slot="content">
     <include src="../book/{{chapter.name}}/preview.md" />
   </div>

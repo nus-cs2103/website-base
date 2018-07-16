@@ -12,7 +12,7 @@ footer: footer.md
 
 # <big>**Software Engineering for Self-Directed Learners**</big>
 
-<span id="printable-version-description"><small>%%{{ glyphicon_print }} This is a **printer-friendly** version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.%%</small></span>
+<span id="printable-version-description"><small>%%{{ icon_print }} This is a **printer-friendly** version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.%%</small></span>
 
 {% macro show_section(section) %}
 

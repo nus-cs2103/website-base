@@ -4,7 +4,7 @@
   
   <dropdown text="Textbook" class="nav-link">
     <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="dropdown-item">{{glyphicon_th_list}} Table of Contents</a></li>
-    <li><a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank" class="dropdown-item">{{glyphicon_print}} Printer-Friendly(ish)</a></li>
+    <li><a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank" class="dropdown-item">{{icon_print}} Printer-Friendly(ish)</a></li>
   </dropdown> 
   
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link">Admin</a></li>
