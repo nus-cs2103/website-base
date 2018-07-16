@@ -1,6 +1,6 @@
 {% import "common/macros.njk" as macros with context %}
 
-%%Given below are some _setting up_ tasks you can do as you wait for the module to start:%% 
+%%Given below are some preparatory tasks you can do as you wait for the module to start:%% 
 
 <span class="activity-desc">Getting ready for the module:<span>
 
@@ -75,13 +75,8 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 
 {% set admin_sections = [
   {heading: "FAQ: Where is everything?", priority: "1", source: "appendixC-faq.md#admin-faq-whereIsEverything"},
-  {heading: "Project: Overview", priority: "1", source: "project-overview.md#main"},
-  {heading: "Project: The Product", priority: "1", source: "project-product.md#main"},
-  {heading: "Project: Scope", priority: "1", source: "project-scope.md#main"},
-  {heading: "Text Books", priority: "2", source: "textBooks.md#main"},
   {heading: "Programming Language", priority: "2", source: "programming-languages.md#main"},
-  {heading: "Project: Constraints", priority: "2", source: "project-constraints.md#main"},
-  {heading: "Project: Timeline", priority: "2", source: "project-timeline.md#main"},
+  {heading: "Text Books", priority: "2", source: "textBooks.md#main"},
   {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103Vscs2103t"},
   {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
   {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"}]

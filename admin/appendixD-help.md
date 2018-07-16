@@ -3,23 +3,24 @@
 
 # Appendix D: How to get help in {{ module }}/T
 
+%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _refactoring_ and _rewriting_?%%
+
 <img src="{{baseUrl}}/admin/images/how to get help.png" width="200px"><br/>
 
 
 **We want to move you away from 'hand holding' and make you learn how to solve problems on your own.** This is a vital survival skill in the industry and it needs practice.
 
-Whether it is a technical problem %%(e.g. error when using the IDE)%% or a doubt about a concept %%(e.g. what is the difference between scripted testing and exploratory testing?)&nbsp;%% **we the teaching team are happy to work _with_ you when you look for a solution/answer, but we do not do it _for_ you.** We discourage unconditional direct help from tutors because we want you to learn to help yourself. Yes, we believe in ‘tough love’:stuck_out_tongue_closed_eyes:.
+Whether it is a technical problem %%(e.g. error when using the IDE)%% or a doubt about a concept %%(e.g. what is the difference between scripted testing and exploratory testing?)&nbsp;%% **the teaching team is happy to work _with_ you when you look for a solution/answer, but we do not do it _for_ you.** We discourage unconditional direct help from tutors because we want you to learn to help yourself. Yes, we believe in ‘tough love’:stuck_out_tongue_closed_eyes:.
 
 The question you should always ask yourself is, 'how do I solve this problem if the lecturer/tutors are not around to help me?' 
 
-<img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/>
+<img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/><br>
 
-Note: This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _refactoring_ and _rewriting_?
+<big>{{ icon_dislike }} **What not to do:**</big> 
 
-What not to do: 
+* When faced with a technical problem or a doubt about a concept, don'f fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
 
-When faced with a technical problem or a doubt about a concept, don'f fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
-Instead, here are some things you can do:
+<big>{{ icon_like }} **What to do:**</big>
 
 * **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
 

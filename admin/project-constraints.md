@@ -15,7 +15,7 @@ Your project should comply with the following constraints.
 
 * **Constraint-CLI**: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven. 
   * Mouse actions should have keyboard alternatives. 
-  * Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse or key combinations.
+  * Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.
   * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. %%&nbsp;Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.%%
   * :exclamation: While we don't prohibit <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading. 
 
@@ -27,7 +27,8 @@ Your project should comply with the following constraints.
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/> 
   %%**Reason:** For you to practice using OOP in a non-trivial project.%%  
     
-* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data. %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module }} module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
+* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br/>
+  %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module }} module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
 
 * **Constraint-Platform-Independent**: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
   %%**Reason:** Peer testers should be able to use any of these platforms.%%

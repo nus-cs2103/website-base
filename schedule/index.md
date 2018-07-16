@@ -567,13 +567,13 @@ footer: footer.md
 
 
 {% macro show_week_schedule(week_num, path="") %}
+{{ show_week_todos(week_num, path) }}
 
 {# omit outcomes if it is the first week #}
 {% if week_num != "1" %} 
   {{ show_week_outcomes(week_num, path) }}
 {% endif %}
 
-{{ show_week_todos(week_num, path) }}
 {{ show_week_tutorial(week_num, path) }}
 {{ show_week_lecture(week_num, path) }}
 

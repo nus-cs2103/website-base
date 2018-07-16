@@ -60,7 +60,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 ### Policy on tech help
 
-**Do not expect your project tutor to code or debug for you**. We strongly discourage tutors from giving technical help directly to their own teams because we want to train you in troubleshooting tech problems yourselves. Allowing direct tech help from tutors transfers the troubleshooting responsibility to tutors.
+**Do not expect your tutor to code or debug for you**. We strongly discourage tutors from giving technical help directly to their own teams because we want to train you in troubleshooting tech problems yourselves. Allowing direct tech help from tutors transfers the troubleshooting responsibility to tutors.
 
 **It is ok to ask for help from classmates even for assignments**, even from other teams, as long as you don't copy from others and submit as your own. It doesn't matter who is helping you as long as you are learning from it.
 

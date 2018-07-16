@@ -9,7 +9,7 @@
 
 ### Where is everything? 
 
-<p class="lead">The Schedule page present all you need to know in chronological order while the other pages have some of the same content organized by topic.
+<p class="lead">The Schedule page presents all you need to know in chronological order while the other pages have some of the same content organized by topic.
 </p>
 
 The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the [**Admin** page ]({{baseUrl}}/admin/index.html) and the [**Textbook** page]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title. 
