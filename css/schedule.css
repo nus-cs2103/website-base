@@ -1,3 +1,10 @@
+.website-content {
+    margin: 12px auto 40px auto;
+    max-width: 900px;
+    overflow: hidden;
+    text-align:justify
+}
+
 .panel-seamless {
     padding-left: 10px;
 }
@@ -9,21 +16,21 @@
 .activity-type {
     background: linear-gradient(to right, #4267b2, #4267b2 ,#4267b2 ,#4267b2 , white);
     color: white;
-    font-size: 180%;
+    font-size: 160%;
     width: 90%;
     padding: 3px;
 }
 
 .activity-desc {
     color: #4267b2;
-    font-size: 140%;
+    font-size: 120%;
     font-weight: bold;
 }
 
 .week {
     background: linear-gradient(to right, #20375f, #20375f ,#20375f ,#20375f , white);
     color: white;
-    font-size: 200%;
+    font-size: 180%;
     width: 90%;
     padding: 5px;
     font-weight: bold;
@@ -32,7 +39,7 @@
 .week-future {
     background: linear-gradient(to right, #ababab, #ababab ,#ababab ,#ababab , white);
     color: white;
-    font-size: 150%;
+    font-size: 130%;
     width: 90%;
     padding: 5px;
 }
@@ -40,7 +47,7 @@
 .week-past {
     background: linear-gradient(to right, #c0cbe6, #c0cbe6 ,#c0cbe6 ,#c0cbe6 , white);
     color: white;
-    font-size: 150%;
+    font-size: 130%;
     width: 90%;
     padding: 5px;
 }
