@@ -48,6 +48,8 @@
 <span id="icon_slides">{{ far_images | safe }}</span>
 <span id="icon_video">{{ glyphicon_facetime_video | safe }}</span>
 
+<span id="icon_repo">{{ fas_code_branch | safe }}</span>
+
 <span id="good"><font color="green">**{{ icon_like}} Good**</font></span>
 <span id="bad"><font color="red">**{{ icon_dislike}} Bad**</font></span>
 
