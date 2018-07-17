@@ -2954,3 +2954,8 @@ Error while preprocessing 'C:\repos\nus-cs2103\website-base\schedule\week5\index
 2018-07-16T11:17:22.511Z - info: Rebuilding 5 pages
 2018-07-16T11:17:37.895Z - info: Pages rebuilt
 2018-07-16T11:17:37.911Z - info: Site data built
+2018-07-16T11:37:07.759Z - info: Pages built
+2018-07-16T11:37:07.968Z - info: Site data built
+2018-07-16T11:37:07.969Z - info: Build success!
+2018-07-16T11:37:07.969Z - info: Generate Site durationMs=61124
+2018-07-16T11:38:20.535Z - info: Deployed!
