@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Appendix D: How to get help in {{ module }}/T
+# Appendix D: Getting help in this module
 
 %%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _refactoring_ and _rewriting_?%%
 

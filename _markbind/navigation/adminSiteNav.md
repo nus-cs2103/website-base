@@ -1,4 +1,6 @@
 {% from "common/admin.njk" import topics with context %}
+{% from "common/macros.njk" import  show_stars_in_nav with context %}
+
 
 <navigation>
 
@@ -8,9 +10,9 @@
 {% set decoration = "==" if topic.highlight else "" %} 
 {% set title = decoration + topic.title + decoration %} 
 {% if topic.level == 1%} 
-* [{{ title }}]({{ topic.link }})
+* [{{ title }}]({{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}
 {% elif topic.level == 2 %}
-* [%%→%% {{ title }}]({{ topic.link }})
+* [%%→%% <small>{{ title }}]({{ topic.link }})</small> {{ show_stars_in_nav(topic.priority) }}
 {% elif topic.level == 0 %}
 * %%{{ title }}%%
 {% endif %}
