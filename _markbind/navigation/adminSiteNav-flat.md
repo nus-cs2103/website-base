@@ -1,71 +1,17 @@
+{% from "common/admin.njk" import topics with context %}
+
 <navigation>
-* [Module Overview](#admin-moduleOverview-anchor)
-* [==Using this Website==](#admin-usingThisWebsite-anchor)
-* [Module Expectations](#admin-moduleExpectations-anchor)
-* Module Structure
-  * [Weekly Schedule](#admin-weeklySchedule-anchor)
-  * [Learning Outcomes](#admin-learning-outcomes-anchor)
-  * [Lectures](#admin-lectures-anchor)
-  * [Tutorials](#admin-tutorials-anchor)
-* [Instructors](#admin-instructors-anchor)
-* [Text Books](#admin-textbooks-anchor)
-* [Programming Language](#admin-programmingLanguages-anchor)
-* Project
-  * [Overview](#admin-project-overview-anchor)
-  * [The product](#admin-project-product-anchor)
-  * [Scope](#admin-project-scope-anchor)
-  * [Constraints](#admin-project-constraints-anchor)
-  * [Forming Teams](#admin-project-teams-anchor)
-  * [Timeline](#admin-project-timeline-anchor)
-  * [inception [week 3]](#admin-project-w03-inception-anchor)
-  * [mid-v1.0 [week 4]](#admin-project-mid-v10-anchor)
-  * [v1.0 [week 5]](#admin-project-v10-anchor)
-  * [mid-v1.1 [week 6]](#admin-project-mid-v11-anchor)
-  * [v1.1 [week 7]](#admin-project-v11-anchor)
-  * [mid-v1.2 [week 8]](#admin-project-mid-v12-anchor)
-  * [v1.2 [week 9]](#admin-project-v12-anchor)
-  * [mid-v1.3 [week 10]](#admin-project-mid-v13-anchor)
-  * [v1.3 [week 11]](#admin-project-v13-anchor)
-  * [mid-v1.4 [week 12]](#admin-project-mid-v14-anchor)
-  * [v1.4 [week 13]](#admin-project-v14-anchor)
-  * [Deliverables](#admin-project-deliverables-anchor)
-  * [Supervision](#admin-project-supervision-anchor)
-  * [Assessment](#admin-project-assessment-anchor)
-* [Peer Evaluations](#admin-peerEvaluations-anchor)
-* [Tools](#admin-tools-anchor)
-* [Grade Breakdown](#admin-gradeBreakdown-anchor)
-* [Exams](#admin-exams-anchor)
-* [Participation Marks](#admin-participation-anchor)
-* [Appendix A: Module Principles](#admin-appendixA-principles-anchor)
-* Appendix B: Module Policies
-  * [Policy on following instructions](#policy-followingInstructions)
-  * [Policy on grading smaller/larger teams](#policy-teamSize)
-  * [Policy on project work distribution](#policy-workDistribution)
-  * [Policy on absence due to valid reasons (e.g. MC, LOA, University events)](#policy-validAbsences)
-  * [Policy on email response time](#policy-responseTime)
-  * [Policy on tech help](#policy-techHelp)
-  * [Policy on publishing submissions](#policy-publishingSubmissions)
-  * [Policy on plagiarism](#policy-plagiarism)
-  * [Policy on reuse](#policy-reuse)
-  * [Policy on help from outsiders](#policy-outsiderHelp)
-  * [Policy on suggested length for submissions](#policy-submissionLength)
-* Appendix C: Frequently Asked Questions
-  * [Where is everything?](#admin-faq-whereIsEverything)
-  * [What are the differences between {{ module }} and {{ module }}T?](#admin-faq-{{ module | lower }}Vs{{ module | lower }}t)
-  * [Why the workload is so high?](#admin-faq-highWorkload)
-  * [What are the extra requirements to get an A+?](#admin-faq-aPlus)
-  * [Why so much bean counting?](#admin-faq-beanCounting)
-  * [Why you force me to visit a separate website instead of using IVLE?](#admin-faq-separateWebsite)
-  * [Why slides are not detailed?](#admin-faq-slideFormat)
-  * [Why so much self-study?](#admin-faq-selfStudy)
-  * [What if I don’t carry around a laptop?](#admin-faq-noLaptop)
-  * [Why very narrow project scope?](#admin-faq-narrowScope)
-  * [Why project requirements are so vague?](#admin-faq-vagueRequirements)
-  * [Why I’m not allowed to use my favorite tool/framework/language etc.?](#admin-faq-favoriteTool)
-  * [Why so many submissions?](#admin-faq-manySubmissions)
-  * [Why aren't we allowed to build a new product from scratch?](#admin-faq-fromScratch)
-  * [Why submission requirements differ between {{ module }}T and CS2101?](#admin-faq-cs2101Differences)
-* [Appendix D: How to get help in {{ module }}/T](#admin-appendixD-help)
-* [Appendix E: Using GitHub Project Hosting](#admin-appendixE-github)
-* [Appendix F: Handling teamwork issues](#admin-appendixF-teamworkIssues)
+
+{% for topic in topics %} 
+{% set decoration = "==" if topic.highlight else "" %} 
+{% set title = decoration + topic.title + decoration %} 
+{% if topic.level == 1%} 
+* [{{ title }}](#admin-{{ topic.id }}-anchor)
+{% elif topic.level == 2 %}
+  * [{{ title }}](#admin-{{ topic.id }}-anchor)
+{% elif topic.level == 0 %}
+* {{ title }}
+{% endif %}
+{% endfor %}
+
 </navigation>

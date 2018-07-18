@@ -30,4 +30,4 @@ This module follows the ==[OSS-NUS Java coding standard]({{java_coding_standard}
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("programming-languages", show_main_text) }}
+{{ show_admin_page("programmingLanguages", show_main_text) }}

@@ -17,7 +17,7 @@
 * Enhanced AB1-AB3: 1 mark each
 
 
-<panel src="peer-evaluations.md#peerEvaluation-criteria" header="Admin {{ icon_embedding }} Peer Evaluations → Criteria" minimized />
+<panel src="peerEvaluations.md#peerEvaluation-criteria" header="Admin {{ icon_embedding }} Peer Evaluations → Criteria" minimized />
   
 </div>
 {% endmacro %}

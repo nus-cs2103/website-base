@@ -17,7 +17,7 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
 * Try to stay within the procedural (not OOP) style of the code base. %%Reason: in this LO, we try to stretch ourselves to the limits of the procedural approach%%.
 * Update all relevant tests.
 * [Optional] Update all relevant documentation.
-* [Optional] Try to follow [our coding standard]({{baseUrl}}/admin/programming-languages.html#java-coding-standard) in your new code.
+* [Optional] Try to follow [our coding standard]({{baseUrl}}/admin/programmingLanguages.html#java-coding-standard) in your new code.
 * [Optional] Fork address [AddressBook - Level1]({{module_org}}/addressbook-level1) to your GitHub account and push your changes to your fork.
 
   <tip-box type="tip">

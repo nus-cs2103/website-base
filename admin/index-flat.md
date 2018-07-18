@@ -36,8 +36,8 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
-<div id="admin-learning-outcomes-anchor"></div>
-<div id="admin-learning-outcomes">
+<div id="admin-learningOutcomes-anchor"></div>
+<div id="admin-learningOutcomes">
   <include src="learningOutcomes.md#main" />
 </div>
 
@@ -68,7 +68,7 @@ siteNav: adminSiteNav-flat.md
 
 <div id="admin-programmingLanguages-anchor"></div>
 <div id="admin-programmingLanguages">
-  <include src="programming-languages.md#main" />
+  <include src="programmingLanguages.md#main" />
 </div>
 
 
@@ -205,7 +205,7 @@ siteNav: adminSiteNav-flat.md
 
 <div id="admin-peerEvaluations-anchor"></div>
 <div id="admin-peerEvaluations">
-<include src="peer-evaluations.md#main" />
+<include src="peerEvaluations.md#main" />
 </div>
 
 

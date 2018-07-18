@@ -3,7 +3,7 @@
 {% set admin_sections = [
   {heading: "Project: Assessment", priority: "1", source: "project-assessment.md#main"},
   {heading: "Policy on following instructions", priority: "1", source: "appendixB-policies.md#policy-followingInstructions"},
-  {heading: "Peer Evaluations", priority: "2", source: "peer-evaluations.md#main"},
+  {heading: "Peer Evaluations", priority: "2", source: "peerEvaluations.md#main"},
   {heading: "Grade Breakdown", priority: "2", source: "gradeBreakdown.md#main"},
   {heading: "Participation Marks", priority: "2", source: "participation.md#main"},
   {heading: "Project: Supervision", priority: "3", source: "project-supervision.md#main"},

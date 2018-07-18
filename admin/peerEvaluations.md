@@ -63,4 +63,4 @@ The final peer evaluation (in week 13) is graded. In that peer-evaluation you wi
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("peer-evaluations", show_main_text) }}
+{{ show_admin_page("peerEvaluations", show_main_text) }}
