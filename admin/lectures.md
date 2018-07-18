@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Lectures
+## Lectures
 
 <img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
 

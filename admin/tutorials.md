@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Tutorials
+## Tutorials
 
 <panel type="seamless" header="### Tutorial Timetable" expanded >
 <div id="tutorialTimetable">

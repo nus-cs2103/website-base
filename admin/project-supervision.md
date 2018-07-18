@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Project → Supervision
+## Project → Supervision
 
 Your tutor will serve as your _project supervisor_ too.
 

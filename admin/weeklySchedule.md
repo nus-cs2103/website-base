@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Weekly Schedule
+## Weekly Schedule
 
 :calendar: **[Friday (previous week)]**<br>
 

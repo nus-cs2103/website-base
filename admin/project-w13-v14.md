@@ -104,7 +104,7 @@ Team/Individual Item | Name format | Upload to
 
 **Time/venue:** week 13 lecture slot
 
-
+</div>
 </div>
 {% endmacro %}
 

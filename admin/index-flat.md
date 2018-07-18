@@ -13,265 +13,34 @@ siteNav: adminSiteNav-flat.md
 
 {% from "common/admin.njk" import topics with context %}
 
+
+{% macro show_hr()%} 
+<hr style="border-width: 3px; background-color: #f3ccff">
+{% endmacro %}
+
+
+{% macro show_thin_hr()%} 
+<hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+{% endmacro %}
+
+
 {% for topic in topics %} 
-{% if topic.level == 1 %} 
+{% if topic.level in [1,2] %} 
+{% if (not loop.first) and (topic.level == 1)%} 
+{{ show_hr() }}
+{% elif (not loop.first) and (topic.level == 2)%}
+{{ show_thin_hr() }}
+{% endif %}
 <div id="admin-{{ topic.id }}-anchor"></div>
 <div id="admin-{{ topic.id }}">
   <include src="{{ topic.id }}.md#main" />
 </div>
-{% elif topic.level == 2 %}
-  
+<br>
 {% elif topic.level == 0 %}
+{{ show_hr() }}
+
 # {{ topic.title }}
 {% endif %}
 {% endfor %}
-
-
-<div id="admin-moduleOverview-anchor"></div>
-<div id="admin-moduleOverview">
-  <include src="moduleOverview.md#main" />
-</div>
-
-
-<div id="admin-usingThisWebsite-anchor"></div>
-<div id="admin-usingThisWebsite">
-  <include src="usingThisWebsite.md#main" />
-</div>
-
-
-<div id="admin-moduleExpectations-anchor"></div>
-<div id="admin-moduleExpectations">
-  <include src="moduleExpectations.md#main" />
-</div>
-
-
-<div id="admin-weeklySchedule-anchor"></div>
-<div id="admin-weeklySchedule">
-  <include src="weeklySchedule.md#main" />
-</div>
-
-
-<div id="admin-learningOutcomes-anchor"></div>
-<div id="admin-learningOutcomes">
-  <include src="learningOutcomes.md#main" />
-</div>
-
-
-<div id="admin-lectures-anchor"></div>
-<div id="admin-lectures">
-  <include src="lectures.md#main" />
-</div>
-
-
-<div id="admin-tutorials-anchor"></div>
-<div id="admin-tutorials">
-  <include src="tutorials.md#main" />
-</div>
-
-
-<div id="admin-instructors-anchor"></div>
-<div id="admin-instructors">
-  <include src="instructors.md#main" />
-</div>
-
-
-<div id="admin-textbooks-anchor"></div>
-<div id="admin-textbooks">
-  <include src="textbooks.md#main" />
-</div>
-
-
-<div id="admin-programmingLanguages-anchor"></div>
-<div id="admin-programmingLanguages">
-  <include src="programmingLanguages.md#main" />
-</div>
-
-
-<div id="admin-project-overview-anchor"></div>
-<div id="admin-project-overview">
-<include src="project-overview.md#main" />
-</div>
-
-
-<div id="admin-project-product-anchor"></div>
-<div id="admin-project-product">
-<include src="project-product.md#main" />
-</div>
-
-
-<div id="admin-project-scope-anchor"></div>
-<div id="admin-project-scope">
-<include src="project-scope.md#main" />
-</div>
-
-
-<div id="admin-project-constraints-anchor"></div>
-<div id="admin-project-constraints">
-<include src="project-constraints.md#main" />
-</div>
-
-
-<div id="admin-project-teams-anchor"></div>
-<div id="admin-project-teams">
-<include src="project-teams.md#main" />
-</div>
-
-
-<div id="admin-project-timeline-anchor"></div>
-<div id="admin-project-timeline">
-<include src="project-timeline.md#main" />
-</div>
-
-
-<div id="admin-project-w03-inception-anchor"></div>
-<include src="project-w03-inception.md#title" />
-<div id="admin-project-w03-inception">
-<include src="project-w03-inception.md#body" />
-</div>
-
-
-<div id="admin-project-mid-v10-anchor"></div>
-<include src="project-w04-mid-v10.md#title" />
-<div id="admin-project-mid-v10">
-<include src="project-w04-mid-v10.md#body" />
-</div>
-
-
-<div id="admin-project-v10-anchor"></div>
-<include src="project-w05-v10.md#title" />
-<div id="admin-project-v10">
-<include src="project-w05-v10.md#body" />
-</div>
-
-
-<div id="admin-project-mid-v11-anchor"></div>
-<include src="project-w06-mid-v11.md#title" />
-<div id="admin-project-mid-v11">
-<include src="project-w06-mid-v11.md#body" />
-</div>
-
-
-<div id="admin-project-v11-anchor"></div>
-<include src="project-w07-v11.md#title" />
-<div id="admin-project-v11">
-<include src="project-w07-v11.md#body" />
-</div>
-
-
-<div id="admin-project-mid-v12-anchor"></div>
-<include src="project-w08-mid-v12.md#title" />
-<div id="admin-project-mid-v12">
-<include src="project-w08-mid-v12.md#body" />
-</div>
-
-
-<div id="admin-project-v12-anchor"></div>
-<include src="project-w09-v12.md#title" />
-<div id="admin-project-v12">
-<include src="project-w09-v12.md#body" />
-</div>
-
-
-<div id="admin-project-mid-v13-anchor"></div>
-<include src="project-w10-mid-v13.md#title" />
-<div id="admin-project-mid-v13">
-<include src="project-w10-mid-v13.md#body" />
-</div>
-
-
-<div id="admin-project-v13-anchor"></div>
-<include src="project-w11-v13.md#title" />
-<div id="admin-project-v13">
-<include src="project-w11-v13.md#body" />
-</div>
-
-
-<div id="admin-project-mid-v14-anchor"></div>
-<include src="project-w12-mid-v14.md#title" />
-<div id="admin-project-mid-v14">
-<include src="project-w12-mid-v14.md#body" />
-</div>
-
-
-<div id="admin-project-v14-anchor"></div>
-<include src="project-w13-v14.md#title" />
-<div id="admin-project-v14">
-<include src="project-w13-v14.md#body" />
-</div>
-
-
-<div id="admin-project-deliverables-anchor"></div>
-<div id="admin-project-deliverables">
-<include src="project-deliverables.md#main" />
-</div>
-
-
-<div id="admin-project-supervision-anchor"></div>
-<div id="admin-project-supervision">
-<include src="project-supervision.md#main" />
-</div>
-
-
-<div id="admin-project-assessment-anchor"></div>
-<div id="admin-project-assessment">
-<include src="project-assessment.md#main" />
-</div>
-
-
-<div id="admin-peerEvaluations-anchor"></div>
-<div id="admin-peerEvaluations">
-<include src="peerEvaluations.md#main" />
-</div>
-
-
-<div id="admin-tools-anchor"></div>
-<div id="admin-tools">
-<include src="tools.md#main" />
-</div>
-
-
-<div id="admin-gradeBreakdown-anchor"></div>
-<div id="admin-gradeBreakdown">
-<include src="gradeBreakdown.md#main" /></div>
-
-
-<div id="admin-exams-anchor"></div>
-<div id="admin-exams">
-<include src="exams.md#main" /></div>
-
-
-<div id="admin-participation-anchor"></div>
-<div id="admin-participation">
-<include src="participation.md#main" /></div>
-
-
-<div id="admin-appendixA-principles-anchor"></div>
-<div id="admin-appendixA-principles">
-<include src="appendixA-principles.md#main" /></div>
-
-
-<div id="admin-appendixB-policies-anchor"></div>
-<div id="admin-appendixB-policies">
-<include src="appendixB-policies.md#main" /></div>
-
-
-<div id="admin-appendixC-faq-anchor"></div>
-<div id="admin-appendixC-faq">
-<include src="appendixC-faq.md#main" /></div>
-
-
-<div id="admin-appendixD-help-anchor"></div>
-<div id="admin-appendixD-help">
-<include src="appendixD-help.md#main" /></div>
-
-
-<div id="admin-appendixE-github-anchor"></div>
-<div id="admin-appendixE-github">
-<include src="appendixE-gitHub.md#main" /></div>
-
-
-<div id="admin-appendixF-teamworkIssues-anchor"></div>
-<div id="admin-appendixF-teamworkIssues">
-<include src="appendixF-teamworkIssues.md#main" /></div>
 
 </div>
