@@ -35,18 +35,24 @@ siteNav: adminSiteNav.md
 <span style="float:right"><md>[{{ topic.title }} {{ glyphicon_chevron_right }}]({{ topic.link }})</md></span>
 {%- endmacro %}
 
-{# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. Assumes first topic is not a level 0 topic #}
+
+{# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. #}
 {% macro show_next_previous(topics, current_topic_id) -%}
+
+{% set linked_topics = [] %}
 {% for topic in topics %}
+{% if topic.level in [1,2] %}
+{% set linked_topics = (linked_topics.push(topic), linked_topics) %}
+{% endif %}
+{% endfor %}
+
+{% for topic in linked_topics %}
 {% if topic.id == current_topic_id %}
   {% if not loop.first %}
-    {# jump two if the topic above is a level 0 topic #}
-    {% set decrement = 2 if (topics[loop.index0 - 1].level == 0) else 1 %}
-    {% set  previous_topic = topics[loop.index0 - decrement] %}
+    {% set  previous_topic = linked_topics[loop.index0 - 1] %}
   {% endif %}
   {% if not loop.last %}
-    {% set increment = 2 if (topics[loop.index0 + 1].level == 0) else 1 %}
-    {% set  next_topic = topics[loop.index0 + increment] %}
+    {% set  next_topic = linked_topics[loop.index0 + 1] %}
   {% endif %}
 {% if loop.first %}
 {{ show_next(next_topic) }}
