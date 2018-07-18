@@ -642,22 +642,6 @@
     },
     {
       "headings": {
-        "using-this-book": "Using This Book",
-        "browser-compatibility": "Browser Compatibility",
-        "information-layers": "Information Layers",
-        "conventions-used": "Conventions Used",
-        "shorthand-headings": "Shorthand Headings",
-        "boxed-text-styles": "Boxed-Text Styles",
-        "meaning-of-icons": "Meaning of Icons",
-        "searching": "Searching",
-        "saving-as-pdf-files": "Saving as PDF Files",
-        "printing": "Printing"
-      },
-      "title": "About: Usage",
-      "src": "book/about/usage.md"
-    },
-    {
-      "headings": {
         "software-engineering-for-self-directed-learners-cs2103t-edition-2018": "Software Engineering for Self-Directed Learners CS2103/T edition - 2018"
       },
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",

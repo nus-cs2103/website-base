@@ -4746,7 +4746,7 @@ studentList.addUi(statusUi);
           <div v-closeable="" alt="single-level design example">
             <tip-box>
               <p><span class="fas fa-cube"></span> This class diagram of <a href="https://se-edu.github.io/addressbook-level3">se-edu/addressbook-level3</a> depicts the design of the entire software.</p>
-              <img src="https://se-edu.github.io/addressbook-level3/doc/images/mainClassDiagram.png" width="600"></tip-box>
+              <img src="https://se-edu.github.io/addressbook-level3/images/mainClassDiagram.png" width="600"></tip-box>
           </div>
           <p><strong>Design of bigger systems needs to be done/shown at multiple levels.</strong></p>
           <div v-closeable="" alt="multi-level design example">
@@ -4965,7 +4965,9 @@ studentList.addUi(statusUi);
                     
                       <td>
                         <p>
-                          <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
@@ -4992,7 +4994,9 @@ studentList.addUi(statusUi);
                     
                       <td valign="top">
                         <p>
-                          <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
@@ -5022,7 +5026,9 @@ studentList.addUi(statusUi);
                     
                       <td>
                         <p>
-                          <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
@@ -5044,7 +5050,9 @@ studentList.addUi(statusUi);
                     
                       <td valign="top">
                         <p>
-                          <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
@@ -5121,12 +5129,16 @@ studentList.addUi(statusUi);
                 <tip-box>
                   <p><span class="fas fa-cube"></span> Example:</p>
                   <p>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </p>
                   <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
                   <p>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </p>
                   <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
@@ -5146,12 +5158,16 @@ studentList.addUi(statusUi);
                 <tip-box>
                   <p><span class="fas fa-cube"></span> Example:</p>
                   <p>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </p>
                   <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
                   <p>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </p>
                   <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
@@ -5192,7 +5208,9 @@ is_urgent = type_code == URGENT
                     
                       <td valign="top">
                         <p>
-                          <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
@@ -5205,7 +5223,9 @@ is_urgent = type_code == URGENT
                     
                       <td valign="top">
                         <p>
-                          <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
@@ -5229,7 +5249,9 @@ is_urgent = type_code == URGENT
                     
                       <td valign="top">
                         <p>
-                          <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
@@ -5242,7 +5264,9 @@ is_urgent = type_code == URGENT
                     
                       <td valign="top">
                         <p>
-                          <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                            </span>
+                          </font>
                         </p>
                         <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
@@ -5262,7 +5286,9 @@ MAX_SIZE = <span class="hljs-number">10</span>
           <p>Similarly, we can have ‘magic’ values of other data types.</p>
           <tip-box>
             <p>
-              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
@@ -5391,7 +5417,9 @@ MAX_SIZE = <span class="hljs-number">10</span>
           <tip-box>
             <p>Example:</p>
             <p>
-              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java">readData();
 salary = basic*rise+<span class="hljs-number">1000</span>;
@@ -5399,7 +5427,9 @@ tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-nu
 displayResult();
 </code></pre>
             <p>
-              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java">readData();
 processData();
@@ -5470,7 +5500,9 @@ displayResult();
           <tip-box>
             <p>Example:</p>
             <p>
-              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
@@ -5491,7 +5523,9 @@ displayResult();
               <li>Main path is nested deeply.</li>
             </ul>
             <p>
-              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
@@ -5598,10 +5632,14 @@ exit();
                 <tr>
                   <th>Name for a</th>
                   <th>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </th>
                 </tr>
               </thead>
@@ -5626,7 +5664,9 @@ exit();
             
               <tab header="Java">
                 <p>
-                  <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font>
                 </p>
                 <pre><code class="hljs java">Person student;
 ArrayList&lt;Person&gt; students;
@@ -5635,7 +5675,9 @@ ArrayList&lt;Person&gt; students;
             
               <tab header="Python">
                 <p>
-                  <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font>
                 </p>
                 <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
 students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
@@ -5678,10 +5720,14 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               <thead>
                 <tr>
                   <th>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </th>
                 </tr>
               </thead>
@@ -5708,10 +5754,14 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               <thead>
                 <tr>
                   <th>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </th>
                 </tr>
               </thead>
@@ -5730,13 +5780,19 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               <thead>
                 <tr>
                   <th>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </th>
                 </tr>
               </thead>
@@ -5796,10 +5852,14 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               <thead>
                 <tr>
                   <th>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </th>
                   <th>Reason</th>
                 </tr>
@@ -5871,13 +5931,17 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             exception). This also applies to the final <code>else</code> of an <code>if-else</code> construct. That is, the final <code>else</code> should mean 'everything else', and not the final option. Do not use <code>else</code> when an <code>if</code>            condition can be explicitly specified, unless there is absolutely no other possibility.</p>
           <tip-box>
             <p>
-              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
 </code></pre>
             <p>
-              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
@@ -5902,7 +5966,9 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
           </ul>
           <tip-box>
             <p>
-              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
@@ -5911,7 +5977,9 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
 
 </code></pre>
             <p>
-              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                </span>
+              </font>
             </p>
             <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
@@ -6057,7 +6125,9 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
         <div>
           <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
           <p>
-            <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font>
+            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+              </span>
+            </font>
           </p>
           <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
 x++;
@@ -6085,14 +6155,18 @@ trimInput();
               <tab header="Java">
                 <div>
                   <p>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
                   <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
                   <p>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </p>
                   <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
@@ -6105,13 +6179,17 @@ trimInput();
               <tab header="Python">
                 <div>
                   <p>
-                    <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                      </span>
+                    </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
                   <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
                   <p>
-                    <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font>
+                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                      </span>
+                    </font>
                   </p>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
@@ -6158,12 +6236,16 @@ compact(input);
           <tip-box>
             <p><span class="fas fa-cube"></span> Example:</p>
             <p>
-              <font color="red"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-down&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Bad</strong></font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
             <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
 <span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
 </code></pre>
             <p>
-              <font color="green"><strong>&amp;lt;span class=&amp;#39;glyphicon glyphicon-thumbs-up&amp;#39; aria-hidden=&amp;#39;true&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; Good</strong></font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
+              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                </span>
+              </font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
             <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
 <span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
@@ -13296,8 +13378,77 @@ This repo can be used to practice creating PRs.
       </h4>
       <div class="indented-less">
         <div>
-          <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in <a href="/website-base/book/gitAndGithub/createPRs/index.html">Tools → Git &amp; GitHub → Create PRs</a> to simulate the
-            PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+          <p><strong>1. Go to GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [
+            <trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+          <modal large="" title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs">
+          
+            <div>
+              <div>
+                <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
+                <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
+                <pre><code class="hljs md">
+<span class="hljs-section"># Introduction</span>
+Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
+This repo can be used to practice creating PRs.
+
+</code></pre>
+                <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
+                <tabs>
+                  <tab header="SourceTree">
+                    <img src="/website-base/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
+                    <p></p>
+                    <hr>
+                  </tab>
+                  <tab header="CLI">
+                    <pre class="hljs"><code>git push origin add-intro
+</code></pre>
+                    <hr>
+                  </tab>
+                </tabs>
+                <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>),
+                  as described below.</p>
+                <p>4a. Go to the GitHub page of your fork (i.e. <code>https://github.com/{your_username}/samplerepo-pr-practice</code>), click on the <code>Pull Requests</code> tab, and then click on <code>New Pull Request</code> button.</p>
+                <img src="/website-base/book/gitAndGithub/createPRs/images/createPrButton.png" width="800">
+                <p></p>
+                <p>4b. Select <code>base fork</code> and <code>head fork</code> as follows:</p>
+                <ul>
+                  <li><code>base fork</code>: your own fork (i.e. <code>{your user name}/samplerepo-pr-practice</code>, <mark>NOT <code>se-edu/samplerepo-pr-practice</code></mark>)</li>
+                  <li><code>head fork</code>: your own fork.</li>
+                </ul>
+                <img src="/website-base/book/gitAndGithub/createPRs/images/selectBase.png" width="800">
+                <p></p>
+                <tip-box type="info">
+                  <p>The <em>base fork</em> is where changes should be applied. The <em>head fork</em> contains the changes you would like to be applied.</p>
+                </tip-box>
+                <p>4c. (1) Set the base branch to <code>master</code> and head branch to <code>add-intro</code>, (2) confirm the <em>diff</em> contains the changes you propose to merge in this PR <span class="dimmed">(i.e. confirm that you did not accidentally include extra commits in the branch)</span>,
+                  and (3) click the <code>Create pull request</code> button.</p>
+                <img src="/website-base/book/gitAndGithub/createPRs/images/checkDiff.png" width="800">
+                <p></p>
+                <p>4d. (1) Set PR name, (2) set PR description, and (3) Click the <code>Create pull request</code> button.</p>
+                <img src="/website-base/book/gitAndGithub/createPRs/images/setPrName.png" width="600">
+                <p></p>
+                <tip-box type="important">
+                  <p>A common newbie mistake when creating branch-based PRs is to mix commits of one PR with another. To learn how to avoid that mistake, you are encouraged to continue and create another PR as explained below.
+                  </p>
+                </tip-box>
+                <p><strong>5. In your local repo, create a new branch <code>add-summary</code></strong> off the <code>master</code> branch.</p>
+                <tip-box type="warning">
+                  <p>When creating the new branch, it is very important that you switch back to the <code>master</code> branch first. If not, the new branch will be created off the current branch <code>add-intro</code>. And that is how you end up having
+                    commits of the first PR in the second PR as well.</p>
+                </tip-box>
+                <p><strong>6. Add a commit in the <code>add-summary</code> branch</strong> that adds a <em>Summary</em> section to the <code>README.md</code>, in exactly the same place you added the <em>Introduction</em> section earlier.</p>
+                <img src="/website-base/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
+                <p></p>
+                <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
+                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                  <ul>
+                    <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
+                  </ul>
+                </panel>
+              </div>
+              <div></div>
+            </div>
+          </modal>
           <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span class="fas fa-plus-square"></span></span> icon that appears on the
             left margin. That should create a text box for you to enter your comment.</p>
           <img src="/website-base/book/gitAndGithub/managePRs/images/startReview.png" width="800">
@@ -14592,7 +14743,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Wed, 18 Jul 2018 02:55:13 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Wed, 18 Jul 2018 06:04:41 GMT</small></div>
 </footer>
 </div>
 </body>
