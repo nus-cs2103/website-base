@@ -8,6 +8,7 @@
 * [%%→%% Learning Outcomes](learningOutcomes.html)
 * [%%→%% Lectures](lectures.html)
 * [%%→%% Tutorials](tutorials.html)
+* [Instructors](instructors.html)
 * [Text Books](textbooks.html)
 * [Programming Language](programming-languages.html)
 * %%Project%%

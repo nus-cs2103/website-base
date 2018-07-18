@@ -7,7 +7,8 @@
   * [Learning Outcomes](#admin-learning-outcomes-anchor)
   * [Lectures](#admin-lectures-anchor)
   * [Tutorials](#admin-tutorials-anchor)
-* [Text Books](#admin-textBooks-anchor)
+* [Instructors](#admin-instructors-anchor)
+* [Text Books](#admin-textbooks-anchor)
 * [Programming Language](#admin-programmingLanguages-anchor)
 * Project
   * [Overview](#admin-project-overview-anchor)

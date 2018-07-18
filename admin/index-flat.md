@@ -54,8 +54,14 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
-<div id="admin-textBooks-anchor"></div>
-<div id="admin-textBooks">
+<div id="admin-instructors-anchor"></div>
+<div id="admin-instructors">
+  <include src="instructors.md#main" />
+</div>
+
+
+<div id="admin-textbooks-anchor"></div>
+<div id="admin-textbooks">
   <include src="textbooks.md#main" />
 </div>
 

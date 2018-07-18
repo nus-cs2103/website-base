@@ -76,7 +76,7 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 {% set admin_sections = [
   {heading: "FAQ: Where is everything?", priority: "1", source: "appendixC-faq.md#admin-faq-whereIsEverything"},
   {heading: "Programming Language", priority: "2", source: "programming-languages.md#main"},
-  {heading: "Text Books", priority: "2", source: "textBooks.md#main"},
+  {heading: "Text Books", priority: "2", source: "textbooks.md#main"},
   {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2103Vscs2103t"},
   {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
   {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"}]
