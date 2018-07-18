@@ -1,0 +1,15 @@
+2018-07-18T02:25:51.096Z - info: Pages built
+2018-07-18T02:25:52.178Z - info: Site data built
+2018-07-18T02:25:52.219Z - info: Generate Site durationMs=182040
+2018-07-18T02:25:56.106Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-18T02:25:56.106Z - info: Press CTRL+C to stop ...
+2018-07-18T02:44:59.293Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\admin\index-flat.md
+2018-07-18T02:45:00.296Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\admin\index-flat.md
+2018-07-18T02:45:00.298Z - info: Rebuilding 1 pages
+2018-07-18T02:45:04.667Z - info: Pages rebuilt
+2018-07-18T02:45:04.677Z - info: Site data built
+2018-07-18T02:50:57.507Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\google8c7ef1e995031e09.html
+2018-07-18T02:50:58.525Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\google8c7ef1e995031e09.html
+2018-07-18T02:50:58.525Z - info: Rebuilding 0 pages
+2018-07-18T02:50:58.525Z - info: Pages rebuilt
+2018-07-18T02:50:58.525Z - info: Site data built
