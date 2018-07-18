@@ -11,6 +11,21 @@ siteNav: adminSiteNav-flat.md
 
 <include src="../common/header.md" />
 
+{% from "common/admin.njk" import topics with context %}
+
+{% for topic in topics %} 
+{% if topic.level == 1 %} 
+<div id="admin-{{ topic.id }}-anchor"></div>
+<div id="admin-{{ topic.id }}">
+  <include src="{{ topic.id }}.md#main" />
+</div>
+{% elif topic.level == 2 %}
+  
+{% elif topic.level == 0 %}
+# {{ topic.title }}
+{% endif %}
+{% endfor %}
+
 
 <div id="admin-moduleOverview-anchor"></div>
 <div id="admin-moduleOverview">
