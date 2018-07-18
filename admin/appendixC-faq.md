@@ -3,7 +3,9 @@
 
 # Appendix C: Frequently Asked Questions
 
-<img src="{{baseUrl}}/admin/images/Why you....png" width="300" height="200"/>
+{% for faq in FAQs %} 
+* [{{ faq.title }}](#{{ faq.id }})
+{% endfor %}
 
 <div id="admin-faq-whereIsEverything">
 
@@ -16,9 +18,9 @@ The [**Schedule** page]({{baseUrl}}/schedule/index.html) is ==_the_ one page you
 
 </div>
 
-<div id="admin-faq-{{ module | lower }}Vs{{ module | lower }}t">
+<div id="admin-faq-tVsNonT">
 
-### What are the differences between {{ module }} and {{ module }}T?
+### What are the differences between the T and the non-T version of the module?
  
 Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
 
@@ -195,5 +197,5 @@ They do, and they should.
 </div>
 {% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/admin.njk" import show_admin_page, FAQs with context %}
 {{ show_admin_page("appendixC-faq", show_main_text) }}

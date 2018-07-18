@@ -118,6 +118,26 @@ siteNav: adminSiteNav.md
   {level: 1, id: "appendixF-teamworkIssues", title: "Appendix F: Handling teamwork issues", link: "appendixF-teamworkIssues.html"}
 ]%}
 
+{% set FAQs = [
+  {id: "admin-faq-whereIsEverything", title: "Where is everything?"},
+  {id: "admin-faq-tVsNonT", title: "What are the differences between the T and the non-T version of the module?"},
+  {id: "admin-faq-highWorkload", title: "Why the workload is so high?"},
+  {id: "admin-faq-aPlus", title: "What are the extra requirements to get an A+?"},
+  {id: "admin-faq-beanCounting", title: "Why so much bean counting?"},
+  {id: "admin-faq-separateWebsite", title: "Why you force me to visit a separate website instead of using IVLE?"},
+  {id: "admin-faq-slideFormat", title: "Why slides are not detailed?"},
+  {id: "admin-faq-selfStudy", title: "Why so much self-study?"},
+  {id: "admin-faq-noLaptop", title: "What if I don’t carry around a laptop?"},
+  {id: "admin-faq-narrowScope", title: "Why very narrow project scope?"},
+  {id: "admin-faq-vagueRequirements", title: "Why project requirements are so vague?"},
+  {id: "admin-faq-favoriteTool", title: "Why I’m not allowed to use my favorite tool/framework/language etc.?"},
+  {id: "admin-faq-manySubmissions", title: "Why so many submissions?"},
+  {id: "admin-faq-fromScratch", title: "Why aren't we allowed to build a new product from scratch?"},
+  {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between {{ module }}T and CS2101?"}
+]%}
+
+
+
 {% macro show_admin_page(current_topic_id, main_text_macro)%}
 {{ show_admin_pagetop(topics, current_topic_id) }}
 {{ main_text_macro() }}
