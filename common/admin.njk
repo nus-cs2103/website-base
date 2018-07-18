@@ -136,7 +136,19 @@ siteNav: adminSiteNav.md
   {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between {{ module }}T and CS2101?", priority: 2}
 ]%}
 
-
+{% set policies = [
+  {id: "policy-followingInstructions", title: "Policy on following instructions", priority: 2},
+  {id: "policy-teamSize", title: "Policy on grading smaller/larger teams", priority: 4},
+  {id: "policy-workDistribution", title: "Policy on project work distribution", priority: 3},
+  {id: "policy-validAbsences", title: "Policy on absence due to valid reasons (e.g. MC, LOA, University events)", priority: 4},
+  {id: "policy-responseTime", title: "Policy on email response time", priority: 3},
+  {id: "policy-techHelp", title: "Policy on tech help", priority: 2},
+  {id: "policy-publishingSubmissions", title: "Policy on publishing submissions", priority: 4},
+  {id: "policy-plagiarism", title: "Policy on plagiarism", priority: 1},
+  {id: "policy-reuse", title: "Policy on reuse", priority: 2},
+  {id: "policy-outsiderHelp", title: "Policy on help from outsiders", priority: 2},
+  {id: "policy-submissionLength", title: "Policy on suggested length for submissions", priority: 3}
+]%}
 
 {% macro show_admin_page(current_topic_id, main_text_macro)%}
 {{ show_admin_pagetop(topics, current_topic_id) }}
