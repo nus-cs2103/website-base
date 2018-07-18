@@ -11,7 +11,7 @@
 * [Text Books](textbooks.html)
 * [Programming Language](programming-languages.html)
 * %%Project%%
-* [%%→%% Overview](project.html)
+* [%%→%% Overview](project-overview.html)
 * [%%→%% The product](project-product.html)
 * [%%→%% Scope](project-scope.html)
 * [%%→%% Constraints](project-constraints.html)

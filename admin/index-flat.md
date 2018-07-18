@@ -66,8 +66,8 @@ siteNav: adminSiteNav-flat.md
 </div>
 
 
-<div id="admin-project-anchor"></div>
-<div id="admin-project">
+<div id="admin-project-overview-anchor"></div>
+<div id="admin-project-overview">
 <include src="project-overview.md#main" />
 </div>
 
