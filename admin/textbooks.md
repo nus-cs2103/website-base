@@ -3,7 +3,7 @@
 
 # Text Books
 
-The main text book is [here]({{baseUrl}}/se-book-adapted/index.html). While it is in a dynamic Web page format, [there is a way to save the main text as pdf files]({{baseUrl}}/book/about/usage.html#saving). Printer-friendly versions have been provided too.
+The main text book is [here]({{baseUrl}}/se-book-adapted/index.html). While it is in a dynamic Web page format, [there is a way to save the main text as pdf files]({{baseUrl}}/admin/usingThisWebsite.html#saving-as-pdf-files). Printer-friendly versions have been provided too.
 
 
 </div>
