@@ -153,6 +153,15 @@
     },
     {
       "headings": {
+        "instructors": "Instructors"
+      },
+      "title": "Admin: Instructors",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "src": "admin/instructors.md"
+    },
+    {
+      "headings": {
         "learning-outcomes": "Learning Outcomes"
       },
       "title": "Admin: Learning Outcomes",
@@ -206,7 +215,7 @@
       "title": "Admin: Peer Evaluations",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
-      "src": "admin/peer-evaluations.md"
+      "src": "admin/peerEvaluations.md"
     },
     {
       "headings": {
@@ -216,7 +225,7 @@
       "title": "Admin: Programming Language",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
-      "src": "admin/programming-languages.md"
+      "src": "admin/programmingLanguages.md"
     },
     {
       "headings": {
