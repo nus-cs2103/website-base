@@ -35,15 +35,18 @@ siteNav: adminSiteNav.md
 <span style="float:right"><md>[{{ topic.title }} {{ glyphicon_chevron_right }}]({{ topic.link }})</md></span>
 {%- endmacro %}
 
-{# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. #}
+{# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. Assumes first topic is not a level 0 topic #}
 {% macro show_next_previous(topics, current_topic_id) -%}
 {% for topic in topics %}
 {% if topic.id == current_topic_id %}
   {% if not loop.first %}
-    {% set  previous_topic = topics[loop.index0 - 1] %}
+    {# jump two if the topic above is a level 0 topic #}
+    {% set decrement = 2 if (topics[loop.index0 - 1].level == 0) else 1 %}
+    {% set  previous_topic = topics[loop.index0 - decrement] %}
   {% endif %}
   {% if not loop.last %}
-    {% set  next_topic = topics[loop.index0 + 1] %}
+    {% set increment = 2 if (topics[loop.index0 + 1].level == 0) else 1 %}
+    {% set  next_topic = topics[loop.index0 + increment] %}
   {% endif %}
 {% if loop.first %}
 {{ show_next(next_topic) }}
@@ -64,47 +67,49 @@ siteNav: adminSiteNav.md
 {% endmacro %}
 
 {% set topics = [
-  {id: "moduleOverview", title: "Module Overview", link: "moduleOverview.html"},
-  {id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html"},
-  {id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html"},
-  {id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html"},
-  {id: "learningOutcomes", title: "Learning Outcomes", link: "learningOutcomes.html"},
-  {id: "lectures", title: "Lectures", link: "lectures.html"},
-  {id: "tutorials", title: "Tutorials", link: "tutorials.html"},
-  {id: "instructors", title: "Instructors", link: "instructors.html"},
-  {id: "textbooks", title: "Text Books", link: "textbooks.html"},
-  {id: "programming-languages", title: "Programming Language", link: "programming-languages.html"},
-  {id: "project-overview", title: "Project: Overview", link: "project-overview.html"},
-  {id: "project-product", title: "Project: The product", link: "project-product.html"},
-  {id: "project-scope", title: "Project: Scope", link: "project-scope.html"},
-  {id: "project-constraints", title: "Project: Constraints", link: "project-constraints.html"},
-  {id: "project-teams", title: "Forming Teams", link: "project-teams.html"},
-  {id: "project-timeline", title: "Project: Timeline", link: "project-timeline.html"},
-  {id: "project-w03-inception", title: "Project: inception [week 3]", link: "project-w03-inception.html"},
-  {id: "project-w04-mid-v10", title: "Project: mid-v1.0 [week 4]", link: "project-w04-mid-v10.html"},
-  {id: "project-w05-v10", title: "Project: v1.0 [week 5]", link: "project-w05-v10.html"},
-  {id: "project-w06-mid-v11", title: "Project: mid-v1.1 [week 6]", link: "project-w06-mid-v11.html"},
-  {id: "project-w07-v11", title: "Project: v1.1 [week 7]", link: "project-w07-v11.html"},
-  {id: "project-w08-mid-v12", title: "Project: mid-v1.2 [week 8]", link: "project-w08-mid-v12.html"},
-  {id: "project-w09-v12", title: "Project: v1.2 [week 9]", link: "project-w09-v12.html"},
-  {id: "project-w10-mid-v13", title: "Project: mid-v1.3 [week 10]", link: "project-w10-mid-v13.html"},
-  {id: "project-w11-v13", title: "Project: v1.3 [week 11]", link: "project-w11-v13.html"},
-  {id: "project-w12-mid-v14", title: "Project: mid-v1.4 [week 12]", link: "project-w12-mid-v14.html"},
-  {id: "project-w13-v14", title: "Project: v1.4 [week 13]", link: "project-w13-v14.html"},
-  {id: "project-deliverables", title: "Project: Deliverables", link: "project-deliverables.html"},
-  {id: "project-assessment", title: "Project: Assessment", link: "project-assessment.html"},
-  {id: "project-supervision", title: "Project: Supervision", link: "project-supervision.html"},
-  {id: "peer-evaluations", title: "Peer Evaluations", link: "peer-evaluations.html"},
-  {id: "tools", title: "Tools", link: "tools.html"},
-  {id: "gradeBreakdown", title: "Grade Breakdown", link: "gradeBreakdown.html"},
-  {id: "exams", title: "Exams", link: "exams.html"},
-  {id: "participation", title: "Participation Marks", link: "participation.html"},
-  {id: "appendixA-principles", title: "Appendix A: Module Principles", link: "appendixA-principles.html"},
-  {id: "appendixB-policies", title: "Appendix B: Module Policies", link: "appendixB-policies.html"},
-  {id: "appendixC-faq", title: "Appendix C: Frequently Asked Questions", link: "appendixC-faq.html"},
-  {id: "appendixD-help", title: "Appendix D: How to get help in this module", link: "appendixD-help.html"},
-  {id: "appendixE-gitHub", title: "Appendix E: Using GitHub Project Hosting", link: "appendixE-gitHub.html"},
-  {id: "appendixF-teamworkIssues", title: "Appendix F: Handling teamwork issues", link: "appendixF-teamworkIssues.html"}
+  {level: 1, id: "moduleOverview", title: "Module Overview", link: "moduleOverview.html"},
+  {level: 1, id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html", highlight: "true"},
+  {level: 1, id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html"},
+  {level: 0, id: "moduleStructure", title: "Module Structure"},
+    {level: 2, id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html"},
+    {level: 2, id: "learningOutcomes", title: "Learning Outcomes", link: "learningOutcomes.html"},
+    {level: 2, id: "lectures", title: "Lectures", link: "lectures.html"},
+    {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html"},
+  {level: 1, id: "instructors", title: "Instructors", link: "instructors.html"},
+  {level: 1, id: "textbooks", title: "Text Books", link: "textbooks.html"},
+  {level: 1, id: "programming-languages", title: "Programming Language", link: "programming-languages.html"},
+  {level: 0, id: "project", title: "Project"},
+    {level: 2, id: "project-overview", title: "Project: Overview", link: "project-overview.html"},
+    {level: 2, id: "project-product", title: "Project: The product", link: "project-product.html"},
+    {level: 2, id: "project-scope", title: "Project: Scope", link: "project-scope.html"},
+    {level: 2, id: "project-constraints", title: "Project: Constraints", link: "project-constraints.html"},
+    {level: 2, id: "project-teams", title: "Forming Teams", link: "project-teams.html"},
+    {level: 2, id: "project-timeline", title: "Project: Timeline", link: "project-timeline.html"},
+    {level: 2, id: "project-w03-inception", title: "Project: inception [week 3]", link: "project-w03-inception.html"},
+    {level: 2, id: "project-w04-mid-v10", title: "Project: mid-v1.0 [week 4]", link: "project-w04-mid-v10.html"},
+    {level: 2, id: "project-w05-v10", title: "Project: v1.0 [week 5]", link: "project-w05-v10.html"},
+    {level: 2, id: "project-w06-mid-v11", title: "Project: mid-v1.1 [week 6]", link: "project-w06-mid-v11.html"},
+    {level: 2, id: "project-w07-v11", title: "Project: v1.1 [week 7]", link: "project-w07-v11.html"},
+    {level: 2, id: "project-w08-mid-v12", title: "Project: mid-v1.2 [week 8]", link: "project-w08-mid-v12.html"},
+    {level: 2, id: "project-w09-v12", title: "Project: v1.2 [week 9]", link: "project-w09-v12.html"},
+    {level: 2, id: "project-w10-mid-v13", title: "Project: mid-v1.3 [week 10]", link: "project-w10-mid-v13.html"},
+    {level: 2, id: "project-w11-v13", title: "Project: v1.3 [week 11]", link: "project-w11-v13.html"},
+    {level: 2, id: "project-w12-mid-v14", title: "Project: mid-v1.4 [week 12]", link: "project-w12-mid-v14.html"},
+    {level: 2, id: "project-w13-v14", title: "Project: v1.4 [week 13]", link: "project-w13-v14.html"},
+    {level: 2, id: "project-deliverables", title: "Project: Deliverables", link: "project-deliverables.html"},
+    {level: 2, id: "project-assessment", title: "Project: Assessment", link: "project-assessment.html"},
+    {level: 2, id: "project-supervision", title: "Project: Supervision", link: "project-supervision.html"},
+  {level: 1, id: "peer-evaluations", title: "Peer Evaluations", link: "peer-evaluations.html"},
+  {level: 1, id: "tools", title: "Tools", link: "tools.html"},
+  {level: 1, id: "gradeBreakdown", title: "Grade Breakdown", link: "gradeBreakdown.html"},
+  {level: 1, id: "exams", title: "Exams", link: "exams.html"},
+  {level: 1, id: "participation", title: "Participation Marks", link: "participation.html"},
+  {level: 1, id: "appendixA-principles", title: "Appendix A: Module Principles", link: "appendixA-principles.html"},
+  {level: 1, id: "appendixB-policies", title: "Appendix B: Module Policies", link: "appendixB-policies.html"},
+  {level: 1, id: "appendixC-faq", title: "Appendix C: Frequently Asked Questions", link: "appendixC-faq.html"},
+  {level: 1, id: "appendixD-help", title: "Appendix D: How to get help in this module", link: "appendixD-help.html"},
+  {level: 1, id: "appendixE-gitHub", title: "Appendix E: Using GitHub Project Hosting", link: "appendixE-gitHub.html"},
+  {level: 1, id: "appendixF-teamworkIssues", title: "Appendix F: Handling teamwork issues", link: "appendixF-teamworkIssues.html"}
 ]%}
 
 {% macro show_admin_page(current_topic_id, main_text_macro)%}

@@ -1,46 +1,19 @@
+{% from "common/admin.njk" import topics with context %}
+
 <navigation>
+
 * [See all in one page (slow!)](index-flat.html)
-* [Module Overview](moduleOverview.html)
-* [==Using this Website==](usingThisWebsite.html)
-* [Module Expectations](moduleExpectations.html)
-* %%Module Structure%%
-* [%%→%% Weekly Schedule](weeklySchedule.html)
-* [%%→%% Learning Outcomes](learningOutcomes.html)
-* [%%→%% Lectures](lectures.html)
-* [%%→%% Tutorials](tutorials.html)
-* [Instructors](instructors.html)
-* [Text Books](textbooks.html)
-* [Programming Language](programming-languages.html)
-* %%Project%%
-* [%%→%% Overview](project-overview.html)
-* [%%→%% The product](project-product.html)
-* [%%→%% Scope](project-scope.html)
-* [%%→%% Constraints](project-constraints.html)
-* [%%→%% Forming Teams](project-teams.html)
-* [%%→%% Timeline](project-timeline.html)
-* [%%→%% inception [week 3]](project-w03-inception.html)
-* [%%→%% mid-v1.0 [week 4]](project-w04-mid-v10.html)
-* [%%→%% v1.0 [week 5]](project-w05-v10.html)
-* [%%→%% mid-v1.1 [week 6]](project-w06-mid-v11.html)
-* [%%→%% v1.1 [week 7]](project-w07-v11.html)
-* [%%→%% mid-v1.2 [week 8]](project-w08-mid-v12.html)
-* [%%→%% v1.2 [week 9]](project-w09-v12.html)
-* [%%→%% mid-v1.3 [week 10]](project-w10-mid-v13.html)
-* [%%→%% v1.3 [week 11]](project-w11-v13.html)
-* [%%→%% mid-v1.4 [week 12]](project-w12-mid-v14.html)
-* [%%→%% v1.4 [week 13]](project-w13-v14.html)
-* [%%→%% Deliverables](project-deliverables.html)
-* [%%→%% Supervision](project-supervision.html)
-* [%%→%% Assessment](project-assessment.html)
-* [Peer Evaluations](peer-evaluations.html)
-* [Tools](tools.html)
-* [Grade Breakdown](gradeBreakdown.html)
-* [Exams](exams.html)
-* [Participation Marks](participation.html)
-* [Appendix A: Module Principles](appendixA-principles.html)
-* [Appendix B: Module Policies](appendixB-policies.html)
-* [Appendix C: Frequently Asked Questions](appendixC-faq.html)
-* [Appendix D: How to get help in {{ module }}/T](appendixD-help.html)
-* [Appendix E: Using GitHub Project Hosting](appendixE-gitHub.html)
-* [Appendix F: Handling teamwork issues](appendixF-teamworkIssues.html)
+
+{% for topic in topics %} 
+{% set decoration = "==" if topic.highlight else "" %} 
+{% set title = decoration + topic.title + decoration %} 
+{% if topic.level == 1%} 
+* [{{ title }}]({{ topic.link }})
+{% elif topic.level == 2 %}
+* [%%→%% {{ title }}]({{ topic.link }})
+{% elif topic.level == 0 %}
+* %%{{ title }}%%
+{% endif %}
+{% endfor %}
+
 </navigation>
