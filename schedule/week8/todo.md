@@ -1,10 +1,11 @@
 {% import "common/macros.njk" as macros with context %}
+{% from "common/admin.njk" import topics, policies, faqs with context %}
 
 {% set admin_sections = [
-  {heading: "Project: mid-v1.2", priority: "1", source: "project-w08-mid-v12.md#main"},
-  {heading: "FAQ: Why aren't we allowed to build a new product from scratch?", priority: "4", source: "appendixC-faq.md#admin-faq-fromScratch"},
-  {heading: "FAQ: Why so many submissions?", priority: "4", source: "appendixC-faq.md#admin-faq-manySubmissions"},
-  {heading: "FAQ: Why submission requirements differ between CS2103T and CS2101?", priority: "4", source: "appendixC-faq.md#admin-faq-cs2101Differences"}
+  {topic_id: "project-w08-mid-v12"},
+  {faq_id: "admin-faq-fromScratch"},
+  {faq_id: "admin-faq-manySubmissions"},
+  {faq_id: "admin-faq-cs2101Differences"}
 ]%}
 
-{{ macros.show_admin_sections_to_read(admin_sections) }}
+{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_sections) }}

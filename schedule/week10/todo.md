@@ -1,7 +1,8 @@
 {% import "common/macros.njk" as macros with context %}
+{% from "common/admin.njk" import topics, policies, faqs with context %}
 
 {% set admin_sections = [
-  {heading: "Project: mid-v1.3", priority: "1", source: "project-w10-mid-v13.md#main"}
+  {topic_id: "project-w10-mid-v13"}
 ]%}
 
-{{ macros.show_admin_sections_to_read(admin_sections) }}
+{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_sections) }}

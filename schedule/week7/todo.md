@@ -1,9 +1,10 @@
 {% import "common/macros.njk" as macros with context %}
+{% from "common/admin.njk" import topics, policies, faqs with context %}
 
 {% set admin_sections = [
-  {heading: "Project: v1.1", priority: "1", source: "project-w07-v11.md#main"},
-  {heading: "Appedix F: Handling Teamwork Issues", priority: "3", source: "appendixF-teamworkIssues.md#main"},
-  {heading: "FAQ: Why I'm not allowed to use my favorite tool/framework/language etc.?", priority: "4", source: "appendixC-faq.md#admin-faq-favoriteTool"}
+  {topic_id: "project-w07-v11"},
+  {topic_id: "appendixF-teamworkIssues"},
+  {faq_id: "admin-faq-favoriteTool"}
 ]%}
 
-{{ macros.show_admin_sections_to_read(admin_sections) }}
+{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_sections) }}

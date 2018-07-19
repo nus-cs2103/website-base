@@ -1,10 +1,11 @@
 {% import "common/macros.njk" as macros with context %}
+{% from "common/admin.njk" import topics, policies, faqs with context %}
 
 {% set admin_sections = [
-  {heading: "Policy on project work distribution", priority: "2", source: "appendixB-policies.md#policy-workDistribution"},
-  {heading: "Policy on email response time", priority: "3", source: "appendixB-policies.md#policy-responseTime"},
-  {heading: "Policy on grading smaller/larger teams", priority: "4", source: "appendixB-policies.md#policy-teamSize"},
-  {heading: "FAQ: Why so much bean counting?", priority: "4", source: "appendixC-faq.md#admin-faq-beanCounting"}
+  {policy_id: "policy-workDistribution"},
+  {policy_id: "policy-responseTime"},
+  {policy_id: "policy-teamSize"},
+  {faq_id: "admin-faq-beanCounting"}
 ]%}
 
-{{ macros.show_admin_sections_to_read(admin_sections) }}
+{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_sections) }}

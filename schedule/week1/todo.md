@@ -1,5 +1,3 @@
-{% import "common/macros.njk" as macros with context %}
-
 %%Given below are some preparatory tasks you can do as you wait for the module to start:%% 
 
 <span class="activity-desc">Getting ready for the module:<span>
@@ -72,15 +70,16 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 %%Given below are some module _admin info_ to read around this time:%%  
 
 {% import "common/macros.njk" as macros with context %}
+{% from "common/admin.njk" import topics, policies, faqs with context %}
 
 {% set admin_sections = [
-  {heading: "FAQ: Where is everything?", priority: "1", source: "appendixC-faq.md#admin-faq-whereIsEverything"},
-  {heading: "Programming Language", priority: "2", source: "programmingLanguages.md#main"},
-  {heading: "Text Books", priority: "2", source: "textbooks.md#main"},
-  {heading: "FAQ: What's different between CS2103 and CS2103T?", priority: "4", source: "appendixC-faq.md#admin-faq-tVsNonT"},
-  {heading: "FAQ: Why the workload is so high?", priority: "4", source: "appendixC-faq.md#admin-faq-highWorkload"},
-  {heading: "FAQ: What are the extra requirements to get an A+?", priority: "4", source: "appendixC-faq.md#admin-faq-aPlus"}]
+  {faq_id: "admin-faq-whereIsEverything"},
+  {topic_id: "programmingLanguages"},
+  {topic_id: "textbooks"},
+  {faq_id: "admin-faq-tVsNonT"},
+  {faq_id: "admin-faq-highWorkload"},
+  {faq_id: "admin-faq-aPlus"}]
 %}
 
-{{ macros.show_admin_sections_to_read(admin_sections) }}
+{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_sections) }}
 
