@@ -32,7 +32,7 @@
       "headings": {
         "appendix-a-module-principles": "Appendix A: Module Principles"
       },
-      "title": "Admin: Appendix A: Module Principles",
+      "title": "Admin: A: Module Principles",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixA-principles.md"
@@ -40,23 +40,23 @@
     {
       "headings": {
         "appendix-b-module-policies": "Appendix B: Module Policies",
-        "policy-on-following-instructions": "Policy on following instructions",
-        "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams",
-        "policy-on-project-work-distribution": "Policy on project work distribution",
-        "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events)",
-        "policy-on-email-response-time": "Policy on email response time",
-        "policy-on-tech-help": "Policy on tech help",
-        "policy-on-publishing-submissions": "Policy on publishing submissions",
-        "policy-on-plagiarism": "Policy on plagiarism",
-        "policy-on-reuse": "Policy on reuse",
+        "policy-on-following-instructions": "Policy on following instructions ",
+        "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams ",
+        "policy-on-project-work-distribution": "Policy on project work distribution ",
+        "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events) ",
+        "policy-on-email-response-time": "Policy on email response time ",
+        "policy-on-tech-help": "Policy on tech help ",
+        "policy-on-publishing-submissions": "Policy on publishing submissions ",
+        "policy-on-plagiarism": "Policy on plagiarism ",
+        "policy-on-reuse": "Policy on reuse ",
         "giving-credit-for-reused-work": "Giving credit for reused work",
         "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
         "what-to-and-what-not-to-annotate": "What to and what not to annotate",
         "collating-the-annotated-code": "Collating the annotated code",
-        "policy-on-help-from-outsiders": "Policy on help from outsiders",
-        "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions"
+        "policy-on-help-from-outsiders": "Policy on help from outsiders ",
+        "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions "
       },
-      "title": "Admin: Appendix B: Module Policies",
+      "title": "Admin: B: Module Policies",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixB-policies.md"
@@ -64,32 +64,32 @@
     {
       "headings": {
         "appendix-c-frequently-asked-questions": "Appendix C: Frequently Asked Questions",
-        "where-is-everything": "Where is everything?",
-        "what-are-the-differences-between-cs2103-and-cs2103t": "What are the differences between CS2103 and CS2103T?",
-        "why-the-workload-is-so-high": "Why the workload is so high?",
-        "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+?",
-        "why-so-much-bean-counting": "Why so much bean counting?",
-        "why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle": "Why you force me to visit a separate website instead of using IVLE?",
-        "why-slides-are-not-detailed": "Why slides are not detailed?",
-        "why-so-much-self-study": "Why so much self-study?",
-        "what-if-i-dont-carry-around-a-laptop": "What if I don't carry around a laptop?",
-        "why-very-narrow-project-scope": "Why very narrow project scope?",
-        "why-project-requirements-are-so-vague": "Why project requirements are so vague?",
-        "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I'm not allowed to use my favorite tool/framework/language etc.?",
-        "why-so-many-submissions": "Why so many submissions?",
-        "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch?",
-        "why-submission-requirements-differ-between-cs2103t-and-cs2101": "Why submission requirements differ between CS2103T and CS2101?"
+        "where-is-everything": "Where is everything? ",
+        "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module": "What are the differences between the T and the non-T version of the module? ",
+        "why-the-workload-is-so-high": "Why the workload is so high? ",
+        "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+? ",
+        "why-so-much-bean-counting": "Why so much bean counting? ",
+        "why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle": "Why you force me to visit a separate website instead of using IVLE? ",
+        "why-slides-are-not-detailed": "Why slides are not detailed? ",
+        "why-so-much-self-study": "Why so much self-study? ",
+        "what-if-i-dont-carry-around-a-laptop": "What if I don’t carry around a laptop? ",
+        "why-very-narrow-project-scope": "Why very narrow project scope? ",
+        "why-project-requirements-are-so-vague": "Why project requirements are so vague? ",
+        "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I’m not allowed to use my favorite tool/framework/language etc.? ",
+        "why-so-many-submissions": "Why so many submissions? ",
+        "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch? ",
+        "why-submission-requirements-differ-between-module-t-and-cs2101": "Why submission requirements differ between {{ module }}T and CS2101? "
       },
-      "title": "Admin: Appendix C: Frequently Asked Questions",
+      "title": "Admin: C: Frequently Asked Questions",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixC-faq.md"
     },
     {
       "headings": {
-        "appendix-d-how-to-get-help-in-cs2103t": "Appendix D: How to get help in CS2103/T"
+        "appendix-d-getting-help-in-this-module": "Appendix D: Getting help in this module"
       },
-      "title": "Admin: Appendix D: How to get help in this module",
+      "title": "Admin: D: Getting help in this module",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixD-help.md"
@@ -108,7 +108,7 @@
         "using-milestones": "Using Milestones:",
         "workflow": "Workflow"
       },
-      "title": "Admin: Appendix E: Using GitHub Project Hosting",
+      "title": "Admin: E: Using GitHub Project Hosting",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixE-gitHub.md"
@@ -117,7 +117,7 @@
       "headings": {
         "appendix-f-handling-teamwork-issues": "Appendix F: Handling teamwork issues"
       },
-      "title": "Admin: Appendix F: Handling teamwork issues",
+      "title": "Admin: F: Handling teamwork issues",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixF-teamworkIssues.md"
@@ -132,6 +132,11 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/exams.md"
+    },
+    {
+      "headings": {},
+      "src": "admin/faq.md",
+      "title": ""
     },
     {
       "headings": {

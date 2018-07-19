@@ -36,6 +36,11 @@
 {% macro show_stars(level) %}{{ show_stars_untrimmed(level) | trim }}{% endmacro %}
 
 
+{% macro show_stars_in_nav(priority) -%}
+<span class="badge badge-pill badge-{{ show_priority_style(priority) }}">{{ priority }}{{ fas_star }}</span>
+{%- endmacro %}
+
+
 {% macro show_admin_section_to_read(heading, priority, source) %}
 <panel src="{{ source }}"  no-close >
 <span slot="header" class="card-title"><md>%%Admin {{ icon_embedding | safe }}%% &nbsp; {{ heading }} {{ show_stars(priority) }}</span>
