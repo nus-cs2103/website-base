@@ -21,7 +21,7 @@
     <li><a href="{{module_org}}/addressbook-level2" target="_blank" class="dropdown-item">{{ icon_repo }} Addressbook-level2</a></li>
     <li><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item">{{ icon_repo }} Addressbook-level3</a></li>
     <li><a href="{{module_org}}/addressbook-level4" target="_blank" class="dropdown-item">{{ icon_repo }} Addressbook-level4</a></li>
-    <li><a href="{{baseUrl}}/admin/projectList.html" target="_blank" class="dropdown-item">{{ glyphicon_folder_open }} Projects List</a></li>
+    <li><a href="{{baseUrl}}/admin/projectList.html" target="_blank" class="dropdown-item">{{ fas_th_list }} Projects List</a></li>
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
