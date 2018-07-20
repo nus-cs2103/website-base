@@ -6,9 +6,7 @@
   <include src="../../admin/participation.md#main"/>
 </modal>
 
-{{ dashed_line | safe}}
-
-{{evidence}}
+%%{{ icon_evidence | safe }} Evidence:%%
 
 Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]  %%e.g. add a new command%%
 

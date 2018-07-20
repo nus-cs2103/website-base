@@ -24,6 +24,17 @@
 
 
 {% macro show_evidence_with_unit(id_prefix, unit, path_displacement="") -%}
+{% if unit.file %}
+
+<panel type="seamless" expanded >
+  <span slot="header" class="card-title"><md>%%For%% <big><span class='badge badge-pill badge-light'>`{{ id_prefix }}`</span></big> {{ unit.heading }} {{ show_stars(unit.priority) }}</md></span>
+  <div class="indented">
+  <include src="{{ path_displacement }}../evidence/{{ unit.file }}" />
+  </div>
+</panel>
+
+{% else %}
+
 {% set chapter = unit.location[0] %}
 {% set path_as_array = unit.location.slice(1,4) %}
 {% set path = path_as_array.join("/") %}
@@ -34,8 +45,9 @@
   {% set priority = unit.priority %}
 {% endif %}
 
-<panel type="seamless" expanded >
+  <panel type="seamless" expanded >
   <span slot="header" class="card-title"><md>%%For%% <big><span class='badge badge-pill badge-light'>`{{ id_prefix }}`</span></big> <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
+<div class="indented">
 
 <panel minimized >
 <span slot="header" class="card-title">Details of the LO</span>
@@ -48,7 +60,10 @@
   {% else %}
 {{ show_default_evidence(chapter, path, path_displacement) }}
   {% endif %}
+</div>
 </panel>
+
+{% endif %}
 {%- endmacro %}
 
 
@@ -69,7 +84,7 @@
 {% set letters = "abcdefghijklmnop" | list %}
 {% set letter_index = 0 %}
 {% if params.outcome.file %}
-  <include src="{{ params.path_displacement }}../evidence/{{ params.outcome.file }}" />
+  {{ show_unit(prefix, params.outcome, params.path_displacement) }}
 {% else %}
   {% for entry in entries  %}
     {% if entry.location %}
