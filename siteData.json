@@ -22,7 +22,21 @@
         "init": "Init",
         "saving-history": "Saving History",
         "commit": "Commit",
-        "ignore": "Ignore"
+        "ignore": "Ignore",
+        "pros-and-cons-2": "Pros and Cons",
+        "what-6": "What",
+        "project-setup-2": "Project Setup",
+        "code-navigation-2": "Code Navigation",
+        "collections-2": "Collections",
+        "varargs-2": "Varargs",
+        "what-7": "What",
+        "what-8": "What",
+        "automated-testing-of-cli-apps-2": "Automated Testing of CLI Apps",
+        "what-9": "What",
+        "repositories-2": "Repositories",
+        "init-2": "Init",
+        "saving-history-2": "Saving History",
+        "ignore-2": "Ignore"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -108,7 +122,7 @@
         "using-milestones": "Using Milestones:",
         "workflow": "Workflow"
       },
-      "title": "Admin: E: Using GitHub Project Hosting",
+      "title": "Admin: E: Using GitHub",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "src": "admin/appendixE-gitHub.md"

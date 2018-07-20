@@ -1670,3 +1670,49 @@ Missing reference in C:\repos\nus-cs2103\website-base\schedule\week2\todo.md
 2018-07-19T06:00:04.277Z - info: Rebuilding 5 pages
 2018-07-19T06:00:20.014Z - info: Pages rebuilt
 2018-07-19T06:00:20.031Z - info: Site data built
+2018-07-19T06:12:23.132Z - info: Pages built
+2018-07-19T06:12:23.321Z - info: Site data built
+2018-07-19T06:12:23.321Z - info: Build success!
+2018-07-19T06:12:23.321Z - info: Generate Site durationMs=56851
+2018-07-19T06:13:30.624Z - info: Deployed!
+2018-07-19T06:52:40.874Z - info: Pages built
+2018-07-19T06:52:41.078Z - info: Site data built
+2018-07-19T06:52:41.088Z - info: Generate Site durationMs=64240
+2018-07-19T06:52:41.513Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-19T06:52:41.513Z - info: Press CTRL+C to stop ...
+2018-07-19T11:04:32.586Z - info: Pages built
+2018-07-19T11:04:33.187Z - info: Site data built
+2018-07-19T11:04:33.200Z - info: Generate Site durationMs=116803
+2018-07-19T11:04:33.655Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-19T11:04:33.655Z - info: Press CTRL+C to stop ...
+2018-07-19T11:15:55.824Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\_markbind\variables.md
+2018-07-19T11:15:55.840Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-07-19T11:15:56.843Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\_markbind\variables.md,C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-07-19T11:15:56.843Z - info: Rebuilding 0 pages
+2018-07-19T11:15:56.843Z - info: Pages rebuilt
+2018-07-19T11:15:56.858Z - info: Site data built
+2018-07-19T11:17:06.783Z - info: Pages built
+2018-07-19T11:17:07.002Z - info: Site data built
+2018-07-19T11:17:07.012Z - info: Generate Site durationMs=52234
+2018-07-19T11:17:07.328Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-19T11:17:07.328Z - info: Press CTRL+C to stop ...
+2018-07-19T12:07:35.374Z - info: Pages built
+2018-07-19T12:07:35.573Z - info: Site data built
+2018-07-19T12:07:35.583Z - info: Generate Site durationMs=63118
+2018-07-19T12:07:35.926Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-19T12:07:35.926Z - info: Press CTRL+C to stop ...
+2018-07-19T12:10:08.780Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-07-19T12:10:09.790Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\variables.md
+2018-07-19T12:10:09.791Z - info: Rebuilding 0 pages
+2018-07-19T12:10:09.792Z - info: Pages rebuilt
+2018-07-19T12:10:09.819Z - info: Site data built
+2018-07-19T12:11:24.087Z - info: Pages built
+2018-07-19T12:11:24.291Z - info: Site data built
+2018-07-19T12:11:24.300Z - info: Generate Site durationMs=53182
+2018-07-19T12:11:24.641Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-19T12:11:24.641Z - info: Press CTRL+C to stop ...
+2018-07-19T12:19:25.965Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\errorHandling\exceptions\how\text.md
+2018-07-19T12:19:26.967Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\errorHandling\exceptions\how\text.md
+2018-07-19T12:19:26.967Z - info: Rebuilding 5 pages
+2018-07-19T12:19:44.482Z - info: Pages rebuilt
+2018-07-19T12:19:44.499Z - info: Site data built
