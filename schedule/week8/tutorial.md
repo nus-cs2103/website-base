@@ -19,3 +19,6 @@
    1. IVLE quizzes allow a quiz to be attempted multiple times. For each attempt, it records the time taken. Model this scenario as a class diagram. 
    1. Draw another diagram to describe how you would implement it in code (because programming languages don’t have direct support for association classes).
 
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("8", all_outcomes) }}

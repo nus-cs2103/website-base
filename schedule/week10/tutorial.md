@@ -42,3 +42,8 @@
    ```
 1. distinguish between _libraries_, _frameworks_, _platforms_<br>
    a. give examples of each used in AB4
+
+
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("10", all_outcomes) }}

@@ -25,3 +25,7 @@ Here are some sample diagrams to use as references:<br>
 </td>
 <tr>
 </table>
+
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("6", all_outcomes) }}

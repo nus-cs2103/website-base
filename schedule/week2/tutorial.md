@@ -10,3 +10,7 @@
 <big>****Show evidence of weekly learning outcomes****</big>
 
 * Starting with learning outcomes at {{ macros.show_stars("1") }} level, share/discuss/demo evidence of (as directed by the tutor) weekly learning outcomes.
+
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("2", all_outcomes) }}

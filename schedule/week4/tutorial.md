@@ -19,3 +19,7 @@ Therefore, we **strongly encourage you to achieve the `W4.1 Can create PRs on Gi
 <include src="../../book/modeling/modelingStructures/classDiagramsBasic/q-essay-explainClassDiagram.md" />
 <include src="../../book/uml/classDiagrams/combine/basic/q-essay-objectDiagramsForClassDiagram.md" />
 
+
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("4", all_outcomes) }}

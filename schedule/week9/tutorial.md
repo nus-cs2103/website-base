@@ -23,3 +23,6 @@
 1. What’s the problem with the architecture diagram on the right?<br>
    <img src="{{baseUrl}}/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190" /><br>
 
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("9", all_outcomes) }}

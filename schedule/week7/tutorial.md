@@ -10,3 +10,7 @@
 1. Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?
 1. Explain what Gradle is. How is it used in AB4?
 1. Explain what Travis is. How is it used in AB4?
+
+{% from "schedule/index.md" import all_outcomes with context %}
+{% from "common/tutorial.njk" import  show_week_evidences with context %}
+{{ show_week_evidences("7", all_outcomes) }}
