@@ -206,31 +206,29 @@
             <p>Overview: <span>move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></p>
           </tip-box>
           <p><strong>v1.2 Summary of Milestone</strong></p>
-          <div class="table-responsive">
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Minimum acceptable performance to consider as 'reached'</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="fas fa-user"></span> Contributed code to the product as described in mid-v1.2 progress guide</td>
-                  <td>some code merged</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> Described implementation details in the Developer Guide</td>
-                  <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
-                  <td>A new version git tagged <code>v1.2</code> is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in
-                    <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Milestone</th>
+                <th>Minimum acceptable performance to consider as 'reached'</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="fas fa-user"></span> Contributed code to the product as described in mid-v1.2 progress guide</td>
+                <td>some code merged</td>
+              </tr>
+              <tr>
+                <td><span class="fas fa-user"></span> Described implementation details in the Developer Guide</td>
+                <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
+              </tr>
+              <tr>
+                <td><span class="fas fa-users"></span> v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
+                <td>A new version git tagged <code>v1.2</code> is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in
+                  <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
+              </tr>
+            </tbody>
+          </table>
           <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
           
             <div>
@@ -441,30 +439,28 @@ method 2 ...
                 </ul>
                 <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
                 <p>You need to put the collated code in the following folders</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Code Type</th>
-                        <th>Folder</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>functional code</td>
-                        <td><code>collated/functional</code></td>
-                      </tr>
-                      <tr>
-                        <td>test code</td>
-                        <td><code>collated/test</code></td>
-                      </tr>
-                      <tr>
-                        <td>unused code</td>
-                        <td><code>collated/unused</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Code Type</th>
+                      <th>Folder</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>functional code</td>
+                      <td><code>collated/functional</code></td>
+                    </tr>
+                    <tr>
+                      <td>test code</td>
+                      <td><code>collated/test</code></td>
+                    </tr>
+                    <tr>
+                      <td>unused code</td>
+                      <td><code>collated/unused</code></td>
+                    </tr>
+                  </tbody>
+                </table>
                 <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
                 <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
                 <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
@@ -541,7 +537,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Fri, 20 Jul 2018 12:15:49 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Fri, 20 Jul 2018 15:31:34 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -1515,38 +1515,36 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                           <ol start="9">
                             <li>Add the following labels to the cells, such that the grid is of this form:</li>
                           </ol>
-                          <div class="table-responsive">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>First Name</th>
-                                  <th>Label</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Last Name</td>
-                                  <td>Label</td>
-                                </tr>
-                                <tr>
-                                  <td>Street</td>
-                                  <td>Label</td>
-                                </tr>
-                                <tr>
-                                  <td>City</td>
-                                  <td>Label</td>
-                                </tr>
-                                <tr>
-                                  <td>Postal Code</td>
-                                  <td>Label</td>
-                                </tr>
-                                <tr>
-                                  <td>Birthday</td>
-                                  <td>Label</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>First Name</th>
+                                <th>Label</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Last Name</td>
+                                <td>Label</td>
+                              </tr>
+                              <tr>
+                                <td>Street</td>
+                                <td>Label</td>
+                              </tr>
+                              <tr>
+                                <td>City</td>
+                                <td>Label</td>
+                              </tr>
+                              <tr>
+                                <td>Postal Code</td>
+                                <td>Label</td>
+                              </tr>
+                              <tr>
+                                <td>Birthday</td>
+                                <td>Label</td>
+                              </tr>
+                            </tbody>
+                          </table>
                           <tip-box type="tip">
                             <p>To add a row to the GridPane, select an existing row number, right click the row number and choose &quot;Add Row Below&quot;.</p>
                           </tip-box>
@@ -2310,75 +2308,77 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             </span>
             </span>
             </span>
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Design → Introduction →
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Design → Introduction →
 </span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="multi-level-design-2">Multi-Level Design</h4>
-                  </div>
-                  <div id="main">
+                    </span>
+                  </p>
+                  <div id="title-and-body">
                     <div>
-                      <p>In a smaller system, design of the entire system can be shown in one place.</p>
-                      <div v-closeable="" alt="single-level design example">
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> This class diagram of <a href="https://se-edu.github.io/addressbook-level3">se-edu/addressbook-level3</a> depicts the design of the entire software.</p>
-                          <img src="https://se-edu.github.io/addressbook-level3/images/mainClassDiagram.png" width="600"></tip-box>
-                      </div>
-                      <p><strong>Design of bigger systems needs to be done/shown at multiple levels.</strong></p>
-                      <div v-closeable="" alt="multi-level design example">
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> This architecture diagram of <a href="https://se-edu.github.io/addressbook-level4">se-edu/addressbook-level4</a> depicts the high-level design of the software.</p>
-                          <img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="600">
-                          <p>Here are examples of lower level designs of some components of the same software:</p>
-                          <tabs>
-                          
-                            <tab header="UI">
-                              <img src="https://se-edu.github.io/addressbook-level4/images/UiClassDiagram.png" width="600">
-                              <p>
-                                <hr>
-                              </p>
-                            </tab>
-                          
-                            <tab header="Logic">
-                              <img src="https://se-edu.github.io/addressbook-level4/images/LogicClassDiagram.png" width="600">
-                              <p>
-                                <hr>
-                              </p>
-                            </tab>
-                          
-                            <tab header="Storage">
-                              <img src="https://se-edu.github.io/addressbook-level4/images/StorageClassDiagram.png" width="600">
-                              <p>
-                                <hr>
-                              </p>
-                            </tab>
-                          </tabs>
-                        </tip-box>
-                      </div>
+                      <h4 id="multi-level-design-2">Multi-Level Design</h4>
                     </div>
-                    <div></div>
+                    <div id="main">
+                      <div>
+                        <p>In a smaller system, design of the entire system can be shown in one place.</p>
+                        <div v-closeable="" alt="single-level design example">
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> This class diagram of <a href="https://se-edu.github.io/addressbook-level3">se-edu/addressbook-level3</a> depicts the design of the entire software.</p>
+                            <img src="https://se-edu.github.io/addressbook-level3/images/mainClassDiagram.png" width="600"></tip-box>
+                        </div>
+                        <p><strong>Design of bigger systems needs to be done/shown at multiple levels.</strong></p>
+                        <div v-closeable="" alt="multi-level design example">
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> This architecture diagram of <a href="https://se-edu.github.io/addressbook-level4">se-edu/addressbook-level4</a> depicts the high-level design of the software.</p>
+                            <img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="600">
+                            <p>Here are examples of lower level designs of some components of the same software:</p>
+                            <tabs>
+                            
+                              <tab header="UI">
+                                <img src="https://se-edu.github.io/addressbook-level4/images/UiClassDiagram.png" width="600">
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                            
+                              <tab header="Logic">
+                                <img src="https://se-edu.github.io/addressbook-level4/images/LogicClassDiagram.png" width="600">
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                            
+                              <tab header="Storage">
+                                <img src="https://se-edu.github.io/addressbook-level4/images/StorageClassDiagram.png" width="600">
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                            </tabs>
+                          </tip-box>
+                        </div>
+                      </div>
+                      <div></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-            </p>
-            <div class="indented">
-              <div>
-                <p>Covered by the deliverable below <span class="dimmed"> (i.e. to be able to enhance an component of AddressBook-Level4, you need to be able to understand its multi-level design)</span>:</p>
-                <div name="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> v1.1 → Product%%">
-                  <h3 id="v11-product-2">v1.1 Product</h3>
-                  <ul>
-                    <li>Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these <mark>should be <tooltip content="should go beyond the component you are in charge of"><em>global-impact</em></tooltip> enhancements</mark>,
-                      touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
-                  </ul>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <p>Covered by the deliverable below <span class="dimmed"> (i.e. to be able to enhance an component of AddressBook-Level4, you need to be able to understand its multi-level design)</span>:</p>
+                  <div name="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> v1.1 → Product%%">
+                    <h3 id="v11-product-2">v1.1 Product</h3>
+                    <ul>
+                      <li>Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these <mark>should be <tooltip content="should go beyond the component you are in charge of"><em>global-impact</em></tooltip> enhancements</mark>,
+                        touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2390,32 +2390,33 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             </span>
             </span>
             </span>
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
                 <div>
-                  <p>
-                    <panel src="/website-base\book\uml\sequenceDiagrams\basic\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Basic%%"></panel>
-                    <panel src="/website-base\book\uml\sequenceDiagrams\loops\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Loops%%"></panel>
-                    <panel src="/website-base\book\uml\sequenceDiagrams\objectCreation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Object Creation%%"></panel>
-                    <panel src="/website-base\book\uml\sequenceDiagrams\minimalNotation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Minimal Notation%%"></panel>
-                  </p>
-                </div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
                   <div>
-                    <h4 id="sequence-diagrams-basic-2">Sequence Diagrams - Basic</h4>
+                    <p>
+                      <panel src="/website-base\book\uml\sequenceDiagrams\basic\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Basic%%"></panel>
+                      <panel src="/website-base\book\uml\sequenceDiagrams\loops\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Loops%%"></panel>
+                      <panel src="/website-base\book\uml\sequenceDiagrams\objectCreation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Object Creation%%"></panel>
+                      <panel src="/website-base\book\uml\sequenceDiagrams\minimalNotation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Minimal Notation%%"></panel>
+                    </p>
                   </div>
-                  <div id="main">
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
                     <div>
-                      <p><strong>Sequence diagrams model interactions between entities for a given scenario.</strong></p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> Consider the code below.</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
+                      <h4 id="sequence-diagrams-basic-2">Sequence Diagrams - Basic</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>Sequence diagrams model interactions between entities for a given scenario.</strong></p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Consider the code below.</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
 
     <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{
         Unit prototype = <span class="hljs-keyword">new</span> Unit();
@@ -2434,20 +2435,20 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
 }
 
 </code></pre>
-                        <p>Here is the sequence diagram to model the interactions for the method call <code>prouducePrototype()</code> on a <code>Machine</code> object.</p>
-                        <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
-                        <p></p>
-                      </tip-box>
-                    </div>
-                    <div>
+                          <p>Here is the sequence diagram to model the interactions for the method call <code>prouducePrototype()</code> on a <code>Machine</code> object.</p>
+                          <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/Machine.png" width="450">
+                          <p></p>
+                        </tip-box>
+                      </div>
                       <div>
-                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
-                              <question>
-                                <div>
-                                  <p>Consider the code below:</p>
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                        <div>
+                          <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
+                                <question>
+                                  <div>
+                                    <p>Consider the code below:</p>
+                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -2469,41 +2470,41 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-                                  <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                                  <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                                    <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                                    <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
-                              <question>
-                                <p>Find notation mistakes in the sequence diagram below:</p>
-                                <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="700"></question>
-                            </panel>
-                          </div>
-                        </panel>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
+                                <question>
+                                  <p>Find notation mistakes in the sequence diagram below:</p>
+                                  <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="700"></question>
+                              </panel>
+                            </div>
+                          </panel>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-            </p>
-            <div class="indented">
-              <div>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
                 <div>
-                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
-                    <question>
-                      <div>
-                        <p>Consider the code below:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
+                      <question>
+                        <div>
+                          <p>Consider the code below:</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -2525,18 +2526,19 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-                        <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                        <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                          <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                          <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                      </div>
-                    </question>
-                  </panel>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <p><strong>Submission</strong>: Show during tutorial.</p>
                 </div>
-                <p><strong>Submission</strong>: Show during tutorial.</p>
               </div>
             </div>
         </panel>
@@ -2546,35 +2548,36 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Implementation → Error Handling → Logging →
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Implementation → Error Handling → Logging →
 </span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="how-3">How</h4>
-                  </div>
-                  <div id="main">
+                    </span>
+                  </p>
+                  <div id="title-and-body">
                     <div>
-                      <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-                        <tooltip content="how much information to record">intensity</tooltip>.</p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> This sample Java code uses Java’s default logging mechanism.</p>
-                        <p>First, import the relevant Java package:</p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
+                      <h4 id="how-3">How</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
+                          <tooltip content="how much information to record">intensity</tooltip>.</p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> This sample Java code uses Java’s default logging mechanism.</p>
+                          <p>First, import the relevant Java package:</p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
 </code></pre>
-                        <p>Next, create a <code>Logger</code>:</p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
+                          <p>Next, create a <code>Logger</code>:</p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
 </code></pre>
-                        <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                          <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>)
-                          will not be written to the log file at all.</p>
-                        <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
+                          <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
+                            <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>)
+                            will not be written to the log file at all.</p>
+                          <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
 logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
 <span class="hljs-comment">//...</span>
 processInput();
@@ -2585,39 +2588,40 @@ processInput();
 <span class="hljs-comment">//...</span>
 logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
 </code></pre>
-                      </tip-box>
-                    </div>
-                    <div>
+                        </tip-box>
+                      </div>
                       <div>
-                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                          <p><strong>Tutorials</strong>:</p>
-                          <ul>
-                            <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
-                            <li><a href="http://tutorials.jenkov.com/java-logging/index.html"><strong>Java Logging Tutorial</strong></a> -- An alternative tutorial by <em>Jakob Jenkov</em></li>
-                          </ul>
-                          <div v-closeable="" alt="video:logging">
+                        <div>
+                          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                            <p><strong>Tutorials</strong>:</p>
                             <ul>
-                              <li>A video tutorial by <em>SimplyCoded</em>:<br></li>
+                              <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
+                              <li><a href="http://tutorials.jenkov.com/java-logging/index.html"><strong>Java Logging Tutorial</strong></a> -- An alternative tutorial by <em>Jakob Jenkov</em></li>
                             </ul>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/W0_Man88Z3Q" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                          </div>
-                          <p><strong>Best Practices</strong>:</p>
-                          <ul>
-                            <li><a href="https://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html"><strong>10 Tips for Proper Application Logging</strong></a> -- by <em>Tomasz Nurkiewicz</em></li>
-                            <li><a href="http://commons.apache.org/proper/commons-logging/guide.html#Message_PrioritiesLevels"><strong>What each logging level means</strong></a> -- conventions recommended by <em>Apache Project</em></li>
-                          </ul>
-                        </panel>
+                            <div v-closeable="" alt="video:logging">
+                              <ul>
+                                <li>A video tutorial by <em>SimplyCoded</em>:<br></li>
+                              </ul>
+                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/W0_Man88Z3Q" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                            </div>
+                            <p><strong>Best Practices</strong>:</p>
+                            <ul>
+                              <li><a href="https://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html"><strong>10 Tips for Proper Application Logging</strong></a> -- by <em>Tomasz Nurkiewicz</em></li>
+                              <li><a href="http://commons.apache.org/proper/commons-logging/guide.html#Message_PrioritiesLevels"><strong>What each logging level means</strong></a> -- conventions recommended by <em>Apache Project</em></li>
+                            </ul>
+                          </panel>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-            </p>
-            <div class="indented">
-              <div>
-                <p>Use of logging in the code you have written in the module project or elsewhere.</p>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <p>Use of logging in the code you have written in the module project or elsewhere.</p>
+                </div>
               </div>
             </div>
         </panel>
@@ -2627,74 +2631,76 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
                 <div>
-                  <p>
-                    <panel src="/website-base\book\errorHandling\assertions\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Error Handling → Assertions → What%%"></panel>
-                  </p>
-                </div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Implementation → Error Handling → Assertions →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
                   <div>
-                    <h4 id="how-4">How</h4>
+                    <p>
+                      <panel src="/website-base\book\errorHandling\assertions\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Error Handling → Assertions → What%%"></panel>
+                    </p>
                   </div>
-                  <div id="main">
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Implementation → Error Handling → Assertions →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
                     <div>
-                      <p>Use the <code>assert</code> keyword to define assertions.</p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
-                        <pre><code class="hljs java">x = getX();
+                      <h4 id="how-4">How</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p>Use the <code>assert</code> keyword to define assertions.</p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
+                          <pre><code class="hljs java">x = getX();
 <span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;
 ...
 </code></pre>
-                      </tip-box>
-                      <p><strong>Assertions can be disabled without modifying the code.</strong></p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> <code>java -enableassertions HelloWorld</code> (or <code>java -ea HelloWorld</code>) will run <code>HelloWorld</code> with assertions enabled while <code>java -disableassertions HelloWorld</code>                          will run it without verifying assertions.</p>
-                      </tip-box>
-                      <tip-box type="important">
-                        <p><strong>Java disables assertions by default.</strong> This could create a situation where you think all assertions are being verified as <code>true</code> while in fact they are not being verified at all. Therefore, remember to
-                          enable assertions when you run the program if you want them to be in effect.</p>
-                      </tip-box>
-                      <tip-box>
-                        <p>💡 Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code>assert false</code>                          into the code temporarily) to confirm assertions are being verified.</p>
-                      </tip-box>
-                      <tip-box type="info">
-                        <p><strong>Java <code>assert</code> vs JUnit assertions</strong>: They are similar in purpose but JUnit assertions are more powerful and customized for testing. In addition, JUnit assertions are not disabled by default. We recommend
-                          you use JUnit assertions in test code and Java <code>assert</code> in functional code.</p>
-                      </tip-box>
-                    </div>
-                    <div>
+                        </tip-box>
+                        <p><strong>Assertions can be disabled without modifying the code.</strong></p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> <code>java -enableassertions HelloWorld</code> (or <code>java -ea HelloWorld</code>) will run <code>HelloWorld</code> with assertions enabled while <code>java -disableassertions HelloWorld</code>                            will run it without verifying assertions.</p>
+                        </tip-box>
+                        <tip-box type="important">
+                          <p><strong>Java disables assertions by default.</strong> This could create a situation where you think all assertions are being verified as <code>true</code> while in fact they are not being verified at all. Therefore, remember
+                            to enable assertions when you run the program if you want them to be in effect.</p>
+                        </tip-box>
+                        <tip-box>
+                          <p>💡 Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code>assert false</code>                            into the code temporarily) to confirm assertions are being verified.</p>
+                        </tip-box>
+                        <tip-box type="info">
+                          <p><strong>Java <code>assert</code> vs JUnit assertions</strong>: They are similar in purpose but JUnit assertions are more powerful and customized for testing. In addition, JUnit assertions are not disabled by default. We recommend
+                            you use JUnit assertions in test code and Java <code>assert</code> in functional code.</p>
+                        </tip-box>
+                      </div>
                       <div>
-                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                          <p><strong>Tutorials</strong>:</p>
-                          <ul>
-                            <li><a href="https://www.javatpoint.com/assertion-in-java"><strong>Java Assertions</strong></a> -- a simple tutorial from <em><a href="http://javatpoint.com">javatpoint.com</a></em></li>
-                            <li><a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html"><strong>Programming with Assertions</strong> (first half)</a> -- a more detailed tutorial from <em>Oracle</em></li>
-                          </ul>
-                          <p><strong>Best practices</strong>:</p>
-                          <ul>
-                            <li><a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage"><strong>Programming with Assertions</strong> (second half)</a> -- <em>from Oracle</em> (also listed above as a tutorial) contains some
-                              best practices towards the end of the article.</li>
-                          </ul>
-                        </panel>
+                        <div>
+                          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                            <p><strong>Tutorials</strong>:</p>
+                            <ul>
+                              <li><a href="https://www.javatpoint.com/assertion-in-java"><strong>Java Assertions</strong></a> -- a simple tutorial from <em><a href="http://javatpoint.com">javatpoint.com</a></em></li>
+                              <li><a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html"><strong>Programming with Assertions</strong> (first half)</a> -- a more detailed tutorial from <em>Oracle</em></li>
+                            </ul>
+                            <p><strong>Best practices</strong>:</p>
+                            <ul>
+                              <li><a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage"><strong>Programming with Assertions</strong> (second half)</a> -- <em>from Oracle</em> (also listed above as a tutorial) contains
+                                some best practices towards the end of the article.</li>
+                            </ul>
+                          </panel>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-            </p>
-            <div class="indented">
-              <div>
-                <p>Explain assertions in AddressBook-Level4 code.</p>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <p>Explain assertions in AddressBook-Level4 code.</p>
+                </div>
               </div>
             </div>
         </panel>
@@ -2704,90 +2710,92 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
                 <div>
-                  <p>
-                    <panel src="/website-base\book\errorHandling\assertions\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Error Handling → Assertions → What%%"></panel>
-                    <panel src="/website-base\book\errorHandling\exceptions\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Error Handling → Exceptions → What%%"></panel>
-                  </p>
-                </div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Implementation → Error Handling → Assertions →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
                   <div>
-                    <h4 id="when-2">When</h4>
+                    <p>
+                      <panel src="/website-base\book\errorHandling\assertions\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Error Handling → Assertions → What%%"></panel>
+                      <panel src="/website-base\book\errorHandling\exceptions\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Error Handling → Exceptions → What%%"></panel>
+                    </p>
                   </div>
-                  <div id="main">
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Implementation → Error Handling → Assertions →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
                     <div>
-                      <p><strong>It is recommended that assertions be used liberally in the code.</strong> Their impact on performance is considered low and worth the additional safety they provide.</p>
-                      <p><strong>Do not use assertions to do <em>work</em></strong> because assertions can be disabled. If not, your program will stop working when assertions are not enabled.</p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> The code below will not invoke the <code>writeFile()</code> method when assertions are disabled. <span class="dimmed"> If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p>
-                        <pre><code class="hljs java">...
+                      <h4 id="when-2">When</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>It is recommended that assertions be used liberally in the code.</strong> Their impact on performance is considered low and worth the additional safety they provide.</p>
+                        <p><strong>Do not use assertions to do <em>work</em></strong> because assertions can be disabled. If not, your program will stop working when assertions are not enabled.</p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> The code below will not invoke the <code>writeFile()</code> method when assertions are disabled. <span class="dimmed"> If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p>
+                          <pre><code class="hljs java">...
 <span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;
 </code></pre>
-                      </tip-box>
-                      <p><strong>Assertions are suitable for verifying assumptions about <em>Internal Invariants</em>, <em>Control-Flow Invariants</em>,
+                        </tip-box>
+                        <p><strong>Assertions are suitable for verifying assumptions about <em>Internal Invariants</em>, <em>Control-Flow Invariants</em>,
 <em>Preconditions</em>, <em>Postconditions</em>, and <em>Class Invariants</em>.</strong> Refer to [<a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">Programming with Assertions (second half)</a>] to learn more.</p>
-                      <p><strong>Exceptions and assertions are two complementary ways of handling errors in software but they serve different purposes.</strong> Therefore, both assertions and exceptions should be used in code.</p>
-                      <ul>
-                        <li>The raising of an exception indicates an unusual condition created by the user <span class="dimmed"> (e.g.  user inputs an unacceptable input)</span> or the environment <span class="dimmed"> (e.g., a file needed for the program is missing)</span>.</li>
-                        <li>An assertion failure indicates the programmer made a mistake in the code <span class="dimmed"> (e.g., a null value is returned from a method that is not supposed to return null under any circumstances)</span>.</li>
-                      </ul>
-                    </div>
-                    <div>
+                        <p><strong>Exceptions and assertions are two complementary ways of handling errors in software but they serve different purposes.</strong> Therefore, both assertions and exceptions should be used in code.</p>
+                        <ul>
+                          <li>The raising of an exception indicates an unusual condition created by the user <span class="dimmed"> (e.g.  user inputs an unacceptable input)</span> or the environment <span class="dimmed"> (e.g., a file needed for the program is missing)</span>.</li>
+                          <li>An assertion failure indicates the programmer made a mistake in the code <span class="dimmed"> (e.g., a null value is returned from a method that is not supposed to return null under any circumstances)</span>.</li>
+                        </ul>
+                      </div>
                       <div>
-                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Assertions failure in Calculator">
-                              <question>
-                                <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                                <ul radio-group="f7dad" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> a. This is a correct use of assertions.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> c. The program has a bug.</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> d. All statements above are incorrect.</label></li>
-                                </ul>
-                                <div slot="answer">
-                                  <p>(c)</p>
-                                  <p>Explanation: An assertion failure indicates a bug in the code. (b) is not acceptable because of the word &quot;terminated&quot;. The application should not fail at all for this input. But it could have used an exception
-                                    to handle the situation internally.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about exceptions and assertions">
-                              <question>
-                                <p>Which statements are correct?</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Use assertions to indicate the programmer messed up; Use exceptions to indicate the user or the environment messed up.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Use exceptions to indicate the programmer messed up; Use assertions to indicate the user or the environment messed up.</li>
-                                </ul>
-                                <div slot="answer">
-                                  <p>(a)</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
+                        <div>
+                          <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Assertions failure in Calculator">
+                                <question>
+                                  <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
+                                  <ul radio-group="f7dad" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> a. This is a correct use of assertions.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> c. The program has a bug.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> d. All statements above are incorrect.</label></li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p>(c)</p>
+                                    <p>Explanation: An assertion failure indicates a bug in the code. (b) is not acceptable because of the word &quot;terminated&quot;. The application should not fail at all for this input. But it could have used an exception
+                                      to handle the situation internally.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about exceptions and assertions">
+                                <question>
+                                  <p>Which statements are correct?</p>
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Use assertions to indicate the programmer messed up; Use exceptions to indicate the user or the environment messed up.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Use exceptions to indicate the programmer messed up; Use assertions to indicate the user or the environment messed up.</li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p>(a)</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                          </panel>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-            </p>
-            <div class="indented">
-              <div>
-                <p>Give an example from the AddressBook-Level4 code where an exception is used and explain why an assertion is not suitable for that situation. Similarly, explain why an exception is not suitable for a place where AddressBook Level4 uses
-                  an assertion.</p>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <p>Give an example from the AddressBook-Level4 code where an exception is used and explain why an assertion is not suitable for that situation. Similarly, explain why an exception is not suitable for a place where AddressBook Level4 uses
+                    an assertion.</p>
+                </div>
               </div>
             </div>
         </panel>
@@ -2797,6 +2805,77 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Tools → Java →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="streams-basic-2">Streams: Basic</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>Java 8 introduced a number of new features (e.g. Lambdas, Streams)</strong> that are not trivial to learn but also extremely useful to know.</p>
+                        <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features .<span class="dimmed"> (written by Benjamin Winterberg)</span></p>
+                      </div>
+                      <div>
+                        <div>
+                          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                            <p><strong>Tutorials</strong>:</p>
+                            <tabs>
+                            
+                              <tab header="<span class='far fa-file-alt'></span>">
+                                <ul>
+                                  <li><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. 💡 Also provides a way to try out code online</li>
+                                  <li><strong>Tutorials from Oracle</strong>: [<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>][<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a>]</li>
+                                </ul>
+                                <p>
+                                  <hr>
+                                </p>
+                              </tab>
+                            
+                              <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
+                                <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
+                                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                                <panel type="seamless" header="A a more detailed version covering similar grounds">
+                                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                                </panel>
+                              
+                                <hr>
+                              </tab>
+                            </tabs>
+                          </panel>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <ol>
+                    <li>Your code (can be toy examples) that use some Java 8 features.</li>
+                    <li>Explain some parts of [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/">AddressBook - Level 4</a>] code that use Java 8 features. e.g. <code>AddressBook#syncMasterTagListWith(Person)</code></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W6.9a</code></span></big> <span><span class="fas fa-trophy"></span> Can use JavaFX to build a simple GUI</span>
+          <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          </span>
+          <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
               <div>
@@ -2808,225 +2887,156 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="streams-basic-2">Streams: Basic</h4>
+                    <h4 id="javafx-basic-2">JavaFX: Basic</h4>
                   </div>
                   <div id="main">
                     <div>
-                      <p><strong>Java 8 introduced a number of new features (e.g. Lambdas, Streams)</strong> that are not trivial to learn but also extremely useful to know.</p>
-                      <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features .<span class="dimmed"> (written by Benjamin Winterberg)</span></p>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                          <p><strong>Tutorials</strong>:</p>
-                          <tabs>
-                          
-                            <tab header="<span class='far fa-file-alt'></span>">
-                              <ul>
-                                <li><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. 💡 Also provides a way to try out code online</li>
-                                <li><strong>Tutorials from Oracle</strong>: [<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>][<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a>]</li>
-                              </ul>
-                              <p>
-                                <hr>
-                              </p>
-                            </tab>
-                          
-                            <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                              <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
-                              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                              <panel type="seamless" header="A a more detailed version covering similar grounds">
-                                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                              </panel>
-                            
-                              <hr>
-                            </tab>
-                          </tabs>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-            </p>
-            <div class="indented">
-              <div>
-                <ol>
-                  <li>Your code (can be toy examples) that use some Java 8 features.</li>
-                  <li>Explain some parts of [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/">AddressBook - Level 4</a>] code that use Java 8 features. e.g. <code>AddressBook#syncMasterTagListWith(Person)</code></li>
-                </ol>
-              </div>
-            </div>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W6.9a</code></span></big> <span><span class="fas fa-trophy"></span> Can use JavaFX to build a simple GUI</span>
-          <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <panel minimized="">
-            <span slot="header" class="card-title">Details of the LO</span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Tools → Java →
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="javafx-basic-2">JavaFX: Basic</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><span class="dimmed">Adapted (with permissions) from <a href="http://code.makery.ch/library/javafx-8-tutorial/">Marco Jakob's JavaFX 8 tutorial</a>.</span></p>
-                    <panel header="**Part 1: Scene Builder**">
-                      <div>
-                        <h1 id="javafx-8-tutorial-part-1-scene-builder-2">JavaFx 8 Tutorial - Part 1: Scene Builder</h1>
-                        <h2 id="introduction-4">Introduction</h2>
-                        <p>This tutorial will teach you how to create a new JavaFX application in IntelliJ, and to use the SceneBuilder to create a layouts for your application.</p>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/address-app-final-screenshot.png" alt="Final Screenshot" height="350">
-                        <p></p>
-                        <h2 id="prerequisites-2">Prerequisites</h2>
-                        <ul>
-                          <li>Latest <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java JDK 8</a> (includes <em>JavaFX 8</em>)</li>
-                          <li>IntelliJ (2017.2 or later)</li>
-                          <li><a href="http://gluonhq.com/products/scene-builder/">SceneBuilder 8</a> (provided by Gluon as <a href="http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html">Oracle no longer ships the tool in binary form</a>)</li>
-                        </ul>
-                        <tip-box type="tip">
-                          <p>Do remember the installation path to SceneBuilder 8 as we will need it to configure IntelliJ in a later step.</p>
-                        </tip-box>
-                        <h2 id="intellij-configurations-2">IntelliJ Configurations</h2>
-                        <p>If this is the first time using IntelliJ, you need to tell IntelliJ where to find JDK 8 and SceneBuilder.</p>
-                        <h3 id="configuring-jdk-8-2">Configuring JDK 8</h3>
-                        <ol>
-                          <li>On the Welcome screen, press <code>Configure</code> → <code>Project Default</code> → <code>Project Structure</code>.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/config-jdk-welcome-screen.png" alt="Welcome Screen" height="380">
-                        <p></p>
-                        <ul>
-                          <li>If you already have a project open, go to the Welcome screen by going to <code>File</code> → <code>Close Project</code>.</li>
-                        </ul>
-                        <ol start="2">
-                          <li>Under <code>Project SDK:</code>, press <code>New...</code> → <code>JDK</code>.</li>
-                          <li>Select the directory that you install JDK on, and press <code>OK</code>.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/config-jdk-project-structure.png" alt="JDK 8 under Project Structure" height="350">
-                        <p></p>
-                        <ol start="4">
-                          <li>Press <code>OK</code> again.</li>
-                        </ol>
-                        <h3 id="configuring-scene-builder-2">Configuring Scene Builder</h3>
-                        <ol>
-                          <li>On the Welcome screen, press <code>Configure</code> → <code>Settings</code>.</li>
-                          <li>On the left hand side, select <code>Languages &amp; Frameworks</code> → <code>JavaFX</code></li>
-                          <li>Under <code>Path to SceneBuilder:</code>, select the path to where SceneBuilder is installed (e.g. <code>C:\Users\Admin\AppData\Local\SceneBuilder\SceneBuilder.exe</code> on Windows)</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/config-scene-builder-settings.png" alt="Scene Builder settings" height="350">
-                        <p></p>
-                        <tip-box type="info" header="Helpful Links">
-                          <p>The JavaDocs will come in handy when writing your own JavaFX applications:</p>
+                      <p><span class="dimmed">Adapted (with permissions) from <a href="http://code.makery.ch/library/javafx-8-tutorial/">Marco Jakob's JavaFX 8 tutorial</a>.</span></p>
+                      <panel header="**Part 1: Scene Builder**">
+                        <div>
+                          <h1 id="javafx-8-tutorial-part-1-scene-builder-2">JavaFx 8 Tutorial - Part 1: Scene Builder</h1>
+                          <h2 id="introduction-4">Introduction</h2>
+                          <p>This tutorial will teach you how to create a new JavaFX application in IntelliJ, and to use the SceneBuilder to create a layouts for your application.</p>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/address-app-final-screenshot.png" alt="Final Screenshot" height="350">
+                          <p></p>
+                          <h2 id="prerequisites-2">Prerequisites</h2>
                           <ul>
-                            <li><a href="http://docs.oracle.com/javase/8/docs/api/">Java 8 API</a></li>
-                            <li><a href="http://docs.oracle.com/javase/8/javafx/api/">JavaFX 8 API</a></li>
-                            <li><a href="http://controlsfx.bitbucket.org/">ControlsFX API</a></li>
+                            <li>Latest <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java JDK 8</a> (includes <em>JavaFX 8</em>)</li>
+                            <li>IntelliJ (2017.2 or later)</li>
+                            <li><a href="http://gluonhq.com/products/scene-builder/">SceneBuilder 8</a> (provided by Gluon as <a href="http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html">Oracle no longer ships the tool in binary form</a>)</li>
                           </ul>
-                          <p>Additionally, <a href="http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm">Oracle also has a tutorial on JavaFX</a> if you are interested.</p>
-                        </tip-box>
-                        <h2 id="create-a-new-javafx-project-2">Create a new JavaFX Project</h2>
-                        <ol>
-                          <li>On the Welcome screen, press <code>Create New Project</code>.</li>
-                        </ol>
-                        <ul>
-                          <li>If you already have a project, you can create a new project by going <code>File</code> → <code>New</code> → <code>Project...</code>.</li>
-                        </ul>
-                        <ol start="2">
-                          <li>On the left side, select <code>JavaFX</code>. Make sure that the Project SDK is set to <code>1.8</code> and <code>JavaFX Application</code> is selected.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/new-project.png" alt="New Project" height="350">
-                        <p></p>
-                        <ol start="3">
-                          <li>Press <code>Next</code>.</li>
-                          <li>Give a name for the application (e.g. <code>AddressApp</code>), and specify a suitable location.</li>
-                          <li>Press <code>Finish</code>. If prompted to create a new directory, just press <code>OK</code>.</li>
-                        </ol>
-                        <p>Remove the <code>sample</code> package and its content. We will manually create our own package and resources in our tutorial.</p>
-                        <h2 id="create-the-packages-2">Create the Packages</h2>
-                        <p>In We will create a package for each of the component. Ensure that your Project pane is open (<kbd>Alt</kbd>+<kbd>1</kbd>). Right click on the <code>src</code> folder, and select <code>New</code> → <code>Package</code>:</p>
-                        <ul>
-                          <li><code>seedu.address</code> - contains the <em>controller</em> classes (i.e. the part that deals with the business logic)</li>
-                          <li><code>seedu.address.model</code> - contains the <em>model</em> classes (i.e. the part that deals with data)</li>
-                          <li><code>seedu.address.view</code> - contains the <em>views</em> (i.e. the part that deals with presenting the data to the user)</li>
-                        </ul>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/new-packages.png" alt="New Packages" height="200">
-                        <p></p>
-                        <tip-box type="info">
-                          <p>In subsequent tutorials, our <code>view</code> package will also contain some controllers that are directly related to a single view. We will call them <code>view-controllers</code>.</p>
-                        </tip-box>
-                        <h2 id="create-the-fxml-layout-file-2">Create the FXML Layout File</h2>
-                        <p>There are two ways to create the UI:</p>
-                        <ul>
-                          <li>Use FXML, which is an XML format.</li>
-                          <li>Programmatically create the interface in Java.</li>
-                        </ul>
-                        <p>We will use FXML for most parts, so that we can separate the view and controller from each other. Furthermore, we are able to use the Scene Builder tool to edit our FXML file. That means we will not have to directly work with XML.</p>
-                        <p>Right click on the <code>view</code> package, and press <code>New</code> → <code>FXML file</code>. For the file name, type <code>PersonOverview.fxml</code>.</p>
-                        <h2 id="design-with-scene-builder-2">Design with Scene Builder</h2>
-                        <p>Right-click on <code>PersonOverview.fxml</code> and choose <code>Open with Scene Builder</code>. Now you should see the Scene Builder with just an AnchorPane (visible under Hierarchy on the left).</p>
-                        <tip-box type="info">
-                          <p>If IntelliJ prompts for a location of the SceneBuilder executable, make sure to point to where you install SceneBuilder.</p>
-                        </tip-box>
-                        <ol>
-                          <li>Select the <code>Anchor Pane</code> in your Hierarchy, and adjust the size under Layout (right side). (Pref Width: 600, Pref Height: 300)</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-main-anchor.png" height="350">
-                        <p></p>
-                        <ol start="2">
-                          <li>Add a <code>Split Pane (Horizontal Flow)</code> (under <code>Containers</code>) by dragging it from the Library into the main area. Right-click the <code>Split Pane</code> in the Hierarchy view and select <code>Fit to Parent</code>.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-fit-to-parent.png" height="250">
-                        <p></p>
-                        <ol start="3">
-                          <li>Drag a <code>TableView</code> (under <code>Controls</code> in Library view) into the left side of the <code>SplitPane</code>. Select the <code>TableView</code> (not a Column) and set the following layout constraints in the Inspector
-                            to the <code>TableView</code>. Inside an <code>AnchorPane</code> you can always set anchors to the four borders (see <a href="http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm">this page</a> for more
-                            information on Layouts).</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-table-anchors.png" height="250">
-                        <p></p>
-                        <ol start="4">
-                          <li>
-                            <p>Go to the menu <code>Preview</code> → <code>Show Preview in Window</code> to see whether the layout configuration is done correctly. Try resizing the window. The <code>TableView</code> should resize together with the window
-                              as it is anchored to the borders.</p>
-                          </li>
-                          <li>
-                            <p>Change the column text (under Properties) to &quot;First Name&quot; and &quot;Last Name&quot;.</p>
-                          </li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-table-columns.png" height="250">
-                        <p></p>
-                        <ol start="6">
-                          <li>Select the <code>TableView</code> and choose <code>constrainted-resize</code> for the 'Column Resize Policy'. This ensures that the columns will always fill up the entire available space.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-table-columns-resize.png" height="200">
-                        <p></p>
-                        <ol start="7">
-                          <li>Add a <code>Label</code> on the right side with the text &quot;Person Details:&quot;. Adjust the layout using anchors (Top: 5, Left: 5. Right: Blank, Bottom: Blank).</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-title-label.png" width="800">
-                        <p></p>
-                        <tip-box type="tip">
-                          <p>You can use the Search Bar at the top of Library/Inspector to find the respective controls/properties.</p>
-                        </tip-box>
-                        <ol start="8">
-                          <li>Add a <code>GridPane</code> on the right side. Select it, and adjust its layout using anchors (Top: 30, Left: 5, Right: 5, Bottom: Blank).</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-grid-pane-1.png" width="600">
-                        <p></p>
-                        <ol start="9">
-                          <li>Add the following labels to the cells, such that the grid is of this form:</li>
-                        </ol>
-                        <div class="table-responsive">
+                          <tip-box type="tip">
+                            <p>Do remember the installation path to SceneBuilder 8 as we will need it to configure IntelliJ in a later step.</p>
+                          </tip-box>
+                          <h2 id="intellij-configurations-2">IntelliJ Configurations</h2>
+                          <p>If this is the first time using IntelliJ, you need to tell IntelliJ where to find JDK 8 and SceneBuilder.</p>
+                          <h3 id="configuring-jdk-8-2">Configuring JDK 8</h3>
+                          <ol>
+                            <li>On the Welcome screen, press <code>Configure</code> → <code>Project Default</code> → <code>Project Structure</code>.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/config-jdk-welcome-screen.png" alt="Welcome Screen" height="380">
+                          <p></p>
+                          <ul>
+                            <li>If you already have a project open, go to the Welcome screen by going to <code>File</code> → <code>Close Project</code>.</li>
+                          </ul>
+                          <ol start="2">
+                            <li>Under <code>Project SDK:</code>, press <code>New...</code> → <code>JDK</code>.</li>
+                            <li>Select the directory that you install JDK on, and press <code>OK</code>.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/config-jdk-project-structure.png" alt="JDK 8 under Project Structure" height="350">
+                          <p></p>
+                          <ol start="4">
+                            <li>Press <code>OK</code> again.</li>
+                          </ol>
+                          <h3 id="configuring-scene-builder-2">Configuring Scene Builder</h3>
+                          <ol>
+                            <li>On the Welcome screen, press <code>Configure</code> → <code>Settings</code>.</li>
+                            <li>On the left hand side, select <code>Languages &amp; Frameworks</code> → <code>JavaFX</code></li>
+                            <li>Under <code>Path to SceneBuilder:</code>, select the path to where SceneBuilder is installed (e.g. <code>C:\Users\Admin\AppData\Local\SceneBuilder\SceneBuilder.exe</code> on Windows)</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/config-scene-builder-settings.png" alt="Scene Builder settings" height="350">
+                          <p></p>
+                          <tip-box type="info" header="Helpful Links">
+                            <p>The JavaDocs will come in handy when writing your own JavaFX applications:</p>
+                            <ul>
+                              <li><a href="http://docs.oracle.com/javase/8/docs/api/">Java 8 API</a></li>
+                              <li><a href="http://docs.oracle.com/javase/8/javafx/api/">JavaFX 8 API</a></li>
+                              <li><a href="http://controlsfx.bitbucket.org/">ControlsFX API</a></li>
+                            </ul>
+                            <p>Additionally, <a href="http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm">Oracle also has a tutorial on JavaFX</a> if you are interested.</p>
+                          </tip-box>
+                          <h2 id="create-a-new-javafx-project-2">Create a new JavaFX Project</h2>
+                          <ol>
+                            <li>On the Welcome screen, press <code>Create New Project</code>.</li>
+                          </ol>
+                          <ul>
+                            <li>If you already have a project, you can create a new project by going <code>File</code> → <code>New</code> → <code>Project...</code>.</li>
+                          </ul>
+                          <ol start="2">
+                            <li>On the left side, select <code>JavaFX</code>. Make sure that the Project SDK is set to <code>1.8</code> and <code>JavaFX Application</code> is selected.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/new-project.png" alt="New Project" height="350">
+                          <p></p>
+                          <ol start="3">
+                            <li>Press <code>Next</code>.</li>
+                            <li>Give a name for the application (e.g. <code>AddressApp</code>), and specify a suitable location.</li>
+                            <li>Press <code>Finish</code>. If prompted to create a new directory, just press <code>OK</code>.</li>
+                          </ol>
+                          <p>Remove the <code>sample</code> package and its content. We will manually create our own package and resources in our tutorial.</p>
+                          <h2 id="create-the-packages-2">Create the Packages</h2>
+                          <p>In We will create a package for each of the component. Ensure that your Project pane is open (<kbd>Alt</kbd>+<kbd>1</kbd>). Right click on the <code>src</code> folder, and select <code>New</code> → <code>Package</code>:</p>
+                          <ul>
+                            <li><code>seedu.address</code> - contains the <em>controller</em> classes (i.e. the part that deals with the business logic)</li>
+                            <li><code>seedu.address.model</code> - contains the <em>model</em> classes (i.e. the part that deals with data)</li>
+                            <li><code>seedu.address.view</code> - contains the <em>views</em> (i.e. the part that deals with presenting the data to the user)</li>
+                          </ul>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/new-packages.png" alt="New Packages" height="200">
+                          <p></p>
+                          <tip-box type="info">
+                            <p>In subsequent tutorials, our <code>view</code> package will also contain some controllers that are directly related to a single view. We will call them <code>view-controllers</code>.</p>
+                          </tip-box>
+                          <h2 id="create-the-fxml-layout-file-2">Create the FXML Layout File</h2>
+                          <p>There are two ways to create the UI:</p>
+                          <ul>
+                            <li>Use FXML, which is an XML format.</li>
+                            <li>Programmatically create the interface in Java.</li>
+                          </ul>
+                          <p>We will use FXML for most parts, so that we can separate the view and controller from each other. Furthermore, we are able to use the Scene Builder tool to edit our FXML file. That means we will not have to directly work with
+                            XML.</p>
+                          <p>Right click on the <code>view</code> package, and press <code>New</code> → <code>FXML file</code>. For the file name, type <code>PersonOverview.fxml</code>.</p>
+                          <h2 id="design-with-scene-builder-2">Design with Scene Builder</h2>
+                          <p>Right-click on <code>PersonOverview.fxml</code> and choose <code>Open with Scene Builder</code>. Now you should see the Scene Builder with just an AnchorPane (visible under Hierarchy on the left).</p>
+                          <tip-box type="info">
+                            <p>If IntelliJ prompts for a location of the SceneBuilder executable, make sure to point to where you install SceneBuilder.</p>
+                          </tip-box>
+                          <ol>
+                            <li>Select the <code>Anchor Pane</code> in your Hierarchy, and adjust the size under Layout (right side). (Pref Width: 600, Pref Height: 300)</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-main-anchor.png" height="350">
+                          <p></p>
+                          <ol start="2">
+                            <li>Add a <code>Split Pane (Horizontal Flow)</code> (under <code>Containers</code>) by dragging it from the Library into the main area. Right-click the <code>Split Pane</code> in the Hierarchy view and select <code>Fit to Parent</code>.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-fit-to-parent.png" height="250">
+                          <p></p>
+                          <ol start="3">
+                            <li>Drag a <code>TableView</code> (under <code>Controls</code> in Library view) into the left side of the <code>SplitPane</code>. Select the <code>TableView</code> (not a Column) and set the following layout constraints in the
+                              Inspector to the <code>TableView</code>. Inside an <code>AnchorPane</code> you can always set anchors to the four borders (see <a href="http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm">this page</a>                              for more information on Layouts).</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-table-anchors.png" height="250">
+                          <p></p>
+                          <ol start="4">
+                            <li>
+                              <p>Go to the menu <code>Preview</code> → <code>Show Preview in Window</code> to see whether the layout configuration is done correctly. Try resizing the window. The <code>TableView</code> should resize together with the window
+                                as it is anchored to the borders.</p>
+                            </li>
+                            <li>
+                              <p>Change the column text (under Properties) to &quot;First Name&quot; and &quot;Last Name&quot;.</p>
+                            </li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-table-columns.png" height="250">
+                          <p></p>
+                          <ol start="6">
+                            <li>Select the <code>TableView</code> and choose <code>constrainted-resize</code> for the 'Column Resize Policy'. This ensures that the columns will always fill up the entire available space.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-table-columns-resize.png" height="200">
+                          <p></p>
+                          <ol start="7">
+                            <li>Add a <code>Label</code> on the right side with the text &quot;Person Details:&quot;. Adjust the layout using anchors (Top: 5, Left: 5. Right: Blank, Bottom: Blank).</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-title-label.png" width="800">
+                          <p></p>
+                          <tip-box type="tip">
+                            <p>You can use the Search Bar at the top of Library/Inspector to find the respective controls/properties.</p>
+                          </tip-box>
+                          <ol start="8">
+                            <li>Add a <code>GridPane</code> on the right side. Select it, and adjust its layout using anchors (Top: 30, Left: 5, Right: 5, Bottom: Blank).</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-grid-pane-1.png" width="600">
+                          <p></p>
+                          <ol start="9">
+                            <li>Add the following labels to the cells, such that the grid is of this form:</li>
+                          </ol>
                           <table class="markbind-table table table-bordered table-striped">
                             <thead>
                               <tr>
@@ -3057,67 +3067,66 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                               </tr>
                             </tbody>
                           </table>
-                        </div>
-                        <tip-box type="tip">
-                          <p>To add a row to the GridPane, select an existing row number, right click the row number and choose &quot;Add Row Below&quot;.</p>
-                        </tip-box>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-grid-pane-2.png" height="250">
-                        <p></p>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-grid-pane-3.png" height="280">
-                        <p></p>
-                        <ol start="10">
-                          <li>Add a <code>ButtonBar</code> at the bottom. Add three buttons to the bar (&quot;New...&quot;, &quot;Edit...&quot;,&quot;Delete&quot;). Adjust the anchors so that it stays at the bottom right (Top: Blank, Left: Blank, Right: 10,
-                            Bottom: 5).</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-button-bar.png" height="50">
-                        <p></p>
-                        <ol start="11">
-                          <li>Now you should see something like the following. Use the <code>Preview</code> menu to test its resizing behaviour.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-final.png" height="300">
-                        <p></p>
-                        <ol start="12">
-                          <li>Save the <code>.fxml</code> file.</li>
-                        </ol>
-                        <h2 id="create-the-main-application-2">Create the Main Application</h2>
-                        <p>The <code>PersonOverview.fxml</code> that we just created only contains the content of our entire application. We need another FXML for our root layout, which will contain a menu bar and wraps <code>PersonOverview.fxml</code>.</p>
-                        <ol>
-                          <li>Inside IntelliJ, right click on the <code>view</code> package, and press <code>New</code> → <code>FXML file</code>. For the file name, type <code>RootLayout.fxml</code>.</li>
-                          <li>Right-click on <code>RootLayout.fxml</code> and choose <code>Open with Scene Builder</code>.</li>
-                          <li>Delete the <code>AnchorPane</code>. We will use another pane for our root layout.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-delete-anchor-pane.png" height="230">
-                        <p></p>
-                        <ol start="4">
-                          <li>Add <code>BorderPane</code> by dragging it from the Library view into the main area.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-add-border-pane.png" height="380">
-                        <p></p>
-                        <ol start="5">
-                          <li>Resize the <code>BorderPane</code> (Pref Width: 600, Pref Height: 400)</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-resize.png" height="280">
-                        <p></p>
-                        <ol start="6">
-                          <li>Add a <code>MenuBar</code> into the <code>insert TOP</code> slot. We will not implement menu functionality for now.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-menu-bar.png" height="100">
-                        <p></p>
-                        <h2 id="the-javafx-main-class-2">The JavaFX Main Class</h2>
-                        <p>Now, we need to create the <em>main Java class</em> that starts up our application with the <code>RootLayout.fxml</code> and adds the <code>PersonOverview.fxml</code> in the center.</p>
-                        <p>Right-click on your <code>seedu.address</code> package, and choose <code>New</code> → <code>JavaFXApplication</code>. For the class name, type <code>MainApp</code>.</p>
-                        <p>The generated <code>MainApp.java</code> class extends from <code>Application</code> and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the <code>start(Stage primaryStage)</code>                          method. It is automatically called when the application is <code>launch()</code> from within the <code>main()</code> method.</p>
-                        <p>As you see, the <code>start(...)</code> method receives a <code>Stage</code> as parameter. The following graphic illustrates the structure of every JavaFX application:</p>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/javafx-hierarchy.png" height="350">
-                        <p></p>
-                        <p>Image Source: <a href="http://www.oracle.com">http://www.oracle.com</a></p>
-                        <p><em>It's like a theater play:</em> The <code>Stage</code> is the main container which is usually a <code>Window</code> with a border and the typical minimize, maximize and close buttons. Inside the <code>Stage</code> you add a
-                          <code>Scene</code> which can, of course, be switched out by another <code>Scene</code>. Inside the <code>Scene</code> the actual JavaFX nodes like <code>AnchorPane</code>, <code>TextBox</code>, etc. are added.</p>
-                        <p>See <a href="http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm">this page</a> fore more info on working with the JavaFX Scene Graph.</p>
-                        <hr>
-                        <p>Open <code>MainApp.java</code> and replace the code with the following:</p>
-                        <p><strong>MainApp.java</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address;
+                          <tip-box type="tip">
+                            <p>To add a row to the GridPane, select an existing row number, right click the row number and choose &quot;Add Row Below&quot;.</p>
+                          </tip-box>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-grid-pane-2.png" height="250">
+                          <p></p>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-grid-pane-3.png" height="280">
+                          <p></p>
+                          <ol start="10">
+                            <li>Add a <code>ButtonBar</code> at the bottom. Add three buttons to the bar (&quot;New...&quot;, &quot;Edit...&quot;,&quot;Delete&quot;). Adjust the anchors so that it stays at the bottom right (Top: Blank, Left: Blank, Right:
+                              10, Bottom: 5).</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-button-bar.png" height="50">
+                          <p></p>
+                          <ol start="11">
+                            <li>Now you should see something like the following. Use the <code>Preview</code> menu to test its resizing behaviour.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/design-scene-builder-final.png" height="300">
+                          <p></p>
+                          <ol start="12">
+                            <li>Save the <code>.fxml</code> file.</li>
+                          </ol>
+                          <h2 id="create-the-main-application-2">Create the Main Application</h2>
+                          <p>The <code>PersonOverview.fxml</code> that we just created only contains the content of our entire application. We need another FXML for our root layout, which will contain a menu bar and wraps <code>PersonOverview.fxml</code>.</p>
+                          <ol>
+                            <li>Inside IntelliJ, right click on the <code>view</code> package, and press <code>New</code> → <code>FXML file</code>. For the file name, type <code>RootLayout.fxml</code>.</li>
+                            <li>Right-click on <code>RootLayout.fxml</code> and choose <code>Open with Scene Builder</code>.</li>
+                            <li>Delete the <code>AnchorPane</code>. We will use another pane for our root layout.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-delete-anchor-pane.png" height="230">
+                          <p></p>
+                          <ol start="4">
+                            <li>Add <code>BorderPane</code> by dragging it from the Library view into the main area.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-add-border-pane.png" height="380">
+                          <p></p>
+                          <ol start="5">
+                            <li>Resize the <code>BorderPane</code> (Pref Width: 600, Pref Height: 400)</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-resize.png" height="280">
+                          <p></p>
+                          <ol start="6">
+                            <li>Add a <code>MenuBar</code> into the <code>insert TOP</code> slot. We will not implement menu functionality for now.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/create-main-app-menu-bar.png" height="100">
+                          <p></p>
+                          <h2 id="the-javafx-main-class-2">The JavaFX Main Class</h2>
+                          <p>Now, we need to create the <em>main Java class</em> that starts up our application with the <code>RootLayout.fxml</code> and adds the <code>PersonOverview.fxml</code> in the center.</p>
+                          <p>Right-click on your <code>seedu.address</code> package, and choose <code>New</code> → <code>JavaFXApplication</code>. For the class name, type <code>MainApp</code>.</p>
+                          <p>The generated <code>MainApp.java</code> class extends from <code>Application</code> and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the <code>start(Stage primaryStage)</code>                            method. It is automatically called when the application is <code>launch()</code> from within the <code>main()</code> method.</p>
+                          <p>As you see, the <code>start(...)</code> method receives a <code>Stage</code> as parameter. The following graphic illustrates the structure of every JavaFX application:</p>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/javafx-hierarchy.png" height="350">
+                          <p></p>
+                          <p>Image Source: <a href="http://www.oracle.com">http://www.oracle.com</a></p>
+                          <p><em>It's like a theater play:</em> The <code>Stage</code> is the main container which is usually a <code>Window</code> with a border and the typical minimize, maximize and close buttons. Inside the <code>Stage</code> you add
+                            a <code>Scene</code> which can, of course, be switched out by another <code>Scene</code>. Inside the <code>Scene</code> the actual JavaFX nodes like <code>AnchorPane</code>, <code>TextBox</code>, etc. are added.</p>
+                          <p>See <a href="http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm">this page</a> fore more info on working with the JavaFX Scene Graph.</p>
+                          <hr>
+                          <p>Open <code>MainApp.java</code> and replace the code with the following:</p>
+                          <p><strong>MainApp.java</strong></p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address;
 
 <span class="hljs-keyword">import</span> java.io.IOException;
 
@@ -3190,32 +3199,31 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-                        <p>The various comments should give you some hints about what's going on.</p>
-                        <p>If you run the application now (right click <code>MainApp.java</code> and select <code>Run MainApp.main()</code>), you should see something like this:</p>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part01/images/address-app-final-screenshot.png" height="350">
-                        <p></p>
-                        <h2 id="possible-issues-2">Possible Issues</h2>
-                        <p>If JavaFx fails to load <code>PersonOverview.fxml</code>, you might get the following error message:</p>
-                        <pre class="hljs"><code>javafx.fxml.LoadException:
+                          <p>The various comments should give you some hints about what's going on.</p>
+                          <p>If you run the application now (right click <code>MainApp.java</code> and select <code>Run MainApp.main()</code>), you should see something like this:</p>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part01/images/address-app-final-screenshot.png" height="350">
+                          <p></p>
+                          <h2 id="possible-issues-2">Possible Issues</h2>
+                          <p>If JavaFx fails to load <code>PersonOverview.fxml</code>, you might get the following error message:</p>
+                          <pre class="hljs"><code>javafx.fxml.LoadException:
 /.../AddressApp/out/production/AddressApp/seedu/address/view/PersonOverview.fxml:15
 </code></pre>
-                        <p>To solve this issue, open <code>PersonOverview.fxml</code> normally in IntelliJ and ensure that there is no such attribute around:</p>
-                        <p><code>fx:controller=&quot;seedu.address.view.PersonOverview&quot;</code></p>
-                      </div>
-                    </panel>
-                    <panel header="**Part 2: Model and TableView**">
-                      <div>
-                        <h1 id="javafx-8-tutorial-part-2-model-and-tableview-2">JavaFx 8 tutorial - Part 2: Model and TableView</h1>
-                        <h2 id="introduction-5">Introduction</h2>
-                        <p>In this tutorial, we will create the other parts of the application (mainly the model and the controller). We will also use <code>ObservableList</code> and <code>*Property</code> to bind our list of new model's <code>Person</code>s,
-                          and their individual details, to the view, with the controller as the &quot;middleman&quot;.</p>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part02/images/address-app-final-screenshot.png" height="350">
-                        <p></p>
-                        <h2 id="create-the-model-class-2">Create the Model class</h2>
-                        <p>We need a model class in order to hold information about the people in our address book. Add a new class to the <code>model</code> package (<code>seedu.address.model</code>) called <code>Person</code>. The <code>Person</code> class
-                          will encapsulate the details of an individual person such as name, address and birthday. Add the following code to the class. The JavaFX specifics will be explained after the code snippet.</p>
-                        <p><strong>Person.java</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address.model;
+                          <p>To solve this issue, open <code>PersonOverview.fxml</code> normally in IntelliJ and ensure that there is no such attribute around:</p>
+                          <p><code>fx:controller=&quot;seedu.address.view.PersonOverview&quot;</code></p>
+                        </div>
+                      </panel>
+                      <panel header="**Part 2: Model and TableView**">
+                        <div>
+                          <h1 id="javafx-8-tutorial-part-2-model-and-tableview-2">JavaFx 8 tutorial - Part 2: Model and TableView</h1>
+                          <h2 id="introduction-5">Introduction</h2>
+                          <p>In this tutorial, we will create the other parts of the application (mainly the model and the controller). We will also use <code>ObservableList</code> and <code>*Property</code> to bind our list of new model's <code>Person</code>s,
+                            and their individual details, to the view, with the controller as the &quot;middleman&quot;.</p>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part02/images/address-app-final-screenshot.png" height="350">
+                          <p></p>
+                          <h2 id="create-the-model-class-2">Create the Model class</h2>
+                          <p>We need a model class in order to hold information about the people in our address book. Add a new class to the <code>model</code> package (<code>seedu.address.model</code>) called <code>Person</code>. The <code>Person</code>                            class will encapsulate the details of an individual person such as name, address and birthday. Add the following code to the class. The JavaFX specifics will be explained after the code snippet.</p>
+                          <p><strong>Person.java</strong></p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address.model;
 
 <span class="hljs-keyword">import</span> java.time.LocalDate;
 
@@ -3332,23 +3340,23 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-                        <h3 id="explanations-3">Explanations</h3>
-                        <ul>
-                          <li>With JavaFX, it is common to use <code>*Property</code> for all fields of a model class. A <code>Property</code> allows us, for example, to automatically be notified when the <code>lastName</code> or any other variable is changed.
-                            This helps us keep the view in sync with the data.</li>
-                          <li>To learn more about <code>*Property</code>, refer to <a href="http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm">Using JavaFX Properties and Binding</a></li>
-                          <li><code>LocalDate</code>, the type that we are using for <code>birthday</code>, is part of the <a href="http://docs.oracle.com/javase/tutorial/datetime/iso/">new Date and Time API for JDK 8</a></li>
-                        </ul>
-                        <h2 id="a-list-of-persons-2">A List of Persons</h2>
-                        <p>The main data that our application manages is simply a bunch of persons. Let's create a list of <code>Person</code> objects inside the <code>MainApp</code> class. All other controller classes will later get access to that central
-                          list inside the <code>MainApp</code>.</p>
-                        <h3 id="observablelist-2">ObservableList</h3>
-                        <p>We are working with JavaFX view classes that need to be informed about any changes made to the list of persons. This is important, since otherwise the view would not be in sync with the data. For this purpose, JavaFX introduces
-                          some new <a href="http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm">Collection classes</a>.</p>
-                        <p>Among all these collections, we need the <code>ObservableList</code>. To create a new <code>ObservableList</code>, add the following code at the beginning of the <code>MainApp</code> class. We'll also add a constructor that creates
-                          some sample data and a public getter method:</p>
-                        <p><strong>MainApp.java</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-comment">// ... AFTER THE OTHER VARIABLES ...</span>
+                          <h3 id="explanations-3">Explanations</h3>
+                          <ul>
+                            <li>With JavaFX, it is common to use <code>*Property</code> for all fields of a model class. A <code>Property</code> allows us, for example, to automatically be notified when the <code>lastName</code> or any other variable is changed.
+                              This helps us keep the view in sync with the data.</li>
+                            <li>To learn more about <code>*Property</code>, refer to <a href="http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm">Using JavaFX Properties and Binding</a></li>
+                            <li><code>LocalDate</code>, the type that we are using for <code>birthday</code>, is part of the <a href="http://docs.oracle.com/javase/tutorial/datetime/iso/">new Date and Time API for JDK 8</a></li>
+                          </ul>
+                          <h2 id="a-list-of-persons-2">A List of Persons</h2>
+                          <p>The main data that our application manages is simply a bunch of persons. Let's create a list of <code>Person</code> objects inside the <code>MainApp</code> class. All other controller classes will later get access to that central
+                            list inside the <code>MainApp</code>.</p>
+                          <h3 id="observablelist-2">ObservableList</h3>
+                          <p>We are working with JavaFX view classes that need to be informed about any changes made to the list of persons. This is important, since otherwise the view would not be in sync with the data. For this purpose, JavaFX introduces
+                            some new <a href="http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm">Collection classes</a>.</p>
+                          <p>Among all these collections, we need the <code>ObservableList</code>. To create a new <code>ObservableList</code>, add the following code at the beginning of the <code>MainApp</code> class. We'll also add a constructor that creates
+                            some sample data and a public getter method:</p>
+                          <p><strong>MainApp.java</strong></p>
+                          <pre><code class="hljs java"><span class="hljs-comment">// ... AFTER THE OTHER VARIABLES ...</span>
 
 <span class="hljs-comment">/**
 * The data as an observable list of {<span class="hljs-doctag">@link</span> Person}.
@@ -3380,19 +3388,19 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
 
     <span class="hljs-comment">// ... THE REST OF THE CLASS ...</span>
 </code></pre>
-                        <h2 id="the-personoverviewcontroller-2">The PersonOverviewController</h2>
-                        <p>We have our model and view. Let's get our data into our table. We'll need a controller for our <code>PersonOverview.fxml</code> to act as a &quot;middleman&quot; for the model and view.</p>
-                        <p>Create a normal Java class inside the <code>view</code> package called <code>PersonOverviewController</code>.</p>
-                        <tip-box type="tip">
-                          <p>Note: We must put the class inside the same package as <code>PersonOverview.fxml</code>, otherwise the SceneBuilder won't be able to find it.</p>
-                        </tip-box>
-                        <p>We will add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special <code>@FXML</code> annotation. This is necessary in order for the <code>.fxml</code>                          file to have access to private fields and private methods. After we have everything set up in the <code>.fxml</code> file, the application will automatically fill the variables when the <code>.fxml</code> file is loaded.</p>
-                        <p>So let's add the following code:</p>
-                        <tip-box type="tip">
-                          <p>Note: Remember to always use the <code>javafx</code> imports, NOT <code>awt</code> or <code>swing</code>.</p>
-                        </tip-box>
-                        <p><strong>PersonOverviewController.java</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address.view;
+                          <h2 id="the-personoverviewcontroller-2">The PersonOverviewController</h2>
+                          <p>We have our model and view. Let's get our data into our table. We'll need a controller for our <code>PersonOverview.fxml</code> to act as a &quot;middleman&quot; for the model and view.</p>
+                          <p>Create a normal Java class inside the <code>view</code> package called <code>PersonOverviewController</code>.</p>
+                          <tip-box type="tip">
+                            <p>Note: We must put the class inside the same package as <code>PersonOverview.fxml</code>, otherwise the SceneBuilder won't be able to find it.</p>
+                          </tip-box>
+                          <p>We will add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special <code>@FXML</code> annotation. This is necessary in order for the <code>.fxml</code>                            file to have access to private fields and private methods. After we have everything set up in the <code>.fxml</code> file, the application will automatically fill the variables when the <code>.fxml</code> file is loaded.</p>
+                          <p>So let's add the following code:</p>
+                          <tip-box type="tip">
+                            <p>Note: Remember to always use the <code>javafx</code> imports, NOT <code>awt</code> or <code>swing</code>.</p>
+                          </tip-box>
+                          <p><strong>PersonOverviewController.java</strong></p>
+                          <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address.view;
 
 <span class="hljs-keyword">import</span> javafx.fxml.FXML;
 <span class="hljs-keyword">import</span> javafx.scene.control.Label;
@@ -3453,31 +3461,31 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-                        <h3 id="explanations-4">Explanations</h3>
-                        <ul>
-                          <li>All fields and methods where the <code>.fxml</code> file needs access must be annotated with <code>@FXML</code>.
-                            <ul>
-                              <li>Actually, only if they are private, but it's better to have them private and mark them with the annotation!</li>
-                            </ul>
-                          </li>
-                          <li>The <code>initialize()</code> method is automatically called after the <code>.fxml</code> file has been loaded. At this time, all the FXML fields should have been initialized already.</li>
-                          <li>The <code>setCellValueFactory(...)</code> that we set on the table colums are used to determine which field inside the <code>Person</code> objects should be used for the particular column. The arrow <code>-&gt;</code> indicates
-                            that we're using a Java 8 feature called Lambdas. (Another option would be to use a <a href="http://docs.oracle.com/javase/8/javafx/api/"><code>PropertyValueFactory</code></a>, but this is not type-safe).</li>
-                        </ul>
-                        <tip-box type="tip">
-                          <p>Note:</p>
-                          <p>We're only using <code>StringProperty</code> values for our table columns in this example. When you want to use <code>IntegerProperty</code> or <code>DoubleProperty</code>, the <code>setCellValueFactory(...)</code> must have
-                            an additional <code>asObject()</code>:</p>
-                          <pre><code class="hljs java">myIntegerColumn.setCellValueFactory(cellData -&gt;
+                          <h3 id="explanations-4">Explanations</h3>
+                          <ul>
+                            <li>All fields and methods where the <code>.fxml</code> file needs access must be annotated with <code>@FXML</code>.
+                              <ul>
+                                <li>Actually, only if they are private, but it's better to have them private and mark them with the annotation!</li>
+                              </ul>
+                            </li>
+                            <li>The <code>initialize()</code> method is automatically called after the <code>.fxml</code> file has been loaded. At this time, all the FXML fields should have been initialized already.</li>
+                            <li>The <code>setCellValueFactory(...)</code> that we set on the table colums are used to determine which field inside the <code>Person</code> objects should be used for the particular column. The arrow <code>-&gt;</code> indicates
+                              that we're using a Java 8 feature called Lambdas. (Another option would be to use a <a href="http://docs.oracle.com/javase/8/javafx/api/"><code>PropertyValueFactory</code></a>, but this is not type-safe).</li>
+                          </ul>
+                          <tip-box type="tip">
+                            <p>Note:</p>
+                            <p>We're only using <code>StringProperty</code> values for our table columns in this example. When you want to use <code>IntegerProperty</code> or <code>DoubleProperty</code>, the <code>setCellValueFactory(...)</code> must have
+                              an additional <code>asObject()</code>:</p>
+                            <pre><code class="hljs java">myIntegerColumn.setCellValueFactory(cellData -&gt;
     cellData.getValue().myIntegerProperty().asObject());
 </code></pre>
-                          <p>This is necessary because of a bad design decision of JavaFX (see <a href="https://community.oracle.com/thread/2575601">this discussion</a> for more details).</p>
-                        </tip-box>
-                        <h3 id="connecting-mainapp-with-the-personoverviewcontroller-2">Connecting MainApp with the PersonOverviewController</h3>
-                        <p>The <code>setMainApp(...)</code> method must be called by the <code>MainApp</code> class. This gives us a way to access the <code>MainApp</code> object and get the list of <code>Persons</code> and other things. Add the following
-                          three lines to <code>showPersonOverview()</code> the method:</p>
-                        <p><strong>MainApp.java - additional lines to add to showPersonOverview() method</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-comment">// (.... root layout statement goes here ....)</span>
+                            <p>This is necessary because of a bad design decision of JavaFX (see <a href="https://community.oracle.com/thread/2575601">this discussion</a> for more details).</p>
+                          </tip-box>
+                          <h3 id="connecting-mainapp-with-the-personoverviewcontroller-2">Connecting MainApp with the PersonOverviewController</h3>
+                          <p>The <code>setMainApp(...)</code> method must be called by the <code>MainApp</code> class. This gives us a way to access the <code>MainApp</code> object and get the list of <code>Persons</code> and other things. Add the following
+                            three lines to <code>showPersonOverview()</code> the method:</p>
+                          <p><strong>MainApp.java - additional lines to add to showPersonOverview() method</strong></p>
+                          <pre><code class="hljs java"><span class="hljs-comment">// (.... root layout statement goes here ....)</span>
 
 <span class="hljs-comment">// Give the controller access to the main app.</span>
     PersonOverviewController controller = loader.getController();
@@ -3485,9 +3493,9 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
 
 <span class="hljs-comment">// (.... catch statement goes here ....)</span>
 </code></pre>
-                        <p>Your <code>showPersonOverview()</code> method in <code>MainApp</code> should now look like this:</p>
-                        <p><strong>MainApp.java - new showPersonOverview() method</strong></p>
-                        <pre><code class="hljs java"><span class="hljs-comment">/**
+                          <p>Your <code>showPersonOverview()</code> method in <code>MainApp</code> should now look like this:</p>
+                          <p><strong>MainApp.java - new showPersonOverview() method</strong></p>
+                          <pre><code class="hljs java"><span class="hljs-comment">/**
 * Shows the person overview inside the root layout.
 */</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showPersonOverview</span><span class="hljs-params">()</span> </span>{
@@ -3508,63 +3516,64 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     }
 }
 </code></pre>
-                        <h2 id="hook-the-view-to-the-controller-2">Hook the View to the controller</h2>
-                        <p>We're almost there! But one thing is missing: We haven't told our <code>PersonOverview.fxml</code> file which controller to use, and which element should match to which field inside the controller.</p>
-                        <ol>
-                          <li>Open <code>PersonOverview.fxml</code> with the SceneBuilder.</li>
-                          <li>Open the Controller group on the left side (just below Hierarchy), and select the <code>seedu.address.view.PersonOverviewController</code> as the controller class.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part02/images/hook-view-controller.png" height="350">
-                        <p></p>
-                        <ol start="3">
-                          <li>Select the <code>TableView</code> in the Hierarchy group.</li>
-                          <li>In the Inspector view, under the Code group, set 'fx:id' to <code>personTable</code>.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part02/images/hook-view-person-table.png" height="250">
-                        <p></p>
-                        <ol start="5">
-                          <li>Do the same for the table columns. Select <code>firstNameColumn</code> and <code>lastNameColumn</code> for the 'fx:id' respectively.</li>
-                          <li>For each label in the second column of the grid pane, choose the corresponding 'fx:id'.</li>
-                        </ol>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part02/images/hook-view-labels.png" width="650">
-                        <p></p>
-                        <ol start="7">
-                          <li>Save the <code>.fxml</code> file.</li>
-                        </ol>
-                        <h2 id="start-the-application-2">Start the Application</h2>
-                        <p>When you start your application now, you should see something like this:</p>
-                        <img src="/website-base/book/javaTools/javaFXBasic/part02/images/address-app-final-screenshot.png" height="350">
-                        <p></p>
-                        <p>Congratulations! The application now shows the list of <code>Person</code>s in the view!</p>
-                        <p>You may notice that selecting a person in the <code>TableView</code> does nothing to the labels at the right side. That is because the user interaction portion has not been programmed yet, which we will cover in the next part of
-                          the tutorial.</p>
-                      </div>
-                    </panel>
-                    <p></p>
-                    After going through the two parts above, you should be familiar with building basic JavaFX GUIs using IntelliJ. You can continue with the original tutorial (which is written for Eclipse), with the following links:
-                    <ul>
-                      <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part3/"><strong>Part 3: Interacting with the User</strong></a></li>
-                      <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part4/"><strong>Part 4: CSS Styling</strong></a></li>
-                      <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part5/"><strong>Part 5: Storing Data as XML</strong></a></li>
-                    </ul>
+                          <h2 id="hook-the-view-to-the-controller-2">Hook the View to the controller</h2>
+                          <p>We're almost there! But one thing is missing: We haven't told our <code>PersonOverview.fxml</code> file which controller to use, and which element should match to which field inside the controller.</p>
+                          <ol>
+                            <li>Open <code>PersonOverview.fxml</code> with the SceneBuilder.</li>
+                            <li>Open the Controller group on the left side (just below Hierarchy), and select the <code>seedu.address.view.PersonOverviewController</code> as the controller class.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part02/images/hook-view-controller.png" height="350">
+                          <p></p>
+                          <ol start="3">
+                            <li>Select the <code>TableView</code> in the Hierarchy group.</li>
+                            <li>In the Inspector view, under the Code group, set 'fx:id' to <code>personTable</code>.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part02/images/hook-view-person-table.png" height="250">
+                          <p></p>
+                          <ol start="5">
+                            <li>Do the same for the table columns. Select <code>firstNameColumn</code> and <code>lastNameColumn</code> for the 'fx:id' respectively.</li>
+                            <li>For each label in the second column of the grid pane, choose the corresponding 'fx:id'.</li>
+                          </ol>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part02/images/hook-view-labels.png" width="650">
+                          <p></p>
+                          <ol start="7">
+                            <li>Save the <code>.fxml</code> file.</li>
+                          </ol>
+                          <h2 id="start-the-application-2">Start the Application</h2>
+                          <p>When you start your application now, you should see something like this:</p>
+                          <img src="/website-base/book/javaTools/javaFXBasic/part02/images/address-app-final-screenshot.png" height="350">
+                          <p></p>
+                          <p>Congratulations! The application now shows the list of <code>Person</code>s in the view!</p>
+                          <p>You may notice that selecting a person in the <code>TableView</code> does nothing to the labels at the right side. That is because the user interaction portion has not been programmed yet, which we will cover in the next part
+                            of the tutorial.</p>
+                        </div>
+                      </panel>
+                      <p></p>
+                      After going through the two parts above, you should be familiar with building basic JavaFX GUIs using IntelliJ. You can continue with the original tutorial (which is written for Eclipse), with the following links:
+                      <ul>
+                        <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part3/"><strong>Part 3: Interacting with the User</strong></a></li>
+                        <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part4/"><strong>Part 4: CSS Styling</strong></a></li>
+                        <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part5/"><strong>Part 5: Storing Data as XML</strong></a></li>
+                      </ul>
+                    </div>
+                    <div></div>
                   </div>
-                  <div></div>
                 </div>
               </div>
-            </div>
-          </panel><br><br>
-          <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-          </p>
-          <div class="indented">
-            <div>
-              <p><strong>Acceptable</strong>: Using JavaFX in any past project.</p>
-              <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-java-fx-for-gui-programming-lo-javafx">Addressbook-Level3: LO-JavaFX</a>]</p>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
               <div>
-                <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3">Addressbook-Level3</a>. <mark>Remember to use team ID</mark> (e.g. <em>W09-2</em>) in your PR name.</p>
-                <p>
-                  <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
-                    fragment="tutorial-pr-instructions"></panel>
-                </p>
+                <p><strong>Acceptable</strong>: Using JavaFX in any past project.</p>
+                <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-java-fx-for-gui-programming-lo-javafx">Addressbook-Level3: LO-JavaFX</a>]</p>
+                <div>
+                  <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3">Addressbook-Level3</a>. <mark>Remember to use team ID</mark> (e.g. <em>W09-2</em>) in your PR name.</p>
+                  <p>
+                    <panel src="/website-base\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                      fragment="tutorial-pr-instructions"></panel>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -3574,86 +3583,88 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
-          <panel minimized="">
-            <span slot="header" class="card-title">Details of the LO</span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Integration → Build Automation →
+          <div class="indented">
+            <panel minimized="">
+              <span slot="header" class="card-title">Details of the LO</span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Integration → Build Automation →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-6">What</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p><strong>Build automation tools automate the steps of the build process, usually by means of build scripts.</strong></p>
-                    <p>In a non-trivial project, building a product from source code can be a complex multi-step process. <span class="dimmed"> For example, it can include steps such as to pull code from the revision control system, compile, link, run automated tests, automatically update release documents (e.g. build number), package into a distributable, push to repo, deploy to a server, delete temporary files created during building/testing, email developers of the new build, and so on. Furthermore, this build process can be done ‘on demand’, it can be scheduled (e.g. every day at midnight) or it can be triggered by various events (e.g. triggered by a code push to the revision control system).</span></p>
-                    <p>Some of these build steps such as to compile, link and package are already automated in most modern IDEs. <span class="dimmed"> For example, several steps happen automatically when the ‘build’ button of the IDE is clicked. Some IDEs even allow customization to this build process to some extent.</span></p>
-                    <p>However, most big projects use specialized build tools to automate complex build processes.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Some popular build tools relevant to Java developers:</p>
-                      <ul>
-                        <li><a href="https://gradle.org/">Gradle</a></li>
-                        <li><a href="http://maven.apache.org/">Maven</a></li>
-                        <li><a href="http://ant.apache.org/">Apache Ant</a></li>
-                        <li><a href="http://www.gnu.org/software/make/">GNU Make</a></li>
-                      </ul>
-                      <p><span class="fas fa-cube"></span> <span class="dimmed">Some other build tools : Grunt (JavaScript), Rake (Ruby)</span></p>
-                    </tip-box>
-                    <p><strong>Some build tools also serve as <em>dependency management tools</em></strong>. Modern software projects often depend on third party libraries that evolve constantly. That means developers need to download the correct version
-                      of the required libraries and update them regularly. Therefore, dependency management is an important part of build automation. Dependency Management tools can automate that aspect of a project.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p>
-                    </tip-box>
+                    <h4 id="what-6">What</h4>
                   </div>
-                  <div>
+                  <div id="main">
                     <div>
-                      <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                      <p><strong>Build automation tools automate the steps of the build process, usually by means of build scripts.</strong></p>
+                      <p>In a non-trivial project, building a product from source code can be a complex multi-step process. <span class="dimmed"> For example, it can include steps such as to pull code from the revision control system, compile, link, run automated tests, automatically update release documents (e.g. build number), package into a distributable, push to repo, deploy to a server, delete temporary files created during building/testing, email developers of the new build, and so on. Furthermore, this build process can be done ‘on demand’, it can be scheduled (e.g. every day at midnight) or it can be triggered by various events (e.g. triggered by a code push to the revision control system).</span></p>
+                      <p>Some of these build steps such as to compile, link and package are already automated in most modern IDEs. <span class="dimmed"> For example, several steps happen automatically when the ‘build’ button of the IDE is clicked. Some IDEs even allow customization to this build process to some extent.</span></p>
+                      <p>However, most big projects use specialized build tools to automate complex build processes.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Some popular build tools relevant to Java developers:</p>
                         <ul>
-                          <li><a href="https://gradle.org/docs/#getting-started"><strong>Getting Started with Gradle</strong></a> -- Documentation from Gradle</li>
-                          <li><a href="http://www.tutorialspoint.com/gradle/"><strong>Gradle Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                          <li><a href="https://gradle.org/">Gradle</a></li>
+                          <li><a href="http://maven.apache.org/">Maven</a></li>
+                          <li><a href="http://ant.apache.org/">Apache Ant</a></li>
+                          <li><a href="http://www.gnu.org/software/make/">GNU Make</a></li>
                         </ul>
-                        <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Working With Gradle in Intellij IDEA (6 minutes)">
-                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/JwPYjnhah3g" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                        </panel>
-                      </panel>
+                        <p><span class="fas fa-cube"></span> <span class="dimmed">Some other build tools : Grunt (JavaScript), Rake (Ruby)</span></p>
+                      </tip-box>
+                      <p><strong>Some build tools also serve as <em>dependency management tools</em></strong>. Modern software projects often depend on third party libraries that evolve constantly. That means developers need to download the correct version
+                        of the required libraries and update them regularly. Therefore, dependency management is an important part of build automation. Dependency Management tools can automate that aspect of a project.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p>
+                      </tip-box>
                     </div>
                     <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> _Gradle_ is a tool for ...">
-                            <question>
-                              <p>Gradle_is used used for,</p>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. better revision control</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. build automation</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. UML diagramming</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. project collaboration</li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(b)</p>
-                              </div>
-                            </question>
+                      <div>
+                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                          <ul>
+                            <li><a href="https://gradle.org/docs/#getting-started"><strong>Getting Started with Gradle</strong></a> -- Documentation from Gradle</li>
+                            <li><a href="http://www.tutorialspoint.com/gradle/"><strong>Gradle Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                          </ul>
+                          <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Working With Gradle in Intellij IDEA (6 minutes)">
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/JwPYjnhah3g" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </panel>
-                        </div>
-                      </panel>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> _Gradle_ is a tool for ...">
+                              <question>
+                                <p>Gradle_is used used for,</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. better revision control</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. build automation</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. UML diagramming</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. project collaboration</li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>(b)</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </panel><br><br>
-          <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-          </p>
-          <div class="indented">
-            <div>
-              <ol>
-                <li>Explain what Gradle is and how it helps in the AddressBook project.</li>
-                <li>Run various project tasks using Gradle as described in [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingGradle.html">AddressBook - Level 4: Using Gradle</a>] e.g. run tests in headless mode</li>
-              </ol>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
+              <div>
+                <ol>
+                  <li>Explain what Gradle is and how it helps in the AddressBook project.</li>
+                  <li>Run various project tasks using Gradle as described in [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingGradle.html">AddressBook - Level 4: Using Gradle</a>] e.g. run tests in headless mode</li>
+                </ol>
+              </div>
             </div>
           </div>
         </panel>
@@ -3663,63 +3674,72 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </span>
           </span>
           </span>
-          <panel minimized="">
-            <span slot="header" class="card-title">Details of the LO</span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Integration → Build Automation →
+          <div class="indented">
+            <panel minimized="">
+              <span slot="header" class="card-title">Details of the LO</span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Integration → Build Automation →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="continuous-integration-and-continuous-deployment-2">Continuous Integration and Continuous Deployment</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p><strong>An extreme application of build automation is called <em>continuous integration (CI)</em> in which integration, building, and testing happens automatically after each code change.</strong></p>
-                    <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Some examples of CI/CD tools:</p>
-                      <ul>
-                        <li><a href="https://travis-ci.org/">Travis</a></li>
-                        <li><a href="http://jenkins-ci.org">Jenkins</a></li>
-                        <li><a href="https://www.appveyor.com">Appveyor</a></li>
-                        <li><a href="https://circleci.com">CircleCI</a></li>
-                      </ul>
-                    </tip-box>
+                    <h4 id="continuous-integration-and-continuous-deployment-2">Continuous Integration and Continuous Deployment</h4>
                   </div>
-                  <div>
+                  <div id="main">
                     <div>
-                      <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                      <p><strong>An extreme application of build automation is called <em>continuous integration (CI)</em> in which integration, building, and testing happens automatically after each code change.</strong></p>
+                      <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Some examples of CI/CD tools:</p>
                         <ul>
-                          <li><a href="https://docs.travis-ci.com/user/for-beginners"><strong>Travis CI for Beginners</strong></a> -- Documentation from Travis</li>
+                          <li><a href="https://travis-ci.org/">Travis</a></li>
+                          <li><a href="http://jenkins-ci.org">Jenkins</a></li>
+                          <li><a href="https://www.appveyor.com">Appveyor</a></li>
+                          <li><a href="https://circleci.com">CircleCI</a></li>
                         </ul>
-                      </panel>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                          <ul>
+                            <li><a href="https://docs.travis-ci.com/user/for-beginners"><strong>Travis CI for Beginners</strong></a> -- Documentation from Travis</li>
+                          </ul>
+                        </panel>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </panel><br><br>
-          <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-          </p>
-          <div class="indented">
-            <div>
-              <ol>
-                <li>Explain what Travis is and how it helps in the AddressBook project.</li>
-                <li>One member: Set up Travis for your team repo by following [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html">AddressBook - Level 4: Using Travis</a>]</li>
-              </ol>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
+              <div>
+                <ol>
+                  <li>Explain what Travis is and how it helps in the AddressBook project.</li>
+                  <li>One member: Set up Travis for your team repo by following [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/UsingTravis.html">AddressBook - Level 4: Using Travis</a>]</li>
+                </ol>
+              </div>
             </div>
           </div>
         </panel>
-        <div>
-          <p>Covered by:</p>
-          <p>
-            <panel src="/website-base\admin\project-w06-mid-v11._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → mid-v1.1%%" no-close="" fragment="main"></panel>
-          </p>
-        </div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W6.11</code></span></big> Can contribute to project documentation <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div class="indented">
+            <div>
+              <p>Covered by:</p>
+              <p>
+                <panel src="/website-base\admin\project-w06-mid-v11._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → mid-v1.1%%" no-close="" fragment="main"></panel>
+              </p>
+            </div>
+          </div>
+        </panel>
       </panel>
     </div>
   </div>
