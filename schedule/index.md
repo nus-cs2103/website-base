@@ -404,7 +404,6 @@ footer: footer.md
         {location: ["documentation", "guidelines", "documentMinimally", "how"], omit_evidence: true},
       {subheading: "Drawing Architecture Diagrams"},
         {location: ["architecture", "architectureDiagrams", "drawing"], omit_evidence: true},
-    {heading: "Can describe the implementation from a developer's perspective", priority: "1", file:"project.md#dev_guide"},
   {name: ":parking: Project"},
     {heading: "Can write developer documentation", priority: "1", file: "project.md#v12"},
 {week: "10"},
