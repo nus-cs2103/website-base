@@ -137,16 +137,15 @@
     <div class="website-content">
       <div>
         <navbar placement="top" type="inverse">
-          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
+          <li><a href="/website-base/index-flat.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-bars"></span> flat</span></a></li>
           <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
           <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
           <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-          <dropdown text="Discuss" class="nav-link">
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-          </dropdown>
           <dropdown text="Links" class="nav-link">
             <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
             <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
             <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
             <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
@@ -201,24 +200,26 @@
                 <p>In software development, there are certain problems that recur in a certain context.</p>
                 <tip-box>
                   <p><span class="fas fa-cube"></span> Some examples of recurring design problems:</p>
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Design Context</th>
-                        <th>Recurring Problem</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Assembling a system that makes use of other existing systems implemented using different technologies</td>
-                        <td>What is the best architecture?</td>
-                      </tr>
-                      <tr>
-                        <td>UI needs to be updated when the data in application backend changes</td>
-                        <td>How to initiate an update to the UI when data changes without coupling the backend to the UI?</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Design Context</th>
+                          <th>Recurring Problem</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Assembling a system that makes use of other existing systems implemented using different technologies</td>
+                          <td>What is the best architecture?</td>
+                        </tr>
+                        <tr>
+                          <td>UI needs to be updated when the data in application backend changes</td>
+                          <td>How to initiate an update to the UI when data changes without coupling the backend to the UI?</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </tip-box>
                 <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, **a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>                  by the so-called <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot;** (GoF) book written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</a></p>
               </div>
@@ -1048,7 +1049,7 @@ studentList.addUi(statusUi);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Fri, 20 Jul 2018 15:31:34 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Sat, 21 Jul 2018 12:00:36 GMT</small></div>
 </footer>
 </div>
 </body>

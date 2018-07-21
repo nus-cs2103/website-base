@@ -41,50 +41,57 @@
 {%- endmacro %}
 
 
-{% macro show_admin_section_to_read(heading, priority, source) %}
-<panel src="{{ source }}"  no-close >
-<span slot="header" class="card-title"><md>%%Admin {{ icon_embedding | safe }}%% &nbsp; {{ heading }} {{ show_stars(priority) }}</span>
-</panel>
+{% macro show_admin_section_to_read(heading, priority, source, is_flat=false) %}
+{% set  panel_type = "dark" if is_flat else "default"%}
+{% set  panel_expandable = "false" if is_flat else "true"%}
+{% set  panel_decorations = "expanded no-switch" if is_flat else ""%}
+{% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
+{% if is_flat %}
+  {% set panel_title %}<span class="text-white">{{ panel_title | safe }}</span> {% endset %}
+{% endif %}
+<panel  src="{{ source }}" type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
+<span slot="header" class="card-title">{{ panel_title | safe }}</span>
+</panel><p/>
 {% endmacro %}
 
 
-{% macro show_admin_topic(topics, id_of_topic_to_show) %}
+{% macro show_admin_topic(topics, id_of_topic_to_show, is_flat=false) %}
 {% for topic in topics %}
 {% if topic.id == id_of_topic_to_show %}
-{{ show_admin_section_to_read(topic.title, topic.priority, "../../admin/" + topic.id + ".md#main") }}
+{{ show_admin_section_to_read(topic.title, topic.priority, "../../admin/" + topic.id + ".md#main", is_flat) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
 
 
-{% macro show_admin_faq(faqs, id_of_faq_to_show) %}
+{% macro show_admin_faq(faqs, id_of_faq_to_show, is_flat=false) %}
 {% for faq in faqs %}
 {% if faq.id == id_of_faq_to_show %}
-{{ show_admin_section_to_read("%%Appendix C (FAQs) →%% " + faq.title, faq.priority, "../../admin/appendixC-faq.md/#" + faq.id ) }}
+{{ show_admin_section_to_read("Appendix C (FAQs) → " + faq.title, faq.priority, "../../admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
 
 
-{% macro show_admin_policy(policies, id_of_policy_to_show) %}
+{% macro show_admin_policy(policies, id_of_policy_to_show, is_flat=false) %}
 {% for policy in policies %}
 {% if policy.id == id_of_policy_to_show %}
-{{ show_admin_section_to_read("%%Appendix B (Policies) →%% " + policy.title, policy.priority, "../../admin/appendixB-policies.md/#" + policy.id ) }}
+{{ show_admin_section_to_read("Appendix B (Policies) → " + policy.title, policy.priority, "../../admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
 
 
-{% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show) %}
+{% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
 <span class="activity-desc">Admin info to read:<span>
 <div class="indented">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
-  {{ show_admin_topic(topics, section.topic_id) }}
+  {{ show_admin_topic(topics, section.topic_id, is_flat) }}
 {% elif section.faq_id %}
-  {{ show_admin_faq(faqs, section.faq_id) }}
+  {{ show_admin_faq(faqs, section.faq_id, is_flat) }}
 {% elif section.policy_id %}
-  {{ show_admin_policy(policies, section.policy_id) }}
+  {{ show_admin_policy(policies, section.policy_id, is_flat) }}
 {% endif %}
 {% endfor %}
 </div>

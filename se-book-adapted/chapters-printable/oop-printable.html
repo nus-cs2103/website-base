@@ -51,28 +51,30 @@
             <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
           </blockquote>
           <p>Some other examples of programming paradigms are:</p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Paradigm</th>
-                <th>Programming Languages</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a></td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
-                <td>F#, Haskel, Scala</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
-                <td>Prolog</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Paradigm</th>
+                  <th>Programming Languages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a></td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
+                  <td>F#, Haskel, Scala</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
+                  <td>Prolog</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p><strong>Some programming languages support multiple paradigms.</strong></p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Java is primarily an OOP language but it supports limited forms of functional programming and it can be used to (although not recommended) write procedural code. <span class="dimmed"> e.g. <a href="https://github.com/se-edu/addressbook-level1">se-edu/addressbook-level1</a></span></p>
@@ -120,54 +122,56 @@
           </tip-box>
           <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
           <tip-box>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Object</th>
-                  <th style="text-align:center">Real World?</th>
-                  <th style="text-align:center">Virtual World?</th>
-                  <th style="text-align:center">Example of State (i.e. Data)</th>
-                  <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">Adam</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Name, Date of Birth</td>
-                  <td style="text-align:center">Calculate age based on birthday</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Pen</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="dimmed">-</span></td>
-                  <td style="text-align:center">Ink color, Amount of ink remaining</td>
-                  <td style="text-align:center">Write</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">AgeList</td>
-                  <td style="text-align:center"><span class="dimmed">-</span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Recorded ages</td>
-                  <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Calculator</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Numbers already entered</td>
-                  <td style="text-align:center">Calculate the sum, divide</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">You/Main</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Average age, Sum of ages</td>
-                  <td style="text-align:center">Use other objects to calculate</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Object</th>
+                    <th style="text-align:center">Real World?</th>
+                    <th style="text-align:center">Virtual World?</th>
+                    <th style="text-align:center">Example of State (i.e. Data)</th>
+                    <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Adam</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Name, Date of Birth</td>
+                    <td style="text-align:center">Calculate age based on birthday</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Pen</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="dimmed">-</span></td>
+                    <td style="text-align:center">Ink color, Amount of ink remaining</td>
+                    <td style="text-align:center">Write</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">AgeList</td>
+                    <td style="text-align:center"><span class="dimmed">-</span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Recorded ages</td>
+                    <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Calculator</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Numbers already entered</td>
+                    <td style="text-align:center">Calculate the sum, divide</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">You/Main</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Average age, Sum of ages</td>
+                    <td style="text-align:center">Use other objects to calculate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>Every object has an interface and an implementation.</strong></p>
           <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
@@ -191,52 +195,54 @@
             result can vary based on which object received the message, even if the message is identical <span class="dimmed">(see rows 1 and 2 in the example below)</span>.</p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">World</th>
-                  <th style="text-align:center">Sender</th>
-                  <th style="text-align:center">Receiver</th>
-                  <th style="text-align:center">Message</th>
-                  <th style="text-align:center">Response</th>
-                  <th style="text-align:center">State Change</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">Real</td>
-                  <td style="text-align:center">You</td>
-                  <td style="text-align:center">Adam</td>
-                  <td style="text-align:center">&quot;What is your name?&quot;</td>
-                  <td style="text-align:center">&quot;Adam&quot;</td>
-                  <td style="text-align:center">-</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Real</td>
-                  <td style="text-align:center"><sub>as above</sub></td>
-                  <td style="text-align:center">Beth</td>
-                  <td style="text-align:center"><sub>as above</sub></td>
-                  <td style="text-align:center">&quot;Beth&quot;</td>
-                  <td style="text-align:center">-</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Real</td>
-                  <td style="text-align:center">You</td>
-                  <td style="text-align:center">Pen</td>
-                  <td style="text-align:center">Put nib on paper and apply pressure</td>
-                  <td style="text-align:center">Makes a mark on your paper</td>
-                  <td style="text-align:center">Ink level goes down</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Virtual</td>
-                  <td style="text-align:center">Main</td>
-                  <td style="text-align:center">Calculator (current total is 50)</td>
-                  <td style="text-align:center">add(int i): int i = 23</td>
-                  <td style="text-align:center">73</td>
-                  <td style="text-align:center">total = total + 23</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">World</th>
+                    <th style="text-align:center">Sender</th>
+                    <th style="text-align:center">Receiver</th>
+                    <th style="text-align:center">Message</th>
+                    <th style="text-align:center">Response</th>
+                    <th style="text-align:center">State Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Real</td>
+                    <td style="text-align:center">You</td>
+                    <td style="text-align:center">Adam</td>
+                    <td style="text-align:center">&quot;What is your name?&quot;</td>
+                    <td style="text-align:center">&quot;Adam&quot;</td>
+                    <td style="text-align:center">-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Real</td>
+                    <td style="text-align:center"><sub>as above</sub></td>
+                    <td style="text-align:center">Beth</td>
+                    <td style="text-align:center"><sub>as above</sub></td>
+                    <td style="text-align:center">&quot;Beth&quot;</td>
+                    <td style="text-align:center">-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Real</td>
+                    <td style="text-align:center">You</td>
+                    <td style="text-align:center">Pen</td>
+                    <td style="text-align:center">Put nib on paper and apply pressure</td>
+                    <td style="text-align:center">Makes a mark on your paper</td>
+                    <td style="text-align:center">Ink level goes down</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Virtual</td>
+                    <td style="text-align:center">Main</td>
+                    <td style="text-align:center">Calculator (current total is 50)</td>
+                    <td style="text-align:center">add(int i): int i = 23</td>
+                    <td style="text-align:center">73</td>
+                    <td style="text-align:center">total = total + 23</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -875,32 +881,34 @@
                         <div>
                           <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                           <panel type="seamless" header="%%Examples%%">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th style="text-align:center">Method</th>
-                                  <th style="text-align:center">Type Signature</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                  <td style="text-align:center"><code>(int, int)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                  <td style="text-align:center"><code>(int, int)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                  <td style="text-align:center"><code>(int, double)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                  <td style="text-align:center"><code>(double, int)</code></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th style="text-align:center">Method</th>
+                                    <th style="text-align:center">Type Signature</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                    <td style="text-align:center"><code>(int, double)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(double, int)</code></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </panel>
                         </div>
                       </tip-box>
@@ -1089,32 +1097,34 @@ Ben is a student
             <div>
               <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
               <panel type="seamless" header="%%Examples%%">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th style="text-align:center">Method</th>
-                      <th style="text-align:center">Type Signature</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                      <td style="text-align:center"><code>(int, int)</code></td>
-                    </tr>
-                    <tr>
-                      <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                      <td style="text-align:center"><code>(int, int)</code></td>
-                    </tr>
-                    <tr>
-                      <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                      <td style="text-align:center"><code>(int, double)</code></td>
-                    </tr>
-                    <tr>
-                      <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                      <td style="text-align:center"><code>(double, int)</code></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Method</th>
+                        <th style="text-align:center">Type Signature</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                        <td style="text-align:center"><code>(int, int)</code></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                        <td style="text-align:center"><code>(int, int)</code></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                        <td style="text-align:center"><code>(int, double)</code></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                        <td style="text-align:center"><code>(double, int)</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </panel>
             </div>
           </tip-box>
@@ -1399,32 +1409,34 @@ AcademicStaff academicStaff = staff; // Not OK
                                     <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order
                                       is significant.</p>
                                     <panel type="seamless" header="%%Examples%%">
-                                      <table class="markbind-table table table-bordered table-striped">
-                                        <thead>
-                                          <tr>
-                                            <th style="text-align:center">Method</th>
-                                            <th style="text-align:center">Type Signature</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                            <td style="text-align:center"><code>(int, int)</code></td>
-                                          </tr>
-                                          <tr>
-                                            <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                            <td style="text-align:center"><code>(int, int)</code></td>
-                                          </tr>
-                                          <tr>
-                                            <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                            <td style="text-align:center"><code>(int, double)</code></td>
-                                          </tr>
-                                          <tr>
-                                            <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                            <td style="text-align:center"><code>(double, int)</code></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                                      <div class="table-responsive">
+                                        <table class="markbind-table table table-bordered table-striped">
+                                          <thead>
+                                            <tr>
+                                              <th style="text-align:center">Method</th>
+                                              <th style="text-align:center">Type Signature</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                              <td style="text-align:center"><code>(int, int)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                              <td style="text-align:center"><code>(int, int)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                              <td style="text-align:center"><code>(int, double)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                              <td style="text-align:center"><code>(double, int)</code></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
                                     </panel>
                                   </div>
                                 </tip-box>
@@ -1666,32 +1678,34 @@ Ben is a student
                       <div>
                         <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                         <panel type="seamless" header="%%Examples%%">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th style="text-align:center">Method</th>
-                                <th style="text-align:center">Type Signature</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                <td style="text-align:center"><code>(int, int)</code></td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                <td style="text-align:center"><code>(int, int)</code></td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                <td style="text-align:center"><code>(int, double)</code></td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                <td style="text-align:center"><code>(double, int)</code></td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:center">Method</th>
+                                  <th style="text-align:center">Type Signature</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                  <td style="text-align:center"><code>(int, int)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                  <td style="text-align:center"><code>(int, int)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                  <td style="text-align:center"><code>(int, double)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                  <td style="text-align:center"><code>(double, int)</code></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </panel>
                       </div>
                     </tip-box>
@@ -2023,7 +2037,7 @@ void calculateGrade (String matric) { ... }
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Fri, 20 Jul 2018 15:31:34 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Sat, 21 Jul 2018 12:00:36 GMT</small></div>
 </footer>
 </div>
 </body>

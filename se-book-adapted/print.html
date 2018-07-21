@@ -139,28 +139,30 @@
             <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
           </blockquote>
           <p>Some other examples of programming paradigms are:</p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Paradigm</th>
-                <th>Programming Languages</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a></td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
-                <td>F#, Haskel, Scala</td>
-              </tr>
-              <tr>
-                <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
-                <td>Prolog</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Paradigm</th>
+                  <th>Programming Languages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Procedural_programming"><em>Procedural Programming</em> paradigm</a></td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Functional_programming"><em>Functional Programming</em> paradigm</a></td>
+                  <td>F#, Haskel, Scala</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Logic_programming"><em>Logic Programming</em> paradigm</a></td>
+                  <td>Prolog</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p><strong>Some programming languages support multiple paradigms.</strong></p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Java is primarily an OOP language but it supports limited forms of functional programming and it can be used to (although not recommended) write procedural code. <span class="dimmed"> e.g. <a href="https://github.com/se-edu/addressbook-level1">se-edu/addressbook-level1</a></span></p>
@@ -208,54 +210,56 @@
           </tip-box>
           <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
           <tip-box>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Object</th>
-                  <th style="text-align:center">Real World?</th>
-                  <th style="text-align:center">Virtual World?</th>
-                  <th style="text-align:center">Example of State (i.e. Data)</th>
-                  <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">Adam</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Name, Date of Birth</td>
-                  <td style="text-align:center">Calculate age based on birthday</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Pen</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="dimmed">-</span></td>
-                  <td style="text-align:center">Ink color, Amount of ink remaining</td>
-                  <td style="text-align:center">Write</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">AgeList</td>
-                  <td style="text-align:center"><span class="dimmed">-</span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Recorded ages</td>
-                  <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Calculator</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Numbers already entered</td>
-                  <td style="text-align:center">Calculate the sum, divide</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">You/Main</td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center"><span class="fas fa-check"></span></td>
-                  <td style="text-align:center">Average age, Sum of ages</td>
-                  <td style="text-align:center">Use other objects to calculate</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Object</th>
+                    <th style="text-align:center">Real World?</th>
+                    <th style="text-align:center">Virtual World?</th>
+                    <th style="text-align:center">Example of State (i.e. Data)</th>
+                    <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Adam</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Name, Date of Birth</td>
+                    <td style="text-align:center">Calculate age based on birthday</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Pen</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="dimmed">-</span></td>
+                    <td style="text-align:center">Ink color, Amount of ink remaining</td>
+                    <td style="text-align:center">Write</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">AgeList</td>
+                    <td style="text-align:center"><span class="dimmed">-</span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Recorded ages</td>
+                    <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Calculator</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Numbers already entered</td>
+                    <td style="text-align:center">Calculate the sum, divide</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">You/Main</td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center"><span class="fas fa-check"></span></td>
+                    <td style="text-align:center">Average age, Sum of ages</td>
+                    <td style="text-align:center">Use other objects to calculate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>Every object has an interface and an implementation.</strong></p>
           <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
@@ -279,52 +283,54 @@
             result can vary based on which object received the message, even if the message is identical <span class="dimmed">(see rows 1 and 2 in the example below)</span>.</p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">World</th>
-                  <th style="text-align:center">Sender</th>
-                  <th style="text-align:center">Receiver</th>
-                  <th style="text-align:center">Message</th>
-                  <th style="text-align:center">Response</th>
-                  <th style="text-align:center">State Change</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">Real</td>
-                  <td style="text-align:center">You</td>
-                  <td style="text-align:center">Adam</td>
-                  <td style="text-align:center">&quot;What is your name?&quot;</td>
-                  <td style="text-align:center">&quot;Adam&quot;</td>
-                  <td style="text-align:center">-</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Real</td>
-                  <td style="text-align:center"><sub>as above</sub></td>
-                  <td style="text-align:center">Beth</td>
-                  <td style="text-align:center"><sub>as above</sub></td>
-                  <td style="text-align:center">&quot;Beth&quot;</td>
-                  <td style="text-align:center">-</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Real</td>
-                  <td style="text-align:center">You</td>
-                  <td style="text-align:center">Pen</td>
-                  <td style="text-align:center">Put nib on paper and apply pressure</td>
-                  <td style="text-align:center">Makes a mark on your paper</td>
-                  <td style="text-align:center">Ink level goes down</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Virtual</td>
-                  <td style="text-align:center">Main</td>
-                  <td style="text-align:center">Calculator (current total is 50)</td>
-                  <td style="text-align:center">add(int i): int i = 23</td>
-                  <td style="text-align:center">73</td>
-                  <td style="text-align:center">total = total + 23</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">World</th>
+                    <th style="text-align:center">Sender</th>
+                    <th style="text-align:center">Receiver</th>
+                    <th style="text-align:center">Message</th>
+                    <th style="text-align:center">Response</th>
+                    <th style="text-align:center">State Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Real</td>
+                    <td style="text-align:center">You</td>
+                    <td style="text-align:center">Adam</td>
+                    <td style="text-align:center">&quot;What is your name?&quot;</td>
+                    <td style="text-align:center">&quot;Adam&quot;</td>
+                    <td style="text-align:center">-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Real</td>
+                    <td style="text-align:center"><sub>as above</sub></td>
+                    <td style="text-align:center">Beth</td>
+                    <td style="text-align:center"><sub>as above</sub></td>
+                    <td style="text-align:center">&quot;Beth&quot;</td>
+                    <td style="text-align:center">-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Real</td>
+                    <td style="text-align:center">You</td>
+                    <td style="text-align:center">Pen</td>
+                    <td style="text-align:center">Put nib on paper and apply pressure</td>
+                    <td style="text-align:center">Makes a mark on your paper</td>
+                    <td style="text-align:center">Ink level goes down</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Virtual</td>
+                    <td style="text-align:center">Main</td>
+                    <td style="text-align:center">Calculator (current total is 50)</td>
+                    <td style="text-align:center">add(int i): int i = 23</td>
+                    <td style="text-align:center">73</td>
+                    <td style="text-align:center">total = total + 23</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -963,32 +969,34 @@
                         <div>
                           <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                           <panel type="seamless" header="%%Examples%%">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th style="text-align:center">Method</th>
-                                  <th style="text-align:center">Type Signature</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                  <td style="text-align:center"><code>(int, int)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                  <td style="text-align:center"><code>(int, int)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                  <td style="text-align:center"><code>(int, double)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                  <td style="text-align:center"><code>(double, int)</code></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th style="text-align:center">Method</th>
+                                    <th style="text-align:center">Type Signature</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                    <td style="text-align:center"><code>(int, double)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(double, int)</code></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </panel>
                         </div>
                       </tip-box>
@@ -1177,32 +1185,34 @@ Ben is a student
             <div>
               <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
               <panel type="seamless" header="%%Examples%%">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th style="text-align:center">Method</th>
-                      <th style="text-align:center">Type Signature</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                      <td style="text-align:center"><code>(int, int)</code></td>
-                    </tr>
-                    <tr>
-                      <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                      <td style="text-align:center"><code>(int, int)</code></td>
-                    </tr>
-                    <tr>
-                      <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                      <td style="text-align:center"><code>(int, double)</code></td>
-                    </tr>
-                    <tr>
-                      <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                      <td style="text-align:center"><code>(double, int)</code></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Method</th>
+                        <th style="text-align:center">Type Signature</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                        <td style="text-align:center"><code>(int, int)</code></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                        <td style="text-align:center"><code>(int, int)</code></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                        <td style="text-align:center"><code>(int, double)</code></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                        <td style="text-align:center"><code>(double, int)</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </panel>
             </div>
           </tip-box>
@@ -1487,32 +1497,34 @@ AcademicStaff academicStaff = staff; // Not OK
                                     <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order
                                       is significant.</p>
                                     <panel type="seamless" header="%%Examples%%">
-                                      <table class="markbind-table table table-bordered table-striped">
-                                        <thead>
-                                          <tr>
-                                            <th style="text-align:center">Method</th>
-                                            <th style="text-align:center">Type Signature</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                            <td style="text-align:center"><code>(int, int)</code></td>
-                                          </tr>
-                                          <tr>
-                                            <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                            <td style="text-align:center"><code>(int, int)</code></td>
-                                          </tr>
-                                          <tr>
-                                            <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                            <td style="text-align:center"><code>(int, double)</code></td>
-                                          </tr>
-                                          <tr>
-                                            <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                            <td style="text-align:center"><code>(double, int)</code></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                                      <div class="table-responsive">
+                                        <table class="markbind-table table table-bordered table-striped">
+                                          <thead>
+                                            <tr>
+                                              <th style="text-align:center">Method</th>
+                                              <th style="text-align:center">Type Signature</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                              <td style="text-align:center"><code>(int, int)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                              <td style="text-align:center"><code>(int, int)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                              <td style="text-align:center"><code>(int, double)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                              <td style="text-align:center"><code>(double, int)</code></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
                                     </panel>
                                   </div>
                                 </tip-box>
@@ -1754,32 +1766,34 @@ Ben is a student
                       <div>
                         <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                         <panel type="seamless" header="%%Examples%%">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th style="text-align:center">Method</th>
-                                <th style="text-align:center">Type Signature</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                <td style="text-align:center"><code>(int, int)</code></td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                <td style="text-align:center"><code>(int, int)</code></td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                <td style="text-align:center"><code>(int, double)</code></td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                <td style="text-align:center"><code>(double, int)</code></td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:center">Method</th>
+                                  <th style="text-align:center">Type Signature</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                  <td style="text-align:center"><code>(int, int)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                  <td style="text-align:center"><code>(int, int)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                  <td style="text-align:center"><code>(int, double)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                  <td style="text-align:center"><code>(double, int)</code></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </panel>
                       </div>
                     </tip-box>
@@ -2621,22 +2635,24 @@ void calculateGrade (String matric) { ... }
           <p><strong>User stories can capture non-functional requirements too</strong> because even NFRs must benefit some stakeholder.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> An example of a NFR captured as a user story:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>As a</th>
-                  <th>I want to</th>
-                  <th>so that</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>impatient user</td>
-                  <td>to be able experience reasonable response time from the website while up to 1000 concurrent users are using it</td>
-                  <td>I can use the app even when the traffic is at the maximum expected level</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>As a</th>
+                    <th>I want to</th>
+                    <th>so that</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>impatient user</td>
+                    <td>to be able experience reasonable response time from the website while up to 1000 concurrent users are using it</td>
+                    <td>I can use the app even when the traffic is at the maximum expected level</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <div id="usageTips">
             <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early requirements gathering</strong>.</p>
@@ -4388,24 +4404,26 @@ void calculateGrade (String matric) { ... }
           <p>In software development, there are certain problems that recur in a certain context.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Some examples of recurring design problems:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Design Context</th>
-                  <th>Recurring Problem</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Assembling a system that makes use of other existing systems implemented using different technologies</td>
-                  <td>What is the best architecture?</td>
-                </tr>
-                <tr>
-                  <td>UI needs to be updated when the data in application backend changes</td>
-                  <td>How to initiate an update to the UI when data changes without coupling the backend to the UI?</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Design Context</th>
+                    <th>Recurring Problem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Assembling a system that makes use of other existing systems implemented using different technologies</td>
+                    <td>What is the best architecture?</td>
+                  </tr>
+                  <tr>
+                    <td>UI needs to be updated when the data in application backend changes</td>
+                    <td>How to initiate an update to the UI when data changes without coupling the backend to the UI?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, **a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>            by the so-called <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot;** (GoF) book written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</a></p>
         </div>
@@ -5630,35 +5648,37 @@ exit();
           <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Name for a</th>
-                  <th>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Class</td>
-                  <td><code>CheckLimit</code></td>
-                  <td><code>LimitChecker</code></td>
-                </tr>
-                <tr>
-                  <td>method</td>
-                  <td><code>result()</code></td>
-                  <td><code>calculate()</code></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Name for a</th>
+                    <th>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>
+                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                        </span>
+                      </font>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Class</td>
+                    <td><code>CheckLimit</code></td>
+                    <td><code>LimitChecker</code></td>
+                  </tr>
+                  <tr>
+                    <td>method</td>
+                    <td><code>result()</code></td>
+                    <td><code>calculate()</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
           <tip-box>
@@ -5719,94 +5739,100 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
           <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>processInput()</code> (what 'process'?)</td>
-                  <td><code>removeWhiteSpaceFromInput()</code></td>
-                </tr>
-                <tr>
-                  <td><code>flag</code></td>
-                  <td><code>isValidInput</code></td>
-                </tr>
-                <tr>
-                  <td><code>temp</code></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>
+                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                        </span>
+                      </font>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>processInput()</code> (what 'process'?)</td>
+                    <td><code>removeWhiteSpaceFromInput()</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>flag</code></td>
+                    <td><code>isValidInput</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>temp</code></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>If the name has multiple words, they should be in a sensible order.</strong></p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>bySizeOrder()</code></td>
-                  <td><code>orderBySize()</code></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>
+                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                        </span>
+                      </font>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>bySizeOrder()</code></td>
+                    <td><code>orderBySize()</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p>Imagine going to the doctor's and saying &quot;My eye1 is swollen&quot;! Don’t use numbers or case to distinguish names.</p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>value1</code>, <code>value2</code></td>
-                  <td><code>value</code>, <code>Value</code></td>
-                  <td><code>originalValue</code>, <code>finalValue</code></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>
+                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                        </span>
+                      </font>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>value1</code>, <code>value2</code></td>
+                    <td><code>value</code>, <code>Value</code></td>
+                    <td><code>originalValue</code>, <code>finalValue</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -5851,50 +5877,52 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             O?&quot;), almost similar names.</p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </th>
-                  <th>Reason</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>phase0</code></td>
-                  <td><code>phaseZero</code></td>
-                  <td>Is that zero or letter O?</td>
-                </tr>
-                <tr>
-                  <td><code>rwrLgtDirn</code></td>
-                  <td><code>rowerLegitDirection</code></td>
-                  <td>Hard to pronounce</td>
-                </tr>
-                <tr>
-                  <td><code>right</code> <code>left</code> <code>wrong</code></td>
-                  <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
-                  <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
-                </tr>
-                <tr>
-                  <td><code>redBooks</code> <code>readBooks</code></td>
-                  <td><code>redColorBooks</code> <code>booksRead</code></td>
-                  <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
-                </tr>
-                <tr>
-                  <td><code>FiletMignon</code></td>
-                  <td><code>egg</code></td>
-                  <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>
+                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>
+                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                        </span>
+                      </font>
+                    </th>
+                    <th>Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>phase0</code></td>
+                    <td><code>phaseZero</code></td>
+                    <td>Is that zero or letter O?</td>
+                  </tr>
+                  <tr>
+                    <td><code>rwrLgtDirn</code></td>
+                    <td><code>rowerLegitDirection</code></td>
+                    <td>Hard to pronounce</td>
+                  </tr>
+                  <tr>
+                    <td><code>right</code> <code>left</code> <code>wrong</code></td>
+                    <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
+                    <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
+                  </tr>
+                  <tr>
+                    <td><code>redBooks</code> <code>readBooks</code></td>
+                    <td><code>redColorBooks</code> <code>booksRead</code></td>
+                    <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
+                  </tr>
+                  <tr>
+                    <td><code>FiletMignon</code></td>
+                    <td><code>egg</code></td>
+                    <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -8234,58 +8262,62 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div>
           <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
           <p>Some differences between system testing and acceptance testing:</p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th style="text-align:left">System Testing</th>
-                <th style="text-align:left">Acceptance Testing</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align:left">Done against the system specification</td>
-                <td style="text-align:left">Done against the requirements specification</td>
-              </tr>
-              <tr>
-                <td style="text-align:left">Done by testers of the project team</td>
-                <td style="text-align:left">Done by a team that represents the customer</td>
-              </tr>
-              <tr>
-                <td style="text-align:left">Done on the development environment or a test bed</td>
-                <td style="text-align:left">Done on the deployment site or on a close simulation of the deployment site</td>
-              </tr>
-              <tr>
-                <td style="text-align:left">Both negative and positive test cases</td>
-                <td style="text-align:left">More focus on positive test cases</td>
-              </tr>
-            </tbody>
-          </table>
-          <p><span class="dimmed">Note: <em>negative</em> test cases: cases where the SUT is not expected to work normally e.g. incorrect inputs; <em>positive</em> test cases: cases where the SUT is expected to work normally</span></p>
-          <tip-box>
-            <p><strong>Requirement Specification vs System Specification</strong></p>
-            <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
+          <div class="table-responsive">
             <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th style="text-align:left">Requirements Specification</th>
-                  <th style="text-align:left">System Specification</th>
+                  <th style="text-align:left">System Testing</th>
+                  <th style="text-align:left">Acceptance Testing</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td style="text-align:left">limited to how the system behaves in normal working conditions</td>
-                  <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td>
+                  <td style="text-align:left">Done against the system specification</td>
+                  <td style="text-align:left">Done against the requirements specification</td>
                 </tr>
                 <tr>
-                  <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
-                  <td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td>
+                  <td style="text-align:left">Done by testers of the project team</td>
+                  <td style="text-align:left">Done by a team that represents the customer</td>
                 </tr>
                 <tr>
-                  <td style="text-align:left">specifies the interface available for intended end-users</td>
-                  <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td>
+                  <td style="text-align:left">Done on the development environment or a test bed</td>
+                  <td style="text-align:left">Done on the deployment site or on a close simulation of the deployment site</td>
+                </tr>
+                <tr>
+                  <td style="text-align:left">Both negative and positive test cases</td>
+                  <td style="text-align:left">More focus on positive test cases</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <p><span class="dimmed">Note: <em>negative</em> test cases: cases where the SUT is not expected to work normally e.g. incorrect inputs; <em>positive</em> test cases: cases where the SUT is expected to work normally</span></p>
+          <tip-box>
+            <p><strong>Requirement Specification vs System Specification</strong></p>
+            <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:left">Requirements Specification</th>
+                    <th style="text-align:left">System Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left">limited to how the system behaves in normal working conditions</td>
+                    <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
+                    <td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">specifies the interface available for intended end-users</td>
+                    <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>However, <strong>in many cases one document serves as both a requirement specification and a system specification.</strong></p>
           </tip-box>
           <p><strong>Passing system tests does not necessarily mean passing acceptance testing.</strong> Some examples:</p>
@@ -9197,37 +9229,39 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               <li>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</li>
               <li>Values to test (invalid values are <strong>bold</strong>)</li>
             </ul>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Input</th>
-                  <th>valid values to test</th>
-                  <th>invalid values to test</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>participation</td>
-                  <td>0, 1, 19, 20</td>
-                  <td>21, 22</td>
-                </tr>
-                <tr>
-                  <td>projectGrade</td>
-                  <td>A, B, C, D, F</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>isAbsent</td>
-                  <td>true, false</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>examScore</td>
-                  <td>0, 1, 69, 70,</td>
-                  <td>71, 72</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Input</th>
+                    <th>valid values to test</th>
+                    <th>invalid values to test</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>participation</td>
+                    <td>0, 1, 19, 20</td>
+                    <td>21, 22</td>
+                  </tr>
+                  <tr>
+                    <td>projectGrade</td>
+                    <td>A, B, C, D, F</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>isAbsent</td>
+                    <td>true, false</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>examScore</td>
+                    <td>0, 1, 69, 70,</td>
+                    <td>71, 72</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective)
             but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
@@ -9248,116 +9282,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <p><span class="fas fa-cube"></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
             <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
             <p>Selected values for each input:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Input</th>
-                  <th style="text-align:center">Values</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">p1</td>
-                  <td style="text-align:center">a, b, c</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">p2</td>
-                  <td style="text-align:center">1, 2, 3</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">p3</td>
-                  <td style="text-align:center">T, F</td>
-                </tr>
-              </tbody>
-            </table>
-          </tip-box>
-          <p><strong>all combinations</strong>: generate test cases for each unique combination of test inputs</p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> the strategy generates 3x3x2=18 test cases</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Test Case</th>
-                  <th style="text-align:center">p1</th>
-                  <th style="text-align:center">p2</th>
-                  <th style="text-align:center">p3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">...</td>
-                  <td style="text-align:center">...</td>
-                  <td style="text-align:center">...</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">18</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-              </tbody>
-            </table>
-          </tip-box>
-          <p><strong>at least once</strong>: include each test input at least once.</p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> this strategy generates 3 test cases.</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Test Case</th>
-                  <th style="text-align:center">p1</th>
-                  <th style="text-align:center">p2</th>
-                  <th style="text-align:center">p3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">b</td>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">VV/IV</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>VV/IV = Any Valid Value / Any Invalid Value</p>
-          </tip-box>
-          <p><strong>all pairs</strong>: This strategy creates test cases so that for any given pair of inputs, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting factors.
-            The resulting number of test cases is lower than the &quot;all combinations&quot; strategy, but higher than the &quot;at least once&quot; approach.</p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
-            <panel type="seamless" header="see steps">
-              <p>Let's first consider inputs p1 and p2:</p>
+            <div class="table-responsive">
               <table class="markbind-table table table-bordered table-striped">
                 <thead>
                   <tr>
@@ -9374,152 +9299,275 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <td style="text-align:center">p2</td>
                     <td style="text-align:center">1, 2, 3</td>
                   </tr>
-                </tbody>
-              </table>
-              <p>These values can generate
-                <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
-              <p>Next, let's consider p1 and p3.</p>
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th style="text-align:center">Input</th>
-                    <th style="text-align:center">Values</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="text-align:center">p1</td>
-                    <td style="text-align:center">a, b, c</td>
-                  </tr>
                   <tr>
                     <td style="text-align:center">p3</td>
                     <td style="text-align:center">T, F</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </tip-box>
+          <p><strong>all combinations</strong>: generate test cases for each unique combination of test inputs</p>
+          <tip-box>
+            <p><span class="fas fa-cube"></span> the strategy generates 3x3x2=18 test cases</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Test Case</th>
+                    <th style="text-align:center">p1</th>
+                    <th style="text-align:center">p2</th>
+                    <th style="text-align:center">p3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">...</td>
+                    <td style="text-align:center">...</td>
+                    <td style="text-align:center">...</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">18</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </tip-box>
+          <p><strong>at least once</strong>: include each test input at least once.</p>
+          <tip-box>
+            <p><span class="fas fa-cube"></span> this strategy generates 3 test cases.</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Test Case</th>
+                    <th style="text-align:center">p1</th>
+                    <th style="text-align:center">p2</th>
+                    <th style="text-align:center">p3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">b</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">VV/IV</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>VV/IV = Any Valid Value / Any Invalid Value</p>
+          </tip-box>
+          <p><strong>all pairs</strong>: This strategy creates test cases so that for any given pair of inputs, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting factors.
+            The resulting number of test cases is lower than the &quot;all combinations&quot; strategy, but higher than the &quot;at least once&quot; approach.</p>
+          <tip-box>
+            <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
+            <panel type="seamless" header="see steps">
+              <p>Let's first consider inputs p1 and p2:</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Input</th>
+                      <th style="text-align:center">Values</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">p1</td>
+                      <td style="text-align:center">a, b, c</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">p2</td>
+                      <td style="text-align:center">1, 2, 3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>These values can generate
+                <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+              <p>Next, let's consider p1 and p3.</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Input</th>
+                      <th style="text-align:center">Values</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">p1</td>
+                      <td style="text-align:center">a, b, c</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">p3</td>
+                      <td style="text-align:center">T, F</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p>These values can generate
                 <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
               <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
               <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
             </panel>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Test Case</th>
-                  <th style="text-align:center">p1</th>
-                  <th style="text-align:center">p2</th>
-                  <th style="text-align:center">p3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">b</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5</td>
-                  <td style="text-align:center">b</td>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">6</td>
-                  <td style="text-align:center">b</td>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">7</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">8</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">9</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Test Case</th>
+                    <th style="text-align:center">p1</th>
+                    <th style="text-align:center">p2</th>
+                    <th style="text-align:center">p3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">b</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">b</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">b</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">7</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">8</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">9</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Test Case</th>
-                  <th style="text-align:center">p1</th>
-                  <th style="text-align:center">p2</th>
-                  <th style="text-align:center">p3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">a</td>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">b</td>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">b</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">T</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">6</td>
-                  <td style="text-align:center">c</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">F</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Test Case</th>
+                    <th style="text-align:center">p1</th>
+                    <th style="text-align:center">p2</th>
+                    <th style="text-align:center">p3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">a</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">b</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">b</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">T</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">c</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">F</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>d) random:</strong> This strategy generates test cases using one of the other strategies and then pick a subset randomly (presumably because the original set of test cases is too big).</p>
           <p><strong>e) other</strong>: There are other strategies that can be used.</p>
@@ -9540,105 +9588,67 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <tip-box>
             <p>SUT: <code>printLabel(fruitName String, unitPrice int)</code></p>
             <p><strong>Selected values for</strong> <code>fruitName</code> (invalid values are marked with an ❗️ ):</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Values</th>
-                  <th>Explanation</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Apple</td>
-                  <td>Label format is round</td>
-                </tr>
-                <tr>
-                  <td>Banana</td>
-                  <td>Label format is oval</td>
-                </tr>
-                <tr>
-                  <td>Cherry</td>
-                  <td>Label format is square</td>
-                </tr>
-                <tr>
-                  <td>❗️ Dog</td>
-                  <td>Not a valid fruit</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Values</th>
+                    <th>Explanation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Apple</td>
+                    <td>Label format is round</td>
+                  </tr>
+                  <tr>
+                    <td>Banana</td>
+                    <td>Label format is oval</td>
+                  </tr>
+                  <tr>
+                    <td>Cherry</td>
+                    <td>Label format is square</td>
+                  </tr>
+                  <tr>
+                    <td>❗️ Dog</td>
+                    <td>Not a valid fruit</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p><strong>Selected values for</strong> <code>unitPrice</code>:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Values</th>
-                  <th>Explanation</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Only one digit</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Two digits</td>
-                </tr>
-                <tr>
-                  <td>❗️ 0</td>
-                  <td>Invalid because 0 is not a valid price</td>
-                </tr>
-                <tr>
-                  <td>❗️ -1</td>
-                  <td>Invalid because negative prices are not allowed</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Values</th>
+                    <th>Explanation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Only one digit</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Two digits</td>
+                  </tr>
+                  <tr>
+                    <td>❗️ 0</td>
+                    <td>Invalid because 0 is not a valid price</td>
+                  </tr>
+                  <tr>
+                    <td>❗️ -1</td>
+                    <td>Invalid because negative prices are not allowed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p>Suppose these are the test cases being considered.</p>
           <tip-box>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Case</th>
-                  <th style="text-align:center">fruitName</th>
-                  <th style="text-align:center">unitPrice</th>
-                  <th style="text-align:center">Expected</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">Apple</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">Print label</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">Banana</td>
-                  <td style="text-align:center">20</td>
-                  <td style="text-align:center">Print label</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">Cherry</td>
-                  <td style="text-align:center">❗️ 0</td>
-                  <td style="text-align:center">Error message “invalid price”</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">❗️ Dog</td>
-                  <td style="text-align:center">❗️ -1</td>
-                  <td style="text-align:center">Error message “invalid fruit&quot;</td>
-                </tr>
-              </tbody>
-            </table>
-          </tip-box>
-          <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that can produce
-            a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
-          <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a positive test case.
-            Here are the updated test cases after applying that heuristic.</p>
-          <tip-box>
-            <div id="heuristic-valid-test-case">
+            <div class="table-responsive">
               <table class="markbind-table table table-bordered table-striped">
                 <thead>
                   <tr>
@@ -9653,23 +9663,17 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <td style="text-align:center">1</td>
                     <td style="text-align:center">Apple</td>
                     <td style="text-align:center">1</td>
-                    <td style="text-align:center">Print round label</td>
+                    <td style="text-align:center">Print label</td>
                   </tr>
                   <tr>
                     <td style="text-align:center">2</td>
                     <td style="text-align:center">Banana</td>
                     <td style="text-align:center">20</td>
-                    <td style="text-align:center">Print oval label</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center">2.1</td>
-                    <td style="text-align:center">Cherry</td>
-                    <td style="text-align:center">VV</td>
-                    <td style="text-align:center">Print square label</td>
+                    <td style="text-align:center">Print label</td>
                   </tr>
                   <tr>
                     <td style="text-align:center">3</td>
-                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">Cherry</td>
                     <td style="text-align:center">❗️ 0</td>
                     <td style="text-align:center">Error message “invalid price”</td>
                   </tr>
@@ -9681,6 +9685,58 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </tip-box>
+          <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that can produce
+            a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
+          <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a positive test case.
+            Here are the updated test cases after applying that heuristic.</p>
+          <tip-box>
+            <div id="heuristic-valid-test-case">
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Case</th>
+                      <th style="text-align:center">fruitName</th>
+                      <th style="text-align:center">unitPrice</th>
+                      <th style="text-align:center">Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Apple</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Print round label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2</td>
+                      <td style="text-align:center">Banana</td>
+                      <td style="text-align:center">20</td>
+                      <td style="text-align:center">Print oval label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2.1</td>
+                      <td style="text-align:center">Cherry</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">Print square label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">❗️ 0</td>
+                      <td style="text-align:center">Error message “invalid price”</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4</td>
+                      <td style="text-align:center">❗️ Dog</td>
+                      <td style="text-align:center">❗️ -1</td>
+                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
             </div>
           </tip-box>
@@ -9701,6 +9757,58 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
           <modal large="" title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case">
             <div>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Case</th>
+                      <th style="text-align:center">fruitName</th>
+                      <th style="text-align:center">unitPrice</th>
+                      <th style="text-align:center">Expected</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Apple</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">Print round label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2</td>
+                      <td style="text-align:center">Banana</td>
+                      <td style="text-align:center">20</td>
+                      <td style="text-align:center">Print oval label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">2.1</td>
+                      <td style="text-align:center">Cherry</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">Print square label</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">VV</td>
+                      <td style="text-align:center">❗️ 0</td>
+                      <td style="text-align:center">Error message “invalid price”</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">4</td>
+                      <td style="text-align:center">❗️ Dog</td>
+                      <td style="text-align:center">❗️ -1</td>
+                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
+            </div>
+          </modal>
+          <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices? Answer: No. Reason: <code>-1</code> -- the only input that is a negative price – is in a test case that produces the error message
+            “invalid fruit”.</p>
+          <p>In this case a useful heuristic to apply is <strong>no more than one invalid input in a test case</strong>. After applying that, we get the following test cases.</p>
+          <tip-box>
+            <div class="table-responsive">
               <table class="markbind-table table table-bordered table-striped">
                 <thead>
                   <tr>
@@ -9732,72 +9840,24 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                   <tr>
                     <td style="text-align:center">3</td>
                     <td style="text-align:center">VV</td>
-                    <td style="text-align:center">❗️ 0</td>
+                    <td style="text-align:center">❗️0</td>
                     <td style="text-align:center">Error message “invalid price”</td>
                   </tr>
                   <tr>
                     <td style="text-align:center">4</td>
-                    <td style="text-align:center">❗️ Dog</td>
-                    <td style="text-align:center">❗️ -1</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">❗️-1</td>
+                    <td style="text-align:center">Error message “invalid price&quot;</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4.1</td>
+                    <td style="text-align:center">❗️Dog</td>
+                    <td style="text-align:center">VV</td>
                     <td style="text-align:center">Error message “invalid fruit&quot;</td>
                   </tr>
                 </tbody>
               </table>
-              <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
             </div>
-          </modal>
-          <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices? Answer: No. Reason: <code>-1</code> -- the only input that is a negative price – is in a test case that produces the error message
-            “invalid fruit”.</p>
-          <p>In this case a useful heuristic to apply is <strong>no more than one invalid input in a test case</strong>. After applying that, we get the following test cases.</p>
-          <tip-box>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Case</th>
-                  <th style="text-align:center">fruitName</th>
-                  <th style="text-align:center">unitPrice</th>
-                  <th style="text-align:center">Expected</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">Apple</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">Print round label</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">Banana</td>
-                  <td style="text-align:center">20</td>
-                  <td style="text-align:center">Print oval label</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2.1</td>
-                  <td style="text-align:center">Cherry</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">Print square label</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">❗️0</td>
-                  <td style="text-align:center">Error message “invalid price”</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">❗️-1</td>
-                  <td style="text-align:center">Error message “invalid price&quot;</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4.1</td>
-                  <td style="text-align:center">❗️Dog</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">Error message “invalid fruit&quot;</td>
-                </tr>
-              </tbody>
-            </table>
             <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
           </tip-box>
         </div>
@@ -9836,334 +9896,342 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <p>To get the first cut of test cases, let’s apply the ‘at least once’ strategy.</p>
           <tip-box>
             <p><strong>Test cases for calculateGrade V1</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Case No.</th>
-                  <th style="text-align:center">participation</th>
-                  <th style="text-align:center">projectGrade</th>
-                  <th style="text-align:center">isAbsent</th>
-                  <th style="text-align:center">examScore</th>
-                  <th style="text-align:center">Expected</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">A</td>
-                  <td style="text-align:center">true</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">B</td>
-                  <td style="text-align:center">false</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">19</td>
-                  <td style="text-align:center">C</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">69</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">20</td>
-                  <td style="text-align:center">D</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">70</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5</td>
-                  <td style="text-align:center">❗️ 21</td>
-                  <td style="text-align:center">F</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">❗️ 71</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">6</td>
-                  <td style="text-align:center">❗️ 22</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">❗️ 72</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Case No.</th>
+                    <th style="text-align:center">participation</th>
+                    <th style="text-align:center">projectGrade</th>
+                    <th style="text-align:center">isAbsent</th>
+                    <th style="text-align:center">examScore</th>
+                    <th style="text-align:center">Expected</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">A</td>
+                    <td style="text-align:center">true</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">B</td>
+                    <td style="text-align:center">false</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">19</td>
+                    <td style="text-align:center">C</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">69</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">20</td>
+                    <td style="text-align:center">D</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">70</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">❗️ 21</td>
+                    <td style="text-align:center">F</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">❗️ 71</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">❗️ 22</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">❗️ 72</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>VV/IV = Any Valid or Invalid Value, Err Msg = Error Message</p>
           </tip-box>
           <p>Next, let’s apply the ‘each valid input at least once in a positive test case’ heuristic. Test case 5 has a valid value for <code>projectGrade=F</code> that doesn't appear in any other positive test case. Let's replace test case 5 with 5.1 and
             5.2 to rectify that.</p>
           <tip-box>
             <p><strong>Test cases for calculateGrade V2</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Case No.</th>
-                  <th style="text-align:center">participation</th>
-                  <th style="text-align:center">projectGrade</th>
-                  <th style="text-align:center">isAbsent</th>
-                  <th style="text-align:center">examScore</th>
-                  <th style="text-align:center">Expected</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">A</td>
-                  <td style="text-align:center">true</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">B</td>
-                  <td style="text-align:center">false</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">19</td>
-                  <td style="text-align:center">C</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">69</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">20</td>
-                  <td style="text-align:center">D</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">70</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"><mark>5.1</mark></td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">F</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"><mark>5.2</mark></td>
-                  <td style="text-align:center">❗️ 21</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">❗️ 71</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">6</td>
-                  <td style="text-align:center">❗️ 22</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">VV/IV</td>
-                  <td style="text-align:center">❗️ 72</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Case No.</th>
+                    <th style="text-align:center">participation</th>
+                    <th style="text-align:center">projectGrade</th>
+                    <th style="text-align:center">isAbsent</th>
+                    <th style="text-align:center">examScore</th>
+                    <th style="text-align:center">Expected</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">A</td>
+                    <td style="text-align:center">true</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">B</td>
+                    <td style="text-align:center">false</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">19</td>
+                    <td style="text-align:center">C</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">69</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">20</td>
+                    <td style="text-align:center">D</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">70</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><mark>5.1</mark></td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">F</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><mark>5.2</mark></td>
+                    <td style="text-align:center">❗️ 21</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">❗️ 71</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">❗️ 22</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">VV/IV</td>
+                    <td style="text-align:center">❗️ 72</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>VV = Any Valid Value VV/IV = Any Valid or Invalid Value</p>
           </tip-box>
           <p>Next, we apply the ‘no more than one invalid input in a test case’ heuristic. Test cases 5.2 and 6 don't follow that heuristic. Let's rectify the situation as follows:</p>
           <tip-box>
             <p><strong>Test cases for calculateGrade V3</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Case No.</th>
-                  <th style="text-align:center">participation</th>
-                  <th style="text-align:center">projectGrade</th>
-                  <th style="text-align:center">isAbsent</th>
-                  <th style="text-align:center">examScore</th>
-                  <th style="text-align:center">Expected</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">A</td>
-                  <td style="text-align:center">true</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">B</td>
-                  <td style="text-align:center">false</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">19</td>
-                  <td style="text-align:center">C</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">69</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">20</td>
-                  <td style="text-align:center">D</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">70</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5.1</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">F</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5.2</td>
-                  <td style="text-align:center">❗️ 21</td>
-                  <td style="text-align:center"><mark>VV</mark></td>
-                  <td style="text-align:center"><mark>VV</mark></td>
-                  <td style="text-align:center"><mark>VV</mark></td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"><mark>5.3</mark></td>
-                  <td style="text-align:center">❗️ 22</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"><mark>6.1</mark></td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">❗️ 71</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"><mark>6.2</mark></td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">❗️ 72</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Case No.</th>
+                    <th style="text-align:center">participation</th>
+                    <th style="text-align:center">projectGrade</th>
+                    <th style="text-align:center">isAbsent</th>
+                    <th style="text-align:center">examScore</th>
+                    <th style="text-align:center">Expected</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">A</td>
+                    <td style="text-align:center">true</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">B</td>
+                    <td style="text-align:center">false</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">19</td>
+                    <td style="text-align:center">C</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">69</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">20</td>
+                    <td style="text-align:center">D</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">70</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5.1</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">F</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5.2</td>
+                    <td style="text-align:center">❗️ 21</td>
+                    <td style="text-align:center"><mark>VV</mark></td>
+                    <td style="text-align:center"><mark>VV</mark></td>
+                    <td style="text-align:center"><mark>VV</mark></td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><mark>5.3</mark></td>
+                    <td style="text-align:center">❗️ 22</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><mark>6.1</mark></td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">❗️ 71</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><mark>6.2</mark></td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">❗️ 72</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p>Next, let us assume that there is a dependency between the inputs <code>examScore</code> and <code>isAbsent</code> such that an absent student can only have <code>examScore=0</code>. To cater for the hidden invalid case arising from this, we
             can add a new test case where <code>isAbsent=true</code> and <code>examScore!=0</code>. In addition, test cases 3-6.2 should have <code>isAbsent=false</code> so that the input remains valid.</p>
           <tip-box>
             <p><strong>Test cases for calculateGrade V4</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Case No.</th>
-                  <th style="text-align:center">participation</th>
-                  <th style="text-align:center">projectGrade</th>
-                  <th style="text-align:center">isAbsent</th>
-                  <th style="text-align:center">examScore</th>
-                  <th style="text-align:center">Expected</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">A</td>
-                  <td style="text-align:center">true</td>
-                  <td style="text-align:center">0</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">2</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">B</td>
-                  <td style="text-align:center">false</td>
-                  <td style="text-align:center">1</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">3</td>
-                  <td style="text-align:center">19</td>
-                  <td style="text-align:center">C</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">69</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">4</td>
-                  <td style="text-align:center">20</td>
-                  <td style="text-align:center">D</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">70</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5.1</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">F</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">...</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5.2</td>
-                  <td style="text-align:center">❗️ 21</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">5.3</td>
-                  <td style="text-align:center">❗️ 22</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">6.1</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">❗️ 71</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">6.2</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center">VV</td>
-                  <td style="text-align:center"><mark>false</mark></td>
-                  <td style="text-align:center">❗️ 72</td>
-                  <td style="text-align:center">Err Msg</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"><mark>7</mark></td>
-                  <td style="text-align:center"><mark>VV</mark></td>
-                  <td style="text-align:center"><mark>VV</mark></td>
-                  <td style="text-align:center"><mark>true</mark></td>
-                  <td style="text-align:center"><mark>!=0</mark></td>
-                  <td style="text-align:center"><mark>Err Msg</mark></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Case No.</th>
+                    <th style="text-align:center">participation</th>
+                    <th style="text-align:center">projectGrade</th>
+                    <th style="text-align:center">isAbsent</th>
+                    <th style="text-align:center">examScore</th>
+                    <th style="text-align:center">Expected</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">A</td>
+                    <td style="text-align:center">true</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">B</td>
+                    <td style="text-align:center">false</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">19</td>
+                    <td style="text-align:center">C</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">69</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">20</td>
+                    <td style="text-align:center">D</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">70</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5.1</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">F</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">...</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5.2</td>
+                    <td style="text-align:center">❗️ 21</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">5.3</td>
+                    <td style="text-align:center">❗️ 22</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">6.1</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">❗️ 71</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">6.2</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center">VV</td>
+                    <td style="text-align:center"><mark>false</mark></td>
+                    <td style="text-align:center">❗️ 72</td>
+                    <td style="text-align:center">Err Msg</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"><mark>7</mark></td>
+                    <td style="text-align:center"><mark>VV</mark></td>
+                    <td style="text-align:center"><mark>VV</mark></td>
+                    <td style="text-align:center"><mark>true</mark></td>
+                    <td style="text-align:center"><mark>!=0</mark></td>
+                    <td style="text-align:center"><mark>Err Msg</mark></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -10479,52 +10547,54 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                             </li>
                           </ul>
                           <p><strong>Test cases:</strong></p>
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th style="text-align:center">Test case</th>
-                                <th style="text-align:center">Booking</th>
-                                <th style="text-align:center">Table</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td style="text-align:center">1</td>
-                                <td style="text-align:center">null</td>
-                                <td style="text-align:center">Any valid</td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center">2</td>
-                                <td style="text-align:center">not null and b.getTable==t</td>
-                                <td style="text-align:center">Any valid</td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center">3</td>
-                                <td style="text-align:center">Any valid</td>
-                                <td style="text-align:center">null</td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center">4</td>
-                                <td style="text-align:center">Any valid</td>
-                                <td style="text-align:center">not vacant</td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center">5</td>
-                                <td style="text-align:center">Any valid</td>
-                                <td style="text-align:center">(booking size == table size + 1)</td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center">6</td>
-                                <td style="text-align:center">Any valid</td>
-                                <td style="text-align:center">(booking size == table size)</td>
-                              </tr>
-                              <tr>
-                                <td style="text-align:center">7</td>
-                                <td style="text-align:center">Any valid</td>
-                                <td style="text-align:center">(booking size == table size - 1)</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:center">Test case</th>
+                                  <th style="text-align:center">Booking</th>
+                                  <th style="text-align:center">Table</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center">1</td>
+                                  <td style="text-align:center">null</td>
+                                  <td style="text-align:center">Any valid</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">2</td>
+                                  <td style="text-align:center">not null and b.getTable==t</td>
+                                  <td style="text-align:center">Any valid</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">3</td>
+                                  <td style="text-align:center">Any valid</td>
+                                  <td style="text-align:center">null</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">4</td>
+                                  <td style="text-align:center">Any valid</td>
+                                  <td style="text-align:center">not vacant</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">5</td>
+                                  <td style="text-align:center">Any valid</td>
+                                  <td style="text-align:center">(booking size == table size + 1)</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">6</td>
+                                  <td style="text-align:center">Any valid</td>
+                                  <td style="text-align:center">(booking size == table size)</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center">7</td>
+                                  <td style="text-align:center">Any valid</td>
+                                  <td style="text-align:center">(booking size == table size - 1)</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           <p>Note: We can use Bookings of different sizes for different test cases so that we increase the chance of finding bugs. If there is a minimum and maximum booking size, we should include them in those test cases.</p>
                         </div>
                       </question>
@@ -10880,48 +10950,50 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             tasks can be further split into subtasks. In complex projects a WBS can also include prerequisite tasks and effort estimates for each task.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> The high level tasks for a single iteration of a small project could look like the following:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Task ID</th>
-                  <th>Task</th>
-                  <th>Estimated Effort</th>
-                  <th>Prerequisite Task</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>A</td>
-                  <td>Analysis</td>
-                  <td>1 man day</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>B</td>
-                  <td>Design</td>
-                  <td>2 man day</td>
-                  <td>A</td>
-                </tr>
-                <tr>
-                  <td>C</td>
-                  <td>Implementation</td>
-                  <td>4.5 man day</td>
-                  <td>B</td>
-                </tr>
-                <tr>
-                  <td>D</td>
-                  <td>Testing</td>
-                  <td>1 man day</td>
-                  <td>C</td>
-                </tr>
-                <tr>
-                  <td>E</td>
-                  <td>Planning for next version</td>
-                  <td>1 man day</td>
-                  <td>D</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Task ID</th>
+                    <th>Task</th>
+                    <th>Estimated Effort</th>
+                    <th>Prerequisite Task</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A</td>
+                    <td>Analysis</td>
+                    <td>1 man day</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>Design</td>
+                    <td>2 man day</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>Implementation</td>
+                    <td>4.5 man day</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td>Testing</td>
+                    <td>1 man day</td>
+                    <td>C</td>
+                  </tr>
+                  <tr>
+                    <td>E</td>
+                    <td>Planning for next version</td>
+                    <td>1 man day</td>
+                    <td>D</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
           <p><strong>The effort is traditionally measured in <em>man hour/day/month</em></strong> i.e. work that can be done by one person in one hour/day/month. The <em>Task ID</em> is a label for easy reference to a task. Simple labeling is suitable for
             a small project, while a more informative labeling system can be adopted for bigger projects.</p>
@@ -11003,24 +11075,26 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <p><strong>All tasks should be well-defined.</strong> In particular, it should be clear as to when the task will be considered <em>done</em>.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Some examples of ill-defined tasks and their better-defined counterparts:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>👎 Not good</th>
-                  <th>👍 Better</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>more coding</td>
-                  <td>implement component X</td>
-                </tr>
-                <tr>
-                  <td>do research on UI testing</td>
-                  <td>find a suitable tool for testing the UI</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>👎 Not good</th>
+                    <th>👍 Better</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>more coding</td>
+                    <td>implement component X</td>
+                  </tr>
+                  <tr>
+                    <td>do research on UI testing</td>
+                    <td>find a suitable tool for testing the UI</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -11041,28 +11115,30 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             for the next few milestones.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Milestones for the Minesweeper project, iteration 1</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Day</th>
-                  <th>Milestones</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Day 1</td>
-                  <td>Architecture skeleton completed</td>
-                </tr>
-                <tr>
-                  <td>Day 3</td>
-                  <td>‘new game’ feature implemented</td>
-                </tr>
-                <tr>
-                  <td>Day 4</td>
-                  <td>‘new game’ feature tested</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Milestones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Day 1</td>
+                    <td>Architecture skeleton completed</td>
+                  </tr>
+                  <tr>
+                    <td>Day 3</td>
+                    <td>‘new game’ feature implemented</td>
+                  </tr>
+                  <tr>
+                    <td>Day 4</td>
+                    <td>‘new game’ feature tested</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -11459,37 +11535,39 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <li><code>~</code> : package private</li>
           </ul>
           <panel type="seamless" header="How visibilities map to programming language features">
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>visibility</th>
-                  <th>Java</th>
-                  <th>Python</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>-</code> private</td>
-                  <td><code>private</code></td>
-                  <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
-                </tr>
-                <tr>
-                  <td><code>#</code> protected</td>
-                  <td><code>protected</code></td>
-                  <td>one leading underscore in the name</td>
-                </tr>
-                <tr>
-                  <td><code>+</code> public</td>
-                  <td><code>public</code></td>
-                  <td>all other cases</td>
-                </tr>
-                <tr>
-                  <td><code>~</code> package private</td>
-                  <td>default visibility</td>
-                  <td>not applicable</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>visibility</th>
+                    <th>Java</th>
+                    <th>Python</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>-</code> private</td>
+                    <td><code>private</code></td>
+                    <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
+                  </tr>
+                  <tr>
+                    <td><code>#</code> protected</td>
+                    <td><code>protected</code></td>
+                    <td>one leading underscore in the name</td>
+                  </tr>
+                  <tr>
+                    <td><code>+</code> public</td>
+                    <td><code>public</code></td>
+                    <td>all other cases</td>
+                  </tr>
+                  <tr>
+                    <td><code>~</code> package private</td>
+                    <td>default visibility</td>
+                    <td>not applicable</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p></p>
           </panel>
           <p></p>
@@ -13751,36 +13829,38 @@ git pull origin master
               <ol start="9">
                 <li>Add the following labels to the cells, such that the grid is of this form:</li>
               </ol>
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>First Name</th>
-                    <th>Label</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Last Name</td>
-                    <td>Label</td>
-                  </tr>
-                  <tr>
-                    <td>Street</td>
-                    <td>Label</td>
-                  </tr>
-                  <tr>
-                    <td>City</td>
-                    <td>Label</td>
-                  </tr>
-                  <tr>
-                    <td>Postal Code</td>
-                    <td>Label</td>
-                  </tr>
-                  <tr>
-                    <td>Birthday</td>
-                    <td>Label</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Label</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Last Name</td>
+                      <td>Label</td>
+                    </tr>
+                    <tr>
+                      <td>Street</td>
+                      <td>Label</td>
+                    </tr>
+                    <tr>
+                      <td>City</td>
+                      <td>Label</td>
+                    </tr>
+                    <tr>
+                      <td>Postal Code</td>
+                      <td>Label</td>
+                    </tr>
+                    <tr>
+                      <td>Birthday</td>
+                      <td>Label</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <tip-box type="tip">
                 <p>To add a row to the GridPane, select an existing row number, right click the row number and choose &quot;Add Row Below&quot;.</p>
               </tip-box>
@@ -14746,7 +14826,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Fri, 20 Jul 2018 15:31:34 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Sat, 21 Jul 2018 12:00:36 GMT</small></div>
 </footer>
 </div>
 </body>

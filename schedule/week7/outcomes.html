@@ -32,10 +32,9 @@
           </span>
           </span>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain architectural styles</span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain architectural styles</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
-              class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <div>
@@ -71,180 +70,179 @@
               </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can identify n-tier architectural style</span>
-            <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-2">What</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Operating systems and network communication software often use n-tier style.
-                        <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
-                    </tip-box>
-                    <p></p>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can identify the client-server architectural style</span>
-            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Client-Server Style
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-3">What</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
-                      applications.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
-                    <p></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> The online game and the Web application below uses the client-server style.</p>
-                      <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can identify event-driven architectural style</span>
-            <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Event-Driven Style
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-4">What</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                      This architectural style is often used in GUIs.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted
-                        to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
-                      <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Explain how the AddressBook-Level4 uses Event-Driven style (refer to the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design">Developer Guide</a> for more info).</p>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1e</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can identify transaction processing architectural
-            style</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Transaction Processing Style
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-5">What</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong>                      Task queuing, ordering, undo etc. are handled by the dispatcher.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> In this example from a Banking system, transactions are generated by the terminals used by
-                        <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
-                      <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1f</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can identify service-oriented architectural style</span>
-            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Service-Oriented Style
-</span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-6">What</h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
-                      services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and
-                      XML is used as the language of communication between service providers and service users.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards.
-                        Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA
-                        architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
-                      <img src="/website-base/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
-                      <p></p>
-                    </tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="success" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1g</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can name several other architecture styles</span>
-            <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1b</code></span></big> <span><span class="fas fa-trophy"></span> Can identify n-tier architectural style</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
               </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Architecture → Styles → n-Tier Style
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="what-2">What</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>In the <em>n-tier</em> style, higher layers make use of services provided by lower layers.</strong> Lower layers are independent of higher layers. Other names: <em>multi-layered</em>, <em>layered</em>.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTier.png" height="150">
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Operating systems and network communication software often use n-tier style.
+                          <img src="/website-base/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p>
+                      </tip-box>
+                      <p></p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+          </panel>
+          <panel type="info" expanded="" no-close="">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1c</code></span></big> <span><span class="fas fa-trophy"></span> Can identify the client-server architectural style</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Client-Server Style
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="what-3">What</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
+                        applications.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+                      <p></p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> The online game and the Web application below uses the client-server style.</p>
+                        <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+          </panel>
+          <panel type="warning" expanded="" no-close="">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1d</code></span></big> <span><span class="fas fa-trophy"></span> Can identify event-driven architectural style</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Event-Driven Style
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="what-4">What</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                        This architectural style is often used in GUIs.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can be transmitted
+                          to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
+                        <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <p>Explain how the AddressBook-Level4 uses Event-Driven style (refer to the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html#events-driven-nature-of-the-design">Developer Guide</a> for more info).</p>
+              </div>
+          </panel>
+          <panel type="info" expanded="" no-close="">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1e</code></span></big> <span><span class="fas fa-trophy"></span> Can identify transaction processing architectural style</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Transaction Processing Style
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="what-5">What</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong>                        Task queuing, ordering, undo etc. are handled by the dispatcher.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> In this example from a Banking system, transactions are generated by the terminals used by
+                          <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
+                        <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+          </panel>
+          <panel type="info" expanded="" no-close="">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1f</code></span></big> <span><span class="fas fa-trophy"></span> Can identify service-oriented architectural style</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Architecture → Styles → Service-Oriented Style
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="what-6">What</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
+                        services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and
+                        XML is used as the language of communication between service providers and service users.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit
+                          cards. Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow
+                          the SOA architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
+                        <img src="/website-base/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                        <p></p>
+                      </tip-box>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+          </panel>
+          <panel type="success" expanded="" no-close="">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can name several other architecture styles</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <div>
@@ -287,68 +285,68 @@
               </div>
           </panel>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1h</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain how architectural styles are combined</span>
-            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Architecture → Styles
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.1h</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how architectural styles are combined</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Architecture → Styles
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="using-styles">Using Styles</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p><strong>Most applications use a mix of these architectural styles.</strong></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
-                    </tip-box>
+                    <h4 id="using-styles">Using Styles</h4>
                   </div>
-                  <div>
+                  <div id="main">
                     <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="Q: Comment on how to use architecture styles in Minesweeper.">
-                            <question has-input="true">
-                              <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before
-                                any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
-                              <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
-                              <ol>
-                                <li>Client-server</li>
-                                <li>Transaction-processing</li>
-                                <li>SOA (Service Oriented Architecture)</li>
-                                <li>multi-layer (n-tier)</li>
-                              </ol>
-                              <div slot="answer">
+                      <p><strong>Most applications use a mix of these architectural styles.</strong></p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="Q: Comment on how to use architecture styles in Minesweeper.">
+                              <question has-input="true">
+                                <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before
+                                  any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
+                                <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
                                 <ol>
-                                  <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
-                                  <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
-                                  <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
-                                  <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
+                                  <li>Client-server</li>
+                                  <li>Transaction-processing</li>
+                                  <li>SOA (Service Oriented Architecture)</li>
+                                  <li>multi-layer (n-tier)</li>
                                 </ol>
-                                <img src="/website-base/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
-                                <p></p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
+                                <div slot="answer">
+                                  <ol>
+                                    <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
+                                    <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
+                                    <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
+                                    <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
+                                  </ol>
+                                  <img src="/website-base/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
+                                  <p></p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Explain architectural styles currently used in AddressBook-Level4. Speculate under what circumstances other architectural styles can be used in it <span class="dimmed"> e.g. what kind of additional features can make a certain style applicable</span></p>
-            </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <p>Explain architectural styles currently used in AddressBook-Level4. Speculate under what circumstances other architectural styles can be used in it <span class="dimmed"> e.g. what kind of additional features can make a certain style applicable</span></p>
+              </div>
           </panel>
       </panel>
       <panel no-close="">
@@ -358,10 +356,9 @@
         </span>
         </span>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.2a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain APIs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain APIs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
             </span>
             </span>
             </span>
@@ -443,155 +440,152 @@
         </span>
         </span>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object deletion</span>
-          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object deletion</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="object-deletion">Object Deletion</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>UML uses an <code>X</code> at the end of the lifeline of an object to show it's deletion.</strong></p>
-                  <tip-box>
-                    <p>💡 Although object deletion is not that important in languages such as Java that support automatic memory management, you can still show object deletion in UML diagrams to indicate the point at which the object ceases to be used.</p>
-                  </tip-box>
-                  <p>Notation:</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
-                  <p></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
-                    <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
-                    <p></p>
-                  </tip-box>
+                  <h4 id="object-deletion">Object Deletion</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p><strong>UML uses an <code>X</code> at the end of the lifeline of an object to show it's deletion.</strong></p>
+                    <tip-box>
+                      <p>💡 Although object deletion is not that important in languages such as Java that support automatic memory management, you can still show object deletion in UML diagrams to indicate the point at which the object ceases to be used.</p>
+                    </tip-box>
+                    <p>Notation:</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
+                    <p></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
+                      <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with self invocation</span>
-          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with self invocation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="self-invocation">Self Invocation</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
-                  <p>Notation:</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
-                  <p></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
-                    <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
-                    <p></p>
-                    <p><span class="fas fa-cube"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method of
-                      the calling object.</p>
-                    <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
-                    <p></p>
-                  </tip-box>
+                  <h4 id="self-invocation">Self Invocation</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
+                    <p>Notation:</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
+                    <p></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
+                      <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
+                      <p></p>
+                      <p><span class="fas fa-cube"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method
+                        of the calling object.</p>
+                      <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with alternative
-          paths</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with alternative paths</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="alternative-paths">Alternative Paths</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>UML uses <code>alt</code> frames to indicate alternative paths.</strong></p>
-                  <p>Notation:</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
-                  <p></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
-                    <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
-                    <p></p>
-                  </tip-box>
+                  <h4 id="alternative-paths">Alternative Paths</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p><strong>UML uses <code>alt</code> frames to indicate alternative paths.</strong></p>
+                    <p>Notation:</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
+                    <p></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
+                      <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with optional paths</span>
-          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with optional paths</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="optional-paths">Optional Paths</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>UML uses <code>opt</code> frames to indicate optional paths.</strong></p>
-                  <p>Notation:</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
-                  <p></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
-                    <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
-                    <p></p>
-                  </tip-box>
+                  <h4 id="optional-paths">Optional Paths</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p><strong>UML uses <code>opt</code> frames to indicate optional paths.</strong></p>
+                    <p>Notation:</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
+                    <p></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
+                      <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="success" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3e</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with reference frames</span>
-          <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with reference frames</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
-            </span>
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -627,101 +621,98 @@
             </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3f</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can draw intermediate-level sequence diagrams</span>
-          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can draw intermediate-level sequence diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
             <div>
-              <p>
-                <panel src="/website-base\book\uml\sequenceDiagrams\referenceFrames\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%"></panel>
-                <panel src="/website-base\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%"></panel>
-                <panel src="/website-base\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%"></panel>
-                <panel src="/website-base\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%"></panel>
-                <panel src="/website-base\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%"></panel>
-              </p>
-            </div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-</span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
               <div>
-                <h4 id="sequence-diagrams-intermediate">Sequence Diagrams - Intermediate</h4>
+                <p>
+                  <panel src="/website-base\book\uml\sequenceDiagrams\referenceFrames\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%"></panel>
+                  <panel src="/website-base\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%"></panel>
+                  <panel src="/website-base\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%"></panel>
+                  <panel src="/website-base\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%"></panel>
+                  <panel src="/website-base\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%"></panel>
+                </p>
               </div>
-              <div id="main">
-                <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
+                  <h4 id="sequence-diagrams-intermediate">Sequence Diagrams - Intermediate</h4>
+                </div>
+                <div id="main">
+                  <div></div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What’s going on here?">
-                          <question>
-                            <p>What’s going on here?</p>
-                            <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
-                            <p></p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
-                            </ul>
-                            <div slot="answer">
-                              <p>(d)</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram (ParserFactory)">
-                          <question>
-                            <p>Explain the interactions depicted in this sequence diagram.</p>
-                            <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
-                            <p></p>
-                            <div slot="hint">
-                              <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What’s going on here?">
+                            <question>
+                              <p>What’s going on here?</p>
+                              <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
+                              <p></p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. <code>Logic</code> object is executing a parallel thread.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. <code>Logic</code> object is executing a loop.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. <code>Logic</code> object is creating another <code>Logic</code> instance.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(d)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram (ParserFactory)">
+                            <question>
+                              <p>Explain the interactions depicted in this sequence diagram.</p>
+                              <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+                              <p></p>
+                              <div slot="hint">
+                                <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <hr style="border-top: dashed 1px; border-color:grey">
-          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-          <div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
             <div>
-              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram (ParserFactory)">
-                <question>
-                  <p>Explain the interactions depicted in this sequence diagram.</p>
-                  <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
-                  <p></p>
-                  <div slot="hint">
-                    <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
-                  </div>
-                </question>
-              </panel>
+              <div>
+                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram (ParserFactory)">
+                  <question>
+                    <p>Explain the interactions depicted in this sequence diagram.</p>
+                    <img src="/website-base/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
+                    <p></p>
+                    <div slot="hint">
+                      <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+              <ol>
+                <li>Explain the sequence diagrams given [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
+                <li>Add more sequence diagrams to project documentation (to be done in future weeks)</li>
+              </ol>
             </div>
-            <p></p>
-            <ol>
-              <li>Explain the sequence diagrams given [<a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
-              <li>Add more sequence diagrams to project documentation (to be done in future weeks)</li>
-            </ol>
-          </div>
         </panel>
         <panel type="success" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3g</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with parallel paths</span>
-          <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3g</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with parallel paths</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
-            </span>
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -769,154 +760,154 @@
           </span>
           </span>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span>
-            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Introduction →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Introduction →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="basic">Basic</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <blockquote>
-                      <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
-                    </blockquote>
-                    <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-                    <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
-                      <div slot="content">
-                        Code being used in an actual product with actual users
-                      </div>
-                    </popover>
+                    <h4 id="basic">Basic</h4>
                   </div>
-                  <div></div>
+                  <div id="main">
+                    <div>
+                      <blockquote>
+                        <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
+                      </blockquote>
+                      <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+                      <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
+                        <div slot="content">
+                          Code being used in an actual product with actual users
+                        </div>
+                      </popover>
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span>
-            <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="introduction">Introduction</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
-                    <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of
-                      opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard
-                      is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
-                    <tip-box type="tip">
-                      <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
-                    </tip-box>
+                    <h4 id="introduction">Introduction</h4>
                   </div>
-                  <div>
+                  <div id="main">
                     <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
-                            <question>
-                              <p>What is the recommended approach regarding coding standards?</p>
-                              <ul radio-group="5c5a1" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>c</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                            <question has-input="">
-                              <p>What is the aim of using a coding standard? How does it help?</p>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
+                      <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+                      <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of
+                        opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard
+                        is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+                      <tip-box type="tip">
+                        <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
+                              <question>
+                                <p>What is the recommended approach regarding coding standards?</p>
+                                <ul radio-group="5c5a1" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>c</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                              <question has-input="">
+                                <p>What is the aim of using a coding standard? How does it help?</p>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
               <div>
-                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                  <question has-input="">
-                    <p>What is the aim of using a coding standard? How does it help?</p>
-                  </question>
-                </panel>
+                <div>
+                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                    <question has-input="">
+                      <p>What is the aim of using a coding standard? How does it help?</p>
+                    </question>
+                  </panel>
+                </div>
               </div>
-            </div>
           </panel>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span>
-            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="basic-2">Basic</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p>Some coding standards you can adopt:</p>
-                    <ul>
-                      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
-                      <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
-                    </ul>
+                    <h4 id="basic-2">Basic</h4>
                   </div>
-                  <div></div>
+                  <div id="main">
+                    <div>
+                      <p>Some coding standards you can adopt:</p>
+                      <ul>
+                        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
+                        <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
+                      </ul>
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
-              <p><strong>Suggested</strong>: Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules in local
-                copy of addressbook-level1 code base. Commit after each fix.</p>
-              <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
-            </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
+                <p><strong>Suggested</strong>: Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules in local
+                  copy of addressbook-level1 code base. Commit after each fix.</p>
+                <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
+              </div>
           </panel>
           <panel type="success" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
-              class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <div>
@@ -973,9 +964,7 @@
         </span>
         </span>
         <panel type="danger" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain the importance of readability</span>
-          <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the importance of readability</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -1121,71 +1110,70 @@
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-          long methods </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span>
+          <span
+            class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="avoid-long-methods">Avoid Long Methods</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
+                  <h4 id="avoid-long-methods">Avoid Long Methods</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-          deep nesting </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span>
+          <span
+            class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="avoid-deep-nesting">Avoid Deep Nesting</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <blockquote>
-                    <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
-                  </blockquote>
-                  <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
-                  <tip-box>
-                    <p>Example:</p>
-                    <img src="/website-base/book/codeQuality/maximiseReadability/basic/avoidDeepNesting/images/arrowheadStyle.png" height="250">
-                    <p></p>
-                  </tip-box>
+                  <h4 id="avoid-deep-nesting">Avoid Deep Nesting</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <blockquote>
+                      <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
+                    </blockquote>
+                    <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
+                    <tip-box>
+                      <p>Example:</p>
+                      <img src="/website-base/book/codeQuality/maximiseReadability/basic/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-          complicated expressions </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions </span>
+          <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           </span>
@@ -1273,173 +1261,172 @@ is_urgent = type_code == URGENT
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5e</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-          magic numbers </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span>
+          <span
+            class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="avoid-magic-numbers">Avoid Magic Numbers</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
-                    <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Example:</p>
-                    <tabs>
-                    
-                      <tab header="Java">
-                        <div>
-                          <table>
-                            <tr>
-                            
-                              <td valign="top">
-                                <p>
-                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                    </span>
-                                  </font>
-                                </p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+                  <h4 id="avoid-magic-numbers">Avoid Magic Numbers</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
+                      <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Example:</p>
+                      <tabs>
+                      
+                        <tab header="Java">
+                          <div>
+                            <table>
+                              <tr>
+                              
+                                <td valign="top">
+                                  <p>
+                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                      </span>
+                                    </font>
+                                  </p>
+                                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
-                                <p></p>
-                              </td>
-                            
-                              <td>  <br><br></td>
-                            
-                              <td valign="top">
-                                <p>
-                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                    </span>
-                                  </font>
-                                </p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                                  <p></p>
+                                </td>
+                              
+                                <td>  <br><br></td>
+                              
+                                <td valign="top">
+                                  <p>
+                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                      </span>
+                                    </font>
+                                  </p>
+                                  <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
-                                <p></p>
-                              </td>
-                            </tr>
-                          </table>
-                        </div>
-                      </tab>
-                    
-                      <tab header="Python">
-                        <div>
-                          <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
-                          <table>
-                            <tr>
-                            
-                              <td valign="top">
-                                <p>
-                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                    </span>
-                                  </font>
-                                </p>
-                                <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                                  <p></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </tab>
+                      
+                        <tab header="Python">
+                          <div>
+                            <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                            <table>
+                              <tr>
+                              
+                                <td valign="top">
+                                  <p>
+                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                      </span>
+                                    </font>
+                                  </p>
+                                  <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
-                                <p></p>
-                              </td>
-                            
-                              <td>  <br><br></td>
-                            
-                              <td valign="top">
-                                <p>
-                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                    </span>
-                                  </font>
-                                </p>
-                                <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                                  <p></p>
+                                </td>
+                              
+                                <td>  <br><br></td>
+                              
+                                <td valign="top">
+                                  <p>
+                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                      </span>
+                                    </font>
+                                  </p>
+                                  <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
-                                <p></p>
-                              </td>
-                            </tr>
-                          </table>
-                        </div>
-                      </tab>
-                    </tabs>
-                  </tip-box>
-                  <p>Similarly, we can have ‘magic’ values of other data types.</p>
-                  <tip-box>
-                    <p>
-                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                        </span>
-                      </font>
-                    </p>
-                    <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                                  <p></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </tab>
+                      </tabs>
+                    </tip-box>
+                    <p>Similarly, we can have ‘magic’ values of other data types.</p>
+                    <tip-box>
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
-                  </tip-box>
+                    </tip-box>
+                  </div>
+                  <div></div>
                 </div>
-                <div></div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5f</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the
-          code obvious </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span>
+          <span
+            class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="make-the-code-obvious">Make the Code Obvious</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
-                  <ul>
-                    <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
-                    <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                    <li>[<code>Java</code>, <code>Python</code>] Use
-                      <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled',
-                      and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
-                  </ul>
-                  <modal title="More about enumerations" id="modal:obviousCode-enums">
-                    <ul>
-                      <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
-                      <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
-                    </ul>
-                  </modal>
+                  <h4 id="make-the-code-obvious">Make the Code Obvious</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
+                    <ul>
+                      <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                      <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                      <li>[<code>Java</code>, <code>Python</code>] Use
+                        <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled',
+                        and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                    </ul>
+                    <modal title="More about enumerations" id="modal:obviousCode-enums">
+                      <ul>
+                        <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
+                        <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
+                      </ul>
+                    </modal>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5g</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: structure
-          code logically </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5g</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: structure code logically </span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -1465,9 +1452,8 @@ MAX_SIZE = <span class="hljs-number">10</span>
           </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5h</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not
-          'trip up' reader </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5h</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not 'trip up' reader </span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -1498,43 +1484,41 @@ MAX_SIZE = <span class="hljs-number">10</span>
           </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5i</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: practice
-          kissing </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5i</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: practice kissing </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="practice-kissing">Practice KISSing</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>As the old adage goes, <strong>&quot;keep it simple, stupid” (KISS).  Do not try to write ‘clever’ code.</strong> For example, do not dismiss the brute-force yet simple solution in favor of a complicated one because of some ‘supposed
-                    benefits’ such as 'better reusability' unless you have a strong justification.</p>
-                  <blockquote>
-                    <p>Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. <sub>--Brian W. Kernighan </sub></p>
-                  </blockquote>
-                  <blockquote>
-                    <p>Programs must be written for people to read, and only incidentally for machines to execute. <sub>--Abelson and Sussman</sub></p>
-                  </blockquote>
+                  <h4 id="practice-kissing">Practice KISSing</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p>As the old adage goes, <strong>&quot;keep it simple, stupid” (KISS).  Do not try to write ‘clever’ code.</strong> For example, do not dismiss the brute-force yet simple solution in favor of a complicated one because of some ‘supposed
+                      benefits’ such as 'better reusability' unless you have a strong justification.</p>
+                    <blockquote>
+                      <p>Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. <sub>--Brian W. Kernighan </sub></p>
+                    </blockquote>
+                    <blockquote>
+                      <p>Programs must be written for people to read, and only incidentally for machines to execute. <sub>--Abelson and Sussman</sub></p>
+                    </blockquote>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5j</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-          premature optimizations </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5j</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid premature optimizations </span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -1572,102 +1556,101 @@ MAX_SIZE = <span class="hljs-number">10</span>
           </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5k</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: slap hard
-          </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5k</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: slap hard </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="slap-hard">SLAP Hard</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>Avoid varying the level of
-                    <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
-                  <tip-box>
-                    <p>Example:</p>
-                    <p>
-                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                        </span>
-                      </font>
-                    </p>
-                    <pre><code class="hljs java">readData();
+                  <h4 id="slap-hard">SLAP Hard</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Avoid varying the level of
+                      <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
+                    <tip-box>
+                      <p>Example:</p>
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java">readData();
 salary = basic*rise+<span class="hljs-number">1000</span>;
 tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);
 displayResult();
 </code></pre>
-                    <p>
-                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                        </span>
-                      </font>
-                    </p>
-                    <pre><code class="hljs java">readData();
+                      <p>
+                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java">readData();
 processData();
 displayResult();
 </code></pre>
-                  </tip-box>
-                  <modal title="" id="modal:slap-abstraction">
-                  
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
+                    </tip-box>
+                    <modal title="" id="modal:slap-abstraction">
+                    
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
 </span></strong>
-                        </span>
-                      </p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="what-8">What</h4>
-                        </div>
-                        <div id="main">
+                          </span>
+                        </p>
+                        <div id="title-and-body">
                           <div>
-                            <tip-box type="definition">
-                              <div>
-                                <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or
-                                  irrelevant to that aspect).</p>
-                              </div>
-                            </tip-box>
-                            <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture
-                              only details that are relevant to the current perspective or the task at hand.</p>
-                            <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>.
-                                These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
-                            </tip-box>
-                            <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                            </tip-box>
-                            <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-                              <p><span class="fas fa-cube"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction
-                                <code>MOV</code>.</p>
-                            </tip-box>
+                            <h4 id="what-8">What</h4>
                           </div>
-                          <div></div>
+                          <div id="main">
+                            <div>
+                              <tip-box type="definition">
+                                <div>
+                                  <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or
+                                    irrelevant to that aspect).</p>
+                                </div>
+                              </tip-box>
+                              <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture
+                                only details that are relevant to the current perspective or the task at hand.</p>
+                              <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                              <tip-box>
+                                <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>.
+                                  These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
+                              </tip-box>
+                              <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                              <tip-box>
+                                <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                              </tip-box>
+                              <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                              <tip-box>
+                                <p><span class="fas fa-cube"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                                <p><span class="fas fa-cube"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction
+                                  <code>MOV</code>.</p>
+                              </tip-box>
+                            </div>
+                            <div></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </modal>
+                    </modal>
+                  </div>
+                  <div></div>
                 </div>
-                <div></div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5l</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the
-          happy path prominent </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5l</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the happy path prominent </span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -1750,39 +1733,39 @@ exit();
         </span>
         </span>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span>
-          <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="introduction-3">Introduction</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
-                  <blockquote>
-                    <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
-                  </blockquote>
+                  <h4 id="introduction-3">Introduction</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
+                    <blockquote>
+                      <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
+                    </blockquote>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="warning" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns
-          for things and verbs for actions </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for
+          actions </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           </span>
@@ -1802,35 +1785,37 @@ exit();
                   <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
                   <tip-box>
                     <p>Examples:</p>
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>Name for a</th>
-                          <th>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>
-                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                              </span>
-                            </font>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Class</td>
-                          <td><code>CheckLimit</code></td>
-                          <td><code>LimitChecker</code></td>
-                        </tr>
-                        <tr>
-                          <td>method</td>
-                          <td><code>result()</code></td>
-                          <td><code>calculate()</code></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Name for a</th>
+                            <th>
+                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                </span>
+                              </font>
+                            </th>
+                            <th>
+                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                </span>
+                              </font>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Class</td>
+                            <td><code>CheckLimit</code></td>
+                            <td><code>LimitChecker</code></td>
+                          </tr>
+                          <tr>
+                            <td>method</td>
+                            <td><code>result()</code></td>
+                            <td><code>calculate()</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </tip-box>
                   <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
                   <tip-box>
@@ -1867,152 +1852,157 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
           </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard
-          words </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Basic →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span>
+          <span
+            class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Basic →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="use-standard-words">Use Standard Words</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+                  <h4 id="use-standard-words">Use Standard Words</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use name
-          to explain </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use name to explain </span>
+          <span
+            class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="use-name-to-explain">Use Name to Explain</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
-                  <tip-box>
-                    <p>Examples:</p>
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>
-                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                              </span>
-                            </font>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><code>processInput()</code> (what 'process'?)</td>
-                          <td><code>removeWhiteSpaceFromInput()</code></td>
-                        </tr>
-                        <tr>
-                          <td><code>flag</code></td>
-                          <td><code>isValidInput</code></td>
-                        </tr>
-                        <tr>
-                          <td><code>temp</code></td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </tip-box>
-                  <p><strong>If the name has multiple words, they should be in a sensible order.</strong></p>
-                  <tip-box>
-                    <p>Examples:</p>
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>
-                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                              </span>
-                            </font>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><code>bySizeOrder()</code></td>
-                          <td><code>orderBySize()</code></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </tip-box>
-                  <p>Imagine going to the doctor's and saying &quot;My eye1 is swollen&quot;! Don’t use numbers or case to distinguish names.</p>
-                  <tip-box>
-                    <p>Examples:</p>
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>
-                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                              </span>
-                            </font>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><code>value1</code>, <code>value2</code></td>
-                          <td><code>value</code>, <code>Value</code></td>
-                          <td><code>originalValue</code>, <code>finalValue</code></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </tip-box>
+                  <h4 id="use-name-to-explain">Use Name to Explain</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
+                    <tip-box>
+                      <p>Examples:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font>
+                              </th>
+                              <th>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                  </span>
+                                </font>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><code>processInput()</code> (what 'process'?)</td>
+                              <td><code>removeWhiteSpaceFromInput()</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>flag</code></td>
+                              <td><code>isValidInput</code></td>
+                            </tr>
+                            <tr>
+                              <td><code>temp</code></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p><strong>If the name has multiple words, they should be in a sensible order.</strong></p>
+                    <tip-box>
+                      <p>Examples:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font>
+                              </th>
+                              <th>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                  </span>
+                                </font>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><code>bySizeOrder()</code></td>
+                              <td><code>orderBySize()</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                    <p>Imagine going to the doctor's and saying &quot;My eye1 is swollen&quot;! Don’t use numbers or case to distinguish names.</p>
+                    <tip-box>
+                      <p>Examples:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font>
+                              </th>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font>
+                              </th>
+                              <th>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                  </span>
+                                </font>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><code>value1</code>, <code>value2</code></td>
+                              <td><code>value</code>, <code>Value</code></td>
+                              <td><code>originalValue</code>, <code>finalValue</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6e</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: not too
-          long, not too short </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: not too long, not too short </span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -2036,94 +2026,96 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
           </div>
         </panel>
         <panel type="info" expanded="" no-close="">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6f</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-          misleading names </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-          </span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid misleading names </span>
+          <span
+            class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
 </span></strong>
-              </span>
-            </p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="avoid-misleading-names">Avoid Misleading Names</h4>
-              </div>
-              <div id="main">
+                </span>
+              </p>
+              <div id="title-and-body">
                 <div>
-                  <p><strong>Related things should be named similarly, while unrelated things should NOT.</strong></p>
-                  <tip-box>
-                    <p>Example: Consider these variables</p>
-                    <ul>
-                      <li><code>colorBlack</code> : hex value for color black</li>
-                      <li><code>colorWhite</code> : hex value for color white</li>
-                      <li><code>colorBlue</code> : number of times blue is used</li>
-                      <li><code>hexForRed</code> : : hex value for color red</li>
-                    </ul>
-                    <p>This is misleading because <code>colorBlue</code> is named similar to <code>colorWhite</code> and <code>colorBlack</code> but has a different purpose while <code>hexForRed</code> is named differently but has very similar purpose to
-                      the first two variables. The following is better:</p>
-                    <ul>
-                      <li><code>hexForBlack</code> <code>hexForWhite</code> <code>hexForRed</code></li>
-                      <li><code>blueColorCount</code></li>
-                    </ul>
-                  </tip-box>
-                  <p>Avoid misleading or ambiguous names (e.g. those with multiple meanings), similar sounding names, hard-to-pronounce ones (e.g. avoid ambiguities like &quot;is that a lowercase L, capital I or number 1?&quot;, or &quot;is that number 0
-                    or letter O?&quot;), almost similar names.</p>
-                  <tip-box>
-                    <p>Examples:</p>
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>
-                            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                              </span>
-                            </font>
-                          </th>
-                          <th>Reason</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><code>phase0</code></td>
-                          <td><code>phaseZero</code></td>
-                          <td>Is that zero or letter O?</td>
-                        </tr>
-                        <tr>
-                          <td><code>rwrLgtDirn</code></td>
-                          <td><code>rowerLegitDirection</code></td>
-                          <td>Hard to pronounce</td>
-                        </tr>
-                        <tr>
-                          <td><code>right</code> <code>left</code> <code>wrong</code></td>
-                          <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
-                          <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
-                        </tr>
-                        <tr>
-                          <td><code>redBooks</code> <code>readBooks</code></td>
-                          <td><code>redColorBooks</code> <code>booksRead</code></td>
-                          <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
-                        </tr>
-                        <tr>
-                          <td><code>FiletMignon</code></td>
-                          <td><code>egg</code></td>
-                          <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </tip-box>
+                  <h4 id="avoid-misleading-names">Avoid Misleading Names</h4>
                 </div>
-                <div></div>
+                <div id="main">
+                  <div>
+                    <p><strong>Related things should be named similarly, while unrelated things should NOT.</strong></p>
+                    <tip-box>
+                      <p>Example: Consider these variables</p>
+                      <ul>
+                        <li><code>colorBlack</code> : hex value for color black</li>
+                        <li><code>colorWhite</code> : hex value for color white</li>
+                        <li><code>colorBlue</code> : number of times blue is used</li>
+                        <li><code>hexForRed</code> : : hex value for color red</li>
+                      </ul>
+                      <p>This is misleading because <code>colorBlue</code> is named similar to <code>colorWhite</code> and <code>colorBlack</code> but has a different purpose while <code>hexForRed</code> is named differently but has very similar purpose
+                        to the first two variables. The following is better:</p>
+                      <ul>
+                        <li><code>hexForBlack</code> <code>hexForWhite</code> <code>hexForRed</code></li>
+                        <li><code>blueColorCount</code></li>
+                      </ul>
+                    </tip-box>
+                    <p>Avoid misleading or ambiguous names (e.g. those with multiple meanings), similar sounding names, hard-to-pronounce ones (e.g. avoid ambiguities like &quot;is that a lowercase L, capital I or number 1?&quot;, or &quot;is that number
+                      0 or letter O?&quot;), almost similar names.</p>
+                    <tip-box>
+                      <p>Examples:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font>
+                              </th>
+                              <th>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                  </span>
+                                </font>
+                              </th>
+                              <th>Reason</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><code>phase0</code></td>
+                              <td><code>phaseZero</code></td>
+                              <td>Is that zero or letter O?</td>
+                            </tr>
+                            <tr>
+                              <td><code>rwrLgtDirn</code></td>
+                              <td><code>rowerLegitDirection</code></td>
+                              <td>Hard to pronounce</td>
+                            </tr>
+                            <tr>
+                              <td><code>right</code> <code>left</code> <code>wrong</code></td>
+                              <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
+                              <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
+                            </tr>
+                            <tr>
+                              <td><code>redBooks</code> <code>readBooks</code></td>
+                              <td><code>redColorBooks</code> <code>booksRead</code></td>
+                              <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
+                            </tr>
+                            <tr>
+                              <td><code>FiletMignon</code></td>
+                              <td><code>egg</code></td>
+                              <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
-          </div>
         </panel>
       </panel>
       <panel no-close="">
@@ -2135,36 +2127,36 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
           </span>
           </span>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain the need for avoiding error-prone
-            shortcuts</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for avoiding error-prone shortcuts</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="introduction-4">Introduction</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p>It is safer to use language constructs in the way they are meant to be used, even if the language allows shortcuts. Some such coding practices are common sources of bugs. Know them and avoid them.</p>
+                    <h4 id="introduction-4">Introduction</h4>
                   </div>
-                  <div></div>
+                  <div id="main">
+                    <div>
+                      <p>It is safer to use language constructs in the way they are meant to be used, even if the language allows shortcuts. Some such coding practices are common sources of bugs. Know them and avoid them.</p>
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use
-            the default branch </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use the default branch </span>
+            <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             </span>
@@ -2210,9 +2202,8 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: don't
-            recycle variables or parameters </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: don't recycle variables or parameters
+            </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             </span>
@@ -2264,9 +2255,8 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid
-            empty catch blocks </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid empty catch blocks </span>
+            <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             </span>
@@ -2291,37 +2281,36 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7e</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: delete
-            dead code </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Basic →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: delete dead code </span>
+            <span
+              class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Basic →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="delete-dead-code">Delete Dead Code</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p>We all feel reluctant to delete code we have painstakingly written, even if we have no use for that code any more (&quot;I spent a lot of time writing that code; what if we need it again?&quot;). Consider all code as baggage you have
-                      to carry; get rid of unused code the moment it becomes redundant. If you need that code again, simply recover it from the revision control tool you are using. Deleting code you wrote previously is a sign that you are improving.</p>
+                    <h4 id="delete-dead-code">Delete Dead Code</h4>
                   </div>
-                  <div></div>
+                  <div id="main">
+                    <div>
+                      <p>We all feel reluctant to delete code we have painstakingly written, even if we have no use for that code any more (&quot;I spent a lot of time writing that code; what if we need it again?&quot;). Consider all code as baggage you
+                        have to carry; get rid of unused code the moment it becomes redundant. If you need that code again, simply recover it from the revision control tool you are using. Deleting code you wrote previously is a sign that you are improving.</p>
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
           </panel>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7f</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise
-            scope of variables </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise scope of variables </span>
+            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -2353,9 +2342,8 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
             </div>
           </panel>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7g</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise
-            code duplication </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7g</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise code duplication </span>
+            <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -2425,39 +2413,38 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
           </span>
           </span>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8a</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally
-            but sufficiently</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span>
+            <span
+              class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="introduction-5">Introduction</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <blockquote>
-                      <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
-                    </blockquote>
-                    <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+                    <h4 id="introduction-5">Introduction</h4>
                   </div>
-                  <div></div>
+                  <div id="main">
+                    <div>
+                      <blockquote>
+                        <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
+                      </blockquote>
+                      <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+                    </div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8b</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not
-            repeat the obvious </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious </span>
+            <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             </span>
@@ -2493,89 +2480,87 @@ trimInput();
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8c</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: write
-            to the reader </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments → Basic →
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span>
+            <span
+              class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments → Basic →
 </span></strong>
-                </span>
-              </p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="write-to-the-reader">Write to the Reader</h4>
-                </div>
-                <div id="main">
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for
-                      a class or an operation to explain its purpose.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Examples:</p>
-                      <tabs>
-                      
-                        <tab header="Java">
-                          <div>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                </span>
-                              </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                            <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+                    <h4 id="write-to-the-reader">Write to the Reader</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for
+                        a class or an operation to explain its purpose.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Examples:</p>
+                        <tabs>
+                        
+                          <tab header="Java">
+                            <div>
+                              <p>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                              <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                </span>
-                              </font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                              <p>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                  </span>
+                                </font>
+                              </p>
+                              <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                          </div>
-                        </tab>
-                      
-                        <tab header="Python">
-                          <div>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                </span>
-                              </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                            <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+                            </div>
+                          </tab>
+                        
+                          <tab header="Python">
+                            <div>
+                              <p>
+                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                  </span>
+                                </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                              <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                </span>
-                              </font>
-                            </p>
-                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                              <p>
+                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                  </span>
+                                </font>
+                              </p>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
     ...
 </code></pre>
-                          </div>
-                        </tab>
-                      </tabs>
-                    </tip-box>
+                            </div>
+                          </tab>
+                        </tabs>
+                      </tip-box>
+                    </div>
+                    <div></div>
                   </div>
-                  <div></div>
                 </div>
               </div>
-            </div>
           </panel>
           <panel type="info" expanded="" no-close="">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8d</code></span></big> <span style="color:white"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: explain
-            what and why, not how </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-              aria-hidden="true"></span></span>
-            </span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: explain what and why, not how
+            </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>

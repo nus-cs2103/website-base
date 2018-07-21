@@ -2,16 +2,15 @@
 <link rel="stylesheet" href="../css/admin.css">
 <div>
   <navbar placement="top" type="inverse">
-    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
+    <li><a href="/website-base/index-flat.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-bars"></span> flat</span></a></li>
     <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
     <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
     <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-    <dropdown text="Discuss" class="nav-link">
-      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-    </dropdown>
     <dropdown text="Links" class="nav-link">
       <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
       <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
       <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
       <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
@@ -43,27 +42,29 @@
     <h2 id="lectures">Lectures</h2>
     <img src="/website-base/admin/images/Lecture photo.png" width="100%">
     <p><strong>Timing/venue</strong>:</p>
-    <table class="markbind-table table table-bordered table-striped">
-      <thead>
-        <tr>
-          <th>Semester</th>
-          <th>Venue</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Semester 1 (Aug-Nov)</td>
-          <td>ICube Auditorium</td>
-          <td><strong>1600</strong>-1800</td>
-        </tr>
-        <tr>
-          <td>Semester 2 (Jan-April)</td>
-          <td>ICube Auditorium</td>
-          <td><strong>1600</strong>-1800</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="markbind-table table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Semester</th>
+            <th>Venue</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Semester 1 (Aug-Nov)</td>
+            <td>ICube Auditorium</td>
+            <td><strong>1600</strong>-1800</td>
+          </tr>
+          <tr>
+            <td>Semester 2 (Jan-April)</td>
+            <td>ICube Auditorium</td>
+            <td><strong>1600</strong>-1800</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
     <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%">
       <p>CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>

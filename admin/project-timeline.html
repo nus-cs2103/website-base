@@ -19,7 +19,6 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="index-flat.html">See all in one page (slow!)</a></li>
       <li style="margin-top: 10px"><a href="moduleOverview.html">Module Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
         </span>
       </li>
@@ -160,16 +159,15 @@
     <link rel="stylesheet" href="../css/admin.css">
     <div>
       <navbar placement="top" type="inverse">
-        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
+        <li><a href="/website-base/index-flat.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-bars"></span> flat</span></a></li>
         <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
         <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <dropdown text="Discuss" class="nav-link">
-          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-        </dropdown>
         <dropdown text="Links" class="nav-link">
           <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
           <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
           <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
           <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
@@ -204,74 +202,76 @@
           up your tech skills in preparation for the project. <code>AB4</code> is to be used as the basis for your project.</p>
         <p><code>AB4</code> is the version you will use as the starting point for your final project. Some of the work you do in <code>AB1</code> to <code>AB3</code> can be ported over to <code>AB4</code> and can be used to claim credit in the final project.</p>
         <p>Given below is the high-level timeline of the project.</p>
-        <table class="markbind-table table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th>Week</th>
-              <th>Stage</th>
-              <th>Activities</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>3</strong></td>
-              <td>inception</td>
-              <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>4</strong></td>
-              <td>mid-v1.0</td>
-              <td><span id="mid-v10-overview">decide on requirements <span class="dimmed">(user stories, use cases, non-functional requirements)</span></span>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>5</strong></td>
-              <td>v1.0</td>
-              <td><span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span></td>
-            </tr>
-            <tr>
-              <td><strong>6</strong></td>
-              <td>mid-v1.1</td>
-              <td><span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></td>
-            </tr>
-            <tr>
-              <td><strong>7</strong></td>
-              <td>v1.1</td>
-              <td><span id="v11-overview">update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></td>
-            </tr>
-            <tr>
-              <td><strong>8</strong></td>
-              <td>mid-v1.2</td>
-              <td><span id="mid-v12-overview">adjust project schedule/rigor as needed, complete repo set up, start proper milestone management</span></td>
-            </tr>
-            <tr>
-              <td><strong>9</strong></td>
-              <td>v1.2</td>
-              <td><span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></td>
-            </tr>
-            <tr>
-              <td><strong>10</strong></td>
-              <td>mid-v1.3</td>
-              <td><span id="mid-v13-overview">continue to enhance features</span></td>
-            </tr>
-            <tr>
-              <td><strong>11</strong></td>
-              <td>v1.3</td>
-              <td><span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></td>
-            </tr>
-            <tr>
-              <td><strong>12</strong></td>
-              <td>mid-v1.4</td>
-              <td><span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span></td>
-            </tr>
-            <tr>
-              <td><strong>13</strong></td>
-              <td>v1.4</td>
-              <td><span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Stage</th>
+                <th>Activities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>3</strong></td>
+                <td>inception</td>
+                <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td>mid-v1.0</td>
+                <td><span id="mid-v10-overview">decide on requirements <span class="dimmed">(user stories, use cases, non-functional requirements)</span></span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>5</strong></td>
+                <td>v1.0</td>
+                <td><span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span></td>
+              </tr>
+              <tr>
+                <td><strong>6</strong></td>
+                <td>mid-v1.1</td>
+                <td><span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></td>
+              </tr>
+              <tr>
+                <td><strong>7</strong></td>
+                <td>v1.1</td>
+                <td><span id="v11-overview">update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></td>
+              </tr>
+              <tr>
+                <td><strong>8</strong></td>
+                <td>mid-v1.2</td>
+                <td><span id="mid-v12-overview">adjust project schedule/rigor as needed, complete repo set up, start proper milestone management</span></td>
+              </tr>
+              <tr>
+                <td><strong>9</strong></td>
+                <td>v1.2</td>
+                <td><span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></td>
+              </tr>
+              <tr>
+                <td><strong>10</strong></td>
+                <td>mid-v1.3</td>
+                <td><span id="mid-v13-overview">continue to enhance features</span></td>
+              </tr>
+              <tr>
+                <td><strong>11</strong></td>
+                <td>v1.3</td>
+                <td><span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></td>
+              </tr>
+              <tr>
+                <td><strong>12</strong></td>
+                <td>mid-v1.4</td>
+                <td><span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span></td>
+              </tr>
+              <tr>
+                <td><strong>13</strong></td>
+                <td>v1.4</td>
+                <td><span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p>More details of each stage is provided elsewhere is this website.</p>
       </div>
       <br>
@@ -286,7 +286,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Fri, 20 Jul 2018 15:31:34 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Sat, 21 Jul 2018 12:00:36 GMT</small></div>
 </footer>
 </div>
 </body>

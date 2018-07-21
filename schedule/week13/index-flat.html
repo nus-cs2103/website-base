@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Week 13 (flat version)</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    <link rel="icon" href="/website-base/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/schedule.css">
+<div>
+  <navbar placement="top" type="inverse">
+    <a slot="brand" href="/website-base/index-flat.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-primary"><span class="fas fa-bars"></span> flat</span></small></a>
+    <li><a href="/website-base/index.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-clone"></span> nested</span></a></li>
+    <li><a href="/website-base/index-flat.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
+    <li><a href="/website-base/se-book-adapted/index-flat.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+    <li><a href="/website-base/admin/index-flat.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+    <dropdown text="Links" class="nav-link">
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+      <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
+      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
+      <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+      <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+    </dropdown>
+  </navbar>
+</div>
+<div class="website-content" id="main">
+  <h2 id="week-13-nov-12">Week 13 [Nov 12]</h2>
+  <div class="indented">
+    <h3 id="todo"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</h3>
+    <div class="indented">
+      <div></div>
+      <p><span class="activity-desc">Admin info to read:<span></span></span>
+      </p>
+      <div class="indented">
+        <panel src="/website-base\admin\project-w13-v14._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: v1.4 [week 13] <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
+            </span>
+            </span>
+        </panel>
+        <p></p>
+      </div>
+      <p></p>
+    </div>
+    <h3 id="outcomes"><span class="fas fa-trophy"></span> Outcomes</h3>
+    <div class="indented">
+      <p><span class="activity-desc">🅿️ Project</span></p>
+      <div class="indented">
+        <panel no-close="">
+          <span slot="header" class="card-title"><span><code>W13.1</code> <strong>Can acceptance-test a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <p>Covered by:</p>
+            <p>
+              <panel src="/website-base\admin\project-w13-v14._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.4%%" fragment="main"></panel>
+            </p>
+          </div>
+        </panel>
+        <panel no-close="">
+          <span slot="header" class="card-title"><span><code>W13.2</code> <strong>Can evaluate a technical effort</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <p>Covered by:</p>
+            <p>
+              <panel src="/website-base\admin\project-w13-v14._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.4%%" fragment="main"></panel>
+            </p>
+          </div>
+        </panel>
+        <panel no-close="">
+          <span slot="header" class="card-title"><span><code>W13.3</code> <strong>Can demo a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <p>Covered by:</p>
+            <p>
+              <panel src="/website-base\admin\project-w13-v14._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.4%%" fragment="main"></panel>
+            </p>
+          </div>
+        </panel>
+      </div>
+      <p></p>
+    </div>
+    <h3 id="tutorial-13"><span class="fas fa-chalkboard-teacher"></span> Tutorial 13</h3>
+    <div class="indented">
+      <div>
+        <br>
+        <panel type="seamless" header="##### Evidence for weekly LOs %%(for reference)%%">
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W13.1</code></span></big> Can acceptance-test a product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div class="indented">
+              <div>
+                <p>Covered by:</p>
+                <p>
+                  <panel src="/website-base\admin\project-w13-v14._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.4%%" fragment="main"></panel>
+                </p>
+              </div>
+            </div>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W13.2</code></span></big> Can evaluate a technical effort <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div class="indented">
+              <div>
+                <p>Covered by:</p>
+                <p>
+                  <panel src="/website-base\admin\project-w13-v14._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.4%%" fragment="main"></panel>
+                </p>
+              </div>
+            </div>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W13.3</code></span></big> Can demo a product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div class="indented">
+              <div>
+                <p>Covered by:</p>
+                <p>
+                  <panel src="/website-base\admin\project-w13-v14._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.4%%" fragment="main"></panel>
+                </p>
+              </div>
+            </div>
+          </panel>
+        </panel>
+      </div>
+    </div>
+    <h3 id="lecture-13"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 13</h3>
+    <div class="indented">
+      <div></div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Sat, 21 Jul 2018 12:00:36 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/website-base'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>
