@@ -151,6 +151,71 @@ siteNav: adminSiteNav.md
   {id: "policy-submissionLength", title: "Policy on suggested length for submissions", priority: 3}
 ]%}
 
+{% set admin_topics_to_read = {
+week1: [
+  {faq_id: "admin-faq-whereIsEverything"},
+  {topic_id: "programmingLanguages"},
+  {topic_id: "textbooks"},
+  {faq_id: "admin-faq-tVsNonT"},
+  {faq_id: "admin-faq-highWorkload"},
+  {faq_id: "admin-faq-aPlus"}],
+week2: [
+  {policy_id: "policy-techHelp"},
+  {topic_id: "tools"},
+  {topic_id: "project-overview"},
+  {topic_id: "project-product"},
+  {topic_id: "project-scope"},
+  {topic_id: "project-constraints"},
+  {topic_id: "project-timeline"},
+  {topic_id: "appendixA-principles"},
+  {faq_id: "admin-faq-separateWebsite"},
+  {faq_id: "admin-faq-slideFormat"},
+  {faq_id: "admin-faq-selfStudy"}],
+week3: [
+  {topic_id: "project-assessment"},
+  {policy_id: "policy-followingInstructions"},
+  {topic_id: "peerEvaluations"},
+  {topic_id: "gradeBreakdown"},
+  {topic_id: "participation"},
+  {topic_id: "project-supervision"},
+  {faq_id: "admin-faq-noLaptop"}],
+week4: [
+  {policy_id: "policy-plagiarism"},
+  {policy_id: "policy-reuse"},
+  {policy_id: "policy-outsiderHelp"},
+  {topic_id: "exams"},
+  {faq_id: "admin-faq-noLaptop"},
+  {policy_id: "policy-publishingSubmissions"}],
+week5: [
+  {policy_id: "policy-workDistribution"},
+  {policy_id: "policy-responseTime"},
+  {policy_id: "policy-teamSize"},
+  {faq_id: "admin-faq-beanCounting"}],
+week6: [
+  {policy_id: "policy-submissionLength"},
+  {faq_id: "admin-faq-narrowScope"},
+  {faq_id: "admin-faq-vagueRequirements"}],
+week7: [
+  {topic_id: "project-w07-v11"},
+  {topic_id: "appendixF-teamworkIssues"},
+  {faq_id: "admin-faq-favoriteTool"}],
+week8: [
+  {topic_id: "project-w08-mid-v12"},
+  {faq_id: "admin-faq-fromScratch"},
+  {faq_id: "admin-faq-manySubmissions"},
+  {faq_id: "admin-faq-cs2101Differences"}],
+week9: [
+  {topic_id: "project-w09-v12"}],
+week10: [
+  {topic_id: "project-w10-mid-v13"}],
+week11: [
+  {topic_id: "project-w11-v13"}],
+week12: [
+  {topic_id: "project-w12-mid-v14"}],
+week13: [
+  {topic_id: "project-w13-v14"}]
+}%}
+
 {% macro show_admin_page(current_topic_id, main_text_macro)%}
 {{ show_admin_pagetop(topics, current_topic_id) }}
 {{ main_text_macro() }}

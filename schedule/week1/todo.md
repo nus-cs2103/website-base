@@ -1,4 +1,6 @@
-%%Given below are some preparatory tasks you can do as you wait for the module to start:%% 
+<div id="additional">
+
+%%Given below are some preparatory tasks you can do as you wait for the module to start:%%
 
 <span class="activity-desc">Getting ready for the module:<span>
 
@@ -67,19 +69,12 @@ _Pre-Module Survey_ will be available on IVLE **Week 1 Monday - Friday 2359 :ala
 
 <br>
 
-%%Given below are some module _admin info_ to read around this time:%%  
+%%Given below are some module _admin info_ to read around this time:%%
+
+</div>
 
 {% import "common/macros.njk" as macros with context %}
-{% from "common/admin.njk" import topics, policies, faqs with context %}
+{% from "common/admin.njk" import topics, policies, faqs, admin_topics_to_read with context %}
 
-{% set admin_sections = [
-  {faq_id: "admin-faq-whereIsEverything"},
-  {topic_id: "programmingLanguages"},
-  {topic_id: "textbooks"},
-  {faq_id: "admin-faq-tVsNonT"},
-  {faq_id: "admin-faq-highWorkload"},
-  {faq_id: "admin-faq-aPlus"}]
-%}
-
-{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_sections) }}
+{{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week1, is_flat=false ) }}
 

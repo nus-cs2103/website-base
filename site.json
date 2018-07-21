@@ -23,7 +23,7 @@
     {"glob": "admin/gradeBreakdown.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
-    {"glob": "schedule/index-flat.md",
+    {"glob": "schedule/**/index-flat.md",
       "searchable": "no"},
     {"glob": "schedule/**/outcomes.md",
       "searchable": "no"},
