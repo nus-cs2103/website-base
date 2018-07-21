@@ -9,7 +9,7 @@ siteNav: adminSiteNav-flat.md
 
 <div class="website-content">
 
-<include src="../common/header.md" />
+<include src="../common/header-flat.md" />
 
 {% from "common/admin.njk" import topics with context %}
 

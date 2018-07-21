@@ -4,9 +4,7 @@
 
 <navigation>
 
-* [See all in one page (slow!)](index-flat.html)
-
-{% for topic in topics %} 
+{% for topic in topics %}
 {% set decoration = "==" if topic.highlight else "" %} 
 {% set title = decoration + topic.title + decoration %} 
 {% if topic.level == 1%} 

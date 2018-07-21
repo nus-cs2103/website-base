@@ -2,6 +2,8 @@
 
 <span id="semester">AY1718S2</span>
 
+<span id="period">Aug-Dec 2018</span>
+
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true</span>

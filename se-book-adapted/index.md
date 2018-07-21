@@ -8,7 +8,7 @@ siteNav: se-book-adapted-sitenav.md
 
 <include src="../common/header.md" />
 
-<div class="website-content" id="all">
+<div class="website-content" id="main">
 
 ## Software Engineering for Self-Directed Learners <small><small><small><span class='badge badge-pill badge-success'>{{ module }}/T edition - 2018</span></small></small></small>
 

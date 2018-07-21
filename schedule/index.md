@@ -607,7 +607,7 @@ footer: footer.md
 
 <include src="../common/header.md" />
 
-<div class="website-content">
+<div class="website-content" id="main">
 
 # Full Schedule of Module Activities
 
