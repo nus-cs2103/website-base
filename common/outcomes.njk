@@ -85,7 +85,7 @@
   {% set priority = unit.priority %}
 {% endif %}
 <panel type="{{ show_priority_style(priority) }}" expanded no-close >
-<span slot="header" class="card-title"><md><big><span class='badge badge-pill badge-light'>`{{ id_prefix }}`</span></big> <span style="color:white"><include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</span></md></span>
+<span slot="header" class="card-title"><md><big><span class='badge badge-pill badge-light'>`{{ id_prefix }}`</span></big> <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
   <include src="{{ path_displacement }}../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
   {% if unit.omit_evidence %}
     {# no need to show evidence #}
