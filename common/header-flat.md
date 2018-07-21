@@ -1,16 +1,14 @@
 <navbar placement="top" type="inverse">
   <a slot="brand" href="{{baseUrl}}/index-flat.html" title="Home" class="navbar-brand">{{ module }}/T <small>{{ period }} <span class="badge badge-primary">{{ fas_bars }} flat</span></small></a>
-  <li><a href="{{baseUrl}}/index.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light">{{ fas_clone }} nested version</span></a></li>
+  <li><a href="{{baseUrl}}/index.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light">{{ fas_clone }} nested</span></a></li>
   <li><a href="{{baseUrl}}/index-flat.html" class="nav-link"><md>**Schedule**</md></a></li>
   <li><a href="{{baseUrl}}/se-book-adapted/index-flat.html" class="nav-link"><md>**Textbook**</md></a></li>
 
   <li><a href="{{baseUrl}}/admin/index-flat.html" class="nav-link"><md>**Admin Info**</md></a></li>
-  <dropdown text="Discuss" class="nav-link">
-    <li><a href="{{slack_team}}" target="_blank" class="dropdown-item">{{ fab_slack_hash }} Slack</a></li>
-    <li><a href="{{module_org}}/forum/issues" target="_blank" class="dropdown-item">{{ fas_comment }} Forum</a></li>
-  </dropdown>
   <dropdown text="Links" class="nav-link">
     <li><a href="{{module_org}}/website/issues" target="_blank" class="dropdown-item"> {{ fas_bug }} Report Bugs</a></li>
+    <li><a href="{{slack_team}}" target="_blank" class="dropdown-item">{{ fab_slack_hash }} Slack</a></li>
+    <li><a href="{{module_org}}/forum/issues" target="_blank" class="dropdown-item">{{ fas_comment }} Forum</a></li>
     <li><a href="{{ instructors_page }}" target="_blank" class="dropdown-item">{{ fas_user_tie }} Instructors</a></li>
     <li><a href="{{ivle_announcements}}" target="_blank" class="dropdown-item">{{ glyphicon_bullhorn }} IVLE Announcements</a></li>
         <li><a href="{{ivle_files}}" target="_blank" class="dropdown-item">{{ fas_file_upload }} IVLE File Submissions</a></li>

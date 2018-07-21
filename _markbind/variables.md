@@ -2,7 +2,7 @@
 
 <span id="semester">AY1718S2</span>
 
-<span id="period">Aug-Dec 2018</span>
+<span id="period">Aug '18</span>
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
