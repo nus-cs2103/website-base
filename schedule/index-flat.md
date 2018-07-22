@@ -53,25 +53,17 @@ footer: footer.md
 
 
 {% macro show_past_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
-<span slot="header" class="card-title week-past"> Week {{ week.num }} [{{ week.day }}]</span>
-</panel>
+{{ far_check_square }} [**Week {{ week.num }}** [{{ week.day }}]]({{ baseUrl }}/schedule/week{{ week.num }}/index-flat.html)<p/>
 {% endmacro %}
 
 
 {% macro show_future_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
-<span slot="header" class="card-title week-future"> Week {{ week.num }} [{{ week.day }}]</span>
-</panel>
+{{ far_square }} [**Week {{ week.num }}** [{{ week.day }}]]({{ baseUrl }}/schedule/week{{ week.num }}/index-flat.html)<p/>
 {% endmacro %}
 
 
 {% macro show_current_week(week) %}
-
-## Week {{ week.num }} [{{ week.day }}]
-<div class="indented">
-{{ show_week_schedule(week.num, "week" + week.num + "/") }}
-</div>
+<include src="week{{ week.num }}/index-flat.md#main" />
 <hr>
 {% endmacro %}
 
