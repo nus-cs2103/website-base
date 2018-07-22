@@ -169,30 +169,28 @@ method 2 ...
         </ul>
         <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
         <p>You need to put the collated code in the following folders</p>
-        <div class="table-responsive">
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Code Type</th>
-                <th>Folder</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>functional code</td>
-                <td><code>collated/functional</code></td>
-              </tr>
-              <tr>
-                <td>test code</td>
-                <td><code>collated/test</code></td>
-              </tr>
-              <tr>
-                <td>unused code</td>
-                <td><code>collated/unused</code></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="markbind-table table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Code Type</th>
+              <th>Folder</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>functional code</td>
+              <td><code>collated/functional</code></td>
+            </tr>
+            <tr>
+              <td>test code</td>
+              <td><code>collated/test</code></td>
+            </tr>
+            <tr>
+              <td>unused code</td>
+              <td><code>collated/unused</code></td>
+            </tr>
+          </tbody>
+        </table>
         <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
         <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
         <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css

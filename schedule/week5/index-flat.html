@@ -92,7 +92,7 @@
     <div class="indented">
       <p><span class="activity-desc">Requirements</span></p>
       <div class="indented">
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.1</code> <strong>Can apply basic product design guidelines</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
@@ -107,12 +107,12 @@
       <p></p>
       <p><span class="activity-desc">Implementation</span></p>
       <div class="indented">
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.2</code> <strong>Can implement inheritance</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
             aria-hidden="true"></span></span>
           </span>
           </span>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the meaning of inheritance</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -225,12 +225,12 @@
               </div>
           </panel>
         </panel>
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.3</code> <strong>Can implement class-level members</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
             aria-hidden="true"></span></span>
           </span>
           </span>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain class-level members</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -318,7 +318,7 @@
                 </div>
               </div>
           </panel>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain method overloading</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -342,34 +342,32 @@
                         <div>
                           <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                           <panel type="seamless" header="%%Examples%%">
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Method</th>
-                                    <th style="text-align:center">Type Signature</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                    <td style="text-align:center"><code>(int, int)</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                    <td style="text-align:center"><code>(int, int)</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                    <td style="text-align:center"><code>(int, double)</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                    <td style="text-align:center"><code>(double, int)</code></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="text-align:center">Method</th>
+                                  <th style="text-align:center">Type Signature</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                  <td style="text-align:center"><code>(int, int)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                  <td style="text-align:center"><code>(int, int)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                  <td style="text-align:center"><code>(int, double)</code></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                  <td style="text-align:center"><code>(double, int)</code></td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </panel>
                         </div>
                       </tip-box>
@@ -435,20 +433,20 @@
               </div>
           </panel>
         </panel>
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.4</code> <strong>Can implement overloading</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
             aria-hidden="true"></span></span>
           </span>
           </span>
         </panel>
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.5</code> <strong>Can implement polymorphism</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
             aria-hidden="true"></span></span>
           </span>
           </span>
           <br>
           <p><span class="dimmed"><strong>Method Overriding</strong></span></p>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain method overriding</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -499,34 +497,32 @@
                                       <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order
                                         is significant.</p>
                                       <panel type="seamless" header="%%Examples%%">
-                                        <div class="table-responsive">
-                                          <table class="markbind-table table table-bordered table-striped">
-                                            <thead>
-                                              <tr>
-                                                <th style="text-align:center">Method</th>
-                                                <th style="text-align:center">Type Signature</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                                <td style="text-align:center"><code>(int, int)</code></td>
-                                              </tr>
-                                              <tr>
-                                                <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                                <td style="text-align:center"><code>(int, int)</code></td>
-                                              </tr>
-                                              <tr>
-                                                <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                                <td style="text-align:center"><code>(int, double)</code></td>
-                                              </tr>
-                                              <tr>
-                                                <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                                <td style="text-align:center"><code>(double, int)</code></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
+                                        <table class="markbind-table table table-bordered table-striped">
+                                          <thead>
+                                            <tr>
+                                              <th style="text-align:center">Method</th>
+                                              <th style="text-align:center">Type Signature</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                              <td style="text-align:center"><code>(int, int)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                              <td style="text-align:center"><code>(int, int)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                              <td style="text-align:center"><code>(int, double)</code></td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                              <td style="text-align:center"><code>(double, int)</code></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                       </panel>
                                     </div>
                                   </tip-box>
@@ -732,7 +728,7 @@ Ben is a student
           </panel>
           <br>
           <p><span class="dimmed"><strong>Polymorphism</strong></span></p>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain OOP polymorphism</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -816,7 +812,7 @@ Ben is a student
           </panel>
           <br>
           <p><span class="dimmed"><strong>Abstract Classes</strong></span></p>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can implement abstract classes</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -909,7 +905,7 @@ Ben is a student
           </panel>
           <br>
           <p><span class="dimmed"><strong>Interfaces</strong></span></p>
-          <panel type="default" expanded="" no-close="">
+          <panel type="default" expanded="" no-close="" no-switch="" epxandable="false">
             <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain interfaces</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1020,7 +1016,7 @@ Ben is a student
       <p></p>
       <p><span class="activity-desc">Quality Assurance</span></p>
       <div class="indented">
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.6</code> <strong>Can use simple JUnit tests</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1028,7 +1024,7 @@ Ben is a student
             </span>
             </span>
             </span>
-            <panel type="warning" expanded="" no-close="">
+            <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain developer testing</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1056,7 +1052,7 @@ Ben is a student
                   </div>
                 </div>
             </panel>
-            <panel type="info" expanded="" no-close="">
+            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for early developer testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1156,7 +1152,7 @@ Ben is a student
                   </div>
                 </div>
             </panel>
-            <panel type="info" expanded="" no-close="">
+            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test drivers</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1210,7 +1206,7 @@ Ben is a student
                   </div>
                 </div>
             </panel>
-            <panel type="info" expanded="" no-close="">
+            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test automation tools</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1260,7 +1256,7 @@ Ben is a student
                   </div>
                 </div>
             </panel>
-            <panel type="warning" expanded="" no-close="">
+            <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can use simple JUnit tests</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1319,7 +1315,7 @@ Ben is a student
       <p></p>
       <p><span class="activity-desc">Project Management</span></p>
       <div class="indented">
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.7</code> <strong>Can use GitHub PRs in a workflow</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1327,7 +1323,7 @@ Ben is a student
             </span>
             </span>
             </span>
-            <panel type="warning" expanded="" no-close="">
+            <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to resolve merge conflicts</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1408,7 +1404,7 @@ white
                   <p><strong>Submission</strong>: Show your merge commit during the tutorial.</p>
                 </div>
             </panel>
-            <panel type="warning" expanded="" no-close="">
+            <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can review and merge PRs on GitHub</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1553,7 +1549,7 @@ git pull origin master
                 </div>
             </panel>
         </panel>
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.8</code> <strong>Can follow Forking Workflow</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1561,7 +1557,7 @@ git pull origin master
             </span>
             </span>
             </span>
-            <panel type="warning" expanded="" no-close="">
+            <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain forking workflow</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1610,7 +1606,7 @@ git pull origin master
                   </div>
                 </div>
             </panel>
-            <panel type="info" expanded="" no-close="">
+            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8b</code></span></big> <span><span class="fas fa-trophy"></span> Can follow Forking Workflow</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1691,7 +1687,7 @@ git pull origin master
                   <p><strong>Submission</strong>: Show during the tutorial.</p>
                 </div>
             </panel>
-            <panel type="info" expanded="" no-close="">
+            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain DRCS vs CRCS</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1725,7 +1721,7 @@ git pull origin master
                   </div>
                 </div>
             </panel>
-            <panel type="success" expanded="" no-close="">
+            <panel type="success" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain feature branch flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1766,7 +1762,7 @@ git pull origin master
                   </div>
                 </div>
             </panel>
-            <panel type="success" expanded="" no-close="">
+            <panel type="success" expanded="" no-close="" no-switch="" epxandable="false">
               <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain centralized flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1809,7 +1805,7 @@ git pull origin master
       <p></p>
       <p><span class="activity-desc">🅿️ Project</span></p>
       <div class="indented">
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.9</code> <strong>Can work with a 2KLoC code base</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
@@ -1868,7 +1864,7 @@ git pull origin master
             </ul>
           </div>
         </panel>
-        <panel no-close="">
+        <panel no-close="" expanded="" no-switch="" expandable="false">
           <span slot="header" class="card-title"><span><code>W5.10</code> <strong>Can conceptualize a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
@@ -2478,7 +2474,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.1</a> at Sat, 21 Jul 2018 12:00:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
 </footer>
 </div>
 </body>
