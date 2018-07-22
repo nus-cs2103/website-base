@@ -74,7 +74,7 @@
 {% endmacro %}
 
 
-{% macro show_unit(id_prefix, unit, path_displacement="") %}
+{% macro show_unit(id_prefix, unit, path_displacement="", is_flat=true) %}
 {% set chapter = unit.location[0] %}
 {% set path_as_array = unit.location.slice(1,4) %}
 {% set path = path_as_array.join("/") %}
@@ -84,7 +84,9 @@
 {% else %}
   {% set priority = unit.priority %}
 {% endif %}
-<panel type="{{ show_priority_style(priority) }}" expanded no-close >
+{% set panel_decorations = "no-switch" if is_flat else "" %}
+{% set panel_expandable = "false" if is_flat else "true" %}
+<panel type="{{ show_priority_style(priority) }}" expanded no-close {{ panel_decorations }} epxandable="{{ panel_expandable }}">
 <span slot="header" class="card-title"><md><big><span class='badge badge-pill badge-light'>`{{ id_prefix }}`</span></big> <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
   <include src="{{ path_displacement }}../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
   {% if unit.omit_evidence %}
@@ -133,7 +135,7 @@
 {% endmacro %}
 
 
-{% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a"}) %}
+{% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a", is_flat: false}) %}
 {% if not params.outcome.priority %}
   {% set priority = get_collective_priority(entries) | trim %}
 {% else %}
@@ -142,14 +144,16 @@
 {% set  prefix = "W" + params.week_num + "." + params.starting_index%}
 {% set letters = "abcdefghijklmnop" | list %}
 {% set letter_index = 0 %}
-<panel no-close >
+{% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
+{% set panel_expandable = "false" if params.is_flat else "true" %}
+<panel no-close {{ panel_decorations }} expandable="{{ panel_expandable }}">
 <span slot="header" class="card-title"><md>`{{ prefix | trim }}` **{{ params.outcome.heading }}** {{ show_stars(priority) }}</md> </span>
 {% if params.outcome.file %}
   <include src="{{ params.path_displacement }}../evidence/{{ params.outcome.file }}" />
 {% else %}
   {% for entry in entries  %}
     {% if entry.location %}
-{{ show_unit(prefix + letters[letter_index], entry, params.path_displacement) }}
+{{ show_unit(prefix + letters[letter_index], entry, params.path_displacement, params.is_flat) }}
       {% set letter_index = letter_index + 1 %}
     {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
@@ -160,13 +164,13 @@
 {% endmacro %}
 
 
-{% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a"}) %}
+{% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false}) %}
 <span class="activity-desc">{{ params.name }}</span>
 <div class="indented">
 {% set  outcome_number = params.starting_index | int %}
 {% for entry in entries  %}
   {% if entry.heading %}
-{{ apply_to("heading", entry.heading, entries, show_outcome, {week_num: params.week_num, starting_index: outcome_number , outcome: entry, path_displacement: params.path_displacement}) }}
+{{ apply_to("heading", entry.heading, entries, show_outcome, {week_num: params.week_num, starting_index: outcome_number , outcome: entry, path_displacement: params.path_displacement, is_flat: params.is_flat}) }}
 {% set  outcome_number = outcome_number + 1 %}
   {% endif %}
 {% endfor %}
@@ -175,11 +179,11 @@
 {% endmacro %}
 
 
-{% macro show_week(entries, params={week_num: "n/a"}) %}
+{% macro show_week(entries, params={week_num: "n/a", is_flat: false}) %}
 {% set i = 1 %}
 {% for entry in entries  %}
   {% if entry.name %}
-{{ apply_to("name", entry.name, entries, show_outcome_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement}) }}
+{{ apply_to("name", entry.name, entries, show_outcome_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat}) }}
   {% set i = i + apply_to("name", entry.name, entries, count_outcomes) | trim | int %}
   {% endif %}
 {% endfor %}
@@ -197,8 +201,8 @@
 {% endmacro %}
 
 
-{% macro show_week_schedule_main(week_num, entries, path_displacement) %}
-{{ apply_to("week", week_num, entries, show_week, {week_num: week_num, path_displacement: path_displacement}) }}
+{% macro show_week_schedule_main(week_num, entries, path_displacement, is_flat=false) %}
+{{ apply_to("week", week_num, entries, show_week, {week_num: week_num, path_displacement: path_displacement, is_flat: is_flat}) }}
 {% endmacro %}
 
 

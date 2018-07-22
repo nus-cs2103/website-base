@@ -6,7 +6,7 @@
 {% macro show_week_outcomes(week_num, path="") %}
 ### {{ icon_outcome }} Outcomes
 <div class="indented">
-{{ outcomes.show_week_schedule_main(week_num, all_outcomes, path) }}
+{{ outcomes.show_week_schedule_main(week_num, all_outcomes, path, is_flat=true) }}
 </div>
 {% endmacro %}
 
