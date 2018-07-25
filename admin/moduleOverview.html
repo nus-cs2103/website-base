@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/admin.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -155,8 +157,6 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/admin.css">
     <div>
       <navbar placement="top" type="inverse">
         <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
@@ -198,79 +198,84 @@
         <h1 id="cs2103t-software-engineering">CS2103/T Software Engineering</h1>
         <p><big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big></p>
         <img src="/website-base/images/growingPlant.png" width="700">
-        <box border-color="white">
-          <p>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking
-            <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an
-            <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a
-            <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</p>
-        </box>
+        <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</span></p>
         <p>On the theory side, this module is supported by a customized online text book <a href="/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
         <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
         <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
           (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
           size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
         <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
-        <div class="indented-level2">
-          <p><strong>Java:</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used heavily, but not taught</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
-          </ul>
-          <p><strong>OOP:</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used in a non-trivial project,
-              <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
-            </li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
-          </ul>
-          <p><strong>SE tools/practices:</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-              <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
-            </li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> those specific to start-ups</li>
-          </ul>
-          <p><strong>Modeling:</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-              <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> intensive
-              <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
-            </li>
-          </ul>
-          <p><strong>Requirements:</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-              <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> rapid prototyping, heavy UI design, designing a product from scratch</li>
-          </ul>
-          <p><strong>Documentation</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Marketing materials</li>
-          </ul>
-          <p><strong>Project Management</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Setting up project infrastructure from scratch</li>
-          </ul>
-          <p><strong>Testing</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-              <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
-              <tooltip content="e.g., acceptance testing">user testing</tooltip>
-            </li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox">
-              <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
-            </li>
-          </ul>
-          <p><strong>Applications domains:</strong></p>
-          <ul class="task-list">
-            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Cross-platform desktop applications</li>
-            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Web programming, Mobile programming, Database programming</li>
-          </ul>
-        </div>
-        <br>
+        <div class="table-responsive">
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th><span style="color:green"><span class="fas fa-check"></span></span> Covered</th>
+                <th><span style="color:red"><span class="fas fa-times"></span></span> Not covered</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Java</td>
+                <td>Used heavily, but not taught</td>
+                <td>syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
+              </tr>
+              <tr>
+                <td>OOP</td>
+                <td>Used in a non-trivial project,
+                  <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
+                </td>
+                <td>basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
+              </tr>
+              <tr>
+                <td>SE tools/practices</td>
+                <td>
+                  <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
+                </td>
+                <td>those specific to start-ups</td>
+              </tr>
+              <tr>
+                <td>Modeling</td>
+                <td>
+                  <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</td>
+                <td>intensive
+                  <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
+                </td>
+              </tr>
+              <tr>
+                <td>Requirements</td>
+                <td>
+                  <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</td>
+                <td>rapid prototyping, heavy UI design, designing a product from scratch</td>
+              </tr>
+              <tr>
+                <td>Documentation</td>
+                <td>Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</td>
+                <td>Marketing materials</td>
+              </tr>
+              <tr>
+                <td>Project Management</td>
+                <td>Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</td>
+                <td>Setting up project infrastructure from scratch</td>
+              </tr>
+              <tr>
+                <td>Testing</td>
+                <td>
+                  <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
+                  <tooltip content="e.g., acceptance testing">user testing</tooltip>
+                </td>
+                <td>
+                  <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
+                </td>
+              </tr>
+              <tr>
+                <td>Applications domains</td>
+                <td>Cross-platform desktop applications</td>
+                <td>Web programming, Mobile programming, Database programming</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><br>
         <p>
           <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> **FAQ: What are the differences between CS2103 and CS2103T?**" minimized="" fragment="admin-faq-tVsNonT"></panel>
         </p>
@@ -286,7 +291,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
 </footer>
 </div>
 </body>

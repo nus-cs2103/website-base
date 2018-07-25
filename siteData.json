@@ -2,7 +2,7 @@
   "pages": [
     {
       "headings": {
-        "full-schedule-of-module-activities": "Full Schedule of Module Activities",
+        "project-forming-teams": "Project → Forming Teams",
         "module-expectations": "Module Expectations",
         "prior-knowledge-java-and-oop": "Prior Knowledge: Java and OOP",
         "workload": "Workload",
@@ -23,23 +23,11 @@
         "saving-history": "Saving History",
         "commit": "Commit",
         "ignore": "Ignore",
-        "pros-and-cons-2": "Pros and Cons",
-        "what-6": "What",
-        "project-setup-2": "Project Setup",
-        "code-navigation-2": "Code Navigation",
-        "collections-2": "Collections",
-        "varargs-2": "Varargs",
-        "what-7": "What",
-        "what-8": "What",
-        "automated-testing-of-cli-apps-2": "Automated Testing of CLI Apps",
-        "what-9": "What",
-        "repositories-2": "Repositories",
-        "init-2": "Init",
-        "saving-history-2": "Saving History",
-        "ignore-2": "Ignore"
+        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
       },
       "title": "Home",
       "footer": "footer.md",
+      "head": "scheduleHead.md",
       "src": "index.md"
     },
     {
@@ -49,54 +37,57 @@
       "title": "Admin: A: Module Principles",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/appendixA-principles.md"
     },
     {
       "headings": {
         "appendix-b-module-policies": "Appendix B: Module Policies",
-        "policy-on-following-instructions": "Policy on following instructions ",
-        "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams ",
-        "policy-on-project-work-distribution": "Policy on project work distribution ",
-        "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events) ",
-        "policy-on-email-response-time": "Policy on email response time ",
-        "policy-on-tech-help": "Policy on tech help ",
-        "policy-on-publishing-submissions": "Policy on publishing submissions ",
-        "policy-on-plagiarism": "Policy on plagiarism ",
-        "policy-on-reuse": "Policy on reuse ",
+        "policy-on-following-instructions": "Policy on following instructions \n          ",
+        "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams \n          ",
+        "policy-on-project-work-distribution": "Policy on project work distribution \n          ",
+        "policy-on-absence-due-to-valid-reasons-eg-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events) \n          ",
+        "policy-on-email-response-time": "Policy on email response time \n          ",
+        "policy-on-tech-help": "Policy on tech help \n          ",
+        "policy-on-publishing-submissions": "Policy on publishing submissions \n          ",
+        "policy-on-plagiarism": "Policy on plagiarism \n          ",
+        "policy-on-reuse": "Policy on reuse \n          ",
         "giving-credit-for-reused-work": "Giving credit for reused work",
         "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
         "what-to-and-what-not-to-annotate": "What to and what not to annotate",
         "collating-the-annotated-code": "Collating the annotated code",
-        "policy-on-help-from-outsiders": "Policy on help from outsiders ",
-        "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions "
+        "policy-on-help-from-outsiders": "Policy on help from outsiders \n          ",
+        "policy-on-suggested-length-for-submissions": "Policy on suggested length for submissions \n          "
       },
       "title": "Admin: B: Module Policies",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/appendixB-policies.md"
     },
     {
       "headings": {
         "appendix-c-frequently-asked-questions": "Appendix C: Frequently Asked Questions",
-        "where-is-everything": "Where is everything? ",
-        "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module": "What are the differences between the T and the non-T version of the module? ",
-        "why-the-workload-is-so-high": "Why the workload is so high? ",
-        "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+? ",
-        "why-so-much-bean-counting": "Why so much bean counting? ",
-        "why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle": "Why you force me to visit a separate website instead of using IVLE? ",
-        "why-slides-are-not-detailed": "Why slides are not detailed? ",
-        "why-so-much-self-study": "Why so much self-study? ",
-        "what-if-i-dont-carry-around-a-laptop": "What if I don’t carry around a laptop? ",
-        "why-very-narrow-project-scope": "Why very narrow project scope? ",
-        "why-project-requirements-are-so-vague": "Why project requirements are so vague? ",
-        "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I’m not allowed to use my favorite tool/framework/language etc.? ",
-        "why-so-many-submissions": "Why so many submissions? ",
-        "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch? ",
-        "why-submission-requirements-differ-between-module-t-and-cs2101": "Why submission requirements differ between {{ module }}T and CS2101? "
+        "where-is-everything": "Where is everything? \n          ",
+        "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module": "What are the differences between the T and the non-T version of the module? \n          ",
+        "why-the-workload-is-so-high": "Why the workload is so high? \n          ",
+        "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+? \n          ",
+        "why-so-much-bean-counting": "Why so much bean counting? \n          ",
+        "why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle": "Why you force me to visit a separate website instead of using IVLE? \n          ",
+        "why-slides-are-not-detailed": "Why slides are not detailed? \n          ",
+        "why-so-much-self-study": "Why so much self-study? \n          ",
+        "what-if-i-dont-carry-around-a-laptop": "What if I don’t carry around a laptop? \n          ",
+        "why-very-narrow-project-scope": "Why very narrow project scope? \n          ",
+        "why-project-requirements-are-so-vague": "Why project requirements are so vague? \n          ",
+        "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I’m not allowed to use my favorite tool/framework/language etc.? \n          ",
+        "why-so-many-submissions": "Why so many submissions? \n          ",
+        "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch? \n          ",
+        "why-submission-requirements-differ-between-module-t-and-cs2101": "Why submission requirements differ between T and CS2101? \n          "
       },
       "title": "Admin: C: Frequently Asked Questions",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/appendixC-faq.md"
     },
     {
@@ -106,6 +97,7 @@
       "title": "Admin: D: Getting help in this module",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/appendixD-help.md"
     },
     {
@@ -125,6 +117,7 @@
       "title": "Admin: E: Using GitHub",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/appendixE-gitHub.md"
     },
     {
@@ -134,6 +127,7 @@
       "title": "Admin: F: Handling teamwork issues",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/appendixF-teamworkIssues.md"
     },
     {
@@ -145,6 +139,7 @@
       "title": "Admin: Exams",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/exams.md"
     },
     {
@@ -159,6 +154,7 @@
       "title": "Admin: Grade Breakdown",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/gradeBreakdown.md"
     },
     {
@@ -168,6 +164,7 @@
       "title": "Admin: Module Overview",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/index.md"
     },
     {
@@ -177,6 +174,7 @@
       "title": "Admin: Instructors",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/instructors.md"
     },
     {
@@ -186,6 +184,7 @@
       "title": "Admin: Learning Outcomes",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/learningOutcomes.md"
     },
     {
@@ -195,6 +194,7 @@
       "title": "Admin: Lectures",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/lectures.md"
     },
     {
@@ -207,6 +207,7 @@
       "title": "Admin: Module Expectations",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/moduleExpectations.md"
     },
     {
@@ -216,6 +217,7 @@
       "title": "Admin: Module Overview",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/moduleOverview.md"
     },
     {
@@ -225,6 +227,7 @@
       "title": "Admin: Participation Marks",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/participation.md"
     },
     {
@@ -234,6 +237,7 @@
       "title": "Admin: Peer Evaluations",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/peerEvaluations.md"
     },
     {
@@ -244,66 +248,68 @@
       "title": "Admin: Programming Language",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/programmingLanguages.md"
     },
     {
       "headings": {
-        "project-assessment": "Project → Assessment",
-        "code-quality": "Code Quality",
-        "introduction": "Introduction",
         "basic": "Basic",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
+        "introduction": "Introduction",
         "introduction-2": "Introduction",
-        "basic-2": "Basic",
         "avoid-long-methods": "Avoid Long Methods",
         "avoid-deep-nesting": "Avoid Deep Nesting",
         "avoid-complicated-expressions": "Avoid Complicated Expressions",
         "avoid-magic-numbers": "Avoid Magic Numbers",
         "make-the-code-obvious": "Make the Code Obvious",
-        "intermediate": "Intermediate",
+        "basic-2": "Basic",
         "structure-code-logically": "Structure Code Logically",
         "do-not-trip-up-reader": "Do Not 'Trip Up' Reader",
         "practice-kissing": "Practice KISSing",
         "avoid-premature-optimizations": "Avoid Premature Optimizations",
         "slap-hard": "SLAP Hard",
         "what": "What",
-        "advanced": "Advanced",
+        "intermediate": "Intermediate",
         "make-the-happy-path-prominent": "Make the Happy Path Prominent",
-        "guideline-follow-a-standard": "Guideline: Follow a Standard",
+        "advanced": "Advanced",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
         "introduction-3": "Introduction",
         "basic-3": "Basic",
         "intermediate-2": "Intermediate",
-        "guideline-name-well": "Guideline: Name Well",
+        "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "introduction-4": "Introduction",
-        "basic-4": "Basic",
         "use-nouns-for-things-and-verbs-for-actions": "Use Nouns for Things and Verbs for Actions",
         "use-standard-words": "Use Standard Words",
-        "intermediate-3": "Intermediate",
+        "basic-4": "Basic",
         "use-name-to-explain": "Use Name to Explain",
         "not-too-long-not-too-short": "Not Too Long, Not Too Short",
         "avoid-misleading-names": "Avoid Misleading Names",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "intermediate-3": "Intermediate",
+        "guideline-name-well": "Guideline: Name Well",
         "introduction-5": "Introduction",
-        "basic-5": "Basic",
         "use-the-default-branch": "Use the Default Branch",
         "dont-recycle-variables-or-parameters": "Don't Recycle Variables or Parameters",
         "avoid-empty-catch-blocks": "Avoid Empty Catch Blocks",
         "delete-dead-code": "Delete Dead Code",
-        "intermediate-4": "Intermediate",
+        "basic-5": "Basic",
         "minimise-scope-of-variables": "Minimise Scope of Variables",
         "minimise-code-duplication": "Minimise Code Duplication",
         "dry-principle": "DRY Principle",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "intermediate-4": "Intermediate",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
         "introduction-6": "Introduction",
-        "basic-6": "Basic",
         "do-not-repeat-the-obvious": "Do Not Repeat the Obvious",
         "write-to-the-reader": "Write to the Reader",
+        "basic-6": "Basic",
+        "explain-what-and-why-not-how": "Explain WHAT and WHY, not HOW",
         "intermediate-5": "Intermediate",
-        "explain-what-and-why-not-how": "Explain WHAT and WHY, not HOW"
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "code-quality": "Code Quality",
+        "project-assessment": "Project → Assessment"
       },
       "title": "Admin: Project: Assessment",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-assessment.md"
     },
     {
@@ -313,6 +319,7 @@
       "title": "Admin: Project: Constraints",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-constraints.md"
     },
     {
@@ -330,6 +337,7 @@
       "title": "Admin: Project: Deliverables",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-deliverables.md"
     },
     {
@@ -339,6 +347,7 @@
       "title": "Admin: Project: Overview",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-overview.md"
     },
     {
@@ -348,6 +357,7 @@
       "title": "Admin: Project: The product",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-product.md"
     },
     {
@@ -357,6 +367,7 @@
       "title": "Admin: Project: Scope",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-scope.md"
     },
     {
@@ -366,6 +377,7 @@
       "title": "Admin: Project: Supervision",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-supervision.md"
     },
     {
@@ -375,6 +387,7 @@
       "title": "Admin: Forming Teams",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-teams.md"
     },
     {
@@ -384,6 +397,7 @@
       "title": "Admin: Project: Timeline",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-timeline.md"
     },
     {
@@ -393,6 +407,7 @@
       "title": "Admin: Project: inception [week 3]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w03-inception.md"
     },
     {
@@ -408,6 +423,7 @@
       "title": "Admin: Project: mid-v1.0 [week 4]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w04-mid-v10.md"
     },
     {
@@ -419,6 +435,7 @@
       "title": "Admin: Project: v1.0 [week 5]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w05-v10.md"
     },
     {
@@ -431,6 +448,7 @@
       "title": "Admin: Project: mid-v1.1 [week 6]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w06-mid-v11.md"
     },
     {
@@ -443,6 +461,7 @@
       "title": "Admin: Project: v1.1 [week 7]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w07-v11.md"
     },
     {
@@ -455,6 +474,7 @@
       "title": "Admin: Project: mid-v1.2 [week 8]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w08-mid-v12.md"
     },
     {
@@ -465,15 +485,13 @@
         "using-milestones": "Using Milestones:",
         "v12-project-management": "v1.2 Project Management",
         "v12-product": "v1.2 Product",
-        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
-        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
-        "collating-the-annotated-code": "Collating the annotated code",
         "v12-documentation": "v1.2 Documentation",
         "v12-demo": "v1.2 Demo"
       },
       "title": "Admin: Project: v1.2 [week 9]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w09-v12.md"
     },
     {
@@ -483,15 +501,13 @@
       "title": "Admin: Project: mid-v1.3 [week 10]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w10-mid-v13.md"
     },
     {
       "headings": {
         "project-v13-week-11": "Project → v1.3 [week 11]",
         "v13-project-management": "v1.3 Project Management",
-        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
-        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
-        "collating-the-annotated-code": "Collating the annotated code",
         "v13-product": "v1.3 Product",
         "v13-documentation": "v1.3 Documentation",
         "v13-demo": "v1.3 Demo",
@@ -500,6 +516,7 @@
       "title": "Admin: Project: v1.3 [week 11]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w11-v13.md"
     },
     {
@@ -509,6 +526,7 @@
       "title": "Admin: Project: mid-v1.4 [week 12]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w12-mid-v14.md"
     },
     {
@@ -525,6 +543,7 @@
       "title": "Admin: Project: v1.4 [week 13]",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/project-w13-v14.md"
     },
     {
@@ -610,27 +629,29 @@
       "title": "Admin: Text Books",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/textbooks.md"
     },
     {
       "headings": {
-        "tools": "Tools",
-        "annotating-code-to-indicate-authorship": "Annotating code to indicate authorship",
-        "what-to-and-what-not-to-annotate": "What to and what not to annotate",
-        "collating-the-annotated-code": "Collating the annotated code"
+        "tools": "Tools"
       },
       "title": "Admin: Tools",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/tools.md"
     },
     {
       "headings": {
+        "tutorial-timetable": "Tutorial Timetable",
+        "tutorial-structure": "Tutorial Structure",
         "tutorials": "Tutorials"
       },
       "title": "Admin: Tutorials",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/tutorials.md"
     },
     {
@@ -650,6 +671,7 @@
       "title": "Admin: Using this Website",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/usingThisWebsite.md"
     },
     {
@@ -659,6 +681,7 @@
       "title": "Admin: Weekly Schedule",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
       "src": "admin/weeklySchedule.md"
     },
     {
@@ -670,7 +693,7 @@
     },
     {
       "headings": {
-        "software-engineering-for-self-directed-learners-cs2103t-edition-2018": "Software Engineering for Self-Directed Learners CS2103/T edition - 2018"
+        "software-engineering-for-self-directed-learners-cs2103t-edition-2018": "Software Engineering for Self-Directed Learners CS2103/T edition - 2018\n        \n      "
       },
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
       "footer": "footer.md",
@@ -679,17 +702,22 @@
     },
     {
       "headings": {
-        "software-architecture": "Software Architecture",
+        "what": "What",
+        "reading": "Reading",
+        "drawing": "Drawing",
+        "more-styles": "More Styles",
+        "using-styles": "Using Styles",
         "introduction": "Introduction",
         "architecture-diagrams": "Architecture Diagrams",
-        "architectural-styles": "Architectural Styles",
         "introduction-2": "Introduction",
         "n-tier-architectural-style": "N-tier Architectural Style",
         "client-server-architectural-style": "Client-server Architectural Style",
         "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
         "service-oriented-architectural-style": "Service-oriented Architectural Style",
         "event-driven-architectural-style": "Event-driven Architectural Style",
-        "more": "More"
+        "more": "More",
+        "architectural-styles": "Architectural Styles",
+        "software-architecture": "Software Architecture"
       },
       "title": "Text Book Chapter : Software Architecture",
       "footer": "footer.md",
@@ -698,24 +726,49 @@
     },
     {
       "headings": {
-        "code-quality": "Code Quality",
-        "introduction": "Introduction",
-        "guideline-maximise-readability": "Guideline: Maximise Readability",
         "basic": "Basic",
+        "introduction": "Introduction",
+        "avoid-long-methods": "Avoid Long Methods",
+        "avoid-deep-nesting": "Avoid Deep Nesting",
+        "avoid-complicated-expressions": "Avoid Complicated Expressions",
+        "avoid-magic-numbers": "Avoid Magic Numbers",
+        "make-the-code-obvious": "Make the Code Obvious",
+        "structure-code-logically": "Structure Code Logically",
+        "do-not-trip-up-reader": "Do Not 'Trip Up' Reader",
+        "practice-kissing": "Practice KISSing",
+        "avoid-premature-optimizations": "Avoid Premature Optimizations",
+        "slap-hard": "SLAP Hard",
+        "make-the-happy-path-prominent": "Make the Happy Path Prominent",
         "intermediate": "Intermediate",
+        "use-nouns-for-things-and-verbs-for-actions": "Use Nouns for Things and Verbs for Actions",
+        "use-standard-words": "Use Standard Words",
+        "use-name-to-explain": "Use Name to Explain",
+        "not-too-long-not-too-short": "Not Too Long, Not Too Short",
+        "avoid-misleading-names": "Avoid Misleading Names",
+        "use-the-default-branch": "Use the Default Branch",
+        "dont-recycle-variables-or-parameters": "Don't Recycle Variables or Parameters",
+        "avoid-empty-catch-blocks": "Avoid Empty Catch Blocks",
+        "delete-dead-code": "Delete Dead Code",
+        "minimise-scope-of-variables": "Minimise Scope of Variables",
+        "minimise-code-duplication": "Minimise Code Duplication",
+        "do-not-repeat-the-obvious": "Do Not Repeat the Obvious",
+        "write-to-the-reader": "Write to the Reader",
+        "explain-what-and-why-not-how": "Explain WHAT and WHY, not HOW",
         "what": "What",
         "advanced": "Advanced",
+        "guideline-maximise-readability": "Guideline: Maximise Readability",
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
-        "guideline-name-well": "Guideline: Name Well",
         "basic-2": "Basic",
         "intermediate-2": "Intermediate",
-        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
+        "guideline-name-well": "Guideline: Name Well",
         "basic-3": "Basic",
-        "intermediate-3": "Intermediate",
         "dry-principle": "DRY Principle",
-        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "intermediate-3": "Intermediate",
+        "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
         "basic-4": "Basic",
-        "intermediate-4": "Intermediate"
+        "intermediate-4": "Intermediate",
+        "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
+        "code-quality": "Code Quality"
       },
       "title": "Text Book Chapter : Code Quality",
       "footer": "footer.md",
@@ -724,8 +777,9 @@
     },
     {
       "headings": {
-        "software-design": "Software Design",
-        "introduction": "Introduction"
+        "what": "What",
+        "introduction": "Introduction",
+        "software-design": "Software Design"
       },
       "title": "Text Book Chapter : Software Design",
       "footer": "footer.md",
@@ -734,10 +788,10 @@
     },
     {
       "headings": {
-        "design-approaches": "Design Approaches",
         "multi-level-design": "Multi-Level Design",
         "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
-        "agile-design": "Agile Design"
+        "agile-design": "Agile Design",
+        "design-approaches": "Design Approaches"
       },
       "title": "Text Book Chapter : Design Approaches",
       "footer": "footer.md",
@@ -746,10 +800,13 @@
     },
     {
       "headings": {
-        "design-fundamentals": "Design Fundamentals",
+        "what": "What",
+        "how": "How",
+        "types-of-coupling": "Types of Coupling",
         "abstraction": "Abstraction",
         "coupling": "Coupling",
-        "cohesion": "Cohesion"
+        "cohesion": "Cohesion",
+        "design-fundamentals": "Design Fundamentals"
       },
       "title": "Text Book Chapter : Design Fundamentals",
       "footer": "footer.md",
@@ -758,7 +815,15 @@
     },
     {
       "headings": {
-        "software-design-patterns": "Software Design Patterns",
+        "what": "What",
+        "format": "Format",
+        "implementation": "Implementation",
+        "evaluation": "Evaluation",
+        "combining-design-patterns": "Combining Design Patterns",
+        "other-design-patterns": "Other Design Patterns",
+        "using-design-patterns": "Using Design Patterns",
+        "other-types-of-patterns": "Other Types of Patterns",
+        "design-patterns-vs-design-principles": "Design Patterns vs Design Principles",
         "introduction": "Introduction",
         "singleton-pattern": "Singleton Pattern",
         "abstraction-occurrence-pattern": "Abstraction Occurrence Pattern",
@@ -766,7 +831,8 @@
         "command-pattern": "Command Pattern",
         "model-view-controller-mvc-pattern": "Model View Controller (MVC) Pattern",
         "observer-pattern": "Observer Pattern",
-        "more": "More"
+        "more": "More",
+        "software-design-patterns": "Software Design Patterns"
       },
       "title": "Text Book Chapter : Software Design Patterns",
       "footer": "footer.md",
@@ -775,16 +841,19 @@
     },
     {
       "headings": {
-        "documentation": "Documentation",
+        "what": "What",
+        "why": "Why",
+        "how": "How",
         "introduction": "Introduction",
-        "guidelines": "Guidelines",
         "guideline-go-top-down-not-bottom-up": "Guideline: Go Top-down, Not Bottom-up",
         "guideline-aim-for-comprehensibility": "Guideline: Aim for Comprehensibility",
         "guideline-document-minimally-but-sufficiently": "Guideline: Document Minimally, but Sufficiently",
-        "tools": "Tools",
+        "guidelines": "Guidelines",
         "javadoc": "JavaDoc",
         "markdown": "Markdown",
-        "asciidoc": "AsciiDoc"
+        "asciidoc": "AsciiDoc",
+        "tools": "Tools",
+        "documentation": "Documentation"
       },
       "title": "Text Book Chapter : Documentation",
       "footer": "footer.md",
@@ -793,13 +862,20 @@
     },
     {
       "headings": {
-        "error-handling": "Error Handling",
+        "what": "What",
+        "how": "How",
+        "when": "When",
+        "enforcing-compulsory-associations": "Enforcing Compulsory Associations",
+        "enforcing-1-to-1-associations": "Enforcing 1-to-1 Associations",
+        "enforcing-referential-integrity": "Enforcing Referential Integrity",
+        "design-by-contract": "Design by Contract",
         "introduction": "Introduction",
         "exceptions": "Exceptions",
         "assertions": "Assertions",
         "logging": "Logging",
         "defensive-programming": "Defensive Programming",
-        "design-by-contract-approach": "Design-by-Contract Approach"
+        "design-by-contract-approach": "Design-by-Contract Approach",
+        "error-handling": "Error Handling"
       },
       "title": "Text Book Chapter : Error Handling",
       "footer": "footer.md",
@@ -808,6 +884,13 @@
     },
     {
       "headings": {
+        "brainstorming": "Brainstorming",
+        "user-surveys": "User Surveys",
+        "observation": "Observation",
+        "interviews": "Interviews",
+        "focus-groups": "Focus Groups",
+        "prototyping": "Prototyping",
+        "product-surveys": "Product Surveys",
         "gathering-requirements": "Gathering Requirements"
       },
       "title": "Text Book Chapter : Gathering Requirements",
@@ -817,9 +900,21 @@
     },
     {
       "headings": {
-        "git-and-github": "Git and Github",
+        "init": "Init",
+        "commit": "Commit",
+        "ignore": "Ignore",
+        "tag": "Tag",
+        "checkout": "Checkout",
         "stash": "Stash",
-        "clone": "Clone"
+        "clone": "Clone",
+        "pull": "Pull",
+        "push": "Push",
+        "branch": "Branch",
+        "merge-conflicts": "Merge Conflicts",
+        "create-prs": "Create PRs",
+        "manage-prs": "Manage PRs",
+        "forking-workflow": "Forking Workflow",
+        "git-and-github": "Git and Github"
       },
       "title": "Text Book Chapter : Git and Github",
       "footer": "footer.md",
@@ -828,9 +923,10 @@
     },
     {
       "headings": {
-        "ides": "IDEs",
+        "what": "What",
         "introduction": "Introduction",
-        "debugging": "Debugging"
+        "debugging": "Debugging",
+        "ides": "IDEs"
       },
       "title": "Text Book Chapter : IDEs",
       "footer": "footer.md",
@@ -839,11 +935,16 @@
     },
     {
       "headings": {
-        "integration": "Integration",
+        "what": "What",
+        "late-and-one-time-vs-early-and-frequent": "'Late and One Time' vs 'Early and Frequent'",
+        "big-bang-vs-incremental-integration": "Big-Bang vs Incremental Integration",
+        "top-down-vs-bottom-up-integration": "Top-Down vs Bottom-Up Integration",
+        "continuous-integration-and-continuous-deployment": "Continuous Integration and Continuous Deployment",
         "introduction": "Introduction",
         "approaches": "Approaches",
         "build-automation": "Build Automation",
-        "approaches-2": "Approaches"
+        "approaches-2": "Approaches",
+        "integration": "Integration"
       },
       "title": "Text Book Chapter : Integration",
       "footer": "footer.md",
@@ -852,6 +953,11 @@
     },
     {
       "headings": {
+        "project-setup": "Project Setup",
+        "code-navigation": "Code Navigation",
+        "productivity-shortcuts": "Productivity Shortcuts",
+        "debugging-basic": "Debugging: Basic",
+        "refactoring": "Refactoring",
         "intellij-idea": "Intellij IDEA"
       },
       "title": "Text Book Chapter : Intellij IDEA",
@@ -861,31 +967,12 @@
     },
     {
       "headings": {
-        "java": "Java",
-        "javafx-8-tutorial-part-1-scene-builder": "JavaFx 8 Tutorial - Part 1: Scene Builder",
-        "introduction": "Introduction",
-        "prerequisites": "Prerequisites",
-        "intellij-configurations": "IntelliJ Configurations",
-        "configuring-jdk-8": "Configuring JDK 8",
-        "configuring-scene-builder": "Configuring Scene Builder",
-        "create-a-new-javafx-project": "Create a new JavaFX Project",
-        "create-the-packages": "Create the Packages",
-        "create-the-fxml-layout-file": "Create the FXML Layout File",
-        "design-with-scene-builder": "Design with Scene Builder",
-        "create-the-main-application": "Create the Main Application",
-        "the-javafx-main-class": "The JavaFX Main Class",
-        "possible-issues": "Possible Issues",
-        "javafx-8-tutorial-part-2-model-and-tableview": "JavaFx 8 tutorial - Part 2: Model and TableView",
-        "introduction-2": "Introduction",
-        "create-the-model-class": "Create the Model class",
-        "explanations": "Explanations",
-        "a-list-of-persons": "A List of Persons",
-        "observablelist": "ObservableList",
-        "the-personoverviewcontroller": "The PersonOverviewController",
-        "explanations-2": "Explanations",
-        "connecting-mainapp-with-the-personoverviewcontroller": "Connecting MainApp with the PersonOverviewController",
-        "hook-the-view-to-the-controller": "Hook the View to the controller",
-        "start-the-application": "Start the Application"
+        "collections": "Collections",
+        "enums": "Enums",
+        "varargs": "Varargs",
+        "javafx-basic": "JavaFX: Basic",
+        "streams-basic": "Streams: Basic",
+        "java": "Java"
       },
       "title": "Text Book Chapter : Java",
       "footer": "footer.md",
@@ -894,6 +981,8 @@
     },
     {
       "headings": {
+        "junit-basic": "JUnit: Basic",
+        "junit-intermediate": "JUnit: Intermediate",
         "junit": "JUnit"
       },
       "title": "Text Book Chapter : JUnit",
@@ -903,15 +992,40 @@
     },
     {
       "headings": {
-        "modeling": "Modeling",
-        "introduction": "Introduction",
         "what": "What",
-        "modeling-structures": "Modeling Structures",
-        "modeling-behaviors": "Modeling Behaviors",
-        "modeling-a-solution": "Modeling a Solution",
-        "introduction-2": "Introduction",
+        "how": "How",
+        "uml-models": "UML Models",
+        "oo-structures": "OO Structures",
+        "class-diagrams-basics": "Class Diagrams (Basics)",
+        "adding-more-info-to-uml-models": "Adding More Info to UML Models",
+        "class-diagrams-intermediate": "Class Diagrams - Intermediate",
+        "object-diagrams": "Object Diagrams",
+        "object-oriented-domain-models": "Object Oriented Domain Models",
+        "deployment-diagrams": "Deployment Diagrams",
+        "component-diagrams": "Component Diagrams",
+        "package-diagrams": "Package Diagrams",
+        "composite-structure-diagrams": "Composite Structure Diagrams",
+        "activity-diagrams": "Activity Diagrams",
+        "sequence-diagrams-basic": "Sequence Diagrams - Basic",
+        "sequence-diagrams-intermediate": "Sequence Diagrams - Intermediate",
+        "use-case-diagrams": "Use Case Diagrams",
+        "timing-diagrams": "Timing Diagrams",
+        "interaction-overview-diagrams": "Interaction Overview Diagrams",
+        "communication-diagrams": "Communication Diagrams",
+        "state-machine-diagrams": "State Machine Diagrams",
+        "introduction": "Introduction",
         "basic": "Basic",
-        "introduction-3": "Introduction"
+        "intermediate": "Intermediate",
+        "notes": "Notes",
+        "modeling-structures": "Modeling Structures",
+        "linear-paths": "Linear Paths",
+        "alternate-paths": "Alternate Paths",
+        "parallel-paths": "Parallel Paths",
+        "modeling-behaviors": "Modeling Behaviors",
+        "introduction-2": "Introduction",
+        "introduction-3": "Introduction",
+        "modeling-a-solution": "Modeling a Solution",
+        "modeling": "Modeling"
       },
       "title": "Text Book Chapter : Modeling",
       "footer": "footer.md",
@@ -920,19 +1034,36 @@
     },
     {
       "headings": {
-        "object-oriented-programming": "Object-Oriented Programming",
+        "what": "What",
+        "objects-as-abstractions": "Objects as Abstractions",
+        "encapsulation-of-objects": "Encapsulation Of Objects",
+        "class-level-members": "Class Level Members",
+        "enumerations": "Enumerations",
+        "navigability": "Navigability",
+        "multiplicity": "Multiplicity",
+        "dependencies": "Dependencies",
+        "composition": "Composition",
+        "aggregation": "Aggregation",
+        "association-classes": "Association Classes",
+        "overriding": "Overriding",
+        "overloading": "Overloading",
+        "interfaces": "Interfaces",
+        "abstract-classes": "Abstract Classes",
+        "substitutability": "Substitutability",
+        "dynamic-and-static-binding": "Dynamic and Static Binding",
+        "how": "How",
+        "miscellaneous": "Miscellaneous",
+        "review": "Review",
         "introduction": "Introduction",
         "objects": "Objects",
         "classes": "Classes",
         "associations": "Associations",
-        "inheritance": "Inheritance",
-        "overloading": "Overloading",
-        "overriding": "Overriding",
         "overloading-2": "Overloading",
         "overloading-3": "Overloading",
+        "inheritance": "Inheritance",
         "polymorphism": "Polymorphism",
-        "what": "What",
-        "more": "More"
+        "more": "More",
+        "object-oriented-programming": "Object-Oriented Programming"
       },
       "title": "Text Book Chapter : Object-Oriented Programming",
       "footer": "footer.md",
@@ -941,17 +1072,22 @@
     },
     {
       "headings": {
-        "principles": "Principles",
-        "substitutability": "Substitutability",
         "single-responsibility-principle": "Single Responsibility Principle",
         "open-closed-principle": "Open-Closed Principle",
         "liskov-substitution-principle": "Liskov Substitution Principle",
-        "substitutability-2": "Substitutability",
         "interface-segregation-principle": "Interface Segregation Principle",
         "dependency-inversion-principle": "Dependency Inversion Principle",
+        "solid-principles": "SOLID Principles",
+        "separation-of-concerns-principle": "Separation of Concerns Principle",
+        "law-of-demeter": "Law of Demeter",
+        "yagni-principle": "YAGNI Principle",
+        "dry-principle": "DRY Principle",
+        "brooks-law": "Brooks' Law",
+        "substitutability": "Substitutability",
         "what": "What",
         "what-2": "What",
-        "what-3": "What"
+        "what-3": "What",
+        "principles": "Principles"
       },
       "title": "Text Book Chapter : Principles",
       "footer": "footer.md",
@@ -960,11 +1096,20 @@
     },
     {
       "headings": {
-        "sdlc-process-models": "SDLC Process Models",
+        "what": "What",
+        "sequential-models": "Sequential Models",
+        "iterative-models": "Iterative Models",
+        "agile-models": "Agile Models",
+        "xp": "XP",
+        "scrum": "Scrum",
+        "unified-process": "Unified Process",
+        "cmmi": "CMMI",
+        "recap": "Recap",
         "introduction": "Introduction",
         "example-process-models": "Example Process Models",
         "more": "More",
-        "summary": "Summary"
+        "summary": "Summary",
+        "sdlc-process-models": "SDLC Process Models"
       },
       "title": "Text Book Chapter : SDLC Process Models",
       "footer": "footer.md",
@@ -973,6 +1118,12 @@
     },
     {
       "headings": {
+        "work-breakdown-structure": "Work Breakdown Structure",
+        "milestones": "Milestones",
+        "buffers": "Buffers",
+        "issue-trackers": "Issue Trackers",
+        "gantt-charts": "GANTT Charts",
+        "pert-charts": "PERT Charts",
         "project-planning": "Project Planning"
       },
       "title": "Text Book Chapter : Project Planning",
@@ -982,11 +1133,13 @@
     },
     {
       "headings": {
-        "quality-assurance": "Quality Assurance",
+        "what": "What",
+        "validation-vs-verification": "Validation vs Verification",
         "introduction": "Introduction",
         "code-reviews": "Code Reviews",
         "static-analysis": "Static Analysis",
-        "formal-verification": "Formal Verification"
+        "formal-verification": "Formal Verification",
+        "quality-assurance": "Quality Assurance"
       },
       "title": "Text Book Chapter : Quality Assurance",
       "footer": "footer.md",
@@ -995,6 +1148,9 @@
     },
     {
       "headings": {
+        "what": "What",
+        "how": "How",
+        "when": "When",
         "refactoring": "Refactoring"
       },
       "title": "Text Book Chapter : Refactoring",
@@ -1004,6 +1160,10 @@
     },
     {
       "headings": {
+        "introduction": "Introduction",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "prioritizing-requirements": "Prioritizing Requirements",
+        "quality-of-requirements": "Quality of Requirements",
         "requirements": "Requirements"
       },
       "title": "Text Book Chapter : Requirements",
@@ -1013,13 +1173,19 @@
     },
     {
       "headings": {
-        "reuse": "Reuse",
+        "what": "What",
+        "when": "When",
+        "designing-apis": "Designing APIs",
+        "how": "How",
+        "frameworks-vs-libraries": "Frameworks vs Libraries",
+        "iaas-paas-and-saas": "Iaas, PaaS, and SaaS",
         "introduction": "Introduction",
         "apis": "APIs",
         "libraries": "Libraries",
         "frameworks": "Frameworks",
         "platforms": "Platforms",
-        "cloud-computing": "Cloud Computing"
+        "cloud-computing": "Cloud Computing",
+        "reuse": "Reuse"
       },
       "title": "Text Book Chapter : Reuse",
       "footer": "footer.md",
@@ -1028,6 +1194,16 @@
     },
     {
       "headings": {
+        "what": "What",
+        "repositories": "Repositories",
+        "saving-history": "Saving History",
+        "using-history": "Using History",
+        "remote-repositories": "Remote Repositories",
+        "branching": "Branching",
+        "drcs-vs-crcs": "DRCS vs CRCS",
+        "forking-flow": "Forking Flow",
+        "feature-branch-flow": "Feature Branch Flow",
+        "centralized-flow": "Centralized Flow",
         "revision-control": "Revision Control"
       },
       "title": "Text Book Chapter : Revision Control",
@@ -1037,8 +1213,9 @@
     },
     {
       "headings": {
-        "software-engineering": "Software Engineering",
-        "introduction": "Introduction"
+        "pros-and-cons": "Pros and Cons",
+        "introduction": "Introduction",
+        "software-engineering": "Software Engineering"
       },
       "title": "Text Book Chapter : Software Engineering",
       "footer": "footer.md",
@@ -1047,14 +1224,19 @@
     },
     {
       "headings": {
-        "specifying-requirements": "Specifying Requirements",
+        "what": "What",
+        "introduction": "Introduction",
+        "details": "Details",
+        "usage": "Usage",
+        "identifying": "Identifying",
         "prose": "Prose",
         "feature-lists": "Feature Lists",
         "user-stories": "User Stories",
         "use-cases": "Use Cases",
         "glossary": "Glossary",
+        "non-functional-requirements": "Non-Functional Requirements",
         "supplementary-requirements": "Supplementary Requirements",
-        "non-functional-requirements": "Non-Functional Requirements"
+        "specifying-requirements": "Specifying Requirements"
       },
       "title": "Text Book Chapter : Specifying Requirements",
       "footer": "footer.md",
@@ -1063,6 +1245,7 @@
     },
     {
       "headings": {
+        "team-structures": "Team Structures",
         "teamwork": "Teamwork"
       },
       "title": "Text Book Chapter : Teamwork",
@@ -1077,14 +1260,26 @@
     },
     {
       "headings": {
-        "test-case-design": "Test Case Design",
+        "what": "What",
+        "positive-vs-negative-test-cases": "Positive vs Negative Test Cases",
+        "black-box-vs-glass-box": "Black Box vs Glass Box",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "how": "How",
+        "why": "Why",
+        "test-input-combination-strategies": "Test Input Combination Strategies",
+        "heuristic-each-valid-input-at-least-once-in-a-positive-test-case": "Heuristic: Each Valid Input at Least Once in a Positive Test Case",
+        "heuristic-no-more-than-one-invalid-input-in-a-test-case": "Heuristic: No More Than One Invalid Input In A Test Case",
+        "mix": "Mix",
+        "testing-based-on-use-cases": "Testing Based on Use Cases",
+        "exercises": "Exercises",
         "introduction": "Introduction",
         "equivalence-partitions": "Equivalence Partitions",
         "boundary-value-analysis": "Boundary Value Analysis",
         "combining-test-inputs": "Combining Test Inputs",
         "more": "More",
-        "what": "What",
-        "recap": "Recap"
+        "recap": "Recap",
+        "test-case-design": "Test Case Design"
       },
       "title": "Text Book Chapter : Test Case Design",
       "footer": "footer.md",
@@ -1093,9 +1288,18 @@
     },
     {
       "headings": {
-        "testing": "Testing",
+        "what": "What",
+        "testability": "Testability",
+        "stubs": "Stubs",
+        "how": "How",
+        "why": "Why",
+        "when": "When",
+        "acceptance-vs-system-testing": "Acceptance vs System Testing",
+        "automated-testing-of-cli-apps": "Automated Testing of CLI Apps",
+        "test-automation-using-test-drivers": "Test Automation Using Test Drivers",
+        "test-automation-tools": "Test Automation Tools",
+        "automated-testing-of-guis": "Automated Testing of GUIs",
         "introduction": "Introduction",
-        "testing-types": "Testing Types",
         "unit-testing": "Unit Testing",
         "integration-testing": "Integration Testing",
         "system-testing": "System Testing",
@@ -1105,12 +1309,13 @@
         "exploratory-vs-scripted-testing": "Exploratory vs Scripted Testing",
         "acceptance-testing": "Acceptance Testing",
         "regression-testing": "Regression Testing",
+        "testing-types": "Testing Types",
         "test-automation": "Test Automation",
         "test-coverage": "Test Coverage",
-        "dependency-injection": "Dependency Injection",
-        "stubs": "Stubs",
         "stubs-2": "Stubs",
-        "tdd": "TDD"
+        "dependency-injection": "Dependency Injection",
+        "tdd": "TDD",
+        "testing": "Testing"
       },
       "title": "Text Book Chapter : Testing",
       "footer": "footer.md",
@@ -1119,29 +1324,52 @@
     },
     {
       "headings": {
-        "uml": "UML",
-        "class-diagrams": "Class Diagrams",
-        "introduction": "Introduction",
-        "classes": "Classes",
-        "associations": "Associations",
+        "what": "What",
+        "navigability": "Navigability",
+        "roles": "Roles",
+        "labels": "Labels",
+        "multiplicity": "Multiplicity",
         "dependencies": "Dependencies",
         "associations-as-attributes": "Associations as Attributes",
-        "enumerations": "Enumerations",
         "class-level-members": "Class Level Members",
         "association-classes": "Association Classes",
         "composition": "Composition",
         "aggregation": "Aggregation",
-        "class-inheritance": "Class Inheritance",
+        "inheritance": "Inheritance",
         "interfaces": "Interfaces",
+        "basic": "Basic",
+        "introduction": "Introduction",
+        "object-creation": "Object Creation",
+        "object-deletion": "Object Deletion",
+        "loops": "Loops",
+        "self-invocation": "Self Invocation",
+        "alternative-paths": "Alternative Paths",
+        "optional-paths": "Optional Paths",
+        "parallel-paths": "Parallel Paths",
+        "reference-frames": "Reference Frames",
+        "minimal-notation": "Minimal Notation",
+        "objects": "Objects",
+        "linear-paths": "Linear Paths",
+        "alternate-paths": "Alternate Paths",
+        "rakes": "Rakes",
+        "swimlanes": "Swimlanes",
+        "notes": "Notes",
+        "constraints": "Constraints",
+        "object-vs-class-diagrams": "Object vs Class Diagrams",
+        "classes": "Classes",
+        "associations": "Associations",
+        "enumerations": "Enumerations",
+        "class-inheritance": "Class Inheritance",
         "abstract-classes": "Abstract Classes",
         "combine": "Combine",
+        "class-diagrams": "Class Diagrams",
         "sequence-diagrams": "Sequence Diagrams",
         "object-diagrams": "Object Diagrams",
-        "activity-diagrams": "Activity Diagrams",
         "introduction-2": "Introduction",
         "basic-notations": "Basic Notations",
-        "notes": "Notes",
-        "miscellaneous": "Miscellaneous"
+        "activity-diagrams": "Activity Diagrams",
+        "miscellaneous": "Miscellaneous",
+        "uml": "UML"
       },
       "title": "Text Book Chapter : UML",
       "footer": "footer.md",

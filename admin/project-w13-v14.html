@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/admin.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -155,8 +157,6 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/admin.css">
     <div>
       <navbar placement="top" type="inverse">
         <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
@@ -204,52 +204,54 @@
             <p>Overview: <span>final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></p>
           </tip-box>
           <p><strong>Summary of submissions</strong>:</p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Team/Individual Item</th>
-                <th>Name format</th>
-                <th>Upload to</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="fas fa-users"></span> Source code</td>
-                <td>tag as <code>v1.4</code></td>
-                <td>GitHub</td>
-              </tr>
-              <tr>
-                <td><span class="fas fa-users"></span> Jar file</td>
-                <td><code>[team][product name].jar</code><br><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></td>
-                <td>IVLE</td>
-              </tr>
-              <tr>
-                <td><span class="fas fa-users"></span> User Guide</td>
-                <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br> <span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
-                <td>IVLE</td>
-              </tr>
-              <tr>
-                <td><span class="fas fa-users"></span> Developer Guide</td>
-                <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br> <span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
-                <td>IVLE</td>
-              </tr>
-              <tr>
-                <td><span class="fas fa-users"></span> Product Website</td>
-                <td><code>README.adoc</code>, <code>Ui.png</code>, <code>AboutUs.adoc</code></td>
-                <td>GitHub</td>
-              </tr>
-              <tr>
-                <td><span class="fas fa-user"></span> Project Portfolio Page</td>
-                <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br> <span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
-                <td>IVLE</td>
-              </tr>
-              <tr>
-                <td><span class="fas fa-user"></span> Collated files</td>
-                <td></td>
-                <td>GitHub</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Team/Individual Item</th>
+                  <th>Name format</th>
+                  <th>Upload to</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="fas fa-users"></span> Source code</td>
+                  <td>tag as <code>v1.4</code></td>
+                  <td>GitHub</td>
+                </tr>
+                <tr>
+                  <td><span class="fas fa-users"></span> Jar file</td>
+                  <td><code>[team][product name].jar</code><br><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></td>
+                  <td>IVLE</td>
+                </tr>
+                <tr>
+                  <td><span class="fas fa-users"></span> User Guide</td>
+                  <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br> <span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
+                  <td>IVLE</td>
+                </tr>
+                <tr>
+                  <td><span class="fas fa-users"></span> Developer Guide</td>
+                  <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br> <span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
+                  <td>IVLE</td>
+                </tr>
+                <tr>
+                  <td><span class="fas fa-users"></span> Product Website</td>
+                  <td><code>README.adoc</code>, <code>Ui.png</code>, <code>AboutUs.adoc</code></td>
+                  <td>GitHub</td>
+                </tr>
+                <tr>
+                  <td><span class="fas fa-user"></span> Project Portfolio Page</td>
+                  <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br> <span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
+                  <td>IVLE</td>
+                </tr>
+                <tr>
+                  <td><span class="fas fa-user"></span> Collated files</td>
+                  <td></td>
+                  <td>GitHub</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p><strong>Deadline</strong> for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.</p>
           <tip-box>
             <ul>
@@ -335,7 +337,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
 </footer>
 </div>
 </body>

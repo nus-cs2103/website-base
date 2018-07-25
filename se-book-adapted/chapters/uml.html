@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -285,37 +286,39 @@
                   <li><code>~</code> : package private</li>
                 </ul>
                 <panel type="seamless" header="How visibilities map to programming language features">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>visibility</th>
-                        <th>Java</th>
-                        <th>Python</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>-</code> private</td>
-                        <td><code>private</code></td>
-                        <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
-                      </tr>
-                      <tr>
-                        <td><code>#</code> protected</td>
-                        <td><code>protected</code></td>
-                        <td>one leading underscore in the name</td>
-                      </tr>
-                      <tr>
-                        <td><code>+</code> public</td>
-                        <td><code>public</code></td>
-                        <td>all other cases</td>
-                      </tr>
-                      <tr>
-                        <td><code>~</code> package private</td>
-                        <td>default visibility</td>
-                        <td>not applicable</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>visibility</th>
+                          <th>Java</th>
+                          <th>Python</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>-</code> private</td>
+                          <td><code>private</code></td>
+                          <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
+                        </tr>
+                        <tr>
+                          <td><code>#</code> protected</td>
+                          <td><code>protected</code></td>
+                          <td>one leading underscore in the name</td>
+                        </tr>
+                        <tr>
+                          <td><code>+</code> public</td>
+                          <td><code>public</code></td>
+                          <td>all other cases</td>
+                        </tr>
+                        <tr>
+                          <td><code>~</code> package private</td>
+                          <td>default visibility</td>
+                          <td>not applicable</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <p></p>
                 </panel>
                 <p></p>
@@ -2059,7 +2062,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
 </footer>
 </div>
 </body>

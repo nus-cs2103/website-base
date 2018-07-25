@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/admin.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -116,8 +118,6 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/admin.css">
     <div class="website-content">
       <div>
         <navbar placement="top" type="inverse">
@@ -151,79 +151,84 @@
           <h1 id="cs2103t-software-engineering">CS2103/T Software Engineering</h1>
           <p><big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big></p>
           <img src="/website-base/images/growingPlant.png" width="700">
-          <box border-color="white">
-            <p>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking
-              <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an
-              <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a
-              <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</p>
-          </box>
+          <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</span></p>
           <p>On the theory side, this module is supported by a customized online text book <a href="/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
           <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
           <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
             (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
             size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
           <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
-          <div class="indented-level2">
-            <p><strong>Java:</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used heavily, but not taught</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
-            </ul>
-            <p><strong>OOP:</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Used in a non-trivial project,
-                <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
-              </li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></li>
-            </ul>
-            <p><strong>SE tools/practices:</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-                <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
-              </li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> those specific to start-ups</li>
-            </ul>
-            <p><strong>Modeling:</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-                <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> intensive
-                <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
-              </li>
-            </ul>
-            <p><strong>Requirements:</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-                <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> rapid prototyping, heavy UI design, designing a product from scratch</li>
-            </ul>
-            <p><strong>Documentation</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Marketing materials</li>
-            </ul>
-            <p><strong>Project Management</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Setting up project infrastructure from scratch</li>
-            </ul>
-            <p><strong>Testing</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox">
-                <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
-                <tooltip content="e.g., acceptance testing">user testing</tooltip>
-              </li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox">
-                <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
-              </li>
-            </ul>
-            <p><strong>Applications domains:</strong></p>
-            <ul class="task-list">
-              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> Cross-platform desktop applications</li>
-              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> Web programming, Mobile programming, Database programming</li>
-            </ul>
-          </div>
-          <br>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Topic</th>
+                  <th><span style="color:green"><span class="fas fa-check"></span></span> Covered</th>
+                  <th><span style="color:red"><span class="fas fa-times"></span></span> Not covered</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Java</td>
+                  <td>Used heavily, but not taught</td>
+                  <td>syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
+                </tr>
+                <tr>
+                  <td>OOP</td>
+                  <td>Used in a non-trivial project,
+                    <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
+                  </td>
+                  <td>basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
+                </tr>
+                <tr>
+                  <td>SE tools/practices</td>
+                  <td>
+                    <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
+                  </td>
+                  <td>those specific to start-ups</td>
+                </tr>
+                <tr>
+                  <td>Modeling</td>
+                  <td>
+                    <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</td>
+                  <td>intensive
+                    <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Requirements</td>
+                  <td>
+                    <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</td>
+                  <td>rapid prototyping, heavy UI design, designing a product from scratch</td>
+                </tr>
+                <tr>
+                  <td>Documentation</td>
+                  <td>Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</td>
+                  <td>Marketing materials</td>
+                </tr>
+                <tr>
+                  <td>Project Management</td>
+                  <td>Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</td>
+                  <td>Setting up project infrastructure from scratch</td>
+                </tr>
+                <tr>
+                  <td>Testing</td>
+                  <td>
+                    <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
+                    <tooltip content="e.g., acceptance testing">user testing</tooltip>
+                  </td>
+                  <td>
+                    <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Applications domains</td>
+                  <td>Cross-platform desktop applications</td>
+                  <td>Web programming, Mobile programming, Database programming</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><br>
           <p>
             <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> **FAQ: What are the differences between CS2103 and CS2103T?**" minimized="" fragment="admin-faq-tVsNonT"></panel>
           </p>
@@ -323,27 +328,29 @@
                 </li>
               </ul>
               <h4 id="boxed-text-styles">Boxed-Text Styles</h4>
-              <tip-box type="info">
-                additional info
-              </tip-box>
-              <tip-box type="warning">
-                warning
-              </tip-box>
-              <tip-box type="success">
-                positive message
-              </tip-box>
-              <tip-box type="important">
-                important message
-              </tip-box>
-              <tip-box type="wrong">
-                an error to avoid
-              </tip-box>
-              <tip-box type="tip">
-                tip
-              </tip-box>
-              <tip-box type="definition">
-                definition
-              </tip-box>
+              <div class="indented">
+                <tip-box type="info">
+                  additional info
+                </tip-box>
+                <tip-box type="warning">
+                  warning
+                </tip-box>
+                <tip-box type="success">
+                  positive message
+                </tip-box>
+                <tip-box type="important">
+                  important message
+                </tip-box>
+                <tip-box type="wrong">
+                  an error to avoid
+                </tip-box>
+                <tip-box type="tip">
+                  tip
+                </tip-box>
+                <tip-box type="definition">
+                  definition
+                </tip-box>
+              </div>
               <h4 id="meaning-of-icons">Meaning of Icons</h4>
               <div class="indented">
                 <p><span class="badge badge-pill badge-secondary">tangential</span> : tangential info, can be ignored if not interested<br>
@@ -518,27 +525,29 @@
           <h2 id="lectures">Lectures</h2>
           <img src="/website-base/admin/images/Lecture photo.png" width="100%">
           <p><strong>Timing/venue</strong>:</p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Semester</th>
-                <th>Venue</th>
-                <th>Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Semester 1 (Aug-Nov)</td>
-                <td>ICube Auditorium</td>
-                <td><strong>1600</strong>-1800</td>
-              </tr>
-              <tr>
-                <td>Semester 2 (Jan-April)</td>
-                <td>ICube Auditorium</td>
-                <td><strong>1600</strong>-1800</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Semester</th>
+                  <th>Venue</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Semester 1 (Aug-Nov)</td>
+                  <td>ICube Auditorium</td>
+                  <td><strong>1600</strong>-1800</td>
+                </tr>
+                <tr>
+                  <td>Semester 2 (Jan-April)</td>
+                  <td>ICube Auditorium</td>
+                  <td><strong>1600</strong>-1800</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
           <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%">
             <p>CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>
@@ -568,145 +577,147 @@
                 <p>
                   <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
               </tip-box>
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
-                    <th>Time</th>
-                    <th>Venue</th>
-                    <th>Tutors (<a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">contact details</a>)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W09 <span class="dimmed">(T1)</span></td>
-                    <td><strong>W</strong>ed <strong>09</strong>00</td>
-                    <td>COM1-B103 (ALL<sup>*</sup>)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W10 <span class="dimmed">(T2)</span></td>
-                    <td><strong>W</strong>ed <strong>10</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W11 <span class="dimmed">(T3)</span></td>
-                    <td><strong>W</strong>ed <strong>11</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W13 <span class="dimmed">(T4)</span></td>
-                    <td><strong>W</strong>ed <strong>13</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W14 <span class="dimmed">(T5)</span></td>
-                    <td><strong>W</strong>ed <strong>14</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W15 <span class="dimmed">(T6)</span></td>
-                    <td><strong>W</strong>ed <strong>15</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T09 <span class="dimmed">(C01)</span></td>
-                    <td><strong>T</strong>hu <strong>09</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T10 <span class="dimmed">(C04)</span></td>
-                    <td><strong>T</strong>hu <strong>10</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T11 <span class="dimmed">(C03)</span></td>
-                    <td><strong>T</strong>hu <strong>11</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>T12 <span class="dimmed">(5)</span></td>
-                    <td><strong>T</strong>hu <strong>12</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>T13 <span class="dimmed">(6)</span></td>
-                    <td><strong>T</strong>hu <strong>13</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>T14 <span class="dimmed">(4)</span></td>
-                    <td><strong>T</strong>hu <strong>14</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T15 <span class="dimmed">(C02)</span></td>
-                    <td><strong>T</strong>hu <strong>15</strong>00</td>
-                    <td>COM1-0210 (SR10)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T16 <span class="dimmed">(C06)</span></td>
-                    <td><strong>T</strong>hu <strong>16</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T17 <span class="dimmed">(C05)</span></td>
-                    <td><strong>T</strong>hu <strong>17</strong>00</td>
-                    <td>COM1-0210 (SR10)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>F09 <span class="dimmed">(1)</span></td>
-                    <td><strong>F</strong>ri <strong>09</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>F10 <span class="dimmed">(2)</span></td>
-                    <td><strong>F</strong>ri <strong>10</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>F11 <span class="dimmed">(3)</span></td>
-                    <td><strong>F</strong>ri <strong>11</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Module</th>
+                      <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
+                      <th>Time</th>
+                      <th>Venue</th>
+                      <th>Tutors (<a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">contact details</a>)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W09 <span class="dimmed">(T1)</span></td>
+                      <td><strong>W</strong>ed <strong>09</strong>00</td>
+                      <td>COM1-B103 (ALL<sup>*</sup>)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W10 <span class="dimmed">(T2)</span></td>
+                      <td><strong>W</strong>ed <strong>10</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W11 <span class="dimmed">(T3)</span></td>
+                      <td><strong>W</strong>ed <strong>11</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W13 <span class="dimmed">(T4)</span></td>
+                      <td><strong>W</strong>ed <strong>13</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W14 <span class="dimmed">(T5)</span></td>
+                      <td><strong>W</strong>ed <strong>14</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W15 <span class="dimmed">(T6)</span></td>
+                      <td><strong>W</strong>ed <strong>15</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T09 <span class="dimmed">(C01)</span></td>
+                      <td><strong>T</strong>hu <strong>09</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T10 <span class="dimmed">(C04)</span></td>
+                      <td><strong>T</strong>hu <strong>10</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T11 <span class="dimmed">(C03)</span></td>
+                      <td><strong>T</strong>hu <strong>11</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>T12 <span class="dimmed">(5)</span></td>
+                      <td><strong>T</strong>hu <strong>12</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>T13 <span class="dimmed">(6)</span></td>
+                      <td><strong>T</strong>hu <strong>13</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>T14 <span class="dimmed">(4)</span></td>
+                      <td><strong>T</strong>hu <strong>14</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T15 <span class="dimmed">(C02)</span></td>
+                      <td><strong>T</strong>hu <strong>15</strong>00</td>
+                      <td>COM1-0210 (SR10)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T16 <span class="dimmed">(C06)</span></td>
+                      <td><strong>T</strong>hu <strong>16</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T17 <span class="dimmed">(C05)</span></td>
+                      <td><strong>T</strong>hu <strong>17</strong>00</td>
+                      <td>COM1-0210 (SR10)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>F09 <span class="dimmed">(1)</span></td>
+                      <td><strong>F</strong>ri <strong>09</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>F10 <span class="dimmed">(2)</span></td>
+                      <td><strong>F</strong>ri <strong>10</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>F11 <span class="dimmed">(3)</span></td>
+                      <td><strong>F</strong>ri <strong>11</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p><span class="dimmed">*ALL: Active Learning Room</span></p>
             </div>
           </panel>
@@ -1145,74 +1156,76 @@
             up your tech skills in preparation for the project. <code>AB4</code> is to be used as the basis for your project.</p>
           <p><code>AB4</code> is the version you will use as the starting point for your final project. Some of the work you do in <code>AB1</code> to <code>AB3</code> can be ported over to <code>AB4</code> and can be used to claim credit in the final project.</p>
           <p>Given below is the high-level timeline of the project.</p>
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Week</th>
-                <th>Stage</th>
-                <th>Activities</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>3</strong></td>
-                <td>inception</td>
-                <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>4</strong></td>
-                <td>mid-v1.0</td>
-                <td><span id="mid-v10-overview">decide on requirements <span class="dimmed">(user stories, use cases, non-functional requirements)</span></span>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>5</strong></td>
-                <td>v1.0</td>
-                <td><span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span></td>
-              </tr>
-              <tr>
-                <td><strong>6</strong></td>
-                <td>mid-v1.1</td>
-                <td><span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></td>
-              </tr>
-              <tr>
-                <td><strong>7</strong></td>
-                <td>v1.1</td>
-                <td><span id="v11-overview">update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></td>
-              </tr>
-              <tr>
-                <td><strong>8</strong></td>
-                <td>mid-v1.2</td>
-                <td><span id="mid-v12-overview">adjust project schedule/rigor as needed, complete repo set up, start proper milestone management</span></td>
-              </tr>
-              <tr>
-                <td><strong>9</strong></td>
-                <td>v1.2</td>
-                <td><span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></td>
-              </tr>
-              <tr>
-                <td><strong>10</strong></td>
-                <td>mid-v1.3</td>
-                <td><span id="mid-v13-overview">continue to enhance features</span></td>
-              </tr>
-              <tr>
-                <td><strong>11</strong></td>
-                <td>v1.3</td>
-                <td><span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></td>
-              </tr>
-              <tr>
-                <td><strong>12</strong></td>
-                <td>mid-v1.4</td>
-                <td><span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span></td>
-              </tr>
-              <tr>
-                <td><strong>13</strong></td>
-                <td>v1.4</td>
-                <td><span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Week</th>
+                  <th>Stage</th>
+                  <th>Activities</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>3</strong></td>
+                  <td>inception</td>
+                  <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>4</strong></td>
+                  <td>mid-v1.0</td>
+                  <td><span id="mid-v10-overview">decide on requirements <span class="dimmed">(user stories, use cases, non-functional requirements)</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>5</strong></td>
+                  <td>v1.0</td>
+                  <td><span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span></td>
+                </tr>
+                <tr>
+                  <td><strong>6</strong></td>
+                  <td>mid-v1.1</td>
+                  <td><span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></td>
+                </tr>
+                <tr>
+                  <td><strong>7</strong></td>
+                  <td>v1.1</td>
+                  <td><span id="v11-overview">update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></td>
+                </tr>
+                <tr>
+                  <td><strong>8</strong></td>
+                  <td>mid-v1.2</td>
+                  <td><span id="mid-v12-overview">adjust project schedule/rigor as needed, complete repo set up, start proper milestone management</span></td>
+                </tr>
+                <tr>
+                  <td><strong>9</strong></td>
+                  <td>v1.2</td>
+                  <td><span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></td>
+                </tr>
+                <tr>
+                  <td><strong>10</strong></td>
+                  <td>mid-v1.3</td>
+                  <td><span id="mid-v13-overview">continue to enhance features</span></td>
+                </tr>
+                <tr>
+                  <td><strong>11</strong></td>
+                  <td>v1.3</td>
+                  <td><span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></td>
+                </tr>
+                <tr>
+                  <td><strong>12</strong></td>
+                  <td>mid-v1.4</td>
+                  <td><span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span></td>
+                </tr>
+                <tr>
+                  <td><strong>13</strong></td>
+                  <td>v1.4</td>
+                  <td><span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p>More details of each stage is provided elsewhere is this website.</p>
         </div>
       </div>
@@ -1865,32 +1878,34 @@
             </tip-box>
             <p><strong>v1.0 Summary of Milestone</strong></p>
             <p>Here is a summary of items you need to deliver to <em>reach</em> v1.1 individual (<span class="fas fa-user"></span>) and team (<span class="fas fa-users"></span>) milestones. See sections below for more details of each item.</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Minimum acceptable performance to consider as 'reached'</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="fas fa-users"></span> requirements documented</td>
-                  <td>a draft of v2.0 requirements in some form</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> [optional] product survey documented</td>
-                  <td>none</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> v2.0 conceptualized</td>
-                  <td>a draft of v2.0 user guide in some form</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> feature releases planned</td>
-                  <td>a rough feature release plan</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Minimum acceptable performance to consider as 'reached'</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-users"></span> requirements documented</td>
+                    <td>a draft of v2.0 requirements in some form</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> [optional] product survey documented</td>
+                    <td>none</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> v2.0 conceptualized</td>
+                    <td>a draft of v2.0 user guide in some form</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> feature releases planned</td>
+                    <td>a rough feature release plan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>❗️ <mark>Reaching individual and team milestones are considered for grading</mark> the <em>project management</em> component of your project grade (expand the panel below for more info).</p>
             <p>❗️ The deadline for reaching a milestone is <mark>the midnight before your tutorial</mark> <span class="dimmed">e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.</span></p>
             <p>
@@ -2137,32 +2152,34 @@
               <p>Overview: <span>update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></p>
             </tip-box>
             <p><strong>v1.1 Summary of Milestone</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Minimum acceptable performance to consider as 'reached'</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="fas fa-users"></span> Team org/repo set up</td>
-                  <td>as stated</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> Project plan formalized</td>
-                  <td>as stated</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> Have done some enhancement to the code</td>
-                  <td>at least attempted to enhance the code of a component, even if you did not fully succeed</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> All project documents updated as required</td>
-                  <td>updated docs are merged to the master branch</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Minimum acceptable performance to consider as 'reached'</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Team org/repo set up</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Project plan formalized</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Have done some enhancement to the code</td>
+                    <td>at least attempted to enhance the code of a component, even if you did not fully succeed</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> All project documents updated as required</td>
+                    <td>updated docs are merged to the master branch</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>❗️ Reminder: Reaching individual and team milestones are considered for grading the <em>project management</em> component of your project grade (expand the panel below for more info).</p>
             <p>
               <panel src="/website-base\admin\project-assessment._include_.html#project-management-grading" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Assessment → Project Management" minimized="" fragment="project-management-grading"></panel>
@@ -2383,29 +2400,31 @@
               <p>Overview: <span>move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></p>
             </tip-box>
             <p><strong>v1.2 Summary of Milestone</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Minimum acceptable performance to consider as 'reached'</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="fas fa-user"></span> Contributed code to the product as described in mid-v1.2 progress guide</td>
-                  <td>some code merged</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> Described implementation details in the Developer Guide</td>
-                  <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
-                  <td>A new version git tagged <code>v1.2</code> is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in
-                    <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Minimum acceptable performance to consider as 'reached'</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Contributed code to the product as described in mid-v1.2 progress guide</td>
+                    <td>some code merged</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Described implementation details in the Developer Guide</td>
+                    <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
+                    <td>A new version git tagged <code>v1.2</code> is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in
+                      <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
             
               <div>
@@ -2616,28 +2635,30 @@ method 2 ...
                   </ul>
                   <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
                   <p>You need to put the collated code in the following folders</p>
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Code Type</th>
-                        <th>Folder</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>functional code</td>
-                        <td><code>collated/functional</code></td>
-                      </tr>
-                      <tr>
-                        <td>test code</td>
-                        <td><code>collated/test</code></td>
-                      </tr>
-                      <tr>
-                        <td>unused code</td>
-                        <td><code>collated/unused</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Code Type</th>
+                          <th>Folder</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>functional code</td>
+                          <td><code>collated/functional</code></td>
+                        </tr>
+                        <tr>
+                          <td>test code</td>
+                          <td><code>collated/test</code></td>
+                        </tr>
+                        <tr>
+                          <td>unused code</td>
+                          <td><code>collated/unused</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
                   <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
                   <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
@@ -2750,36 +2771,38 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
               <p>Overview: <span>release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></p>
             </tip-box>
             <p><strong>v1.3 Summary of Milestone</strong></p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Minimum acceptable performance to consider as 'reached'</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="fas fa-user"></span> Contributed code to v1.3</td>
-                  <td>code merged</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> Code collated</td>
-                  <td>as stated</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> v1.3 jar file released properly on GitHub</td>
-                  <td>as stated</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> v1.3 milestone properly wrapped up on GitHub</td>
-                  <td>as stated</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> Documentation updated to match v1.3</td>
-                  <td>at least the User Guide and the <code>README.adoc</code> is updated</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Minimum acceptable performance to consider as 'reached'</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Contributed code to v1.3</td>
+                    <td>code merged</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Code collated</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> v1.3 jar file released properly on GitHub</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> v1.3 milestone properly wrapped up on GitHub</td>
+                    <td>as stated</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Documentation updated to match v1.3</td>
+                    <td>at least the User Guide and the <code>README.adoc</code> is updated</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <h3 id="v13-project-management">v1.3 Project Management</h3>
             <tip-box type="important">
               <p>You are required to
@@ -2894,28 +2917,30 @@ method 2 ...
                 </ul>
                 <h4 id="collating-the-annotated-code-2">Collating the annotated code</h4>
                 <p>You need to put the collated code in the following folders</p>
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Code Type</th>
-                      <th>Folder</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>functional code</td>
-                      <td><code>collated/functional</code></td>
-                    </tr>
-                    <tr>
-                      <td>test code</td>
-                      <td><code>collated/test</code></td>
-                    </tr>
-                    <tr>
-                      <td>unused code</td>
-                      <td><code>collated/unused</code></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Code Type</th>
+                        <th>Folder</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>functional code</td>
+                        <td><code>collated/functional</code></td>
+                      </tr>
+                      <tr>
+                        <td>test code</td>
+                        <td><code>collated/test</code></td>
+                      </tr>
+                      <tr>
+                        <td>unused code</td>
+                        <td><code>collated/unused</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
                 <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
                 <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
                 <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
@@ -3071,32 +3096,34 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                     <ul>
                       <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>.
                         The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
-                        <table class="markbind-table table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                              <th>Content</th>
-                              <th>Limit</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Description in point form</td>
-                              <td>0.5-1</td>
-                            </tr>
-                            <tr>
-                              <td>Extracts from the User Guide</td>
-                              <td>1-3</td>
-                            </tr>
-                            <tr>
-                              <td>Extracts from the Developer Guide</td>
-                              <td>3-6</td>
-                            </tr>
-                            <tr>
-                              <td>Total</td>
-                              <td>5-10</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Content</th>
+                                <th>Limit</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Description in point form</td>
+                                <td>0.5-1</td>
+                              </tr>
+                              <tr>
+                                <td>Extracts from the User Guide</td>
+                                <td>1-3</td>
+                              </tr>
+                              <tr>
+                                <td>Extracts from the Developer Guide</td>
+                                <td>3-6</td>
+                              </tr>
+                              <tr>
+                                <td>Total</td>
+                                <td>5-10</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </li>
                       <li><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
                       <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow
@@ -3253,52 +3280,54 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
               <p>Overview: <span>final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></p>
             </tip-box>
             <p><strong>Summary of submissions</strong>:</p>
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Team/Individual Item</th>
-                  <th>Name format</th>
-                  <th>Upload to</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="fas fa-users"></span> Source code</td>
-                  <td>tag as <code>v1.4</code></td>
-                  <td>GitHub</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> Jar file</td>
-                  <td><code>[team][product name].jar</code><br><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></td>
-                  <td>IVLE</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> User Guide</td>
-                  <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br> <span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
-                  <td>IVLE</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> Developer Guide</td>
-                  <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br> <span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
-                  <td>IVLE</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-users"></span> Product Website</td>
-                  <td><code>README.adoc</code>, <code>Ui.png</code>, <code>AboutUs.adoc</code></td>
-                  <td>GitHub</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> Project Portfolio Page</td>
-                  <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br> <span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
-                  <td>IVLE</td>
-                </tr>
-                <tr>
-                  <td><span class="fas fa-user"></span> Collated files</td>
-                  <td></td>
-                  <td>GitHub</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Team/Individual Item</th>
+                    <th>Name format</th>
+                    <th>Upload to</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Source code</td>
+                    <td>tag as <code>v1.4</code></td>
+                    <td>GitHub</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Jar file</td>
+                    <td><code>[team][product name].jar</code><br><span class="dimmed">e.g. [T09-B1][ContactsPlus].jar</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> User Guide</td>
+                    <td><code>[TEAM_ID][Project Name]UserGuide.pdf</code><br> <span class="dimmed">e.g.[T09-B1][Contacts Plus]UserGuide.pdf</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Developer Guide</td>
+                    <td><code>[TEAM_ID][Project Name]DeveloperGuide.pdf</code><br> <span class="dimmed">e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-users"></span> Product Website</td>
+                    <td><code>README.adoc</code>, <code>Ui.png</code>, <code>AboutUs.adoc</code></td>
+                    <td>GitHub</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Project Portfolio Page</td>
+                    <td><code>[TEAM_ID][Your Name]Portfolio.pdf</code><br> <span class="dimmed">e.g.[T09-B1][John Doe]Portfolio.pdf</span></td>
+                    <td>IVLE</td>
+                  </tr>
+                  <tr>
+                    <td><span class="fas fa-user"></span> Collated files</td>
+                    <td></td>
+                    <td>GitHub</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p><strong>Deadline</strong> for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.</p>
             <tip-box>
               <ul>
@@ -3490,32 +3519,34 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
             <ul>
               <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>.
                 The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Content</th>
-                      <th>Limit</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Description in point form</td>
-                      <td>0.5-1</td>
-                    </tr>
-                    <tr>
-                      <td>Extracts from the User Guide</td>
-                      <td>1-3</td>
-                    </tr>
-                    <tr>
-                      <td>Extracts from the Developer Guide</td>
-                      <td>3-6</td>
-                    </tr>
-                    <tr>
-                      <td>Total</td>
-                      <td>5-10</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Content</th>
+                        <th>Limit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Description in point form</td>
+                        <td>0.5-1</td>
+                      </tr>
+                      <tr>
+                        <td>Extracts from the User Guide</td>
+                        <td>1-3</td>
+                      </tr>
+                      <tr>
+                        <td>Extracts from the Developer Guide</td>
+                        <td>3-6</td>
+                      </tr>
+                      <tr>
+                        <td>Total</td>
+                        <td>5-10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
               <li><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
               <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example
@@ -4793,35 +4824,37 @@ exit();
                                           <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
                                           <tip-box>
                                             <p>Examples:</p>
-                                            <table class="markbind-table table table-bordered table-striped">
-                                              <thead>
-                                                <tr>
-                                                  <th>Name for a</th>
-                                                  <th>
-                                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>
-                                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>Class</td>
-                                                  <td><code>CheckLimit</code></td>
-                                                  <td><code>LimitChecker</code></td>
-                                                </tr>
-                                                <tr>
-                                                  <td>method</td>
-                                                  <td><code>result()</code></td>
-                                                  <td><code>calculate()</code></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                              <table class="markbind-table table table-bordered table-striped">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Name for a</th>
+                                                    <th>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Class</td>
+                                                    <td><code>CheckLimit</code></td>
+                                                    <td><code>LimitChecker</code></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>method</td>
+                                                    <td><code>result()</code></td>
+                                                    <td><code>calculate()</code></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
                                           </tip-box>
                                           <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
                                           <tip-box>
@@ -4899,94 +4932,100 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                           <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
                                           <tip-box>
                                             <p>Examples:</p>
-                                            <table class="markbind-table table table-bordered table-striped">
-                                              <thead>
-                                                <tr>
-                                                  <th>
-                                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>
-                                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td><code>processInput()</code> (what 'process'?)</td>
-                                                  <td><code>removeWhiteSpaceFromInput()</code></td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>flag</code></td>
-                                                  <td><code>isValidInput</code></td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>temp</code></td>
-                                                  <td></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                              <table class="markbind-table table table-bordered table-striped">
+                                                <thead>
+                                                  <tr>
+                                                    <th>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td><code>processInput()</code> (what 'process'?)</td>
+                                                    <td><code>removeWhiteSpaceFromInput()</code></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><code>flag</code></td>
+                                                    <td><code>isValidInput</code></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><code>temp</code></td>
+                                                    <td></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
                                           </tip-box>
                                           <p><strong>If the name has multiple words, they should be in a sensible order.</strong></p>
                                           <tip-box>
                                             <p>Examples:</p>
-                                            <table class="markbind-table table table-bordered table-striped">
-                                              <thead>
-                                                <tr>
-                                                  <th>
-                                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>
-                                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td><code>bySizeOrder()</code></td>
-                                                  <td><code>orderBySize()</code></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                              <table class="markbind-table table table-bordered table-striped">
+                                                <thead>
+                                                  <tr>
+                                                    <th>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td><code>bySizeOrder()</code></td>
+                                                    <td><code>orderBySize()</code></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
                                           </tip-box>
                                           <p>Imagine going to the doctor's and saying &quot;My eye1 is swollen&quot;! Don’t use numbers or case to distinguish names.</p>
                                           <tip-box>
                                             <p>Examples:</p>
-                                            <table class="markbind-table table table-bordered table-striped">
-                                              <thead>
-                                                <tr>
-                                                  <th>
-                                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>
-                                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>
-                                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td><code>value1</code>, <code>value2</code></td>
-                                                  <td><code>value</code>, <code>Value</code></td>
-                                                  <td><code>originalValue</code>, <code>finalValue</code></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                              <table class="markbind-table table table-bordered table-striped">
+                                                <thead>
+                                                  <tr>
+                                                    <th>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td><code>value1</code>, <code>value2</code></td>
+                                                    <td><code>value</code>, <code>Value</code></td>
+                                                    <td><code>originalValue</code>, <code>finalValue</code></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
                                           </tip-box>
                                         </div>
                                         <div></div>
@@ -5045,50 +5084,52 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                             &quot;is that number 0 or letter O?&quot;), almost similar names.</p>
                                           <tip-box>
                                             <p>Examples:</p>
-                                            <table class="markbind-table table table-bordered table-striped">
-                                              <thead>
-                                                <tr>
-                                                  <th>
-                                                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>
-                                                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                      </span>
-                                                    </font>
-                                                  </th>
-                                                  <th>Reason</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td><code>phase0</code></td>
-                                                  <td><code>phaseZero</code></td>
-                                                  <td>Is that zero or letter O?</td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>rwrLgtDirn</code></td>
-                                                  <td><code>rowerLegitDirection</code></td>
-                                                  <td>Hard to pronounce</td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>right</code> <code>left</code> <code>wrong</code></td>
-                                                  <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
-                                                  <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>redBooks</code> <code>readBooks</code></td>
-                                                  <td><code>redColorBooks</code> <code>booksRead</code></td>
-                                                  <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
-                                                </tr>
-                                                <tr>
-                                                  <td><code>FiletMignon</code></td>
-                                                  <td><code>egg</code></td>
-                                                  <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                              <table class="markbind-table table table-bordered table-striped">
+                                                <thead>
+                                                  <tr>
+                                                    <th>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </th>
+                                                    <th>Reason</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td><code>phase0</code></td>
+                                                    <td><code>phaseZero</code></td>
+                                                    <td>Is that zero or letter O?</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><code>rwrLgtDirn</code></td>
+                                                    <td><code>rowerLegitDirection</code></td>
+                                                    <td>Hard to pronounce</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><code>right</code> <code>left</code> <code>wrong</code></td>
+                                                    <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
+                                                    <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><code>redBooks</code> <code>readBooks</code></td>
+                                                    <td><code>redColorBooks</code> <code>booksRead</code></td>
+                                                    <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><code>FiletMignon</code></td>
+                                                    <td><code>egg</code></td>
+                                                    <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
                                           </tip-box>
                                         </div>
                                         <div></div>
@@ -6070,28 +6111,30 @@ method 2 ...
               </ul>
               <h4 id="collating-the-annotated-code-3">Collating the annotated code</h4>
               <p>You need to put the collated code in the following folders</p>
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Code Type</th>
-                    <th>Folder</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>functional code</td>
-                    <td><code>collated/functional</code></td>
-                  </tr>
-                  <tr>
-                    <td>test code</td>
-                    <td><code>collated/test</code></td>
-                  </tr>
-                  <tr>
-                    <td>unused code</td>
-                    <td><code>collated/unused</code></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Code Type</th>
+                      <th>Folder</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>functional code</td>
+                      <td><code>collated/functional</code></td>
+                    </tr>
+                    <tr>
+                      <td>test code</td>
+                      <td><code>collated/test</code></td>
+                    </tr>
+                    <tr>
+                      <td>unused code</td>
+                      <td><code>collated/unused</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
               <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
               <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
@@ -6701,28 +6744,30 @@ method 2 ...
                     </ul>
                     <h4 id="collating-the-annotated-code-4">Collating the annotated code</h4>
                     <p>You need to put the collated code in the following folders</p>
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>Code Type</th>
-                          <th>Folder</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>functional code</td>
-                          <td><code>collated/functional</code></td>
-                        </tr>
-                        <tr>
-                          <td>test code</td>
-                          <td><code>collated/test</code></td>
-                        </tr>
-                        <tr>
-                          <td>unused code</td>
-                          <td><code>collated/unused</code></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Code Type</th>
+                            <th>Folder</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>functional code</td>
+                            <td><code>collated/functional</code></td>
+                          </tr>
+                          <tr>
+                            <td>test code</td>
+                            <td><code>collated/test</code></td>
+                          </tr>
+                          <tr>
+                            <td>unused code</td>
+                            <td><code>collated/unused</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                     <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
                     <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
                     <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
@@ -6798,32 +6843,34 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                           <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the
                             <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing
                             around content.
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Content</th>
-                                  <th>Limit</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Description in point form</td>
-                                  <td>0.5-1</td>
-                                </tr>
-                                <tr>
-                                  <td>Extracts from the User Guide</td>
-                                  <td>1-3</td>
-                                </tr>
-                                <tr>
-                                  <td>Extracts from the Developer Guide</td>
-                                  <td>3-6</td>
-                                </tr>
-                                <tr>
-                                  <td>Total</td>
-                                  <td>5-10</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Content</th>
+                                    <th>Limit</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Description in point form</td>
+                                    <td>0.5-1</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Extracts from the User Guide</td>
+                                    <td>1-3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Extracts from the Developer Guide</td>
+                                    <td>3-6</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Total</td>
+                                    <td>5-10</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </li>
                           <li><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1718s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
                           <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow
@@ -7326,7 +7373,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
             <ol start="5">
               <li>
                 <p>Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br>
-                  <img src="images/FilesChangedTab.png" alt=""></p>
+                  <a href="images/FilesChangedTab.png" target="_self"><img src="images/FilesChangedTab.png" alt="" class="img-fluid"></a></p>
               </li>
               <li>
                 <p>If the content of the PR is not as you expected, you can fix those problems in your local repo, commit, and push those new commits to the fork. The PR content will update automatically to match new commits. Alternatively, you can close
@@ -7571,7 +7618,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
 </footer>
 </div>
 </body>

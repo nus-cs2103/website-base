@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/admin.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -155,8 +157,6 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/admin.css">
     <div>
       <navbar placement="top" type="inverse">
         <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
@@ -199,27 +199,29 @@
         <h2 id="lectures">Lectures</h2>
         <img src="/website-base/admin/images/Lecture photo.png" width="100%">
         <p><strong>Timing/venue</strong>:</p>
-        <table class="markbind-table table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th>Semester</th>
-              <th>Venue</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Semester 1 (Aug-Nov)</td>
-              <td>ICube Auditorium</td>
-              <td><strong>1600</strong>-1800</td>
-            </tr>
-            <tr>
-              <td>Semester 2 (Jan-April)</td>
-              <td>ICube Auditorium</td>
-              <td><strong>1600</strong>-1800</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Semester</th>
+                <th>Venue</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Semester 1 (Aug-Nov)</td>
+                <td>ICube Auditorium</td>
+                <td><strong>1600</strong>-1800</td>
+              </tr>
+              <tr>
+                <td>Semester 2 (Jan-April)</td>
+                <td>ICube Auditorium</td>
+                <td><strong>1600</strong>-1800</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p>Lectures start on time sharp and end around 15 minutes before official end time.</p>
         <panel header="**Clarification: CS2103T Lecture Timinig** :exclamation: %%(not applicable to CS2103)%%">
           <p>CS2103T lectures are same as that for CS2103. Please ignore the CS2101 session scheduled at the same slot. That is a dummy slot used to work around a limitation on the CORS IT system. <span class="dimmed">The system doesn't allow lectures of two modules to be scheduled in the same venue at the same time.</span></p>
@@ -243,7 +245,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
 </footer>
 </div>
 </body>

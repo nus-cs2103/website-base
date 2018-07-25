@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website</title>
+    <title>CS2103/T Website - Week 6 - Outcomes</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/schedule.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website-base/css/main.css">
-<link rel="stylesheet" href="/website-base/css/schedule.css">
-<div class="website-content">
+    <div class="website-content">
   <h2 id="week-6-outcomes">Week 6 - Outcomes</h2>
   <div id="main">
     <p><span class="activity-desc">Design</span></p>
@@ -1483,36 +1483,38 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                           <ol start="9">
                             <li>Add the following labels to the cells, such that the grid is of this form:</li>
                           </ol>
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>First Name</th>
-                                <th>Label</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Last Name</td>
-                                <td>Label</td>
-                              </tr>
-                              <tr>
-                                <td>Street</td>
-                                <td>Label</td>
-                              </tr>
-                              <tr>
-                                <td>City</td>
-                                <td>Label</td>
-                              </tr>
-                              <tr>
-                                <td>Postal Code</td>
-                                <td>Label</td>
-                              </tr>
-                              <tr>
-                                <td>Birthday</td>
-                                <td>Label</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>First Name</th>
+                                  <th>Label</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Last Name</td>
+                                  <td>Label</td>
+                                </tr>
+                                <tr>
+                                  <td>Street</td>
+                                  <td>Label</td>
+                                </tr>
+                                <tr>
+                                  <td>City</td>
+                                  <td>Label</td>
+                                </tr>
+                                <tr>
+                                  <td>Postal Code</td>
+                                  <td>Label</td>
+                                </tr>
+                                <tr>
+                                  <td>Birthday</td>
+                                  <td>Label</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           <tip-box type="tip">
                             <p>To add a row to the GridPane, select an existing row number, right click the row number and choose &quot;Add Row Below&quot;.</p>
                           </tip-box>
@@ -2208,6 +2210,11 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     <p></p>
   </div>
 </div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
+</footer>
 </div>
 </body>
 <script src="..\..\markbind\js\vue.min.js"></script>

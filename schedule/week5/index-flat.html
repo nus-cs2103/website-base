@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
+<link rel="stylesheet" href="/website-base/css/schedule.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website-base/css/main.css">
-<link rel="stylesheet" href="/website-base/css/schedule.css">
-<div>
+    <div>
   <navbar placement="top" type="inverse">
     <a slot="brand" href="/website-base/index-flat.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-primary"><span class="fas fa-bars"></span> flat</span></small></a>
     <li><a href="/website-base/index.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-clone"></span> nested</span></a></li>
@@ -342,32 +342,34 @@
                         <div>
                           <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                           <panel type="seamless" header="%%Examples%%">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th style="text-align:center">Method</th>
-                                  <th style="text-align:center">Type Signature</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                  <td style="text-align:center"><code>(int, int)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                  <td style="text-align:center"><code>(int, int)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                  <td style="text-align:center"><code>(int, double)</code></td>
-                                </tr>
-                                <tr>
-                                  <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                  <td style="text-align:center"><code>(double, int)</code></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th style="text-align:center">Method</th>
+                                    <th style="text-align:center">Type Signature</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                    <td style="text-align:center"><code>(int, int)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                    <td style="text-align:center"><code>(int, double)</code></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                    <td style="text-align:center"><code>(double, int)</code></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </panel>
                         </div>
                       </tip-box>
@@ -497,32 +499,34 @@
                                       <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order
                                         is significant.</p>
                                       <panel type="seamless" header="%%Examples%%">
-                                        <table class="markbind-table table table-bordered table-striped">
-                                          <thead>
-                                            <tr>
-                                              <th style="text-align:center">Method</th>
-                                              <th style="text-align:center">Type Signature</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                                              <td style="text-align:center"><code>(int, int)</code></td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                                              <td style="text-align:center"><code>(int, int)</code></td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                                              <td style="text-align:center"><code>(int, double)</code></td>
-                                            </tr>
-                                            <tr>
-                                              <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                                              <td style="text-align:center"><code>(double, int)</code></td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
+                                        <div class="table-responsive">
+                                          <table class="markbind-table table table-bordered table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th style="text-align:center">Method</th>
+                                                <th style="text-align:center">Type Signature</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                                <td style="text-align:center"><code>(int, int)</code></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                                <td style="text-align:center"><code>(int, int)</code></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                                <td style="text-align:center"><code>(int, double)</code></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                                <td style="text-align:center"><code>(double, int)</code></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
                                       </panel>
                                     </div>
                                   </tip-box>
@@ -2474,7 +2478,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Sun, 22 Jul 2018 10:58:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 07:42:59 GMT</small></div>
 </footer>
 </div>
 </body>
