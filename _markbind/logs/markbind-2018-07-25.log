@@ -129,3 +129,40 @@
 2018-07-25T07:29:46.956Z - info: Generate Site durationMs=87488
 2018-07-25T07:29:47.275Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-25T07:29:47.275Z - info: Press CTRL+C to stop ...
+2018-07-25T07:44:17.395Z - info: Pages built
+2018-07-25T07:44:17.546Z - info: Site data built
+2018-07-25T07:44:17.546Z - info: Build success!
+2018-07-25T07:44:17.547Z - info: Generate Site durationMs=87886
+2018-07-25T07:45:34.506Z - info: Deployed!
+2018-07-25T08:20:39.865Z - info: Pages built
+2018-07-25T08:20:40.562Z - info: Site data built
+2018-07-25T08:20:40.571Z - info: Generate Site durationMs=112160
+2018-07-25T08:20:41.008Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-25T08:20:41.008Z - info: Press CTRL+C to stop ...
+2018-07-25T08:23:37.461Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\oop\objects\what\text.md
+2018-07-25T08:23:37.503Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\oop\objects\text.md
+2018-07-25T08:23:38.464Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\oop\objects\what\text.md,C:\repos\nus-cs2103\website-base\book\oop\objects\text.md
+2018-07-25T08:23:38.470Z - info: Rebuilding 6 pages
+2018-07-25T08:23:44.581Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\index.md
+2018-07-25T08:23:59.850Z - info: Pages rebuilt
+2018-07-25T08:23:59.862Z - info: Site data built
+2018-07-25T08:24:00.067Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\index.md
+2018-07-25T08:24:00.067Z - info: Rebuilding 1 pages
+2018-07-25T08:24:14.425Z - info: Pages rebuilt
+2018-07-25T08:24:14.442Z - info: Site data built
+2018-07-25T08:24:45.898Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\oop\objects\text.md
+2018-07-25T08:24:46.901Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\oop\objects\text.md
+2018-07-25T08:24:46.903Z - info: Rebuilding 3 pages
+2018-07-25T08:24:51.561Z - info: Pages rebuilt
+2018-07-25T08:24:51.572Z - info: Site data built
+2018-07-25T08:24:52.505Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\se-book-adapted\chapters\chapter.njk
+2018-07-25T08:24:53.525Z - info: Assets built
+2018-07-25T09:17:51.727Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\head\scheduleHead.md
+2018-07-25T09:17:51.780Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\head\adminHead.md
+2018-07-25T09:17:52.744Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\head\scheduleHead.md,C:\repos\nus-cs2103\website-base\_markbind\head\adminHead.md
+2018-07-25T09:17:53.352Z - info: Rebuilding 72 pages
+2018-07-25T09:21:43.575Z - info: Pages built
+2018-07-25T09:21:44.423Z - info: Site data built
+2018-07-25T09:21:44.432Z - info: Generate Site durationMs=194731
+2018-07-25T09:21:46.090Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-25T09:21:46.090Z - info: Press CTRL+C to stop ...
