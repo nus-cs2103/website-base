@@ -1,6 +1,7 @@
 <frontmatter>
 title: "Full Schedule of Module Activities (flat version)"
 footer: footer.md
+head: scheduleHead.md
 </frontmatter>
 
 {% import "common/outcomes.njk" as outcomes with context %}
@@ -68,9 +69,6 @@ footer: footer.md
 {% endmacro %}
 
 <!-- ============================= page content ============================================ -->
-
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
 
 <include src="../common/header-flat.md" />
 

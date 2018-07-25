@@ -207,8 +207,11 @@
 
 
 {% macro show_week_schedule(week_num, entries, path_displacement="") %}
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
+<frontmatter>
+title: "Week {{ week_num }} - Outcomes"
+footer: footer.md
+head: scheduleHead.md
+</frontmatter>
 
 <div class="website-content">
 
