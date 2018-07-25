@@ -166,3 +166,13 @@
 2018-07-25T09:21:44.432Z - info: Generate Site durationMs=194731
 2018-07-25T09:21:46.090Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-25T09:21:46.090Z - info: Press CTRL+C to stop ...
+2018-07-25T09:35:19.782Z - info: Pages built
+2018-07-25T09:35:20.512Z - info: Site data built
+2018-07-25T09:35:20.512Z - info: Build success!
+2018-07-25T09:35:20.513Z - info: Generate Site durationMs=141862
+2018-07-25T09:36:38.453Z - info: Deployed!
+2018-07-25T09:46:20.479Z - info: Pages built
+2018-07-25T09:46:21.355Z - info: Site data built
+2018-07-25T09:46:21.372Z - info: Generate Site durationMs=99993
+2018-07-25T09:46:21.911Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-25T09:46:21.911Z - info: Press CTRL+C to stop ...
