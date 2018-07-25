@@ -17,45 +17,18 @@ The practice side of this module is mainly covered by a team project. Students a
 
 Given below is a summary of what the module covers and does not cover %%(i.e., unticked items)%%.
 
-<div class="indented-level2">
+Topic | {{ icon_tick_green }} Covered | {{ icon_x_red }} Not covered
+------|---------|------------
+Java | Used heavily, but not taught | syntax %%(reason: expected prerequisite knowledge)%%
+OOP | Used in a non-trivial project, <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip> | basics %%(reason: expected prerequisite knowledge)%%
+SE tools/practices | <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip> | those specific to start-ups</md></td>
+Modeling | <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in [this Developer Guide of AB4](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design)) | intensive <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
+Requirements | <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements | rapid prototyping, heavy UI design, designing a product from scratch
+Documentation | Documentation targeting end users ([example](https://se-edu.github.io/addressbook-level4/UserGuide.html)) as well as those targeting developers ([example](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html)) | Marketing materials
+Project Management | Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely | Setting up project infrastructure from scratch
+Testing | <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and <tooltip content="e.g., acceptance testing">user testing</tooltip> | <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
+Applications domains | Cross-platform desktop applications | Web programming, Mobile programming, Database programming
 
-**Java:**
-- [x] Used heavily, but not taught
-- [ ] syntax %%(reason: expected prerequisite knowledge)%%</md></td>
-
-**OOP:**
-- [x] Used in a non-trivial project, <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
-- [ ] basics %%(reason: expected prerequisite knowledge)%%</md></td>
-
-**SE tools/practices:**
-- [x] <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
-- [ ] those specific to start-ups</md></td>
-
-**Modeling:**
-- [x] <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in [this Developer Guide of AB4](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design))
-- [ ] intensive <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
-
-**Requirements:**
-- [x] <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements
-- [ ] rapid prototyping, heavy UI design, designing a product from scratch
-
-**Documentation**
-- [x] Documentation targeting end users ([example](https://se-edu.github.io/addressbook-level4/UserGuide.html)) as well as those targeting developers ([example](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html))
-- [ ] Marketing materials
-
-**Project Management**
-- [x] Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely
-- [ ] Setting up project infrastructure from scratch
-
-**Testing**
-- [x] <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and <tooltip content="e.g., acceptance testing">user testing</tooltip>
-- [ ] <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
-
-**Applications domains:**
-- [x] Cross-platform desktop applications
-- [ ] Web programming, Mobile programming, Database programming
-
-</div>
 <br>
 
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
