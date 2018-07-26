@@ -2,7 +2,7 @@
 title: "Admin (All admin info in one page!)"
 footer: footer.md
 siteNav: adminSiteNav-flat.md
-head: adminHead.md
+head: adminHead-flat.md
 </frontmatter>
 
 
