@@ -1,3 +1,7 @@
 .embedding {
     display: none;
 }
+
+.flat {
+    display: inline;
+}
