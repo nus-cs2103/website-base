@@ -90,3 +90,43 @@
 2018-07-27T08:42:04.000Z - info: Generate Site durationMs=158248
 2018-07-27T08:42:04.466Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-07-27T08:42:04.466Z - info: Press CTRL+C to stop ...
+2018-07-27T08:49:09.961Z - info: Pages built
+2018-07-27T08:49:10.121Z - info: Site data built
+2018-07-27T08:49:10.121Z - info: Build success!
+2018-07-27T08:49:10.121Z - info: Generate Site durationMs=78851
+2018-07-27T08:50:32.816Z - info: Deployed!
+2018-07-27T09:01:05.723Z - info: Pages built
+2018-07-27T09:01:05.885Z - info: Site data built
+2018-07-27T09:01:05.894Z - info: Generate Site durationMs=77080
+2018-07-27T09:01:06.257Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-07-27T09:01:06.257Z - info: Press CTRL+C to stop ...
+2018-07-27T09:02:45.961Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-27T09:02:46.965Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-27T09:02:46.978Z - info: Rebuilding 42 pages
+2018-07-27T09:02:52.783Z - info: Pages rebuilt
+2018-07-27T09:02:52.793Z - info: Site data built
+2018-07-27T09:05:22.097Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav-flat.md
+2018-07-27T09:05:23.117Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav-flat.md
+2018-07-27T09:05:23.117Z - info: Rebuilding 1 pages
+2018-07-27T09:05:26.798Z - info: Pages rebuilt
+2018-07-27T09:05:26.807Z - info: Site data built
+2018-07-27T09:10:59.552Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-27T09:11:00.557Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-27T09:11:01.062Z - info: Rebuilding 42 pages
+2018-07-27T09:11:10.267Z - info: Pages rebuilt
+2018-07-27T09:11:10.282Z - info: Site data built
+2018-07-27T09:13:24.690Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-27T09:13:25.700Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\navigation\adminSiteNav.md
+2018-07-27T09:13:25.709Z - info: Rebuilding 42 pages
+2018-07-27T09:13:31.545Z - info: Pages rebuilt
+2018-07-27T09:13:31.554Z - info: Site data built
+2018-07-27T09:18:05.937Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\head\bookHead.md
+2018-07-27T09:18:06.019Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\_markbind\head\adminHead-flat.md
+2018-07-27T09:18:06.026Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\_markbind\head\adminHead-flat.md
+2018-07-27T09:18:06.120Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\_markbind\head\adminHead.md
+2018-07-27T09:18:06.135Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\_markbind\head\adminHead.md
+2018-07-27T09:18:06.157Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\_markbind\head\scheduleHead.md
+2018-07-27T09:18:06.947Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\_markbind\head\bookHead.md,C:\repos\nus-cs2103\website-base\_markbind\head\adminHead-flat.md,C:\repos\nus-cs2103\website-base\_markbind\head\adminHead.md,C:\repos\nus-cs2103\website-base\_markbind\head\scheduleHead.md
+2018-07-27T09:18:06.977Z - info: Rebuilding 103 pages
+2018-07-27T09:19:06.418Z - info: Pages rebuilt
+2018-07-27T09:19:06.445Z - info: Site data built

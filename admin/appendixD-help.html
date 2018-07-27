@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-122519234-1');
+</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +20,7 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-122519234-1');
-</script>
-<link rel="stylesheet" href="/website-base/css/main.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
 <link rel="stylesheet" href="/website-base/css/admin.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
@@ -39,18 +38,17 @@
       <li style="margin-top: 10px"><a href="moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
       </li>
-      <li style="margin-top: 10px"><span class="dimmed">Module Structure</span></li>
-      <li style="margin-top: 10px"><a href="weeklySchedule.html"><span class="dimmed">→</span> <small>Weekly Schedule</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="learningOutcomes.html"><span class="dimmed">→</span> <small>Learning Outcomes</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="lectures.html"><span class="dimmed">→</span> <small>Lectures</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="tutorials.html"><span class="dimmed">→</span> <small>Tutorials</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open"><span class="dimmed">Module Structure</span> 
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="learningOutcomes.html">Learning Outcomes</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
       </li>
       <li style="margin-top: 10px"><a href="instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span>
         </span>
@@ -61,66 +59,33 @@
       <li style="margin-top: 10px"><a href="programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
       </li>
-      <li style="margin-top: 10px"><span class="dimmed">Project</span></li>
-      <li style="margin-top: 10px"><a href="project-overview.html"><span class="dimmed">→</span> <small>Project: Overview</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-product.html"><span class="dimmed">→</span> <small>Project: The product</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-scope.html"><span class="dimmed">→</span> <small>Project: Scope</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-constraints.html"><span class="dimmed">→</span> <small>Project: Constraints</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-teams.html"><span class="dimmed">→</span> <small>Forming Teams</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-timeline.html"><span class="dimmed">→</span> <small>Project: Timeline</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w03-inception.html"><span class="dimmed">→</span> <small>Project: inception [week 3]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w04-mid-v10.html"><span class="dimmed">→</span> <small>Project: mid-v1.0 [week 4]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w05-v10.html"><span class="dimmed">→</span> <small>Project: v1.0 [week 5]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w06-mid-v11.html"><span class="dimmed">→</span> <small>Project: mid-v1.1 [week 6]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w07-v11.html"><span class="dimmed">→</span> <small>Project: v1.1 [week 7]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w08-mid-v12.html"><span class="dimmed">→</span> <small>Project: mid-v1.2 [week 8]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w09-v12.html"><span class="dimmed">→</span> <small>Project: v1.2 [week 9]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w10-mid-v13.html"><span class="dimmed">→</span> <small>Project: mid-v1.3 [week 10]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w11-v13.html"><span class="dimmed">→</span> <small>Project: v1.3 [week 11]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w12-mid-v14.html"><span class="dimmed">→</span> <small>Project: mid-v1.4 [week 12]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-w13-v14.html"><span class="dimmed">→</span> <small>Project: v1.4 [week 13]</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-deliverables.html"><span class="dimmed">→</span> <small>Project: Deliverables</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-assessment.html"><span class="dimmed">→</span> <small>Project: Assessment</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="project-supervision.html"><span class="dimmed">→</span> <small>Project: Supervision</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open"><span class="dimmed">Project</span> 
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="project-overview.html">Project: Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-product.html">Project: The product</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-scope.html">Project: Scope</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-constraints.html">Project: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-teams.html">Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-timeline.html">Project: Timeline</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w03-inception.html">Project: inception [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w04-mid-v10.html">Project: mid-v1.0 [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w05-v10.html">Project: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w06-mid-v11.html">Project: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w07-v11.html">Project: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w08-mid-v12.html">Project: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w09-v12.html">Project: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w10-mid-v13.html">Project: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w11-v13.html">Project: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w12-mid-v14.html">Project: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-w13-v14.html">Project: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-deliverables.html">Project: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-assessment.html">Project: Assessment</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="project-supervision.html">Project: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
       </li>
       <li style="margin-top: 10px"><a href="peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
@@ -137,24 +102,19 @@
       <li style="margin-top: 10px"><a href="participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
       </li>
-      <li style="margin-top: 10px"><span class="dimmed">Appendices</span></li>
-      <li style="margin-top: 10px"><a href="appendixA-principles.html"><span class="dimmed">→</span> <small>A: Module Principles</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="appendixB-policies.html"><span class="dimmed">→</span> <small>B: Module Policies</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="appendixC-faq.html"><span class="dimmed">→</span> <small>C: Frequently Asked Questions</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="appendixD-help.html"><span class="dimmed">→</span> <small>D: Getting help in this module</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="appendixE-gitHub.html"><span class="dimmed">→</span> <small>E: Using GitHub</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
-        </span>
-      </li>
-      <li style="margin-top: 10px"><a href="appendixF-teamworkIssues.html"><span class="dimmed">→</span> <small>F: Handling teamwork issues</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span>
-        </span>
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open"><span class="dimmed">Appendices</span> 
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container dropdown-container-open">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><small><a href="appendixA-principles.html">A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixB-policies.html">B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixC-faq.html">C: Frequently Asked Questions</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixD-help.html">D: Getting help in this module</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixE-gitHub.html">E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
+            <li style="margin-top: 10px"><small><a href="appendixF-teamworkIssues.html">F: Handling teamwork issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
+          </ul>
+        </div>
       </li>
     </ul>
   </div>
@@ -309,7 +269,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Fri, 27 Jul 2018 08:48:02 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Fri, 27 Jul 2018 09:27:28 GMT</small></div>
 </footer>
 </div>
 </body>
