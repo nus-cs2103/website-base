@@ -1,3 +1,4 @@
+<head-top>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
 <script>
@@ -7,6 +8,7 @@
 
   gtag('config', 'UA-122519234-1');
 </script>
+</head-top>
 
 <link rel="stylesheet" href="{{ baseUrl }}/css/main.css">
 <link rel="stylesheet" href="{{ baseUrl }}/css/admin.css">
