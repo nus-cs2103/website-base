@@ -11,7 +11,7 @@
 {% elif topic.level == 2 %}
   * <small>[{{ title }}](#admin-{{ topic.id }}-anchor) {{ show_stars_in_nav(topic.priority) }}</small>
 {% elif topic.level == 0 %}
-* {{ title }}
+* {{ title }} :expanded:
 {% endif %}
 {% endfor %}
 
