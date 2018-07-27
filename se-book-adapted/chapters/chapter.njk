@@ -2,6 +2,7 @@
 title: "Text Book Chapter : {{ topic.heading }}"
 footer: footer.md
 siteNav: se-book-adapted-sitenav.md
+head: bookHead.md
 {% endmacro %}
 
 {% macro show_priority(level) %}{% set star = "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>" %}{% set empty = "<span class='glyphicon glyphicon-star-empty' aria-hidden='true'></span>" %}{% set prereq = "<font color='Black'><span class='glyphicon glyphicon-education' aria-hidden='true'></span><span class='glyphicon glyphicon-education' aria-hidden='true'></span></font> : " %}{% set stars = {"0:1": prereq + star + empty + empty + empty, "1": "<font color='Crimson'>" + star + "</font>" + empty + empty + empty, "0:2": prereq + star + star + empty + empty, "2": "<font color='DarkOrange'>" + star + star + "</font>" + empty + empty, "0:3": prereq + star + star + star + empty, "3": "<font color='DodgerBlue'>" + star + star + star + "</font>"  + empty, "0:4": prereq + star + star + star + star, "4": "<font color='ForestGreen'>" + star + star + star + star + "</font>" } %}{{stars[level] }}{% endmacro %}

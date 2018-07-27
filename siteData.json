@@ -644,8 +644,8 @@
     },
     {
       "headings": {
-        "tutorial-timetable": "Tutorial Timetable",
         "tutorial-structure": "Tutorial Structure",
+        "tutorial-timetable-tutor-roletimesvenue": "Tutorial Timetable #tutor role#times\n          #venue\n            \n            ",
         "tutorials": "Tutorials"
       },
       "title": "Admin: Tutorials",
@@ -722,6 +722,7 @@
       "title": "Text Book Chapter : Software Architecture",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/architecture.md"
     },
     {
@@ -773,6 +774,7 @@
       "title": "Text Book Chapter : Code Quality",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/codeQuality.md"
     },
     {
@@ -784,6 +786,7 @@
       "title": "Text Book Chapter : Software Design",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/design.md"
     },
     {
@@ -796,6 +799,7 @@
       "title": "Text Book Chapter : Design Approaches",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designApproaches.md"
     },
     {
@@ -811,6 +815,7 @@
       "title": "Text Book Chapter : Design Fundamentals",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designFundamentals.md"
     },
     {
@@ -837,6 +842,7 @@
       "title": "Text Book Chapter : Software Design Patterns",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designPatterns.md"
     },
     {
@@ -858,6 +864,7 @@
       "title": "Text Book Chapter : Documentation",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/documentation.md"
     },
     {
@@ -880,6 +887,7 @@
       "title": "Text Book Chapter : Error Handling",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/errorHandling.md"
     },
     {
@@ -896,6 +904,7 @@
       "title": "Text Book Chapter : Gathering Requirements",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gatheringRequirements.md"
     },
     {
@@ -919,6 +928,7 @@
       "title": "Text Book Chapter : Git and Github",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gitAndGithub.md"
     },
     {
@@ -931,6 +941,7 @@
       "title": "Text Book Chapter : IDEs",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/ides.md"
     },
     {
@@ -949,6 +960,7 @@
       "title": "Text Book Chapter : Integration",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/integration.md"
     },
     {
@@ -963,6 +975,7 @@
       "title": "Text Book Chapter : Intellij IDEA",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/intellij.md"
     },
     {
@@ -977,6 +990,7 @@
       "title": "Text Book Chapter : Java",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/javaTools.md"
     },
     {
@@ -988,6 +1002,7 @@
       "title": "Text Book Chapter : JUnit",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/junit.md"
     },
     {
@@ -1030,6 +1045,7 @@
       "title": "Text Book Chapter : Modeling",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/modeling.md"
     },
     {
@@ -1068,6 +1084,7 @@
       "title": "Text Book Chapter : Object-Oriented Programming",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/oop.md"
     },
     {
@@ -1092,6 +1109,7 @@
       "title": "Text Book Chapter : Principles",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/principles.md"
     },
     {
@@ -1114,6 +1132,7 @@
       "title": "Text Book Chapter : SDLC Process Models",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/processModels.md"
     },
     {
@@ -1129,6 +1148,7 @@
       "title": "Text Book Chapter : Project Planning",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/projectPlanning.md"
     },
     {
@@ -1144,6 +1164,7 @@
       "title": "Text Book Chapter : Quality Assurance",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/qualityAssurance.md"
     },
     {
@@ -1156,6 +1177,7 @@
       "title": "Text Book Chapter : Refactoring",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/refactoring.md"
     },
     {
@@ -1169,6 +1191,7 @@
       "title": "Text Book Chapter : Requirements",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/requirements.md"
     },
     {
@@ -1190,6 +1213,7 @@
       "title": "Text Book Chapter : Reuse",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/reuse.md"
     },
     {
@@ -1209,6 +1233,7 @@
       "title": "Text Book Chapter : Revision Control",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/revisionControl.md"
     },
     {
@@ -1220,6 +1245,7 @@
       "title": "Text Book Chapter : Software Engineering",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/softwareEngineering.md"
     },
     {
@@ -1241,6 +1267,7 @@
       "title": "Text Book Chapter : Specifying Requirements",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/specifyingRequirements.md"
     },
     {
@@ -1251,6 +1278,7 @@
       "title": "Text Book Chapter : Teamwork",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/teamwork.md"
     },
     {
@@ -1284,6 +1312,7 @@
       "title": "Text Book Chapter : Test Case Design",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testCaseDesign.md"
     },
     {
@@ -1320,6 +1349,7 @@
       "title": "Text Book Chapter : Testing",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testing.md"
     },
     {
@@ -1374,6 +1404,7 @@
       "title": "Text Book Chapter : UML",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
+      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/uml.md"
     },
     {

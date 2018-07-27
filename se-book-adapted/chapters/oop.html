@@ -12,7 +12,17 @@
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
+
+<link rel="stylesheet" href="/website-base/book/css/textbook.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
@@ -679,23 +689,13 @@
                 </tip-box>
                 <h5 id="implementing-classes"><big>Implementing Classes</big></h5>
                 <p>Given below are some resources on how to implement classes:</p>
-                <tabs>
-                
-                  <tab header="Java">
-                    <ul>
-                      <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial</li>
-                    </ul>
-                    <p></p>
-                  </tab>
-                
-                  <tab header="Python">
-                    <ul>
-                      <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li>
-                    </ul>
-                    <p></p>
-                  </tab>
-                </tabs>
-              </div>
+                <span class="java">
+<ul>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial
+</li></ul></span>
+                <span class="python">
+<div><ul>
+<li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li></ul></div></span></div>
               <div>
                 <div>
                   <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
@@ -2884,7 +2884,7 @@ void calculateGrade (String matric) { ... }
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Wed, 25 Jul 2018 09:51:05 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Fri, 27 Jul 2018 06:44:05 GMT</small></div>
 </footer>
 </div>
 </body>
