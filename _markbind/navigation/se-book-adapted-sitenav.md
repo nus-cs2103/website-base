@@ -8,5 +8,9 @@
   * [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
 {% endfor %}
 {% endfor %}
+* Supplementary
+  * [C++ to Java]({{ baseUrl }}/se-book-adapted/chapters/cppToJava.html)
+  * [Combined Exercises](common/exercises.html)
+  * [List of Definitions](common/definitions.html)
 
 </navigation>
