@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Website - Text Book Chapter [Printable] : C++ to Java</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    
+    <link rel="icon" href="/website-base/favicon.ico">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+<div class="website-content">
+  <div id="title">
+    <div>
+      <h1 id="c-to-java">C++ to Java</h1>
+    </div>
+  </div>
+  <div>
+    <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="about-this-book-chapter">About this Book Chapter <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> :
+        <span
+          class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+          </small>
+          </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p class="lead"><span>This book chapter <strong>assumes you are familiar with basic C++ programming</strong>. It provides a crash course to help you migrate from C++ to Java.</span></p>
+          <p>This chapter <strong>borrows heavily from the excellent book <a href="http://greenteapress.com/wp/think-java/"><em>ThinkJava</em></a></strong> by Allen Downey and Chris Mayfield. As required by terms of reuse of that book, this chapter is released
+            under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a> and not under the MIT license as rest of this book.</p>
+          <p>Some conventions used in this chapter:</p>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> icon marks the description of an aspect of Java that works mostly similar to C++</p>
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+              </span> icon marks the description of an aspect of Java that is distinctly different from C++</p>
+          </div>
+          <p>Other resources used:</p>
+          <ul>
+            <li><a href="https://www.cprogramming.com/tutorial/java/syntax-differences-java-c++.html">C++ and Java Syntax Differences Cheat Sheet</a> by Alex Allain</li>
+            <li><a href="https://docs.oracle.com/javase/tutorial/"><em>Java Tutorial</em> provided by Oracle</a>. Extracts from this resource are marked as <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 id="the-java-world">The Java World</h2>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="what-is-java">What is Java? <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <blockquote>
+            <p>Java was <strong>conceived by James Gosling and his team at Sun Microsystems in 1991</strong>.</p>
+            <p>Java is directly <strong>related to both C and C++</strong>. Java inherits its syntax from C. Its object model is adapted from C++.
+              <small>--<a href="http://www.oracle.com/events/global/en/java-outreach/resources/java-a-beginners-guide-1720064.pdf">Java: A Beinner’s Guide, by Oracle</a></small></p>
+          </blockquote>
+          <box>
+            <p><span class="fas fa-info-circle"></span> Fun fact: The language was initially called <em>Oak</em> after an oak tree that stood outside Gosling's office. Later the project went by the name <em>Green</em> and was finally renamed Java, from Java
+              coffee. <small>--<a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Wikipedia</a></small></p>
+          </box>
+          <p><strong>Oracle became the owner of Java in 2010</strong>, when it acquired Sun Microsystems.</p>
+          <p>Java has remained the <strong>most popular language in the world</strong> for several years now (as at July 2018), according to the <a href="https://www.tiobe.com/tiobe-index/">TIOBE index</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 id="getting-started">Getting Started</h2>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="installation">Installation <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>To <em>run</em> Java programs, you only need to have a recent version of the <em>Java Runtime Environment (JRE)</em> installed in your device.</p>
+          <p>If you want <strong>to <em>develop</em> applications for Java, download and install a recent version of the <em>Java Development Kit (JDK)</em></strong>, which includes the JRE as well as additional resources needed to develop Java applications.</p>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="helloworld">HelloWorld <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>In Java, the HelloWorld program looks like this:</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">// generate some simple output</span>
+        System.out.println(<span class="hljs-string">"Hello, World!"</span>);
+    }
+}
+</code></pre>
+          <p>For reference, the equivalent C++ code is given below:</p>
+          <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// generate some simple output</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Hello, World!"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+          <p>This HelloWorld Java program defines one method named main: <code>public static void main(String[] args)</code>
+            <code>System.out.println</code> displays results on the screen.</p>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+            </span> Some similarities:</p>
+          <ul>
+            <li>Java programs are made up of class and method definitions, and
+              <tooltip content="A _method_ is a named sequence of statements">methods</tooltip> are made up of
+              <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
+            <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
+            <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
+            <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
+            <li><code>void</code> indicates that the method does not return anything.</li>
+            <li>The name and format of the <code>main</code> method is special as it is the method that Java executes when you run a Java program.</li>
+            <li>A class is a collection of methods. This program defines a class named <code>HelloWorld</code>.</li>
+            <li>Java uses squiggly braces (<code>{</code> and <code>}</code>) to group things together.</li>
+            <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
+          </ul>
+          <popover id="pop:helloWorld-statement" title="Statements" placement="top">
+          
+            <div slot="content">
+              <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
+              <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
+            </div>
+          </popover>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> Some differences:</p>
+          <ul>
+            <li>Java use the term <em>method</em> instead of <em>function</em>. In particular, Java doesn’t have stand-alone functions. Every method should belong to a class. The <code>main</code> method work will not work unless it is inside the <code>HelloWorld</code>              class.</li>
+            <li>A Java class definition does not end with a semicolon, but most Java statements do.</li>
+            <li>In <em>most</em> cases (i.e., there are exceptions), the name of the class has to match the name of the file it is in, so this class has to be in a file named <code>HelloWorld.java</code>.</li>
+            <li>There is no need for the HelloWorld code to have something like <code>#include &lt;iostream&gt;</code>. The library files needed by the HelloWorld code is available by default without having to &quot;include&quot; in explicitly.</li>
+            <li>There is no need to <code>return 0</code> at the end of the main method to indicate the execution was successful. It is considered as a successful execution unless an error is signalled specifically.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="compiling-programs">Compiling Programs <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>To compile the HelloWorld program, open a command console, navigate to the folder containing the file, and run the following command.</p>
+          <p>
+            <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>javac HelloWorld.java</code></p>
+          <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is successful, you will be notified of the
+            <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
+          <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
+          
+            <div slot="content">
+              <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
+              <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
+              <p></p>
+            </div>
+          </popover>
+          <p>Notes:</p>
+          <ul>
+            <li><code>javac</code> is the java compiler that you get when you install the JDK.</li>
+            <li>For the above command to work, your console program should be able to find the javac executable (e.g., <span class="fab fa-windows"></span> the location of the <code>javac.exe</code> should be in the <code>PATH</code> system variable).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="running-programs">Running Programs <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>To run the HelloWorld program, in a command console, run the following command from the folder containing <code>HelloWorld.class</code> file.</p>
+          <p>
+            <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java HelloWorld</code></p>
+          <p>Notes:</p>
+          <ul>
+            <li><code>java</code> in the command above refers to the Java interpreter installed in your computer.</li>
+            <li>Similar to <code>javac</code>, your console should be able to find the java executable.</li>
+          </ul>
+          <p>When you run a Java program, you can encounter a
+            <tooltip content="so-called because it does not appear until after the program has started running">run-time error</tooltip>. These errors are also called &quot;exceptions&quot; because they usually indicate that something exceptional (and bad) has happened. When a run-time error occurs, the interpreter displays an error message that explains
+            what happened and where.</p>
+          <tip-box>
+            <p><span class="fas fa-cube"></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
+            <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
+</code></pre>
+            <p>You should get a message like this:</p>
+            <pre><code class="hljs sh">Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero
+    at Hello.main(Hello.java:5)
+</code></pre>
+          </tip-box>
+          <p><strong>Integrated Development Environments (IDEs)</strong> can automate the intermediate step of compiling. They usually have a <span style="color:green"><span class="fas fa-play-circle"></span></span> <em>Run</em> button which compiles the
+            code first and then runs it.</p>
+          <p>Example IDEs:</p>
+          <ul>
+            <li>Intellij IDEA</li>
+            <li>Eclipse</li>
+            <li>NetBeans</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 id="data-types">Data Types</h2>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="primitive-data-types">Primitive Data Types <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Here are the primitive data types in Java:</p>
+          <ul>
+            <li><strong><code>byte</code></strong>: an integer in the range -128 to 127 (inclusive).</li>
+            <li><strong><code>short</code></strong>: an integer in the range -32,768 to 32,767 (inclusive).</li>
+            <li><strong><code>int</code></strong>: an integer in the range -231 to 231-1.</li>
+            <li><strong><code>long</code></strong>: An integer in the range -263 to 263-1.</li>
+            <li><strong><code>float</code></strong>: a single-precision 32-bit IEEE 754 floating point. This data type should never be used for precise values, such as currency. For that, you will need to use the <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html">java.math.BigDecimal</a>              class instead.</li>
+            <li><strong><code>double</code></strong>: a double-precision 64-bit IEEE 754 floating point. For decimal values, this data type is generally the default choice. This data type should never be used for precise values, such as currency.</li>
+            <li><strong><code>boolean</code></strong>: has only two possible values: <code>true</code> and <code>false</code>.</li>
+            <li><strong><code>char</code></strong>: The char data type is a single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).</li>
+          </ul>
+          <p><strong><code>String</code></strong> (a peek)</p>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> Java has a built-in type called <code>String</code> to represent strings. While <code>String</code> is not a primitive type, they are used as often, if not more. <code>String</code> values are demarcated by enclosing in a pair of double quotes.
+            You can use the plus operator to concatenate strings. E.g., String name = &quot;John Doe&quot;; System.out.println(&quot;Hello &quot; + name + &quot;!&quot;);</p>
+          <p>String is not a primitive type. You’ll learn more about strings in a later section.</p>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="variables">Variables <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+            </span> Java is a <em>statically-typed</em> language in that variables have a fixed type. Here are some examples of declaring variables and assigning values to them.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">int</span> x;
+x = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
+<span class="hljs-keyword">boolean</span> isCorrect = <span class="hljs-keyword">true</span>;
+<span class="hljs-keyword">char</span> capitalC = <span class="hljs-string">'C'</span>;
+<span class="hljs-keyword">byte</span> b = <span class="hljs-number">100</span>;
+<span class="hljs-keyword">short</span> s = <span class="hljs-number">10000</span>;
+<span class="hljs-keyword">int</span> i = <span class="hljs-number">100000</span>;
+</code></pre>
+          <p>You can use any name starting with a letter, underscore, or $ as a variable name but you cannot use Java <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">keywords</a> as variables names. You can display the value
+            of a variable using print or println. The following statements declare a variable named firstLine, assign it the value &quot;Hello, again!&quot;, and display that value.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
+<span class="hljs-keyword">int</span> mintue = <span class="hljs-number">59</span>;
+System.out.print(<span class="hljs-string">"The current time is "</span>);
+System.out.print(hour);
+System.out.print(<span class="hljs-string">":"</span>);
+System.out.print(minute);
+System.out.println(<span class="hljs-string">"."</span>);
+</code></pre>
+          <p><span class="fas fa-arrow-down"></span></p>
+          <pre class="hljs"><code>The current time is 11:59.
+</code></pre>
+          <p>To output multiple values on the same line, it’s common to use several print statements followed by println at the end.</p>
+          <p>Use the keyword <code>final</code> to indicate that the variable value, once assigned, should not be allowed to change later i.e., act like a ‘constant’. By convention, names for constants are all uppercase, with the underscore character (<code>_</code>)
+            between words.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> CM_PER_INCH = <span class="hljs-number">2.54</span>;
+</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="operators">Operators <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Java has the following <strong>arithmetic operators</strong>:</p>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Examples</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>+</code></td>
+                  <td>Additive operator</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>-</code></td>
+                  <td>Subtraction operator</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>*</code></td>
+                  <td>Multiplication operator</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>/</code></td>
+                  <td>Division operator</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>%</code></td>
+                  <td>Remainder operator</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The following program uses some operators as part of an expression <code>hour * 60 + minute</code>:</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
+<span class="hljs-keyword">int</span> minute = <span class="hljs-number">59</span>;
+System.out.print(<span class="hljs-string">"Number of minutes since midnight: "</span>);
+System.out.println(hour * <span class="hljs-number">60</span> + minute);
+</code></pre>
+          <p><span class="fas fa-arrow-down"></span></p>
+          <pre class="hljs"><code>Number of minutes since midnight: 719
+</code></pre>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+            </span> When an expression has multiple operators, normal <strong>operator precedence</strong> rules apply.</p>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> Java does not allow <em>operator overloading</em>.</p>
+          <blockquote>
+            <p>The <strong>unary operators</strong> require only one operand; they perform various operations such as incrementing/decrementing a value by one, negating an expression, or inverting the value of a boolean.<small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></p>
+          </blockquote>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></th>
+                  <th>example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>+</code></td>
+                  <td>Unary plus operator; indicates positive value (numbers are positive without this, however)</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>-</code></td>
+                  <td>Unary minus operator; negates an expression</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>++</code></td>
+                  <td>Increment operator; increments a value by 1</td>
+                  <td>i++</td>
+                </tr>
+                <tr>
+                  <td><code>--</code></td>
+                  <td>Decrement operator; decrements a value by 1</td>
+                  <td>i--</td>
+                </tr>
+                <tr>
+                  <td><code>!</code></td>
+                  <td>Logical complement operator; inverts the value of a boolean</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Relational operators</strong> are used to check conditions like whether two values are equal, or whether one is greater than the other. The following expressions show how they are used:</p>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>x == y</code></td>
+                  <td>x is equal to y</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>x != y</code></td>
+                  <td>x is not equal to y</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>x &gt; y</code></td>
+                  <td>x is greater than y</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>x &lt; y</code></td>
+                  <td>x is less than y</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>x &gt;= y</code></td>
+                  <td>x is greater than or equal to y</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>x &lt;= y</code></td>
+                  <td>x is less than or equal to y</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The result of a relational operator is a boolean value.</p>
+          <p>Java has three <strong>conditional operators</strong> that are used to operate on boolean values.</p>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&amp;&amp;</code></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>||</code></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>!</code></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="arrays">Arrays <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Arrays are indicated using square brackets (<code>[]</code>). To create the array itself, you have to use the <code>new</code> operator. Here are some example array declarations:</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts;
+<span class="hljs-keyword">double</span>[] values;
+counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
+values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[size];
+<span class="hljs-keyword">int</span>[] scores = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
+<span class="hljs-keyword">double</span>[] prices = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[size];
+</code></pre>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+            </span> The <code>[]</code> operator selects elements from an array. Array elements indices start from 0 <span class="dimmed">i.e., the index of the first element is 0, not 1</span>.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
+
+System.out.println(<span class="hljs-string">"The first element is "</span> + counts[<span class="hljs-number">0</span>]);
+
+counts[<span class="hljs-number">0</span>] = <span class="hljs-number">7</span>;
+counts[<span class="hljs-number">1</span>] = counts[<span class="hljs-number">0</span>] * <span class="hljs-number">2</span>;
+counts[<span class="hljs-number">2</span>]++;
+</code></pre>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> A Java array is aware of its size.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] scores = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
+System.out.println(scores.length)
+</code></pre>
+          <p><span class="fas fa-arrow-down"></span></p>
+          <pre class="hljs"><code>4
+</code></pre>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> A Java array prevents a programmer from indexing the array out of bounds. If the index is negative or not present in the array, the result is an error named <code>ArrayIndexOutOfBoundsException</code>.</p>
+          <h5 id="passing-arguments-to-a-program">Passing arguments to a program</h5>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+            </span> The <code>args</code> parameter of the <code>main</code> method is an array of Strings containing command line arguments supplied (if any) when running the program.</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        System.out.println(args[<span class="hljs-number">0</span>]);
+    }
+}
+</code></pre>
+          <p>You can run this program (after compiling it first) from the command line by typing:</p>
+          <p>
+            <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java Foo abc</code></p>
+          <p><span class="fas fa-arrow-down"></span></p>
+          <p><code>abc</code></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 id="control-flow">Control Flow</h2>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="branching">Branching <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <h5 id="if-else-statements"><code>if-else</code> statements</h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> Java supports the usual forms of <code>if</code> statements:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+    System.out.println(<span class="hljs-string">"x is positive"</span>);
+}
+</code></pre>
+            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
+    System.out.println(<span class="hljs-string">"x is even"</span>);
+} <span class="hljs-keyword">else</span> {
+    System.out.println(<span class="hljs-string">"x is odd"</span>);
+}
+</code></pre>
+            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+    System.out.println(<span class="hljs-string">"x is positive"</span>);
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) {
+    System.out.println(<span class="hljs-string">"x is negative"</span>);
+} <span class="hljs-keyword">else</span> {
+    System.out.println(<span class="hljs-string">"x is zero"</span>);
+}
+</code></pre>
+            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x == <span class="hljs-number">0</span>) {
+    System.out.println(<span class="hljs-string">"x is zero"</span>);
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+        System.out.println(<span class="hljs-string">"x is positive"</span>);
+    } <span class="hljs-keyword">else</span> {
+        System.out.println(<span class="hljs-string">"x is negative"</span>);
+    }
+}
+</code></pre>
+            <p>The braces are optional (but recommended) for branches that have only one statement. So we <em>could have</em> written the previous example this way (
+              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                </span>
+              </font>):</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+    System.out.println(<span class="hljs-string">"x is even"</span>);
+<span class="hljs-keyword">else</span>
+    System.out.println(<span class="hljs-string">"x is odd"</span>);
+</code></pre>
+          </div>
+          <h5 id="switch-statements"><code>switch</code> statements</h5>
+          <div class="indented">
+            <p>The <code>switch</code> statement can have a number of possible execution paths. A <code>switch</code> works with the <code>byte</code>, <code>short</code>, <code>char</code>, and <code>int</code> primitive data types. It also works with enums,
+              <code>String</code>.</p>
+            <p>Here is an example <span class="dimmed">(adapted from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
+              </small>)</span>:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SwitchDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        <span class="hljs-keyword">int</span> month = <span class="hljs-number">8</span>;
+        String monthString;
+        <span class="hljs-keyword">switch</span> (month) {
+        <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:  monthString = <span class="hljs-string">"January"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:  monthString = <span class="hljs-string">"February"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:  monthString = <span class="hljs-string">"March"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:  monthString = <span class="hljs-string">"April"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">5</span>:  monthString = <span class="hljs-string">"May"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">6</span>:  monthString = <span class="hljs-string">"June"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">7</span>:  monthString = <span class="hljs-string">"July"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">8</span>:  monthString = <span class="hljs-string">"August"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">9</span>:  monthString = <span class="hljs-string">"September"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">10</span>: monthString = <span class="hljs-string">"October"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">11</span>: monthString = <span class="hljs-string">"November"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">12</span>: monthString = <span class="hljs-string">"December"</span>;
+                 <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">default</span>: monthString = <span class="hljs-string">"Invalid month"</span>;
+                     <span class="hljs-keyword">break</span>;
+        }
+        System.out.println(monthString);
+    }
+}
+</code></pre>
+            <p><span class="fas fa-arrow-right"></span> <code>August</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="loops">Loops <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <h5 id="while-loops"><code>while</code> loops</h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> Here is an example while loop:</p>
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">countdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">while</span> (n &gt; <span class="hljs-number">0</span>) {
+        System.out.println(n);
+        n = n - <span class="hljs-number">1</span>;
+    }
+    System.out.println(<span class="hljs-string">"Blastoff!"</span>);
+}
+</code></pre>
+          </div>
+          <h5 id="for-loops"><code>for</code> loops</h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> <code>for</code> loops have the form:</p>
+            <pre class="hljs"><code>for ( initializer; condition; update) {
+    statement(s);
+}
+</code></pre>
+            <p>Here is an example:</p>
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTable</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rows)</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= rows; i = i + <span class="hljs-number">1</span>) {
+        printRow(i, rows);
+    }
+}
+</code></pre>
+          </div>
+          <h5 id="do-while-loops"><code>do-while</code> loops</h5>
+          <div class="indented">
+            <p>The <code>while</code> and <code>for</code> statements are <em>pretest</em> loops; that is, they test the condition first and at the beginning of each pass through the loop. Java also provides a <em>posttest</em> loop: the <code>do-while</code>              statement. This type of loop is useful when you need to run the body of the loop at least once.</p>
+            <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
+              </small>)</span>:</p>
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoWhileDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+        <span class="hljs-keyword">int</span> count = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">do</span> {
+            System.out.println(<span class="hljs-string">"Count is: "</span> + count);
+            count++;
+        } <span class="hljs-keyword">while</span> (count &lt; <span class="hljs-number">11</span>);
+    }
+}
+</code></pre>
+          </div>
+          <h5 id="break-and-continue"><code>break</code> and <code>continue</code></h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> <strong>A <code>break</code> statement exits the current loop</strong>.</p>
+            <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
+              </small>)</span>:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arrayOfInts.length; i++) {
+    <span class="hljs-keyword">if</span> (arrayOfInts[i] == searchfor) {
+        foundIt = <span class="hljs-keyword">true</span>;
+        <span class="hljs-keyword">break</span>;
+    }
+}
+</code></pre>
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> <strong>A <code>continue</code> statement skips the remainder of the current iteration</strong> and moves to the next iteration of the loop.</p>
+            <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
+              </small>)</span>:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; max; i++) {
+    <span class="hljs-comment">// interested only in p's</span>
+    <span class="hljs-keyword">if</span> (searchMe.charAt(i) != <span class="hljs-string">'p'</span>)
+        <span class="hljs-keyword">continue</span>;
+    <span class="hljs-comment">// process p's</span>
+    numPs++;
+}
+</code></pre>
+          </div>
+          <h5 id="enhanced-for-loops">Enhanced <code>for</code> loops</h5>
+          <div class="indented">
+            <p>Since traversing arrays is so common, Java provides an alternative for-loop syntax that makes the code more compact. For example, consider a for loop that displays the elements of an array on separate lines:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; values.length; i++) {
+    <span class="hljs-keyword">int</span> value = values[i];
+    System.out.println(value);
+}
+</code></pre>
+            <p>We could rewrite the loop like this:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> value : values) {
+    System.out.println(value);
+}
+</code></pre>
+            <p>This statement is called an <em>enhanced <code>for</code> loop</em>. You can read it as, “for each value in values”. Notice how the single line <code>for (int value : values)</code> replaces the first two lines of the standard <code>for</code>              loop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="methods">Methods <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <h5 id="defining-methods">Defining methods</h5>
+          <div class="indented">
+            <p>Here’s an example of adding more methods to a class:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewLine</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">newLine</span><span class="hljs-params">()</span> </span>{
+        System.out.println();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        System.out.println(<span class="hljs-string">"First line."</span>);
+        newLine();
+        System.out.println(<span class="hljs-string">"Second line."</span>);
+    }
+}
+</code></pre>
+            <p><span class="fas fa-arrow-down"></span></p>
+            <pre class="hljs"><code>First line.
+
+Second line.
+</code></pre>
+            <p>By convention, method names should be named in the <em>camelCase</em> format. Similar to the main method, the newLine method is <code>public</code>, which means they can be invoked from other classes, <code>static</code> and <code>void</code>.</p>
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> A method can specify parameters. The <code>printTwice</code> method below specify a parameter of String type. The main method passes the argument <code>&quot;Don't make me say this twice!&quot;</code> to that parameter.</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTwice</span><span class="hljs-params">(String s)</span> </span>{
+        System.out.println(s);
+        System.out.println(s);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        String sentence = “Polly likes crackers”
+        printTwice(sentence);
+
+    }
+}
+
+</code></pre>
+            <p>The value you provide as an argument must have the same type as the parameter. Sometimes Java can convert an argument from one type to another automatically. For example, if the method requires a <code>double</code>, you can invoke it with
+              an <code>int</code> argument and Java will automatically convert the argument to the equivalent value of type double.</p>
+            <p>Parameters and other variables declared inside a method only exist inside their own methods. Inside <code>main</code>, there is no such thing as <code>s</code>. If you try to use it there, you’ll get a compiler error. Similarly, inside <code>printTwice</code>              there is no such thing as <code>sentence</code>. That variable belongs to <code>main</code>. Because variables only exist inside the methods where they are defined, they are often called local variables.</p>
+          </div>
+          <h5 id="return-statements"><code>return</code> statements</h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> The <code>return</code> statement allows you to terminate a method before you reach the end of it:</p>
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
+    <span class="hljs-keyword">if</span> (x &lt;= <span class="hljs-number">0.0</span>) {
+        System.out.println(<span class="hljs-string">"Error: x must be positive."</span>);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">double</span> result = Math.log(x);
+    System.out.println(<span class="hljs-string">"The log of x is "</span> + result);
+}
+</code></pre>
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> It can be used to return a value from a method too:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AreaCalculator</span></span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+        <span class="hljs-keyword">double</span> result = <span class="hljs-number">3.14</span> * radius * radius;
+        <span class="hljs-keyword">return</span> result;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">double</span> area = calculateArea(<span class="hljs-number">12.5</span>);
+        System.out.println(area);
+    }
+}
+</code></pre>
+          </div>
+          <h5 id="overloading">Overloading</h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> If two methods do the same thing, it is natural to give them the same name. Having more than one method with the same name is called overloading, and it is legal in Java as long as each version takes different parameters.</p>
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span>
+        <span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+    ...
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span>
+        <span class="hljs-params">(<span class="hljs-keyword">double</span> height, <span class="hljs-keyword">double</span> width)</span> </span>{
+    ...
+}
+</code></pre>
+          </div>
+          <h5 id="recursion">Recursion</h5>
+          <div class="indented">
+            <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
+              </span> Method can be recursive. Here is an example:</p>
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">if</span> (n &gt; <span class="hljs-number">0</span>) {
+        System.out.println();
+        nLines(n - <span class="hljs-number">1</span>);
+    }
+}
+</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 id="java-objects">Java Objects</h2>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="using-java-objects">Using Java Objects <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Java is an &quot;object-oriented&quot; language, which means that it uses objects to represent data and provide methods related to them. Object types are called <em>classes</em> e.g., you can use <code>String</code> objects in Java and those
+            objects belong to the <code>String</code> class.</p>
+          <h5 id="packages">packages</h5>
+          <div class="indented">
+            <p>Java comes with many inbuilt classes which are organized into <em>packages</em>. Here are some examples:</p>
+            <div class="table-responsive">
+              <table class="markbind-table table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>package</th>
+                    <th>Some example classes in the package</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>java.lang</code></td>
+                    <td><code>String</code>, <code>Math</code>, <code>System</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Before using a class in your code, you need to <code>import</code> the class. <code>import</code> statements appear at the top of the code.</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+        <span class="hljs-keyword">int</span> x = spot.x;
+        System.out.println(x);
+   }
+}
+</code></pre>
+            <p>Tip: You might wonder why we can use the System class without importing it. System belongs to the java.lang package, which is imported automatically. For example, the <code>java.awt</code> package provides a class named <code>Point</code>              intended to represent the coordinates of a location in a Cartesian plane. Tooltip: In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, (0,0) indicates the origin, and (x,y)
+              indicates the point x units to the right and y units up from the origin. Then, to create a new point object, you have to use the <code>new</code> operator:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
+
+Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="instance-members">Instance Members <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>Variables that belong to an object are usually called attributes, but you might also see them called &quot;fields&quot;.</p>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> To access an attribute of an object, Java uses <em>dot notation</em>.</p>
+          <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+<span class="hljs-keyword">int</span> sum = spot.x * spot.x + spot.y * spot.y;
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y, <span class="hljs-string">", "</span> + sum);
+</code></pre>
+          <p><span class="fas fa-arrow-down"></span></p>
+          <pre class="hljs"><code>3, 4, 25
+</code></pre>
+          <p>The expression <code>spot.x</code> means &quot;go to the object spot refers to, and get the value of the attribute <code>x</code>.&quot;</p>
+          <p>You can <em>mutate</em> an object by assigning a different values to its attributes.</p>
+          <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+Spot.x = <span class="hljs-number">5</span>
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
+</code></pre>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> Java uses the dot notation to invoke methods on an object too. The example below invokes the <code>translate</code> method on a <code>Point</code> object so that it moves to a different location.</p>
+          <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
+spot.translate(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>);
+System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
+</code></pre>
+          <p><span class="fas fa-arrow-down"></span></p>
+          <pre class="hljs"><code>3, 4
+8, 9
+</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="passing-objects">Passing Objects <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p><strong>You can pass objects as parameters in the usual way</strong>. For example:</p>
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPoint</span><span class="hljs-params">(Point p)</span> </span>{
+    System.out.println(<span class="hljs-string">"("</span> + p.x + <span class="hljs-string">", "</span> + p.y + <span class="hljs-string">")"</span>);
+}
+</code></pre>
+          <p>This method takes a point as an argument and displays its attributes in parentheses. If you invoke <code>printPoint(spot)</code>, it displays <code>(3, 4)</code>.</p>
+          <p><strong>You can return an object as the return value too.</strong> The <code>java.awt</code> package also provides a class called <code>Rectangle</code>. <code>Rectangle</code> objects are similar to points, but they have four attributes: <code>x</code>,
+            <code>y</code>, <code>width</code>, and <code>height</code>. You can write methods that return objects. For example, <code>findCenter</code> takes a <code>Rectangle</code> as an argument and returns a <code>Point</code> with the coordinates
+            of the center of the rectangle:</p>
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">findCenter</span><span class="hljs-params">(Rectangle box)</span> </span>{
+    <span class="hljs-keyword">int</span> x = box.x + box.width / <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">int</span> y = box.y + box.height / <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Point(x, y);
+}
+</code></pre>
+          <p>The return type of this method is <code>Point</code>. The last line creates a new Point object and returns a reference to it.</p>
+          <p><strong><code>null</code> is a special value that means &quot;no object&quot;</strong>. You can declare and initialize object variables this way:
+            <code>Point spot = null;</code></p>
+          <p>If you try to use a null value, either by accessing an attribute or invoking a method, Java throws a <code>NullPointerException</code>.</p>
+          <pre><code class="hljs java">Point spot = <span class="hljs-keyword">null</span>;
+<span class="hljs-keyword">int</span> x = spot.x;              <span class="hljs-comment">// NullPointerException</span>
+spot.translate(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>);      <span class="hljs-comment">// NullPointerException</span>
+</code></pre>
+          <p>On the other hand, it is legal to pass a <code>null</code> reference as an argument or receive one as a return value.</p>
+          <p><strong>It is possible to have multiple variables that refer to the same object.</strong></p>
+          <pre><code class="hljs java">Rectangle box1 = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">200</span>);
+Rectangle box2 = box1;
+</code></pre>
+          <p>Notice how <code>box1</code> and <code>box2</code> are aliases for the same object, so any changes that affect one variable also affect the other. This example adds 50 to all four sides of the rectangle, so it moves the corner up and to the
+            left by 50, and it increases the height and width by 100:</p>
+          <pre><code class="hljs java">System.out.println(box2.width);
+box1.grow(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+System.out.println(box2.width);
+</code></pre>
+          <p>The first line displays <code>100</code>, which is the width of the Rectangle referred to by <code>box2</code>. The second line invokes the grow method on <code>box1</code>, which stretches the Rectangle horizontally and vertically. When we
+            make a change using box1, we see the change using <code>box2</code>. Thus, the value displayed by the third line is <code>200</code>, the width of the expanded rectangle.</p>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="garbage-collection">Garbage Collection <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>What happens when no variables refer to an object?</p>
+          <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+spot = <span class="hljs-keyword">null</span>;
+</code></pre>
+          <p>The first line creates a new <code>Point</code> object and makes spot refer to it. The second line changes <code>spot</code> so that instead of referring to the object, it refers to nothing. If there are no references to an object, there is
+            no way to access its attributes or invoke a method on it. From the programmer’s view, it ceases to exist. However it’s still present in the computer’s memory, taking up space.</p>
+          <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
+            </span> <strong>In Java, you don’t have to delete objects you create when they are no longer needed.</strong> As your program runs, the system automatically looks for stranded objects and reclaims them; then the space can be reused for new objects.
+            This process is called garbage collection. You don’t have to do anything to make garbage collection happen, and in general don’t have to be aware of it. But in high-performance applications, you may notice a slight delay every now and then
+            when Java reclaims space from discarded objects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 id="java-classes">Java Classes</h2>
+  </div>
+  <div class="indented-less">
+    <div class="indented-less">
+      <h4 id="defining-classes">Defining Classes <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>As you know,</p>
+          <ul>
+            <li>Defining a class creates a new object type with the same name.</li>
+            <li>Every object belongs to some object type; that is, it is an instance of some class.</li>
+            <li>A class definition is like a template for objects: it specifies what attributes the objects have and what methods can operate on them.</li>
+            <li>The <code>new</code> operator instantiates objects, that is, it creates new instances of a class.</li>
+            <li>The methods that operate on an object type are defined in the class for that object.</li>
+          </ul>
+          <p>Let’s create a class to represent a moment in time:</p>
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> hour;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> minute;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> second;
+}
+</code></pre>
+          <p>You can give a class any name you like. The Java convention is to use PascalCase format for class names e.g., <code>MyHelloWord</code> rather than <code>myHelloWorld</code> or <code>myhelloword</code> or <code>my_hello_world</code>.</p>
+          <p>The code should be in a file whose name matches the class e.g., <code>Time.java</code></p>
+          <p>The <code>Time</code> class is <code>public</code>, which means that it can be used in other classes. But the
+            <tooltip content="Attributes are also called **instance variables**, because each instance has its own variables.">instance variables</tooltip> are <code>private</code>, which means they can only be accessed from inside the <code>Time</code> class.</p>
+          <h5 id="constructos">Constructos</h5>
+          <div class="indented">
+            Next, let’s define a
+            <tooltip content="a special method that initializes the instance variables">constructor</tooltip>.
+            <p>The syntax for constructors is similar to that of other methods, except:</p>
+            <ul>
+              <li>The name of the constructor is the same as the name of the class.</li>
+              <li>Constructors have no return type (and no return value).</li>
+              <li>The keyword <code>static</code> is omitted.</li>
+              <li>Does not return anything. A constructor returns the created object by default.</li>
+            </ul>
+            <p>Here is an example constructor for the Time class:</p>
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">()</span> </span>{
+    hour = <span class="hljs-number">0</span>;
+    minute = <span class="hljs-number">0</span>;
+    second = <span class="hljs-number">0</span>;
+}
+</code></pre>
+            <p>This constructor does not take any arguments. Each line initializes an instance variable to zero (which in this example means midnight). Like void methods, constructors Now you can create <code>Time</code> objects.</p>
+            <p><code>Time time = new Time();</code></p>
+            <p>When you invoke <code>new</code>, Java creates the object and calls your constructor to initialize the instance variables. When the constructor is done, new returns a reference to the new object.</p>
+          </div>
+          <h5 id="this-keyword"><code>this</code> keyword</h5>
+          <div class="indented">
+            Like other methods, constructors can be overloaded, which means you can provide multiple constructors with different parameters.
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour, <span class="hljs-keyword">int</span> minute, <span class="hljs-keyword">int</span> second)</span> </span>{
+    <span class="hljs-keyword">this</span>.hour = hour;
+    <span class="hljs-keyword">this</span>.minute = minute;
+    <span class="hljs-keyword">this</span>.second = second;
+}
+</code></pre>
+            <p>All this constructor does is copy values from the parameters to the instance variables. In this example, the names and types of the parameters are the same as the instance variables (parameters don’t have to use the same names, but that’s
+              a common style). As a result, the parameters <strong><em>shadow</em></strong> (or hide) the instance variables, so the keyword <code>this</code> is necessary to tell them apart.</p>
+            <p>The name <code>this</code> is a keyword that refers to the object we are creating. You can use <code>this</code> the same way you use the name of any other object. For example, you can read and write the instance variables of <code>this</code>,
+              and you can pass <code>this</code> as an argument to other methods. But you do not declare <code>this</code>, and you can’t make an assignment to it.</p>
+            <p>Now you can use the above constructor to create Time objects that are initialized to a specific time:</p>
+            <pre><code class="hljs java">Time time = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">59</span>);
+</code></pre>
+          </div>
+          <p><mark>//todo mention Java docs</mark></p>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="getters-and-setters">Getters and Setters <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>As the instance variables of <code>Time</code> are private, you can access them from within the <code>Time</code> class only. To compensate, <strong>you can provide methods to access attributes</strong>:</p>
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getHour</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> hour;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getMinute</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> minute;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSecond</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> second;
+}
+</code></pre>
+          <p>Methods like these are formally called “accessors”, but more commonly referred to as <em>getters</em>. By convention, the method that gets a variable named something is called <code>getSomething</code>.</p>
+          <p>Similarly, <strong>you can provide <em>setter</em> methods to modify attributes</strong> of a <code>Time</code> object:</p>
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHour</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour)</span> </span>{
+    <span class="hljs-keyword">this</span>.hour = hour;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMinute</span><span class="hljs-params">(<span class="hljs-keyword">int</span> minute)</span> </span>{
+    <span class="hljs-keyword">this</span>.minute = minute;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSecond</span><span class="hljs-params">(<span class="hljs-keyword">int</span> second)</span> </span>{
+    <span class="hljs-keyword">this</span>.second = second;
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="indented-less">
+      <h4 id="class-level-members">Class-Level Members <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        </small>
+        </span>
+      </h4>
+      <div class="indented-less">
+        <div>
+          <p>The content below is an extract from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>, with slight adaptations.</p>
+          <div class="indented">
+            When a number of objects are created from the same class blueprint, they each have their own distinct copies of instance variables. In the case of a `Bicycle` class, the instance variables are gear, and speed. Each Bicycle object has its own values for
+            these variables, stored in different memory locations.
+            <p><strong>Sometimes, you want to have variables that are common to all objects. This is accomplished with the <code>static</code> modifier.</strong> Fields that have the <code>static</code> modifier in their declaration are called <em>static fields</em>              or <em>class variables</em>. They are associated with the class, rather than with any object. Every instance of the class shares a class variable, which is in one fixed location in memory. Any object can change the value of a class variable,
+              but class variables can also be manipulated without creating an instance of the class.</p>
+            <p>For example, suppose you want to create a number of Bicycle objects and assign each a serial number, beginning with 1 for the first object. This ID number is unique to each object and is therefore an instance variable. At the same time, you
+              need a field to keep track of how many <code>Bicycle</code> objects have been created so that you know what ID to assign to the next one. Such a field is not related to any individual object, but to the class as a whole. For this you need
+              a class variable, numberOfBicycles, as follows:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
+
+    <span class="hljs-comment">// add an instance variable for the object ID</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> id;
+
+    <span class="hljs-comment">// add a class variable for the</span>
+    <span class="hljs-comment">// number of Bicycle objects instantiated</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> numberOfBicycles = <span class="hljs-number">0</span>;
+        ...
+}
+</code></pre>
+            <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
+            <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating an instance
+              of the class, as in <code>ClassName.methodName(args)</code></p>
+            <p><strong>The <code>static</code> modifier, in combination with the <code>final</code> modifier, is also used to define constants.</strong> The final modifier indicates that the value of this field cannot change.For example, the following variable
+              declaration defines a constant named PI, whose value is an approximation of pi (the ratio of the circumference of a circle to its diameter):
+              <code>static final double PI = 3.141592653589793;</code></p>
+            <p>Here is an example with class-level variables and class-level methods:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> id;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> numberOfBicycles = <span class="hljs-number">0</span>;
+
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Bicycle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> startSpeed,
+                   <span class="hljs-keyword">int</span> startGear)</span> </span>{
+        gear = startGear;
+        speed = startSpeed;
+
+        id = ++numberOfBicycles;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getID</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> id;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNumberOfBicycles</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> numberOfBicycles;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getGear</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> gear;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGear</span><span class="hljs-params">(<span class="hljs-keyword">int</span> newValue)</span> </span>{
+        gear = newValue;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSpeed</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> speed;
+    }
+
+    <span class="hljs-comment">// ...</span>
+
+}
+</code></pre>
+          </div>
+          <tip-box>
+            <p>💡 Explanation of <strong><code>System.out.println(...)</code></strong>:</p>
+            <ul>
+              <li><code>out</code> is a class-level attribute of the <code>System</code> class.</li>
+              <li><code>println</code> is a instance level method of the <code>out</code> object.</li>
+            </ul>
+          </tip-box>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Sun, 29 Jul 2018 15:27:52 GMT</small></div>
+</footer>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\polyfill.min.js"></script>
+<script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/website-base'
+</script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>
