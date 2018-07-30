@@ -10,7 +10,7 @@
 {% endfor %}
 * Supplementary
   * [C++ to Java]({{ baseUrl }}/se-book-adapted/chapters/cppToJava.html)
-  * [Combined Exercises](common/exercises.html)
-  * [List of Definitions](common/definitions.html)
+  * [Combined Exercises]({{ baseUrl }}/se-book-adapted/common/exercises.html)
+  * [List of Definitions]({{ baseUrl }}/se-book-adapted/common/definitions.html)
 
 </navigation>
