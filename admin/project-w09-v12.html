@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-122519234-1');
+</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,19 +20,7 @@
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
-    <head-top>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
-</head-top>
-
-<link rel="stylesheet" href="/website-base/css/main.css">
+    <link rel="stylesheet" href="/website-base/css/main.css">
 <link rel="stylesheet" href="/website-base/css/admin.css">
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
@@ -42,10 +38,10 @@
       <li style="margin-top: 10px"><a href="moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Module Structure :expanded:
- <i class="dropdown-btn-icon">
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Module Structure 
+ <i class="dropdown-btn-icon rotate-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
+        <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="learningOutcomes.html">Learning Outcomes</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
@@ -63,10 +59,10 @@
       <li style="margin-top: 10px"><a href="programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Project :expanded:
- <i class="dropdown-btn-icon">
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Project 
+ <i class="dropdown-btn-icon rotate-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
+        <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="project-overview.html">Project: Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="project-product.html">Project: The product</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
@@ -106,10 +102,10 @@
       <li style="margin-top: 10px"><a href="participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span>
         </span>
       </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn">Appendices :expanded:
- <i class="dropdown-btn-icon">
+      <li style="margin-top: 10px"><button class="dropdown-btn dropdown-btn-open">Appendices 
+ <i class="dropdown-btn-icon rotate-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
+        <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="appendixA-principles.html">A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="appendixB-policies.html">B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span></span></small></li>
@@ -132,8 +128,11 @@
   <div id="page-content">
     <div>
       <navbar placement="top" type="inverse">
-        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
-        <li><a href="/website-base/index-flat.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-bars"></span> flat</span></a></li>
+        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
+        <dropdown text="Nested" class="nav-link">
+          <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
+          <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+        </dropdown>
         <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
         <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -512,7 +511,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Sun, 29 Jul 2018 15:27:52 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Mon, 30 Jul 2018 07:46:12 GMT</small></div>
 </footer>
 </div>
 </body>

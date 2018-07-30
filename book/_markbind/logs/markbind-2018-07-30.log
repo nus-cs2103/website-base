@@ -1,0 +1,63 @@
+2018-07-30T05:39:54.013Z - info: Pages built
+2018-07-30T05:39:54.722Z - info: Site data built
+2018-07-30T05:39:54.733Z - info: Generate Site durationMs=120957
+2018-07-30T05:39:55.133Z - info: Serving "C:\repos\nus-cs2103\website-base\book\_site" at http://127.0.0.1:8080
+2018-07-30T05:39:55.133Z - info: Press CTRL+C to stop ...
+2018-07-30T05:40:08.121Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\text.md
+2018-07-30T05:40:09.124Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\text.md
+2018-07-30T05:40:09.126Z - info: Rebuilding 4 pages
+2018-07-30T05:40:09.927Z - info: Pages rebuilt
+2018-07-30T05:40:09.939Z - info: Site data built
+2018-07-30T05:41:48.049Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\text.md
+2018-07-30T05:41:49.067Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\text.md
+2018-07-30T05:41:49.067Z - info: Rebuilding 4 pages
+2018-07-30T05:41:49.968Z - info: Pages rebuilt
+2018-07-30T05:41:49.984Z - info: Site data built
+2018-07-30T05:45:50.468Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\index.md
+2018-07-30T05:45:50.468Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:45:51.486Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\index.md,C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:45:51.488Z - info: Rebuilding 0 pages
+2018-07-30T05:45:51.489Z - info: Pages rebuilt
+2018-07-30T05:45:51.517Z - info: Site data built
+2018-07-30T05:48:17.370Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\stringClass\index.md
+2018-07-30T05:48:17.403Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\text.md
+2018-07-30T05:48:17.440Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\book\cppToJava\print.md
+2018-07-30T05:48:17.441Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\book\cppToJava\print.md
+2018-07-30T05:48:17.470Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\index.md
+2018-07-30T05:48:17.484Z - info: Reload for file deletion: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\index.md
+2018-07-30T05:48:17.505Z - info: Reload for file add: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\index.md
+2018-07-30T05:48:17.524Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:48:18.380Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\stringClass\index.md,C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\text.md,C:\repos\nus-cs2103\website-base\book\cppToJava\print.md,C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\index.md,C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\wrapperClasses\index.md,C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:48:18.380Z - info: Rebuilding 5 pages
+2018-07-30T05:48:19.258Z - info: Pages rebuilt
+2018-07-30T05:48:19.268Z - info: Site data built
+2018-07-30T05:51:20.186Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:51:21.197Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:51:21.200Z - info: Rebuilding 3 pages
+2018-07-30T05:51:22.124Z - info: Pages rebuilt
+2018-07-30T05:51:22.137Z - info: Site data built
+2018-07-30T05:51:39.392Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:51:40.402Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:51:40.402Z - info: Rebuilding 3 pages
+2018-07-30T05:51:41.190Z - info: Pages rebuilt
+2018-07-30T05:51:41.200Z - info: Site data built
+2018-07-30T05:54:22.816Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:54:23.835Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:54:23.838Z - info: Rebuilding 3 pages
+2018-07-30T05:54:24.713Z - info: Pages rebuilt
+2018-07-30T05:54:24.725Z - info: Site data built
+2018-07-30T05:55:13.161Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:55:14.164Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\usefulClasses\arraysClass\text.md
+2018-07-30T05:55:14.166Z - info: Rebuilding 3 pages
+2018-07-30T05:55:14.947Z - info: Pages rebuilt
+2018-07-30T05:55:14.954Z - info: Site data built
+2018-07-30T05:58:42.127Z - info: Reload for file change: C:\repos\nus-cs2103\website-base\book\cppToJava\dataTypes\arrays\text.md
+2018-07-30T05:58:43.145Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\book\cppToJava\dataTypes\arrays\text.md
+2018-07-30T05:58:43.145Z - info: Rebuilding 4 pages
+2018-07-30T05:58:44.055Z - info: Pages rebuilt
+2018-07-30T05:58:44.071Z - info: Site data built
+2018-07-30T07:26:06.283Z - info: Pages built
+2018-07-30T07:26:07.078Z - info: Site data built
+2018-07-30T07:26:07.087Z - info: Generate Site durationMs=126298
+2018-07-30T07:26:07.534Z - info: Serving "C:\repos\nus-cs2103\website-base\book\_site" at http://127.0.0.1:8080
+2018-07-30T07:26:07.534Z - info: Press CTRL+C to stop ...

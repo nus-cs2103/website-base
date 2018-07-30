@@ -1,7 +1,10 @@
 <div>
   <navbar placement="top" type="inverse">
-    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-success"><span class="fas fa-clone"></span> nested</span></small></a>
-    <li><a href="/website-base/index-flat.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-bars"></span> flat</span></a></li>
+    <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
+    <dropdown text="Nested" class="nav-link">
+      <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
+      <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+    </dropdown>
     <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
     <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
     <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>

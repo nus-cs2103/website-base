@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -130,8 +131,8 @@
         <div class="dropdown-container">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></li>
-            <li style="margin-top: 10px"><a href="common/exercises.html">Combined Exercises</a></li>
-            <li style="margin-top: 10px"><a href="common/definitions.html">List of Definitions</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/common/exercises.html">Combined Exercises</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/common/definitions.html">List of Definitions</a></li>
           </ul>
         </div>
       </li>
@@ -148,8 +149,11 @@
     <link rel="stylesheet" href="/website-base/book/css/textbook.css">
     <div>
       <navbar placement="top" type="inverse">
-        <a slot="brand" href="/website-base/index-flat.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18 <span class="badge badge-primary"><span class="fas fa-bars"></span> flat</span></small></a>
-        <li><a href="/website-base/index.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light"><span class="fas fa-clone"></span> nested</span></a></li>
+        <a slot="brand" href="/website-base/index-flat.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
+        <dropdown text="Flat" class="nav-link">
+          <li><a href="/website-base/index-flat.html" class="dropdown-item"> <span class="fas fa-check"></span> Flat (current format)</a></li>
+          <li><a href="/website-base/index.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Nested</a></li>
+        </dropdown>
         <li><a href="/website-base/index-flat.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
         <li><a href="/website-base/se-book-adapted/index-flat.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website-base/admin/index-flat.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -561,7 +565,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.2</a> at Sun, 29 Jul 2018 15:27:52 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Mon, 30 Jul 2018 07:46:12 GMT</small></div>
 </footer>
 </div>
 </body>
