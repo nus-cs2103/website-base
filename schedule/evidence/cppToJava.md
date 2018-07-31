@@ -1,4 +1,4 @@
-<div id="collections">
+<div id="collections_what">
 
 **Acceptable**: Some code that you have written that uses some Java Collection classes.
 
