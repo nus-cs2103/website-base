@@ -28,3 +28,7 @@ h3{
 .indented-level3 {
     padding-left: 60px;
 }
+
+.flat {
+    display: none;
+}

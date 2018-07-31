@@ -10,9 +10,9 @@
 {% if topic.level == 1%} 
 * [{{ title }}]({{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}
 {% elif topic.level == 2 %}
-* [%%→%% <small>{{ title }}]({{ topic.link }})</small> {{ show_stars_in_nav(topic.priority) }}
+  * <small>[{{ title }}]({{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}</small>
 {% elif topic.level == 0 %}
-* %%{{ title }}%%
+* {{ title }} :expanded:
 {% endif %}
 {% endfor %}
 

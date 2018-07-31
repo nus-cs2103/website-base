@@ -1,6 +1,7 @@
 <frontmatter>
 title: "Full Schedule of Module Activities"
 footer: footer.md
+head: scheduleHead.md
 </frontmatter>
 
 {% import "common/outcomes.njk" as outcomes with context %}
@@ -36,7 +37,9 @@ footer: footer.md
       {location: ["intellij", "projectSetup"]},
       {location: ["intellij", "codeNavigation"]},
     {heading: "Can use Java Collections"},
-      {location: ["javaTools", "collections"]},
+      {location: ["cppToJava", "collections", "what"]},
+      {location: ["cppToJava", "collections", "arrayListClass"], omit_evidence: true},
+      {location: ["cppToJava", "collections", "hashMapClass"], omit_evidence: true},
     {heading: "Can use Java varargs feature"},
       {location: ["javaTools", "varargs"]},
   {name: "Testing"},
@@ -601,9 +604,6 @@ footer: footer.md
 {% endmacro %}
 
 <!-- ============================= page content ============================================ -->
-
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/schedule.css">
 
 <include src="../common/header.md" />
 

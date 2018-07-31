@@ -2,10 +2,9 @@
 title: "Admin (All admin info in one page!)"
 footer: footer.md
 siteNav: adminSiteNav-flat.md
+head: adminHead-flat.md
 </frontmatter>
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/admin.css">
 
 <div class="website-content">
 

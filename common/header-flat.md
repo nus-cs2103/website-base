@@ -1,6 +1,9 @@
 <navbar placement="top" type="inverse">
-  <a slot="brand" href="{{baseUrl}}/index-flat.html" title="Home" class="navbar-brand">{{ module }}/T <small>{{ period }} <span class="badge badge-primary">{{ fas_bars }} flat</span></small></a>
-  <li><a href="{{baseUrl}}/index.html" class="nav-link">&nbsp;&nbsp;→<span class="badge badge-light">{{ fas_clone }} nested</span></a></li>
+  <a slot="brand" href="{{baseUrl}}/index-flat.html" title="Home" class="navbar-brand">{{ module }}/T <small>{{ period }}</small></a>
+  <dropdown text="Flat" class="nav-link">
+    <li><a href="{{baseUrl}}/index-flat.html" class="dropdown-item"> {{ icon_tick }} Flat (current format)</a></li>
+    <li><a href="{{baseUrl}}/index.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Nested</a></li>
+  </dropdown>
   <li><a href="{{baseUrl}}/index-flat.html" class="nav-link"><md>**Schedule**</md></a></li>
   <li><a href="{{baseUrl}}/se-book-adapted/index-flat.html" class="nav-link"><md>**Textbook**</md></a></li>
 
